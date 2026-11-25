@@ -4,6 +4,25 @@ Notes for the next session: what the project is for, where things stand, and wha
 Last updated 2026-11-25. Update this file before compacting a session and at the end of every session
 (see CLAUDE.md).
 
+## Next session (start here)
+
+Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring`), not the old
+`Rstar_precipitation-relationships`. Where things stood at the end of 2026-11-25:
+- **Repo:** set up and pushed to both private GitHub repos (see "This repo"). `develop` is two commits ahead of `main`
+  (this file's updates); the user pushes it with the command in "Publishing". The user still has to check that the
+  push reached https://github.com/nyce-data/precipitation_rstar_scoring (the sandbox can't reach GitHub).
+- **`Rstar_query_results`:** its query templates and examples now name this project and its current paths, and its
+  HANDOFF.md says finished runs are copied here (committed there on `develop` as `0c94550`, not pushed).
+- **Next, in order:**
+  1. **The DigitalOcean droplet** (a new one the user will buy), with Claude's help: see "Hosting". Start from the
+     user's example `/Users/claude/PROGRAMMING/Claude_code_apps/ny_climate_dashboard_app/docs/digitalocean/review-site-on-digitalocean.md`
+     and ask the questions listed there (logins, site layout, deploying).
+  2. **The card-list script** (`build_datasets.py`), as its own change: Steps 2–4 of
+     `notes/dashboard-files-move-plan.md`.
+  3. The research and categorizing work in "Next steps" (IMERG and GPCP's NASA GES DISC + PPS A2 run, then
+     PERSIANN-CDR Daily, then CoCoRaHS).
+- **Saved scores collected on the droplet:** later, not yet (see "Hosting").
+
 ## This repo (started fresh 2026-11-25)
 
 - **What it is:** `precipitation_rstar_scoring` is a copy of `Rstar_precipitation-relationships` (its `develop` at
