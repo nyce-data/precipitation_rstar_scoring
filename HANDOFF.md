@@ -14,11 +14,12 @@ Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitatio
 - **`Rstar_query_results`:** its query templates and examples now name this project and its current paths, and its
   HANDOFF.md says finished runs are copied here (committed there on `develop` as `0c94550`, not pushed).
 - **Next, in order:**
-  1. **The DigitalOcean droplet** (a new one the user will buy), with Claude's help: see "Hosting". Start from the
-     user's example `/Users/claude/PROGRAMMING/Claude_code_apps/ny_climate_dashboard_app/docs/digitalocean/review-site-on-digitalocean.md`
-     and ask the questions listed there (logins, site layout, deploying).
-  2. ~~The card-list script~~ **written 2026-11-25 (ninth session)**, not yet committed: see "Ninth session" below.
-     The user runs the e2e tests, then it is committed on `develop`.
+  1. **The DigitalOcean droplet:** the user is setting it up in a different folder and session (said 2026-11-25) and
+     will say how it is set up. Then plan this site's part: how it is deployed there and under which password (see
+     "Hosting").
+  2. ~~The card-list script~~ **done 2026-11-25 (ninth session)**: committed on `develop` as `ebc9a90`; all 140 e2e
+     tests pass (Firefox and WebKit). Not yet merged into `main` or pushed (the user runs the command in
+     "Publishing"). See "Ninth session" below.
   3. The research and categorizing work in "Next steps" (IMERG and GPCP's NASA GES DISC + PPS A2 run, then
      PERSIANN-CDR Daily, then CoCoRaHS).
 - **Saved scores collected on the droplet:** later, not yet (see "Hosting").
@@ -79,7 +80,8 @@ updated (metadata README's paths, `rstar-pipeline/README.md` step 6 and "The wor
 both how-tos, `notes/dashboard/*`, both plans). **Found:** `import_dataset_pages.py` no longer runs on today's research
 folders (GHCN-Daily's pt1 has no `query_questions.txt`, and the cleaner mangled a "Pages not read" bullet in `pt1.md`,
 restored with `git restore`); that is the "web research pages" refresh in "The dashboard" below. The Python Playwright
-memory was copied into this project's memory folder. Plan: `notes/dashboard-files-move-plan.md` (Steps 1–3 done).
+memory was copied into this project's memory folder. Plan: `notes/dashboard-files-move-plan.md` (all steps done). Committed as `ebc9a90`; 140 e2e tests pass. Claude can
+run the e2e tests itself in the Terminal panel (`run_in_terminal`), which is outside the Bash sandbox.
 
 **Eighth session (2026-11-25): reorganized the repo around `rstar-pipeline/`.** Everything needed to rebuild the site's
 data now lives in `rstar-pipeline/` as `input/` (framework: definitions, scoring, filing rules, form format;
@@ -506,7 +508,8 @@ Markdown, its template and README, and the page clean-up rules were copied in fr
 2026-11-25 (checked with `cmp`). The user archived that project's `my_docs/` and `.work/` outside the sandbox (the
 47-dataset list, the workshop CSV, the inventory and the rest; brought back only when needed; about 15 datasets here for
 a long while). **Steps 2–3 done 2026-11-25** (ninth session): `build_datasets.py` builds `app/data/datasets.json` from each dataset
-metadata JSON's `dashboard` block, so a card is edited in one place. Step 4: the user runs the e2e tests, then commit.
+metadata JSON's `dashboard` block, so a card is edited in one place. Step 4 done: 140 e2e tests pass; committed as
+`ebc9a90`.
 
 0. **Next:** IMERG's people run is in (second pass, 2026-11-24). Add the NASA GES DISC + PPS A2 run to IMERG (and
    GPCP's RRS) with Prompt 5 when it comes back; the gaps note's "For the NASA GES DISC + PPS A2 run" lists what it

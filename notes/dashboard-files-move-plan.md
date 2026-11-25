@@ -1,10 +1,10 @@
 # Plan: bring the workshop dashboard's files into this project
 
 Written 2026-11-25 with the user and revised the same day (second version: no big master list). Follows phase 2 of
-`notes/rstar-pipeline-reorganization-plan.md`. **Steps 1–3 done 2026-11-25** (in the new `precipitation_rstar_scoring`
+`notes/rstar-pipeline-reorganization-plan.md`. **All steps done 2026-11-25** (in the new `precipitation_rstar_scoring`
 repo, which is private, so the "Hosting" and "Later" notes below about a public repo and `local-notes` are out of
-date). `build_datasets.py`'s output was byte-identical to the old `datasets.json`. Step 4's e2e test run and commit are
-the user's.
+date). `build_datasets.py`'s output was byte-identical to the old `datasets.json`. All 140 e2e tests
+passed; committed on `develop` as `ebc9a90`.
 
 **Goal:** the dashboard and the R* scoring live in one place. Everything needed to rebuild the dashboard's cards is in
 `rstar-pipeline/` (input → processing → output), and `app/` only holds what scripts write.
