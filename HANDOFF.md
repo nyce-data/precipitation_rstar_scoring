@@ -8,17 +8,17 @@ Last updated 2026-11-25. Update this file before compacting a session and at the
 
 Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring`), not the old
 `Rstar_precipitation-relationships`. Where things stood at the end of 2026-11-25:
-- **Repo:** set up and pushed to both private GitHub repos (see "This repo"). `develop` is two commits ahead of `main`
-  (this file's updates); the user pushes it with the command in "Publishing". The user still has to check that the
-  push reached https://github.com/nyce-data/precipitation_rstar_scoring (the sandbox can't reach GitHub).
+- **Repo:** set up and pushed to both private GitHub repos (see "This repo"); `main` and `develop` were level at the
+  start of the ninth session. The user still has to check that the push reached
+  https://github.com/nyce-data/precipitation_rstar_scoring (the sandbox can't reach GitHub).
 - **`Rstar_query_results`:** its query templates and examples now name this project and its current paths, and its
   HANDOFF.md says finished runs are copied here (committed there on `develop` as `0c94550`, not pushed).
 - **Next, in order:**
   1. **The DigitalOcean droplet** (a new one the user will buy), with Claude's help: see "Hosting". Start from the
      user's example `/Users/claude/PROGRAMMING/Claude_code_apps/ny_climate_dashboard_app/docs/digitalocean/review-site-on-digitalocean.md`
      and ask the questions listed there (logins, site layout, deploying).
-  2. **The card-list script** (`build_datasets.py`), as its own change: Steps 2–4 of
-     `notes/dashboard-files-move-plan.md`.
+  2. ~~The card-list script~~ **written 2026-11-25 (ninth session)**, not yet committed: see "Ninth session" below.
+     The user runs the e2e tests, then it is committed on `develop`.
   3. The research and categorizing work in "Next steps" (IMERG and GPCP's NASA GES DISC + PPS A2 run, then
      PERSIANN-CDR Daily, then CoCoRaHS).
 - **Saved scores collected on the droplet:** later, not yet (see "Hosting").
@@ -67,6 +67,19 @@ with 19 subcategories in all.
 The weighted network graph of a dataset's R* scores is built (`app/graph.html`, 2026-11-24) and the user likes it;
 the knowledge graph of dataset relationships is not started. GHCN-Daily, GPCP Daily and IMERG Late Run are categorized;
 PERSIANN-CDR Daily is waiting on supplemental research, and CoCoRaHS is a new dataset not yet researched.
+
+**Ninth session (2026-11-25): the card-list script.** New
+`rstar-pipeline/processing/scripts/dashboard/build_datasets.py` builds `app/data/datasets.json` from each
+`rstar-pipeline/input/dataset-metadata/*_dataset-metadata.json`'s `dashboard` block (the only place to edit a card), sets
+`about_url` (from `app/data/dataset_pages.json`) and `overview_url` (when `app/content/datasets/<id>/overview.json`
+exists) and sorts the cards (the rules from `sort_datasets.py`, now trashed). Its output was byte-identical to the old
+file. `import_dataset_overviews.py` now writes an overview for every metadata file and no longer touches
+`datasets.json`; `import_dataset_pages.py` no longer sets `about_url`; both print "Now run build_datasets.py". Docs
+updated (metadata README's paths, `rstar-pipeline/README.md` step 6 and "The workshop's full dataset list", `app/README.md`,
+both how-tos, `notes/dashboard/*`, both plans). **Found:** `import_dataset_pages.py` no longer runs on today's research
+folders (GHCN-Daily's pt1 has no `query_questions.txt`, and the cleaner mangled a "Pages not read" bullet in `pt1.md`,
+restored with `git restore`); that is the "web research pages" refresh in "The dashboard" below. The Python Playwright
+memory was copied into this project's memory folder. Plan: `notes/dashboard-files-move-plan.md` (Steps 1–3 done).
 
 **Eighth session (2026-11-25): reorganized the repo around `rstar-pipeline/`.** Everything needed to rebuild the site's
 data now lives in `rstar-pipeline/` as `input/` (framework: definitions, scoring, filing rules, form format;
@@ -282,7 +295,7 @@ Other issues raised in the feedback:
 - **Code and data:** `app/assets/dashboard/` (`dashboard.js` was `app.js`, `dashboard.css` was `styles.css`, plus
   `shared.js`, `overview.js`, `dataset.js`, `dataset-search.js`, `archive.js`, `markdown.js`); `app/data/*.json`
   (fetched, so these pages need a server) and `app/content/`. Scripts in `rstar-pipeline/processing/scripts/dashboard/` now read this repo's
-  `rstar-pipeline/input/dataset-metadata/` and `rstar-pipeline/input/web-research/`; `sort_datasets.py` re-sorts the cards. The old project's
+  `rstar-pipeline/input/dataset-metadata/` and `rstar-pipeline/input/web-research/`; `build_datasets.py` builds and sorts the cards (2026-11-25). The old project's
   design notes and how-tos are in `notes/dashboard/` (paths in them still name the old project).
 - **One set of ids** (user said saved scores can be lost): the dashboard took the R* ids `ghcn-daily`, `gpcp-daily`,
   `imerg-late-run`, `persiann-cdr-daily` (were `ghcn-d`, `gpcp-daily-v3-3`, `imerg-late-run-v07`,
@@ -449,7 +462,7 @@ control edges 3:1. Green and red mean **stance only**. The R* pages also use the
 - **Run them in the Terminal panel,** not the Bash tool. In the sandbox, pip can't reach PyPI and servers
   can't bind ports:
   `cd /Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring/app && ../.work/venv/bin/pytest`
-- **The venv was not copied into this folder (2026-11-25): rebuild it before the first test run.**
+- **The venv was rebuilt in this folder on 2026-11-25** (it was not copied from the old one).
 - **Rebuild the venv** if its Python disappears (Anaconda was uninstalled on 2026-11-22): the command is in
   `app/README.md`. It uses `/opt/homebrew/bin/python3` (3.15).
 - **Don't remove the DYLD fix.** `~/.zshrc` sets `DYLD_LIBRARY_PATH=/opt/homebrew/lib`, which made
@@ -492,9 +505,8 @@ adding it to the website, writing gap queries and adding new research. Follow it
 Markdown, its template and README, and the page clean-up rules were copied in from `precip_workshop_dashboard` on
 2026-11-25 (checked with `cmp`). The user archived that project's `my_docs/` and `.work/` outside the sandbox (the
 47-dataset list, the workshop CSV, the inventory and the rest; brought back only when needed; about 15 datasets here for
-a long while). **Still to do, as its own change after the move:** fix the metadata README's paths (end of Step 1), then
-Steps 2–4, the card-list script `build_datasets.py`, which builds `app/data/datasets.json` from each dataset metadata
-JSON's `dashboard` block, so a card is edited in one place.
+a long while). **Steps 2–3 done 2026-11-25** (ninth session): `build_datasets.py` builds `app/data/datasets.json` from each dataset
+metadata JSON's `dashboard` block, so a card is edited in one place. Step 4: the user runs the e2e tests, then commit.
 
 0. **Next:** IMERG's people run is in (second pass, 2026-11-24). Add the NASA GES DISC + PPS A2 run to IMERG (and
    GPCP's RRS) with Prompt 5 when it comes back; the gaps note's "For the NASA GES DISC + PPS A2 run" lists what it

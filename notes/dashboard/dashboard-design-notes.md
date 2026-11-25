@@ -2,6 +2,11 @@
 
 ## Data file: `app/data/datasets.json` (since 2026-11-17)
 
+**Since 2026-11-25 it is generated:** `rstar-pipeline/processing/scripts/dashboard/build_datasets.py` builds it from
+the `dashboard` block of each `rstar-pipeline/input/dataset-metadata/*_dataset-metadata.json` (one file per card), sets
+`about_url` and `overview_url`, and sorts the cards. Edit the metadata file, not this one. The history below is from the
+workshop dashboard project; the `my_docs/` and `.work/` files it names are archived outside this project.
+
 Replaced the CSV (user's choice: JSON, because a dataset can have several
 access links and more metadata is coming). Shape:
 
@@ -45,8 +50,9 @@ access links and more metadata is coming). Shape:
   section after it.
 - Order (since 2026-11-18): datasets are sorted by data-source tag, then
   coverage tag (both alphabetical by label), then name, so the dashboard
-  opens grouped. `.work/sort_datasets.py` (not in git) re-sorts; it copies
-  the tag rules from app.js, so update both if the rules change. The
+  opens grouped. `build_datasets.py` sorts them (it replaced
+  `sort_datasets.py` on 2026-11-25); it copies the tag rules from
+  `assets/dashboard/dashboard.js`, so update both if the rules change. The
   "Dataset 001" card number follows the file order; links use ids, so
   re-sorting doesn't break them (links made before 2026-11-18 used
   numbers and no longer open a card).

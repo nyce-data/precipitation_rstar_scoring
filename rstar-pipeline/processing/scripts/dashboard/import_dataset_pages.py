@@ -2,7 +2,7 @@
 
 Reads app/data/dataset_pages.json, which lists, for each dataset:
 
-  { "id": "<dataset id in datasets.json>",
+  { "id": "<dataset id, as in its metadata file>",
     "research_folder": "<folder under RESEARCH_ROOT>",
     "parts": [ { "part": 1, "topic": "Overview" }, ... ] }
 
@@ -17,12 +17,12 @@ writes:
   app/content/datasets/<id>/pt<N>.json  { "question": ..., "searched_on": [...] }
                                         from query_questions.txt
 
-It also sets "about_url" to "dataset.html?id=<id>" for each listed
-dataset in app/data/datasets.json, so the panel shows "About dataset".
-
-Run from the project folder after adding or editing research:
+build_datasets.py reads the same list to set each card's "about_url", so
+the panel shows "About dataset". Run from the project folder after adding
+or editing research, then rebuild the card list:
 
     python3 rstar-pipeline/processing/scripts/dashboard/import_dataset_pages.py
+    python3 rstar-pipeline/processing/scripts/dashboard/build_datasets.py
 
 It prints any lines that still mention a research tool (WebFetch,
 subagent, extract) or link to a research-project file, to check by hand.
@@ -39,7 +39,6 @@ from research_text import tool_mentions  # noqa: E402
 
 RESEARCH_ROOT = Path("rstar-pipeline/input/web-research/about-datasets")
 MANIFEST = Path("app/data/dataset_pages.json")
-DATASETS = Path("app/data/datasets.json")
 CONTENT = Path("app/content/datasets")
 
 # Links that only work inside the research project.
@@ -101,24 +100,12 @@ def import_part(dataset: dict, part: dict) -> None:
             print(f"  check: line {n} links to a research-project file: {line.strip()[:120]}")
 
 
-def set_about_urls(ids: list[str]) -> None:
-    data = json.loads(DATASETS.read_text(encoding="utf-8"))
-    known = {d["id"] for d in data["datasets"]}
-    for missing in sorted(set(ids) - known):
-        print(f"Warning: no dataset with id {missing!r} in {DATASETS}", file=sys.stderr)
-    for d in data["datasets"]:
-        if d["id"] in ids:
-            d["about_url"] = f"dataset.html?id={d['id']}"
-    DATASETS.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-
 def main() -> int:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     for dataset in manifest["datasets"]:
         for part in dataset["parts"]:
             import_part(dataset, part)
-    set_about_urls([d["id"] for d in manifest["datasets"]])
-    print(f"Set about_url in {DATASETS} for {len(manifest['datasets'])} datasets")
+    print("\nNow run build_datasets.py to update the card list.")
     return 0
 
 

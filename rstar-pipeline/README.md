@@ -12,7 +12,10 @@ rstar-pipeline/
 │   │   ├── how_to_score_rstar.md            point values, group weights and the scoring rule (the scripts read it)
 │   │   ├── rstar-categorization-decisions.md  the filing rules for sorting evidence (master copy)
 │   │   └── assessment-form/    the R* form's JSON format (the site's "Save your scores" file follows it)
-│   ├── dataset-metadata/       one JSON file per dataset: names, versions, DOIs, producer, repositories
+│   ├── dataset-metadata/       one JSON file per dataset: names, versions, DOIs, producer, repositories, and its
+│   │   │                       dashboard card (the `dashboard` block); README.md lists the keys
+│   │   ├── markdown/           the ChatGPT answers the JSON files were made from
+│   │   └── new_dataset-metadata_template.md  the question to ask for a new dataset's metadata
 │   └── web-research/           the research runs, one folder per run (query, answer_*.md, research record)
 │       ├── about-datasets/<id>/  runs about each dataset
 │       ├── archives/<repository>/  runs about the repositories that hold them
@@ -30,7 +33,7 @@ rstar-pipeline/
 │   └── scripts/
 │       ├── categorize/         build_<id>.py per dataset (the hand-sorted evidence) and rstar_common.py
 │       ├── site-data/build_data.py  builds app/data/rstar-data.js
-│       └── dashboard/          copy research and metadata into the dashboard's pages
+│       └── dashboard/          build the dashboard's card list, and copy research and metadata into its pages
 └── output/                     what the process makes
     ├── categories/<id>/<id>_rstar-categories.json  each dataset's evidence, gaps and scores
     └── gaps-notes/<id>_categorization-gaps.md       what each dataset's research never searched, and judgment calls
@@ -55,8 +58,10 @@ and weights from `how_to_score_rstar.md`, so change them only there.
 
 ### 2. Describe each dataset
 
-Add `input/dataset-metadata/<id>_dataset-metadata.json` (copy an existing one). The site shows the dataset's name from
-it; without it the site shows the id.
+Add `input/dataset-metadata/<id>_dataset-metadata.json` (copy an existing one; `new_dataset-metadata_template.md` is
+the question that gathers the facts). The R* pages show the dataset's name from it; without it they show the id. Its
+`dashboard` block is the dataset's card on the landing page: every metadata file is a card, and the block is the only
+place to edit one (step 6 builds the card list from it).
 
 ### 3. Research each dataset
 
@@ -104,10 +109,22 @@ are filled by the scripts in `processing/scripts/dashboard/`, run from the repos
 - `import_dataset_pages.py`: the research runs listed in `app/data/dataset_pages.json` →
   `app/content/datasets/<id>/pt<N>.md`;
 - `import_archive_page.py`: one archive or instrument run → a page in `app/content/` (see its docstring);
-- `sort_datasets.py`: sorts the cards in `app/data/datasets.json`.
+- `build_datasets.py`, run last: the card list, `app/data/datasets.json`. It copies every metadata file's `dashboard`
+  block, adds the links to the dataset's web research pages (when `dataset_pages.json` lists it) and overview page
+  (when its `overview.json` exists), and sorts the cards by data source, coverage and name.
 
-The card list (`app/data/datasets.json`) and the page lists (`dataset_pages.json`, `archives.json`,
-`archive_links.json`) are edited by hand in `app/data/`.
+To change a card, edit the `dashboard` block in the dataset's metadata file and run `build_datasets.py`; don't edit
+`app/data/datasets.json`. The page lists (`dataset_pages.json`, `archives.json`, `archive_links.json`) are edited by
+hand in `app/data/`.
+
+```bash
+python3 rstar-pipeline/processing/scripts/dashboard/import_dataset_overviews.py
+python3 rstar-pipeline/processing/scripts/dashboard/build_datasets.py
+```
+
+The web research pages on the site were made from older copies of the runs, and `import_dataset_pages.py` no longer
+runs cleanly on today's folders (for example GHCN-Daily's pt1 run has no `query_questions.txt`); update
+`dataset_pages.json` and the script for the newer runs before re-running it.
 
 ### 7. Check and publish
 
@@ -134,8 +151,8 @@ scripts, so a diff after a rebuild shows only real changes.
    climate data").
 4. Work through steps 2–7 for each dataset.
 
-## Still to bring in
+## The workshop's full dataset list
 
-The workshop dashboard's own source files (its dataset list, inventory and metadata notes, kept in the separate
-`precip_workshop_dashboard` project) will move into `input/` later; its scripts are already in
-`processing/scripts/dashboard/`.
+The workshop dashboard's own source files (its 47-dataset card list, the workshop CSV, the inventory JSON and the
+one-off scripts that built them) are archived by the user outside this project and brought back only when needed. The
+dashboard's metadata notes and scripts were moved in (`input/dataset-metadata/`, `processing/scripts/dashboard/`).

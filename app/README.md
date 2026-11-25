@@ -33,7 +33,8 @@ https://lmerchant.github.io/precip_workshop_dashboard/ are left as they were). P
   current page's tab is white). The site is light only now, like the dashboard (the R* pages' dark theme was dropped).
 - **Code:** `assets/dashboard/` (`dashboard.js` for `index.html`, `shared.js` for all four, plus `overview.js`,
   `dataset.js`, `dataset-search.js`, `archive.js`, `markdown.js`).
-- **Data:** `data/datasets.json` (the cards; field list in `notes/dashboard/dashboard-design-notes.md`),
+- **Data:** `data/datasets.json` (the cards, built by `build_datasets.py` from each dataset metadata file's `dashboard`
+  block, so don't edit it by hand; field list in `notes/dashboard/dashboard-design-notes.md`),
   `data/archives.json`, `data/archive_links.json`, `data/dataset_pages.json`, and the page text in `content/`. These
   are **fetched**, so the dashboard pages need a web server (the R* pages still open from disk).
 - **Dataset ids** are the same everywhere: the folder names in `rstar-pipeline/output/categories/` (`ghcn-daily`,
@@ -50,7 +51,7 @@ https://lmerchant.github.io/precip_workshop_dashboard/ are left as they were). P
 - **Scripts** (run from the project folder): `rstar-pipeline/processing/scripts/dashboard/import_dataset_overviews.py` (overview pages from
   `rstar-pipeline/input/dataset-metadata/`), `import_dataset_pages.py` (web research pages from `rstar-pipeline/input/web-research/about-datasets/`,
   parts listed in `data/dataset_pages.json`), `import_archive_page.py` (one archive or instrument page) and
-  `sort_datasets.py` (re-sort the cards after adding or renaming a dataset). The research pages now on the site were
+  `build_datasets.py` (the card list, run last; it also sorts the cards). The research pages now on the site were
   made from older copies of the runs; re-running `import_dataset_pages.py` would need `dataset_pages.json` updated
   for the newer runs first (for example GHCN-Daily's parts 3 to 9).
 

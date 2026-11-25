@@ -26,7 +26,7 @@ Each step has a prompt to paste into a Claude Code session in this project. Repl
 |---|---|---|
 | Subcategory definitions | `rstar-pipeline/input/framework/definitions/` | `p-rstar_people_risk_queries.md` |
 | Categorizing rules (format) | `rstar-pipeline/processing/instructions/create_rstar_node_files.md` | — |
-| Dataset metadata (name shown on the website) | `rstar-pipeline/input/dataset-metadata/<id>_dataset-metadata.json` | `ghcn-daily_dataset-metadata.json` |
+| Dataset metadata (name shown on the website; its `dashboard` block is the dataset's card) | `rstar-pipeline/input/dataset-metadata/<id>_dataset-metadata.json` | `ghcn-daily_dataset-metadata.json` |
 | Research about the dataset | `rstar-pipeline/input/web-research/about-datasets/<id>/<date>_<id>-<topic>-pt<N>/` | `2026-11-21_ghcn-daily-sources-pt5/` |
 | Research about repositories | `rstar-pipeline/input/web-research/archives/<repository>/` | `noaa-ncei/2026-11-17_noaa-ncei-threats/` |
 | Research about instruments | `rstar-pipeline/input/web-research/instruments/<instrument>/` | `noaa-rain-gauges/…`, `nasa-satellites/…` |
@@ -80,7 +80,9 @@ Then:
 - **Missing repository research:** if no run in `archives/` covers the dataset's repository (for example NASA GES DISC
   for IMERG), the gaps note should say so. That becomes a gap query.
 - **New datasets:** a brand-new dataset needs a metadata file in `rstar-pipeline/input/dataset-metadata/` for its full name to show.
-  Without one, the website shows its id.
+  Without one, the website shows its id. The file's `dashboard` block is also its card on the dashboard: after adding
+  or editing it, run `import_dataset_overviews.py` and then `build_datasets.py` (both in
+  `rstar-pipeline/processing/scripts/dashboard/`), which rebuild the overview page and the card list.
 
 ## Prompt 2: create gap queries from the gaps note
 

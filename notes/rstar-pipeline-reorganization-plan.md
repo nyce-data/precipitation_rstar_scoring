@@ -77,6 +77,11 @@ Other moves:
 
 ## Later (phase 2, not now): the workshop dashboard's processing
 
+**Done 2026-11-25** (as `notes/dashboard-files-move-plan.md`, which replaced what follows): the metadata Markdown and
+template are in `input/dataset-metadata/`, the workshop's other files are archived by the user outside the project, and
+`app/data/datasets.json` is built by `processing/scripts/dashboard/build_datasets.py` from the metadata files'
+`dashboard` blocks.
+
 From `/Users/claude/SIDE_WORK/NYCE_project/precip_workshop_dashboard`:
 - Its scripts are already here (`scripts/dashboard/` → `processing/scripts/dashboard/`).
 - Its source files are the user's local-only `my_docs/about_data/`: the workshop CSV, `master_climate_inventory_subset.json`,

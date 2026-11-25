@@ -1,15 +1,18 @@
 # How the dataset about pages are built (and how to add more)
 
-Built 2026-11-20 (session 9). The agreed format is in
-`notes/dataset-about-pages-plan.md`; the user's original spec is
-`my_docs/about_data/rstar_query_results/dataset_answers/about_dataset_queries/about_pages_format.md`.
+Built 2026-11-20 (session 9) in the workshop dashboard project, whose
+paths this note still uses in places: `scripts/` is now
+`rstar-pipeline/processing/scripts/dashboard/`, and the research root is
+now `rstar-pipeline/input/web-research/about-datasets/`. The agreed format
+is in `notes/dashboard/dataset-about-pages-plan.md`; the user's original
+spec was in that project's `my_docs/` (archived outside this project).
 
 ## The pieces
 
 | File | What it does |
 |---|---|
 | `app/data/dataset_pages.json` | **The list to edit.** One entry per dataset: `id` (as in `datasets.json`), `research_folder` (folder under the research root), `parts` (`part` number + short `topic`), in part order. |
-| `scripts/import_dataset_pages.py` | Reads that list, copies each part's answer and questions into `app/content/datasets/<id>/`, and sets `about_url` in `datasets.json`. |
+| `scripts/import_dataset_pages.py` | Reads that list and copies each part's answer and questions into `app/content/datasets/<id>/`. Since 2026-11-25 `build_datasets.py` (run after it) sets `about_url` on the cards from the same list. |
 | `scripts/research_text.py` | `strip_tool_notes()` (removes "(read via WebFetch)" etc.) and `tool_mentions()` (finds lines still naming a tool). Also used by `import_archive_page.py`. |
 | `scripts/import_archive_page.py` | Its `clean()` (drops "Saved in …" and everything after, "Pages to check by hand"/"Sandbox" bullets, sentences naming research files such as `check-by-hand.md`, and tool notes) is reused by the dataset script. |
 | `app/content/datasets/<id>/pt<N>.md` | Answer text, cleaned, with its first `# ` heading removed. Generated: don't edit by hand, re-run the script. |
@@ -20,7 +23,9 @@ Built 2026-11-20 (session 9). The agreed format is in
 | `app/app.js` (`aboutHref`) | The panel's "Dataset web research" link adds the search/filters and `open=<id>` to a `dataset.html?…` about_url. |
 | `app/styles.css` section 13c | Dataset page styles (reuses the archive page's `.prose`, `.research-scope`, `.searched-on`). |
 
-Research root: `my_docs/about_data/rstar_query_results/dataset_answers/about_dataset_queries/`.
+Research root: `rstar-pipeline/input/web-research/about-datasets/` (was the old project's `my_docs/` copy). Note:
+the newer runs there don't all have a `query_questions.txt` (GHCN-Daily's pt1 doesn't), so the script needs updating
+before it is re-run.
 Each part folder is `<research_folder>/<date>_<anything>-pt<N>/` and holds one
 `answer*.md` and a `query_questions.txt`:
 
@@ -97,19 +102,18 @@ Second one?
 
 ### A new dataset
 
-1. Find its `id` in `app/data/datasets.json` (the user tells which research
-   folder maps to which dataset name).
+1. Find its `id` in its metadata file in `rstar-pipeline/input/dataset-metadata/`
+   (the user tells which research folder maps to which dataset name).
 2. Add an entry to `app/data/dataset_pages.json` (`id`, `research_folder`,
-   `parts`), then steps 2–6 above. The script sets the dataset's
-   `about_url` to `dataset.html?id=<id>`, which turns the panel's
-   "Dataset web research: NA" into a link.
+   `parts`), then steps 2–6 above, then run `build_datasets.py`. It sets
+   the dataset's `about_url` to `dataset.html?id=<id>`, which turns the
+   panel's "Dataset web research: NA" into a link.
 
 ### Re-running
 
-The script rewrites every listed part and `datasets.json` each time; it is
-safe to re-run after the user edits an answer or a question file.
-`datasets.json` round-trips unchanged apart from `about_url` (2-space
-indent, non-ASCII kept).
+The script rewrites every listed part each time; it is safe to re-run
+after the user edits an answer or a question file. It no longer writes
+`datasets.json` (`build_datasets.py` does).
 
 ## Things to watch for
 

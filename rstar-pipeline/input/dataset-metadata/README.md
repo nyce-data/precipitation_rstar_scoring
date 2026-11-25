@@ -1,15 +1,25 @@
 # Dataset metadata JSON
 
 One file per dataset, made from the "## ChatGPT answer" section of the
-matching file in `../markdown/` (converted 2026-11-21, schema 0.1). Every
+matching file in `markdown/` (converted 2026-11-21, schema 0.1). Every
 file has the same top-level keys in the same order; a field with nothing
-to say is `""` or `[]`.
+to say is `""` or `[]`. For a new dataset, start from
+`new_dataset-metadata_template.md`.
+
+Every file here is a card on the dashboard. After editing one, run (from
+the project folder):
+
+    python3 rstar-pipeline/processing/scripts/dashboard/import_dataset_overviews.py
+    python3 rstar-pipeline/processing/scripts/dashboard/build_datasets.py
+
+The first writes the dataset's overview page; the second rebuilds the card
+list, `app/data/datasets.json`.
 
 ## Where each part goes
 
 | Key | Use |
 | --- | --- |
-| `dashboard` | Drop-in object with exactly the keys of an entry in `app/data/datasets.json` (card + dropdown panel). Values are the current dashboard values, updated with ChatGPT's where it adds something; changes are listed in `review_notes`. |
+| `dashboard` | The dataset's card (card + dropdown panel). This is the only place to edit a card: `build_datasets.py` copies every file's block into `app/data/datasets.json`, sets `about_url` (from `app/data/dataset_pages.json`) and adds `overview_url`, then sorts the cards. When first converted, the values were the dashboard's, updated with ChatGPT's where it added something; those changes are listed in `review_notes`. |
 | everything else | Overview page (and other projects). |
 
 ## Keys

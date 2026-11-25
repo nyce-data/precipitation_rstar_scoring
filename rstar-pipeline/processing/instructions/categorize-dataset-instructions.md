@@ -237,6 +237,10 @@ python3 rstar-pipeline/processing/scripts/site-data/build_data.py             # 
   unsure of? Note it for the user.
 - Keep one JSON file in the dataset folder (the site loads only the first). A dataset shows on the site once it has a
   folder in `rstar-pipeline/output/categories/`; until that folder has a JSON file, its card says "Not categorized yet".
+- **A new dataset's dashboard card** comes from the `dashboard` block of its metadata file, not from
+  `app/data/datasets.json` (which is generated). After adding or editing the metadata file, run
+  `python3 rstar-pipeline/processing/scripts/dashboard/import_dataset_overviews.py` and then
+  `python3 rstar-pipeline/processing/scripts/dashboard/build_datasets.py`, and commit the changed `app/` files.
 - **Check the pages in a browser.** Serve `app/` (`cd app && python3 -m http.server 3000 --bind 127.0.0.1`, run in the
   Terminal panel, since the Bash sandbox can't open ports). The built-in browser can't load a page's CSS and JS from
   disk, so always serve it; on the owner's computer the local-only `.claude/launch.json` defines `rstar-viewer`
