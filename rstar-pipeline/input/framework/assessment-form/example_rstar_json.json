@@ -1,0 +1,189 @@
+{
+  "assessmentTimestamp": "2026-11-23T23:29:37.353Z",
+  "dataset": {
+    "name": "",
+    "identifier": ""
+  },
+  "primaryDataCurator": {
+    "name": "",
+    "email": ""
+  },
+  "rStarCompositeScore": 20,
+  "triageTier": "Monitor",
+  "formula": "R* = 0.40·D + 0.30·P + 0.20·(100-RRS) + 0.10·DIRS",
+  "components": {
+    "D": {
+      "label": "Data risk",
+      "definition": "Probability of loss through technical failure, policy disruption, or infrastructure degradation. Includes storage system vulnerabilities, format obsolescence, access infrastructure dependencies, and the direct effects of program terminations or defunding. Weighted most heavily because it is the most direct signal of imminent loss.",
+      "rawScore": 0,
+      "weight": 0.4,
+      "weightedContribution": 0,
+      "scoringMethod": "rapid_assessment",
+      "justification": "",
+      "factors": {
+        "active_or_threatened_program_termination_defunding": {
+          "condition": "Active or threatened program termination/defunding",
+          "present": false,
+          "points": 0,
+          "maxPoints": 30
+        },
+        "storage_system_end_of_life_or_single_point_of_failure": {
+          "condition": "Storage system end-of-life or single point of failure",
+          "present": false,
+          "points": 0,
+          "maxPoints": 25
+        },
+        "access_infrastructure_fragile_or_unfunded": {
+          "condition": "Access infrastructure fragile or unfunded",
+          "present": false,
+          "points": 0,
+          "maxPoints": 20
+        },
+        "format_obsolescence": {
+          "condition": "Format obsolescence",
+          "present": false,
+          "points": 0,
+          "maxPoints": 15
+        },
+        "political_sensitivity": {
+          "condition": "Political sensitivity",
+          "present": false,
+          "points": 0,
+          "maxPoints": 10
+        }
+      }
+    },
+    "P": {
+      "label": "People risk",
+      "definition": "Vulnerability created when critical institutional knowledge resides in a small number of individuals. When a lead data curator retires without a documented succession plan, or a wave of RIFs eliminates the team that knows how to run a specialized processing chain, the data may still technically exist while becoming operationally inaccessible. That kind of loss is invisible to systems that only track files and metadata. P makes it visible.",
+      "rawScore": 0,
+      "weight": 0.3,
+      "weightedContribution": 0,
+      "scoringMethod": "rapid_assessment",
+      "justification": "",
+      "factors": {
+        "no_documented_succession_plan": {
+          "condition": "No documented succession plan",
+          "present": false,
+          "points": 0,
+          "maxPoints": 35
+        },
+        "key_personnel_retirement_eligible": {
+          "condition": "Key personnel retirement-eligible",
+          "present": false,
+          "points": 0,
+          "maxPoints": 25
+        },
+        "critical_undocumented_knowledge": {
+          "condition": "Critical undocumented knowledge",
+          "present": false,
+          "points": 0,
+          "maxPoints": 25
+        },
+        "single_person_is_point_of_failure": {
+          "condition": "Single person is point of failure",
+          "present": false,
+          "points": 0,
+          "maxPoints": 15
+        }
+      }
+    },
+    "RRS": {
+      "label": "Repository resilience",
+      "definition": "Robustness of the hosting institution’s data infrastructure: governance stability, redundancy, backup arrangements, distributed replication, and track record through prior funding disruptions. Because higher resilience means lower risk, it enters the formula inverted. A score of 80 on RRS becomes a contribution of 4 to R*, correctly rewarding well-governed repositories while flagging fragile ones.",
+      "rawScore": 0,
+      "weight": 0.2,
+      "weightedContribution": 20,
+      "scoringMethod": "rapid_assessment",
+      "justification": "",
+      "factors": {
+        "geographic_redundancy": {
+          "condition": "Geographic redundancy",
+          "present": false,
+          "points": 0,
+          "maxPoints": 25
+        },
+        "regular_backup_integrity_verification": {
+          "condition": "Regular backup integrity verification",
+          "present": false,
+          "points": 0,
+          "maxPoints": 20
+        },
+        "disaster_recovery_plan_tested": {
+          "condition": "Disaster recovery plan tested",
+          "present": false,
+          "points": 0,
+          "maxPoints": 20
+        },
+        "stable_institutional_funding": {
+          "condition": "Stable institutional funding",
+          "present": false,
+          "points": 0,
+          "maxPoints": 20
+        },
+        "track_record_through_prior_disruption": {
+          "condition": "Track record through prior disruption",
+          "present": false,
+          "points": 0,
+          "maxPoints": 15
+        }
+      }
+    },
+    "DIRS": {
+      "label": "Dependent infrastructure resilience",
+      "definition": "The invisible dependency layer — external infrastructure that datasets depend on but don’t control: calibration facilities, satellite ground stations, field observation networks, specialized instrumentation labs. When NOAA’s Global Monitoring Laboratory calibration services were threatened, every dataset whose quality assurance depends on those standards became more fragile immediately, regardless of its own hosting situation.",
+      "rawScore": 0,
+      "weight": 0.1,
+      "weightedContribution": 0,
+      "scoringMethod": "rapid_assessment",
+      "justification": "",
+      "factors": {
+        "calibration_facility_dependency": {
+          "condition": "Calibration facility dependency",
+          "present": false,
+          "points": 0,
+          "maxPoints": 25
+        },
+        "observation_network_or_sensor_platform_at_risk": {
+          "condition": "Observation network or sensor platform at risk",
+          "present": false,
+          "points": 0,
+          "maxPoints": 25
+        },
+        "upstream_data_supply_chain_at_risk": {
+          "condition": "Upstream data supply chain at risk",
+          "present": false,
+          "points": 0,
+          "maxPoints": 20
+        },
+        "external_processing_infrastructure_dependency": {
+          "condition": "External processing infrastructure dependency",
+          "present": false,
+          "points": 0,
+          "maxPoints": 15
+        },
+        "no_alternative_supplier": {
+          "condition": "No alternative supplier",
+          "present": false,
+          "points": 0,
+          "maxPoints": 15
+        }
+      }
+    }
+  },
+  "framework": {
+    "name": "R* Composite Priority Index",
+    "version": "2.0",
+    "authors": [
+      "S.C. Diggs",
+      "T.R. Karl",
+      "R. Keeling"
+    ],
+    "rcsReference": "https://doi.org/10.5281/zenodo.15208172",
+    "triageThresholds": {
+      "mirrorNow": ">=70",
+      "stabilizeAndMirror": "40-69",
+      "monitor": "<40"
+    }
+  }
+}

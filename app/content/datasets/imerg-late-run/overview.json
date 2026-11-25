@@ -1,0 +1,295 @@
+{
+  "schema_version": "0.1",
+  "id": "imerg-late-run",
+  "identification": {
+    "full_name": "Integrated Multi-satellitE Retrievals for GPM (IMERG) Late Run",
+    "abbreviations": [
+      "IMERG Late",
+      "IMERG-L",
+      "GPM_3IMERGHHL"
+    ],
+    "short_names": {
+      "half_hourly": "GPM_3IMERGHHL",
+      "daily": "GPM_3IMERGDL"
+    },
+    "product": "GPM IMERG Late Precipitation L3 Half Hourly",
+    "version": "V07 (V07B processing generation)",
+    "processing_level": "Level 3",
+    "project": "Global Precipitation Measurement (GPM), NASA and JAXA",
+    "doi": "10.5067/GPM/IMERG/3B-HH-L/07",
+    "doi_url": "https://doi.org/10.5067/GPM/IMERG/3B-HH-L/07",
+    "doi_note": "DOI for the half-hourly Late Run product, not the Early or Final Run",
+    "data_provider": "NASA Goddard Space Flight Center",
+    "dataset_type": "Gridded satellite-derived precipitation estimates",
+    "description": "A NASA Level-3 global precipitation dataset from the GPM mission, combining observations from many satellite instruments into gridded estimates. The Late Run is made for near-real-time use, with about 12–14 hours of latency.",
+    "doi_source": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_TechnicalDocumentation_final_230713.pdf"
+  },
+  "archives": [
+    {
+      "name": "NASA GES DISC",
+      "role": "primary",
+      "description": "Goddard Earth Sciences Data and Information Services Center; primary public archive and distribution service"
+    },
+    {
+      "name": "NASA PPS",
+      "role": "primary",
+      "description": "Precipitation Processing System; operational processing and distribution archive for GPM products"
+    },
+    {
+      "name": "NASA Earthdata",
+      "role": "access-service",
+      "description": "Discovery and access infrastructure for NASA Earth science datasets"
+    },
+    {
+      "name": "AWS Open Data Registry",
+      "role": "mirror",
+      "description": "Cloud-hosted access to the GES DISC IMERG dataset"
+    }
+  ],
+  "access_endpoints": [
+    {
+      "name": "IMERG Late Run – 30-minute data (GES DISC)",
+      "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHL_07/summary",
+      "role": "primary",
+      "type": "landing-page",
+      "purpose": "Download, subset and view metadata (half-hourly)"
+    },
+    {
+      "name": "IMERG Late Run – daily data (GES DISC)",
+      "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDL_07/summary",
+      "role": "alternative",
+      "type": "landing-page",
+      "purpose": "Download, subset and view metadata (daily)"
+    },
+    {
+      "name": "IMERG data directory (NASA GPM)",
+      "url": "https://gpm.nasa.gov/data/directory",
+      "role": "alternative",
+      "type": "catalog"
+    },
+    {
+      "name": "IMERG Late Run – PPS archive",
+      "url": "https://jsimpsonhttps.pps.eosdis.nasa.gov/imerg/",
+      "role": "alternative",
+      "type": "download",
+      "purpose": "Operational products; may need registration"
+    },
+    {
+      "name": "IMERG Late Run – AWS Open Data Registry",
+      "url": "https://registry.opendata.aws/nasa-gpm3imerghhl/",
+      "role": "alternative",
+      "type": "cloud"
+    },
+    {
+      "name": "IMERG products in NASA Giovanni",
+      "url": "https://giovanni.gsfc.nasa.gov/giovanni/#dataKeyword=IMERG",
+      "role": "alternative",
+      "type": "visualization"
+    }
+  ],
+  "access_note": "Use GES DISC to download half-hourly or daily data, subset areas and read metadata. PPS is useful for operational products and may need registration.",
+  "people": {
+    "curator": {
+      "name": "NASA Goddard Earth Sciences Data and Information Services Center (GES DISC)",
+      "organization": "NASA/GSFC/SED/ESD/TISL/GESDISC",
+      "role": "Dataset archive, curation and distribution; support through NASA Earthdata Support"
+    },
+    "leads": [
+      {
+        "name": "George J. Huffman",
+        "organization": "NASA Goddard Space Flight Center (GSFC)",
+        "role": "GPM Project Scientist; lead of the GPM Multi-satellite Algorithm Team; scientific lead for IMERG"
+      }
+    ],
+    "contributors": [],
+    "note": "George Huffman is the scientific lead; GES DISC manages the archived dataset and its distribution."
+  },
+  "instruments": {
+    "summary": "Passive microwave radiometers and sounders on the GPM constellation, plus geostationary infrared sensors",
+    "categories": [
+      {
+        "name": "Passive microwave (PMW) radiometers",
+        "type": "satellite passive microwave",
+        "role": "Main precipitation estimates"
+      },
+      {
+        "name": "Infrared (IR) sensors",
+        "type": "satellite infrared",
+        "role": "Cloud-top information used to fill gaps between microwave overpasses"
+      }
+    ],
+    "platforms": [
+      {
+        "instrument": "GMI – GPM Microwave Imager",
+        "type": "Passive microwave radiometer"
+      },
+      {
+        "instrument": "TMI – TRMM Microwave Imager",
+        "type": "Passive microwave radiometer"
+      },
+      {
+        "instrument": "SSMIS – Special Sensor Microwave Imager/Sounder",
+        "type": "Passive microwave radiometer/sounder"
+      },
+      {
+        "instrument": "AMSR2 – Advanced Microwave Scanning Radiometer 2",
+        "type": "Passive microwave radiometer"
+      },
+      {
+        "instrument": "AMSU-B – Advanced Microwave Sounding Unit-B",
+        "type": "Microwave sounder"
+      },
+      {
+        "instrument": "MHS – Microwave Humidity Sounder",
+        "type": "Microwave sounder"
+      },
+      {
+        "instrument": "ATMS – Advanced Technology Microwave Sounder",
+        "type": "Microwave sounder"
+      },
+      {
+        "instrument": "SAPHIR – Sounder for Atmospheric Profiling of Humidity in the Intertropics by Radiometry",
+        "type": "Microwave sounder"
+      }
+    ],
+    "gauge_adjustment": "Climatological (the Final Run uses monthly gauge analyses instead)",
+    "note": "A merged satellite product, not a single instrument. Microwave observations give the main estimates; infrared fills time gaps through interpolation."
+  },
+  "temporal": {
+    "start": "1998-01",
+    "start_note": "Confirmed on the NASA GPM IMERG page (gpm.nasa.gov/taxonomy/term/1415); covers the TRMM era (1998–2015) and GPM era (2014–present) through reprocessing.",
+    "end": "present",
+    "frequency": "30 minutes",
+    "other_frequencies": [
+      {
+        "frequency": "Daily",
+        "availability": "Separate derived product (GPM_3IMERGDL)"
+      },
+      {
+        "frequency": "Hourly",
+        "availability": "By summing two half-hourly values"
+      },
+      {
+        "frequency": "Monthly",
+        "availability": "By aggregation; not a standard Late Run product"
+      }
+    ],
+    "latency": "About 12–14 hours after observation",
+    "update_frequency": "New data about every 30 minutes"
+  },
+  "spatial": {
+    "coverage": "Global",
+    "extent": {
+      "lat_min": -90,
+      "lat_max": 90,
+      "lon_min": -180,
+      "lon_max": 180
+    },
+    "land_ocean": "Land and ocean",
+    "resolution": "0.1° × 0.1°",
+    "grid": {
+      "spacing_deg": 0.1,
+      "type": "Regular latitude–longitude grid",
+      "approx_km": 10
+    },
+    "note": "Near-global, with limits in a few grid boxes very close to the poles. Useful over oceans and remote areas without gauges."
+  },
+  "data_format": {
+    "format": "HDF5 (.H5); NetCDF (.nc4); GeoTIFF (.tif); PNG images (.png); OPeNDAP online access",
+    "formats": [
+      {
+        "format": "HDF5",
+        "extension": ".H5",
+        "description": "Original scientific data format"
+      },
+      {
+        "format": "NetCDF",
+        "extension": ".nc4",
+        "description": "Scientific array data with metadata"
+      },
+      {
+        "format": "GeoTIFF",
+        "extension": ".tif",
+        "description": "GIS-compatible raster format"
+      },
+      {
+        "format": "OPeNDAP",
+        "extension": "",
+        "description": "Online access: read data remotely without downloading whole files"
+      },
+      {
+        "format": "PNG",
+        "extension": ".png",
+        "description": "Visualization/image format"
+      }
+    ],
+    "note": "The formats offered depend on the download source and product.",
+    "units": ""
+  },
+  "status": {
+    "state": "Ongoing",
+    "label": "Ongoing (near real time)",
+    "evidence": [
+      "NASA continues to produce near-real-time estimates",
+      "New observations are added about every 30 minutes",
+      "The algorithm has had version updates; V07B is the latest processing generation",
+      "Historical data were reprocessed back to January 1998"
+    ]
+  },
+  "versions": [
+    {
+      "version": "V07 (V07B)",
+      "status": "current",
+      "doi": "10.5067/GPM/IMERG/3B-HH-L/07"
+    }
+  ],
+  "related_products": [
+    {
+      "name": "IMERG Final Run",
+      "difference": "Uses monthly gauge analyses; not the same product as the Late Run",
+      "dashboard_id": "imerg-final-run-v07"
+    }
+  ],
+  "references": [
+    {
+      "title": "NASA GPM – IMERG V07 Technical Documentation",
+      "url": "https://gpm.nasa.gov/resources/documents/imerg-v07-technical-documentation",
+      "type": "documentation"
+    },
+    {
+      "title": "NASA GPM – IMERG Technical Documentation (July 2023, PDF; gives the Late Run DOI)",
+      "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_TechnicalDocumentation_final_230713.pdf",
+      "type": "documentation"
+    },
+    {
+      "title": "NASA GPM – IMERG data products (record from January 1998)",
+      "url": "https://gpm.nasa.gov/taxonomy/term/1415",
+      "type": "catalog"
+    },
+    {
+      "title": "NASA GPM – Precipitation Data Directory",
+      "url": "https://gpm.nasa.gov/data/directory",
+      "type": "catalog"
+    },
+    {
+      "title": "NASA GPM – IMERG Late Run dataset information",
+      "url": "https://gpm.nasa.gov/node/3322",
+      "type": "landing-page"
+    },
+    {
+      "title": "NASA Earthdata – GPM IMERG Late Run DOI and metadata",
+      "url": "https://doi.org/10.5067/GPM/IMERG/3B-HH-L/07",
+      "type": "doi"
+    },
+    {
+      "title": "NASA GSFC – Dr. George J. Huffman biography",
+      "url": "https://science.gsfc.nasa.gov/earth/bio/george.huffman",
+      "type": "person"
+    },
+    {
+      "title": "NASA GPM – IMERG overview",
+      "url": "https://gpm.nasa.gov/data/imerg",
+      "type": "overview"
+    }
+  ]
+}

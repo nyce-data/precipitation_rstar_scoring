@@ -1,0 +1,92 @@
+# Threats to NOAA's National Centers for Environmental Information (NCEI), January 2025 to November 17, 2026
+
+**Direct answer.** Yes. NCEI faces threats in all four categories, but nothing found shows it being closed, transferred or defunded. Two threats are already in effect: staff losses (part of the budgetary category) and the retirement or degradation of products. Three are emerging: proposed budget cuts that Congress has so far rejected, a Senate-passed bill that would let NOAA keep its archive in "a successor entity" instead of NCEI, and a cloud and contractor shift across NESDIS. NCEI's core archive is still funded (about $69M in FY2026) and still named in congressional bills. **Overall confidence: moderate.** The budget figures are well documented; NCEI's staff counts and the details of NOAA's 2026 reorganization are not.
+
+## Ratings
+
+| Kind of threat | Rating | Main evidence (status) | Confidence |
+|---|---|---|---|
+| Budgetary: dollars | **Emerging** | FY2026 request $52.0M, Congress enacted $69.0M (rejected). FY2027 request $52.0M again, House $60.0M, Senate committee $70.0M (proposed). FY2027 runs on a CR at the FY2026 rate through Dec 11, 2026 | High |
+| Budgetary: staff | **Imminent** (in effect) | NCEI FTE fell from 184 (FY2024) to 140 (FY2026 enacted column). Press counts give 20 departures by Feb 28, 2025 and 58 by Aug 2025 | Moderate |
+| Operational | **Imminent** (in effect) | About 27 NCEI products retired or cut back on NESDIS's 2025 notice list. Senate says "at least 20" were decommissioned without notice. Climate archives "broken or incomplete" from late Aug 2025; GHCN-Daily is updating again as of Nov 2026. Cloud-migration delays through Nov 30, 2026 | High (retirements); moderate (archive gaps) |
+| Political | **Emerging** | S. 3923 passed the Senate Nov 10, 2026 with "or a successor entity" (not law). Project 2025's call to break up NOAA (context). No executive order or directive aimed at NCEI found | Moderate |
+| Institutional | **Emerging** | All NCEI data moving to Amazon Web Services by Spring 2027. FY2027 NESDIS shift to contractor-run operations (NCEI not named). A NOAA reorganization is mentioned but its content was not found. NCEI's director is unchanged | Low to moderate |
+
+## Budget: cuts proposed twice, rejected once
+
+- **FY2026.**
+  - The President asked for **$52.0M** for NCEI. That is $18.0M, 6 FTE and 16 positions below the FY2024 enacted $70.0M. The cut would "reduce engagement services, tailored products, and eliminate the Regional Climate Services program" ([NOAA FY2026 CJ, 2025](https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf), Control Table 4 and NESDIS-14).
+  - The House marked **$69.0M**, including $6.1M for the Regional Climate Centers ([H.Rept. 119-272](https://www.govinfo.gov/content/pkg/CRPT-119hrpt272/html/CRPT-119hrpt272.htm)). The Senate marked **$70.0M**, including at least $10M for Regional Climate Services ([S.Rept. 119-44, 2025](https://www.govinfo.gov/content/pkg/CRPT-119srpt44/html/CRPT-119srpt44.htm)).
+  - The two regional figures measure different things: the centers are one part of the broader Regional Climate Services program. Both reports name a floor for the work the request would eliminate.
+  - The enacted FY2026 joint explanatory statement (P.L. 119-74, January 2026) gives **$69.0M** for NCEI and $397.5M for NESDIS operations ([Senate Appropriations, 2026](https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf), p. 20). **High.**
+- **FY2027.**
+  - NOAA again asks for **$52.0M**, a cut of $17.807M from a $69.807M base, and again eliminates Regional Climate Services. The plan says NOAA "will continue the core mission of preserving, hosting, and providing access to its extensive environmental data archives." Most of the cut falls on contracted services: advisory services drop $11.04M and non-federal services $6.77M ([NOAA FY2027 CJ, 2026](https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf), NESDIS-26 and NESDIS-28).
+  - The House committee recommends **$60.0M** ([H.Rept. 119-652, May 2026](https://www.govinfo.gov/content/pkg/CRPT-119hrpt652/html/CRPT-119hrpt652.htm)). The Senate committee's statement of Nov 12, 2026 gives **$70.0M** ([Senate Appropriations, 2026](https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf), pp. 76–77).
+  - A continuing resolution (P.L. 119-103) holds FY2026 rates through Dec 11, 2026, with no NCEI-specific provision ([CRS R49353, 2026](https://www.everycrsreport.com/files/2026-09-17_R49353_98ddd8e7b1852b47b24e394ed7ddf6d6d53b4632.html), read via mirror). **High.**
+- **Interpretation:** if the House figure prevails, NCEI loses about 13% of its line. The bigger risk is in how the money is spent, not the appropriation itself. No FY2026 spend plan is public, so whether NCEI actually received $69M is not known.
+- **Regional Climate Centers.** NCEI runs this program. Four of the six centers shut on Apr 17, 2025 when federal funding lapsed, and reopened about a week later on stop-gap funds ([KCUR, 2025](https://www.kcur.org/news/2025-04-24/regional-climate-center-resume-operations)).
+
+## Staffing: losses already happened, but official counts are thin
+
+- NOAA's budget tables show NCEI's FTE at **184** in FY2024 and **140** in the FY2026 enacted column ([FY26 CJ](https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf); [FY27 CJ](https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf)).
+- Asheville Watchdog reported that **20** NCEI employees, about 10% of authorized staff, were fired or left on Feb 28, 2025. The count comes from anonymous sources ([Asheville Watchdog, Mar 2025](https://avlwatchdog.org/it-is-a-dark-time-trump-cuts-deeply-into-staff-of-asheville-scientists-who-maintain-worlds-largest-archive-of-environmental-records/)).
+- By Aug 2025, a former NCEI science chief put departures at **58**. He said he retired early partly because he was on a list of NCEI staff "eligible for reclassification as political employees," who could then be fired without cause. He also called the departures "about one third of the workforce" ([Asheville Watchdog, Aug 2025](https://avlwatchdog.org/top-climate-scientists-departure-is-sign-of-brain-drain-at-noaa-hub-in-asheville-and-of-deep-cuts-to-research-across-the-country/)).
+- An Asheville Citizen Times report from the Oct 2025 shutdown, read only as a WebFetch extract, says "Nearly 60 others took the resignation deal at Asheville's NCEI." That matches the 58. It also quotes the local union president: "About 95% of employees have been furloughed from National Centers for Environmental Information's 30-person staff in Asheville." The "30-person" figure conflicts with every other count and may be an error in the article or the extract. The same report says no RIFs had reached local staff ([Asheville Citizen Times via Yahoo, Oct 6, 2025](https://www.yahoo.com/news/articles/asheville-federal-workers-bare-minimum-090818131.html)).
+- Sen. Cantwell's office says staffing shortages at NCEI took data sources offline, including the billion-dollar disaster report ([Cantwell, 2025](https://www.cantwell.senate.gov/imo/media/doc/2025_appropriations_hearings.pdf)).
+- **Courts (NOAA-wide context):** the 4th Circuit's Sept 2025 ruling ended the states' suit over probationary firings ([4th Cir., 2025](https://www.ca4.uscourts.gov/opinions/251248.P.pdf)). In Dec 2025 NOAA offered reinstatement to 40 fired employees; whether any were NCEI staff was not found ([Civil Service Archive, 2025](https://civilservicearchive.org/update/441), an aggregator).
+- **Confidence: moderate.** The FTE figures are official. The departure counts come from one outlet relying on anonymous and former staff.
+
+## Operations: retirements and degraded service are in effect
+
+- **Retirements.** NESDIS's 2025 Notice of Changes lists about 27 NCEI items retired or cut back from April 2025 ([NESDIS, 2025](https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes)):
+  - **Billion-Dollar Weather and Climate Disasters:** no updates beyond 2024; the 1980–2024 archive is kept ([NESDIS, 2025](https://www.nesdis.noaa.gov/news/billion-dollar-weather-and-climate-disasters)).
+  - **Snow and ice products:** cut to "Basic" service on May 5, 2025 ([NSIDC, 2025](https://nsidc.org/data/user-resources/data-announcements/user-notice-level-service-update-data-products)).
+  - **Marine and geophysics portals:** retired, with data kept online or available only by archive request ([UNOLS, 2025](https://www.unols.org/news/agency-updates/noaa-decommission-number-data-products-2025)).
+  - **2026:** WOCE is discontinued, and the geomagnetic models HDGM and HDGM-RT were handed to a private licensee ([NESDIS notices, 2026](https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes)).
+- **Congress objected.** The Senate's FY2026 report, carried into the enacted law, says NOAA "has decommissioned at least 20 datasets, products and catalogs" without notice. It directs NOAA to restart them and report within 90 days ([S.Rept. 119-44](https://www.govinfo.gov/content/pkg/CRPT-119srpt44/html/CRPT-119srpt44.htm)). The Senate's FY2027 statement says it still "awaits the update" ([Senate, 2026](https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf)). No product restored by NOAA was found.
+- **Degraded service.**
+  - Since late August 2025, the Global Summary of the Day, GHCN-Daily and GHCN-Monthly have been "broken or incomplete," per Berkeley Earth ([Berkeley Earth, Oct 2025](https://berkeleyearth.org/october-2025-temperature-update/)). There is counterevidence: NCEI's own version file shows GHCN-Daily was fully reprocessed on Nov 6, 2026 and updated on Nov 14, 2026 ([NCEI ghcnd-version.txt](https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-version.txt)). So GHCN-Daily is being updated again. Whether it is complete, and what the status of GSOD and GHCN-Monthly is, was not confirmed.
+  - Berkeley Earth puts the station data at about 20,000 stations a month normally, about half that in Aug–Sep 2025, and about 7,500 in October 2025.
+  - NCEI's operating-system upgrade page says ISD, LCDv1 and GSOD reached end of life on Aug 29 (2025 inferred; the page gives no year). The Image and Publications System was decommissioned the same day, and GSOD's replacement is still "in development" ([NCEI](https://www.ncei.noaa.gov/operating-system-upgrade-outage)).
+  - NCEI's own pages also report and, as of today, "delayed data archival and slower update cycles" during the cloud migration, plus a network outage and slow WODSelect ([NCEI Alerts, 2026](https://www.ncei.noaa.gov/alerts)).
+  - Monthly climate press briefings ended after February 2025 ([NCEI](https://www.ncei.noaa.gov/access/monitoring/monthly-report/briefings/2024); [E&E News, 2025](https://www.eenews.net/articles/noaa-scraps-monthly-climate-briefings-citing-staff-shortages)).
+- **Counterevidence and rescue:**
+  - The Storm Events Database moved to a new app with the same data ([NESDIS, 2026](https://www.nesdis.noaa.gov/news/location-change-storm-events-database)).
+  - Climate Central relaunched the billion-dollar database on Oct 22, 2025 ([Climate Central, 2025](https://www.climatecentral.org/climate-matters/billion-dollar-disasters-oct-2025)). A Senate bill to restore it under NOAA had not advanced ([Grist, 2025](https://grist.org/extreme-weather/trump-killed-a-crucial-disaster-database-this-nonprofit-just-saved-it/)).
+
+## Political and institutional: wording and structure, not orders
+
+- **S. 3923.** The Senate passed it by unanimous consent on Nov 10, 2026, and the House received it Nov 12 ([bill status](https://www.govinfo.gov/bulkdata/BILLSTATUS/119/s/BILLSTATUS-119s3923.xml)). The Senate Commerce Committee says passage "reflects a bicameral agreement" and that the House is expected to send it to the President before the end of the 119th Congress ([Senate Commerce, 2026](https://www.commerce.senate.gov/press/rep/release/senate-unanimously-approves-bipartisan-bicameral-comprehensive-weather-forecasting-bill/)). That makes enactment of its wording likely.
+  - It would require NOAA to "maintain the National Centers for Environmental Information, or a successor entity," as the long-term archive ([S. 3923 ES](https://www.govinfo.gov/content/pkg/BILLS-119s3923es/html/BILLS-119s3923es.htm)).
+  - The earlier House bill H.R. 3816 names NCEI without "successor entity" and has only been referred to committee ([H.R. 3816](https://www.govinfo.gov/content/pkg/BILLS-119hr3816ih/html/BILLS-119hr3816ih.htm)).
+  - **Interpretation:** the bill writes NCEI's archive role into law, which protects it. It also allows that role to move to another entity. No source explains the change in wording.
+- **Executive actions.** No executive order, Commerce directive or Federal Register notice aimed at NCEI was found (a Federal Register search returned 9 documents, none of them about NCEI).
+  - Commerce's Gold Standard Science plan (Aug 2025) says NOAA "will leverage" NCEI for public access ([Commerce, 2025](https://www.commerce.gov/sites/default/files/2025-08/Report-to-OSTP-on-GSS-Implementation.pdf)).
+  - NOAA's notice retiring the billion-dollar product cited "evolving priorities, statutory mandates, and staffing changes" ([E&E News, 2025](https://www.eenews.net/articles/heres-where-the-trump-team-is-scrubbing-climate-data/)).
+  - **Context:** Project 2025 said NOAA "should be broken up and downsized" and that its information services "could be provided commercially," without naming NCEI ([Heritage, 2023](https://static.project2025.org/2025_MandateForLeadership_CHAPTER-21.pdf)).
+- **Institutional changes.**
+  - NESDIS is moving all NCEI data from servers in Asheville and Boulder to Amazon Web Services through Spring 2027 ([NCEI, 2026](https://www.ncei.noaa.gov/news/cloud-migration)).
+  - The FY2027 request cuts NESDIS by 5.4% ($162M), including $47.8M from shifting satellite operations toward private contractors. NCEI is not named ([House Science charter, 2026](https://republicans-science.house.gov/_cache/files/6/2/62ab6dcc-da12-4a11-add5-dc8cec492630/CA20681883AEB28A5CF5F9B4AD3D027EEE3EF877E96FC71932EC163D246C1A4F.04.28.26-fy27-noaa-budget-hearing-charter.pdf)).
+  - GSA listed NCEI's Asheville headquarters building for disposal in March 2025 and pulled the list; its current status was not found ([NC Newsline via Wayback, 2025](https://web.archive.org/web/20250511132132/https://ncnewsline.com/2025/03/07/north-carolina-federal-buildings-doge-cuts/)).
+  - NCEI's director, Deke Arndt, is still listed ([NCEI](https://www.ncei.noaa.gov/about-us)).
+
+## Where sources disagree
+
+- **NESDIS FY2027 request.** The House Science charter gives $1.66B (−5.4%). NOAA's CJ discretionary table gives $1,576,473K against $1,666,074K enacted in FY2026. The difference is probably one of scope (which accounts each counts), but it was not resolved. NCEI's own line ($52.0M) is the same in both.
+- **NCEI's size.** Asheville Watchdog counts 177 people on board, while the CJ gives 202 positions and 184 FTE for FY2024. These are different measures, not a conflict.
+
+## Gaps
+
+- **FY2026 spend:** whether NCEI got its $69M is unknown. NOAA keeps the FY2026 spend plan, which is not public; Congress or a records request could get it.
+- **Staff counts:** no official NCEI headcount was found. NOAA would hold it, and the FY2028 budget justification should restate FY2026 FTE.
+- **NOAA's 2026 reorganization:** its content and whether it touches NCEI are not known. The Bloomberg article of 2026-03-05 is paywalled.
+- **Climate archives:** GHCN-Daily is updating again, and GSOD has reached end of life with its replacement in development. Whether GHCN-Monthly was fixed, and whether station counts recovered, was not found. NCEI's dataset pages and Berkeley Earth's monthly notes are the places to check.
+- **S. 3923:** House action is pending.
+- **Pages to check by hand:** `check-by-hand.md` lists 4 pages that couldn't be read, most important first: the Bloomberg article on the reorganization, the House Science Democrats' letter on NOAA leases, Commerce's shutdown plan page and EDGI's report.
+- **Sites to trust:** the sandbox refused 11 hosts, listed in `sites-to-trust.md`. You can decide whether to add any of them to the allowed domains.
+
+## Sources
+
+NOAA FY2026 and FY2027 Congressional Justifications; S.Rept. 119-44; H.Rept. 119-272; H.Rept. 119-652; FY2026 CJS joint explanatory statement; Senate FY2027 CJS explanatory statement; CRS R49353 (read via EveryCRSReport mirror); S. 3923 ES and bill status; H.R. 3816; NESDIS 2025 and 2026 Notices of Changes; NSIDC notice; NCEI Alerts, cloud migration and operating-system upgrade pages; NCEI About page; UNOLS; Berkeley Earth (Oct 2025); Asheville Watchdog (Mar and Aug 2025); Cantwell fact sheet; 4th Circuit opinion No. 25-1248; Civil Service Archive (aggregator); KCUR; Climate Central; Grist; E&E News (briefings article read as a WebFetch extract; data-scrubbing article); Commerce Gold Standard Science plan; Project 2025 chapter 21; House Science FY2027 charter; NC Newsline (Wayback copy).
+
+Saved in [web_search_results/2026-11-17_noaa-ncei-threats/](web_search_results/2026-11-17_noaa-ncei-threats/): this answer, `research-record.json`, `method.md`, `check-by-hand.md` and `sites-to-trust.md`.

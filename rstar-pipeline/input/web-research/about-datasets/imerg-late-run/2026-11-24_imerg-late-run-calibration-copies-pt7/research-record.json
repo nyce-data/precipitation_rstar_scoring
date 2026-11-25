@@ -1,0 +1,2346 @@
+{
+ "question": "Using the earlier runs' records on the IMERG Late Run and NASA's satellite precipitation run: who maintains the Late Run's calibration today (X-CAL tables, L1C ATBD, climatological gauge calibration, GPCC V2025, a backup if GMI or DPR stopped, the MetOp-C calibration-file error), what it ingests now that SSMIS, NOAA AMSR2 and S-NPP ATMS feeds have ended (AMSR3, JMA forecast, Autosnow, GEOS FP vs FP-IT, Meteosat-12 in CPC's merged IR), what could replace its inputs or the dataset itself for near-real-time users, and which of its copies are current (PPS retention, copies outside PPS and GES DISC), rated against DIRS-1, DIRS-3, DIRS-5 and RRS-1.",
+ "tier": "deep",
+ "tier_reason": "deep: dispute criterion (feeds ended in 2026, inputs restructured) and many dimensions; user limits 40 min / 320k",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Calibration: who maintains the X-CAL tables (X-CAL WG, Berg/CSU, GSICS), funding, current versions; current L1C ATBD; whether the Late Run's climatological gauge calibration is frozen since the V07 Final Run ended (2025-09-30) and how GPCC V2025 reaches it; what would calibrate IMERG if GMI or DPR stopped; whether NRT MetOp-C GPROF has the MetOp-B calibration-file error (PPS, 2026-11-20).",
+   "status": "uncertain",
+   "source_ids": [
+    "s31",
+    "s22",
+    "s29",
+    "s23",
+    "s25",
+    "s28",
+    "s30",
+    "s26",
+    "s52",
+    "s27",
+    "s24",
+    "s53"
+   ],
+   "remaining_gap": "X-CAL funding not found; whether NRT MetOp-C has the calibration-file error and whether Late coefficients changed after 2025-09-30 are unpublished (PPS help desk or Late file headers)."
+  },
+  {
+   "id": "q2",
+   "question": "Inputs: what PPS's NRT stream ingests since SSMIS (2026-09-30), NOAA AMSR2 (2026-09-02) and S-NPP ATMS (2026-11-02) ended; AMSR3 in the Late Run; JMA forecast input for phase; Autosnow in the V07 Late Run; GEOS FP vs FP-IT end on 2026-05-31; CPC merged IR and Meteosat-12.",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s18",
+    "s19",
+    "s20",
+    "s14",
+    "s2",
+    "s54",
+    "s5",
+    "s6",
+    "s4",
+    "s3",
+    "s53",
+    "s7",
+    "s8",
+    "s16",
+    "s55",
+    "s11",
+    "s12",
+    "s25",
+    "s34"
+   ],
+   "remaining_gap": "What PPS NRT ingests after the 2026 losses, AMSR3 and Autosnow version in the Late Run, and Meteosat-12 in GPM_MERGIR are unpublished; Late file headers (PPS sign-up) would settle them."
+  },
+  {
+   "id": "q3",
+   "question": "Alternatives: substitutes for CPC merged IR and GMAO GEOS FP fields; datasets that could replace the Late Run for near-real-time users, with latency, coverage and status.",
+   "status": "uncertain",
+   "source_ids": [
+    "s37",
+    "s30",
+    "s35",
+    "s40",
+    "s41",
+    "s42",
+    "s50",
+    "s39",
+    "s47",
+    "s46",
+    "s48"
+   ],
+   "remaining_gap": "GSMaP NRT/NOW status read only from a CPC page and snippets (JAXA hosts refused/404); model and GEO-mosaic substitutes not searched."
+  },
+  {
+   "id": "q4",
+   "question": "Copies: how long PPS keeps Late Run files, and which copies of the Late Run outside PPS and GES DISC are current.",
+   "status": "uncertain",
+   "source_ids": [
+    "s34",
+    "s33",
+    "s44",
+    "s43",
+    "s45",
+    "s38"
+   ],
+   "remaining_gap": "Hosts outside the allowed domains not checked; GIBS layer source run not stated."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://pps.gsfc.nasa.gov/",
+   "fetched_url": null,
+   "title": "PPS (Precipitation Processing System) home page, news/notices table",
+   "author_org": "NASA GSFC Precipitation Processing System",
+   "published": "undated page, newest notice 11/20/2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_home_20261124.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "The 9/30/2026 notice on the page concerns the GPROF precipitationYesNoFlag bug, not SSMIS. NOT PRESENT: any notice about SSMIS ending in NRT, S-NPP ATMS, NOAA AMSR2 NRT, AMSR3 in NRT/IMERG, or an NRT sensor list.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://pps.gsfc.nasa.gov/Documents/L2_GPROF_V08B_Data_Release_New_WSFM1_MWI_L1_L2_and_GOSAT_GW_AMSR3_L2_L3%20Products.txt",
+   "fetched_url": null,
+   "title": "L2 GPROF V08B Data Release and New WSFM1 MWI L1-L2 and GOSAT-GW AMSR3 L2-L3 Products (Details of 10/28/2026 notice)",
+   "author_org": "NASA PPS",
+   "published": "2026-10-29 (corrects text posted 2026-10-28)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_gprof_v08b_amsr3_20261028.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "NOT PRESENT: NRT, IMERG Early/Late, SSMIS, AMSR2, ATMS. Does not say whether AMSR3 enters the Late Run.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://pps.gsfc.nasa.gov/Documents/PPS_Temporarily_Halting_GPM_V08_STD_L2_L3_GPROF.txt",
+   "fetched_url": null,
+   "title": "PPS is Temporarily Halting GPM V08 STD L2-L3 GPROF data and will rollback GPROF data in production from 2026-08-18 to Current",
+   "author_org": "NASA PPS Helpdesk",
+   "published": "2026-09-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_autosnow_halt_20260918.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Applies to STD (production) V08 GPROF, not NRT and not IMERG V07 Late; NOT PRESENT: NRT, IMERG. Does not say which Autosnow version the NRT GPROF or IMERG V07 Late Run reads.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://ospo.noaa.gov/data/messages/2026/08/MSG_20260819_1630.html",
+   "fetched_url": null,
+   "title": "Topic: NCCF Product Release 1.26-4.2 (Update #2)",
+   "author_org": "NOAA OSPO",
+   "published": "2026-08-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_autosnow_release_20260819.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "The notice itself does not name the version v1r1 or say AMSR3 is an Autosnow input (that comes from the PPS 18 Sep notice); NOT PRESENT: IMERG, GPM, PPS.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_TechnicalDocumentation_final_230713.pdf",
+   "fetched_url": null,
+   "title": "IMERG Technical Documentation (13 July 2023)",
+   "author_org": "Huffman et al., NASA GSFC",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_techdoc.txt",
+   "retrieved": "2026-11-18 (earlier run)",
+   "limitations": "Dated July 2023; no Autosnow version (v1r0/v1r1) given; local file's PDF URL is from search results, the .txt was saved by the 2026-11-18 run.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://gpm.nasa.gov/resources/documents/imerg-v07-atbd",
+   "fetched_url": null,
+   "title": "IMERG Algorithm Theoretical Basis Document Version 07 (Aug 2026 revision)",
+   "author_org": "Huffman et al., NASA GSFC",
+   "published": "2026-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-18 (earlier run)",
+   "limitations": "Text at l.1239-1240 reads 'for the Early and Final Runs, the PLP is estimated using JMA Forecast data' (apparently a typo for Early and Late, contradicting its own table). No Autosnow version (v1r0/v1r1) and no statement of JMA forecast status in 2026.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://gmao.gsfc.nasa.gov/operations/status.php",
+   "fetched_url": null,
+   "title": "GMAO Current Production Status",
+   "author_org": "NASA GMAO",
+   "published": "live page, Last Updated 11/24/2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gmao_operations_status_20261124.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Absence of FP-IT from the table is not an end notice. NOT PRESENT: GEOS FP-IT, any end date.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://gmao.gsfc.nasa.gov/geos-system-news/aerosol-updates-in-the-geos-fp-upgrade-to-geos-5445/",
+   "fetched_url": null,
+   "title": "GEOS Forward Processing (GEOS-FP) Upgrade on November 18, 2026",
+   "author_org": "NASA GMAO",
+   "published": "2026-10-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gmao_geosfp_upgrade_nov2026.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "NOT PRESENT: FP-IT, any end date, IMERG.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://gmao.gsfc.nasa.gov/geos-system-news/",
+   "fetched_url": null,
+   "title": "GMAO - GEOS System News (list)",
+   "author_org": "NASA GMAO",
+   "published": "list page, newest item published 2026-10-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gmao_system_news.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "NOT PRESENT: any FP-IT discontinuation notice (latest FP-IT items are 2019-2020).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://gmao.gsfc.nasa.gov/gmao-products/geos-fp-it/geos-5-fp-it-product-details_geos-fp-it/",
+   "fetched_url": null,
+   "title": "GMAO - GEOS-5 FP-IT Product Details",
+   "author_org": "NASA GMAO",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gmao_geos_fpit_details.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated static page; may not have been updated. NOT PRESENT: end date, GEOS-IT replacement statement. The parent page gmao_geos_fpit_page.txt holds only links.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPM_MERGIR",
+   "fetched_url": null,
+   "title": "CMR collection record: NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR)",
+   "author_org": "NASA GES DISC (via CMR)",
+   "published": "record retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cmr_gpm_mergir.json",
+   "retrieved": "2026-11-24",
+   "limitations": "A metadata abstract may lag operations (it does list GOES-19 and Himawari-9). NOT PRESENT: Meteosat-12, any switch date at 0°.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.cpc.ncep.noaa.gov/products/global_precip/html/README",
+   "fetched_url": null,
+   "title": "CPC global_precip README (merged 4-km IR)",
+   "author_org": "NOAA CPC",
+   "published": "undated (old)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cpc_global_precip_readme.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Clearly not maintained (Meteosat-7 retired 2017); NOT PRESENT: Meteosat-12. The companion page cpc_merged_ir_fullres.txt is also stale (GMS-5, GOES-8, Meteosat-7/5).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.full_res.shtml",
+   "fetched_url": null,
+   "title": "CPC Monitoring and Data - Full-resolution IR Data",
+   "author_org": "NOAA CPC",
+   "published": "undated (old)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cpc_merged_ir_fullres.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Stale page; NOT PRESENT: Meteosat-10/11/12.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://gpm.nasa.gov/data/sources/pps-nrt",
+   "fetched_url": null,
+   "title": "PPS Near Real-time | NASA GPM",
+   "author_org": "NASA GPM",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpm_pps_nrt_page.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "NOT PRESENT: SSMIS, ATMS, AMSR2, AMSR3, MWI, MHS sensor list or 2026 status.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/CPC-4kmIR-Sats.pdf",
+   "fetched_url": null,
+   "title": "Geo-IR satellites contained in the Merged 4-km IR Tb dataset provided by NOAA/NWS/CPC (GPM_MERGIR documentation, linked from the CMR record)",
+   "author_org": "NASA GES DISC / NOAA CPC",
+   "published": "2025-04-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gesdisc_cpc_4kmir_sats.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Predates Meteosat-12 prime service (June 2025) and has not been updated since; the text table and Table 12 disagree on the 0° satellite (Meteosat-11 vs MSG-3). NOT PRESENT: Meteosat-12, any 2026 change.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://gmao.gsfc.nasa.gov/gmao-products/geos-it/",
+   "fetched_url": null,
+   "title": "GMAO - Goddard Earth Observing System (GEOS) for Instrument Teams (GEOS-IT)",
+   "author_org": "NASA GMAO",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gmao_geos_it_page.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "NOT PRESENT: FP-IT end date (e.g. 31 May 2026), IMERG. IMERG uses GEOS FP (not FP-IT) per the ATBD, so FP-IT ending would not by itself affect the Late Run.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/gpm_anomalous.html",
+   "fetched_url": null,
+   "title": "PPS GPM Spacecraft Data Discrepancies and Anomalous Events Table",
+   "author_org": "NASA PPS",
+   "published": "Last Revised: September 25, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_gpm_anomalous_table.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Covers the GPM Core Observatory only (the calibrator); partner sensors are on a separate PPS table not read. NOT PRESENT: NRT/IMERG impact.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/partner_anomalous.html",
+   "fetched_url": null,
+   "title": "PPS Partner Satellite - Data Discrepancies and Anomalous Events Table (with per-sensor F17_SSMIS and NPP_ATMS empty-granule pages)",
+   "author_org": "NASA PPS",
+   "published": "Last Revised: 10 October 2024",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_partner_anomalous_table.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Not maintained since 2024; NOT PRESENT: AMSR3, WSFM1 MWI, NOAA21 ATMS, any 2025-2026 entry. Local per-sensor copies: work/raw/sa2/pps_f17_ssmis_empty.txt and work/raw/sa2/pps_npp_atms_empty.txt.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/Err_Rpts/F17_SSMIS_EmptyGranules.html",
+   "fetched_url": null,
+   "title": "Empty Granules for F17_SSMIS (PPS)",
+   "author_org": "NASA PPS",
+   "published": "undated; newest row 2024-10-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_f17_ssmis_empty.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Not maintained after 2024; NOT PRESENT: 30 Sep 2026 feed loss.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/Err_Rpts/NPP_ATMS_EmptyGranules.html",
+   "fetched_url": null,
+   "title": "Empty Granules for NPP_ATMS (PPS)",
+   "author_org": "NASA PPS",
+   "published": "undated; newest row 2024-09-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_npp_atms_empty.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Not maintained after 2024; NOT PRESENT: 2026 outages or end.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/Err_Rpts/GCOMW1_AMSR2_EmptyGranules.html",
+   "fetched_url": null,
+   "title": "Empty Granules for GCOMW1_AMSR2 (PPS)",
+   "author_org": "NASA PPS",
+   "published": "undated; newest row 2020-03-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_gcomw1_amsr2_empty.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Not maintained; NOT PRESENT: any 2026 entry, AMSR3.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/L1C_ATBD_GPM_V08.pdf",
+   "fetched_url": null,
+   "title": "GPM Level 1C Algorithms ATBD Version 1.11",
+   "author_org": "NASA GSFC Code 610.2/PPS and GPM Intercalibration (X-CAL) Working Group",
+   "published": "August 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/l1c_atbd_gpm_v08.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Document names the X-CAL Working Group but no individual maintainer or funding; Berg/CSU NOT PRESENT on cover",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/L1C_ATBD_v1.9_GPMV07.pdf",
+   "fetched_url": null,
+   "title": "GPM Level 1C Algorithms ATBD Version 1.9 (GPM V07)",
+   "author_org": "NASA GSFC Code 610.2/PPS and GPM Intercalibration (X-CAL) Working Group",
+   "published": "April 2022",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/l1c_atbd_v1.9.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Only cover/TOC read in this file",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://pps.gsfc.nasa.gov/Documents/PPS_Will_Reprocess_All_METOPC_GPROF_Data.txt",
+   "fetched_url": null,
+   "title": "PPS Will Reprocess All METOPC GPROF Data",
+   "author_org": "NASA GSFC PPS",
+   "published": "2026-11-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_metopc_gprof_reprocess.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Notice silent on whether NRT V08 MetOp-C (used by IMERG Late hybrid) shares the bug; MHS not named",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://gpm.nasa.gov/sites/default/files/2026-08/IMERG_V07_ATBD_final_260813.pdf",
+   "fetched_url": null,
+   "title": "IMERG V07 ATBD (2026-08 copy)",
+   "author_org": "NASA GSFC (G.J. Huffman et al.)",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Freeze after 2025-09-30 Final end NOT PRESENT; whether coefficients updated would need Late Run file headers (PPS sign-up). URL is the earlier run's source URL as recorded there",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://opendata.dwd.de/climate_environment/GPCC/html/gpcc_precipitation_analysis_monthly_v2025_doi_download.html",
+   "fetched_url": null,
+   "title": "GPCC Precipitation Analysis Monthly Version 2025 DOI download page",
+   "author_org": "Deutscher Wetterdienst (DWD) GPCC",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/dwd_gpcc_monthly_v2025_extract.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "WebFetch extract (raw fetch blocked by proxy); IMERG/GPM NOT PRESENT",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://gpm.nasa.gov/data/news/imerg-v08-transition-schedule",
+   "fetched_url": null,
+   "title": "IMERG V08 Transition Schedule",
+   "author_org": "NASA GPM",
+   "published": "2026-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_v08_transition.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Gauge-calibration freeze NOT PRESENT; overlaps earlier runs' DPR-GMI climatological finding",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://gpm.nasa.gov/sites/default/files/2024-12/IMERG_V07_ReleaseNotes_241126.pdf",
+   "fetched_url": null,
+   "title": "IMERG V07 Release Notes",
+   "author_org": "NASA GSFC (G.J. Huffman et al.)",
+   "published": "2024-11-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_v07_releasenotes_241126.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Dated Nov 2024, before the Final Run ended; GPCC V2025 NOT PRESENT",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://web.archive.org/web/20250523022002/https://gsics.atmos.umd.edu/bin/view/Development/Microwave-Deliverable",
+   "fetched_url": null,
+   "title": "Microwave-Deliverable (GSICS Wiki), archived copy",
+   "author_org": "GSICS Research Working Group, Microwave Sub-Group (page edited by ManikBali)",
+   "published": "2019-01-16 (page edit); tables dated 2018-12-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gsics_mw_deliverable_archive.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Archived 2025-05-23 copy (live host refused); funding NOT PRESENT; V07/V08 tables NOT PRESENT",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_TechnicalDocumentation_final.pdf",
+   "fetched_url": null,
+   "title": "IMERG V07 Technical Documentation",
+   "author_org": "NASA GSFC (G.J. Huffman et al.)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_techdoc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Copy dated 13 July 2023; does not mention V2025 or the Final Run's end",
+   "found_by": [
+    "sa1",
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/rachael.a.kroodsma",
+   "fetched_url": null,
+   "title": "Rachael Ann Kroodsma - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC Sciences and Exploration Directorate",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gsfc_bio_kroodsma.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Page undated; funding NOT PRESENT; Berg NOT PRESENT",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://www.nationalacademies.org/cdn/materials/a175298a-2c27-49b1-991f-41000e915647",
+   "fetched_url": null,
+   "title": "Earth Science Division Update (slides)",
+   "author_org": "NASA Earth Science Division (Karen St. Germain), posted by the National Academies",
+   "published": "2026-03-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nasem_nasa_hq_briefing_2026-05.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Raw fetch refused by proxy (403); PDF taken from the WebFetch binary save and converted with pdftotext; dated March 2026, not May; graphics-only content not extracted; X-CAL NOT PRESENT",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.json?keyword=IMERG%20Late&page_size=50",
+   "fetched_url": null,
+   "title": "NASA CMR collection search, keyword IMERG Late",
+   "author_org": "NASA ESDIS (CMR)",
+   "published": "live catalog, retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cmr_imerg_late.json/3a32305fc65870a9.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Keyword search returned 7 collections (Late HH and daily, Early HH and daily, Final HH, daily, monthly), all from provider GES_DISC; no collection from any other data center (NCAR, NOAA, JAXA, ECMWF, IRI) appeared. PPS's own jsimpson NRT holdings and GIS products are not CMR collections in this result. Cloud copy is the GES DISC Earthdata Cloud copy, same provider.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/README.GIS.pdf",
+   "fetched_url": null,
+   "title": "The IMERG multi-satellite precipitation estimates reformatted as 2-byte GeoTIFF files for display in a GIS (README.GIS)",
+   "author_org": "NASA GSFC PPS (Owen Kelley)",
+   "published": "2023-06-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_readme_gis.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Dated 27 June 2023; no 2026 retention statement found. Says nothing on whether superseded versions are kept elsewhere.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://ftp.cpc.ncep.noaa.gov/precip/CMORPH2/CMORPH2NRT/readme_CMORPH2x_NRT.txt",
+   "fetched_url": null,
+   "title": "readme_CMORPH2x_NRT.txt",
+   "author_org": "NOAA NWS NCEP CPC (Pingping Xie, Shaorong Wu)",
+   "published": "file dated 28-Feb-2023 (directory listing)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cpc_cmorph2_nrt_readme.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "README dated Feb 2023. CMORPH2 depends on the same kind of GEO IR and PMW inputs as IMERG (IR source not named as CPC merged IR here). Uses CPC infrastructure, as does IMERG's merged IR.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://ftp.cpc.ncep.noaa.gov/precip/CMORPH2/CMORPH2NRT/DATA/",
+   "fetched_url": null,
+   "title": "Index of /precip/CMORPH2/CMORPH2NRT/DATA (and parent listing)",
+   "author_org": "NOAA CPC",
+   "published": "live listing, retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/cpc_cmorph2_listing_extract.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "A folder's modified date changes only when an entry is added to it (a new month folder), so 17-Jul-2026 suggests the newest month folder was created in July 2026; whether daily files after July exist was NOT checked (month-level listing not opened). Coordinator should check DATA/2026/ for Aug-Nov folders.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_V07_ATBD_final_230712.pdf",
+   "fetched_url": null,
+   "title": "IMERG ATBD (August 2026 version as saved by earlier run)",
+   "author_org": "NASA GPM IMERG team (Huffman et al.)",
+   "published": "2026-08 (per earlier run file name)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Substitute for real-time CPC merged IR: NOT PRESENT. Substitute for GEOS FP if it stops: NOT PRESENT. URL is the location the earlier run gives for the ATBD; the coordinator should confirm the exact 2026 URL from the pt1 run's record.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://www.earthdata.nasa.gov/learn/tutorials/view-imerg-precipitation-imagery-worldview",
+   "fetched_url": null,
+   "title": "View IMERG Precipitation Imagery in Worldview",
+   "author_org": "NASA Earthdata",
+   "published": "NOT PRESENT in extract",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/earthdata_worldview_imerg.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Whether Worldview/GIBS shows Late Run imagery: NOT PRESENT. Imagery is not a data copy of the Late Run files.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://hsaf.meteoam.it/sites/default/files/quality_assessment/SAF_HSAF_SeSp_1_15.pdf",
+   "fetched_url": null,
+   "title": "H SAF Service Specification, Issue 1.15",
+   "author_org": "EUMETSAT H SAF",
+   "published": "2025-11-03 (issue 1.15; PDF metadata modified 2026-01-22)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/hsaf_sesp_1_15.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Regional (Meteosat disk, approx. Europe/Africa/Atlantic, plus IODC for H63/H90), not global; it cannot replace a global product alone. H64 coverage and timeliness not read. Retrieved via WebFetch binary save then pdftotext.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://ftp.cpc.ncep.noaa.gov/precip/CMORPH2/CMORPH2NRT/DATA/2026/202611/",
+   "fetched_url": null,
+   "title": "Index of CMORPH2NRT/DATA/2026/202611",
+   "author_org": "NOAA CPC",
+   "published": "live listing, retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/cpc_cmorph2_202611_extract.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Folder dates only; file contents not opened. Shows CMORPH2 NRT is in production as of 2026-11-24.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PDIRNow/PDIRNowdaily/PDIRNow_readme.txt",
+   "fetched_url": null,
+   "title": "PDIRNow_readme.txt",
+   "author_org": "UC Irvine CHRS (Dan Braithwaite)",
+   "published": "2020-10-02, updated 2020-12-08, corrected 2021-04-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_pdirnow_readme.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Latency: NOT PRESENT. IR source for CHRS's own PDIR-Now: NOT PRESENT. Readme from 2021.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PDIRNow/PDIRNowdaily/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PDIRNow/PDIRNowdaily",
+   "author_org": "UC Irvine CHRS",
+   "published": "live listing, retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_pdirnow_daily_listing.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Server times are local (time zone not stated). The 261123 file dated 2026-11-23 16:12 is before the day ended, so it may be a partial-day file. Hourly folder latency not checked.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://iri.columbia.edu/resources/data-library/sunset/",
+   "fetched_url": null,
+   "title": "IRI Data Library sunset notice",
+   "author_org": "IRI, Columbia University",
+   "published": "2025-11-11, updated 2026-05-21 and 2026-08-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/iri_sunset_extract.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Mention of the IMERG_Late copy comes from a search result title (\"NASA GES_DISC GPM_L3 v06 IMERG_Late daily\"), V06 only, cached coverage to 13 Apr 2024 per search tool; the IRIDL page itself was not fetched, so whether it is still online on 2026-11-24 is NOT checked.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://gdex.ucar.edu/datasets/d731000/",
+   "fetched_url": null,
+   "title": "NSF NCAR GDEX Dataset d731000: GPM IMERG Final Precipitation L3 Half Hourly 0.1 x 0.1 V07",
+   "author_org": "NSF NCAR GDEX",
+   "published": "live page, retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gdex_d731000.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Late Run copy at GDEX: NOT PRESENT on this page; full GDEX catalog not searched for Late.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://iridl.ldeo.columbia.edu/SOURCES/.NASA/.GES_DISC/.GPM_L3/index.html",
+   "fetched_url": null,
+   "title": "IRI Data Library GPM_L3 (redirected to sign-in page)",
+   "author_org": "IRI, Columbia University",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "unavailable",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/iridl_gpm_l3.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Did not sign in (rule). Whether the V06 IMERG_Late copy still exists: NOT checked. It was V06 per search result title, not the current V07.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s46",
+   "url": "https://www.star.nesdis.noaa.gov/smcd/emb/ff/HydroEst.php",
+   "fetched_url": null,
+   "title": "STAR Satellite Rainfall Estimation - Hydro-Estimator",
+   "author_org": "NOAA NESDIS STAR",
+   "published": "notice February 2025; page modified 11 May 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/star_hydroest.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "IR-only (GEO) estimate; ERR page not read; AWS host out of scope (not fetched). Whether GHE is still updated in Nov 2026: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://www.star.nesdis.noaa.gov/smcd/emb/ff/SCaMPR.php",
+   "fetched_url": null,
+   "title": "STAR Satellite Rainfall Estimation - Enterprise Rain Rate (SCaMPR)",
+   "author_org": "NOAA NESDIS STAR",
+   "published": "page modified 11 May 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/star_err_scampr.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Latency for ERR in minutes is stated for IR data generally, not as an ERR product figure. Depends on CPC MWCOMB, the same CPC centre as IMERG merged IR. AWS bucket not fetched (out of scope).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://www.cpc.ncep.noaa.gov/products/janowiak/gsmap_description.html",
+   "fetched_url": null,
+   "title": "CPC: Global Precipitation Monitoring - GSMaP description",
+   "author_org": "NOAA CPC (Janowiak pages)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cpc_gsmap_description.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated third-party (CPC) page, not JAXA; Nov 2026 status of GSMaP_NRT, GSMaP_NOW and Gauge-NRT NOT PRESENT. JAXA pages unreadable from sandbox.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CCS/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CCS",
+   "author_org": "UC Irvine CHRS",
+   "published": "live listing, retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/chrs_persiann_ccs_listing_extract.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Folder dates only; resolution and latency NOT PRESENT; hourly folder date may mean hourly files moved or stopped (not checked).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s50",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CCS/hrly/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CCS/hrly",
+   "author_org": "UC Irvine CHRS",
+   "published": "live listing, retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e20",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/chrs_persiann_ccs_listing_extract.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Folder dates only; latency not stated.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CCS/hrly/readme.hrly",
+   "fetched_url": null,
+   "title": "PERSIANN-CCS hourly readme",
+   "author_org": "UC Irvine CHRS (Dan Braithwaite)",
+   "published": "2009-12-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_ccs_readme_hrly.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Readme dated 2009; latency of the realtime files in hours NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://www.geo.uni-hamburg.de/en/service/icdc/about-icdc/news/2026/20260327-new-verison-of-gpcc-product.html",
+   "fetched_url": null,
+   "title": "New version of GPCC Monitoring Product (ICDC news)",
+   "author_org": "University of Hamburg ICDC",
+   "published": "2026-03-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/geo-uni-hamburg-de-en-service-icdc-about-icdc-news-2026-2026_190838.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "redistributor (ICDC), not DWD itself",
+   "found_by": [
+    "main"
+   ],
+   "scope": "context: GPCC",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s53",
+   "url": "https://pps.gsfc.nasa.gov/",
+   "fetched_url": null,
+   "title": "PPS home page, News and Updates",
+   "author_org": "NASA GSFC PPS",
+   "published": "2026-11-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/pps-gsfc-nasa-gov_185340.txt",
+   "retrieved": "2026-11-24",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s54",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/11/MSG_20261119_1548.html",
+   "fetched_url": null,
+   "title": "Decommissioning of AMSR2 Products and Transition to AMSR3 Products (ESPC notice, Update #11)",
+   "author_org": "NOAA OSPO/ESPC",
+   "published": "2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/ospo-noaa-gov-data-messages-2026-11-MSG-20261119-1548-html_191014.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "NOAA products; does not say what PPS NRT ingests",
+   "found_by": [
+    "main"
+   ],
+   "scope": "context: NOAA NESDIS",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s55",
+   "url": "https://forum.earthdata.nasa.gov/viewtopic.php?p=26086",
+   "title": "GMAO_FP ancillary data missing (Earthdata Forum)",
+   "author_org": "OB.DAAC (forum)",
+   "published": "2026-06-01",
+   "access_level": "snippet",
+   "read_via": null,
+   "source_type": "practitioner",
+   "retrieved": "2026-11-24",
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": "search-tool summary only; page and Wayback copy HTTP 404"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "The X-CAL intercalibration tables that put each microwave sensor on GMI's scale are delivered by the GPM Intercalibration (X-CAL) Working Group, led by Rachael Kroodsma at NASA GSFC (Code 615); the L1C ATBD names the working group, not a person, and the only GSICS-hosted copy of the tables is Wes Berg's (CSU) V05 set dated 11 Dec 2018. No funding source is published.",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Dr. Rachael A. Kroodsma is a Research Physical Scientist at NASA’s Goddard Space Flight Center with the Advanced Instruments and Measurement Systems branch (Code 615). … She leads the Global Precipitation Measurement (GPM) inter-calibration working group (XCAL) … The Global Precipitation Measurement (GPM) Intercalibration Working Group (XCAL) is responsible for delivering the intercalibration tables for the GPM constellation microwave radiometers to create the Level 1C dataset. The XCAL team works on developing intercalibration techniques and monitoring the calibration/stability of the current sensors in the constellation to ensure a quality precipitation product.",
+     "location": "bio paragraph; Current Projects: GPM XCAL (txt lines 37, 49-53)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "The GPM GMI brightness temperatures have been defined as the calibration reference for the GPM constellation. As a result, no changes were made to the GMI brightness temperature (Tb). … 1C.GPM.GMI.XCAL2016-C.tbl Intercalibration Tb offset table … 1C.DMSP-F16.SSMIS.XCAL2021-V.tbl … 1C.GCOMW1.AMSR2.XCAL2016-V.tbl … 1C.NOAA-NOAA20.ATMS.XCAL2019-V.tbl … 1C.NOAA-NOAA21.ATMS.XCAL2023-V.tbl … 1C.METOP-B.MHS.XCAL2016-V.tbl Intercalibration Tb offset table for METOP-B | 1C.METOP-C.MHS.XCAL2019-V.tbl Intercalibration Tb offset table for METOP-C … 1C.WSFM1.MWI.XCAL2026-V.tbl Intercalibration Tb offset table for WSFM1 … 1C.GOSATGW.AMSR3.XCAL2026-V.tbl Intercalibration Tb offset table",
+     "location": "Sec. A.3 (txt line 1265); static data tables A-1, D-1, E-1, F-1, H-1, R-1, S-1 (txt lines 1338, 1881-1890, 2063, 2214-2217, 2565-2571, 4297, 4451)"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "GSICS Wiki>Development web>Microwave-Deliverable (16 Jan 2019, ManikBali) … by Wes Berg (Colorado State University … ) … The attached tar file provided by Web Berg contains the current Level 1C intercalibration tables for 13 imagers and 11 sounders along with a couple of journal pubs, software to read and apply the tables … Description: PMM XCAL Intercalibration tables for Level 1C data (V05) … Reference Sensor: GPM GMI Version V05 … Date: 11 December 2018 … Contact: Wesley Berg (berg@atmos.colostate.edu)",
+     "location": "archived page, txt lines 3-49"
+    }
+   ],
+   "applicability": "DIRS-1: the calibration service is a NASA-led working group inside the GPM project, not an outside provider; its funding is unpublished.",
+   "confidence": "moderate",
+   "confidence_reason": "NASA's own bio page and the ATBD agree on the role; the bio is undated and no award was found."
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "The current L1C ATBD is Version 1.11 (August 2026, for V08); Version 1.9 (April 2022) was the V07 document, and v1.6 (2016) is superseded. Its static offset tables span XCAL2016 to XCAL2026 by sensor, with XCAL2026 for WSF-M1 MWI and GOSAT-GW AMSR3.",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Version 1.11 … GPM Intercalibration (X-CAL) Working Group … August 2026",
+     "location": "cover page (txt lines 11, 22, 24)"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Level 1C Algorithms | Version 1.9 | Prepared By: NATIONAL AERONAUTICS AND SPACE ADMINISTRATION GODDARD SPACE FLIGHT CENTER Code 610.2/PPS … and GPM Intercalibration (X-CAL) Working Group | April 2022",
+     "location": "cover page (txt lines 1-24)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "The GPM GMI brightness temperatures have been defined as the calibration reference for the GPM constellation. As a result, no changes were made to the GMI brightness temperature (Tb). … 1C.GPM.GMI.XCAL2016-C.tbl Intercalibration Tb offset table … 1C.DMSP-F16.SSMIS.XCAL2021-V.tbl … 1C.GCOMW1.AMSR2.XCAL2016-V.tbl … 1C.NOAA-NOAA20.ATMS.XCAL2019-V.tbl … 1C.NOAA-NOAA21.ATMS.XCAL2023-V.tbl … 1C.METOP-B.MHS.XCAL2016-V.tbl Intercalibration Tb offset table for METOP-B | 1C.METOP-C.MHS.XCAL2019-V.tbl Intercalibration Tb offset table for METOP-C … 1C.WSFM1.MWI.XCAL2026-V.tbl Intercalibration Tb offset table for WSFM1 … 1C.GOSATGW.AMSR3.XCAL2026-V.tbl Intercalibration Tb offset table",
+     "location": "Sec. A.3 (txt line 1265); static data tables A-1, D-1, E-1, F-1, H-1, R-1, S-1 (txt lines 1338, 1881-1890, 2063, 2214-2217, 2565-2571, 4297, 4451)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "PPS's own ATBD files, read as raw text.",
+   "sole_source_reason": "PPS's own ATBD is the authority for its own document version."
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "The Late Run's gauge calibration is a set of climatological coefficients computed once from the reprocessed V07B Final Run (in use from 1 June 2024); the Aug 2026 ATBD still names GPCC V2022 and no NASA document says the coefficients were updated or frozen after the Final record ended on 2025-09-30. GPCC V2025 (merging Full Data and Monitoring) has been out since March 2026, but nothing found says it reaches IMERG; by the ATBD's design it would reach the Late Run only through a new Final Run (V08) and new climatological coefficients.",
+   "evidence": [
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "The baseline is for the Early and Late half-hour land estimates to be calibrated to the Final Run with climatological coefficients that vary by month and location",
+     "location": "Sec. 3.2.1"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "When a new version of IMERG is released, retrospective processing the Early and Late Runs is carried out after reprocessing the Final Run to allow computation of climatological coefficients that calibrate Early and Late to the Final monthly product (which has gauge information).",
+     "location": "Sec. 3.2.2"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "We use two GPCC products: the V2022 Full Data Analysis",
+     "location": "Table 2 text"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Following these actions, climatological calibrations were computed for the Early and Late Runs to the Final Run, and both Initial Processing (IP) and RP for the Early and Late Runs began on 3 June 2024, with IP taking effect starting 1 June. … Applied climatological adjustment to the Early and Late Runs based on the Final Run. … This ensures more consistency in the bias characteristics among the Early, Late, and Final Runs.",
+     "location": "Summary p.1 (txt lines 19-21); changes list (lines 70-73)"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "The GPCC creates multiple products, and two are used in IMERG. The Full Data Reanalysis (currently Version 2022) is a retrospective analysis that covers the period 1891-2020, and it is used in IMERG for the span <1998> 2000-2020. Thereafter we use the GPCC Monitoring Product (currently Version 2022) … When the GPCC analyses are updated, we switch to the new version and continue processing forward, even though (in principle) there is a small inhomogeneity as a result.",
+     "location": "GPCC section (txt lines 1717-1723)"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "contextualizes",
+     "passage": "GPCC Precipitation Analysis Monthly Version 2025 (at 0.25°, 0.5°, 1.0°, 2.5°) … It merges the former Full Data Monthly with the Monitoring Product. … January 1891 - present month … the data set is continuously extended by the latest month with a latency of two months. … It is foreseen to update the GPCC Precipitation Analysis Monthly with a cycle of three to four years.",
+     "location": "DOI landing page"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "contextualizes",
+     "passage": "We offer a new version, V2025, of the GPCC Product of monthly global land-surface precipitation which is now a combination of analysis and monitoring product and the successor of V2022.",
+     "location": "news item"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "contextualizes",
+     "passage": "For the Late and Early Runs, the V07 production will continue as the parent products are being upgraded to V08. … Starting March 1, the CORRA calibration has been set to climatological values that are periodically updated to reflect seasonal conditions. That is, the calibration of GPROF V08 to CORRA V07 is being computed from selected seasonal periods in previous years, then used for the same time period in 2026. The Late and Early Runs will be in this “hybrid V07” posture until the near-real-time processing system is ready to switch to V08, which is expected to take place no sooner than fall of 2026.",
+     "location": "news item body"
+    }
+   ],
+   "applicability": "Inference about how V2025 would reach the Late Run rests on the ATBD's description of the method, not on a NASA statement.",
+   "confidence": "moderate",
+   "confidence_reason": "NASA documents agree on the method; the absence of an update is an absence of evidence."
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "No IMERG, L1C or GPROF document read names a backup calibration reference if GMI or DPR stopped: GMI is the fixed reference (TMI held that role in the TRMM era), the system runs on the then-current calibration files through dropouts, and a drifting GMI 'cannot be accommodated'; changing that 'would require a major development effort'.",
+   "evidence": [
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "in the GPM era is carried out as GMI calibrated to CORRA-G. … [Recall that the TMI and GMI products are used as calibrators for all the other satellite precipitation estimates. … ] TMI is reduced to the status of being just another high-quality sensor during the period in which GMI is acting as the calibrator, and vice-versa. … without significant loss of skill it can run with the then-current calibration files, as long as the dropouts do not become too severe. … extended dropouts are rare for the GMI and DPR (and so CORRA-G) … However, using climatological GMI-to-other-PMW calibrations means a drifting GMI cannot be accommodated. … such a modification would require a major development effort.",
+     "location": "Sec. 3.2.3 (txt lines 684-704); Sec. 5.1.1 (lines 1632-1634); Sec. 6.1-6.2 (lines 1731-1749)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "The GPM GMI brightness temperatures have been defined as the calibration reference for the GPM constellation. As a result, no changes were made to the GMI brightness temperature (Tb).",
+     "location": "Sec. A.3"
+    }
+   ],
+   "applicability": "DIRS-1/DIRS-5: supports a single-reference dependency inside NASA's own mission.",
+   "confidence": "moderate",
+   "confidence_reason": "Direct statements in the ATBDs; the GPROF V08 ATBD was not found."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "PPS's 20 Nov 2026 notice says MetOp-C GPROF wrongly used MetOp-B calibration files in V08A and V08B; production MetOp-C processing is stopped and will be reprocessed, but 'NRT continues its processing METOPC GPROF data' and the notice does not say whether the NRT stream has the same error.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "November 20, 2026 | PPS Will Reprocess All METOPC GPROF Data … METOPC has incorrectly used METOPB calibration files for its processing. This issue persists in both V08A and V08B versions, including the V08B release in which the 'precipitationYesNoFlag' variable was corrected. … We will erase all existing V08A and V08B METOPC data and reprocess all METOPC GPROF data back to its mission start date. … PPS has also stopped processing the current incoming production METOPC data until the new algorithm is installed.  NRT continues its processing METOPC GPROF data.",
+     "location": "whole notice (txt lines 2-11)"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "METOPC has incorrectly used METOPB calibration files for its processing. This issue persists in both V08A and V08B versions",
+     "location": "News and Updates, 11/20/2026"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "PPS's own notice, read raw by two routes.",
+   "sole_source_reason": "PPS's own notice about its own processing."
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "No PPS page states what the NRT stream ingests after SSMIS (30 Sep 2026), NOAA AMSR2 NRT (Sep 2026) and S-NPP ATMS (2 Nov 2026) ended: PPS's news table has no notice on them, its per-sensor empty-granule logs stop in 2020-2024, and its NRT page lists products, not sensors. Only the Late Run file headers or the jsimpson NRT listings (PPS sign-up) would settle it.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "10//28/2026 | GPM Level 2 and Level 3 GPROF Data / WSFM1 Level 1C V08A / (GOSAT-GW) Advanced Microwave Scanning Radiometer 3 (AMSR3) | Details … 1//20/2026 | PPS will temporarily shutdown the GPM NRT system Tuesday January 20, 2026 at 18:00 EST (23:00 UTC) for planned data and hardware migration. … 7/30/2025 | Good News for GPM users: SSMIS to continue: … keeping the data flowing until the sensor fails or the program formally ends in September 2026",
+     "location": "news table, lines 111, 121, 123 of the .txt"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "Last Revised: 10 October 2024",
+     "location": "index page"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "F17_SSMIS | L1-2 | 92465 | 2024-10-04 10:53:05 | 2024-10-04 12:34:55",
+     "location": "first table row"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "NPP_ATMS | L1-2 | 66902—66939 | 2024-09-24 23:19:37 | 2024-09-27 15:36:26",
+     "location": "first table row"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "## IMERG Late Run PPS Near Real-time HDF … ## IMERG Late Run PPS Near Real-time GIS",
+     "location": "product list"
+    }
+   ],
+   "applicability": "DIRS-3: the losses are documented elsewhere (earlier runs); what replaced them in NRT is unpublished.",
+   "confidence": "moderate",
+   "confidence_reason": "Absence on PPS's own pages; the NRT listings were not opened (login)."
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "AMSR3 is in PPS production (L1C from 25 Aug 2026; STD and Climate GPROF V08B released 4 Nov 2026), and NOAA moved its operational AMSR products, L1B and precipitation included, to AMSR3 when AMSR2 NRT ended; no source says the IMERG Late Run uses AMSR3.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "For the Global Observing Satellite for Greenhouse Gases and Water Cycle “IBUKI GW” (GOSAT-GW) Advanced Microwave Scanning Radiometer 3 (AMSR3), PPS will release its GPROF V08B products on November 4, 2026. The coverage of AMSR3 Standard L2 GPROF V08B data is from March 1 2026 to present, and the coverage of its Climate L2 GPROF V08B is from August 11, 2025 to present date.",
+     "location": "paragraph 5"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "Effective September 2026, the provision of AMSR2 standard near-real-time data will be terminated. … This transition encompasses all current operational AMSR2 products distributed via Production Distribution and Access (PDA) and NCCF, including L1 BUFR, precipitation, ocean, snow, soil, and sea ice products. … Blended products excluding AutoSnow with AMSR2 inputs, including SMOPS, Blended Hydro, ADT and eTRaP,  will lose AMSR2 coverage until AMSR3 capability is in place at a later time (TBD).",
+     "location": "Details/Specifics of Change"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Official notices; the Late Run's own use is not stated anywhere read."
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "The JMA forecast, obtained by PPS from JAXA, is the phase (PLP) source for the Early and Late Runs and also the ancillary data for their GPROF retrievals; GEOS FP supplies the motion vectors. No 2026 notice on the JMA feed was found.",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "2 July 2023 Early and Late switched to using the new 2 km Autosnow, replacing the hemispheric version. … the Precipitation Processing System (PPS) accesses JMA Forecast from JAXA, GEOS FP forecast fields through the Goddard NCCS, and Autosnow from NOAA. … The surface temperature, humidity, and pressure information needed to compute the surface wet-bulb temperature are taken from the JMA NWP forecast for the Early and Late Runs, and the ECMWF Reanalysis Version 5 (ERA5) for the Final Run.",
+     "location": "News 2 July 2023 (l.25); section on latency (l.1191-1192); numerical analysis products (l.1866-1869)"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Motion vector source          GEOS FP                 GEOS FP                  MERRA-2 … PLP source                    JMA Forecast            JMA Forecast             ERA5 … Surface pressure, surface temperature, and surface relative humidity are provided by the JMA forecasts for Early and Late Runs of meteorological data. … On July 1, 2023, the Autosnow product transitioned to the 0.02° lat/lon grid resolution. This version ended use of SSMIS. The Autosnow product is used in the Kalman filter to reduce the Quality Index of PMW and propagated retrievals over frozen surfaces.",
+     "location": "Table (l.641, 647); 3.3.2 Ancillary Products (l.740-742); 3.3.5 NOAA Autosnow Product (l.793-796)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "3. The Early and Late use GPROF that applies JMA model output as ancillary data, while the Final applies ERA5 data.",
+     "location": "list of Early/Late vs Final differences, l.2585-2586"
+    }
+   ],
+   "applicability": "DIRS-3: one foreign model feed serves two Late Run steps.",
+   "confidence": "high",
+   "confidence_reason": "ATBD and technical documentation agree (an ATBD sentence has an Early/Final typo)."
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "Early and Late have used NOAA's 2-km Autosnow since 2 Jul 2023; NOAA upgraded Autosnow on 19 Aug 2026 (v1r1, with AMSR3), and PPS found its standard GPROF V08 preprocessor ignoring v1r1. Which Autosnow version the V07 Late Run reads is not stated.",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "2 July 2023 Early and Late switched to using the new 2 km Autosnow, replacing the hemispheric version.",
+     "location": "News 2 July 2023"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Product(s) or Data Impacted: GOSAT-GW AMSR3 GRAC, Snow, Precipitation, Sea Ice, Soil, Autosnow, NHC AWIPS Converter, WSF-M L1 BUFR, eTRaP, OHC, JPSS IceConcentration products | Date/Time of Initial Impact: August 19, 2026, 1700 UTC | Operational product upgrade of AUTOSNOW in NetCDF and GRIB formats: | Impact on users: No | PDA product file name changes: No | New products: No",
+     "location": "header and AUTOSNOW item"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "We recently discovered that the GPROF preprocessor was selecting older AUTOSNOW data for processing and neglecting to use any new v1r1 AUTOSNOW data that includes AMSR3. … on August 19, 2026, NOAA started producing a new version of AUTOSNOW data that incorporated AMSR3. … it was ignoring all v1r1 and choosing only v1r0. The algorithm developer will correct this problem soon.",
+     "location": "paragraphs 1-3"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "PPS recently discovered that the GPROF preprocessor was selecting older AUTOSNOW data for processing and neglecting to use any new v1r1 AUTOSNOW data that includes AMSR3.",
+     "location": "News and Updates, 9/18/2026"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Official notices; the Late Run's version is unpublished."
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "GEOS FP did not end on 31 May 2026: on 24 Nov 2026 GMAO's status page shows GEOS-FP 5.44 and GEOS-IT running 'Nominal', and GMAO announced a GEOS-FP upgrade to 5.44.6 for 18 Nov 2026. GEOS-IT replaces FP-IT, which is no longer on the status table; the 31 May 2026 end reported on the Earthdata Forum concerns a 'GMAO-FP' ancillary stream, known only from a search summary.",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "GSFC local time: 20261124 13:52:31 ET UTC: 20261124 18:52:31 Z | JOB NAME | STATUS | RUNNING | COMPLETED | PDR DELIVERY | NOTE | GEOS-FP 5.44 | Nominal | 20261124 12z | 20261124 06z | N/A | Running | GEOS-IT | Nominal | 20261124 12z | 20261124 06z | 20261124 06z | Running",
+     "location": "Current Production Status table"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "The GMAO is announcing an upgrade to the GEOS-FP assimilation and forecast system to GEOS-5.44.6, tentatively scheduled for November 18, 2026 starting with the 06:00 GMT forecast cycle. … Overall, results to the forecasts of GEOS are neutral to mildly improved.",
+     "location": "body"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "The GEOS-IT product is a stable meteorological dataset that is generated for NASA’s instrument teams. Like the GEOS-FPIT dataset that it replaces, the time period for GEOS-IT covers from 1998 to the present … At this time, GEOS-IT is not publicly available, but is available to approved instrument teams through the NASA GES DISC.",
+     "location": "paragraphs 1 and 3"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "contextualizes",
+     "passage": null,
+     "location": "search summary only"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "GMAO's own live status and news pages."
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "No source shows CPC's merged IR (GPM_MERGIR) switched to Meteosat-12: the CMR record lists Meteosat-5/7/8/9/10/11, GES DISC's satellite list (17 Apr 2025) predates Meteosat-12's June 2025 start as prime, and CPC's own README is stale.",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "GOES-8/9/10/11/12/13/14/15/16/17/18/19, METEOSAT-5/7/8/9/10/11, and GMS-5/MTSat-1R/2/Himawari-8/9",
+     "location": "Abstract"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Meteosat-9 (Greenwich) 00 30 … Meteosat-7 (57E longitude) 00 30",
+     "location": "satellite timing table, l.103-105"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "contextualizes",
+     "passage": "The global geo-IR are dynamically calibrated to GOES East, using a 35 day trailing inter-calibration using time/space-matched IR Tb’s",
+     "location": "collection abstract (line 1 of the JSON)"
+    }
+   ],
+   "applicability": "Only the GPM_MERGIR file metadata would settle it.",
+   "confidence": "low",
+   "confidence_reason": "Absence in catalog text that may lag; no file metadata read."
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "IMERG's own documents name no real-time substitute for CPC's merged IR; GridSat is named only for the pre-2000 gap. For GEOS FP, PPS uses the most recent forecast sequence when delivery hitches, and forecasts a few days old still give reasonable motion vectors.",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "an alternative is to use the GridSat archive of GEO-IR data (Knapp 2008). Such a move would require study, since GridSat data are provided on a subsampled 0.07° grid every 3 hours.",
+     "location": "Sec. 3.15.1"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "The global merged geo-IR data are assembled by NOAA/NWS/CPC, and the Precipitation Processing System (PPS) accesses JMA Forecast from JAXA, GEOS FP forecast fields through the Goddard NCCS, and Autosnow from NOAA. … hitches in delivery of the latest GEOS FP is not a big deal – PPS just uses the most recent forecast sequence, whatever that is. Tests indicate that even “stale” forecasts (a few days old) provide reasonable analyses for estimating the motion vectors.",
+     "location": "txt lines 1190-1203 (latency section)"
+    }
+   ],
+   "applicability": "DIRS-5: supports for CPC IR; partly contradicts for GEOS FP (stale fields tolerated).",
+   "confidence": "moderate",
+   "confidence_reason": "IMERG documents; external substitutes were not documented by NASA."
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "Near-real-time alternatives to the Late Run are running in Nov 2026: CPC CMORPH2 NRT (global, 0.05°, 30 min, first field at one hour, refreshed to 12 h; folder updated 24 Nov 2026), CHRS PDIR-Now (0.04°, 60N-60S, daily files to 23 Nov 2026) and PERSIANN-CCS (hourly 2026 folder updated 24 Nov), H SAF H60B (SEVIRI disk, 15 min), NOAA Enterprise Rain Rate (70N-60S, 10 min, experimental, calibrated on CPC MWCOMB) and JAXA GSMaP_NRT (0.1°, hourly, about 4 h, per a CPC page). NOAA's Global Hydro-Estimator is being retired.",
+   "evidence": [
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "integrating precipitation information from PMW measurements aboard more than 10 LEO satellites and from infrared (IR) observations aboard 5 GEO platforms. Precipitation estimates are constructed on a 0.05-deg lat/lon grid over the entire globe (90S-90N) and in a 30-minute interval. | CMORPH2x_NRT is now generated at an NWS operational environment (the CPC Compute Farm, CF) maintained 7/24 by NCEP Central Operation (NCO). | A global field of CMORPH2 satellite estimates for a target time is first produced at a latency of ONE HOUR. This initial production is then refreshed once every 30 minutes until 12 hours after the target analysis time | only the NetCDF data files for CMORPH2 on 0.25-deg lat/lon grid are uploaded to the ftp site as of February 2023, due to the limitation in the ftp site disk space.",
+     "location": "whole file"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "20261121/ 22-Nov-2026 00:28 | 20261122/ 23-Nov-2026 00:28 | 20261123/ 24-Nov-2026 00:28 | 20261124/ 24-Nov-2026 18:28 | 20261125/ 17-Jul-2026 19:03",
+     "location": "directory listing"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "PDIRNow rainfall product is available from 2000 (March) through current and is a high-resolution (.04deg), with global coverage from 60N to 60S. | PDIRNow1hourly PDIRNow3hourly PDIRNow6hourly PDIRNowdaily PDIRNowmonthly PDIRNowyearly | provided in separate directories under: http://persiann.eng.uci.edu/CHRSdata/PDIRNow/",
+     "location": "whole file"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "pdirnow1d261101.bin.gz | 2026-11-02 19:17 | 29M | … | pdirnow1d261121.bin.gz | 2026-11-22 19:15 | 30M | pdirnow1d261122.bin.gz | 2026-11-23 19:12 | 30M | pdirnow1d261123.bin.gz | 2026-11-23 16:12 | 32M",
+     "location": "txt lines 9749-9771"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "2025/ (2026-01-01 19:25) | 2026/ (2026-11-24 10:06) | readme.hrly (2024-10-23 16:34)",
+     "location": "directory listing"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "SS-NRT-0117 The product H60B (P-IN-SEVIRI-PMW) “Blended SEVIRI / LEO MW precipitation and",
+     "location": "SS-NRT-0117"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Data and images displayed on STAR sites are provided for experimental use only and are not official operational NOAA products. | Amazon Web Services (AWS) hosts a repository for NetCDF product data files for the Enterprise Rain Rate. | Data flow started in 2025; | Extent: Longitude: global; Latitude: from 70°N to 60°S; | Cadence: updated every 10 minutes; | These predictors are calibrated against the Climate Prediction Center (CPC) combined microwave (MWCOMB) data set | Modified: 11 May 2026",
+     "location": "txt lines 9, 21-32, 61, 74"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "Imminent Product Retirement and Data Location Changes - February 2025 | The Global Hydro-Estimator (GHE) is being retired, and its successor product is the Enterprise Rain Rate (ERR), previously referred to on this site as SCaMPR. | The McIDAS AREA files for GHE will be available at Amazon Web Services (AWS), and will continue be updated until GHE's retirement is finalized. | These data files cover the period from 2019 through the present, showing instantaneous rain rates on a global view, refreshed every 15 minutes. Product source data come from the GOES-R series, Meteosat, and Japan's Himawari satellites. | Estimates are produced routinely every 15 minutes for the entire globe from 64°S to 64°N | Modified: 11 May 2026",
+     "location": "txt lines 14-33, 46"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "GSMaP Grid Resolution: 0.1 x 0.1 degree latitude/longitude Temporal Resolution: 1 hour Domain: Global Period of Record: December 1, 2008 - present Latency: 4 hours Reference: GSMaP_NRT HP http://sharaku.eorc.jaxa.jp/GSMaP/documents.htm",
+     "location": "txt line 11"
+    }
+   ],
+   "applicability": "DIRS-5 (dataset level): contradicts. None is a like-for-like IMERG Late copy; several share inputs (CPC IR, PMW constellation).",
+   "confidence": "moderate",
+   "confidence_reason": "Producers' own readmes and live listings; GSMaP from CPC's page only; JAXA pages unreadable."
+  },
+  {
+   "id": "c14",
+   "importance": "central",
+   "text": "PPS keeps Early and Late HDF5 and GIS files until a new Early/Late algorithm version replaces them (over 20 years of record), serving Late from jsimpsonhttps and Final from arthurhouhttps.",
+   "evidence": [
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "are approximately 4–5 hours, 14–15 hours, and 3–4 months, respectively. … PPS retains the near real-time IMERG HDF5 and GIS products even after the higher- quality Final IMERG product is available. Near real-time IMERG HDF5 and GIS products (Early and Late) are retained until a new version of the Early and Late IMERG algorithm replaces them. This long retention period gives application developers a long-duration data set (over 20 years) for calibrating their real-time applications.",
+     "location": "Section 1.1, p. 5-6 (txt lines 166-187)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "https://jsimpsonhttps.pps.eosdis.nasa.gov/imerg/gis/early/2015/05/ Early | https://jsimpsonhttps.pps.eosdis.nasa.gov/imerg/gis/2015/05/ Late | https://arthurhouhttps.pps.eosdis.nasa.gov/gpmdata/2015/01/01/gis/ Final",
+     "location": "txt lines 301-309"
+    }
+   ],
+   "applicability": "The README is dated 2023; no 2026 retention statement was found.",
+   "confidence": "moderate",
+   "confidence_reason": "PPS's own README; may predate later changes.",
+   "sole_source_reason": "PPS's own document about its own retention."
+  },
+  {
+   "id": "c15",
+   "importance": "central",
+   "text": "No current copy of the Late Run outside PPS and GES DISC was found: NASA's CMR lists only GES DISC (cloud-hosted) for GPM_3IMERGHHL and GPM_3IMERGDL; NCAR GDEX holds V07 Final only, to 2025-10-01; IRI's Data Library (a V06 IMERG_Late copy) was due to shut down by end-Oct 2026 and now requires sign-in.",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "\"data_center\": \"GES_DISC\", | \"short_name\": \"GPM_3IMERGHHL\", | \"title\": \"GPM IMERG Late Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHHL)\", | \"cloud_hosted\": true, | \"short_name\": \"GPM_3IMERGDL\", | \"title\": \"GPM IMERG Late Precipitation L3 1 day 0.1 degree x 0.1 degree V07 (GPM_3IMERGDL)\", | \"short_name\": \"GPM_3IMERGHH\", | \"time_end\": \"2025-09-30T23:59:59.999Z\"",
+     "location": "JSON lines 838-843, 3410-3540, 5072-5080"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "This dataset contains Version 07 of the Integrated Multi-satellitE Retrievals for GPM (IMERG) IMERG Level 3 \"Final Run\" precipitation analysis at 0.1 degree, half-hour resolution. | Temporal Range: 2000-06-01 00:00 +0000 to 2025-10-01 00:00 +0000 (Entire dataset) | Updates: Irregularly | GPM IMERG Final Precipitation L3 1 day 0.1 degree x 0.1 degree V07 | GPM IMERG Final Precipitation L3 1 month 0.1 degree x 0.1 degree V07",
+     "location": "txt lines 3, 30, 38-44, 101-107"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "We anticipate that by April 2026 the IRIDL will no longer be staffed sufficiently to continue operating in its current form. | The full shutdown will most likely happen by the end of October 2026, possibly earlier.",
+     "location": "Nov 11 2025 notice; May 21 2026 update"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "The Data Library now requires all users to sign in.",
+     "location": "sign-in page"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "contextualizes",
+     "passage": "check the box next to the entry for \"Precipitation Rate (30-min) IMERG\".",
+     "location": "step 1 (txt line 31)"
+    }
+   ],
+   "applicability": "RRS-1: hosts outside the sandbox's allowed domains (AWS, Google, Earth Engine, dynamical.org) were out of scope.",
+   "confidence": "moderate",
+   "confidence_reason": "Catalog and host pages; not every possible host searched."
+  },
+  {
+   "id": "c16",
+   "importance": "supporting",
+   "text": "NASA's documents give the Late Run's latency differently: 12 hours in the 2026 ATBD's Table 3, about 14 h in the same ATBD's text, 14-15 h in README.GIS and almost 13 h in the technical documentation; Table 3 also lists near-real-time GPROF and a trailing 45-day CORRA calibration for the Late Run.",
+   "evidence": [
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Table 3. Summary of the key input and algorithmic differences between the Early, Late, and Final Runs. | Run (latency) Early (4 hours) Late (12 hours) Final (3.5 months) | GPROF product Near-real-time Near-real-time Climate | Fraction of input PMW 95% 100% 100% | CORRA calibration Trailing 45-day Trailing 45-day Centered 45-day",
+     "location": "p. 10, Table 3 (lines 632-637 of the text copy)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "are approximately 4–5 hours, 14–15 hours, and 3–4 months, respectively. … PPS retains the near real-time IMERG HDF5 and GIS products even after the higher- quality Final IMERG product is available. Near real-time IMERG HDF5 and GIS products (Early and Late) are retained until a new version of the Early and Late IMERG algorithm replaces them. This long retention period gives application developers a long-duration data set (over 20 years) for calibrating their real-time applications.",
+     "location": "Section 1.1, p. 5-6 (txt lines 166-187)"
+    }
+   ],
+   "applicability": "The earlier pt3 run noted the 12 h vs ~14 h difference; unresolved.",
+   "confidence": "moderate",
+   "confidence_reason": "Same agency's documents disagree; scope (target vs typical) not stated."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Whether GMAO's forward-processing stream ended on 2026-05-31",
+   "source_ids": [
+    "s55",
+    "s7"
+   ],
+   "status": "resolved",
+   "explanation": "Difference in scope: the forum reply (search summary) concerns OB.DAAC's 'GMAO-FP' ancillary stream (or FP-IT); GMAO's live status shows GEOS-FP 5.44 running on 2026-11-24 and an 18 Nov 2026 upgrade (s8). GEOS FP itself did not end."
+  },
+  {
+   "claim": "Satellites in CPC's merged IR in 2025-2026",
+   "source_ids": [
+    "s11",
+    "s15"
+   ],
+   "status": "unresolved",
+   "explanation": "The CMR abstract lists Meteosat-5/7/8/9/10/11; the GES DISC list (17 Apr 2025) names Meteosat-11 at 9.5°E but its 2025 table row shows MSG-3 (Meteosat-10). Neither names Meteosat-12. File metadata would settle it."
+  },
+  {
+   "claim": "Late Run latency",
+   "source_ids": [
+    "s25",
+    "s34",
+    "s30"
+   ],
+   "status": "unresolved",
+   "explanation": "12 hours (ATBD 2026 Table 3) vs about 14 h (ATBD text) vs 14-15 h (README.GIS, 2023) vs almost 13 h (technical documentation). Likely a target vs typical figure; the answer gives the range and relies on none."
+  }
+ ],
+ "coverage_gaps": [
+  "(a) What the PPS NRT stream ingests after SSMIS (30 Sep), NOAA AMSR2 (2 Sep) and S-NPP ATMS (2 Nov 2026) ended: no PPS page states it. PPS home page has no notice on these; 10/28 and 9/18 notices cover STD/Climate products only. Only the jsimpson NRT listings (login) or the Late Run file headers (PPS sign-up; the IMERG HDF5 metadata lists input sensors) would settle it. (from sa2)",
+  "(a) Whether the Late Run uses AMSR3: NOT PRESENT anywhere read; AMSR3 is in PPS production (1C from 25 Aug 2026; STD GPROF V08B released 4 Nov 2026), but no NRT/IMERG statement. Late Run file headers would settle it. (from sa2)",
+  "(b) JMA forecast status in 2026: V07 docs confirm JMA Forecast (via JAXA) is the phase (PLP) source for Early/Late and GEOS FP the motion-vector source; no 2026 notice on the JMA feed was found (none on PPS home page). The ATBD's ERA5/JMA sentence at l.1239-1240 has an Early/Final typo. (from sa2)",
+  "(c) Which Autosnow version the V07 Late Run reads (v1r0 vs v1r1 with AMSR3): NOT PRESENT; the 18 Sep 2026 PPS notice concerns STD V08 GPROF only. Late Run headers / IMERG team would settle it. (from sa2)",
+  "(d) The 31 May 2026 'GMAO-FP streams' end is known only from a search summary of an unreadable forum post; GMAO's own pages show GEOS-FP 5.44 Nominal on 24 Nov 2026 and an 18 Nov 2026 upgrade, GEOS-IT running, FP-IT absent from the status table, and no FP-IT end notice. The 'GMAO_FP' in the forum is the OBPG ancillary stream name, so the end may be the OB.DAAC GMAO_FP ancillary stream or FP-IT; not settled. (from sa2)",
+  "(e) Meteosat-12 in GPM_MERGIR: CMR abstract lists METEOSAT-5/7/8/9/10/11 only; CPC pages are stale. Earlier run (2026-11-21) found Meteosat-12 prime at 0° since June 2025. No CPC/GES DISC statement of a switch found after 3 queries; GPM_MERGIR file metadata or the GES DISC README (not read) may settle it. (from sa2)",
+  "Citation note: the ATBD local copy (imerg_atbd_2026-08.txt from the 2026-11-18 run) was cited with url https://gpm.nasa.gov/resources/documents/imerg-v07-atbd, which I did not re-fetch; the coordinator should take the exact PDF URL from the 2026-11-18 run's research-record.json. (from sa2)",
+  "(a) Funding of X-CAL/Berg (PMM Science Team award) not found; a search snippet (May 2026 NASA HQ briefing, not read) says PMM's flight mission science team was among those eliminated; worth reading. The L1C ATBD v1.11 names only the 'GPM Intercalibration (X-CAL) Working Group', no individual or institution. (from sa1)",
+  "(c) No document found saying whether the Late Run's Final-climatological gauge calibration was frozen or updated after the V07 Final ended 2025-09-30, or how GPCC V2025 (which merges Full Data and Monitoring) reaches IMERG; the IMERG ATBD (2026-08) still names GPCC V2022. Only Late Run file headers (PPS sign-up) or the V07 technical documentation might settle it; IMERG V07 tech doc not reread here. (from sa1)",
+  "(d) No ATBD/X-CAL/GPROF document read names a backup calibration reference if GMI or DPR stopped; the IMERG ATBD says TMI served as calibrator in the TRMM era and the system runs on then-current calibration files during dropouts. GPROF V08 ATBD not read. (from sa1)",
+  "(e) The 2026-11-20 PPS notice says 'NRT continues its processing METOPC GPROF data' but does not say whether NRT MetOp-C uses the wrong MetOp-B calibration files; would need PPS helpdesk or NRT file headers. (from sa1)",
+  "(a) GSICS microwave subgroup pages on gsics.atmos.umd.edu unreachable (502/ECONNREFUSED); coordinator may retry or use a web.archive.org copy. (from sa1)",
+  "(a) funding follow-up: the NASA ESD update of 2026-03-25 (sa1-e13) only says mission science teams go from 18 to 10 DART teams; whether the PMM science team (which funds X-CAL members) survives is NOT PRESENT in its text layer. GSICS page now read via web.archive.org (sa1-e10). (from sa1)",
+  "(d) GPROF V08 ATBD not found on gpm.nasa.gov/PPS; per search snippets GPROF V08 (GPROF-NN 3D) is trained mainly on GPM 2BCMB (DPR+GMI combined); arXiv 2605.07167 and the V7 GPROF ATBD (gpm.nasa.gov/sites/default/files/2022-06/ATBD_GPM_V7_GPROF.pdf) not read; no backup reference after GMI/DPR loss located. (from sa1)",
+  "GSMaP NRT / GSMaP_NOW / Gauge-NRT latency, resolution and Nov 2026 status not read from JAXA pages: jaxa.jp hosts blocked by sandbox and WebFetch returns 404. Coordinator could read GPM_data_util_handbook_E.pdf (v6.0, Mar 2026) and DataFormatDescription_NOW.pdf in a browser. (from sa3)",
+  "No IMERG/PPS document found naming a real-time substitute for CPC merged IR or for GEOS FP; the ATBD names GridSat only for the pre-2000 gap. Release notes (pt1 run, imerg_v07_releasenotes_241126.txt) not re-checked for an operational fallback. EUMETSAT/NOAA GEO mosaics, JMA GSM, GFS, ECMWF as substitutes: NOT searched (time). (from sa3)",
+  "Not checked: PERSIANN-CCS current status, NOAA Hydro-Estimator / SCaMPR, ERA5T, IMERG Early Run Nov 2026 status, IPWG product list. (from sa3)",
+  "PDIR-Now latency: no CHRS statement; secondary claims 15-60 min (UCI faculty profile) and approx. two hours (MSWEP V3, arXiv 2602.01436) not read. (from sa3)",
+  "Worldview/GIBS: which IMERG run the GIBS layer uses not stated in pages read; GIBS layer catalog not read. JAXA/NOAA/Copernicus copies of the Late Run not searched; GDEX full catalog not searched for Late; IRIDL V06 IMERG_Late now behind sign-in. (from sa3)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "PPS near real-time status SSMIS 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gsfc.nasa.gov; led to PPS home page and notice Details files; no SSMIS-after-Sept-2026 notice found",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PPS NRT IMERG input sensors list jsimpson",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gsfc.nasa.gov, gpm.nasa.gov, eosdis.nasa.gov; no NRT sensor list found (r6 query 2 of 3)",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GEOS FP-IT end 2026 GMAO",
+   "tool": "WebSearch",
+   "notes": "found Earthdata Forum GMAO_FP thread (p=26086, p=26053; both 404 on fetch) and GMAO pages",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Earthdata Forum GMAO_FP ancillary data missing",
+   "tool": "WebSearch",
+   "notes": "allowed_domains forum.earthdata.nasa.gov; older threads only",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GEOS FP-IT discontinued May 31 2026 GEOS-IT",
+   "tool": "WebSearch",
+   "notes": "search summary: OB.DAAC post dated June 1, 2026 says GMAO-FP streams discontinued May 31 2026, use GEOS-IT; forum page not readable",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPM_MERGIR Meteosat-12 2026",
+   "tool": "WebSearch",
+   "notes": "no Meteosat-12 tie to GPM_MERGIR; led to CMR record check",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Meteosat-12 CPC 4km merged IR globir",
+   "tool": "WebSearch",
+   "notes": "CPC README and full-res pages (stale)",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "merged IR Meteosat-12 GES DISC alert",
+   "tool": "WebSearch",
+   "notes": "allowed_domains disc.gsfc.nasa.gov, earthdata.nasa.gov, gpm.nasa.gov; not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Autosnow IMERG snow ice mask",
+   "tool": "WebSearch",
+   "notes": "studies only; ATBD from earlier run used",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA AutoSnow v1r1 AMSR3 August 2026",
+   "tool": "WebSearch",
+   "notes": "led to OSPO NCCF 1.26-4.2 notice and Earthdata GPROF recall alert",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG JMA forecast precipitation phase",
+   "tool": "WebSearch",
+   "notes": "pointed to V07 technical documentation (already saved by 2026-11-18 run); no 2026 JMA-feed status notice",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG AMSR3 near real time 2026",
+   "tool": "WebSearch",
+   "notes": "starting query; no source says AMSR3 is in IMERG NRT/Late",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GEOS-FPIT production ended 2026 replaced GEOS-IT",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gmao.gsfc.nasa.gov, gsfc.nasa.gov, earthdata.nasa.gov, nasa.gov; follow-up for (d); GEOS-IT page read; no FP-IT end notice",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"GMAO_FP\" ancillary data missing May 2026 OB.DAAC GEOS-IT",
+   "tool": "WebSearch",
+   "notes": "search for another copy of the 404 forum post; summary again: OB.DAAC reply dated June 1, 2026 says GMAO informed them GMAO-FP streams discontinued permanently May 31, 2026; newest GMAO_FP ancillary file on OB.DAAC dated May 20, 2026. Page itself still unreadable. GMAO status 24 Nov shows GEOS-FP 5.44 running, so the discontinued item appears to be the OB.DAAC GMAO_FP ancillary stream (or the stream GMAO delivered to OB.DAAC), not GEOS FP itself - coordinator to judge.",
+   "from": "sa2",
+   "copy_of": "https://forum.earthdata.nasa.gov/viewtopic.php?p=26086"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM L1C ATBD version 1.9",
+   "tool": "WebSearch",
+   "notes": "allowed_domains pps.eosdis.nasa.gov, gsfc.nasa.gov; found v1.9 PDF; follow-up search led to L1C_ATBD_GPM_V08.pdf (v1.11, Aug 2026)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM X-CAL intercalibration Berg GMI",
+   "tool": "WebSearch",
+   "notes": "found Berg et al. 2016 JTECH, GSICS Microwave-Deliverable page (gsics.atmos.umd.edu refused: proxy 502 and WebFetch ECONNREFUSED)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GSICS microwave subgroup GMI reference",
+   "tool": "WebSearch",
+   "notes": "only snippets; gsics.atmos.umd.edu unreachable (502 / ECONNREFUSED)",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "X-CAL PMM science team award Berg",
+   "tool": "WebSearch",
+   "notes": "no relevant results",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Wesley Berg NASA PMM award intercalibration 2026",
+   "tool": "WebSearch",
+   "notes": "no Berg award found; snippet says a May 2026 NASA briefing noted PMM science team among eliminated flight mission science teams (not read)",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PPS MetOp-C GPROF calibration November 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains pps.gsfc.nasa.gov, gpm.nasa.gov, arthurhou.pps.eosdis.nasa.gov; then WebFetch of pps.gsfc.nasa.gov home gave the 11/20/2026 Details link, downloaded raw",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG V07 calibration GPCC 2025",
+   "tool": "WebSearch",
+   "notes": "release notes and V08 transition schedule; no GPCC V2025 mention",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPROF database GMI DPR loss backup",
+   "tool": "WebSearch",
+   "notes": "no backup-reference document found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCC Full Data Monthly Version 2025 release",
+   "tool": "WebSearch",
+   "notes": "found DWD V2025 DOI page (read via WebFetch) and ICDC news (blocked)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "web.archive.org copy of gsics.atmos.umd.edu Microwave-Deliverable",
+   "tool": "fetch_page.py",
+   "notes": "archive copy 2025-05-23 read raw",
+   "from": "sa1",
+   "copy_of": "https://gsics.atmos.umd.edu/bin/view/Development/Microwave-Deliverable"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Berg Colorado State GPM intercalibration NASA grant 2025",
+   "tool": "WebSearch",
+   "notes": "third r4 query; not found after 3 queries (no award record); leads: science.gsfc.nasa.gov/sed/bio/rachael.a.kroodsma (XCAL team profile, not read), EGU26-14297 (V08 products, not read)",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPROF V08 ATBD a-priori database GMI CORRA",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.gsfc.nasa.gov, arthurhou.pps.eosdis.nasa.gov; no V08 GPROF ATBD found; snippets: GPROF V08 is GPROF-NN 3D trained mainly on GPM 2BCMB (arXiv 2605.07167, not read); GPROF a-priori database built from DPR+GMI (V7 ATBD, not read); no backup reference named",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GSMaP NRT latency 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains jaxa.jp, eorc.jaxa.jp; found JAXA handbook v6.0 (Mar 2026) and GSMaP_NOW format doc, both unreadable from sandbox",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CMORPH-2 real time CPC",
+   "tool": "WebSearch",
+   "notes": "led to CPC CMORPH2NRT FTP listing and readme",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "H SAF H60 precipitation product",
+   "tool": "WebSearch",
+   "notes": "no relevant results (steel standards); requery below",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "H SAF H60 EUMETSAT precipitation rate geostationary",
+   "tool": "WebSearch",
+   "notes": "second query for r13; found hsaf.meteoam.it pages",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "H SAF H60B P-IN-SEVIRI-PMW timeliness",
+   "tool": "WebSearch",
+   "notes": "third query for r13; allowed_domains eumetsat.int, hsaf.meteoam.it; found Service Specification 1.15",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PPS near real-time data retention IMERG",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gsfc.nasa.gov, eosdis.nasa.gov; found README.GIS",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://cmr.earthdata.nasa.gov/search/collections.json?keyword=IMERG%20Late&page_size=50",
+   "tool": "lookup (CMR)",
+   "notes": "7 collections returned, all GES_DISC, cloud_hosted true",
+   "from": "sa3",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PDIR-Now latency CHRS data portal",
+   "tool": "WebSearch",
+   "notes": "no latency figure",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PDIR-Now near real-time latency 1 hour",
+   "tool": "WebSearch",
+   "notes": "allowed_domains chrsdata.eng.uci.edu, uci.edu; faculty profile says 15-60 min, MSWEP V3 paper says approx. two hours (neither read)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPM IMERG Late Worldview GIBS layer",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; Earthdata Worldview tutorial read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG geostationary IR input CPC merged IR backup PPS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gsfc.nasa.gov, eosdis.nasa.gov, nasa.gov; no backup IR path found",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IRI Data Library IMERG Late Run",
+   "tool": "WebSearch",
+   "notes": "allowed_domains iridl.ldeo.columbia.edu, columbia.edu; V06 IMERG_Late listing and sunset notice",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCAR GDEX IMERG precipitation dataset",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ucar.edu; GDEX holds Final Run only",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SCaMPR Hydro-Estimator NESDIS global rainfall 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; STAR HydroEst page read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GSMaP_NOW GSMaP_NRT latency resolution IPWG products",
+   "tool": "WebSearch",
+   "notes": "no domain filter; GSMaP FAQ (sharaku) WebFetch 404; CPC GSMaP description read instead",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "forum.earthdata.nasa.gov/viewtopic.php?p=26086 (browser)",
+   "tool": "browser (built-in)",
+   "notes": "HTTP 404 in the browser too; no route left",
+   "from": "main",
+   "copy_of": "https://forum.earthdata.nasa.gov/viewtopic.php?p=26086"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "gsics.atmos.umd.edu MicrowaveSubGroup (browser)",
+   "tool": "browser (built-in)",
+   "notes": "navigation denied or failed; Wayback copy already read by sa1",
+   "from": "main",
+   "copy_of": "https://gsics.atmos.umd.edu/bin/view/Development/MicrowaveSubGroup"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "hsaf.meteoam.it/Products/Detail?prod=H60B (browser)",
+   "tool": "browser (built-in)",
+   "notes": "HTTP 404 page; H SAF Service Specification 1.15 read by sa3 instead",
+   "from": "main",
+   "copy_of": "https://hsaf.meteoam.it/Products/Detail?prod=H60B"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "sharaku.eorc.jaxa.jp/GSMaP/ landing page (browser)",
+   "tool": "browser (built-in)",
+   "notes": "HTTP 404 for index.htm and folder; PDF not opened in the browser (file)",
+   "from": "main",
+   "copy_of": "https://sharaku.eorc.jaxa.jp/GSMaP/document/new/DataFormatDescription_NOW.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ICDC news GPCC V2025 (browser)",
+   "tool": "browser (built-in)",
+   "notes": "read: V2025 combines analysis and monitoring, successor of V2022, Jan 1891-Dec 2025",
+   "from": "main",
+   "copy_of": "https://www.cen.uni-hamburg.de/en/icdc/about-icdc/news/2026/20260327-new-verison-of-gpcc-product.html"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "jsimpsonhttps.pps.eosdis.nasa.gov/text/ NRT listings",
+   "tool": "lookup (PPS NRT listing)",
+   "notes": "not tried: needs PPS registration login; no route left without signing up",
+   "from": "main",
+   "copy_of": "https://jsimpsonhttps.pps.eosdis.nasa.gov/text/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG Late AMSR3 near real-time 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "found OSPO AMSR2-to-AMSR3 notice (read) and RAIN-Global IMERG-Late viewer; nothing says the Late Run uses AMSR3",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPM_MERGIR Meteosat-12 CPC merged IR",
+   "tool": "duckduckgo (browser)",
+   "notes": "no result names Meteosat-12 in the merged IR",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GSMaP NRT latency hours JAXA",
+   "tool": "duckduckgo (browser)",
+   "notes": "snippets: GSMaP_NRT/GNRT about 4 h latency (JAXA SWCEM guide, IPWG 2024 poster, JMA abstract); sharaku.eorc.jaxa.jp/GSMaP/ snippet says JAXA temporarily stopped GSMaP_NRT updates (undated; live page 404)",
+   "from": "main"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "current L1C ATBD version",
+   "query": "GPM L1C ATBD version 1.9",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "GPM X-CAL working group (CSU)",
+   "publisher": "researchers",
+   "subquestion_id": "q1",
+   "aim": "X-CAL intercalibration tables and versions",
+   "query": "GPM X-CAL intercalibration Berg GMI",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "GSICS",
+   "publisher": "regulators, standards bodies, certifiers",
+   "subquestion_id": "q1",
+   "aim": "GSICS microwave subgroup GMI reference",
+   "query": "GSICS microwave subgroup GMI reference",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NASA PMM",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "award funding X-CAL work",
+   "query": "X-CAL PMM science team award Berg",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NASA PPS",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q1",
+   "aim": "PPS notice on MetOp-C GPROF calibration files",
+   "query": "PPS MetOp-C GPROF calibration November 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NASA PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "NRT status notices after SSMIS end",
+   "query": "PPS near real-time status SSMIS 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NASA GMAO",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q2",
+   "aim": "GEOS FP / FP-IT end",
+   "query": "GEOS FP-IT end 2026 GMAO",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA CPC / GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "merged IR satellite list (Meteosat-12)",
+   "query": "GPM_MERGIR Meteosat-12 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA (Autosnow)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "Autosnow version in IMERG/GPROF",
+   "query": "Autosnow IMERG snow ice mask",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "JMA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "JMA forecast input for precipitation phase",
+   "query": "IMERG JMA forecast precipitation phase",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "JAXA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "GSMaP NRT latency/status",
+   "query": "GSMaP NRT latency 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NOAA CPC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "CMORPH-2 real time status",
+   "query": "CMORPH-2 real time CPC",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "EUMETSAT H SAF",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "H SAF NRT precipitation products",
+   "query": "H SAF H60 precipitation product",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "NASA PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "NRT file retention",
+   "query": "PPS near real-time data retention IMERG",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "NASA CMR",
+   "publisher": "registries",
+   "subquestion_id": "q4",
+   "aim": "catalog of IMERG Late collections and providers",
+   "query": "CMR collections keyword IMERG Late",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 26.6,
+  "shift_min": 0,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 215561,
+  "subagent_minutes_planned": 42,
+  "subagent_minutes": 39.8,
+  "follow_ups": 0,
+  "continuations": 6,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": false
+ }
+}

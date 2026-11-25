@@ -1,0 +1,3530 @@
+{
+ "question": "How are GPCP Daily and the groups that produce it funded; has that funding been stable, cut or threatened (Jan 2025-Nov 2026); and have they appeared in news (Jan 2024-Nov 2026) about political decisions, priority shifts, funding uncertainty, layoffs or restructuring?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed cuts, terminations, restructuring)",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "NASA route: how NASA pays for GPCP V3.x daily and whether that funding was cut or threatened, 2025-2026",
+   "status": "answered",
+   "source_ids": [
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s13",
+    "s14",
+    "s16",
+    "s23"
+   ],
+   "remaining_gap": "Behrangi award number and whether it ends in CY2026; FY2026 operating plan; which contract pays Bolvin and Nelkin."
+  },
+  {
+   "id": "q2",
+   "question": "NOAA route: CDR Program, CISESS cooperative agreement, NCEI serving; stability 2025-2026",
+   "status": "answered",
+   "source_ids": [
+    "s42",
+    "s43",
+    "s44",
+    "s46",
+    "s52",
+    "s53",
+    "s60"
+   ],
+   "remaining_gap": "No public GPCP amount or task under CISESS; modification history needs USAspending POST endpoints."
+  },
+  {
+   "id": "q3",
+   "question": "GPCC/DWD, GEWEX/WCRP and institutional routes; stability 2025-2026",
+   "status": "answered",
+   "source_ids": [
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s32",
+    "s39"
+   ],
+   "remaining_gap": "No GPCC budget line; GEWEX News Q4 2025-Q2 2026 unread."
+  },
+  {
+   "id": "q4",
+   "question": "News Jan 2024-Nov 2026 naming GPCP, its groups or people",
+   "status": "answered",
+   "source_ids": [
+    "s38",
+    "s56",
+    "s66",
+    "s71",
+    "s73",
+    "s74",
+    "s78"
+   ],
+   "remaining_gap": "Paywalled and blocked outlets (NPR, Axios, Maryland Matters) not read."
+  },
+  {
+   "id": "q5",
+   "question": "Court records and termination trackers naming the producing groups' awards",
+   "status": "uncertain",
+   "source_ids": [
+    "s18",
+    "s20",
+    "s68",
+    "s69",
+    "s84"
+   ],
+   "remaining_gap": "Grant Witness NOAA table needs a browser; no court records read."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://gdex.ucar.edu/resources/docs/gdex-strategy-to-wind-down-services-due-to-a-change-in-nsf-or-ncars-strategic-direction/",
+   "fetched_url": null,
+   "title": "Strategy to wind down services due to a change in NSF or NCAR’s strategic direction",
+   "author_org": "NSF NCAR Geoscience Data Exchange (GDEX)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/gdex_winddown.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Undated contingency procedure; does not name GPCP or say it is in effect.",
+   "found_by": [
+    "main"
+   ],
+   "scope": "context: NCAR GDEX (redistributor)"
+  },
+  {
+   "id": "s2",
+   "url": "https://eos.org/research-and-developments/judge-blocks-nsf-from-dismantling-ncar",
+   "fetched_url": null,
+   "title": "Judge Blocks NSF From Dismantling NCAR",
+   "author_org": "Eos (AGU)",
+   "published": "2026-06",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/eos_ncar_injunction.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Names NCAR, not GPCP or GDEX; GDEX is only a redistributor of GPCP.",
+   "found_by": [
+    "main"
+   ],
+   "scope": "context: NCAR (host of GDEX, a GPCP redistributor)"
+  },
+  {
+   "id": "s3",
+   "url": "https://www.nasa.gov/wp-content/uploads/2025/05/fy-2026-budget-technical-supplement-002.pdf",
+   "fetched_url": null,
+   "title": "FY 2026 President's Budget Request Summary (Technical Supplement)",
+   "author_org": "NASA",
+   "published": "2025-06-09 (NASA page date; file uploaded 2025-05)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy26_tech_supp.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Request, not enacted. GPCP and precipitation not named in the ESDS section. FY2025 column '--'. Earth Science Research and Analysis 380.6 (FY2024) -> 189.4 (FY2026 request) in same table.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.nasa.gov/wp-content/uploads/2026/04/fiscal-year-2027-full-budget-request.pdf",
+   "fetched_url": null,
+   "title": "FY 2027 Budget Estimates, National Aeronautics and Space Administration",
+   "author_org": "NASA",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy27_full_budget.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Enacted FY2025/FY2026 columns '--' for Earth Science lines. MEaSUREs, GPCP, precipitation: NOT PRESENT in ESDS section.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "FY2026 CJS Joint Explanatory Statement (Division A of P.L. 119-74)",
+   "author_org": "Congress (posted by Senate Committee on Appropriations)",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "OCR text; search for 'Earth Science Data', 'ESDIS', 'MEaSUREs' found none. JES adopts Senate report direction in places; Senate/House report language not read here.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s6",
+   "url": "https://has.arizona.edu/news/ali-behrangi-named-principal-investigator-new-3-million-nasa-grant-advance-global",
+   "fetched_url": null,
+   "title": "Ali Behrangi Named Principal Investigator on New $3 Million NASA Grant to Advance Global Precipitation Data Record",
+   "author_org": "University of Arizona, Hydrology and Atmospheric Sciences",
+   "published": "2023-07-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ua_behrangi_pi_news.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Program (MEaSUREs) not named on this page; award number, start/end dates NOT PRESENT. The only original saved in pt3 is the .txt (HTML original not copied).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s7",
+   "url": "https://www.earthdata.nasa.gov/about/competitive-programs/measures/long-term-gpcp-precipitation",
+   "fetched_url": null,
+   "title": "High Latitude Improvement of Long-Term GPCP Precipitation Products Using Recent NASA Missions",
+   "author_org": "NASA Earthdata",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_measures_gpcp.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Amounts, award numbers, periods NOT PRESENT. The 2023 (V4) MEaSUREs selection is not on this page.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s8",
+   "url": "https://labor.maryland.gov/Employment/pdf/warn-log-2025.pdf",
+   "fetched_url": null,
+   "title": "2025 WARN/ESA LOG",
+   "author_org": "Maryland Department of Labor",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/md_warn_log_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Log does not name the contract, NASA, Goddard, Code 612 or GPCP; no source ties these layoffs to the GPCP staff (Bolvin, Nelkin).",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ],
+   "scope": "context"
+  },
+  {
+   "id": "s9",
+   "url": "https://www.kadoa.com/layoffs/company/science-systems-and-applications-ssai",
+   "fetched_url": null,
+   "title": "Science Systems and Applications, Inc. (SSAI) Layoffs & WARN Notices",
+   "author_org": "Kadoa (aggregator)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/kadoa_ssai_warn.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Aggregator; another aggregator (search snippet) lists an extra 149-worker July 2025 entry not in the official MD log. warntracker.com refused by sandbox (CONNECT 403).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context"
+  },
+  {
+   "id": "s10",
+   "url": "https://www.nasa.gov/news-release/nasa-awards-atmosphere-research-support-contract/",
+   "fetched_url": null,
+   "title": "NASA Awards Atmosphere Research Support Contract (C25-022)",
+   "author_org": "NASA",
+   "published": "2025-09-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nasa_atmos_contract_release.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Release does not name SSAI, Code 612, GPCP, Bolvin or Nelkin; whether the GPCP SSAI staff worked under this contract (vs. another SSAI vehicle) is NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s11",
+   "url": "https://www.washingtontechnology.com/contracts/2025/09/stc-wins-163m-nasa-atmospheric-research-contract/408371/",
+   "fetched_url": null,
+   "title": "STC wins $163M NASA atmospheric research contract",
+   "author_org": "Washington Technology (Ross Wilkers)",
+   "published": "2025-09-25",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/wt_stc_atmos.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Code 612, GPCP and the SSAI GPCP staff NOT PRESENT; no layoffs or staff transfer mentioned. Extraction by WebFetch small model.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s12",
+   "url": "https://espo.nasa.gov/sites/default/files/documents/2026-05/D2_0915_Scott_ESDS-Updates.pdf",
+   "fetched_url": null,
+   "title": "Earth Science Data Systems Updates (Joel Scott, Program Executive, ESDS)",
+   "author_org": "NASA Headquarters",
+   "published": "2026-05 (file path)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/esds_updates_2026-05.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No budget figures; MEaSUREs and GPCP NOT PRESENT (searched).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s13",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt272/html/CRPT-119hrpt272.htm",
+   "fetched_url": null,
+   "title": "House Report 119-272 - Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2026",
+   "author_org": "House Committee on Appropriations",
+   "published": "2025-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/hrpt119-272.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Searched for MEaSUREs, 'Earth Science Data', DAAC, 'Distributed Active', 'Research and Analysis': NOT PRESENT. Committee recommendation, not enacted.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s14",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119srpt44/html/CRPT-119srpt44.htm",
+   "fetched_url": null,
+   "title": "Senate Report 119-44 - Departments of Commerce and Justice, Science, and Related Agencies Appropriations Bill, 2026",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2025-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/srpt119-44.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Searched for MEaSUREs, 'Earth Science Data', DAAC, 'Distributed Active': NOT PRESENT. Report addresses missions, not data-record programs.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s15",
+   "url": "https://www.oversight.gov/sites/default/files/documents/reports/2026-01/2025%20Report%20on%20NASA%27s%20Top%20Management%20and%20Performance%20Challenges.pdf",
+   "fetched_url": null,
+   "title": "2025 Report on NASA's Top Management and Performance Challenges",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2025 (posted 2026-01)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_tmc_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Agency-wide only; not tied to GSFC Earth Sciences Division, Code 612, GES DISC or GPCP. Searched 'Earth Science', ESDIS, EOSDIS, DAAC, Goddard: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context"
+  },
+  {
+   "id": "s16",
+   "url": "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "README Document for GPCP V3.3 Daily",
+   "author_org": "NASA GSFC / GES DISC",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/readme_gpcpv33_daily.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Award number, amount, period NOT PRESENT. PDF original not copied (only .txt existed in pt2 main folder).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s17",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "ATBD for GPCP V3.3 Daily",
+   "author_org": "NASA GES DISC docserver (GPCP team)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_v33_daily_atbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Funding amounts and end date NOT PRESENT. Note the FY2026 PBR says MEaSUREs will complete current projects by end of CY 2026 (sa1-e1); no source found on whether the Behrangi award ends then.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://dashboards.planetary.org/data/cancellations/terminations.csv",
+   "fetched_url": null,
+   "title": "NASA Contract & Grant Cancellations Tracker - terminations.csv (Confirmed Cancellations)",
+   "author_org": "The Planetary Society (Casey Dreier), from USAspending.gov",
+   "published": "Data updated November 19, 2026",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/planetary_terminations.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Absence finding. Dashboard says 'Not exhaustive — This list captures awards meeting specific detection criteria.' Descoped.csv (work/raw/sa1/planetary_descoped.txt) also searched: no match. Dashboard page text at work/raw/sa1/planetary_cancellations.txt.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s19",
+   "url": "https://dashboards.planetary.org/cancellations/",
+   "fetched_url": null,
+   "title": "NASA Contract & Grant Cancellations Tracker | The Planetary Society",
+   "author_org": "The Planetary Society",
+   "published": "Data updated November 19, 2026",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/planetary_cancellations.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Method page only.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context"
+  },
+  {
+   "id": "s20",
+   "url": "https://dashboards.planetary.org/data/cancellations/descoped.csv",
+   "fetched_url": null,
+   "title": "NASA Contract & Grant Cancellations Tracker - descoped.csv",
+   "author_org": "The Planetary Society",
+   "published": "Data updated November 19, 2026",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/planetary_descoped.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Absence finding.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s21",
+   "url": "https://resilience.arizona.edu/news/u-tally-so-far-67-research-grants-terminated-trump-administration",
+   "fetched_url": null,
+   "title": "U of A tally so far: 67 research grants terminated by Trump administration",
+   "author_org": "Indigenous Resilience Center, University of Arizona (reprint of Arizona Daily Star)",
+   "published": "2025-07 (per search snippet)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ua_67_grants_terminated.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "NASA, Behrangi, Hydrology and Atmospheric Sciences NOT PRESENT. Also held by sa4 (fetch was a cached copy from sa4).",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ],
+   "scope": "context"
+  },
+  {
+   "id": "s22",
+   "url": "https://www.highergov.com/contract-opportunity/notice-of-intent-to-extend-the-hydrosphere-biosph-80gsfc20c0044-s-2e942/",
+   "fetched_url": null,
+   "title": "Notice of Intent to Extend the Hydrosphere, Biosphere, and Geophysics Support Services (HBG) Contract (80GSFC20C0044)",
+   "author_org": "NASA GSFC (via HigherGov aggregator of SAM.gov notice)",
+   "published": "2025-08-05",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/highergov_hbg_extension.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Which six labs NOT PRESENT; precipitation, GES DISC, Code 612 NOT PRESENT. Whether GPCP SSAI staff (Bolvin, Nelkin) are on HBG or on SAMDA/ATMOS is NOT PRESENT in any source read. Search snippet (not read) says HBG II $425M recompete final RFP Oct 2026, award expected April 2027.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s23",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/06/final-memorandum-ig-26-005-review-of-goddard-space-flight-centers-transformation-efforts.pdf",
+   "fetched_url": null,
+   "title": "Review of Goddard Space Flight Center's Transformation Efforts (IG-26-005)",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2026-06-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_ig-26-005.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Center-wide; Earth Science Division, Code 612, GES DISC, GPCP NOT PRESENT (searched).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context"
+  },
+  {
+   "id": "s24",
+   "url": "https://www.highergov.com/contract-opportunity/support-for-atmospheric-sciences-modeling-and-dat-nng17hp01c-s-7dca8",
+   "fetched_url": null,
+   "title": "Support for Atmospheric Sciences, Modeling and Data Assimilation (SAMDA) Contract Extension (NNG17HP01C)",
+   "author_org": "NASA GSFC (via HigherGov aggregator of SAM.gov notice)",
+   "published": "2022-07-19",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/highergov_samda_extension.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Code 612/Mesoscale lab and precipitation NOT PRESENT; links SSAI's Atmospheres support to SAMDA, whose atmospheric successor ATMOS went to STC effective Nov 3, 2025 (sa1-e9, sa1-e10). No source says whether Bolvin/Nelkin moved, stayed with SSAI under another vehicle, or were affected.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s25",
+   "url": "https://www.earthdata.nasa.gov/about/competitive-programs/measures/next-generation-global-precipitation-climatology-project",
+   "fetched_url": null,
+   "title": "Next-Generation Global Precipitation Climatology Project (GPCP) Data Products",
+   "author_org": "NASA Earthdata",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_measures_nextgen_gpcp.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Award number, amount, years NOT PRESENT; page is an older project description (pre-V3). The proposal ID '22-MEASURE22-0030' seen only in a search summary (source not identified; not verified).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s26",
+   "url": "https://web.archive.org/web/20260712150811/https://www.gewex.org/gewex-content/uploads/2025/11/Q32025.pdf",
+   "fetched_url": null,
+   "title": "GEWEX News, Quarter 3 2025 - Commentary: When Winter Comes, Spring Is Not Far Away",
+   "author_org": "International GEWEX Project Office; commentary by Xubin Zeng, Co-Chair, GEWEX Scientific Steering Group",
+   "published": "2025-11 (Quarter 3 2025 issue; uploaded 2025/11)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gewex_q3_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Original gewex.org PDF returned 403 to scripts and exceeded WebFetch size; read from Wayback copy 2026-07-12. No amounts, award numbers or fiscal years for IGPO funding (NOT PRESENT). Does not name GPCP or GDAP as affected; does not say who the 'GEWEX colleagues' affected by workforce reductions are.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "GEWEX/IGPO/WCRP funding 2025",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.wcrp-climate.org/images/core-projects/GEWEX/SSG37%20Report_V4_LR.pdf",
+   "fetched_url": null,
+   "title": "37th Session of the GEWEX Scientific Steering Group (WCRP Report 02/2025)",
+   "author_org": "WCRP / GEWEX (Van Oevelen, Peter J., et al.)",
+   "published": "2025 (session February 2025; Publication No: 02/2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gewex_ssg37_report.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No IGPO funder names, amounts or award numbers (NOT PRESENT). The GPCC 'handover to GHP' is a GEWEX panel oversight change, not a funding change. Report is 142 pp; only funding/GPCP/GPCC passages searched.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "GEWEX/IGPO funding; GDAP role; GPCC oversight restructuring",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.wcrp-climate.org/JSC46/Documents/Presentations/5.2%20WCRP_Finance_draft4.pdf",
+   "fetched_url": null,
+   "title": "WCRP Financial Landscape And Opportunities (JSC-46 presentation 5.2, draft 4)",
+   "author_org": "World Climate Research Programme (JSC-46)",
+   "published": "2025 (JSC-46; date NOT PRESENT on slides; refers to 2025 year-end and 2026 budget)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wcrp_jsc46_finance.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Draft slides; units on 'Income 2026' table are 'CHF x 1000' per header ('CHF x' then '1000'). GEWEX lines are WCRP allocations to the GEWEX core project, not IGPO funding or GPCP production funding. No US-withdrawal statement.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "WCRP/GEWEX funding 2025-2026; US (USGCRP/NSF) funding loss",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://www.wcrp-climate.org/documents/JSC/JSC47/Presentations/WCRP-JSC-47-GEWEX_Monsoon_5Apr2026.pdf",
+   "fetched_url": null,
+   "title": "GEWEX report to WCRP JSC-47 (5 Apr 2026)",
+   "author_org": "GEWEX / WCRP JSC-47",
+   "published": "2026-04-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wcrp_jsc47_gewex.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Slides; no amounts or award numbers (NOT PRESENT). 'increasingly difficult funding' appears on a Regional Hydroclimate Projects slide, not about GPCP.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "GEWEX/IGPO funding 2026; GPCP V4 MEaSUREs"
+  },
+  {
+   "id": "s30",
+   "url": "https://correctiv.org/spotlight-newsletter/wenn-an-wetter-warnungen-gespart-wird/",
+   "fetched_url": null,
+   "title": "Wenn an Wetter-Warnungen gespart wird (CORRECTIV Spotlight newsletter)",
+   "author_org": "CORRECTIV (Anette Dowideit, Chefredakteurin)",
+   "published": "about 2025-07-10 (audio file timestamp and same-day EU no-confidence vote; date line NOT PRESENT in saved text)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/correctiv_dwd.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No GPCC mention (NOT PRESENT); no euro figures (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "DWD budget 2025-2026"
+  },
+  {
+   "id": "s31",
+   "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1025048",
+   "fetched_url": null,
+   "title": "Haushalt - Ausschuss - hib 717/2024",
+   "author_org": "Deutscher Bundestag, heute im bundestag",
+   "published": "2024-10-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/bundestag_hib_717_2024_webfetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Host blocked to scripts (CONNECT 403); read via WebFetch extraction only. GPCC, Niederschlag, Stellen: NOT PRESENT. Search snippet said the new titles are offset by cuts of the same size elsewhere ('durch Kürzungen in gleicher Höhe gegenfinanziert'), not in the extraction.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "DWD federal budget 2025"
+  },
+  {
+   "id": "s32",
+   "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-12777.html",
+   "fetched_url": null,
+   "title": "Global Precipitation Climatology Centre: Release of new Versions of global gridded Daily and Monthly Precipitation Analyses (EGU26-12777)",
+   "author_org": "Deutscher Wetterdienst, GPCC (Schirmeister, Ziese, Rustemeier et al.)",
+   "published": "2026-03-14 (updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/egu26_12777.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Conference abstract; GPCC funding, staffing, budget: NOT PRESENT. Ten DWD/GPCC authors listed.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "GPCC restructuring (products)"
+  },
+  {
+   "id": "s33",
+   "url": "https://www.gewex.org/about/sponsors_partners/",
+   "fetched_url": null,
+   "title": "Sponsors and Partners | GEWEX",
+   "author_org": "International GEWEX Project Office",
+   "published": "NOT PRESENT (Wayback capture 2026-10-05)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gewex_sponsors_partners.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Read from Wayback copy (https://web.archive.org/web/20261005123445/https://www.gewex.org/about/sponsors_partners/) because gewex.org returns 403 to scripts. No amounts or award numbers (NOT PRESENT); NOAA/DOE: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "IGPO funding route"
+  },
+  {
+   "id": "s34",
+   "url": "https://science.gmu.edu/news/mason-hosts-nasa-sponsored-program-improve-understanding-global-water-cycle",
+   "fetched_url": null,
+   "title": "Mason hosts NASA-sponsored program to improve understanding of global water cycle",
+   "author_org": "George Mason University College of Science",
+   "published": "2020-07-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gmu_igpo_2020.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "2020 article, before the 2025-2026 window. Award number, period of performance and funding agency of the $4 million: NOT PRESENT (agency not stated explicitly for the grant money).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "IGPO funding route (baseline)"
+  },
+  {
+   "id": "s35",
+   "url": "https://www.wetterdienst.de/Deutschlandwetter/Thema_des_Tages/6045/35-jahre-weltzentrum-fuer-niederschlagsklimatologie",
+   "fetched_url": null,
+   "title": "35 Jahre Weltzentrum für Niederschlagsklimatologie (DWD Thema des Tages, mirrored on wetterdienst.de)",
+   "author_org": "Deutscher Wetterdienst (Dr. Markus Ziese, Globale Niederschlagsüberwachung); page header Dipl.-Met. Adrian Leyser",
+   "published": "2025-01-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/wetterdienst_35jahre_wzn_webfetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction only; wetterdienst.de is a private weather site republishing the DWD Thema des Tages. Head of WZN NOT PRESENT here (search snippet elsewhere named Dr. Andreas Becker as Leiter des WZN, not read).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "GPCC mandate/status 2025"
+  },
+  {
+   "id": "s36",
+   "url": "https://www.wcrp-climate.org/images/core-projects/GEWEX/SSG36%20Report_V7.pdf",
+   "fetched_url": null,
+   "title": "36th Session of the GEWEX Scientific Steering Group (WCRP Report 09/2024)",
+   "author_org": "WCRP / GEWEX (Van Oevelen, Peter J., et al.)",
+   "published": "2024 (session April 2024; Publication No: 09/2024)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gewex_ssg36_report.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Pre-2025 baseline. A search-engine summary claimed this report names NASA and NOAA as IGPO funders; no such passage found in the saved text (searched 'primary sponsor|funded by|sponsored by|NOAA…IGPO'): NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "IGPO funding route (baseline)"
+  },
+  {
+   "id": "s37",
+   "url": "https://dkkv.org/wp-content/uploads/2026/03/Newspost-BM-Patrick-Schnieder-besucht-DWD.pdf",
+   "fetched_url": null,
+   "title": "Pressemitteilung: Bundesverkehrsminister Patrick Schnieder startet KI-basierte Wettervorhersage des Deutschen Wetterdienstes",
+   "author_org": "Deutscher Wetterdienst Pressestelle (copy hosted by DKKV)",
+   "published": "2026-03-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/dkkv_schnieder_dwd_2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Amount of investment funds NOT PRESENT; GPCC/WZN NOT PRESENT; Haushalt cuts or Stellenabbau NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "DWD federal funding 2026"
+  },
+  {
+   "id": "s38",
+   "url": "https://dbknews.com/2025/09/23/umd-earth-science-researcher-funding-cuts",
+   "fetched_url": null,
+   "title": "Federal funding cuts loom over about 25 UMD Earth science researchers future projects",
+   "author_org": "The Diamondback (Oliver Mack)",
+   "published": "2025-09-23",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/dbk_umd_earth_science_cuts_webfetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Host blocked to scripts (CONNECT 403); WebFetch extraction only, partly paraphrased framing around quotes. GPCP, precipitation, Adler, Gu, Huffman: NOT PRESENT, so not tied to the GPCP group. Possible overlap with sa2 (UMD/ESSIC route).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "UMD/ESSIC institutional support 2025",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://dwdbib.dwd.de/download/pdf/1052029.pdf",
+   "fetched_url": null,
+   "title": "DWD Jahrbuch 2025",
+   "author_org": "Deutscher Wetterdienst",
+   "published": "2026 (embedded file metadata dated 2026-04/05; report year 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/dwd_jahrbuch_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "dwdbib.dwd.de refused to scripts (CONNECT 403); PDF bytes came via WebFetch's saved binary and were converted with pdftotext (original PDF not in this folder). GPCC-specific budget or staffing: NOT PRESENT. Kürzungen/Einsparungen/Stellenabbau: no match in saved text. Prior-year comparison not in matched passages (a Goethe-Universität slide in search results gave 382 Mio. € 'Etat geplant 2024', not read).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "DWD (GPCC host) federal funding 2025"
+  },
+  {
+   "id": "s40",
+   "url": "https://www.fb12.uni-frankfurt.de/174424102.pdf",
+   "fetched_url": null,
+   "title": "Alumni-Treffen Informatiker/Mathematiker 2025 der J.W. Goethe Universität: Der DWD - Wetter und Klima aus einer Hand (slides)",
+   "author_org": "Deutscher Wetterdienst (Leander Jamin et al.), hosted by Goethe-Universität Frankfurt FB12",
+   "published": "2025-05-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/unifrankfurt_dwd_slides.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Planned 2024 figures, not actuals; two-column slide text interleaved. GPCC/WZN: NOT PRESENT. PDF bytes came via WebFetch saved binary, converted with pdftotext (original PDF not in this folder).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "DWD (GPCC host) budget baseline 2024"
+  },
+  {
+   "id": "s41",
+   "url": "https://www.nzherald.co.nz/the-listener/new-zealand/nz-scientists-feel-the-heat-from-us-budget-cuts/A5E36ADGZVFJDGD42RH52ACJIA/",
+   "fetched_url": null,
+   "title": "NZ scientists feel the heat from US budget cuts",
+   "author_org": "New Zealand Listener / NZ Herald (Andrea Graves)",
+   "published": "2025-06-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/nzherald_wcrp_naish_webfetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction; extractor notes the two-thirds statement does not name WCRP explicitly. GEWEX/GPCP/GPCC: NOT PRESENT. Consistent with WCRP JSC-46 finance slides (USGCRP (NSF) line 457 -> 0; activities lost about 2/3).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "WCRP funding loss 2025 (affected people/critics, r14)"
+  },
+  {
+   "id": "s42",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2027, Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Proposed, not enacted. A find_text search for \"Climate Data Record\" in this CJ text returned no lines; the CJ does not name CDRs, GPCP or CISESS. The cooperative-institute terminations are in OAR, not NESDIS; the CJ does not tie them to CISESS.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "NCEI and NESDIS PDR&A budget lines (agency-wide), not GPCP-specific"
+  },
+  {
+   "id": "s43",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA24NESX432C0001_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA24NESX432C0001 (CISESS five-year renewal)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "last_modified_date 2026-09-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_NA24NESX432C0001.json",
+   "retrieved": "2026-11-20",
+   "limitations": "Cumulative obligation only; per-modification amounts and dates (transactions) not retrieved (USAspending transactions endpoint is POST-only, not reachable with fetch_json.py). No GPCP-specific task or subaward named. The cfda_obligations figures are program-wide for CFDA 11.432 (all NOAA cooperative institutes), not CISESS. Generated ID in the saved record is ASST_NON_NA24NESX432C0001_013.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "CISESS cooperative agreement (whole institute, not GPCP-specific)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA19NES4320002_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA19NES4320002 (CISESS 2019 cooperative agreement)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_NA19NES4320002.json",
+   "retrieved": "2026-11-20",
+   "limitations": "Cumulative only; modifications not retrieved. No GPCP task named. End date 2025-06-30 overlaps the successor award start 2024-07-01 (no-cost/overlap period; record does not explain).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "CISESS cooperative agreement 2019-2025 (whole institute)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://www.eenews.net/articles/trump-cuts-would-cripple-noaas-wide-ranging-science-partnerships/",
+   "fetched_url": null,
+   "title": "Trump cuts would cripple NOAA's wide-ranging science partnerships",
+   "author_org": "E&E News (Chelsea Harvey)",
+   "published": "2025-04-21",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/eenews_noaa_ci_partnerships.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Agency-wide; does not tie delays to CISESS. Read via WebFetch extraction (www.eenews.net refused by the sandbox proxy, CONNECT 403).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NOAA cooperative institutes, agency-wide"
+  },
+  {
+   "id": "s46",
+   "url": "https://essic.umd.edu/umd-awarded-388m-noaa-cooperative-agreement-for-earth-system-studies/",
+   "fetched_url": null,
+   "title": "UMD Awarded $388M NOAA Cooperative Agreement for Earth System Studies",
+   "author_org": "ESSIC / UMD CMNS (Abby Robinson)",
+   "published": "2024-07-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/essic_cisess_388m.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Press release; $388M is the agreement ceiling announced, against $77,486,317 obligated to date on USAspending (sa2-e2). GPCP, Climate Data Record and precipitation: NOT PRESENT. today.umd.edu original returned HTTP 403 (fetch_page and WebFetch); ESSIC repost read instead.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "CISESS cooperative agreement (whole institute)"
+  },
+  {
+   "id": "s47",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes",
+   "fetched_url": null,
+   "title": "2025 Notice of Changes (NESDIS)",
+   "author_org": "NOAA NESDIS",
+   "published": "2025 (entries April 25 - December 5, 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_notice_of_changes_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "List page shows truncated teasers. GPCP / Global Precipitation Climatology: NOT PRESENT on the page. Absence from this list is not proof that no change was made elsewhere.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NESDIS/NCEI product retirements 2025 (CDR Program context)"
+  },
+  {
+   "id": "s48",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes/cloud-properties-isccp-h-series-cdr",
+   "fetched_url": null,
+   "title": "Cloud Properties - ISCCP H-Series CDR (Notice of Changes)",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "2025-05-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_noc_isccp_h_cdr.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Reason for decommissioning: NOT PRESENT. Not GPCP; shows that CDR updates were being ended in 2025, for coordinator to weigh.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NOAA CDR Program (another CDR)"
+  },
+  {
+   "id": "s49",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes",
+   "fetched_url": null,
+   "title": "Notice of Changes (NESDIS, current list)",
+   "author_org": "NOAA NESDIS",
+   "published": "entries August 3 - November 2, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_notice_of_changes_all.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Page shows only 6 recent entries; earlier 2026 notices (January-July 2026) may not be shown and no 2026 archive page exists (2026-notice-of-changes URL returned HTTP 404). GPCP: NOT PRESENT. S-NPP cessation is an input-satellite threat (out of scope).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NESDIS product retirements 2026"
+  },
+  {
+   "id": "s50",
+   "url": "https://cisess.umd.edu/assets/1/7/7-1_Bob_Adler.pdf",
+   "fetched_url": null,
+   "title": "The Global Precipitation Climatology Project (GPCP) CDR AT NOAA: Research to Real-time Climate Monitoring (slides)",
+   "author_org": "Robert Adler, Matt Sapiano, Guojun Gu (University of Maryland) et al., hosted by CISESS",
+   "published": "NOT PRESENT (content refers to October 2014; about late 2014)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cisess_adler_gpcp_cdr_at_noaa.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "About 2014, before the 2025-2026 window; funding amounts, award numbers, fiscal years: NOT PRESENT. Text extracted from slide layout, so the two columns interleave.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "GPCP CDR at NOAA (production route history)"
+  },
+  {
+   "id": "s51",
+   "url": "https://boulderreportinglab.org/2026/04/02/half-of-staff-at-boulders-noaa-global-monitoring-lab-face-furloughs-as-funding-freeze-drags-on/",
+   "fetched_url": null,
+   "title": "Half of staff at Boulder's NOAA Global Monitoring Lab face furloughs as funding freeze drags on",
+   "author_org": "Boulder Reporting Lab (Brooke ... , reporter)",
+   "published": "2026-04-02",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/brl_ci_funding_freeze_2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "About CIRES/GML (OAR). CISESS, University of Maryland, NESDIS: NOT PRESENT. Does not tie the pause to CISESS; USAspending shows the CISESS award was modified as late as 2026-09-30 (sa2-e2). Line 16 is truncated in the saved text.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "NOAA cooperative-institute grant pause, 2026 (agency-wide)"
+  },
+  {
+   "id": "s52",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf",
+   "fetched_url": null,
+   "title": "Explanatory Statement for Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2027 (Senate)",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/senate_cjs_explanatory_stmt.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Senate committee mark, not enacted; FY2027 runs on a CR to 2026-12-11 (per brief; CR text not read here). Climate Data Records / GPCP: NOT PRESENT as separate lines in matched text.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "FY2027 Senate NCEI and PDR&A lines (agency-wide)"
+  },
+  {
+   "id": "s53",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+   "fetched_url": null,
+   "title": "Precipitation - GPCP Daily CDR (NCEI product page)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_gpcp_daily_cdr.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Banner is site-wide, not GPCP-specific; the page does not say whether GPCP Daily is among impacted products. Funding, award numbers: NOT PRESENT. Page describes the 1DD V1.3 product (DOI 10.7289/V5RX998Z).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NCEI serving of GPCP Daily CDR (1DD V1.3)"
+  },
+  {
+   "id": "s54",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration-FAQ",
+   "fetched_url": null,
+   "title": "NCEI Cloud Migration Frequently Asked Questions",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-14)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_cloud_migration_faq.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Agency-wide; GPCP: NOT PRESENT. NCEI Alerts page (list of impacted products) not read.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "NCEI serving status 2026 (agency-wide)"
+  },
+  {
+   "id": "s55",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "alerts dated 11/02/2026 - 11/17/2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_alerts.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "GPCP: NOT PRESENT. Alerts are not product-by-product for the migration.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NCEI serving status Nov 2026 (agency-wide)"
+  },
+  {
+   "id": "s56",
+   "url": "https://higheredlaborunited.org/2025/08/18/cuts-to-earth-science-at-university-of-maryland-college-park/",
+   "fetched_url": null,
+   "title": "Cuts to Earth Science at University of Maryland, College Park",
+   "author_org": "Higher Education Labor United (Nina Randazzo, United Academics of Maryland-UMD)",
+   "published": "2025-08-18",
+   "data_period": null,
+   "source_type": "advocacy (union)",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/helu_essic_cuts_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Advocacy source by an affected union chapter; does not split NASA vs NOAA/CISESS funding or name GPCP, Adler, Gu. The Diamondback (sa2-e17) reports UMD said it was not aware of large-scale cuts to the center.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "ESSIC staff funding 2025 (producing group's home center)"
+  },
+  {
+   "id": "s57",
+   "url": "https://dbknews.com/2025/09/23/umd-earth-science-researcher-funding-cuts/",
+   "fetched_url": null,
+   "title": "Federal funding cuts loom over about 25 UMD Earth science researchers' future projects",
+   "author_org": "The Diamondback (Oliver Mack)",
+   "published": "2025-09-23",
+   "data_period": null,
+   "source_type": "news (student newspaper)",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/dbk_essic_funding_cuts_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Read via WebFetch extraction (dbknews.com refused by sandbox proxy). CISESS: NOT PRESENT; termination notices: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "ESSIC staff funding 2025"
+  },
+  {
+   "id": "s58",
+   "url": "https://www.sej.org/headlines/trump-administration-holds-noaa-grant-funding",
+   "fetched_url": null,
+   "title": "\"Trump Administration Holds Up NOAA Grant Funding\" (SEJ headline excerpt of The Hill)",
+   "author_org": "Society of Environmental Journalists, excerpting Rachel Frazin, The Hill",
+   "published": "2026-04-15 (The Hill, April 13)",
+   "data_period": null,
+   "source_type": "news (aggregator excerpt)",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sej_noaa_grant_hold_2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Excerpt of The Hill (original not read). Agency-wide; CISESS, UMD, NESDIS: NOT PRESENT. Status after April 2026 not given. USAspending shows CISESS award last modified 2026-09-30 (sa2-e2), which may bear on whether CISESS funds moved later.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NOAA grant pause 2026 (agency-wide)"
+  },
+  {
+   "id": "s59",
+   "url": "https://www.everycrsreport.com/files/2026-03-12_IF13024_eb7ce330a93e719e4ae88b7880d3a76d47b0721b.html",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA) FY2026 Budget Request and Appropriations (CRS IF13024, March 12, 2026 version)",
+   "author_org": "Congressional Research Service (via EveryCRSReport)",
+   "published": "2026-03-12",
+   "data_period": null,
+   "source_type": "official (CRS)",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/crs_if13024_2026-03-12.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Saved file is HTML source saved as .txt; quote drops the inline link tags. Climate Data Records, NCEI, CISESS: NOT PRESENT in the matched lines.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NOAA/NESDIS FY2026 appropriations (agency-wide)"
+  },
+  {
+   "id": "s60",
+   "url": "https://essic.umd.edu/review-of-global-precipitation-for-2025/",
+   "fetched_url": null,
+   "title": "Review of Global Precipitation for 2025",
+   "author_org": "ESSIC, University of Maryland (Robert Adler et al.)",
+   "published": "2026-01-27",
+   "data_period": null,
+   "source_type": "official (producer)",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/essic_review_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Names NCEI as supporting the Monthly ICDR only; daily (1DD V1.3 / V3.3) NOAA support, CISESS route, amounts and award numbers: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "sa4"
+   ],
+   "scope": "GPCP funding routes as stated by the producer (UMD/ESSIC)"
+  },
+  {
+   "id": "s61",
+   "url": "https://dc.medill.northwestern.edu/blog/2026/04/29/noaa-defends-cuts-to-research-and-climate-monitoring-at-budget-hearing/",
+   "fetched_url": null,
+   "title": "NOAA Defends Cuts to Research and Climate Monitoring at Budget Hearing",
+   "author_org": "Medill News Service (Gabriel Matias Castilho)",
+   "published": "2026-04-29",
+   "data_period": null,
+   "source_type": "news (student news service)",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/medill_noaa_budget_hearing_2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Agency-wide; no tie to CISESS or GPCP. Read via WebFetch extraction.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "FY2027 NOAA request, extramural research (agency-wide)"
+  },
+  {
+   "id": "s62",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-003_TMC_FY_2026_SECURED-1.pdf",
+   "fetched_url": null,
+   "title": "Top Management and Performance Challenges Facing the Department of Commerce in Fiscal Year 2026 (OIG-26-003)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2025-12-01",
+   "data_period": null,
+   "source_type": "official (oversight)",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_26_003_tmc_fy2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "NCEI, NESDIS, cooperative institutes, Climate Data Records, GPCP: NOT PRESENT (find_text, case-insensitive). Report read only by keyword search, not in full. Publication date taken from the WebSearch result summary, not checked in the PDF.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "r7 oversight check (negative result)"
+  },
+  {
+   "id": "s63",
+   "url": "https://blog.ucs.org/carlos-martinez/the-trump-administration-threatens-noaa-again-as-extreme-weather-looms/",
+   "fetched_url": null,
+   "title": "The Trump Administration Threatens NOAA—Again—as Extreme Weather Looms",
+   "author_org": "Union of Concerned Scientists (Carlos Javier Martinez)",
+   "published": "NOT PRESENT on saved text (content refers to 2026 Danger Season and FY2027 request; about May 2026)",
+   "data_period": null,
+   "source_type": "advocacy",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ucs_noaa_threat_2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Advocacy blog; publication date not in saved text. CISESS, NESDIS cooperative institutes, NCEI, GPCP: NOT PRESENT. Says FY2027 request is a 32% ($1.6 billion) cut, while Medill reports 26 percent; the coordinator should weigh.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "NOAA cooperative-institute grant disbursement 2026 (agency-wide)"
+  },
+  {
+   "id": "s64",
+   "url": "https://neguse.house.gov/sites/evo-subsites/neguse.house.gov/files/evo-media-document/4.23.25-noaa-cooperative-institutes-letter.pdf",
+   "fetched_url": null,
+   "title": "Letter to Secretary Lutnick on OMB proposal to terminate NOAA Cooperative Institutes funding",
+   "author_org": "Rep. Joe Neguse and co-signers (U.S. House)",
+   "published": "2025-04-23",
+   "data_period": null,
+   "source_type": "official (congressional letter)",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/neguse_ci_letter_2025-04-23.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "CISESS, Maryland, NESDIS, satellite: NOT PRESENT (find_text). Concerns an April 2025 OMB passback proposal; the enacted FY2026 law kept CIs funded (sa2-e11 OAR line).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "Proposed termination of all NOAA CI funding, 2025 (agency-wide)"
+  },
+  {
+   "id": "s65",
+   "url": "https://dbknews.com/2025/09/23/umd-earth-science-researcher-funding-cuts",
+   "fetched_url": null,
+   "title": "Federal funding cuts loom over about 25 UMD Earth science researchers' future projects",
+   "author_org": "The Diamondback (Oliver Mack)",
+   "published": "2025-09-23",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/dbk_umd_earth_science_cuts_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction, not raw text. Names ESSIC as a center, not CISESS, GPCP or its PIs; which funders/awards are expiring NOT PRESENT; the 'about 25' figure is from one researcher and the university disputes large-scale cuts.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "producing group (UMD ESSIC) named directly; GPCP not named"
+  },
+  {
+   "id": "s66",
+   "url": "https://www.scientificamerican.com/article/nasa-goddards-shrinking-workforce-could-stifle-future-space-missions-experts-say/",
+   "fetched_url": null,
+   "title": "NASA Goddard's shrinking workforce could stifle future space missions, experts say",
+   "author_org": "Scientific American (Eric Niiler)",
+   "published": "2026-09-22",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/sciam_goddard.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Center-wide; focus is astrophysics/engineering; Earth science division and precipitation groups NOT PRESENT.",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "context: Goddard center-wide"
+  },
+  {
+   "id": "s67",
+   "url": "https://www.aip.org/fyi/nasa-goddard-building-closures-draw-scrutiny",
+   "fetched_url": null,
+   "title": "NASA Goddard Building Closures Draw Scrutiny",
+   "author_org": "AIP FYI (Lindsay McKenzie)",
+   "published": "2025-11-12",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/aip_goddard_closures.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Which buildings closed and whether any house Earth Sciences Division / precipitation groups NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard campus consolidation"
+  },
+  {
+   "id": "s68",
+   "url": "https://dashboards.planetary.org/cancellations/districts/MD-04/",
+   "fetched_url": null,
+   "title": "NASA Award Cancellations in MD-04",
+   "author_org": "The Planetary Society",
+   "published": "2026-11-19 (data updated)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/planetary_cancellations_md04.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "District-level; UMD College Park may fall in a different district; Arizona district page (AZ-07) returned 404.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "q5 tracker check: NASA awards, Maryland"
+  },
+  {
+   "id": "s69",
+   "url": "https://dashboards.planetary.org/cancellations/districts/MD-05/",
+   "fetched_url": null,
+   "title": "NASA Award Cancellations in MD-05",
+   "author_org": "The Planetary Society",
+   "published": "2026-11-19 (data updated)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/planetary_cancellations_md05.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "District-level only.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "q5 tracker check: NASA awards, Maryland"
+  },
+  {
+   "id": "s70",
+   "url": "https://grantwitness.org/noaa",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration - Grant Witness",
+   "author_org": "Grant Witness",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e7",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/grantwitness_noaa.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Data table not loaded without a browser; UMD/CISESS rows not checked.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "q5 tracker check"
+  },
+  {
+   "id": "s71",
+   "url": "https://www.eenews.net/articles/nasa-uses-shutdown-to-make-major-moves-at-key-center/",
+   "fetched_url": null,
+   "title": "NASA uses shutdown to make major moves at key center",
+   "author_org": "E&E News (Scott Waldman)",
+   "published": "2025-11-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e9",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/eenews_goddard_shutdown_moves_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Probably paywall-truncated (only opening returned); WebFetch extraction.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard campus consolidation, earth science framing"
+  },
+  {
+   "id": "s72",
+   "url": "https://dbknews.com/2026/06/03/umd-lays-off-employees-budget-crunch/",
+   "fetched_url": null,
+   "title": "UMD lays off 84 employees amid budget crunch",
+   "author_org": "The Diamondback (Pera Onal)",
+   "published": "2026-06-03",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/dbk_umd_layoffs_2026_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "State-funded staff; no units named; ESSIC is largely soft-money funded.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: UMD institution-wide"
+  },
+  {
+   "id": "s73",
+   "url": "https://www.insurancejournal.com/news/national/2025/03/28/817609.htm",
+   "fetched_url": null,
+   "title": "Weather Service Merges Units as Staffing Pressure Rises",
+   "author_org": "Bloomberg (Lauren Rosenthal, Brian K. Sullivan) via Insurance Journal",
+   "published": "2025-03-28",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/insjournal_cpc_merge_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Names CPC (an input provider) as a unit, not its GPCP geo-IR work or Xie; WebFetch extraction.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "producing/input group (NOAA CPC) named directly; GPCP not named"
+  },
+  {
+   "id": "s74",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/george.j.huffman",
+   "fetched_url": null,
+   "title": "George J Huffman - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC Sciences and Exploration Directorate",
+   "published": "NOT PRESENT (lists 2026 publications)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/huffman_gsfc_bio.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Self-maintained bio page, not news; 'PMM Science Team, 2007-2025' end date reason NOT PRESENT (could be end of a solicitation cycle).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "person (Huffman) named directly; status check"
+  },
+  {
+   "id": "s75",
+   "url": "https://www.eenews.net/articles/trump-cuts-would-cripple-noaas-wide-ranging-science-partnerships/",
+   "fetched_url": null,
+   "title": "Trump cuts would cripple NOAA’s wide-ranging science partnerships",
+   "author_org": "E&E News (Chelsea Harvey)",
+   "published": "2025-04-21",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/eenews_noaa_ci_cuts_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Names the cooperative-institute program, not CISESS/UMD; WebFetch extraction.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "funding program (NOAA cooperative institutes) only"
+  },
+  {
+   "id": "s76",
+   "url": "https://physicsworld.com/a/nasas-goddard-space-flight-center-hit-by-significant-downsizing/",
+   "fetched_url": null,
+   "title": "NASA’s Goddard Space Flight Center hit by significant downsizing",
+   "author_org": "Physics World (Peter Gwynne)",
+   "published": "2025-11-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/physicsworld_goddard_downsizing_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Center-wide; no Earth science or precipitation groups named; WebFetch extraction.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard campus consolidation"
+  },
+  {
+   "id": "s77",
+   "url": "https://www.warntracker.com/company/science-systems-and-applications",
+   "fetched_url": null,
+   "title": "Science Systems and Applications layoffs (WARN notices)",
+   "author_org": "WARNTracker (aggregates state WARN filings)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/warntracker_ssai_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Aggregator, not the Maryland DOL record; no link to Goddard, Code 612 or GPCP staff; trackers disagree whether the July 149 and 79 are separate notices (search snippet).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "producing contractor (SSAI) named directly; GPCP not named"
+  },
+  {
+   "id": "s78",
+   "url": "https://dbknews.com/2025/11/26/uam-umd-federal-research-cuts/",
+   "fetched_url": null,
+   "title": "UMD community members urge university to increase protections for faculty researchers",
+   "author_org": "The Diamondback (Amelia Twyman)",
+   "published": "2025-11-26",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/dbk_uam_research_cuts_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction; one researcher's account; colleagues not named; which NOAA agreement (CISESS or other) NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "producing group (UMD ESSIC) named directly; NOAA cooperative agreements named; GPCP not named"
+  },
+  {
+   "id": "s79",
+   "url": "https://dbknews.com/2025/09/16/umd-grants-canceled-trump",
+   "fetched_url": null,
+   "title": "About $30 million worth of UMD grants have been canceled",
+   "author_org": "The Diamondback (Apurva Mahajan)",
+   "published": "2025-09-16",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/dbk_umd_grants_canceled_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No agency breakdown for NASA/NOAA; WebFetch extraction.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "q5: UMD terminations; ESSIC/CISESS/GPCP awards NOT PRESENT"
+  },
+  {
+   "id": "s80",
+   "url": "https://eos.org/wp-content/uploads/2026/01/Eos_State-of-the-Science_Federal-Workforce.pdf",
+   "fetched_url": null,
+   "title": "State of the Science 1 Year On: The Federal Workforce",
+   "author_org": "Eos / AGU",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/eos_federal_workforce_2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Agency-wide; two-column layout splits sentences (quoted as laid out); NASA table figure and 4,890 loss figure differ in basis (footnotes not checked).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NASA/NOAA agency-wide workforce"
+  },
+  {
+   "id": "s81",
+   "url": "https://cronkitenews.azpbs.org/2025/03/10/donald-trump-dei-purge-arizona-research-grants-risk/",
+   "fetched_url": null,
+   "title": "Trump’s DEI purge puts $812M in Arizona research grants at risk",
+   "author_org": "Cronkite News (Arizona PBS)",
+   "published": "2025-03-10",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cronkite_az_grants_risk.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Arellano's grant is air-quality work, not GPCP; 'at risk' is a keyword-screen estimate, not terminations.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "U. Arizona atmospheric sciences (HAS dept.) NASA grant named; GPCP not named"
+  },
+  {
+   "id": "s82",
+   "url": "https://aas.org/posts/news/2026/05/house-fy27-cjs-report-nasa-nsf-and-doe-details",
+   "fetched_url": null,
+   "title": "House FY27 CJS Report: NASA, NSF, and DOE Details",
+   "author_org": "American Astronomical Society (Colin Hamill)",
+   "published": "2026-05-19",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/aas-org-posts-news-2026-05-house-fy27-cjs-report-nasa-nsf-an_113957.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Astronomy society summary; Earth Science figure not given on the page (House FY26 bill level was $1,325,000 thousand per H.Rept 119-272).",
+   "found_by": [
+    "main2"
+   ],
+   "scope": "context: NASA Science"
+  },
+  {
+   "id": "s83",
+   "url": "https://www.npr.org/2025/11/12/nx-s1-5600066/goddard-space-center-staff-say-theyre-constantly-being-attacked-by-the-white-house",
+   "fetched_url": null,
+   "title": "Goddard Space Center staff say they're 'constantly being attacked' by the White House",
+   "author_org": "NPR (Katia Riddle)",
+   "published": "2025-11-12",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/npr-org-2025-11-12-nx-s1-5600066-goddard-space-center-staff-_114007.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Does not name the Earth Sciences Division, Code 612, GPCP or its people.",
+   "found_by": [
+    "main2"
+   ],
+   "scope": "context: NASA GSFC"
+  },
+  {
+   "id": "s84",
+   "url": "https://grantwitness.org/noaa",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration • Grant Witness",
+   "author_org": "Grant Witness",
+   "published": "2026-11-16 (last updated)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/grantwitness-org-noaa_114051.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Aggregator built from USAspending and reports; table itself loads by JavaScript and was not read row by row.",
+   "found_by": [
+    "main2"
+   ],
+   "scope": "context: NOAA grant disruptions"
+  },
+  {
+   "id": "s85",
+   "url": "https://marylandmatters.org/2025/11/23/nasa-moves-quickly-on-plan-to-shrink-goddard-campus-by-25/",
+   "fetched_url": null,
+   "title": "NASA moves quickly on plan to shrink Goddard campus by 25%",
+   "author_org": "Maryland Matters / Federal News Network (Jory Heckman)",
+   "published": "2025-11-23",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/marylandmatters-org-2025-11-23-nasa-moves-quickly-on-plan-to_114106.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Does not name the Earth Sciences Division, Code 612, GES DISC or GPCP.",
+   "found_by": [
+    "main2"
+   ],
+   "scope": "context: NASA GSFC"
+  },
+  {
+   "id": "s86",
+   "url": "https://www.nccs.nasa.gov/services/data-collections/atmosphere-based-products/gpcp",
+   "fetched_url": null,
+   "title": "NCCS data collection: GPCP",
+   "author_org": "NASA Center for Climate Simulation",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/checker/nccs_gpcp_fetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction; the search snippet claimed a funding-lapse notice, which the fetch did not find",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "c14 lead check"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "NASA's MEaSUREs program is the named funder of GPCP V3.3 Daily and of GPCP CDR development; NCEI supports routine calculation of the Monthly ICDR.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "7.0 Acknowledgements | This project is funded by NASA’s Making Earth Science Data Records for Use in Research | Environments (MEaSUREs) Program, which is managed by Dr. Lucia Tsaoussi.",
+     "location": "README p. 14, section 7.0 (txt lines 531-533)"
+    },
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "The development of the GPCP CDR products (Monthly and finer time scales) is supported by NASA’s MEaSUREs program. The GPCP Monthly ICDR was developed and its routine calculation is supported by NOAA’s National Center for Environmental Information (NCEI). GPCP products are available at NASA’s Goddard Earth Sciences Data and Information Services Center (GES DISC) and from NOAA NCEI. … ### Global Precipitation Summary for October 2026 | November 12, 2026",
+     "location": "line 59 (funding paragraph); lines 89-91 (related posts list)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Producer's README and the producers' own 2025 review state it directly.",
+   "sole_source_reason": "The producers' own documentation is the authority for who funds their product."
+  },
+  {
+   "id": "c2",
+   "text": "Behrangi (U. Arizona) leads the current MEaSUREs GPCP project, announced in July 2023 as a $3 million NASA award for 5 more years; GEWEX's April 2026 report lists GPCP V4 under NASA MEaSUREs with PI Behrangi and Co-Is Huffman and Adler. No award number or USAspending record was found.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "recently selected as the principal investigator on a $3 million NASA award to lead efforts on developing the next generation Global Precipitation Climatology Project (GPCP) for 5 more years. Behrangi will lead a team of well-recognized experts from NASA GSFC, University of Maryland, and University of California (UCSB), in collaboration with scientists from Europe.",
+     "location": "para 1"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "GPCP V4 planning/effort is ongoing (targeting Mid 2026) |                                          PI: Ali Behrangi (U of Arizona) |   GPCP V4                              Co-Is: George Huffman (NASA GSFC) |   NASA MEaSUREs                                  Bob Adler (UMD) |   (2024-2029)                                    Chris Funk (UCSB) … • IGPO supported by NASA and ESA –US and European Node … • Challenge: Maintain and diversify the support of Project Office and travel |   support … If travel support is significantly reduced, |   such projects may be difficult to maintain or develop in the near future.",
+     "location": "Slides 'GPCP future', 'Future plans and priorities', 'Suggestions, issues or challenges'"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "University news and GEWEX slides agree; the award record itself was not found.",
+   "figure_status": "estimate"
+  },
+  {
+   "id": "c3",
+   "text": "NASA's FY2026 request said the MEaSUREs project 'will complete current projects by the end of CY 2026 and cancel future selections', cut Earth Science Data Systems from 311.5 (FY2024 op plan) to 114.6 ($M) and Earth Science R&A from 380.6 to 189.4, and proposed replacing the DAACs (including GES DISC) with thematic science-enabling teams.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Earth Science Data Systems                   311.5          --      114.6       114.6       114.6       114.6       114.6 | … To modernize, streamline, and reduce the cost of data management, NASA will replace the existing | Distributed Active Archive Centers (DAACs) with a small number of thematic science-enabling teams, … The project will halt all data accession outside current missions and continuity | products. … The Making Earth System Data Records for Use in Research Environments (MEaSUREs) project will | complete current projects by the end of CY 2026 and cancel future selections.",
+     "location": "BUD-3 table line 149; ES-49 'Explanation of Major Changes in FY 2026' (txt lines 7651-7659)"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Earth Science Research and Analysis      380.6          --      189.4       169.8       169.0       169.8       170.7 | … The ESM program at GSFC provides program management for the ESDIS project. NASA HQ manages | the DSE component of ESDS. Reductions to the ESDIS project will require reducing and realigning the | DAACs into five thematic science teams",
+     "location": "BUD-3 table line 137; ES-52 Program Management (txt lines 7777-7779)"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "The Making Earth System Data Records for Use in Research Environments (MEaSUREs) project will | complete current projects by the end of CY 2026 and cancel future selections.",
+     "location": "p. ES-50 (txt lines 7658-7659)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NASA's own budget document, read as raw text by the coordinator.",
+   "figure_status": "request",
+   "sole_source_reason": "NASA's own budget justification is the authority for its request."
+  },
+  {
+   "id": "c4",
+   "text": "Congress did not enact the FY2026 Earth Science cut: the FY2026 joint explanatory statement gives Earth Science $2,153,000 thousand; the House report had $1,325,000 thousand and the Senate report $2,166,000 thousand and rejected the proposed mission terminations. None of the three names MEaSUREs, ESDS, ESDIS or the DAACs.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Earth Science ......................................................................... ........... .          $2, 153,000 | … The agreement includes $7,250,000,000 for Science and directs NASA to provide fu nding | as described in the subsequent table, which is cod ified in the bill",
+     "location": "JES pp. 51-53 (txt lines 2035, 2061-2062)"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Earth Science....................................         $1,325,000 | … Total, Science...............................          6,000,000 | … Earth Science.--The recommendation includes $1,325,000,000 | for Earth Science.",
+     "location": "NASA table (txt lines 5097-5109) and Science narrative (lines 5140-5141)"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Earth Science...................................           2,166,000 | … The Committee rejects the mission terminations proposed in | the fiscal year 2026 budget request for Earth Science, | Planetary Science, Astrophysics, and Heliophysics. The | Committee is concerned by the plan to end 55 missions across | Science, which was driven by budget pressure rather than | scientific value.",
+     "location": "txt lines 8019 and 8170-8175"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Enacted statement and both committee reports read as raw text.",
+   "figure_status": [
+    "enacted",
+    "proposed"
+   ],
+   "sole_source_reason": "Congressional documents are the authority for appropriations."
+  },
+  {
+   "id": "c5",
+   "text": "NASA's FY2027 request gives Earth Science Data Systems 124.8 and Earth Science R&A 163.8 ($M), does not name MEaSUREs, and creates a Foundational Data Products project; May 2026 ESDS slides describe consolidating the DAACs from 11 locations into thematic teams.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Earth Science Research and Analysis         --         --      163.8       163.0       163.8     164.7     164.7 | … Earth Science Data Systems                      --         --      124.8       124.9       126.9     127.0     127.2 | … NASA created the FDP project to centralize critical data production activities and funding from across the | Earth Science portfolio. The consolidation increased $10.2 million in the ESDS budget by transferring | data production-related funding and work from the Earth Science Research and the Earth System | Explorers and Ventures programs into ESDS.",
+     "location": "Summary table lines 130, 135; ES-24 'Explanation of Major Changes in FY 2027' (txt lines 5879-5883)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Foundational data products used by | many different parts of the enterprise | from research and modeling to | applications | … Consolidation of DAACs from 11 independent | locations to thematic science enabling teams | … Thematic Support Teams: | no anchoring physical team locations,",
+     "location": "slides 7-8 (txt lines 154-209)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NASA's own budget and program slides.",
+   "figure_status": "request",
+   "sole_source_reason": "NASA's own budget justification is the authority for its request."
+  },
+  {
+   "id": "c6",
+   "text": "Goddard lost over 40 percent of its total workforce from March 2020 to January 2026 and about a third of its civilian workforce in 2025 to the deferred resignation program (NASA OIG); no source ties the losses to Code 612, the Earth Sciences Division or GES DISC.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "of over 40 percent in total workforce. In 2025 alone, Goddard lost approximately a third of its civilian",
+     "location": "p. 2 (txt line 78)"
+    },
+    {
+     "source_id": "s66",
+     "relationship": "contextualizes",
+     "passage": "From January 2025 to July 2026, a period that included U.S. DOGE Service layoffs and several rounds of early retirements in 2025, Goddard lost 40 percent of its personnel, shrinking from 10,000 federal workers and contractors down to 6,000.",
+     "location": "article body, line 24 of saved text"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NASA OIG report plus press; tie to GPCP's group not found.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c7",
+   "text": "SSAI, which employs Bolvin and Nelkin, filed two Maryland WARN mass layoffs at Lanham in 2025 (148 effective 4/08/2025; 79 effective 08/31/2025), and NASA moved Goddard atmospheric-science support to STC; no source names the contract or people affected.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "2/11/2025   541715   Science            10210 Greenbelt Prince         148   4/08/2025   Mass Layoff - No | Systems and        Road, Suite 600 George’s                         Recall | … 07/07/2025 541715   Science            10210 Greenbelt Prince        79   08/31/2025 Mass Layoff - No | Systems and        Road, Suite 600 George’s                      Recall",
+     "location": "txt lines 121-124 and 584-587"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "contextualizes",
+     "passage": "NASA has selected Science and Technology Corp. of Columbia, Maryland, to support atmospheric science research and development at the agency’s Goddard Space Flight Center in Greenbelt, Maryland. | The Atmosphere Support is a cost-plus-fixed-fee, single-award indefinite-delivery/indefinite-quantity contract with a maximum ordering value of $163.1 million. The contract will have an effective date of Monday, Nov. 3, 2025, for a period of five years. | Under the contract, the awardee will assist NASA Goddard’s Earth Science Division with all atmospheric science research and development",
+     "location": "body paras 1-3"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Official WARN log and NASA release; no link to GPCP staff.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c8",
+   "text": "NOAA's route: CISESS at UMD runs under cooperative agreement NA19NES4320002 (2019-07-01 to 2025-06-30, $162,772,973 obligated) and its five-year renewal NA24NESX432C0001 (2024-07-01 to 2029-06-30; $77,486,317 obligated to date; ceiling $388 million). No GPCP task, subaward or amount is published.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "\"fain\": \"NA19NES4320002\", … \"type_description\": \"COOPERATIVE AGREEMENT (B)\", | \"description\": \"COOPERATIVE INSTITUTE FOR SATELLITE EARTH SYSTEM STUDIES\", … \"subaward_count\": 45, | \"total_subaward_amount\": 69667397.98, … \"total_obligation\": 162772973.0, | \"date_signed\": \"2019-05-21\", … \"start_date\": \"2019-07-01\", | \"end_date\": \"2025-06-30\", … \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\",",
+     "location": "JSON lines 4-19, 102-108"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "\"fain\": \"NA24NESX432C0001\", … \"type_description\": \"COOPERATIVE AGREEMENT (B)\", … \"total_obligation\": 77486317.0,",
+     "location": "JSON fields fain; type_description; total_obligation"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "The National Oceanic and Atmospheric Administration (NOAA) awarded the University of Maryland a five-year, $388 million cooperative funding agreement for collaborative research in Earth system science. … Launched in 2019 with a five-year, $175 million cooperative funding agreement, CISESS built on NOAA’s long-term partnership with UMD … In support of NOAA’s National Environmental Satellite, Data and Information Service, CISESS research activities cover three themes: satellite services, Earth system observations and services, and Earth system research.",
+     "location": "paragraphs 1, 3, 7 (lines 10, 16, 24)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "USAspending award records and UMD's announcement.",
+   "figure_status": [
+    "obligation",
+    "ceiling"
+   ],
+   "sole_source_reason": "Federal award records are the authority for award obligations."
+  },
+  {
+   "id": "c9",
+   "text": "NOAA has no separate CDR budget line: FY2026 enacted NCEI $69,000 thousand and Product Development, Readiness and Application $59,000 thousand; the FY2027 request cuts NCEI by $17,807 thousand to $52,000 thousand; the Senate committee's FY2027 statement gives NCEI $70,000 thousand and PDR&A $58,000 thousand.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Environmental Satellite Observing Systems: | Office of Satellite and Product Operations........................................ .                  $269,000 | Product Development, Readiness and Application ..................... ........ ..                        59,000 … National Centers for Environmental Information ................................. .. .                            69,000",
+     "location": "NESDIS ORF table, lines 780-791 (page 20 area); OAR line 661"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "Decrease (-$17,807",
+     "location": "NESDIS-27 (txt line 21091)"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "Product Development, Readiness and Application .................................................................................                           58,000 … National Centers for Environmental Information .............................................................................................                     70,000 … National Centers for Environmental Information [NCEI].—The | Committee provides $70,000,000 for NCEI, including not less than | $10,000,000 for Regional Climate Services, and $5,500,000 for | Coastal Data Development.",
+     "location": "table lines 4114, 4119; report text lines 4162-4165"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Enacted statement, NOAA CJ and Senate statement read as raw text.",
+   "figure_status": [
+    "enacted",
+    "request",
+    "proposed"
+   ],
+   "sole_source_reason": "NOAA's budget documents and congressional statements are the authority for these lines."
+  },
+  {
+   "id": "c10",
+   "text": "About 25 ESSIC scientists (about 10 percent of research faculty) were told in 2025 their funding would end with the fiscal year; UMD said it was not aware of large-scale cuts to the center. The items name ESSIC, not GPCP or its people.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Nina Randazzo, a research scientist at the Earth System Science Interdisciplinary Center, said about 25 scientists were told their funding would end at the close of the fiscal year: \"About 25 scientists have been told their funding would run out by the end of the fiscal year\" … \"around 10 percent of the center's research faculty.\" … The university said it was \"not aware of any large scale funding cuts to the center.\" … \"more than 60 federal grants at this university have been canceled. That accounts for about $30 million worth of grants\"",
+     "location": "Article (WebFetch extraction)"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "ESSIC (Earth System Science Interdisciplinary Center) researchers typically operate on cooperative agreements with NASA and NOAA, making us vulnerable when the science budgets (and in particular, the Earth science budgets) of these agencies are subject to political attacks. … Prior to new contracts going out at the end of June, around 25 scientists (more than 10 percent of ESSIC research faculty) were told their funding would run out at the end of the fiscal year. Of these, a few received the grant money that they were waiting for and are now in a more secure funding position. Of the rest, some people received shorter term contracts that do not cover the entirety of the new contract period. … Our HR department has not confirmed if/how many people have received 90-day termination notices.",
+     "location": "paragraphs 3-5 (lines 7-11)"
+    },
+    {
+     "source_id": "s78",
+     "relationship": "contextualizes",
+     "passage": "\"Randazzo is dually employed by this university through its Earth System Science Interdisciplinary Center and the NASA Goddard Space Flight Center in Greenbelt.\" … \"NASA itself has also begun internal restructuring to align with the priorities outlined in the president's budget request, Randazzo said, meaning her contract may not be renewed.\" … \"Some of her colleagues who have cooperative employment agreements with the National Oceanic and Atmospheric Association have already been unable to renew their contracts for similar reasons, she added.\" … \"I had funding allocated for part way through … fiscal year 2026, so I am holding on,\"",
+     "location": "article body (WebFetch extraction; dbknews.com refused by sandbox)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Student newspaper and union post, both quoting ESSIC staff; UMD disputes scale.",
+   "figure_status": "estimate"
+  },
+  {
+   "id": "c11",
+   "text": "NOAA cooperative-institute funding was threatened by an OMB proposal to terminate it (April 2025), delayed 2025 payments, a February 2026 grant pause, and the FY2027 request's termination of OAR's laboratories and cooperative institutes; none of these sources names CISESS.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s64",
+     "relationship": "supports",
+     "passage": "We write regarding a new proposal from the Office of Management and Budget (OMB) to | terminate funding for the National Oceanic and Atmospheric Administration (NOAA)’s | Cooperative Institutes (CIs). We strongly condemn any such plan and believe terminating this | funding would be extremely short-sighted and costly to the American people and economy in the | long run.",
+     "location": "page 1, lines 11-15"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "The page says some cooperative institutes \"have not yet received any of their 2025 funds,\" and some are \"still waiting on some of their 2024 money, due to a variety of payment delays.\" … Dick (CIGLR): \"we're looking at having to lay off a substantial number of our workers in the next few months,\" … **CISESS, ESSIC, University of Maryland, NESDIS-funded cooperative institutes, NCEI, satellite cooperative institutes:** NOT PRESENT for each item.",
+     "location": "WebFetch extraction (whole article)"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "Their work and salaries are funded through federal grants that were paused Feb. 27, according to CIRES Director Wal… … Abdalati said they did not receive official notification of a funding pause, but were told by their “finance counterparts” at the federal level that most NOAA grants were frozen. … “Congress has appropriated the funds, the Secretary of Commerce has approved the movement of the funds. It’s just that they’re not being released by the Office of Management and Budget,” he said. … All of NOAA’s cooperative institutes are funded through federal grants like the one that supports Global Monitoring Lab employees. Abdalati said the lab’s grant may be among the first affected by the Feb. 27 pause, and that other cooperative institutes could be vulnerable to financial hardship and staff cuts if the pause continues.",
+     "location": "paragraphs at lines 16, 24, 26, 40"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Congressional letter and press; CISESS link not stated."
+  },
+  {
+   "id": "c12",
+   "text": "The International GEWEX Project Office, whose primary sponsor is NASA, faced funding uncertainty in 2025 ('due to political sentiments in the United States') until NASA Earth Science Year 1 support arrived; WCRP planned for losing USGCRP (NSF) funding.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "The future of the funding of the IGPO in 2025 remains uncertain due to political sentiments in the | United States. In the event that NASA does not renew its support, alternative sponsors will need to be | identified to ensure the continuation of the GEWEX Panel activities and the preservation of the 30+ - | year history of the GEWEX community. … Exploratory and informal discussions have shown that the European Space Agency (ESA) is willing to | fund 0.5 full-time equivalents from 2026 onwards. The European Organization for the Exploitation of | Meteorological Satellites (EUMETSAT) is interested in an officer to coordinate the various Satellite | Application Facilities (SAFs). This would directly interface with GDAP activities and can also link to other | GEWEX Panels.",
+     "location": "pp. 18-19 (text lines 680-698)"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "funding uncertainty. Thanks to NASA Earth Science, Year 1",
+     "location": "p. 2 Commentary (txt line 73, left column)"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "contextualizes",
+     "passage": "Income 2026 | Best-case … Worse-case | … WMO Contribution                       320 … WMO Contribution                       208 | IOC Contribution                        23 … IOC Contribution                        23 | Voluntary - country - contributions    150 … Voluntary - country - contributions    150 | USGCRP                                 457 … USGCRP                                   0 | TOTAL INCOME                           950 … TOTAL INCOME                           381 | • Although it is not 100% clear that we will lose the USGCRP (NSF) funding (though highly likely) or that the WMO funding will be | reduced (or by how much) we have to take a cautionary approach. … GEWEX                                     70000                   25000                       0                        0                      0              95000 … • All activities have lost funding (generally around 2/3rds), and JSC agree to contingency (reserve) funds for 2026 … GEWEX                                         40",
+     "location": "Slides 'Income 2026', 'Total Requests', 'Principles for assessing 2026 budget proposals', 'Initial allocations' (CHF x 1000 for income/allocation tables; requests in CHF)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "GEWEX's own SSG report and newsletter, WCRP's finance slides."
+  },
+  {
+   "id": "c13",
+   "text": "No source found a cut to GPCC; DWD's 2025 spending was about 404 million euros with 358 million euros from taxes and 2,187 staff, and GPCC's 2025 product change (merging Full Data Monthly with the Monitoring Product) was a product restructuring, not a funding one.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "Rund 404 Millionen Euro",
+     "location": "p. 28 (txt line 1116)"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "The new version of the former “Full Data Monthly” Product underwent two major changes. The first one is its name, now: “GPCC Precipitation Analysis Monthly Version 2025”. Secondly, it is merged with the former “Monitoring Product”. That means, that the “GPCC Precipitation Analysis Monthly Version 2025” was recalculated for 1891 - October 2025 and will be extended each month by another month, thus being near real-time from now on.",
+     "location": "Abstract paragraph 2"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "contextualizes",
+     "passage": "Wir haben beim Deutschen Wetterdienst (DWD) nachgefragt: Erwartet man auch dort Kürzungen der staatlichen Budgets? … Ein Sprecher des DWD hat uns geantwortet: Der Haushalt des Wetterdienstes werde jedes Jahr aufs Neue in den Haushaltsverhandlungen des Bundestags festgelegt. … „Wir können deshalb noch nicht sagen, wie der DWD betroffen sein wird, ob wir – wie ggf. die gesamte Bundesverwaltung – Personal einsparen müssen, ob unser Budget entsprechend der Planung unserer Investitionen ausgestattet wird und ob wir ggf. aus dem Investitionssondervermögen Mittel erhalten könnten.“ … Ob eine gezielte Einsparung beim DWD geplant ist, sei bislang also nicht bekannt.",
+     "location": "Thema des Tages section"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "DWD's own yearbook and GPCC's abstract; no GPCC-specific budget line exists.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c14",
+   "text": "No news item from Jan 2024 to Nov 2026 found by the run names GPCP, GPCP Daily or its named people in coverage of cuts; Huffman's NASA page still lists him in Code 612, and NCEI still lists the GPCP Daily CDR as current with no retirement notice.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s74",
+     "relationship": "supports",
+     "passage": "Org Code: | 612 Mesoscale Atmospheric Processes … Employer: | NASA … Supervisory Research Physical Scientist (from 2019), Research Meteorologist (to 2019) | NASA Goddard Space Flight Center - Greenbelt, MD | September 2012 - Present | Produce, revise, analyze GPCP Satellite-Gauge and One-Degree Daily data sets; … Funded on projects as P.I. and Co-I. … NASA PMM Science Team, 2007-2025.",
+     "location": "contact card (lines 13-15), Positions/Employment (lines 85-91), line 221 of saved text"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "Please Note: NCEI is currently moving its data and applications to the cloud. This upgrade may result in temporary data access delays. Check the NCEI Alerts page for impacted products and datasets. | Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. … Configuration Item ID: 01B-35 … daily time scale from October 1996–present. … To help the project receive continued support, updates, and improvement, tell us how you use Precipitation - GPCP Daily CDR data by completing our optional User Registration Form. … Robert Adler, University of MD",
+     "location": "banner lines 3-5; body lines 9-21"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "contextualizes",
+     "passage": "Some datasets may have delayed update cycles. Some sites, applications, and datasets may be temporarily unavailable while they are being migrated. … No datasets will be retired as part of the cloud migration. Please note that several NCEI datasets were retired over the last 18 months. Refer to the NESDIS Change Notice page for details. … Bulk data folders will move from web accessible folders (WAFs) to Amazon Simple Storage Service (S3). | Published | May 12, 2026 | Updated Date | September 14, 2026",
+     "location": "FAQ answers lines 13, 23, 37; dates lines 39-45"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Absence across many searches by sa4 and NESDIS notice lists; absence can't be proven."
+  },
+  {
+   "id": "c15",
+   "text": "NWS planned to merge the Climate Prediction Center with the Weather Prediction Center (March 2025); the item does not name Xie or GPCP's IR input.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s73",
+     "relationship": "supports",
+     "passage": "\"Among the departments being merged are the Weather Prediction Center, responsible for national forecasts for rain and snow, and the Climate Prediction Center, which is responsible for seasonal outlooks and tracking the El Niño and La Niña cycle,\" … The NWS \"could lose 775 to 1,000 employees from its current workforce of more than 4,000,\"",
+     "location": "article body (WebFetch extraction; Axios original returned 403)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "Insurance Journal reprint of Bloomberg via WebFetch."
+  },
+  {
+   "id": "c16",
+   "text": "NCAR's GDEX, a GPCP redistributor, has a wind-down procedure pointing to NCEI copies; a June 2026 injunction blocked one part of the NCAR break-up.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Advertise the access location for the alternate repository dataset (e.g. NOAA NCEI) on the relevant GDEX dataset landing pages.",
+     "location": "Procedure with advance notice"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The move temporarily blocks the federal government from moving forward with one part of its effort to dismantle UCAR’s National Center for Atmospheric Research (NCAR)",
+     "location": "para. 1"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "GDEX's own page and Eos."
+  },
+  {
+   "id": "c17",
+   "text": "Grant Witness tracks 26 disrupted NOAA grants (last updated 2026-11-16); its state filter lists neither Maryland nor Arizona, and its category filter has no NESDIS; the Planetary Society's NASA cancellation lists show no U. Arizona, SSAI or GPCP row.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s84",
+     "relationship": "supports",
+     "passage": "26 | Number of disrupted grants",
+     "location": "Summary panel; State and Category filters"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "contextualizes",
+     "passage": "award_key,award_id,generated_award_id,award_type,award_type_code,recipient_name,action_date,action_type,modification_number,transaction_amount,transaction_description,award_description",
+     "location": "CSV header line 1; searched whole file"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Aggregators built on USAspending; row tables not read one by one."
+  },
+  {
+   "id": "c18",
+   "text": "The House FY2027 CJS report recommends the same NASA Science and division levels as its FY2026 bill ($6 billion for Science; its FY2026 bill had $1,325,000 thousand for Earth Science), against a $3,894 million request.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s82",
+     "relationship": "supports",
+     "passage": "The House Appropriations Committee has recommended the same funding levels as in its FY26 bill for NASA Science and its divisions.",
+     "location": "NASA section"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "AAS summary of the House report, read in the browser.",
+   "figure_status": "proposed"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Length of the MEaSUREs GPCP award: UA's 2023 announcement says 5 more years, GEWEX lists MEaSUREs 2024-2029, but NASA's FY2026 request says MEaSUREs projects complete by end of CY2026.",
+   "source_ids": [
+    "s6",
+    "s3"
+   ],
+   "status": "unresolved",
+   "explanation": "A request is not law; the enacted FY2026 statement has no MEaSUREs language and the FY2027 request doesn't name MEaSUREs. Whether NASA shortened the award isn't published."
+  },
+  {
+   "claim": "House FY2026 Earth Science figure: a search summary gave $2,153.0M; H.Rept 119-272 gives $1,325,000 thousand.",
+   "source_ids": [
+    "s13",
+    "s5"
+   ],
+   "status": "resolved",
+   "explanation": "$2,153,000 thousand is the enacted JES figure; the House report's own table gives $1,325,000 thousand."
+  },
+  {
+   "claim": "SSAI August 2025 WARN layoff count: 79 (official Maryland log) vs 228 (warntracker, search summary only).",
+   "source_ids": [
+    "s8",
+    "s77"
+   ],
+   "status": "unresolved",
+   "explanation": "The official log is relied on; the aggregator may combine notices."
+  },
+  {
+   "claim": "ESSIC share of research faculty affected: 'around 10 percent' (Diamondback) vs 'more than 10 percent' (HELU).",
+   "source_ids": [
+    "s38",
+    "s56"
+   ],
+   "status": "resolved",
+   "explanation": "Both say about 25 scientists; wording differs; the answer states both."
+  },
+  {
+   "claim": "ESSIC staff losses: about 25 scientists (union, Diamondback) against UMD's 'not aware of any large scale funding cuts'.",
+   "source_ids": [
+    "s56",
+    "s38"
+   ],
+   "status": "unresolved",
+   "explanation": "Scope differs: researchers report individual soft-money ends; the university speaks of center-wide cuts."
+  }
+ ],
+ "coverage_gaps": [
+  "r1: Behrangi MEaSUREs (V4, 2022 solicitation NNH22ZDA001N A.27 / selected 2023) award number, obligations, period and any modification/termination NOT FOUND after 3 queries. USAspending search needs POST (fetch_json.py is GET-only); coordinator could run a USAspending award search (recipient University of Arizona, agency NASA, keyword precipitation/GPCP/Behrangi). Proposal ID '22-MEASURE22-0030' seen only in a search summary. Planetary Society termination/descoped lists (USAspending-based, updated 2026-11-19) show no UA/SSAI/GPCP row. (from sa1)",
+  "Key tension for coordinator: FY2026 PBR says MEaSUREs 'will complete current projects by the end of CY 2026 and cancel future selections', while UA (2023) says the Behrangi award runs '5 more years'. Whether the Behrangi project was shortened to end CY2026 NOT FOUND. FY2027 request text does not mention MEaSUREs (case-sensitive search) and moves data production into a new Foundational Data Products project (+$10.2M into ESDS). (from sa1)",
+  "r4: Enacted FY2026 JES, House H.Rept 119-272 and Senate S.Rept 119-44 contain no MEaSUREs/ESDS/DAAC/ESDIS language (searched). FY2026 ESDS enacted amount and NASA FY2026 operating plan (whether ESDS/MEaSUREs held at request level) NOT FOUND. FY2027 House/Senate CJS reports not read (AAS 'house-fy27-cjs-report-nasa-nsf-and-doe-details' and AGU Bridge 2026-05-26 leads). (from sa1)",
+  "r3: No 2025-2026 NASA OIG or GAO report on ESDS/ESDIS found after 3 queries (older IG-20-011, IG-24-017 only). OIG IG-26-005 and 2025 TMC read: center-/agency-wide workforce figures only, not tied to ESD/Code 612/GES DISC. (from sa1)",
+  "SSAI: which contract funds Bolvin and Nelkin (Code 612 GPCP work) NOT FOUND. Code 612 is in ESD Atmospheres; SSAI's SAMDA (Atmospheres) successor ATMOS went to STC effective Nov 3, 2025; HBG (six of nine ESD labs) extended sole-source Aug 2025; HBG II $425M recompete final RFP Oct 2026 (snippet, not read). SSAI 2025 MD WARN layoffs (148 and 79) not tied to any contract in any source. Lead: GPCP/IMERG 2026 documents listing Bolvin/Nelkin affiliation (SSAI vs STC) after Nov 2025. (from sa1)",
+  "Huffman civil-servant (GSFC Code 612) funding: no 2025-2026 source on cuts specific to him or Code 612; PMM science team ROSES-2024 A.32 recompete outcome not checked. GSFC workforce: OIG says Goddard lost about a third of civilian workforce in 2025 to deferred resignation (not tied to Code 612). (from sa1)",
+  "Queries that returned little (rerun on DuckDuckGo): 'GPCP Behrangi 80NSSC MEaSUREs grant acknowledgment 2024'; 'NASA FY2026 budget MEaSUREs cancel future selections'; 'MEaSUREs projects end December 2026 NASA Earth science data records'; 'SSAI loses ATMOS contract Goddard employees STC transition 2025'; 'Bolvin Nelkin Science and Technology Corporation GPCP 2026'. (from sa1)",
+  "GPCC-specific funding, staffing or budget line inside DWD: NOT PRESENT in any source read (DWD Jahrbuch 2025, EGU26 abstract, DWD 35-year article, GEWEX reports). No 2025-2026 report of cuts or Stellenabbau at DWD/GPCC found; Correctiv (July 2025) quoted DWD as not yet knowing whether staff savings would be required. Next: Bundeshaushalt 2026 Drucksache 21/600 Einzelplan 12 Kapitel DWD; DWD Jahrbuch 2024 'DWD auf einen Blick' for year-on-year comparison. (from sa3)",
+  "IGPO NASA award: amount, award number, period of performance NOT PRESENT. GMU 2020 article gives 'more than $4 million' without award number. USAspending lookup not run (POST API; fetch_json is GET-only). Next: USAspending recipient George Mason University, NASA, keyword GEWEX; NASA NSPIRES. (from sa3)",
+  "GEWEX News Q2 2025, Q4 2025, Q1 2026 (commentary by van Oevelen) and Q2 2026 not readable (gewex.org 403, files >10 MB for WebFetch, Wayback copies truncated at 5 MB). Coordinator could read them in a browser. Q2 2025 snippet: 'it is still not clear what that will mean for GEWEX and the IGPO'. (from sa3)",
+  "CPC (Xie group) funding: no source names CPC in FY2026 NOAA/NWS budget proposals or appropriations (search returned agency-wide NOAA items only; CRS IF13024 2026-03-12 version has no CPC mention, renamed _unused). Not tied to the IR input. (from sa3)",
+  "r14: no scientists' letter or society statement naming GEWEX or GPCC funding loss found. WCRP chair Tim Naish quoted (NZ Herald, June 2025) on WMO 30% cut and NSF dependence. Queries for DuckDuckGo rerun: 'scientists letter WCRP GEWEX funding loss United States 2025'; 'GPCC Deutscher Wetterdienst Stellenabbau 2026'; 'Climate Prediction Center budget cut 2026 proposal NWS NCEP'. (from sa3)",
+  "U. Arizona HAS: only university-wide figures in search snippets (AZPM July 2025: 64 grants, $59.2 million halted); none tied to Behrangi/GPCP; pages not read. UMD/ESSIC: Diamondback (Sept 2025) about 25 ESSIC scientists' funding ending, not tied to GPCP; ESSIC CISESS $388M page is in sa2's folder (my copy renamed _unused). (from sa3)",
+  "WMO reorganization reducing WCRP secretariat/travel support (GEWEX Q3 2025 commentary) not checked against a WMO document; WCRP JSC-46 finance slides are a draft (date NOT PRESENT on slides). Final WCRP 2026 allocation and whether USGCRP (NSF) funding was in fact lost not confirmed. (from sa3)",
+  "No source found that states the NOAA funding route or amount for the GPCP Daily 1DD V1.3 / V3.3 CDR (CDR Program task under CISESS, any GPCP-specific CISESS task or subaward). The producer (ESSIC 2025 review) names NCEI support only for the Monthly ICDR. USAspending transactions (modification history) and subaward listings for NA24NESX432C0001 are POST-only endpoints, not reachable with fetch_json.py; a coordinator could query them (POST /api/v2/transactions/ and /api/v2/subawards/ with award_id ASST_NON_NA24NESX432C0001_013) or open the award page in a browser to see 2025-2026 modifications and whether any subaward names GPCP. (from sa2)",
+  "r7 oversight: not found after 2 queries (Commerce OIG; GAO with gao.gov filter). Department-wide OIG items not read: OIG-26-003 Top Management Challenges FY2026 (https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-003_TMC_FY_2026_SECURED-1.pdf) may discuss NOAA grants or NCEI. Rerun on DuckDuckGo: NCEI inspector general 2026; NOAA cooperative institutes GAO 2026. (from sa2)",
+  "No source ties the 2025 CI payment delays, the Feb. 27 2026 NOAA grant-action pause, or the FY2027 OAR cooperative-institute terminations to CISESS (a NESDIS-funded CI). Whether the 2026 pause was lifted is unconfirmed; USAspending last_modified_date 2026-09-30 on the CISESS award is the only later signal. FY2027 CR text (to 2026-12-11) not read here (see 2026-11-17_noaa-ncei-threats). Low-yield queries to rerun on DuckDuckGo: CISESS 2026 funding pause; ESSIC CISESS layoffs 2025; CISESS annual report 2025. Unread leads: Neguse 4.23.25 NOAA cooperative institutes letter (neguse.house.gov PDF), Hickenlooper NOAA letter, Saving Seafood/The Hill April 2026 grant pause original, claim of 7 new NOAA grants in FY2026 through March vs 379 a year earlier. (from sa2)",
+  "No news item found (Jan 2024 - Nov 2026) that names GPCP or GPCP Daily, or Adler, Huffman, Behrangi, Bolvin, Nelkin, Gu, Xie, Becker or Schneider, in coverage of cuts, layoffs, RIFs or restructuring: NOT PRESENT after r11 queries (GPCP funding 2025 extended; Huffman 2025; Adler ESSIC 2025; Behrangi UA NASA cut; Huffman retire). Rerun on DuckDuckGo: 'GPCP precipitation funding cut', 'George Huffman NASA layoffs', 'Behrangi NASA grant'. (from sa4)",
+  "Goddard Earth Sciences Division / Code 612 / GES DISC: no source names them among 2025 building closures or staff losses; no published list of closed buildings found (only Buildings 19 and 11 named in search snippets). Maryland delegation demanded a list (Space.com/Van Hollen). Leads not read: Maryland Matters 2025-11-23 'NASA moves quickly on plan to shrink Goddard campus by 25%' (host gave 403 earlier), Space.com 'This all must end now', NPR 2025-11-12 (unreadable), Eos 'State of the Science 1 year on: federal workforce' PDF (eos.org/wp-content/uploads/2026/01/...). (from sa4)",
+  "U. Arizona Hydrology and Atmospheric Sciences: no cut or NASA-research effect found. Search snippets mention the FY25 budget reserving funds to relocate HAS and a June 2025 College of Science development document listing a $20M HAS building request; neither source was read (FY25 college budget sheet PDF downloaded but has no HAS text; renamed _unused). Leads: highereddive.com UA deficit articles, tucson.com (Arizona Daily Star) budget articles. (from sa4)",
+  "SSAI 2025 layoffs (148 Feb, 79 July in official Maryland WARN log; trackers also show 149 in July) are not tied by any source to Goddard Code 612 or GPCP staff. Lead: Washington Business Journal July 2025 article on SSAI layoffs (only seen excerpted on a forum). (from sa4)",
+  "NOAA CPC: merged with WPC (Bloomberg via Insurance Journal, Axios 403); no source names Pingping Xie or CPC's geo-IR/precip analyses. DWD GPCC (Becker, Schneider) and GEWEX: no news tying them to US cuts. (from sa4)",
+  "Trackers: Grant Witness has no NASA tracker (nasa_data.html 404) and its NOAA grants table loads by JavaScript (needs browser: filter University of Maryland / CISESS / NA24NESX432C0001). Planetary Society NASA cancellations: MD-04 and MD-05 show only contracts (none UMD/SSAI/GPCP); AZ-07 404, institution-level page for University of Arizona not found. Terminated awards to U. Arizona (Behrangi), UMD ESSIC/CISESS, or GPCP-related awards: NOT PRESENT in what was read. Court cases (Thakur v. Trump, Harvard v. USDOJ, AAUP suits) found none naming UA HAS, UMD ESSIC/CISESS or GPCP: NOT PRESENT (court records not read). (from sa4)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "NCAR dismantle NSF 2026 data archive GDEX",
+   "tool": "WebSearch",
+   "notes": "GDEX wind-down strategy page; NCAR break-up coverage (Dec 2025); no GDEX-specific action found",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCAR break up Vought December 2025 research data archive",
+   "tool": "WebSearch",
+   "notes": "UCS, CPR, Data Foundation on Dec 16, 2025 announcement; nothing on the data archive",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "UCAR lawsuit NSF NCAR ruling 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode; June 1, 2026 preliminary injunction (Eos, Colorado Sun, Science, court PDF)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Behrangi MEaSUREs GPCP NASA award",
+   "tool": "WebSearch",
+   "notes": "standard; found UA news (already saved in pt3) and Earthdata MEaSUREs 2017 project page; no award number",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP Behrangi \"80NSSC\" MEaSUREs grant acknowledgment 2024",
+   "tool": "WebSearch",
+   "notes": "standard; nothing relevant",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA FY2026 budget MEaSUREs cancel future selections",
+   "tool": "WebSearch",
+   "notes": "standard; general FY2026 PBR news only; MEaSUREs not named in results; the PBR text itself (reused) names MEaSUREs",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "SSAI layoffs NASA Goddard 2025",
+   "tool": "WebSearch",
+   "notes": "standard; WARN aggregators + Goddard workforce news; none ties SSAI layoffs to a contract",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Goddard Earth Sciences Division layoffs 2025",
+   "tool": "WebSearch",
+   "notes": "standard; Goddard-wide news (SciAm 40% loss Mar 2020-Jan 2025 per snippet); no ESD/Code 612 count",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA OIG Goddard consolidation review 2026",
+   "tool": "WebSearch",
+   "notes": "standard; OIG IG-26-005 'Review of Goddard Space Flight Center's Transformation Efforts' June 26 2026 (snippet; not read)",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "SSAI WARN notice Lanham Maryland 2025 NASA contract",
+   "tool": "WebSearch",
+   "notes": "standard; led to official MD WARN log",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Senate CJS report FY2026 NASA \"Earth Science Data Systems\"",
+   "tool": "WebSearch",
+   "notes": "standard; no ESDS-specific language in results; read S.Rept 119-44 directly",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA OIG ESDIS Earth Science Data audit 2025",
+   "tool": "WebSearch",
+   "notes": "standard; only older OIG DAAC/ESDIS reports (IG-20-011, IG-24-017); no 2025-2026 ESDIS audit found",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "MEaSUREs 2023 selections NASA ROSES A.27 GPCP",
+   "tool": "WebSearch",
+   "notes": "standard; MEaSUREs 2022 selections PDF on cat.cira.colostate.edu (404, Wayback 404)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "MEaSUREs program NASA 2025 ending data records cancelled",
+   "tool": "WebSearch",
+   "notes": "extended; no news naming MEaSUREs cancellation; Planetary Society cancellations dashboard lead",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Earth Science Data Systems FY2027 request Foundational Data Products",
+   "tool": "WebSearch",
+   "notes": "standard; ESDS May 2026 slides",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "SSAI Goddard Earth science support contract award 2025",
+   "tool": "WebSearch",
+   "notes": "standard; SSAI lost ATMOS (SAMDA successor) to STC Sept 2025; HBG extension Aug 2025; HBG II $425M recompete Oct 2026",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Bolvin Nelkin \"Science and Technology Corporation\" GPCP 2026",
+   "tool": "WebSearch",
+   "notes": "standard; nothing relevant",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "House FY2026 CJS report NASA Earth science data archives DAAC language",
+   "tool": "WebSearch",
+   "notes": "standard; read H.Rept 119-272 directly; search summary's House Earth Science figure ($2,153.0M) is contradicted by report table ($1,325,000 thousand)",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (House H.Rept 119-272 and Senate S.Rept 119-44 full text on govinfo)",
+   "tool": "lookup (govinfo report text)",
+   "notes": "both fetched; searched for MEaSUREs/ESDS/DAAC/ESDIS: none",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (NASA OIG 2025 Top Management and Performance Challenges on oversight.gov)",
+   "tool": "lookup (OIG report)",
+   "notes": "read; agency-wide workforce only",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "University of Arizona NASA grant terminated 2025 Earth science precipitation",
+   "tool": "WebSearch",
+   "notes": "standard; UA 67-grants article; Planetary Society dashboard lead",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (Planetary Society NASA terminations.csv and descoped.csv)",
+   "tool": "lookup (Planetary Society cancellations data from USAspending)",
+   "notes": "no row for University of Arizona/Tucson, SSAI/Lanham, GPCP, MEaSUREs; used in place of a USAspending POST search (fetch_json is GET-only)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA Precipitation Measurement Missions science team 2025 solicitation cancelled",
+   "tool": "WebSearch",
+   "notes": "standard; only ROSES-2024 A.32 PMM/CloudSat/CALIPSO recompete; nothing on 2025 cancellation",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "SAMDA contract Goddard Mesoscale Atmospheric Processes Laboratory SSAI",
+   "tool": "WebSearch",
+   "notes": "standard; SAMDA (NNG17HP01C) split into ATMOS + Global Modeling & Assimilation; no explicit Code 612 tie",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IG-26-005 Review of Goddard Space Flight Center's Transformation Efforts",
+   "tool": "WebSearch",
+   "notes": "standard; OIG page -> PDF read",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "George Huffman NASA Goddard precipitation team 2026",
+   "tool": "WebSearch",
+   "notes": "extended; bio/publication listings only; no news of team change, cut or departure",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "MEaSUREs projects end December 2026 NASA Earth science data records",
+   "tool": "WebSearch",
+   "notes": "standard; no source confirms MEaSUREs end-2026 wind-down beyond the FY2026 PBR text; LP DAAC Dec 4 2025 alert discontinuing data pool distribution for MEaSUREs datasets (snippet, LP DAAC not GES DISC)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "SSAI loses ATMOS contract Goddard employees STC transition 2025",
+   "tool": "WebSearch",
+   "notes": "standard; STC IDV 80GSFC26D0002 awarded Nov 2025 (HigherGov snippet); no reporting on SSAI staff retention/transfer",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (HigherGov SAMDA NNG17HP01C extension notice)",
+   "tool": "lookup (contract notice)",
+   "notes": "WebFetch extraction saved",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (HigherGov HBG 80GSFC20C0044 extension notice)",
+   "tool": "lookup (contract notice)",
+   "notes": "WebFetch extraction saved",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Global Precipitation Climatology\" University of Arizona NASA grant usaspending",
+   "tool": "WebSearch",
+   "notes": "standard; summary gives proposal ID 22-MEASURE22-0030 'Next-Generation Global Precipitation Data Record' (source page not identified); no USAspending record",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"22-MEASURE22-0030\"",
+   "tool": "WebSearch",
+   "notes": "standard; nothing relevant",
+   "from": "sa1",
+   "copy_of": "https://cat.cira.colostate.edu/CAT/FTP/NVAP_Literature/AAAMEASURES22%20SELECTIONS1.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "International GEWEX Project Office funding 2025",
+   "tool": "WebSearch",
+   "notes": "standard; required r9",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "WCRP funding United States withdrawal 2025",
+   "tool": "WebSearch",
+   "notes": "standard; required r9",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Deutscher Wetterdienst Haushalt 2025 Kürzung",
+   "tool": "WebSearch",
+   "notes": "standard; German; required r8",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GEWEX News IGPO funding uncertainty NASA 2025",
+   "tool": "WebSearch",
+   "notes": "standard; required r9 (3rd query)",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Weltzentrum für Niederschlagsklimatologie 2025",
+   "tool": "WebSearch",
+   "notes": "standard; German; required r8",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DWD Jahresbericht 2025 Haushalt Personal",
+   "tool": "WebSearch",
+   "notes": "standard; German; required r8 (3rd query); DWD Jahrbuch 2025 not opened",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "scientists letter WCRP GEWEX funding loss United States 2025",
+   "tool": "WebSearch",
+   "notes": "standard; required r14; nothing naming WCRP/GEWEX/GPCC",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Prediction Center budget cut 2026 proposal NWS NCEP",
+   "tool": "WebSearch",
+   "notes": "standard; CPC brief; nothing naming CPC",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "International GEWEX Project Office George Mason University NASA award",
+   "tool": "WebSearch",
+   "notes": "standard",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GEWEX Quarterly 2026 commentary IGPO NASA support",
+   "tool": "WebSearch",
+   "notes": "extended",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCC Deutscher Wetterdienst Stellenabbau 2026",
+   "tool": "WebSearch",
+   "notes": "standard; German",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Deutscher Wetterdienst Haushalt 2026 Bundestag Einzelplan 12",
+   "tool": "WebSearch",
+   "notes": "standard; German",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ESSIC University of Maryland NOAA cooperative institute funding cut 2025",
+   "tool": "WebSearch",
+   "notes": "standard",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "University of Arizona Hydrology Atmospheric Sciences NASA grant cuts 2025",
+   "tool": "WebSearch",
+   "notes": "standard",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.gewex.org/gewex-content/uploads/2025/11/Q32025.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Wayback copy of 403 gewex.org PDF",
+   "from": "sa3",
+   "copy_of": "https://www.gewex.org/gewex-content/uploads/2025/11/Q32025.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "find_text restructur|Weltzentrum|GPCC funding|IGPO|GEWEX fund in 2026-11-19_persiann-cdr-daily-inputs-pt5/work",
+   "tool": "lookup (earlier run saved text)",
+   "notes": "found EGU26-12777 as source of 'GPCC restructured but still extended'",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DWD Jahrbuch 2024 Gesamtausgaben Millionen Euro Mitarbeitende",
+   "tool": "WebSearch",
+   "notes": "standard; German",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "World Climate Research Programme funding crisis 2025 US cuts",
+   "tool": "WebSearch",
+   "notes": "extended; r14 follow-up",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://dwdbib.dwd.de/download/pdf/1052029.pdf",
+   "tool": "WebFetch",
+   "notes": "DWD Jahrbuch 2025; host refused to scripts; text from WebFetch saved binary via pdftotext",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.gewex.org/gewex-content/uploads/2026/04/Q12026.pdf",
+   "tool": "WebFetch",
+   "notes": "maxContentLength exceeded",
+   "from": "sa3",
+   "copy_of": "https://www.gewex.org/gewex-content/uploads/2026/04/Q12026.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Climate Data Record Program budget FY2026 cut",
+   "tool": "WebSearch",
+   "notes": "No source names the CDR Program line. Budget figures taken from the FY2026/FY2027 CJ and FY2026 JES reused from 2026-11-17_noaa-ncei-threats (find_text for Climate Data Record in the FY2027 CJ text: no lines).",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Climate Data Record program 2026 operational CDRs reduced NCEI",
+   "tool": "WebSearch (extended)",
+   "notes": "Catalog pages only; no news on CDR Program cuts. Led to NCEI pages; 2025 Notice of Changes read separately (ISCCP H-Series CDR and AVHRR Pathfinder SST ended).",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USAspending award ASST_NON_NA19NES4320002_1330 and ASST_NON_NA24NESX432C0001_1330",
+   "tool": "lookup (USAspending api/v2/awards GET)",
+   "notes": "Both records returned. Transactions and subaward listings are POST-only endpoints, not reachable with fetch_json.py, so modifications and any GPCP subaward were not checked.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS cooperative agreement NOAA University of Maryland award 2024",
+   "tool": "WebSearch",
+   "notes": "Found award numbers NA19NES4320002 ($175M, 2019) and NA24NESX432C0001 ($388M, 2024-2029); ESSIC repost of the renewal story read (today.umd.edu 403).",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Commerce OIG NCEI 2025 audit report",
+   "tool": "WebSearch",
+   "notes": "No OIG report on NCEI, CDRs or cooperative institutes found; hits were department-wide (OIG-26-002-A, OIG-26-003 TMC FY2026, OIG-26-007-A, OIG-25-012-I NOAA OT). Not read.",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO 2025 NOAA climate data records cooperative institutes report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: gao.gov. No 2025-2026 GAO report on NCEI, CDRs or cooperative institutes; closest GAO-11-800 (old), GAO-26-108013 (weather modification).",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS annual report 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: cisess.umd.edu, essic.umd.edu. No institute-level 2025 annual report found; only project pages and weekly reports.",
+   "from": "sa2",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ESSIC CISESS layoffs funding 2025",
+   "tool": "WebSearch",
+   "notes": "No ESSIC/CISESS-named results; agency-wide CI coverage (E&E News 2025-04-21 read).",
+   "from": "sa2",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ESSIC University of Maryland NOAA funding 2025 researchers cuts",
+   "tool": "WebSearch (extended)",
+   "notes": "Found HELU union post (2025-08-18, read raw) and The Diamondback (2025-09-23, WebFetch; dbknews.com refused by proxy). Medill 2026-04-29 and aip.org leads not read.",
+   "from": "sa2",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI GPCP climate data record retired 2025",
+   "tool": "WebSearch",
+   "notes": "No GPCP retirement found; led to NESDIS 2025 Notice of Changes (read raw).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS weekly GPCP Adler Funding",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: cisess.umd.edu. No weekly with a GPCP funding line; found Adler GPCP CDR slides (about 2014, read raw).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA cooperative institutes funding freeze 2025 University of Maryland CISESS",
+   "tool": "WebSearch (extended)",
+   "notes": "Nothing CISESS-specific; found Boulder Reporting Lab 2026-04-02 (Feb. 27 2026 grant pause, read raw), Princeton CIMES termination, Neguse/Hickenlooper CI letters (not read).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA grants frozen 2026 cooperative institutes satellite NESDIS released",
+   "tool": "WebSearch",
+   "notes": "Nothing on NESDIS/satellite CIs; no source confirms release of the 2026 freeze.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI alerts cloud migration 2026 impacted products GPCP",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: ncei.noaa.gov. Led to cloud migration FAQ and Alerts page (both read raw); GPCP not named in alerts.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS 2026 funding pause NOAA grants Maryland satellite institute",
+   "tool": "WebSearch",
+   "notes": "Nothing CISESS-specific. Leads: sej.org Trump Administration Holds Up NOAA Grant Funding; Saving Seafood citing The Hill (NOAA pause on all grant actions, April 2026) - not read.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA pause all grant actions spend plan 2026",
+   "tool": "WebSearch",
+   "notes": "Found SEJ excerpt of The Hill (read raw) and CRS IF13024 March 2026 (read raw). Lead not read: claim that new NOAA grants in FY2026 through March total 7 vs 379 a year earlier (source analysis of USAspending; host not identified).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP daily CDR NOAA CISESS task annual report Gu Adler precipitation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: cisess.umd.edu, essic.umd.edu. No CISESS task report with GPCP funding; ESSIC monthly summaries continue (July 2026 dated 2026-08-13). Gu slides 1-8_Goujun_Gu.pdf not read.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA cooperative institutes oversight report 2026 GAO inspector general grants pause",
+   "tool": "WebSearch",
+   "notes": "Third r7 query: no GAO/OIG report on CIs, NCEI or CDRs; r7 not found after 3 queries. Result summary says GML funds were released April 16 (2026); CRS IF13275 (2026-07-28) fetched to check.",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Grant Witness NASA terminated University of Arizona",
+   "tool": "WebSearch (standard)",
+   "notes": "No Grant Witness NASA page; UA tallies (67 grants, about $60M) without NASA rows; Grant Witness has no NASA tracker (grantwitness.org/nasa_data.html 404)",
+   "from": "sa4",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA grant terminations University of Maryland 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "Found Diamondback 2025-09-23 ESSIC article; UMCES Horn Point NOAA $340,000 reduction (not ESSIC); no NOAA termination to ESSIC/CISESS",
+   "from": "sa4",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Grant Witness NASA terminated grants University of Maryland Earth science",
+   "tool": "WebSearch (standard)",
+   "notes": "Led to Planetary Society NASA cancellations dashboard district pages",
+   "from": "sa4",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP precipitation dataset funding 2025",
+   "tool": "WebSearch (extended)",
+   "notes": "Only NCEI metadata pages; no news",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "George Huffman NASA precipitation 2025 cuts",
+   "tool": "WebSearch (standard)",
+   "notes": "No news naming Huffman; general flood-forecast cut coverage (E&E, SciAm)",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Robert Adler ESSIC 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "Only ESSIC event pages; no cut news",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Goddard Earth Sciences layoffs 2025 Eos",
+   "tool": "WebSearch (standard)",
+   "notes": "Eos federal workforce report, SciAm, Space.com; no Earth Sciences Division specifics",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Goddard campus closures buildings 2025 Science Earth scientists",
+   "tool": "WebSearch (standard)",
+   "notes": "13 buildings, 100+ labs (GESTA); Banner, Space.com, AIP; no building list naming Earth science",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Goddard Earth Sciences Division reorganization scientists leave 2025",
+   "tool": "WebSearch (extended)",
+   "notes": "NPR 2025-11-12, NASA Watch Peters-Lidard retirement; no ESD specifics",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "University of Arizona budget cuts hydrology 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "Search summary cites FY25 budget reserving funds to relocate HAS department; source not identified in budget sheet PDF (no match); college cuts averaged about 2%",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "University of Arizona Hydrology and Atmospheric Sciences department 2025 merger relocation",
+   "tool": "WebSearch (standard)",
+   "notes": "June 2025 College of Science development document lists HAS building request $20M (not read); no cut to HAS found",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "precipitation datasets Trump cuts 2025 GPCP",
+   "tool": "WebSearch (extended)",
+   "notes": "No news naming GPCP",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA Goddard reduction in force Earth science 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "GovExec, E&E 'NASA uses shutdown...' (read), Axios chief scientist",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Behrangi University of Arizona NASA funding cut 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "No result naming Behrangi",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "University of Maryland ESSIC funding cut layoffs 2026",
+   "tool": "WebSearch (extended)",
+   "notes": "UMD 84 layoffs June 2026 (state-funded; no ESSIC)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCC Deutscher Wetterdienst Becker Schneider US cuts 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "No news tying GPCC/Becker/Schneider to cuts",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "lawsuit NASA grant terminations universities 2025 court",
+   "tool": "WebSearch (standard)",
+   "notes": "Harvard v. USDOJ order covers NASA terminations at Harvard; Thakur v. Trump (UC); none name UA, UMD, GPCP",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Pingping Xie NOAA Climate Prediction Center 2025 cuts",
+   "tool": "WebSearch (standard)",
+   "notes": "CPC merged into WPC (Axios 2025-03-27, 403; Bloomberg copy read); Xie not named",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GES DISC data archive Goddard cuts 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "Only GES DISC migration notices; no cut news",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Huffman Goddard precipitation scientist retire leave NASA 2025",
+   "tool": "WebSearch (extended)",
+   "notes": "Bio page read; no departure",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA MEaSUREs program cut 2026 budget Earth science data records",
+   "tool": "WebSearch (standard)",
+   "notes": "No news naming MEaSUREs",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Goddard buildings closed list Earth science labs Building 33 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "No building list; only Buildings 19 and 11 named in coverage; Maryland Matters 2025-11-23 (403)",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CISESS NOAA cooperative institute funding 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "E&E 2025-04-21 CI cuts (read); UMD $388M CISESS renewal (sa2 holds copy)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Science Systems and Applications SSAI layoffs Goddard contractor 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "WARN trackers: 148 (Feb 2025), 149 and 79 (July 2025)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SSAI layoffs 149 employees Lanham NASA contractor",
+   "tool": "WebSearch (standard)",
+   "notes": "Business Journal (bizjournals) report excerpted on forum; Maryland WARN log read",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GEWEX project office funding 2025 US cuts",
+   "tool": "WebSearch (standard)",
+   "notes": "Only WCRP JSC46 finance draft (sa3 holds copy); no news",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Goddard Mesoscale Atmospheric Processes Laboratory scientists cuts 2025",
+   "tool": "WebSearch (standard)",
+   "notes": "No item names Code 612/MAPL",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "UMD Earth System Science Interdisciplinary Center researchers jobs federal cuts 2026",
+   "tool": "WebSearch (extended)",
+   "notes": "Diamondback 2025-11-26 (read); UMD Today shutdown article is from 2019 (out of window, unused)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "lookup (Grant Witness NOAA tracker page)",
+   "tool": "lookup (grantwitness.org/noaa via fetch_page)",
+   "notes": "Table loads by JavaScript; nasa_data.html 404",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "lookup (Planetary Society NASA cancellations by district MD-04, MD-05, AZ-07)",
+   "tool": "lookup (dashboards.planetary.org via fetch_page)",
+   "notes": "MD-04 4 contracts, MD-05 1 contract, AZ-07 404",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Hydrology and Atmospheric Sciences University of Arizona NASA grant terminated 2025",
+   "tool": "WebSearch (extended)",
+   "notes": "Cronkite News 2025-03-10 (read): Arellano NASA IPMSI grant on hold; KOLD 2025-06-28 'Requested NASA budget sends some University of Arizona projects into black hole' (not read)",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://aas.org/posts/news/2026/05/house-fy27-cjs-report-nasa-nsf-and-doe-details",
+   "tool": "lookup (built-in browser page text)",
+   "notes": "Read in the browser after 403 to fetch and WebFetch; House FY27 recommends FY26 House levels for NASA Science divisions",
+   "from": "main2",
+   "copy_of": "https://aas.org/posts/news/2026/05/house-fy27-cjs-report-nasa-nsf-and-doe-details"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://www.npr.org/2025/11/12/nx-s1-5600066/goddard-space-center-staff-say-theyre-constantly-being-attacked-by-the-white-house",
+   "tool": "lookup (built-in browser page text)",
+   "notes": "Read in the browser after WebFetch timeout; no Earth science or GPCP names",
+   "from": "main2",
+   "copy_of": "https://www.npr.org/2025/11/12/nx-s1-5600066/goddard-space-center-staff-say-theyre-constantly-being-attacked-by-the-white-house"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "url=https://grantwitness.org/noaa",
+   "tool": "lookup (built-in browser page text)",
+   "notes": "JS table not loaded; summary and filters read: no Maryland or Arizona in state filter",
+   "from": "main2",
+   "copy_of": "https://grantwitness.org/noaa"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://marylandmatters.org/2025/11/23/nasa-moves-quickly-on-plan-to-shrink-goddard-campus-by-25/",
+   "tool": "lookup (built-in browser page text)",
+   "notes": "Read in browser after 403; 13 buildings, ~100 labs; no Earth science group named",
+   "from": "main2",
+   "copy_of": "https://marylandmatters.org/2025/11/23/nasa-moves-quickly-on-plan-to-shrink-goddard-campus-by-25/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SSAI layoffs WARN primary copy",
+   "tool": "lookup (official Maryland WARN log)",
+   "notes": "Primary record already read: Maryland DOL 2025 WARN/ESA log (s8); aggregator figures s9/s77 not relied on",
+   "from": "main2",
+   "copy_of": "https://www.warntracker.com/company/science-systems-and-applications"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SSAI layoffs kadoa primary copy",
+   "tool": "lookup (official Maryland WARN log)",
+   "notes": "Primary copy is the Maryland WARN log (s8), read",
+   "from": "main2",
+   "copy_of": "https://www.kadoa.com/layoffs/company/science-systems-and-applications-ssai"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Planetary Society terminations.csv primary copy USAspending",
+   "tool": "lookup (USAspending)",
+   "notes": "Primary is USAspending award search, POST-only (fetch_json GET-only); no route left; tracker CSV used as aggregator",
+   "from": "main2",
+   "copy_of": "https://dashboards.planetary.org/data/cancellations/terminations.csv"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Planetary Society descoped.csv primary copy USAspending",
+   "tool": "lookup (USAspending)",
+   "notes": "Same: USAspending POST-only; no route left",
+   "from": "main2",
+   "copy_of": "https://dashboards.planetary.org/data/cancellations/descoped.csv"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Planetary Society cancellations tracker primary copy",
+   "tool": "lookup (USAspending)",
+   "notes": "Same: no route left",
+   "from": "main2",
+   "copy_of": "https://dashboards.planetary.org/cancellations/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Planetary Society MD-04 primary copy",
+   "tool": "lookup (USAspending)",
+   "notes": "No route left (USAspending POST-only)",
+   "from": "main2",
+   "copy_of": "https://dashboards.planetary.org/cancellations/districts/MD-04/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Planetary Society MD-05 primary copy",
+   "tool": "lookup (USAspending)",
+   "notes": "No route left (USAspending POST-only)",
+   "from": "main2",
+   "copy_of": "https://dashboards.planetary.org/cancellations/districts/MD-05/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "HBG contract extension notice 80GSFC20C0044 SAM.gov primary copy",
+   "tool": "lookup (SAM.gov)",
+   "notes": "SAM.gov notice pages are JavaScript-built and need sign-in for some fields; not tried for time; HigherGov copy used",
+   "from": "main2",
+   "copy_of": "https://www.highergov.com/contract-opportunity/notice-of-intent-to-extend-the-hydrosphere-biosph-80gsfc20c0044-s-2e942/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "SAMDA NNG17HP01C extension SAM.gov primary copy",
+   "tool": "lookup (SAM.gov)",
+   "notes": "Not tried for time; NASA release C25-022 (s10) is the primary record for the successor",
+   "from": "main2",
+   "copy_of": "https://www.highergov.com/contract-opportunity/support-for-atmospheric-sciences-modeling-and-dat-nng17hp01c-s-7dca8"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AZ-07 district page other copy",
+   "tool": "lookup (none)",
+   "notes": "No route left: URL was guessed (404); full terminations.csv read instead",
+   "from": "main2",
+   "copy_of": "https://dashboards.planetary.org/cancellations/districts/AZ-07/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Maryland Today CISESS $388M other copy",
+   "tool": "lookup (ESSIC repost)",
+   "notes": "Publisher's own repost on essic.umd.edu read (s46); same text",
+   "from": "main2",
+   "copy_of": "https://today.umd.edu/umd-awarded-388m-noaa-cooperative-agreement-for-earth-system-studies"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GEWEX News Q2 2025 other copy",
+   "tool": "lookup (none)",
+   "notes": "No route left: gewex.org 403 to scripts, file over WebFetch 10 MB, Wayback truncated at 5 MB; a PDF must not be opened in the browser",
+   "from": "main2",
+   "copy_of": "https://www.gewex.org/gewex-content/uploads/2025/07/Q22025.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GEWEX News Q4 2025 other copy",
+   "tool": "lookup (none)",
+   "notes": "No route left (same reasons)",
+   "from": "main2",
+   "copy_of": "https://www.gewex.org/gewex-content/uploads/2025/12/Q42025.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GEWEX Quarterly Q2 2026 other copy",
+   "tool": "lookup (none)",
+   "notes": "No route left: 404 at publisher and Wayback",
+   "from": "main2",
+   "copy_of": "https://www.gewex.org/gewex-content/uploads/2026/07/Q22026.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AZPM UA $59 million grant terminations other copy",
+   "tool": "lookup (none)",
+   "notes": "No route left: sandbox refuses about.azpm.org; www.azpm.org 404; university-wide figure only",
+   "from": "main2",
+   "copy_of": "https://about.azpm.org/s/101287-university-of-arizona-reports-59-million-in-federal-grant-terminations-amid-shifting-research-funding"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Axios CPC merger other copy",
+   "tool": "lookup (Bloomberg via Insurance Journal)",
+   "notes": "Same story read via Insurance Journal reprint of Bloomberg (s73)",
+   "from": "main2",
+   "copy_of": "https://www.axios.com/2025/03/27/noaa-merges-climate-prediction-center"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Maryland Matters UMD lays off 84 other copy",
+   "tool": "lookup (Diamondback)",
+   "notes": "Same event read in The Diamondback (s72)",
+   "from": "main2",
+   "copy_of": "https://marylandmatters.org/2026/06/04/umd-lays-off-84-employees-amongst-period-of-uncertainty/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP precipitation funding cut 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "Only dataset pages and generic climate-funding items; nothing naming GPCP in cuts",
+   "from": "main2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Bolvin Nelkin GPCP 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "No result naming SSAI or STC affiliation after Nov 2025",
+   "from": "main2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "MEaSUREs NASA cancel future selections 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "No results containing MEaSUREs",
+   "from": "main2"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA",
+   "publisher": "funders (award records)",
+   "subquestion_id": "q1",
+   "aim": "NASA's award record for the MEaSUREs GPCP project (Behrangi, U. Arizona)",
+   "query": "MEaSUREs GPCP Behrangi NASA award",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NASA",
+   "publisher": "funders (budget documents)",
+   "subquestion_id": "q1",
+   "aim": "NASA FY2026/FY2027 budget justification lines for MEaSUREs, ESDS, Earth Science R&A",
+   "query": "NASA FY 2026 budget request Earth Science MEaSUREs",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NASA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "NASA OIG / GAO reports on Earth Science Data Systems, ESDIS 2025-2026",
+   "query": "NASA OIG Earth Science Data Systems audit 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "US Congress",
+   "publisher": "parent (appropriations reports)",
+   "subquestion_id": "q1",
+   "aim": "CJS appropriations report language on NASA Earth science FY2026",
+   "query": "Senate CJS report FY2026 NASA Earth science",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA",
+   "publisher": "funders (budget documents)",
+   "subquestion_id": "q2",
+   "aim": "NOAA FY2026/FY2027 Congressional Justification lines for CDRs and NCEI",
+   "query": "NOAA FY 2027 Congressional Justification Climate Data Records",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NOAA",
+   "publisher": "funders (award records)",
+   "subquestion_id": "q2",
+   "aim": "USAspending record of the CISESS cooperative agreement with UMD",
+   "query": "USAspending CISESS cooperative agreement University of Maryland",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "GAO / Commerce OIG reports on NCEI, CDRs or cooperative institutes",
+   "query": "GAO NOAA cooperative institutes 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "DWD / GPCC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "GPCC reports and DWD annual report on funding and staffing",
+   "query": "DWD Jahresbericht 2025 Haushalt",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "GEWEX / WCRP",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "GEWEX/IGPO/WCRP statements on their funding 2025-2026",
+   "query": "GEWEX project office funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NASA / NOAA grantees",
+   "publisher": "courts and tribunals",
+   "subquestion_id": "q5",
+   "aim": "court records and termination trackers naming U. Arizona / UMD awards",
+   "query": "Grant Witness NASA terminated University of Arizona",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "GPCP",
+   "publisher": "press",
+   "subquestion_id": "q4",
+   "aim": "news naming GPCP or its people with cuts",
+   "query": "GPCP precipitation dataset funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NASA GSFC",
+   "publisher": "press (trade and science)",
+   "subquestion_id": "q4",
+   "aim": "Eos/Science/Nature coverage of Goddard Earth science losses",
+   "query": "Goddard Earth Sciences layoffs 2025 Eos",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "UMD ESSIC / CISESS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "CISESS/ESSIC news and annual report on funding and staff",
+   "query": "CISESS annual report 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "GEWEX / GPCC / WCRP",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q3",
+   "aim": "letters or society statements naming GEWEX/WCRP/GPCC funding loss",
+   "query": "scientists letter WCRP GEWEX funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "University of Arizona",
+   "publisher": "parent (university)",
+   "subquestion_id": "q4",
+   "aim": "U. Arizona budget crisis effects on Hydrology and Atmospheric Sciences",
+   "query": "University of Arizona budget cuts hydrology 2025",
+   "skip_reason": null
+  }
+ ]
+}

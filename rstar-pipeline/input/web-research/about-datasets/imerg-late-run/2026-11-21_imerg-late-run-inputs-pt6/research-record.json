@@ -1,0 +1,2978 @@
+{
+ "question": "Have any of the IMERG Late Run's input satellites, instruments, datasets or data feeds, or their providers, faced funding cuts, operational disruptions, end-of-life decisions or termination announcements between January 2024 and November 2026, and how could that affect the Late Run?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (funding cuts, end-of-life decisions and termination announcements) across a set of about nine inputs",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "GPM Core Observatory (GMI, DPR): status, outages, end-of-life plans, Senior Review and budget treatment, successor",
+   "status": "answered",
+   "source_ids": [
+    "s12"
+   ],
+   "remaining_gap": "No NASA 2026 status page or Senior Review result read; funding treatment is in the Part 4 run."
+  },
+  {
+   "id": "q2",
+   "question": "AMSR2 on GCOM-W1 and its successor AMSR3 on GOSAT-GW: status, end of life, data release, IMERG use",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s5",
+    "s14",
+    "s15"
+   ],
+   "remaining_gap": "Whether PPS's AMSR2 near-real-time feed stopped in Sept 2026, and whether the Late Run ingests AMSR3: not found; JAXA's own notices unreadable."
+  },
+  {
+   "id": "q3",
+   "question": "SSMIS on DMSP and WSF-M MWI: data-sharing decisions, feed changes, outages, end of life, GPM handling",
+   "status": "uncertain",
+   "source_ids": [
+    "s22",
+    "s27",
+    "s28",
+    "s29",
+    "s38"
+   ],
+   "remaining_gap": "What SSMIS data PPS's near-real-time system received after 30 Sep 2026: not found."
+  },
+  {
+   "id": "q4",
+   "question": "MHS on NOAA-18/-19 and MetOp-B/-C, and MetOp-SG successors: decommissioning, failures, launches",
+   "status": "uncertain",
+   "source_ids": [
+    "s25",
+    "s28",
+    "s37"
+   ],
+   "remaining_gap": "MetOp-B end of life and MHS channel status: not readable (EUMETSAT refused/blocked)."
+  },
+  {
+   "id": "q5",
+   "question": "ATMS on Suomi NPP, NOAA-20, NOAA-21: end of life, anomalies, successors",
+   "status": "answered",
+   "source_ids": [
+    "s9",
+    "s24",
+    "s30",
+    "s31"
+   ],
+   "remaining_gap": "No PPS notice on dropping S-NPP ATMS from near-real-time products."
+  },
+  {
+   "id": "q6",
+   "question": "Geostationary IR through NOAA CPC (merged 4-km IR) and its satellites: transitions, gaps, cuts tied to it",
+   "status": "uncertain",
+   "source_ids": [
+    "s48",
+    "s46",
+    "s57",
+    "s56",
+    "s40"
+   ],
+   "remaining_gap": "No CPC notice on merged-IR changes; whether CPC uses Meteosat-12: not found."
+  },
+  {
+   "id": "q7",
+   "question": "PDIR-NOW / PERSIANN-CCS (CHRS) and GPCC gauge analyses (DWD): status, funding, changes, route into the Late Run",
+   "status": "uncertain",
+   "source_ids": [
+    "s45",
+    "s44",
+    "s47",
+    "s43"
+   ],
+   "remaining_gap": "No CHRS statement on PDIR-Now; V08's IR source not confirmed by NASA."
+  },
+  {
+   "id": "q8",
+   "question": "Other inputs (GEOS FP motion vectors, GPROF/L1C, other sensors) and NASA announcements of substitutes, pauses or version changes",
+   "status": "answered",
+   "source_ids": [
+    "s16",
+    "s18",
+    "s7",
+    "s20",
+    "s11",
+    "s51"
+   ],
+   "remaining_gap": "V08 Late release date not set beyond 'no sooner than winter 2026'; the GMAO-FP forum reply unread."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA GPM",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GPM mission status and operations notices",
+   "query": "GPM Core Observatory status 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NASA Earth Science Division",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "2026 Senior Review and budget treatment of GPM",
+   "query": "Earth Science Senior Review 2026 GPM",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "JAXA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "GCOM-W/AMSR2 operation status",
+   "query": "GCOM-W AMSR2 operation status",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "JAXA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "GOSAT-GW AMSR3 data release",
+   "query": "GOSAT-GW AMSR3 data release",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "US Space Force / DoD",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "DMSP data-sharing decisions",
+   "query": "DMSP data sharing Space Force 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "US Space Force / DoD",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "GAO reports on DMSP and WSF-M",
+   "query": "GAO weather satellite DMSP WSF-M 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA NESDIS OSPO",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "POES decommissioning notices",
+   "query": "NOAA-19 decommissioning OSPO 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "EUMETSAT",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "Metop-B end of life and Metop-SG",
+   "query": "Metop-B end of life EUMETSAT",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA JPSS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "Suomi NPP end of mission",
+   "query": "Suomi NPP end of mission 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA CPC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q6",
+   "aim": "changes to the CPC merged 4-km IR",
+   "query": "CPC merged IR 4km product change",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "EUMETSAT / JMA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q6",
+   "aim": "geostationary satellite transitions (IODC, Himawari)",
+   "query": "Meteosat-9 IODC end 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "UC Irvine CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q7",
+   "aim": "PDIR-Now and PERSIANN-CCS status",
+   "query": "PDIR-Now CHRS UCI status",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "DWD GPCC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q7",
+   "aim": "GPCC product status and releases",
+   "query": "GPCC Monitoring Product 2026 DWD",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "NASA GMAO",
+   "publisher": "the organization itself",
+   "subquestion_id": "q8",
+   "aim": "GEOS FP changes or retirement",
+   "query": "GEOS FP retirement GMAO 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "NASA PPS / GPM",
+   "publisher": "the organization itself",
+   "subquestion_id": "q8",
+   "aim": "IMERG V08 Late release and NRT changes",
+   "query": "IMERG V08 Late Run release",
+   "skip_reason": null
+  },
+  {
+   "id": "r16",
+   "organization": "NASA PPS / GPM",
+   "publisher": "press",
+   "subquestion_id": "q8",
+   "aim": "news of IMERG data outages",
+   "query": "IMERG data outage 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r17",
+   "organization": "NASA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "OIG/GAO on Earth science extended missions",
+   "query": "NASA OIG Earth science extended missions 2025",
+   "skip_reason": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.nesdis.noaa.gov/news/decommissioning-of-advanced-microwave-scanning-radiometer-amsr2-products-and-transition-amsr3-products",
+   "fetched_url": null,
+   "title": "Decommissioning of Advanced Microwave Scanning Radiometer (AMSR2) Products and Transition to AMSR3 Products",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations",
+   "published": "2026-06-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nesdis_amsr2_decommission.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NOAA's own product chain; does not say whether PPS's AMSR2 NRT feed (which comes via JAXA, not necessarily NOAA) stops; does not mention IMERG or GPM. Whether GCOM-W itself stops observing is NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ospo.noaa.gov/products/suites/gaasp/maps.html",
+   "fetched_url": null,
+   "title": "Daily GCOM-W1 AMSR-2 Maps | OSPO (AMSR-3 Webpage Notice)",
+   "author_org": "NOAA OSPO",
+   "published": "NOT PRESENT (refers to announcement of July 2, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_gaasp_amsr3_notice.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NOAA products only; no IMERG mention.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://ospo.noaa.gov/data/messages/2026/09/MSG_20260901_0209.html",
+   "fetched_url": null,
+   "title": "Topic: GCOM-W1 Data Delay (ESPC notification, Sept 1, 2026)",
+   "author_org": "NOAA ESPC Operations",
+   "published": "2026-09-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_gcomw1_data_delay_20260901.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Single short delay; NOAA ground system, not PPS.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://ospo.noaa.gov/data/messages/2026/02/MSG_20260210_1501.html",
+   "fetched_url": null,
+   "title": "Topic: GCOM-W1 DMU Maneuver on Feb.11th, 2026 at 07:13:30 (UTC)",
+   "author_org": "NOAA ESPC Operations",
+   "published": "2026-02-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_gcomw1_dmu_maneuver_202602.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Saved file not read in full; only title used. Shows spacecraft still being maneuvered in 2026.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://global.jaxa.jp/press/2026/06/20260630-1_e.html",
+   "fetched_url": null,
+   "title": "AMSR3 Observation Data Products for Water Cycle Monitoring Now Available",
+   "author_org": "JAXA",
+   "published": "2026-06-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/jaxa_press_amsr3_release_20260630_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Read via WebFetch extraction (host refused by sandbox); end-of-operation date for GCOM-W NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/gprof-std-data-recalled-august-19-2026-present",
+   "fetched_url": null,
+   "title": "GPROF STD Data Recalled for August 19, 2026 to Present",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "2026-09-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_gprof_std_recall_aug2026.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Covers GPROF STD collections at GES DISC; whether the NRT GPROF feeding Late Run was halted is NOT PRESENT. Status shown 'Resolved' but no resolution date given (Last Updated Sept. 22, 2026). Possibly same as earlier run's earthdata_gprof_recall (not compared).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://gmao.gsfc.nasa.gov/geos-system-news/",
+   "fetched_url": null,
+   "title": "GMAO - GEOS System News",
+   "author_org": "NASA GMAO",
+   "published": "NOT PRESENT (list page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gmao_geos_system_news.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Titles only; Nov 18, 2026 item not read. No retirement/discontinuation notice for GEOS FP in list: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://gmao.gsfc.nasa.gov/geos-system-news/geos-fp-upgrade-to-system-version-5430-on-feb-26-2026/",
+   "fetched_url": null,
+   "title": "GEOS Forward Processing (GEOS-FP) upgrade on February 26, 2026",
+   "author_org": "NASA GMAO",
+   "published": "2026-02-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gmao_geosfp_upgrade_feb2026.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "No IMERG mention; IMERG uses non-aerosol (moisture/precip) fields per earlier runs.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.nesdis.noaa.gov/news/update-4-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-november-2-2026-1800-utc",
+   "fetched_url": null,
+   "title": "Update #4 - Cessation of Suomi National Polar-orbiting Partnership (S-NPP) data to users on November 02, 2026 1540 UTC and Decommissioning",
+   "author_org": "NOAA NESDIS",
+   "published": "2026-11-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nesdis_snpp_cessation_update4.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NOAA notice; does not mention IMERG/PPS. Whether PPS ATMS-SNPP NRT feed stopped too is NOT PRESENT (likely covered by another subagent on ATMS).",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://gpm.nasa.gov/data/news",
+   "fetched_url": null,
+   "title": "Data News | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM / PPS",
+   "published": "list page; newest item 2026-08-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_data_news_20261121.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Teasers truncated on list page; no post-Aug-2026 notices present.",
+   "found_by": [
+    "sa1",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://gpm.nasa.gov/data/news/updates-imerg-v07b-and-gpm-l1-l2-data-production",
+   "fetched_url": null,
+   "title": "Updates to IMERG V07B and GPM L1 / L2 Data Production",
+   "author_org": "NASA GPM / PPS",
+   "published": "2024-06-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_updates_v07b_l1_l2.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Length of delay not stated.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://ipwg12.imgw.pl/wp-content/uploads/2026/07/S2.3_Kubota-1.pdf",
+   "fetched_url": null,
+   "title": "Kubota, IPWG-12 talk S2.3 (JAXA GPM/DPR status), July 2026",
+   "author_org": "JAXA (Kubota)",
+   "published": "2026-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/kubota_ipwg2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Conference slides; reused from earlier run.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/ppsindex.html",
+   "fetched_url": null,
+   "title": "PPS (Precipitation Processing System) home page, News and Updates table",
+   "author_org": "NASA PPS",
+   "published": "Page Last Updated: November 20, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_index_arthurhou.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Mostly standard (research) products; 9/14 and 9/18/2026 DPR notices not opened.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s14",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/New_1C_AMSR3_Data.txt",
+   "fetched_url": null,
+   "title": "Announcement: PPS will Distribute New 1C AMSR3 Data available from 'arthurhou'",
+   "author_org": "NASA PPS Helpdesk",
+   "published": "2026-08-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_new_1c_amsr3.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Production (research) data, not NRT; no statement that IMERG uses AMSR3.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/L2_GPROF_V08B_Data_Release_New_WSFM1_MWI_L1_L2_and_GOSAT_GW_AMSR3_L2_L3%20Products.txt",
+   "fetched_url": null,
+   "title": "L2 GPROF V08B Data Release and New WSFM1 MWI L1-L2 and GOSAT-GW AMSR3 L2-L3 Products",
+   "author_org": "NASA PPS",
+   "published": "2026-10-29 (corrected from Oct 28, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_gprof_v08b_wsfm1_amsr3_release.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Standard/climate products; whether AMSR3 enters IMERG Late NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/PPS_Temporarily_Halting_GPM_V08_STD_L2_L3_GPROF.txt",
+   "fetched_url": null,
+   "title": "PPS is Temporarily Halting GPM V08 STD L2-L3 GPROF data and will rollback GPROF data in production from 2026-08-18 to Current",
+   "author_org": "NASA PPS Helpdesk",
+   "published": "2026-09-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_halting_v08_std_gprof.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "STD (production) GPROF; NRT GPROF used by Late Run not mentioned (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/PPS_Will_Reprocess_All_METOPC_GPROF_Data.txt",
+   "fetched_url": null,
+   "title": "PPS Will Reprocess All METOPC GPROF Data",
+   "author_org": "NASA PPS",
+   "published": "2026-11-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_metopc_gprof_reprocess.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Says NRT continues but not whether NRT MetOp-C GPROF (used by Late Run) has the same calibration-file error.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/all-l3-gprof-data-gpm-v08-being-recalled",
+   "fetched_url": null,
+   "title": "All L3 GPROF Data for GPM v08 Are Being Recalled",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "2026-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_l3_gprof_v08_recall.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Page shows both 'Active Outage' and 'Resolved' labels; research products, not Late Run NRT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://www.earthdata.nasa.gov/data/instruments/atms/transition-resources",
+   "fetched_url": null,
+   "title": "ATMS Data Transition Resources",
+   "author_org": "NASA Earthdata",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_atms_transition_resources.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "No date of cessation on this page; no IMERG mention. A related Earthdata alert (not read) titled \"Suomi NPP Data Product Delivery to Cease on November 1, 2026\" (search snippet: 13:00 UTC Nov 1, later NOAA moved to Nov 2, 15:40 UTC).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://gmao.gsfc.nasa.gov/operations/status.php",
+   "fetched_url": null,
+   "title": "GMAO Current Production Status",
+   "author_org": "NASA GMAO",
+   "published": "Page Last Updated: 11/21/2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gmao_operations_status.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Snapshot of one moment; contradicts refers to the unverified forum claim that GMAO-FP streams ended May 31, 2026 (which may refer to FP-IT, absent from this table). No IMERG mention.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/suomi-npp-observations-cease-november-2-2026",
+   "fetched_url": null,
+   "title": "Suomi NPP Observations to Cease on November 2, 2026",
+   "author_org": "NASA Earthdata",
+   "published": "2026-08-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_snpp_cease_alert.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Time later moved to 15:40 UTC (NESDIS Update #4). No IMERG/PPS mention. URL redirected from .../suomi-npp-data-product-delivery-cease-november-1-2026.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://gpm.nasa.gov/data/news/end-ssmis-data-coming-gpm-near-real-time-products",
+   "fetched_url": null,
+   "title": "End of SSMIS data coming to GPM Near Real-time Products",
+   "author_org": "NASA GPM / PPS",
+   "published": "2025-06-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q3-gpm-ssmis-end-2025",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpm_end_ssmis_nrt.html/a8575ef74b31a367.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Superseded by 30 Jul 2025 GPM item (continuation). Pre-event announcement.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://www.nesdis.noaa.gov/news/cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-onafter-november-2-2026",
+   "fetched_url": null,
+   "title": "Cessation of Suomi National Polar-orbiting Partnership (S-NPP) data to users on/after November 2, 2026",
+   "author_org": "NOAA NESDIS / OSPO",
+   "published": "2026-08-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q5-snpp-cessation",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_snpp_cessation_nov2.html/c8f8d388a0d70db9.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Original notice; Update #4 text itself not read (only its title in the sidebar). Does not mention GPM/IMERG.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/reminder-new-suomi-npp-observations-cease-november-2-2026",
+   "fetched_url": null,
+   "title": "Reminder: New Suomi NPP Observations to Cease on November 2, 2026",
+   "author_org": "NASA Earthdata",
+   "published": "2026-10-21 (last updated 2026-11-10)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q5-snpp-ended-1540",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/earthdata_snpp_reminder_nov2.html/7243ac4487f36da3.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not say what GPM PPS did with its SNPP ATMS GPROF stream or IMERG.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://ospo.noaa.gov/data/messages/2025/08/MSG_20250813_1715.html",
+   "fetched_url": null,
+   "title": "Topic: Emergency Decommissioning of NOAA-19 on August 13, 2025 1655 UTC",
+   "author_org": "NOAA OSPO (ESPC Notification)",
+   "published": "2025-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q4-noaa19-decom",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_noaa19_emergency_decom.html/ec385aea179ed6bb.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not mention MHS specifically or GPM.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/06/MSG_20260613_0949.html",
+   "fetched_url": null,
+   "title": "Topic: SSMI/S data (Update #2), issued June 13, 2026 0949Z",
+   "author_org": "NOAA OSPO (ESPC Notification)",
+   "published": "2026-06-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q3-ospo-ssmis-jun2026",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_ssmis_20260613.html/7850aee7f1d54516.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Resolution not in this message (earlier run's ospo_ssmis_outage_20260623 may cover the end). NOAA OSPO distribution, not the GPM PPS feed.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: NOAA OSPO SSMIS distribution",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/09/MSG_20260901_1930.html",
+   "fetched_url": null,
+   "title": "DMSP F-16 / F-17 / F-18 SSMI/S Data Record Filename Changes and Product Discontinuation",
+   "author_org": "NOAA OSPO",
+   "published": "2026-09-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q3-ospo-filenames-oct2026",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_dmsp_filenames_20260901.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "NOAA side only; whether GPM PPS gets SSMIS via this route is not stated.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: NOAA NCCF/OSPO SSMIS distribution",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.aev.class.noaa.gov/",
+   "fetched_url": null,
+   "title": "NOAA CLASS home page notices (Attention: DMSP Users! 10/23/2026)",
+   "author_org": "NOAA CLASS",
+   "published": "2026-10-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q3-class-dmsp-stop-0930",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/class_aev_home.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Archive (CLASS) flow, not GPM PPS NRT ingest; URL as recorded by earlier run (check its record for exact address).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: NOAA CLASS archive",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://gpm.nasa.gov/sites/default/files/2025-08/SSMIS-MWI_transition.pdf",
+   "fetched_url": null,
+   "title": "Impacts of the Transition from DMSP SSMIS to WSF-M MWI on IMERG",
+   "author_org": "NASA GPM IMERG team",
+   "published": "2025-08 (per file path)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-q3-ssmis-mwi-impact",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpm_ssmis_mwi_transition.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Simulation study; exact URL and date in earlier run's record; lines broken across text wrap (shown with … ).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/07/MSG_20260710_2105.html",
+   "fetched_url": null,
+   "title": "Topic: NOAA-20 Data Delayed (with Correction and Update #2 on NOAA-20 ATMS non-nominal state), issued July 10, 2026 2105Z",
+   "author_org": "NOAA OSPO (ESPC Notification)",
+   "published": "2026-07-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q5-n20-atms-jul2026",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_n20_atms_20260710_text.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Follow-up notice restoring operational use not read; whether GPM PPS NRT NOAA-20 ATMS GPROF was affected not stated.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/07/MSG_20260714_2116.html",
+   "fetched_url": null,
+   "title": "Topic: NOAA-20 Data Delayed (Update #3: NOAA-20 ATMS approved for operational use), issued July 14, 2026 2116Z",
+   "author_org": "NOAA OSPO (ESPC Notification)",
+   "published": "2026-07-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q5-n20-atms-restored",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_n20_atms_20260714_text.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NOAA PDA distribution; GPM PPS ingest not mentioned.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://www.nesdis.noaa.gov/s3/2026-07/LEO-Flyout-Chart-2026_8_July.pdf",
+   "fetched_url": null,
+   "title": "NOAA Low Earth Orbit Satellite Programs, Continuity of Weather Observations in 13:30 LTAN (As of July 2026)",
+   "author_org": "NOAA NESDIS",
+   "published": "2026-07 (As of July 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q5-leo-flyout-jul2026",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/leo_flyout_2026_july.pdf/0236ddcc1f3074d4.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Graphic chart: launch years for JPSS-3/-4 and bar end years are not extractable from the text layer; read the PDF image for years.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://catalog.data.gov/dataset/gpm-ssmis-on-f17-gprof-climate-based-radiometer-precipitation-profiling-1-5-hours-12-km-v0-0aced",
+   "fetched_url": null,
+   "title": "GPM SSMIS on F17 (GPROF) Climate-based Radiometer Precipitation Profiling 1.5 hours 12 km V08 (GPM_2AGPROFF17SSMIS_CLIM)",
+   "author_org": "NASA GES DISC (via data.gov catalog)",
+   "published": "Dataset Last Updated: November 17, 2026",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-q3-f17-gprof-clim-temporal",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/datagov_f17_gprof_clim.html/60ba0692d9c063ac.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Climate-based (CLIM) research product, not the NRT GPROF used by IMERG Early/Late; metadata, not a statement of feed status. The WebSearch summary claimed an end date of 2026-10-15, which this saved copy does not show.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: GES DISC F17 SSMIS GPROF CLIM archive"
+  },
+  {
+   "id": "s34",
+   "url": "https://catalog.data.gov/dataset/gpm-ssmis-on-f18-gprof-climate-based-radiometer-precipitation-profiling-1-5-hours-12-km-v0-63ea3",
+   "fetched_url": null,
+   "title": "GPM SSMIS on F18 (GPROF) Climate-based Radiometer Precipitation Profiling 1.5 hours 12 km V08 (GPM_2AGPROFF18SSMIS_CLIM)",
+   "author_org": "NASA GES DISC (via data.gov catalog)",
+   "published": "Dataset Last Updated: November 17, 2026",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-q3-f18-gprof-clim-temporal",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/datagov_f18_gprof_clim.html/565c4580787bbbbd.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Climate-based (CLIM) research product, not the NRT GPROF used by IMERG Early/Late; metadata only.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: GES DISC F18 SSMIS GPROF CLIM archive"
+  },
+  {
+   "id": "s35",
+   "url": "https://pps.gsfc.nasa.gov/",
+   "fetched_url": null,
+   "title": "PPS (Precipitation Processing System) home page news table",
+   "author_org": "NASA GSFC PPS",
+   "published": "Page Last Updated: November 20, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q3-pps-news-table",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_home.html/00159b9dd8d7f72e.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Table titles only; the Details pages (20 Nov, 28 Oct, 30 Sep 2026) were not read and may describe SSMIS/ATMS/MetOp-C changes. Mostly production (not explicitly NRT) items.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s36",
+   "url": "https://pps.gsfc.nasa.gov/",
+   "fetched_url": null,
+   "title": "PPS home page news rows of 20 Nov 2026 and 28 Oct 2026 (METOPC GPROF reprocessing; WSFM1 MWI V08A/V08B release)",
+   "author_org": "NASA GSFC PPS",
+   "published": "2026-11-20 and 2026-10-28 (news rows)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q4-pps-metopc-calib",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_home.html/00159b9dd8d7f72e.html",
+   "retrieved": "2026-11-21",
+   "limitations": "Row text truncated in the saved HTML search output; Details files (/Documents/PPS_Will_Reprocess_All_METOPC_GPROF_Data.txt and L2_GPROF_V08B_Data_Release_New_WSFM1_MWI... .txt) not read; does not say whether NRT METOPC GPROF used by IMERG Late was affected. q3 relevance: WSF-M1 MWI production release.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s37",
+   "url": "https://pps.gsfc.nasa.gov/Documents/PPS_Will_Reprocess_All_METOPC_GPROF_Data.txt",
+   "fetched_url": null,
+   "title": "PPS Will Reprocess All METOPC GPROF Data",
+   "author_org": "NASA GSFC PPS",
+   "published": "2026-11-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q4-pps-metopc-reprocess",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_metopc_reprocess.txt/f1710f263edd9174.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not say whether the NRT METOPC GPROF (feeding IMERG Early/Late) has the same calibration-file error; MHS not named.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://pps.gsfc.nasa.gov/Documents/L2_GPROF_V08B_Data_Release_New_WSFM1_MWI_L1_L2_and_GOSAT_GW_AMSR3_L2_L3%20Products.txt",
+   "fetched_url": null,
+   "title": "L2 GPROF V08B Data Release and New WSFM1 MWI L1-L2 and GOSAT-GW AMSR3 L2-L3 Products",
+   "author_org": "NASA GSFC PPS",
+   "published": "2026-10-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q3-pps-wsfm1-std-release",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_v08b_wsfm1_release.txt/f94c4131ff19796f.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Production/climate products, not NRT; no SSMIS mention.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://pps.gsfc.nasa.gov/Documents/PPS_Temporarily_Halting_GPM_V08_STD_L2_L3_GPROF.txt",
+   "fetched_url": null,
+   "title": "PPS is Temporarily Halting GPM V08 STD L2-L3 GPROF data and will rollback GPROF data in production from 2026-08-18 to Current",
+   "author_org": "NASA GSFC PPS",
+   "published": "2026-09-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-q3-pps-v08-rollback",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_halting_v08_gprof.txt/006c52aef2feac1f.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Standard production (STD), not NRT; shows which constellation sensors PPS was processing in Aug-Sep 2026 (incl. all three SSMIS) but not post-Sept SSMIS status.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpm-mergir-1",
+   "fetched_url": null,
+   "title": "NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR) | NASA Earthdata",
+   "author_org": "NASA GES DISC",
+   "published": "NOT PRESENT (page retrieved 2026-11-21; mentions mid-August 2025 change)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/earthdata_gpm_mergir_2026.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Archive (GES DISC) copy, not the CPC-to-PPS real-time feed; the format change is for the archived netCDF files. Page does not mention Meteosat-12/MTG, outages, or CPC staffing.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://ospo.noaa.gov/data/messages/2026/01/MSG_20260120_0124.html",
+   "fetched_url": null,
+   "title": "Topic: 45.5deg E IODC MSG Service Alert",
+   "author_org": "NOAA OSPO / ESPC (relaying EUMETSAT)",
+   "published": "2026-01-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_iodc_20260120.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Single alert; search snippets say follow-ups the same day and 21 Jan 2026 (MSG_20260120_0218, MSG_20260121_0958) reported data recovered, not read. Does not mention CPC merged IR or IMERG.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s42",
+   "url": "https://ospo.noaa.gov/data/messages/2025/11/MSG_20251118_1545.html",
+   "fetched_url": null,
+   "title": "Topic: Switch from Himawari-8 to Himawari-9",
+   "author_org": "NOAA OSPO / ESPC (relaying JMA)",
+   "published": "2025-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_himawari_switch_20251118.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not give the October 2025 Himawari-9 anomaly start; search snippet (WMO OSCAR, JMA schedule, not read) says Himawari-8 became primary from 13:00 UTC 12 Oct 2025 after anomalies in H-9 imagery. No mention of CPC merged IR or IMERG.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://www.geo.uni-hamburg.de/en/icdc/about-icdc/news/2026/20260327-new-verison-of-gpcc-product.html",
+   "fetched_url": null,
+   "title": "New version of GPCC Monitoring Product (ICDC news)",
+   "author_org": "ICDC, Universitaet Hamburg (mirror of DWD GPCC)",
+   "published": "2026-03-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/icdc_gpcc_v2025_news_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Mirror, not DWD itself (opendata.dwd.de refused by sandbox). Says nothing on First Guess, discontinuation, or IMERG. Search snippet of the ICDC 2025-11-14 item: Monitoring Product V.2022 extended to Jan 1982 - Aug 2025 (not read).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://arxiv.org/abs/2605.07167",
+   "fetched_url": null,
+   "title": "GPROF-IR: An Improved Single-Channel Infrared Precipitation Retrieval for Merged Satellite Precipitation Products",
+   "author_org": "Pfreundschuh, Kummerow, Tan, Huffman",
+   "published": "2026-05-08 (v2 2026-09-22)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e5",
+   "access_level": "abstract",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/arxiv_gprof_ir_2605.07167_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Preprint abstract only; does not name PDIR-NOW or say it will be replaced, nor give a V08 date. Concerns a future version, not the V07B Late Run.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: IMERG V08 IR retrieval (possible successor to PDIR-NOW role)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://chrsdata.eng.uci.edu/",
+   "fetched_url": null,
+   "title": "CHRS Data Portal",
+   "author_org": "UC Irvine Center for Hydrometeorology and Remote Sensing",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_portal.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Static menu page (Angular app); shows no latest-data date, status notice, or funding information. Being listed does not show the feeds are current.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s46",
+   "url": "https://www.data.jma.go.jp/mscweb/en/oper/bulletin_list_H9_2025.html",
+   "fetched_url": null,
+   "title": "Himawari-9 Operational Schedule for 2025",
+   "author_org": "JMA Meteorological Satellite Center",
+   "published": "2025 (list)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/jma_h9_schedule_2025_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Gives no reason for the switch (search snippet from WMO OSCAR, not read: Himawari-8 primary from 12 Oct 2025 when anomalies seen in H-9 imagery). No mention of CPC merged IR or IMERG.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://opendata.dwd.de/climate_environment/GPCC/html/gpcc_precipitation_analysis_monthly_v2025_doi_download.html",
+   "fetched_url": null,
+   "title": "GPCC Precipitation Analysis Monthly Version 2025 (DOI download page)",
+   "author_org": "Deutscher Wetterdienst (DWD) GPCC",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/dwd_gpcc_monthly_v2025_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Says nothing about IMERG, the Final Run gauge input or the Late Run climatological calibration; no discontinuation note. Earlier run gpcp-daily-inputs-pt5 (sa1/dwd_gpcc_monthly_v2025_extract.txt) has a similar extract.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://www.ospo.noaa.gov/data/messages/2025/04/MSG_20250407_1510.html",
+   "fetched_url": null,
+   "title": "GOES-19 Operational Declaration as GOES-East",
+   "author_org": "NOAA OSPO / ESPC",
+   "published": "2025-04-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_goes19_east_20250407.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not mention CPC merged IR or IMERG. Relevance: GES DISC says the merged IR is inter-calibrated to GOES East (sa3-e1), so GOES East changed satellite in April 2025; no source read ties a MERGIR change to it.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://ospo.noaa.gov/data/messages/2026/03/MSG_20260323_1314.html",
+   "fetched_url": null,
+   "title": "Topic: 0deg MTG Service",
+   "author_org": "NOAA OSPO / ESPC (relaying EUMETSAT)",
+   "published": "2026-03-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_0deg_mtg_20260323_plain.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Shows Meteosat-12 is in 0-degree service in 2026; does not say whether CPC merged IR ingests Meteosat-12 (GES DISC list stops at METEOSAT-11). No IMERG mention. Search snippets (not read): Meteosat-12 declared operational 4 Dec 2024, took over prime 0-degree service from Meteosat-10 in June 2025.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s50",
+   "url": "https://ospo.noaa.gov/data/messages/2025/07/MSG_20250725_0856.html",
+   "fetched_url": null,
+   "title": "Topic: MET-9",
+   "author_org": "NOAA OSPO / ESPC (relaying EUMETSAT)",
+   "published": "2025-07-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_met9_20250725_plain.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Short outage; one of several MET-9 IODC alerts (Sept 2025, 14 Dec 2025, 20 Jan 2026 per search snippets). Shows Meteosat-9 IODC still in service in 2025-2026. No IMERG/CPC mention.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s51",
+   "url": "https://gpm.nasa.gov/data/news/reduced-data-quality-imerg-early-and-late-hdf-files",
+   "fetched_url": null,
+   "title": "Reduced Data Quality of IMERG Early and Late HDF Files",
+   "author_org": "NASA GPM / PPS",
+   "published": "2024-10-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_reduced_quality_ir.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not say who supplied the corrupted file (CPC is the IR supplier per Part 1). Single short event; reprocessed.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s52",
+   "url": "https://ospo.noaa.gov/data/messages/2026/01/MSG_20260121_0958.html",
+   "fetched_url": null,
+   "title": "Topic: 45.5deg E IODC MSG Service Alert (21 Jan 2026)",
+   "author_org": "NOAA OSPO / ESPC (relaying EUMETSAT)",
+   "published": "2026-01-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_iodc_20260121_plain.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not state when the 20 Jan 2026 outage (sa3-e2) ended; MSG_20260120_0218 (snippet: data recovered) not read. No IMERG/CPC mention.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s53",
+   "url": "https://cisess.umd.edu/updates-to-a-global-precipitation-product/",
+   "fetched_url": null,
+   "title": "Updates to a Global Precipitation Product",
+   "author_org": "CISESS (Univ. of Maryland), Maureen Cribb and Debra Baker",
+   "published": "2026-03-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cisess_persiann_ccs_cdr_v2.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "About the CDR, not PDIR-Now or the real-time PERSIANN-CCS feed; says nothing about PDIR-Now funding or status, or IMERG.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: UCI CHRS activity 2026",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s54",
+   "url": "https://ospo.noaa.gov/data/messages/2026/01/MSG_20260120_0218.html",
+   "fetched_url": null,
+   "title": "Update #1: Data has been recovered (45.5deg E IODC MSG Service Alert)",
+   "author_org": "NOAA OSPO / ESPC (relaying EUMETSAT)",
+   "published": "2026-01-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_iodc_20260120_update_plain.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Short outage; no IMERG/CPC mention.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s55",
+   "url": "https://space.oscar.wmo.int/satellites/view/himawari_9",
+   "fetched_url": null,
+   "title": "Satellite: Himawari-9 (WMO OSCAR/Space)",
+   "author_org": "WMO OSCAR",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/wmo_oscar_himawari9_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Secondary registry; no Himawari-10 successor info extracted; no CPC/IMERG mention.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s56",
+   "url": "https://space.oscar.wmo.int/satellites/view/meteosat_9_iodc",
+   "fetched_url": null,
+   "title": "Satellite: Meteosat-9 (IODC) (WMO OSCAR/Space)",
+   "author_org": "WMO OSCAR",
+   "published": "Last update 2025-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/wmo_oscar_met9_iodc_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Contradicts the idea of an IODC end in 2025 (no end found); registry, not EUMETSAT itself; successor at IODC NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s57",
+   "url": "https://space.oscar.wmo.int/satellites/view/meteosat_12",
+   "fetched_url": null,
+   "title": "Satellite: Meteosat-12 (WMO OSCAR/Space)",
+   "author_org": "WMO OSCAR",
+   "published": "Last update 2026-03-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/wmo_oscar_meteosat12_extract.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Registry; parallel Meteosat-10 SEVIRI operations until Q2 2027 means SEVIRI 0-degree data stay available; no page read says which of the two CPC merged IR uses.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s58",
+   "url": "https://ftp.cpc.ncep.noaa.gov/hwang/YP/html/Global_Merged_IR.php",
+   "fetched_url": null,
+   "title": "Climate Prediction Center - Merged-IR products (Real-Time Updates)",
+   "author_org": "NOAA CPC",
+   "published": "NOT PRESENT (undated; satellite list suggests about 2019-2022)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cpc_global_merged_ir.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Undated and evidently not maintained (lists retired GOES-15/GOES-16/METEOSAT-8); shows CPC public pages do not document 2024-2026 satellite changes. Public ftp latency, not the PPS feed. No IMERG mention.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s59",
+   "url": "https://www.weather.gov/media/notification/pdf_2025/scn25-30_updated_transitionGOES-19_%20to_GOES-EAST_Apr_7_2025.pdf",
+   "fetched_url": null,
+   "title": "Service Change Notice 25-30 Updated: Operational transition of the GOES-19 satellite to become GOES-East on or after April 7, 2025",
+   "author_org": "NWS Headquarters, Office of Observations",
+   "published": "2025-04-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nws_scn25-30_updated.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Only first page read; covers SBN dissemination, not CPC merged IR or IMERG.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s60",
+   "url": "https://nsidc.org/data/user-resources/data-announcements/user-notice-ssmis-processing-will-now-continue-through-september-2026",
+   "fetched_url": null,
+   "title": "User Notice: SSMIS processing will now continue through September 2026",
+   "author_org": "NASA NSIDC DAAC",
+   "published": "2025-08-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/nsidc-org-data-user-resources-data-announcements-user-notice_152531.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Written for NSIDC SSMIS products, not GPM/PPS",
+   "found_by": [
+    "main"
+   ],
+   "scope": "context: NSIDC DAAC SSMIS products",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s61",
+   "url": "https://database.eohandbook.com/database/missionsummary.aspx?missionID=230",
+   "fetched_url": null,
+   "title": "Metop-B Satellite Mission Summary | CEOS Database",
+   "author_org": "CEOS (Committee on Earth Observation Satellites) database",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/database-eohandbook-com-database-missionsummary-aspx-mission_152610.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "A database entry, not EUMETSAT itself; no update date shown",
+   "found_by": [
+    "main"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "NOAA ended all Suomi NPP data delivery, ATMS included, permanently at 15:40 UTC on 2 Nov 2026 (planned 13:00 UTC); deorbit runs 1 to about 12 Dec 2026; users are pointed to NOAA-21 and NOAA-20. Rated imminent (already happened). No PPS/IMERG notice on removing S-NPP ATMS from near-real-time products was found.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "The scheduled cessation of Suomi National Polar-orbiting Partnership (S-NPP) data distribution to users took effect today at 15:40 UTC. | starting December 1st 2026, S-NPP will be lowered incrementally through approximately December 12th for reentry over the South Pacific Ocean. | Length of Outage: Permanent | ATMS - data will no longer be available after November 2, 2026 at 15:40 UTC (10:40 AM EST) | All users should transition to using NOAA-21 (Primary) and NOAA-20 (Secondary) science products",
+     "location": "Update #4, Update #3, notice details"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Update on November 2: The delivery of new science data from Suomi National Polar-orbiting Partnership (Suomi NPP) ended at 15:40 UTC on November 2, 2026 (2026/306), according to an announcement from NOAA's National Environmental Satellite, Data, and Information Service (NESDIS). … In general, Suomi NPP data users can transition to NOAA-21 and NOAA-20 data products … ATMS (Advanced Technology Microwave Sounder)",
+     "location": "Alert body; Data Center/Project list"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Date/Time of Initial Impact: November 2, 2026 at 1300 UTC (8:00 AM EST) … Length of Outage: Permanent … NOAA will end delivery of all remaining science products from the Suomi National Polar-Orbiting Partnership (S-NPP) satellite at 13:00 UTC (8:00 AM EST) on November 2, 2026 | ATMS - data will no longer be available after November 2, 2026 at 13:00 UTC (8:00 AM EST) … CrIS - End of Operational Use occurred on December 23, 2025 … All users should transition to using NOAA-21 (Primary) and NOAA-20 (Secondary) science products | Update #4 - Cessation of Suomi National Polar-orbiting Partnership (S-NPP) data to users on November 02, 2026 1540 UTC and Decommissioning - Issued November 2, 2026 1800 UTC",
+     "location": "Notice body; Recent News sidebar"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "Issued Aug. 7, 2026 | Delivery of new science data from the Suomi National Polar-orbiting Partnership (Suomi NPP) satellite will cease at 13:00 Universal Time (UTC) on November 2, 2026 (2026/306), NOAA's National Environmental Satellite, Data, and Information Service (NESDIS) announced. … In general, Suomi NPP data users can transition to NOAA-21 and NOAA-20 data products … ATMS (Advanced Technology Microwave Sounder)",
+     "location": "Alert body"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Recommended options, guidance, and resources to support a smooth transition to alternative data sources for current Suomi NPP ATMS data users. | Suomi NPP | NOAA-21 | NOAA-20 | GPM ATMS on SUOMI-NPP (GPROF) Radiometer Precipitation Profiling L2 1.5 hours 16 km GPM_2AGPROFNPPATMS | GPM_2AGPROFNOAA21ATMS | GPM_2AGPROFNOAA20ATMS",
+     "location": "Dataset Mapping table"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NOAA's own notices and NASA Earthdata agree; only the IMERG-side handling is undocumented",
+   "sole_source_reason": "the operating agency's own notice is the authority for its own satellite and data-delivery decisions"
+  },
+  {
+   "id": "c2",
+   "text": "DoD's DMSP SSMIS feed (F16, F17, F18), which IMERG uses for about a quarter of its microwave data, was first to be shut off on 30 Jun 2025 (which GPM said would suspend SSMIS in PPS), then kept until the sensor fails or the program formally ends in Sept 2026; on 1 Oct 2026 PolarProd was terminated and FNMOC changed the file names, and CLASS reports the DMSP data flow stopped on 30 Sep 2026 before the provider resumed sending backlog and new data. Rated imminent (program end reached; feed disrupted).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Department of Defense (DOD) FNMOC has announced its intention to shut down the current flow of operational SSMIS data on 30 June 2025. This is much earlier than the earlier announced date of September 2026, and would suspend the use of F16, F17, and F18 SSMIS data in GPM PPS. … The lack of these 3 conically scanning radiometers will impact the accuracy of all IMERG products as they will have data from 3 fewer radiometers (out of the current 11), whose high-quality data help to fill the 8 hour gap between the main agency radiometer orbit times (01:30 and 09:30 a.m./p.m.)",
+     "location": "News item body"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Wednesday, August 19, 2026 | New WSF-M1 MWI NRT Files Available | Effective August 12, 2026 PPS made available NRT data from the DOD WSF-M1 MWI instrument. Both intercalibrated 1C granules and GPROF precipitation retrieval files are available to users. The WSF NRT granules are about 15 mins long. … On Tuesday, 20 January 2026, NASA's Precipitation Processing System (PPS) will temporarily shutdown the GPM Near Real-time (NRT) system at 18:00 EST (23:00 UTC). … It will take approximately 14 hours … During this 14 hours no new data will be produced or ingested. … Wednesday, July 30, 2025 | SSMIS Data Collection to Continue into 2026 | Department of Defense officials have reached an agreement to continue sharing DMSP SSMIS data until the sensor fails, or until the program formally ends (currently planned for September 2026).",
+     "location": "Data News listing, items dated 2025-07-30 to 2026-08-19"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Date/Time of Initial Impact: October 1, 2026 1500 UTC … On October 1, 2026 the listed SSMI/S Data Record products for DMSP F-16/F-17/F-18 provided by FNMOC will undergo permanent filename changes. This change coincides with the termination of PolarProd which previously supported DMSP delivery. FNMOC will send the DMSP xDR files highlighted in green directly to NCCF under the new listed product filename patterns. F-17 and F-18 Environmental Scan, Imager Scan, Lower Atmosphere, and Upper Atmosphere products in BUFR and HDF formats are highlighted in red and will be discontinued effective October 1, 2026.",
+     "location": "Details/Specifics of Change"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Attention: DMSP Users! (10/23/2026) : | DMSP data flow stopped on 9/30/2026. The DMSP data file names were changed and were to be distributed with new names. The data provider agreed to rename the files using the old names. The data provider has been providing the backlog data and new data. The ephemeris information has also been provided. We are working to fill the data gaps since 9/30/26.",
+     "location": "Home page notice dated 10/23/2026"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "The investigation is still ongoing",
+     "location": "OSPO message MSG_20260613_0949 (saved as HTML text)"
+    },
+    {
+     "source_id": "s60",
+     "relationship": "contextualizes",
+     "passage": "Increased gaps in the DMSP SSMIS data, which began in late spring of 2025 as the DoD deprioritized the processing of SSMIS data, will remain possible through the end of the mission. Additionally, sensor failures may occur before the end of the mission occurs.",
+     "location": "NSIDC data announcement, 5 Aug 2025"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "GPM, NOAA OSPO and CLASS notices agree on the events; what PPS's near-real-time stream received after 30 Sep 2026 is not stated by any source",
+   "sole_source_reason": "the operating agency's own notice is the authority for its own satellite and data-delivery decisions"
+  },
+  {
+   "id": "c3",
+   "text": "GPM's own analysis says losing SSMIS raises the Late Run's reliance on geostationary IR from 9.9% to 22.9% of the map (Early: 22.2% to 39.6%); the DoD WSF-M1 MWI, in nearly the same orbit as F17, has been in PPS near-real-time files since 12 Aug 2026 and in standard V08 products released 4 Nov 2026.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "of MWI since F17 and WSF-M1 occupy nearly the same orbital slot.",
+     "location": "GPM transition document"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "SSMIS provides roughly 25% of the available PMW data in IMERG, and critically is the only … map increases from 22.2% to 39.6% for IMERG Early Run and from 9.9% to 22.9% for Late",
+     "location": "GPM transition document"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Wednesday, August 19, 2026 | New WSF-M1 MWI NRT Files Available | Effective August 12, 2026 PPS made available NRT data from the DOD WSF-M1 MWI instrument. … Thursday, January 8, 2026 | Upcoming GPM Near Real-time Maintenance | On Tuesday, 20 January 2026, NASA's Precipitation Processing System (PPS) will temporarily shutdown the GPM Near Real-time (NRT) system at 18:00 EST (23:00 UTC). … It will take approximately 14 hours to finalize the synchronization of the data from the old storage to the new one. During this 14 hours no new data will be produced or ingested.",
+     "location": "Data News list"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "This new data version V08B is just a correction to the variable 'precipitationYesNoFlag' value. … PPS will also release the Weather System Follow-on Microwave 1 (WSFM1) Microwave Imager (MWI) 1C V08A and L2 GPROF V08B products on November 4, 2026 once they have been approved.",
+     "location": "PPS release notice"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "a GPM document read in full, but undated (filed Aug 2025) and model-based",
+   "figure_status": "estimate"
+  },
+  {
+   "id": "c4",
+   "text": "NOAA terminated its AMSR2 standard near-real-time data provision in Sept 2026 (generation ceasing 00z 2 Sep 2026), citing the limited time before JAXA discontinues AMSR2 data; AMSR2 has run beyond its 5-year design life and JAXA released AMSR3 (GOSAT-GW, launched 28 Jun 2025) standard products on 30 Jun 2026. PPS began AMSR3 1C production about 25 Aug 2026 and AMSR3 GPROF V08B on 4 Nov 2026. No source says whether PPS's own AMSR2 near-real-time route stopped or whether the Late Run ingests AMSR3. Rated imminent for the NOAA feed, emerging for JAXA's own AMSR2 end.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Date/Time of Initial Impact: August 31, 2026 TBD UTC | Duration: Permanent - Decommissioning | On June 28, 2025, the Japan Aerospace Exploration Agency (JAXA) launched the Global Observing SATellite for Greenhouse gases and Water cycle (GOSAT-GW) featuring the Advanced Microwave Scanning Radiometer (AMSR3) instrument. A comprehensive transition from AMSR2 to AMSR3 is scheduled for July and August 2026, during which data from both instruments will be made available. … Effective September 2026, the provision of AMSR2 standard near-real-time data will be terminated. … Coordinated efforts are vital for the successful deployment of NESDIS AMSR3 algorithms given the limited timeframe before AMSR2 data is discontinued by JAXA.",
+     "location": "Notice body, Details/Specifics of Change"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "the limited timeframe before AMSR2 data is discontinued by JAXA.",
+     "location": "NESDIS notice, impact section"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "During the July to August 2026 period, AMSR2 global data will be received via all passes at the Svalbard ground station to provide standard and near-real-time products. Effective September 2026, the provision of AMSR2 standard near-real-time data will be terminated.",
+     "location": "NESDIS notice"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "As per the announcement on July 2, 2026, AMSR2 products will be decommissioned and replaced by AMSR3 versions. AMSR2 data and product generation will cease at 00z on September 2, 2026, as we transition to AMSR3. Users should expect a data gap for the Ocean product suite throughout September.",
+     "location": "AMSR-3 Webpage Notice, top of page"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "June 30, 2026 (JST) | AMSR2 ... \"was being operated beyond its designed service life of five years.\" | \"AMSR3 was therefore developed to continue the AMSR2 mission.\" | GPM: NOT PRESENT | NASA: NOT PRESENT | Near-real-time distribution: NOT PRESENT",
+     "location": "Press release body (WebFetch extraction; raw refused: global.jaxa.jp)"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "This week starting on or after Tuesday August 25, 2026 PPS will be processing and distributing new GOSATGW_AMSR3 L1C production data. … The new '1CGOSATGWAMSR3' data will begin with a data date of August 11, 2025. | The associated GPROF algorithms are not yet available for production.",
+     "location": "Announcement body"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "PPS will commence STD L2 GPROF V08B processing with a data start date of November 01, 2026. These L2 GPROF V08B data will not be released until November 4, 2026 … This new data version V08B is just a correction to the variable 'precipitationYesNoFlag' value. It has no other content changes. | For the Global Observing Satellite for Greenhouse Gases and Water Cycle “IBUKI GW” (GOSAT-GW) Advanced Microwave Scanning Radiometer 3 (AMSR3), PPS will release its GPROF V08B products on November 4, 2026. The coverage of AMSR3 Standard L2 GPROF V08B data is from March 1 2026 to present, and the coverage of its Climate L2 GPROF V08B is from August 11, 2025 to present date.",
+     "location": "Notice paras 1, 4, 5"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Data Products for rev. 76007",
+     "location": "OSPO message MSG_20260901_0209 (saved as HTML text)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NOAA, JAXA and PPS documents agree; JAXA's operational notices could not be read (hosts refused and blocked)",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c5",
+   "text": "MHS: NOAA-18 was decommissioned 6 Jun 2025 and NOAA ended POES data delivery (NOAA-15, NOAA-19) on 16 Jun 2025; NOAA-19 then had a battery failure on 9 Aug 2025 and was passivated 13 Aug 2025. MetOp-B and MetOp-C remain; on 20 Nov 2026 PPS found that MetOp-C GPROF had used MetOp-B calibration files, stopped production MetOp-C GPROF, and said near-real-time MetOp-C GPROF continues. The CEOS database lists Metop-B as operational (nominal) with an EOL date of Nov 2027; EUMETSAT's own pages could not be read. Rated imminent for the NOAA losses (done), emerging for Metop-B (nearing its listed EOL).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "NOAA-18 was decommissioned on June 6, 2025 at 1740 UTC. NOAA will end delivery of all data from the remaining POES constellation from PDA (NOAA-15 and NOAA-19) on June 16, 2025 at 18:00 UTC.",
+     "location": "CLASS notice 6/11/2025"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "On August 9, 2025 NOAA-19 encountered a battery failure. This battery failure jeopardizes the ability to ensure safe operations of the spacecraft.",
+     "location": "OSPO message MSG_20250813_1715"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "METOPC has incorrectly used METOPB calibration files for its processing. This issue persists in both V08A and V08B versions … We will erase all existing V08A and V08B METOPC data and reprocess all METOPC GPROF data back to its mission start date. … PPS has also stopped processing the current incoming production METOPC data until the new algorithm is installed. NRT continues its processing METOPC GPROF data.",
+     "location": "Notice body"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "METOPC has incorrectly used METOPB calibration files for its processing. This issue persists in both V08A and V08B versions … We will erase all existing V08A and V08B METOPC data and reprocess all METOPC GPROF data back to its mission start date. … PPS has also stopped processing the current incoming production METOPC data until the new algorithm is installed.  NRT continues its processing METOPC GPROF data.",
+     "location": "Notice body (November 20, 2026)"
+    },
+    {
+     "source_id": "s61",
+     "relationship": "supports",
+     "passage": "Mission Status | Operational (nominal) … EOL Date | Nov 2027",
+     "location": "CEOS mission summary"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NOAA's and PPS's own notices",
+   "sole_source_reason": "the operating agency's own notice is the authority for its own satellite and data-delivery decisions"
+  },
+  {
+   "id": "c6",
+   "text": "NOAA-20 ATMS entered a non-nominal state on 10 Jul 2026 and was approved again for operational use on 14 Jul 2026; NOAA-21 is the primary JPSS satellite. NOAA's July 2026 flyout chart marks S-NPP as tentatively scheduled for decommissioning.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Update #2 : Cal/val and engineering analysis on the NOAA-20 ATMS instrument and data products are on-going. An update will be provided no earlier than July 14, 2026. NOAA-21 remains the primary JPSS series spacecraft and ATMS products from that satellite continue to be delivered. … all NOAA-20 ATMS products are not approved for operational use. | Correction: The NOAA-20 ATMS instrument entered a non-nominal state at ~03:47z on July 10, 2026. Engineering was able to restore the instrument to an operational state by 08:19:28Z on July 10, 2026. PDA OPS subscriptions for all NOAA-20 ATMS products were disabled at 16:10Z. … All NOAA-20 ATMS data between 03:47Z - 08:18Z and 12:38Z - 13:26Z on July 10, 2026 will not be recoverable. … A Notice will be provided once NOAA-20 ATMS is available for operational use.",
+     "location": "Message updates (Update #2, Correction, Update #1, original)"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Update#3 As of Tuesday July 14, 2026, NOAA-20 ATMS science products are approved for operational use and PDA OPS subscriptions for these products will be enabled at 20:40 UTC, July 14, 2026.",
+     "location": "Update #3"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "† Tentatively scheduled for decommissioning and deorbiting.",
+     "location": "flyout chart legend"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NOAA OSPO notices and chart",
+   "sole_source_reason": "the operating agency's own notice is the authority for its own satellite and data-delivery decisions"
+  },
+  {
+   "id": "c7",
+   "text": "The GPM Core Observatory (GMI, DPR) shows no operational threat: JAXA reports the Nov 2023 boost to 442 km extended its expected lifetime into the early 2030s, all data collection nominal and V08 DPR/GMI products released Mar 2026. Rated no current operational threat; its funding threat (FY2026/27 requests, Senior Review) is in the Part 4 run.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "km to 442 km and extending its expected operational lifetime | into the early 2030s.",
+     "location": "IPWG-12 slides, GPM CO status slide"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "km to 442 km and extending its expected operational lifetime | into the early 2030s.",
+     "location": "IPWG-12 slides, GPM CO status slide"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "one partner-agency slide set; no NASA status page read for 2026"
+  },
+  {
+   "id": "c8",
+   "text": "PPS's own V08 processing has had setbacks in 2026: on 18 Sep 2026 it halted standard V08 GPROF and retracted data from 18-19 Aug 2026 for GMI and the constellation (SSMIS F16-18, AMSR2, MHS, ATMS) because the preprocessor ignored NOAA's new AUTOSNOW with AMSR3; on 1 Oct 2026 it recalled all V08 L3 GPROF for a precipitationYesNoFlag bug. The notices concern standard (not near-real-time) data.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "PPS production has temporarily halted V08 GPROF processing. We recently discovered that the GPROF preprocessor was selecting older AUTOSNOW data for processing and neglecting to use any new v1r1 AUTOSNOW data that includes AMSR3. | on August 19, 2026, NOAA started producing a new version of AUTOSNOW data that incorporated AMSR3. | PPS will retract the following STD GPROF data in production from 2026-08-18 to current date. | 2AGPROFGCOMW1AMSR2 | V08A | 2026-08-19 01:01:18 | 2026-09-11 22:32:41 | 348 | … 2AGPROFNPPATMS | V08A | 2026-08-19 01:19:33 | 2026-09-10 23:06:43 | 323",
+     "location": "Notice body and tables"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "PPS production has temporarily halted V08 GPROF processing. We recently discovered that the GPROF preprocessor was selecting older AUTOSNOW data for processing and neglecting to use any new v1r1 AUTOSNOW data that includes AMSR3. … | 2AGPROFF16SSMIS | V08A | 2026-08-19 00:28:13 | 2026-09-12 23:44:50 | 353 | | 2AGPROFF17SSMIS | V08A | 2026-08-19 00:20:25 | 2026-09-12 23:24:06 | 353 | | 2AGPROFF18SSMIS | V08A | 2026-08-19 01:26:12 | 2026-09-12 22:49:45 | 352 | … | 2AGPROFMETOPBMHS | V08A | 2026-08-19 00:44:25 | 2026-09-15 23:25:03 | 397 | | 2AGPROFMETOPCMHS | V08A | 2026-08-19 01:07:58 | 2026-09-15 23:47:04 | 397 | | 2AGPROFNOAA20ATMS | V08A | 2026-08-19 01:39:01 | 2026-09-12 22:48:20 | 353 | | 2AGPROFNOAA21ATMS | V08A | 2026-08-19 00:43:14 | 2026-09-12 23:33:29 | 354 | | 2AGPROFNPPATMS | V08A | 2026-08-19 01:19:33 | 2026-09-10 23:06:43 | 323 |",
+     "location": "Notice text and Constellation STD L2 GPROF retraction table (columns DataType, version, StartTime, StopTime, count)"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Issued Sept. 21, 2026 | Resolved | On August 19, 2026, NOAA started producing a new version of AUTOSNOW data that incorporated AMSR3. The GPROF STD (not CLIM) algorithm preprocessor is intended to choose the best input, but unfortunately, it was selecting older SNOW data for processing and neglecting to use any of the new v1r1 data that includes AMSR3. The Precipitation Processing System (PPS) has temporarily halted V08 GPROF processing, and the algorithm developer will correct the problem soon. | This data recall impacts the GPM v08 collections listed in \"Referenced Datasets\" from August 19, 2026 to the present.",
+     "location": "Alert body and Referenced Datasets table"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "Issued Oct. 1, 2026 | The Precipitation Processing System (PPS) is recalling Level 3 GPROF data for GPM v08 because a minor bug was discovered in the Level 2 GPROF v08 program. GPM science data users should be aware that all GPM v08 L3 GPROF data will be reprocessed from v08A to v08B. L2 will not be reprocessed.",
+     "location": "Alert body"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "PPS's and Earthdata's own notices",
+   "sole_source_reason": "the operating agency's own notice is the authority for its own satellite and data-delivery decisions"
+  },
+  {
+   "id": "c9",
+   "text": "Late Run interruptions from PPS itself: V07B Early/Late production delayed in June 2024 (restart planned 6 Jun 2024); a corrupted IR file stopped IR contributing to the Late Run from 16:00 UTC 18 Oct to 20:00 UTC 19 Oct 2024 (rerun); a ~14 h planned near-real-time shutdown on 20 Jan 2026.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "Wednesday, June 5, 2024 | Due to unforeseen issues with the recent GPM near real-time system updates, IMERG V07B Early and Late Run production has been delayed. | Currently the PPS plans for IMERG V07B Early and Late Run data to begin production on June 6, 2024.",
+     "location": "Notice body"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "On 18 October 2024 PPS received a corrupted IR file for 15:00 UTC, which caused all subsequent IR processing to fail and not contribute to the Early Run from 16:00 UTC on 18 October until 05:00 UTC on 20 October, and to the Late Run from 16:00 UTC on 18 October until 20:00 UTC on October 19. Subsequently, PPS manually skipped past the defective IR data file and ran all the IR data that were missed, and then reran both Early and Late for the periods listed above. These rerun products have replaced the earlier products on the fileserver.",
+     "location": "notice body"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Wednesday, August 19, 2026 | New WSF-M1 MWI NRT Files Available | Effective August 12, 2026 PPS made available NRT data from the DOD WSF-M1 MWI instrument. Both intercalibrated 1C granules and GPROF precipitation retrieval files are available to users. The WSF NRT granules are about 15 mins long. … On Tuesday, 20 January 2026, NASA's Precipitation Processing System (PPS) will temporarily shutdown the GPM Near Real-time (NRT) system at 18:00 EST (23:00 UTC). … It will take approximately 14 hours … During this 14 hours no new data will be produced or ingested. … Wednesday, July 30, 2025 | SSMIS Data Collection to Continue into 2026 | Department of Defense officials have reached an agreement to continue sharing DMSP SSMIS data until the sensor fails, or until the program formally ends (currently planned for September 2026).",
+     "location": "Data News listing, items dated 2025-07-30 to 2026-08-19"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "GPM data news",
+   "sole_source_reason": "the operating agency's own notice is the authority for its own satellite and data-delivery decisions",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c10",
+   "text": "Geostationary IR: the satellites behind the CPC merged IR changed or faltered but were replaced: GOES-19 replaced GOES-16 as GOES-East on 7 Apr 2025; Himawari-8 stood in for Himawari-9 from 12 Oct to 26 Nov 2025; Meteosat-12 became prime in June 2025 with Meteosat-10 in parallel until Q2 2027; Meteosat-9 over the Indian Ocean (IODC) has EOL given as 2027 or later, with only short 2025-26 outages. No source ties CPC cuts to the merged IR. Rated no current threat found, except IODC (emerging: an aging satellite, no successor named in what was read).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "As of April 7, 2025 at 1510 UTC, the GOES-19 satellite has been designated as the Operational GOES-East satellite. At this time, GOES-19 products are considered operational and many products and services including GRB, HRIT/EMWIN, DCS, AWIPS, PDA, and NODD have been transitioned to GOES-19 data. | GOES-16 data distribution will conclude shortly as preparations are made for it to drift to the storage location at 104.7°W.",
+     "location": "Details/Specifics of Change"
+    },
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "Updated to reflect the operational transition is delayed from April 4, 2025, due to critical weather day. | On or after April 7, 2025, at approximately 15:10 UTC, GOES-19, the newest satellite in the Geostationary Operational Environmental Satellite (GOES) series, will become the operational GOES-East satellite, replacing GOES-16. | As of that date, all data products from GOES-19 will permanently replace those from GOES-16 on the Satellite Broadcast Network (SBN).",
+     "location": "lines 17-30"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "Switch Operation from its Himawari-9 satellite to its Himawari-8 unit from 13:00 UTC (P0790) on 12 October 2025. | Switch Operation from its Himawari-8 satellite to its Himawari-9 unit from 05:00 UTC (P030) on 26 November 2025.",
+     "location": "2025 schedule list"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "The Japan Meteorological Agency (JMA) confirms the successful technical restoration of the Himawari-9 geostationary meteorological satellite. Its observation data is now being received reliably and without interruption. | JMA plans to transition primary operational duties from Himawari-8 to the restored Himawari-9. Data provision from Himawari-9 is currently scheduled to commence at 05:00 UTC on Tuesday, 26 November 2025.",
+     "location": "Details/Specifics"
+    },
+    {
+     "source_id": "s57",
+     "relationship": "supports",
+     "passage": "- \"Parallel operations of Meteosat-12 (prime) and Meteosat-10 until Q2 2027.\"",
+     "location": "OSCAR satellite page, history"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "- \"Meteosat-9 has been relocated over the Indian Ocean.\" … End of life / EOL: \"≥2027\"",
+     "location": "OSCAR satellite page fields"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "Update #1: Data has been recovered | Date/Time of Initial Impact: January 20, 2026 0030Z (J/DAY 020) | Date/Time of Expected End: January 20, 2026 0130Z (J/DAY 020) | Length of the Outage/Event: 1 hour | Status: | recovered",
+     "location": "message 14036"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "The original record used to start from February, 2000, but in June, 2025 it was extended back to January, 1998. | merged from the European, Japanese, and U.S. geostationary satellites over the period of record (GOES-8/9/10/11/12/13/14/15/16/17/18/19, METEOSAT-5/7/8/9/10/11, and GMS-5/MTSat-1R/2/Himawari-8/9). | The global geo-IR are dynamically calibrated to GOES East, using a 35 day trailing inter-calibration | the data type in the netCDF-4 files has been changed to 2-byte signed integer, a transition that took place in mid-August, 2025.",
+     "location": "lines 71, 75, 77, 87 of text"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "operator notices and OSCAR; EUMETSAT's own IODC and annual-report pages could not be read"
+  },
+  {
+   "id": "c11",
+   "text": "PDIR-NOW (CHRS, UC Irvine) shows no reported threat: the CHRS portal was online on 2026-11-21 and lists PDIR-Now and PERSIANN-CCS; no funding or end statement was found. An IMERG-team preprint presents GPROF-IR as the IR retrieval designed for the upcoming IMERG V08, improving on V07's IR retrieval, which suggests V08 may not need PDIR-NOW (inference, not stated).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "- PERSIANN | - PERSIANN-CCS | - PERSIANN-CDR | - PERSIANN-CCS-CDR V2.0 | - PDIR-Now | Dataset PERSIANN PERSIANN-CCS PERSIANN-CDR PDIR-Now",
+     "location": "menu"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "We introduce GPROF-IR, a neural-network-based precipitation retrieval designed to provide precipitation estimates from single-channel geostationary IR observations for the upcoming IMERG V08. | GPROF-IR substantially improves upon existing single-channel IR retrievals, including the IR retrieval used in IMERG V07 and more recent neural-network-based approaches.",
+     "location": "abstract"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "It presents the new version of the original Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks-Cloud Classification System-Climate Data Record (PERSIANN-CCS-CDR) near-global precipitation dataset covering almost four decades. | All PERSIANN datasets can be accessed at the Center for Hydrometeorology and Remote Sensing data portal. | They receive funding from JPSS PGRR for this work.",
+     "location": "article body"
+    }
+   ],
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "absence of evidence; the V08 IR change rests on a preprint abstract"
+  },
+  {
+   "id": "c12",
+   "text": "GPCC (DWD) changed its products: the V2025 monthly analysis merges the former Full Data Monthly with the Monitoring Product, extended monthly with a two-month latency, and First Guess products continue; the Late Run sees gauges only through a climatological calibration to the Final Run, so this has little near-term effect on it.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "the data set is continuously extended by the latest month with a latency of two months",
+     "location": "DWD V2025 page (extract)"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "27 March 2026, by Annika Jahnke-Bornemann | We offer a new version, V2025, of the GPCC Product of monthly global land-surface precipitation | which is now a combination of analysis and monitoring product and the successor of V2022. | We offer this data set at 1 degree and at 0.25 degree grid resolution | for the time period January 1891 until December 2025.",
+     "location": "news item"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "DWD and ICDC pages; the route into the Late Run is from the Part 2 run"
+  },
+  {
+   "id": "c13",
+   "text": "GEOS FP (GMAO), whose motion vectors drive IMERG's morphing, is still running: GMAO upgraded it on 26 Feb 2026 (no changes to non-aerosol collections) and on 18 Nov 2026, and its status page on 2026-11-21 lists GEOS-FP 5.44. A search snippet of an Earthdata Forum reply saying GMAO-FP streams were discontinued on 31 May 2026 could not be read and may refer to FP-IT.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "GEOS Forward Processing (GEOS-FP) Upgrade on November 18, 2026 | GEOS Forward Processing (GEOS-FP) upgrade on February 26, 2026 | GEOS Forward Processing (GEOS-FP) patch May 22, 2024",
+     "location": "News list, top entries"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "we will be upgrading our GEOS-FP assimilation and forecast system to GEOS-5.43.0 on February 26, 2026 starting with the 06:00 GMT forecast cycle. This replaces GEOS-5.29.5, which has been the GEOS-FP version for more than two years. … There are no changes to non-aerosol collections",
+     "location": "Notice body, para 1"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "GSFC local time: 20261121 10:12:32 ET UTC: 20261121 15:12:32 Z | JOB NAME | STATUS | RUNNING | COMPLETED | PDR DELIVERY | NOTE | GEOS-FP 5.44 | Delayed | 20261121 00z | 20261120 18z | N/A | Job Delayed | GEOS-IT | Nominal |  | 20261121 06z | 20261121 06z",
+     "location": "Current Production Status table"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "GMAO's own pages; the contrary snippet is unread",
+   "sole_source_reason": "GMAO's own pages are the authority for its own systems"
+  },
+  {
+   "id": "c14",
+   "text": "Details added by the reconciliation pass: SSMIS is 3 of IMERG's 11 radiometers and fills the gap between the main orbit times; NOAA-20 ATMS data from parts of 10 Jul 2026 are unrecoverable; S-NPP had spacecraft outages in Mar and Apr 2026 before its end; CLASS says NOAA's AMSR2 products were replaced by AMSR3 versions effective 31 Aug 2026; and PPS planned the 20 Jan 2026 near-real-time shutdown from 23:00 UTC.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "SSMIS provides roughly 25% of the available PMW data in IMERG … IR retrievals, which typically have correlation scores of around 0.2 compared to GMI, … versus correlation scores of 0.7 or higher for SSMIS overpasses.",
+     "location": "lines 26-30"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Engineering was able to restore the instrument to an operational state by 08:19:28Z on July 10, 2026. PDA OPS subscriptions for all NOAA-20 ATMS products were disabled at 16:10Z. … All NOAA-20 ATMS data between 03:47Z - 08:18Z and 12:38Z - 13:26Z on July 10, 2026 will not be recoverable.",
+     "location": "line 3 (Correction)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "The lack of these 3 conically scanning radiometers will impact the accuracy of all IMERG products as they will have data from 3 fewer radiometers (out of the current 11), whose high-quality data help to fill the 8 hour gap between the main agency radiometer orbit times (01:30 and 09:30 a.m./p.m.)",
+     "location": "line 14"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "GCOM-W1/AMSR2 products have been decommissioned and replaced by GOSAT-GW/AMSR3 versions effective August 31, 2026. Although most product replacements were slated for August 31, a September 2026 data gap is expected for the NOAA GOSAT-GW/AMSR-3 Ocean product suite, as data providers work to complete operational product validation and distribution.",
+     "location": "line 60"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Engineering completed spacecraft recovery efforts on S-NPP 4/30/26. Data was approved for operational use for VIIRS, ATMS, and CEREs data by 5/1/26 at 18:30 UTC. | The S-NPP issue that occurred on March 9, 2026 has been resolved. JPSS Operations recovered the S-NPP spacecraft to a nominal state on March 12th, 2026 at 17:17 UTC. Cal/Val teams have confirmed that all S-NPP Science products are meeting mission specifications and are ready for operational use, effective 19:30 UTC on March 16, 2026.",
+     "location": "lines 120 and 126"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "On Tuesday, 20 January 2026, NASA's Precipitation Processing System (PPS) will temporarily shutdown the GPM Near Real-time (NRT) system at 18:00 EST (23:00 UTC).",
+     "location": "line 35 area (item dated Thursday, January 8, 2026)"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "Re-introducing the F17 SSMIS as a stand-in that approximates the spatial coverage and overpass time of the WSF-M MWI, we ﬁnd that the PMW coverage is about 10% lower than for full SSMIS coverage, and the GEO-IR average weighting increases to 30.5% for Early Run and 15.1% for Late Run.",
+     "location": "lines 34-36 (text-wrapped; coverage tool line 34)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "agency notices read from saved files by the Reconciler and checked by the merge script",
+   "sole_source_reason": "the operating agency's own notice is the authority for its own satellite and data-delivery decisions"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Time S-NPP data delivery ended on 2 Nov 2026: 13:00 UTC (planned, Aug 2026 notices) vs 15:40 UTC (actual, Nov 2 update)",
+   "source_ids": [
+    "s23",
+    "s9"
+   ],
+   "status": "resolved",
+   "explanation": "Scope: the August notices gave the planned time; NOAA's Update #4 and Earthdata's Nov 2 update give the actual 15:40 UTC."
+  }
+ ],
+ "coverage_gaps": [
+  "GEOS FP / 'GMAO-FP' discontinuation May 31, 2026: rests only on a search snippet of an Earthdata Forum reply (forum down). GMAO's own news list shows GEOS-FP still upgraded Feb 26 and Nov 18, 2026 and no retirement notice, so the forum's 'GMAO-FP' may mean the FP-IT stream OB.DAAC used (OB.DAAC doc says it uses FP-IT). Not resolved. Lead: retry forum.earthdata.nasa.gov/viewtopic.php?p=26053 when forum is back; read GMAO Nov 18, 2026 upgrade notice (URL not found) and https://gmao.gsfc.nasa.gov/gmao-products/geos-fp-it/ . (from sa1)",
+  "Whether PPS's NRT AMSR2 feed (via JAXA) and IMERG Late lost AMSR2 after JAXA's 'GCOM-W operational change' of Sept 2, 2026: NOAA says AMSR2 standard NRT provision terminated Sept 2026 and 'AMSR2 data is discontinued by JAXA', but no JAXA/PPS page read states GCOM-W end of observations or a PPS AMSR2 NRT stop. JAXA hosts refused. Search snippet (unread page) said NOAA AMSR2 direct readout would continue past Sept 2026. (from sa1)",
+  "AMSR3 in IMERG: PPS released AMSR3 1C (Aug 25, 2026) and GPROF V08B (Nov 4, 2026); a search snippet said AMSR3 NRT 1C available at PPS from Aug 19, 2026 (path /NRTPUB/1C/AMSR3) but that page was not found/read. No source says IMERG Late ingests AMSR3. (from sa1)",
+  "S-NPP ATMS ended Nov 2, 2026 (NOAA) -- no PPS/GPM notice found on the effect on IMERG Late; Terra observations to cease Dec 1, 2026 (Earthdata banner; not an IMERG input). Not opened: PPS 9/18/2026 DPR L2/L3 notice, 9/03/2026 partner notice details, 9/30/2026 GPROF flag notice; NASA OIG Spring 2026 semiannual report ongoing-audit list. (from sa1)",
+  "No 2024-2026 GPM Core Observatory safe hold, GMI or DPR outage found beyond PPS 9/14/2026 note of an L3 DPR algorithm fix 'to correct a failure when both Ku/Ka radars are not in observation mode' (pps_index_arthurhou.html line 392). 2026 Senior Review outcome for GPM still not found (covered in pt4). No 2025 NASA OIG audit of Earth science extended missions found. (from sa1)",
+  "No GPM/PPS notice found on what PPS NRT did with F16/F17/F18 SSMIS at or after 30 Sep / 1 Oct 2026 (FNMOC PolarProd termination, filename change). GPM Data News listing's newest item is 19 Aug 2026. Leads: PPS NRT news/mailing list (pps.gsfc.nasa.gov), IMERG Late file headers (InputFileNames / satellite list) for Oct-Nov 2026. (from sa2)",
+  "r6 GAO search (allowed_domains gao.gov) returned only 2009-2016 reports; gao.gov/assets/890/888625.pdf and 900/890048.pdf appeared in other searches but were not read. 1 of 3 queries used. (from sa2)",
+  "r5 used 1 of 3 queries; Air & Space Forces 'legacy weather sats until at least 2028' (earlier run afa_dmsp_2028_extract) not re-read here; NDAA FY2026 provision not read in primary form. (from sa2)",
+  "MetOp-B end of life: no current EUMETSAT statement read (eumetsat.int refused/403); only search-summary of older 'until 2027'. MHS channel status on Metop-B/C not checked. MetOp-SG-B1 launch date not confirmed from ESA/EUMETSAT/Arianespace. Whether GPM PPS ingests Metop-SG-A1 MWS not found. NOAA-18 June 2025 decommission covered in earlier run (persiann pt5 class_aev_home / sa3-e3), not re-cited. (from sa2)",
+  "No GPM/PPS notice found on ending SNPP ATMS GPROF in NRT after 2 Nov 2026 15:40 UTC; JPSS-3/4 launch years in LEO flyout chart only in graphic; no FY2026/27 JPSS budget cut tied to ATMS found. (from sa2)",
+  "Unread lead: PPS home page (pps.gsfc.nasa.gov) news Details links for 20 Nov 2026 (METOPC GPROF Data), 28 Oct 2026 (GPROF L2/L3; WSFM1 1C V08A; AMSR3) and 30 Sep 2026 (GPROF L2/L3). These may say what changed for SSMIS, MHS on MetOp-C or ATMS; links are in work/raw/sa2/pps_home.html/00159b9dd8d7f72e.html. (from sa2)",
+  "No NOAA CPC page or NWS service change notice on the CPC/NCEP merged 4 km IR (changes, outages, Meteosat-12/MTG ingest) found after 3 queries; GES DISC satellite list stops at METEOSAT-11, so whether/when CPC switched to Meteosat-12 FCI is unknown. (from sa3)",
+  "EUMETSAT IODC page, MSG services page and 2024 Annual Report could not be opened (www.eumetsat.int and www-cdn.eumetsat.int refused; PDF over WebFetch size limit). Search snippets say Meteosat-9 IODC lifetime until May 2027 and an extension being studied until MTG-I2; unverified. MTG-I2 launch status not checked. (from sa3)",
+  "Follow-up MET-9 IODC alerts not read: ospo.noaa.gov MSG_20260120_0218 (snippet: data recovered; end time of the 20 Jan 2026 outage unconfirmed), MSG_20251214_1827 (Dec 2025 anomaly), MSG_20250912_0809/0819 (Sep 2025). WMO OSCAR Himawari-9 page (snippet: anomalies in H-9 imagery Oct 2025) not read. (from sa3)",
+  "News only (not read): Axios 27 Mar 2025 says NOAA folded CPC under WPC; no source ties CPC staff/budget cuts to the merged IR product. (from sa3)",
+  "No CHRS/UCI statement on PDIR-Now funding, operating status or outages 2024-2026 found after 3 queries; portal only lists datasets. UCAR GDEX PERSIANN-CCS record (coverage to 2024-12-31) not read. GPROF-IR preprint says it is designed for the upcoming IMERG V08 but no page says if/when PDIR-NOW will be dropped. (from sa3)",
+  "How a GPCC product change (V2025 merging Full Data and Monitoring) reaches the Late Run climatological calibration is not stated by any page read; earlier run 2026-11-21_imerg-late-run-processing-qc-pt2 answer.md and IMERG V07 ATBD (updated 13 Aug 2026) should be checked by the coordinator. GPCC First Guess status 2026 not separately confirmed; ICDC 2025-11-14 news (Monitoring V2022 extended to Aug 2025) not read. (from sa3)",
+  "Earlier-run files (pt5 sa1/dwd_gpcc_monthly_v2025_extract.txt, pt5 sa3 MERGIR files, pt1 release notes) were not re-searched in depth due to time; find_text on pt5 sa3 failed on an unquoted glob. (from sa3)",
+  "Correction to the earlier gap item: MSG_20260120_0218 was read after all (sa3-e15: 20 Jan 2026 outage lasted 1 hour, recovered). (from sa3)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Core Observatory status 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, nasa.gov, science.nasa.gov; EOSPSO lists Extended Mission; no outage found",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Earth Science Senior Review 2026 GPM results",
+   "tool": "WebSearch",
+   "notes": "no 2026 Senior Review outcome for GPM found (covered in pt4)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA OIG Earth science extended missions 2025 audit",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov; only older reports (IG-17-003) and Spring 2026 semiannual report (not opened); no 2025 audit found",
+   "from": "sa1",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM satellite safe hold anomaly 2025 GMI DPR",
+   "tool": "WebSearch",
+   "notes": "only Dec 2023 safe mode and Oct 2024 JAXA ground failure found in snippets; no 2025-26 safe hold",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GCOM-W AMSR2 operation status 2026",
+   "tool": "WebSearch",
+   "notes": "JAXA EORC pages refused by sandbox (www.eorc.jaxa.jp, suzaku.eorc.jaxa.jp) and 404 via WebFetch",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GOSAT-GW AMSR3 data release 2026",
+   "tool": "WebSearch",
+   "notes": "JAXA press release Jun 30, 2026 read via WebFetch",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GCOM-W operation change September 2 2026 AMSR2",
+   "tool": "WebSearch",
+   "notes": "NESDIS/OSPO notices on AMSR2 decommissioning",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AMSR3 GPROF GPM constellation PPS 2026",
+   "tool": "WebSearch",
+   "notes": "led to Earthdata GPROF recall and PPS notices",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AMSR3 NRT 1C products available PPS August 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains earthdata.nasa.gov, gpm.nasa.gov, pps.eosdis.nasa.gov; snippet says AMSR3 NRT 1C available Aug 19, 2026 (page not found/read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "GEOS FP retirement GMAO 2026",
+   "tool": "WebSearch",
+   "notes": "only lead: Earthdata Forum thread (OB.DAAC reply June 1, 2026) saying GMAO-FP streams discontinued May 31, 2026 -- forum down (404)",
+   "from": "sa1",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "GMAO GEOS FP discontinued May 2026 GEOS-IT",
+   "tool": "WebSearch",
+   "notes": "GMAO system news shows GEOS-FP upgrades Feb 26 and Nov 18, 2026; no retirement notice",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "\"GEOS-FP\" upgrade November 18 2026 GMAO",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gmao.gsfc.nasa.gov; Nov 18 notice content not found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "GMAO FP ancillary discontinued May 31 2026 ocean color GEOS-IT",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oceancolor.gsfc.nasa.gov, earthdata.nasa.gov, nasa.gov; OB.DAAC uses FP-IT stream, so the forum's 'GMAO-FP' may mean FP-IT (unconfirmed)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "IMERG V08 Late Run release 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, earthdata.nasa.gov, disc.gsfc.nasa.gov; newest Aug 6, 2026 update; no V08 Late release",
+   "from": "sa1",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "IMERG data outage 2025 Late Run delayed",
+   "tool": "WebSearch",
+   "notes": "found Jun 2024 V07B Early/Late delay; Apr 2015 IR outage (out of window, unused)",
+   "from": "sa1",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "Cessation of Suomi NPP data November 2026 decommissioning NESDIS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nesdis.noaa.gov, ospo.noaa.gov; lead found on NESDIS AMSR2 page",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "GPM data news 2026 NOAA-20 SNPP ATMS IMERG",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; no GPM notice on S-NPP end",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "All L3 GPROF data GPM v08 recalled October 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains earthdata.nasa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "Earthdata alerts-outages list",
+   "tool": "lookup (WebFetch extraction of earthdata.nasa.gov/data/alerts-outages)",
+   "notes": "truncated; banner: Terra observations cease Dec 1, 2026; Earthdata Forum down",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "https://web.archive.org/web/2026/https://forum.earthdata.nasa.gov/viewtopic.php?p=26053",
+   "tool": "fetch_page (Wayback)",
+   "notes": "404",
+   "from": "sa1",
+   "copy_of": "https://forum.earthdata.nasa.gov/viewtopic.php?p=26053"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"AMSR3\" NRT 1C jsimpson NRTPUB",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.eosdis.nasa.gov; candidate page gpm.nasa.gov/data/sources/pps-nrt has no AMSR3 text (saved _unused); AMSR3 NRT announcement page not located",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "PPS SNPP ATMS GPROF end November 2026 IMERG",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.eosdis.nasa.gov, earthdata.nasa.gov; Earthdata ATMS transition page read; no PPS/IMERG notice on S-NPP end",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "GMAO production status and GEOS FP-IT product page",
+   "tool": "lookup (GMAO operations/status.php and gmao-products/geos-fp-it)",
+   "notes": "status page lists GEOS-FP 5.44 running on 2026-11-21 and GEOS-IT nominal; FP-IT page has no status text (saved _unused)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP data sharing Space Force 2026",
+   "tool": "WebSearch",
+   "notes": "standard; results: GPM news SSMIS continue into 2026, Air & Space Forces 2028, Earthdata status update, GAO 888625 pdf",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO weather satellite DMSP WSF-M 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; only 2009-2016 reports returned",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA-19 decommissioning OSPO 2026",
+   "tool": "WebSearch",
+   "notes": "standard; found OSPO 2025-08-13 emergency decommission message",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-B end of life EUMETSAT",
+   "tool": "WebSearch",
+   "notes": "allowed_domains eumetsat.int; no dated EOL announcement; Metop series page",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Suomi NPP end of mission 2026",
+   "tool": "WebSearch",
+   "notes": "standard; found NESDIS/OSPO and Earthdata cessation notices",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Suomi NPP ATMS GPM GPROF ceased November 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.gsfc.nasa.gov, earthdata.nasa.gov; GES DISC catalog entries, GPROF V08 L3 recall alert",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM SSMIS IMERG October 2026 data",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.gsfc.nasa.gov; found GPM End of SSMIS NRT news and data news listing",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Update #4 Cessation S-NPP decommissioning November 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nesdis.noaa.gov, ospo.noaa.gov; found Update #4 page",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP SSMIS data outage November 2026 OSPO",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ospo.noaa.gov, nesdis.noaa.gov, earthdata.nasa.gov, nsidc.org; no Nov 2026 notice; found Jun 2026 SSMIS outage message, Mar/Apr 2026 outages",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-SG-B1 launch 2026 MWI",
+   "tool": "WebSearch",
+   "notes": "standard; launch dates conflict across third-party calendars (Oct/Nov/Dec 2026); no official launch confirmation read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PPS near real-time SNPP ATMS GPROF removed IMERG November 2026",
+   "tool": "WebSearch",
+   "notes": "standard; nothing on GPM/PPS handling of SNPP end",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-SG-A1 MWS data dissemination 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains eumetsat.int, esa.int; MWS operational Aug 2026, March 2026 anomaly (EUMETSAT pages 403)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-B deorbit 2027 EUMETSAT end of mission",
+   "tool": "WebSearch",
+   "notes": "standard; only older EUMETSAT 'until 2027' statements, OSPO 2026 Metop-B service messages",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA-20 ATMS anomaly 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ospo.noaa.gov, nesdis.noaa.gov, star.nesdis.noaa.gov; found Jul 10 2026 anomaly",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA-20 ATMS available for operational use July 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ospo.noaa.gov; found Jul 14 2026 restore",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "JPSS-3 launch date budget 2026",
+   "tool": "WebSearch",
+   "notes": "standard; LEO flyout chart July 2026; no FY26/27 JPSS-3 budget figure",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-SGA1 MWS anomaly March 2026 183 GHz channels",
+   "tool": "WebSearch",
+   "notes": "standard; ECMWF July 2026 report (unreadable: host refused, PDF too large)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PPS NRT SSMIS F17 F18 IMERG October 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode (key search run once extended); found data.gov F17/F18 GPROF CLIM V08 catalog entries, OSPO 2026-09-01 notice",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.gao.gov/assets/890/888625.pdf",
+   "tool": "lookup (fetch GAO PDF seen in r5 results)",
+   "notes": "HTTP 403 from gao.gov; listed unreadable",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SSMIS NRT data resumed GPM PPS 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.gsfc.nasa.gov, earthdata.nasa.gov; led to PPS home page news table",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "CPC merged IR 4km product change 2025",
+   "tool": "WebSearch",
+   "notes": "Found GES DISC GPM_MERGIR page (June 2025 extension to 1998; mid-Aug 2025 int16 change). No NOAA CPC page surfaced.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "GPM_MERGIR Meteosat-12 MTG GOES-19 merged IR 2025",
+   "tool": "WebSearch",
+   "notes": "r10 follow-up; only GES DISC/data.gov copies; no Meteosat-12 in MERGIR list.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NOAA CPC Climate Prediction Center staff cuts 2025 products discontinued",
+   "tool": "WebSearch",
+   "notes": "r10 third query; news only: Axios 27 Mar 2025 CPC folded into WPC; nothing ties cuts to the merged IR. CPC merged IR change notice: not found after 3 queries.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Meteosat-9 IODC end 2025 Indian Ocean",
+   "tool": "WebSearch",
+   "notes": "NOAA OSPO relays of EUMETSAT MET-9 IODC alerts (Jul, Sep, Dec 2025; Jan 2026).",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Himawari-9 operation switch Himawari-8 2025 JMA",
+   "tool": "WebSearch",
+   "notes": "JMA schedule + NOAA OSPO notice: H-9 to H-8 12 Oct 2025, back 26 Nov 2025.",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "EUMETSAT Indian Ocean Data Coverage end Meteosat-9 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter eumetsat.int; IODC page and Annual Report could not be opened (host refused / too large).",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "EUMETSAT Meteosat-9 lifetime extension IODC MTG-I2 Council decision",
+   "tool": "WebSearch",
+   "notes": "Only older (2017-2020) Council items; no 2024-2026 decision found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "GOES-19 GOES-East operational April 2025 GOES-16 storage",
+   "tool": "WebSearch",
+   "notes": "extended mode; NOAA OSPO notice 7 Apr 2025.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Meteosat-12 MTG-I1 operational 0 degree service date",
+   "tool": "WebSearch",
+   "notes": "Found NOAA OSPO 0deg MTG alert Mar 2026; snippets: operational 4 Dec 2024, prime 0-deg June 2025.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Himawari-9 Operational Schedule for 2025",
+   "tool": "lookup (JMA MSC schedule page via WebFetch)",
+   "notes": "Extraction saved.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "PDIR-Now CHRS UCI status 2025",
+   "tool": "WebSearch",
+   "notes": "No relevant results (unrelated CHRS/PDR hits).",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "PDIR-Now real-time precipitation CHRS data portal",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter chrsdata.eng.uci.edu, chrs.web.uci.edu, uci.edu; portal online; GPROF-IR preprint for IMERG V08 surfaced.",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "CHRS UC Irvine PERSIANN funding NASA grant cut 2025",
+   "tool": "WebSearch",
+   "notes": "No source names CHRS/PERSIANN/PDIR funding cut; UCI campus-wide grant terminations only. Status/funding of PDIR-Now: not found after 3 queries.",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "PERSIANN-CCS discontinued 2025 CHRS",
+   "tool": "WebSearch",
+   "notes": "No discontinuation notice; UCAR catalog coverage ends 2024-12-31 (not read); CISESS Mar 2026 PERSIANN-CCS-CDR V2.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "GPCC Monitoring Product 2026 DWD",
+   "tool": "WebSearch",
+   "notes": "DWD V2025 monthly merges Full Data Monthly and Monitoring Product; ICDC news 27 Mar 2026.",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "GPCC Precipitation Analysis Monthly V2025 DWD page",
+   "tool": "lookup (DWD opendata page via WebFetch)",
+   "notes": "fetch_page.py refused for opendata.dwd.de; WebFetch extract saved.",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "IMERG Early Late Run geo-IR data missing 2025 PPS notice",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter gpm.nasa.gov, pps.gsfc.nasa.gov, disc.gsfc.nasa.gov; found Oct 2024 corrupted IR file notice; 2022 IR absence notice outside window.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "WMO OSCAR satellite pages Himawari-9, Meteosat-9 (IODC), Meteosat-12",
+   "tool": "lookup (WMO OSCAR/Space via WebFetch)",
+   "notes": "Three extracts saved; EOL fields: Himawari-9 2034 or later, Meteosat-9 IODC 2027 or later, Meteosat-12 2033 or later.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "CPC globally merged IR GOES-19 Meteosat-12 transition notice 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter noaa.gov, weather.gov; found undated CPC Merged-IR page and NWS SCN 25-30 (GOES-19 to GOES-East, not read); no CPC merged IR transition notice. Wayback copy of EUMETSAT 2024 Annual Report: HTTP 404.",
+   "from": "sa3",
+   "copy_of": "https://www-cdn.eumetsat.int/files/2025-07/PDF_AR2025_EN%20(1).pdf"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "https://www.eumetsat.int/indian-ocean-data-coverage-iodc (browser)",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "Access denied, HTTP 403, in the browser too",
+   "from": "main",
+   "copy_of": "https://www.eumetsat.int/indian-ocean-data-coverage-iodc"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://suzaku.eorc.jaxa.jp/GCOM/ (browser)",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "HTTP 404 'The requested URL was rejected' in the browser",
+   "from": "main",
+   "copy_of": "https://suzaku.eorc.jaxa.jp/GCOM/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.eorc.jaxa.jp/AMSR/news/n02_operation_en (browser)",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "HTTP 404 'The requested URL was rejected' in the browser",
+   "from": "main",
+   "copy_of": "https://www.eorc.jaxa.jp/AMSR/news/n02_operation_en"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://web.archive.org/web/2026/https://www.gao.gov/assets/890/888625.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved copy 2026-10-12 read: GAO-26-107959, National Security Space (commercial imagery and space situational awareness); no DMSP or WSF-M content; not relevant (renamed _unused)",
+   "from": "main",
+   "copy_of": "https://www.gao.gov/assets/890/888625.pdf"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://web.archive.org/web/2026/https://www.ecmwf.int/sites/default/files/elibrary/072026/81742-nwp-assessment-of-eps-sg-mws-at-ecmwf.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved copy cut off at 5 MB; first pages give only the title page and contents (Appendix A 'Pre-anomaly performance of 183 GHz suite'); executive summary not extracted",
+   "from": "main",
+   "copy_of": "https://www.ecmwf.int/sites/default/files/elibrary/072026/81742-nwp-assessment-of-eps-sg-mws-at-ecmwf.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "cmr.earthdata.nasa.gov collections short_name=GPM_2AGPROFF17SSMIS_CLIM version=08",
+   "tool": "lookup (NASA CMR API)",
+   "notes": "Remote end closed connection; not retried (time). Primary-copy route for the data.gov F17/F18 catalog records",
+   "from": "main",
+   "copy_of": "https://catalog.data.gov/dataset/gpm-ssmis-on-f17-gprof-climate-based-radiometer-precipitation-profiling-1-5-hours-12-km-v0-0aced"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "cmr.earthdata.nasa.gov collections GPM_2AGPROFF18SSMIS_CLIM (not sent)",
+   "tool": "lookup (NASA CMR API)",
+   "notes": "Not sent after the F17 request failed; same route",
+   "from": "main",
+   "copy_of": "https://catalog.data.gov/dataset/gpm-ssmis-on-f18-gprof-climate-based-radiometer-precipitation-profiling-1-5-hours-12-km-v0-63ea3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-SGA1 Microwave Sounder operational service (Wayback tried by sa2: 404; host refused; browser blocked on the same host)",
+   "tool": "lookup (route check)",
+   "notes": "No route left: www.eumetsat.int returns 403 to the browser (IODC page) and the sandbox refuses it",
+   "from": "main",
+   "copy_of": "https://www.eumetsat.int/metop-sga1s-microwave-sounder-enters-operational-service"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "EUMETSAT 2024 Annual Report PDF (file; browser cannot open files; host refused; WebFetch over size limit)",
+   "tool": "lookup (route check)",
+   "notes": "No route left within the run",
+   "from": "main",
+   "copy_of": "https://www-cdn.eumetsat.int/files/2025-07/PDF_AR2025_EN%20(1).pdf"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "url=https://web.archive.org/web/2026/https://www-cdn.eumetsat.int/files/2025-07/PDF_AR2025_EN (route check)",
+   "tool": "lookup (route check)",
+   "notes": "No route left: a file (browser cannot open), host refused, WebFetch over size limit",
+   "from": "main",
+   "copy_of": "https://www-cdn.eumetsat.int/files/2025-07/PDF_AR2025_EN%20(1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM SSMIS near real-time October 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "Old GPM/NSIDC/Earthdata notices (2025); NSIDC ended NRT SSMIS products after 15 Jan 2026 (snippet); nothing on PPS NRT after Sept 2026",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GCOM-W AMSR2 observation end September 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "NOAA AMSR2 notices; CEOS snippet: GCOM-W EOL December 2027; no JAXA end-of-observation notice",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "IMERG Late AMSR3 near real-time 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "GPM Aug 2026 V08 schedule (Late/Early switch no sooner than winter 2026); JAXA AMSR viewer: AMSR3 data available 30 Jun 2026; no IMERG AMSR3 statement",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP SSMIS data November 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "NWP SAF June 2025 notice (read; superseded); NSIDC Aug 2025 notice (read, cited); OSI SAF Oct 2025 best-efforts note (snippet); nothing after Oct 2026",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-B end of life deorbit EUMETSAT",
+   "tool": "duckduckgo (browser)",
+   "notes": "CEOS Metop-B page read: Operational (nominal), EOL Nov 2027; EUMETSAT pages blocked",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "https://www.eumetsat.int/indian-ocean-data-coverage-iodc (browser)",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "Access denied, HTTP 403, in the browser too",
+   "copy_of": "https://www.eumetsat.int/indian-ocean-data-coverage-iodc"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://suzaku.eorc.jaxa.jp/GCOM/ (browser)",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "HTTP 404 'The requested URL was rejected' in the browser",
+   "copy_of": "https://suzaku.eorc.jaxa.jp/GCOM/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.eorc.jaxa.jp/AMSR/news/n02_operation_en (browser)",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "HTTP 404 'The requested URL was rejected' in the browser",
+   "copy_of": "https://www.eorc.jaxa.jp/AMSR/news/n02_operation_en"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://web.archive.org/web/2026/https://www.gao.gov/assets/890/888625.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved copy 2026-10-12 read: GAO-26-107959, National Security Space (commercial imagery and space situational awareness); no DMSP or WSF-M content; not relevant (renamed _unused)",
+   "copy_of": "https://www.gao.gov/assets/890/888625.pdf"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://web.archive.org/web/2026/https://www.ecmwf.int/sites/default/files/elibrary/072026/81742-nwp-assessment-of-eps-sg-mws-at-ecmwf.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved copy cut off at 5 MB; first pages give only the title page and contents (Appendix A 'Pre-anomaly performance of 183 GHz suite'); executive summary not extracted",
+   "copy_of": "https://www.ecmwf.int/sites/default/files/elibrary/072026/81742-nwp-assessment-of-eps-sg-mws-at-ecmwf.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "cmr.earthdata.nasa.gov collections short_name=GPM_2AGPROFF17SSMIS_CLIM version=08",
+   "tool": "lookup (NASA CMR API)",
+   "notes": "Remote end closed connection; not retried (time). Primary-copy route for the data.gov F17/F18 catalog records",
+   "copy_of": "https://catalog.data.gov/dataset/gpm-ssmis-on-f17-gprof-climate-based-radiometer-precipitation-profiling-1-5-hours-12-km-v0-0aced"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "cmr.earthdata.nasa.gov collections GPM_2AGPROFF18SSMIS_CLIM (not sent)",
+   "tool": "lookup (NASA CMR API)",
+   "notes": "Not sent after the F17 request failed; same route",
+   "copy_of": "https://catalog.data.gov/dataset/gpm-ssmis-on-f18-gprof-climate-based-radiometer-precipitation-profiling-1-5-hours-12-km-v0-63ea3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-SGA1 Microwave Sounder operational service (Wayback tried by sa2: 404; host refused; browser blocked on the same host)",
+   "tool": "lookup (route check)",
+   "notes": "No route left: www.eumetsat.int returns 403 to the browser (IODC page) and the sandbox refuses it",
+   "copy_of": "https://www.eumetsat.int/metop-sga1s-microwave-sounder-enters-operational-service"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "EUMETSAT 2024 Annual Report PDF (file; browser cannot open files; host refused; WebFetch over size limit)",
+   "tool": "lookup (route check)",
+   "notes": "No route left within the run",
+   "copy_of": "https://www-cdn.eumetsat.int/files/2025-07/PDF_AR2025_EN%20(1).pdf"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "url=https://web.archive.org/web/2026/https://www-cdn.eumetsat.int/files/2025-07/PDF_AR2025_EN (route check)",
+   "tool": "lookup (route check)",
+   "notes": "No route left: a file (browser cannot open), host refused, WebFetch over size limit",
+   "copy_of": "https://www-cdn.eumetsat.int/files/2025-07/PDF_AR2025_EN%20(1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM SSMIS near real-time October 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "Old GPM/NSIDC/Earthdata notices (2025); NSIDC ended NRT SSMIS products after 15 Jan 2026 (snippet); nothing on PPS NRT after Sept 2026"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GCOM-W AMSR2 observation end September 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "NOAA AMSR2 notices; CEOS snippet: GCOM-W EOL December 2027; no JAXA end-of-observation notice"
+  },
+  {
+   "subquestion_id": "q8",
+   "query": "IMERG Late AMSR3 near real-time 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "GPM Aug 2026 V08 schedule (Late/Early switch no sooner than winter 2026); JAXA AMSR viewer: AMSR3 data available 30 Jun 2026; no IMERG AMSR3 statement"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP SSMIS data November 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "NWP SAF June 2025 notice (read; superseded); NSIDC Aug 2025 notice (read, cited); OSI SAF Oct 2025 best-efforts note (snippet); nothing after Oct 2026"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Metop-B end of life deorbit EUMETSAT",
+   "tool": "duckduckgo (browser)",
+   "notes": "CEOS Metop-B page read: Operational (nominal), EOL Nov 2027; EUMETSAT pages blocked"
+  }
+ ],
+ "entities": [
+  {
+   "name": "GPM Core Observatory (GMI, DPR)",
+   "included": true,
+   "source_ids": [
+    "s12"
+   ]
+  },
+  {
+   "name": "AMSR2 on GCOM-W1",
+   "included": true,
+   "source_ids": [
+    "s1",
+    "s2"
+   ]
+  },
+  {
+   "name": "AMSR3 on GOSAT-GW",
+   "included": true,
+   "source_ids": [
+    "s5",
+    "s14"
+   ]
+  },
+  {
+   "name": "SSMIS on DMSP F16, F17, F18",
+   "included": true,
+   "source_ids": [
+    "s22",
+    "s27",
+    "s28"
+   ]
+  },
+  {
+   "name": "WSF-M1 MWI",
+   "included": true,
+   "source_ids": [
+    "s10",
+    "s38"
+   ]
+  },
+  {
+   "name": "MHS on NOAA-18",
+   "included": true,
+   "source_ids": [
+    "s28"
+   ]
+  },
+  {
+   "name": "MHS on NOAA-19",
+   "included": true,
+   "source_ids": [
+    "s25"
+   ]
+  },
+  {
+   "name": "MHS on MetOp-B and MetOp-C",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s37"
+   ]
+  },
+  {
+   "name": "ATMS on Suomi NPP",
+   "included": true,
+   "source_ids": [
+    "s9",
+    "s24"
+   ]
+  },
+  {
+   "name": "ATMS on NOAA-20 and NOAA-21",
+   "included": true,
+   "source_ids": [
+    "s30",
+    "s31"
+   ]
+  },
+  {
+   "name": "Geostationary IR through NOAA CPC",
+   "included": true,
+   "source_ids": [
+    "s40",
+    "s48",
+    "s57"
+   ]
+  },
+  {
+   "name": "PDIR-NOW",
+   "included": true,
+   "source_ids": [
+    "s45",
+    "s44"
+   ]
+  },
+  {
+   "name": "PERSIANN-CCS",
+   "included": true,
+   "source_ids": [
+    "s45"
+   ]
+  },
+  {
+   "name": "GPCC gauge analyses",
+   "included": true,
+   "source_ids": [
+    "s47",
+    "s43"
+   ]
+  },
+  {
+   "name": "GEOS FP motion vectors",
+   "included": true,
+   "source_ids": [
+    "s7",
+    "s20"
+   ]
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 34.3,
+  "shift_min": 6.3,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 270140,
+  "subagent_minutes_planned": 45,
+  "subagent_minutes": 41.4,
+  "follow_ups": 0,
+  "continuations": 6,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

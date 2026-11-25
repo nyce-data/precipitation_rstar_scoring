@@ -1,0 +1,1333 @@
+{
+ "question": "What is the IMERG Late Run precipitation dataset (half-hourly and daily), where is it kept and served, which version is current, and what is it made from (part 1)?",
+ "tier": "standard",
+ "tier_reason": "standard: one dataset with several dimensions (access, version, inputs); no set of 15+ members, no multi-year figures, no active dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Where the Late Run lives: official archive and main access points, with URLs",
+   "status": "answered",
+   "source_ids": [
+    "s24",
+    "s25",
+    "s1",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11"
+   ],
+   "remaining_gap": "Copernicus or other third-party mirrors, GIBS layer IDs for the Late Run and an AWS entry for GPM_3IMERGDL were not checked."
+  },
+  {
+   "id": "q2",
+   "question": "Current version, Late Run half-hourly and daily products, latency",
+   "status": "answered",
+   "source_ids": [
+    "s24",
+    "s25",
+    "s3",
+    "s4",
+    "s5",
+    "s19",
+    "s6"
+   ],
+   "remaining_gap": "No V08 release notice found as of 2026-11-20; exact V07B release date not found."
+  },
+  {
+   "id": "q3",
+   "question": "Kind of dataset, how sources are combined, how Early and Final differ",
+   "status": "answered",
+   "source_ids": [
+    "s24",
+    "s12",
+    "s17",
+    "s9"
+   ],
+   "remaining_gap": null
+  },
+  {
+   "id": "q4",
+   "question": "Passive microwave and radar inputs, roles and providers",
+   "status": "answered",
+   "source_ids": [
+    "s13",
+    "s9",
+    "s24",
+    "s20",
+    "s21"
+   ],
+   "remaining_gap": "No current list of exactly which sensors feed today's Late Run; SSMIS status after Sept 2026 unknown."
+  },
+  {
+   "id": "q5",
+   "question": "IR, PERSIANN-CCS/PDIR, MERRA-2/GEOS motion vectors, GPCC gauges",
+   "status": "answered",
+   "source_ids": [
+    "s12",
+    "s17",
+    "s14",
+    "s18",
+    "s15",
+    "s16"
+   ],
+   "remaining_gap": "V08 changes to these inputs not documented."
+  },
+  {
+   "id": "q6",
+   "question": "Producers vs hosts",
+   "status": "answered",
+   "source_ids": [
+    "s9",
+    "s24",
+    "s8",
+    "s10",
+    "s11"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpm-3imerghhl-07",
+   "fetched_url": null,
+   "title": "GPM IMERG Late Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHHL)",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "2024-06-01 (catalog Published/Updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_gpm_3imerghhl_07.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Catalog page; download/Giovanni links not rendered in text. Release date of V07B NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s2",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpm-3imergdl-07",
+   "fetched_url": null,
+   "title": "GPM IMERG Late Precipitation L3 1 day 0.1 degree x 0.1 degree V07 (GPM_3IMERGDL)",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "NOT PRESENT in extracted lines",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_gpm_3imergdl_07.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Note GES DISC catalog says Final ~4 months (HHL page) vs 3.5-month (DL page / GPM directory).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/transition-gpm-imerg-products-v08",
+   "fetched_url": null,
+   "title": "Transition of GPM IMERG Products to V08",
+   "author_org": "NASA Earthdata (GES DISC)",
+   "published": "2026-05-22 (last updated 2026-06-03)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_imerg_v08_transition_now.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Says 'Resolved' status label; V08 dates NOT PRESENT on this page (refers to GPM website).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://gpm.nasa.gov/data/news/imerg-v08-transition-schedule",
+   "fetched_url": null,
+   "title": "IMERG V08 Transition Schedule",
+   "author_org": "NASA GPM",
+   "published": "2026-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_v08_schedule_apr2026.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Superseded on timing by Aug 2026 update (sa1-e6). Diagrams not captured.",
+   "found_by": [
+    "sa1",
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://gpm.nasa.gov/data/news/update-imerg-v08-transition-schedule-aug-2026",
+   "fetched_url": null,
+   "title": "Update to the IMERG V08 Transition Schedule, Aug. 2026",
+   "author_org": "NASA GPM",
+   "published": "2026-08-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_v08_schedule_update_aug2026.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Which parent product NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://gpm.nasa.gov/data/news",
+   "fetched_url": null,
+   "title": "Data News (GPM)",
+   "author_org": "NASA GPM",
+   "published": "list page, newest item 2026-08-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_data_news.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Absence of a release notice here is not proof none exists elsewhere.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://gpm.nasa.gov/data/directory",
+   "fetched_url": null,
+   "title": "Precipitation Data Directory",
+   "author_org": "NASA GPM",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_data_directory.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Directory 'Minimum Latency 12 Hours' differs from ~14 hr target stated on GES DISC. Worldview listed under Early Run table, not Late.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://registry.opendata.aws/nasa-gpm3imerghhl/",
+   "fetched_url": null,
+   "title": "GPM IMERG Late Precipitation L3 Half Hourly V07 (GPM_3IMERGHHL) at GES DISC - Registry of Open Data on AWS",
+   "author_org": "AWS Registry of Open Data (managed by NASA)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/aws_registry_gpm3imerghhl.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Daily GPM_3IMERGDL registry entry not checked; this is GES DISC's own Earthdata Cloud bucket listed on AWS registry (same archive, not a third-party mirror).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_TechnicalDocumentation_final_230713.pdf",
+   "fetched_url": null,
+   "title": "IMERG Technical Documentation (V07), 13 July 2023",
+   "author_org": "NASA GSFC (Huffman et al.)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_techdoc_v07_2023.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2023 document; pre-dates V08 transition.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V07",
+   "fetched_url": null,
+   "title": "GPM: Global Precipitation Measurement (GPM) Release 07 - Earth Engine Data Catalog",
+   "author_org": "Google Earth Engine",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/main/browser/developers-google-com-earth-engine-datasets-catalog-NASA-GPM_023449.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Read via WebFetch extraction (developers.google.com refused by sandbox for raw fetch); no local file. End date one day before retrieval suggests near-real-time data are included, but run is NOT PRESENT on page.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.earthdata.nasa.gov/news/feature-articles/explore-20-years-rain-snowfall-data-from-nasas-precipitation-missions",
+   "fetched_url": null,
+   "title": "Explore 20 Years of Rain and Snowfall Data from NASA&#39;s Precipitation Missions",
+   "author_org": "NASA Earthdata",
+   "published": "2020-11-04 (page date May 9, 2025 also shown)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_worldview_imerg_article.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "2020 article, pre-V07; GPM directory (sa1-e8) lists Worldview IMERG_Rain_Rate at 30 Minute, 1 Day under Early Run table.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://gpm.nasa.gov/sites/default/files/2026-08/IMERG_V07_ATBD_final_260813.pdf",
+   "fetched_url": null,
+   "title": "IMERG Algorithm Theoretical Basis Document, Version 07 (revision 7.2, 13 August 2026), Table 3 Early/Late/Final differences",
+   "author_org": "NASA GPM (Huffman et al.)",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "V07 document; NOT PRESENT: any V08 change to these inputs",
+   "found_by": [
+    "sa3",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_TechnicalDocumentation_final.pdf",
+   "fetched_url": null,
+   "title": "IMERG Technical Documentation (13 July 2023), latency and inputs by run",
+   "author_org": "NASA GSFC (Huffman et al.)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_techdoc.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "2023 document",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://gpm.nasa.gov/data/directory/ncepcpc-level-3-merged-infrared-brightness-temperatures-0",
+   "fetched_url": null,
+   "title": "NCEP/CPC Level 3 Merged Infrared Brightness Temperatures | NASA GPM data directory",
+   "author_org": "NASA GPM",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_dir_cpc_mergir.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Satellite list may be out of date (e.g. Himawari-9, GOES-17/18, Meteosat-11 NOT PRESENT)",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://chrs.web.uci.edu/projects_nasa.php",
+   "fetched_url": null,
+   "title": "CHRS - The Center for Hydrometeorology and Remote Sensing at UCI: NASA projects",
+   "author_org": "Center for Hydrometeorology and Remote Sensing (CHRS), UC Irvine",
+   "published": "NOT PRESENT (footer (c) 2017)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "Old page (about 2017); describes pre-V07 PERSIANN-CCS role; V07 replaced it with PDIR-Now (see sa3-e8); read via WebFetch extraction, no local copy; project dates NOT PRESENT",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://gpm.nasa.gov/data/faq",
+   "fetched_url": null,
+   "title": "GPM Data Frequently Asked Questions",
+   "author_org": "NASA GPM",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "Read via WebFetch extraction, no local copy; FAQ says GPCC Final analysis through 2021 while ATBD 2026 Table 1 says Full V2022 Jan 98 - Dec 20 and Monitoring from Jan 21 (tech doc 2023 table: Monitoring from Dec 2020)",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://gpm.nasa.gov/sites/default/files/2024-12/IMERG_V07_ReleaseNotes_241126.pdf",
+   "fetched_url": null,
+   "title": "IMERG V07 Release Notes (20 November 2024)",
+   "author_org": "NASA GSFC / PPS (Huffman et al.)",
+   "published": "2024-11-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_v07_releasenotes_241126.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "V07 document; V08 changes NOT PRESENT; GridSat-B1 use is for Final/RP early TRMM era, not Late Run",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/CPC-4kmIR-Sats.pdf",
+   "fetched_url": null,
+   "title": "NOAA/NWS/CPC Merged 4 Km IR Tb dataset documentation extracted from IMERG Technical Documentation (17 April 2025)",
+   "author_org": "Huffman et al. (NASA GSFC); dataset produced by NOAA NCEP CPC",
+   "published": "2025-04-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cpc_4kmir_sats.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Table says GOES-E 'now 16' (April 2025 doc; NOAA says GOES-19 replaced GOES-16 as GOES East on 7 Apr 2025, per earlier run noaa_fy27_cj.txt); EWS-G1 listed in ATBD 2026 Table 1 but NOT PRESENT in this table; FY-2, INSAT NOT PRESENT",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/gpm-version-08-reprocessing",
+   "fetched_url": null,
+   "title": "GPM Version 08 Reprocessing (Earthdata alert)",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "2026-02-27 (last updated 2026-06-17)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "Read via WebFetch extraction, no local copy; 'until summer 2026' superseded by Aug 2026 schedule update (sa3-e16); no q5 input changes stated",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://gpm.nasa.gov/data/news/new-wsf-m1-mwi-nrt-files-available",
+   "fetched_url": null,
+   "title": "New WSF-M1 MWI NRT Files Available",
+   "author_org": "NASA GPM PPS",
+   "published": "2026-08-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpm_wsfm1_mwi_nrt.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Does not say whether AMSR3 has entered IMERG Late (NOT PRESENT).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s21",
+   "url": "https://gpm.nasa.gov/sites/default/files/2025-08/SSMIS-MWI_transition.pdf",
+   "fetched_url": null,
+   "title": "Impacts of the Transition from DMSP SSMIS to WSF-M MWI on IMERG",
+   "author_org": "NASA GSFC (Huffman, Tan, Joyce, Nelkin, Bolvin)",
+   "published": "2025-08-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpm_ssmis_mwi_transition.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Study of Dec 2023 test case; current SSMIS status in Nov 2026 NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s22",
+   "url": "https://ntrs.nasa.gov/api/citations/20250003538/downloads/20250003538%20Huffman%20G%20slides.pdf",
+   "fetched_url": null,
+   "title": "Plans for IMERG V08 and Future Perspectives for Global Satellite Precipitation (slides)",
+   "author_org": "NASA GSFC (Huffman, Bolvin, Joyce, Nelkin, Tan)",
+   "published": "2025 (NTRS citation 20250003538; exact date NOT PRESENT in text read)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/huffman_v08_plans_slides.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Planning slides; whether these changes are in the released V08 Late Run NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/gpm_anomalous.html",
+   "fetched_url": null,
+   "title": "PPS GPM anomalous data list",
+   "author_org": "NASA PPS",
+   "published": "Last Revised: September 25, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction (no local copy). The extraction reports no 2026 SSMIS entries, so this page does not settle SSMIS status after Sept 2026.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHL_07/summary",
+   "fetched_url": null,
+   "title": "GES DISC Dataset: GPM IMERG Late Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHHL 07)",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "data_period": "1998-01-01 to 2026-11-20",
+   "source_type": "official",
+   "evidence_id": "10.5067/GPM/IMERG/3B-HH-L/07",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-datasets-GPM-3IMERGHHL-07-summary_022606.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Description text still names PERSIANN-CCS, which the V07 release notes say PDIR-NOW replaced."
+  },
+  {
+   "id": "s25",
+   "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDL_07/summary",
+   "fetched_url": null,
+   "title": "GES DISC Dataset: GPM IMERG Late Precipitation L3 1 day 0.1 degree x 0.1 degree V07 (GPM_3IMERGDL 07)",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "data_period": "1998-01-01 to 2026-11-19 (summary); 2000-06-01 - Present (version history)",
+   "source_type": "official",
+   "evidence_id": "10.5067/GPM/IMERGDL/DAY/07",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-datasets-GPM-3IMERGDL-07-summary_022631.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Start date differs between the summary and the version-history table."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "The IMERG Late Run is published as a half-hourly product (GPM_3IMERGHHL, V07, 0.1 degree, 30 minutes, DOI 10.5067/GPM/IMERG/3B-HH-L/07) and a daily product (GPM_3IMERGDL, V07, DOI 10.5067/GPM/IMERGDL/DAY/07) derived from it by GES DISC.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Shortname: | GPM_3IMERGHHL",
+     "location": "Product Summary"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "DOI: | 10.5067/GPM/IMERG/3B-HH-L/07",
+     "location": "Product Summary"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "This dataset is the GPM Level 3 IMERG Late Daily 10 x 10 km (GPM_3IMERGDL) derived from the half-hourly GPM_3IMERGHHL.",
+     "location": "Description"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "10.5067/GPM/IMERGDL/DAY/07",
+     "location": "Version History"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "The archive's own dataset pages, read as page text.",
+   "sole_source_reason": "The archive's own catalog entries are the authority for its product names and DOIs."
+  },
+  {
+   "id": "c2",
+   "text": "V07 (minor version V07B per GES DISC) is the current Late Run version, but since March 2026 it runs in a 'hybrid' mode: the V07 algorithm ingesting GPROF V08, with climatological CORRA calibration; the switch to V08 is expected no sooner than winter 2026, and no V08 release was found as of 2026-11-20.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Version 07B is the current version of the IMERG data sets.",
+     "location": "Description"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Already, IMERG V07 Late and Early are operating in “hybrid” mode, using the IMERG V07 algorithm but ingesting GPROF V08.",
+     "location": "para 3"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Starting March 1, the CORRA calibration has been set to climatological values that are periodically updated to reflect seasonal conditions.",
+     "location": "para 3"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "The projected switch for the Late and Early Runs will take place no sooner than winter of 2026",
+     "location": "para 3"
+    }
+   ],
+   "applicability": "As of 2026-11-20.",
+   "confidence": "high",
+   "confidence_reason": "The producer's own schedule notices, consistent with the archive page and an Earthdata alert.",
+   "sole_source_reason": "The producer's own release schedule is the authority for its version status."
+  },
+  {
+   "id": "c3",
+   "text": "The V07 Final Run record ended on September 30, 2025; V08 Final was expected in fall 2026.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "the availability of V07 Final Run data (ended on September 30, 2025), the current “hybrid” mode of v07 Early and Late Run products",
+     "location": "alert text"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "it seems more likely that IMERG V08 Final Run will be released in the fall of 2026",
+     "location": "para 2"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NASA's own alert and schedule.",
+   "sole_source_reason": "NASA's own data alert."
+  },
+  {
+   "id": "c4",
+   "text": "IMERG is made by PPS at NASA Goddard and is archived and served by both PPS and GES DISC; secondary archives exist outside them.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Once computed, the IMERG data sets are hosted on both PPS and GES DISC, with each site",
+     "location": "Tech Doc p. 16"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Secondary archives of these data files exist outside of PPS and GES DISC,",
+     "location": "Tech Doc"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "The IMERG team's technical documentation.",
+   "sole_source_reason": "The producer's own documentation."
+  },
+  {
+   "id": "c5",
+   "text": "Access points for the Late Run: GES DISC (online archive, Earthdata Search, OPeNDAP, Giovanni), PPS near-real-time servers (registration), GES DISC's Earthdata Cloud copy in AWS us-west-2, the PMM Publisher API (last 60 days), and a Google Earth Engine copy of V07 IMERG; NASA Worldview shows imagery only.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Online Archive | Earthdata Search | Giovanni | OPENDAP",
+     "location": "page header"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "us-west-2",
+     "location": "Resources"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "NASA GES DISC at NASA Goddard Space Flight Center",
+     "location": "Dataset Producer"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Each access point is on its host's own page; the run carried by Earth Engine is not stated."
+  },
+  {
+   "id": "c6",
+   "text": "IMERG combines passive-microwave estimates (GPROF, intercalibrated to the GPM CORRA radar-radiometer product), morphed in time with model-derived motion vectors and blended with IR estimates in a Kalman filter; the Late Run uses forward and backward morphing, the Early forward only.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "computed using the 2021 version of the Goddard Profiling Algorithm (GPROF2021), then gridded, intercalibrated to the GPM Combined Ku Radar-Radiometer Algorithm (CORRA) product",
+     "location": "Description"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "The KF uses the morphed data as the “forecast” and the IR estimates as the “observations”",
+     "location": "Description"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "\"Late\" multi-satellite product ~14 hr after observation time, using both forward and backward morphing",
+     "location": "Description"
+    }
+   ],
+   "applicability": "V07.",
+   "confidence": "high",
+   "confidence_reason": "Archive page agrees with the ATBD's Table 3.",
+   "sole_source_reason": "The producer's and archive's own documentation."
+  },
+  {
+   "id": "c7",
+   "text": "Run differences: Early about 4 h, Late about 12-14 h, Final about 3.5 months; Early and Late get a 'Final Climatological' gauge adjustment and GEOS FP motion vectors, Final gets the GPCC analysis and MERRA-2.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Motion vector source GEOS FP GEOS FP MERRA-2",
+     "location": "ATBD Table 3"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Gauge adjustment Final Climatological Final Climatological GPCC analysis",
+     "location": "ATBD Table 3"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "rapid-response applications (Early Run, 4-h latency), same/next-day applications (Late Run, 14-h latency), and post-real-time research (Final Run, 3.5-month latency)",
+     "location": "Description"
+    }
+   ],
+   "applicability": "V07.",
+   "confidence": "high",
+   "confidence_reason": "ATBD table and archive pages agree except on 12 vs 14 h.",
+   "sole_source_reason": "The producer's own ATBD."
+  },
+  {
+   "id": "c13",
+   "text": "The Late Run waits for 100% of input microwave sensors (Early 95%), uses near-real-time GPROF with research CORRA, and a trailing 45-day CORRA calibration (Final centered).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Fraction of input PMW 95% 100% 100%",
+     "location": "ATBD Table 3"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "CORRA calibration Trailing 45-day Trailing 45-day Centered 45-day",
+     "location": "ATBD Table 3"
+    }
+   ],
+   "applicability": "V07 design; hybrid mode uses climatological CORRA values since March 2026.",
+   "confidence": "high",
+   "confidence_reason": "Producer's ATBD table.",
+   "sole_source_reason": "The producer's own ATBD."
+  },
+  {
+   "id": "c8",
+   "text": "The microwave constellation spans conical imagers (TRMM TMI, GPM GMI [NASA]; AMSR-E, AMSR2 [JAXA]; DMSP SSM/I and SSMIS, WSF-M [US DoD]; MetOp-SG MWI planned [EUMETSAT]) and cross-track sounders (NOAA-15-17 AMSU, NOAA-18/19 MHS, SNPP/NOAA-20/21 ATMS [NOAA]; MetOp-A/B/C MHS [EUMETSAT]; Megha-Tropiques SAPHIR [CNES/ISRO], not used in V07); the GPM DPR-GMI combined product is the calibration reference.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "GPM DPR-GMI Apr 14 - [Dec 29]",
+     "location": "Tech Doc Table 10, p. 36"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "GCOMW1 AMSR2 Jun 12 - [May 26] JAXA",
+     "location": "Tech Doc Table 10, p. 37"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "METOP-3/C MHS ** Nov 19 - [Apr 27] EUMETSAT",
+     "location": "Tech Doc Table 10, p. 37"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Core Observatory’s GMI and DPR instruments.",
+     "location": "Tech Doc CORRA section"
+    }
+   ],
+   "applicability": "Table dates in brackets are estimates (2023 document).",
+   "confidence": "moderate",
+   "confidence_reason": "Producer's 2023 table; which sensors feed today's Late Run is not listed.",
+   "sole_source_reason": "The producer's own input table."
+  },
+  {
+   "id": "c9",
+   "text": "WSF-M1 MWI data have entered the Early and Late hybrid products since August 2026 (PPS news), as DMSP SSMIS, about a quarter of IMERG's microwave data, nears its end.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "effective August 17 WSF MWI data has been included in both the IMERG early and late V07 hybrid product produced in NRT.",
+     "location": "news item, 19 Aug 2026"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "contextualizes",
+     "passage": "SSMIS provides roughly 25% of the available PMW data in IMERG",
+     "location": "p. 1"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Read through a subagent; entry date in IMERG from a PPS news item.",
+   "sole_source_reason": "PPS's own news."
+  },
+  {
+   "id": "c10",
+   "text": "The IR input is NOAA CPC's merged 4-km geostationary IR (GOES [NOAA/NESDIS], Meteosat [EUMETSAT], GMS/MTSAT/Himawari [JMA], EWS-G1 [DoD/NOAA]); CPC forwards it to PPS, and in V07 the IR precipitation algorithm is PDIR-NOW (UC Irvine's PERSIANN family), which replaced PERSIANN-CCS.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "CPC | assembles the zenith-angle-corrected, intercalibrated merged geo-IR fields and forwards them to | PPS for use in the PDIR computation routines.",
+     "location": "ATBD p. 8"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Meteosat prime series 0°E EUMETSAT",
+     "location": "ATBD Table 1"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "replaced PERSIANN-CCS.",
+     "location": "Release Notes p. 1"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "contradicts",
+     "passage": "forwards them to PPS for input to the PERSIANN-CCS algorithm",
+     "location": "Description"
+    }
+   ],
+   "applicability": "V07.",
+   "confidence": "high",
+   "confidence_reason": "ATBD (Aug 2026) and release notes agree; the GES DISC page wording is outdated.",
+   "sole_source_reason": "The producer's own ATBD and release notes."
+  },
+  {
+   "id": "c11",
+   "text": "Motion vectors come from NASA GMAO model fields: GEOS FP for the Early and Late Runs, MERRA-2 for the Final Run.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "and released by the NASA Global Modeling and Assimilation Office.",
+     "location": "ATBD 3.3.3"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2) and Goddard Earth Observing System model Version 5 (GEOS-5) Forward Processing (FP) for the post-real-time (Final) Run and the near-real-time (Early and Late) Runs, respectively.",
+     "location": "Description"
+    }
+   ],
+   "applicability": "V07.",
+   "confidence": "high",
+   "confidence_reason": "ATBD and archive page agree.",
+   "sole_source_reason": "The producer's own ATBD."
+  },
+  {
+   "id": "c12",
+   "text": "GPCC (DWD) gauge analyses enter only the Final Run; the Late Run gets a monthly climatological calibration averaged from the Final Run's gauge-based calibrations.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "In V07, the near-real-time Early and Late half-hourly estimates have a monthly climatological concluding calibration based on averaging the concluding calibrations computed in the Final",
+     "location": "Description"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Gauge adjustment Final Climatological Final Climatological GPCC analysis",
+     "location": "ATBD Table 3"
+    }
+   ],
+   "applicability": "V07.",
+   "confidence": "high",
+   "confidence_reason": "Archive page and ATBD agree.",
+   "sole_source_reason": "The producer's own ATBD."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Late Run latency: about 14 h (GES DISC pages) vs 12 h (ATBD Table 3, GPM directory 'Minimum Latency: 12 Hours')",
+   "source_ids": [
+    "s24",
+    "s25",
+    "s12",
+    "s7"
+   ],
+   "status": "resolved",
+   "explanation": "Difference in definition: 14 h is the nominal target; the ATBD and directory give the latency now achieved (the tech doc says 'more like 12')."
+  },
+  {
+   "claim": "IR algorithm: PERSIANN-CCS (GES DISC description) vs PDIR-NOW (V07 release notes, ATBD)",
+   "source_ids": [
+    "s24",
+    "s17",
+    "s12"
+   ],
+   "status": "resolved",
+   "explanation": "Version boundary: PDIR-NOW replaced PERSIANN-CCS in V07; the GES DISC text keeps older wording."
+  },
+  {
+   "claim": "Late daily record start: 1998-01-01 (GES DISC summary) vs 2000-06-01 (its version-history table) vs 'beginning 2000' (its description)",
+   "source_ids": [
+    "s25",
+    "s24"
+   ],
+   "status": "unresolved",
+   "explanation": "V07 was reprocessed back to 1998 (TRMM era); the version table and description text appear not to have been updated. Not settled from the pages."
+  }
+ ],
+ "coverage_gaps": [
+  "Not checked: NASA Worldview/GIBS IMERG layer (GPM directory lists Worldview IMERG_Rain_Rate only in the Early Run table; visualization only), Copernicus or other mirrors, gpm.nasa.gov precip-apps viewer, SVS latest week of IMERG (svs.gsfc.nasa.gov/4285). Google Earth Engine page does not state which run (Early/Late/Final) it ingests. (from sa1)",
+  "Exact V07B release date not found. No V08 IMERG release notice found as of 2026-11-20 (newest GPM data news on the schedule is 2026-08-06). AWS registry entry for GPM_3IMERGDL not read. Latency wording differs: GES DISC HHL page says Final about 4 months after observation month; DL page and GPM directory say 3.5 months; GPM directory gives Late minimum latency 12 hours vs about 14 hr target. (from sa1)",
+  "V08 changes to IR (CPC merged IR / PDIR), motion vectors (MERRA-2, GEOS FP, any GEOS-IT switch) and GPCC gauge inputs: NOT PRESENT in V08 transition schedule page, V08 release page (earlier run), or ATBD V07 rev 7.2 (Aug 2026). No V08 ATBD or V08 release notes found in 2 searches. (from sa3)",
+  "Wording conflict on Early/Late climatological calibration: tech doc 2023 p.52 says the monthly climatological calibration to the Final's satellite-gauge analysis 'is not applied as in TMPA, since CORRA already has a climatological correction to GPCP', while tech doc p.53, V07 release notes and ATBD 2026 Table 3 ('Final Climatological') say it is applied in V07. GPM FAQ: 'The Late Run uses a climatological adjustment that incorporates gauge data.' (from sa3)",
+  "GPCC Full vs Monitoring switch date differs: ATBD 2026 Table 1 Full V2022 Jan 98-Dec 20, Monitoring Jan 21-ongoing; tech doc 2023 table Monitoring Dec 2020-ongoing; GPM FAQ 'GPCC Final analysis up through 2021'. (from sa3)",
+  "Current satellite list behind CPC merged IR (e.g. GOES-18/19, Himawari-9, Meteosat-10/11, EWS-G) not read here; GPM directory page lists only up to GOES-16 / Himawari-8; earlier run 2026-11-20_gpcp-daily-satellites-pt6 read CPC-4kmIR-Sats.pdf (17 Apr 2025). (from sa3)",
+  "Which sensors are actually in the current (V07 hybrid / V07C) Late Run as of Nov 2026 is not stated in one list: Tech Doc Table 10 (2023) includes estimated-date and gray-shaded future entries; PPS news says WSF-M1 MWI entered Early/Late V07 hybrid from 17 Aug 2026; AMSR3 entry into IMERG NOT PRESENT. Lead: PPS anomalous-sensor list https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/gpm_anomalous.html (copy in 2026-11-20_gpcp-daily-satellites-pt6 work/raw/sa3/pps_gpm_anomalous.html.txt) and GPM data news. (from sa2)",
+  "V08 input changes: only planning slides (TROPICS, H8-STP, SAPHIR re-integration, ML IR) found; no released V08 release notes found after 2 queries. V08 Late not expected until winter 2026 at earliest per search snippet of Aug 2026 schedule update (page already in sa1's folder; not re-read here). (from sa2)",
+  "Huffman et al. (2020) standard reference (Springer book chapter, NTRS 20205003356 PDF) surfaced but not read; ATBD and Tech Doc used instead. (from sa2)",
+  "PERSIANN-CCS vs PDIR: V07 release notes say PDIR-NOW replaced PERSIANN-CCS as the IR algorithm; the brief's q5 wording (PERSIANN-CCS) applies to V06 and earlier. (from sa2)",
+  "Whether DMSP SSMIS (F16/F17/F18) still enters IMERG Late after the planned Sept 2026 program end is NOT PRESENT: GPM data news lists nothing after 19 Aug 2026. The earlier-run copy of the PPS anomalous-sensor page (gpcp-daily-satellites-pt6 sa3 pps_gpm_anomalous.html.txt) has no sensor names in its text, so it may need a browser read. (from sa2)",
+  "No V08 release notes or V08 ATBD found; V08 Late switch expected no sooner than winter 2026.",
+  "Which run Google Earth Engine's NASA/GPM_L3/IMERG_V07 collection carries is not stated (its end date, 2026-11-19, implies near-real-time data).",
+  "Exact list of sensors feeding today's hybrid Late Run not published in what was read."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "GPM_3IMERGHHL GES DISC Late Run half-hourly",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG V08 Transition Schedule Late Run",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPM_3IMERGDL Late Precipitation L3 1 day V07 DOI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PPS IMERG data access jsimpson arthurhou servers",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG Registry of Open Data AWS GPM",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Earth Engine NASA/GPM_L3/IMERG_V07 half-hourly",
+   "tool": "WebSearch",
+   "notes": "allowed_domains developers.google.com",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG V08 Final Run released",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Worldview GIBS IMERG precipitation rate layer Early Late Run",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG V08 PDIR GEOS IT motion vectors changes",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; no V08 description of input changes found; V08 transition schedule page surfaced",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PERSIANN-CCS PDIR IMERG CHRS UC Irvine",
+   "tool": "WebSearch",
+   "notes": "no domain filter; CHRS projects_nasa page found",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPCC Monitoring Product IMERG Final gauge",
+   "tool": "WebSearch",
+   "notes": "no domain filter; results repeat tech doc and FAQ; Springer IMERG chapter on NTRS not read",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CPC merged IR MERGIR 4km IMERG input",
+   "tool": "WebSearch",
+   "notes": "no domain filter; GPM directory page (already reused) and data.nasa.gov / AWS registry entries",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG V08 ATBD MERRA-2 GEOS motion vectors",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, gesdisc.eosdis.nasa.gov, pps.eosdis.nasa.gov; no V08 ATBD found",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PDIR-Now IMERG V07 infrared precipitation Late Run",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found V07 release notes 241126 (downloaded and read)",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG Version 08 release notes changes IR gauge",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, earthdata.nasa.gov; no V08 release notes; Aug 2026 schedule update read",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPCC Monitoring Product DWD IMERG gauge analysis",
+   "tool": "WebSearch",
+   "notes": "no domain filter; DWD monitoring_formatdesc page read via WebFetch: format only, IMERG NOT PRESENT, not cited",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG technical documentation V07",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; found GPM tech doc page, 2023 tech doc PDF (also arthurhou mirror), V07 release notes Nov 2024",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Huffman IMERG algorithm paper Early Late Final",
+   "tool": "WebSearch",
+   "notes": "no domain filter; Huffman et al. 2020 journal/book chapter surfaced only as NTRS Springer chapter PDF (2.2.1_Springer_Book_Precip_IMERG_rev2.pdf), not read",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPROF constellation sensors IMERG V07",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; ATBD, tech doc, release notes (2023-11, 2023-12, 2024-11), FAQ",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG V08 changes passive microwave inputs",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; V08 transition schedule page (copy already in sa1, renamed _unused here) and Huffman V08 plans slides (NTRS)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG V08 release notes",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; no V08 release notes doc found; Aug 2026 schedule update (sa1 has copy)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG Early Late SSMIS data ended 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; no confirmation SSMIS ended; read GPM data news listing",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG V07C hybrid GPROF V08 Late Run",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; search summary only (not read here): Early/Late produced as V07C using GPROF V08 input, recalibrated to CORRA V07; pages are the V08 transition schedule and Aug 2026 update, already saved in sa1 folder",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG V08 Final Run release",
+   "tool": "duckduckgo (browser)",
+   "notes": "Gap pass: no V08 release notice; top hits were the Apr/Aug 2026 schedule posts, Earthdata alerts (V07C minor version), Huffman V08 plans slides, IPWG-12 slides (CORRA V08 and IMERG V08 'in development')."
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Earth Engine NASA_GPM_L3_IMERG_V07 catalog page (browser read)",
+   "tool": "lookup (built-in browser)",
+   "notes": "Follow-up queue item: page read; producer NASA GES DISC; availability 1998-01-01 to 2026-11-19T03:30; run not stated.",
+   "copy_of": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V07"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GES DISC dataset page for GPM_3IMERGHHL",
+   "query": "GPM_3IMERGHHL GES DISC",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NASA PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "PPS data access servers for IMERG",
+   "query": "IMERG Late Run data access PPS",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "IMERG team (NASA GSFC)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "Technical documentation and ATBD",
+   "query": "IMERG technical documentation V07",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NASA GPM",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "V08 release notes and schedule",
+   "query": "IMERG V08 release 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "AWS / NASA Earthdata Cloud",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "Cloud copies of IMERG",
+   "query": "IMERG AWS open data registry",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q3",
+   "aim": "Huffman et al. IMERG algorithm paper",
+   "query": "Huffman IMERG Early Late Final",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "DWD GPCC",
+   "publisher": "the organization's suppliers",
+   "subquestion_id": "q5",
+   "aim": "GPCC gauge analysis in IMERG Final",
+   "query": "IMERG Final GPCC monthly gauge",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA CPC",
+   "publisher": "the organization's suppliers",
+   "subquestion_id": "q5",
+   "aim": "CPC merged IR as IMERG input",
+   "query": "CPC merged IR MERGIR 4km",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "UC Irvine CHRS",
+   "publisher": "the organization's suppliers",
+   "subquestion_id": "q5",
+   "aim": "PERSIANN-CCS / PDIR in IMERG",
+   "query": "PERSIANN-CCS IMERG input Late Run",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NASA PPS / GPROF",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "GPROF constellation sensors in IMERG",
+   "query": "GPROF constellation sensors IMERG V07",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NASA GMAO",
+   "publisher": "the organization's suppliers",
+   "subquestion_id": "q5",
+   "aim": "MERRA-2 / GEOS FP fields for IMERG morphing",
+   "query": "IMERG V07 MERRA-2 GEOS FP motion vectors",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 22.6,
+  "shift_min": 5,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 182158,
+  "subagent_minutes_planned": 31.5,
+  "subagent_minutes": 30.6,
+  "follow_ups": 0,
+  "continuations": 3,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

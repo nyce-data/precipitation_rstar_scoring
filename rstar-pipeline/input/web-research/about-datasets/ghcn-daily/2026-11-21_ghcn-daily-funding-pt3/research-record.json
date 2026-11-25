@@ -1,0 +1,1738 @@
+{
+ "question": "How is the work of creating, maintaining and processing GHCN-Daily funded (who does it, which routes pay, with amounts and award numbers), and how stable is that funding structure (NCEI line enacted amounts and positions FY2020-FY2026; one line vs several; annual/CR vs multi-year)? Cuts, staff losses and 2025-on news excluded.",
+ "tier": "standard",
+ "tier_reason": "standard: three subquestions, one budget line over seven years; cuts and 2025-on news excluded by the user (so the dispute criterion did not apply); user set 30 min / 240k tokens",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Who does the work: the responsible organization, the NCEI unit/team, and partners with their roles",
+   "status": "answered",
+   "source_ids": [
+    "s90",
+    "s101",
+    "s95",
+    "s91",
+    "s92",
+    "s49",
+    "s118",
+    "s93",
+    "s97"
+   ],
+   "remaining_gap": "No page newer than February 2023 places GHCNd in an NCEI branch or section; team size unpublished."
+  },
+  {
+   "id": "q2",
+   "question": "Funding sources: route, amounts, award/contract numbers and fiscal years; GHCN-Daily's own share",
+   "status": "answered",
+   "source_ids": [
+    "s117",
+    "s124",
+    "s201",
+    "s202",
+    "s203",
+    "s127",
+    "s128",
+    "s39",
+    "s40",
+    "s118",
+    "s93",
+    "s119",
+    "s92"
+   ],
+   "remaining_gap": "GHCN-Daily's own share of any route is not published; no COM award number or amount found; CISESS task-level amounts not published."
+  },
+  {
+   "id": "q3",
+   "question": "NCEI line enacted amounts and positions FY2020-FY2026; CR years; one-year vs multi-year money",
+   "status": "answered",
+   "source_ids": [
+    "s112",
+    "s107",
+    "s114",
+    "s106",
+    "s104",
+    "s54",
+    "s38",
+    "s109",
+    "s108",
+    "s103",
+    "s50"
+   ],
+   "remaining_gap": "FY2022 enacted positions/FTE not printed; FY2025 had no enacted line (full-year CR); exact CR periods FY2020-FY2024 not checked; FY2024 explanatory statement's NCEI row not read."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s38",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2027 Congressional Justification (NESDIS, NCEI activity)",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-19_ghcn-daily-about-pt3_combined/sa1/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "NCEI-wide; GHCN-Daily NOT PRESENT. Whether GHCN-Daily counts among 'tailored products' is not stated.",
+   "found_by": [
+    "reused:2026-11-19_ghcn-daily-about-pt3_combined",
+    "sa3",
+    "reconciler"
+   ],
+   "reused_from": "2026-11-19_ghcn-daily-about-pt3_combined",
+   "earlier_id": "s38",
+   "earlier_read_via": "raw",
+   "scope": "context: NCEI line",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA24NESX432C0001_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA24NESX432C0001 (CISESS renewal, University of Maryland)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified 2026-09-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-19_ghcn-daily-about-pt3_combined/sa1/usasp_NA24NESX432C0001.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Whole-CISESS award (satellite and Earth system work, College Park and NC); the share for NCEI Asheville or GHCN-Daily NOT PRESENT. cfda_obligations are program-wide for all NOAA CIs. Account obligations are DEFC Q (regular) and AAB.",
+   "found_by": [
+    "reused:2026-11-19_ghcn-daily-about-pt3_combined",
+    "sa2",
+    "reconciler"
+   ],
+   "reused_from": "2026-11-19_ghcn-daily-about-pt3_combined",
+   "earlier_id": "s39",
+   "earlier_read_via": "subagent",
+   "scope": "context: whole CISESS institute",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA19NES4320002_013/",
+   "fetched_url": null,
+   "title": "USAspending award record NA19NES4320002 (first CISESS agreement, University of Maryland)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified 2025-08-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-19_ghcn-daily-about-pt3_combined/sa1/usasp_NA19NES4320002.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Whole-CISESS; NCEI/GHCN share NOT PRESENT.",
+   "found_by": [
+    "reused:2026-11-19_ghcn-daily-about-pt3_combined",
+    "reconciler"
+   ],
+   "reused_from": "2026-11-19_ghcn-daily-about-pt3_combined",
+   "earlier_id": "s40",
+   "earlier_read_via": "subagent",
+   "scope": "context: whole CISESS institute",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://ncics.org/wp-content/uploads/2023/06/CISESS%20NC%20Annual%20Report%202022%E2%80%932023.pdf",
+   "fetched_url": null,
+   "title": "Annual Scientific Report, CISESS NC Task Reports, April 1, 2022 - March 31, 2023",
+   "author_org": "CISESS NC / NCICS (NC State University)",
+   "published": "2023-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-19_ghcn-daily-about-pt3_combined/sa1/cisess_nc_annual_2022-23.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2022-23 only (older award); task budget amounts NOT PRESENT; does not show who funds day-to-day GHCN-Daily production.",
+   "found_by": [
+    "reused:2026-11-19_ghcn-daily-about-pt3_combined",
+    "sa1",
+    "sa2",
+    "reconciler"
+   ],
+   "reused_from": "2026-11-19_ghcn-daily-about-pt3_combined",
+   "earlier_id": "s49",
+   "earlier_read_via": "subagent",
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "FY2026 CJS joint explanatory statement (accompanying P.L. 119-74), NOAA tables",
+   "author_org": "House and Senate Committees on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-19_ghcn-daily-about-pt3_combined/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Table only; no NCEI report language; OCR spacing errors in figures (as saved). No GHCN tie.",
+   "found_by": [
+    "reused:2026-11-19_ghcn-daily-about-pt3_combined",
+    "sa3"
+   ],
+   "reused_from": "2026-11-19_ghcn-daily-about-pt3_combined",
+   "earlier_id": "s50",
+   "earlier_read_via": "subagent"
+  },
+  {
+   "id": "s54",
+   "url": "https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2026 Congressional Justification, NCEI Program Decrease",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-19_ghcn-daily-about-pt3_combined/sa1/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "NCEI-wide request, not enacted (FY2026 enacted $69,000K per JES).",
+   "found_by": [
+    "reused:2026-11-19_ghcn-daily-about-pt3_combined",
+    "sa3"
+   ],
+   "reused_from": "2026-11-19_ghcn-daily-about-pt3_combined",
+   "earlier_id": "s54",
+   "earlier_read_via": "raw",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s90",
+   "url": "https://www.nesdis.noaa.gov/s3dl?path=%2Fs3%2F2023-02%2FNCEI_Org_Chart_Feb_2023.pdf",
+   "fetched_url": null,
+   "title": "National Centers for Environmental Information [org chart] February 2023",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "2023-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOT PRESENT",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_org_chart_2023-02.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Dated February 2023; no later chart found in this session. Does not name the Center for Weather and Climate or GHCN-Daily. Linking GHCN-Daily to a branch from author names is an inference for the coordinator.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s91",
+   "url": "https://repository.library.noaa.gov/view/noaa/34330/noaa_34330_DS1.pdf",
+   "fetched_url": null,
+   "title": "Data Stewardship Maturity Report for Global Historical Climatology Network - Daily (GHCN-Daily), Version 3 (NESDIS DSMR-00227)",
+   "author_org": "NOAA NESDIS (Raisa Ionin, Katy Luquire)",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NESDIS DSMR-00227",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/dsmr_00227.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "2021 assessment; no division, branch or named lead given.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s92",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network daily (GHCNd)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOT PRESENT",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ghcnd_product_page.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Page undated; agreements are not listed or numbered.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s93",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_1332KP24F0017_1330_1305M423DNEEA0014_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record: Delivery Order 1332KP24F0017 NCEI SCIENCE SUPPORT (Consolidated Safety Services Inc.)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "1332KP24F0017 (parent IDV 1305M423DNEEA0014)",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/usaspending_1332KP24F0017.json",
+   "retrieved": "2026-11-21",
+   "limitations": "Award description does not mention GHCN-Daily; dollars are for all NCEI science support, never GHCN-Daily share. Found via a HigherGov/USAspending web search; parent IDV not looked up.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NCEI science support contract (no GHCN mention)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s95",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network - Daily (GHCN-Daily), Version 3 — Dataset Overview (ISO metadata, gov.noaa.ncdc:C00861)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "gov.noaa.ncdc:C00861; doi:10.7289/V5D21VHZ",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ghcnd_iso_metadata.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Affiliations still given as NCDC (pre-2015 name); no current unit.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s97",
+   "url": "https://www.weather.gov/media/climateservices/CPASW/2023/Tuesday/Menne-GHCNdaily-CPASW2023.pdf",
+   "fetched_url": null,
+   "title": "The Global Historical Climatology Network GHCN hourly (GHCNh) dataset (CPASW 2023 presentation)",
+   "author_org": "Matt Menne, Shelley McNeill, Nancy Casey, Diana Kantor (NOAA/NCEI); Simon Noone & Peter Thorne (Maynooth University); Robert Dunn (Met Office Hadley Centre)",
+   "published": "2023-05-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOT PRESENT",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/menne_ghcnd_cpasw2023.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "About GHCNh (hourly), not GHCN-Daily specifically; no amounts or agreement numbers.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s101",
+   "url": "https://www.weather.gov/climateservices/seminars",
+   "fetched_url": null,
+   "title": "NWS Climate Services Seminar Series (speaker bio, 1/18/2023 Mesonets session)",
+   "author_org": "NOAA National Weather Service",
+   "published": "2023-01-18 (session date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOT PRESENT",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nws_climate_seminars.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Bio as of early 2023 on a seminar listing; does not name the branch or division, only the section.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s103",
+   "url": "https://www.noaa.gov/sites/default/files/2022-04/FY23_NOAAPresidents_Budget_508Compliant.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration Budget Estimates, Fiscal Year 2023 (Congressional Justification)",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2022-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOAA FY2023 CJ, NESDIS Control Table (Exhibit 4B)",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy23_cj.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "FY2022 column is the annualized CR level, not FY2022 enacted; FY2021 actual column not quoted (not found in this table). FY2022 enacted must come from the FY2024 CJ or the FY2022 omnibus explanatory statement (not retrieved).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s104",
+   "url": "https://www.noaa.gov/sites/default/files/2024-03/NOAA_FY25_Congressional_Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY 2025 Congressional Budget Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2024-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOAA FY2025 CJ, NESDIS Control Table",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy25_cj.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "FY2024 column is labeled Estimate (CJ prepared before FY2024 enactment), so 71,372 is not the FY2024 enacted figure; compare FY2026 CJ FY 2024 Enacted column (70,000). Appropriation-language search for until September 30 returned no match in this txt.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: NCEI line",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s106",
+   "url": "https://www.noaa.gov/sites/default/files/2023-04/NOAA_FY24_CJ.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY 2024 Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2023-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOAA FY2024 CJ, NESDIS Control Table",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy24_cj.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "FY2022 enacted/actual column NOT PRESENT in this control table (only FY2023 Enacted). The FY2025 CJ repeats 210/200/71,372 as its FY 2024 Estimate.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: NCEI line",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s107",
+   "url": "https://www.noaa.gov/sites/default/files/2021-06/NOAA%20FY22%20CJ.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration Budget Estimates, Fiscal Year 2022 (Congressional Justification)",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2021-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOAA FY2022 CJ, NESDIS Control Table",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy22_cj.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "FY2021 column is labeled Spend Plan, not Enacted; FY2021 POS/FTE NOT PRESENT in this row; FY2020 actual NOT PRESENT in this table (not searched elsewhere in this CJ for lack of time).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: NCEI line",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s108",
+   "url": "https://www.congress.gov/118/plaws/publ42/PLAW-118publ42.htm",
+   "fetched_url": null,
+   "title": "Public Law 118-42, Consolidated Appropriations Act, 2024 (H.R. 4366), Division C CJS, NOAA Operations, Research, and Facilities",
+   "author_org": "U.S. Congress",
+   "published": "2024-03-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "P.L. 118-42",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pl118-42.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NCEI amount is not in the bill text; it is set in the explanatory statement table (not retrieved for FY2024). Availability clauses for other years not checked here.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s109",
+   "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF13024/IF13024.6.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA): FY2026 Budget Request (CRS In Focus IF13024)",
+   "author_org": "Congressional Research Service",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "CRS IF13024",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crs_if13024_2025-06.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "URL is the version found by search; earlier run B saved the 2025-06 version, exact version number not re-verified.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s112",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2020/Mar/508%20Compliant_FY21%20NOAA%20CJ.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2021 (Congressional Justification)",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2020-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOAA FY2021 CJ, NESDIS Control Table and Exhibit 10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy21_cj.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "pdftotext printed closepath syntax warnings; table text intact. FY2020 enacted positions (225) differ sharply from FY2020 Actuals positions in FY2022 CJ (167).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s114",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2022-03-09/html/CREC-2022-03-09-pt3-PgH1709.htm",
+   "fetched_url": null,
+   "title": "Congressional Record, Vol. 168 No. 42 (March 9, 2022), Explanatory Statement for H.R. 2471 Consolidated Appropriations Act, 2022 (P.L. 117-103), Division B CJS",
+   "author_org": "U.S. Congress (House Appropriations Committee chair, statement with JES effect under sec. 4)",
+   "published": "2022-03-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "CREC H1709, March 9, 2022",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crec_2022-03-09_h1709.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Positions/FTE NOT PRESENT in explanatory statement. Compare FY2024 CJ FY2022 Actual BA 69,213 (differs from 66,000 enacted).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s117",
+   "url": "https://www.commerce.gov/sites/default/files/2025-06/NOAA-FY2026-Congressional-Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2026 Congressional Justification, NESDIS ORF, Activity: National Centers for Environmental Information",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NESDIS-12 / NESDIS-14 (Exhibit 12)",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "GHCN NOT PRESENT anywhere in FY26 CJ text (find_text search for GHCN returned no match). Column headers of the table at line 885 not quoted here (see file around line 880). GHCN-Daily own share NOT PRESENT. URL is the run B citation; check its record for the exact URL.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s118",
+   "url": "https://ncics.org/wp-content/uploads/2020/09/CICS-NC-2020-Final-Report.pdf",
+   "fetched_url": null,
+   "title": "CICS-NC Final Report, April 1, 2019 - June 30, 2020, NOAA Grant NA14NES4320003",
+   "author_org": "Cooperative Institute for Climate and Satellites - North Carolina (NC State)",
+   "published": "2020-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NA14NES4320003; task code NC-SON-02-NCICS-BB",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cicsnc_2020_final_report.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Amount for the GHCN-D task itself NOT PRESENT; the 3,239,362 USD is the whole Surface Observing Networks line across all amendments, not GHCN-D. Fiscal year of each amendment NOT PRESENT. Pre-2019 award (predecessor to NA19NES4320002).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s119",
+   "url": "https://www.ncei.noaa.gov/pub/data/ushcn/papers/menne-etal2012.pdf",
+   "fetched_url": null,
+   "title": "An Overview of the Global Historical Climatology Network-Daily Database (Menne et al., J. Atmos. Oceanic Technol. 29, 2012)",
+   "author_org": "NOAA NCDC (Menne, Durre, Vose, Gleason, Houston)",
+   "published": "2012",
+   "data_period": null,
+   "source_type": "peer_reviewed",
+   "evidence_id": "DOE grant DE-AI02-96ER62276",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/menne_etal2012.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Amounts and fiscal years NOT PRESENT; pre-2012 support for the dataset build, not current operations; whether DOE support continues NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s124",
+   "url": "https://cpo.noaa.gov/National-Centers-for-Environmental-Information-and-CPO-lay-groundwork-for-new-extreme-heat-product/",
+   "fetched_url": null,
+   "title": "National Centers for Environmental Information and CPO lay groundwork for new extreme heat product",
+   "author_org": "NOAA Climate Program Office",
+   "published": "2019-11-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NOT PRESENT",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-National-Centers-for-Environmental-Information-_192930.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "2019 article; no award or amount",
+   "found_by": [
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s125",
+   "url": "https://docs.house.gov/billsthisweek/20240304/FY24%20CJS%20Conference%20JES%20scan%203.3.24.pdf",
+   "fetched_url": null,
+   "title": "Division C - Commerce, Justice, Science, and Related Agencies Appropriations Act, 2024 (joint explanatory statement, scan dated 3.3.24)",
+   "author_org": "House/Senate Committees on Appropriations (docs.house.gov)",
+   "published": "2024-03-03 (scan date in file name; bills-this-week 2024-03-04)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "FY2024 CJS JES (P.L. 118-42 Division C)",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/gp1/fy24_cjs_jes.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "OCR text of a scanned PDF (pdftotext); the House docs scan is the pre-passage version dated 3.3.24, not the Congressional Record printing (S1398-S1416), which was not opened (govinfo per-page HTML name guessed gave Page Not Found). No Regional Climate Centers floor under NESDIS/NCEI: NOT PRESENT (searched Climate Centers/RCC). OAR Climate Research lists Regional Climate Data and Information 47,932 (line 721) - an OAR line, not NCEI. Senate language adopted is in S. Rept. 118-62 (not read here).",
+   "found_by": [
+    "gp1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s126",
+   "url": "https://www.congress.gov/crs_external_products/R/PDF/R46595/R46595.7.pdf",
+   "fetched_url": null,
+   "title": "Continuing Resolutions: Overview of Components and Practices (R46595, version 7)",
+   "author_org": "Congressional Research Service",
+   "published": "NOT PRESENT (version 7; table runs to FY2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "CRS R46595",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/gp1/crs_r46595.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Government-wide, not CJS-specific: FY2024 CJS was in the first FY2024 package (P.L. 118-42) whose date is not in this table; per-FY final-act P.L. numbers for the regular CJS acts NOT PRESENT in lines read. Appendix column headers not read (rows quoted raw). Only the first CR of each FY is quoted; later CRs per FY in appendix lines after each first row not read.",
+   "found_by": [
+    "gp1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s127",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_1332KP24F0001_1330_1305M421ANAAA0053_1330/",
+   "fetched_url": null,
+   "title": "USAspending award 1332KP24F0001 (BPA call under 1305M421ANAAA0053)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified_date 2026-09-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "1332KP24F0001; parent 1305M421ANAAA0053",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (fetch_json.py failed twice: Remote end closed connection; read via WebFetch)",
+   "retrieved": "2026-11-21",
+   "limitations": "Fields as reported by WebFetch extraction model (not a saved raw JSON); full description text truncated by the tool; no mention of GHCN-Daily in what was returned (NOT PRESENT).",
+   "found_by": [
+    "gp1"
+   ]
+  },
+  {
+   "id": "s128",
+   "url": "https://www.oig.doc.gov/OIGPublications/OIG-21-001-A.pdf",
+   "fetched_url": null,
+   "title": "The Department Has Made Progress Meeting Its Responsibilities Under the Geospatial Data Act But Must Improve Controls to Ensure Full Compliance",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2020-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "OIG-21-001-A",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/gp1/oig_21_001_a.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Only the cover was read. A search for NCEI or National Centers for Environmental found nothing (NOT PRESENT). Not an NCEI oversight report.",
+   "found_by": [
+    "gp1"
+   ]
+  },
+  {
+   "id": "s202",
+   "url": "https://cpo.noaa.gov/NOAAs-Applied-Research-Center-for-Dataset-Development-ARC-Develops-New-Climate-Dataset-for-Health-Users/",
+   "title": "NOAA's Applied Research Center for Dataset Development (ARC) Develops New Climate Dataset for Health Users",
+   "author_org": "NOAA Climate Program Office",
+   "published": "2021-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-NOAAs-Applied-Research-Center-for-Dataset-Devel_194217.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "News item; no award number or amount."
+  },
+  {
+   "id": "s203",
+   "url": "https://cpo.noaa.gov/COM-Program-partnership-with-NCEIs-Applied-Research-Center-puts-instrumental-record-into-long-term-context/",
+   "title": "COM Program partnership with NCEI's Applied Research Center puts instrumental record into long-term context",
+   "author_org": "NOAA Climate Program Office",
+   "published": "2020-03-31",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-COM-Program-partnership-with-NCEIs-Applied-Rese_194231.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "About paleoclimate datasets; shows the COM-NCEI ARC route, not GHCN-specific; no amounts."
+  },
+  {
+   "id": "s201",
+   "url": "https://cpo.noaa.gov/how-hurricane-strength-impacts-rainfall-intensity-and-coverage/",
+   "title": "How Hurricane Strength Impacts Rainfall Intensity and Coverage",
+   "author_org": "NOAA Climate Program Office (MAPP program)",
+   "published": "2019-10-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-how-hurricane-strength-impacts-rainfall-intensi_192937.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "News item; names GHCN (not GHCN-Daily specifically) as improved through COM funding; no amounts."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "NCEI line (NESDIS ORF) enacted amounts, $ thousands: FY2020 61,642 (225 positions/222 FTE); FY2021 63,040 (186 positions); FY2022 66,000 (explanatory statement); FY2023 71,372 (210/200); FY2024 70,000 (202/184); FY2025 no enacted line (full-year CR); FY2026 69,000 (185/140).",
+   "importance": "central",
+   "figure_status": "enacted",
+   "evidence": [
+    {
+     "source_id": "s112",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information 225 222 61,642",
+     "location": "FY2021 CJ, NESDIS control table, FY 2020 Enacted column (POS, FTE, amount)"
+    },
+    {
+     "source_id": "s107",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Pos/BA 167 60,963 186 63,040",
+     "location": "FY2022 CJ, NESDIS summary of resource requirements (FY 2020 Actual, FY 2021 Enacted)"
+    },
+    {
+     "source_id": "s114",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information............. 66,000",
+     "location": "Congressional Record March 9, 2022, explanatory statement for P.L. 117-103, NOAA ORF table"
+    },
+    {
+     "source_id": "s106",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information 210 200 71,372",
+     "location": "FY2024 CJ, NESDIS control table, FY 2023 Enacted column"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information 202 184 70,000 (16) (6) (18,000) 186 178 52,000",
+     "location": "FY2026 CJ, NESDIS control table (FY 2024 Enacted; program changes; FY 2026 Estimate)"
+    },
+    {
+     "source_id": "s109",
+     "relationship": "supports",
+     "passage": "Congress did not provide a breakdown of funding per line office within the FY2025 appropriations law",
+     "location": "CRS IF13024 (June 2025)"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information 185 140 69,000",
+     "location": "FY2027 CJ, NESDIS control table, FY 2026 Enacted column"
+    }
+   ],
+   "applicability": "Direct obligations in the ORF account only; FY2021-FY2022 positions as printed in the CJ summary.",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own budget tables and the enacted explanatory statement, read as raw text",
+   "sole_source_reason": "the agency's own budget tables and Congress's explanatory statements are the authority for the line's enacted amounts"
+  },
+  {
+   "id": "c2",
+   "text": "Actual NCEI budget authority and positions (from later CJs): FY2020 167 positions / 60,963; FY2022 191 / 69,213; FY2023 195 / 73,487; FY2025 126 / 76,035 ($ thousands).",
+   "importance": "supporting",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "s107",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Pos/BA 167 60,963",
+     "location": "FY2022 CJ, FY 2020 Actual column"
+    },
+    {
+     "source_id": "s106",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Pos/BA 191 69,213",
+     "location": "FY2024 CJ, FY 2022 Actual column"
+    },
+    {
+     "source_id": "s104",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Pos/BA 195 73,487",
+     "location": "FY2025 CJ, FY 2023 Actual column"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Pos/BA 126 76,035",
+     "location": "FY2027 CJ, FY 2025 Actual column"
+    }
+   ],
+   "applicability": "Actuals include carryover and transfers; not comparable one-for-one with enacted amounts.",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own tables, raw text",
+   "sole_source_reason": "the agency's own budget tables are the authority for its actuals"
+  },
+  {
+   "id": "c12",
+   "text": "NCEI line FTE and obligations (Exhibit 10, $ thousands): FY2020 actual 152 FTE / 62,594 obligated; FY2021 enacted 172 FTE; FY2022 actual 170 FTE / 67,413; FY2023 actual 182 FTE / 75,622; FY2025 actual 139 FTE / 72,950; FY2026 enacted 140 FTE / 69,000.",
+   "importance": "supporting",
+   "figure_status": [
+    "actual",
+    "enacted"
+   ],
+   "evidence": [
+    {
+     "source_id": "s107",
+     "relationship": "supports",
+     "passage": "Information (NCEI) FTE/OBL 152 62,594 172 63,040",
+     "location": "FY2022 CJ, NESDIS Exhibit 10 (2020 Actuals; 2021 Enacted)"
+    },
+    {
+     "source_id": "s106",
+     "relationship": "supports",
+     "passage": "Information (NCEI) FTE/OBL 170 67,413",
+     "location": "FY2024 CJ, NESDIS Exhibit 10 (2022 Actual)"
+    },
+    {
+     "source_id": "s104",
+     "relationship": "supports",
+     "passage": "Information (NCEI) FTE/OBL 182 75,622",
+     "location": "FY2025 CJ, NESDIS Exhibit 10 (2023 Actual)"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Information FTE/OBL 139 72,950 140 69,000",
+     "location": "FY2027 CJ, NESDIS Exhibit 10 (2025 Actual; 2026 Enacted)"
+    }
+   ],
+   "applicability": "NCEI line totals, not GHCN-Daily's own figures.",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own tables, raw text (found by the Reconciler, checked by the coordinator's merge check)",
+   "sole_source_reason": "the agency's own budget tables are the authority for its staffing and obligations"
+  },
+  {
+   "id": "c13",
+   "text": "Congress's FY2024 explanatory statement (Division C, CJS) gives NCEI 70,000 ($ thousands), matching the FY2026 CJ; it adopts the Senate language on NCEI and encourages support for international partnerships including GCOS, with no Regional Climate Centers floor under NCEI.",
+   "importance": "central",
+   "figure_status": "enacted",
+   "evidence": [
+    {
+     "source_id": "s125",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information ................................... . 70,000",
+     "location": "FY2024 CJS joint explanatory statement, printed p. 22, NESDIS ORF table (in thousands of dollars)"
+    },
+    {
+     "source_id": "s125",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information (NCEI).-The Senate language on NCEI",
+     "location": "same, NESDIS narrative"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Congress's explanatory statement, raw text",
+   "sole_source_reason": "Congress's explanatory statement is the authority for the enacted line amount"
+  },
+  {
+   "id": "c14",
+   "text": "Every year FY2020-FY2024 began on continuing resolutions (0 of 12 regular bills enacted by October 1): FY2020 2 CRs / 81 days (to 12-20-2019); FY2021 5 / 88 (to 12-28-2020); FY2022 4 / 166 (to 03-15-2022); FY2023 3 / 91 (to 12-30-2022); FY2024 4 / 160 (to 03-08-2024). Government-wide counts, not CJS-specific.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s126",
+     "relationship": "supports",
+     "passage": "2020 12 0 2",
+     "location": "CRS R46595, Table 1 (FY; regular bills; enacted by Oct 1; CRs)"
+    },
+    {
+     "source_id": "s126",
+     "relationship": "supports",
+     "passage": "2020 2 81 12-20-2019 | 2021 5 88 12-28-2020 | 2022 4 166 03-15-2022 | 2023 3 91 12-30-2022 | 2024 4 160 03-08-2024",
+     "location": "CRS R46595, Table 2 (FY; CRs; days under CR; final expiration)"
+    }
+   ],
+   "applicability": "Government-wide; the CJS bill was in each year's final omnibus or minibus, so its CR period matches these.",
+   "confidence": "high",
+   "confidence_reason": "CRS report tables, raw text",
+   "sole_source_reason": "CRS is Congress's own research service and its tables compile the enacted laws"
+  },
+  {
+   "id": "c15",
+   "text": "NCEI data-stewardship call order 1332KP24F0001 (Alpha Omega Integration, BPA 1305M421ANAAA0053; 2024-02-04 to 2028-02-03): $19,119,736.87 obligated, $39,485,475.04 base and all options; funded by NESDIS; no GHCN mention in the record as read.",
+   "importance": "supporting",
+   "figure_status": [
+    "obligation",
+    "ceiling"
+   ],
+   "evidence": [
+    {
+     "source_id": "s127",
+     "relationship": "supports",
+     "passage": "total_obligation: 19119736.87",
+     "location": "USAspending record via WebFetch (extraction)"
+    }
+   ],
+   "applicability": "Read via WebFetch extraction only; no raw JSON saved.",
+   "confidence": "moderate",
+   "confidence_reason": "federal award record, but read through a fetch tool's extraction"
+  },
+  {
+   "id": "c3",
+   "text": "NCEI's money is annual ORF appropriation available for two fiscal years; FY2025 ran on a full-year continuing resolution (P.L. 119-4) with no line-office breakdown.",
+   "importance": "central",
+   "figure_status": "enacted",
+   "evidence": [
+    {
+     "source_id": "s108",
+     "relationship": "supports",
+     "passage": "$4,548,485,000, to remain | available until September 30, 2025",
+     "location": "P.L. 118-42, Div. C, NOAA Operations, Research, and Facilities"
+    },
+    {
+     "source_id": "s109",
+     "relationship": "supports",
+     "passage": "On March 15, 2025, Congress passed a full-year continuing resolution of discretionary appropriations for NOAA for the remainder of FY2025",
+     "location": "CRS IF13024"
+    }
+   ],
+   "applicability": "Availability clause checked for FY2024 only.",
+   "confidence": "high",
+   "confidence_reason": "enacted law text and CRS",
+   "sole_source_reason": "the text of the appropriations law is the authority for the funds' period of availability"
+  },
+  {
+   "id": "c4",
+   "text": "NOAA's budget justifications do not name GHCN-Daily; the NCEI line is described only as ingest, QC, assembly, archive and access for NOAA and partners' data, so GHCN-Daily's share of the NCEI line is not published.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s117",
+     "relationship": "supports",
+     "passage": "Provide ingest, quality control, assembly, archive, and access services for NOAA and NOAA partners’ environmental data",
+     "location": "FY2026 CJ, NESDIS-12, Activity: National Centers for Environmental Information"
+    }
+   ],
+   "applicability": "FY2026 and FY2027 CJ text searched for GHCN by sa2.",
+   "confidence": "moderate",
+   "confidence_reason": "absence shown for two CJs only; NOAA's internal spend plan by product is unpublished",
+   "sole_source_reason": "the agency's own budget justification is the authority for how it describes its line"
+  },
+  {
+   "id": "c5",
+   "text": "NOAA's Climate Program Office says GHCN-D is funded in part by its Climate Observations and Monitoring (COM) program (OAR), a second federal route; no award number or amount found.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s124",
+     "relationship": "supports",
+     "passage": "funded in part by CPO’s Climate Observations and Monitoring program",
+     "location": "CPO news item, Nov 9, 2019"
+    },
+    {
+     "source_id": "s124",
+     "relationship": "supports",
+     "passage": "The COM funded Global Historical Climatology Network-Daily (GHCN-D) dataset",
+     "location": "same"
+    },
+    {
+     "source_id": "s201",
+     "relationship": "supports",
+     "passage": "updated and improved through funding from the Climate Observations and Monitoring Program (e.g. NCEI’s Global Historical Climatology Network (GHCN)",
+     "location": "CPO news item, Oct 25, 2019"
+    },
+    {
+     "source_id": "s202",
+     "relationship": "supports",
+     "passage": "The Applied Research Center for Data Set Development (ARC), based at NCEI and funded by CPO’s Climate Observation and Monitoring Program",
+     "location": "CPO news item, Nov 12, 2021"
+    },
+    {
+     "source_id": "s202",
+     "relationship": "supports",
+     "passage": "long-term, sustained climate observations and analyses supported by COM and NCEI, such as NCEI’s foundational Global Historical Climatology Network-daily",
+     "location": "same"
+    },
+    {
+     "source_id": "s203",
+     "relationship": "contextualizes",
+     "passage": "CPO’s Climate Observations and Monitoring (COM) Program and the National Centers for Environmental Information (NCEI) Applied Research Center (ARC) partner to develop authoritative datasets",
+     "location": "CPO news item, Mar 31, 2020"
+    }
+   ],
+   "applicability": "Stated 2019–2021; COM's money reaches NCEI through the COM–NCEI Applied Research Center partnership; COM's public funded-projects list (external grants) does not name GHCN or NCEI; no award number or amount found.",
+   "confidence": "moderate",
+   "confidence_reason": "four NOAA program pages say so (2019-2021), but no award record or amount",
+   "sole_source_reason": "the funding program's own statement about what it funds"
+  },
+  {
+   "id": "c6",
+   "text": "CISESS cooperative agreements with the University of Maryland (CFDA 11.432) carry NCEI partner work: NA19NES4320002, 2019-07-01 to 2025-06-30, $162,772,973 obligated; renewal NA24NESX432C0001, 2024-07-01 to 2029-06-30, $77,486,317 obligated so far. Neither record breaks money down by task or names GHCN.",
+   "importance": "central",
+   "figure_status": "obligation",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "\"total_obligation\": 162772973.0, … \"start_date\": \"2019-07-01\", … \"end_date\": \"2025-06-30\",",
+     "location": "USAspending award record; total_obligation; period_of_performance"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "\"total_obligation\": 77486317.0, … \"start_date\": \"2024-07-01\", … \"end_date\": \"2029-06-30\",",
+     "location": "USAspending award record; total_obligation; period_of_performance"
+    }
+   ],
+   "applicability": "Whole-institute agreements (all NESDIS science, not only NCEI); GHCN share not published.",
+   "confidence": "high",
+   "confidence_reason": "federal award database records, raw JSON (saved 2026-11-19; sa2 refetched 2026-11-21 with the same totals)",
+   "sole_source_reason": "the federal award database is the authority for award obligations"
+  },
+  {
+   "id": "c7",
+   "text": "CISESS/CICS-NC tasks naming GHCN-D are development projects (cloud processing prototype, graph database), not routine production; the only dollar figure is by activity line.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s118",
+     "relationship": "supports",
+     "passage": "Task Code NC-SON-02-NCICS-BB",
+     "location": "CICS-NC final report 2020, task 'Software Development of a Cloud-Based Data Processing Prototype for GHCN-D'"
+    },
+    {
+     "source_id": "s118",
+     "relationship": "supports",
+     "passage": "$ 3,239,362 CICS-NC: Surface Observing Networks Activities",
+     "location": "CICS-NC final report 2020, Appendix 2"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "NCEI INNOVATES 2021: Global Historical Climatology Network-Daily (GHCN-D) Graph Database",
+     "location": "CISESS NC annual report 2022-23"
+    }
+   ],
+   "applicability": "Task amounts not published.",
+   "confidence": "moderate",
+   "confidence_reason": "institute reports read raw, but task funding not itemized"
+  },
+  {
+   "id": "c8",
+   "text": "GHCN-Daily is run inside NCEI's Climatic Science & Services Division (Feb 2023 chart: Climatic Science & Development Branch, Dataset and Products Sections); Matt Menne (Dataset Section) is its technical and scientific lead; the contact is the 'GHCNd Operations Team'; it is 'operational and supported by NCEI'.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s90",
+     "relationship": "supports",
+     "passage": "Climatic Science & Services Division",
+     "location": "NCEI org chart, Feb 2023"
+    },
+    {
+     "source_id": "s90",
+     "relationship": "supports",
+     "passage": "Dataset Section",
+     "location": "same"
+    },
+    {
+     "source_id": "s101",
+     "relationship": "supports",
+     "passage": "Dr. Matt Menne works in the Dataset Section of NOAA/NCEI",
+     "location": "NWS Climate Services Seminar bio, Jan 2023"
+    },
+    {
+     "source_id": "s95",
+     "relationship": "supports",
+     "passage": "Dataset Point of Contact | GHCNd Operations Team",
+     "location": "ISO metadata C00861"
+    },
+    {
+     "source_id": "s91",
+     "relationship": "supports",
+     "passage": "The data set is currently operational and supported by NCEI.",
+     "location": "DSMR-00227 (2021)"
+    }
+   ],
+   "applicability": "Org placement as of 2023; later renaming to Climate Science and Services Division (NCEI About page) not tied to GHCN.",
+   "confidence": "moderate",
+   "confidence_reason": "placement inferred from the lead's section and a 2023 chart; no page names the unit for GHCNd"
+  },
+  {
+   "id": "c9",
+   "text": "Much of the input is in-kind: national weather services supply data under bilateral agreements; US networks (NWS COOP, funded in the NWS ORF Observations line, CoCoRaHS, SNOTEL) are paid for by their own agencies.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s92",
+     "relationship": "supports",
+     "passage": "NCEI receives GHCNd source data from National Meteorological and Hydrological Centers (NMHCs) around the world, through official bi-lateral agreements",
+     "location": "GHCNd product page"
+    },
+    {
+     "source_id": "s117",
+     "relationship": "supports",
+     "passage": "Sustain the Cooperative Observer Program (COOP)",
+     "location": "FY2026 CJ, NWS Observations"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's own page and NOAA's CJ"
+  },
+  {
+   "id": "c10",
+   "text": "NCEI science support contract 1332KP24F0017 (Consolidated Safety Services, 2024-02-04 to 2028-02-03): $20,506,355.52 obligated, $38,102,626.34 base and all options; the record does not name GHCN.",
+   "importance": "supporting",
+   "figure_status": [
+    "obligation",
+    "ceiling"
+   ],
+   "evidence": [
+    {
+     "source_id": "s93",
+     "relationship": "supports",
+     "passage": "\"description\": \"NCEI SCIENCE SUPPORT\", | \"total_obligation\": 20506355.52, … \"base_and_all_options\": 38102626.34, … \"start_date\": \"2024-02-04\", | \"end_date\": \"2028-02-03\", … \"recipient_name\": \"CONSOLIDATED SAFETY SERVICES INCORPORATED\",",
+     "location": "USAspending; description; total_obligation; base_and_all_options; period_of_performance; recipient"
+    }
+   ],
+   "applicability": "Whether any of it supports GHCN-Daily is unknown.",
+   "confidence": "high",
+   "confidence_reason": "federal award record, raw JSON",
+   "sole_source_reason": "the federal award database is the authority for contract obligations"
+  },
+  {
+   "id": "c11",
+   "text": "Historical and companion routes: the 2012 GHCN-Daily reference paper credits partial support from DOE grant DE-AI02-96ER62276 and NOAA's Office of Global Programs; NCEI's GHCN-Hourly work cites an in-kind agreement with Copernicus C3S and Atlas 15/BIL funding.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s119",
+     "relationship": "supports",
+     "passage": "(Grant DE-AI02-96ER62276) and the NOAA/Office of",
+     "location": "Menne et al. 2012, Acknowledgments"
+    },
+    {
+     "source_id": "s97",
+     "relationship": "supports",
+     "passage": "Atlas 15/BIL funding",
+     "location": "Menne 2023 slides"
+    },
+    {
+     "source_id": "s97",
+     "relationship": "supports",
+     "passage": "according to in kind agreement between C3S and",
+     "location": "Menne 2023 slides"
+    }
+   ],
+   "applicability": "GHCN-Hourly items do not apply to GHCN-Daily.",
+   "confidence": "moderate",
+   "confidence_reason": "raw text, but historical or for a sister product"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "FY2022 NCEI amount: 63,500 (FY2023 CJ) vs 66,000 (explanatory statement)",
+   "source_ids": [
+    "s103",
+    "s114"
+   ],
+   "status": "resolved",
+   "explanation": "The FY2023 CJ was written during the FY2022 CR and prints the annualized CR level; 66,000 is the amount in the enacted explanatory statement."
+  },
+  {
+   "claim": "FY2024 NCEI amount: 71,372 (FY2025 CJ) vs 70,000 (FY2026 CJ)",
+   "source_ids": [
+    "s104",
+    "s54"
+   ],
+   "status": "resolved",
+   "explanation": "The FY2025 CJ was written before FY2024 was enacted and repeats the FY2023 level as an annualized CR/estimate; the FY2026 CJ gives 70,000 as FY 2024 Enacted."
+  },
+  {
+   "claim": "FY2024 NCEI positions/FTE: 210/200 (FY2025 CJ) vs 202/184 (FY2026 CJ, FY 2024 Enacted)",
+   "source_ids": [
+    "s104",
+    "s54"
+   ],
+   "status": "resolved",
+   "explanation": "Same timing cause as the dollar figures: the FY2025 CJ repeated the FY2023 level before FY2024 was enacted; the FY2026 CJ's enacted column is used."
+  }
+ ],
+ "coverage_gaps": [
+  "GHCN-Daily's own share of the NCEI line, of COM funding or of CISESS is not published; NCEI keeps it (ask ncdc.ghcnd@noaa.gov or file a FOIA request for NCEI's spend plan).",
+  "No COM award number or amount for GHCN-D found; COM's support reaches NCEI through its Applied Research Center (internal transfer), not listed among COM's external grants.",
+  "Org placement of GHCNd after 2023 not found.",
+  "1332KP24F0001 (Alpha Omega, Data Stewardship) read only through a WebFetch extract of the USAspending record; raw JSON download failed.",
+  "Follow-up queue at the gap pass's end: CPO extreme-heat page (old ArtMID address) read at its current address; FY2024 JES Senate printing replaced by the House copy; CRS status table replaced by CRS R46595; HigherGov pages replaced by USAspending records; Commerce 2014-17 NCEI page and GCOS AOPC 2024 PDF: no route tried in time (in check-by-hand.md).",
+  "Gap pass (2026-11-21, 15 min): closed the FY2024 explanatory statement row (70,000), CR periods FY2020-FY2024 (CRS R46595), and COM support stated through 2021; GAO/OIG: no NCEI funding report found.",
+  "No official NCEI statement names the division/branch that produces GHCN-Daily. Only indirect: Feb 2023 org chart (Dataset Section, Products Section under Climatic Science & Development Br, Climatic Science & Services Division) plus the NWS bio placing Menne (GHCN lead) in the Dataset Section. No post-2023 org chart found; About Us lists renamed divisions. Tried: r1 (2 queries), CSSD query, readme, product page, ISO metadata C00861, DSMR-00227, About Us. Next: a post-2024 NCEI org chart on nesdis.noaa.gov; Commerce 2014-2017 CWC page (403, needs browser). (from sa1)",
+  "No contract or CISESS task found that names routine GHCN-Daily production. 1332KP24F0017 (Consolidated Safety Services, NCEI Science Support) lists satellite CDRs, not GHCN; Alpha Omega DSD and ITSS contracts do not name GHCN; CISESS tasks found are R&D (GHCN-D graph database NC-ITS-01-NCICS-DW; GHCN-H NC-SAS-20-NCICS-SS). USAspending lookup for 1332KP24F0001 (NCEI Data Stewardship BPA call) failed twice. Next: retry that lookup; full government description of 1332KP24F0017; HigherGov forecast 1015207 (NCEI Science and Data Stewardship recompete); CISESS NC annual reports 2020-21, 2021-22, 2023-24. (from sa1)",
+  "No GHCN-Daily funding or acknowledgment statement in the readme, product page, ISO metadata or DSMR-00227 (r5: NOT PRESENT). In-kind partner roles are documented only as data sources (readme source flags; bilateral agreements with NMHCs; C3S in-kind agreement in Menne 2023 slides, which are about GHCNh). No formal agreement numbers found. (from sa1)",
+  "FY2020 enacted and FY2022 enacted NCEI line amounts NOT PRESENT in any CJ read: FY2022 CJ gives FY2020 Actuals (167 Pos/60,963 BA; 152 FTE/62,594 OBL) not FY2020 enacted; FY2023 CJ gives FY2022 Annualized CR (63,500); FY2024 CJ gives FY2022 Actual (191 Pos/69,213 BA; 170 FTE/67,413 OBL). Lead: FY2021 CJ (prints FY2020 Enacted) and the P.L. 117-103 Division B explanatory statement NESDIS ORF table (Congressional Record, March 2022). Also FY2024 enacted JES table not retrieved (FY2026 CJ prints FY 2024 Enacted 202/184/70,000). (from sa3)",
+  "Enactment dates and CR periods for FY2020-FY2023 NOT verified from a saved source (laws named: FY2021 P.L. 116-260 and FY2022 P.L. 117-103 Div B per CRS IF11914; FY2023 P.L. 117-328 per CRS R48157; FY2024 P.L. 118-42 approved March 9, 2024; FY2025 full-year CR P.L. 119-4, March 15, 2025 per CRS IF13024; FY2026 enacted, P.L. 119-74 January 2026 per earlier run B). FY2020 law number NOT PRESENT. CRS appropriations status tables (congress.gov) returned 403. The CJs labeled the prior year Annualized CR when prepared during a CR: FY2023 CJ (FY2022) and FY2025 CJ (FY2024). (from sa3)",
+  "Multi-year money: only FY2024 ORF availability verified (P.L. 118-42: to remain available until September 30, 2025, i.e. two-year). Other years availability clauses not checked. No NCEI-specific no-year money found in the ORF CJ tables; the FY2025 CJ has a second NCEI Exhibit 10 row (0 Pos; 2,683 / 3,775) at text line 33254 in another account (likely PAC or IRA/IIJA), not read. FY2025 enacted positions/FTE NOT PRESENT (no FY2025 column in FY2026 CJ control table; FY2027 CJ gives only FY2025 Actual 126 Pos/76,035; 139 FTE/72,950). (from sa3)",
+  "CORRECTION to first gap: FY2020 Enacted NCEI line WAS found later in the FY2021 CJ (225 POS, 222 FTE, $61,642 thousand). FY2022 enacted remains NOT PRESENT. (from sa3)",
+  "CORRECTION: FY2022 enacted NCEI line WAS found later: 66,000 (thousands) in the March 9, 2022 explanatory statement for P.L. 117-103 (crec_2022-03-09_h1709.txt line 4369). FY2022 enacted positions/FTE remain NOT PRESENT (only FY2022 Actual 191 Pos / 170 FTE in FY2024 CJ). FY2024 JES table for NCEI not retrieved (FY2026 CJ FY 2024 Enacted 70,000 is the only FY2024 enacted figure). (from sa3)",
+  "FY2024 enacted JES NCEI table not read: CRS cites it at March 5, 2024 Congressional Record (vol. 170 no. 39) pp. S1398-S1416; a guessed govinfo URL (CREC-2024-03-05-pt1-PgS1398.htm) redirected to an error page. The only FY2024 enacted NCEI figure in hand is the FY2026 CJ FY 2024 Enacted column (202 POS, 184 FTE, 70,000). (from sa3)",
+  "Govinfo granule CREC-2024-03-05-pt1-PgS1104-2.htm (saved as crec_2024-03-05_s1104_unused.txt) has the Division C heading but no NCEI table row or NESDIS ORF sentence; the FY2024 JES NESDIS table is likely in a later granule (pp. S1398-S1416). Not followed for lack of time. (from sa3)",
+  "GHCN-Daily own share of the NCEI PPA: NOT PRESENT in FY26 or FY27 CJ (no GHCN mention in either; in situ not in NCEI narrative). CISESS task-level amounts for GHCN-D tasks (NC-SON-02-NCICS-BB under NA14NES4320003; NC-ITS-01-NCICS-DW under NA19NES4320002) NOT PRESENT. USAspending award records for NA19NES4320002 and NA24NESX432C0001 give no task breakdown and no funding office below NOAA; base_and_all_options null for both. (from sa2)",
+  "CPO Climate Observations and Monitoring (COM) as a GHCN-D funder: two cpo.noaa.gov pages (403) are described in search summaries as calling GHCN-D COM-funded; award numbers, amounts, years NOT PRESENT. No GAO report or Commerce OIG audit on NCEI funding or GHCN found (r4). RCC contracts: no contract numbers or amounts found this run beyond run A (NOTUS 2025, out of scope). Contract 1332KP26R0028 (WRWRC, est. 1,500,000-6,000,000 USD, 09/17/2026-09/16/2031) does not name GHCN (run A HigherGov copy, not re-fetched). CoCoRaHS current NOAA funding route NOT PRESENT (only 2006 and 2010 Office of Education grants). WMO/NMHS contributions: in-kind acknowledgment only (Menne et al. 2012). (from sa2)",
+  "Coverage list A: all other NESDIS/NOAA rows (OSPO, PDR&A, CRSRA, Office of Space Commerce, USGEO, Total Environmental Satellite Observing Systems) in the FY2021, FY2022, FY2024, FY2025, FY2026, FY2027 CJ tables and the FY2022 explanatory statement (crec lines 4362-4374): not relevant, other lines. NCEI rows in those tables: FY2020/FY2021/FY2022/FY2023/FY2025 FTE/OBL added; FY2024 and FY2026 rows already in the draft. P.L. 118-42 line 5970 and CRS IF13024 March 15, 2025 CR: already in the draft. FY2026 CJ lines 6724/8334 (NWS observing, NCCF milestones): not relevant. CPO hurricane article line 30 ('27, 2017'): not relevant. ISO metadata coordinates, DSMR maturity ratings (4.5, 12), product page '60 days': not relevant to funding. Menne 2012 QC thresholds (75 km, 0.7) and CPASW 2023 slide numbers: not relevant. CICS-NC 2020 final report task NC-SON-02-NCICS-BB (page 82): task code already in draft; Appendix 2 rows at line 5151 are other CICS-NC tasks (outreach, projections), not GHCN: not relevant. CISESS and 1332KP24F0017 JSON fields: added. (from reconciler)",
+  "Coverage list B (dates 2025-01-01, 2025-04-07, 2025-10-01, 2025-03-15, 2025-06-10, 2025-08-20, 2025-10-15): law-text availability dates, GOES East, CRS issue date, USAspending last_modified: not relevant (out-of-scope 2025 or not about GHCN-Daily funding); March 15, 2025 CR already in draft. List W (20): CJ and P.L. 118-42 boilerplate for other NOAA/federal programs (WCOSS, NEXRAD, NMFS, OMAO, flag officer quarters, National Gallery, CBP, DoD): not relevant. List C (10 pairs): all P.L. 118-42 vs FY2025 CJ figures for other programs (NOS, CZM, fisheries, EPA, vaccine, OAR); none is NCEI: not relevant. (from reconciler)",
+  "Unread pages (6), not read by any agent: https://2014-2017.commerce.gov/locations/ncei-center-weather-and-climate-formerly-ncdc.html ; https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf ; https://cpo.noaa.gov/Fellowships-Partners/Fellowships-Partners-News-Events/ArtMID/8899/ArticleID/1806/National-Centers-for-Environmental-Information-and-CPO-lay-groundwork-for-new-extreme-heat-product (same article as s124, alternate URL) ; https://cpo.noaa.gov/how-hurricane-strength-impacts-rainfall-intensity-and-coverage/ (saved as browser copy s125) ; https://www.congress.gov/crs-appropriations-status-table/2022 ; https://www.congress.gov/118/crec/2024/03/05/170/39/CREC-2024-03-05-senate.pdf (FY2024 explanatory statement NCEI row, already a draft gap). (from reconciler)",
+  "q3: Congressional Record printing of FY2024 JES (CREC-2024-03-05, S1398-S1416) not opened; the govinfo per-page HTML file names are unknown (guessed PgS1393.htm = Page Not Found). The docs.house.gov scan (3.3.24) was used instead; NCEI = 70,000 (thousands) on printed p. 22. NCEI Regional Climate Centers floor: NOT PRESENT in the scan. The adopted Senate NCEI language is in S. Rept. 118-62 (not read). (from gp1)",
+  "q3: CRS R46595 is government-wide. Enactment date and P.L. of each FY2020-FY2023 CJS act not quoted (Table 1, lines 620-700 of crs_r46595.txt, not read in full; the later CRs per FY in the appendix after line 1298 not read). (from gp1)",
+  "q2: GAO and Commerce OIG reports on NCEI 2018-2024: none NCEI-focused in 4 searches (2 per domain). Candidates not opened: OIG-24-034-A (NESDIS Common Cloud Framework, Aug 2024), OIG-21-001-A, GAO-16-37. (from gp1)",
+  "q1: USAspending full description text truncated by WebFetch; raw JSON not saved (api.usaspending.gov closed the connection twice for fetch_json.py). (from gp1)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI organization chart Center for Weather and Climate",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; found NCEI Org Chart Feb 2023 PDF (fetched). Center for Weather and Climate name not on chart.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Center for Weather and Climate\" NCEI formerly NCDC Asheville",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; second r1 query; no page uses the name; only a Commerce 2014-2017 archive page (403, unreadable).",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCNd documentation acknowledgment funding NCEI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; also read the product page and readme.txt as the brief asks, plus ISO metadata C00861 and DSMR-00227; no funding or acknowledgment statement in any (NOT PRESENT).",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI support services contract Asheville",
+   "tool": "WebSearch",
+   "notes": "allowed_domains usaspending.gov, highergov.com, govtribe.com, sam.gov; found 1332KP24F0017 (CSS NCEI Science Support), 1332KP20FNEEN0057 (Alpha Omega ITSS), 1332KP26F0037 ITSS bridge.",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI Science and Data Stewardship contract Asheville awarded",
+   "tool": "WebSearch",
+   "notes": "no domain filter; second r6 query; found Alpha Omega $43M DSD press release, HigherGov 1332KP24F0017 and 1332KP24F0001, NCEI Science and Data Stewardship recompete forecast.",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Imke Durre GHCN-Daily NCEI Products Section",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found CoCoRaHS WERA 2024 Durre presentation (fetched) and ISO metadata (fetched).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS NCICS GHCN-Daily task",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncics.org, cisess.umd.edu, ncsu.edu; found CISESS NC 2022-23 report (reused from run A copy).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Climatic Science and Services Division\" NCEI GHCN",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no page links the division to GHCN by name.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Matthew Menne NCEI branch chief GHCN",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NCEI About Us page and Menne CPASW 2023 slides (both fetched); Menne title NOT PRESENT.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS scientists GHCN-Daily NCEI quality control",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cisess.umd.edu, ncics.org; found CISESS AR 2019-20 (fetched; GHCN-H task only).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "api.usaspending.gov/api/v2/awards/ CONT_AWD_1332KP24F0017 and CONT_AWD_1332KP24F0001",
+   "tool": "lookup (USAspending award detail)",
+   "notes": "1332KP24F0017 saved; 1332KP24F0001 failed twice (remote end closed connection).",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI \"GHCNd\" team lead Climate Science and Services Division 2024",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov, weather.gov, wmo.int; found NWS seminar bio naming Menne as GHCN technical and scientific lead in the NCEI Dataset Section (fetched). Earlier, GCOS AOPC 2024 GHCN PDF gave HTTP 404 via WebFetch.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA Congressional Justification FY 2023 NESDIS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; found FY23, FY25, FY26 CJ PDFs",
+   "from": "sa3",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Commerce Justice Science explanatory statement NOAA 2024",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov, appropriations.house.gov, appropriations.senate.gov; found House FY24 explanatory materials (committee version) and CRS R48157 naming P.L. 118-42; FY2024 enacted JES table itself not downloaded",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CRS NOAA appropriations FY2024",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov, crsreports.congress.gov; downloaded CRS R48157",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA FY 2024 Congressional Justification NESDIS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; repeat of r2 by year; found NOAA_FY24_CJ.pdf",
+   "from": "sa3",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA FY 2022 Congressional Justification budget estimates",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; repeat of r2 by year; found NOAA FY22 CJ.pdf",
+   "from": "sa3",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA \"Operations, Research, and Facilities\" \"to remain available until September 30, 2025\"",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov, govinfo.gov; led to fetching P.L. 118-42 text directly",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CRS NOAA FY2025 full-year continuing resolution P.L. 119-4",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov; confirmed via saved CRS IF13024 copy",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"National Centers for Environmental Information\" explanatory statement Division B 2022 Congressional Record NESDIS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov, govinfo.gov; FY2022 JES NCEI table not found; CRS IF11914 names P.L. 117-103 Division B",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.congress.gov/crs-appropriations-status-table/2022",
+   "tool": "lookup (CRS appropriations status table FY2022 via WebFetch)",
+   "notes": "HTTP 403",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA FY 2021 Congressional Justification budget estimates",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; FY21 CJ not directly listed; NOAA budget-and-reports page lists FY21 CJ link",
+   "from": "sa3",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Consolidated Appropriations Act 2022 explanatory statement Division B Commerce Justice Science NOAA table",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov, govinfo.gov, appropriations.house.gov; found Congressional Record H1709 March 9, 2022",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Consolidated Appropriations Act 2023 explanatory statement Division B Commerce Justice Science Congressional Record December 2022",
+   "tool": "WebSearch",
+   "notes": "allowed_domains govinfo.gov, congress.gov; P.L. 117-328 dated Dec. 29, 2022 per search result title; found CREC S7819 Dec 20, 2022",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Congressional Record March 5 2024 explanatory statement Division C Commerce Justice Science NOAA",
+   "tool": "WebSearch",
+   "notes": "allowed_domains govinfo.gov, congress.gov; CRS cites FY2024 JES at March 5, 2024 Congressional Record pp. S1398-S1416",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USAspending award records ASST_NON_NA24NESX432C0001_1330 and ASST_NON_NA19NES4320002_1330",
+   "tool": "lookup (USAspending API /api/v2/awards/)",
+   "notes": "GET both records; saved as usas_*.json; API returned generated_unique_award_id ending _013",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO NCEI data report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; only reports that cite NCEI billion-dollar disasters data (GAO-20-633R, GAO-24-106213, GAO-25-107608, GAO-25-107013); none on NCEI funding or GHCN",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Commerce OIG NCEI audit",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov; no OIG audit of NCEI in results",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Climate Program Office GHCN grant",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no CPO grant naming GHCN found; leads: CPO COM program brochure 2024, CICS-NC 2020 Final Report (GHCN-Daily cloud prototype), CISESS AR 2019-2020, GCOS AOPC 2024 GHCN slides",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS annual report GHCN-Daily task NCEI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cisess.umd.edu, ncics.org; only state climate summaries citing GHCN-Daily data",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Global Historical Climatology Network\" NOAA award grant number funded",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, repository.library.noaa.gov, journals.ametsoc.org; GHCNm v4 record lists NA14NES4320003; Menne et al. 2012 acknowledgments cite DOE BER grant DE-AI02-96ER62276 and NOAA Office of Global Programs (snippet)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS NOAA funding cooperative agreement award",
+   "tool": "WebSearch",
+   "notes": "no domain filter; NOAA Office of Education Environmental Literacy Grants NA06SEC4690004 (585,005 USD, 2006) and NA10SEC0080012 (1,252,392 USD, 10/01/10-09/30/13) per search snippets; nothing current",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS Cooperative Observer Program funding budget \"COOP\" volunteers in-kind",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov, noaa.gov; local NWS pages only: NWS supplies equipment, training, maintenance; volunteers unpaid; no national budget figure; pages not saved",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Climate Observations and Monitoring program GHCN-Daily funded project",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cpo.noaa.gov; CPO pages describe GHCN-D as a COM-funded dataset (extreme heat product page) and GHCN as updated through COM funding (hurricane rainfall page)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Wayback copies of two CPO COM pages",
+   "tool": "fetch_page (web.archive.org)",
+   "notes": "extreme heat page 404, hurricane page 403",
+   "from": "sa2",
+   "copy_of": "https://cpo.noaa.gov/how-hurricane-strength-impacts-rainfall-intensity-and-coverage/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Climate Observations and Monitoring\" GHCN-Daily award NA20OAR",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no award record linking GHCN-Daily to a COM grant; leads: cpo.noaa.gov/?p=11169 (FY20 COM projects), 2020-21 CISESS annual report (ncics.org)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Commerce OIG NCEI audit",
+   "tool": "WebSearch",
+   "notes": "r4 OIG side: 1 query, no NCEI audit found; r4 GAO side: 1 query, none on NCEI funding. Not repeated for lack of time (fewer than 3 queries each).",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NIDIS funded GHCN-Daily station data project award",
+   "tool": "WebSearch",
+   "notes": "allowed_domains drought.gov, cpo.noaa.gov, ncei.noaa.gov; no NIDIS award naming GHCN-Daily; drought.gov lists GHCN as an NCEI product only; CPO COM 1.2M USD precipitation award uses GHCNd data (research use, not GHCN-D production)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO NOAA National Centers for Environmental Information report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; no NCEI-focused GAO report surfaced; nearest GAO-16-37 (climate information), GAO-26-108013 (weather modification database, out of 2018-2024 window), GAO-20-633R/GAO-22-104494 cite NCEI billion-dollar data only",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"National Centers for Environmental Information\" GAO 2023 data",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; no NCEI-focused GAO report; GAO-24-106937 cites NCEI billion-dollar disasters data as a source only. GAO NCEI oversight 2018-2024: NOT PRESENT in results (2 queries)",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OIG NOAA NCEI audit climate data archive",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov; no NCEI-focused OIG report; nearest OIG-16-043-A (2014 cyber attack, NESDIS systems incl. NGDC archive system), OIG-24-034-A (NESDIS Common Cloud Framework, Aug 2024), OIG-21-001-A (not opened)",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"National Centers for Environmental Information\" inspector general report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov; no NCEI-focused OIG report found; Commerce OIG NCEI oversight 2018-2024: NOT PRESENT in results (2 queries). Reports not opened.",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Division C Commerce Justice Science explanatory statement 2024 PDF",
+   "tool": "WebSearch",
+   "notes": "allowed_domains docs.house.gov, appropriations.house.gov; found docs.house.gov FY24 CJS Conference JES scan 3.3.24 (read)",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.govinfo.gov/content/pkg/CREC-2024-03-05/html/CREC-2024-03-05-pt2-PgS1393.htm",
+   "tool": "WebFetch",
+   "notes": "guessed per-page file name: Page Not Found; govinfo app/details/CREC-2024-03-05 listing returned an empty page",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.congress.gov/crs_external_products/R/PDF/R42647/R42647.pdf",
+   "tool": "fetch_page.py",
+   "notes": "HTTP 404",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.congress.gov/crs_external_products/R/PDF/R46595/R46595.pdf",
+   "tool": "fetch_page.py",
+   "notes": "HTTP 404",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_1332KP24F0001_1330_1305M421ANAAA0053_1330/",
+   "tool": "lookup (USAspending award)",
+   "notes": "failed twice: Remote end closed connection without response",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CRS continuing resolutions overview recent practices fiscal year 2024",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov; found versioned path R46595.7.pdf (unversioned R46595.pdf and R42647.pdf gave 404)",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_1332KP24F0001_1330_1305M421ANAAA0053_1330/",
+   "tool": "lookup (USAspending award)",
+   "notes": "WebFetch extraction after fetch_json.py failures; succeeded",
+   "from": "gp1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.govinfo.gov/content/pkg/CREC-2024-03-05/html/CREC-2024-03-05-pt1-PgS1398.htm",
+   "tool": "WebFetch",
+   "notes": "second guessed file name: Page Not Found",
+   "from": "gp1",
+   "copy_of": "Congressional Record 2024-03-05 Senate S1398-S1416 (FY2024 JES Division C)"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NCEI organization chart and division running GHCNd",
+   "query": "NCEI organization chart Center for Weather and Climate",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q3",
+   "aim": "NOAA Congressional Justifications, NESDIS NCEI tables",
+   "query": "NOAA Congressional Justification FY 2023 NESDIS",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA/CISESS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "USAspending records of the CISESS agreements",
+   "query": "USAspending NA24NESX432C0001",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA NCEI",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "GAO or Commerce OIG reports on NCEI",
+   "query": "GAO NCEI data report",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GHCNd documentation acknowledgments",
+   "query": "GHCNd documentation acknowledgment funding NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NCEI",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "NCEI support contracts",
+   "query": "NCEI support services contract Asheville",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA Climate Program Office",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "CPO grants naming GHCN",
+   "query": "NOAA Climate Program Office GHCN grant",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "Congress",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "CJS explanatory statements",
+   "query": "Commerce Justice Science explanatory statement NOAA 2024",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "Congress (CRS)",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "CRS NOAA appropriations reports",
+   "query": "CRS NOAA appropriations FY2024",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 20.7,
+  "shift_min": 7,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 194340,
+  "subagent_minutes_planned": 31,
+  "subagent_minutes": 36.5,
+  "follow_ups": 0,
+  "continuations": 0,
+  "refusals": 0,
+  "research_stop": "tokens",
+  "subagent_stop": true
+ }
+}

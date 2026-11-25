@@ -1,0 +1,2854 @@
+{
+ "question": "Which outside facilities, services and data sources does GHCN-Daily depend on that earlier runs did not check, and are any at risk from January 2025 to November 2026?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed lab closures, staff cuts, station closures abroad, contract lapse) across a set of ~20 upstream services; user set 40 min / 320k",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Calibration and maintenance of upstream networks' instruments",
+   "status": "answered",
+   "source_ids": [
+    "m6",
+    "s36",
+    "s37",
+    "s42",
+    "s43",
+    "s44",
+    "s45",
+    "s39",
+    "s40"
+   ],
+   "remaining_gap": "SFSC staffing; enacted FY2026 status of ARL/ATDD; NIST traceability for ASOS/COOP not documented."
+  },
+  {
+   "id": "q2",
+   "question": "Foreign national services' cuts and closures; ASOS-to-AWOS-C climate sites",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s12",
+    "s13",
+    "s14"
+   ],
+   "remaining_gap": "No AWOS-C site list; SMN stations unnamed; nothing for Algeria."
+  },
+  {
+   "id": "q3",
+   "question": "Supply chain: SSODv2, ECCC, Alberta, RCCs, GHCNh",
+   "status": "answered",
+   "source_ids": [
+    "s19",
+    "s22",
+    "s35",
+    "m1",
+    "m4",
+    "m5",
+    "m7",
+    "s24"
+   ],
+   "remaining_gap": "SSODv2 full-record integration unconfirmed; GHCNh funding unpublished."
+  },
+  {
+   "id": "q4",
+   "question": "Processing location after the AWS move; CISESS prototype",
+   "status": "uncertain",
+   "source_ids": [
+    "s20",
+    "s23",
+    "s26",
+    "s27"
+   ],
+   "remaining_gap": "Processing location and operator unpublished."
+  },
+  {
+   "id": "q5",
+   "question": "Alternative datasets and routes",
+   "status": "answered",
+   "source_ids": [
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s15",
+    "s16"
+   ],
+   "remaining_gap": "OGIMET, DWD CDC, RIHMI-WDC not checked."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.weather.gov/asos/FAQ.html",
+   "fetched_url": null,
+   "title": "ASOS Frequently Asked Questions",
+   "author_org": "NOAA National Weather Service",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_faq.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "The 'complete list' link points to the general ASOS Equipment page, not to a list of AWOS-C transition sites. The FAQ does not say which parameters were used for site selection: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.weather.gov/asos/asosequip.html",
+   "fetched_url": null,
+   "title": "ASOS Equip (ASOS Equipment FAQ)",
+   "author_org": "NOAA National Weather Service",
+   "published": "2025-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asosequip.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "AWOS-C, the transition list and climate sites: NOT PRESENT on the page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx",
+   "fetched_url": null,
+   "title": "ASOS Sites by Equipment As Of 3_18_2025 (spreadsheet)",
+   "author_org": "NOAA National Weather Service",
+   "published": "2025-03-18",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_sites_by_equipment.xlsx.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "A search of the converted text for 'AWOS' and 'climate' found no matches (NOT PRESENT). The only marker is the EQ_OWNER column (FAA or NWS), e.g. 'CR | LMK | FFT | ADCP | 207 | 35321 | FRANKFORT (FAA) | KY | FAA | 1'. Dates are Excel serial numbers.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://bichosdecampo.com/esta-situacion-golpea-de-lleno-a-la-produccion-advierten-los-trabajadores-del-servicio-meteorologico-nacional-ante-una-nueva-oleada-de-despidos-y-la-posibilidad-de-que-cierren-estaciones/",
+   "fetched_url": null,
+   "title": "Advierten los trabajadores del Servicio Meteorológico Nacional ante una nueva oleada de despidos y la posibilidad de que cierren estaciones",
+   "author_org": "Bichos de Campo",
+   "published": "2026-04-08",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Host refused by the sandbox, so no local copy; quotes come from a WebFetch extraction, not raw text. The source is an ATE delegate (Ana Saralegui), not SMN. Other search results (Perfil, Cronista, Ámbito, Apr 2026) report about 140 dismissal telegrams but were not read. Names of closed stations: NOT PRESENT. WMO data exchange: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.bmkg.go.id/berita/utama/rekonstruksi-anggaran-bmkg-pastikan-layanan-informasi-publik-tetap-optimal",
+   "fetched_url": null,
+   "title": "Rekonstruksi Anggaran, BMKG Pastikan Layanan Informasi Publik Tetap Optimal",
+   "author_org": "BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)",
+   "published": "2025-02-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Host refused by the sandbox, so no local copy. Rupiah figures and letter numbers: NOT PRESENT on this page. The search-result summary gave the figures Rp2.82 trillion, cut to Rp1.40 trillion (Komisi V DPR, 6 Feb 2025), then reconstructed to Rp1.781 trillion (S-75/MK.02/2025, 13 Feb 2025), from news pages (Katadata, Jakarta Post) that were not read. Station closures and staff cuts: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://wmo.int/media/news-from-members/cma-releases-2025-catalog-of-popular-meteorological-data-open-sharing",
+   "fetched_url": null,
+   "title": "CMA releases the 2025 Catalog of Popular Meteorological Data for Open Sharing",
+   "author_org": "WMO (news from Members: CMA)",
+   "published": "2025-02-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wmo_cma_2025_catalog.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Restrictions on data export or foreign access: NOT PRESENT. The search summary also cited 2025-2026 reports of tighter CMA rules on outbound transfer (MLex, Global Times May 2026, the 'Measures for the Administration of Foreign-related Meteorological Observation and Data'); MLex returned 403 and the others were not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://www.metoffice.gov.uk/hadobs/hadisd/",
+   "fetched_url": null,
+   "title": "HadISD (Met Office Hadley Centre observations datasets)",
+   "author_org": "Met Office Hadley Centre",
+   "published": "2025-10-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "metoffice.gov.uk is refused by the sandbox, so no local copy. Other figures from the extraction: 'These 10405 stations were passed through a suite of automated quality control tests'; free download 'under the Non-Commercial Government Licence'. GHCNh as successor: NOT PRESENT on this page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://hadisd.blogspot.com/2025/09/hadisd-v342202508p-potentially-final.html",
+   "fetched_url": null,
+   "title": "HadISD v342_202508p - potentially the final release",
+   "author_org": "Robert Dunn (HadISD blog, Met Office)",
+   "published": "2025-09-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": "work/raw/sa2/hadisd_blog_2025-09_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "This file is an earlier run's WebFetch extraction, copied here.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ecad.eu/",
+   "fetched_url": null,
+   "title": "European Climate Assessment & Dataset (ECA&D) home page",
+   "author_org": "KNMI / ECA&D",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "No local copy (ecad.eu read via WebFetch). Coverage is Europe and the Mediterranean, per an earlier search snippet; region: NOT PRESENT in the extraction. Recent news: 'October 2026: E-OBSv34.0e has been released.'; 'June 2026: A new API endpoint is now available for accessing ECA&D non-blended station observations'.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://cds.climate.copernicus.eu/datasets/insitu-observations-surface-land",
+   "fetched_url": null,
+   "title": "Global land surface atmospheric variables from 1718 to present from comprehensive in-situ observations",
+   "author_org": "Copernicus Climate Change Service (C3S) / ECMWF",
+   "published": "2026-11-02",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/c3s_insitu_land.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Further lines: 'Temporal coverage | 1718 to present, start date and period of record is station dependent'; 'Update frequency | Yearly'; 'Versions | 3.0.0: Latest version, based on release 8.1'; 'CC-BY licenceGlobal land observations data policy'. Its source mix and any dependence on GHCN-D/ISD: NOT PRESENT in the lines checked. The search summary said recent WIS data come at '1-2 days' latency, but that is not confirmed in this file.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://registry.opendata.aws/wis2-global-cache/",
+   "fetched_url": null,
+   "title": "WIS2 Global Cache on AWS (Registry of Open Data on AWS)",
+   "author_org": "Met Office and NOAA on behalf of WMO",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "No local copy (aws host refused). Long-term archiving: NOT PRESENT. SYNOP named on this page: NOT PRESENT. A search summary cited a WMO December 2025 newsletter (wmo.int/node/38768) saying 'GTS-to-WIS2 and WIS2-to-GTS gateways have been operational since March 2025'; that page was not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://wmo.int/media/news/wis2-operational-newsletter-no3",
+   "fetched_url": null,
+   "title": "WIS2 Operational Newsletter (No.3)",
+   "author_org": "WMO",
+   "published": "2026-07-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wis2_newsletter3.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Line 32: 'As of 30 June 2026, there are 116 operational WIS2 nodes, representing 92 WMO Members, indicating that 48% of WMO Members have now implemented WIS2 for data sharing.' Line 129 lists a new topic, 'climate/surface-based-observations/daily'. The newsletter does not name China, Indonesia, Argentina or Algeria (search: NOT PRESENT); whether their nodes became operational before 2026 is not in this file.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: WMO WIS2 (alternative exchange route)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.globaltimes.cn/page/202605/1362135.shtml",
+   "fetched_url": null,
+   "title": "China national security authorities warn improper use of weather devices risks sensitive data leaks",
+   "author_org": "Global Times (reporting Ministry of State Security WeChat post)",
+   "published": "2026-05-28",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "No local copy. The article is about private or foreign-related devices and stations; WMO, GTS or WIS international exchange: NOT PRESENT. Station count: NOT PRESENT. It does not say the measures cut CMA's official WMO exchange.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://berkeleyearth.org/october-2025-temperature-update/",
+   "fetched_url": null,
+   "title": "October 2025 Temperature Update",
+   "author_org": "Berkeley Earth",
+   "published": "2025-11",
+   "data_period": null,
+   "source_type": "research",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/berkeley_oct2025.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "This is about GHCN-M, not GHCN-D station by station. Russia, Indonesia, Argentina and Algeria are not named in this passage (only China). It is Berkeley Earth's statement, not the national services'.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: Berkeley Earth station count (GHCN-M based)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://berkeleyearth.org/data/",
+   "fetched_url": null,
+   "title": "Data Overview - Berkeley Earth",
+   "author_org": "Berkeley Earth",
+   "published": null,
+   "data_period": null,
+   "source_type": "research",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/berkeley_data.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Line 118: This data set is an experimental temperature time series with daily resolution. A station-level daily dataset as a GHCN-D replacement: NOT PRESENT (station files are monthly). Variables are temperature only; precipitation: NOT PRESENT. Last update date: NOT PRESENT in the lines checked.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://wmo.int/media/news/wis2-operational-newsletter-no2",
+   "fetched_url": null,
+   "title": "WIS2 Operational Newsletter (No.2)",
+   "author_org": "WMO",
+   "published": "2025-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wis2_newsletter2.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Line 58: - GTS-to-WIS2 Gateway: Publishes all data on the GTS onto WIS2. The publication date (Dec 2025) comes from a search summary; it was not checked in the file. Whether NOAA/NCEI ingests WIS2 for GHCN-D: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://www.weather.gov/asos/CurrentEvents.html",
+   "fetched_url": null,
+   "title": "ASOS Current Events",
+   "author_org": "NOAA National Weather Service",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_currentevents.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "AWOS-C, the 206/207 transition and a list of climate sites: NOT PRESENT. The fetch reused the sa1 copy (cached). The FAA ASWON page (faa.gov, updated 16 Sep 2025 per a search summary) says the goal is to replace 206 ASOS units with AWOS-C; it was not read this run and gives no list in the snippet.",
+   "found_by": [
+    "sa2",
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://www.faa.gov/air_traffic/weather/aswon",
+   "fetched_url": null,
+   "title": "Aviation Surface Weather Observation Network (ASWON)",
+   "author_org": "FAA",
+   "published": "2025-09-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/faa_aswon.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Copied from the 2026-11-18_noaa-rain-gauge-threats run; a live WebFetch on 2026-11-23 returned 403. Site list and climate sites: NOT PRESENT (searches for list and climate found no matches). The last-updated date 16 Sep 2025 comes from a search summary.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/status.txt",
+   "fetched_url": null,
+   "title": "Status of the Global Historical Climatology Network-daily",
+   "author_org": "NOAA NCEI",
+   "published": "2026-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ghcnd-status.txt.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "No status entry confirms the promised full-period integration happened; v3.34 and v3.35 entries do not mention SSOD.",
+   "found_by": [
+    "sa3",
+    "checker",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-version.txt",
+   "fetched_url": null,
+   "title": "ghcnd-version.txt",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ghcnd-version.txt.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Update stamp 2026111517 is about 8 days before retrieval.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://www.nesdis.noaa.gov/news/noaa-awards-six-ncei-regional-climate-centers-services-contract-awards",
+   "fetched_url": null,
+   "title": "NOAA Awards Six NCEI Regional Climate Centers Services Contract Awards",
+   "author_org": "NOAA NESDIS",
+   "published": "2021-04-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_rcc_awards.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2021 page; says nothing about awards after 2026-10-16 (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/thread/RLV2GKL3NV7GFSIYHOO5W4YL4WIJ6T2R/",
+   "fetched_url": null,
+   "title": "[ATTENTION] Changes in the Government of Alberta climate data (dd_info mailing list)",
+   "author_org": "ECCC Meteorological Service of Canada (sender Sandrine Edouard, ECCC)",
+   "published": "2026-08-31",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Count is 180, not 174 as in the query; stations are Alberta-government-operated (ACIS), not ECCC-operated. Read via WebFetch only (host comm.collab.science.gc.ca not .org, not downloaded); quotes are WebFetch excerpts. Reason quoted: we have decided to keep one single authoritative public access point of the data for Canadians. Whether these station IDs are in ghcnd-stations.txt NOT CHECKED (attachment not downloadable without approval for a non-.org host).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_alerts.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Does not say where GHCN-D processing runs or who operates it (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network hourly (GHCNh)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_ghcnh_product.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "No funding, staffing or contract information; no date on the page itself. Second key passage: This dataset is compiled from numerous data sources maintained by NOAA, the U.S. Air Force, and many other meteorological agencies (Met Services) around the world.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: GHCNh (sister dataset)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ncei.noaa.gov/node/5961",
+   "fetched_url": null,
+   "title": "ISD/GHCNh Transition",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_isd_ghcnh_transition.html.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Short page, no dates, no funding.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://repository.library.noaa.gov/view/noaa/59059/noaa_59059_DS1.pdf",
+   "fetched_url": null,
+   "title": "Willett et al., NOAA Open Data Dissemination (NODD), Sci. Adv. 9, eadh0032",
+   "author_org": "NOAA / CISESS (Science Advances)",
+   "published": "2023-09-20",
+   "data_period": null,
+   "source_type": "peer_reviewed",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_59059_nodd.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2023; about dissemination, not where GHCN-D is produced. CISESS GHCN-D processing prototype in production: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://cisess.umd.edu/",
+   "fetched_url": null,
+   "title": "CISESS Annual Report 2020-21 (NC State/NCICS tasks)",
+   "author_org": "CISESS NC State / NCICS",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/reused/cisess_ar_2020-21.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "URL is the institute site, not the report file URL (see the earlier run for the original). GHCNm not GHCN-D. The 2022-23 CISESS NC annual report mentions only a student Neo4j cloud-native graph database for GHCNd (line 5356), not a production pipeline.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+   "fetched_url": null,
+   "title": "GHCN-Daily readme.txt",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ghcnd-readme.txt.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Does not say what period SSODv2 covers in GHCN-D (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/RSM00027612.dly",
+   "fetched_url": null,
+   "title": "GHCN-D station file RSM00027612 (Moscow)",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-23",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/RSM00027612.dly.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "One station only; script output (counts) is from work/raw/sa3/sflag_by_period.py, not in the data file itself. Absence of flag 2 here does not show whether SSODv2 POR integration happened network-wide. Possibly relevant to q2 (Russia): this GHCN-D Moscow record has no data after 2019.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://catalog.data.gov/dataset/synoptic-summary-of-the-day-ssod-version-2",
+   "fetched_url": null,
+   "title": "Synoptic Summary of the Day (SSOD), Version 2 (data.gov catalog)",
+   "author_org": "NOAA NCEI via data.gov",
+   "published": "2026-03-25",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch, not saved. Says nothing about how much of SSODv2 is in GHCN-D (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/AG000060390.dly",
+   "fetched_url": null,
+   "title": "GHCN-D station file AG000060390 (Algiers)",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-23",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/AG000060390.dly.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "One station; counts come from the script, not the file. Absence of flag 2 for both stations checked (Moscow, Algiers) is consistent with SSODv2 not populating these stations, but is not a network-wide test. Relevant also to q2 (Algeria ONM).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/thread/EWF6QDXGN7DJF6KGOZUO67D7BZD5CB5P/",
+   "fetched_url": null,
+   "title": "[ATTENTION] Changes to come in the SWOB GovAB data (dd_info mailing list)",
+   "author_org": "ECCC MSC Open Data Access (Sandrine Edouard)",
+   "published": "2024-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch only (non-.org host); real-time SWOB, not daily climate archive; neither this nor the 2026-08-31 notice gives a 174 count.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.highergov.com/contract-forecast/ncei-regional-climate-centers-1087594",
+   "fetched_url": null,
+   "title": "NCEI Regional Climate Centers (contract forecast)",
+   "author_org": "HigherGov (republishing NOAA procurement forecast)",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch after the curl fetch was refused (this supersedes the unreadable entry for the same URL). Forecast dates (Q4 2025) predate the actual solicitations of 2026-05-27 reported by the coordinator.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://sercc.com/",
+   "fetched_url": null,
+   "title": "Southeast Regional Climate Center home page",
+   "author_org": "SERCC (UNC Chapel Hill)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Undated; cannot tell whether it refers to the April 2025 restoration or a renewal after 2026-10-16. Read via WebFetch only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/RLV2GKL3NV7GFSIYHOO5W4YL4WIJ6T2R/attachment/6/ABgov_Station-Inventory.xlsx",
+   "fetched_url": null,
+   "title": "ABgov_Station-Inventory.xlsx (attachment to ECCC notice of 2026-08-31)",
+   "author_org": "ECCC Meteorological Service of Canada",
+   "published": "2026-08-31",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ab_xlsx/ABgov_Station-Inventory_compare.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "xlsx got via WebFetch binary save (tool-results), copied to work/raw/sa3/ab_xlsx/; counts and matches are script output (work/raw/sa3/ab_compare.py), not text in the spreadsheet. Notice text says 180 stations; the list has 174 rows. Matching is by 7-char climate ID only; DLY_LAST_DATE values are Excel serial dates (e.g. 45481), not converted.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://www.weather.gov/media/soic/NWS%20Pressure%20Standards%20Laboratory.pdf",
+   "fetched_url": null,
+   "title": "NWS Pressure Standards Laboratory Overview",
+   "author_org": "NOAA NWS Sterling Field Support Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nws_pressure_lab.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Undated. Who calibrates the primary standard (e.g. NIST) is NOT PRESENT; the page says only that certificates detail traceability. Staffing, budget or 2025-2026 changes NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.weather.gov/soic/",
+   "fetched_url": null,
+   "title": "Sterling Field Support Center",
+   "author_org": "NOAA National Weather Service",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sfsc_home.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "No staffing, budget, closure or 2025-2026 notice on the page: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://www.weather.gov/soic/TemperatureLab",
+   "fetched_url": null,
+   "title": "Sterling Field Support Center Temperature Laboratory",
+   "author_org": "NOAA NWS Sterling Field Support Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sfsc_temperature_lab.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Traceability source of the SPRTs (NIST or other) NOT PRESENT; staffing/2025-2026 changes NOT PRESENT; undated.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://www.nist.gov/document/measurement-services-update",
+   "fetched_url": null,
+   "title": "Measurement Services Update (NIST PML presentation)",
+   "author_org": "NIST Physical Measurement Laboratory",
+   "published": "2025-06-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nist_measurement_services_update.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Presentation slides (file dated 2025/06/11 in URL); pre-dates or omits any 2025-2026 RIF effects on calibration staff: NOT PRESENT. No mention of NWS/NOAA as customers: NOT PRESENT. Bullet lines are interleaved with a side column in the text layout.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://extranet.wmo.int/edistrib_exped/grp_prs/_en/6742243-2026-ESDP-MINT_en.pdf",
+   "fetched_url": null,
+   "title": "Development of a Unified Concept for Regional Instrument Centres (WMO letter 6742243/2026/ESDP/MINT)",
+   "author_org": "World Meteorological Organization, INFCOM SC-MINT",
+   "published": "2026-05-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wmo_2026_esdp_instrument_centres.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "No mention of RIC closures caused by funding loss or of US arrears: NOT PRESENT. RIC Botswana listed as not active; several RICs not reporting.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://www.padilla.senate.gov/wp-content/uploads/12.22.25-Letter-to-USDA-DOC-on-Diminished-Water_Weather-Forecasting-and-Snowpack-Survey-Capacity.pdf",
+   "fetched_url": null,
+   "title": "Letter to USDA and DOC on Diminished Water/Weather Forecasting and Snowpack Survey Capacity",
+   "author_org": "US Senators Alex Padilla and Adam B. Schiff",
+   "published": "2025-12-22",
+   "data_period": null,
+   "source_type": "advocacy",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/padilla_snotel_letter_2025-12-22.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Political letter; concerns manual snow surveys in California, not SNOTEL sensor calibration specifically. SNOTEL station counts NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://www.weather.gov/media/directives/030_pdfs/pd03021011curr.pdf",
+   "fetched_url": null,
+   "title": "NWSI 30-2111 (ASOS maintenance), January 1, 2025",
+   "author_org": "NOAA National Weather Service",
+   "published": "2025-01-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nwsi_30_2111.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "URL is the earlier run record of this directive copy; staffing levels NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://www.weather.gov/media/directives/010_pdfs/pd01013007curr.pdf",
+   "fetched_url": null,
+   "title": "NWSI 10-1307 Cooperative Program Management and Operations, February 10, 2025",
+   "author_org": "NOAA National Weather Service",
+   "published": "2025-02-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nwsi_10-1307_2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "URL as recorded in earlier run (verify); no staffing counts or 2025 changes to inspection frequency: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://www.ncei.noaa.gov/access/crn/",
+   "fetched_url": null,
+   "title": "NCEI U.S. Climate Reference Network product page (Quality Control section)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_uscrn_product.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "URL as best known (exact URL not recorded in the copied file); undated.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://www.noaa.gov/organization/budget-finance-performance/budget-and-reports",
+   "fetched_url": null,
+   "title": "NOAA FY 2027 Congressional Justification (OAR, Climate Laboratories and Cooperative Institutes)",
+   "author_org": "NOAA",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "URL is the NOAA budget page, not the exact PDF (not recorded in the copied file). A request, not enacted; who would maintain USCRN stations after ARL closure: NOT PRESENT. USCRN by name NOT PRESENT in the CJ.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s46",
+   "url": "https://media.cocorahs.org/docs/Why%20CoCoRaHS%20requires%20manual%20measurements.pdf",
+   "fetched_url": null,
+   "title": "Why CoCoRaHS requires manual measurements",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_manual_measurements.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Formal gauge specification, certifying body and current manufacturer/supplier: NOT PRESENT. No 2025-2026 changes.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://www.thestar.com.my/news/world/2025/10/24/un-weather-agency-reviews-priorities-as-funding-falls-short",
+   "fetched_url": null,
+   "title": "UN weather agency reviews priorities as funding falls short (Reuters, Emma Farge)",
+   "author_org": "Reuters (via The Star)",
+   "published": "2025-10-24",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read with WebFetch extraction (host refused for raw fetch); not saved locally. Effects on instrument/intercomparison programmes NOT PRESENT. Whether arrears were later paid NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s48",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/research/Goodge.pdf",
+   "fetched_url": null,
+   "title": "Quality Control of Data from the US Climate Reference Network (Goodge et al., conference paper 5.6)",
+   "author_org": "NOAA National Climatic Data Center (STG Corporation)",
+   "published": null,
+   "data_period": null,
+   "source_type": "peer_reviewed",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/uscrn_goodge_temperature.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Undated early-2000s conference paper (text has OCR-style spacing). Current traceability chain and whether NIST still calibrates USCRN PRTs: NOT PRESENT. Precipitation (Geonor) traceability NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://www.ncei.noaa.gov/access/crn/",
+   "fetched_url": null,
+   "title": "NCEI: What is a USCRN station",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_what_is_uscrn_station.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Exact page URL not recorded in copied file; who performs visits (ATDD) is in the companion NCEI product page. 2025-2026 visit status NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://www.nrcs.usda.gov/state-offices/nevada/news/nevada-snow-survey-whats-new-for-2026",
+   "fetched_url": null,
+   "title": "Nevada Snow Survey - What is New for 2026?",
+   "author_org": "USDA NRCS Nevada",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nrcs_nevada_snow_survey_2026.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "One state office only; staffing numbers and calibration reference standards NOT PRESENT. relationship contradicts = shows maintenance continued in 2025 in this state, against claims of maintenance loss.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://www.cbsnews.com/chicago/news/national-weather-service-staffing-shortages-making-forecasts-worse",
+   "fetched_url": null,
+   "title": "National Weather Service staffing shortages making forecasts worse",
+   "author_org": "CBS Chicago (David Yeomans, Carol Thompson)",
+   "published": "2025-05-12",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch extraction; not saved locally. Figure is attributed to a former administrator, not an official NWS count. ASOS NOT PRESENT; radar repair mentioned.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://www.npr.org/2025/06/03/nx-s1-5422198/nws-national-weather-service-hires-again-trump-cuts",
+   "fetched_url": null,
+   "title": "Stabilizing operations, the National Weather Service hires again after Trump cuts",
+   "author_org": "NPR",
+   "published": "2025-06-03",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/npr_nws_hires_2025-06-03.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Number of ET positions within the 126 NOT PRESENT; whether hires were completed NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://www.kgou.org/weather-and-climate/2026-01-27/federal-funding-law-includes-money-for-oklahoma-weather-climate-institutions",
+   "fetched_url": null,
+   "title": "Federal funding law includes money for Oklahoma weather, climate institutions",
+   "author_org": "KGOU / StateImpact Oklahoma (Chloe Bennett-Steele)",
+   "published": "2026-01-27",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch extraction (host refused for raw fetch), no local file. ARL/ATDD status NOT PRESENT; enacted bill text not checked.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://www.eenews.net/articles/house-panel-protects-noaa-labs-research-from-trump-cuts/",
+   "fetched_url": null,
+   "title": "House panel protects NOAA labs, research from Trump cuts",
+   "author_org": "E&E News (Daniel Cusick)",
+   "published": "2025-09-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "webfetch_extraction",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Committee stage, not enacted text; read via WebFetch extraction, no local file. ARL, Oak Ridge, ATDD, USCRN NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s55",
+   "url": "https://www.cronista.com/economia-politica/paro-en-el-servicio-meteorologico-por-despidos-y-denuncias-de-vaciamiento",
+   "fetched_url": null,
+   "title": "Paro en el Servicio Meteorologico por despidos y denuncias de vaciamiento",
+   "author_org": null,
+   "published": null,
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "WebFetch (extraction-only prompt)",
+   "local_file": null,
+   "retrieved": null,
+   "limitations": null,
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://www.devdiscourse.com/article/international/3989889-us-pledges-tens-of-millions-to-un-bodies-in-geneva-sources-say",
+   "fetched_url": null,
+   "title": "US pledges tens of millions to UN bodies in Geneva, sources say",
+   "author_org": null,
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "WebFetch (extraction-only prompt)",
+   "local_file": null,
+   "retrieved": null,
+   "limitations": null,
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-01-08/html/CREC-2026-01-08-pt1-PgH151.htm",
+   "fetched_url": null,
+   "title": "Congressional Record, Volume 172 Issue 5 (Thursday, January 8, 2026), House pt1 PgH151 (H.R. 6938 bill text)",
+   "author_org": null,
+   "published": null,
+   "data_period": null,
+   "source_type": "primary",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_page.py + html_to_text.py, searched with find_text.py",
+   "local_file": "work/raw/checker/crec_2026-01-08_H151.txt",
+   "retrieved": "2026-11-23",
+   "limitations": null,
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-01-08/html/CREC-2026-01-08-pt3-PgH255.htm",
+   "fetched_url": null,
+   "title": "Congressional Record, Volume 172 Issue 5 (Thursday, January 8, 2026), House pt3 PgH255: Joint Explanatory Statement for H.R. 6938 (CJS, E&W, Interior)",
+   "author_org": null,
+   "published": null,
+   "data_period": null,
+   "source_type": "primary",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_page.py + html_to_text.py, find_text.py and Read lines 684-729",
+   "local_file": "work/raw/checker/crec_2026-01-08_H255.txt",
+   "retrieved": "2026-11-23",
+   "limitations": null,
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://wmo.int/sites/default/files/2026-08/WMO%20Secretariat%20Reorganization%20%282026%29.pdf",
+   "fetched_url": null,
+   "title": "WMO Secretariat Reorganization (2026)",
+   "author_org": null,
+   "published": null,
+   "data_period": null,
+   "source_type": "primary",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_page.py + pdftotext; Read lines 60-104",
+   "local_file": "work/raw/checker/wmo_secretariat_reorg_2026.txt",
+   "retrieved": "2026-11-23",
+   "limitations": null,
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://community.wmo.int/node/36165",
+   "fetched_url": null,
+   "title": "Regional Instrument Centres (WMO Community page)",
+   "author_org": null,
+   "published": null,
+   "data_period": null,
+   "source_type": "primary",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "WebFetch (extraction-only prompt)",
+   "local_file": null,
+   "retrieved": null,
+   "limitations": null,
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "m1",
+   "url": "https://sam.gov/opp/247583e5d50d4edba32b36f7e860ea8f/view",
+   "title": "SAM.gov: NCEI Regional Climate Centers (RCCs), Sources Sought SSN-NCEI-RCC-2025",
+   "author_org": "NOAA (NESDIS acquisitions)",
+   "published": "2025-09-10",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/sam-gov-opp-247583e5d50d4edba32b36f7e860ea8f-view_120524.txt",
+   "fetched_url": null,
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m2",
+   "url": "https://sam.gov/opp/373385828b37436ba1c94f8d0f6dbe11/view",
+   "title": "SAM.gov: NCEI Western Regional Weather Records Center (WRWRC), solicitation 1332KP26R0028 (updated)",
+   "author_org": "NOAA (NESDIS acquisitions)",
+   "published": "2026-05-27 (updated 2026-06-22)",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/sam-gov-opp-373385828b37436ba1c94f8d0f6dbe11-view_120558.txt",
+   "fetched_url": null,
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m3",
+   "url": "https://sam.gov/search/?index=opp&sfm%5BsimpleSearch%5D%5BkeywordTags%5D%5B0%5D%5Bvalue%5D=Regional%20Weather%20Records%20Center",
+   "title": "SAM.gov search: Regional Weather Records Center solicitations 1332KP26R0023-0028",
+   "author_org": "SAM.gov (GSA)",
+   "published": "read 2026-11-23",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/sam-gov-search-index-opp-page-1-pageSize-25-sort-modifiedDat_120611.txt",
+   "fetched_url": null,
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m4",
+   "url": "https://www.usaspending.gov/keyword_search/Regional%20Weather%20Records%20Center",
+   "title": "USAspending keyword search: Regional Weather Records Center (six NOAA IDIQs, Sept 2026)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "read 2026-11-23",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/usaspending-gov-keyword-search-Regional-20Weather-20Records-_122031.txt",
+   "fetched_url": null,
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m5",
+   "url": "https://www.usaspending.gov/award/CONT_IDV_1332KP26D0008_1330",
+   "title": "USAspending award record 1332KP26D0008 (Southern Regional Weather Records Center, Texas A&M Transportation Institute)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "2026-09-16",
+   "source_type": "official",
+   "local_file": "work/raw/main/usaspending_1332KP26D0008.json",
+   "fetched_url": "https://api.usaspending.gov/api/v2/awards/CONT_IDV_1332KP26D0008_1330/",
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m6",
+   "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/uscrn-at-arl/",
+   "title": "US Climate Reference Network at NOAA's Air Resources Laboratory",
+   "author_org": "NOAA ARL",
+   "published": "undated (ARL 75th anniversary story), read 2026-11-23",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/arl-noaa-gov-news-pubs-arl-news-stories-uscrn-at-arl_121758.txt",
+   "fetched_url": null,
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m7",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+   "title": "Coordinator count: ECCC's 174 Government of Alberta stations in the live GHCN-D inventory (2026-11-23)",
+   "author_org": "NOAA NCEI (data); count by this run",
+   "published": "2026-11-23",
+   "source_type": "dataset (computed)",
+   "local_file": "work/raw/main/ab_last_year_2026-11-23.txt",
+   "limitations": "Counted with work/code/ab_last_year.py from ECCC's station list (sa3) and the live ghcnd-inventory.txt; matches on climate ID only.",
+   "fetched_url": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m8",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+   "title": "GHCN-D station list ghcnd-stations.txt (live copy 2026-11-23)",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-23",
+   "source_type": "dataset",
+   "local_file": "work/raw/main/ghcnd-stations_2026-11-23.txt",
+   "fetched_url": null,
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  },
+  {
+   "id": "m9",
+   "url": "https://web.archive.org/web/20251206192457/https://oakridgetoday.com/tag/atdd/",
+   "title": "Oak Ridge Today, ATDD tag page (Wayback 2025-12-06; stories of 2017)",
+   "author_org": "Oak Ridge Today",
+   "published": "2017-07-12 and 2017-07-31 stories",
+   "source_type": "news",
+   "local_file": "work/raw/main/browser/web-archive-org-web-20251206192457-https-oakridgetoday-com-t_122019.txt",
+   "fetched_url": null,
+   "limitations": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-23",
+   "data_period": null,
+   "evidence_id": null
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "USCRN's instruments are calibrated and maintained by NOAA ARL's Atmospheric Turbulence and Diffusion Division (ATDD, Oak Ridge): a team of eight technicians and engineers makes an annual visit to each of the 141 stations, swaps one of the three platinum resistance thermometers and calibrates the rain gauges; the thermometers are traceable to NIST. [DIRS-1 supports]",
+   "evidence": [
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "ATDD has a small team of eight technicians and engineers responsible for annual maintenance visits to each station.",
+     "location": null
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "NCEI manages and maintains USCRN station observations, and NOAA’s Atmospheric Turbulence and Diffusion Division (ATDD) maintains instrumentation and field sites in a long term partnership with NCEI.",
+     "location": "Quality Control section"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "When each site is deployed, all of the sensors are calibrated and put on a maintenance plan that includes routine replacement of aging sensors and annual maintenance visits.",
+     "location": "para. near line 13"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "therm om eters (PRT) which have demonstrated | excellent performance over the last 12 m onths and | are tra cea ble to National Institute of Standards and | Technology calibration.",
+     "location": "Section 3 Ambient Temperature, p. 1 (left column); ATDD in section 2"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "ARL's and NCEI's own pages agree; the NIST traceability statement is from an early USCRN QC paper.",
+   "applicability": "USCRN only"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "NOAA's FY2027 request (as in FY2026) proposes terminating the Climate Laboratories, which include ARL and its Oak Ridge division; a House panel directed NOAA to avoid lab closures, and the enacted FY2026 law gave NOAA about $6.1 billion with research cuts largely rejected. The enacted Joint Explanatory Statement funds OAR at $588,881,000 but never names ARL, ATDD or USCRN, so ATDD's FY2026 outcome is not stated anywhere found. ARL closure was also proposed for FY2018 and rejected by the Senate committee. [DIRS-1, DIRS-2: emerging]",
+   "evidence": [
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "Terminate Climate Laboratories and Cooperative Institutes (-$104,964, -180 FTE/ -211 Positions) – NOAA will continue to | support high priority research programs in other Line Offices. … NOAA will close the Atlantic Oceanographic & Meteorological Laboratory | (AOML) in Miami, FL; the Air Resources Laboratory (ARL) in College Park, MD, Idaho Falls, ID, and Oak Ridge, TN, as well as a | nation-wide network of soil moisture sensors",
+     "location": "OAR section, lines about 15618-15624 of text (FY27 CJ); same wording in FY26 CJ"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "directs NOAA to maintain these capabilities and to avoid closures, consolidations or eliminations.",
+     "location": "Article body"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "allocating about $6.1 billion to the agency",
+     "location": "Article body"
+    },
+    {
+     "source_id": "s58",
+     "relationship": "supports",
+     "passage": "$588,881,000 is for OAR Operations, Research, and Facilities.",
+     "location": null
+    },
+    {
+     "source_id": "m9",
+     "relationship": "supports",
+     "passage": "The U.S. Senate Appropriations Committee has rejected a Trump administration proposal to close a National Oceanic and Atmospheric Administration laboratory that has a division in Oak Ridge.",
+     "location": "story of 2017-07-31"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "The request is NOAA's own; the enacted outcome rests on news (KGOU, E&E) that does not name ARL.",
+   "applicability": null,
+   "figure_status": [
+    "request",
+    "enacted"
+   ]
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "ASOS sensors are calibrated and tested at NWS's Sterling Field Support Center (230-acre site; its Pressure Standards Laboratory calibrates about 500 barometers a year for ASOS and upper air) and serviced by NWS electronics technicians on quarterly preventive maintenance. No SFSC cut or closure was found; but NWS regrouped offices into maintenance 'pods' in March 2025 to mitigate critical staffing shortages, and electronics technicians were reported down at least 16%. [DIRS-1: no current threat to SFSC found; DIRS-2: imminent for field maintenance staff]",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "The Sterling Field Support Center is a one of a kind, 230 acre complex dedicated to the calibration, test, evaluation and support of meteorological systems and sensors.",
+     "location": "Home page"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "The PSL primary customers are the NWS Automated Surface Observing System (ASOS) Program and Upper Air Observing Program. There are approximately 500 | barometers calibrated annually by the PSL. The PSL monitors the calibration cycle of these barometers | located at NWS Regional field sites and exchanges them with newly calibrated barometers prior to the | unit’s calibration expiration. … The Fluke piston gauge model PG7601-AMH is used as the primary standard for these calibrations.",
+     "location": "p. 1"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "The ASOS requires quarterly preventive maintenance (PM). ETs conduct PM during repair visits | whenever appropriate. ASOS sensors require minimal calibration.",
+     "location": "NWSI 30-2111, p. near line 319 of text"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "In an effort to mitigate critical staffing shortages and enhance the maintenance of Automated Surface Observing Systems (ASOS), these pods are responsible for assisting one another with necessary repairs, maintenance tasks, and other operational requirements. … in response to critical staffing constraints and the urgent need to maintain ASOS systems, we kindly ask for your flexibility in supporting the escorting of unbadged NWS technicians when local WFO personnel are unavailable. … The ASOS program will deploy replacement Temperature and Dew Point sensors at all ASOS sites throughout 2025 with Vaisala HMP 155E probes. … The DTS-1 is unsupported since 31 August 2020, and the HO-83/1088 is costly to maintain with reliability issues.",
+     "location": "Sections: Airport Managers and Security Access Controllers Equipped with ASOS (March 20, 2025); Air and Dew Point Temperature Sensor Replacement National Deployment"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "Dr. Spinrad expressed concern that the number of certain employees serving a vital role in local NWS offices, electronics technicians, is down by at least 16%.",
+     "location": "Article body"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "SFSC and NWS pages are official but undated; the 16% figure is a former Administrator quoted by CBS (WebFetch extract).",
+   "applicability": "ASOS"
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "COOP stations are inspected and maintained by each forecast office's Observations Program Leader with HMTs, METs, hydrologists or electronics technicians (NWSI 10-1307, Feb 2025), so COOP maintenance draws on the same reduced field staff. [DIRS-2: imminent (staff losses), no closure of the maintenance function found]",
+   "evidence": [
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "The NWSREP is usually the Observations Program | Leader (OPL), and in some offices, the OPL is assisted by one or more of the following: | Hydrometeorological Technicians (HMT), Meteorologists (MET), Hydrologists (HYD), or | Electronic Technicians (ET).",
+     "location": "Section 2 Purpose; Appendix C (Station Inspection Checklist, CALIBRATION OF FISCHER PORTER RECORDING (FPR) RAIN GAUGE)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "In an effort to mitigate critical staffing shortages and enhance the maintenance of Automated Surface Observing Systems (ASOS), these pods are responsible for assisting one another with necessary repairs, maintenance tasks, and other operational requirements. … in response to critical staffing constraints and the urgent need to maintain ASOS systems, we kindly ask for your flexibility in supporting the escorting of unbadged NWS technicians when local WFO personnel are unavailable. … The ASOS program will deploy replacement Temperature and Dew Point sensors at all ASOS sites throughout 2025 with Vaisala HMP 155E probes. … The DTS-1 is unsupported since 31 August 2020, and the HO-83/1088 is costly to maintain with reliability issues.",
+     "location": "Sections: Airport Managers and Security Access Controllers Equipped with ASOS (March 20, 2025); Air and Dew Point Temperature Sensor Replacement National Deployment"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NWS directive plus NWS staffing notice; no COOP-specific maintenance backlog figure found.",
+   "applicability": "COOP"
+  },
+  {
+   "id": "c5",
+   "importance": "supporting",
+   "text": "SNOTEL maintenance continues (NRCS Nevada: over 90 summer site visits; most snow-depth and temperature sensors replaced by Dec 2025), but California senators warned in Dec 2025 that NRCS staff cuts could stop snow surveys in as many as one third of the state's watersheds. [DIRS-2: emerging]",
+   "evidence": [
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "In Nevada and the eastern Sierra, that totals over 90 SNOTEL visits each summer. … During summer visits, precipitation gauges are serviced, sensors are checked, software is updated, and repairs are made. … As of December 2025, over 90% of snow depth sensors and air temperature sensors, across Nevada and the eastern Sierra, have been replaced. These projects will be completed in 2026.",
+     "location": "Field Season Highlights; SNOTEL Snow Depth and Air Temperature Sensor Upgrades"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "Staff cuts and regional consolidation of duties away from these important | actions will severely impact the ability to perform snow surveys in as many as one third of the | State’s watersheds, leaving a fundamental gap in the data needed for supply forecasting.",
+     "location": "p. 1, para. 5"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "One state office's own page and one senators' letter.",
+   "applicability": "SNOTEL"
+  },
+  {
+   "id": "c6",
+   "importance": "supporting",
+   "text": "NIST's calibration services are thin but running: about 150 calibration staff in 2024, down 25-50% over a decade, with income not covering maintenance; no 2025-2026 cut to services used for weather instruments was found. CoCoRaHS has no formal gauge standard or certifying body in the sources found; its gauge collects 101-105% of the NWS 8-inch gauge in Colorado tests. [DIRS-1: no current threat found]",
+   "evidence": [
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "•   Income does not cover maintenance | and development of services | •   About 150 calibration staff in 2024 | •   Staff has decreased 25%—50% over | the past decade … • Old, degraded infrastructure and | equipment forced the suspension of | most services | • In 2024, with new furnaces, software, | and fixed points cells, most services re- | opened",
+     "location": "Slides: Calibrations Market Statistics; Modernization: Thermometry Calibrations"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "Tests conducted in Colorado over three decades indicate that the | CoCoRaHS gauge has a collection efficiency of 101-105% compared to the standard NWS gauge | in side by side measurements.",
+     "location": "para. 2"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "NIST slides of June 2025 predate any 2025-26 RIF effect; CoCoRaHS absence of a standard rests on what was not found.",
+   "applicability": null
+  },
+  {
+   "id": "c7",
+   "importance": "supporting",
+   "text": "WMO's instrument-calibration system is weak: a May 2026 WMO letter proposes replacing the Regional Instrument Centres, citing insufficient and inconsistent delivery and 'only nine' ISO/IEC 17025-accredited RICs (WMO's RIC list of Oct 29, 2026 marks eight); the concept goes to INFCOM-4. WMO's 2026 reorganization abolished 68 posts and cut CHF 6.0 million a year; the US paid 15.1 million CHF for 2024 in Oct 2026, with 2025 and 2026 fees outstanding. US networks calibrate against SFSC/NIST rather than a RIC, so this matters mainly for the foreign services. [DIRS-1: emerging, abroad]",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "Limited implementation of ISO/IEC 17025 accreditation (only nine RICs);",
+     "location": null
+    },
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "Last updated: 29 October 2026 || RA I: Algiers (Algeria), Gaborone (Botswana), Cairo (Egypt), Nairobi (Kenya), Casablanca (Morocco) || RA II: Beijing (China)*, Tsukuba (Japan)* || RA III: Buenos Aires (Argentina) || RA IV: Bridgetown (Barbados) || RA V: Melbourne (Australia)*, Manila (Philippines)* || RA VI: Toulouse (France), Hamburg/Oberschleissheim (Germany)*, Bratislava (Slovakia)*, Ljubljana (Slovenia)*, Ankara (Turkey)* || * - RIC is accredited according to ISO/IEC 17025.",
+     "location": null
+    },
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "68 posts abolished, 49 new vacancies (7 on hold)",
+     "location": null
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "The World Meteorological Organization, set up in 1951 to coordinate global weather data, confirmed it had received a 15.1 million CHF ($18.18 million), covering what the US owed to the agency for 2024. || 2025 and 2026 fees are outstanding, a spokesperson said. || WMO staff or post cuts: NOT PRESENT",
+     "location": null
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "The U.S. owes over 30 million francs. … Outstanding late payments to the WMO amount to around 48 million Swiss francs ($60 million) … The WMO envisages cutting 26 posts and reducing travel, according to a budget document seen by Reuters.",
+     "location": "Article body"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "WMO's own letter, list and reorganization paper; payments from a Reuters wire copy (WebFetch).",
+   "applicability": "WMO Members' networks"
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "No published list marks which of the ASOS sites converting to AWOS-C are NWS climate sites: the ASOS FAQ's 'complete list' link leads to the general ASOS equipment spreadsheet (as of 3/18/2025), which has no AWOS-C or climate-site column, and the FAA page gives only 'Replace 206 ASOS with AWOS-C'.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "- What sites will be affected under the 207 transition and what parameters were used for their selection? … See a complete list here … The schedule currently has a start date of 2025 and lasts through 2029.",
+     "location": "section 'NWS and FAA Transitioning 206 Sites'; link href in asos_faq.html.html line 609"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "ASOS Equipment Sites (T/Td updated 13 August 2025) is a tabbed spreadsheet that lists the following installed equipment by ASOS Site:",
+     "location": "ASOS Equipment FAQ, line 90"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "REGION | WFO | SID | EQUIP | ACT_DATE | LOCATION | STATE | EQ_OWNER | 849",
+     "location": "Sheet ACU, header row (line 3); Sheet 'ASOS 2.0 In Service Dates' line 13213 has a header only"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "- Replace 206 ASOS with AWOS-C",
+     "location": "line 70 (program list after line 59)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "The NWS and FAA pages themselves.",
+   "applicability": null
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "Argentina's SMN was reported in April 2026 to have a list of 240 workers (about 20% of staff) to dismiss, after about 47 in 2024, and to plan closing interior stations, which ones not yet known. [DIRS-2: emerging]",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "habían entregado una lista con 240 trabajadores -un 20% de la planta- a despedir esta misma semana. … también se avanzará con el cierre de estaciones en el interior del país. … Por el momento, no se sabe cuáles, ni cuántas.",
+     "location": "article body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "Publicado el 7 de Abril de 2026 16:25 || en rechazo a mas de 200 despidos || podria afectar a mas de 200 trabajadores, lo que implicaria una reduccion de mas del 25% de la planta total || podria derivar en el cierre de estaciones y la interrupcion de servicios esenciales. Station names/count: NOT PRESENT. DNU 274/2026 or EANA: NOT PRESENT.",
+     "location": null
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "Two press articles read through WebFetch (240 vs more than 200 dismissals); the stations are not named and no closure was confirmed.",
+   "applicability": "SMN Argentina"
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "For the other large losers no national closures were found: BMKG says its 2025 budget rose after 'reconstruction' and services run without disruption; Roshydromet's WIS2 node was declared operational in Jan-Jun 2026; CMA publishes an open-data catalog but its 2026 rules bar providing observation sites or data to foreign organizations without approval. Berkeley Earth says such stations keep operating but their reports are no longer captured by NOAA's aggregation, which points to a route loss, not closures. [DIRS-2: no current threat found for Russia, Indonesia; DIRS-3: imminent (route)]",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "anggaran BMKG setelah rekonstruksi mengalami peningkatan … Kenaikan anggaran akan difokuskan pada pemeliharaan dan operasional layanan … tetap beroperasi 24 jam tanpa gangguan",
+     "location": "article body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Table 2 New WIS2 nodes declared operational between January and June 2026 | WMO Member / Contributing Organization | Region | WIS Centre Type | Centre ID | Nepal | II | NC | np-nepalmet | Philippines | V | NC | ph-pagasa | Russian Federation | VI | NC | ru-roshydromet",
+     "location": "Table 2, lines 60-65; line 32"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "On February 26, the China Meteorological Administration (CMA) released the 2025 Catalog of Popular Meteorological Data for Open Sharing, featuring a focused presentation of the meteorological data and products with the top annual download volumes, including surface, upper-air, satellite, marine, real-time and reanalysis data and products.",
+     "location": "lines 9 and 18"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "no organization or individual can provide meteorological observation sites or data to foreign organizations",
+     "location": "article body (WebFetch extraction; sentence truncated by the tool)"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "In the case of GHCN-M, which is NOAA’s flagship climate monitoring platform, the defects are strongly clustered with NOAA failing to report many observations from China, Kazakhstan, the Philippines, and certain other areas. These weather stations continue to be operated by their local meteorological agencies, but their observations have not been captured by NOAA aggregation services.",
+     "location": "section 'Continuing NOAA Data Problems', line 42"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Services' own notices plus WMO; Berkeley Earth's statement is about GHCN-M; nothing found for Algeria.",
+   "applicability": null
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "SSODv2 (derived from GHCNh) entered GHCN-D in v3.33 (Jan 5, 2026) for 2025-onward updates only; NCEI said the full period of record would follow 'several weeks later', but no later status note says it did (v3.34 Jan 23, v3.35 Oct 1, 2026), and two spot-checked foreign stations carry no SSODv2 flag: Algiers ends in Aug 2025. [DIRS-3: imminent]",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "period of record for SSODv2 will be integrated into GHCNd.",
+     "location": null
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "AG000060390202508TMAX  313  S-9999   -9999   -9999   -9999   -9999     360  S  347  S  314  S",
+     "location": "line 3792 (last TMAX line for 2025-2026)"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "The Synoptic Summary of the Day offers daily climate summaries computed from the hourly and synoptic reports provided in GHCNh.",
+     "location": "Related products section, SSOD v2 entry"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own status file; the spot check covers only two stations.",
+   "applicability": null
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "NCEI gives no cause for Environment Canada's 2024 feed stop ('unexpectedly discontinued on April 28, 2024'); v3.35 (Oct 1, 2026) resumed Canadian updates from ECCC's web database with weekly full-record re-integration and switched Canadian IDs to network code N to match GHCNh. [DIRS-3: the feed is a single route; restored]",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "daily update feed was unexpectedly discontinued on April 28, 2024.",
+     "location": null
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Version 3.35 is released.  Version 3.35 resumes updates for Environment Canada",
+     "location": null
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own status file; ECCC published no notice found.",
+   "applicability": null,
+   "sole_source_reason": "NCEI's own record of its own feed."
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "ECCC announced (2026-08-31) that the historical data of 180 Government of Alberta climate stations would be deleted from its open-data platforms by end of September 2026 (data stay on Alberta's ACIS); its attached list has 174 stations, 120 of which are in GHCN-D's station list, but the live GHCN-D inventory (2026-11-23) holds data for only 38 of them, all ending in 2017 (37) or 2024 (1), and one listed station's file (Brocket, CAN03030830) returned 404. So GHCN-D gets no current data from these stations, and ECCC can no longer re-supply their history. [DIRS-3: imminent but small for current updates]",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "associated with 180 climate stations operated by the Government of Alberta",
+     "location": "English part of message; attachment /message/RLV2GKL3NV7GFSIYHOO5W4YL4WIJ6T2R/attachment/6/ABgov_Station-Inventory.xlsx"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "Data rows: 174; rows with a climate ID found in ghcnd-stations.txt: 120",
+     "location": "line 301 of the comparison output; header row line 3; matches from line 180"
+    },
+    {
+     "source_id": "m7",
+     "relationship": "supports",
+     "passage": "stations in list: 174; found: 38",
+     "location": null
+    },
+    {
+     "source_id": "m7",
+     "relationship": "supports",
+     "passage": "last year counts: {2017: 37, 2024: 1}",
+     "location": null
+    },
+    {
+     "source_id": "m8",
+     "relationship": "supports",
+     "passage": "CAN03030830  49.6167 -113.8167 1073.0 AB BROCKET AGDM",
+     "location": null
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "ECCC notice read via WebFetch; the station list and the inventory disagree (82 listed stations have no inventory rows), cause unknown, possibly the cloud migration.",
+   "applicability": null
+  },
+  {
+   "id": "c14",
+   "importance": "central",
+   "text": "The Regional Climate Center contracts did not lapse: after the Sept 2025 sources-sought notice, NOAA issued six regional solicitations on May 27, 2026 (renamed Regional Weather Records Centers; offers due June 26) and signed six single-award IDIQs on Sept 11-16, 2026, to Nebraska, the Nevada System of Higher Education, Cornell, UNC Chapel Hill, Purdue and Texas A&M Transportation Institute; the Southern award runs 2026-09-17 to 2031-09-16 with a $5.62M ceiling (2 offers, $0 obligated so far). GHCN-D depends on an RCC directly: since v3.32 (Mar 2025) the High Plains RCC supplies US airport Daily Summary Messages. [DIRS-2, DIRS-3: no current threat found]",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Regional Climate Center.",
+     "location": null
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "Original Published Date: Sep 10, 2025 08:32 am EDT",
+     "location": null
+    },
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "This contract is for the Western Region (WRWRC), which is composed of MT, ID, UT, NM, AZ, NV, CA, OR, WA, AK, HI, and U.S. affiliated Pacific Islands.",
+     "location": null
+    },
+    {
+     "source_id": "m3",
+     "relationship": "supports",
+     "passage": "Notice ID: 1332KP26R0023",
+     "location": null
+    },
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "BOARD OF REGENTS OF THE UNIVERSITY OF NEBRASKA",
+     "location": null
+    },
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "TEXAS A&M TRANSPORTATION INSTITUTE",
+     "location": null
+    },
+    {
+     "source_id": "m5",
+     "relationship": "supports",
+     "passage": "\"period_of_performance\":{\"start_date\":\"2026-09-17\",\"end_date\":\"2031-09-16\"",
+     "location": null
+    },
+    {
+     "source_id": "m5",
+     "relationship": "supports",
+     "passage": "\"base_and_all_options\":5619454.55",
+     "location": null
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "SAM.gov and USAspending records read directly.",
+   "applicability": null,
+   "figure_status": [
+    "ceiling",
+    "obligation"
+   ]
+  },
+  {
+   "id": "c15",
+   "importance": "central",
+   "text": "GHCNh now sits upstream of GHCN-D: NCEI says GHCNh is replacing ISD and that the Synoptic Summary of the Day is computed from GHCNh, so GHCN-D's foreign synoptic input runs through GHCNh. No NCEI page states GHCNh's funding, staffing or contract. [DIRS-3, DIRS-5: supports; funding not published]",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "The Synoptic Summary of the Day offers daily climate summaries computed from the hourly and synoptic reports provided in GHCNh.",
+     "location": "Related products section, SSOD v2 entry"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "The Integrated Surface Database (ISD) product is actively being replaced by the new Global Historical Climatology Network hourly (GHCNh), and will eventually be deprecated.",
+     "location": "page body"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own pages; funding absent.",
+   "applicability": null
+  },
+  {
+   "id": "c16",
+   "importance": "central",
+   "text": "Where GHCN-D's processing runs after the AWS move, and who runs it, is not published; NCEI's 'Data Access Delays' alert (Nov 16-30, 2026) blames the cloud migration, and GHCN-D was still updating (3.35-upd-2026111517). No CISESS GHCN-D processing prototype was found in production: CISESS reports show a GHCNm 4.0.1 cloud pilot and CISESS built NODD's Cloud Ingest Pipeline, which distributes data to the clouds. [DIRS-4: emerging]",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Data Access Delays | Mon, 11/16/2026 - 15:21 | Mon, 11/30/2026 - 17:00 | Please Note: NCEI is currently moving its data and applications to the cloud.",
+     "location": "alerts table, row 4"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "The current version of GHCN Daily is 3.35-upd-2026111517",
+     "location": "line 1"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Highlight: The next iteration of NOAA’s global temperature product (GHCNm version 4.0.1) is now | operational. The codebase was put under version control and was successfully pilot tested on a | commercial cloud platform.",
+     "location": "p. 106, task Maintenance and Streamlining of the GHCNm Dataset"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "each of AWS, Azure, and GCP, through the Cloud Ingest Pipeline developed by the Cooperative Institute for Satellite Earth System Studies at North Carolina State Uni-",
+     "location": "Fig. 1 caption, p. 2"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NCEI and CISESS documents; absence of a processing location is absence of evidence.",
+   "applicability": null
+  },
+  {
+   "id": "c17",
+   "importance": "central",
+   "text": "HadISD cannot replace lost inputs: it is built from ISD and stopped with it; the final version covers to Aug 29, 2025 with no further monthly releases.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "- Stopping: \"As of August 29th 2025, the ISD dataset has stopped receiving updates.\"",
+     "location": "lines 7 and 19"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "The ISD dataset stopped receiving updates on 29th August 2025. … Hence HadISD has also now stopped receiving append data. … This is the final version of HadISD. … There will be no further monthly releases.",
+     "location": "HadISD home page (WebFetch extraction)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "The Met Office's own pages.",
+   "applicability": null
+  },
+  {
+   "id": "c18",
+   "importance": "central",
+   "text": "Alternatives that are current: ECA&D (updated to Oct 31, 2026; 89 participants in 65 countries, Europe/Mediterranean, mostly non-commercial use); Copernicus C3S global land in-situ data (86,499 daily stations, 1718 to present, v3.0.0, yearly updates, CC-BY); and for real-time foreign synoptic data, WMO's WIS2 (GTS-to-WIS2 gateway since March 2025; 116 nodes for 92 Members by June 30, 2026; Global Cache run by the Met Office and NOAA on AWS, 24-hour retention). Berkeley Earth offers no station-level daily product (CC BY-NC) and itself reports GHCN-D as degraded since late Aug 2025. [DIRS-5: contradicts in part; none replaces GHCN-D's global daily QC'd archive]",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "The database is updated until: Oct 31, 2026. … Today, ECA&D is receiving data from 89 participants for 65 countries … the ECA dataset contains 106802 series of observations for 13 elements at 26348 meteorological stations … 88% of these daily series can be downloaded from this website for non-commercial research and education.",
+     "location": "home page (WebFetch extraction)"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Horizontal coverage | Global land (86,499 daily stations, 83,148 monthly stations, 34,729 sub-daily stations)",
+     "location": "overview table, lines 26-33; licence line 82; update date line 90"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "The GTS to WIS2 Gateway provided by Germany and Japan, as well as the WIS2 to GTS gateway, provided by China and the UK, have been operational since March 2025.",
+     "location": "line 168; gateway roles lines 58-59"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "As of 30 June 2026, there are 116 operational WIS2 nodes, representing 92 WMO Members, indicating that 48% of WMO Members have now implemented WIS2 for data sharing. This reflects continued global expansion following the pilot phase (2022-2023), pre-operational phase (2024), and the operational rollout starting January 2025.",
+     "location": "line 32; line 129"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "Met Office and NOAA operate this Global Cache service curating and publishing the dataset on behalf of WMO. … Data is sourced from all WMO Member countries / territories and retained for 24-hours. … There are no restrictions on the use of this data. Attribution of original source is requested.",
+     "location": "registry page (WebFetch extraction)"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "In general, Berkeley Earth’s data is licensed under Creative Commons BY-NC 4.0 International for non-commercial use only.",
+     "location": "Licensing line 19; Global Daily Land lines 116-118; Source Data line 290"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Since late August 2025, core NOAA climate archives, including the Global Summary of the Day, Global Historical Climatology Network – Daily, and Global Historical Climatology Network – Monthly (GHCN-M), have been broken or incomplete.",
+     "location": "lines 38-46; total station count line 69"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Providers' own pages; coverage overlap with GHCN-D not measured.",
+   "applicability": null
+  },
+  {
+   "id": "c19",
+   "importance": "supporting",
+   "text": "ASOS hardware is aging and only partly funded: the FAA's upgrade money is insufficient to recondition all 570 FAA ASOS locations (hence the AWOS-C swap), and NWS is replacing ASOS temperature/dew-point sensors at all sites with Vaisala HMP155E probes through 2025. [DIRS-2: supports, emerging]",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. The decision to transition to the AWOS-C in lieu of ASOS 2.0 was therefore a budgetary decision by the FAA.",
+     "location": "line 160"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "The ASOS program will deploy replacement Temperature and Dew Point sensors at all ASOS sites throughout 2025 with Vaisala HMP 155E probes. ASOS, a Tri-Agency Program with the DOC, DOT, and DoD, must coordinate sensor sustainment activities across all three agencies. Current sensors, the DTS-1 and HO-83/1088, are over 20 years old. The DTS-1 is unsupported since 31 August 2020, and the HO-83/1088 is costly to maintain with reliability issues.",
+     "location": "line 120"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NWS's own pages (Reconciler addition).",
+   "applicability": "ASOS"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Number of FAA ASOS sites moving to AWOS-C",
+   "source_ids": [
+    "s1",
+    "s18"
+   ],
+   "status": "unresolved",
+   "explanation": "The FAA ASWON page (and the NWS FAQ heading) say 206; the NWS FAQ text says 207. The answer gives both."
+  },
+  {
+   "claim": "Number of ISO/IEC 17025-accredited WMO RICs",
+   "source_ids": [
+    "s40",
+    "s60"
+   ],
+   "status": "unresolved",
+   "explanation": "WMO's May 2026 letter says 'only nine RICs'; WMO's RIC list updated Oct 29, 2026 marks eight with the accreditation asterisk. Accreditations may have lapsed or the counts differ in scope; the answer gives both."
+  },
+  {
+   "claim": "SMN Argentina dismissals, April 2026",
+   "source_ids": [
+    "s4",
+    "s55"
+   ],
+   "status": "unresolved",
+   "explanation": "Bichos de Campo: a list of 240 workers (about 20% of staff); El Cronista: more than 200, which ATE projects as more than 25% of staff. Both are April 2026 press reports; the answer gives both."
+  },
+  {
+   "claim": "How many Government of Alberta stations ECCC is removing",
+   "source_ids": [
+    "s22",
+    "s35"
+   ],
+   "status": "resolved",
+   "explanation": "ECCC's notice says 180 stations; its attached inventory has 174 data rows. The answer gives both."
+  },
+  {
+   "claim": "Alberta stations in GHCN-D",
+   "source_ids": [
+    "s35",
+    "m7",
+    "m8"
+   ],
+   "status": "unresolved",
+   "explanation": "120 of 174 climate IDs appear in ghcnd-stations.txt (Nov 19 and Nov 23 copies), but only 38 have rows in the live ghcnd-inventory.txt; one listed station's .dly file returned 404. Cause not known."
+  }
+ ],
+ "coverage_gaps": [
+  "No NWS/FAA list of the 206/207 ASOS sites moving to AWOS-C was found. The FAQ's 'See a complete list here' link goes to the general ASOS Equipment page and spreadsheet (as of 3/18/2025, T/Td updated 13 Aug 2025), which has no AWOS-C or climate-site column. The FAA AWOS PM contact is the only lead on the FAQ. (from sa2)",
+  "Roshydromet: no 2025-2026 report of station closures or cuts was found after 2 searches (Russian). Roshydromet's national WIS2 node became operational between Jan and Jun 2026 (WMO newsletter No.3), which is a possible alternative exchange route. Not read: comnews.ru 2025-12-15 (private-station integration roadmap) and Roshydromet's annual review obzor_24 PDF (meteorf.gov.ru). (from sa2)",
+  "China: CMA's foreign-related data measures and the 2026 outbound-transfer security rules were not read (MLex 403; Global Times and SCMP not tried). Whether CMA reduced GTS/WIS2 exchange of SYNOP: NOT FOUND. (from sa2)",
+  "Algeria ONM: nothing official on 2025-2026 funding, staff or stations found in 1 search; meteo.dz not tried. (from sa2)",
+  "Indonesia BMKG: the rupiah figures (Rp2.82T cut to Rp1.40T, reconstructed to Rp1.781T) come only from the search summary of news pages (Katadata, Jakarta Post), which were not read. BMKG's notice gives no figures. (from sa2)",
+  "None of the sources read say whether the station losses in GHCN-D reflect national closures or only NOAA's loss of the GSOD/ISD route; no source on this was found. The SMN 2026 station closures are announced but not named. (from sa2)",
+  "Not checked for lack of time: Berkeley Earth daily station data status, OGIMET, DWD CDC global SYNOP/CLIMAT, RIHMI-WDC aisori (1 search, no result), and the CMA data portal access terms for foreigners. (from sa2)",
+  "MLex article https://www.mlex.com/mlex/articles/2531146 (CMA outbound-transfer security rules, 2026): direct WebFetch returned 403, and a WebFetch of its Wayback copy was denied by the auto-mode classifier. Not retried; the coordinator may read it in the browser. (from sa2)",
+  "r11: No NCEI file says the promised full-period SSODv2 integration (status.txt, Jan 5 2026: several weeks later) was done; v3.34 and v3.35 entries are silent. Spot checks of two GHCN-D station files (Moscow RSM00027612, Algiers AG000060390) found no SSODv2 flag 2 values in any year; Algiers ends 2025-08 (GSOD S), Moscow ends 2019-12. (from sa3)",
+  "r12a: Cause of ECCC feed stop on 2024-04-28 not found. NCEI says only unexpectedly discontinued; ECCC dd_info search found no April 2024 Datamart climate-daily change notice (only a 2025 file-naming change). v3.35 resumes from the Environment Canada web based database. (from sa3)",
+  "r12b: No source for 174 stations found; ECCC dd_info notice of 2026-08-31 says 180 Government of Alberta (ACIS) stations, historical data deleted from MSC open data by end of Sept 2026. Station list xlsx not read, so overlap with ghcnd-stations.txt NOT CHECKED. A separate dd_info notice (per search snippet) moves Alberta Agriculture and Irrigation stations to a partner directory on MSC Datamart, 80 stations; not read. (from sa3)",
+  "r13: No RCC/Regional Weather Records Center award after the 2026-05-27 solicitations found (web search, AASC); HPRCC and MRCC home pages show no status notices as of 2026-11-23. USAspending not queried (POST-only API). (from sa3)",
+  "r14: GHCNh funding, contract or staffing statements NOT PRESENT on NCEI GHCNh pages; GHCNh feeds GHCN-D via SSODv2 (derived from GHCNh) and shares identifiers (v3.35 note). (from sa3)",
+  "r15a: Where GHCN-D processing runs and who operates it after AWS migration: nothing found beyond NCEI Alerts (Data Access Delays 11/16-11/30/2026, slower update cycles). GHCN-D version file shows updates still running to 2026-11-15. (from sa3)",
+  "r15b: No evidence a CISESS GHCN-D cloud processing prototype went into production. CISESS reports show only a GHCNm v4.0.1 pilot on a commercial cloud (2020-21) and a student Neo4j cloud-native graph database of GHCNd (2022-23); CISESS built the NODD Cloud Ingest Pipeline (distribution, 2023 paper). (from sa3)",
+  "CORRECTION to the r12b gap and to the unreadable xlsx entry: the xlsx was later read (WebFetch binary save) and compared; 174 rows, 120 in ghcnd-stations.txt. Still open: whether GHCN-D has lost updates for those 120 stations since the end-of-September 2026 deletion (station .dly files not checked); DLY_LAST_DATE serials not converted. (from sa3)",
+  "NWS ET/HMT field staffing counts 2025-2026 and Office of Observations losses: only the NWS ASOS page (20 Mar 2025, pods, critical staffing shortages) is official. CBS (Spinrad: ETs down at least 16%) and NPR (Jun 2025, 126 hires incl. ETs) surfaced in search but were not read. No Office of Observations figure found. (from sa1)",
+  "SFSC (Sterling) staffing, budget or closure 2025-2026: none of the SFSC pages read carries a date or any staffing/closure notice; NOT PRESENT. Who calibrates SFSC primary standards (NIST or other) is not stated on its pages. (from sa1)",
+  "ATDD/ARL: FY26 and FY27 requests propose closing ARL incl. Oak Ridge, but the enacted FY26 outcome for ARL/ATDD and who would maintain USCRN after closure were not found. ARL pages (403) need the browser. Oak Ridge Today items on the closure proposal not read. (from sa1)",
+  "NIST: no 2025-2026 notice of discontinued calibration services relevant to met instruments found; the June 2025 slides predate any RIF effect. NWS use of NIST for ASOS/COOP traceability not documented in pages read. CoCoRaHS gauge: no formal specification or certifying body found; supplier/manufacturer only in search snippets (WeatherYourWay, Productive Alternatives), unverified. WMO SPICE: no 2025-2026 funding/closure info; US arrears payment status after Oct 2025 not found. (from sa1)",
+  "Claim 1 (ARL closure in FY2026 enacted appropriations): not settled after 1 query plus reading the H.R. 6938 bill text in the Congressional Record (no ARL mention). The Joint Explanatory Statement NOAA OAR section was not read: next leads are https://www.govinfo.gov/content/pkg/CREC-2026-01-08/html/CREC-2026-01-08-pt3-PgH255.htm and following pt3 pages, and the Senate committee JES PDFs (appropriations.senate.gov fy26 cjs). Search those for Air Resources Laboratory and Oak Ridge. (from checker)",
+  "Claim 3 (WMO RIC replacement): 1 query; no decision found. Search snippets only (not read): the unified RIC/RMIC/RRC concept is due at INFCOM-4, 23-27 November 2026 (agenda item Harmonized concept for regional instrument centres), for recommendation to Congress 2027; Beijing workshop 17-19 November 2025 proposed it. Leads: https://extranet.wmo.int/edistrib_exped/grp_Semicircular/_en/6771694-2026-HRCS-CNFT-INFCOM-4_en.pdf and https://wmo.int/media/news/workshop-regional-instrument-centre-concepts-beijing-china-17-19-november-2025. The only nine accredited RICs figure was not checked. (from checker)",
+  "Claim 4 (HadISD stopped, final v3.4.3.2025f): no contrary evidence found after 1 query; no newer HadISD release or GHCNh-based HadISD found in search results (snippets only: Met Office page says Final Version v3.4.3.2025f, 6 October 2025, no further monthly releases). metoffice.gov.uk is a refused host; not re-read. (from checker)",
+  "Claim 2 (SMN Argentina): 1 query plus Cronista read. Which stations actually closed after April 2026: not found. Snippet-only leads (not read; eleconomista.com.ar refused by network): 140 dismissal telegrams mid-April; ATE estimate about 40 stations to close; at least 25 stations already partial without night shifts; DNU 274/2026 moves SMN operational responsibility to EANA; strikes reported June and July-Aug 2026 (iprofesional.com 12/6/2026, 31/7/2026; todojujuy 3 Aug 2026). Boletin Oficial DNU 274/2026 not checked. (from checker)",
+  "MLex article on CMA's 2026 outbound-transfer rules: paywalled; Wayback read denied by the auto-mode classifier.",
+  "Copernicus in-situ release news: navigation failed in fetch and browser.",
+  "No DuckDuckGo pass ran: the research stop came while the follow-up queue was being worked."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS to AWOS-C conversion site list climate sites",
+   "tool": "WebSearch",
+   "notes": "found NWS FAQ; its list link leads to the ASOS equipment spreadsheet, which has no AWOS-C or climate column",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Servicio Meteorológico Nacional despidos 2025",
+   "tool": "WebSearch",
+   "notes": "layoffs reported Apr 2026 (140 telegrams; list of 240); station closures announced, not named",
+   "from": "sa2",
+   "required_id": "r9a"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Росгидромет сокращение метеостанций 2025",
+   "tool": "WebSearch",
+   "notes": "no report of station cuts found; private-station integration roadmap of 21 Feb 2025 (comnews, not read)",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "BMKG anggaran dipangkas 2025",
+   "tool": "WebSearch",
+   "notes": "cut by about 50% in Feb 2025, then reconstructed upward on 13 Feb 2025",
+   "from": "sa2",
+   "required_id": "r9b"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "China Meteorological Administration data sharing restriction foreign 2025",
+   "tool": "WebSearch",
+   "notes": "MLex (403), Global Times May 2026 and SCMP crackdown items not read",
+   "from": "sa2",
+   "required_id": "r9c"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ONM Algérie stations météorologiques 2025 réseau",
+   "tool": "WebSearch",
+   "notes": "nothing official found; meteo.dz not tried",
+   "from": "sa2",
+   "required_id": "r9c"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "HadISD update 2026 ISD",
+   "tool": "WebSearch",
+   "notes": "final version 3.4.3.2025f",
+   "from": "sa2",
+   "required_id": "r16b"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "ECA&D daily data update 2026 stations",
+   "tool": "WebSearch",
+   "notes": "read ecad.eu with WebFetch",
+   "from": "sa2",
+   "required_id": "r16a"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Copernicus C3S global land surface station daily data in-situ",
+   "tool": "WebSearch",
+   "notes": "CDS dataset page read raw",
+   "from": "sa2",
+   "required_id": "r16a"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "WIS2 global cache surface observations 2025 synop",
+   "tool": "WebSearch",
+   "notes": "AWS registry page and WMO newsletter No.3 read",
+   "from": "sa2",
+   "required_id": "r16c"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "RIHMI-WDC aisori daily data stations access 2025",
+   "tool": "WebSearch",
+   "notes": "no relevant result",
+   "from": "sa2",
+   "required_id": "r16c"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Berkeley Earth daily station data update 2025",
+   "tool": "WebSearch",
+   "notes": "Oct 2025 update read raw",
+   "from": "sa2",
+   "required_id": "r16b"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Росгидромет станции 2025 сеть наблюдений закрытие автоматизация",
+   "tool": "WebSearch",
+   "notes": "no report of station closures found; 2nd query for r8",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FAA AWOS-C replace ASOS 206 sites list 2025",
+   "tool": "WebSearch",
+   "notes": "2nd query for r10; no site list found; ASOS Current Events checked",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Environment Canada 174 Alberta weather stations",
+   "tool": "WebSearch",
+   "notes": "no 174 figure found",
+   "from": "sa3",
+   "required_id": "r12b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ECCC Alberta weather stations removal transfer 2026",
+   "tool": "WebSearch",
+   "notes": "found dd_info notice of 2026-08-31 (180 Alberta-government stations)",
+   "from": "sa3",
+   "required_id": "r12b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SSN-NCEI-RCC-2025 Regional Climate Centers",
+   "tool": "WebSearch",
+   "notes": "BidNet and highergov hits; both hosts refused by sandbox",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Regional Climate Centers contract October 2026",
+   "tool": "WebSearch",
+   "notes": "only 2025 lapse news and 2021 award page",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Regional Weather Records Center\" award 2026",
+   "tool": "WebSearch",
+   "notes": "no award found",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AASC newsletter Regional Climate Centers contract November 2026",
+   "tool": "WebSearch",
+   "notes": "domain filter stateclimate.org; nothing dated after Oct 2026",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "HPRCC and MRCC home pages status notices",
+   "tool": "lookup (RCC site status notices via WebFetch)",
+   "notes": "hprcc.unl.edu and mrcc.purdue.edu: no notices; MRCC page calls itself NOAA Midwestern Regional Weather Records Center",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GHCNh hourly NCEI status 2026",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI GHCNh ISD replacement 2025 notice",
+   "tool": "WebSearch",
+   "notes": "domain filter ncei.noaa.gov",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Synoptic Summary of the Day version 2 SSODv2 NCEI period of record",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GHCN-D status.txt, ghcnd-version.txt, readme.txt",
+   "tool": "lookup (NCEI GHCN-D files)",
+   "notes": "downloaded directly",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GHCN-D station files RSM00027612 and AG000060390 source-flag check",
+   "tool": "lookup (GHCN-D .dly source flags)",
+   "notes": "spot check for SSODv2 flag 2",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "MSC Datamart climate daily observations change April 2024",
+   "tool": "WebSearch",
+   "notes": "no April 2024 change notice found; 2025 file-naming change only",
+   "from": "sa3",
+   "required_id": "r12a"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CISESS cloud prototype GHCN-Daily processing AWS",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r15b"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI cloud migration data access delays 2026",
+   "tool": "WebSearch",
+   "notes": "domain filter ncei.noaa.gov, nesdis.noaa.gov",
+   "from": "sa3",
+   "required_id": "r15a"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "cloud / GHCN / prototype in CISESS annual reports 2020-21 and 2022-23",
+   "tool": "lookup (earlier-run CISESS reports, find_text)",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r15b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "dd_info archive 2026/9 and WRCC home page status",
+   "tool": "lookup (ECCC dd_info Sept 2026 archive; wrcc.dri.edu notices via WebFetch)",
+   "notes": "dd_info Sept 2026: no follow-up on Alberta climate data deletion (NOT PRESENT). wrcc.dri.edu: no 2025-2026 notices; header tagline reads a NOAA Regional Weather Records Center",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SERCC home page status and HigherGov RCC forecast",
+   "tool": "lookup (sercc.com and highergov.com via WebFetch)",
+   "notes": "SERCC undated banner: contract renewed; HigherGov forecast read",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SRCC home page status",
+   "tool": "lookup (srcc.tamu.edu via WebFetch)",
+   "notes": "no funding/contract/operations notice (NOT PRESENT); site up on 2026-11-23",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NRCC home page status",
+   "tool": "lookup (nrcc.cornell.edu via WebFetch)",
+   "notes": "no operations notice (NOT PRESENT); header tagline reads A NOAA Weather Records Center",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GHCN-D station file CAN03030830 (Brocket AGDM)",
+   "tool": "lookup (GHCN-D .dly for an Alberta-government station)",
+   "notes": "HTTP 404 for https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CAN03030830.dly on 2026-11-23, although the ID is in the 2026-11-19 ghcnd-stations.txt copy; cause not checked (migration or ID change)",
+   "from": "sa3",
+   "required_id": "r12b"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sterling Field Support Center ASOS calibration",
+   "tool": "WebSearch",
+   "notes": "r1",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWS electronics technicians shortage 2025 ASOS",
+   "tool": "WebSearch",
+   "notes": "r2; also surfaced CBS (16% ET drop, Spinrad) and NPR 126 hires, not read",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ATDD USCRN maintenance calibration Oak Ridge",
+   "tool": "WebSearch",
+   "notes": "r3; arl.noaa.gov returned 403 to fetch_page and WebFetch",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NRCS snow survey staff cuts 2025 SNOTEL maintenance",
+   "tool": "WebSearch",
+   "notes": "r4; leads not read: NRCS Idaho Snow Survey Newsletter Jan 2026 (govdelivery), NRCS Nevada what is new for 2026, CBS Colorado 42 to 19 staff",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS 4-inch rain gauge standard specification",
+   "tool": "WebSearch",
+   "notes": "r5; cocorahs.org rain page fetched but not relevant (renamed _unused)",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NIST calibration services cuts 2025",
+   "tool": "WebSearch",
+   "notes": "r6; NPR Mar 2025 Atomic Spectroscopy Group closure plan surfaced, not read (not met-instrument related)",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WMO funding United States 2025 withdrawal arrears",
+   "tool": "WebSearch",
+   "notes": "r7",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WMO Regional Instrument Centre list",
+   "tool": "WebSearch",
+   "notes": "r7",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WMO SPICE solid precipitation intercomparison results",
+   "tool": "WebSearch",
+   "notes": "r7; Kochendorfer et al. 2022 BAMS (NOAA repository noaa/53684) found, not read; no 2025-2026 funding/closure info",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWS Office of Observations 2025 staffing",
+   "tool": "WebSearch",
+   "notes": "required NWS field-maintenance staffing search; only news on NWS-wide losses (E&E 300+ short, balloon cuts); nothing specific to Office of Observations",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN annual maintenance visits ATDD 2025",
+   "tool": "WebSearch",
+   "notes": "r3 follow-up; ARL pages 403; snippet: eight technicians and engineers for annual visits (undated ARL page)",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA Air Resources Laboratory closure 2025 budget ATDD",
+   "tool": "WebSearch",
+   "notes": "r3 follow-up; found closure in FY26/FY27 CJ (earlier-run copy reused); Oak Ridge Today items not read",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NIST traceable calibration USCRN temperature precipitation gauge",
+   "tool": "WebSearch",
+   "notes": "r6 follow-up; Goodge.pdf downloaded",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Oak Ridge NOAA ATDD closure 2026 appropriations",
+   "tool": "WebSearch",
+   "notes": "r3 follow-up; leads unread: oakridgetoday.com/tag/arl (33 employees at Oak Ridge campus per snippet), E&E House panel protects NOAA labs (Sept 2025), H.R. 6938 text. Wayback copy of arl.noaa.gov/uscrn-at-arl was denied by the auto-mode classifier.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "H.R. 6938 NOAA laboratories closure prohibited Air Resources Laboratory",
+   "tool": "WebSearch",
+   "notes": "r3 follow-up; snippet: House agreed to H.R. 6938 214-212 on 2026-01-07 (democrats-rules.house.gov); Congressional Record CREC-2026-01-08 PgH151 holds text; Joint Explanatory Statement not read. ARL www.arl.noaa.gov/?p=15970 also 403.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read SAM.gov search and notice SSN-NCEI-RCC-2025 and its six solicitations",
+   "tool": "lookup (built-in browser)",
+   "notes": "SAM.gov original read instead of BidNet copy (m1-m3)",
+   "copy_of": "https://www.bidnetdirect.com/public/supplier/solicitations/statewide/2634366287/abstract"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser USAspending keyword search 'Regional Weather Records Center'",
+   "tool": "lookup (built-in browser)",
+   "notes": "read in the browser (m4); award record fetched by GET from the awards API (m5)",
+   "copy_of": "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "primary copy of contract forecast: SAM.gov and USAspending",
+   "tool": "lookup (built-in browser)",
+   "notes": "primary records read (m1-m5)",
+   "copy_of": "https://www.highergov.com/contract-forecast/ncei-regional-climate-centers-1087594"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI's own SSOD product page",
+   "tool": "lookup (built-in browser)",
+   "notes": "guessed NCEI path returned 404; NCEI GHCNh page (s24) used for SSOD derivation",
+   "copy_of": "https://catalog.data.gov/dataset/synoptic-summary-of-the-day-ssod-version-2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser read ARL USCRN story",
+   "tool": "lookup (built-in browser)",
+   "notes": "read (m6)",
+   "copy_of": "https://arl.noaa.gov/uscrn-at-arl",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser read Oak Ridge Today ATDD tag, live then Wayback",
+   "tool": "lookup (built-in browser)",
+   "notes": "live 508; Wayback 2025-12-06 read (m9): only 2016-2017 stories",
+   "copy_of": "https://oakridgetoday.com/tag/atdd/",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "browser Wayback copy of MLex article",
+   "tool": "lookup (built-in browser)",
+   "notes": "denied by the auto-mode classifier (paywalled article); not retried",
+   "copy_of": "https://www.mlex.com/mlex/articles/2531146"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "browser read Copernicus in-situ release news",
+   "tool": "lookup (built-in browser)",
+   "notes": "navigation failed; no route left",
+   "copy_of": "https://insitu.copernicus.eu/news-and-events/news/upgraded-dataset-reveals-more-than-250-years-of-ground-truth-weather-observations"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "lookup (GHCN-D live inventory and station list)",
+   "tool": "lookup (download)",
+   "notes": "downloaded; Alberta stations counted (m7, m8)",
+   "copy_of": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NWS Sterling Field Support Center",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "ASOS calibration and SFSC status",
+   "query": "Sterling Field Support Center ASOS calibration",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NWS field maintenance",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "COOP/ASOS maintenance staff",
+   "query": "NWS electronics technicians shortage 2025 ASOS",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA ARL ATDD",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "USCRN maintenance and ARL status",
+   "query": "ATDD USCRN maintenance calibration Oak Ridge",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NRCS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "SNOTEL maintenance and staff",
+   "query": "SNOTEL sensor maintenance NRCS staff 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "gauge standard",
+   "query": "CoCoRaHS 4-inch rain gauge standard specification",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NIST",
+   "publisher": "oversight and standards bodies",
+   "subquestion_id": "q1",
+   "aim": "traceability and calibration services",
+   "query": "NIST calibration services cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "WMO",
+   "publisher": "international bodies",
+   "subquestion_id": "q1",
+   "aim": "RICs and SPICE",
+   "query": "WMO Regional Instrument Centre list",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "Roshydromet",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "station closures",
+   "query": "Roshydromet weather stations closure 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9a",
+   "organization": "SMN Argentina",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "dismissals and closures",
+   "query": "Servicio Meteorológico Nacional despidos 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9b",
+   "organization": "BMKG",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "budget cut",
+   "query": "BMKG anggaran dipangkas 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9c",
+   "organization": "CMA / ONM Algeria",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "data sharing, stations",
+   "query": "China Meteorological Administration data sharing restriction",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NWS / FAA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "ASOS to AWOS-C site list",
+   "query": "ASOS to AWOS-C conversion site list",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "SSODv2 period of record",
+   "query": "GHCN-Daily version 3.33 SSODv2 source",
+   "skip_reason": null
+  },
+  {
+   "id": "r12a",
+   "organization": "ECCC",
+   "publisher": "upstream supplier",
+   "subquestion_id": "q3",
+   "aim": "2024 feed stop",
+   "query": "ECCC climate daily data feed change 2024",
+   "skip_reason": null
+  },
+  {
+   "id": "r12b",
+   "organization": "ECCC / Government of Alberta",
+   "publisher": "upstream supplier",
+   "subquestion_id": "q3",
+   "aim": "Alberta station removal",
+   "query": "Environment Canada 174 Alberta weather stations",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NOAA acquisitions",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q3",
+   "aim": "RCC contract after Oct 2026",
+   "query": "SSN-NCEI-RCC-2025 Regional Climate Centers",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "GHCNh status and funding",
+   "query": "GHCNh NCEI hourly ISD replacement 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r15a",
+   "organization": "NOAA NCEI / NESDIS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "processing after AWS move",
+   "query": "NCEI cloud migration GHCN processing",
+   "skip_reason": null
+  },
+  {
+   "id": "r15b",
+   "organization": "CISESS",
+   "publisher": "partners",
+   "subquestion_id": "q4",
+   "aim": "cloud prototype",
+   "query": "CISESS cloud prototype GHCN",
+   "skip_reason": null
+  },
+  {
+   "id": "r16a",
+   "organization": "ECA&D / C3S",
+   "publisher": "alternative providers",
+   "subquestion_id": "q5",
+   "aim": "station data status",
+   "query": "C3S global land surface station daily data",
+   "skip_reason": null
+  },
+  {
+   "id": "r16b",
+   "organization": "Met Office HadISD / Berkeley Earth",
+   "publisher": "alternative providers",
+   "subquestion_id": "q5",
+   "aim": "status",
+   "query": "HadISD update 2026 ISD",
+   "skip_reason": null
+  },
+  {
+   "id": "r16c",
+   "organization": "WMO WIS2 and others",
+   "publisher": "alternative providers",
+   "subquestion_id": "q5",
+   "aim": "second routes for foreign stations",
+   "query": "WIS2 global cache surface observations 2025",
+   "skip_reason": null
+  }
+ ]
+}

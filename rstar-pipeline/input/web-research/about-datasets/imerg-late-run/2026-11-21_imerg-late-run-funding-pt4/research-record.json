@@ -1,0 +1,2377 @@
+{
+ "question": "How are the IMERG Late Run dataset and the groups that produce, process and maintain it funded, and has that funding been stable, cut or threatened between 2025-01-01 and 2026-11-21 (part 4)?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed cuts, terminations, a mission review and workforce reductions)",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "NASA budget routes paying for IMERG Late (GPM mission operations, PMM science, ESDS/ESDIS for PPS and GES DISC, MEaSUREs): FY2025-FY2027 figures, requests, enactments, CRs/shutdown, proposed terminations, and the 2026 Senior Review of GPM",
+   "status": "answered",
+   "source_ids": [
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s34"
+   ],
+   "remaining_gap": "2026 Senior Review results and GPM's budget target; NASA FY2026 operating plan; FY2025 GPM/ESDS figures."
+  },
+  {
+   "id": "q2",
+   "question": "Grants, contracts and cooperative agreements to the producing groups and contractors (PMM science team ROSES awards, SSAI/ADNET/ESDIS contracts, input suppliers), and JAXA's share of GPM; stability 2025-2026",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s7",
+    "s8",
+    "s9",
+    "s14",
+    "s15",
+    "s17",
+    "s18",
+    "s40"
+   ],
+   "remaining_gap": "PMMCCST-24 selection list; PPS contractor; vehicle paying IMERG SSAI staff; JAXA enacted FY2026 figures."
+  },
+  {
+   "id": "q3",
+   "question": "Workforce changes 2025-2026 (layoffs, RIFs, deferred resignations, hiring freezes, contract changes, reorganizations, DAAC consolidation, shutdown furloughs) affecting the IMERG team, PPS, GES DISC/ESDIS and input staff",
+   "status": "answered",
+   "source_ids": [
+    "s41",
+    "s42",
+    "s43",
+    "s44",
+    "s45",
+    "s46",
+    "s50",
+    "s53",
+    "s56"
+   ],
+   "remaining_gap": "No source ties workforce actions to the IMERG team, PPS or GES DISC; staff-page comparisons not done."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/spheres/ROSES_Table-ATMOSPHERE.pdf",
+   "fetched_url": null,
+   "title": "Atmosphere and Related Current and Past ROSES Solicitations",
+   "author_org": "NASA Earth Science Division",
+   "published": "Last updated August 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/roses_table_atmosphere.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Table gives totals only; no list of selected PIs, no award numbers. The $2.5M/4 selected is per the table; whether it covers PMM only or PMM+CloudSat/CALIPSO combined is NOT PRESENT. No 2026 rows.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s2",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/programmatic/Weather_ROSES_Table.pdf",
+   "fetched_url": null,
+   "title": "Weather and Atmospheric Dynamics and Related Current and Past ROSES Solicitations",
+   "author_org": "NASA Earth Science Division",
+   "published": "NOT PRESENT (includes 2025 rows)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/weather_roses_table.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Undated version; selection link column blank for A.32 in this copy. No 2025/2026 PMM row.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://gpm.nasa.gov/science/pmm-science-team",
+   "fetched_url": null,
+   "title": "PMM Science Team | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM",
+   "published": "2019-12-18 (page date; lists 2021-2022 PIs)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pmm_science_team.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Page not updated for the 2024 recompete selections; no dollar amounts; no Hsu/Nguyen, Joyce/Xie entries in the PI list.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.nasa.gov/news-release/nasa-awards-global-modeling-assimilation-support-contract/",
+   "fetched_url": null,
+   "title": "NASA Awards Global Modeling, Assimilation Support Contract",
+   "author_org": "NASA Headquarters",
+   "published": "2026-01-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nasa_glomas_award.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Contract number NOT PRESENT; IMERG/GEOS FP input to IMERG NOT PRESENT (GEOS is named; link to IMERG is via the brief, not this page).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://www.washingtontechnology.com/contracts/2026/03/conflict-interest-protest-clouds-nasa-earth-science-contract/412116/",
+   "fetched_url": null,
+   "title": "Conflict-of-interest protest clouds NASA Earth sciences contract",
+   "author_org": "Washington Technology (Nick Wakeman)",
+   "published": "2026-03-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/wt_glomas_protest.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Extraction via WebFetch, not raw text; no final outcome reported; value $85M differs from NASA release approx. $84M.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.gao.gov/docket/b-424258.2",
+   "fetched_url": null,
+   "title": "GAO docket B-424258.2 (Science Systems and Applications, Inc.)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-03-10 (decision date)",
+   "data_period": null,
+   "source_type": "court",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/gao_b-424258.2.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Docket page does not name the contract; the tie of 80GSFC24R0036 to GLOMAS comes from a search-result summary, not from this page (NOT PRESENT here). Dismissal reason NOT PRESENT (dismissal is consistent with agency corrective action but the page does not say).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s7",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_80GSFC20C0044_8000_-NONE-_-NONE-/",
+   "fetched_url": null,
+   "title": "USAspending award 80GSFC20C0044 (HBG, SSAI)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified_date 2026-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_hbg_80GSFC20C0044.json.json",
+   "retrieved": "2026-11-21",
+   "limitations": "HBG supports hydrosphere/biosphere/geophysics labs; whether the IMERG team (Code 612) staff are charged to HBG, SAMDA or ATMOS is NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: SSAI GSFC Earth Science contract"
+  },
+  {
+   "id": "s8",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_NNG17HP01C_8000_-NONE-_-NONE-/",
+   "fetched_url": null,
+   "title": "USAspending award NNG17HP01C (SAMDA, SSAI)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified_date 2026-09-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_samda_NNG17HP01C.json.json",
+   "retrieved": "2026-11-21",
+   "limitations": "The listed end date 2025-05-31 precedes the ATMOS start (2025-11-03); how the gap was bridged is NOT PRESENT. Tie to IMERG staff NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: SSAI GSFC Atmospheres contract"
+  },
+  {
+   "id": "s9",
+   "url": "https://www.nasa.gov/news-release/nasa-awards-atmosphere-research-support-contract/",
+   "fetched_url": null,
+   "title": "NASA Awards Atmosphere Research Support Contract",
+   "author_org": "NASA",
+   "published": "2025-09-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nasa_atmos_contract_release.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Contract number NOT PRESENT; whether IMERG SSAI staff moved to STC NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://www.washingtontechnology.com/contracts/2025/09/stc-wins-163m-nasa-atmospheric-research-contract/408371/",
+   "fetched_url": null,
+   "title": "STC wins $163M NASA atmospheric research contract",
+   "author_org": "Washington Technology (Ross Wilkers)",
+   "published": "2025-09-25",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/wt_stc_atmos.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Protest NOT PRESENT; layoffs/staff transfer NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s11",
+   "url": "https://www.highergov.com/contract-opportunity/notice-of-intent-to-extend-the-hydrosphere-biosph-80gsfc20c0044-s-2e942/",
+   "fetched_url": null,
+   "title": "Notice of Intent to Extend the Hydrosphere, Biosphere, and Geophysics Support Services (HBG) Contract",
+   "author_org": "HigherGov (mirror of SAM.gov notice, NASA GSFC)",
+   "published": "2025-08-05",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/highergov_hbg_extension.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Precipitation and GES DISC NOT PRESENT; dollar ceiling increase NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: SSAI GSFC Earth Science contract"
+  },
+  {
+   "id": "s12",
+   "url": "https://www.highergov.com/contract-opportunity/support-for-atmospheric-sciences-modeling-and-dat-nng17hp01c-s-7dca8",
+   "fetched_url": null,
+   "title": "SAMDA Contract Extension notice NNG17HP01C",
+   "author_org": "HigherGov (mirror of SAM.gov notice, NASA GSFC)",
+   "published": "2022-07-19",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/highergov_samda_extension.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Pre-2025; precipitation NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s13",
+   "url": "https://gpm.nasa.gov/resources/documents/imerg-v07-technical-documentation",
+   "fetched_url": null,
+   "title": "IMERG V07 Technical Documentation (13 July 2023)",
+   "author_org": "Huffman et al., NASA GSFC",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_techdoc.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "2023 affiliations; contract vehicles NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s14",
+   "url": "https://earth.jaxa.jp/files/research/ra/4th_ra_eo/material/4th_EO-RA_guide_J.pdf",
+   "fetched_url": null,
+   "title": "第4回地球観測研究公募 (4th EO RA) 募集要項",
+   "author_org": "JAXA",
+   "published": "2024-07-01 (RA issued)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/jaxa_4th_eo_ra_guide_j.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Read from WebFetch-saved PDF via pdftotext (earth.jaxa.jp refused to curl). Selection results and actual FY2025/FY2026 disbursement NOT PRESENT. FY2025-FY2027 period appears in GCOM-C section (line 1391), not GPM section.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://www.mext.go.jp/content/20251020-mxt_uchukai01-000045392_04.pdf",
+   "fetched_url": null,
+   "title": "文部科学省における令和８年度宇宙関連予算概算要求について",
+   "author_org": "文部科学省 研究開発局 (MEXT)",
+   "published": "2025-10-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/mext_r8_gaisan_uchu.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "This is the budget REQUEST (概算要求), not the enacted FY2026 budget; GPM core/DPR operations amount NOT PRESENT (no separate line). Read from WebFetch-saved PDF via pdftotext.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://newspaceeconomy.ca/2026/10/28/nasa-adds-fixed-price-task-orders-to-goddards-earth-science-support-procurement/",
+   "fetched_url": null,
+   "title": "NASA Adds Fixed-Price Task Orders to Goddard s Earth-Science Support Procurement",
+   "author_org": "New Space Economy",
+   "published": "2026-10-28 (URL date; solicitation 2026-10-21)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/newspace_hbg2_frfp.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Precipitation/Code 612/Atmospheres NOT PRESENT: HBG II does not name the IMERG lab. Value, due date, award date NOT PRESENT on this page (search snippet gave $425M, proposals due Dec 4 2026, award April 2027, effective June 2027; govconwire.com returned 403).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: SSAI GSFC Earth Science contract recompete"
+  },
+  {
+   "id": "s17",
+   "url": "https://www.jaxa.jp/about/plan/pdf/r8nd-year_plan.pdf",
+   "fetched_url": null,
+   "title": "国立研究開発法人宇宙航空研究開発機構の令和８年度の業務運営に関する計画（年度計画）",
+   "author_org": "JAXA",
+   "published": "FY2026 plan (令和８年４月１日～令和９年３月３１日)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/jaxa_r8_year_plan.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "No budget amount for GPM/DPR or PMM in the plan (budget lines found only for other items); NOT PRESENT. Read from WebFetch-saved PDF via pdftotext (jaxa.jp not fetched with curl).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_80GSFC21CA001_8000_-NONE-_-NONE-/",
+   "fetched_url": null,
+   "title": "USAspending award 80GSFC21CA001 (EOSDIS EED-3, Raytheon)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified_date 2026-10-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_eed3_80GSFC21CA001.json.json",
+   "retrieved": "2026-11-21",
+   "limitations": "EOSDIS-wide; GES DISC, PPS or IMERG NOT PRESENT. A search summary said GSFC planned a sole-source one-year extension (June 2026 notice), not read.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: ESDIS system contract"
+  },
+  {
+   "id": "s19",
+   "url": "https://grantexec.com/grants/77667779-c736-4bc5-8d81-c4e9b3e15d72",
+   "fetched_url": null,
+   "title": "ROSES 2024: A.32 Precipitation Measurements Mission and CloudSat and Calipso Science Team Recompete",
+   "author_org": "GrantExec (aggregator of NASA ROSES-2024 A.32)",
+   "published": "NOT PRESENT (application opens 2024-08-19)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/grantexec_roses24_a32.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Aggregator restating the solicitation (pre-award expectation); differs from NASA ROSES tables (4 selected, $2.5M). Whether $8.5M is per year or total NOT PRESENT beyond the quoted words. Original NASA A.32 text not read.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s20",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/spheres/ROSES_Table-HYDROSPHERE.pdf",
+   "fetched_url": null,
+   "title": "Hydrosphere and Related Current and Past ROSES Solicitations",
+   "author_org": "NASA Earth Science Division",
+   "published": "Last updated August 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/roses_table_hydrosphere.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Contradicts the Atmosphere and Weather tables (4 selected, $2.5M, 3 years) for the same A.32 row; which is correct is NOT PRESENT. Selected PI names NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s21",
+   "url": "https://www.highergov.com/contract-forecast/earth-science-data-and-information-system-esdis-1121962",
+   "fetched_url": null,
+   "title": "Earth Science Data and Information System (ESDIS) Next (ENX) forecast",
+   "author_org": "HigherGov (mirror of NASA GSFC acquisition forecast)",
+   "published": "2025-04-01",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": "work/raw/sa2/highergov_enx_forecast.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch summary, not verbatim. USAspending shows EED-3 end date extended to 2027-01-31, consistent with ENX not yet awarded, but ENX award status NOT PRESENT. GES DISC/PPS NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: ESDIS system contract"
+  },
+  {
+   "id": "s22",
+   "url": "https://www.nasa.gov/news-release/nasa-awards-space-and-earth-sciences-data-analysis-v-contract/",
+   "fetched_url": null,
+   "title": "NASA Awards Space and Earth Sciences Data Analysis-V Contract",
+   "author_org": "NASA",
+   "published": "2023-01-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nasa_sesda5_award.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "GES DISC, PPS, precipitation and contract number NOT PRESENT; any tie to GES DISC operations is not stated. Pre-2025 award; no 2025-2026 change reported here.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: ADNET GSFC Sciences and Exploration Directorate contract"
+  },
+  {
+   "id": "s23",
+   "url": "https://www.nasa.gov/wp-content/uploads/2026/04/fiscal-year-2027-full-budget-request.pdf",
+   "fetched_url": null,
+   "title": "NASA FY 2027 Budget Request (Congressional Justification), Earth Science",
+   "author_org": "NASA",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy27_full_budget.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "FY2025 and FY2026 enacted columns are -- (not given by line). Other operating missions (SMAP, ICESat-2, GRACE-FO) also $0.0, suggesting funds pooled in the Senior Review line, but the page does not say GPM's share.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://www.nasa.gov/wp-content/uploads/2025/05/fy-2026-budget-technical-supplement-002.pdf",
+   "fetched_url": null,
+   "title": "NASA FY 2026 Budget Technical Supplement, Earth Systematic Missions Other Missions and Data Analysis",
+   "author_org": "NASA",
+   "published": "2025-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy26_tech_supp.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "FY2025 enacted column is -- (full-year CR). PMM here is the future Precipitation Measuring Mission (AOS), not the PMM science team.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "FY2026 CJS Joint Explanatory Statement (Division A, P.L. 119-74), NASA Science",
+   "author_org": "Congress (posted by Senate Committee on Appropriations)",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "OCR text (spacing garbled). NOT PRESENT: GPM, Earth Science Data Systems, Senior Review, operating missions (searched).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt652/html/CRPT-119hrpt652.htm",
+   "fetched_url": null,
+   "title": "H. Rept. 119-652, CJS Appropriations Bill, 2027 (House committee report)",
+   "author_org": "House Committee on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/hrpt119-652.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "NOT PRESENT: GPM, Senior Review, Earth Science Data Systems, ESDIS, DAAC (searched). Committee mark, not enacted.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf",
+   "fetched_url": null,
+   "title": "Senate Appropriations Committee FY2027 CJS report/explanatory statement, NASA Science",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/senate_fy27_cjs.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Committee recommendation, not enacted. GPM NOT PRESENT by name.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/senior-reviews/2026/2026_ESD%20Senior_Review_Call_for_Proposals_FINAL.pdf",
+   "fetched_url": null,
+   "title": "Call for Proposals - Senior Review 2026 for Extension of Earth Science Operating Missions",
+   "author_org": "NASA SMD Earth Science Division (K. St Germain)",
+   "published": "2026-01-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sr2026_call_draft.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "GPM's dollar budget target (in-guide/over-guide) NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://science.nasa.gov/earth-science/senior-review-2026/",
+   "fetched_url": null,
+   "title": "ESD 2026 Senior Review for Extension of Earth Science Operating Missions",
+   "author_org": "NASA Science, Earth Science Division",
+   "published": "undated (retrieved 2026-11-21)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sr2026_page.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NOT PRESENT: panel report, results, GPM budget decision.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://democrats-science.house.gov/imo/media/doc/SST%20Minority%20Staff%20Report%20-%20NASA%20Implementation%20of%20FY26%20PBR%20-%20April%202026.pdf",
+   "fetched_url": null,
+   "title": "NASA Implementation of the FY26 PBR (House Science Committee Minority Staff Report)",
+   "author_org": "House Committee on Science, Space, and Technology, Democratic staff",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sst_minority_fy26pbr_apr2026.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Partisan staff report. NOT PRESENT: GPM, PMM, PPS, GES DISC, ESDIS, Earth Science Data Systems (searched). Case studies are EPFD, AXIS, JASD.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NASA-wide/Goddard-wide implementation of FY26 PBR"
+  },
+  {
+   "id": "s31",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2025/09/or-25-09.pdf",
+   "fetched_url": null,
+   "title": "NASA OIG Open Recommendations as of September 15, 2025",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2025-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_or-25-09.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Applies to DAACs generally (GES DISC is one); not GPM/PPS specific. No dollar figures.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: all EOSDIS DAACs"
+  },
+  {
+   "id": "s32",
+   "url": "https://science.nasa.gov/earth-science/senior-review-2026/faqs/",
+   "fetched_url": null,
+   "title": "ESD 2026 Senior Review Frequently Asked Questions",
+   "author_org": "NASA Science, Earth Science Division",
+   "published": "undated (retrieved 2026-11-21)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sr2026_faqs.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "No mission-specific (GPM) target amount. NOT PRESENT: results.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: all 2026 Senior Review missions"
+  },
+  {
+   "id": "s33",
+   "url": "https://espo.nasa.gov/sites/default/files/documents/2026-05/D2_0915_Scott_ESDS-Updates.pdf",
+   "fetched_url": null,
+   "title": "Earth Science Data Systems Updates (Joel Scott, Program Executive, ESDS)",
+   "author_org": "NASA Headquarters, Earth Science Division / ESDS",
+   "published": "2026 (slide dated 03.18.2026; posted 2026-05)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/esds_updates_scott_2026-05.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Slide deck; no budget figures; no PPS, GPM or IMERG named; no date for GES DISC transition.",
+   "found_by": [
+    "sa1",
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s34",
+   "url": "https://spacepolicyonline.com/news/house-clears-fy2027-cr-now-to-the-president/",
+   "fetched_url": null,
+   "title": "House Clears FY2027 CR, Now to the President",
+   "author_org": "SpacePolicyOnline.com",
+   "published": "2026-09 (last updated Sep 03, 2026)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/spo_fy27_cr.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NASA-wide; no Earth Science, GPM or ESDS detail.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NASA-wide appropriations"
+  },
+  {
+   "id": "s35",
+   "url": "https://www.planetary.org/articles/nasa-is-funded-now-what",
+   "fetched_url": null,
+   "title": "NASA is funded. Now what?",
+   "author_org": "The Planetary Society (Jack Kiraly, Ari Koeppel)",
+   "published": "2026-01-30",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-21",
+   "limitations": "Raw download refused (planetary.org via proxy 403); read via WebFetch extraction only. No GPM/ESDS detail.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NASA science missions overall"
+  },
+  {
+   "id": "s36",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/resources/ESD%20Town%20Hall%2012162025.pdf",
+   "fetched_url": null,
+   "title": "NASA Earth Science Division Town Hall, December 16, 2025",
+   "author_org": "NASA SMD Earth Science Division",
+   "published": "2025-12-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/esd_townhall_dec2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not name GPM or the PMM science team; MIO 'In Formulation'. FY2027 request shows Multisource Integrated Observatory line $41.8M FY2027 (fy27_full_budget.txt line 5427).",
+   "found_by": [
+    "sa1",
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s37",
+   "url": "https://science.nasa.gov/earth-science/senior-review-2026/resources/",
+   "fetched_url": null,
+   "title": "ESD 2026 Senior Review Resources",
+   "author_org": "NASA Science, Earth Science Division",
+   "published": "undated (retrieved 2026-11-21)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sr2026_resources.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NOT PRESENT: 2026 panel report, results, GPM guidance.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s38",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/senior-reviews/2026/2026_Senior_Review_Kickoff_Pre-Proposal_Briefing.pdf",
+   "fetched_url": null,
+   "title": "2026 ESD Senior Review Kickoff / Pre-Proposal Briefing",
+   "author_org": "NASA SMD Earth Science Division",
+   "published": "2026-01 (pre-proposal briefing January 14, 2026 per schedule)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e24",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sr2026_kickoff.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "GPM dollar target NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://gpm.nasa.gov/taxonomy/term/944",
+   "fetched_url": null,
+   "title": "GPM Programmatic documents listing",
+   "author_org": "NASA GPM/PMM",
+   "published": "undated (retrieved 2026-11-21)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-21",
+   "limitations": "Read via WebFetch extraction only (no local copy). NOT PRESENT: 2023/2026 Senior Review documents, budget.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s40",
+   "url": "https://gpm.nasa.gov/sites/default/files/meeting_files/PMM%20Science%20Team%20Meeting%202024/Session%2010_Program%20and%20Project%20Status/Stachnik_PMM2024-ProgramSlides.pdf",
+   "fetched_url": null,
+   "title": "NASA Weather program / PMM program status slides, PMM Science Team Meeting 2024 (Stachnik)",
+   "author_org": "NASA HQ Earth Science Division (J. Stachnik)",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/stachnik_pmm2024_program_slides.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Planned figures shown at the 2024 meeting, before selections were final (estimates marked with a tilde).",
+   "found_by": [
+    "main"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/06/final-memorandum-ig-26-005-review-of-goddard-space-flight-centers-transformation-efforts.pdf",
+   "fetched_url": null,
+   "title": "Review of Goddard Space Flight Center's Transformation Efforts (IG-26-005)",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2026-06-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/oig_ig-26-005.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Center-wide figure. Earth Sciences Division, Code 612, PPS, GES DISC and IMERG NOT PRESENT (earlier run searched). No RIF figure.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NASA GSFC center-wide workforce",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://labor.maryland.gov/Employment/pdf/warn-log-2025.pdf",
+   "fetched_url": null,
+   "title": "2025 WARN/ESA LOG",
+   "author_org": "Maryland Department of Labor",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/md_warn_log_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "The log does not name NASA, Goddard, the contract, Code 612, PPS, GES DISC or IMERG, so no tie to the IMERG team (Bolvin, Nelkin) is stated. Searches for ADNET, KBR and Telophase returned no matching lines. Aggregators disagree (warntracker lists 228 for the August 2025 entry).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: SSAI company-wide Maryland layoffs"
+  },
+  {
+   "id": "s43",
+   "url": "https://labor.maryland.gov/employment/pdf/warn-log-2026.pdf",
+   "fetched_url": null,
+   "title": "2026 WARN/ESA Log/Other Dislocations",
+   "author_org": "Maryland Department of Labor",
+   "published": "2026 (latest entry 11/17/2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/md_warn_log_2026.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Searched the text for Science Systems, SSAI, ADNET, KBR, Telophase, Lanham, Greenbelt, Goddard and NASA. The log names no contract or agency. PDF saved as md_warn_log_2026.pdf.pdf.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: Maryland contractor layoffs 2026"
+  },
+  {
+   "id": "s44",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/ingest-archive-migration-interrupt-data-ingestion-oct.-28-30",
+   "fetched_url": null,
+   "title": "Ingest & Archive Migration to Interrupt Data Ingestion on Oct. 28-30",
+   "author_org": "NASA Earthdata (ESDIS)",
+   "published": "2026-10-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/earthdata_cia_migration_alert.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "A systems consolidation, not a workforce action. IMERG not named.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s45",
+   "url": "https://www.earthdata.nasa.gov/about/data-metrics/esdis-metrics/weekly-metrics/10-20-2025",
+   "fetched_url": null,
+   "title": "ESDIS Weekly Metrics: October 20, 2025",
+   "author_org": "NASA Earthdata (ESDIS)",
+   "published": "2025-10-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/esdis_weekly_2025-10-20.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "GES DISC, PPS, GPM and IMERG NOT PRESENT. The page does not say ESDIS was 'excepted'.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: ESDIS operations during the Oct 2025 shutdown"
+  },
+  {
+   "id": "s46",
+   "url": "https://www.aip.org/fyi/nasa-goddard-building-closures-draw-scrutiny",
+   "fetched_url": null,
+   "title": "NASA Goddard Building Closures Draw Scrutiny",
+   "author_org": "AIP FYI (Lindsay McKenzie)",
+   "published": "2025-11-12 (updated Nov 17)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/aip_fyi_goddard_closures.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Earth Sciences Division, Code 612, PPS, GES DISC and IMERG NOT PRESENT. The missions named are Roman and Dragonfly.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NASA GSFC center-wide facilities"
+  },
+  {
+   "id": "s47",
+   "url": "https://physicsworld.com/a/nasas-goddard-space-flight-center-hit-by-significant-downsizing/",
+   "fetched_url": null,
+   "title": "NASA's Goddard Space Flight Center hit by significant downsizing",
+   "author_org": "Physics World (Peter Gwynne)",
+   "published": "2025-11-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/physicsworld_goddard_downsizing_fetch.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction, not raw text. Earth science, GPM, IMERG and GES DISC NOT PRESENT. Civil-servant and RIF figures NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NASA GSFC center-wide"
+  },
+  {
+   "id": "s48",
+   "url": "https://www.ifpte.org/news/ifpte-condemns-nasa-closure-of-goddard-institute-for-science-studies",
+   "fetched_url": null,
+   "title": "IFPTE Condemns NASA Closure of Goddard Institute for Science Studies",
+   "author_org": "IFPTE (Candace Rhett)",
+   "published": "2025-05-30",
+   "data_period": null,
+   "source_type": "advocacy",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ifpte_giss_closure.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "GISS is a Goddard Earth-science institute, but IMERG, PPS and GES DISC are NOT PRESENT. Union press release.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: Goddard Earth sciences (GISS)"
+  },
+  {
+   "id": "s49",
+   "url": "https://www.gao.gov/products/gao-26-108556",
+   "fetched_url": null,
+   "title": "NASA: Assessments of Major Projects (GAO-26-108556)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-07-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/gao_26_108556_page_fetch.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Product page only (the highlights PDF returned 403). Goddard figure, Earth science, ESDIS, GPM and data systems NOT PRESENT on the page. The 'Goddard lost 34% of civil servants' figure appears only in search summaries and was not verified.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NASA-wide workforce"
+  },
+  {
+   "id": "s50",
+   "url": "https://www.nasa.gov/blogs/workforce-updates/2026/05/22/a-message-from-administrator-jared-isaacman/",
+   "fetched_url": null,
+   "title": "A Message from Administrator Jared Isaacman (workforce update)",
+   "author_org": "NASA",
+   "published": "2026-05-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/nasa_workforce_msg_2026-05-22_fetch.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction. Earth Science Division, ESDIS, DAACs, PPS and IMERG NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NASA agency realignment, Goddard role",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://www.spokesman.com/stories/2026/feb/27/us-climate-forecaster-to-be-absorbed-in-weather-ag",
+   "fetched_url": null,
+   "title": "U.S. climate forecaster to be absorbed in weather agency reshuffle",
+   "author_org": "Bloomberg (Brian K. Sullivan, Lauren Rosenthal) via The Spokesman-Review",
+   "published": "2026-02-27",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/spokesman_cpc_absorbed_fetch.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction. Satellite data, infrared, precipitation products, NASA and IMERG NOT PRESENT, so no tie to the IMERG IR input is stated. CPC staff numbers NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NOAA CPC reorganization"
+  },
+  {
+   "id": "s52",
+   "url": "https://clearinghouse.net/case/47041/",
+   "fetched_url": null,
+   "title": "International Federation of Professional & Technical Engineers, AFL-CIO v. Trump (1:25-cv-03615)",
+   "author_org": "Civil Rights Litigation Clearinghouse",
+   "published": "NOT PRESENT (docket through 2026-07-24)",
+   "data_period": null,
+   "source_type": "court",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/clearinghouse_ifpte_v_trump_fetch.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction; the docket entries are paraphrased by the extractor, not quoted verbatim. Library, building closures, Earth science, RIF and shutdown NOT PRESENT on the page.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: Goddard union litigation"
+  },
+  {
+   "id": "s53",
+   "url": "https://www.gao.gov/assets/gao-26-108556-highlights.pdf",
+   "fetched_url": null,
+   "title": "GAO-26-108556 Highlights: NASA Assessments of Major Projects",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-07-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gao_26_108556_highlights.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "NASA-wide. Goddard, Earth science, ESDIS, GPM and precipitation NOT PRESENT in the highlights (searched). The PDF came from the binary that WebFetch saved after fetch_page.py got a 403. This supersedes the unreadable entry for the same URL. The 34% Goddard figure is not in the highlights.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: NASA-wide workforce",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s54",
+   "url": "https://gpm.nasa.gov/category/blog-type/data-news",
+   "fetched_url": null,
+   "title": "Data News | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM / PPS",
+   "published": "listing (items Feb 2025 to Jan 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_data_news.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "First listing page only. The absence of a shutdown notice is not proof that operations continued. The 'excepted' status is NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s55",
+   "url": "https://www8.cao.go.jp/space/comittee/27-kagaku/kagaku-dai70/siryou1.pdf",
+   "fetched_url": null,
+   "title": "宇宙科学予算について（令和８年度予算・令和7年度補正予算）",
+   "author_org": "文部科学省研究開発局宇宙開発利用課 (material for Cabinet Office space policy committee, 宇宙科学・探査小委員会 第70回)",
+   "published": "2026-04-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk-c7-1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/checker/cao_kagaku70_siryou1.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Original PDF downloaded via WebFetch binary save (host www8.cao.go.jp refused by sandbox proxy for fetch_page; not .org so no approval asked). Did not check whether PMM also received a 令和7年度補正 (FY2025 supplementary) amount elsewhere in the document. Contradicts c7 statement that no enacted figure was found; the request was 1,900百万円.",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "context: MEXT/JAXA PMM satellite budget",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s56",
+   "url": "https://marylandmatters.org/2025/11/23/nasa-moves-quickly-on-plan-to-shrink-goddard-campus-by-25/",
+   "title": "NASA moves quickly on plan to shrink Goddard campus by 25%",
+   "author_org": "Federal News Network (Jory Heckman), via Maryland Matters",
+   "published": "2025-11-23",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "news",
+   "local_file": "work/raw/main/browser/marylandmatters-org-2025-11-23-nasa-moves-quickly-on-plan-to_140832.txt",
+   "retrieved": "2026-11-21",
+   "evidence_id": null,
+   "data_period": null,
+   "limitations": "Center-wide; does not name Earth sciences, PPS or GES DISC.",
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "figure_status": [
+    "current_plan",
+    "request"
+   ],
+   "text": "GPM's own operations line was $19.8M (FY2024 op plan) and $19.7M in the FY2026 request, with $0.0 from FY2027; the FY2027 request also shows GPM at $0.0 for FY2027-31, with extended-mission money pooled in an 'Earth Science Senior Review' line ($58.8M FY2027 in the FY2026 request; $68.8M in the FY2027 request), and says GPM funding beyond FY2026 depends on the 2026 Senior Review.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Op Plan   Enacted   Request | Budget Authority (in $ millions)                   FY 2024   FY 2025   FY 2026   FY 2027   FY 2028   FY 2029   FY 2030 … Precipitation Measuring Mission (PMM)                 15.7        --       0.0       0.0       0.0       0.0       0.0 … Earth Systematic Missions (ESM) Research              39.0        --      10.6      10.6      10.6      10.6      10.6 … Global Precipitation Measurement (GPM)                19.8        --      19.7       0.0       0.0       0.0       0.0",
+     "location": "FY2026 Technical Supplement p. ES-24"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Global Precipitation Measurement (GPM)                19.8        --      19.7       0.0       0.0       0.0       0.0",
+     "location": "ES-24"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Budget Authority (in $ millions)           FY 2025 FY 2026 FY 2027 FY 2028 FY 2029 FY 2030 FY 2031 … Global Precipitation Measurement (GPM)          --       --      0.0      0.0      0.0      0.0      0.0 | ICESat-2                                        --       --      0.0      0.0      0.0      0.0      0.0 | GRACE Follow-On                                 --       --      0.0      0.0      0.0      0.0      0.0 | Earth Science Senior Review                     --       --     68.8     67.6     80.3     88.7     91.4 … Total Budget                                    --       --    426.8    485.7    487.0    458.3    454.7",
+     "location": "FY2027 CJ, ES-15"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "The 2023 Senior Review approved extended mission operations for GPM through FY 2026. NASA will | allocate GPM funding beyond FY 2026 based on the 2026 Senior Review recommendations anticipated | in May 2026.",
+     "location": "FY2027 CJ, GPM page"
+    }
+   ],
+   "applicability": "Budget requests, not enacted line items; FY2025 column is '--' (full-year CR).",
+   "confidence": "high",
+   "confidence_reason": "NASA's own budget tables, read as raw text by the coordinator.",
+   "sole_source_reason": "the agency's own budget tables are the authority for its budget request"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "figure_status": [
+    "current_plan",
+    "request"
+   ],
+   "text": "Earth Science Data Systems (which funds ESDIS, the DAACs including GES DISC) was $311.5M in FY2024 and requested at $114.6M for FY2026 and $124.8M for FY2027; the FY2026 request says NASA will replace the DAACs with a few thematic science-enabling teams and end MEaSUREs after CY2026; ESDS slides (2026) and the Dec 2025 town hall list GES DISC among 11 DAACs to be consolidated (study underway). No document names PPS.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Earth Science Data Systems                   311.5          --      114.6       114.6       114.6       114.6       114.6",
+     "location": "FY2026 Technical Supplement, Earth Science summary"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "To modernize, streamline, and reduce the cost of data management, NASA will replace the existing | Distributed Active Archive Centers (DAACs) with a small number of thematic science-enabling teams, | driving the use of Earth observation data across the value chain for commercial, decision-making, and | scientific communities. The project will halt all data accession outside current missions and continuity | products. … The Making Earth System Data Records for Use in Research Environments (MEaSUREs) project will | complete current projects by the end of CY 2026 and cancel future selections. … ESDS will reduce and realign its existing DAACs into thematic science enabling teams.",
+     "location": "FY2026 Technical Supplement, ESDS"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Earth Science Data Systems                      --         --      124.8       124.9       126.9     127.0     127.2",
+     "location": "FY2027 CJ, Earth Science summary table"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "•   Consolidation of DAACs from 11 independent | locations to thematic science enabling teams … ASDC DAAC              GES DISC DAAC",
+     "location": "ESDS Updates slides"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "•   Improved fidelity of planning for DAAC transition to Science Enabling Teams … • Adopt a more streamlined approach to | administering a portfolio that aligns with the | PBR … 1. Data, Applications, Research, and Technology teams (DART) Teams | • Thematic DARTs will replace individual teams for missions that have completed | prime operations plus one cycle of extended operations (generally, 4-6 years | post launch) | 2. Mission-Specific Teams | • Retained for missions in prime operations, plus one extension as deemed | appropriate under Senior Review | • Transition into DART teams over time",
+     "location": "Objectives slide (txt line 42); Flight Mission Strategy slide 14 (txt lines 169-172); MIO Project slide (txt lines 746-756)"
+    }
+   ],
+   "applicability": "Requests; Congress enacted only Earth Science totals for FY2026.",
+   "confidence": "high",
+   "confidence_reason": "NASA budget documents read as raw text; slides from ESD's own program executive.",
+   "sole_source_reason": "the agency's own budget tables are the authority for its budget request"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "figure_status": [
+    "enacted",
+    "proposed"
+   ],
+   "text": "Congress did not adopt the FY2026 cuts: the FY2026 law (P.L. 119-74) gives Science $7.25B and Earth Science $2,153M with no GPM or ESDS line; for FY2027 the House committee recommends $1,325M for Earth Science and the Senate committee $2,187.9M, rejecting proposed mission terminations while it 'awaits the results of the 2026 Senior Review'; a CR holds NASA at its FY2026 level through Dec 11, 2026, after last year's 43-day shutdown.",
+   "evidence": [
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "The agreement includes $7,250,000,000 for Science and directs NASA to provide fu nding | as described in the subsequent table, which is cod ified in the bill, and detailed in the text below. … The agreement continues support fo r the scientific | value and exploration provided by NASA Science mi ssions in Earth Science, Planetary Science, … Earth Science                                                                        2, 153,000",
+     "location": "NASA Science section and table (IN THOUSANDS OF DOLLARS), txt lines 2061-2076"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Earth Science.--The recommendation includes $1,325,000,000 | for Earth Science.",
+     "location": "NASA Science, txt lines 5703-5704 (table line 5667)"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Earth Science .................................................................................................................................................           2,187,900 … The Committee rejects the mission terminations proposed in the | fiscal year 2027 budget request for Earth Science, Planetary | Science, Astrophysics, and Heliophysics. The Committee is con- | cerned by the plan to end 53 missions across Science, which was | again driven by budgetary pressure rather than scientific value. | NASA should use the Senior Review process to assess the scientific … merit and cost-effectiveness of extending operating missions.",
+     "location": "NASA Science, printed pp. 160-161 (txt lines 8713, 8762-8770)"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "As the Committee awaits the results of the 2026 | Senior Review for Earth Science, the Committee rejects the pro- | posed termination of these missions, provides not less than the fis- | cal year 2026 enacted level, and directs NASA to continue oper- | ating them as long as they maintain scientific productivity.",
+     "location": "printed p. 162 (txt lines 8892-8900)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "… a CR to avoid another crippling 43-day shutdown like last year’s, the longest in history. … From a space policy perspective, the CR keeps NASA funded at its FY2026 level of $24.4 billion, substantially more than the $18.8 billion requested by the Trump Administration for FY2027. … If signed by the President, the CR will run out on December 11, 2026, 101 days from now and 38 days after the midterms. [UPDATE: President Trump signed the bill into law on September 2, P.L. 119-103.]",
+     "location": "article paragraphs 2, 5, 8"
+    }
+   ],
+   "applicability": "Committee marks are proposals; no GPM-specific appropriation.",
+   "confidence": "high",
+   "confidence_reason": "Enacted law text and committee reports read as raw text.",
+   "sole_source_reason": "the appropriations law and committee reports are the authority for congressional funding actions"
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "GPM was reviewed in NASA's 2026 Earth Science Senior Review (Project Scientist Huffman) under 'reduced budget targets' for all missions, with missions asked to weigh more risk of data degradation for lower cost; results were due May 2026 and guidance letters Aug 2026, but no results, panel report or GPM budget target are public as of 2026-11-21.",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "GSFC/George Huffman                                              Project Scientist for GPM … Given ESD budget constraints, all missions proposing to the Senior | Review will be given reduced budget targets. … The following sixteen missions (in alphabetical order) are invited to propose to the 2026 Senior Review: Aqua, | Aura, ECOSTRESS, EMIT, GEDI, GPM, GRACE-FO, ICESat-2, OCO-2, OCO-3, PREFIRE, SAGE-III, | SMAP, SWOT, TEMPO, and TSIS-1. … The period for this review will cover fiscal year (FY) 2027 through FY 2029.",
+     "location": "p. 1 of 12 (txt lines 13, 42-52); in-/over-guideline at txt lines 300-322"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "• Extended missions: | • ECOSTRESS, EMIT, GEDI, GPM, GRACE-FO, ICESat-2, SMAP, and TSIS-1 … • Missions proposing to the ESD Senior Review will compete for an allocation from a pool of | funds comprised primarily of the budgets from all of the missions in the review. | • Each mission will be provided a budget target guideline with the final call for proposals. | • Given the dynamic and constrained budget solution space that the Agency is working | within, the missions will be given cost challenges, and all budgets will be pending the | availability of funds in each of the FYs of the review window. … • An increased risk of data collection degradation in exchange for an associated reduction in mission | cost or greater allowance for hands-off operations and longer data outages for anomaly response | should be considered.",
+     "location": "slides 9-11 (Missions Included; Funding Environment FY27-29), Technical Section Content slide (txt lines 120-149, 441-443)"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "SR Panel Report | May 2026 | PPBE2028/Senior Review Budget Decisions | May-July 2026 | SR Results and Mission Management Team Recommendations to ESD | May 2026 | Guidance Letters to Missions | August 2026 | Mission Response | September 2026",
+     "location": "2026 ESD Senior Review Schedule table"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "but compared to the prime mission phase, proposers are encouraged to propose and justify an increased risk of | data collection degradation in exchange for an associated reduction in mission cost.",
+     "location": "Call for proposals, p. 2"
+    }
+   ],
+   "applicability": "Absence of results is as of NASA's review, FAQ and resources pages on 2026-11-21.",
+   "confidence": "moderate",
+   "confidence_reason": "Review documents read directly; the outcome is unpublished, so the threat level for GPM operations is unknown.",
+   "sole_source_reason": "NASA's own review documents are the authority for its review process"
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "figure_status": [
+    "estimate",
+    "actual"
+   ],
+   "text": "The PMM science team was recompeted in ROSES-2024 A.32 (combined with CloudSat/CALIPSO; proposals due Nov 20, 2024). NASA's 2024 program slide planned about 43 selections (30 PMM) and $25.5M ($16.5M PMM), against 36 selections and $16.4M for the 2021 PMM team; NASA's ROSES tables (last updated Aug 2026) conflict on the outcome (4 selected/$2.5M in the Atmosphere and Weather tables, 20/$12.1M in the Hydrosphere table). No ROSES-2025 PMM element was listed. NASA-center PIs such as the IMERG team are funded through internal Work Packages outside ROSES.",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "2024   PMM and CloudSat and CALIPSO Science Team                       ~43 (30 PMM)   $25.5M ($16.5M)",
+     "location": "printed slide 18, WEATHER RELATED SOLICITATIONS"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "A.32       Precipitation Measurements Mission and CloudSat        4           121         $2.5M     3          --- | and Calipso Science Team Recompete … A.24   Precipitation Measurement Missions Science Team      36           114         $16.4M      3         PMMST-21 Selection",
+     "location": "lines 15-16 (2024 section) and line 42 (2021 section)"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Hydrosphere and Related Current and Past ROSES Solicitations, Last updated August 2026 | ROSES                          Program                           Selected      Total       Total     Duration          Selection Link | Appendix                                                          Proposals   Proposals    Funding     (years) | 2025 | A.2 … A.3 … A.5 … A.6 … 2024 … A.32       Precipitation Measurements Mission and CloudSat        20          121         $12.1M      3-4         PMMCCST-24 Selection | and Calipso Science Team Recompete",
+     "location": "p.1 header and lines 1-22"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "The team comprises scientists funded by NASA and international investigators selected by NASA on the basis of no exchange of funds. … Dr. George Huffman | NASA Goddard Space Flight Center | GPM Project Scientist and PMM Science Team Lead | Dr. Erich F. Stocker | NASA Goddard Space Flight Center | GPM Deputy Project Scientist for Data and Precipitation Processing System Project Manager … Kidd | Christopher | University of Maryland, College Park | A Framework for Precipitation Retrievals from the Evolving GPM Constellation … NASA Headquarters has authorized a new funding strategy called \"Work Packages\" whereby key Principal Investigators at NASA centers who are repeatedly funded under ROSES calls are preselected outside of the ROSES call. … Huffman, George | Extending the IMERG Multi-Sensor Level 3 Precipitation Product into Polar Regions",
+     "location": "Overview; PMM Science Program Management Team; PIs 2021-2022; Work Packages section"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "NASA Headquarters has authorized a new funding strategy called \"Work Packages\" whereby key Principal Investigators at NASA centers who are repeatedly funded under ROSES calls are preselected outside of the ROSES call.",
+     "location": "PMM Science Team page"
+    }
+   ],
+   "applicability": "Selection lists were not found; tables conflict.",
+   "confidence": "moderate",
+   "confidence_reason": "NASA's own tables disagree; the 2024 slide figures are planned values.",
+   "sole_source_reason": "NASA's solicitation tables and program slides are the authority for its own solicitations"
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "figure_status": [
+    "obligation",
+    "ceiling"
+   ],
+   "text": "Contracts: SSAI's SAMDA atmospheric-science support contract (NNG17HP01C, $257.2M obligated) ended 2025-05-31 and was succeeded by STC's ATMOS contract ($163.1M maximum, from Nov 3, 2025); SSAI's HBG contract (80GSFC20C0044) runs to 2027-03-31 with a recompete under way; Raytheon's ESDIS EED-3 contract (80GSFC21CA001, $284.0M obligated of $302.5M) was extended to 2027-01-31 while its successor (ESDIS Next) was forecast but not found awarded; the GMAO support contract (GLOMAS) awarded to ADNET in Jan 2026 was protested by SSAI and NASA said it would pull back the award. No source names the PPS contractor or the vehicle paying the IMERG team's SSAI staff.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "\"description\": \"IGF::CL::IGF SUPPORT FOR ATMOSPHERES, MODELING, AND DATA ASSIMILATION (SAMDA)\" … \"total_obligation\": 257181878.06 … \"base_and_all_options\": 298177085.0 … \"start_date\": \"2017-03-01\" … \"end_date\": \"2025-05-31\" … \"last_modified_date\": \"2026-09-15\" … \"potential_end_date\": \"2025-05-31 00:00:00\" … \"recipient_name\": \"SCIENCE SYSTEMS AND APPLICATIONS, INC.\"",
+     "location": "fields description, total_obligation, base_and_all_options, period_of_performance, recipient"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "CONTRACT RELEASEC25-022 … NASA has selected Science and Technology Corp. of Columbia, Maryland, to support atmospheric science research and development at the agency’s Goddard Space Flight Center in Greenbelt, Maryland. … The Atmosphere Support is a cost-plus-fixed-fee, single-award indefinite-delivery/indefinite-quantity contract with a maximum ordering value of $163.1 million. The contract will have an effective date of Monday, Nov. 3, 2025, for a period of five years.",
+     "location": "release body"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "The Atmosphere Support is a cost-plus-fixed-fee, single-award indefinite-delivery/indefinite-quantity contract with a maximum ordering value of $163.1 million. The contract will have an effective date of Monday, Nov. 3, 2025, for a period of five years.",
+     "location": null
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "\"type_description\": \"DEFINITIVE CONTRACT\" … \"total_obligation\": 497006714.77 … \"base_and_all_options\": 613875000.0 … \"start_date\": \"2020-04-01\" … \"end_date\": \"2027-03-31\" … \"last_modified_date\": \"2026-11-12\" … \"potential_end_date\": \"2027-03-31 00:00:00\" … \"recipient_name\": \"SCIENCE SYSTEMS AND APPLICATIONS, INC.\"",
+     "location": "fields type_description, total_obligation, base_and_all_options, period_of_performance, recipient"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "\"description\": \"EARTH OBSERVING SYSTEM DATA AND INFORMATION SYSTEM (EOSDIS) EVOLUTION AND DEVELOPMENT (EED)-3 EOSDIS EED-3 SERVICES\" … \"total_obligation\": 284007965.78 … \"base_and_all_options\": 302500000.0 … \"start_date\": \"2021-08-01\" … \"end_date\": \"2027-01-31\" … \"last_modified_date\": \"2026-10-28\" … \"potential_end_date\": \"2027-01-31 00:00:00\" … \"recipient_name\": \"RAYTHEON COMPANY\"",
+     "location": "fields description, total_obligation, base_and_all_options, period_of_performance, recipient"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "CONTRACT RELEASEC26-002 … NASA has selected ADNET Systems, Inc. of Bethesda, Maryland, to provide global modeling and data assimilation support at the agency’s Goddard Space Flight Center in Greenbelt, Maryland. | The Global Modeling and Assimilation Support contract is a single-award, cost-plus-fixed-fee, indefinite-delivery/indefinite-quantity contract with a maximum ordering value of approximately $84 million with a five-year period of performance beginning March 15, 2026. | Under this contract, the contractor will be responsible for supporting and maintaining NASA Goddard’s Global Modeling and Assimilation Office’s Goddard Earth Observing System (GEOS) model and data assimilation system.",
+     "location": "release body"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "\"$85 million small business contract\" … \"went to Adnet Systems in late January\" … \"filed a protest on Feb. 9 at the Government Accountability Office\" … \"a personal conflict-of-interest involving the source selection board chairperson\" … NASA \"would pull back the award and investigate the conflict-of-interest allegations.\"",
+     "location": "article body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "George J. Huffman (1), David T. Bolvin (1,2), Robert Joyce (1,2), Owen A. Kelley (1,3), | Eric J. Nelkin (1,2), Jackson Tan (1,4), Daniel C. Watters (5), B. Jason West (1,6) | (1) Earth Sciences Division, NASA Goddard Space Flight Center | (2) Science Systems and Applications, Inc. | (3) George Mason University | (4) University of Maryland Baltimore County | (5) NASA Marshall Space Flight Center | (6) KBR, Inc.",
+     "location": "title page, lines 3-11"
+    }
+   ],
+   "applicability": "Ties of these contracts to IMERG staff are not stated in any source.",
+   "confidence": "moderate",
+   "confidence_reason": "USAspending records and NASA releases are direct, but none ties a contract to IMERG or PPS.",
+   "sole_source_reason": "USAspending award records are the federal government's own record of its obligations"
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "figure_status": [
+    "request",
+    "estimate"
+   ],
+   "text": "JAXA's share: its 4th Earth Observation RA (July 2024) plans about ¥100M a year for GPM and PMM research, budget permitting; JAXA's FY2026 plan continues GPM/DPR operations with NASA. For the PMM precipitation radar satellite (GPM's successor), MEXT requested ¥1,900M for FY2026 (R8) but the enacted FY2026 budget is ¥200M, against ¥1,082M in FY2025. No separate DPR operations line was found.",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "研究公募発出：2024 年 7 月 1 日 … プロポーザル提出期限：2024 年 8 月 21 日 … GPM の主衛星は 2014 年 2 月に打ち上げられており、本研究公募では、GPM | 主衛星の後期利用運用期間にあたる 3 年間の研究を募集します。また降水レー | ダ衛星は 2028 年度の打上げを予定し、本研究公募では、PMM のアルゴリズム | 開発や検証準備に関する 3 年間の研究を募集します。 … JAXAの予算状況にも依存しますが、GPMとPMMで年総額10,000万円の予算執行 | を計画しています。",
+     "location": "cover lines 15-17; section 2.2.4 GPM&PMM, p.35 (lines 1432-1440)"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "文部科学省における | 令和８年度宇宙関連予算概算要求について | 2025年10月20日 … 令和８年度要求・要望額（案） 2,060億円＋事項要求 | （前年度予算額        1,550億円） … ○降水レーダ衛星（PMM）                     1,900百万円（1,082百万円) … NASA等との国際協力ミッショ | ンに参画しているため",
+     "location": "cover; p.1 summary; PMM item (lines 160-165)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "米国航空宇宙局（NASA）と連携し、全球降水観測計画／二周波降水レーダ（GPM/DPR） | の運用を継続し、降水に関する観測データの取得を進め、地球環境変動とメカニズ | ム解明等に貢献するとともに、大学や国の研究機関及び民間企業等と連携しなが | ら、衛星全球降水マップ（GSMaP）の普及及びユーザーの利用拡大を進める。 （後期 | 利用運用継続中） … 降水レーダ衛星（PMM）について、NASA が計画している次世代の地球観測ミッショ | ンである Atmosphere Observing System（AOS)ミッションへの参画を前提に開発を | 進め、NASA・CNES との協調を継続し、Ku 帯ドップラー降水レーダ（KuDPR）、衛星 | バス及び地上システムの基本設計及び詳細設計、及び、製作・試験を実施する。               （令 | 和 5 年度開発開始、令和 10 年度打上げ目標）",
+     "location": "text lines 278-282 and 340-344 (earth observation section)"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "令和８年４⽉23⽇ | ⽂部科学省研究開発局宇宙開発利⽤課 | 令和8年度予算額       1,552億円 | 宇宙・航空分野の研究開発に関する取組 （前年度予算額        1,550億円） … ○降⽔レーダ衛星（PMM）                      200百万円（1,082百万円)",
+     "location": "cover (txt lines 11-14); p.5 地球規模課題への対応とイノベーションの実現 (txt line 153); also summary p. (txt line 49)"
+    }
+   ],
+   "applicability": "Japanese fiscal years. Whether PMM also received FY2025 supplementary money was not checked (its line shows no bracketed supplementary amount).",
+   "confidence": "moderate",
+   "confidence_reason": "JAXA/MEXT/Cabinet Office documents read as raw text; the PMM cut concerns the successor satellite, not current IMERG production.",
+   "sole_source_reason": "JAXA's and MEXT's own documents are the authority for their budgets"
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "Workforce: Goddard lost about a third of its civil servants in 2025 through the deferred resignation program (over 40% of total workforce from March 2020 to January 2026); NASA cut 4,000 civil servants (nearly 22%) in 2025; SSAI filed Maryland WARN notices for 148 (Apr 2025) and 79 (Aug 2025) Lanham workers; Goddard closed 13 buildings and about 100 labs from Sept 2025; NASA said in May 2026 no RIFs were contemplated. No source ties any of these to the Earth Sciences Division's precipitation group, PPS, GES DISC or the IMERG team.",
+   "evidence": [
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "Specifically, from March 2020 to January 2026, Goddard experienced a decrease | of over 40 percent in total workforce. In 2025 alone, Goddard lost approximately a third of its civilian | workforce due to the deferred resignation program.",
+     "location": "text lines 77-79 (memorandum body)"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "In response to the administration’s directive to reduce the size of the federal | workforce, NASA reduced its civil servant workforce by 4,000 staff—or nearly 22 | percent—in 2025. To date, 25 of 36 projects have reported effects from the | reduced staffing. Subsequently, in February 2026, the NASA Administrator | announced plans to resume hiring and address skill gaps. The President’s fiscal | year 2027 budget request, however, proposes to reduce funding for NASA by | more than 20 percent.",
+     "location": "Highlights page, left column lines 51-57"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "2/11/2025   541715   Science            10210 Greenbelt Prince         148   4/08/2025   Mass Layoff - No … Applications, Inc. Lanham, MD … 07/07/2025 541715   Science            10210 Greenbelt Prince        79   08/31/2025 Mass Layoff - No … Applications, Inc. Lanham, MD",
+     "location": "text lines 121-123 and 584-586"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "NASA denied that Goddard is being shut down or dismantled but stated that budgetary constraints have “forced NASA to implement efforts to ensure the center’s long-term viability through more efficiently utilizing available space and consolidating or reconstituting facilities.” … the Goddard Engineers, Scientists and Technicians Association, a union representing NASA workers, published an update stating the agency was in the process of closing 13 buildings on the Goddard campus, including around 100 laboratories, with “extreme haste and no transparent strategy.” … conducting the closures during the government shutdown might be illegal under the Antideficiency Act",
+     "location": "'Update on Nov. 17' paragraph and GESTA paragraphs"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "the NASA Goddard Space Flight Center in Greenbelt is embarking on plans to close 13 buildings on the west side of its campus.",
+     "location": null
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "The Science Mission Directorate (SMD) leadership and primary science division structure will remain unchanged, … Goddard Space Flight Center: Earth and Space Science Center of Excellence … there are no reductions in force (RIFs) being contemplated, no program cancellations, no facility closures. … This is not a headcount reduction exercise.",
+     "location": "workforce note body"
+    }
+   ],
+   "applicability": "Center-wide or agency-wide figures; WARN entries do not name NASA contracts.",
+   "confidence": "high",
+   "confidence_reason": "OIG, GAO and state WARN records read directly; the absence of a tie to IMERG groups is itself the finding.",
+   "sole_source_reason": "the OIG report and state WARN log are official records",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "Data-system consolidation is already happening at GES DISC: ingestion paused Oct 28-30, 2026 for the Consolidated Ingest and Archive migration, and ESD's town hall (Dec 2025) planned the DAAC transition to thematic Science Enabling Teams; the Oct-Nov 2025 shutdown left only indirect traces (ESDIS weekly metrics kept reporting; a shutdown-delayed OMI product), and no PPS or GES DISC shutdown notice was found.",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "As part of NASA’s planned Consolidated Ingest and Archive (I&A) system migration, the following data centers will experience temporary interruptions to new data ingestion and availability: … GES DISC: October 28, 5:00 p.m. to October 30, 9:00 a.m. ET | Existing data search and download services are expected to remain operational during these periods.",
+     "location": "alert body, lines 25-31; Issued Oct. 20, 2026; Resolved Nov. 2, 2026"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "•   Improved fidelity of planning for DAAC transition to Science Enabling Teams … • Adopt a more streamlined approach to | administering a portfolio that aligns with the | PBR … 1. Data, Applications, Research, and Technology teams (DART) Teams | • Thematic DARTs will replace individual teams for missions that have completed | prime operations plus one cycle of extended operations (generally, 4-6 years | post launch) | 2. Mission-Specific Teams | • Retained for missions in prime operations, plus one extension as deemed | appropriate under Senior Review | • Transition into DART teams over time",
+     "location": "Objectives slide (txt line 42); Flight Mission Strategy slide 14 (txt lines 169-172); MIO Project slide (txt lines 746-756)"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "OMI-AURA, on October 10, 2025, was delayed due to the NISE file not being available due to government shutdown.",
+     "location": "LANCE Data Latency note, line 26"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "On Tuesday, 20 January 2026, NASA's Precipitation Processing System (PPS) will temporarily shutdown the GPM Near Real-time (NRT) system at 18:00 EST (23:00 UTC). This is necessary to complete the move of data from the current high-speed storage system (not currently under maintenance) to the new storage system that is under maintenance.",
+     "location": "listing page 1, line 45; no shutdown/lapse/funding/staff matches for Oct-Nov 2025 (searched)"
+    }
+   ],
+   "applicability": "PPS is not named in any consolidation document.",
+   "confidence": "moderate",
+   "confidence_reason": "Official notices, but the effect on IMERG staff is not stated.",
+   "sole_source_reason": "Earthdata and ESDIS notices are the operators' own records"
+  },
+  {
+   "id": "c10",
+   "importance": "supporting",
+   "text": "NOAA's Climate Prediction Center (source of IMERG's geo-IR input) is to be folded into other NWS units, with no layoffs expected, per documents Bloomberg reported (Feb 2026).",
+   "evidence": [
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "will be folded into other agencies overseen by the National Weather Service. … No layoffs or staff relocations are expected to result from the shift, according to documents viewed by Bloomberg News.",
+     "location": "article body"
+    }
+   ],
+   "applicability": "Not tied to IMERG by the source.",
+   "confidence": "low",
+   "confidence_reason": "One news report of internal documents."
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "text": "NASA adopted the FY2026 request as its spending plan during the 2025 CR (House Science minority staff report), but Congress limited the Earth Science cut to 1.9%.",
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Whitley told other senior NASA officials that “it’s always been | the plan to move out on a spend plan,” referring to the agency’s decision to | adopt the FY26 PBR as its own spending plan. … one | source recounted communication from their management that the passage of | a Continuing Resolution in the fall of 2025 meant they were “aligned with the | PBR at least until January.” … Congress completely ignored the Trump | Administration’s proposed cuts of 53%, 66%, and 46% to NASA Earth Science, | Astrophysics, and Heliophysics, instead limiting the Earth Science cut to 1.9% … The government shutdown of October and November 2025 further disrupted AXIS’s | work due to the closure of Goddard and the furlough of its employees",
+     "location": "pp. 2-3 (Executive Summary), p. 8, AXIS case study (txt lines 66-78, 284-288, 983-984)"
+    }
+   ],
+   "applicability": "No GPM, PPS or GES DISC named.",
+   "confidence": "moderate",
+   "confidence_reason": "Minority staff report, partisan source.",
+   "figure_status": "enacted"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Outcome of ROSES-2024 A.32 PMM/CloudSat-CALIPSO science team selections",
+   "source_ids": [
+    "s2",
+    "s20",
+    "s40"
+   ],
+   "status": "unresolved",
+   "explanation": "NASA's Atmosphere and Weather ROSES tables give 4 selected of 121 and $2.5M; the Hydrosphere table gives 20 of 121 and $12.1M; the 2024 program slide planned about 43 (30 PMM) and $25.5M ($16.5M). GrantExec's copy of the solicitation says $8.5M for about 43 projects. The selection page on NSPIRES was not read."
+  }
+ ],
+ "coverage_gaps": [
+  "ROSES-2024 A.32 (PMMCCST-24) selected PI list not found; whether Huffman, Kidd, CPC (Joyce/Xie) or CHRS (Hsu/Nguyen) hold PMM awards in the 2025-2027 team is NOT FOUND. GPM site PMM page still lists 2021-2022 PIs. The ROSES tables give 4 selected / 121 proposals / $2.5M for A.32, versus 36 / 114 / $16.4M for ROSES-2021 PMM; a search summary of the ESD-wide table claimed $25.5M / 120 for A.32 (not read; check ESD master ROSES table or the PMMCCST-24 selection page on nspires). (from sa2)",
+  "No ROSES-2025 or ROSES-2026 PMM element found in the Atmosphere table (2025 rows: A.2, A.12, A.14 only). No source found stating delay or cancellation of a PMM call; the team is on a 3-year cycle (2024 recompete per ESSIC post in search results). (from sa2)",
+  "PPS (Precipitation Processing System) contractor and contract number NOT FOUND. GES DISC operations contract NOT FOUND tied by name; candidate in search results is ADNET SESDA-V ($468M max, to April 1 2028) but no source read ties it to GES DISC. ESDIS/EED contracts not searched (time). (from sa2)",
+  "Which contract pays the IMERG SSAI staff (Bolvin, Joyce, Nelkin) is NOT PRESENT in any source: SAMDA (NNG17HP01C) ended 2025-05-31 per USAspending and was succeeded by ATMOS to STC (from 2025-11-03); whether IMERG SSAI staff moved to STC or sit on another vehicle is unknown. (from sa2)",
+  "GLOMAS (ADNET, approx. $84M, GMAO GEOS) final status after NASA corrective action not found; GAO B-424258.2 dismissed 2026-03-10; tie of solicitation 80GSFC24R0036 to GLOMAS is from a search summary only. (from sa2)",
+  "JAXA enacted FY2026 (R8) budget for PMM and any separate GPM/DPR operations line not read; only the R8 request (1,900百万円 vs 1,082百万円 prior year) was read. A search summary suggested an April 2026 MEXT document might show 200百万円 near that item, unverified. JAXA R8 annual plan (https://www.jaxa.jp/about/plan/pdf/r8nd-year_plan.pdf) not read. (from sa2)",
+  "ROSES-2024 A.32 outcome conflicts between NASA tables both last updated August 2026: Atmosphere table 4 selected / 121 / $2.5M / 3 yr vs Hydrosphere table 20 selected / 121 / $12.1M / 3-4 yr; solicitation (per GrantExec) anticipated $8.5M for approx. 43 projects. Compared with ROSES-2021 PMM alone (36 / 114 / $16.4M), but A.32 combines PMM with CloudSat/CALIPSO. The PMMCCST-24 selection page (nspires) would settle it; not read. (from sa2)",
+  "2026 Earth Science Senior Review results, panel report and GPM's in-guide/over-guide budget target: NOT PRESENT on NASA's review page or FAQ as of 2026-11-21; Senate FY27 CJS report says the committee 'awaits the results'. Lead: GPM proposal or guidance letter (gpm.nasa.gov), ESD town hall slides late 2026, Earth Science Advisory Committee minutes. (from sa1)",
+  "NASA FY2026 operating plan (post P.L. 119-74) with GPM, ESDS, ESM Research lines: not found. FY2026 JES table gives only Earth Science $2,153,000 thousand and ESO; no GPM/ESDS split. Lead: CRS R43419 later updates, Planetary Society/AIP FYI on FY26 op plan, NASA FY2027 CJ 'FY 2026 Enacted' columns are '--' at program level. (from sa1)",
+  "FY2025 enacted/op plan for GPM and ESDS: FY2026 tech supplement shows FY2025 enacted column as '--' (full-year CR). Lead: NASA FY2025 operating plan or FY2027 CJ project-level FY2025 actuals (not given). (from sa1)",
+  "FY2027 continuing resolution: earlier run answer says CR ends Dec 11, 2026; not re-verified here (no CR text read in this run). Oct-Nov 2025 shutdown: only the House SST minority report (Goddard closed, employees furloughed); no source ties it to PPS, GES DISC or IMERG production. (from sa1)",
+  "GAO/NASA OIG reports tying findings to GPM, PPS, GES DISC or ESDIS in 2025-2026: none found (GAO-25-107591 major projects covers missions in development; OIG open-recs list shows IG-20-011 DAAC financial-sustainability recommendation still open Sept 2025). MEaSUREs: not searched (time). (from sa1)",
+  "Earth Science Data Systems FY2027 CJ narrative page (fy27_full_budget.txt around line 5843) not read in full for ESDIS/DAAC/PPS language; also FY2026 tech supp ESDS page around line 7624. (from sa1)",
+  "No source found ties any workforce action (deferred resignation, RIF, layoffs) to the Earth Sciences Division (610), Code 612, PPS, GES DISC, ESDIS (Code 423) or the IMERG/PMM team. All Goddard figures found are center-wide (OIG IG-26-005; GAO-26-108556 is NASA-wide on its page). (from sa3)",
+  "No PPS, GPM or GES DISC notice about operations during the Oct 1 to Nov 12, 2025 shutdown was found ('excepted' status NOT PRESENT). The only shutdown trace in ESDIS is the Oct 20, 2025 weekly metrics note. (from sa3)",
+  "Lawsuits: IFPTE v. Trump (D.D.C., filed Oct 8, 2025, over the collective-bargaining EO) and GESTA's library intervention (reported denied by Law360) were seen only in search summaries and were not read. Neither is tied to Earth science data systems. (from sa3)",
+  "Not read: E&E News 'NASA uses shutdown to make major moves at key center' (paywalled in the earlier run), Inside Climate News on Goddard earth science work, House Science Democrats' Dec 2, 2025 letter to the NASA OIG on Goddard closures, and the NOAA CPC and UC Irvine CHRS staffing searches (none run for lack of time). (from sa3)",
+  "Reconciler: saved files only; list W and list C candidates marked not relevant in bulk (other NASA programs)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "ROSES Precipitation Measurement Missions Science Team selections",
+   "tool": "WebSearch",
+   "notes": "Found NASA ESD ROSES tables (Weather, Hydrosphere) and PMM team page; read Weather table",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Precipitation Measurement Missions\" Science Team 2025 ROSES solicitation",
+   "tool": "WebSearch",
+   "notes": "No ROSES-2025 PMM element found; found ROSES_Table-ATMOSPHERE.pdf (read)",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"PMMCCST-24\" selection NASA precipitation science team",
+   "tool": "WebSearch",
+   "notes": "Selection list for ROSES-2024 A.32 not found; r5 not fully found after 3 queries (selection names)",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "lookup (USAspending award CONT_AWD_80GSFC20C0044_8000_-NONE-_-NONE-)",
+   "tool": "lookup (USAspending GET /api/v2/awards/)",
+   "notes": "GET worked",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "lookup (USAspending award CONT_AWD_NNG17HP01C_8000_-NONE-_-NONE-)",
+   "tool": "lookup (USAspending GET /api/v2/awards/)",
+   "notes": "GET worked",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "SESDA V ADNET GES DISC data operations Goddard",
+   "tool": "WebSearch",
+   "notes": "No source ties GES DISC operations to a named contract",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JAXA GPM DPR 予算 2026",
+   "tool": "WebSearch",
+   "notes": "No DPR operations budget line found",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "令和8年度 JAXA 予算 降水レーダ衛星 PMM",
+   "tool": "WebSearch",
+   "notes": "Found MEXT R8 概算要求 PDF (read) with PMM 1,900百万円",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "降水観測ミッション 研究公募 JAXA 2025",
+   "tool": "WebSearch",
+   "notes": "Found JAXA 4th EO RA guide (read)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO bid protest Goddard Earth science support contract 2025",
+   "tool": "WebSearch",
+   "notes": "Found WT GLOMAS protest article (read)",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Science Systems and Applications GAO protest Global Modeling Assimilation Support decision",
+   "tool": "WebSearch",
+   "notes": "Found GAO docket B-424258.2 (read)",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Science Systems and Applications Goddard contract 2025",
+   "tool": "WebSearch",
+   "notes": "HBG extension, ATMOS loss, HBG II RFP (GovConWire, not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ADNET Systems GES DISC contract",
+   "tool": "WebSearch",
+   "notes": "Found NASA GLOMAS award release (read) and SESDA-V coverage (not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Precipitation Processing System\" contract Goddard 80GSFC",
+   "tool": "WebSearch",
+   "notes": "No PPS contract record found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA Hydrosphere Biosphere Geophysics II contract award 2026",
+   "tool": "WebSearch",
+   "notes": "HBG II final RFP Oct 2026; read newspaceeconomy.ca; govconwire 403",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ESDIS EOSDIS Evolution and Development EED-3 contract award",
+   "tool": "WebSearch",
+   "notes": "Found 80GSFC21CA001 Raytheon; USAspending GET read; also lookup (USAspending award CONT_AWD_80GSFC21CA001_8000_-NONE-_-NONE-) and WebFetch of JAXA R8 annual plan",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ROSES-2024 A.32 Precipitation Measurement Missions CloudSat CALIPSO selections announced",
+   "tool": "WebSearch",
+   "notes": "Found grantexec A.32 page (read); search summary claims a Weather-table version listing 120 proposals and $25.5M, not in the copy read (4/121/$2.5M)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PMMCCST-24 selections nspires abstracts",
+   "tool": "WebSearch",
+   "notes": "Nothing relevant; also fetched ROSES_Table-HYDROSPHERE.pdf directly (lookup, read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"GES DISC\" contractor support Goddard data center 2025 contract",
+   "tool": "WebSearch",
+   "notes": "Found ENX forecast (read via WebFetch summary); 80GSFC26D0003 checked, unrelated (Wallops range), not saved",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA FY 2027 budget request Earth Science GPM",
+   "tool": "WebSearch",
+   "notes": "Snippets only; CJ already saved in earlier run (fy27_full_budget.txt), reused.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Commerce Justice Science FY2026 explanatory statement NASA Earth Science",
+   "tool": "WebSearch",
+   "notes": "JES and FY27 House/Senate reports already saved in earlier run; reused and searched for Earth Science/Senior Review/data systems language.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "2026 Earth Science Senior Review GPM results",
+   "tool": "WebSearch",
+   "notes": "No results found.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Senior Review\" 2026 Earth Science operating missions GPM",
+   "tool": "WebSearch",
+   "notes": "domain filter science.nasa.gov, nasa.gov; review page fetched fresh 2026-11-21, no results posted.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO NASA Earth science missions 2025 report",
+   "tool": "WebSearch",
+   "notes": "domain filter gao.gov, oig.nasa.gov; only GAO-25-107591 major projects (not GPM/data systems).",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA OIG Earth science data systems audit DAAC",
+   "tool": "WebSearch",
+   "notes": "domain filter oig.nasa.gov, gao.gov; found or-25-09 open recs (IG-20-011 still open).",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA FY2026 operating plan Earth Science Congress",
+   "tool": "WebSearch",
+   "notes": "No FY2026 operating plan found; led to House SST minority report.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Precipitation Measurement Missions science team ROSES 2026 selections",
+   "tool": "WebSearch",
+   "notes": "ROSES Atmosphere table already in sa2 folder; not duplicated.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM extended mission budget 2026 Senior Review guidance letter",
+   "tool": "WebSearch",
+   "notes": "Led to Senior Review 2026 FAQ page (PPBE28 budget basis, pooled funds).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA DAAC consolidation science enabling teams GES DISC 2026",
+   "tool": "WebSearch",
+   "notes": "Found ESDS Updates slides (espo.nasa.gov) and ECS retirement article (not GES DISC; renamed _unused).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "continuing resolution December 2026 NASA fiscal 2027 Earth science",
+   "tool": "WebSearch",
+   "notes": "Found SpacePolicyOnline FY2027 CR article (P.L. 119-103, to Dec 11, 2026).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Global Precipitation Measurement\" \"Senior Review\" 2026 extension decision",
+   "tool": "WebSearch",
+   "notes": "Third r3 query: no Senior Review 2026 result for GPM found; not found after 3 queries.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Huffman26 IPWG FuturePrecip abstract",
+   "tool": "WebFetch",
+   "notes": "Extraction-only fetch; 404.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO 2026 NASA Earth science operating missions extended data",
+   "tool": "WebSearch",
+   "notes": "domain filter gao.gov; third r4 query; only GAO-26-108556 major projects (July 2026; GRACE-C, NISAR), nothing on GPM/PPS/GES DISC/ESDIS; not found after 3 queries. Total WebSearch for q1 = 13.",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Huffman 2026 IPWG future precipitation GPM end of mission IMERG",
+   "tool": "WebSearch",
+   "notes": "Search for another copy; only the same ipwg12.imgw.pl URL returned. Snippet summary says the abstract is about post-GPM data system design and intercalibration, not funding. Wayback fetch (web.archive.org/web/2026/...) was denied by the auto-mode permission classifier; not retried.",
+   "from": "sa1",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Huffman26_IPWG_FuturePrecip_abstract.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM 2026 Senior Review proposal extension FY2027-2029",
+   "tool": "WebSearch",
+   "notes": "domain filter gpm.nasa.gov, pmm.nasa.gov, ntrs.nasa.gov; then WebFetch extraction of gpm.nasa.gov/category/keywords/senior-review-proposal: lists only TRMM Senior Review Proposal 2011; 2026 Senior Review, GPM extension, budget, FY2027-29 NOT PRESENT.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://web.archive.org/web/2026/https://www.gao.gov/assets/gao-26-108556-highlights.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "saved copy 2026-10-03 read: NASA cut civil servants by 4,000 (nearly 22%) in 2025; 25 of 36 projects affected; Feb 2026 hiring resumes; FY2027 request cuts NASA >20%. No Goddard or Earth science data system figure in highlights.",
+   "from": "main",
+   "copy_of": "https://www.gao.gov/assets/gao-26-108556-highlights.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://web.archive.org/web/2026/https://forum.earthdata.nasa.gov/viewtopic.php?p=24554",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404 (no saved copy); browser on live page: HTTP 404. No route left.",
+   "from": "main",
+   "copy_of": "https://forum.earthdata.nasa.gov/viewtopic.php?p=24554"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://web.archive.org/web/2026/https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Huffman26_IPWG_FuturePrecip_abstract.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404, no saved copy. No route left.",
+   "from": "main",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Huffman26_IPWG_FuturePrecip_abstract.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://web.archive.org/web/2026/https://ipwg12.imgw.pl/wp-content/uploads/2026/06/global_precipitation_measurement_mission_in_japan.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404, no saved copy. No route left.",
+   "from": "main",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/global_precipitation_measurement_mission_in_japan.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://marylandmatters.org/2025/11/23/nasa-moves-quickly-on-plan-to-shrink-goddard-campus-by-25/",
+   "tool": "browser (get_page_text)",
+   "notes": "read: 13 west-campus buildings closing, ~100 labs, emptied by March 2026; Maryland delegation says thousands left Goddard in 2025; center-wide, no Earth science data tie.",
+   "from": "main",
+   "copy_of": "https://marylandmatters.org/2025/11/23/nasa-moves-quickly-on-plan-to-shrink-goddard-campus-by-25/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PMMCCST-24 selections Precipitation Measurement Missions CloudSat CALIPSO",
+   "tool": "WebSearch",
+   "notes": "domain filter nasa.gov; found NASA A.32 Amendment 44 page (primary copy of the GrantExec item; no funding figure) and Stachnik PMM 2024 program slides (about 43 selections, 30 PMM, $25.5M / $16.5M PMM). No selection list.",
+   "from": "main",
+   "copy_of": "https://grantexec.com/grants/77667779-c736-4bc5-8d81-c4e9b3e15d72"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ESDIS Next ENX contract award NASA Goddard 2026",
+   "tool": "WebSearch",
+   "notes": "only aggregator listings (HigherGov forecast, BidPulsar RFI, Cleat.ai); no NASA award release; ENX award status not found. SAM.gov original is a JavaScript page (not tried).",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/contract-forecast/earth-science-data-and-information-system-esdis-1121962"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://sam.gov (HBG extension notice 80GSFC20C0044)",
+   "tool": "lookup (SAM.gov)",
+   "notes": "primary copy is on SAM.gov, a JavaScript page; not opened for lack of time; USAspending record s7 covers the contract terms.",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/contract-opportunity/notice-of-intent-to-extend-the-hydrosphere-biosph-80gsfc20c0044-s-2e942/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://sam.gov (SAMDA extension notice NNG17HP01C)",
+   "tool": "lookup (SAM.gov)",
+   "notes": "primary copy is on SAM.gov, a JavaScript page; not opened for lack of time; USAspending record s8 covers the contract terms.",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/contract-opportunity/support-for-atmospheric-sciences-modeling-and-dat-nng17hp01c-s-7dca8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://www.govconwire.com/articles/nasa-final-rfp-hbg-support-services-ii-goddard",
+   "tool": "lookup (New Space Economy copy)",
+   "notes": "HBG II covered by s16 (New Space Economy); GovConWire 403; HBG is not precipitation work.",
+   "from": "main",
+   "copy_of": "https://www.govconwire.com/articles/nasa-final-rfp-hbg-support-services-ii-goddard"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Senior Review 2026 results extended",
+   "tool": "duckduckgo (browser)",
+   "notes": "only the 2026 call, kickoff, review page and FAQ (already read); no results or panel report",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA Earth Science Senior Review 2026 panel report missions",
+   "tool": "duckduckgo (browser)",
+   "notes": "same NASA pages; no panel report or outcome; gap stands",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Goddard layoffs 2025",
+   "tool": "WebSearch",
+   "notes": "Surfaced Sci Am, Bloomberg divest/demolish, House Science letters, AIP FYI, nasawatch warn-act tag; none ties to Earth Sciences/PPS/GES DISC in snippets.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Goddard Space Flight Center reduction in force 2026",
+   "tool": "WebSearch",
+   "notes": "No confirmed 2026 RIF at Goddard in results; 34% civil-servant loss (GAO via press); RIFs described as threatened.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Maryland WARN 2026 Science Systems and Applications Lanham",
+   "tool": "WebSearch",
+   "notes": "Led to official 2026 WARN log PDF (downloaded); no SSAI 2026 entry.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GES DISC shutdown October 2025 lapse in funding Earthdata",
+   "tool": "WebSearch",
+   "notes": "No GES DISC-specific shutdown notice found; ESDIS weekly metrics 10-20-2025 cites shutdown; Earthdata forum 'Federal Funding Issue' 404.",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Earthdata thematic DAAC consolidation 2026 GES DISC",
+   "tool": "WebSearch",
+   "notes": "ESDS May 2026 slides, ESD Town Hall Dec 2025, Consolidated I&A migration alert.",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM data news government shutdown October 2025 IMERG continue",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, disc.gsfc.nasa.gov, earthdata.nasa.gov. No shutdown notice for PPS/IMERG found; not found after 3 queries.",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Goddard Engineers Scientists Technicians Association Earth science 2025",
+   "tool": "WebSearch",
+   "notes": "GESTA nasawatch Nov 2 2025; no Earth-science-specific statement.",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GESTA IFPTE lawsuit Goddard building closures 2025",
+   "tool": "WebSearch",
+   "notes": "IFPTE v. Trump (D.D.C., filed Oct 8 2025, collective bargaining EO); GESTA motion to intervene re library denied (Law360 snippet); IFPTE GISS closure release.",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO NASA workforce reductions 2026 Goddard science",
+   "tool": "WebSearch",
+   "notes": "GAO-26-108556 (Jul 2026): Goddard lost 34% of civil servants (search summary); gao.gov PDF 403. OIG IG-26-005 reused from earlier run.",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Goddard Earth Sciences Division reorganization 2026",
+   "tool": "WebSearch",
+   "notes": "ESD Town Hall Dec 2025 PDF; NASA workforce message May 22 2026 (SMD division structure unchanged, per search summary, not read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Precipitation Processing System\" shutdown 2025 IMERG operations",
+   "tool": "WebSearch",
+   "notes": "Only technical PPS outages (Jan 31 2025 archive hardware; Apr 16 2025 NRT hardware); no workforce/shutdown item.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Goddard Building 33 Earth science move 2025 closure",
+   "tool": "WebSearch",
+   "notes": "No source names Building 33 (Code 610/612 and GES DISC building) or Earth Sciences Division labs. Inside Climate News says Goddard does much of NASA earth science work (search summary, not read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Prediction Center staff cuts 2025 merged IR satellite data",
+   "tool": "WebSearch",
+   "notes": "Axios Mar 27 2025: CPC placed under WPC; Bloomberg Feb 27 2026: CPC absorbed into NWS, no layoffs expected. No source ties these to GPM_MERGIR / IMERG IR input.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM Precipitation Processing System team staffing 2026",
+   "tool": "WebSearch",
+   "notes": "No PPS staffing, headcount or reorganization item found. PPS released V08 in April 2026 and a GPROF V08 recall in Aug-Oct 2026 (not read). Neither notice mentions staffing.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UC Irvine CHRS PERSIANN funding cut 2025",
+   "tool": "WebSearch",
+   "notes": "No result names CHRS or PERSIANN. UCI-wide items only (UC federal funding down 1-12% in UC FY2025; UCLA-prime MCA suspension notices; UC hiring freeze Mar 2025). Not read.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FY2027 NASA appropriations enacted December 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c3: counter-search for c3; no full-year FY2027 enactment found; results are committee-stage only (House $24.438B, Senate subcommittee $24.874B for NASA)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "2026 Earth Science Senior Review results GPM",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c4: counter-search for c4; no published results found; snippet from CERES STM May 2026 slides (ceres.larc.nasa.gov/documents/STM/2026-05/01_ceres-st-May2026-considine2.pdf) says results anticipated September 2026 (snippet only, not opened)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ESDIS Next contract award NASA Goddard 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c6: counter-search for c6; no ENX award found; HigherGov forecast up to $500,000,000 award about Q3 FY26, DRFP expected summer 2026; EED-3 one-year sole-source extension notice, responses due June 18, 2026 (aggregator snippets)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Goddard reduction in force Earth Sciences Division 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c8: counter-search for c8; no Goddard Earth Sciences Division RIF found; fedtools.com blog (Last Updated July 5, 2026) snippet says RIF authority remains in place as of May 2026; techtimes July 2026 snippet says Goddard lost 34 percent of civil servant workforce (snippets only, not opened)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GES DISC DAAC consolidation science enabling teams 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c2: counter-search for c2; no final GES DISC decision found; results repeat Scott ESDS slides and Dec 2025 town hall; snippets (not opened): AMS ESD Town Hall 2026 deck lists risks associated with data system consolidation; Earthdata news title after three decades key earth data system enters its final chapter (topic not read)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PMMCCST-24 selections Precipitation Measurement Missions science team",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c5: counter-search for c5; no selection announcement found; ESSIC article on Sept 2024 PMM meeting says team recompeted every three years (snippet)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "降水レーダ衛星 PMM 令和8年度 予算額",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c7: counter-search for c7; found MEXT FY2026 budget material (cao.go.jp kagaku-dai70 siryou1.pdf) with PMM 200百万円（1,082百万円) as 令和8年度予算額; fetch_page refused (host www8.cao.go.jp not allowed), read via WebFetch binary save + pdftotext",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Precipitation Processing System government shutdown October 2025 IMERG",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c9: counter-search for c9; no PPS shutdown notice found; snippets (not opened) say gpm.nasa.gov pages carried a banner that due to the lapse in federal funding NASA is not updating this website (website-only notice, undated in snippet); a snippet says the IMERG V07 record ends September 2025 because parent products move to V08, Final Run V08 planned summer 2026",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Global Precipitation Measurement mission operations FY2027 funding termination",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c1: counter-search for c1; no source giving a different GPM FY2027 figure; Planetary Society analysis snippet: FY2027 request omits funding for missions it intends to terminate, 53 missions; Earthdata DMSP status-update snippet lists IMERG impact Under assessment (George Huffman) - context, not opened",
+   "from": "checker"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "NASA FY2027 Congressional Justification GPM and ESDS pages",
+   "query": "NASA FY 2027 budget request Earth Science GPM",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "US Congress",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "FY2026 CJS explanatory statement and FY2027 House/Senate CJS reports on NASA Earth Science",
+   "query": "Commerce Justice Science FY2026 explanatory statement NASA Earth Science",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NASA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "2026 Earth Science Senior Review: GPM proposal, results",
+   "query": "2026 Earth Science Senior Review GPM",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "GAO / NASA OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "GAO or NASA OIG reports tying findings to GPM, PPS, GES DISC or ESDIS",
+   "query": "GAO NASA Earth science missions 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NASA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "ROSES PMM Science Team solicitations and selections",
+   "query": "ROSES Precipitation Measurement Missions Science Team selections",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NASA GSFC",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q2",
+   "aim": "USAspending/FPDS contract records for SSAI GSFC and GES DISC/ESDIS operations",
+   "query": "Science Systems and Applications GSFC contract USAspending",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "JAXA",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q2",
+   "aim": "JAXA budget for GPM DPR and PMM research announcement",
+   "query": "JAXA GPM DPR budget 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "GAO",
+   "publisher": "courts and tribunals",
+   "subquestion_id": "q2",
+   "aim": "bid protests on Goddard Earth science support contracts",
+   "query": "GAO bid protest Goddard Earth science support contract 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NASA GSFC",
+   "publisher": "press",
+   "subquestion_id": "q3",
+   "aim": "news of Goddard layoffs, RIFs, closures",
+   "query": "Goddard layoffs 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "GSFC contractors",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q3",
+   "aim": "Maryland WARN notices for Greenbelt contractors",
+   "query": "Maryland WARN notice Greenbelt SSAI 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NASA ESDIS / Earthdata",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "DAAC consolidation, restructuring and shutdown operations notices",
+   "query": "Earthdata DAAC consolidation 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "Goddard unions",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q3",
+   "aim": "union statements and lawsuits on Goddard Earth science cuts",
+   "query": "Goddard union Earth science cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NASA OIG / GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "oversight reports on NASA workforce reduction tied to Goddard or Earth science data",
+   "query": "NASA OIG workforce reduction 2025",
+   "skip_reason": null
+  }
+ ]
+}

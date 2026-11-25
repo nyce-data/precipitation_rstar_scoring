@@ -1,0 +1,2137 @@
+{
+ "question": "How is the IMERG Late Run (V07B) published (formats, routes, FAIR), who does the work (institutions, people), and is its software public?",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions (formats/FAIR, institutions, people, software); no set of 15+, no multi-year figures, no active dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Formats and access routes, each rated FAIR",
+   "status": "answered",
+   "source_ids": [
+    "s32",
+    "s33",
+    "s38",
+    "s39",
+    "s40",
+    "s41",
+    "s42",
+    "s43",
+    "s44",
+    "s34",
+    "s35",
+    "s45",
+    "s2"
+   ],
+   "remaining_gap": "CF standard_name attributes not read; licence conflict unresolved; Worldview/GIBS imagery not checked"
+  },
+  {
+   "id": "q2",
+   "question": "Institutions and their responsibilities",
+   "status": "answered",
+   "source_ids": [
+    "s2",
+    "s3",
+    "s7",
+    "s9",
+    "s14",
+    "s17",
+    "s18"
+   ],
+   "remaining_gap": "JAXA handbook unreadable; whether PPS or CHRS runs PDIR-Now operationally is implied, not stated"
+  },
+  {
+   "id": "q3",
+   "question": "People and headcount",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s12",
+    "s16"
+   ],
+   "remaining_gap": "No headcount published; current PPS manager and HQ program scientist from pages dated 2019-2024"
+  },
+  {
+   "id": "q4",
+   "question": "Software: code, documentation, specifications, licences",
+   "status": "answered",
+   "source_ids": [
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s29",
+    "s30",
+    "s31",
+    "s36",
+    "s37"
+   ],
+   "remaining_gap": "SPEEDe code statement (AGU bot check); GPROF V08 operational branch licence; GSICS XCAL tables unreachable"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://gpm.nasa.gov/science/pmm-science-team",
+   "fetched_url": null,
+   "title": "PMM Science Team | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM (gpm.nasa.gov)",
+   "published": "2019-12-18 (page date; tables list 2021-2022 PIs)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pmm_science_team.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Page dated 2019-12-18 with 2021-2022 PI list and Jan 2018 work-package summary; current-date of the management table not stated; could be out of date in 2026. The team comprises scientists funded by NASA and international investigators (no-exchange-of-funds); no team size number on page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://gpm.nasa.gov/resources/documents/imerg-v07-technical-documentation",
+   "fetched_url": null,
+   "title": "IMERG V07 Technical Documentation (13 July 2023)",
+   "author_org": "NASA GSFC IMERG team (Huffman et al.)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_techdoc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Tech doc dated 13 July 2023 (V07 release); later versions may update names/affiliations. No headcount (NOT PRESENT). Contractor employers of Bolvin, Nelkin, Joyce, Tan not given here.",
+   "found_by": [
+    "sa2",
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://gpm.nasa.gov/resources/documents/imerg-v07-atbd",
+   "fetched_url": null,
+   "title": "IMERG V07 ATBD (13 August 2026, version 7.2)",
+   "author_org": "NASA GSFC Code 612 (Huffman et al.)",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Title page gives affiliations only for Huffman; others unaffiliated in the text. No team size (NOT PRESENT).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/george.huffman",
+   "fetched_url": null,
+   "title": "George J Huffman - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (read 2026-11-20)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gsfc_huffman_bio.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Page undated.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.earthdata.nasa.gov/centers/gesdisc-daac/people",
+   "fetched_url": null,
+   "title": "People of GES DISC | NASA Earthdata",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "undated (UWG photo Sept 4-5, 2024; read 2026-11-21)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gesdisc_people.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Page undated; no named precipitation data support lead; headcount NOT PRESENT. Andrea Portier (GSFC, GPM applications) is an at-large UWG member.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp",
+   "fetched_url": null,
+   "title": "Precipitation Processing System Data Ordering Interface for TRMM and GPM (STORM): Contacts",
+   "author_org": "NASA GSFC Precipitation Processing System (PPS), Code 619",
+   "published": "Last Updated: 02/21/2024 (footer); news items to 07/30/2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_contacts.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Roles of Cosner not stated. Phone/email of individuals omitted here deliberately. Page last updated 02/21/2024 per footer though news runs to 2025.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: GPM core satellite products (inputs to IMERG)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://global.jaxa.jp/projects/sat/gpm/",
+   "fetched_url": null,
+   "title": "About Global Precipitation Measurement/Dual-frequency Precipitation Radar (GPM/DPR) - JAXA",
+   "author_org": "JAXA",
+   "published": "Mar. 11, 2020 Updated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT SAVED (jaxa.jp host refused by sandbox for fetch_page; read with WebFetch extraction)",
+   "retrieved": "2026-11-21",
+   "limitations": "Pre-launch wording (launch TBD) on a page updated 2020; quoted via WebFetch small-model extraction, not saved raw.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://ntrs.nasa.gov/api/citations/20240011596/downloads/20240011596%20Huffman%20G%20slides.pdf",
+   "fetched_url": null,
+   "title": "IMERG V07 (at Long Last) and What Comes Next (slides)",
+   "author_org": "Huffman, Bolvin, Joyce, Nelkin, Tan (NASA GSFC; SSAI; UMBC)",
+   "published": "2024 (NTRS 20240011596)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/huffman_2024_slides.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Only first 2 pages converted to text (36 MB slide deck). No team headcount (NOT PRESENT).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "http://science.gsfc.nasa.gov/earth/projects/212/",
+   "fetched_url": null,
+   "title": "Precipitation Processing System (PPS) - NASA GSFC Earth Sciences project page",
+   "author_org": "NASA GSFC Earth Sciences Division",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT SAVED (fetch_page refused http redirect; read with WebFetch extraction after the unreadable entry was logged)",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction; page undated; site contacts (Kirschbaum NASA Official) are web roles, not PPS roles.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://www.earthdata.nasa.gov/sites/default/files/2022-01/GESDISC22719_FactSheet.pdf",
+   "fetched_url": null,
+   "title": "NASA Goddard Earth Sciences Data and Information Services Center (GES DISC) fact sheet",
+   "author_org": "NASA GES DISC",
+   "published": "file posted 2022-01 (usage figures FY2018)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gesdisc_factsheet_2022.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Dated (FY2018 figures; Meyer since retired per Earthdata people page). No staff count.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://science.nasa.gov/people/will-mccarty/",
+   "fetched_url": null,
+   "title": "Will McCarty - NASA Science people page",
+   "author_org": "NASA Science (HQ)",
+   "published": "Page Last Updated Jun 18, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT SAVED (read with WebFetch extraction)",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch small-model extraction, not saved raw.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://gpm.nasa.gov/sites/default/files/2025-02/FAQ%20for%20IMERG%20V07%20Applications%20Users_202502.pdf",
+   "fetched_url": null,
+   "title": "FAQ for IMERG V07 Applications Users (February 24, 2025)",
+   "author_org": "NASA GPM (Andrea Portier, Jacob Reed, Jackson Tan, George Huffman)",
+   "published": "2025-02-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_v07_faq_202502.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Contradicts/updates the 2023 tech doc line saying the monthly climatological calibration to Final is not applied in Early and Late (sa2-e3); FAQ does not name the source of the climatological adjustment explicitly as GPCC.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://ceosr.science.gmu.edu/microwave-remote-sensing-group/",
+   "fetched_url": null,
+   "title": "Microwave Remote Sensing Group - Center for Earth Observing and Spatial Research (CEOSR), George Mason University",
+   "author_org": "George Mason University CEOSR",
+   "published": "undated (footer 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT SAVED (read with WebFetch extraction)",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch small-model extraction; IMERG testing/monitoring statements are paraphrased by the extractor, verify against raw page. A member list is not a published headcount.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://gmao.gsfc.nasa.gov/geos-systems/accessing-geos-software/",
+   "fetched_url": null,
+   "title": "GMAO - Accessing GEOS Software",
+   "author_org": "NASA GSFC Global Modeling and Assimilation Office",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gmao_accessing_geos.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Licence statement conflicts with the GitHub repo (Apache-2.0 now; see sa3-e2). Covers GEOS model code, not the specific GEOS FP product configuration or the IMERG motion-vector extraction step.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://github.com/GEOS-ESM/GEOSgcm",
+   "fetched_url": null,
+   "title": "GEOS-ESM/GEOSgcm (GitHub)",
+   "author_org": "NASA GMAO (GEOS-ESM organization)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "code_repository",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT SAVED (github.com refused to fetch_page.py by guard hook; read via WebFetch)",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction (model in between); no local copy. Does not say whether the GEOS FP operational system or the IMERG motion-vector code is in this repo.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://github.com/ghiggi/gpm_api",
+   "fetched_url": null,
+   "title": "ghiggi/gpm_api: A python package to download and analyze the GPM data archive",
+   "author_org": "Gionata Ghiggi (GPM-API developers)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "code_repository",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT SAVED (github.com refused to fetch_page.py by guard hook; read via WebFetch)",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction; user tool, not producer code. Release version NOT PRESENT on page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://github.com/simonpf/gprof_nn",
+   "fetched_url": null,
+   "title": "simonpf/gprof_nn: Neural-network-based implementation of the Goddard Profiling Algorithm",
+   "author_org": "simonpf (Simon Pfreundschuh; affiliation NOT PRESENT on page)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "code_repository",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT SAVED (github.com refused to fetch_page.py by guard hook; read via WebFetch)",
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction. Operational status / identity with GPROF V08 NOT PRESENT; tag v0.8 seen in branch selector, no releases. Related repo simonpf/gprof_ir (IR-only retrieval for merged products) has licence NOT PRESENT and no IMERG/PDIR statement.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/open-source-software-policy",
+   "fetched_url": null,
+   "title": "Open-Source Software Policy | NASA Earthdata",
+   "author_org": "NASA Earth Science Data Systems (ESDS)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/earthdata_oss_policy.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Policy statement; does not name IMERG, GPROF or PPS. Publication date NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://science.nasa.gov/wp-content/uploads/2023/08/smd-information-policy-spd-41a.pdf",
+   "fetched_url": null,
+   "title": "SMD Scientific Information Policy (SPD-41a)",
+   "author_org": "NASA Science Mission Directorate",
+   "published": "2023 (upload path 2023/08)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nasa_spd41a.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Policy; applicability to legacy GPM/IMERG code (predating policy) not stated for IMERG specifically. Line 367 mentions agreements that predate the effective date.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://storm.pps.eosdis.nasa.gov/storm/Tools.jsp",
+   "fetched_url": null,
+   "title": "Tools - PPS STORM",
+   "author_org": "NASA GSFC Precipitation Processing System",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_storm_tools.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Licence for TKIO/THOR: NOT PRESENT. Page does not say TKIO source code is included (only describes purpose).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://gpm.nasa.gov/data/news/tkio-annoucement-pps-announcing-new-tkio-39-release",
+   "fetched_url": null,
+   "title": "TKIO Annoucement - PPS is Announcing a New tkio-3.9 Release",
+   "author_org": "NASA GPM / PPS",
+   "published": "2020-07-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_tkio39_news.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "2020; licence NOT PRESENT; whether a V07-era TKIO is public NOT PRESENT here. FTP link truncated on page.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/ppsdocuments.html",
+   "fetched_url": null,
+   "title": "PPS/TRMM Documentation",
+   "author_org": "NASA GSFC Precipitation Processing System",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "documentation",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_ppsdocuments.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Mostly TRMM-era text; licence NOT PRESENT. PPS production system source itself NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://gpm.nasa.gov/sites/default/files/2026-08/IMERG_V07_ATBD_final_260813.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) NASA GPM IMERG Version 07 (13 August 2026)",
+   "author_org": "NASA GSFC IMERG team (Huffman et al.)",
+   "published": "2026-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Absence of a code-availability statement is NOT PRESENT evidence only, from text search of this one document. URL is the P2 copy's original; see P2 record for exact URL.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/L1C_ATBD_v1.9_GPMV07.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) NASA GPM Level 1C Algorithms Version 1.9",
+   "author_org": "NASA GSFC Code 610.2/PPS and GPM Intercalibration (X-CAL) Working Group",
+   "published": "2022-04",
+   "data_period": null,
+   "source_type": "documentation",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/l1c_atbd_v1.9.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Licence for L1C/XCAL code: NOT PRESENT. Source-code download: NOT PRESENT (text search only, document not read in full).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8216223/",
+   "fetched_url": null,
+   "title": "PERSIANN Dynamic Infrared-Rain Rate (PDIR-Now): A Near-Real-Time, Quasi-Global Satellite Precipitation Dataset (J. Hydrometeorol. 21(12):2893-2906, 2020)",
+   "author_org": "Nguyen et al. / UC Irvine CHRS, NASA GSFC, CW3E",
+   "published": "2020-11-25",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pdir_now_nguyen2020.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Dataset access only. PDIR-Now source code and licence: NOT PRESENT in text search. Stand-alone CHRS product, not the IMERG-internal implementation.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: UC Irvine CHRS PDIR-Now dataset (an IMERG input)"
+  },
+  {
+   "id": "s32",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPM_3IMERGHHL&version=07",
+   "fetched_url": null,
+   "title": "CMR UMM-C collection record GPM_3IMERGHHL v07 (C2723754845-GES_DISC)",
+   "author_org": "NASA CMR / GES DISC",
+   "published": "MetadataDates UPDATE 2026-07-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cmr_gpm_3imerghhl_07.json/f02930f9cf946591.json",
+   "retrieved": "2026-11-21",
+   "limitations": "Quote of Quality.Summary has the apostrophe in Center s replaced (JSON quoting); original reads Center[apostrophe]s. No named licence (CC0/CC-BY) in UseConstraints: NOT PRESENT. Login requirement not stated in record; S3 bucket named protected.",
+   "found_by": [
+    "sa1",
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPM_3IMERGDL&version=07",
+   "fetched_url": null,
+   "title": "CMR UMM-C collection record GPM_3IMERGDL v07 (C2723754859-GES_DISC)",
+   "author_org": "NASA CMR / GES DISC",
+   "published": "not checked",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cmr_gpm_3imergdl_07.json/4953c70d5bd85632.json",
+   "retrieved": "2026-11-21",
+   "limitations": "Did not check whether this record has the same freely available Quality summary text.",
+   "found_by": [
+    "sa1",
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V07",
+   "fetched_url": null,
+   "title": "GPM: Global Precipitation Measurement (GPM) Release 07 | Earth Engine Data Catalog",
+   "author_org": "Google Earth Engine",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/developers-google-com-earth-engine-datasets-catalog-NASA-GPM_131120.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "redistributor; read in browser",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V07",
+   "fetched_url": null,
+   "title": "GPM: Global Precipitation Measurement (GPM) Release 07 | Earth Engine Data Catalog (Terms of Use tab)",
+   "author_org": "Google Earth Engine",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/developers-google-com-earth-engine-datasets-catalog-NASA-GPM_131126.txt",
+   "retrieved": "2026-11-21",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://github.com/search?q=org%3Anasa+IMERG&type=repositories",
+   "fetched_url": null,
+   "title": "GitHub repository search: org:nasa IMERG",
+   "author_org": "GitHub",
+   "published": null,
+   "data_period": null,
+   "source_type": "code_repository",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/github-com-search-q-org-3Anasa-IMERG-type-repositories_131304.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "GitHub search covers only the nasa org, not other NASA orgs (nasa-gibs, NASA-IMPACT) or private repos",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://github.com/search?q=IMERG&type=repositories&s=stars&o=desc",
+   "fetched_url": null,
+   "title": "GitHub repository search: IMERG (most stars)",
+   "author_org": "GitHub",
+   "published": null,
+   "data_period": null,
+   "source_type": "code_repository",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/github-com-search-q-IMERG-type-repositories-s-stars-o-desc_131259.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "only the first page of results read",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://pps.gsfc.nasa.gov/Documents/README.GIS.pdf",
+   "fetched_url": null,
+   "title": "The IMERG multi-satellite precipitation estimates reformatted as 2-byte GeoTIFF files for display in a GIS (updated 27 June 2023)",
+   "author_org": "NASA GSFC PPS (Owen Kelley)",
+   "published": "2023-06-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_readme_gis.pdf.txt",
+   "retrieved": "2026-11-21",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://doi.org/10.25966/564j-4331",
+   "fetched_url": null,
+   "title": "PPS DOI landing page: Final IMERG Daily GIS-formatted Data (V07), with associated Late GIS DOIs",
+   "author_org": "NASA GSFC PPS",
+   "published": "2023-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "10.25966/564j-4331",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_doi_3imerghh_gis_1day_v07.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "page last updated April 28, 2023; the page's own URL was taken from sa1's saved file name",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://cmr.earthdata.nasa.gov/search/services.umm_json",
+   "fetched_url": null,
+   "title": "CMR UMM-S services associated with GPM_3IMERGHHL v07",
+   "author_org": "NASA CMR",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cmr_services_hhl.json/c0831bae6e0aa137.json",
+   "retrieved": "2026-11-21",
+   "limitations": "request URL approximate (CMR services search for the collection); saved response is the evidence",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://registry.opendata.aws/nasa-gpm3imerghhl/",
+   "fetched_url": null,
+   "title": "GPM_3IMERGHHL at GES DISC - Registry of Open Data on AWS",
+   "author_org": "AWS Registry of Open Data (NASA entry)",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "10.5067/GPM/IMERG/3B-HH-L/07",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/aws_registry_gpm3imerghhl.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "registry entry, not GES DISC's own page",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+   "fetched_url": null,
+   "title": "Earthdata: Data Use Guidance / data use policy",
+   "author_org": "NASA ESDIS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/earthdata_data_use_policy.html.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "general policy, not dataset-specific",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHL_07/summary",
+   "fetched_url": null,
+   "title": "GES DISC Dataset: GPM_3IMERGHHL 07 (Product Summary)",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "10.5067/GPM/IMERG/3B-HH-L/07",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-datasets-GPM-3IMERGHHL-07-summary_131436.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "read in browser 2026-11-21",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHL_07/summary",
+   "fetched_url": null,
+   "title": "GES DISC Dataset: GPM_3IMERGHHL 07 (Variables tab)",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-datasets-GPM-3IMERGHHL-07-summary_131443.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "standard_name attributes not shown on the page",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://registry.opendata.aws/dynamical-nasa-imerg/",
+   "fetched_url": null,
+   "title": "NASA IMERG - dynamical.org Icechunk Zarr - Registry of Open Data on AWS",
+   "author_org": "dynamical.org (AWS Registry of Open Data entry)",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/registry-opendata-aws-dynamical-nasa-imerg_131528.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "third-party translation; no DOI shown",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "GES DISC is the catalogued archive route: GPM_3IMERGHHL V07 has DOI 10.5067/GPM/IMERG/3B-HH-L/07 and a CMR record, native HDF5 (about 2.8 MB per file), HTTPS and OPeNDAP routes and a cloud copy in a protected S3 bucket (us-west-2); the daily GPM_3IMERGDL V07 has DOI 10.5067/GPM/IMERGDL/DAY/07 and is native netCDF.",
+   "evidence": [
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "\"AverageFileSize\": 2.8, … \"Format\": \"HDF5\", … \"FormatType\": \"Native\"",
+     "location": "ArchiveAndDistributionInformation"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "\"Description\": \"Access the data via the OPeNDAP protocol\",",
+     "location": "RelatedUrls"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "\"Region\": \"us-west-2\", … \"S3CredentialsAPIEndpoint\": \"https://data.gesdisc.earthdata.nasa.gov/s3credentials\",",
+     "location": "DirectDistributionInformation"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "\"DOI\": \"10.5067/GPM/IMERGDL/DAY/07\"",
+     "location": "DOI"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "DOI: | 10.5067/GPM/IMERG/3B-HH-L/07 | Version: | 07 | Format: | HDF5",
+     "location": "Product Summary tab"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "the archive's own CMR record and landing page, read as saved JSON and page text",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "No route serving the NASA files is open without an account: PPS requires a free e-mail registration (FTPS/HTTPS since 2021), GES DISC requires Earthdata Login (also for its S3 copy, which is 'controlled access'), and Earth Engine requires Earth Engine registration.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Note that users are required to complete a simple, free, and automatic on-line registration for both PPS and GES DISC in order to access the data; see “data user registration” for more details. This is required by data security considerations.",
+     "location": "p. 15"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Before downloading data files from the Precipitation Processing System (PPS), register an | email address with PPS by visiting http://registration.pps.eosdis.nasa.gov/.",
+     "location": "Section 2.1, p. 9"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "S3 Bucket Controlled Access",
+     "location": "Resources on AWS"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "\"Region\": \"us-west-2\", … \"S3CredentialsAPIEndpoint\": \"https://data.gesdisc.earthdata.nasa.gov/s3credentials\",",
+     "location": "DirectDistributionInformation"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "GPM_3IMERGHH_V07 doi:10.5067/GPM/IMERG/3B-HH-L/07",
+     "location": "Description tab"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "producer documentation and archive records agree"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "No licence is attached to the dataset itself: the CMR UseConstraints and the GES DISC landing page name none; NASA's EOSDIS policy says unmarked NASA-mission data are CC0, while the AWS Registry entry for the GES DISC bucket says CC BY 4.0 and Earth Engine says only 'freely available'.",
+   "evidence": [
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "\"UseConstraints\": { … \"Description\": \"The Earth Observing System Data and Information System (EOSDIS) data use and citation guidance for NASA data can be accessed at https://earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance.",
+     "location": "UseConstraints"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "contradicts",
+     "passage": "Unless the content is marked with a use restriction or license, data provided from a NASA-led mission are licensed as Creative Commons Zero (CC0).",
+     "location": "Data Use"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "#### License | Creative Commons BY 4.0",
+     "location": "License"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "All NASA-produced data from the GPM mission is made freely available for the public to use.",
+     "location": "Terms of Use tab"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "sources conflict on the licence name; the archive's own record is silent",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "PPS also serves Late Run GeoTIFF ('IMERG GIS') files: zipped two-byte TIFFs with ESRI WorldFiles at half-hour, 3-hour, daily, 3-day, 7-day and monthly durations, each with its own PPS DOI (prefix 10.25966), from jsimpsonhttps after e-mail registration; PPS keeps Early and Late files until a new version replaces them.",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "IMERG GIS files are created at additional durations for the convenience of users: 24-hour-duration for Final IMERG and 3-hour, 24-hour, 3-day, 7- | day, and monthly duration for Early and Late IMERG.",
+     "location": "p. 4"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "- Late IMERG Half-hour GIS-formatted: https://dx.doi.org/10.25966/x8hh-5043 | - Late IMERG Three-hour GIS-formatted: https://dx.doi.org/10.25966/68p1-0z50 | - Late IMERG Daily GIS-formatted: https://dx.doi.org/10.25966/zp54-tb85",
+     "location": "Associated Landing Pages"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "This GIS product is a zip file that contains two-byte TIFF files accompanied by ESRI WorldFile metadata.",
+     "location": "Data Set Description"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "https://jsimpsonhttps.pps.eosdis.nasa.gov/imerg/gis/2015/05/                    Late",
+     "location": "Section 2.1"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "(Early and Late) are retained until a new version of the Early and Late IMERG algorithm | replaces them.",
+     "location": "Section 1.1"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "PPS's own README and DOI landing page",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c5",
+   "importance": "supporting",
+   "text": "Conversions are offered as services, not as stored products: Harmony/OPeNDAP subsetters output netCDF-4, a regridder-reformatter outputs netCDF-4 or GeoTIFF, and Giovanni gives CSV/GeoTIFF or ASCII text; any HDF5 tool reads the native files.",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "\"Name\": \"Harmony OPeNDAP SubSetter (HOSS) Geographic\",",
+     "location": "items"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "It performs a variety of basic subsetting, time- and space-averaging, and output of results in plots, time series, animations, or ASCII text.",
+     "location": "p. 15"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "any tool that reads the standard HDF5 file can be used to process IMERG files. As well, PPS provides a toolkit with C and FORTRAN APIs that allow users to write custom programs.",
+     "location": "p. 21"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "CMR service records list formats; not tested by download"
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "Variables use units such as mm/hr, degrees_east and degrees_north, but the landing page shows no CF standard names; interoperability is good for HDF5/netCDF tools but standard-name compliance was not confirmed.",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "Grid/lon \tGrid/lon\tdegrees_east",
+     "location": "Variables tab"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "Multi-satellite precipitation estimate with climatological gauge calibration - Late Run \tGrid/precipitation\tmm/hr",
+     "location": "Variables tab"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "units seen; standard_name attributes not read",
+   "sole_source_reason": "the archive's own variable list is the authority for its files' variables and units"
+  },
+  {
+   "id": "c7",
+   "importance": "supporting",
+   "text": "Redistributors: Earth Engine's NASA/GPM_L3/IMERG_V07 mixes Late (provisional) and Final (permanent) images; dynamical.org republishes Late Run V07 as Icechunk Zarr in an open S3 bucket under CC BY 4.0 with no account needed, but with no DOI shown.",
+   "evidence": [
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "This collection contains provisional products that are regularly replaced with updated versions when the data become available. The products are marked with a metadata property called 'status'.",
+     "location": "Description tab"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "NASA IMERG analysis, late - Global half-hourly precipitation from NASA GPM IMERG Late Run, version 07.",
+     "location": "Description"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "AWS CLI Access (No AWS account required) | aws s3 ls --no-sign-request s3://dynamical-nasa-imerg/",
+     "location": "Resources on AWS"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "License | CC BY 4.0",
+     "location": "License"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "registry and catalog pages read in the browser; third-party copies"
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "Several organizations share the work: the GSFC IMERG team (Code 612) develops one integrated code and delivers it to PPS (Code 619), which runs the Early and Late Runs in its Real Time system; sensor agencies make Level 1B data, PPS makes L1C and GPROF, CPC assembles the merged geo-IR and PPS gets JMA forecasts from JAXA and GEOS FP fields.",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "The Early and Late Runs are executed in the PPS Real | Time (RT) processing system",
+     "location": "Section 3.2, p. 8"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "At | the agreed-upon deliveries the entire package is assembled and transferred to PPS for integration | and testing.",
+     "location": "Section 4.1"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "the NOAA and EUMETSAT data are accessed through NOAA, DMSP from NRL Monterey, | and the Japanese AMSR2 through NASA, and GPM DPR and GMI within GPM. The global | merged geo-IR data are assembled by NOAA/NWS/CPC, and the Precipitation Processing | System (PPS) accesses JMA Forecast from JAXA",
+     "location": "latency section"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "the algorithm team's own ATBD (Aug 2026) and technical documentation",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "Partners and their parts: NOAA CPC produces the merged 4-km IR under P. Xie; UC Irvine CHRS (Braithwaite, Hsu, Nguyen) supplies the PDIR method; GPCC at DWD (Becker, Schneider) produces the gauge analysis, which reaches the Late Run only through a climatological calibration; JAXA built the DPR and launched GPM.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The *Merged 4-Km IR Tb data set* is produced by the Climate Prediction Center (CPC), NOAA | National Centers for Environmental Prediction, Washington, DC under the direction of P. Xie.",
+     "location": "Merged 4-Km IR Tb"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Satellite Team: Dan Braithwaite Kuolin Hsu, and Phu Nguyen (Univ. of Calif. Irvine)",
+     "location": "Section 2"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The *precipitation gauge analysis* that is used in IMERG is produced by the Global Precipitation | Climatology Centre (GPCC) under the direction of Andreas Becker and Udo Schneider",
+     "location": "precipitation gauge analysis"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contradicts",
+     "passage": "Andrea Portier, Jacob Reed, Jackson Tan, George Huffman | February 24, 2025 … •    Applied climatological gauge adjustment to the Early and Late Runs, ensuring more | consistency in the bias characteristics among all IMERG latencies: Early, Late, and Final Runs; … The precipitation gauge analysis that is used in IMERG is produced by the Global Precipitation | Climatology Centre (GPCC), located in the Deutscher Wetterdienst, Offenbach am Main, Germany … Error from the GPCC gauge adjustment gauges may | lead to biases in Final. … CHIMES combines the | IMERG Late Run with low-latency gauges to provide precipitation estimates at a 2-day latency.",
+     "location": "p. 2 (V07 changes list, txt lines 84-86); gauge error Q (lines 329-337); title block lines 1-3"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "the producers' technical documentation; JAXA role from JAXA's page via subagent extraction"
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "People: George Huffman (NASA GSFC Code 612; GPM Project Scientist and IMERG lead) leads; the Aug 2026 ATBD lists 12 co-authors (Bolvin, Joyce, Nelkin, Tan, Braithwaite, Hsu, Kelley, Nguyen, Sorooshian, Watters, West, Xie); Erich Stocker is PPS Project Manager and GPM Deputy Project Scientist for Data; Will McCarty is GPM Program Scientist at NASA HQ (page dated 2019).",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "George J. Huffman | NASA/GSFC | NASA/GSFC Code 612",
+     "location": "title page"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "and David T. Bolvin, Robert Joyce, Eric J. Nelkin, Jackson Tan, Dan | Braithwaite, Kuolin Hsu, Owen A. Kelley, Phu Nguyen, Soroosh | Sorooshian, Daniel C. Watters, B. Jason West, Pingping Xie",
+     "location": "title page"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Dr. Will McCarty | NASA Headquarters | GPM Program Scientist | Dr. George Huffman | NASA Goddard Space Flight Center | GPM Project Scientist and PMM Science Team Lead | Dr. Erich F. Stocker | NASA Goddard Space Flight Center | GPM Deputy Project Scientist for Data and Precipitation Processing System Project Manager | David B. Wolff | NASA Wallops Flight Facility | GPM Deputy Project Scientist - Ground Validation, GPM Ground Validation System Manager | Sarah Ringerud | NASA Goddard Space Flight Center | GPM Ground Validation Deputy Project Scientist | Andrea Portier | NASA Goddard Space Flight Center | GPM Senior Applications Lead … Huffman, George | Extending the IMERG Multi-Sensor Level 3 Precipitation Product into Polar Regions | Comprehensive science algorithm development, implementation, maintenance, and validation, including user support, for quasi-global combined-satellite precipitation estimates at fine time/space scales, both in near-real and post-real time.",
+     "location": "PMM Science Program Management Team table; Work Packages table"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Org Code: | 612 Mesoscale Atmospheric Processes … Dr. Huffman is the Project Scientist for GPM, as well as the lead for the GPM Multi-satellite Algorithm Team. … As well, he is the Chief for the Mesoscale Atmospheric Processes Lab at GSFC. … Project Scientist for Global Precipitation Measurement mission, 2022 to the present, previously Deputy Project Scientist, 2014-2022.",
+     "location": "Contact card; Brief Bio; Positions (txt lines 13, 47, 175)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "George J. Huffman1, David T. Bolvin1,2, Robert Joyce1,2, Eric J. Nelkin1,2, Jackson Tan1,3 | 1 NASA Goddard Space Flight Center, Greenbelt, MD, USA | 2 Science Systems and Applications, Inc., Lanham, MD, USA | 3 University of Maryland Baltimore County, Baltimore, MD, USA",
+     "location": "Title slide (pdf page 1)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "ATBD title page and NASA pages; the PMM table may be dated"
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "No headcount is published for the IMERG team, PPS or GES DISC; nearest evidence is the author and contact lists (GES DISC: Mahabal Hegde DAAC Manager; PPS: Stocker NASA Official, Jason West curator).",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Dr. David J. Meyer, PhD, DAAC Manager | Gary Alcott, DAAC Operations Manager … Continuous data and information maintenance, distribution, services, stewardship, preservation, beyond the life of the sensor | • Data management, archive, access, services for the following sensors: … Precipitation: TRMM, GPM … More than 133,800 unique users in FY2018. Over 297 million data files delivered during FY2018.",
+     "location": "Fact sheet p.1-2"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Team Member | Position | Mahabal Hegde | DAAC Manager | Gary Alcott | Operations Lead … George Huffman | GSFC | Precipitation Instrument … Ken Jucks | NASA HQ | NASA HQ Program Scientist | Mahabal Hegde | GSFC/GES DISC | GES DISC DAAC Manager | Jennifer Wei (Co-Chair) | GSFC/GES DISC/ESDIS | GES DISC DAAC Scientist … Dave Meyer (Retired) | GSFC | GES DISC DAAC Manager | Chung-lin Shie (Retired) | GSFC | GES DISC Project Scientist",
+     "location": "People of GES DISC table; UWG Ex-Officios and Programmatic Ex-Officio tables"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "02/28/2025 - PPS and JAXA MOS have changed the primary source of the GPM core satellite ephemeris data for all future Version 7 processing on the March 1, 2025 data date. … 12/10/2024 - PPS has processed the Version 07B IMERG Early Run and Late Run datasets from January 1998 to May 2000. … 10/07/2024 - Monday October 07, 2024: PPS production data resumed. JAXA repaired the affected systems and provided all expected data to PPS. | 10/04/2024 - Due to the serious JAXA system failures, PPS has placed part of PPS production on hold. … NAME: Cosner, Charles | ORGANIZATION: NASA/GSFC … ADDRESS: Code 619 Bldg 32 Room S062 … NAME: Stocker, Dr. Erich | ORGANIZATION: NASA/GSFC … ADDRESS: Code 619 Bldg 32 Room S070 … Curator: Jason West NASA Official: Erich Stocker, Code 619, NASA/GSFC Last Updated: 02/21/2024",
+     "location": "News list and contacts block; footer"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "absence across the pages read; not exhaustive"
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "The IMERG production code is not public: the ATBD describes the code package delivered to PPS but gives no release location or licence, and no IMERG repository exists in NASA's GitHub organization, although NASA ESDS and SPD-41a policies call for open-source release of production and mission software.",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "contextualizes",
+     "passage": "As each generation of IMERG code is developed, it is validated on the development system. At the agreed-upon deliveries the entire package is assembled and transferred to PPS for integration and testing.",
+     "location": "Section 4.1 Algorithm Verification in the PPS System (line 1578)"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Your search did not match any repositories",
+     "location": "search results"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "contextualizes",
+     "passage": "332 results",
+     "location": "search results"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "NASA's Earth Science Data Systems (ESDS) Program requires that all software developed through research and technology awards (i.e., Research Opportunities in Earth and Space Science [ROSES] or unsolicited proposals) or other government-funded development is to be made available to the public as Open-Source Software.",
+     "location": "Policy"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "E. Mission software shall be developed openly in a publicly accessible, version-controlled | platform that allows for contributions and engagement from the community.",
+     "location": "Section E"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "contextualizes",
+     "passage": "Mission software is often restricted software and shall | not be shared openly unless approved for release.",
+     "location": "definitions"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "absence of evidence; GitHub API refused and only one org searched",
+   "sole_source_reason": "the producer's own ATBD and NASA's own policies are the authority; absence of a release is checked against NASA's GitHub organization"
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "Documentation and specifications are public: the IMERG ATBD and technical documentation, the GPM file specification, the L1C ATBD and the PPS toolkit (TKIO, C/Fortran) are posted by PPS and GPM, but no licence is stated for TKIO.",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "- Current GPM File Specifications Document | - GPM Science Algorithm Toolkit | Each of the routines in the toolkit is callable in either C or FORTRAN. | Volume 1 - Algorithm Software Development and Delivery defines and describes the various software interfaces required for science algorithm integration into PPS. | Volume 2 - Toolkit User's Guide provides the programmer user's guide for the PPS toolkit routines.",
+     "location": "lines 20, 32, 142, 182-183"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "This document describes the GPM Level 1C algorithms. It consists of physical and mathematical bases for orbitization, satellite intercalibration, and quality control (QC), as well as the software architecture and implementation for the Level 1C algorithms. | Scan data are reformatted into the base file format and written to the output base file using the PPS Science Algorithm Input/Output Toolkit (TKIO). | More details on geolocation can be found at the CSU FCDR home page (rain.atmos.colostate.edu/FCDR/index.html) and in the SSMI and SSMI/S Stewardship Code Geolocation Algorithm Theoretical Basis Technical Report [Sapiano, Bilanow, and Berg, 2010].",
+     "location": "title page; Sec 1.1 (line 408-410); line 595-597; Appendix D.2.2.1 (line 1639-1641)"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Since 1997, the Precipitation Processing System (PPS) at NASA Goddard has developed and distributed many versions of Orbit Viewer THOR. | The purpose of the Science Algorithm Input/Output Toolkit (TKIO) is twofold. First, the Toolkit provides a set of commonly used routines and constants for algorithm developers and researchers.",
+     "location": "Tools page, THOR and PPS Toolkit entries"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "PPS has created a new PPS/GPM Science Algorithm Toolkit (TKIO) package which includes all the latest production formats. Those wishing to access new production data products listed below using C and Fortran interfaces may wish to download this TKIO package. Those using development TKIO versions that include the newer products do not need this public distribution, it is optional. | This 3.97 TKIO includes all production formats including the recent additions of the V06X radar products and 3B42/3 in HDF5. | ftp://gpmweb2.pps.eosdis.nasa.gov/pub/PPStoolkit/GPM/tkio-3.97/",
+     "location": "news item body"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "PPS's own pages"
+  },
+  {
+   "id": "c14",
+   "importance": "central",
+   "text": "Component code: GPROF-NN is public under MIT (github.com/simonpf/gprof_nn) but is not stated to be the operational GPROF; GEOS model code is public (Apache-2.0 on GitHub; GMAO's page still says NOSA); no public code was found for PDIR-Now, the L1C/XCAL software, CPC merged IR or SPEEDe; GPM-API (MIT) is a third-party reader.",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "This software is released under the terms and conditions of the NASA Open Source Agreement (NOSA), Version 1.1 or later. | The GEOS software is available from a Git repository hosted on GitHub at https://github.com/GEOS-ESM/GEOSgcm.",
+     "location": "GEOS Software section"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "contextualizes",
+     "passage": "The global PDIR-Now dataset is hosted for public distribution at CHRS’s in-house data distribution web system, the CHRS Data Portal (chrsdata.eng.uci.edu; Nguyen et al. 2019).",
+     "location": "Data availability paragraph (line 210)"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "This document describes the GPM Level 1C algorithms. It consists of physical and mathematical bases for orbitization, satellite intercalibration, and quality control (QC), as well as the software architecture and implementation for the Level 1C algorithms. | Scan data are reformatted into the base file format and written to the output base file using the PPS Science Algorithm Input/Output Toolkit (TKIO). | More details on geolocation can be found at the CSU FCDR home page (rain.atmos.colostate.edu/FCDR/index.html) and in the SSMI and SSMI/S Stewardship Code Geolocation Algorithm Theoretical Basis Technical Report [Sapiano, Bilanow, and Berg, 2010].",
+     "location": "title page; Sec 1.1 (line 408-410); line 595-597; Appendix D.2.2.1 (line 1639-1641)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "GMAO page and papers read as saved text; repository pages only through subagent extraction (claim c15); absences not exhaustive"
+  },
+  {
+   "id": "c15",
+   "importance": "supporting",
+   "text": "Repository licences read through subagent WebFetch extraction (not saved): GPROF-NN MIT; GEOSgcm Apache-2.0 (previously NOSA 1.3); GPM-API MIT.",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "contextualizes",
+     "passage": "MIT license | Neural-network-based implementation of the Goddard Profiling Algorithm | implements the GPROF-NN retrieval algorithms for the passive microwave observations of GPM",
+     "location": "sidebar, description, README"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "All files are currently licensed under the Apache-2.0 license, see `LICENSE`. | Previously, the code was licensed under the NASA Open Source Agreement, Version 1.3.",
+     "location": "README license section; sidebar \"Apache-2.0, License licenses found\""
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "The content of this repository is released under the terms of the MIT license. | A python package to download and analyze the Global Precipitation Measurement Mission (GPM) data archive | download GPM Data from NASA PPS and GES DISC servers | https://doi.org/10.5281/zenodo.7753488",
+     "location": "README (license, description, features, citation)"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "WebFetch extraction only; pages not saved"
+  },
+  {
+   "id": "c16",
+   "importance": "supporting",
+   "text": "JAXA was responsible for the GPM launch and for developing the DPR with NICT; NASA built the core satellite bus and the microwave radiometer (GMI).",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "JAXA is responsible for launch (TBD) and development of a key instrument, DPR, | in cooperation with the National Institute of Information and Communications Technology (NICT). | NASA will develop the core satellite bus and its microwave radiometer. | Led by JAXA and NASA, the GPM program will be conducted in cooperation with NOAA, CNES, ISRO, China, etc. | Other partner countries and organization are responsible for the development of the constellation satellites.",
+     "location": "Project overview page"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "JAXA's own page via subagent WebFetch extraction; not saved"
+  },
+  {
+   "id": "c17",
+   "importance": "supporting",
+   "text": "Details added by the reconciliation: the ATBD's Table 3 gives the Late Run's latency as 12 hours, with near-real-time GPROF and 100% of PMW sensors (Early 95%); CMR's data access policy is 'freely available' with three caveats (acknowledge NASA/GSFC MAPL and PPS, take a clean copy from an official archive, report errors); CHRS distributes PDIR-Now itself through its Data Portal; PPS and JAXA MOS changed the GPM ephemeris source from the 1 March 2025 data date.",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "contextualizes",
+     "passage": "Run (latency)                 Early (4 hours)         Late (12 hours)          Final (3.5 months) | GPROF product                 Near-real-time          Near-real-time           Climate | Fraction of input PMW         95%                     100%                     100% | sensors",
+     "location": "Table 3, p. 10, lines 632-638"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "contextualizes",
+     "passage": "The *data access policy* is \"freely available\" with three common-sense caveats: … The data set source should be acknowledged when the data are used, in the form: … Mesoscale Atmospheric Processes Laboratory and PPS, which develop and compute IMERG as a contribution to GPM, and archived at the NASA [enter PPS or GES DISC]. … New users are urged to obtain their own current, clean copy from an official archive, rather than taking a version from a third party that might be damaged or out of date. … Errors and difficulties in the original datasets should be reported to the dataset creators.  Access and format issues at third-party sites should be directed to their contacts.",
+     "location": "Quality.Summary field, line 3401"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "contextualizes",
+     "passage": "The global PDIR-Now dataset is hosted for public distribution at CHRS’s in-house data distribution web system, the CHRS Data Portal (chrsdata.eng.uci.edu; Nguyen et al. 2019).",
+     "location": "Data availability paragraph (line 210)"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "02/28/2025 - PPS and JAXA MOS have changed the primary source of the GPM core satellite ephemeris data for all future Version 7 processing on the March 1, 2025 data date. … 12/10/2024 - PPS has processed the Version 07B IMERG Early Run and Late Run datasets from January 1998 to May 2000. … 10/07/2024 - Monday October 07, 2024: PPS production data resumed. JAXA repaired the affected systems and provided all expected data to PPS. | 10/04/2024 - Due to the serious JAXA system failures, PPS has placed part of PPS production on hold. … NAME: Cosner, Charles | ORGANIZATION: NASA/GSFC … ADDRESS: Code 619 Bldg 32 Room S062 … NAME: Stocker, Dr. Erich | ORGANIZATION: NASA/GSFC … ADDRESS: Code 619 Bldg 32 Room S070 … Curator: Jason West NASA Official: Erich Stocker, Code 619, NASA/GSFC Last Updated: 02/21/2024",
+     "location": "News list and contacts block; footer"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "producers' own documents, read as saved text by the Reconciler"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "c17",
+   "source_ids": [
+    "s3",
+    "s2"
+   ],
+   "status": "unresolved",
+   "explanation": "Late Run latency: the ATBD's Table 3 says 'Late (12 hours)'; the ATBD's text (line 591) and the 2023 Tech Doc say ~14 hours after observation time. Stated in the answer; likely the table gives the nominal start of processing and the text the delivery time, but no source says so."
+  },
+  {
+   "claim": "c1",
+   "source_ids": [
+    "s43",
+    "s2"
+   ],
+   "status": "unresolved",
+   "explanation": "Half-hourly file size: GES DISC and CMR give 2.8 MB per file; the 2023 Tech Doc gives about 10 MB with internal compression for 3IMERGHH. Stated in the answer; the GES DISC figure is the archive's current one for the Late files."
+  },
+  {
+   "claim": "c3",
+   "source_ids": [
+    "s41",
+    "s42",
+    "s32"
+   ],
+   "status": "unresolved",
+   "explanation": "AWS Registry names CC BY 4.0 for the GES DISC bucket; NASA's EOSDIS policy says unmarked NASA-mission data are CC0; CMR and the GES DISC page name no licence. The registry is a third-party summary; NASA's own policy is the better authority but is not applied in the dataset's record."
+  },
+  {
+   "claim": "c9",
+   "source_ids": [
+    "s2",
+    "s17"
+   ],
+   "status": "resolved",
+   "explanation": "The 2023 tech doc says the Final's monthly gauge calibration is not applied to Early/Late; the Feb 2025 FAQ says V07 applies a climatological gauge adjustment to Early and Late. Both hold: Late gets a climatological calibration derived from the Final, not GPCC data directly (Part 2 run)."
+  },
+  {
+   "claim": "c14",
+   "source_ids": [
+    "s19",
+    "s20"
+   ],
+   "status": "unresolved",
+   "explanation": "GMAO's page says NOSA 1.1 or later; the GEOSgcm repository says Apache-2.0 (previously NOSA 1.3). The repository file is likely more current."
+  }
+ ],
+ "coverage_gaps": [
+  "Published headcount for PPS, GES DISC or the IMERG team: NOT PRESENT in any page read (PMM page, PPS contacts, PPS project page, GES DISC people page, GES DISC fact sheet, ATBD, tech doc). Nearest evidence is author/contact lists. (from sa2)",
+  "Current (2026) GPM Program Scientist at NASA HQ not confirmed: PMM page (dated 2019, PI tables 2021-2022) names Will McCarty; Craig Ferguson page (updated Jun 18, 2026) says he is deputy program scientist for GPM. Not checked: science.nasa.gov/people/will-mccarty/. (from sa2)",
+  "Current PPS manager in 2026 not confirmed beyond PMM page (Stocker = PPS Project Manager) and PPS contacts footer (Last Updated 02/21/2024, NASA Official Erich Stocker). No retirement notice found. Role of Charles Cosner (PPS contact) not stated. (from sa2)",
+  "GES DISC precipitation data support lead: no official title found; Zhong Liu (GMU contract scientist, Code 619) bio says he provides science and data support for TRMM/GPM/GPCP-3. Not read: NTRS 20240001387 PMM precip data services poster (Liu, Meyer, Savtchenko, DeShong). (from sa2)",
+  "JAXA GPM/EarthCARE project scientists not found; JAXA handbook PDF (March 2026) unreadable; Kubota (JAXA/EORC) appears only in search snippet of IPWG-11 slides (not read). (from sa2)",
+  "Contractors: SSAI confirmed for Bolvin, Joyce, Nelkin (2024 slides); UMBC for Tan; GMU for Zhong Liu; UMD College Park for Kidd (2023 tech doc). ESSIC/UMD role beyond Kidd, Morgan State/GESTAR II, ADNET and Telophase for PPS: not found. (from sa2)",
+  "Whether PDIR-Now IR estimates for the Late Run are computed at PPS (ATBD: CPC forwards IR to PPS for use in the PDIR computation routines) or delivered by CHRS: ATBD wording implies PPS runs the routines; no CHRS page found stating its operational role. GPCC: tech doc says Early/Late do not apply the Final monthly gauge calibration; GPCC used in Final only per search snippet of GPM FAQ (not read in this subagent; P2 has imerg_v07_faq_202502.txt). (from sa2)",
+  "Sensor providers (NOAA, EUMETSAT, DoD/NRL Monterey, JAXA AMSR2, CNES/ISRO) only from 2023 tech doc latency paragraph; no current list read for 2026 (e.g. ATBD Sec. 2 constellation table not reread). (from sa2)",
+  "IMERG V07 merging code: no public repository, licence, or 'available on request' / 'not publicly released' statement found (ATBD 2026-08 text search, 2 web searches). Code-release status NOT PRESENT. (from sa3)",
+  "GPROF operational code (CSU, V07/V08): no official CSU/PPS release found; only simonpf/gprof_nn (MIT) whose operational identity with GPROF V08 is NOT PRESENT on its page. (from sa3)",
+  "PDIR-NOW (CHRS UC Irvine) code: no repository found; licence NOT PRESENT. CPC merged IR processing code: none found (only GES DISC README/DOI 10.5067/P4HZB9N27EKU from snippet, not read). (from sa3)",
+  "SPEEDe (Tan, Huffman, Song GRL 2024, doi 10.1029/2024GL108963): Open Research / code availability not read (AGU and DOAJ returned 403). Kalman/morphing (CMORPH-KF heritage) code: not searched. (from sa3)",
+  "TKIO licence NOT PRESENT on STORM Tools, ppsdocuments or 2020 news pages; current (V07-era) TKIO version and download URL not confirmed (FTP links only, 2020). Current GPM File Specification URL listed on ppsdocuments page but not opened (P2 has filespec_gpm_v7_full.txt). (from sa3)",
+  "GMAO GEOS licence conflict: GMAO page says NOSA 1.1 or later; GEOSgcm GitHub says Apache-2.0 (previously NOSA 1.3). Whether the GEOS FP configuration / IMERG motion-vector extraction code is public NOT PRESENT. (from sa3)",
+  "XCAL L1C intercalibration tables and IDL apply_cal.pro on GSICS page known only from search snippet (page unreachable). L1C ATBD v1.9 GPMV07 at arthurhou.pps.eosdis.nasa.gov/Documents/L1C_ATBD_v1.9_GPMV07.pdf found but not read. (from sa3)",
+  "GPROF V08 paper (arXiv 2611.19978v2) cites github.com/simonpf/gprof_nn branch gprof_v8 as the GPROF-NN implementation; whether that branch is the exact operational code PPS runs, and its licence on that branch, not confirmed (main branch MIT per sa3). (from main)",
+  "Unchecked for lack of time (reconciler deadline 05:30): ATBD Table 3 motion vector source row (line 640 onward, s3); remaining list A/W candidates not individually read (AWS registry licence/update-frequency lines already in draft; PPS GIS README durations, GIS DOI page lines, L1C ATBD version lines, TKIO 3.9 news, NASA SPD-41a lines, GitHub search counts, dynamical.org Zarr line). Judged not relevant without reading: ATBD revision-history rows, techdoc satellite switch dates, CMR reference-list lines, Earthdata OSS-policy banner (Terra cessation alert, unrelated), daily-product 48 half-hourly observations note (processing detail, not formats/people/software). Figure checks not done: DOIs, author counts, durations. Unread pages from coverage.py: JAXA GPM data utilization handbooks (2), JAXA Overview of GPM Products PDF, GSICS microwave deliverable page, GitHub API search q=IMERG, AGU 10.1029/2024GL108963. Sources s9, s20, s21, s22 have no saved file (WebFetch only). (from reconciler)",
+  "sa1 and sa3 stalled on permission prompts from about 05:00 and 05:06 and were stopped at the research stop; the coordinator read sa1's saved files for q1 and ran the gap pass"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "Precipitation Processing System PPS team Goddard",
+   "tool": "WebSearch",
+   "notes": "no staff roster; led to gpm.nasa.gov data-processing page",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PPS manager GPM Goddard 2025",
+   "tool": "WebSearch",
+   "notes": "no PPS manager found in results; PMM page (r9) gives Stocker as PPS Project Manager",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Precipitation Processing System Erich Stocker retired 2025",
+   "tool": "WebSearch",
+   "notes": "found PPS STORM contacts page (Stocker NASA Official, Code 619); no retirement notice",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG team Huffman Bolvin Nelkin Tan",
+   "tool": "WebSearch",
+   "notes": "release notes, NTRS slides; led to 2024 Huffman slides with affiliations",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG V07 ATBD authors",
+   "tool": "WebSearch",
+   "notes": "confirms ATBD; full list taken from saved Aug 2026 ATBD copy",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GES DISC staff precipitation GPM Goddard",
+   "tool": "WebSearch",
+   "notes": "NTRS posters naming Liu, Meyer, Savtchenko, DeShong",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GES DISC Code 610.2 manager",
+   "tool": "WebSearch",
+   "notes": "led to Earthdata GES DISC people page (Hegde DAAC Manager)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Zhong Liu GES DISC precipitation IMERG data support",
+   "tool": "WebSearch",
+   "notes": "GSFC bio of Zhong Liu (GMU contract scientist, Code 619)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JAXA GPM core observatory DPR NASA partnership",
+   "tool": "WebSearch",
+   "notes": "JAXA project page read via WebFetch",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CPC merged IR 4km IMERG Joyce",
+   "tool": "WebSearch",
+   "notes": "GPM_MERGIR at GES DISC; role confirmed in saved tech doc",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PDIR-Now IMERG V07 CHRS",
+   "tool": "WebSearch",
+   "notes": "release notes say PDIR-Now replaced PERSIANN-CCS",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCC IMERG Final Run gauge",
+   "tool": "WebSearch",
+   "notes": "GPCC monthly used in Final Run only per FAQ snippet; tech doc says Early/Late skip Final gauge calibration",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Precipitation Measurement Missions science team 2025",
+   "tool": "WebSearch",
+   "notes": "PMM Science Team page saved (McCarty, Huffman, Stocker, Wolff, Ringerud, Portier)",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JAXA EORC GPM DPR algorithm GSMaP role IMERG partner",
+   "tool": "WebSearch",
+   "notes": "allowed_domains jaxa.jp; handbook PDF 404 via WebFetch, sandbox refused eorc.jaxa.jp for fetch_page",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Will McCarty GPM program scientist NASA Headquarters 2026",
+   "tool": "WebSearch",
+   "notes": "Ferguson listed as GPM deputy program scientist (page updated Jun 18, 2026)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Jackson Tan IMERG UMBC GESTAR II Goddard 612",
+   "tool": "WebSearch",
+   "notes": "Tan bio: UMBC, Code 613; GESTAR II not found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "David Bolvin Eric Nelkin SSAI IMERG Goddard",
+   "tool": "WebSearch",
+   "notes": "NTRS slides 20240011596 with SSAI affiliations",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PDIR-Now real-time CHRS UC Irvine provides IMERG infrared",
+   "tool": "WebSearch",
+   "notes": "allowed_domains chrsdata.eng.uci.edu, chrs.web.uci.edu, uci.edu; no CHRS page stating its operational role in IMERG",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Precipitation Processing System contractor ADNET Telophase GPM",
+   "tool": "WebSearch",
+   "notes": "no contractor named for PPS; led to PPS GSFC project page (Code 619)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://science.nasa.gov/people/will-mccarty/",
+   "tool": "lookup (WebFetch of HQ people page)",
+   "notes": "closes part of program-scientist gap: GPM and PMM listed among his programs, updated Jun 18, 2026",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPM Data Utilization Handbook Version 6.0 JAXA pdf",
+   "tool": "WebSearch",
+   "notes": "found older copy GPM_data_util_handbook_V6_20181004_E.pdf (cover Version 3.1 July 2018 per snippet) and 01.Overview_of_GPM_Products_E.pdf; both returned HTTP 404 to WebFetch; eorc.jaxa.jp seems to refuse automated fetches",
+   "from": "sa2",
+   "copy_of": "https://www.eorc.jaxa.jp/GPM/doc/data_utilization/GPM_data_util_handbook_E.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Precipitation Processing System\" staff number employees GPM ground system",
+   "tool": "WebSearch",
+   "notes": "no headcount; found GMU CEOSR group supporting PPS (contractor/partner lead)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://web.archive.org/web/2026/https://www.eorc.jaxa.jp/GPM/doc/data_utilization/GPM_data_util_handbook_E.pdf",
+   "tool": "lookup (Wayback copy via WebFetch)",
+   "notes": "WebFetch: unable to fetch from web.archive.org; handbook remains unreadable",
+   "from": "sa2",
+   "copy_of": "https://www.eorc.jaxa.jp/GPM/doc/data_utilization/GPM_data_util_handbook_E.pdf"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "source code|github|licen[cs]e|open source|TKIO|toolkit in P2 work/raw",
+   "tool": "lookup (find_text.py over P2 run work/raw)",
+   "notes": "found GES DISC README TKIO ftp link and ATBD toolkit lines; no IMERG code-release statement",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG source code available request Huffman",
+   "tool": "WebSearch",
+   "notes": "no code-release or on-request statement found",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG algorithm code not publicly released",
+   "tool": "WebSearch",
+   "notes": "no statement found; CEDA catalogue lists softwareReference: None (snippet)",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "source code|github|open source|publicly available|on request|Fortran|code is in IMERG ATBD 2026-08, PPS docs, IMERG FAQ",
+   "tool": "lookup (find_text.py over P2 copies)",
+   "notes": "only 'IMERG code ... transferred to PPS' lines; r10 not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://api.github.com/search/repositories?q=IMERG",
+   "tool": "lookup (GitHub search API via fetch_json.py)",
+   "notes": "api.github.com refused by sandbox (not .org, no approval asked); fell back to WebSearch on github.com",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPROF github Colorado State",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; only ml4wx issues about GPROF V08 preprints, no CSU repo",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PDIR-Now code github CHRS",
+   "tool": "WebSearch",
+   "notes": "no PDIR-Now repository found",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPROF python package github simonpf gprof_nn",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; found simonpf/gprof_nn (MIT), gprof_ir, qprof",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPROF V08 code release open source CSU",
+   "tool": "WebSearch",
+   "notes": "only GNU gprof profiler results",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "gpm-api ghiggi GPM python package license",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; MIT",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PPS TKIO toolkit download license",
+   "tool": "WebSearch",
+   "notes": "unrelated results",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PPS toolkit GPM TKIO",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gsfc.nasa.gov, nasa.gov; TKIO release news items",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPM file specification PPS 2025",
+   "tool": "WebSearch",
+   "notes": "unrelated results; licence for TKIO not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PPS Science Algorithm Toolkit TKIO ppstoolkit",
+   "tool": "WebSearch",
+   "notes": "allowed_domains pps.eosdis.nasa.gov, gpm.nasa.gov; STORM Tools page, ppsdocuments page",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA SPD-41a software open source",
+   "tool": "WebSearch",
+   "notes": "found Earthdata OSS policy and SPD-41a PDF",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CPC merged IR 4km data documentation",
+   "tool": "WebSearch",
+   "notes": "GES DISC GPM_MERGIR README, DOI 10.5067/P4HZB9N27EKU (snippet); no code release info",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GEOS model source code github NASA GMAO license",
+   "tool": "WebSearch",
+   "notes": "GMAO NOSA vs GitHub Apache-2.0",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SPEEDe PPS precipitation anomaly detection software",
+   "tool": "WebSearch",
+   "notes": "Tan, Huffman, Song GRL 2024 doi 10.1029/2024GL108963 (snippet); no code repo found",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GES DISC IMERG python notebook example github",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; nasa/gesdisc-tutorials",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Level 1C XCAL intercalibration code GPM Berg",
+   "tool": "WebSearch",
+   "notes": "GSICS page with XCAL tables + IDL apply_cal.pro (snippet); page unreachable",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SPEEDe Tan Huffman Song 2024 code zenodo",
+   "tool": "WebSearch",
+   "notes": "no SPEEDe code record found; AGU doi page and DOAJ page returned HTTP 403 to WebFetch",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "source code|github|open source|code is|software|request in IMERG Technical Documentation (NASA run sa1 imerg_techdoc.txt), and code|software|github|availability in PDIR-Now paper and L1C ATBD v1.9",
+   "tool": "lookup (find_text.py over earlier-run and own copies)",
+   "notes": "no code-release statement in IMERG techdoc (only advice to contact archive/algorithm developers, lines 765-769); none in PDIR-Now paper or L1C ATBD",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://gsics.atmos.umd.edu/bin/view/Development/Microwave-Deliverable (built-in browser)",
+   "tool": "browser (built-in)",
+   "notes": "navigation denied or failed; no route left",
+   "from": "main",
+   "copy_of": "https://gsics.atmos.umd.edu/bin/view/Development/Microwave-Deliverable"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "github.com/search?q=IMERG (repositories, most stars)",
+   "tool": "lookup (GitHub repository search, browser)",
+   "notes": "332 repositories; top 10 are third-party or unrelated (git-imerge, GENESIS_Nowcast, SERVIR ClimateSERV); no NASA/PPS IMERG production code",
+   "from": "main",
+   "copy_of": "https://api.github.com/search/repositories?q=IMERG"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "github.com/search?q=org:nasa IMERG",
+   "tool": "lookup (GitHub repository search, browser)",
+   "notes": "0 results in the nasa organization",
+   "from": "main",
+   "copy_of": "https://api.github.com/search/repositories?q=IMERG"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL108963 (built-in browser)",
+   "tool": "browser (built-in)",
+   "notes": "Cloudflare bot check (HTTP 403); stopped, not bypassed",
+   "from": "main",
+   "copy_of": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GL108963"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JAXA GPM handbook PDFs (eorc.jaxa.jp)",
+   "tool": "none",
+   "notes": "PDF files: the browser may not open files; WebFetch gave 404 and the sandbox refuses the host; no route left",
+   "from": "main",
+   "copy_of": "https://www.eorc.jaxa.jp/GPM/doc/data_utilization/GPM_data_util_handbook_E.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JAXA older handbook / product overview PDFs",
+   "tool": "none",
+   "notes": "same as above; no route left",
+   "from": "main",
+   "copy_of": "https://www.eorc.jaxa.jp/GPM/doc/product/format/en/01.Overview_of_GPM_Products_E.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JAXA older handbook V6 20181004",
+   "tool": "none",
+   "notes": "PDF, refused host; no route left",
+   "from": "main",
+   "copy_of": "https://www.eorc.jaxa.jp/TRMM/documents/PR_algorithm_product_information/doc_pr_v8/GPM_data_util_handbook_V6_20181004_E.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "developers.google.com Earth Engine NASA/GPM_L3/IMERG_V07 (built-in browser)",
+   "tool": "browser (built-in)",
+   "notes": "read description and Terms of Use tab; host refused to the shell sandbox",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHL_07/summary (licence on the archive own page)",
+   "tool": "browser (built-in)",
+   "notes": "primary copy of the AWS Registry licence claim: GES DISC page names no licence (no match for License); CC BY 4.0 rests on the AWS Registry entry only",
+   "from": "main",
+   "copy_of": "https://registry.opendata.aws/nasa-gpm3imerghhl/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG source code publicly available",
+   "tool": "duckduckgo (browser)",
+   "notes": "no IMERG production code release; leads: GitHub topic imerg (third-party), GPM-API docs, dynamical.org AWS Registry entry, imergpy (PyPI)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "registry.opendata.aws/dynamical-nasa-imerg (browser)",
+   "tool": "browser (built-in)",
+   "notes": "Icechunk Zarr copy of Early and Late V07, CC BY 4.0, open bucket; raw.githubusercontent.com refused by sandbox",
+   "from": "main",
+   "copy_of": "https://github.com/awslabs/open-data-registry/blob/main/datasets/dynamical-nasa-imerg.yaml"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPROF algorithm source code Colorado State release",
+   "tool": "duckduckgo (browser)",
+   "notes": "leads: arXiv 2611.19978v2 GPROF V08 paper; simonpf/gprof_nn; GPROF V5 public release notes",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "arxiv.org/html/2611.19978v2 code availability (browser find)",
+   "tool": "browser (built-in)",
+   "notes": "reference list entry Pfreundschuh (2023) GPROF-NN links https://github.com/simonpf/gprof_nn/tree/gprof_v8 (Note: Branch: gprof_v8), cited in section 2.2.3; code-availability section text not captured; full text not saved",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "required_id": "r1",
+   "query": "url=https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHL_07/summary (Product Summary and Variables tabs)",
+   "tool": "lookup (GES DISC landing page, browser)",
+   "notes": "DOI, HDF5, OPeNDAP/Online Archive/Giovanni links; no licence on page; units listed"
+  },
+  {
+   "subquestion_id": "q1",
+   "required_id": "r1",
+   "query": "CMR collections.umm_json short_name=GPM_3IMERGHHL version=07 and GPM_3IMERGDL",
+   "tool": "lookup (NASA CMR, sa1 fetch_json)",
+   "notes": "DOIs, formats, S3, OPeNDAP, UseConstraints"
+  },
+  {
+   "subquestion_id": "q1",
+   "required_id": "r2",
+   "query": "PPS README.GIS and PPS GIS DOI landing page",
+   "tool": "lookup (PPS documents, sa1 fetch_page)",
+   "notes": "GeoTIFF/WorldFile, Late GIS DOIs 10.25966, e-mail registration, FTPS/HTTPS"
+  },
+  {
+   "subquestion_id": "q1",
+   "required_id": "r3",
+   "query": "Earthdata data use guidance page",
+   "tool": "lookup (Earthdata policy page, sa1 fetch_page)",
+   "notes": "CC0 unless marked"
+  },
+  {
+   "subquestion_id": "q1",
+   "required_id": "r4",
+   "query": "Earth Engine NASA/GPM_L3/IMERG_V07 catalog page; AWS Registry nasa-gpm3imerghhl",
+   "tool": "lookup (catalog pages, browser and sa1 fetch_page)",
+   "notes": "EE mixes Late and Final, registration; AWS Registry CC BY 4.0, controlled access"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "landing page, DOI, access options",
+   "query": "GPM_3IMERGHHL 07 GES DISC",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "PPS formats, GIS files, registration",
+   "query": "PPS IMERG GIS GeoTIFF files",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NASA ESDS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "data use policy licence",
+   "query": "NASA Earthdata data use policy license",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "redistributors",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "Earth Engine and AWS entries",
+   "query": "Earth Engine GPM IMERG V07 dataset",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "PPS staff/organization",
+   "query": "Precipitation Processing System PPS team Goddard",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "IMERG team",
+   "publisher": "researchers",
+   "subquestion_id": "q3",
+   "aim": "ATBD authors",
+   "query": "IMERG V07 ATBD authors",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "GES DISC staff",
+   "query": "GES DISC staff precipitation GPM Goddard",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "JAXA, CPC, CHRS, GPCC",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q2",
+   "aim": "partner roles",
+   "query": "CPC merged IR 4km IMERG Joyce",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NASA PMM",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q3",
+   "aim": "PMM science team",
+   "query": "Precipitation Measurement Missions science team 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "IMERG team",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "IMERG code availability",
+   "query": "IMERG source code available",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": null,
+   "publisher": "registries",
+   "subquestion_id": "q4",
+   "aim": "GitHub repositories",
+   "query": "GPROF github Colorado State",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "TKIO and file spec",
+   "query": "PPS TKIO toolkit download license",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NASA SMD",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "open source policy",
+   "query": "NASA SPD-41a software open source",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "CHRS, CPC, GMAO",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "component code",
+   "query": "GEOS model source code github NASA GMAO license",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 24.4,
+  "shift_min": 0,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 166009,
+  "subagent_minutes_planned": 42,
+  "subagent_minutes": 26.6,
+  "follow_ups": 0,
+  "continuations": 3,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": false
+ }
+}

@@ -1,0 +1,1214 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* Based on my_docs/html_css_design/styles.css */
+
+
+/* 1. COLOR VARIABLES */
+
+:root {
+  --navy: #0B1620;
+  --deep-ocean: #1F3244;     /* header, headings, active filters */
+  --ocean-slate: #2A5367;
+  --steel-blue: #5C7A8C;
+  --mist-blue: #9AB7C1;
+  --ice-blue: #E3EDF0;
+
+  --page-bg: #D5E3EF;       /* light blue page around the navy dashboard */
+
+  /* Dataset cards */
+  --dataset-card-bg: #E4EBF0;
+  --dataset-card-hover: #CAD8E3;   /* hover and open (selected) card header */
+  --dataset-card-rule: #235C70;    /* 4px line under each card */
+  --dataset-details-bg: #FFFFFF;
+  --dataset-label-text: #46606F;   /* steel-blue darkened to pass AA on the card colors (4.57:1 on hover) */
+  --card-bg: #FFFFFF;
+  --panel-bg: #EDF3F5;
+
+  --heading-text: #183346;
+  --body-text: #405B68;
+  --muted-text: #5C7A8C;     /* 4.55:1 on white (was #637C88, 4.4:1) */
+
+  --divider: #D5E0E4;
+
+  /* Header text on the navy band */
+  --header-label: #A0B6C0;
+  --header-text: #C8D6DE;
+  --header-rule: #5C7A8C;
+
+  /* Footer text on the navy dashboard background */
+  --on-navy-text: #A0B6C0;
+
+  --tag-blue-bg: #D5E5EA;
+  --tag-blue-text: #315D76;
+
+  --tag-slate-bg: #FFFFFF;    /* white so tags stand out on the grey cards */
+  --tag-slate-text: #405B68;
+
+  --tag-neutral-bg: #FFFFFF;
+  --tag-neutral-text: #405B68;
+
+  /* Category tag colors (one per data-source type) */
+  /* Bright backgrounds with one dark text color; #434343 is
+     5.5:1 or better on each (WCAG AA) */
+  --tag-category-text: #434343;
+  --tag-gauge-bg: #79D49B;
+  --tag-gauge-text: var(--tag-category-text);
+  --tag-satellite-bg: #B0ECFF;
+  --tag-satellite-text: var(--tag-category-text);
+  --tag-reanalysis-bg: #C6B9FB;
+  --tag-reanalysis-text: var(--tag-category-text);
+  --tag-merged-bg: #FFD28A;
+  --tag-merged-text: var(--tag-category-text);
+  --tag-cdr-bg: #1F3244;
+  --tag-cdr-text: #FFFFFF;
+
+  --focus-ring: #2A5367;
+
+  /* Links in the access-endpoints table */
+  --link-text: #2B5FB4;        /* 6:1 on white */
+  --link-hover: #1D4785;
+}
+
+
+/* 2. DASHBOARD */
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--body-text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px 32px;
+  background: var(--deep-ocean);   /* the whole dashboard sits on navy */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+
+/* 3. HEADER */
+
+.dashboard-header {
+  background: var(--deep-ocean);
+  color: #FFFFFF;
+  padding: 72px 32px 56px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.header-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--header-label);
+}
+
+.dashboard-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #FFFFFF;
+  margin: 0 0 12px;
+}
+
+.dashboard-description {
+  font-size: 15px;
+  color: var(--header-text);
+  max-width: 650px;
+  margin: 0;
+}
+
+.header-divider {
+  height: 1px;
+  background: var(--header-rule);
+  margin: 24px 0 16px;
+}
+
+.header-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--header-text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+
+/* 4. SEARCH BAR */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 16px;
+  background: #FFFFFF;
+  border: 1px solid var(--divider);
+  margin-bottom: 24px;
+}
+
+.search-container:focus-within {
+  border-color: var(--ocean-slate);
+}
+
+.search-icon {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: var(--steel-blue);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px 14px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--heading-text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 15px;
+}
+
+.search-input::placeholder {
+  color: var(--muted-text);
+}
+
+
+/* 5. FILTER SECTION */
+
+/* One white panel holds the filters and the dataset index */
+.content-panel {
+  background: var(--card-bg);
+}
+
+.filter-section {
+  padding: 24px 24px 8px;
+  display: grid;
+  gap: 18px;
+}
+
+.filter-heading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--steel-blue);
+  margin: 0 0 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-button {
+  background: var(--ice-blue);
+  border: 1px solid var(--ice-blue);
+  border-radius: 0;
+  padding: 8px 13px;
+  color: var(--deep-ocean);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              color 0.2s ease,
+              border-color 0.2s ease;
+}
+
+.filter-button:hover {
+  border-color: var(--ocean-slate);
+}
+
+.filter-button[aria-pressed="true"] {
+  background: var(--deep-ocean);
+  border-color: var(--deep-ocean);
+  color: #FFFFFF;
+}
+
+/* "R* metadata" row: links to the archive pages */
+.rstar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 14px;
+}
+
+.filter-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+
+/* 6. DATASET INDEX */
+
+.dataset-index-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 40px 24px 16px;
+}
+
+.dataset-index-heading h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--deep-ocean);
+  margin: 0;
+}
+
+.dataset-count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--steel-blue);
+}
+
+.status-message {
+  background: var(--card-bg);
+  padding: 22px 24px;
+  margin: 0;
+}
+
+.status-message code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  background: var(--panel-bg);
+  padding: 2px 5px;
+}
+
+
+/* 7. DATASET CARD */
+
+.dataset-card {
+  background: var(--dataset-card-bg);
+  border-bottom: 4px solid var(--dataset-card-rule);
+}
+
+.dataset-card:last-child {
+  border-bottom: none;
+}
+
+/* The header is not itself a button; the title button's ::after
+   stretches over the whole header so any click on it toggles. */
+.dataset-header {
+  position: relative;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 32px;
+}
+
+/* Left half: label, title, description and tags. */
+.dataset-header > :not(.card-rstar) {
+  grid-column: 1;
+}
+
+/* Right half: the "R* scores" link (dashboard.js rstarScoresHtml). It sits
+   above the title button's ::after, which covers the whole header, so a
+   click on it follows the link instead of opening the card. */
+.card-rstar {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  align-self: center;
+  position: relative;
+  z-index: 1;
+  padding: 6px 56px 6px 28px;   /* right: clear of the expand icon */
+  border-left: 1px solid var(--steel-blue);
+}
+
+.card-rstar-link,
+.card-rstar-na {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.card-rstar-link {
+  color: var(--link-text);      /* 5.1:1 on the card, 4.2:1 on its hover colour (large text needs 3:1) */
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.card-rstar-link:hover {
+  color: var(--link-hover);
+}
+
+.card-rstar-na {
+  color: var(--deep-ocean);
+}
+
+.card-rstar-note {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--dataset-label-text);
+  margin: 8px 0 0;
+}
+
+.dataset-header:hover,
+.dataset-card.expanded .dataset-header {
+  background: var(--dataset-card-hover);
+}
+
+.dataset-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--dataset-label-text);
+  margin-bottom: 8px;
+}
+
+.dataset-title {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--deep-ocean);
+  margin: 0 40px 6px 0;
+}
+
+.dataset-toggle {
+  all: unset;
+  cursor: pointer;
+}
+
+.dataset-toggle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.dataset-toggle:focus-visible {
+  outline: none;
+}
+
+.dataset-toggle:focus-visible::after {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: -2px;
+}
+
+.dataset-description {
+  max-width: 820px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body-text);
+  margin: 0 40px 14px 0;
+}
+
+
+/* 8. DATASET TAGS */
+
+.dataset-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 9px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.tag-slate {
+  background: var(--tag-slate-bg);
+  color: var(--tag-slate-text);
+}
+
+.tag-neutral {
+  background: var(--tag-neutral-bg);
+  color: var(--tag-neutral-text);
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.tag-gauge      { background: var(--tag-gauge-bg);      color: var(--tag-gauge-text); }
+.tag-satellite  { background: var(--tag-satellite-bg);  color: var(--tag-satellite-text); }
+.tag-reanalysis { background: var(--tag-reanalysis-bg); color: var(--tag-reanalysis-text); }
+.tag-merged     { background: var(--tag-merged-bg);     color: var(--tag-merged-text); }
+
+.tag-cdr {
+  background: var(--tag-cdr-bg);
+  color: var(--tag-cdr-text);
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.4px;
+}
+
+
+/* 9. EXPAND / COLLAPSE ICON */
+
+.expand-icon {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: var(--deep-ocean);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.expand-icon .icon-close { display: none; }
+
+.dataset-card.expanded .expand-icon .icon-open  { display: none; }
+.dataset-card.expanded .expand-icon .icon-close { display: inline; }
+
+
+/* 10. EXPANDED PANEL
+   Animates open by transitioning the grid row from 0fr to 1fr. */
+
+.dataset-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease;
+  background: var(--dataset-details-bg);
+}
+
+.dataset-card.expanded .dataset-details {
+  grid-template-rows: 1fr;
+}
+
+.details-inner {
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0.25s;
+}
+
+.dataset-card.expanded .details-inner {
+  visibility: visible;
+}
+
+.details-content {
+  padding: 26px 24px;
+  border-top: 1px solid var(--divider);
+}
+
+.details-heading {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--deep-ocean);
+  margin: 0 0 8px;
+}
+
+.details-heading.details-subheading {
+  margin-top: 18px;
+}
+
+.details-heading.caps {
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.details-description {
+  max-width: 820px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--body-text);
+  margin: 0;
+}
+
+
+/* 11. METADATA GRID */
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px 28px;
+  margin: 0;
+}
+
+.metadata-item dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  margin-bottom: 5px;
+}
+
+.metadata-item dd {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--deep-ocean);
+}
+
+
+/* 11b. DATA ACCESS ENDPOINTS TABLE */
+
+.endpoints-table {
+  width: 100%;
+  max-width: 820px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.endpoints-table th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  text-align: left;
+  padding: 0 16px 8px 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.endpoints-table td {
+  padding: 10px 16px 10px 0;
+  border-bottom: 1px solid var(--divider);
+  vertical-align: top;
+  color: var(--deep-ocean);
+  font-weight: 500;
+}
+
+.endpoints-table th:first-child,
+.endpoints-table td:first-child {
+  width: 40%;
+}
+
+.endpoints-table a {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  color: var(--link-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.endpoints-table a:hover {
+  color: var(--link-hover);
+}
+
+/* The "Data archive(s)" table uses the same look; its links are names,
+   not addresses, so they keep the body font. */
+.archives-table a {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+
+/* 11c. ARCHIVE LINK (in the dataset panel) */
+
+.archive-link {
+  color: var(--link-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.archive-link:hover {
+  color: var(--link-hover);
+}
+
+
+/* 12. DIVIDERS */
+
+.section-divider {
+  height: 1px;
+  background: var(--divider);
+  border: none;
+  margin: 20px 0;
+}
+
+
+/* 13. FOOTER */
+
+.dashboard-footer {
+  margin-top: 32px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--on-navy-text);
+}
+
+
+/* 13b. ARCHIVE PAGE (archive.html) */
+
+.back-link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.back-link:hover {
+  color: var(--header-text);
+}
+
+.archive-header :focus-visible {
+  outline-color: #FFFFFF;
+}
+
+.archive-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 24px 24px 0 40px;
+  border-bottom: 1px solid var(--divider);
+}
+
+.archive-tabs[hidden] {
+  display: none;
+}
+
+.archive-tab {
+  background: var(--ice-blue);
+  border: 1px solid var(--ice-blue);
+  border-bottom: none;
+  border-radius: 0;
+  padding: 10px 16px;
+  color: var(--deep-ocean);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.archive-tab:hover {
+  border-color: var(--ocean-slate);
+}
+
+.archive-tab[aria-selected="true"] {
+  background: var(--deep-ocean);
+  border-color: var(--deep-ocean);
+  color: #FFFFFF;
+}
+
+/* Text rendered from the Markdown pages */
+.prose {
+  max-width: 860px;
+  padding: 32px 24px 40px 40px;
+  color: var(--body-text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.page-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  margin: 0 0 12px;
+}
+
+.prose h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--deep-ocean);
+  margin: 0 0 20px;
+}
+
+.prose h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--deep-ocean);
+  margin: 36px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--divider);
+}
+
+.prose h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--deep-ocean);
+  margin: 24px 0 8px;
+}
+
+.prose p {
+  margin: 0 0 14px;
+}
+
+/* R* query statement (from the page's query file) */
+.rstar-query {
+  background: var(--panel-bg);
+  border-left: 4px solid var(--dataset-card-rule);
+  padding: 14px 18px 2px;
+  margin: 0 0 20px;
+}
+
+/* Same size as the other h3s (18px): between h2 (24px) and body text (15px) */
+.prose .rstar-query h3 {
+  margin: 0 0 8px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.rstar-query p {
+  margin-bottom: 12px;
+}
+
+/* Research question and "Searched on" list (from the page's record file) */
+.research-scope {
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--divider);
+}
+
+/* Same sizes on the archive, instrument and dataset pages; the element
+   levels differ (h3/h4 under an archive report's h2 title, h2/h3 on a
+   dataset part page) so each page's headings stay in order. */
+.prose .question-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.prose .searched-on-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.searched-on {
+  margin-bottom: 0;
+}
+
+.searched-on li {
+  margin-bottom: 4px;
+}
+
+.prose strong {
+  color: var(--heading-text);
+  font-weight: 600;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.prose li {
+  margin-bottom: 8px;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin: 8px 0 0;
+}
+
+.prose a {
+  color: var(--link-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.prose a:hover {
+  color: var(--link-hover);
+}
+
+.prose code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  background: var(--panel-bg);
+  padding: 1px 5px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 0 0 20px;
+}
+
+.prose table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.prose th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  text-align: left;
+  padding: 0 14px 8px 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.prose td {
+  padding: 10px 14px 10px 0;
+  border-bottom: 1px solid var(--divider);
+  vertical-align: top;
+  color: var(--deep-ocean);
+}
+
+.archive-datasets {
+  background: var(--dataset-card-bg);
+  border-top: 4px solid var(--dataset-card-rule);
+  padding: 28px 24px 32px 40px;
+}
+
+.archive-datasets h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--deep-ocean);
+  margin: 0 0 14px;
+}
+
+.archive-dataset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.archive-dataset-list a {
+  color: var(--link-text);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.archive-dataset-list a:hover {
+  color: var(--link-hover);
+}
+
+.archive-dataset-archives {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--dataset-label-text);
+}
+
+/* 13c. DATASET WEB RESEARCH PAGES (dataset.html) */
+
+/* The answers' sections are <h2>s here (the page title is the <h1>),
+   at 1.5rem. */
+.dataset-prose h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 36px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--divider);
+}
+
+.dataset-prose h3 {
+  font-size: 15px;
+  margin: 24px 0 8px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.dataset-prose .research-part:first-child h2,
+.search-results > h2:first-child,
+.dataset-prose article > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.research-part {
+  margin-bottom: 8px;
+}
+
+.research-part-link,
+.summary-link {
+  font-weight: 500;
+}
+
+.summary-link {
+  margin-bottom: 20px;
+}
+
+.part-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--divider);
+  font-weight: 500;
+}
+
+.part-nav-next {
+  margin-left: auto;
+}
+
+/* Search across one dataset's research (dataset-search.js) */
+.search-results .search-summary {
+  color: var(--muted-text);
+  margin-bottom: 8px;
+}
+
+.dataset-prose .search-group h3 {
+  font-size: 1.1rem;
+  margin: 28px 0 10px;
+}
+
+.search-hits {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.prose .search-hits li {
+  margin: 0 0 16px;
+  padding-left: 14px;
+  border-left: 3px solid var(--divider);
+}
+
+.search-hit-link {
+  font-weight: 500;
+}
+
+.search-hit-count {
+  margin-left: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--muted-text);
+}
+
+.prose .search-snippet {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+/* Matched words: dark text on yellow (over 9:1) */
+.prose mark {
+  background: #FFE08A;
+  color: var(--heading-text);
+  padding: 0 1px;
+}
+
+.search-note {
+  background: var(--panel-bg);
+  border-left: 4px solid var(--dataset-card-rule);
+  padding: 10px 14px;
+}
+
+.search-note a {
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+/* Section links from search results land below the top edge */
+.dataset-prose [id] {
+  scroll-margin-top: 16px;
+}
+
+/* 13d. DATASET OVERVIEW PAGES (overview.html) */
+
+.overview-toc {
+  background: var(--panel-bg);
+  border-left: 4px solid var(--dataset-card-rule);
+  padding: 14px 18px 6px;
+  margin: 0 0 8px;
+}
+
+.dataset-prose .overview-toc-heading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--muted-text);
+  margin: 0 0 8px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.overview-toc ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.overview-toc li {
+  margin-bottom: 4px;
+}
+
+/* Label / value tables: no minimum width, so they fit narrow screens */
+.prose .facts-table {
+  min-width: 0;
+  margin: 0 0 20px;
+}
+
+.prose .facts-table th {
+  width: 30%;
+  padding: 10px 14px 10px 0;
+  vertical-align: top;
+}
+
+.fact-note {
+  color: var(--muted-text);
+  font-size: 12px;
+}
+
+.reference-list li {
+  margin-bottom: 10px;
+}
+
+
+/* 14. RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .metadata-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard {
+    padding: 0 16px 16px;
+  }
+
+  .dashboard-header {
+    padding: 32px 4px 32px;
+  }
+
+  .dataset-index-heading {
+    padding: 28px 16px 8px;
+  }
+
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .header-top,
+  .header-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .dataset-header {
+    padding: 18px 16px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* One column: the R* link goes under the tags. */
+  .card-rstar {
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 16px;
+    padding: 14px 0 0;
+    border-left: none;
+    border-top: 1px solid var(--steel-blue);
+  }
+
+  .card-rstar-link,
+  .card-rstar-na {
+    font-size: 24px;
+  }
+
+  .expand-icon {
+    right: 16px;
+    top: 16px;
+  }
+
+  .dataset-title {
+    font-size: 18px;
+  }
+
+  .details-content {
+    padding: 20px 16px;
+  }
+
+  .metadata-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .endpoints-table th:first-child,
+  .endpoints-table td:first-child {
+    width: 45%;
+  }
+
+  .filter-section {
+    padding: 16px;
+  }
+
+  .archive-tabs {
+    padding: 16px 16px 0;
+  }
+
+  .prose {
+    padding: 24px 16px 32px;
+  }
+
+  .archive-datasets {
+    padding: 24px 16px;
+  }
+
+  .prose .facts-table th {
+    width: 38%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dataset-details,
+  .details-inner {
+    transition: none;
+  }
+}

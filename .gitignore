@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+._*
+
+# Project working files (envs, raw downloads, caches) — see ~/.claude/CLAUDE.md
+.work/
+
+# Claude Code local state (keep shared .claude/settings.json tracked if added)
+.claude/settings.local.json
+.claude/.cc-writes/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Node / front-end app (app/)
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Word copies made with pandoc from the Markdown docs (kept out so they never go out of sync)
+*.docx
+
+# The user's own idea notes: on this computer only, for Claude to read (the user removes them when finished)
+docs/ideas/
+

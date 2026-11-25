@@ -1,0 +1,532 @@
+# Handoff
+
+Notes for the next session: what the project is for, where things stand, and what to do next.
+Last updated 2026-11-25. Update this file before compacting a session and at the end of every session
+(see CLAUDE.md).
+
+## This repo (started fresh 2026-11-25)
+
+- **What it is:** `precipitation_rstar_scoring` is a copy of `Rstar_precipitation-relationships` (its `develop` at
+  `0a8a054`, plus its local-only files and the dashboard files copied in that day), with a **new git history**.
+- **Two private GitHub copies:** the agency's https://github.com/nyce-data/precipitation_rstar_scoring (the agency
+  owns the code and sees everything; the user is a collaborator) and the user's own
+  https://github.com/lmerchant/precipitation_rstar_scoring (stays private; not a public website). `origin` fetches
+  from the user's and has both as push URLs, so `git push origin main` updates both.
+- **The old folder stays as it is:** `/Users/claude/SIDE_WORK/NYCE_project/Rstar_precipitation-relationships` and its public repo
+  `lmerchant/Rstar_precipitation-relationships` (with its GitHub Pages site,
+  https://lmerchant.github.io/Rstar_precipitation-relationships/) stay public for the user's colleagues. Don't change
+  anything there, and don't trash anything in it. Its git history and `local-notes` branch are kept in that folder.
+- **What changed in the copy:** the old folder's path and name were replaced with this one's (CLAUDE.md, the docs, the
+  query templates and examples, the gap-query run sheet; the originals in `Rstar_query_results/queries/` were updated
+  the same way, with their old `notes/` and pre-reorganization paths fixed, so the copies still match them); `.github/workflows/pages.yml` was removed (Pages can't publish from a private repo on GitHub
+  Free); `CLAUDE.md`, `HANDOFF.md` (checked 2026-11-25: nothing personal in it), `notes/`, `.claude/launch.json` and
+  the gap queries are now committed; `docs/ideas/` stays git-ignored (the user's notes for Claude to read; the user
+  removes it when finished); the `local-notes` branch and its snapshot script are not used here; `.work/` was not
+  copied (the venv was rebuilt here, see "Tests").
+- **Setup (2026-11-25):** the user ran `git init` and the empty first commit on `main`, made `develop`, rebuilt the venv
+  (all e2e tests pass here), checked the site, created both GitHub repos and pushed `main` to the user's. The repo's
+  commit email was set to the placeholder text from Claude's instructions by mistake, so the pushed "Initial commit"
+  (`4546d98`) carries it; the fix (set the real noreply address, amend that commit, force-push the one-commit `main`)
+  and the two push URLs are the user's next step. Then the first real commit on `develop`.
+
+## Goal
+
+Score precipitation datasets on the R* framework and show how risky each one is. There are four groups:
+People risk (P), Data risk (D), Dependent infrastructure resilience (DIRS) and Repository resilience (RRS),
+with 19 subcategories in all.
+
+1. Web research on each dataset, its repositories and its instruments is saved in `rstar-pipeline/input/web-research/`.
+2. That research is sorted into the 19 subcategories as evidence (`rstar-pipeline/output/categories/`).
+3. Each subcategory gets a score from its evidence (full points, 0 or NA); a person decides the NA ones.
+4. The final app in `app/` shows a weighted network graph and/or knowledge graph of R* scores and dataset
+   relationships. Ideas are in `docs/ideas/rstar_relationship_graph/rstar_graphs.md` and `docs/ideas/R Precip dashboard.md` (the user's notes, kept out of git); the scoring formula and point values are in
+   `rstar-pipeline/input/framework/how_to_score_rstar.md` (which `rstar-pipeline/processing/scripts/site-data/build_data.py` reads):
+   - R* = 0.40 D + 0.30 P + 0.20 (100 − RRS) + 0.10 DIRS;
+   - each subcategory is worth 0 or a fixed number of points, or NA when the evidence doesn't settle it (then the
+     category total and R* are NA too, and a person decides).
+
+The weighted network graph of a dataset's R* scores is built (`app/graph.html`, 2026-11-24) and the user likes it;
+the knowledge graph of dataset relationships is not started. GHCN-Daily, GPCP Daily and IMERG Late Run are categorized;
+PERSIANN-CDR Daily is waiting on supplemental research, and CoCoRaHS is a new dataset not yet researched.
+
+**Eighth session (2026-11-25): reorganized the repo around `rstar-pipeline/`.** Everything needed to rebuild the site's
+data now lives in `rstar-pipeline/` as `input/` (framework: definitions, scoring, filing rules, form format;
+dataset-metadata; web-research), `processing/` (instructions, research-queries, scripts: categorize, site-data,
+dashboard) and `output/` (categories, gaps-notes); `rstar-pipeline/README.md` explains the layout and steps. Old →
+new: `rstar_definitions/` → `input/framework/definitions/`; `docs/scoring/`, `docs/json_output/example_rstar_json.json`
+and `docs/claude_feedback/rstar-categorization-decisions.md` → `input/framework/`; `datasets_metadata/json/` →
+`input/dataset-metadata/`; `data-rstar-query-results/` → `input/web-research/`; the how-tos and format doc in `docs/`
+and `notes/categorize-dataset-instructions.md` → `processing/instructions/`; `scripts/categorize|dashboard/` and
+`app/scripts/build_data.py` → `processing/scripts/`; `data-rstar-categories/datasets/` → `output/categories/`; the
+`*_categorization-gaps.md` notes → `output/gaps-notes/`. The query templates, examples and the two query design notes
+(were `notes/dataset-query-5-part-plan.md`, `notes/archive-query-plan.md`) are now in `processing/research-queries/`
+(templates and examples are copies from `Rstar_query_results`). `app/` and `datasets-gap-queries/` stayed; `docs/` holds
+only `ideas/`. The rebuilt category JSON was byte-identical. The emptied old folders were trashed. `trash` works
+from Claude's Bash only as a standalone command with absolute paths (global `excludedCommands: ["trash *"]`); chained
+after `cd`/`&&` it stays sandboxed and fails. The e2e tests' "not categorized yet" cases now use a faked
+uncategorized dataset (`uncategorized` fixture). Plan: `notes/rstar-pipeline-reorganization-plan.md`. 140 e2e tests
+pass. Committed on `develop`: `dbca72b` (fake uncategorized dataset; standalone guide) and `0a8a054` (the
+reorganization). The user merged both into `main` and pushed (`main` = `origin/main` = `0a8a054`). CLAUDE.md now
+describes the `local-notes` snapshot step (snapshots `3424586`, `f4f69be`). Later the same day: wrote the plan for
+bringing the workshop dashboard's files in (`notes/dashboard-files-move-plan.md`). The user answered its questions
+1–4 (the repo stays public for now; a private copy on a second GitHub account and a DigitalOcean droplet come later).
+The plan was then simplified (no big master list; cards built from the metadata JSON). **Next:** carry out the plan
+when the user says go (see "Next steps"); the user is archiving the workshop files and will answer the droplet
+questions later (see "Hosting").
+
+**Seventh session (2026-11-24):** added IMERG pt7 Run 1 (`2026-11-24_imerg-late-run-people-production-pt7`:
+people, ages, contracts, PPS processing) to `rstar-pipeline/processing/scripts/categorize/build_imerg-late-run.py` (second pass): 28 items
+added, 5 dropped (the three GPCP-run people items, now covered by IMERG's own run; a low Huffman inference; pt3's Kidd
+item, whose dates were wrong), 107 → 130. **P-1 0 → NA and P-4 0 → NA**; no other score changed; R* NA, 11 of 19 NA.
+Judgment calls in the gaps note (ATMOS filed low "against" in D-1; P-4's "no deputy named" as moderate "for"; PDIR-Now
+computed at PPS as DIRS-4 "against"). Site data rebuilt and checked in the preview; no e2e test uses IMERG scores.
+Committed on `develop` as `5e5247e`. `rstar-pipeline/input/web-research/about-datasets/query_questions.txt` is the
+user's untracked file; left alone.
+
+**Sixth session (2026-11-24):** added GPCP pt7 Run 2 (`2026-11-24_gpcp-daily-calibration-copies-pt7`) to
+`rstar-pipeline/processing/scripts/categorize/build_gpcp-daily.py`: 22 new items (102 → 124) in D-2, DIRS-1 to DIRS-5 and RRS-1; corrected the
+RSS SSMIS CDR end to 2025-07-31; no score changed. Gaps note updated ("What pt7 Run 2 added", with the judgment
+calls, e.g. ESGF obs4MIPs filed as not a repository). Site data rebuilt. Committed on `develop` as `e9645a4`.
+
+**Fifth session (2026-11-24):** **categorized IMERG Late Run** (first pass, 107 items:
+`rstar-pipeline/processing/scripts/categorize/build_imerg-late-run.py`, gaps note `rstar-pipeline/output/gaps-notes/imerg-late-run_categorization-gaps.md`
+with the judgment calls). Scores: P-1 0, P-4 0, D-1 30, D-3 20, D-4 0, D-5 0, DIRS-2 25, DIRS-3 20, RRS-1 0, RRS-5 15;
+the other 9 NA, so R* is NA. **The pt7 run covered only calibration, inputs, alternatives and copies** (its answer
+says "Run 2"; the user ran one run), so P-1 to P-4, D-1/DIRS-4 contracts were never searched; the user will write
+more queries and Claude re-categorizes (Prompt 5). The NASA GES DISC + PPS A2 run is also still to do. Site rebuilt;
+`app/e2e/test_dashboard.py` changed (IMERG's card now has an R* link; no dataset is left without an R* entry, so the
+"R* scores: NA" card branch has no test). All e2e tests pass (user ran them 2026-11-24). Committed on `develop` as `b64c26b`.
+
+**Fourth session (2026-11-24):** wrote `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md` (Claude's step-by-step for
+categorizing a dataset, learned from GHCN-Daily) and **categorized GPCP Daily** (first pass, 102 items:
+`rstar-pipeline/processing/scripts/categorize/build_gpcp-daily.py`, gaps note `rstar-pipeline/output/gaps-notes/gpcp-daily_categorization-gaps.md`, which
+lists the judgment calls to review). Scores: D-3 20, D-4 0, D-5 0, DIRS-1 25, DIRS-2 25, DIRS-3 20, RRS-2 0, RRS-3 0;
+the other 11 NA, so R* is NA. Site rebuilt. Committed on `develop` as `aca2bfa` (and the guide as `2ef9e52`).
+
+**Earlier session (2026-11-24), in order:** renamed the site "R* Scores"; built the score graph page; made category lines
+show their weighted share of R*; made the R* node red once it has a value; added evidence nodes behind an on/off
+switch; coloured evidence green "for" and red "against"; added "Raw total" and "<Category> contribution" rows to the
+category pages' score panel; made the category pages' stance tags green/red and the confidence badges purple
+(high) / amber (moderate) / blue (low). All committed on `develop`.
+
+**Third session (2026-11-24):** pinned each score box's badge to its top-right corner (`0e83931`); **moved the
+workshop dashboard in as the landing page** (`8e1545c`; see "The dashboard" below; plan and the user's decisions in
+`notes/dashboard-landing-merge-plan.md`); gave the R* pages the dashboard's styling (`4f285ff`); moved the "R* scores"
+link onto each card's right half (`62c633d`); split the Pages workflow into build and deploy jobs (`b41d0f1`) after
+two failed deploys. All committed, merged to `main` and pushed by the user; **the deploy worked and the live site is
+up to date**. 140 e2e tests pass. The user is now running broad web research queries for the other datasets and will
+come back to categorize them.
+
+**Later on 2026-11-24 (a second session):** published the site on GitHub Pages, made the repo public, added a
+top-level `README.md` for visitors, stopped tracking the working files (see "Publishing"), and redesigned the user's
+GitHub Pages home page (https://lmerchant.github.io/). Committed on `develop` and pushed on `main`.
+
+## Where things stand
+
+| Piece | State |
+|---|---|
+| GHCN-Daily categorization | Done (fourth pass, 2026-11-23: 210 items, re-sorted under the decisions doc's rules, with scores): `rstar-pipeline/output/categories/ghcn-daily/ghcn-daily_rstar-categories.json`. 17 subcategories NA, RRS-2 and RRS-3 at 0, R* NA |
+| GHCN-Daily research gaps | `rstar-pipeline/output/gaps-notes/ghcn-daily_categorization-gaps.md`. All four gap runs (pt6–pt9) and the NCEI A2 run are back and copied; the note's "After the gap runs" section says what each filled and what is left (mostly unpublished, so by hand or FOIA) |
+| GPCP Daily categorization | Done (first pass, 2026-11-24, plus pt7 Run 2 the same day): 124 items, 11 of 19 NA, R* NA; Run 2 changed no score. Used its 8 runs, both NCEI runs, both satellite runs and GHCN-Daily pt7/pt9 for NODD facts. No GES DISC repository run yet (its RRS gaps say so) |
+| IMERG Late Run categorization | Done (second pass, 2026-11-24, with both pt7 runs): 130 items, 11 of 19 NA, R* NA. The NASA GES DISC + PPS A2 run is not yet run (RRS-2, RRS-3 empty); what's left for people is mostly not public (gaps note) |
+| PERSIANN-CDR Daily | Research exists; not categorized. Coverage notes and supplemental queries written 2026-11-23 (see Research queue) |
+| CoCoRaHS (new dataset, id `cocorahs`) | Six queries written 2026-11-23, none run. Needs a `rstar-pipeline/input/dataset-metadata/` file before categorizing |
+| Feedback on the first pass | `notes/claude_feedback/first_pass_to_categorize.md`. All answered (see Open questions) |
+| Categorization rules | `rstar-pipeline/input/framework/rstar-categorization-decisions.md`, the master copy the user edits (2026-11-23). All its changes are applied. No Word copies are kept in the repo (they went out of sync); the user makes one with pandoc when needed |
+| Categorization viewer | Done: static site in `app/` (landing page with R* scores and key, 4 category pages with card scores, "Your score" radios and a score panel with raw total and contribution, and the score graph page) |
+| e2e tests | 116 pass (58 tests × Firefox and WebKit, 2026-11-24; score choices in `app/e2e/test_scores.py`, saving in `app/e2e/test_save.py`, the score graph in `app/e2e/test_graph.py`), Python Playwright. The empty-subcategory test now empties RRS-2 by intercepting `rstar-data.js`. Avoid `all_text_contents()`: it crashes this page in Playwright's Firefox |
+| Score graph (weighted network graph) | Built 2026-11-24: `app/graph.html` + `app/assets/graph.js` (see "The score graph"), with evidence nodes behind an on/off switch. Knowledge graph not started |
+| Query plans and templates | `rstar-pipeline/processing/research-queries/dataset-query-5-part-plan.md` (five parts per dataset) and `rstar-pipeline/processing/research-queries/archive-query-plan.md` (three kinds of repository, and a register of repositories). Templates in `Rstar_query_results/queries/` (see Research queries) |
+| Guide for sharing | `rstar-pipeline/processing/research-queries/rstar-query-templates-guide.md` (2026-11-23): the query design, files, how to adapt it to other climate data, and starter prompts. Written for a friend of the user who will get the files in a new GitHub repo the user is making |
+
+
+## Research queries
+
+**Two projects.** Queries and research runs live in `/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results`
+(its own git repo, also on `develop`). Runs save to its `web_search_results/`; the user copies finished runs into this
+project's `rstar-pipeline/input/web-research/`.
+
+**The design** (details in the two notes):
+- **Five parts per dataset:** 1 overview, 2 QC/calibration/code/formats, 3 people and funding route (standard tier);
+  4 threats and news, 5 threats to inputs (deep tier). Parts 1–3 keep threat words out so they stay standard.
+- **Repositories:** shared archive gets A1 threats + A2 resilience, once; a producer's own data site gets A2 only (its
+  threats are in the dataset's Part 4); copies get no run.
+- **Runs stop at the token ceiling** (about 80% of it), not the time limit.
+- **Each query tags findings** with subcategory codes and a supports/contradicts stance.
+
+**Templates** (in `Rstar_query_results/queries/`):
+- `dataset_queries/about_dataset_queries/templates/template-dataset-about_Rstar_query_pt1_overview.md` … `pt5_inputs.md`;
+- `archive_queries/general_archive_queries/A1_Rstar_query_template-repository-threats.md` and
+  `A2_Rstar_query_template-repository-resilience.md`.
+
+**Research queue** (none of these is rewritten unless noted; the user runs them):
+
+| Query | Where | State |
+|---|---|---|
+| GHCN-Daily pt6 (people), pt7 (repository), pt8 (infrastructure), pt9 (repository resilience) | `rstar-pipeline/input/web-research/about-datasets/ghcn-daily/` | Ran 2026-11-22 to 2026-11-23; copied |
+| NCEI A2 | `rstar-pipeline/input/web-research/archives/noaa-ncei/2026-11-23_A2_Rstar_query-noaa_ncei/` | Ran 2026-11-23; copied. Serves GHCN-Daily, GPCP, PERSIANN-CDR and CoCoRaHS's copy (noted in their coverage notes) |
+| GPCP pt7 (people and production) | `rstar-pipeline/input/web-research/about-datasets/gpcp-daily/2026-11-24_gpcp-daily-people-production-pt7/` | Ran 2026-11-24; copied; used in GPCP's categorization |
+| GPCP pt7 Run 2 (calibration, alternatives, copies) | `rstar-pipeline/input/web-research/about-datasets/gpcp-daily/2026-11-24_gpcp-daily-calibration-copies-pt7/` | Ran 2026-11-24; copied; added to GPCP's categorization (22 items; judgment calls in the gaps note's "What pt7 Run 2 added") |
+| IMERG pt7 Run 1 (people and production) | `rstar-pipeline/input/web-research/about-datasets/imerg-late-run/2026-11-24_imerg-late-run-people-production-pt7/` | Ran 2026-11-24; copied; added to IMERG's categorization (second pass) |
+| PERSIANN-CDR pt7 (people and production) | `datasets-gap-queries/<id>_gap-queries/`; run sheet `datasets-gap-queries/supplemental-queries-run-sheet.md` | To rewrite and run |
+| NASA GES DISC + PPS A2; UC Irvine CHRS A2 | `Rstar_query_results/.../archive_specific_queries/` | To rewrite and run |
+| CoCoRaHS Parts 1–5 and its data-site A2 | `Rstar_query_results/queries/dataset_queries/about_dataset_queries/cocorahs/` (with `cocorahs-run-sheet.md`) and `A2_Rstar_query-cocorahs.md` | To rewrite and run. Part 3's names (Doesken, Reges, Schumacher) are from Claude's knowledge, to confirm |
+| IMERG inputs-pt6 | `rstar-pipeline/input/web-research/about-datasets/imerg-late-run/` | Copied 2026-11-23 (answer, query, record only). Rechecked: its leftover gaps were added to IMERG's coverage note and pt7 query |
+
+The coverage notes (`datasets-gap-queries/<id>_coverage-gaps.md`) are not categorizations. Categorize each dataset once,
+after its gap runs come back.
+
+## Categorization format
+
+Follows `rstar-pipeline/processing/instructions/create_rstar_node_files.md` (its last section lists the attributes added 2026-11-23). The filing rules
+are in `rstar-pipeline/input/framework/rstar-categorization-decisions.md`; worked examples per subcategory are in the
+"Counts / doesn't count" section of `rstar-pipeline/processing/instructions/categorizing-web-searches_README.md`.
+
+- **One JSON file per dataset**, in `rstar-pipeline/output/categories/<dataset>/`.
+- **Top keys:** `people_risk`, `data_risk`, `dep_infra_resilience`, `repo_resilience`, each holding its
+  subcategory keys (`P-1` … `RRS-5`), plus `dataset` (producer, `producer_is_repository`, repositories with roles).
+- **Each subcategory value** is HTML: `<div class="p-1" data-score data-score-basis data-status>` (RRS divs also
+  `data-repositories`) containing:
+  - `<h4>Evidence</h4><ul class="evidence">`: each `<li>` has `data-confidence` (high, moderate, low),
+    `data-source` (the research run folder) and `data-stance` (`for`, `against` or `context`), sorted in that order;
+    RRS items also `data-repository`;
+  - then `<h4>Gaps</h4><ul class="gaps">`: each `<li>` has `data-status` (`searched-none-found`, `not-public`,
+    `not-searched`).
+- **Scores:** only high and moderate for/against items count. For only = full points, against only = 0, otherwise NA.
+- **Inferences** are labelled "inference" and given low confidence (so they never set a score).
+- **Source material:** any `answer_*.md` file in `rstar-pipeline/input/web-research/` that bears on the dataset (CLAUDE.md
+  allows all of it): the dataset's own runs in `about-datasets/<dataset>/`, plus the relevant `archives/` and
+  `instruments/` runs.
+- **How the file is made:** hand-sorted evidence in `rstar-pipeline/processing/scripts/categorize/build_<id>.py`, which calls
+  `write_categories()` in `rstar-pipeline/processing/scripts/categorize/rstar_common.py` (writing, sorting and scoring). Evidence tuples are
+  `(confidence, run, text, stance[, repository])` with stance `"F"`, `"A"` or `"C"`; gaps are `(status, text)` with
+  `"S"`, `"P"` or `"U"`. For a new dataset, copy the GHCN-Daily script, read all the answer files and write a gaps
+  note in `datasets-gap-queries/`.
+
+## Open questions for the user
+
+**Discussion doc (2026-11-23):** `notes/claude_feedback/why-rstar-categories-are-hard-to-apply.md` (copy of the Claude
+Doc at https://claude.ai/artifact/Q5rmmJHnFzAtNLHsubpZKW) sets out what makes the categories hard to apply, with
+suggestions and questions the user plans to take to a colleague. It overlaps questions 2–6 below.
+
+**Answered and applied (2026-11-23).** The user replied under `<reply>` tags in that doc and its follow-up,
+`notes/claude_feedback/why-rstar-categories-are-hard-to-apply_follow-up.md`; both are records only.
+
+**The current rules are in `rstar-pipeline/input/framework/rstar-categorization-decisions.md`.** That local file is the master
+copy: the user edits only it (the Claude Doc https://claude.ai/artifact/ESJV1iYjXaoWyHjgEyZ6X6 is no longer updated)
+and makes Word or other copies with pandoc when needed (no .docx files are kept in the repo, so nothing goes out of
+sync). Read it before categorizing. All its changes were made on 2026-11-23:
+scope sentences in the P, D and RRS definitions; the NA scoring rule in `rstar-pipeline/input/framework/how_to_score_rstar.md`;
+"neutral" renamed "context"; gap statuses; repositories on RRS items; scores in the JSON; GHCN-Daily re-sorted; the
+website's score section, key, producer sentence, card scores and repository labels; the "Counts / doesn't count" guide.
+
+**Still open (for colleagues):** whether one station closing or only a whole network counts as a "source"; whether the
+scoring decision table changes once users see mostly NA; repeating NCEI facts across subcategories; per-repository RRS.
+First-pass questions 2 to 6 below are all answered.
+
+From `notes/claude_feedback/first_pass_to_categorize.md`. Check whether the user has answered them before
+categorizing another dataset.
+
+1. ~~Should RRS and DIRS also use `archives/` and `instruments/`?~~ Answered yes (CLAUDE.md, 2026-11-22).
+   They didn't fill RRS-2, RRS-3 or DIRS-1: those topics were never searched (see the gaps note).
+2. Should `repo_resilience` be split by repository (NCEI, AWS, Google), or stay pooled?
+3. Should there be a data-quality subcategory? QC and processing evidence has no home in D-1 to D-5 now.
+4. Should evidence shared between subcategories be repeated, or cross-referenced ("see D-1")?
+5. Is the JSON and HTML format right? That covers the file name, the Evidence and Gaps lists, the
+   attributes, and keeping labelled inferences.
+6. Should the 2025-to-present window in D-1 and RRS-4 be enforced strictly?
+
+Other issues raised in the feedback:
+
+- **Unknown scores unevenly.** Missing evidence scores 0, which reads as "no risk" for P, D and DIRS but
+  "no resilience" for RRS.
+- ~~**DIRS-1's "How to find" text** is about who does processing, not calibration.~~ Fixed 2026-11-23: the DIRS
+  definitions now say DIRS covers only what the dataset needs to be produced (its networks, calibration, input
+  feeds and processing), not the repository (that is D-2, D-3 and RRS), and each "How to find" was rewritten to
+  match. GHCN-Daily's DIRS-4 lost four NCEI-wide items as a result. The viewer shows extra paragraphs of a
+  "... defined" section (`definition_more`) on the category page only.
+- **Decided 2026-11-23:** DIRS-5 also counts substitutes for the dataset itself (its "How to find" says so), so
+  GHCN-Daily's HadISD, Berkeley Earth and ECA&D/C3S/WIS2 items stay.
+- **Still to decide:** whether D-2 and D-3 should be scoped away from the repository the same way as DIRS.
+- **The research never asked some questions:** succession plans, ages or ORCID, calibration, checksums,
+  disaster recovery plans. Listed per subcategory, with suggested searches, in the GHCN-Daily gaps note.
+- **Research file mix-ups:** two GHCN-Daily runs are both named "pt3", and the answers' cross-links point
+  to `answer.md` files that don't exist.
+
+## The dashboard (landing page, moved in 2026-11-24)
+
+- **From** `/Users/claude/SIDE_WORK/NYCE_project/precip_workshop_dashboard` (copied at its commit `257b125`). That repo
+  and its test site stay as they are (user's choice: it was a test, shown briefly); don't work in it any more.
+- **Pages:** `index.html` (dashboard: cards, search, filters, detail panels), `overview.html`, `dataset.html`
+  (web research parts), `archive.html` (archive and instrument threat pages). The old R* landing page is now
+  `scores.html` (`data-page="scores"`).
+- **Code and data:** `app/assets/dashboard/` (`dashboard.js` was `app.js`, `dashboard.css` was `styles.css`, plus
+  `shared.js`, `overview.js`, `dataset.js`, `dataset-search.js`, `archive.js`, `markdown.js`); `app/data/*.json`
+  (fetched, so these pages need a server) and `app/content/`. Scripts in `rstar-pipeline/processing/scripts/dashboard/` now read this repo's
+  `rstar-pipeline/input/dataset-metadata/` and `rstar-pipeline/input/web-research/`; `sort_datasets.py` re-sorts the cards. The old project's
+  design notes and how-tos are in `notes/dashboard/` (paths in them still name the old project).
+- **One set of ids** (user said saved scores can be lost): the dashboard took the R* ids `ghcn-daily`, `gpcp-daily`,
+  `imerg-late-run`, `persiann-cdr-daily` (were `ghcn-d`, `gpcp-daily-v3-3`, `imerg-late-run-v07`,
+  `noaa-ncei-persiann-cdr-v1r1`), in `datasets.json`, `dataset_pages.json`, `content/datasets/<id>/`, each
+  `overview.json`, and `id` / `dashboard.id` / `dashboard.about_url` in `rstar-pipeline/input/dataset-metadata/*.json`.
+- **Links between them:** `index.html` loads `data/rstar-data.js`; each card's header has a large "R* scores →" link
+  on its right half (moved out of the panel at the user's request, 2026-11-24; "Not categorized yet" under it, or
+  "R* scores: NA" for IMERG, which has no R* entry until its
+  `rstar-pipeline/output/categories/imerg-late-run/` folder exists). `withDataset()` in `assets/app.js` now carries the
+  dashboard's `q`, `category`, `coverage` and `open` through all R* pages, and the R* header has "← Back to dashboard"
+  (`dashboardHref()`), which opens and focuses the current dataset's card (added to any already open).
+- **Tests:** `e2e/test_dashboard.py` (new, 11 tests) and `test_landing.py` renamed `test_scores_page.py`; R* tests
+  now open `/scores.html`.
+- **Whole-site styling: done (2026-11-24)**, see `app/README.md` "One look for the whole site". R* pages are in the
+  navy frame, light only; the header nav gained an "R* score" tab (current on `scores.html`).
+- **Next for the dashboard:** (2) an R* score badge on each card (needs `currentScores()` moved out of `assets/app.js` into a shared
+  script); (3) the web research pages were made from older copies of the runs: update `data/dataset_pages.json` for
+  the newer runs (GHCN-Daily pt4–pt9, IMERG's six parts) and re-run `rstar-pipeline/processing/scripts/dashboard/import_dataset_pages.py`;
+  (4) fill the blank archive websites in `data/archive_links.json`. The old project's open items are in its
+  `HANDOFF.md` "Next steps".
+
+## The viewer (`app/`)
+
+Plan: `notes/app-categorization-viewer-plan.md`. Details: `app/README.md`.
+
+- **How it's built:** plain HTML, CSS and JavaScript, with no dependencies. `rstar-pipeline/processing/scripts/site-data/build_data.py`
+  reads the definitions, the point values and weights, the dataset metadata and the categorization JSON,
+  and writes `app/data/rstar-data.js`.
+  - **Re-run it after changing any of those inputs:**
+    `python3 rstar-pipeline/processing/scripts/site-data/build_data.py`.
+  - The pages load the data with a `<script>` tag, so they also work opened from disk.
+- **Title:** the site is titled "R* Scores" (header, landing h1 and page titles; renamed from "R* categorizations"
+  2026-11-24). The "Score details" tables show only the person's chosen scores.
+- **Pages:** `index.html` (dataset selector, dataset details with the producer-is-repository sentence, the R* score
+  section with a "Score details" panel, then the key to the tags and scoring, and 4 category cards with coverage
+  chips), plus one page per category. On a category page each subcategory card shows its Description,
+  "What counts as evidence", why the research gives its score, "Your score" radios (starting on the research score;
+  no research-score badge), its status (RRS cards: the
+  repositories), and opens to show the evidence. A panel beside the category description lists the chosen scores,
+  the "Raw total" (renamed from "Total", 2026-11-24) and below it the "<Category> contribution" row: what the
+  category adds to R* (weight × raw total; RRS 0.20 × (100 − raw total)), with the most it can add in the Points
+  column.
+  - **Chosen scores (2026-11-23):** the radios offer full points, 0 or NA and start on the research score. The
+    sentence above them states the implied score, for example "Both “for” and “against” web evidence (high or
+    moderate): score = NA" (was "needs a decision"; the user's colleague is reviewing whether "score = NA" reads as
+    the score implied by the web evidence). The panel's button is "Reset scores" and resets only that
+    category; a second "Reset scores" beside "Score details" on the landing page resets all categories (it asks
+    first). Notes are never reset. On-screen text says "web evidence
+    score" for the research score. Each person's browser keeps their choices between visits (the user chose this over
+    starting fresh each visit; the site will be on the droplet, one form per person). Choices
+    are kept in `localStorage` (`rstar-chosen-scores-v1`, shaped `{"<dataset id>": {"P-1": 35, ...}}`) and the
+    category panel, landing totals and R* are worked out from them in `app.js` (`currentScores()`, same rule as
+    `build_data.py`). Details in `app/README.md`.
+  - **Notes and saving (2026-11-23):** each card has a "Your notes" box. The landing page's "Save your scores" panel
+    (name, email, role) downloads one JSON file per save in the colleague's form format
+    (`rstar-pipeline/input/framework/assessment-form/example_rstar_json.json`) plus an `assessor` block; NA is `null`, notes go in
+    `justification`, `scoringMethod` is `""`. Plan and the user's answers: `notes/rstar-score-json-save-plan.md`;
+    changes to pass to the colleague: `notes/rstar-json-format-changes.md`; schema:
+    `app/schema/rstar-assessment.schema.json`.
+  - Deep links work: `people-risk.html?dataset=ghcn-daily#P-3`.
+  - **"What counts as evidence" (2026-11-23):** each subcategory in `rstar-pipeline/input/framework/definitions/` now has a
+    `#### What counts as evidence` section, a reader's version of `#### How to find`. The site shows it in place of
+    "How to find", which stays as the search instructions for queries and categorizing. Edit both together when a
+    definition changes.
+  - **No research run names (2026-11-23):** evidence items no longer show the run folder ("repository-pt7"); readers
+    don't know the files. It is still in each item's `data-source` in the JSON.
+  - **Evidence tags (2026-11-24):** stance tags are solid green "For", solid red "Against", grey "Context". Confidence
+    badges and each item's left border are purple high, amber moderate, blue low (see Colours below).
+- **Header nav:** its accessible name is "Pages" (was "Categories"); it holds the 4 categories and "Score graph".
+- **Viewing:** after each big change, give the user this command (CLAUDE.md):
+  `cd /Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring/app && python3 -m http.server 3000 --bind 127.0.0.1`,
+  then http://127.0.0.1:3000/.
+- **Claude's own preview:** `.claude/launch.json` defines `rstar-viewer` (port 8765) and `rstar-viewer-2` (port 8766,
+  for when another chat holds 8765) for the built-in browser. The built-in browser can't load the CSS and JS of a page opened from disk, so serve it.
+- **Accessibility:** follows the frontend-ui-engineering skill.
+  - Each card's arrow is a `<button aria-expanded>` that controls a `role="region"` panel.
+  - Headings go h1, then h2 (subcategory), then h3.
+  - Coverage dots have screen-reader text.
+
+## The score graph (`app/graph.html`, built 2026-11-24)
+
+Draws the dataset's **chosen** scores (the same as the landing page, so it changes as scores are picked) as a weighted
+network graph in plain SVG. Reached from "Score graph" in the header and "See the score graph →" on the landing score
+panel. Code: `app/assets/graph.js` (no libraries); `app.js` passes it its helpers through
+`window.RSTAR_GRAPH.render(ctx)`. Evidence plan: `notes/score-graph-evidence-nodes-plan.md`. All design choices come
+from the user's notes (`docs/ideas/...`) or were decided with the user on 2026-11-24.
+
+- **Nodes:** R* in the middle, black while NA and red once every subcategory has a score. Four category nodes in their
+  own colours (P blue, D orange, DIRS aqua, RRS violet; P and RRS sit opposite because they are the hardest pair to tell
+  apart), each showing its raw total and "adds X" (its share of R*). Subcategory nodes in the parent's colour, showing
+  ID and score. NA nodes are black with a ring in the category colour.
+- **Line widths:** subcategory line = score ÷ 5 (35 → 7 px). Category line = its weighted share of R* ÷ 4 (the user
+  chose the share over the raw total), so D's most is 10 px, P 7.5, RRS 5, DIRS 2.5. A 0 is 1 px; NA is dashed.
+- **RRS switch:** "Repository resilience subcategory lines show" risk (points − score, default) or score. The RRS line to
+  R* is always its share, 0.20 × (100 − raw total).
+- **Evidence nodes:** the "Show evidence nodes" switch (`role="switch"`, off by default, `&evidence=on` in the URL)
+  adds one dot per evidence item (210 for GHCN-Daily, 127 set a score) in a fan outside each subcategory node, joined by
+  thin grey lines. Green circle = for, red diamond = against, small grey ring = context; filled = sets the score
+  (high/moderate), outline = low confidence. Dots have hover tooltips (stance, confidence, repository, first 200
+  characters), click through to the card, and dim while another subcategory node is hovered or focused. They are read
+  from the category JSON in the browser (`build_data.py` unchanged), are not tab stops and are hidden from screen
+  readers.
+- **Around it:** a summary sentence (R* value and triage tier, or how many subcategories are NA), a graph key, hover/focus
+  tooltips on nodes (subcategory and category nodes are links to their cards/pages), and "The graph as a table" (every
+  node, score, line drawn and evidence counts). Below 660 px wide the graph scrolls sideways.
+
+## Publishing
+
+- **Nothing is published from this repo yet.** It is private, and GitHub Pages doesn't publish from a private repo on
+  GitHub Free, so its Pages workflow was removed. The site will be served from a DigitalOcean droplet (see "Hosting").
+- **The old public site** (https://lmerchant.github.io/Rstar_precipitation-relationships/) is published from the old
+  repo and stays as it is. The user's home page https://lmerchant.github.io/ links to it; Claude's copy of the home
+  page is in the old folder's `.work/lmerchant.github.io/`.
+- **To push** (the user runs it; the sandbox blocks github.com):
+  `git switch main && git merge --ff-only develop && git push origin main && git switch develop`. That one push
+  updates both GitHub copies (see "This repo").
+- **Commit `app/data/rstar-data.js` after rebuilding it:** no build runs on the server, so the committed `app/` is the
+  site.
+
+## Hosting (user's plan, 2026-11-25)
+
+- **A new DigitalOcean droplet**, to buy after the private repo is set up. Set it up like the user's example
+  `/Users/claude/PROGRAMMING/Claude_code_apps/ny_climate_dashboard_app/docs/digitalocean/review-site-on-digitalocean.md`
+  (a different droplet; there: Ubuntu 24.04, Caddy with `basic_auth`, a sslip.io address because there's no domain,
+  HTTPS from Let's Encrypt, and a publish script that rsyncs the built site from the Mac). No domain yet.
+- **It will serve the output of several GitHub repos.** Some sites are public (nothing sensitive). The others are
+  behind passwords: **a workshop password** for the workshop sites (workshop participants need the output of more than
+  one repo, and agency people use the same password for those), and **an internal password** for the agency's
+  internal sites. The agency can see everything. This project is a workshop site.
+- **Still to decide then:** one shared login per group or one per person (shared is simplest; the example's notes say
+  how to add per-person logins); how sites are laid out (paths on one sslip.io name, or one name each); deploying by a
+  publish script from the Mac (as in the example) or from GitHub Actions.
+- The sandbox can't reach github.com or the droplet, so the user runs those commands; Claude writes the config files
+  and scripts.
+- **Saved scores on the droplet: later, not today.** The user will want saved scores collected eventually (now each
+  participant's browser downloads a JSON file). That needs a small server program on the droplet, not just static
+  files; plan it when the user asks.
+- **Settled (user, 2026-11-25):** the people evidence is fine to show (it comes from public web sources); the colleague
+  approves the R* framework, scoring and form format; the email addresses in the old repo's commits are fine; this
+  repo's commits use the noreply address.
+
+## Colours (`app/assets/styles.css`)
+
+Light only since 2026-11-24 (the dashboard styling; the dark theme was dropped). All text passes 4.5:1 and marks and
+control edges 3:1. Green and red mean **stance only**. The R* pages also use the dashboard's own tokens from
+`assets/dashboard/dashboard.css` (`--header-text`, `--mist-blue`, ...) in the header band.
+
+| Token | Meaning |
+|---|---|
+| `--cat-p`, `--cat-d`, `--cat-dirs`, `--cat-rrs` | Category colours on the graph (checked with the dataviz palette validator) |
+| `--ev-for` (green), `--ev-against` (red), `--ev-on` | Evidence stance: graph dots and the category pages' solid stance tags |
+| `--conf-high` (purple), `--moderate` (amber), `--conf-low` (blue) | Confidence badges and evidence item borders |
+| `--rstar-bg` (red) | The R* node once it has a value |
+| `--na-bg` (black), `--na-border` | NA scores everywhere |
+| `--card`, `--card-hover`, `--card-rule` | Dashboard card colours: category and subcategory cards, and the teal rule on section boxes |
+| `--text`, `--body`, `--muted`, `--link` | Headings, body text, labels (#46606F, 4.57:1 on the hover colour) and links |
+| `--accent`, `--control-border` | Deep ocean for selected things (tabs, chosen score, primary button); slate edges on inputs and buttons |
+| `--high`, `--low` | Still used for coverage dots (green = 4+ items) and the save form's error text; not for confidence |
+
+## Tests
+
+- **Tool:** Python Playwright, not npm. It lives in `.work/venv`, with versions pinned in
+  `app/requirements-dev.txt`. The tests are in `app/e2e/`, and `pytest.ini` runs Firefox and WebKit only.
+- **Run them in the Terminal panel,** not the Bash tool. In the sandbox, pip can't reach PyPI and servers
+  can't bind ports:
+  `cd /Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring/app && ../.work/venv/bin/pytest`
+- **The venv was not copied into this folder (2026-11-25): rebuild it before the first test run.**
+- **Rebuild the venv** if its Python disappears (Anaconda was uninstalled on 2026-11-22): the command is in
+  `app/README.md`. It uses `/opt/homebrew/bin/python3` (3.15).
+- **Don't remove the DYLD fix.** `~/.zshrc` sets `DYLD_LIBRARY_PATH=/opt/homebrew/lib`, which made
+  Playwright's Firefox load Homebrew's libnss3 and crash. `app/e2e/conftest.py` removes the variable.
+  - The user may switch the shell line to `DYLD_FALLBACK_LIBRARY_PATH`.
+  - `/usr/bin/env` hides `DYLD_*` variables, so check with `echo $DYLD_LIBRARY_PATH` instead.
+- **Node** (v26, Homebrew) is now installed. The tests stay on Python unless the user asks to switch.
+
+## Repository and working conventions
+
+- Work on `develop`. Commit only when the user asks. The user pushes only `main` (`develop` is not on GitHub). See
+  "Publishing" for the command.
+- `.work/` holds the venv, logs and debug scripts, and is git-ignored. `notes/` is for Claude's plans.
+  `docs/` is the user's.
+- Use `trash`, never `rm`.
+- `Rstar_query_results` is a separate git repo (also on `develop`) for queries and research runs. Commit query files
+  there and project files here, each in its own commit.
+- **Commit style:** one commit for the change (code, tests, README, notes). Messages end with the Co-Authored-By line.
+- **What's committed here:** everything except `docs/ideas/` and `.work/`. There is no `local-notes` branch in this repo.
+
+**Tips from the 2026-11-24 session:**
+- **The `guard_bash` hook blocks any Bash command whose text contains `cat.key`** (it reads it as a key file). `app.js`
+  and `graph.js` use `cat.key` a lot, so for edits that include it, write a Python edit script to the scratchpad with
+  the Write tool and run the file, or use the Edit tool.
+- **Cached CSS:** `python3 -m http.server` lets the browser reuse old CSS/JS. After a style change, hard-refresh
+  (Cmd+Shift+R), or in the built-in browser run `fetch(<stylesheet href>, {cache: 'reload'})` then reload. Tell the user
+  to hard-refresh too.
+- **Screenshots right after a redraw** can catch the 0.15 s fade or dimming transitions and look washed out; zoom in, or
+  check computed styles with JavaScript.
+- **Auto mode** sometimes refuses a call sent in the same message as another; send it again on its own.
+
+## Next steps
+
+**How-to for Claude:** `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md` (read it before categorizing). Since 2026-11-25 it
+stands on its own (R* background, JSON format, a per-dataset state table, settled and open rules, precedents, viewer
+and test checks), so a categorizing session doesn't need this file; update its state table after each pass. **How-to for the user:** `rstar-pipeline/processing/instructions/categorizing-web-searches_README.md` has the prompts for categorizing a dataset,
+adding it to the website, writing gap queries and adding new research. Follow it for the other datasets.
+
+**Dashboard files (plan `notes/dashboard-files-move-plan.md`, second version).** Step 1 is done: the metadata
+Markdown, its template and README, and the page clean-up rules were copied in from `precip_workshop_dashboard` on
+2026-11-25 (checked with `cmp`). The user archived that project's `my_docs/` and `.work/` outside the sandbox (the
+47-dataset list, the workshop CSV, the inventory and the rest; brought back only when needed; about 15 datasets here for
+a long while). **Still to do, as its own change after the move:** fix the metadata README's paths (end of Step 1), then
+Steps 2–4, the card-list script `build_datasets.py`, which builds `app/data/datasets.json` from each dataset metadata
+JSON's `dashboard` block, so a card is edited in one place.
+
+0. **Next:** IMERG's people run is in (second pass, 2026-11-24). Add the NASA GES DISC + PPS A2 run to IMERG (and
+   GPCP's RRS) with Prompt 5 when it comes back; the gaps note's "For the NASA GES DISC + PPS A2 run" lists what it
+   should search. Then PERSIANN-CDR Daily.
+   *Done 2026-11-24 (kept for reference): categorize IMERG Late Run (id `imerg-late-run`)* in a new session, once the user has copied in the last of
+   its query results. GHCN-Daily and GPCP Daily are done and committed (`aca2bfa`, `2ef9e52`); the user is publishing
+   them by merging `develop` into `main` and pushing.
+   - **Read first:** `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md` (Claude's step-by-step) and follow it, then
+     `datasets-gap-queries/imerg-late-run_coverage-gaps.md` (hosts, versions and what each gap run was meant to fill).
+   - **Check the research is all there:** `rstar-pipeline/input/web-research/about-datasets/imerg-late-run/` had pt1 to pt6 on
+     2026-11-24; the gap run pt7 (people and production, query in
+     `datasets-gap-queries/imerg-late-run_gap-queries/`) and the NASA GES DISC + PPS A2 run (into
+     `rstar-pipeline/input/web-research/archives/`) were still to come. Use whatever is there and list anything still missing in
+     the gaps note, as GPCP's note does for GES DISC.
+   - **Sources beyond its own folder:** `instruments/nasa-satellites` and `instruments/noaa-satellites` apply (GPM, DMSP,
+     POES, S-NPP, AMSR2, GOES); the NCEI runs only if a source puts an IMERG copy at NCEI. PERSIANN-CDR's people
+     overlap with IMERG's (UC Irvine CHRS makes PDIR-Now, an IMERG input), so note any names shared with that dataset.
+   - **Make:** `rstar-pipeline/processing/scripts/categorize/build_imerg-late-run.py` (copy the layout of `build_gpcp-daily.py`, the closest
+     satellite example; write the evidence fresh), which creates `rstar-pipeline/output/categories/imerg-late-run/` and its
+     JSON; `rstar-pipeline/output/gaps-notes/imerg-late-run_categorization-gaps.md` (follow GPCP's: scores table and judgment calls);
+     then `python3 rstar-pipeline/processing/scripts/site-data/build_data.py`.
+   - **Tests:** `app/e2e/test_dashboard.py` (lines 72–73) uses IMERG's card as the "R* scores: NA" example (no R* entry
+     at all). Once IMERG is categorized that test fails: change it to check IMERG's card now has an "R* scores" link,
+     and keep PERSIANN-CDR Daily as the "Not categorized yet" example. Run the e2e tests in the Terminal panel.
+   - **Finish:** check the pages in the browser, report scores and judgment calls, update `README.md`'s dataset table and
+     this file, give the server command, and commit on `develop` when the user asks. Consider refreshing the dashboard's
+     web research pages from the newer runs too (see "The dashboard").
+1. **Copy finished runs into `rstar-pipeline/input/web-research/`** as they come back (all runs so far are copied): dataset runs into `about-datasets/<id>/`, repository runs into `archives/<repository>/`.
+2. **Review GHCN-Daily's fourth-pass stance calls** (listed in the session that made them): 15 items became
+   context, including P-2's NCEI-wide retirements (P-2 is now NA), D-1's rejected FY2026 request, five D-5 items with
+   no GHCN-Daily tie, and the Data Rescue snapshot. Also P-2's retirement estimates and RRS-1's single-region items.
+3. **Review GPCP Daily's judgment calls** (list in its gaps note) and add the NASA GES DISC + PPS A2 run when it is back
+   (fills GPCP's GES DISC RRS gaps). Point values: `how_to_score_rstar.md` gives DIRS-2 25, P-3 25, DIRS-4 15, while the
+   decisions doc's table says 20, 20, 20; ask the user which is right.
+   **Categorize PERSIANN-CDR Daily and IMERG Late Run** once their pt7 and repository runs are back, using
+   their coverage notes. Each needs a folder in `rstar-pipeline/output/categories/` (`imerg-late-run/` doesn't exist
+   yet) and a `rstar-pipeline/processing/scripts/categorize/build_<id>.py`. Re-run `build_data.py` afterwards.
+4. **Research and categorize CoCoRaHS** from its run sheet; add its metadata file first.
+5. **Keep the repository register in `rstar-pipeline/processing/research-queries/archive-query-plan.md` current** when a new dataset names a new host.
+6. **Saving scores is built (download to the scorer's computer).** Still to do when wanted: "Load a saved file" to
+   carry on scoring, a server that collects files (the user wants to think about this later), and
+   `scripts/analyze/collect_rstar_scores.py` to turn a folder of saved files into a CSV. The user is telling the
+   colleague about the format changes (`notes/rstar-json-format-changes.md`). The viewer plan also
+   lists confidence filters and a side-by-side dataset view as later ideas.
+7. **Score graph: next pieces** (the user likes the current version), from
+   `docs/ideas/rstar_relationship_graph/rstar_graphs.md` and `docs/ideas/R Precip dashboard.md`:
+   - still open from the notes: whether RRS lines should default to risk or score; whether score lines should be red
+     for risk rather than the category colour (the notes say both);
+   - evidence nodes: gaps as nodes (up to 3 per subcategory)? and an attribute in the categorize scripts marking
+     evidence that comes from another dataset (for the thick lines the notes ask for);
+   - two datasets side by side, and expert / workshop / participant versions of the same graph;
+   - the separate knowledge graph (dataset, repository, people and instrument connections from the metadata files).
+   - With the stance/confidence colour clash gone, the stance tags could go back to pale tints if the user prefers.
+8. **Keep the e2e tests passing in both browsers** as the viewer changes.

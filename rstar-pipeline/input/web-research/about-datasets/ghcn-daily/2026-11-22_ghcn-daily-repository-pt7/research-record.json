@@ -1,0 +1,2530 @@
+{
+ "question": "How is GHCN-Daily stored, backed up and served, and how secure are the systems and programs behind it, January 2025 to November 2026 (adding to earlier runs)?",
+ "tier": "deep",
+ "tier_reason": "deep: active policy dispute (proposed NCEI cuts, decommissioned products) and a platform migration; user set 40 min / 320k",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Storage, backup, AWS move and audits",
+   "status": "answered",
+   "source_ids": [
+    "s41",
+    "s42",
+    "s45",
+    "s47",
+    "s49",
+    "s51"
+   ],
+   "remaining_gap": "Where GHCN-Daily's copies sit and whether its processing moves are not published."
+  },
+  {
+   "id": "q2",
+   "question": "Access services, NODD agreements, fee schedule, outages",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s4",
+    "s9",
+    "s18"
+   ],
+   "remaining_gap": "CDO and ADS staff and funding are not published; NODD contract texts not found."
+  },
+  {
+   "id": "q3",
+   "question": "Parquet, BigQuery and ADS NetCDF schemas",
+   "status": "uncertain",
+   "source_ids": [
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28"
+   ],
+   "remaining_gap": "No official Parquet or BigQuery column schema; ADS NetCDF untested."
+  },
+  {
+   "id": "q4",
+   "question": "CPO COM support after 2021 and NODD funding",
+   "status": "uncertain",
+   "source_ids": [
+    "m1",
+    "m2",
+    "m3",
+    "s6"
+   ],
+   "remaining_gap": "COM 2024 brochure unread; no enacted NODD amount."
+  },
+  {
+   "id": "q5",
+   "question": "The decommissioned datasets named for the Senate",
+   "status": "answered",
+   "source_ids": [
+    "s19",
+    "s21",
+    "s22",
+    "s43"
+   ],
+   "remaining_gap": "NOAA's report to the Senate not found."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-14/pdf/2026-07250.pdf",
+   "fetched_url": null,
+   "title": "Schedule of Fees for Access to NOAA Environmental Data, Information, and Related Products and Services (Final rule, 91 FR 19078, FR Doc. 2026-07250)",
+   "author_org": "NOAA NESDIS (Department of Commerce)",
+   "published": "2026-04-14",
+   "data_period": null,
+   "source_type": "official (Federal Register final rule)",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/fr_2026-07250.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "PDF three-column layout; passage reassembled from the middle column in order. The rule does not name GHCN-Daily or Climate Data Online: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "undated page; alert rows dated 11/02/2026-11/17/2026",
+   "data_period": null,
+   "source_type": "official (service status page)",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_alerts.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Does not name GHCN-Daily, CDO or ADS specifically: NOT PRESENT. Only current alerts shown; earlier 2025 alerts not listed.",
+   "found_by": [
+    "sa2",
+    "sa3",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.noaa.gov/nodd/about",
+   "fetched_url": null,
+   "title": "Evolution of the NODD Program",
+   "author_org": "NOAA (OCIO NODD)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_nodd_about.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Terms, length or end date of the post-2019 operational agreements: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.noaa.gov/big-data-project-frequently-asked-questions",
+   "fetched_url": null,
+   "title": "Frequently Asked Questions (NODD)",
+   "author_org": "NOAA (OCIO NODD)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nodd_faq.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Exact end date, termination clauses or option-period structure: NOT PRESENT on this page. GHCN-Daily not named in the lines read.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.noaa.gov/information-technology/open-data-dissemination",
+   "fetched_url": null,
+   "title": "Open Data Dissemination (NOAA OCIO page)",
+   "author_org": "NOAA OCIO",
+   "published": "Last updated November 13, 2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (read with WebFetch; no local copy)",
+   "retrieved": "2026-11-22",
+   "limitations": "WebFetch extraction; agreement length/end date, whether hosting can end, funding amounts, staff: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.noaa.gov/sites/default/files/2021-06/NOAA%20FY22%20CJ.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates FY 2022 (Congressional Justification): NOAA Open Data Dissemination program change",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2021-06",
+   "data_period": null,
+   "source_type": "official (budget justification)",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_fy22_cj.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "A request (dollars in thousands), not an enacted amount; FY2026/FY2027 CJ text files in the earlier run have no NODD mention (search returned no match).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ncei.noaa.gov/node/1930",
+   "fetched_url": null,
+   "title": "NC VM degradation",
+   "author_org": "NOAA NCEI",
+   "published": "undated (alert page)",
+   "data_period": null,
+   "source_type": "official (service alert)",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_node1930.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "No date; does not name CDO, ADS or GHCN-Daily: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes",
+   "fetched_url": null,
+   "title": "Notice of Changes (NESDIS)",
+   "author_org": "NOAA NESDIS",
+   "published": "undated; newest notice November 2, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_node151.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Only the listing page read; any CDO/GHCN-D change notice: NOT PRESENT on the listing. A search summary mentioned a past notice moving GHCNd daily summaries from CDO v2 to Common Access (year not confirmed, not read).",
+   "found_by": [
+    "sa2",
+    "sa3"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.noaa.gov/media-release/cloud-platforms-unleash-full-potential-of-noaa-s-environmental-data",
+   "fetched_url": null,
+   "title": "Cloud platforms unleash full potential of NOAA's environmental data",
+   "author_org": "NOAA",
+   "published": "2019-12-19",
+   "data_period": null,
+   "source_type": "official (press release)",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_2019_cloud_release.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Length in years, end date, termination terms: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-12/SOS_FY2025_Executive_Summary.pdf",
+   "fetched_url": null,
+   "title": "State of the Services FY 2025 Report (October 2024 - September 2025)",
+   "author_org": "NOAA NCEI",
+   "published": "2025-12",
+   "data_period": null,
+   "source_type": "official (service report)",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sos_fy2025.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Climate Data Online, Access Data Service, GHCN, outage, shutdown: NOT PRESENT (searched). The FY2026 Q1 report also has none of these terms (renamed _unused).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://www.noaa.gov/information-technology/stories/noaa-and-google-cloud-data-match-made-in-cloud",
+   "fetched_url": null,
+   "title": "NOAA and Google Cloud: A data match made in the cloud",
+   "author_org": "NOAA (republished from Google Cloud blog, Feb 12, 2021)",
+   "published": "2021-04-20",
+   "data_period": null,
+   "source_type": "official (NOAA story)",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_node7684.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Base period, options, end date and termination terms: NOT PRESENT. The apostrophe in NOAA&#39;s stands for a plain apostrophe.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts (Wayback capture 2025-11-30 23:51:09)",
+   "author_org": "NOAA NCEI",
+   "published": "capture 2025-11-30",
+   "data_period": null,
+   "source_type": "official (service status page, archived copy)",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_alerts_wb202512.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Archived copy; only alerts still open on 2025-11-30 shown. CDO, ADS, GHCN-Daily, shutdown: NOT PRESENT. Also relevant to q5 (named discontinued products).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.ncei.noaa.gov/",
+   "fetched_url": null,
+   "title": "NCEI home page (Wayback capture 2025-10-20 00:02:12, during the shutdown)",
+   "author_org": "NOAA NCEI",
+   "published": "capture 2025-10-20",
+   "data_period": null,
+   "source_type": "official (archived web page)",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_home_wb202510.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Shows the home page was served (not redirected) at the capture time; whether the data access services (CDO, ADS, GHCN-D files) worked that day is NOT PRESENT. Contradicts news summaries saying NCEI redirected to governmentshutdown.noaa.gov (those may refer to a different date).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.ncei.noaa.gov/cdo-web/",
+   "fetched_url": null,
+   "title": "Climate Data Online (CDO) home (Wayback capture 2025-10-20 00:02:13, during the shutdown)",
+   "author_org": "NOAA NCEI",
+   "published": "capture 2025-10-20",
+   "data_period": null,
+   "source_type": "official (archived web page)",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdo_web_wb202510.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "&#39; stands for a plain apostrophe. A served landing page does not show that CDO search/download or the v2 API worked that day (NOT PRESENT). Ties the fee schedule items Department of Commerce Certification / General Certification to CDO orders; the page does not name the fee rule.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/cdo-web/webservices/v2",
+   "fetched_url": null,
+   "title": "Web Services API (version 2) Documentation | Climate Data Online (Wayback capture 2025-06-16 20:30:35)",
+   "author_org": "NOAA NCEI",
+   "published": "capture 2025-06-16",
+   "data_period": null,
+   "source_type": "official (API documentation, archived copy)",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdo_ws_v2_wb2025.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Archived copy (June 2025); retire/deprecate/replace words: NOT PRESENT. Current (Nov 2026) status of the v2 API not checked.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/cdo-web/webservices/v2",
+   "fetched_url": null,
+   "title": "Web Services API (version 2) Documentation | Climate Data Online (live page, Nov 2026)",
+   "author_org": "NOAA NCEI",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official (API documentation)",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdo_ws_v2_live.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "&#39; stands for a plain apostrophe. Documentation page only; API endpoint itself not called (needs a token). retire/deprecate/migrate/unavailable: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts (Wayback capture 2025-07-31 18:32:29)",
+   "author_org": "NOAA NCEI",
+   "published": "capture 2025-07-31",
+   "data_period": null,
+   "source_type": "official (service status page, archived copy)",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_alerts_wb202508.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Search of saved text for Climate Data Online|CDO|Access Data|GHCN|outage|unavailable|maintenance|Daily returned no match: NOT PRESENT. Note the July 15-16, 2025 maintenance window reported in a search summary is not on this capture (it may have expired).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts (Wayback capture 2025-10-14 23:41:50, during the shutdown)",
+   "author_org": "NOAA NCEI",
+   "published": "capture 2025-10-14",
+   "data_period": null,
+   "source_type": "official (service status page, archived copy)",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_alerts_wb202510.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Archived copy; the page itself was served on 2025-10-14, which contradicts news summaries of an NCEI redirect to governmentshutdown.noaa.gov (dates may differ). Whether downloads/API worked: NOT PRESENT. CDO, ADS, GHCN, outage, unavailable: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://www.congress.gov/committee-report/119th-congress/senate-report/44/1",
+   "fetched_url": null,
+   "title": "S. Rept. 119-44, Commerce, Justice, Science Appropriations Bill, 2026",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2025-07-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/srpt119-44.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "The passage lists no product names (NOT PRESENT). No NOAA report back to the Committee was found in this run.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes",
+   "fetched_url": null,
+   "title": "2025 Notice of Changes",
+   "author_org": "NOAA NESDIS",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_2025_notice_of_changes.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "The page shows the later 2025 items only; the April 2025 items appear on the main list pages.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.nesdis.noaa.gov/news/nclimgrid-daily",
+   "fetched_url": null,
+   "title": "nClimGrid-Daily (Notice of Changes)",
+   "author_org": "NOAA NESDIS / NCEI Data Access Branch",
+   "published": "2025-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_nclimgrid_daily.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "nClimGrid-Daily is a gridded product derived from GHCN-Daily stations, not GHCN-Daily itself; it shows the NCEI Data Access Branch pattern of removing /pub/ and FTP routes.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: nClimGrid-Daily (not GHCN-Daily)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://www.nesdis.noaa.gov/news/service-location-change-integrated-surface-data-global-hourly",
+   "fetched_url": null,
+   "title": "Service Location Change for Integrated Surface Data (Global Hourly)",
+   "author_org": "NOAA NESDIS / NCEI Data Access Branch",
+   "published": "2026-06-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_isd_location_change.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "This is about ISD, not GHCN-Daily. It is an example of NCEI moving a station product's only direct download to NODD (cloud) hosting.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://noaa-ghcn-pds.s3.amazonaws.com/?list-type=2&prefix=parquet/by_year/YEAR=2025/&max-keys=30",
+   "fetched_url": null,
+   "title": "S3 REST listing of noaa-ghcn-pds parquet/by_year/YEAR=2025/",
+   "author_org": "NOAA NODD on AWS (bucket noaa-ghcn-pds)",
+   "published": "2026-11-18 (object LastModified)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/s3_list_parquet_by_year_2025.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "fetch_page.py was refused (the s3.amazonaws.com host is not on the sandbox allowlist), so this was read with WebFetch extraction. A listing shows keys only: column names, types and units NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://github.com/NOAA-Big-Data-Program/nodd-data-docs/blob/main/GHCN-D/Readme.md",
+   "fetched_url": null,
+   "title": "nodd-data-docs GHCN-D Readme",
+   "author_org": "NOAA Big Data Program / NODD",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/nodd_ghcnd_readme_2026-11-22.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Parquet column names, types and units: NOT PRESENT. Date of the prefix change: NOT PRESENT. An earlier run (2026-11-19_ghcn-daily-about-pt2, sa3) found the same content.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://github.com/Scigantic/scigantic-cards",
+   "fetched_url": null,
+   "title": "scigantic-cards (dataset card for s3://noaa-ghcn-pds parquet)",
+   "author_org": "Scigantic (third party)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/scigantic_cards_ghcn_parquet.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Third-party, not NOAA. Types for the flag and OBS_TIME columns: NOT PRESENT. Units: NOT PRESENT; the parquet carries no units field (the coordinator could cross-check units against the GHCN-D readme.txt from earlier runs). Not verified by reading a footer myself (S3 host refused).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://cloud.google.com/blog/products/gcp/global-historical-daily-weather-data-now-available-in-bigquery",
+   "fetched_url": null,
+   "title": "Global historical daily weather data now available in BigQuery",
+   "author_org": "Google Cloud (Lak Lakshmanan)",
+   "published": "2016-09-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/gcloud_blog_ghcn_bigquery.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Column names and types: NOT PRESENT. Community examples (searches only, not read) query id, date, element, value and qflag and divide value by 10. The Marketplace page (console.cloud.google.com) failed in WebFetch with 'Header overflow'; an earlier browser copy shows only 'Expected update frequency: Daily'.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+   "fetched_url": null,
+   "title": "NCEI Data Service API User Documentation",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ads_api_docs.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "It does not say which datasets support NetCDF (NOT PRESENT for daily-summaries). CF standard_name: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00013874&startDate=2025-01-01&endDate=2025-01-03&format=json&units=metric",
+   "fetched_url": null,
+   "title": "ADS daily-summaries JSON test request (USW00013874, 2025-01-01 to 2025-01-03)",
+   "author_org": "NOAA NCEI Access Data Service",
+   "published": "2026-11-22 (response)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ads_daily_json.txt.json",
+   "retrieved": "2026-11-22",
+   "limitations": "The NetCDF requests (format=netcdf, with and without dataTypes=TMAX,TMIN,PRCP) returned 0 bytes with no content type, so whether ADS gives CF standard_name or units attributes for daily-summaries could not be tested; ncdump was not run (no file). The empty body could be an ADS refusal or a fetch artefact. The coordinator could retry in a browser.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=1",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 1",
+   "author_org": "NOAA NESDIS",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2a",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page1.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Page 1 of the list; see sa3-e2.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=2",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 2",
+   "author_org": "NOAA NESDIS",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2b",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page2.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "The other items are satellite products and websites (Dvorak, HMS, NOAASIS, SSD.noaa.gov).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=3",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 3",
+   "author_org": "NOAA NESDIS",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2c",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page3.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "See sa3-e2.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=4",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 4",
+   "author_org": "NOAA NESDIS",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2d",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page4.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "See sa3-e2.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=5",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 5",
+   "author_org": "NOAA NESDIS",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2e",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page5.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "See sa3-e2.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=6",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 6",
+   "author_org": "NOAA NESDIS",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2f",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page6.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "See sa3-e2.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=7",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 7",
+   "author_org": "NOAA NESDIS",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2g",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page7.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "See sa3-e2.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes?page=8",
+   "fetched_url": null,
+   "title": "Notice of Changes, list page 8",
+   "author_org": "NOAA NESDIS",
+   "published": "2024-2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2h",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc_page8.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "So the 2025-2026 run of the list is pages 0-8.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.ncei.noaa.gov/operating-system-upgrade-outage",
+   "fetched_url": null,
+   "title": "Operating System Upgrade Disruptions",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (says 'beginning August 22'; year not given)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_os_upgrade_outage.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "No year is given; the ISD notice's 'no update beyond 08/24/2025' suggests August 2025 (an inference for the coordinator to check). The banner about the cloud move is live in Nov 2026. GHCN-Daily: NOT PRESENT. Also relevant to q2 (outages).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: NCEI products other than GHCN-Daily",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://eos.org/research-and-developments/noaa-datasets-will-soon-disappear",
+   "fetched_url": null,
+   "title": "NOAA Datasets Will Soon Disappear",
+   "author_org": "Eos (AGU), Kimberly M. S. Cartier",
+   "published": "2025-04-17 (updated 2025-05-08)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/eos_noaa_datasets_disappear.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "News, not NOAA. Products are not named in the text beyond Billion Dollar Disasters. 14 + 6 + 3 = 23 is a sum for the coordinator to check, not a figure from the article; it may be the source of the Senate's 'at least 20'. No GHCN-Daily item is named.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-ghcn",
+   "fetched_url": null,
+   "title": "AWS open-data-docs: noaa-ghcn README (and open-data-registry noaa-ghcn.yaml)",
+   "author_org": "AWS Open Data / NOAA NODD",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/aws_open_data_docs_noaa-ghcn.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Parquet: NOT PRESENT (the README predates or ignores the parquet prefix). The registry licence and description were paraphrased by the extractor, not quoted. The Parquet column names in sa3-e8 (ID, DATE, DATA_VALUE, M_FLAG, Q_FLAG, S_FLAG, OBS_TIME) mirror these CSV fields; units in Parquet are presumably the same raw tenths, but no NOAA page states this.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://github.com/acadali/Using-BigQuery-to-do-Analysis",
+   "fetched_url": null,
+   "title": "Using BigQuery to do Analysis (tutorial)",
+   "author_org": "acadali (third party; based on a Google lab)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/acadali_bigquery_ghcn.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Third-party. Column types: NOT PRESENT. Not the full schema.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://www.ncei.noaa.gov/about-us",
+   "fetched_url": null,
+   "title": "About | National Centers for Environmental Information (NCEI)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (undated page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_about_us.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Location of backup copy NOT PRESENT; GHCN-Daily NOT PRESENT; no storage medium (tape/disk) named.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration",
+   "fetched_url": null,
+   "title": "Cloud Migration Offers Bright Future for NOAA's Data",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-03)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_cloud_migration.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "GHCN-Daily NOT PRESENT; contractor NOT PRESENT; whether on-premise copies/tape are kept after migration NOT PRESENT; number of AWS regions NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NCEI archive as a whole",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration-FAQ",
+   "fetched_url": null,
+   "title": "NCEI Cloud Migration Frequently Asked Questions",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-14)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_cloud_faq.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "GHCN-Daily NOT PRESENT; backup/second copy NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://www.highergov.com/contract/47QTCA19D000C-1305M426F0030/",
+   "fetched_url": null,
+   "title": "47QTCA19D000C-1305M426F0030: IT Modernization Support for NESDIS and NOAA NCEI",
+   "author_org": "HigherGov (aggregator of FPDS/USAspending data)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (host refused by sandbox; read via WebFetch)",
+   "retrieved": "2026-11-22",
+   "limitations": "Aggregator, WebFetch extract (not saved locally; www.highergov.com refused by sandbox). Cloud migration, GHCN, archive, Asheville, Boulder NOT PRESENT. Check on USAspending/SAM.gov.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/NOAANC_2.pdf",
+   "fetched_url": null,
+   "title": "A Lack of Program Management Controls and Attention to IT Security Threatens the Success of NOAA's Effort to Implement a Cloud-Based Common Ground System (Final Report No. OIG-24-034-A)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2024-08-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_noaanc_2.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Report concerns NCCF (ground system capabilities); NCEI and GHCN-Daily NOT PRESENT. The OIG-24-034-A.pdf URL returned HTTP 404; the report is served as NOAANC_2.pdf. Dated Aug 2024 (before the brief's period).",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NESDIS NCCF (target platform for NCEI migration)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s46",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/SAR-2025-09.pdf",
+   "fetched_url": null,
+   "title": "Semiannual Report to Congress, September 2025",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2025 (period ending 2025-09-30)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_sar_2025_09.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Which systems the FY2025 FISMA audit covered NOT PRESENT (not public). Table header: Date Report Issued | OIG Report No. and Title | Total Recommendations Made | Unimplemented Recommendation(s) | Potential Monetary Benefits of Unimplemented Recommendations.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-01/FY2025%20Q1%20SOS%20Executive%20Summary.pdf",
+   "fetched_url": null,
+   "title": "NCEI FY2025 Q1 State of the Service Executive Summary",
+   "author_org": "NOAA NCEI",
+   "published": "2025-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_sos_fy2025_q1.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Does not say whether Boulder holds a full second copy of the archive or of GHCN-Daily; GHCN NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://www.nesdis.noaa.gov/news/nesdis-announces-first-of-its-kind-enterprise-cloud-award",
+   "fetched_url": null,
+   "title": "NESDIS announces first-of-its-kind enterprise cloud award",
+   "author_org": "NOAA NESDIS",
+   "published": "2022-08-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (WebFetch extract)",
+   "retrieved": "2026-11-22",
+   "limitations": "2022; NCEI, GHCN, Asheville, Boulder, backup NOT PRESENT. Whether renewed after 2025 NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://www.ncei.noaa.gov/news/ncei-archives-cosmic-2-data",
+   "fetched_url": null,
+   "title": "NCEI Archives Data from COSMIC-2 Satellites",
+   "author_org": "NOAA NCEI",
+   "published": "2020-06-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_cosmic2_news.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Dated June 2020 and about COSMIC-2 data; offsite location NOT PRESENT; GHCN-Daily NOT PRESENT; whether still true in 2025-2026 NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://www.ncei.noaa.gov/news/NOAAArchive",
+   "fetched_url": null,
+   "title": "Day In, Day Out, NCEI Takes Data Seriously",
+   "author_org": "NOAA NCEI",
+   "published": "2021-07-06 (updated date shown; text cites late 2023)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_noaaarchive_news.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Backup sites NOT PRESENT; GHCN-Daily NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s51",
+   "url": "https://www.highergov.com/contract-opportunity/information-technology-support-services-itss-bri-1332kp26f0037-u-93d9b/",
+   "fetched_url": null,
+   "title": "Information Technology Support Services (ITSS) Bridge Contract (1332KP26F0037), Justification",
+   "author_org": "HigherGov (aggregator of SAM.gov notice; NOAA NESDIS NCEI)",
+   "published": "2026-05-20 (posted); award date 2026-05-13",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (www.highergov.com refused by sandbox; read via WebFetch)",
+   "retrieved": "2026-11-22",
+   "limitations": "WebFetch extract of aggregator; the original SAM.gov justification not read. Page dates conflict ('set to begin on December 1, 2025' vs expiration May 31, 2026). Bridge value NOT PRESENT. GHCN NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s52",
+   "url": "https://studio.m-anage.com/ams/104ANNUAL/webprogram/Paper437271.html",
+   "fetched_url": null,
+   "title": "The NCCF Unified Archive for NOAA Data: Architecture, Approach and Lessons Learned (AMS 104th Annual Meeting)",
+   "author_org": "Chris OConnors, NOAA (with Monica Youngman, NCEI; Brent Hefner)",
+   "published": "2024-01-29",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e14",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": "NOT PRESENT (ams.confex.com refused by sandbox; redirect read via WebFetch)",
+   "retrieved": "2026-11-22",
+   "limitations": "No verbatim passage; storage tiers, copies, regions, backup, tape, GHCN NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://files.gao.gov/reports/GAO-26-108443/index.html",
+   "fetched_url": null,
+   "title": "GAO-26-108443, Cybersecurity: Selected Agencies Need to Better Protect Cloud Data",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-06-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gao_26_108443.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "NOAA, NESDIS, NCEI NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s54",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/SAR-2026-03.pdf",
+   "fetched_url": null,
+   "title": "Semiannual Report to Congress, March 2026 (October 1, 2025 - March 31, 2026)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2026 (period ending 2026-03-31)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/doc_oig_sar_2026_03.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Absence from the table is not stated as closure by the OIG; reason NOT PRESENT. Sept 2025 SAR (sa1-e8) listed recs 3, 9, 10 open. NCEI, NCCF, cloud NOT PRESENT in this SAR.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s55",
+   "url": "https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2026, Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Plan, not status; location of secure copy NOT PRESENT; GHCN-Daily NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s56",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network daily (GHCNd)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (banner current at retrieval)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ghcnd_product_page.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "GHCNd-specific migration date, AWS location, backup copy, Asheville, Boulder NOT PRESENT (searched cloud|migrat|S3|backup|Asheville|Boulder).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://app.govly.com/public/opportunities/16585624",
+   "fetched_url": null,
+   "title": "NOAA NCEI IT Support Services Bridge Contract for NOAA5009 LAN Cloud Migration (SAM #1332KP26F0037)",
+   "author_org": "Govly (aggregator of SAM.gov notice)",
+   "published": "2026-05-20",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (WebFetch extract)",
+   "retrieved": "2026-11-22",
+   "limitations": "Aggregator, WebFetch extract (partly paraphrased by the tool; only quoted parts used). Value NOT PRESENT; Asheville, Boulder NOT PRESENT. Resolves the HigherGov date conflict in favor of June 1, 2026 start, but the SAM.gov original was not read.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s58",
+   "url": "https://www.noaa.gov/sites/default/files/2025-01/NIYSCO_2025.pdf",
+   "fetched_url": null,
+   "title": "NOAA In Your State: Colorado (last updated January 2025)",
+   "author_org": "NOAA",
+   "published": "2025-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_in_your_state_co_2025.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Secure copy, backup, GHCN-Daily NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://www.highergov.com/contract/GS35F360GA-1332KP26F0037/",
+   "fetched_url": null,
+   "title": "GS35F360GA-1332KP26F0037 (Alpha Omega Integration ITSS bridge award)",
+   "author_org": "HigherGov (aggregator of federal award data)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "chk1",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": "NOT PRESENT (WebSearch result summary only; page not fetched)",
+   "retrieved": "2026-11-22",
+   "limitations": "Search summary only; figures not read from the page; relates to claim c3",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s60",
+   "url": "https://www.gao.gov/products/gao-26-107739",
+   "fetched_url": null,
+   "title": "GAO-26-107739, Geostationary Weather Satellites: Next Generation Program Challenges Put Vital Observations at Risk",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-09 (publicly released 2026-10-16, per search summary)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk2",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": "NOT PRESENT (WebSearch result summary only; page not fetched)",
+   "retrieved": "2026-11-22",
+   "limitations": "Not read; relates to claim c5 (no 2026 GAO report on NOAA/NESDIS cloud systems found); topic appears to be GeoXO, not the NCCF",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "m1",
+   "url": "https://cpo.noaa.gov/noaa-climate-program-offices-climate-observations-and-monitoring-program-awards-1-2-million-for-new-precipitation-data-development-and-analysis/",
+   "title": "NOAA Climate Program Office's Climate Observations and Monitoring Program awards $1.2 million for new precipitation data development and analysis",
+   "author_org": "NOAA Climate Program Office",
+   "published": "2023 (FY23 awards; undated page)",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-noaa-climate-program-offices-climate-observatio_022301.txt",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-22",
+   "fetched_url": null,
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "m2",
+   "url": "https://cpo.noaa.gov/divisions-programs/earth-system-science-and-modeling-division/climate-observations-and-monitoring/funded-projects/?_funded_projects_sort=year_funded",
+   "title": "COM Funded Projects (sorted new to old)",
+   "author_org": "NOAA Climate Program Office",
+   "published": "undated list, read 2026-11-22",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-divisions-programs-earth-system-science-and-mod_022435.txt",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-22",
+   "fetched_url": null,
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "m3",
+   "url": "https://cpo.noaa.gov/National-Centers-for-Environmental-Information-and-CPO-lay-groundwork-for-new-extreme-heat-product/",
+   "title": "National Centers for Environmental Information and CPO lay groundwork for new extreme heat product",
+   "author_org": "NOAA Climate Program Office",
+   "published": "2019-11-09",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-National-Centers-for-Environmental-Information-_022425.txt",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-22",
+   "fetched_url": null,
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "m4",
+   "url": "https://aws.amazon.com/blogs/publicsector/aws-professional-services-collaborates-with-noaa-and-gama-1-technologies-to-expand-nesdis-common-cloud-framework-capabilities/",
+   "title": "AWS Professional Services collaborates with NOAA and GAMA-1 Technologies to expand NESDIS Common Cloud Framework capabilities",
+   "author_org": "AWS Public Sector Blog",
+   "published": "2025-06-02",
+   "source_type": "vendor (cloud provider)",
+   "local_file": "work/raw/main/browser/aws-amazon-com-blogs-publicsector-aws-professional-services-_022413.txt",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-22",
+   "fetched_url": null,
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "m5",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "title": "Global Historical Climatology Network daily (GHCNd) product page",
+   "author_org": "NOAA NCEI",
+   "published": "undated, read 2026-11-22",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/ncei-noaa-gov-products-land-based-station-global-historical-_021118.txt",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-22",
+   "fetched_url": null,
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "m6",
+   "url": "https://www.ncei.noaa.gov/cdo-web/",
+   "title": "Climate Data Online (CDO) home (live, 2026-11-22)",
+   "author_org": "NOAA NCEI",
+   "published": "undated, read 2026-11-22",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/ncei-noaa-gov-cdo-web_021045.txt",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "retrieved": "2026-11-22",
+   "fetched_url": null,
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": null
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "NCEI keeps a primary and a backup ('secure') copy of its archive; in 2020 the tape copies were one onsite at Asheville and one offsite at an unnamed site, and Boulder helped limit data loss after Hurricane Helene. No NOAA page says where GHCN-Daily's own copies are held.",
+   "evidence": [
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "The NCEI archive and backup copy contains more than 60 petabytes of data.",
+     "location": "Data Management section, line 23 of txt"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "The files are then put into storage. Although there are plans to move NCEI’s archive to the cloud, for now the records are preserved on tape. Two copies are made: one is stored onsite at NCEI in Asheville, North Carolina, while another—known as the secure copy—is stored offsite.",
+     "location": "txt line 43"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "were safe, and efforts to secure NCEI's data holdings were successful. By December 11, operational ingest of | archival data streams was fully restored, and 92% of the ingest backlog was recovered. Data loss was mitigated | with support from NCEI's Boulder, CO location. NCEI archives over 229 terabytes of data monthly",
+     "location": "p. 1, txt lines 27-29"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own pages, but none names GHCN-Daily or the offsite site; the 2020 tape description may be out of date.",
+   "applicability": "NCEI archive as a whole, not GHCN-Daily specifically"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "NESDIS is lift-and-shift migrating all NCEI data, products and services from the Asheville and Boulder servers to AWS in waves through spring 2027, then into the NESDIS Common Cloud Framework, and plans to decommission the on-premises IT as capabilities move.",
+   "evidence": [
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "In one of the largest undertakings in its history, NESDIS is migrating all of its data, products, and services to the cloud through Spring 2027. Data and applications housed in servers at locations in Asheville, North Carolina and Boulder, Colorado, are being migrated (moved) in waves to the Amazon Web Services (AWS) Cloud. … The cloud migration is using a process known as “lift and shift”. … Teams that include NOAA experts are also ensuring that all of the critical products customers rely on are functioning after the “lift and shift,” and the integrity of the data is maintained. | Immediately upon completion of the “lift and shift,” NESDIS specialists will enter into a “modernization and optimization” phase, integrating seamlessly into the NESDIS Cloud System and Common Cloud Framework. … Occasional and temporary data delays may occur throughout the 10-month process … Archival packages may take longer to process and publish during this transition; however, all data submissions are still securely being staged in queue to be archived and there is no risk of data data loss.",
+     "location": "sections 'When is the data being moved', 'How does the migration work', 'Data Archival Delays'"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. … No datasets will be retired as part of the cloud migration. Please note that several NCEI datasets were retired over the last 18 months. … Data formats will not change; however, many datasets will also be available in cloud native formats such as Zarr, Parquet, and GeoJSON after the migration. … Bulk data folders will move from web accessible folders (WAFs) to Amazon Simple Storage Service (S3).",
+     "location": "banner and FAQ answers"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "Continue a strategic and prioritized transition of environmental data ingest, preservation, access, and use-inspired | information/services to the NESDIS Common Cloud Framework (NCCF) … Decommission on premises information technology infrastructure commensurate with the successful transition of archive, | access, and information production/service capabilities to the NCCF … It hosts and provides access to over 70 petabytes (PB) of data (primary and secure copy), projected to increase annually by | 8.5 PB in 2030.",
+     "location": "NESDIS-12, Exhibit 12, NCEI activity (txt lines 8335-8354)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's migration article and FAQ and NOAA's FY2026 budget justification agree.",
+   "applicability": null,
+   "sole_source_reason": "NOAA's own statements of its own migration plan."
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "Contractors run the move: AWS holds delivery order 1305M426F0030 (IT modernization support for NESDIS and NCEI, up to $7,332,139, Apr 2026-Feb 2027); Alpha Omega Integration holds a sole-source bridge to operate and migrate NOAA5009, the NCEI Archive LAN; the NCCF itself is run by a multi-contractor team including AWS Professional Services and GAMA-1. No source says whether GHCN-Daily's processing moves or who runs it after the move.",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "IT Modernization Support for NESDIS and NOAA NCEI … Provide professional services to support a critical IT modernization initiative … for the National Environmental Satellite, Data, and Information Service (NESDIS) and NOAA NCEI. … Includes AWS Cloud professional services support. … Awardee: Amazon Web Services … worth up to $7,332,139 … Potential Award value has increased 3% from $7,119,450 to $7,332,139. … Start Date: 4/20/26 … Current End Date: 2/20/27 … Solicitation 1305M426Q0011 … Number of Bidders: 2 … Vehicle: Multiple Award Schedule (MAS) … PSC: DF01 - IT And Telecom - IT Management Support Services (Labor)",
+     "location": "award summary and Analysis Notes"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "NOAA5009 Federal Information Security Modernization Act (FISMA)-moderate Local Area Network (LAN) … as NCEI transitions its systems to a Commercial Cloud environment by the end of FY26 … NOAA5009 is the identifier that refers to the NCEI Archive … awarded to Alpha Omega Integration for $19,720,355 (07/13/20–05/31/26) … The migration process is expected to be completed by October 2026 … This bridge contract is essential to ensure that the incumbent contractor, AOI, … who has specialized knowledge of the legacy system … can complete the mandated security transition without disrupting mission availability",
+     "location": "Description and justification fields"
+    },
+    {
+     "source_id": "s57",
+     "relationship": "supports",
+     "passage": "NOAA5009 is the identifier that refers to the NCEI Archive … Federal Information Security Modernization Act (FISMA)-moderate Local Area Network (LAN) … to maintain and migrate the NOAA5009 FISMA-moderate LAN system to the Commercial Cloud. … migration scheduled to complete by October 2026. … Data Center Infrastructure Management",
+     "location": "notice summary and description"
+    },
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "He currently serves as acting program manager for the NESDIS Common Cloud Framework (NCCF), guiding a large, multi contractor team that is migrating NESDIS ground system operations into a secure, fully cloud native enterprise while sustaining 24/7 service availability.",
+     "location": "author note"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Contract figures come from aggregator copies (HigherGov, Govly) read via WebFetch; the AWS blog is the vendor's own.",
+   "applicability": null,
+   "figure_status": [
+    "ceiling",
+    "obligation"
+   ]
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "OIG-24-034-A (Aug 27, 2024) found the NCCF lacked basic project management, was not reported to the IT Dashboard, had inadequate penetration testing (OIG gained full administrative control; 11 critical and 2 high issues), was built on a moderate-impact platform lacking over 100 high-baseline controls, and was hosted in one region; NOAA replied that the NCCF gives protection equivalent to the NIST high baseline and would review a multi-region option.",
+   "evidence": [
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "NESDIS’ effort to implement the NCCF lacks fundamental project management",
+     "location": "Results summary, p. ii"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "weaknesses allowed us to gain full administrative control of the system using only basic",
+     "location": "Finding III"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "cyberattacks. Our exploitation of these security weaknesses identified 11 “critical” and",
+     "location": "Finding III"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "hosted in one region of the country, which could affect its availability if a disaster or",
+     "location": "Finding IV"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "multi-region architecture and instead resides in a single region.",
+     "location": "Finding IV"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "contextualizes",
+     "passage": "consultations with AWS senior assessors, that the NCCF provides equivalent protection",
+     "location": "Appendix: NOAA response"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "The OIG report itself, read in full.",
+   "applicability": "The NCCF, the platform NCEI's archive is moving to",
+   "sole_source_reason": "The inspector general's own audit report is the authority on its findings."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "OIG's September 2025 semiannual report still listed recommendations 3, 9 and 10 of OIG-24-034-A as open; its March 2026 table does not list the audit; the FY2025 FISMA audit (OIG-25-028-A) is not public; no GAO report on NOAA/NESDIS cloud systems in 2025-2026 was found.",
+   "evidence": [
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "08.27.2024       OIG-24-034-A, Audit of NESDIS’                 11                   Recommendations 3,        0",
+     "location": "Sept 2025 SAR, open recommendations table"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "contextualizes",
+     "passage": "Table 7-A, which is shown in appendix 1, provides details on FYs 2020–2026 performance … 07.30.2024       OIG-24-031-A, Audit of NOAA’s                                    5   Recommendations 3, … 09.19.2024       OIG-24-035-A, Biennial Audit of the                              1    Recommendation 1",
+     "location": "Appendix 1, Table 7-A, pp. 38-42 (txt lines 1017, 1426-1432); OIG-24-034-A NOT PRESENT anywhere in the text"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "contextualizes",
+     "passage": "Four selected agencies—the Departments of State, Transportation, Veterans Affairs (VA), and the Small Business Administration (SBA)—varied in their efforts to implement and ensure contractor compliance with three key cloud security practices.",
+     "location": "What GAO Found, txt line 47"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "OIG's own tables; why the audit leaves the March 2026 table is not stated.",
+   "applicability": null
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "Since Nov 16, 2026 NCEI has posted a high-severity 'Data Access Delays' alert (to Nov 30) saying many access portals, interactive maps and data folders are unavailable because of the migration; no alert names GHCN-Daily, CDO or the Access Data Service, and on Nov 22, 2026 the CDO home page and GHCNd product page (HTTPS and CDO routes) were served.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Data Access Delays | Mon, 11/16/2026 - 15:21 | Mon, 11/30/2026 - 17:00 | Please Note: NCEI is currently moving its data and applications to the cloud. … Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. | severity-high",
+     "location": "alerts table, row 4"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "Please Note: NCEI is currently moving its data and applications to the cloud. This upgrade may result in temporary data access delays. Check the NCEI Alerts page for impacted products and datasets. | Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. … NCEI will be performing an extensive operating system upgrade beginning August 22. This upgrade will take several weeks to complete. … The Global Hourly - Integrated Surface Daily (ISD) reached end of life at end of life on August 29, and will receive no further updates. … Global Summary of the Day (GSOD) reached end of life on August 29, and will receive no further updates. GSOD is being replaced by the Synoptic Summary of the Day (SSOD), which is in development … Please Note: This list is not comprehensive",
+     "location": "whole page"
+    },
+    {
+     "source_id": "m5",
+     "relationship": "supports",
+     "passage": "Access Methods | HTTPS | Climate Data Online",
+     "location": "Data Access section"
+    },
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "Get orders certified for legal use (requires payment)",
+     "location": "Certification box"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own alert page and live pages read in the browser.",
+   "applicability": "Status on 2026-11-22",
+   "sole_source_reason": "NCEI's own service-status page."
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "During the Oct 1, 2025 shutdown NCEI posted that its site 'will not be updated'; Wayback copies show the NCEI and CDO home pages still served on Oct 14-20, 2025. News summaries saying NCEI redirected to governmentshutdown.noaa.gov could not be read.",
+   "evidence": [
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "Government Shutdown 10/1/2025 | Wed, 10/01/2025 - 08:51 | Sun, 02/01/2026 - 17:00 | The U.S. government is closed. This site will not be updated; however, NOAA websites and social media channels necessary to protect lives and property will be maintained. To learn more, visit commerce.gov. For the latest forecasts and critical weather information, visit weather.gov. | severity-medium",
+     "location": "Alerts table"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "The U.S. government is closed. This site will not be updated; however, NOAA websites and social media channels necessary to protect lives and property will be maintained. To learn more, visit commerce.gov. … ## Looking for Data? | Access Data | Archive Data … We archive over 229 terabytes of data each month from over 130 observing platforms.",
+     "location": "Banner and page body"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Archived NCEI pages; whether downloads and APIs worked those days is not shown.",
+   "applicability": null
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "The NCEI fee schedule effective May 14, 2026 (91 FR 19078) covers only 'special access' products (certifications, paper, offline copies, order handling); NOAA says it disseminates data 'without any fee' through the NCEI archive and NODD. It does not name GHCN-Daily; it reaches GHCN-Daily only through CDO's paid certified copies.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "for special access to NOAA data,",
+     "location": "Summary, p. 19078"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "public without any fee in most instances",
+     "location": "Summary, p. 19078"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Name of product/data/publication/information/service | Current fee New fee | NOAA National Center for Environmental Information | Department of Commerce Certification ... $168.00 $170.00 | General Certification ... 146.00 148.00 | Paper Copy ... 11.00 11.00 | Data Poster ... 15.00 25.00 … Offline In-Situ Digital Data ... 125.00 122.00 … Order Handling/Quality Check ... 26.00 22.00 | Non-Digital Order Consultation ... 14.00 8.00 | Digital Order Consultation ... 34.00 24.00",
+     "location": "91 FR 19079, Appendix A to Part 950"
+    },
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "Customers can also order most of these data as certified hard copies for legal use.",
+     "location": "intro"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "The final rule itself, read in full, plus CDO's own page.",
+   "applicability": null,
+   "figure_status": "enacted",
+   "sole_source_reason": "The Federal Register rule is the authority on its own scope."
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "NODD's cloud hosting rests on contracts signed in 2019 with AWS, Google Cloud and Microsoft (after 2015-2019 CRADAs). NOAA calls them 'ten year contracts' with option periods; Google's has 'the potential to span 10 years'. Providers may charge for compute but must give free access to the data. No end date or termination clause is published, so hosting depends on NOAA exercising options.",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "The NOAA Open Data Dissemination (NODD) Program started out as the Big Data Project in April 2015 (and then later became Big Data Program), when NOAA signed three year Non-competitive Cooperative Research and Development Agreements (CRADAs) with Amazon Web Services, Google Cloud Platform, IBM, Microsoft Azure, and the Open Common Consortium. The CRADA was later extended for an extra year ending May 4, 2019. … May 2019 - CRADA ends | September 2019 - Operational phase begins | October 2019 - First year of BDP Initial Operating Capability (IOC)",
+     "location": "Body and Timeline"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "In 2019, NOAA began the formal process to operationalize the BDP and formally requested proposals from industry, which resulted in signed ten year contracts with AWS, Google Cloud, and Microsoft. This resulted in the Big Data Project becoming the Big Data Program with initial BDP operational capability beginning in October 2019. | In 2021, the BDP became an operational enterprise service known as NOAA Open Data Dissemination (NODD) with a continued mission to provide the public with free and easy data access via the cloud. These unique contracts memorialize NODD's public–private partnerships with the CSPs … The NOAA datasets made available through NODD are free for all users to access with no use restrictions and do not require any registration to access. The data is fully open for public access and can be downloaded with no egress charges.",
+     "location": "FAQ: history answer and 'What are the costs' answer"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "NOAA and Google signed a contract with the potential to span 10 years",
+     "location": null
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "December 19, 2019 … NOAA has entered into separate multiyear contracts with AWS, Google Cloud, and Microsoft to provide the public with cloud-based access to the agency's environmental data sets … Under the contracts, the cloud platform providers can charge for compute or other services related to additional processing of NOAA data, but are required to provide free and open access to the data itself. … Rather than utilize a traditional, large-value contract award, these contracts represent a unique relationship with the Cloud Service Providers: NOAA contributes its high-quality environmental information and scientific expertise, and the CSPs provide their cloud storage and technical capabilities, improving the public's ability to use these data without being charged for cloud storage or data access. … the contract awardees were selected through a Request for Proposal conducted in spring 2019.",
+     "location": "Release text, paragraphs 1, 5-7"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "SO. 3.3: Big Data Program (BDP) - NOAA signed contracts with three Cloud Service Providers in late FY20. The BDP team successfully transitioned from Cooperative Research and Development Agreement (CRADA) to the BDP contracts in Jan of 2020 … SO. 3.3: Big Data Program (BDP) - NOAA anticipates executing option period one of the BDP contract if there are no contract performance issues during FY20 and FY21. During FY22, BDP plans to continue expanding its data holdings and increasing the amount of data that is being stored under the 15PB BDP allocation.",
+     "location": "Saved txt lines 45489-45491 and 45728-45730"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NOAA's own pages agree on about ten years with options; contract texts were not found.",
+   "applicability": null
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "NODD's own funding: NOAA asked for +$3,300K and 3 FTE/4 positions in FY2022 to make it an enterprise service; no enacted NODD amount was found, and NOAA describes the partnerships as 'no net cost to the taxpayer'.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "NOAA Open Data Dissemination (+$3,300, 3 FTE/4 Positions) – Funds requested will evolve NOAA's proven, cost-effective Big Data Program into an Enterprise-wide Service, NOAA Open Data Dissemination (NODD). NODD will provide worldwide cloud access to all of NOAA's rapidly increasing open data, including climate data … NOAA has developed low cost, public-private partnerships with commercial cloud service providers (CSPs) that provide for a minimum of 15 petabytes in free storage; provide free public egress for all data from NODD or other Line Office (LO) storage contracts with the CSPs … Without requested funding, gaps in data availability will result in lost user confidence in NODD; CSPs are less likely to renew the contracts",
+     "location": "Mission Support program change, saved txt lines 37968-37986 (MS-55)"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "requirements. Without requested funding, gaps in data availability will result in lost user confidence in NODD; CSPs are less likely to renew",
+     "location": "FY22 CJ, NODD program change"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "NODD currently works with three infrastructure-as-a-service (IaaS) providers … These partnerships are designed to not only facilitate full and open data access at no net cost to the taxpayer … provides public access to NOAA's open data on commercial cloud platforms through public-private partnerships.",
+     "location": "Main text"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "A budget request, not an enacted figure.",
+   "applicability": null,
+   "figure_status": "request"
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "No evidence was found that CPO's Climate Observations and Monitoring program funds GHCN-Daily production after 2021: COM's funded-project list goes no later than 2021, the 2019 article is the last that calls GHCN-D 'COM funded', and COM's FY23 awards fund a research project that uses GHCNd data.",
+   "evidence": [
+    {
+     "source_id": "m3",
+     "relationship": "supports",
+     "passage": "The COM funded Global Historical Climatology Network-Daily (GHCN-D) dataset is a premiere dataset that maintains daily temperatures recorded at over 20,000 stations in the U.S.",
+     "location": "para 2"
+    },
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "Sort by | Year (New to Old)",
+     "location": "list header"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "Long-term changes in the shape of the precipitation distribution in GHCNd observations",
+     "location": "project list"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "Absence of evidence; COM's brochure (2024) could not be read and the project list may be incomplete.",
+   "applicability": null
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "AWS noaa-ghcn-pds Parquet: Hive-partitioned by station or by year and element, snappy-compressed, updated (2025 partitions modified 2026-11-18). NOAA publishes no column types or units for it; a third-party footer read gives ID and DATE as BYTE_ARRAY, DATA_VALUE INT64, M_FLAG, Q_FLAG, S_FLAG, OBS_TIME. NOAA's CSV documentation gives the raw units (PRCP tenths of mm, TMAX/TMIN tenths of degrees C).",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "The parquet files will be partitioned using Hive patterning either by station or by year and by GHCNd Element … parquet/by_station/STATION=ID1/ … parquet/by_year/YEAR=2000/ … *.snappy.parquet … please reach out to nodd@noaa.gov with GHCN in the subject line.",
+     "location": "Details section; New Structure tree"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Name: noaa-ghcn-pds … Prefix: parquet/by_year/YEAR=2025/ … KeyCount: 30 … IsTruncated: true … parquet/by_year/YEAR=2025/ELEMENT=AWDR/0c399982337440a7ad86b7fb109dc8f2_0.snappy.parquet … 25861 … 2026-11-18T01:10:28.000Z … parquet/by_year/YEAR=2025/ELEMENT=PRCP/0c399982337440a7ad86b7fb109dc8f2_0.snappy.parquet … 1798045 … 2026-11-18T01:10:34.000Z",
+     "location": "ListBucketResult keys 1-30"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "s3://noaa-ghcn-pds/parquet/by_year/YEAR=2020/ELEMENT=TMAX … layout = 10 files, 14.9 MiB. Extensions: .parquet (10). … fields = ID BYTE_ARRAY, DATE BYTE_ARRAY, DATA_VALUE INT64, M_FLAG, Q_FLAG, S_FLAG, OBS_TIME … The Parquet schema was read from the footer of an object in the bucket, not by downloading the file. … samples = Parquet, 500000 rows, 7 columns",
+     "location": "GHCN card"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "ID = 11 character station identification code. … YEAR/MONTH/DAY = 8 character date in YYYYMMDD format … ELEMENT = 4 character indicator of element type … DATA VALUE = 5 character data value for ELEMENT … M-FLAG = 1 character Measurement Flag … Q-FLAG = 1 character Quality Flag … S-FLAG = 1 character Source Flag … OBS-TIME = 4-character time of observation in hour-minute format … PRCP = Precipitation (tenths of mm) … TMAX = Maximum temperature (tenths of degrees C) … The data set is updated daily. … arn:aws:sns:us-east-1:123901341784:NewGHCNObject",
+     "location": "README.md CSV section; registry yaml Resources"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Layout from NOAA's readme and the live listing; column types only from a third-party card.",
+   "applicability": null
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "BigQuery bigquery-public-data.ghcn_d has a ghcnd_stations table and one table per year (ghcnd_YYYY) with id, date, element, value and qflag columns; values are stored raw, and Google's examples divide by 10 for mm. Google's column types were not read.",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "bigquery-public-data:ghcn_d.ghcnd_stations … bigquery-public-data:ghcn_d.ghcnd_2016 … bigquery-public-data:ghcn_d.ghcnd_2015 … This data is not real-time, and there's a time lag.",
+     "location": "post body"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "Units: \"This will return rainfall (in mm) for all days in 2015.\" Queries use wx.value/10.0 AS prcp.",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Google's own blog and lab; the Marketplace schema tab was not read.",
+   "applicability": null
+  },
+  {
+   "id": "c14",
+   "importance": "central",
+   "text": "NCEI's Access Data Service lists NetCDF among its formats 'depending on the dataset'; a daily-summaries test returned JSON with values as strings and no units or attributes, and the NetCDF request returned an empty file, so whether it gives CF standard names is untested.",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Depending on the dataset the API can format the data as comma-separated values (CSV), space-separated values (SSV), JavaScript Object Notation (JSON), Portable Document Format (PDF) and Network Common Data Form (NetCDF). … netcdf — Network Common Data Form (NetCDF) … The units parameter converts the output data for datasets and datatypes that support conversion to either “metric” or “standard” units.",
+     "location": "Overview; Data Format — format; Converting Units — units"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "{\"WSF2\":\"9.4\",\"STATION\":\"USW00013874\",\"WSF5\":\"13.4\",\"SNOW\":\"0.0\",\"PRCP\":\"0.0\",\"SNWD\":\"0.0\",\"DATE\":\"2025-01-01\",\"WDF2\":\"  330\",\"AWND\":\"5.9\",\"WDF5\":\"  320\",\"PGTM\":\" 0146\",\"TMAX\":\"12.2\",\"TMIN\":\"2.8\"}",
+     "location": "record 1 of 3"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own documentation and direct test requests.",
+   "applicability": null
+  },
+  {
+   "id": "c15",
+   "importance": "central",
+   "text": "S. Rept. 119-44 names none of the 'at least 20' decommissioned products and no NOAA report back was found. NESDIS's 2025-2026 notices list NCEI retirements (coastal and geophysical tools, Billion Dollar Disasters, ISCCP H, CoRTAD, WOCE, the nClimGrid-Daily FTP, and ISD's website service), but none is a GHCN-Daily route or tool; NCEI says no dataset will be retired by the migration.",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "NEDSIS Data Products.--The Committee is concerned that NOAA has decommissioned at least 20 datasets, products and catalogs during the fiscal year. Neither NOAA nor the Department provided any advance notification of this action to the Committee. … Restoring the webpages and data sets to their original forms would honor that principle. The Committee directs NOAA to restart these products and not later than 90 days after enactment of this act to report to the Committee on progress.",
+     "location": "srpt119-44.txt lines 3643-3658 (NOAA/NESDIS section)"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "The NCEI Data Access Branch will be decommissioning a duplicative access point for nClimGrid-Daily. File Transfer Protocol (FTP) will be terminated. Collection metadata for this dataset will reference official NCEI access points and secondary access points on the NOAA Open Data Dissemination (NODD). … The nClimGrid-daily web access link at https://www.ncei.noaa.gov/pub/data/daily-grids/ and the ftp access link will be removed. … THREDDS services are available for data files and auxiliary files. … These data are also available from the NODD https://noaa-nclimgrid-daily-pds.s3.amazonaws.com/index.html. … The planned services retirement date is June 30, 2025. To file an appeal, please contact Rich.Baldwin@noaa.gov by May 30, 2025.",
+     "location": "whole notice"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "The NCEI Data Access Branch will be ending its online FTP/HTTPS service for the Integrated Surface Data (ISD;aka Global Hourly) product through the NCEI website. Users of the ISD, ISD-lite, and ISD CSV formats will still be able to access these products through the NOAA Open Data Dissemination (NODD) portal at the links below. Please note: This product has been superseded, with no update beyond 08/24/2025. … Direct download will no longer be available for ISD format or FTP | Direct download will continue to be available at NODD ISD format … The planned services retirement date is July 31, 2026. To file an appeal, please contact Rich.Baldwin@noaa.gov by July 23, 2026.",
+     "location": "whole notice"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "The NOAA Billion Dollar Weather and Climate Disasters product will be retired, with no updates…",
+     "location": null
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "The NCEI Coastline Extractor map viewer is being decommissioned and will no longer be available.…",
+     "location": null
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. … No datasets will be retired as part of the cloud migration. Please note that several NCEI datasets were retired over the last 18 months. … Data formats will not change; however, many datasets will also be available in cloud native formats such as Zarr, Parquet, and GeoJSON after the migration. … Bulk data folders will move from web accessible folders (WAFs) to Amazon Simple Storage Service (S3).",
+     "location": "banner and FAQ answers"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "contextualizes",
+     "passage": "Update, 8 May 2025: Six more NOAA products related to marine and climate science have been slated for decommissioning by mid May to June. Three more NOAA tools have been immediately retired, including the increasingly utilized “Billion Dollar Weather and Climate Disasters” product. … 17 April 2025: NOAA has quietly reported that they will soon decommission 14 datasets, products, and catalogs related to earthquakes and marine, coastal, and estuary science. … data sources are usually merged with or replaced by other products rather than outright removed. The agency did this just 7 times in 2024 and 6 times in 2023.",
+     "location": "article body"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NOAA's own notice list read page by page; the Senate list itself is unpublished.",
+   "applicability": null
+  },
+  {
+   "id": "c16",
+   "importance": "supporting",
+   "text": "The CDO v2 web-services API documentation is still live (Nov 2026) with no retirement notice; tokens are limited to five requests per second and 10,000 a day.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Climate Data Online (CDO) offers web services that provide access to current data.",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Documentation page only; the API was not called.",
+   "applicability": null
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "When the NODD contracts were signed",
+   "source_ids": [
+    "s9",
+    "s6"
+   ],
+   "status": "resolved",
+   "explanation": "NOAA's Dec 19, 2019 release says the contracts had been entered into; the FY22 CJ says 'late FY20' and a move off the CRADAs in Jan 2020. Both fall in FY2020 (Oct 2019 - Sep 2020); the answer states both."
+  },
+  {
+   "claim": "Alpha Omega bridge start date",
+   "source_ids": [
+    "s51",
+    "s57"
+   ],
+   "status": "unresolved",
+   "explanation": "HigherGov gives Dec 1, 2025; Govly gives Jun 1, 2026. The SAM.gov original was not read."
+  },
+  {
+   "claim": "Length of NODD contracts",
+   "source_ids": [
+    "s4",
+    "s11",
+    "s6"
+   ],
+   "status": "resolved",
+   "explanation": "The FAQ's 'ten year contracts', Google's 'potential to span 10 years' and the FY22 justification's option periods fit a base period plus options up to about ten years from 2019; a two-year base plus four two-year options (Federal News Network) could not be read."
+  },
+  {
+   "claim": "Number of products NOAA decommissioned in 2025",
+   "source_ids": [
+    "s19",
+    "s38"
+   ],
+   "status": "unresolved",
+   "explanation": "The Senate says 'at least 20'; Eos counted 14 slated in April plus 6 slated and 3 retired in May 2025 (23 in all, a sum Eos does not state). The counts may cover different items or periods; the Senate's list is not published."
+  }
+ ],
+ "coverage_gaps": [
+  "Text of the NODD contracts (AWS, Google, Microsoft): base period, option periods, end date, termination/convenience clauses. Lead: Federal News Network 'Cloud Exchange 2024' interview (unreadable 403) says two-year base + four two-year options, fifth year in 2024 (implies end about 2029 if all options exercised, not verified). Try SAM.gov/USAspending/FPDS for contract numbers (1305M... awards to Amazon/Google/Microsoft, late FY2020). (from sa2)",
+  "No dated NCEI notice found for CDO, CDO v2 web services API or ADS outages in 2025-2026; NCEI alerts page shows only current alerts (Nov 2026 cloud-migration 'Data Access Delays', high severity). Wayback captures of https://www.ncei.noaa.gov/alerts for 2025 (Oct-Nov shutdown, Jul 15-16 2025 maintenance, Aug-Sep 2025 OS upgrade) not checked. (from sa2)",
+  "October-November 2025 shutdown: news (EcoWatch, The Hill) reports NCEI redirected to governmentshutdown.noaa.gov; pages 403, restoration date not found; whether NODD cloud copies of GHCN-D stayed available not found. (from sa2)",
+  "Earlier NESDIS notice moving GHCNd daily summaries from CDO v2 to Common Access (search summary only; in the 2023 Notice of Changes archive) not read. (from sa2)",
+  "Staff and funding of CDO/ADS specifically: NOT found. (from sa2)",
+  "CPO COM support for GHCN-Daily after 2021: cpo.noaa.gov blocks automated clients (403) for COM page, 2024 brochure, FY23 award news and the NCEI extreme-heat article; needs coordinator browser read. FY23 COM awards ($1.2M, seven 3-year projects) may include a GHCN-Daily-based precipitation project (unverified). (from sa2)",
+  "NODD funding amounts after FY2022/FY2023 requests (+$3,300K, 3 FTE/4 positions): FY2026 and FY2027 CJ text files in 2026-11-21_ghcn-daily-funding-pt3 have no 'NODD' or 'Open Data Dissemination' match; FY2024/FY2025 CJ mentions are performance narrative (23 PB to 41 PB) not amounts. Enacted amount: NOT found. (from sa2)",
+  "Official GHCN-D Parquet column types/units and the BigQuery ghcn_d column schema were not found in NOAA or Google pages. Leads: read one parquet footer (e.g. parquet/by_year/YEAR=2025/ELEMENT=PRCP/0c399982337440a7ad86b7fb109dc8f2_0.snappy.parquet, 1798045 bytes) once the S3 host is allowed; open the Marketplace page or the BigQuery console schema tab in the browser; the AWS registry yaml github.com/awslabs/open-data-registry/blob/main/datasets/noaa-ghcn.yaml and awslabs/open-data-docs docs/noaa/noaa-ghcn were not read this run. ADS NetCDF for daily-summaries returned 0 bytes; retry in a browser to check for CF attributes. (from sa3)",
+  "No NOAA report to the Senate naming the at least 20 decommissioned datasets was found (S. Rept. 119-44 names none). Not read: Eos article https://eos.org/research-and-developments/noaa-datasets-will-soon-disappear, CGIA https://cgia.org/2025/04/upcoming-removal-of-noaa-datasets/, FlowingData list, Data Rescue Project portal (portal.datarescueproject.org), the NOAA FY2027 budget or explanatory statement for a follow-up passage. The Regional Climate Center website shutdown (June 2025, per Wikipedia snippet) is a possible GHCN-D-adjacent tool loss but is not on the NESDIS list. NESDIS list pages 10-15 (2023 and earlier) not fetched. (from sa3)",
+  "Whether GHCN-Daily specifically is held at both Asheville and Boulder: NOT FOUND. Pages say the NCEI archive has a backup/secure copy (about-us; FY26 CJ 'primary and secure copy'); in 2020 tape copies were Asheville onsite plus an offsite secure copy (site unnamed); Boulder helped mitigate Helene data loss. No page names GHCN-Daily or the offsite site. (from sa1)",
+  "Whether GHCN-Daily processing moves to AWS and who runs it: NOT FOUND. Next: GHCN-D product page banner (https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily) and NCEI alerts history. (from sa1)",
+  "Task order 1332KP25F0078 (SSES TO NATIONAL CENTERS FOR ENVIRONMENTAL INFORMATION CLOUD (NCEI) CLOUD MIGRATION SUPPORT (TO 12)) under 1332KP22DNEEG0002: awardee, value, dates not found; seen only in search snippets (federalcompass.com). Check USAspending.gov / SAM.gov. (from sa1)",
+  "Original SAM.gov justification for bridge 1332KP26F0037 (Alpha Omega Integration) not read; HigherGov dates conflict. Govly listing app.govly.com/public/opportunities/16585624 not read. (from sa1)",
+  "OIG-24-034-A follow-up: Sept 2025 SAR lists recs 3, 9, 10 unimplemented; March 2026 SAR Table 7-A does not list it. No closure memo or NOAA action plan found. FY2025 FISMA audit OIG-25-028-A not public. No GAO report on NOAA/NESDIS cloud 2025-2026 found. (from sa1)",
+  "NCEI AWS design after migration (regions, S3 classes, whether a tape/on-prem copy is kept, exit strategy) NOT FOUND. Leads: SAB DAARWG response PDF (403), AWS Public Sector blog on NCCF and GAMA-1, cdomagazine.tech NOAA cloud migration article (not read). (from sa1)",
+  "Federal News Network's NODD contract terms (2-year base + four 2-year options) unreadable (403 in fetch and browser).",
+  "COM 2024 brochure (PDF, 403) unread; whether COM funds GHCN-D after 2021 rests on absence of evidence.",
+  "News of an NCEI redirect to governmentshutdown.noaa.gov in Oct 2025 (EcoWatch, The Hill) unread."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Open Data Dissemination program agreement",
+   "tool": "WebSearch",
+   "notes": "found NODD about/FAQ pages; agreement text not found",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Open Data Dissemination AWS agreement 2025",
+   "tool": "WebSearch",
+   "notes": "no 2025 AWS agreement found; 1 of max 3",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI fee schedule 2026 Federal Register",
+   "tool": "WebSearch",
+   "notes": "found FR Doc 2026-07250 (govinfo PDF), read in full",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI Climate Data Online outage 2025",
+   "tool": "WebSearch",
+   "notes": "no CDO-specific notice; NCEI alerts page found",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Observations and Monitoring CPO GHCN 2024",
+   "tool": "WebSearch",
+   "notes": "no CPO result; GCOS/C3S items only",
+   "from": "sa2",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI data access outage news 2026",
+   "tool": "WebSearch",
+   "notes": "NCEI alerts / notices only; no news",
+   "from": "sa2",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NODD multiyear contracts AWS Google Microsoft NOAA announces",
+   "tool": "WebSearch",
+   "notes": "FNN 2024 (2-year base + four 2-year options) - unreadable 403",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Climate Data Online web services API retirement 2026",
+   "tool": "WebSearch",
+   "notes": "no CDO API retirement notice found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Program Office COM funded projects 2023 NCEI in situ data",
+   "tool": "WebSearch",
+   "notes": "FY23 COM awards; cpo.noaa.gov pages 403",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA FY 2026 congressional justification NOAA Open Data Dissemination",
+   "tool": "WebSearch",
+   "notes": "earlier run's fy26/fy27 CJ txt searched: no NODD match",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NODD contract option period 2025 NOAA cloud service providers",
+   "tool": "WebSearch",
+   "notes": "nothing on NODD option exercise",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "COM program GHCN-Daily NCEI project funded 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cpo.noaa.gov; pages 403",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI Climate Data Online unavailable government shutdown October 2025",
+   "tool": "WebSearch",
+   "notes": "news pages (EcoWatch, The Hill) 403",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI website restored after shutdown November 2025 data access",
+   "tool": "WebSearch",
+   "notes": "no restoration date found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Big Data Program contracts Amazon Google Microsoft December 2019 announcement",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; Dec 19 2019 release read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI Access Data Service status 2026",
+   "tool": "WebSearch",
+   "notes": "SOS FY2025 report read; ADS not named in outages",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NODD Google Cloud agreement NOAA public datasets 2025",
+   "tool": "WebSearch",
+   "notes": "summary cites NOAA page saying 2019 Google contract 'with the potential to span 10 years' (not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NODD \"option periods\" NOAA cloud contract Simonson",
+   "tool": "WebSearch",
+   "notes": "no other copy found; FNN host refused by sandbox proxy (fetch_page) and 403 (WebFetch); COM brochure WebFetch retry also 403",
+   "from": "sa2",
+   "copy_of": "https://federalnewsnetwork.com/?p=5049367"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "noaa-ghcn-pds parquet readme",
+   "tool": "WebSearch",
+   "notes": "Found NODD readme, Scigantic card (footer schema), AWS registry yaml",
+   "from": "sa3",
+   "required_id": "r7b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "BigQuery ghcn_d public dataset schema",
+   "tool": "WebSearch",
+   "notes": "No official schema page; community posts only",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "bigquery-public-data ghcn_d ghcnd table columns id date element value mflag qflag sflag time",
+   "tool": "WebSearch",
+   "notes": "Community examples only (id, date, element, value, qflag); official column list not found after 2 queries",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEI product retirement notice 2025",
+   "tool": "WebSearch",
+   "notes": "Led to NESDIS Notice of Changes pages",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "S. Rept. 119-44 NOAA decommissioned datasets report",
+   "tool": "WebSearch",
+   "notes": "Found congress.gov report and Eos/CGIA news on April 2025 list; no NOAA report naming the 20",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI Access Data Service netcdf daily-summaries format",
+   "tool": "WebSearch",
+   "notes": "Third-party guides only; no official word on daily-summaries NetCDF",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://noaa-ghcn-pds.s3.amazonaws.com/?list-type=2&prefix=parquet/by_year/YEAR=2025/&max-keys=30",
+   "tool": "lookup (S3 REST listing via WebFetch)",
+   "notes": "fetch_page.py refused for s3.amazonaws.com host",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ADS v1 dataset=daily-summaries stations=USW00013874 2025-01-01..03 format=netcdf / format=json",
+   "tool": "lookup (NCEI Access Data Service API)",
+   "notes": "JSON returned 3 records; netcdf returned 0 bytes twice",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NESDIS Notice of Changes list ?page=0..9",
+   "tool": "lookup (NESDIS Notice of Changes list)",
+   "notes": "Coordinator lead; pages 0-8 cover 2025-2026; page 9 is 2023-2024 (renamed _unused)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA decommissioned datasets list 2025 NCEI Data Rescue tracker GHCN",
+   "tool": "WebSearch",
+   "notes": "Found NCEI OS-upgrade outage page, Data Rescue Project Coastline Extractor copy, FlowingData/CGIA lists; no GHCN item",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "skills.google focuses/19282 (Google lab Using BigQuery to do Analysis)",
+   "tool": "lookup (WebFetch extraction)",
+   "notes": "Same as sa3-e16: ghcnd_2015 with date, value, qflag, id, element; types NOT PRESENT; rainfall in mm via value/10.0. Medium GHCN BigQuery post: HTTP 403.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://portal.datarescueproject.org/datasets/?s=GHCN",
+   "tool": "lookup (Data Rescue Project portal search)",
+   "notes": "Page returned a generic dataset list with no GHCN, NCEI or daily match (the search parameter seems ignored; JS search likely); renamed _unused. Not evidence that DRP holds no GHCN copy.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI archive backup Asheville Boulder",
+   "tool": "WebSearch",
+   "notes": "found about-us '60 petabytes' backup copy line and FY2025 Q1 SOS Boulder line; backup location not stated",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI cloud migration Amazon Web Services 2026",
+   "tool": "WebSearch",
+   "notes": "cloud-migration and FAQ pages",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OIG-24-034-A NESDIS cloud audit",
+   "tool": "WebSearch",
+   "notes": "OIG-24-034-A.pdf URL 404; report served as oig.doc.gov NOAANC_2.pdf (full text saved)",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO NOAA NESDIS cloud data management 2025",
+   "tool": "WebSearch",
+   "notes": "no NOAA-specific GAO cloud report found",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO NOAA cloud computing report 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; GAO-26-107530 (procurement, 24 agencies) and GAO-26-108443 (State, DOT, VA, SBA only); no NOAA report",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI cloud migration contract award",
+   "tool": "WebSearch",
+   "notes": "AWS delivery order 1305M426F0030; bridge 1332KP26F0037 (AOI); TO 1332KP25F0078 SSES NCEI cloud migration support (TO 12) seen in snippet only",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA5009 NCEI cloud migration sole source bridge 2026",
+   "tool": "WebSearch",
+   "notes": "HigherGov justification notice",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OIG NOAA FISMA 2025 NESDIS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov, oversight.gov; FY2025 FISMA audit OIG-25-028-A not public",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI data center Asheville Helene backup Boulder archive",
+   "tool": "WebSearch",
+   "notes": "FY2025 Q1 SOS Boulder mitigation line",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI archive tape library offsite copy",
+   "tool": "WebSearch",
+   "notes": "COSMIC-2 2020 news: two tape copies, Asheville onsite + offsite secure copy",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NESDIS Common Cloud Framework NCEI archive 2025",
+   "tool": "WebSearch",
+   "notes": "AMS 2024 NCCF Unified Archive abstract; SAB DAARWG NCCF response PDF 403",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN-Daily cloud migration NCEI 2026 processing",
+   "tool": "WebSearch",
+   "notes": "nothing GHCN-Daily specific",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Commerce OIG semiannual report March 2026 NOAA NESDIS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov, oversight.gov; first oversight.gov PDF was Legal Services Corp (renamed _unused); DOC SAR-2026-03 read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "1332KP25F0078 NCEI cloud migration support task order",
+   "tool": "WebSearch",
+   "notes": "3rd r5 query; federalcompass listing only, awardee/value not found",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI secure copy archive location Boulder 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; secure copy location not named anywhere",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCCF FedRAMP high multi-region NESDIS 2025 OIG recommendation",
+   "tool": "WebSearch",
+   "notes": "only OIG-24-034-A itself; no follow-up on recs 9-11 found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser read NCEI cloud migration article, FAQ, alerts, GHCNd page, CDO page",
+   "tool": "lookup (built-in browser)",
+   "notes": "read; saved in work/raw/main/browser/",
+   "copy_of": "https://www.ncei.noaa.gov/news/cloud-migration"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read CPO COM page (old path)",
+   "tool": "lookup (built-in browser)",
+   "notes": "404 at the older path; funded-projects list read instead (m2)",
+   "copy_of": "https://cpo.noaa.gov/divisions-programs/earth-system-science-and-modeling-division/climate-observations-and-monitoring/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read CPO FY23 COM awards",
+   "tool": "lookup (built-in browser)",
+   "notes": "read (m1)",
+   "copy_of": "https://cpo.noaa.gov/noaa-climate-program-offices-climate-observations-and-monitoring-program-awards-1-2-million-for-new-precipitation-data-development-and-analysis/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read CPO extreme-heat article",
+   "tool": "lookup (built-in browser)",
+   "notes": "read (m3), dated 2019-11-09",
+   "copy_of": "https://cpo.noaa.gov/News/News-Article/ArtMID/6226/ArticleID/1806/National-Centers-for-Environmental-Information-and-CPO-lay-groundwork-for-new-extreme-heat-product"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser read AWS NCCF blog",
+   "tool": "lookup (built-in browser)",
+   "notes": "read (m4)",
+   "copy_of": "https://aws.amazon.com/blogs/publicsector/aws-professional-services-collaborates-with-noaa-and-gama-1-technologies-to-expand-nesdis-common-cloud-framework-capabilities"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "browser read Federal News Network Cloud Exchange 2024",
+   "tool": "lookup (built-in browser)",
+   "notes": "HTTP 403 in the browser too; no route left",
+   "copy_of": "https://federalnewsnetwork.com/?p=5049367"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NCEI archive backup and storage design",
+   "query": "NCEI archive backup Asheville Boulder",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NESDIS",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "NESDIS cloud migration plans",
+   "query": "NCEI cloud migration Amazon Web Services 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "Commerce OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "OIG audit of NESDIS cloud (OIG-24-034-A)",
+   "query": "OIG-24-034-A NESDIS cloud audit",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "GAO reports on NOAA cloud and data",
+   "query": "GAO NOAA NESDIS cloud data management 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA acquisitions",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "contracts for the NCEI cloud migration",
+   "query": "NCEI cloud migration contract award",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NOAA NODD",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "NODD program agreements",
+   "query": "NOAA Open Data Dissemination program agreement",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "AWS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "AWS's NODD agreement",
+   "query": "NOAA Open Data Dissemination AWS agreement 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r7b",
+   "organization": "AWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "noaa-ghcn-pds Parquet readme",
+   "query": "noaa-ghcn-pds parquet readme",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "Google Cloud",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "BigQuery ghcn_d schema",
+   "query": "BigQuery ghcn_d public dataset schema",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "Federal Register",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q2",
+   "aim": "NCEI fee schedule rule",
+   "query": "NCEI fee schedule 2026 Federal Register",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "NCEI service outage notices",
+   "query": "NCEI Climate Data Online outage 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NOAA CPO",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "COM support for GHCN-D",
+   "query": "Climate Observations and Monitoring CPO GHCN 2024",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "Senate Appropriations",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q5",
+   "aim": "S. Rept. 119-44 decommissioned datasets",
+   "query": "S. Rept. 119-44 NOAA decommissioned datasets",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NOAA NESDIS",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q5",
+   "aim": "NCEI product retirement notices",
+   "query": "NCEI product retirement notice 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": null,
+   "publisher": "press",
+   "subquestion_id": "q2",
+   "aim": "news of NCEI data access outages",
+   "query": "NCEI data access outage news 2026",
+   "skip_reason": null
+  }
+ ]
+}

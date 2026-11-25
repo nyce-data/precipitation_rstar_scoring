@@ -1,0 +1,1650 @@
+{
+ "question": "What is the PERSIANN-CDR Daily dataset, where is it kept and served, and who makes it? (Part 1 overview)",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions (access, inputs, algorithm, responsibility); no set of 15+, no multi-year figures, no dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Where it lives: archive, access points, redistributors",
+   "status": "answered",
+   "source_ids": [
+    "s28",
+    "s12",
+    "s35",
+    "s29",
+    "s34",
+    "s20",
+    "s21",
+    "s25"
+   ],
+   "remaining_gap": "IRI Data Library copy (sign-in) and S3/Google Cloud bucket listings not opened."
+  },
+  {
+   "id": "q2",
+   "question": "Kind of dataset and inputs",
+   "status": "answered",
+   "source_ids": [
+    "s11",
+    "s28",
+    "s10",
+    "s15",
+    "s1"
+   ],
+   "remaining_gap": "Which years use GPCP v2.3 vs v2.2; Stage IV training period not documented."
+  },
+  {
+   "id": "q3",
+   "question": "How it is made and how often extended",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s10",
+    "s11",
+    "s28",
+    "s35"
+   ],
+   "remaining_gap": null
+  },
+  {
+   "id": "q4",
+   "question": "Who is responsible",
+   "status": "answered",
+   "source_ids": [
+    "s28",
+    "s12",
+    "s3",
+    "s4",
+    "s29"
+   ],
+   "remaining_gap": "No staff count published; no named NOAA steward found."
+  },
+  {
+   "id": "q5",
+   "question": "Related products",
+   "status": "answered",
+   "source_ids": [
+    "s29",
+    "s30",
+    "s31",
+    "s32",
+    "s33",
+    "s5",
+    "s6"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/AlgorithmDescription_01B-16.pdf",
+   "fetched_url": null,
+   "title": "Climate Algorithm Theoretical Basis Document (C-ATBD) Precipitation - PERSIANN-CDR, CDRP-ATBD-0286 Rev. 2",
+   "author_org": "NOAA CDR Program / CHRS UC Irvine",
+   "published": "2014-03-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "CDRP-ATBD-0286",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/persiann_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2014 document; does not state CDR Program status (Interim vs operational) or a NOAA steward name.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/erddap/info/cdr_persiann_by_time_lon_lat/index.html",
+   "fetched_url": null,
+   "title": "ERDDAP - Information about NOAA Climate Data Record of PERSIANN-CDR daily precipitation",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_erddap_info.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Metadata attributes only; no Interim/operational CDR status, no NOAA steward named.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://chrs.web.uci.edu/chrs_directory.php",
+   "fetched_url": null,
+   "title": "CHRS Directory",
+   "author_org": "CHRS, UC Irvine",
+   "published": "NOT PRESENT (footer: (c) 2017)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_directory.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Page undated; listing counts (4 faculty, 4 postdocs, 1 administrator, 11 graduate students, 2 visiting scholars) are my tally of names, not a number the page publishes. Search snippet (not saved page) for research.uci.edu said Sorooshian is Director - conflicts with this directory, which names Aghakouchak Director.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://chrs.web.uci.edu/about.php",
+   "fetched_url": null,
+   "title": "About CHRS",
+   "author_org": "CHRS, UC Irvine",
+   "published": "NOT PRESENT (footer: (c) 2017)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_about.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No staff count (NOT PRESENT); no mention of PERSIANN-CDR.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://hess.copernicus.org/articles/22/5801/2018/",
+   "fetched_url": null,
+   "title": "The PERSIANN family of global satellite precipitation data: a review and evaluation of products",
+   "author_org": "Nguyen, Ombadi, Sorooshian, Hsu, AghaKouchak, Braithwaite, Ashouri, Thorstensen (CHRS, UC Irvine)",
+   "published": "2018-11-13",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.5194/hess-22-5801-2018",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/nguyen2018_hess_family_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction (curl blocked for hess.copernicus.org); Table 1 is an image, NOT PRESENT; yearly product NOT PRESENT; predates PDIR-Now and CCS-CDR.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s6",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8222311/",
+   "fetched_url": null,
+   "title": "PERSIANN-CCS-CDR, a 3-hourly 0.04° global precipitation climate data record for heavy precipitation studies",
+   "author_org": "Sadeghi et al. (CHRS, UC Irvine), Scientific Data",
+   "published": "2021-06",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.1038/s41597-021-00940-9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sadeghi2021_ccscdr.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only searched key lines; whether CCS-CDR is bias-adjusted the same way as PERSIANN-CDR not checked.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s7",
+   "url": "https://ncics.org/wp-content/uploads/2023/06/CISESS%20NC%20Annual%20Report%202022%E2%80%932023.pdf",
+   "fetched_url": null,
+   "title": "Annual Scientific Report, CISESS NC Task Reports, April 1, 2022 - March 31, 2023 (reused)",
+   "author_org": "CISESS NC (NC State / NOAA NCEI)",
+   "published": "2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cisess_nc_annual_2022-23.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Evaluation task, not production; only the .txt copy was reused (original PDF not copied).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s8",
+   "url": "https://repository.library.noaa.gov/view/noaa/33336",
+   "fetched_url": null,
+   "title": "Data stewardship maturity report for NOAA CDR of PERSIANN-CDR, Version 1 Revision 1",
+   "author_org": "Lemieux, Paul; Luquire, Katy; National Centers for Environmental Information (U.S.)",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "doi:10.25923/hqg0-g278",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/noaa_dsmm_33336_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Record page only; the report PDF (noaa_33336_DS1.pdf) was not read and may name the steward and CDR status.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s9",
+   "url": "https://repository.library.noaa.gov/view/noaa/33336/noaa_33336_DS1.pdf",
+   "fetched_url": null,
+   "title": "Data Stewardship Maturity Report for NOAA CDR of PERSIANN-CDR, Version 1 Revision 1 (full PDF)",
+   "author_org": "Paul Lemieux III (Earth Resources Technology, Inc.), Katy Luquire (CASE Consultants International); NCEI",
+   "published": "2021 (last modified 09/20/2021)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "doi:10.25923/hqg0-g278",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_dsmm_33336.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "IOC stage wording relates to the 2018 assessment; does not use the words Interim CDR; current status after 2021 not stated.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s10",
+   "url": "https://www.atmos.albany.edu/daes/atmclasses/atm305/2015/pdf/Ashouri_et_al_2015_BAMS.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR: Daily Precipitation Climate Data Record from Multisatellite Observations for Hydrological and Climate Studies",
+   "author_org": "Ashouri, Hsu, Sorooshian, Braithwaite (CHRS, UC Irvine); Knapp, Nelson (NOAA/NCDC); Cecil (GST Inc.); Prat (CICS-NC/NCDC)",
+   "published": "2015-01",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.1175/BAMS-D-13-00068.1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ashouri2015.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Copy hosted on a University at Albany course page (journal PDF download returned HTTP 403); text matches the published article with DOI on p. 69.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/UserGuide_01B-16.pdf",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR 01B-16 User Guide, CDRP-GUID-1665 Rev 0",
+   "author_org": "NOAA CDR Program (NCEI)",
+   "published": "2025-12-31",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "CDRP-GUID-1665; doi:10.7289/V51V5BWQ",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/userguide.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Exact lag in months NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-persiann",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR | NCEI",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "doi:10.7289/V51V5BWQ",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_persiann_page.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Copy reused from sa1's fetch (cached); start year conflicts with user guide (1983).",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://chrs.web.uci.edu/SP_approach.php",
+   "fetched_url": null,
+   "title": "CHRS - The Center for Hydrometeorology and Remote Sensing at UCI (PERSIANN approach page)",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/chrs_sp_approach.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Describes the general PERSIANN algorithm, not PERSIANN-CDR specifically; PERSIANN-CDR documents (C-ATBD, user guide, Ashouri 2015) do not use the term SOFM.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s14",
+   "url": "https://api.crossref.org/works/10.3390/rs11232755",
+   "fetched_url": null,
+   "title": "Sadeghi et al. 2019, Remote Sensing (Crossref record and abstract)",
+   "author_org": "Sadeghi et al. (CHRS, UC Irvine per search snippet)",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.3390/rs11232755",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sadeghi2019_crossref.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Abstract only; whether the operational NCEI record replaced v2.2 for these years is NOT PRESENT in the abstract portion read (only in search snippet). Contradicts only the User Guide's v2.2 statement for recent years.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s15",
+   "url": "https://repository.library.noaa.gov/view/noaa/65498",
+   "fetched_url": null,
+   "title": "Evaluation of PERSIANN-CDR Constructed Using GPCP V2.2 and V2.3 and A Comparison with TRMM 3B42 V7 and CPC Unified Gauge-Based Analysis in Global Scale",
+   "author_org": "Sadeghi, Akbari Asanjan, Faridzad, Afzali Gorooh, Nguyen, Hsu, Sorooshian, Braithwaite (NOAA Institutional Repository record)",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.3390/rs11232755",
+   "access_level": "abstract",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_repo_65498.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Statement that V2.3 replaced V2.2 for 2009-2013 on CHRS portal and NCEI is NOT PRESENT in the saved text (search snippet only).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/DataFlowDiagram_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR Data Flow Diagram CDRP-DIA-0351 Rev. 1",
+   "author_org": "NOAA CDR Program",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "CDRP-DIA-0351",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/dataflow.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Diagram text fragments from layout extraction; revision date not captured; still says GPCP v2.2 unlike current ERDDAP file metadata (gpcpv23). Copy reused from sa1 cached fetch.",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_access_dir.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Directory listing only; file names and the latest file date inside 2026/ not read. Listing starts at 1983/ (no 1982/ folder).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/thredds/catalog/satellite/persiann.html",
+   "fetched_url": null,
+   "title": "TDS Catalog (NCEI THREDDS Server) - PERSIANN",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_thredds_persiann.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Catalog top level only; sub-catalogs not opened.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s19",
+   "url": "https://api.datacite.org/dois/10.7289/V51V5BWQ",
+   "fetched_url": null,
+   "title": "DataCite record for doi:10.7289/V51V5BWQ",
+   "author_org": "DataCite (record registered by NOAA NCEI client noaa.ncei)",
+   "published": "2014",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "doi:10.7289/V51V5BWQ",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/datacite_persiann.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Fetched as JSON (lookup (DataCite)); no .txt conversion needed. Record has no description, dates beyond 'Issued 2014', or version field.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s20",
+   "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_PERSIANN-CDR",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR: Precipitation Estimation From Remotely Sensed Information Using Artificial Neural Networks-Climate Data Record (Earth Engine Data Catalog)",
+   "author_org": "Google Earth Engine",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "doi:10.7289/V51V5BWQ",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/gee_persiann_cdr.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction (sandbox refused developers.google.com for curl); quotes are from the extraction, not raw HTML. Search-result snippets of other cached language versions showed different end dates (2024-09-30, 2025-12-31, 2026-03-31).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://registry.opendata.aws/noaa-cdr-atmospheric/",
+   "fetched_url": null,
+   "title": "NOAA Atmospheric Climate Data Records - Registry of Open Data on AWS",
+   "author_org": "NOAA Open Data Dissemination (NODD) / Amazon Web Services",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/aws_registry_cdr_atmos.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Bucket contents and date range not checked. Page does not state PERSIANN-CDR period or resolution (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://chrsdata.eng.uci.edu/",
+   "fetched_url": null,
+   "title": "CHRS Data Portal",
+   "author_org": "Center for Hydrometeorology and Remote Sensing (CHRS), UC Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/chrs_portal.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "JavaScript app; static text only. Portal page itself does not state PERSIANN-CDR period or resolution (NOT PRESENT). Format details are out of scope.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s23",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6326112/",
+   "fetched_url": null,
+   "title": "The CHRS Data Portal, an easily accessible public repository for PERSIANN global satellite precipitation data (Nguyen et al. 2019, Sci Data 6:180296)",
+   "author_org": "Phu Nguyen et al., CHRS UC Irvine",
+   "published": "2019-01-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.1038/sdata.2018.296",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nguyen2019_chrs_portal_pmc.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2019 paper; portal holdings may have changed since (portal now also lists PDIR-Now and PERSIANN-CCS-CDR V2.0).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.html",
+   "fetched_url": null,
+   "title": "NOAA Climate Data Record of PERSIANN-CDR daily precipitation precipitation By time, longitude, latitude (NCEI ERDDAP)",
+   "author_org": "NOAA NCEI ERDDAP",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/ncei_erddap_persiann.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction, not raw HTML.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s25",
+   "url": "https://microsoft.github.io/AIforEarthDataSets/data/noaa-cdr.html",
+   "fetched_url": null,
+   "title": "NOAA Climate Data Records (CDRs) | AIforEarthDataSets",
+   "author_org": "Microsoft (AI for Earth / Azure Open Datasets)",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/azure_aiforearth_noaa_cdr.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction (paraphrase-like in parts); container contents/date range not checked; period/resolution NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://climatedataguide.ucar.edu/climate-data/persiann-cdr-precipitation-estimation-remotely-sensed-information-using-artificial",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR: ... Climate Data Record | Climate Data Guide (NCAR/UCAR)",
+   "author_org": "NCAR Climate Data Guide (eds. Hamed Ashouri, Maria Gehne, NCAR Staff)",
+   "published": "2025-12-11 (last modified)",
+   "data_period": null,
+   "source_type": "review",
+   "evidence_id": "doi:10.7289/V51V5BWQ",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ucar_cdg_persiann_cdr.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Secondary source; the ncdc.noaa.gov and ftp URLs are legacy (current NCEI page lists https://www.ncei.noaa.gov/data/precipitation-persiann/access/); FTP status not checked.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s27",
+   "url": "https://chrs.web.uci.edu/projects_noaa.php",
+   "fetched_url": null,
+   "title": "CHRS - NOAA Research Projects: PERSIANN-CDR",
+   "author_org": "Center for Hydrometeorology and Remote Sensing (CHRS), UC Irvine",
+   "published": "2017 (page copyright)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/chrs_projects_noaa.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Page footer © 2017; NCDC URL is legacy.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s28",
+   "url": "https://web.archive.org/web/20261031104050/https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00854",
+   "title": "NCEI dataset landing page, PERSIANN-CDR v1r1 (gov.noaa.ncdc:C00854), Wayback capture 2026-10-31",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": "as captured 2026-10-31",
+   "source_type": "official",
+   "evidence_id": "doi:10.7289/V51V5BWQ",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/ncei_iso_c00854_wb20261031.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Live page returned HTTP 503 (NCEI cloud migration); read from the Wayback Machine copy.",
+   "scope": "subject"
+  },
+  {
+   "id": "s29",
+   "url": "https://chrsdata.eng.uci.edu/#tabPERSIANNCDR",
+   "title": "CHRS Data Portal, PERSIANN-CDR info tab",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/chrsdata-eng-uci-edu_231141.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "JavaScript page read in the built-in browser; text partly outdated (says 'Latest Update: September 2020').",
+   "scope": "subject"
+  },
+  {
+   "id": "s30",
+   "url": "https://chrsdata.eng.uci.edu/#tabPUnetCDR",
+   "title": "CHRS Data Portal, PERSIANN-CDR V3 info tab",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/chrsdata-eng-uci-edu_231153.txt",
+   "retrieved": "2026-11-19",
+   "limitations": null,
+   "scope": "subject"
+  },
+  {
+   "id": "s31",
+   "url": "https://chrsdata.eng.uci.edu/#tabCCSCDR",
+   "title": "CHRS Data Portal, PERSIANN-CCS-CDR V2.0 info tab",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/chrsdata-eng-uci-edu_231207.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read only the first 3,500 characters.",
+   "scope": "subject"
+  },
+  {
+   "id": "s32",
+   "url": "https://chrsdata.eng.uci.edu/#tabPDIR-Now",
+   "title": "CHRS Data Portal, PDIR-Now info tab",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/chrsdata-eng-uci-edu_231211.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read only the first 2,500 characters.",
+   "scope": "subject"
+  },
+  {
+   "id": "s33",
+   "url": "https://chrsdata.eng.uci.edu/#tabPERSIANN",
+   "title": "CHRS Data Portal, PERSIANN info tab",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/chrsdata-eng-uci-edu_231133.txt",
+   "retrieved": "2026-11-19",
+   "limitations": null,
+   "scope": "subject"
+  },
+  {
+   "id": "s34",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/daily/",
+   "title": "CHRS HTTPS server: Index of /CHRSdata/PERSIANN-CDR/daily",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "data_period": "files through day 212 of 2026 (2026-07-31)",
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/chrs_cdr_daily_dir.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Directory listing; file dates are server timestamps.",
+   "scope": "subject"
+  },
+  {
+   "id": "s35",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2026/",
+   "title": "NCEI HTTPS archive: Index of /data/precipitation-persiann/access/2026/",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": "2026-01-01 to 2026-07-31",
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/ncei_access_2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Directory listing; c-dates in file names are creation dates.",
+   "scope": "subject"
+  },
+  {
+   "id": "s36",
+   "url": "https://doi.org/10.3390/rs11232755",
+   "title": "Sadeghi et al. 2019, Evaluation of PERSIANN-CDR Constructed Using GPCP V2.2 and V2.3 ..., Remote Sensing 11(23):2755",
+   "author_org": "CHRS, UC Irvine (Sadeghi, Hsu, Sorooshian, Braithwaite et al.)",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.3390/rs11232755",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/sadeghi2019_noaa_repo.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read via the NOAA Institutional Repository copy (repository.library.noaa.gov/view/noaa/65498/noaa_65498_DS1.pdf).",
+   "scope": "subject",
+   "fetched_url": "https://repository.library.noaa.gov/view/noaa/65498/noaa_65498_DS1.pdf"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "PERSIANN-CDR is produced by UC Irvine (CHRS) and archived and distributed by NOAA NCEI, which calls it an operational climate data record.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "The data were produced by the University of California at Irvine, and are archived at the NOAA National Centers for Environmental Information (NCEI).",
+     "location": "Lineage Statement"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Processor | University of California at Irvine",
+     "location": "Lineage"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Distributor | NOAA National Centers for Environmental Information ncei.info@noaa.gov",
+     "location": "Contacts"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The PERSIANN CDR dataset is publicly available as an operational climate data record through",
+     "location": "Appendices, Data Access"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "While CHRS’s servers produce PERSIANN and PERSIANN-CDR by implementing the algorithms locally",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "The archive's own landing page and user guide and the producer's paper agree.",
+   "sole_source_reason": "NCEI's own metadata is the authority for who it lists as producer, processor and distributor."
+  },
+  {
+   "id": "c2",
+   "text": "NCEI serves the daily CDR by HTTPS download, THREDDS, ERDDAP and cloud copies on Google Cloud and AWS; its HTTPS archive held daily files through 2026-07-31 when checked.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "- Download | - THREDDS | - ERDDAP | - Google (Cloud) | - Amazon (Cloud)",
+     "location": "Data Access"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20260731_c20261013.nc | 2026-10-13 23:58 | 1193337",
+     "location": "last row"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "aws s3 ls --no-sign-request s3://noaa-cdr-precip-persiann-pds/",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Read on NCEI's own product page and directory listing.",
+   "sole_source_reason": "The archive's own pages are the authority for its access points."
+  },
+  {
+   "id": "c3",
+   "text": "The producer, CHRS, also serves PERSIANN-CDR daily, monthly and yearly files from its own data portal and HTTPS/FTP server; its daily folder also runs to day 212 of 2026.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "HTTP Download (full globe): daily, mthly, yearly",
+     "location": null
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "FTP also available: ftp://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR",
+     "location": null
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "aB1_d26212.bin.gz | 2026-10-13 16:57 | 1.1M",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Read on the producer's own portal and server.",
+   "sole_source_reason": "The producer's own portal is the authority for what it serves."
+  },
+  {
+   "id": "c4",
+   "text": "Google Earth Engine, AWS and Microsoft Azure redistribute NCEI's copy; Earth Engine states it is produced quarterly with a typical lag of three months.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "The data is produced quarterly, with a typical lag of three months.",
+     "location": null
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "aws s3 ls --no-sign-request s3://noaa-cdr-precip-persiann-pds/",
+     "location": null
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "The product list includes \"Precipitation - PERSIANN\" (precip-persiann)",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Redistributors' own pages; Earth Engine and Azure read through WebFetch extracts."
+  },
+  {
+   "id": "c5",
+   "text": "It is a multi-satellite, infrared-based product: the main input is the GridSat-B1 infrared window channel, made by NOAA NCEI from ISCCP B1 geostationary imagery (GOES, Meteosat, GMS, FY-2).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The primary observational input for the PERSIANN CDR algorithm is the Gridded Satellite Data | from ISCCP B1 (GridSat-B1) Infrared Window (IRWIN) Channel.",
+     "location": "4.1, p. 4"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "●   Geostationary Operational Environmental Satellite (GOES) series | ●   European Meteorological satellite (Meteosat) series | ●   Japanese Geostationary Meteorological Satellite (GMS) series | ●   Chinese Fen-Yung 2C (FY2) series",
+     "location": "4.1, p. 5"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "The product is developed using Gridded Satellite (GridSat-B1) IR data that are derived from merging ISCCP B1 IR data, along with GPCP version 2.2.",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "User guide, landing page, C-ATBD and Ashouri et al. agree."
+  },
+  {
+   "id": "c6",
+   "text": "GPCP monthly 2.5° analysis (itself satellite SSM/I and IR estimates adjusted with GPCC gauges) is used to bias-correct the PERSIANN output, so gauges and microwave enter only indirectly.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The Global Precipitation Climatology Project (GPCP) v2.2 2.5-degree monthly precipitation | analyses serve as crucial ancillary data. They are used to bias-correct the initial PERSIANN",
+     "location": "4.2"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "(Special Sensor Microwave Imager [SSM/I] and IR) precipitation estimates. These are | then adjusted using ground-based gauge analyses (from the Global Precipitation",
+     "location": "4.2"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "Indirect PMW Data Use: PERSIANN CDR does not directly incorporate Passive | Microwave (PMW) observations into its rainfall estimation, except indirectly through the | GPCP monthly data used for bias correction.",
+     "location": "Limitations"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "adjusted using the Global Precipitation Climatology Project (GPCP) monthly product to maintain consistency of the two datasets at 2.5 deg monthly scale throughout the entire record",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Archive and producer documents agree."
+  },
+  {
+   "id": "c7",
+   "text": "The NCEI documents still name GPCP v2.2, but the developers state that a GPCP v2.3-based version replaced v2.2 data for 2009–2013 on the CHRS portal and at NCEI, and a 2026 file's source attribute names a GPCP v2.3 file; the version used for other years is not documented.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "The updated PERSIANN-CDR V2.3 data | has replaced V2.2 data for the 2009–2013 period on CHRS data portal and NOAA National Centers",
+     "location": "Abstract, p. 1"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "We compared the PERSIANN-CDR dataset that is constructed using GPCP V2.3",
+     "location": null
+    },
+    {
+     "source_id": "s11",
+     "relationship": "contradicts",
+     "passage": "The Global Precipitation Climatology Project (GPCP) v2.2 2.5-degree monthly precipitation",
+     "location": "4.2"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Developers' paper read in full; NCEI docs not updated; years outside 2009–2013 and after 2019 not stated."
+  },
+  {
+   "id": "c8",
+   "text": "NCEP Stage IV radar-gauge data were used only to pre-train the neural network (then held fixed) and to evaluate the product; it is not a running input. The C-ATBD and user guide mention Stage IV only for evaluation.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Environmental Prediction (NCEP) stage IV hourly",
+     "location": "p. 70"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "stage IV radar data are used for the initial",
+     "location": "p. 70"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "contextualizes",
+     "passage": "Its performance has been tested against Stage IV radar data during",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Training role stated only in Ashouri et al. 2015 (the developers' paper); training period and region not given."
+  },
+  {
+   "id": "c9",
+   "text": "The algorithm: the PERSIANN neural network turns 3-hourly GridSat-B1 IR brightness temperatures into 0.25° rain rates (PERSIANN-B1), small rates under 0.1 mm/hr are removed, a monthly 2.5° GPCP/PERSIANN ratio (capped at 20) is applied to each 3-hourly pixel, and the results are summed to daily mm/day.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "the model is pretrained using the National Centers for",
+     "location": "p. 70"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "are kept fixed, and the model is run for the full his-",
+     "location": "p. 70"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "results show that thd = 0.1 and maximum w = 20 is perhaps the best combination.",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "C-ATBD and Ashouri et al. 2015 agree; the steps are all automated processing."
+  },
+  {
+   "id": "c10",
+   "text": "The record runs from 1983-01-01 (daily, 0.25°, 60°S–60°N, version v01r01) and is extended in quarterly batches about 2.5–3 months behind real time.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The PERSIANN CDR product covers the period from January 1, 1983, to as close to current as",
+     "location": null
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "subject to operational updates (forward processing). Quarterly updates to the CDR data",
+     "location": "FAQ"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Data Update Frequency | Quarterly",
+     "location": null
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR | 0.25°×0.25° | Quasi-global (60°S–60°N; 180°W–180°E) | Daily | January 1st, 1983 to present | 3 months",
+     "location": "Table 1"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20260731_c20261013.nc | 2026-10-13 23:58 | 1193337",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "User guide, landing page, producer paper and file dates agree; the lag is not stated as a figure by NCEI."
+  },
+  {
+   "id": "c11",
+   "text": "The dataset citation credits Soroosh Sorooshian, Kuolin Hsu, Dan Braithwaite, Hamed Ashouri and the NOAA CDR Program (2014); Sorooshian is the Principal Investigator.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Cite as: Sorooshian, Soroosh; Hsu, Kuolin; Braithwaite, Dan; Ashouri, Hamed; and NOAA CDR Program (2014)",
+     "location": null
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Principal Investigators | Sorooshian, Soroosh UC-IRVINE/CHRS",
+     "location": null
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Soroosh Sorooshian, University of California - Irvine",
+     "location": "Principal Investigator"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Archive's landing page and product page agree; DataCite record matches.",
+   "sole_source_reason": "The archive's own citation is the authority for credited authors."
+  },
+  {
+   "id": "c12",
+   "text": "CHRS is an informal interdisciplinary group at UC Irvine, housed in Civil and Environmental Engineering, The Henry Samueli School of Engineering; no staff count is published.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "As an informal interdisciplinary group, the Center brings together faculty and researchers from the Civil and Environmental Engineering and Earth System Science in the University of California, Irvine.",
+     "location": null
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Address: | The Henry Samueli School of Engineering Civil and Environmental Engineering zotcode 2175 University of California, Irvine Irvine, CA 92697-2175",
+     "location": null
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Director of CHRS",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CHRS's own pages; undated (footer 2017); no headcount anywhere.",
+   "sole_source_reason": "The center's own pages are the authority for how it describes itself."
+  },
+  {
+   "id": "c13",
+   "text": "It is produced under NOAA's Climate Data Record Program at NCEI, which is the dataset point of contact.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Dataset Point of Contact | NOAA Climate Data Record Program Office DOC/NOAA/NESDIS/NCEI",
+     "location": null
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "This CDR was funded in part by NOAA's Climate Data Record (CDR) Program located in Asheville, NC at the National Centers for Environmental Information.",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Archive and producer agree."
+  },
+  {
+   "id": "c14",
+   "text": "Related products: PERSIANN (near real time, CPC IR, 2000–), PERSIANN-CCS and PDIR-Now (0.04°, real time) and PERSIANN-CCS-CDR v2.0 and PERSIANN-CDR V3 (0.04° CDRs, also GPCP-adjusted) are separate CHRS products served from the CHRS portal, not from NCEI's CDR record; the monthly and yearly PERSIANN-CDR files are sums of the daily product.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Data Period: March 2000 - Present",
+     "location": null
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "is a real-time global high resolution (0.04° x 0.04° or = 4km x 4km;) satellite precipitation product",
+     "location": null
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "the PERSIANN-CCS algorithm is applied to Gridded satellite (GridSat-B1) and NOAA Climate Prediction Center (CPC-4km) global merged infrared products",
+     "location": null
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "This CDR was developed in collaboration with NOAA's Climate Data Record (CDR) Program methodology standards.",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Producer's own portal; how monthly/yearly files are built is inferred from the portal's time steps and the C-ATBD's monthly aggregation."
+  },
+  {
+   "id": "c15",
+   "text": "Reconciled details: the dataset was first submitted to the CDR Program on 2013-08-29 and published 2014-06-01 (NCEI DSI 3611_01); GridSat-B1 quality work may later add 1980–1982; production runs as parallel jobs over 4 subareas split into 24; CHRS download links returned on 2024-10-11 after an outage.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Initial Submission to CDR Program",
+     "location": null
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Dataset Identifiers - doi:10.7289/V51V5BWQ - NCEI DSI 3611_01",
+     "location": null
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "publication: 2014-06-01 revision: 2014-06-01 creation: 2013-05-31",
+     "location": null
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "Work is ongoing to improve the quality of GridSat-B1 data for some months within 1980, 1981, and 1982.",
+     "location": null
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "parallel jobs running on 4 major subareas",
+     "location": null
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "NOTICE: Download links available again 2024-10-11",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Archive and producer documents, read raw."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Start of record: 1982 or 1983",
+   "source_ids": [
+    "s12",
+    "s11"
+   ],
+   "status": "resolved",
+   "explanation": "NCEI's product page and C-ATBD section 3.4 say 1982; the user guide, landing page time period, ERDDAP and files say 1983-01-01. Files exist from 1983, so 1983 is taken; 1982 appears to be a carry-over."
+  },
+  {
+   "claim": "GPCP version used for bias adjustment",
+   "source_ids": [
+    "s11",
+    "s15"
+   ],
+   "status": "unresolved",
+   "explanation": "C-ATBD (2014) and user guide (2025) say GPCP v2.2; Sadeghi et al. 2019 describe a v2.3 rebuild and current file metadata names a v2.3 file. Full paper unread."
+  },
+  {
+   "claim": "Noise threshold unit: 0.1 mm/hr or 0.1 mm/day",
+   "source_ids": [
+    "s1",
+    "s36"
+   ],
+   "status": "unresolved",
+   "explanation": "C-ATBD and user guide give thd = 0.1 mm/hr; Sadeghi et al. 2019 write 'a threshold of 0.1 mm/day'. The answer relies on the C-ATBD (the program's algorithm document)."
+  },
+  {
+   "claim": "Director of CHRS",
+   "source_ids": [
+    "s3",
+    "s4"
+   ],
+   "status": "unresolved",
+   "explanation": "The CHRS directory lists Amir AghaKouchak as Director and Sorooshian as Founding Director; a search summary of a UCI research page named Sorooshian director (page HTTP 403, not saved)."
+  }
+ ],
+ "coverage_gaps": [
+  "NOAA CDR Program status (Interim vs operational) and NOAA steward/contact name: NOT FOUND in pages read; NCEI ISO metadata (503) and landing page (timeout) unreadable. Lead: Data stewardship maturity report https://repository.library.noaa.gov/view/noaa/33336 (unread). (from sa3)",
+  "Dataset citation author list verified only via search snippets, not a saved page (NCEI pages unreadable). ERDDAP contributor_name (Sorooshian, Hsu, Ashouri, Braithwaite) agrees. (from sa3)",
+  "Published CHRS staff count: none published on chrs about or directory pages (NOT PRESENT). (from sa3)",
+  "Nguyen et al. 2019 Scientific Data CHRS Data Portal paper (doi:10.1038/sdata.2018.296, https://www.nature.com/articles/sdata2018296) not read - time. (from sa3)",
+  "PDIR-Now (Nguyen et al. 2020 J. Hydrometeorol. 21(12) 2893-2906, doi:10.1175/JHM-D-20-0177.1) not read; monthly/yearly PERSIANN-CDR products on CHRS portal not documented in pages read (C-ATBD shows monthly is an aggregation used in bias adjustment). (from sa3)",
+  "Which GPCP version is used for which years: C-ATBD (2014) and User Guide (2025) say GPCP v2.2, but the current ERDDAP file metadata lists gpcpv23_m2607.bin (GPCP v2.3) and GridSat-B1 v02r01. Sadeghi et al. 2019 (Remote Sensing 11:2755) reportedly documents the v2.2-to-v2.3 switch for 2009-2013 but was unreadable (mdpi 403). Lead: CHRS portal / NCEI release notes, Maturity Matrix, Data Flow Diagram on NCEI product page. (from sa2)",
+  "Stage IV training role is stated only in Ashouri et al. 2015 ('pretrained using the NCEP stage IV hourly precipitation data'; 'used for the initial training the neural network (NN) model as well as evaluating'); the C-ATBD and User Guide mention Stage IV only for evaluation. Training period/region details NOT PRESENT in the documents read. (from sa2)",
+  "Exact update latency not stated in any document; only 'Quarterly updates' (User Guide FAQ) and 'delayed present'. Derived from ERDDAP: data through 2026-07-31 with date_created 2026-10-13. NCEI product page warns of slower update cycles during cloud migration. NCEI geoportal metadata C00854 (reportedly 'update frequency quarterly') returned HTTP 503. (from sa2)",
+  "Start of record conflicts: User Guide and ERDDAP say 1983-01-01; NCEI product page says 1982-present; C-ATBD section 3.4 says 1/1/1982-12/31/2011 while section 2.1 says 1983-2012. (from sa2)",
+  "NCEI ISO metadata/DOI landing page (gov.noaa.ncdc:C00854) returned HTTP 503 twice; its distributor, update-frequency and status fields were not read. Retry later or via web.archive.org copy. (from sa1)",
+  "Required search r5 query 'PERSIANN-CDR doi 10.7289/V51V5BWQ' was not run as a WebSearch; DOI verified instead via the DataCite API lookup. (from sa1)",
+  "Period-of-record start conflict: NCEI product page says '1982–present'; ERDDAP, GEE, CHRS paper Table 1 and the NCEI access directory (first folder 1983/) say 1983-01-01. Not resolved. (from sa1)",
+  "IRI Data Library page needs sign-in (browser); snippet suggested holdings end 30 Sep 2019 — not verified. Google Cloud bucket (console.cloud.google.com/storage/browser/noaa-cdr-precip-persiann) and the AWS S3 bucket listing were not opened. (from sa1)",
+  "Interim vs operational CDR status not found on any page read for q1. (from sa1)",
+  "Correction to earlier gaps: required search r5 was run later as a WebSearch (no new landing page found), and CDR status IS stated in the NCEI User Guide (CDRP-GUID-1665): operational climate data record. Still unread: NCEI ISO metadata C00854 (503), IRI DL (sign-in), Google Cloud and S3 bucket listings, UCAR Climate Data Guide page (lead only). (from sa1)",
+  "NCEI Maturity Matrix (MaturityMatrix_01B-16.pdf, maturity level as of 07/17/2013) was downloaded, but its PERSIANN ratings appear to be shown graphically and are not in the text layer. Saved as ncei_maturity_01B-16_unused.*; a visual read is needed to get the level. (from sa1)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q4",
+   "query": "Center for Hydrometeorology and Remote Sensing UC Irvine people",
+   "tool": "WebSearch",
+   "notes": "found chrs about.php; directory reached via chrs_directory.php link",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA CDR Program PERSIANN-CDR precipitation operational",
+   "tool": "WebSearch",
+   "notes": "NCEI ISO metadata C00854 returned HTTP 503 (curl and WebFetch); C-ATBD found",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR dataset citation Sorooshian Hsu",
+   "tool": "WebSearch",
+   "notes": "snippets (GEE, NCEI) give citation Sorooshian, Hsu, Braithwaite, Ashouri, and NOAA CDR Program (2014) v1r1 doi:10.7289/V51V5BWQ - snippet only, NCEI page not readable",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "The CHRS Data Portal Nguyen 2019 Scientific Data",
+   "tool": "WebSearch",
+   "notes": "doi:10.1038/sdata.2018.296; not read (time)",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR NOAA steward Interim Climate Data Record",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; found ERDDAP info page and stewardship maturity report (repository.library.noaa.gov/view/noaa/33336, not read)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PERSIANN family products CCS PDIR-Now",
+   "tool": "WebSearch",
+   "notes": "found Nguyen 2018 HESS review",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PERSIANN-CCS-CDR Sadeghi 2021",
+   "tool": "WebSearch",
+   "notes": "PMC8222311 read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR Climate Algorithm Theoretical Basis Document",
+   "tool": "WebSearch",
+   "notes": "found C-ATBD CDRP-ATBD-0286 Rev 2 on ncei.noaa.gov; downloaded and read in full (sections 1-7)",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Ashouri 2015 PERSIANN-CDR BAMS",
+   "tool": "WebSearch",
+   "notes": "journals.ametsoc.org PDF returned HTTP 403; read the full-text copy at atmos.albany.edu; DOI 10.1175/BAMS-D-13-00068.1 verified on p. 69",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR NCEI precipitation daily CDR period of record update",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter ncei.noaa.gov; led to User Guide CDRP-GUID-1665 (2025) and ERDDAP info page",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PERSIANN-CDR GPCP v2.3 bias adjustment version",
+   "tool": "WebSearch",
+   "notes": "lead: Sadeghi et al. 2019 Remote Sensing 11(23):2755 (GPCP v2.3 replaced v2.2 for 2009-2013 per snippet); full text blocked (mdpi.com 403, escholarship empty)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN self-organizing feature map SOFM Hsu 1997 algorithm",
+   "tool": "WebSearch",
+   "notes": "read CHRS SP_approach.php (MCPN/SOFM)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Sadeghi 2019 PERSIANN-CDR GPCP V2.3 Remote Sensing",
+   "tool": "WebSearch",
+   "notes": "another copy search; read NOAA IR record 65498 (abstract only)",
+   "from": "sa2",
+   "copy_of": "https://www.mdpi.com/2072-4292/11/23/2755/htm"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CHRS Data Portal PERSIANN-CDR download",
+   "tool": "WebSearch",
+   "notes": "found Nguyen et al. 2019 Sci Data portal paper (PMC) and chrsdata.eng.uci.edu",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR NCEI Climate Data Record precipitation",
+   "tool": "WebSearch",
+   "notes": "found NCEI product page, ISO metadata C00854 (503), ERDDAP",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://api.datacite.org/dois/10.7289/V51V5BWQ",
+   "tool": "lookup (DataCite)",
+   "notes": "DOI verified; resolves to NCEI geoportal C00854",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR Google Earth Engine dataset",
+   "tool": "WebSearch",
+   "notes": "GEE NOAA/PERSIANN-CDR catalog",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR AWS open data",
+   "tool": "WebSearch",
+   "notes": "bucket noaa-cdr-precip-persiann-pds; registry page fetched directly",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR IRI Data Library",
+   "tool": "WebSearch",
+   "notes": "no IRI page in results",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "iridl.ldeo.columbia.edu PERSIANN CDR daily",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter iridl.ldeo.columbia.edu; page requires sign-in",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR Microsoft Planetary Computer Azure NOAA CDR",
+   "tool": "WebSearch",
+   "notes": "found Microsoft AIforEarthDataSets NOAA CDR page (Azure)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR doi 10.7289/V51V5BWQ",
+   "tool": "WebSearch",
+   "notes": "results were GEE language variants, UCAR Climate Data Guide, and NCEI C00854 (503); no new landing page",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://web.archive.org/web/2025/https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/html",
+   "tool": "fetch_page.py + WebFetch",
+   "notes": "archived copy attempt: fetch_page HTTP 503; WebFetch unable to fetch from web.archive.org",
+   "from": "sa1",
+   "copy_of": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/html"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "chrs.web.uci.edu PERSIANN-CDR",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter chrs.web.uci.edu; found projects_noaa.php",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00854",
+   "tool": "fetch_page.py",
+   "notes": "alternate NCEI landing-page view of C00854; timed out after 120 s and was stopped; the /xml form also returned 503",
+   "from": "sa1",
+   "copy_of": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/html"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00854",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "Live page 503; capture of 2026-10-31 found and read (s28).",
+   "copy_of": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00854"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA repository noaa_65498_DS1.pdf",
+   "tool": "lookup (NOAA Institutional Repository file)",
+   "notes": "Full text of Sadeghi et al. 2019 read (s36).",
+   "copy_of": "s15"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "chrsdata.eng.uci.edu info tabs",
+   "tool": "lookup (built-in browser)",
+   "notes": "PERSIANN, PERSIANN-CDR, V3, CCS-CDR, PDIR-Now tabs read (s29-s33)."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/daily/ and ncei.noaa.gov/data/precipitation-persiann/access/2026/",
+   "tool": "lookup (directory listings)",
+   "notes": "Both end at 2026-07-31, posted 2026-10-13 (s34, s35)."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "CHRS data portal pages for PERSIANN-CDR",
+   "query": "CHRS Data Portal PERSIANN-CDR download",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI / CDR Program",
+   "publisher": "its parent, operator",
+   "subquestion_id": "q1",
+   "aim": "NCEI landing and CDR Program pages",
+   "query": "PERSIANN-CDR NCEI Climate Data Record precipitation",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA CDR Program",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "C-ATBD",
+   "query": "PERSIANN-CDR Climate Algorithm Theoretical Basis Document",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "Ashouri et al. 2015 BAMS",
+   "query": "Ashouri 2015 PERSIANN-CDR BAMS",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "DataCite",
+   "publisher": "registries",
+   "subquestion_id": "q1",
+   "aim": "DOI record",
+   "query": "PERSIANN-CDR doi 10.7289/V51V5BWQ",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "people/about pages",
+   "query": "Center for Hydrometeorology and Remote Sensing UC Irvine people",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": null,
+   "publisher": "redistributors",
+   "subquestion_id": "q1",
+   "aim": "Earth Engine, AWS copies",
+   "query": "PERSIANN-CDR Google Earth Engine dataset",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA CDR Program",
+   "publisher": "its parent, operator",
+   "subquestion_id": "q4",
+   "aim": "program page, status, steward",
+   "query": "NOAA CDR Program PERSIANN-CDR precipitation operational",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q4",
+   "aim": "dataset citation and CHRS portal paper",
+   "query": "PERSIANN-CDR dataset citation Sorooshian Hsu",
+   "skip_reason": null
+  }
+ ]
+}

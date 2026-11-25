@@ -1,0 +1,1700 @@
+{
+ "question": "How is GPCP Daily quality-controlled, processed and validated, what formats is it published in, and can the public inspect and use its software? (1DD V1.3 and V3.2/V3.3 Daily, by producer and archive)",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions (QC, validation, software, formats) of one dataset; no set of 15+, no multi-year figures, no dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "How is GPCP Daily quality-controlled (checks, automated/manual, flags, who, input QC)?",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s11",
+    "s20",
+    "s33"
+   ],
+   "remaining_gap": "IMERG, CPC merged IR and TOVS/AIRS screening not researched; OPeNDAP metadata about error estimates unread (HTTP 410)."
+  },
+  {
+   "id": "q2",
+   "question": "How is it validated, and what program reviews exist?",
+   "status": "answered",
+   "source_ids": [
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s2",
+    "s3"
+   ],
+   "remaining_gap": "Maturity scores read from shading only; Bolvin 2009 and Li 2023 full text not read; no V3.3 maturity assessment found."
+  },
+  {
+   "id": "q3",
+   "question": "What algorithms and software produce it, and is the code published (where, licence)?",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s15",
+    "s18",
+    "s20",
+    "s33"
+   ],
+   "remaining_gap": "Copyright notices of most files in the tarball not read."
+  },
+  {
+   "id": "q4",
+   "question": "What formats and access routes, and how FAIR is each?",
+   "status": "answered",
+   "source_ids": [
+    "s13",
+    "s14",
+    "s17",
+    "s21",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s30",
+    "s31",
+    "s34",
+    "s35"
+   ],
+   "remaining_gap": "CDS download account rule, GDEX login rule, obs4MIPs/ESGF and Earth Engine copies not confirmed; DataCite lookups failed."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/AlgorithmDescription_01B-35.pdf",
+   "fetched_url": null,
+   "title": "Precipitation - GPCP Daily C-ATBD (CDRP-ATBD-0913, 01B-35, Rev. 0)",
+   "author_org": "NOAA CDR Program / University of Maryland",
+   "published": "2017-08-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_daily_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Rev. 0 of 2017, V1.3 only. Per-pixel QC flags: NOT PRESENT in Sections 5.3-5.5. Who runs the diagnostics is not named in these sections.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "ATBD for GPCP V3.3 Daily",
+   "author_org": "NASA GES DISC docserver (GPCP team)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_v33_daily_atbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Automated vs manual not stated; per-pixel flags NOT PRESENT in this section.",
+   "found_by": [
+    "sa1",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/Release_Notes.GPCPV3.3.pdf",
+   "fetched_url": null,
+   "title": "GPCP V3.3 Release Notes",
+   "author_org": "NASA GSFC / UMD / Univ. of Arizona",
+   "published": "2025-03-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_v33_release_notes.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Comparison is to other products (not independent gauges); shown for monthly climatology, not explicitly the daily product.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://ntrs.nasa.gov/api/citations/20000068519/downloads/20000068519.pdf",
+   "fetched_url": null,
+   "title": "Global Precipitation at One-Degree Daily Resolution from Multi-Satellite Observations (Huffman et al., NTRS manuscript of J. Hydrometeor. 2001)",
+   "author_org": "NASA GSFC (Huffman et al.)",
+   "published": "2000 (manuscript; journal 2001)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/huffman2001_ntrs.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Manuscript OCR has run-together words; early (2001) version of 1DD, not V1.3. Lines 340-342 state Mesonet stations do not contribute to the monthly scaling.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://opendata.dwd.de/climate_environment/GPCC/PDF/GPCC_intro_products_v2011.pdf",
+   "fetched_url": null,
+   "title": "GPCC Global Precipitation Climatology Centre: introduction to products (v2011)",
+   "author_org": "GPCC / Deutscher Wetterdienst",
+   "published": "2011",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcc_intro_products_v2011.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "2011 document; GPCP V3 inputs (Full Data / Monitoring versions) may differ. Fetched via WebFetch binary save (curl CONNECT 403 on opendata.dwd.de), converted with pdftotext. First Guess passage: 'An automatic-only quality-control (QC) | is applied to these data.' (lines 126-127).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://climatedataguide.ucar.edu/climate-data/gpcp-daily-global-precipitation-climatology-project",
+   "fetched_url": null,
+   "title": "GPCP (Daily): Global Precipitation Climatology Project | Climate Data Guide",
+   "author_org": "NCAR Climate Data Guide",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "review",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cdg_gpcp_daily.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Expert-guide page about 1DD (pre-V3); Bolvin et al. 2009 itself not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/MaturityMatrix_01B-35.pdf",
+   "fetched_url": null,
+   "title": "Precipitation - GPCP Daily maturity level as of 08/14/2017 (CDR Maturity Matrix, CDRP-MM-0915 Rev 0)",
+   "author_org": "NOAA CDR Program",
+   "published": "2017-08-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_daily_maturity_matrix.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Scores not readable from text; coordinator should view the PDF to read the shaded cells. Covers V1.3 (2017); no V3.3 matrix found.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://experts.arizona.edu/en/publications/performance-of-gpcp-daily-products-over-oceans-evaluation-using-p/",
+   "fetched_url": null,
+   "title": "Performance of GPCP Daily Products Over Oceans: Evaluation Using Passive Aquatic Listeners (Li, Thompson, Behrangi, Chen, Yang; GRL 50(11) e2023GL104310)",
+   "author_org": "University of Arizona (Behrangi group) / NOAA",
+   "published": "2023-06-16",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e14",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/li2023_pals_webfetch.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Abstract only via WebFetch extract; full paper not read; V3.3 not evaluated.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://ntrs.nasa.gov/api/citations/20220000683/downloads/Nelkin_AGU21.pdf",
+   "fetched_url": null,
+   "title": "GPCP V3.1 Daily poster, AGU Fall Meeting 2021 (Nelkin et al.)",
+   "author_org": "NASA GSFC / SSAI (Nelkin et al.)",
+   "published": "2021-12 (poster; printed 1/28/22)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nelkin_agu21.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "V3.1 (pre-V3.2) poster; product-to-product comparison, not independent validation.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/",
+   "author_org": "NOAA NCEI",
+   "published": "files dated 2017-08-10 to 2019-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/8dcaabe10a6316bf.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Listing only; sizes in bytes. Whether a V3.3-specific package exists elsewhere is not shown here.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/SourceCode_01B-35.tar.gz",
+   "fetched_url": null,
+   "title": "SourceCode_01B-35.tar.gz: README_GPCP_Daily_V1.3.txt (GPCP Daily CDR processing code)",
+   "author_org": "UMD/ESSIC GPCP CDR team via NOAA NCEI",
+   "published": "2017-09-18 (listing date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/README_GPCP_Daily_V1.3_from_SourceCode_01B-35.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Archive downloaded (15.4 MB) and only the README extracted to stdout; no code was run or extracted. The README is for V1.3; the NCEI ISO record for V3.3 (C01726) links this same 01B-35 tarball (see sa2-e4). License/copyright headers inside the code files were NOT checked (no LICENSE or COPYING file in the archive listing). The README also says the code configuration references the monthly code and MATLAB data paths.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/SourceCode_01B-35.tar.gz",
+   "fetched_url": null,
+   "title": "SourceCode_01B-35.tar.gz: file listing (tar -tzvf)",
+   "author_org": "UMD/ESSIC GPCP CDR team via NOAA NCEI",
+   "published": "2017-09-18 (listing date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sourcecode_01B-35_listing.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Search of the listing for LICENSE|COPYING|README found only the README; absence of a license file is from the listing, code headers not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C01726",
+   "fetched_url": null,
+   "title": "NCEI ISO metadata, GPCP Daily V3.3 CDR (C01726)",
+   "author_org": "NOAA NCEI",
+   "published": "2025-08-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_iso_C01726.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "URL is the earlier run's; the label says v3.3 but the linked file is dated 2017 and its README is for V1.3 (sa2-e2), so it may not be the V3.3 production code.",
+   "found_by": [
+    "sa2",
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00999",
+   "fetched_url": null,
+   "title": "NCEI landing page (Wayback copy 2026-10-24), GPCP Daily V1.3 CDR (C00999)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wayback_ncei_C00999.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "URL as recorded in the earlier run may differ; check that run's record.",
+   "found_by": [
+    "sa2",
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/UseAgreement_01B-35.pdf",
+   "fetched_url": null,
+   "title": "Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation (GPCP Daily, 01B-35)",
+   "author_org": "NOAA CDR Program / NCEI",
+   "published": "2017-08-10 (listing date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_gpcp_daily_useagreement.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No software license named; points to copyright notices in the code, which were not read.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.2_Daily.pdf",
+   "fetched_url": null,
+   "title": "ATBD for GPCP V3.2 Daily",
+   "author_org": "NASA GES DISC (MEaSUREs GPCP)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpcp_v32_daily_atbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only section 5.4 read for this subquestion.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "README Document for GPCP V3.3 Daily",
+   "author_org": "NASA GSFC / GES DISC (MEaSUREs GPCP)",
+   "published": "NOT PRESENT (cites a reference last accessed 20 February 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/readme_gpcpv33_daily.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Fetched via WebFetch binary save (curl SSL EOF on this host), converted with pdftotext. Only the code/tools sections searched; Sections 1-3 (algorithm, file format) not read by sa2 and relevant to q4.",
+   "found_by": [
+    "sa2",
+    "sa3"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/SourceCode_01B-35.tar.gz",
+   "fetched_url": null,
+   "title": "SourceCode_01B-35.tar.gz: header of GPCPcdr_d5/GPCPcdr_d5_WriteNC/Main_GPCPcdr_d5_WriteNC.c",
+   "author_org": "Robert Adler, Mathew Sapiano, Jian-Jian Wang, University of Maryland College Park",
+   "published": "1/2017 (file HISTORY)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/Main_GPCPcdr_d5_WriteNC_header.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Only one of about 150 files checked; other files (e.g. the GPROF V2004 Fortran from 2015) may carry different notices. Archive saved unextracted as srccode/SourceCode_01B-35_unused.tar.gz.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/doc/",
+   "fetched_url": null,
+   "title": "Index of /data/global-precipitation-climatology-project-gpcp-daily/doc/",
+   "author_org": "NOAA NCEI",
+   "published": "2017-09-06 (file dates)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/96b24e25801a615b.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Listing only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/SourceCode_01B-35.tar.gz",
+   "fetched_url": null,
+   "title": "SourceCode_01B-35.tar.gz: GPCPcdr_d2/GPCPcdr_d2_GPROFv2004_SSMIS/qualctrl.F",
+   "author_org": "NOT PRESENT (no header in file)",
+   "published": "2015-10-28 (archive file date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/qualctrl_F_excerpt.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Production code for V1.3 inputs (SSMIS GPROF), read from the archive without running it. Also relevant to q3: some files in the package carry no copyright notice (compare sa2-e11).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPCPDAY",
+   "fetched_url": null,
+   "title": "NASA CMR UMM-C records for GPCPDAY (V3.3 and V3.2)",
+   "author_org": "NASA GES DISC (CMR)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-cmr-gpcpday",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cmr_gpcpday.json",
+   "retrieved": "2026-11-20",
+   "limitations": "UseConstraints gives no licence name (e.g. CC0/CC-BY): NOT PRESENT. Earthdata Login requirement is not stated in the record; the S3 bucket name contains 'protected'. CF version NOT PRESENT in UMM-C.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpcpday-3.3",
+   "fetched_url": null,
+   "title": "Earthdata catalog: GPCP daily V3.3 (GPCPDAY 3.3)",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-earthdata-gpcpday33",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/earthdata_gpcpday33.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Copied from earlier run; licence and login wording not on the parts read.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://cds.climate.copernicus.eu/datasets/satellite-precipitation?tab=overview",
+   "fetched_url": null,
+   "title": "Precipitation monthly and daily gridded data from 1979 to present derived from satellite measurements (CDS)",
+   "author_org": "Copernicus Climate Change Service (C3S)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-cds-overview",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cds-climate-copernicus-eu-datasets-satellite-precipitation-t_063811.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Licence names (shown 'on the right') were NOT PRESENT in the extracted text; account requirement for download NOT PRESENT in this text. Saved by browser in earlier run.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://gdex.ucar.edu/datasets/d728007/",
+   "fetched_url": null,
+   "title": "NSF NCAR GDEX d728007: GPCP CDR Version 1.3 (Daily)",
+   "author_org": "NSF NCAR GDEX",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-gdex-d728007",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gdex-ucar-edu-datasets-d728007_063820.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Login requirement for download NOT PRESENT in this text. GDEX CC BY 4.0 differs from NCEI data.gov CC0 for the same family.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://gdex.ucar.edu/datasets/d728009/",
+   "fetched_url": null,
+   "title": "NSF NCAR GDEX: GPCP V3.2 daily",
+   "author_org": "NSF NCAR GDEX",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-gdex-v32",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gdex_v32_daily.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "URL taken as d728009 per brief; confirm dataset ID in the file header. Copied from earlier run.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-the-global-precipitation-climatology-project-gpcp-daily-version-3-3",
+   "fetched_url": null,
+   "title": "data.gov: NOAA CDR of GPCP Daily Version 3.3",
+   "author_org": "NOAA NCEI via data.gov",
+   "published": "2025-08-05",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-datagov-v33",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/datagov_gpcp_daily_v33.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "URL of data.gov page is as recorded in the earlier run's file header; verify. Copied from earlier run.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/",
+   "fetched_url": null,
+   "title": "Index of /data/global-precipitation-climatology-project-gpcp-daily/ (NCEI HTTPS)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-ncei-dir-root",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/6246968ecc03975c.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Contents of doc/ and src/ not listed in this pass.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/",
+   "fetched_url": null,
+   "title": "Index of .../gpcp-daily/access/ (NCEI HTTPS)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-ncei-dir-access",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/84a0877999328692.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "2025/2026 folders not opened; whether they hold V1.3 or V3.3 files is unknown.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/2024/",
+   "fetched_url": null,
+   "title": "Index of .../gpcp-daily/access/2024/ (NCEI HTTPS)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-ncei-dir-2024",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/792e856191925e53.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Search for 'v03' in this listing found no match; V3.3 HTTPS path at NCEI not found in this pass. Data.gov lists V1.3 as superseded, yet files run to 2024-12-31.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://registry.opendata.aws/noaa-cdr-atmospheric/",
+   "fetched_url": null,
+   "title": "NOAA Atmospheric Climate Data Records - Registry of Open Data on AWS",
+   "author_org": "NOAA Open Data Dissemination (NODD) / AWS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-aws-registry",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/7a818061b8cbbba7.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Bucket contents not listed (sandbox refused s3.amazonaws.com host); which versions (V1.3 or V3.3) it holds is NOT PRESENT on the registry page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://ewds.climate.copernicus.eu/licences/global-precipitation-climatology-project",
+   "fetched_url": null,
+   "title": "GPCP product licence (rev. 1) and GPCP product licence - NASA GES DISC data (rev. 1)",
+   "author_org": "ECMWF / Copernicus (licence text from GPCP and NASA GES DISC)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-cds-licences",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/webfetch_cds_gpcp_licences.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extract, not raw text (curl refused: CONNECT 403 on ewds.climate.copernicus.eu). Second URL: https://ewds.climate.copernicus.eu/licences/global-precipitation-climatology-project-nasa-data. Whether CDS needs an account and licence acceptance before download was not read here.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/2026/",
+   "fetched_url": null,
+   "title": "Index of .../gpcp-daily/access/2026/ (NCEI HTTPS)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-ncei-dir-2026",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/789755bdf25881d3.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Last day in the 2026 folder not checked.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf",
+   "title": "README Document for GPCP V3.3 Daily (coordinator's copy)",
+   "author_org": "NASA GSFC / GES DISC",
+   "published": "2025",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/readme_gpcpv33_daily.txt",
+   "retrieved": "2026-11-20",
+   "evidence_id": "10.5067/MEASURES/GPCP/DATA307",
+   "data_period": null,
+   "limitations": null
+  },
+  {
+   "id": "s34",
+   "url": "https://disc.gsfc.nasa.gov/datasets/GPCPDAY_3.3/summary",
+   "title": "GES DISC dataset page: GPCP Version 3.3 Daily Precipitation Data Set (GPCPDAY 3.3)",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-datasets-GPCPDAY-3-3-summary_102806.txt",
+   "retrieved": "2026-11-20",
+   "evidence_id": "10.5067/MEASURES/GPCP/DATA307",
+   "data_period": null,
+   "limitations": "JavaScript page read with the built-in browser (Variables tab)."
+  },
+  {
+   "id": "s35",
+   "url": "https://disc.gsfc.nasa.gov/data-access",
+   "title": "GES DISC How-To's: Data Access",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-information-howto-keywords-data-20access-_103637.txt",
+   "retrieved": "2026-11-20",
+   "evidence_id": null,
+   "data_period": null,
+   "limitations": "General GES DISC rule, not a GPCPDAY-specific statement."
+  },
+  {
+   "id": "s36",
+   "url": "https://cds.climate.copernicus.eu/datasets/satellite-precipitation?tab=download",
+   "title": "Copernicus CDS: satellite-precipitation, Download tab",
+   "author_org": "Copernicus Climate Change Service (ECMWF)",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/cds-climate-copernicus-eu-datasets-satellite-precipitation-t_104207.txt",
+   "retrieved": "2026-11-20",
+   "evidence_id": null,
+   "data_period": null,
+   "limitations": "Read with the built-in browser while not signed in."
+  },
+  {
+   "id": "s38",
+   "url": "https://disc.gsfc.nasa.gov/datasets/GPCPDAY_3.3/summary#variables",
+   "title": "GES DISC dataset page GPCPDAY 3.3: Variables tab",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-datasets-GPCPDAY-3-3-summary_102817.txt",
+   "retrieved": "2026-11-20",
+   "evidence_id": "10.5067/MEASURES/GPCP/DATA307",
+   "data_period": null,
+   "limitations": "Variables tab of the same JavaScript page as s34."
+  },
+  {
+   "id": "s37",
+   "url": "https://gdex.ucar.edu/datasets/d728007/dataaccess/",
+   "title": "NSF NCAR GDEX d728007 Data Access",
+   "author_org": "NSF NCAR GDEX",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/gdex-ucar-edu-datasets-d728007-dataaccess_104250.txt",
+   "retrieved": "2026-11-20",
+   "evidence_id": "10.5065/ZGJD-9B02",
+   "data_period": null,
+   "limitations": "The page lists access methods but says nothing about a login; no file was downloaded to test it."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "subquestion": "q1",
+   "text": "1DD V1.3 QC is mostly automated input screening in the producers' (UMD/ESSIC) code plus a monthly diagnostic review of outputs against climatologies; the C-ATBD lists no exception handling or algorithm validation, and a month's run is postponed when inputs fail QC.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "5.3       Quality Assessment and Diagnostics | The diagnostic analyses and plots of the output products are performed every month, with | comparison to climatologies. Attention will be paid to any anomalies for further | examinations. | 5.4       Exception Handling | Not applicable | 5.5       Algorithm Validation | Not applicable.",
+     "location": "Sections 5.3-5.5, p. 17"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "or do not pass quality control tests, the calculation and submission are postponed.",
+     "location": "line 128 (overview section); RSS QC statement at line 394"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The daily GPCP code is made up of around 150 individual code files which are distributed among 6 modules of code plus another 4 codes to create file listings and perform pre- and post processing diagnostics. … GPCPcdr_d2_GPROFv2004_SSMI - run algorithm GPROF V2004 algorithm for SSMI | GPCPcdr_d2_GPROFv2004_SSMIS - run algorithm GPROF V2004 algorithm for SSMIS … GPCPcdr_d4_CORR_G - compute threshold for calculation of IR precip | GPCPcdr_d4_ADJIR - match IR to GPROF and scale to monthly SG | GPCPcdr_d4_CORR_T - compute correction coefficients for merger | GPCPcdr_d4_FUSE2 - combines SSMI/SSMIS, TOVS/AIRS and IR to produce the final satellite/gauge data (already adjusted to the monthly CDR)",
+     "location": "README_GPCP_Daily_V1.3.txt inside the tarball (root)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "The producers' C-ATBD and the code package README agree.",
+   "applicability": "1DD V1.3 only"
+  },
+  {
+   "id": "c2",
+   "importance": "supporting",
+   "subquestion": "q1",
+   "text": "The V1.3 code's GPROF SSMIS step rejects pixels with brightness temperatures outside 50-325 K, bad navigation or an invalid surface type; Huffman et al. 2001 describe a subjective cutoff that deletes TMPI outliers and smooth-fills the gaps.",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "! Generic quality control.  This will exclude pixels having | ! bad brightness temperatures, bad navigation, etc. … data Tbmin, Tbmax / 50.0, 325.0 / … ! Check that latitude bounds are within 70N and 70S … ! Check for valid surface types … ! Verify that channel Tb are within valid range.",
+     "location": "qualctrl.F comments and data statement"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "linear behavior   for low Tb(rain). The outlier 1% values are deleted and the pockets of missing are",
+     "location": "lines 180-186 (Section on TMPI threshold audit)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Read in the code and the 2001 paper; whether the 2001 audit is still applied in V1.3 is not stated.",
+   "applicability": "1DD"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "subquestion": "q1",
+   "text": "V3.3 Daily QA is diagnostic review against climatologies and V3.2 with errors corrected or documented; suspect or absent input is handled by setting areas to missing (no per-pixel QC flag or error field: files carry only precip and probability of liquid phase).",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "5.1 Quality Assessment and Diagnostics | Diagnostic analyses and plots of the output products are computed for selected months of days, | with comparison to climatologies and the prior GPCP V3.2 Daily datasets. Particular attention is | paid to the time series of various large-area averages for possible deviations as data boundaries | are encountered. Anomalies are identified and analyzed to determine their origins. | 5.2 Exception Handling | Errors in input data or processing are corrected when possible, or documented if they are not | fixable.",
+     "location": "Sections 5.1-5.2, p. 16"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "j. There are days when the TOVS or AIRS data are unavailable, and in such cases the areas | outside the IR-based domain (55°N-S) are set to missing. One example is the span 1-18 | November 2003.",
+     "location": "Section 6.0 Assumptions and Limitations, items d, j, k, pp. 16-17"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "(1) merged satellite-gauge precipitation estimate (mm/d), and",
+     "location": "README section 1.1, p. 5"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "There are days when the TOVS or AIRS data are unavailable, and in such cases the areas outside | the IR-based domain (55°N-S) is set to missing.",
+     "location": "README section 1.3, p. 8"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "ATBD, release notes and README from the producers agree.",
+   "applicability": "V3.3 Daily (GES DISC and NCEI copies)"
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "subquestion": "q1",
+   "text": "Input QC is done by the input producers: GPCC/DWD runs automatic plus intensive manual QC with internal quality flags on the gauge data that enter through the monthly product; RSS quality-controls and intercalibrates the SSM/I input to V1.3.",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "–8,000 stations (after high level QC) and is available within 2 months after observation | month. This is the GPCC product with the longest history: Operational monthly analysis | started with year 1986 and has continuously been updated every month since then. The | analyses are based on automatic and intensive manual quality-control of the input data. | The GPCC Monitoring Product is the in situ component to the satellite-gauge combined | precipitation analyses of GPCP (Huffman et al. 1995, Adler et al. 2003) and of CMAP",
+     "location": "Products list, p. 3-4 (lines 132-139)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "All data reaching the GPCC are checked, processed, reformatted and integrated in a | Relational Data Base Management System (RDBMS). Since 2009 all data being imported | into the RDBMS are checked against background statistics enabling the GPCC to detect and | correct data errors in this early stage. Within the data bank, the records from the different | sources (SYNOP, CLIMAT, national data etc.) are stored in parallel (source specific slots) | under addition of quality flags indicating the results of data processing.",
+     "location": "p. 9-10, lines 300-326"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Sensing Systems (RSS; Santa Clara, CA). These data have been extensively quality controlled | by RSS and have been inter-calibrated using the methods described by Wentz (1997).",
+     "location": "lines 394-395"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "GPCC source is its 2011 product introduction; IMERG and CPC IR QC not researched.",
+   "applicability": null
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "subquestion": "q2",
+   "text": "Independent validation is limited: 1DD was checked against Oklahoma Mesonet gauges (correlation 0.73) and later high-latitude gauges, and an independent study with 58 ocean acoustic gauges found V3.2 better than V1.3 for daily rain occurrence and intensity; the V3.3 ATBD lists validation against MRMS and Pacific atoll gauges as planned, and the release notes compare only with V3.2 and IMERG.",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Overtheentire 1997-1998recordthe correlationcoefficientfor | Box 20 is 0.73.",
+     "location": "Section 5 Validation, pp. 6-7"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "No uncertainty estimate is provided with GPCP 1dd data. However, the errors in monthly mean values from the GPCP monthly product are also relevant for this dataset. Huffman et al (2001) contains some early validation of the data from the Oklahoma mesonet, and states that random errors could be calculated for this product as they are for GPCP monthly data. Bolvin et al (2009) contains further validation with high-latitude gauges.",
+     "location": "Strengths/limitations / uncertainty paragraph (text line 69)"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "GPCP v3.2 shows substantial improvements in representing rain occurrence and rain intensity at daily scale.",
+     "location": "Abstract (university research portal), DOI 10.1029/2023GL104310"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "5.3 Algorithm Validation | The diagnostics and exception handling described above form the first line of validation. Further | evaluation will include validation against independent satellite-based precipitation data sets as | well as in situ observations such as those from the Multi-Radar/Multi-Sensor System and Pacific | atoll rain gauges.",
+     "location": "Section 5.3, p. 16"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "V3.3 has higher average values over most of the oceans compared to both V3.2 and IMERG, while | being fairly close over land, since gauges tend to dominate and very similar GPCC gauge analyses | are used in all three products. The largest proportionate differences are with IMERG in high | latitudes, where the input data are less certain.",
+     "location": "First Validation Results, Fig. 1, p. 3"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Li et al. 2023 read as abstract only; Bolvin 2009 not read.",
+   "applicability": null
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "subquestion": "q2",
+   "text": "NOAA's CDR program required a C-ATBD (CDRP-ATBD-0913, Rev. 0) and a maturity matrix for the daily CDR (01B-35, dated 2017-08-14). Read from the PDF's cell shading (coordinator's reading, not text): Software Readiness 5, Metadata 5, Documentation 4, Product Validation 3, Public Access 6, Utility 6. No maturity matrix or ATBD review for V3.3 at NCEI was found.",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "contextualizes",
+     "passage": "Precipitation - GPCP Daily                                                                                           maturity level as of | 08/14/2017 | Climate Data Record (CDR) Maturity Matrix",
+     "location": "p. 1 header and footer (CDRP-MM-0915 Rev 0 (08/14/2017), (01B-35))"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "5.3       Quality Assessment and Diagnostics | The diagnostic analyses and plots of the output products are performed every month, with | comparison to climatologies. Attention will be paid to any anomalies for further | examinations. | 5.4       Exception Handling | Not applicable | 5.5       Algorithm Validation | Not applicable.",
+     "location": "Sections 5.3-5.5, p. 17"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "Scores read from colour shading in one PDF image; no text confirms them.",
+   "applicability": "1DD V1.3 (01B-35)"
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "subquestion": "q3",
+   "text": "V1.3 algorithm: TMPI in 40N-S (geo-IR threshold matched to SSM/I-SSMIS GPROF rain frequency, rain rate set so each month sums to the GPCP Monthly), leo-IR fill-in, and TOVS/AIRS at high latitudes rescaled to the monthly. V3.3 algorithm: IMERG Final averaged to 0.5° daily, thresholded at 0.24 mm/d in 55N-S; TOVS/AIRS histogram-matched to IMERG at higher latitudes; boundary feathering; days ratio-scaled to the V3.3 Monthly with ratios capped at 0.2-4.0.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "In the latitude band 40°N-S the Threshold-Matched Precipitation Index (TMPI) produces | approximate instantaneous precipitation from the geo-IR Tb with fill-in by rescaled leo-IR | GPI. It is a GPI-type algorithm with locally calibrated Tb threshold and rainrate. … Then a single rainrate for | \"raining\" geo-IR pixels is computed for each grid box that makes the full month of TMPI sum | to the local GPCP Monthly value. … The computer used to process the GPCP Daily product is Red Hat Enterprise Linux Server | release 6.7 (version 2.6.32-573.7.1.el6.x86_64). The programming languages and software | include: shell scripts to run the processing code; FORTRAN programs to perform most of the | calculations; C programs to generate the outputs; MATLAB to make the diagnostic plots.",
+     "location": "lines 303-309 and section 5.6 (lines 634-638, p. 17)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "No primary sensor data are used in the V3.3 Daily. The IMERG Final, TOVS, and AIRS daily | estimates and GPCP V3.3 Monthly estimates all enter the analysis as pre-computed precipitation | fields (Fig. 2). … TOVS/AIRS is adjusted to IMERG using regionally (3x3 | template of the 1°x1° gridboxes) and seasonally varying histograms of daily precipitation rates. … the daily IMERG is | thresholded at 0.24 mm/d. Then IMERG is used in the latitude band 55°N-S, and TOVS/AIRS is | used at higher latitudes. … The computer used to process the GPCP Daily product is an Oracle Linux Version 8 server. The | programming languages and software include: C shell scripts to run the processing code, | FORTRAN programs to perform the calculations, and xmgrace and Python to make the diagnostic | plots and visualizations.",
+     "location": "sections 3.3.1 (lines 217-219), 3.4 (lines 474-486), 5.4 (lines 634-637); item k line 687"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "light precipitation, resulting in a mis-match with the TOVS/AIRS data, so the daily IMERG is | thresholded at 0.24 mm/d.",
+     "location": "README section 1.2, p. 7"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "adjustment ratios for the Daily are capped in the range 0.2-4.0",
+     "location": "README section 1.2, p. 7"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "Producers' C-ATBD, ATBD and README agree.",
+   "applicability": null
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "subquestion": "q3",
+   "text": "The only published production code is NCEI's SourceCode_01B-35.tar.gz (15,408,824 bytes, 2017-09-18): the V1.3 daily code (shell, Fortran, C, MATLAB), offered 'for reference only'. NCEI's open-data terms exclude the software; re-use rights rest with the copyright owner named in each file, and there is no licence file. One C file is declared public domain; the QC Fortran file has no notice. No V3.2/V3.3 production code is published, though NCEI's V3.3 record links the same 2017 tarball.",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "AlgorithmDescription_01B-35.pdf | 2017-08-14 13:44 | 308729 | CDR_Flyer_01B-35.pdf | 2019-11-18 10:10 | 1464479 | DataFlowDiagram_01B-35.pdf | 2017-08-14 13:44 | 68368 | MaturityMatrix_01B-35.pdf | 2017-08-14 13:44 | 134161 | SourceCode_01B-35.tar.gz | 2017-09-18 08:45 | 15408824 | UseAgreement_01B-35.pdf | 2017-08-10 14:47 | 22310",
+     "location": "directory listing table"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The daily GPCP code is made up of around 150 individual code files which are distributed among 6 modules of code plus another 4 codes to create file listings and perform pre- and post processing diagnostics. … GPCPcdr_d2_GPROFv2004_SSMI - run algorithm GPROF V2004 algorithm for SSMI | GPCPcdr_d2_GPROFv2004_SSMIS - run algorithm GPROF V2004 algorithm for SSMIS … GPCPcdr_d4_CORR_G - compute threshold for calculation of IR precip | GPCPcdr_d4_ADJIR - match IR to GPROF and scale to monthly SG | GPCPcdr_d4_CORR_T - compute correction coefficients for merger | GPCPcdr_d4_FUSE2 - combines SSMI/SSMIS, TOVS/AIRS and IR to produce the final satellite/gauge data (already adjusted to the monthly CDR)",
+     "location": "README_GPCP_Daily_V1.3.txt inside the tarball (root)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "-rwxr-xr-x  0 root   root     3073 Feb 10  2017 configure_daily.sh | -rw-r--r--  0 root   root     4351 Aug 14  2017 genmiss_1dd.f … -rw-r-xr--  0 root   root     6221 Oct 28  2015 GPCPcdr_d2/GPCPcdr_d2_GPROFv2004_SSMIS/qualctrl.F … -rw-r-xr--  0 root   root    23946 Aug 14  2017 GPCPcdr_d5/GPCPcdr_d5_WriteNC/Write_CDR_nc_daily.c … -rw-r--r--  0 root   root     3524 Aug  2  2017 GPCPcdr_d5/GPCPcdr_d5_TestOutput/GPCP_d5_test_all_data.m … -rw-------  0 root   root     4752 Aug 16  2017 README_GPCP_Daily_V1.3.txt",
+     "location": "tar listing lines 1, 2, 13, 281, 287, 292"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "the CDR data sets are non-proprietary, publicly available, and no restrictions are placed upon their use. | The software used to produce the CDRs may or may not be Government owned, and is outside | of the scope of the Open Data policies, so permissions to re-use or modify the CDR production | software should be sought from the software’s copyright owner identified within its source code.",
+     "location": "page 1, CDR Program Open Data Policy"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "COPYRIGHT | THIS SOFTWARE AND ITS DOCUMENTATION ARE CONSIDERED TO BE IN THE PUBLIC | DOMAIN AND THUS ARE AVAILABLE FOR UNRESTRICTED PUBLIC USE. THEY ARE | FURNISHED \"AS IS.\" … HISTORY | 1/2017 Initial Version prepared for NCEI",
+     "location": "file header comment"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "! Generic quality control.  This will exclude pixels having | ! bad brightness temperatures, bad navigation, etc. … data Tbmin, Tbmax / 50.0, 325.0 / … ! Check that latitude bounds are within 70N and 70S … ! Check for valid surface types … ! Verify that channel Tb are within valid range.",
+     "location": "qualctrl.F comments and data statement"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Source Code Package for GPCP CDR … https://ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/SourceCode_01B-35.tar.gz … CDR Source Code (GPCP Daily v3.3) … This source code is for reference only. The source code is provided to maintain transparency of the algorithm and processes used in creating the Climate Data Record (CDR). The source code is not intended to be portable to any computer system(s) beyond that of the original CDR producer's environment.",
+     "location": "gmi:softwareReference, lines 1862-1907"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Any application package that supports the netCDF file format can be used to read these data. If | you are new to netCDF or to the GPCP V3.3 datasets, the following tool might be a useful starting | point: | • Panoply (https://www.giss.nasa.gov/tools/panoply/) | For more advanced users or programmers: | • C/C++ | • Fortran 90/95 | • GrADS (http://cola.gmu.edu/grads/) | • IDL (https://www.nv5geospatialsoftware.com/Products/IDL) | • Java | • Matlab (http://www.mathworks.com/products/matlab/) | • Python | As well, the GPCP V3.3 Daily data are accessible through the Giovanni web-based visualization | and analysis application, https://giovanni.gsfc.nasa.gov/giovanni/.",
+     "location": "Section 4.2 Tools/Programming, p. 13-14 (lines 491-509)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Package contents read directly; absence of V3 code rests on searches of NCEI, GES DISC and GitHub.",
+   "applicability": null
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "subquestion": "q4",
+   "text": "NCEI serves 1DD V1.3 as daily netCDF-4 files (CF and ACDD, version not stated) over HTTPS with no login, DOI 10.7289/V5RX998Z, files still added for 2026.",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "doi:10.7289/V5RX998Z … Distribution Formats | netCDF (Version: 4) File Specification: The NetCDF data files comply with the Climate and Forecast (CF) Metadata Conventions and the NetCDF Attribute Convention for Dataset Discovery (ACDD).",
+     "location": "lines 18, 37"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "access/ | 2026-04-21 23:01 | - | doc/ | 2017-12-07 19:32 | - | src/ | 2017-12-07 19:31 | -",
+     "location": "lines 7-9"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "gpcp_v01r03_daily_d20240101_c20240408.nc | 2024-04-08 05:55 | 289938 … gpcp_v01r03_daily_d20241231_c20250305.nc | 2025-03-06 00:30 | 289938",
+     "location": "lines 7, 372"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "gpcp_v01r03_daily_d20260101_c20261007.nc | 2026-10-08 03:32 | 289938",
+     "location": "line 7"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own record and directory listings.",
+   "applicability": null
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "subquestion": "q4",
+   "text": "NCEI's V3.3 CDR (DOI 10.25921/9b5m-ka77) is netCDF-4 (CF and ACDD) distributed through NOAA's S3 archive; data.gov states CC0 1.0. No HTTPS or THREDDS path was found.",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "doi:10.25921/9b5m-ka77 … The data set archive consists of daily netCDF4 files. The grid on which each field of values is presented is a 0.5 deg x 0.5 deg latitude-longitude (Cylindrical Equal Distance) global array of points. It is size 720x360 … netCDF … The NetCDF data files comply with the Climate and Forecast (CF) Metadata Conventions and the NetCDF Attribute Convention for Dataset Discovery (ACDD).",
+     "location": "lines 86, 1516, 1729, 1735"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "<gmd:URL>https://archive.data.noaa.gov/climatedatarecords#UMD_ESSIC/GPCP/Daily/GPCP-D-CDR_01B-35/</gmd:URL> … <gco:CharacterString>S3</gco:CharacterString> … <gco:CharacterString>Download</gco:CharacterString> … <gmd:URL>https://ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/SourceCode_01B-35.tar.gz</gmd:URL> … <gmd:URL>https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/MaturityMatrix_01B-35.pdf</gmd:URL>",
+     "location": "lines 1771-1777, 1895, 2078 (useLimitation at 1224-1226)"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "\"title\": \"NCEI Dataset Landing Page\", \"accessURL\": \"https://doi.org/10.25921/9b5m-ka77\" … \"title\": \"AWS S3 Download\", \"accessURL\": \"https://archive.data.noaa.gov/climatedatarecords#UMD_ESSIC/GPCP/Daily/GPCP-D-CDR_01B-35/\" … \"title\": \"Global Precipitation Climatology Project (GPCP) - Daily, Version 1.3 (Version Superseded) Landing Page\", \"accessURL\": \"https://doi.org/10.7289/V5RX998Z\", \"mediaType\": \"text/html\", \"description\": \"Superseded dataset landing page. This version of the data should not be used except in rare cases (e.g., when reproducing studies that used this earlier version).\" … license | https://creativecommons.org/publicdomain/zero/1.0/",
+     "location": "lines 86, 91"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "The NCEI landing page itself returned errors; the licence comes from data.gov's catalog record.",
+   "applicability": null
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "subquestion": "q4",
+   "text": "GES DISC serves V3.2 and V3.3 (DOIs 10.5067/MEASURES/GPCP/DATA305 and DATA307) as netCDF-4, CF-1.5, precip in mm/day, by HTTPS, OPeNDAP and S3, all behind a free Earthdata Login; CMR and the README name no licence.",
+   "evidence": [
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "\"hits\": 2 … \"Version\": \"3.3\" … \"DOI\": \"10.5067/MEASURES/GPCP/DATA307\" … \"ShortName\": \"GPCPDAY\" … \"S3CredentialsAPIEndpoint\": \"https://data.gesdisc.earthdata.nasa.gov/s3credentials\" … \"s3://gesdisc-cumulus-prod-protected/GPCP/GPCPDAY.3.3/\" … \"Description\": \"Access to the data via OPeNDAP protocol\" … \"Subtype\": \"OPENDAP DATA\" … \"URL\": \"https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf\" … \"Description\": \"The Earth Observing System Data and Information System (EOSDIS) data use and citation guidance for NASA data can be accessed at https://earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance. … \"Format\": \"NetCDF\" … \"Version\": \"3.2\" … \"DOI\": \"10.5067/MEASURES/GPCP/DATA305\"",
+     "location": "JSON lines 183-244 (V3.3 version, DOI), 261-266 (S3), 307-311 (OPeNDAP), 314 (README), 371-372 (UseConstraints), 605 (Format), 784-844 (V3.2)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "https://doi.org/10.5067/MEASURES/GPCP/DATA307 . … GPCPDAY_L3_yyyymmdd_V3.3.nc4 … Filename example: GPCPDAY_L3_20070201_V3.3.nc4 … Data set files are in netCDF version 4 format developed at the University Corporation for … Format                        dataset format (netCDF-4)                           string … Conventions                   file convention (CF-1.5)                            string … IdentifierProductDOI            dataset DOI                                                    string … precip                                   precipitation estimate                        mm/day",
+     "location": "lines 286, 304, 311, 314, 352, 358, 398, 455"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "10.5067/MEASURES/GPCP/DATA307",
+     "location": "Product Summary, DOI"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "Accessing and downloading data from GES DISC requires an Earthdata account",
+     "location": "Example"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "probability of liquid phase",
+     "location": "Variables tab"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "GES DISC's own pages, README and CMR record.",
+   "applicability": null
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "subquestion": "q4",
+   "text": "Copernicus CDS redistributes 1DD V1.3 and V3.2/V3.3 as netCDF-4 (CF-1.6+ACDD-1.3 and CF-1.5) under two non-Creative-Commons licences: the GPCP product licence and a NASA GES DISC data licence.",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "The datasets v1.3 and v2.3 are provided on behalf of GPCP. The datasets v3.2 and v3.3 are provided on behalf of the Goddard Earth Sciences Data and Information Services Center (GES DISC): see licence texts on the right. … v3.3 daily: January 1998 to present for daily mean values … v1.3 daily: October 1996 to March 2024 for daily mean values … NetCDF-4 … v3.2 & v3.3: CF-1.5 | v2.3 and v1.3: Climate and Forecast (CF) Metadata Convention v1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3 … Twice a year … Precipitation … mm day-1",
+     "location": "Overview tab, lines 21-109"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "\"All intellectual property rights of the GPCP products belong to the Global Precipitation Climatology Project.\" | - Use grant: \"The use of these products is granted to every interested user, free of charge.\" | - Attribution/copyright credit: \"If you wish to use these products, GPCP's copyright credit must be shown by displaying the words \"copyright (year) GPCP\".\" … Title: \"GPCP product licence - NASA GES DISC data (rev. 1)\" … - data follow NASA's \"Earth Science Data and Information Policy.\" | - \"data from the GES DISC archive are available free to the user community.\" | - \"The data set source should be properly cited when the data are used.\" … Creative Commons: NOT PRESENT",
+     "location": "two licence pages (URL 1 and URL 2 in the file)"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "GPCP product licence | You must accept the terms before submitting this request.",
+     "location": "Download tab, Terms of use"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Login/register to accept licences",
+     "location": "Download tab"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "CDS's own pages; the download tab requires a login and acceptance of both licences.",
+   "applicability": null
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "subquestion": "q4",
+   "text": "NCAR GDEX redistributes 1DD V1.3 (d728007, DOI 10.5065/ZGJD-9B02) and V3.2 daily (DOI 10.5065/X4KB-XJ98) as netCDF4 under CC BY 4.0.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "d728007 | DOI: 10.5065/ZGJD-9B02 … 1996-10-01 00:00 +0000 to 2024-11-01 00:00 +0000 … DOC/NOAA/NESDIS/NCEI  |  UMD/ESSIC … DATA FORMATS: | netCDF4 … DataCite version 4 (JSON) … DATA LICENSE: | This work is licensed under a Creative Commons Attribution 4.0 International License.",
+     "location": "lines 16-74"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "DOI: 10.5065/X4KB-XJ98 … netCDF4 … Data License: … This work is licensed under a Creative Commons Attribution 4.0 International License.",
+     "location": "lines 7, 72, 112-114"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "Web Download (HTTPS) — Supported by OSDF",
+     "location": "Data Access tab"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "GDEX's own dataset pages.",
+   "applicability": null
+  },
+  {
+   "id": "c14",
+   "importance": "supporting",
+   "subquestion": "q4",
+   "text": "The AWS NODD bucket noaa-cdr-precip-gpcp-daily-pds allows anonymous reads under NOAA's open-data terms; its contents were not listed.",
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "NOAA data disseminated through NODD are open to the public and can be used as desired. | NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. … GPCP Precip Daily … arn:aws:s3:::noaa-cdr-precip-gpcp-daily-pds … aws s3 ls --no-sign-request s3://noaa-cdr-precip-gpcp-daily-pds/",
+     "location": "lines 19-23, 311-327"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Registry page only; the sandbox refused the bucket host.",
+   "applicability": null
+  },
+  {
+   "id": "c15",
+   "importance": "supporting",
+   "subquestion": "q1",
+   "text": "Added by the reconciliation: the original 1DD TMPI audit cut off the highest 10% of boxes in the example month and deleted the outlier 1% values; the V3.3 Daily ATBD was last revised 2026-06-12 and the README 2025-05-28; data.gov's V3.3 record was last updated 2025-08-05.",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "The outlier 1% values are deleted and the pockets of missing are",
+     "location": "lines 182-186 (Section on TMPI audit, Fig. 2-3)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Last Revised June 12, 2026",
+     "location": "lines 23-35 (title page and Revision History)"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Catalog Last Checked: November 03, 2026 at 04:06 PM | Dataset Last Updated: August 05, 2025 at 12:00 AM",
+     "location": "line 5 (page header); lines 125-129 (Dataset Information)"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Last Revised May 28, 2025",
+     "location": "title page"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "Read in the saved texts.",
+   "applicability": null
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Which source code belongs to V3.3",
+   "source_ids": [
+    "s13",
+    "s11"
+   ],
+   "status": "unresolved",
+   "explanation": "NCEI's V3.3 ISO record labels SourceCode_01B-35.tar.gz 'CDR Source Code (GPCP Daily v3.3)', but the file is dated 2017-09-18 and its README is for V1.3 with GPROF/TMPI modules, not IMERG-based V3 code. Likely a metadata carry-over; NCEI has not said."
+  },
+  {
+   "claim": "Licence for the data",
+   "source_ids": [
+    "s26",
+    "s24",
+    "s31",
+    "s15"
+   ],
+   "status": "unresolved",
+   "explanation": "Difference in scope: each route states its own terms. data.gov gives CC0 for NCEI V3.3; GDEX gives CC BY 4.0; CDS uses GPCP and NASA GES DISC product licences; NCEI's use agreement says the data are open with no restrictions; GES DISC/CMR name no licence."
+  },
+  {
+   "claim": "Whether V1.3 is current",
+   "source_ids": [
+    "s26",
+    "s32"
+   ],
+   "status": "unresolved",
+   "explanation": "data.gov marks V1.3 superseded by V3.3, yet NCEI's HTTPS directory still receives V1.3 files for 2026 (created 2026-10-07)."
+  }
+ ],
+ "coverage_gaps": [
+  "Maturity Matrix 01B-35 (2017) scores are shown by cell shading and are NOT PRESENT in pdftotext output; coordinator should view gpcp_daily_maturity_matrix.pdf in sa1. No maturity matrix, OSR or ORR found for V3.3 (C01726). NOAA repository noaa/34101 (GPCP CDR V1.3 Daily; DOI 10.7289/V5RX998Z) returned an empty body; noaa/33366 (data stewardship maturity report for GPCP V2.3 monthly) not read. (from sa1)",
+  "GPCPDAY V3.2/V3.3 README not read (QC, fill values, error fields). CPC merged IR, IMERG QC (IMERG Technical Documentation, arthurhou.pps.eosdis.nasa.gov) and SSMIS/TOVS/AIRS screening not researched (time). Huffman 2001 TMPI audit/outlier deletion read; whether carried into V1.3 not confirmed. (from sa1)",
+  "Leads not read: Bolvin et al. 2009 (high-latitude gauge validation of 1DD); Nelkin AGU21 (ntrs.nasa.gov/api/citations/20220000683) listing validation against regional daily gauge networks (e.g., MRMS) as future work; DWD DAPAGLOCO validation report; Huffman et al. 2023 J. Climate V3.2 paper; NASA MEaSUREs/ATBD review records not searched. GES DISC V3.2 page reportedly says validation of the GPCPV3 data sets is in process (search summary only). (from sa1)",
+  "Copyright/license notices inside the SourceCode_01B-35 code files not read (the use agreement says the copyright owner is identified within the source code; the archive listing has no LICENSE/COPYING file). The 15.4 MB tarball is saved unextracted at srccode/SourceCode_01B-35_unused.tar.gz; reading a few file headers (e.g. GPCPcdr_d5/GPCPcdr_d5_WriteNC/Write_CDR_nc_daily.c, genmiss_1dd.f) with tar -xOzf would settle it. (from sa2)",
+  "Unresolved: NCEI's ISO record for V3.3 (C01726) labels SourceCode_01B-35.tar.gz as 'CDR Source Code (GPCP Daily v3.3)', but the file is dated 2017-09-18, its README is titled README_GPCP_Daily_V1.3, and it contains GPROF V2004 SSMI/SSMIS and IR-threshold (CORR_G, ADJIR) modules, not IMERG-based V3 code. No V3.2/V3.3 production code package found at NCEI, GES DISC or GitHub. (from sa2)",
+  "Not checked (time): NCEI data directory https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/ doc folder for a V3.3 package; NCEI Precipitation_GPCP-Monthly SourceCode package (README says daily code depends on the monthly code); V3.3 Daily ATBD flowchart step names (COMPHIST, AIRS2IMERG, FUSE, SCALEME, lines 225-269) not quoted in full; community GitHub repos not read for licenses. (from sa2)",
+  "DataCite verification of 10.7289/V5RX998Z and search 'GPCP daily' failed (IncompleteRead twice); DOIs known only from NCEI/data.gov/GDEX pages. (from sa3)",
+  "NCEI V3.3 (C01726) HTTPS/THREDDS path not found; the gpcp-daily HTTPS directory holds only v01r03 files (checked 2024 and 2026). AWS bucket contents not listed (sandbox refused s3.amazonaws.com). (from sa3)",
+  "GES DISC Earthdata Login requirement for HTTPS/OPeNDAP not stated in CMR or README; CMR S3 bucket is 'gesdisc-cumulus-prod-protected' with an S3 credentials API. (from sa3)",
+  "CDS account/licence-acceptance requirement before download not read; GDEX download login requirement not read. (from sa3)",
+  "obs4MIPs/ESGF: Climate Data Guide snippet lists 'GPCP Daily' under obs4MIPs, but no ESGF record read; Google Earth Engine: no GPCP daily catalog page found (one query). (from sa3)",
+  "OPeNDAP DMR form for GPCPDAY V3.3 (HTTP 410; no Wayback snapshot): no route left.",
+  "IMERG and CPC merged-IR QC not researched (time).",
+  "Research stopped by the time budget; DuckDuckGo pass not run (the follow-up queue gate came first)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP daily CDR maturity matrix",
+   "tool": "WebSearch",
+   "notes": "no domain filter; results all finance, none relevant",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP daily climate data record maturity matrix",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; found MaturityMatrix_01B-35.pdf",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCC quality control precipitation gauges",
+   "tool": "WebSearch",
+   "notes": "no filter; found GPCC_intro_products_v2011.pdf (direct curl CONNECT 403 on opendata.dwd.de; read via WebFetch binary save)",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP daily validation gauges",
+   "tool": "WebSearch",
+   "notes": "no filter; found Climate Data Guide, Li et al. 2023 PALs, Nelkin AGU21, DWD DAPAGLOCO report",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP daily C-ATBD quality",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; C-ATBD already read from earlier run (Section 5.3)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCPDAY V3.3 README quality missing values",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; README not returned; DMR page HTTP 410",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP daily CDR source code",
+   "tool": "WebSearch",
+   "notes": "Hit NCEI AlgorithmDescription and UseAgreement 01B-35; led to NCEI directory listing and SourceCode_01B-35.tar.gz (sa2-e1..e3, e6).",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP precipitation github code",
+   "tool": "WebSearch",
+   "notes": "Only community downloader/analysis repos (aus-ref-clim-data-nci GPCP downloader, udaylab globalprecipitationanalytics, R scripts on rdrr.io); no producer production-code repository found. Not read.",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP Version 3 daily algorithm software",
+   "tool": "WebSearch",
+   "notes": "Earthdata MEaSUREs page, GDEX d728009, NTRS posters; no NASA production-software release found in results.",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP V3.3 daily code GES DISC README software",
+   "tool": "WebSearch",
+   "notes": "allowed_domains disc.gsfc.nasa.gov, github.com; no producer code repo.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP V3.3 Daily README docserver gesdisc",
+   "tool": "WebSearch",
+   "notes": "Found README.GPCPV3.3_Daily.pdf URL (sa2-e10).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI GPCP Daily CDR document folder listing",
+   "tool": "lookup (NCEI pub/data/sds/cdr directory listing)",
+   "notes": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/ fetched directly (sa2-e1).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP daily Copernicus licence",
+   "tool": "WebSearch",
+   "notes": "Found GPCP product licence and NASA GES DISC data licence pages; GDEX licence (CC BY 4.0) taken from earlier-run GDEX pages",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCPDAY 3.3 GES DISC",
+   "tool": "WebSearch",
+   "notes": "Results: data.gov GES DISC records, ECMWF forum; README PDF fetch failed (SSL EOF); CMR record used instead",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP daily NCEI netCDF access",
+   "tool": "WebSearch",
+   "notes": "Results: NCEI C00931, data.gov V1.3 and V3.3; NCEI HTTPS directory read directly",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP daily AWS open data",
+   "tool": "WebSearch",
+   "notes": "allowed_domains registry.opendata.aws, aws.amazon.com",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP daily Earth Engine",
+   "tool": "WebSearch",
+   "notes": "allowed_domains developers.google.com; no GPCP daily catalog page returned",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP daily obs4MIPs",
+   "tool": "WebSearch",
+   "notes": "Climate Data Guide obs4MIPs page lists GPCP Daily (snippet only); NCCS page; not read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPCPDAY",
+   "tool": "lookup (NASA CMR UMM-C)",
+   "notes": "2 hits: V3.3 and V3.2",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?keyword=GPCPDAY",
+   "tool": "lookup (NASA CMR keyword)",
+   "notes": "saved cmr_gpcpday_kw.json, not used beyond the short_name record",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://api.datacite.org/dois/10.7289/V5RX998Z",
+   "tool": "lookup (DataCite DOI)",
+   "notes": "failed: IncompleteRead(0 bytes read)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://api.datacite.org/dois?query=GPCP%20daily",
+   "tool": "lookup (DataCite search)",
+   "notes": "failed: IncompleteRead(78923 bytes read)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GES DISC data access Earthdata Login required download",
+   "tool": "WebSearch",
+   "notes": "domain filter disc.gsfc.nasa.gov; found the Data Access how-to (read in browser, s35)"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP daily obs4MIPs ESGF dataset",
+   "tool": "WebSearch",
+   "notes": "Climate Data Guide lists GPCP Daily under obs4MIPs; no ESGF record found"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG technical documentation quality index precipitationQualityIndex",
+   "tool": "WebSearch",
+   "notes": "domain filter nasa.gov; IMERG has its own quality index (snippets only; not read)"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=measures.gesdisc.eosdis.nasa.gov/opendap/GPCP/GPCPDAY.3.3/2016/GPCPDAY_L3_20160607_V3.3.nc4.dmr.html",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "no snapshot",
+   "copy_of": "https://measures.gesdisc.eosdis.nasa.gov/opendap/GPCP/GPCPDAY.3.3/2016/GPCPDAY_L3_20160607_V3.3.nc4.dmr.html"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GES DISC GPCPDAY 3.3 summary page",
+   "tool": "lookup (built-in browser)",
+   "notes": "rendered page read in the browser (s34)",
+   "copy_of": "https://disc.gsfc.nasa.gov/datasets/GPCPDAY_3.3/summary"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI ISO record C01726 (publisher's own copy of the data.gov entry)",
+   "tool": "lookup (NCEI ISO record)",
+   "notes": "primary record read by sa2/sa3 (s13); licence not stated there",
+   "copy_of": "https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-the-global-precipitation-climatology-project-gpcp-daily-version-3-3"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NCEI CDR program",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "C-ATBD sections on QC",
+   "query": "GPCP daily C-ATBD quality",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "CDR source code package",
+   "query": "GPCP daily CDR source code",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA CDR program",
+   "publisher": "regulators, standards bodies, certifiers",
+   "subquestion_id": "q2",
+   "aim": "maturity matrix scores",
+   "query": "GPCP daily CDR maturity matrix",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "independent validation papers",
+   "query": "GPCP daily validation gauges",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": null,
+   "publisher": "code repositories",
+   "subquestion_id": "q3",
+   "aim": "public repositories of GPCP code",
+   "query": "GPCP precipitation github code",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "GPCC/DWD",
+   "publisher": "input producer documentation",
+   "subquestion_id": "q1",
+   "aim": "GPCC gauge QC",
+   "query": "GPCC quality control precipitation gauges",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "Copernicus CDS, NCAR GDEX",
+   "publisher": "redistributors",
+   "subquestion_id": "q4",
+   "aim": "licence and format terms",
+   "query": "GPCP daily Copernicus licence",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NASA GES DISC / MEaSUREs",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "production software description",
+   "query": "GPCP Version 3 daily algorithm software",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NASA GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "dataset landing page and README",
+   "query": "GPCPDAY 3.3 GES DISC",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "access routes and DOI",
+   "query": "GPCP daily NCEI netCDF access",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 18.2,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 174087,
+  "subagent_minutes_planned": 30,
+  "subagent_minutes": 25.3,
+  "follow_ups": 0,
+  "continuations": 2,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

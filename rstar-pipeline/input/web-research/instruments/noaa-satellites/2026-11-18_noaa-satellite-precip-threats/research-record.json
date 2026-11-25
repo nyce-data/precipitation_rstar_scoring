@@ -1,0 +1,3529 @@
+{
+ "question": "Is NOAA's satellite-based precipitation observing capability at risk of interruption, degradation, reduction or discontinuation (January 2025 to November 2026)?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed budget cuts and GeoXO restructuring, DMSP data cutoff); set of about 20 satellites with dates for each",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "GOES-R series and GeoXO: status, design life, failures, successor funding and schedule, projected gap, and precipitation products",
+   "status": "answered",
+   "source_ids": [
+    "s15",
+    "s31",
+    "s35",
+    "s4",
+    "s38",
+    "s29",
+    "s34"
+   ],
+   "remaining_gap": "Confirmation that the legacy RRQPE retirement took effect on Nov 2, 2026; cause of GOES-17 ABI yellow status."
+  },
+  {
+   "id": "q2",
+   "question": "JPSS, Suomi NPP, legacy POES, QuickSounder and NEON: status, design life, successors, projected gap",
+   "status": "answered",
+   "source_ids": [
+    "s19",
+    "s12",
+    "s84",
+    "s10",
+    "s11",
+    "s15",
+    "s20",
+    "s17"
+   ],
+   "remaining_gap": "Numeric design life for NOAA-20/21 not read from an official page (7 years in search summaries only); no current NOAA/GAO/OIG polar gap projection found."
+  },
+  {
+   "id": "q3",
+   "question": "Partner data NOAA depends on: DMSP SSMIS, GPM, Metop, GCOM-W/AMSR",
+   "status": "uncertain",
+   "source_ids": [
+    "s49",
+    "s46",
+    "s64",
+    "s60",
+    "s58",
+    "s50",
+    "s51",
+    "s57",
+    "s5"
+   ],
+   "remaining_gap": "Whether DMSP data still reached NOAA after Sept 30, 2026 (CLASS notice of Oct 23, 2026 unread); GPM 2026 Senior Review outcome and NASA FY2026/27 budget treatment of GPM not found; EUMETSAT pages blocked."
+  },
+  {
+   "id": "q4",
+   "question": "Budgetary and political/administrative actions on NESDIS satellite programs, 2025-2026",
+   "status": "answered",
+   "source_ids": [
+    "s65",
+    "s66",
+    "s10",
+    "s75",
+    "s45",
+    "s73",
+    "s15",
+    "s34"
+   ],
+   "remaining_gap": "FY2025 line figures not public (full-year CR); EO 14369 text not read; 2026 NOAA reorganization contents not verified."
+  },
+  {
+   "id": "q5",
+   "question": "Operational threats: staffing, contracts, product and data reductions",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s10",
+    "s70",
+    "s71",
+    "s84",
+    "s40"
+   ],
+   "remaining_gap": "No NESDIS/STAR/OSPO-specific staffing cut figures found."
+  }
+ ],
+ "entities": [
+  {
+   "name": "GOES-16",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s31",
+    "s15"
+   ]
+  },
+  {
+   "name": "GOES-17",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s31",
+    "s35"
+   ]
+  },
+  {
+   "name": "GOES-18",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s31"
+   ]
+  },
+  {
+   "name": "GOES-19",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s29",
+    "s31"
+   ]
+  },
+  {
+   "name": "GeoXO",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s15",
+    "s35",
+    "s10"
+   ]
+  },
+  {
+   "name": "Suomi NPP",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s84",
+    "s12",
+    "s20"
+   ]
+  },
+  {
+   "name": "NOAA-20",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s17",
+    "s15"
+   ]
+  },
+  {
+   "name": "NOAA-21",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s17",
+    "s15"
+   ]
+  },
+  {
+   "name": "JPSS-3",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s10",
+    "s15"
+   ]
+  },
+  {
+   "name": "JPSS-4",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s10",
+    "s15"
+   ]
+  },
+  {
+   "name": "NOAA-15",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s19",
+    "s8"
+   ]
+  },
+  {
+   "name": "NOAA-18",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s19",
+    "s8"
+   ]
+  },
+  {
+   "name": "NOAA-19",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s19",
+    "s8"
+   ]
+  },
+  {
+   "name": "QuickSounder",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s11",
+    "s18"
+   ]
+  },
+  {
+   "name": "NEON Series 1",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s10",
+    "s11"
+   ],
+   "shown_as": "NEON"
+  },
+  {
+   "name": "DMSP F16/F17/F18 (SSMIS)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s49",
+    "s60",
+    "s86"
+   ],
+   "shown_as": "DMSP"
+  },
+  {
+   "name": "GPM Core Observatory",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s50",
+    "s51",
+    "s52"
+   ],
+   "shown_as": "GPM"
+  },
+  {
+   "name": "Metop-B",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s63",
+    "s53",
+    "s85",
+    "s85",
+    "s85"
+   ]
+  },
+  {
+   "name": "Metop-C",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s53"
+   ]
+  },
+  {
+   "name": "Metop-SG A1",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s7"
+   ],
+   "shown_as": "Metop-SGA1"
+  },
+  {
+   "name": "GCOM-W (AMSR2)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s58",
+    "s54"
+   ],
+   "shown_as": "GCOM-W"
+  },
+  {
+   "name": "GOSAT-GW (AMSR3)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s58",
+    "s62"
+   ],
+   "shown_as": "AMSR3"
+  },
+  {
+   "name": "WSF-M",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s49"
+   ]
+  },
+  {
+   "name": "Himawari-8/9 and Meteosat",
+   "included": false,
+   "reason": "Partner geostationary imagers used in eTRaP and Enterprise Rain Rate full-disk coverage outside the Americas; not named in the question and no threat looked for.",
+   "source_ids": [
+    "s3",
+    "s1"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ospo.noaa.gov/products/archive-retirements.html",
+   "fetched_url": null,
+   "title": "Archive Legacy Products",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations (OSPO)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ospo_retirements.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page undated; table gives dates of retirement only.",
+   "found_by": [
+    "main",
+    "sa2",
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ospo.noaa.gov/products/bRR/",
+   "fetched_url": null,
+   "title": "Operational Blended Rain Rate Product",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ospo_brr.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page undated.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.ospo.noaa.gov/products/atmosphere/precipitation.html",
+   "fetched_url": null,
+   "title": "Precipitation Products",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ospo_precip.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Overview page not kept current: its bRR entry conflicts with the bRR page and the retirement table.",
+   "found_by": [
+    "main",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/09/MSG_20260901_1400.html",
+   "fetched_url": null,
+   "title": "Retirement of GOES R Rainfall Rate/Quantitative Precipitation Estimation (GRR/QPE)",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2026-09-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ospo_msg_20260901_rrqpe.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Saved file is the message's HTML source.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/06/MSG_20260613_1750.html",
+   "fetched_url": null,
+   "title": "SSMI/S data (outage notice, update #3)",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2026-06-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ospo_msg_20260613_dmsp.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Outage notice, not a statement of the data agreement's end date.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://beta.cpc.noaa.gov/observations/global-precipitation/real-time-monitoring/cmorph2-global-precipitation",
+   "fetched_url": null,
+   "title": "CMORPH2 Global Precipitation",
+   "author_org": "NOAA NWS Climate Prediction Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/cpc_cmorph2.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not list the individual satellites.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.eumetsat.int/our-satellites/metop-series",
+   "fetched_url": null,
+   "title": "Metop series",
+   "author_org": "EUMETSAT",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/eumetsat-int-our-satellites-metop-series_121105.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read in the built-in browser; sandbox refused the host for scripts.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://www.ospo.noaa.gov/operations/poes/status.html",
+   "fetched_url": null,
+   "title": "POES Instrument & Subsystem Performance Status | OSPO",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations",
+   "published": "Last Updated: August 19, 2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_poes_status.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Design life NOT PRESENT on page.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY 2026 Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-18 (copied from 2026-11-17 run sa1)",
+   "limitations": "Printed page number not captured in excerpt.",
+   "found_by": [
+    "sa2",
+    "sa1",
+    "sa4"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY 2027 Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "NOT PRESENT (FY 2027 budget, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-18 (copied from 2026-11-17 run sa1)",
+   "limitations": "URL of FY27 CJ not in my notes; coordinator may have it from 2026-11-17 run.",
+   "found_by": [
+    "sa2",
+    "sa1",
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.nesdis.noaa.gov/our-satellites/future-programs/near-earth-orbit-network-neon",
+   "fetched_url": null,
+   "title": "Near Earth Orbit Network (NEON)",
+   "author_org": "NOAA NESDIS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_neon.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page undated.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.nesdis.noaa.gov/news/update-4-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-november-2-2026-1800-utc",
+   "fetched_url": null,
+   "title": "Update #4 - Cessation of Suomi National Polar-orbiting Partnership (S-NPP) data to users on November 02, 2026 1540 UTC and Decommissioning",
+   "author_org": "NOAA NESDIS (Notice of Changes)",
+   "published": "2026-11-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/snpp_update4.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not name downstream precipitation products (MiRS etc.).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.nesdis.noaa.gov/news/noaa-deorbit-the-suomi-npp-satellite-after-more-15-years-service",
+   "fetched_url": null,
+   "title": "NOAA to Deorbit the Suomi NPP Satellite after More than 15 Years in Service",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations",
+   "published": "2026-10-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/snpp_deorbit_news.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "NOAA-20/21 design life NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://www.oig.doc.gov/audits-initiated/?frm-page-1991=2",
+   "fetched_url": null,
+   "title": "Audits Initiated - Office of Inspector General, U.S. Department of Commerce",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "listing entry dated 02.11.2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_audits_initiated_p2.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Announcement only; findings NOT PRESENT. No QuickSounder or NEON OIG item on this page.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://files.gao.gov/reports/GAO-26-107739/index.html",
+   "fetched_url": null,
+   "title": "GAO-26-107739, GEOSTATIONARY WEATHER SATELLITES: Next Generation Program Challenges Put Vital Observations at Risk",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026 (as of June 2026 data)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gao_26_107739.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "GeoXO-focused report; no polar gap assessment in this report. No 2025-2026 GAO polar-specific report found.",
+   "found_by": [
+    "sa2",
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/07/MSG_20260710_2105.html",
+   "fetched_url": null,
+   "title": "NOAA-20 Data Delayed (OSPO satellite alert, July 10, 2026 2105Z, with updates)",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "2026-07-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_n20_atms_20260710.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Raw HTML fragment; return to operational use not on this page (later update NOT PRESENT here). OSPO JPSS status page of Nov 5, 2026 lists NOAA-20 ATMS GREEN.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ospo.noaa.gov/operations/jpss/status.html",
+   "fetched_url": null,
+   "title": "JPSS Instrument & Subsystem Performance Status | OSPO",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "Last Updated: November 5, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_jpss_status.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page appears partly stale (Suomi NPP still listed after Nov 2, 2026 data cessation; role labels inconsistent). Design life NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://spacelaunchnow.app/launch/firefly-alpha-block-2-quicksounder",
+   "fetched_url": null,
+   "title": "Firefly Alpha Block 2 | QuickSounder (Space Launch Now)",
+   "author_org": "Space Launch Now (launch tracker)",
+   "published": "updated 2026-09-11",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/sln_quicksounder_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Non-official tracker; read via WebFetch extract (host refused by sandbox). Reason for delay NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.nesdis.noaa.gov/news/suspension-of-poes-data-users-after-june-16-2025-and-decommissioning",
+   "fetched_url": null,
+   "title": "Suspension of POES data to Users after June 16, 2025 and Decommissioning",
+   "author_org": "NOAA NESDIS (Notice of Changes)",
+   "published": "2025-05-12 (issued April 25, 2025; updates 8/1/2025 and 8/20/2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_poes_suspension.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Conflict: NOAA-19 decommission time 16:55 UTC here vs 18:55 UTC on OSPO POES status page (sa2-e2). Numeric design life NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.nesdis.noaa.gov/s3/2024-09/24-PL-861-NOAA-NESDIS-FY25_Major_Annual_Satellite_Report.pdf",
+   "fetched_url": null,
+   "title": "Report to Congress: Major Program Annual Report (FY 2025) on NOAA satellites",
+   "author_org": "NOAA NESDIS",
+   "published": "2024-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_fy25_major_annual_report.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Published Sept 2024, before the Jan 2025 window; numeric design life for NOAA-20/21 NOT PRESENT in matched lines.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.star.nesdis.noaa.gov/jpss/documents/Monthly/2025/JPSS_Monthly_AMP_STAR_202512.pdf",
+   "fetched_url": null,
+   "title": "NOAA JPSS Program Office Monthly AMP/STAR FY26 (December 2025 report, November 2025 status)",
+   "author_org": "NOAA JPSS Program Office / NESDIS STAR",
+   "published": "2025-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/jpss_monthly_202512.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Document marked OFFICIAL USE ONLY but publicly posted; column headers: Milestones/ | Original Date | Forecast Date | Completion Date | Variance Explanation | FY26 Tracking Status/Details.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.nesdis.noaa.gov/our-satellites/currently-flying/joint-polar-satellite-system",
+   "fetched_url": null,
+   "title": "Joint Polar Satellite System | NESDIS",
+   "author_org": "NOAA NESDIS",
+   "published": "NOT PRESENT (news sidebar to October 28, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_jpss_program.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Design life NOT PRESENT; 2027 launch readiness vs FY27 CJ launch commitment Q1 FY 2028 (Oct-Dec 2027).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-003_TMC_FY_2026_SECURED-1.pdf",
+   "fetched_url": null,
+   "title": "Top Management and Performance Challenges Facing the Department of Commerce (FY 2026), OIG-26-003",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "NOT PRESENT in matched lines (OIG semiannual report lists 12/01/2025 per search summary)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_tmc_fy2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "This rests on a keyword search for missing statements. The TMC's geostationary gap discussion belongs to q1 and was not read here.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/11/MSG_20261111_1759.html",
+   "fetched_url": null,
+   "title": "NOAA-21 SMD Data Failure (OSPO alert, November 11, 2026 1759Z)",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "2026-11-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_n21_smd_failure_20261111.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Single-orbit data processing event; raw HTML fragment; instrument not named.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ospo.noaa.gov/operations/messages.html",
+   "fetched_url": null,
+   "title": "Satellite Messages | OSPO",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "NOT PRESENT (listing through about November 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_messages.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "These are listing titles only. Individual delay notices were not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/07/MSG_20260714_2116.html",
+   "fetched_url": null,
+   "title": "NOAA-20 ATMS notice, Update#3 (OSPO alert, July 14, 2026)",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "2026-07-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_n20_atms_20260714.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Raw HTML fragment read by text search only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://ospo.noaa.gov/data/messages/2026/07/MSG_20260720_1934.html",
+   "fetched_url": null,
+   "title": "S-NPP spacecraft recovery notice (OSPO alert, July 20, 2026)",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "2026-07-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ospo_snpp_20260720.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Cause and start date were NOT PRESENT in the matched text. The span tags around S-NPP were removed in the passage. Read by text search only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.star.nesdis.noaa.gov/jpss/documents/Monthly/2026/JPSS_Monthly_AMP_STAR_202601.pdf",
+   "fetched_url": null,
+   "title": "NOAA JPSS Program Office Monthly AMP/STAR FY26 (January 2026)",
+   "author_org": "NOAA JPSS Program Office / NESDIS STAR",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e30",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/jpss_monthly_202601.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "This is a working planning assumption, not an official launch date. The QuickSounder slip timeline shown in sources is: Q4 FY 2026 (FY26 CJ), then Aug 2026 (this report), then 2027.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.nesdis.noaa.gov/news/noaas-goes-19-now-operational-goes-east-providing-critical-new-data-forecasters",
+   "fetched_url": null,
+   "title": "NOAA's GOES-19 Now Operational as GOES East, Providing Critical New Data to Forecasters",
+   "author_org": "NOAA NESDIS, Office of Geostationary Earth Orbit Observations",
+   "published": "2025-04-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nesdis_goes19_operational.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Short notice; design life NOT PRESENT. The page sidebar also lists S-NPP data cessation and decommissioning notices dated Oct 30 and Nov 2, 2026 (relevant to q2).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.oig.doc.gov/evaluation-of-noaas-progress-implementing-the-geoxo-satellite-program/",
+   "fetched_url": null,
+   "title": "Evaluation of NOAA's Progress Implementing the GeoXO Satellite Program (OIG-26-009-I)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2026-03-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_geoxo_eval_page.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Landing page summary only; full report PDF (OIG-26-009-I_FinalReport) not read; gap length/dates NOT PRESENT on this page.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://www.ospo.noaa.gov/operations/goes/status.html",
+   "fetched_url": null,
+   "title": "GOES Instrument & Subsystem Performance Status",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations (OSPO)",
+   "published": "2026-11-05 (Last Updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_goes_status.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Colour code legend: Yellow = Operational with Limitation; Blue = Functional (Off). GOES-17 location note looks stale (refers to July 2025 future move). Design life NOT PRESENT. Note the GOES-18 ABI Channel 16 degradation notice (Oct 28, 2026) - details NOT PRESENT here.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/05/MSG_20260508_1915.html",
+   "fetched_url": null,
+   "title": "GOES-16 Annual Storage Activation and Checkout at 104.7 W",
+   "author_org": "NOAA NESDIS OSPO / ESPC notification",
+   "published": "2026-05-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_msg_20260508.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Routine annual checkout; not a failure notice.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.nesdis.noaa.gov/news/retirement-of-goes-r-rainfall-ratequantitative-precipitation-estimation-grrqpe",
+   "fetched_url": null,
+   "title": "Retirement of GOES-R Rainfall Rate/Quantitative Precipitation Estimation (GRR/QPE)",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations",
+   "published": "2026-09-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nesdis_grrqpe_retirement.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "A product-version replacement, not a loss of ABI precipitation estimation per the notice; whether retirement occurred on Nov 2, 2026 NOT PRESENT (no follow-up notice read).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://www.everycrsreport.com/files/2026-07-10_R49026_6562c219cbc284424293d617f272b0abd3a13ddf.html",
+   "fetched_url": null,
+   "title": "NOAA's Geostationary Extended Observations (GeoXO) Satellite Program and Issues for Congress (R49026)",
+   "author_org": "Congressional Research Service (via EveryCRSReport)",
+   "published": "2026-07-10",
+   "data_period": null,
+   "source_type": "official (CRS)",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/crs_r49026_2026-07.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Mirror of CRS report on everycrsreport.com (congress.gov original not fetched).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-009-I_FinalReport_SECURED.pdf",
+   "fetched_url": null,
+   "title": "Evaluation of NOAA's Progress Implementing the GeoXO Satellite Program, OIG-26-009-I (final report)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2026-03-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig-26-009-i.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Based on NOAA FY 2025 data and the pre-restructuring plan (GEO-I 1 naming); evaluation covered progress through December 2025 per CRS.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://www.nesdis.noaa.gov/our-satellites/currently-flying/goes-east-west/goes-r-series-spacecraft-instruments",
+   "fetched_url": null,
+   "title": "GOES-R Series Spacecraft & Instruments",
+   "author_org": "NOAA NESDIS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/goesr_spacecraft.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Requested via goes-r.gov/spacesegment/spacecraft.html, redirected to nesdis.noaa.gov page; date NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/10/MSG_20261028_1554.html",
+   "fetched_url": null,
+   "title": "GOES-18 Channel 16 ABI Product Degradation",
+   "author_org": "NOAA NESDIS OSPO / ESPC notification",
+   "published": "2026-10-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_msg_20261028_ch16.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Short-lived product anomaly; whether channel 16 feeds precipitation products not stated on page.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/10/MSG_20261030_1330.html",
+   "fetched_url": null,
+   "title": "Update #4 - Retirement of GOES R Rainfall Rate/Quantitative Precipitation Estimation on November 2, 2026",
+   "author_org": "NOAA NESDIS OSPO / ESPC notification",
+   "published": "2026-10-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e24",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_msg_20261030_grrqpe_upd4.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Confirmation that retirement took effect NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://www.star.nesdis.noaa.gov/goesr/ESPCMessages.php?year=2026",
+   "fetched_url": null,
+   "title": "OSPO Satellite Alert Messages for GOES Satellites - 2026",
+   "author_org": "NOAA NESDIS STAR GOES-R Algorithm Working Group",
+   "published": "2026 (list through Nov 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/star_espc_messages_2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Titles only; individual message bodies for these items not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://www.star.nesdis.noaa.gov/smcd/emb/ff/HydroEst.php",
+   "fetched_url": null,
+   "title": "STAR Satellite Rainfall Estimation - Hydro-Estimator",
+   "author_org": "NOAA NESDIS STAR",
+   "published": "2025-02 (retirement notice on page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/star_hydroest.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Also saved by sa4 (cached copy); STAR site says data are experimental, not official operational products. Final retirement date NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://www.star.nesdis.noaa.gov/smcd/emb/ff/SCaMPR.php",
+   "fetched_url": null,
+   "title": "STAR Satellite Rainfall Estimation - Self-Calibrating Multivariate Precipitation Retrieval (SCaMPR) / Enterprise Rainfall Rate (ERR) Resources",
+   "author_org": "NOAA NESDIS STAR",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/star_scampr.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Shows dependence of ERR on GOES ABI IR and on microwave (LEO, partner) rain rates; date NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://democrats-science.house.gov/imo/media/doc/SST%20RM%20Lofgren%20and%20Amo%20-%20Letter%20to%20Administrator%20Jacobs%20-%20GeoXO%20-%2010.19.26.pdf",
+   "fetched_url": null,
+   "title": "Letter from Ranking Members Lofgren and Amo to NOAA Administrator Jacobs on GeoXO",
+   "author_org": "House Committee on Science, Space, and Technology, Democratic Ranking Members (Zoe Lofgren, Gabe Amo)",
+   "published": "2026-10-19",
+   "data_period": null,
+   "source_type": "official (congressional minority letter)",
+   "evidence_id": "sa1-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/house_sst_dems_geoxo_letter_2026-10-19.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Partisan minority letter; characterizations of OMB motives are the authors' views. Only first two pages read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://www.star.nesdis.noaa.gov/GOESCal/goes_SatelliteAnomalies.php",
+   "fetched_url": null,
+   "title": "STAR - GOES-R Calibration Event Log",
+   "author_org": "NOAA NESDIS STAR GOES Calibration Working Group",
+   "published": "NOT PRESENT (log entries through 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e30",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/star_goescal_eventlog.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Log does not itself say the test is for fuel-life extension; the OIG report (sa1-e20) says the program would test an orbit modification on GOES-17 before deciding on GOES-16 - link between the two is the coordinator's call.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://www.nesdis.noaa.gov/our-satellites/currently-flying/geostationary-satellites",
+   "fetched_url": null,
+   "title": "Geostationary Satellites",
+   "author_org": "NOAA NESDIS",
+   "published": "NOT PRESENT (related news through September 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e31",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nesdis_geo_satellites.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "NESDIS GOES Operational Status page (nesdis.noaa.gov/our-satellites/satellites-status/goes-operational-status) returned HTTP 403 to fetch_page and WebFetch; OSPO status page used instead.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s45",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf",
+   "fetched_url": null,
+   "title": "Explanatory Statement for Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2027",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026 (FY2027 bill; exact date NOT PRESENT in excerpt)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e32",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/senate_fy27_cjs_explanatory_stmt.txt",
+   "retrieved": "2026-11-17 (earlier run copy)",
+   "limitations": "Committee-level FY2027 text, not enacted; GeoXO dollar figure for FY2027 not located in time.",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://nsidc.org/data/user-resources/data-announcements/user-notice-ssmis-processing-will-now-continue-through-september-2026",
+   "fetched_url": null,
+   "title": "User Notice: SSMIS processing will now continue through September 2026",
+   "author_org": "NASA NSIDC DAAC",
+   "published": "2025-08-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsidc_ssmis_sept2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "NASA/NSIDC notice, not NOAA; about sea-ice datasets, not NOAA precipitation products; does not name the original announced end date.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://www.ncei.noaa.gov/products/satellite/defense-meteorological-satellite-program",
+   "fetched_url": null,
+   "title": "Defense Meteorological Satellite Program (DMSP)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_dmsp.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No date on notice; archive (NCEI), not NESDIS precipitation product operations.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s48",
+   "url": "https://ospo.noaa.gov/data/messages/2025/06/MSG_20250630_0345.html",
+   "fetched_url": null,
+   "title": "Suspension of All Defense Meteorological Satellite Program (DMSP) Data by June 30, 2025 (with UPDATE)",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2025-06-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_dmsp_20250630.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Raw HTML-in-text file; passage order in file is UPDATE first then Details; does not name which NOAA precipitation products were affected.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://www.ospo.noaa.gov/data/messages/2025/07/MSG_20250730_0015.html",
+   "fetched_url": null,
+   "title": "Defense Meteorological Satellite Program (DMSP) Data Distribution Extended Beyond July 31, 2025 (Update #3)",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2025-07-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_dmsp_20250730.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Original page was HTML saved as .txt then renamed .html and converted; no launch dates or design life figures; no named NOAA precip products.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://science.nasa.gov/wp-content/uploads/2024/02/response-to-2023-earth-science-senior-review-and-2022-2023-out-of-cycle-senior-reviews-final.pdf",
+   "fetched_url": null,
+   "title": "Response to 2023 Earth Science Senior Review and 2022-2023 Out-of-Cycle Senior Reviews",
+   "author_org": "NASA Earth Science Division",
+   "published": "2024-02 (per URL path)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nasa_sr2023_response.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Predates Jan 2025; no fuel/end-of-mission estimate; no FY2026/FY2027 budget proposal info.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://science.nasa.gov/science-research/earth-science/summary-of-the-2023-precipitation-measurement-mission-science-team-meeting/",
+   "fetched_url": null,
+   "title": "Summary of the 2023 Precipitation Measurement Mission Science Team Meeting",
+   "author_org": "NASA Science (The Earth Observer)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pmm2023_summary.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2023 meeting; pre-dates the run period; no post-boost lifetime estimate quoted here.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s52",
+   "url": "https://science.nasa.gov/mission/gpm/",
+   "fetched_url": null,
+   "title": "Global Precipitation Measurement (GPM) - NASA Science",
+   "author_org": "NASA Science",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nasa_gpm_mission.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No design life, extended-mission end date or budget status on page. The search snippet citing Extended Operations until October 2026 came from eospso.gsfc.nasa.gov, which was unreachable (DNS fail / 502) and now redirects here.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://www.ecmwf.int/node/25116",
+   "fetched_url": null,
+   "title": "Metop-A satellite retiring after 15 years of huge benefits to forecasting",
+   "author_org": "ECMWF",
+   "published": "2021-11-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/ecmwf_metopa_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "ECMWF, not EUMETSAT/NOAA; 2021; no design life or end dates (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://space.oscar.wmo.int/satellites/view/gcom_w",
+   "fetched_url": null,
+   "title": "WMO OSCAR Satellite: GCOM-W",
+   "author_org": "WMO OSCAR/Space",
+   "published": "Last update 2026-10-12",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_gcomw_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "WMO database, EOL estimated; no design life; does not mention NOAA products. Note: duplicate item sa3-e6 was accidentally added twice.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s55",
+   "url": "https://www.star.nesdis.noaa.gov/portfolio/detail_MIRS.php",
+   "fetched_url": null,
+   "title": "Product Overview - Microwave Integrated Retrieval System (MIRS) - STAR Product Catalog",
+   "author_org": "NOAA NESDIS STAR",
+   "published": "Modified: 5 January 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/star_mirs.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "List appears dated (Metop-A decommissioned 2021; no Metop-C, NOAA-20/21); page does not state whether list is current operational configuration.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://repository.library.noaa.gov/view/noaa/55106/noaa_55106_DS1.pdf",
+   "fetched_url": null,
+   "title": "Reprocessed, Bias-Corrected CMORPH Global High-Resolution Precipitation Estimates from 1998",
+   "author_org": "Xie et al., NOAA/Climate Prediction Center (J. Hydrometeorology)",
+   "published": "2017-06",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cmorph_reprocessed.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2017 reprocessing paper; not current operational CMORPH (CMORPH2) input list.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://www.star.nesdis.noaa.gov/sat/recommendationLibrary/SAT_Memo_Impacts_of_Legacy_Sensors_non-NWP_20230615_Final.pdf",
+   "fetched_url": null,
+   "title": "The Impact of Legacy Sensors on non-NWP Applications (NESDIS SAT memo)",
+   "author_org": "NOAA NESDIS Office of Systems Architecture and Engineering (SAT Chair/Co-Chair)",
+   "published": "2023-06-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/star_legacy_sensors_memo.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "June 2023, pre-dates run period; impact assessment, not a statement of 2025-26 events.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/07/MSG_20260728_1045.html",
+   "fetched_url": null,
+   "title": "Decommissioning of Advanced Microwave Scanning Radiometer (AMSR2) Products and Transition to AMSR3 Products (Updates #1-#3)",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2026-07-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_20260728.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Launch date given as June 28, 2025 (other sources say June 29 JST; likely UTC vs JST). Later Updates #5/#6 (Sept 2026) seen only as titles in OSPO Sept 2026 index; not read.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s59",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/2026-09-include.html",
+   "fetched_url": null,
+   "title": "Satellite Messages | OSPO (September 2026 index)",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "2026-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_2026_09_include.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Index titles only; the full SSMI/S discontinuation notice body was not read, so scope unknown.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/09/MSG_20260901_1930.html",
+   "fetched_url": null,
+   "title": "DMSP F-16 / F-17 / F-18 SSMI/S Data Record Filename Changes and Product Discontinuation",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2026-09-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_ssmis_disc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Implies SSMIS delivery to NOAA continues past the September 2026 end date given by NSIDC/NCEI; does not name any precipitation-product impact. A CLASS notice (snippet only) said DMSP data flow stopped 9/30/2026 and backlog was being supplied; CLASS host unreachable.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s61",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/2026-10-include.html",
+   "fetched_url": null,
+   "title": "Satellite Messages | OSPO (October 2026 index)",
+   "author_org": "NOAA NESDIS OSPO",
+   "published": "2026-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_2026_10_include.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Titles only; individual notices not read; absence of DMSP titles is not proof of DMSP status.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/10/MSG_20261028_1355.html",
+   "fetched_url": null,
+   "title": "Update #9 - Decommissioning of AMSR2 Products and Transition to AMSR3 Products",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2026-10-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_amsr_upd9.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Ocean products (include TPW per earlier notice) only; does not state whether Blended Hydro/eTRaP AMSR3 inputs are in place.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/10/MSG_20261021_2348.html",
+   "fetched_url": null,
+   "title": "Product Outage/Anomaly: Eumetsat Metop-B Service",
+   "author_org": "NOAA NESDIS OSPO relaying EUMETSAT service alert",
+   "published": "2026-10-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ospo_metopb_svc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Single operational outage notice; timeliness degradation, not data loss; resolution not seen.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://gpm.nasa.gov/data/news/ssmis-data-collection-continue-2026",
+   "fetched_url": null,
+   "title": "SSMIS Data Collection to Continue into 2026",
+   "author_org": "NASA GPM",
+   "published": "2025-07-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_ssmis_2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "NASA, not NOAA; does not quantify IMERG impact.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s65",
+   "url": "https://media.ktoo.org/wp-content/uploads/2025/04/noaa-passback2025.pdf",
+   "fetched_url": null,
+   "title": "2026 Passback Agency Funding Highlights (Department of Commerce / NOAA), PRE-DECISIONAL",
+   "author_org": "Office of Management and Budget (leaked document hosted by KTOO)",
+   "published": "NOT PRESENT (April 2025 per URL path; dates in text April 24 and May 9, 2025)",
+   "data_period": null,
+   "source_type": "official (leaked pre-decisional OMB document)",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/noaa_passback2025.txt",
+   "retrieved": "2026-11-17 (earlier run, copied 2026-11-18)",
+   "limitations": "Pre-decisional OMB passback (April 2025), not the final budget request; leaked copy hosted by a news outlet.",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s66",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "FY2026 Commerce, Justice, Science joint explanatory statement",
+   "author_org": "U.S. Senate and House Committees on Appropriations",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official (congressional)",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-17 (earlier run, copied 2026-11-18)",
+   "limitations": "OCR text (typos as in source). Table units: thousands of dollars per surrounding table header (not on these lines). Relationship 'contradicts' relative to passback GeoXO cancellation.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s67",
+   "url": "https://ospo.noaa.gov/data/messages/2025/07/MSG_20250701_1815.html",
+   "fetched_url": null,
+   "title": "Suspension of All Defense Meteorological Satellite Program (DMSP) Data by July 31, 2025",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations (ESPC notification)",
+   "published": "2025-07-01 (Date/Time Issued: July 1, 2025 1815 UTC; updates #1 and #2 undated)",
+   "data_period": null,
+   "source_type": "official (operational notice)",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ospo_dmsp_suspension.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Notice as of July 2025; does not say whether the cutoff was later reversed or extended; does not name NOAA precipitation products affected. Partner (DoD) satellite, relevant to q3 too.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s68",
+   "url": "https://ospo.noaa.gov/data/messages/2025/04/MSG_20250422_1841.html",
+   "fetched_url": null,
+   "title": "Termination of NESDIS Data Exploitation (NDE) Products",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2025-04-22",
+   "data_period": null,
+   "source_type": "official (operational notice)",
+   "evidence_id": "sa4-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ospo_nde_termination.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Listed products are not precipitation products; migration to NCCF rather than a capability cut.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s69",
+   "url": "https://ospo.noaa.gov/data/messages/2025/06/MSG_20250602_1400.html",
+   "fetched_url": null,
+   "title": "Suspension of POES data to Users after June 16, 2025",
+   "author_org": "NOAA NESDIS OSPO (ESPC notification)",
+   "published": "2025-06-02 (original issued April 25, 2025 per Update #1)",
+   "data_period": null,
+   "source_type": "official (operational notice)",
+   "evidence_id": "sa4-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ospo_msg_20250602.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not state the reason for ending POES delivery or name affected precipitation products. Also relevant to q2.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s70",
+   "url": "https://www.scientificamerican.com/article/amid-trump-cuts-noaa-halts-upkeep-of-critical-weather-satellites/",
+   "fetched_url": null,
+   "title": "Amid Trump Cuts, NOAA Halts Upkeep of Critical Weather Satellites",
+   "author_org": "Scott Waldman & E&E News (Scientific American / ClimateWire)",
+   "published": "2025-04-07",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/sciam_jpss_upkeep.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "News report based on a memo not published; superseded the next day by NOAA's reversal (sa4-e18).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s71",
+   "url": "https://www.eenews.net/articles/noaa-abandons-plan-to-defer-upkeep-of-key-weather-satellites/",
+   "fetched_url": null,
+   "title": "NOAA abandons plan to defer upkeep of key weather satellites",
+   "author_org": "Scott Waldman, E&E News (POLITICO)",
+   "published": "2025-04-08",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/eenews_jpss_abandon_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read via WebFetch extract (direct download refused, host www.eenews.net CONNECT 403). NOAA did not say when the contract was renewed.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s72",
+   "url": "https://www.everycrsreport.com/files/2026-03-12_IF13024_eb7ce330a93e719e4ae88b7880d3a76d47b0721b.html",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA) FY2026 Budget Request and Appropriations (IF13024, updated March 12, 2026)",
+   "author_org": "Congressional Research Service",
+   "published": "2026-03-12",
+   "data_period": null,
+   "source_type": "official (CRS)",
+   "evidence_id": "sa4-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/crs_if13024_2026-03.txt",
+   "retrieved": "2026-11-17 (earlier run, copied 2026-11-18)",
+   "limitations": "Passage quoted from HTML text with tags removed; apostrophe appears as an HTML entity in the saved file.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s73",
+   "url": "https://www.everycrsreport.com/files/2026-09-17_R49353_98ddd8e7b1852b47b24e394ed7ddf6d6d53b4632.html",
+   "fetched_url": null,
+   "title": "Overview of Continuing Appropriations for FY2027 (Division A of P.L. 119-103) (R49353)",
+   "author_org": "Congressional Research Service",
+   "published": "2026-09-17",
+   "data_period": null,
+   "source_type": "official (CRS)",
+   "evidence_id": "sa4-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/crs_r49353_fy27cr.txt",
+   "retrieved": "2026-11-17 (earlier run, copied 2026-11-18)",
+   "limitations": "'contradicts' relative to a funding-interruption threat for GeoXO; the CR expires 2026-12-11.",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "context: federal government-wide appropriations",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s74",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy27_cjs_bill_summary.pdf",
+   "fetched_url": null,
+   "title": "FY2027 Commerce, Justice, Science bill summary",
+   "author_org": "Senate Appropriations Committee – Republicans",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official (congressional)",
+   "evidence_id": "sa4-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/senate_fy27_cjs_summary.txt",
+   "retrieved": "2026-11-17 (earlier run, copied 2026-11-18)",
+   "limitations": "Satellite / NESDIS line figures NOT PRESENT in the summary; the Senate FY2027 explanatory statement (senate_cjs_explanatory_stmt.txt in the earlier run) was not searched for time.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s75",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt652/html/CRPT-119hrpt652.htm",
+   "fetched_url": null,
+   "title": "House Report 119-652, Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2027",
+   "author_org": "House Committee on Appropriations",
+   "published": "2026-05-15 (per earlier run record)",
+   "data_period": null,
+   "source_type": "official (congressional)",
+   "evidence_id": "sa4-e22",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/hrpt119-652.txt",
+   "retrieved": "2026-11-17 (earlier run, copied 2026-11-18)",
+   "limitations": "Committee mark, not enacted. Table units (thousands) assumed from the report table header, not on quoted lines. LEO 112,000 is below the 125,000 request.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s76",
+   "url": "https://web.archive.org/web/20260115113249/https://www.commerce.gov/sites/default/files/2025-09/DOC-Lapse-Plan-2025.pdf",
+   "fetched_url": null,
+   "title": "Department of Commerce Plan for Orderly Shutdown Due to Lapse of Congressional Appropriations (2025)",
+   "author_org": "U.S. Department of Commerce",
+   "published": "approx. September 2025 (file path 2025-09)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/doc_lapse_plan_2025.txt",
+   "retrieved": "2026-11-17 (earlier run via Wayback, copied 2026-11-18)",
+   "limitations": "Plan, not a report of what happened during the Oct-Nov 2025 shutdown; NESDIS excepted/furloughed counts NOT PRESENT in the quoted section.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s77",
+   "url": "https://www.michiganpublic.org/2025-04-09/noaa-contracts-are-being-reviewed-one-by-one-its-throwing-the-agency-into-chaos",
+   "fetched_url": null,
+   "title": "NOAA contracts are being reviewed one by one. It's throwing the agency into chaos",
+   "author_org": "NPR (via Michigan Public)",
+   "published": "2025-04-09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/npr_noaa_contracts.txt",
+   "retrieved": "2026-11-17 (earlier run, copied 2026-11-18)",
+   "limitations": "NESDIS and satellite contracts NOT PRESENT in the article.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s78",
+   "url": "https://spacepolicyonline.com/news/noaa-hit-hard-by-doge-layoffs/",
+   "fetched_url": null,
+   "title": "NOAA Hit Hard by DOGE Layoffs",
+   "author_org": "SpacePolicyOnline.com",
+   "published": "2025-02-28 (Last Updated: Feb 28, 2025 6:14 pm ET)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/spo_noaa_doge_layoffs.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "NESDIS staffing numbers NOT PRESENT; STAR and OSPO NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s79",
+   "url": "https://www.congress.gov/crs_external_products/R/PDF/R49026/R49026.1.pdf",
+   "fetched_url": null,
+   "title": "NOAA’s Geostationary Extended Observations (GeoXO) Satellite Program and Issues for Congress (R49026)",
+   "author_org": "Congressional Research Service (Caitlin Keating-Bitonti, Eva Lipiec)",
+   "published": "2026-07-10",
+   "data_period": null,
+   "source_type": "official (CRS)",
+   "evidence_id": "sa4-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/crs_r49026_geoxo.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Also central to q1. Live congress.gov product page returned HTTP 403 (fetch and WebFetch); this PDF copy at congress.gov crs_external_products downloaded fine.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s80",
+   "url": "https://keyt.com/news/weather-news/cnn-weather-environment/2026/10/19/trump-admin-cuts-to-satellites-will-set-back-us-weather-forecasting-by-a-decade-experts-say/",
+   "fetched_url": null,
+   "title": "Trump admin cuts to satellites will set back US weather forecasting by a decade, experts say",
+   "author_org": "Andrew Freedman, CNN (syndicated on KEYT)",
+   "published": "2026-10-19",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/cnn_keyt_geoxo_letter_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read via WebFetch extract (direct download refused, host keyt.com CONNECT 403); quotes are from the extract, not raw text. Precipitation NOT PRESENT. GAO report itself is in sa1 folder.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s81",
+   "url": "https://www.eenews.net/articles/trump-terminates-satellite-data-considered-crucial-to-storm-forecasting",
+   "fetched_url": null,
+   "title": "Trump terminates satellite data considered crucial to storm forecasting",
+   "author_org": "Chelsea Harvey, E&E News (POLITICO)",
+   "published": "2025-06-27",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/eenews_dmsp_terminate_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extract (host www.eenews.net CONNECT 403). Later reversed: data continued to September 2026 per search results (not read here). Partner (DoD) data; overlaps q3.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s82",
+   "url": "https://www.eenews.net/articles/scientists-report-growing-problems-with-pentagon-weather-data",
+   "fetched_url": null,
+   "title": "Scientists report growing problems with Pentagon weather data",
+   "author_org": "Chelsea Harvey, E&E News (POLITICO)",
+   "published": "2025-10-15",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e30",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/eenews_dmsp_spotty_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extract; causes 'still unclear'; precipitation products NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s83",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes",
+   "fetched_url": null,
+   "title": "Notice of Changes | NESDIS",
+   "author_org": "NOAA NESDIS",
+   "published": "NOT PRESENT (listing; latest entry dated November 2, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e31",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/nesdis_notice_of_changes.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Listing shows truncated teasers only; individual S-NPP notices (reason, ATMS/MiRS effects) NOT read. Relevant to q2 (S-NPP status) and q1 (GOES-R RRQPE).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s84",
+   "url": "https://www.nesdis.noaa.gov/news/cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-onafter-november-2-2026",
+   "fetched_url": null,
+   "title": "Cessation of Suomi National Polar-orbiting Partnership (S-NPP) data to users on/after November 2, 2026",
+   "author_org": "NOAA NESDIS Office of Satellite and Product Operations (Notice of Changes)",
+   "published": "2026-08-03 (Date/Time Issued: August 3, 2026 at 1600 UTC)",
+   "data_period": null,
+   "source_type": "official (operational notice)",
+   "evidence_id": "sa4-e32",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/nesdis_snpp_cessation.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Reason for cessation NOT PRESENT; MiRS/precipitation products not named. Update #4 (decommissioning) not read. Central to q2.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s85",
+   "url": "https://www.eumetsat.int/europes-first-meteorological-satellite-polar-orbit-ends-its-run",
+   "fetched_url": null,
+   "title": "Europe’s first meteorological satellite in polar orbit ends its run",
+   "author_org": "EUMETSAT",
+   "published": "2021-11-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/eumetsat-int-europes-first-meteorological-satellite-polar-or_121241.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2021 statement; read in browser.",
+   "found_by": [
+    "main2",
+    "reconciler"
+   ],
+   "scope": "context: EUMETSAT partner satellites",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s86",
+   "url": "https://www.hickenlooper.senate.gov/wp-content/uploads/2026/10/2026-DMSP-Continuity-Letter-Hickenlooper-Murkowski-King.pdf",
+   "fetched_url": null,
+   "title": "Letter to Secretary of Defense and NOAA Administrator on DMSP continuity",
+   "author_org": "Senators Hickenlooper, Murkowski and King",
+   "published": "2026-10-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main2/senate_dmsp_letter_2026-10-13.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Senators' letter, not a DoD document; reports the plan second-hand.",
+   "found_by": [
+    "main2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s87",
+   "url": "https://ospo.noaa.gov/data/messages/2026/06/MSG_20260623_1133.html",
+   "fetched_url": null,
+   "title": "Update #1: This Issue is still ongoing and currently being Investigated - Topic: DMSP SSMI/S data",
+   "author_org": "NOAA OSPO / ESPC",
+   "published": "2026-06-23",
+   "data_period": null,
+   "source_type": "operational notice",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/checker/ospo_dmsp_20260623.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Only Update #1 read; a search snippet cites another June 2026 notice saying processing stopped June 11. No resolution notice and no post-Sept 30 2026 SSMIS status found. Contradicts only a no-interruption reading for 2026.",
+   "found_by": [
+    "checker",
+    "reconciler"
+   ],
+   "scope": "subject"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "NOAA ended delivery of all legacy POES data (NOAA-15, -18, -19, including AMSU and MHS microwave data) on June 16, 2025; the satellites were far beyond design life and were decommissioned (NOAA-18 June 6, NOAA-19 Aug 13, NOAA-15 Aug 19, 2025).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "NOAA will end delivery of all data from the POES constellation (NOAA-15, NOAA-18, and NOAA-19) on June 16, 2025 at 18:00 UTC.",
+     "location": "notice body"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "These two remaining satellites in the NOAA Polar Operational Environmental Satellites (POES) Constellation are far beyond their primary mission design life.",
+     "location": "update"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NESDIS's own notice, consistent with OSPO status page and retirement table.",
+   "sole_source_reason": "The operator's own notice is the authority for ending its own data delivery."
+  },
+  {
+   "id": "c2",
+   "text": "NOAA permanently ended delivery of all Suomi NPP data, including ATMS microwave data, on November 2, 2026, and plans to deorbit it from about December 1-12, 2026; users were told to move to NOAA-21 (primary) and NOAA-20.",
+   "importance": "central",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "s84",
+     "relationship": "supports",
+     "passage": "Length of Outage: Permanent | Details/Specifics: NOAA will end delivery of all remaining science products from the Suomi National Polar-Orbiting Partnership (S-NPP) satellite at 13:00 UTC (8:00 AM EST) on November 2, 2026",
+     "location": "notice body (Aug 3, 2026)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Please be advised that delivery of Suomi National Polar-orbiting Partnership (S-NPP) data to users will cease on November 02, 2026 15:40 UTC.",
+     "location": "Update #4"
+    }
+   ],
+   "applicability": "Time of cessation differs between notices (13:00 vs 15:40 UTC).",
+   "confidence": "high",
+   "confidence_reason": "Two NESDIS notices agree on the date.",
+   "sole_source_reason": "The operator's own notices are the authority for its data delivery."
+  },
+  {
+   "id": "c3",
+   "text": "In 2025 OSPO retired the NOAA-19 and DMSP F17/F18 inputs to its microwave precipitation products: Blended Rain Rate and Blended TPW (Jan 30), AMSU TC (Feb 28), MiRS and eTRaP (Apr 8), naming SNPP, NOAA-20/21, Metop-B/C, GPM and GCOM-W as the continuing inputs.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Blended Hydrometorological Products - Blended Rain Rate & Blended TPW | NOAA 19, DMSP 17/18 MIRS | SNPP, N20, N21, Metop-B/C, GPM, GCOM-W1 | 1/30/2025 | liqun.ma@noaa.gov",
+     "location": "retirements table"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Microwave Integrated Retrieval System (MIRS) | NOAA 19, DMSP 17/18 | SNPP and N20 , N21, Metop-B/C and GPM MIRS Products | 4/8/2025 | liqun.ma@noaa.gov",
+     "location": "retirements table"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The blended rain rate (RR) product is produced hourly by blending together recent rain rate retrievals from passive microwave instruments on seven polar-orbiting satellites, including POES NOAA-21, NOAA-20, SNPP, MetOp-B, Metop-C, GCOM-W1, and GPM.",
+     "location": "page text"
+    }
+   ],
+   "applicability": "The table lists retired data sources per product; the products themselves continue on other inputs.",
+   "confidence": "high",
+   "confidence_reason": "OSPO's own retirement table and product page agree.",
+   "sole_source_reason": "The operator's own product records are the authority for its product inputs."
+  },
+  {
+   "id": "c4",
+   "text": "DoD announced DMSP data to NOAA would end permanently by June 30, then July 31, 2025, then reversed: FNMOC continued distribution with no interruption on a best-effort basis; the satellites are more than a decade past expected end of life, and the DMSP mission's planned end is September 2026. Senators wrote on Oct 13, 2026 that Space Force plans to keep operating the three DMSP spacecraft to no earlier than 2028, and asked whether DoD will keep sharing the data with NOAA.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "As a result, there will be no interruption to DMSP data delivery. Support will be on a best effort (8x5) basis and should be considered data of opportunity.",
+     "location": "Update #3, July 30, 2025"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "DMSP satellites remain operational today but are more than a decade past their expected end of life.",
+     "location": "notice body"
+    },
+    {
+     "source_id": "s64",
+     "relationship": "supports",
+     "passage": "Department of Defense officials have reached an agreement to continue sharing DMSP SSMIS data until the sensor fails, or until the program formally ends (currently planned for September 2026).",
+     "location": "news item"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "User Notice: SSMIS processing will now continue through September 2026",
+     "location": "title"
+    },
+    {
+     "source_id": "s86",
+     "relationship": "contextualizes",
+     "passage": "We are encouraged by the U.S. Space Force’s plan to sustain | operations of the three remaining DMSP spacecraft through their functional end of life, currently | estimated no earlier than 2028.",
+     "location": "p. 1"
+    }
+   ],
+   "applicability": "Delivery after Sept 30, 2026 is unresolved (see conflicts).",
+   "confidence": "moderate",
+   "confidence_reason": "Official NOAA, NASA and NSIDC notices agree on the reversal and the Sept 2026 end; status after that date conflicts."
+  },
+  {
+   "id": "c5",
+   "text": "JAXA's AMSR2 standard near-real-time data ended in September 2026; NOAA's blended products (Blended Hydro, eTRaP and others) lose AMSR2 input until AMSR3 capability is added at a date not set.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s58",
+     "relationship": "supports",
+     "passage": "Effective September 2026, the provision of AMSR2 standard near-real-time data will be terminated.",
+     "location": "notice body"
+    },
+    {
+     "source_id": "s58",
+     "relationship": "supports",
+     "passage": "Blended products such as SMOPS, Blended Hydro will lose AMSR2 input in September 2026, until AMSR3 capability is added at a later date.",
+     "location": "notice body"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "OSPO's own notice, repeated in Update #9 (s61).",
+   "sole_source_reason": "The operator's own notice is the authority for its product inputs."
+  },
+  {
+   "id": "c6",
+   "text": "GAO (Sept 2026) and the Commerce OIG (Mar 2026) project a gap in the geostationary spare: GOES-16, the operational spare, reaches end of life in October 2032, while GeoXO-1 is not operational until early 2033; OIG says GOES-17's life ends by 2030 and the likelihood of a gap continues to increase.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "With the expected launch date of GeoXO-1 in 2032, there is a risk of a gap in the continuity of geostationary satellite data.[22] Specifically, the current operational spare satellite (GOES-16) is projected to meet the end of its life in October 2032.",
+     "location": "GeoXO Restructuring Continues Amidst Uncertainty"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "GOES-17’s life is expected to end by 2030, so it will not be a viable",
+     "location": "pp. 5-6"
+    }
+   ],
+   "applicability": "A spare gap, not a loss of the two operational satellites, unless one fails.",
+   "confidence": "high",
+   "confidence_reason": "Two independent oversight bodies agree."
+  },
+  {
+   "id": "c7",
+   "text": "GeoXO was restructured after an April 2025 OMB passback told NESDIS to cancel its major contracts: in August 2025 Commerce cut it from six satellites to four and from $19.6B to a $12B target; the April 2026 baseline is $13B with two instruments (imager and sounder), and GAO says no independent cost estimate exists yet.",
+   "importance": "central",
+   "figure_status": [
+    "estimate",
+    "current_plan"
+   ],
+   "evidence": [
+    {
+     "source_id": "s65",
+     "relationship": "supports",
+     "passage": "Passback directs NESDIS to immediately cancel all major instrument and spacecraft",
+     "location": "p. 5"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Number of satellites | 6 | 4 | 4 | Expected life cycle program cost | $19.6 billion | $12 billiona | $13 billiona",
+     "location": "Table 2"
+    }
+   ],
+   "applicability": "FY2027 CJ gives a lifecycle cost of $11,941,817 thousand, below GAO's $13B.",
+   "confidence": "high",
+   "confidence_reason": "OMB, GAO and CRS documents agree on the sequence."
+  },
+  {
+   "id": "c8",
+   "text": "FY2026 enacted (P.L. 119-74) NESDIS lines, $ thousands: GOES-R 74,600; Polar Weather Satellites 290,000; LEO 120,000; GEO 497,897; NESDIS PAC 1,268,199.",
+   "importance": "central",
+   "figure_status": "enacted",
+   "evidence": [
+    {
+     "source_id": "s66",
+     "relationship": "supports",
+     "passage": "Polar Weather Satel lites ...............................................................                290,000",
+     "location": "pp. 23-24 PAC table"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Polar Weather Satellites         Pos/BA           55       272,989          56      290,000           56      290,000            56     269,570             0    (20,430)",
+     "location": "NESDIS PAC comparison by subactivity"
+    }
+   ],
+   "applicability": "Joint explanatory statement table; OCR spacing in the saved text.",
+   "confidence": "high",
+   "confidence_reason": "The enacted agreement and the FY2027 CJ's enacted column agree.",
+   "sole_source_reason": "Congress's own explanatory statement is the authority for enacted amounts."
+  },
+  {
+   "id": "c9",
+   "text": "The FY2027 request cuts Polar Weather Satellites by $20,430K to $269,570K (JPSS-3 to long-term storage), OSPO operations by $47,818K to $225,000K (automation and contractor-operated data operations starting with GOES-R), and STAR product development by $16,262K to $43,500K, with Enterprise algorithms supported falling to 85%.",
+   "importance": "central",
+   "figure_status": "request",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Polar Weather Satellites (-$20,430, 0 FTE/ 0 Positions) – NOAA requests a decrease to continue the development of the Polar",
+     "location": "NESDIS-49"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Office of Satellite             Pos./BA         329 272,818                    329    225,000                     0      (47,818)",
+     "location": "NESDIS-18"
+    }
+   ],
+   "applicability": "Request only; House matched the PWS cut, Senate gave 285,000.",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own budget justification.",
+   "sole_source_reason": "The agency's own budget request is the authority for its requested amounts."
+  },
+  {
+   "id": "c10",
+   "text": "Congress has resisted GeoXO cuts: House (H. Rept. 119-652) and Senate committee FY2027 marks both give GEO $677,000K versus the $500,000K request; FY2027 runs on a CR (P.L. 119-103) to December 11, 2026 that lets NOAA spend PAC funds fast enough to keep GeoXO launch schedules.",
+   "importance": "central",
+   "figure_status": [
+    "proposed",
+    "enacted"
+   ],
+   "evidence": [
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "Geostationary Earth Orbit........................            677,000",
+     "location": "House PAC table"
+    },
+    {
+     "source_id": "s73",
+     "relationship": "supports",
+     "passage": "The Continuing Appropriations Act, 2027, provides appropriations for federal agencies funded through all 12 regular appropriations bills to continue operations from October 1, 2026, through December 11, 2026",
+     "location": "Introduction"
+    }
+   ],
+   "applicability": "Marks are not law.",
+   "confidence": "high",
+   "confidence_reason": "Committee report and CRS.",
+   "sole_source_reason": "Committee reports and CRS are the authority for congressional marks."
+  },
+  {
+   "id": "c11",
+   "text": "JPSS successors are funded but their dates are conditional: the FY2027 CJ gives launch commitment dates of Q1 FY2028 (JPSS-4) and Q1 FY2033 (JPSS-3) that will be re-evaluated based on appropriations; GAO lists launch readiness 2027 and 2032.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "* Launch commitment dates will be re-evaluated based on annual appropriations, the performance of on-orbit assets, and the overall constellation risk posture.",
+     "location": "NESDIS-49 footnote"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "As of June 2026, there are three operational JPSS satellites in orbit and two planned.",
+     "location": "Appendix, JPSS Program"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Official documents, but launch-commitment and launch-readiness dates differ by definition."
+  },
+  {
+   "id": "c12",
+   "text": "QuickSounder (a refurbished ATMS microwave sounder) slipped from a Q4 FY2026 launch to 2027 (NET Feb 15, 2027 on a launch tracker); NEON Series 1 microwave sounders launch in the early 2030s; NEON is funded ($120,000K enacted FY2026, $125,000K requested FY2027).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "QuickSounder is anticipated to launch in 2027.",
+     "location": "Projects: QuickSounder"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "Sept. 11, 2026, 9:29 p.m.: \"NET 15 February 2027.\"",
+     "location": "Launch updates list"
+    }
+   ],
+   "applicability": "No cause of the slip found.",
+   "confidence": "moderate",
+   "confidence_reason": "NESDIS page plus an aggregator tracker.",
+   "figure_status": [
+    "enacted",
+    "request"
+   ]
+  },
+  {
+   "id": "c13",
+   "text": "NESDIS scheduled the legacy GOES-R ABI Rainfall Rate/QPE product for retirement on November 2, 2026, saying the Enterprise Rainfall Rate (GOES-18/19), operational since June 20, 2024, fully covers it.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Update #4: Final Reminder. Retirement of the GOES-R Rainfall Rate/Quantitative Precipitation Estimation product is scheduled for November 2, 2026, at 1500 UTC.",
+     "location": "Update #4"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "NOAA/NESDIS is proposing the retirement of the Legacy GOES-R Rainfall Rate Product. Since June 20, 2024, the operational Enterprise Rainfall Rate product (GOES-18 and GOES-19) has been active at NESDIS and available via Production, Distribution, and Access (PDA).",
+     "location": "Details"
+    }
+   ],
+   "applicability": "A product consolidation, not a loss of GOES rain-rate capability.",
+   "confidence": "high",
+   "confidence_reason": "NESDIS's own notices.",
+   "sole_source_reason": "The operator's own notices are the authority for its product changes."
+  },
+  {
+   "id": "c14",
+   "text": "NASA extended GPM through FY2026 with added funding; a 2023 estimate put its fuel-limited life at December 2027, possibly shorter with solar activity; no FY2026/27 budget document naming GPM for termination was found.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "The GPM mission will be extended through FY 2026 with additional funding above the",
+     "location": "GPM section"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "Based on fuel usage alone, GPM should continue to December 2027.",
+     "location": "Opening session"
+    }
+   ],
+   "applicability": "2026 Senior Review outcome not found.",
+   "confidence": "moderate",
+   "confidence_reason": "NASA documents but dated 2023-2024."
+  },
+  {
+   "id": "c15",
+   "text": "GOES-19 (launched June 25, 2024) became GOES East on April 7, 2025; GOES-18 is GOES West; GOES-16 and GOES-17 are in storage as spares; anomalies in 2025-2026 were short product outages.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "NOAA’s GOES-19 satellite, the latest and final satellite in NOAA’s GOES-R Series, officially began operations as GOES East today.",
+     "location": "article"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NESDIS release and OSPO status page."
+  },
+  {
+   "id": "c16",
+   "text": "A March 28, 2025 NOAA memo ordered a minimum mission operations approach for two JPSS satellites, deferring flight software updates; NOAA reversed it within days, saying the contract option was exercised.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s71",
+     "relationship": "supports",
+     "passage": "\"The contract option was ultimately exercised, so normal satellite operations continue.\"",
+     "location": "article (extract)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "News reports of a memo and NOAA statement."
+  },
+  {
+   "id": "c17",
+   "text": "A 2023 NESDIS memo said that without DMSP, NOAA-19 and S-NPP microwave data there would be significant degradations in precipitation products for several hours each day, and that NWS CMORPH2 uses DMSP.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s57",
+     "relationship": "supports",
+     "passage": "(2) Precipitation estimating algorithms use DMSP, NOAA-19, and S-NPP | microwave observations. There would be significant degradations in | precipitation products for several hours each day without the use of that | data.",
+     "location": "Section 3a, p. 1"
+    }
+   ],
+   "applicability": "2023 assessment, before mitigation.",
+   "confidence": "moderate",
+   "confidence_reason": "Single internal memo."
+  },
+  {
+   "id": "c18",
+   "text": "Metop-B and Metop-C remain operational; EUMETSAT expected (2021) Metop-B to operate until 2027 and Metop-C into the 2030s; Metop-SGA1 launched 13 August 2025 and is in commissioning.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "The first satellite in the second generation of Metop, Metop-SGA1, was launched on 13 August 2025 and is currently in commissioning.",
+     "location": "page text"
+    },
+    {
+     "source_id": "s85",
+     "relationship": "supports",
+     "passage": "The two remaining satellites in the EUMETSAT Polar System, Metop-B and Metop-C are expected to operate until 2027 and into the 2030s, respectively",
+     "location": "article text"
+    }
+   ],
+   "applicability": "Metop-B end date is a 2021 expectation.",
+   "confidence": "moderate",
+   "confidence_reason": "EUMETSAT's own pages; lifetime estimate dated."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Whether DMSP SSMIS data reached NOAA after September 30, 2026",
+   "source_ids": [
+    "s60",
+    "s46",
+    "s86"
+   ],
+   "status": "unresolved",
+   "explanation": "OSPO's Sept 1, 2026 notice says FNMOC will send F-16/17/18 SSMI/S files directly to NCCF under new filenames from Oct 1, 2026, and a Senate letter of Oct 13, 2026 says Space Force plans to operate DMSP to no earlier than 2028; NSIDC, NCEI and NASA gave September 2026 as the mission end, and a CLASS notice of Oct 23, 2026 reportedly says the flow stopped 9/30/2026 (search summary only, unreadable). The letter itself asks whether DoD will keep sharing data with NOAA, so delivery after Sept 30, 2026 is not confirmed."
+  },
+  {
+   "claim": "JPSS-4 launch timing",
+   "source_ids": [
+    "s10",
+    "s15"
+   ],
+   "status": "resolved",
+   "explanation": "FY2027 CJ gives a launch commitment date of Q1 FY2028 (i.e. Oct-Dec 2027); GAO gives launch readiness 2027. Different measures, consistent."
+  },
+  {
+   "claim": "GeoXO lifecycle cost",
+   "source_ids": [
+    "s10",
+    "s15"
+   ],
+   "status": "unresolved",
+   "explanation": "FY2027 CJ table totals $11,941,817 thousand; GAO reports the April 2026 baseline as about $13 billion. The sources don't explain the difference (possibly the CJ was prepared before the April 2026 rebaseline)."
+  }
+ ],
+ "coverage_gaps": [
+  "No numeric design life was read from a saved official page for NOAA-20/NOAA-21 (the search summary says seven years; NESDIS NOAA-20 page HTTP 403 and NASA EOSPSO 502). POES design lives NOT PRESENT; the NESDIS notice says only 'far beyond their primary mission design life'. (from sa2)",
+  "No 2025-2026 GAO report on JPSS, polar satellites or NEON was found after 3 queries (r5: 'GAO polar weather satellites 2025', 'GAO Near Earth Orbit Network report', plus the extended gap search). GAO-26-107739 (GeoXO) has only an appendix on JPSS. (from sa2)",
+  "Commerce OIG: no QuickSounder or NEON audit was found after 3 queries (r6). JPSS contractor oversight evaluation 2026-534 (initiated 02.11.2026) has no published findings located. (from sa2)",
+  "No current NOAA, GAO or OIG statement was found that projects a polar-orbit coverage gap. The FY27 CJ says launch commitment dates 'will be re-evaluated based on annual appropriations, the performance of on-orbit assets, and the overall constellation risk posture'. JPSS-3 in storage until Q1 FY 2033. The NESDIS FY26/FY27 Major Annual Satellite Report (constellation availability) was not found online. (from sa2)",
+  "QuickSounder slipped from Q4 FY 2026 (FY26 CJ) to 2027 (NESDIS NEON page; tracker NET 15 Feb 2027). No official cause was found. The CRS IF13024 and FY26 enacted NEON line ($120,000K 'Low Earth Orbit' per FY27 CJ) were not checked against the appropriations text (q4). (from sa2)",
+  "Not read: the return to operational use of NOAA-20 ATMS after the July 10, 2026 anomaly (later OSPO updates), the NOAA-21 CrIS March 2025 anomaly and the Nov 2025 drag maneuver in JPSS monthlies, the NASA Earthdata VIIRS gap notice from Nov 5, 2026, and the OSPO MSPPS termination notice of 2021. (from sa2)",
+  "Conflicts to resolve: NOAA-19 decommission time 16:55 UTC (NESDIS notice) vs 18:55 UTC (OSPO status page). The Aug 1, 2025 notice planned NOAA-15 Aug 12 and NOAA-19 Aug 19, but actual dates were reversed (NOAA-19 Aug 13, NOAA-15 Aug 19). The OSPO JPSS status page role labels are inconsistent, and the OSPO precipitation page still lists retired NOAA-19, DMSP and S-NPP inputs. (from sa2)",
+  "Confirmation that the legacy GOES-R Rainfall Rate/QPE (ABI-L2-RRQPEF) retirement took effect on Nov 2, 2026 1500 UTC not found; only pre-retirement notices read. (from sa1)",
+  "FY2026 enacted GeoXO and GOES-R amounts (P.L. 119-74 explanatory statement) not quoted from the primary text; GAO says program received an additional $113 million in FY2026. FY2027 appropriations status not checked for GeoXO. (from sa1)",
+  "GOES-17 ABI shown YELLOW (operational with limitation) on OSPO status page; cause (known loop heat pipe cooling issue) not documented in sources read this run. (from sa1)",
+  "GAO-26-107739 PDF at gao.gov/assets returned HTTP 403; HTML version at files.gao.gov read in full instead (figures 2, 4 and 5 not available in text). (from sa1)",
+  "NESDIS GOES Operational Status page returned HTTP 403 (fetch_page and WebFetch); used OSPO GOES status page (Last Updated November 5, 2026) instead. (from sa1)",
+  "Discrepancy for coordinator: GAO (Sept 2026) and OIG (Mar 2026) project GOES-16 end of life October 2032; OIG says GOES-17 life ends by 2030; GAO launch dates (GeoXO-1 2032 West) and the FY2027 CJ LCC ($11,941,817 thousand) vs GAO April 2026 baseline ($13 billion). GeoXO baseline report to Congress due by December 31, 2026 not yet found. (from sa1)",
+  "DMSP status after September 30, 2026 unresolved: OSPO Sept 1, 2026 notice (sa3-e15) shows FNMOC continuing SSMI/S delivery to NCCF from Oct 1, 2026, while NSIDC/NCEI/GPM cite September 2026 end; CLASS Oct 23, 2026 notice (data flow stopped 9/30/2026, backlog supplied) unreadable; TechTimes claim of July 31, 2026 end unverified. Also unread: OSPO June 2026 DMSP processing outage notices (MSG_20260612_2143, MSG_20260613_0949), Military Times 2025-07-31 article, and DMSP F16/F17/F18 launch dates and design life (NOT found). (from sa3)",
+  "GPM: no FY2026/FY2027 NASA budget document found naming GPM (searches returned only OCO-2/OCO-3 terminations); 2026 ESD Senior Review outcome for GPM not found (draft call DRAFT20251219 not read); eospso page snippet Extended Operations until October 2026 unreadable; no post-2023 fuel estimate. IMERG production status in 2026 not checked. Metop: eumetsat.int blocked (403), so Metop-B/C design life, end-of-life, Metop-SGA1 MWS data to NOAA and Joint Polar System agreement not verified from official text; Metop-SGB1 planned Oct-Dec 2026 seen only in search summary. WSF-M data to NOAA: only the July 2025 OSPO statement (sa3-e4); June 2026 OSPO notices mention WSF-M data received via FNMOC (snippet only). Note: item sa3-e6 (PMM 2023 summary) was added twice by mistake; treat as one. (from sa3)",
+  "r12 second query 'CRS NESDIS appropriations FY2027' not run for time; CRS IF13275 (FY2027, saved by earlier run) has no NESDIS line figures in my search. (from sa4)",
+  "FY2025 enacted NESDIS line figures NOT found: CRS IF13024 (Mar 2026) says FY2025 program-level amounts 'have not been made public'. FY2025 was a full-year CR. (from sa4)",
+  "EO 14369 'Ensuring American Space Superiority' (Dec 18, 2025) found only via law-firm summaries; its NOAA weather satellite provisions not read in the Federal Register/whitehouse.gov text. (from sa4)",
+  "Bloomberg (2026-03-05) 'AI Upgrades Eyed in Planned Reorganization of US Weather Agency' not read; whether NESDIS is reorganized is unverified. (from sa4)",
+  "Senate FY26 conference bill summary (appropriations.senate.gov fy26_cjs_conference_bill_summarypdf.pdf) and CRS R48643 FY2026 CJS overview not read. (from sa4)",
+  "No NESDIS/STAR/OSPO-specific staffing cut numbers (RIF, DRP) found; FY2027 CJ shows 0 FTE change on OSPO/STAR decreases and (25) positions in Commercial Services. (from sa4)",
+  "OSPO notice MSG_20260901_1400 (retirement of GOES-R Rainfall Rate/QPE, initial impact Nov 2, 2026 per search summary) is already in the main folder (main/ospo_msg_20260901_rrqpe.txt); I did not re-read it. NESDIS 'Notice of Changes' page (nesdis.noaa.gov/about/documents-reports/notice-of-changes) not read. (from sa4)",
+  "Whether DMSP data to NOAA actually ended in September 2026 not checked (NCEI node/7996, Defense News 2025-07-31 reversal, NSIDC SSMIS gaps notice found in search but not read; q3 territory). (from sa4)",
+  "AMS/NWA April 2025 statements (EurekAlert) not read; mostly about NOAA Research. (from sa4)",
+  "Duplicates left to other folders (marked _unused in sa4): GAO-26-107739 (in sa1), S-NPP Update #4 decommissioning notice (in sa2), OSPO GOES-R RRQPE retirement notice MSG_20260901_1400 (in main). Reason for S-NPP cessation not found in the August 3, 2026 notice. (from sa4)",
+  "DMSP delivery to NOAA after Sept 30, 2026: CLASS notice of Oct 23, 2026 unreadable (class.noaa.gov refused; no Wayback copy after May 20, 2026).",
+  "GPM: NASA 2026 Senior Review outcome not published on its page (guidance letters Aug 2026); CEOS database snippet gives GPM end of life September 2029 (not read).",
+  "NOAA-20/21 design life: NESDIS page 403 to scripts, Wayback and browser; NASA EOSPSO refused."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "CMORPH passive microwave inputs SSMIS AMSR2 GMI MHS",
+   "tool": "WebSearch",
+   "notes": "domain filter noaa.gov; NOAA repository docs and 2021 NESDIS slides listing CMORPH inputs (GMI, AMSR2, SSMIS F15-18, MHS N19/Metop-B); no current input list",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Blended Rain Rate product satellites NESDIS OSPO",
+   "tool": "WebSearch",
+   "notes": "domain filter noaa.gov; OSPO bRR page (seven satellites, no DMSP/NOAA-19), OSPO precipitation overview (stale, eight)",
+   "from": "main",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "OSPO message SSMIS DMSP removed blended products 2025",
+   "tool": "WebSearch",
+   "notes": "domain filter ospo.noaa.gov; OSPO DMSP suspension messages June-July 2025, Sept 26 2025 FNMOC power issue message, OSPO retirements page",
+   "from": "main",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "OSPO 2026 message rain rate product input satellite",
+   "tool": "WebSearch",
+   "notes": "domain filter ospo.noaa.gov; Sept 1 2026 notice proposing retirement of legacy GOES-R RRQPE (impact Nov 2 2026)",
+   "from": "main",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "OSPO 2026 DMSP SSMIS data resumed WSF-M",
+   "tool": "WebSearch",
+   "notes": "domain filter ospo.noaa.gov; 2026 SSMI/S outage notices (Mar 21-25, Apr 21 WSF-M maintenance, Jun 11-13) show DMSP data still reaching NOAA in 2026",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CMORPH2 CPC operational 2025",
+   "tool": "WebSearch",
+   "notes": "domain filter noaa.gov; CPC CMORPH2 page (inputs: PMW from all available LEO, GEO/LEO IR, GFS); NBM QMD v5.0 doc (CMORPH2 ocean input); JPSS monthly Aug 2025 (MiRS rain rate input to CMORPH)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=class.noaa.gov/saa/products/rssFeed (Wayback availability and 2026 snapshot)",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "closest snapshot 20260520, before the Oct 23 2026 notice; browser navigation to class.noaa.gov failed; no route left",
+   "from": "main",
+   "copy_of": "https://class.noaa.gov/saa/products/rssFeed"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=web.archive.org/web/2026/nesdis NOAA-20 page; browser read",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Wayback HTTP 403; browser shows Access Denied 403; no route left",
+   "from": "main",
+   "copy_of": "https://www.nesdis.noaa.gov/current-satellite-missions/currently-flying/joint-polar-satellite-system/jpss-series-noaa-20"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read of EUMETSAT Metop series page",
+   "tool": "browser (get_page_text)",
+   "notes": "read in full: Metop-B and -C operational; Metop-SGA1 launched 13 Aug 2025, commissioning; SGB1 planned Oct-Dec 2026",
+   "from": "main",
+   "copy_of": "https://www.eumetsat.int/our-satellites/metop-series"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read of eospso GPM Core Observatory page",
+   "tool": "browser (navigate)",
+   "notes": "navigation to eospso.gsfc.nasa.gov denied/failed; no route left",
+   "from": "main",
+   "copy_of": "https://eospso.gsfc.nasa.gov/missions/global-precipitation-measurement-core-observatory"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "browser read of eospso JPSS-1 page",
+   "tool": "browser (navigate)",
+   "notes": "same host eospso.gsfc.nasa.gov refused in browser; no route left",
+   "from": "main",
+   "copy_of": "https://eospso.gsfc.nasa.gov/missions/joint-polar-satellite-system-1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "primary copy for QuickSounder launch date: NESDIS NEON page",
+   "tool": "lookup (saved NESDIS NEON page)",
+   "notes": "primary NESDIS page already read (anticipated to launch in 2027); aggregator kept only for NET 15 Feb 2027",
+   "from": "main",
+   "copy_of": "https://spacelaunchnow.app/launch/firefly-alpha-block-2-quicksounder"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "primary copy for GCOM-W status: OSPO AMSR2 decommissioning notice",
+   "tool": "lookup (saved OSPO notice)",
+   "notes": "OSPO notice of Jul 28 2026 read in full; OSCAR kept only for launch date and estimated end of life",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/gcom_w"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA-18 decommissioned 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov, ospo.noaa.gov, noaa.gov; found OSPO POES status archive",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO polar weather satellites 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains gao.gov; only GAO-26-107739 (GeoXO) and pre-2025 polar reports",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "QuickSounder launch 2026",
+   "tool": "WebSearch standard",
+   "notes": "no domain filter; results irrelevant (audio products)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA QuickSounder satellite 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov, noaa.gov, spacenews.com; NEON page, Firefly launch contract",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Suomi NPP status 2025 NESDIS",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov, ospo.noaa.gov, noaa.gov; S-NPP cessation notices Nov 2026",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OIG QuickSounder audit",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains oig.doc.gov; nothing on QuickSounder",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA FY26 and FY27 Congressional Justification: Polar Weather, QuickSounder, Near Earth Orbit",
+   "tool": "find_text on saved copies (no web search)",
+   "notes": "reused 2026-11-17 run sa1 files copied to sa2",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Commerce OIG JPSS 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains oig.doc.gov; found Audits Initiated listing 2026-534",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO Near Earth Orbit Network report",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains gao.gov; no NEON report found",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA-20 anomaly 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov, ospo.noaa.gov, star.nesdis.noaa.gov; OSPO July 10 2026 ATMS message",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "QuickSounder launch delay 2027 Firefly",
+   "tool": "WebSearch standard",
+   "notes": "no filter; launch trackers NET Feb 15 2027",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "MiRS NOAA-19 Metop retirement precipitation products 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains star.nesdis.noaa.gov, ospo.noaa.gov, nesdis.noaa.gov; OSPO retirements table",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA-19 decommission MSPPS products discontinued",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains ospo.noaa.gov, nesdis.noaa.gov; POES suspension notice; MSPPS ended 2021 (search summary only, not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JPSS-4 launch 2027 NOAA-22 schedule",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov, nasa.gov, spacenews.com",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA polar satellite gap JPSS-3 storage 2033",
+   "tool": "WebSearch extended",
+   "notes": "key search run in extended mode; found FY25 Major Annual Satellite Report and 2016 OIG",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NESDIS Major Annual Satellite Report FY27",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov; FY27 edition not found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Senate FY2026 appropriations NOAA Near Earth Orbit Network QuickSounder",
+   "tool": "WebSearch standard",
+   "notes": "no filter; general FY26 appropriations hits (q4 territory), not read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA-21 ATMS anomaly 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains ospo.noaa.gov, star.nesdis.noaa.gov, nesdis.noaa.gov; only CrIS anomaly March 2025 and drag maneuver Nov 2025 in summaries, not read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA-20 seven-year design life JPSS",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov, jpss.noaa.gov, nasa.gov; design life pages unreadable (403/502)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA-21 data outage 2026 ATMS VIIRS",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains ospo.noaa.gov, nesdis.noaa.gov; VIIRS LWIR outage July 28-29 2026 (SST, not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Commerce OIG top management challenges FY 2026 NOAA satellites",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains oig.doc.gov; OIG-26-003 read",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA polar satellite data gap 2026 NOAA-20 aging",
+   "tool": "WebSearch extended",
+   "notes": "key news search in extended mode; no NOAA-20 end-of-life statement found; OSPO messages followed",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA-20 ATMS available for operational use July 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains ospo.noaa.gov, star.nesdis.noaa.gov; found the July 14 approval and the July 20 S-NPP recovery notice",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JPSS-4 launch delay 2026 NOAA",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains spacenews.com, spacepolicyonline.com, nesdis.noaa.gov; no 2026 JPSS-4 delay report found; JPSS monthly Jan 2026 not read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GeoXO restructure FY2026 budget sounder",
+   "tool": "WebSearch standard",
+   "notes": "starting query; found CRS R49026, GAO-26-107739 coverage",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-19 operational GOES East 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO GeoXO satellite program report 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains gao.gov",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OIG GeoXO audit 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains oig.doc.gov",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO-26-107739 PDF",
+   "tool": "fetch_page (download attempt, gao.gov PDF returned HTTP 403); read files.gao.gov HTML copy instead",
+   "notes": "other copy of https://www.gao.gov/assets/gao-26-107739.pdf",
+   "from": "sa1",
+   "copy_of": "https://www.gao.gov/assets/gao-26-107739.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-18 ABI anomaly 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains noaa.gov; starting query; results were short OSPO delivery outage notices",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-16 storage GOES-17 decommission 2025 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains nesdis.noaa.gov, ospo.noaa.gov, goes-r.gov",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-R ABI Rainfall Rate QPE SCaMPR operational product",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains noaa.gov, goes-r.gov; found GRR/QPE retirement notice",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GeoXO contract termination lightning mapper 2025",
+   "tool": "WebSearch extended",
+   "notes": "key news search, extended mode",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OIG-26-009-I GeoXO final report PDF",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains oig.doc.gov; PDF link then taken from saved OIG page",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-R design life 10 years 5 years storage",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains goes-r.gov, nesdis.noaa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-18 Channel 16 ABI degradation October 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains ospo.noaa.gov, nesdis.noaa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Hydro-Estimator SCaMPR GOES-19 input NESDIS precipitation product 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains noaa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA GeoXO baseline report Congress December 2026",
+   "tool": "WebSearch extended",
+   "notes": "key search, extended mode; found House SST Democrats letter Oct 19 2026",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA FY26 and FY27 Congressional Justification GeoXO (local search of saved copies)",
+   "tool": "find_text on copies from 2026-11-17 run",
+   "notes": "no download; files copied into sa1 folder",
+   "from": "sa1",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-17 orbit modification test fuel life extension 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains noaa.gov; led to STAR calibration event log",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP SSMIS data end September 2026",
+   "tool": "WebSearch extended",
+   "notes": "required r7, query 1",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA DMSP data hurricane forecasters 2025",
+   "tool": "WebSearch extended",
+   "notes": "required r7, query 2; news results UPI, CNN, Axios, E&E, The Conversation",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP data Fleet Numerical continue NOAA statement July 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; r7 query 3 (OSPO messages found)",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM mission extension senior review 2025 NASA budget",
+   "tool": "WebSearch extended",
+   "notes": "required r8 query 1",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM Core Observatory FY2026 budget request terminate",
+   "tool": "WebSearch",
+   "notes": "required r8 query 2; results only about OCO-2/OCO-3, GPM not mentioned",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM mission status 2026 fuel end of mission",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; required r8 query 3",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Metop-SG A1 launch 2025 EUMETSAT",
+   "tool": "WebSearch",
+   "notes": "allowed_domains eumetsat.int; required r9 query 1",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Metop-B end of life deorbit EUMETSAT",
+   "tool": "WebSearch",
+   "notes": "required r9 query 2",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GOSAT-GW AMSR3 launch 2025 JAXA",
+   "tool": "WebSearch",
+   "notes": "required r9b query 1",
+   "from": "sa3",
+   "required_id": "r9b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GCOM-W AMSR2 status 2025 operation extended",
+   "tool": "WebSearch",
+   "notes": "required r9b query 2",
+   "from": "sa3",
+   "required_id": "r9b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA SSMIS loss impact satellite precipitation products 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; follow-up",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP SSMIS data October 2026 NOAA continue",
+   "tool": "WebSearch",
+   "notes": "follow-up on post-September 2026 DMSP status",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA CMORPH input satellites passive microwave",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; starting query",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Metop-SGA1 Microwave Sounder data NOAA 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; required r9 query 3; only STAR file-share listings of MWS_Metop-SGA1 L1B (Mar-Jun 2026) found, not read",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "OSPO notice product discontinued 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: ospo.noaa.gov, nesdis.noaa.gov, star.nesdis.noaa.gov. Found OSPO archive-retirements page, NDE termination notice (MSG_20250422_1841), June 2025 POES/NOAA-18 notice.",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA FY2026 FY2027 NESDIS budget lines (lookup in saved CJs)",
+   "tool": "find_text.py on saved files",
+   "notes": "Lookup in earlier-run saved noaa_fy26_cj.txt and noaa_fy27_cj.txt (copied to sa4). Found Exhibit 4A changes and Exhibit 4B control table.",
+   "from": "sa4",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "FY2026 CJS joint explanatory statement NESDIS PAC (lookup in saved fy26_cjs_jes.txt)",
+   "tool": "find_text.py on saved files",
+   "notes": "Saved JES from earlier run; found NESDIS PAC table and GeoXO/SAE directives. No new web search run for 'FY2026 CJS appropriations enacted NOAA satellites' because of time.",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NESDIS staff cuts satellites 2025",
+   "tool": "WebSearch (extended)",
+   "notes": "No domain filter. Leads: spacepolicyonline DOGE layoffs, CNN DMSP, Science budget article. Not read for time.",
+   "from": "sa4",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA satellite data cuts 2025",
+   "tool": "WebSearch (extended)",
+   "notes": "No domain filter. Found OSPO DMSP suspension notice (read) and reversal news.",
+   "from": "sa4",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA STAR staff cuts 2025",
+   "tool": "WebSearch",
+   "notes": "Starting query. No STAR-specific result; NOAA-wide layoff news only.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "DMSP data NOAA continue through September 2026",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Results: Navy reversal (Defense News 2025-07-31), NCEI notice node/7996, NSIDC SSMIS gaps notice. Not read for time (q3 territory).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NESDIS product retirement precipitation 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: noaa.gov. Found STAR GHE retirement page (read), OSPO MSG_20260901_1400 GOES-R RRQPE retirement notice (already in main folder; my copy marked _unused), NESDIS Notice of Changes page.",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "executive order NOAA satellites 2025",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Found EO 14369 'Ensuring American Space Superiority' (Dec 18, 2025) via law-firm summaries; SciAm/E&E JPSS upkeep articles (read).",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "AMS statement NOAA satellite budget 2025",
+   "tool": "WebSearch",
+   "notes": "No domain filter. AMS/NWA statements April 17 and April 24, 2025 (via EurekAlert) mostly about NOAA Research; not read for time.",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CRS NOAA satellites 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: congress.gov, everycrsreport.com. Found CRS R49026 (GeoXO program and issues for Congress; search summary says contracts for ACX, LMX, OCX discontinued as of July 24, 2026 - not verified), IF12898.",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "FY2026 CJS appropriations enacted NOAA satellites",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Leads: Senate conference summary fy26_cjs_conference_bill_summarypdf.pdf ($135 million above request for satellites per search summary, not read), CRS R48643 FY2026 CJS overview (not read). Enacted figures used from the saved JES.",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA reorganization NESDIS 2026",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Leads: GAO-26-107739 (already in run folder sa1; my copy marked _unused), Bloomberg March 5, 2026 NOAA reorganization headline (not read).",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "weather enterprise NOAA satellite cuts letter",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Found CNN/KEYT Oct 19, 2026 article on Lofgren/Amo letter (read via WebFetch), E&E DMSP termination (read via WebFetch).",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NESDIS STAR layoffs satellite algorithm scientists 2025",
+   "tool": "WebSearch",
+   "notes": "Follow-up. No STAR-specific layoff report; SpacePolicyOnline Feb 2025 read.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "2025 government shutdown NOAA satellite operations NESDIS furlough",
+   "tool": "WebSearch",
+   "notes": "Follow-up. No NESDIS furlough counts; E&E Oct 15, 2025 DMSP spotty data article read via WebFetch.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CRS R49026 GeoXO PDF copy",
+   "tool": "fetch_page",
+   "notes": "congress.gov/crs-product/R49026 returned HTTP 403 (fetch_page and WebFetch); PDF at congress.gov/crs_external_products/R/PDF/R49026/R49026.1.pdf downloaded.",
+   "from": "sa4",
+   "copy_of": "https://www.congress.gov/crs-product/R49026"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read of EUMETSAT Metop-A end-of-run article",
+   "tool": "browser (get_page_text)",
+   "notes": "read in full: Metop-B expected to operate until 2027, Metop-C into 2030s (2021); MWS on Metop-SGA1 operational 27 Aug 2026 (related-news headline)",
+   "from": "main2",
+   "copy_of": "https://eumetsat.int/europes-first-meteorological-satellite-polar-orbit-ends-its-run"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "DMSP SSMIS NOAA October 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "found Senate letter Oct 13 2026 (Space Force to sustain DMSP to no earlier than 2028), OSPO Sept 1 2026 filename-change notice, NASA Earthdata DMSP status, NCEI DMSP availability page",
+   "from": "main2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM Core Observatory 2026 senior review extended mission",
+   "tool": "duckduckgo (browser)",
+   "notes": "NASA 2026 ESD Senior Review page read: schedule only (guidance letters Aug 2026, mission response Sept 2026), no results or GPM decision posted; CEOS database snippet says GPM current end of life September 2029 (snippet only, not read)",
+   "from": "main2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "DMSP SSMIS data October 2026",
+   "tool": "WebSearch",
+   "notes": "c4: no post-Sept 2026 SSMIS status found; OSPO June 2026 SSMI/S processing outage notices (end TBD).",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM mission end 2026 Senior Review",
+   "tool": "WebSearch",
+   "notes": "c14: no GPM end-of-mission or 2026 Senior Review decision found.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GeoXO schedule November 2026",
+   "tool": "WebSearch",
+   "notes": "c6/c7: no newer schedule change found; search summary mentions an 11.9 billion dollar NOAA estimate, not verified.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "FY2027 Commerce Justice Science appropriations enacted NOAA",
+   "tool": "WebSearch",
+   "notes": "c10: no enacted FY2027 CJS act found.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES-R Rainfall Rate QPE retirement postponed 2026",
+   "tool": "WebSearch",
+   "notes": "c13: no postponement and no post-Nov 2 confirmation found.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Suomi NPP deorbit December 2026",
+   "tool": "WebSearch",
+   "notes": "c2: no deorbit info found; an earlier NESDIS notice URL gives a November 01 2026 cessation date (later notice: Nov 2). Not read.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "QuickSounder launch date 2027 Firefly",
+   "tool": "WebSearch",
+   "notes": "c12: trackers agree NET 15 Feb 2027 (moved from Dec 31 2026 placeholder in late Sept 2026); no contrary date.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AMSR3 NOAA blended products 2026",
+   "tool": "WebSearch",
+   "notes": "c5: no date found for AMSR3 in Blended Hydro/eTRaP; snippets say AMSR3 precipitation products entered NCCF operations Aug 26 2026 (OSPO MSG_20260812_2100, not read).",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA OSPO MiRS retirement NOAA-19 DMSP 2025",
+   "tool": "WebSearch",
+   "notes": "c3: consistent; MiRS retirement postponed from Apr 7 to Apr 8 2025 (OSPO MSG_20250407_2100 snippet). No contrary source.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA-15 decommissioned August 2025",
+   "tool": "WebSearch",
+   "notes": "c1: dates consistent (NOAA-18 June 6, NOAA-19 Aug 13, NOAA-15 Aug 19 2025); snippets say NOAA-19 was an emergency decommissioning after a Battery 1A cell failure, and times differ (1655 vs 1855 UTC). Not read.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "House report 119-652 NOAA GEO Senate FY2027 677,000",
+   "tool": "WebSearch",
+   "notes": "c10: 677,000 not confirmed by search; CRS IF13275 (July 28 2026) snippet says no Senate CJS bill introduced at that date; a SpacePolicyOnline item says the Senate committee later released its CJS bill. Senate GEO mark not checked.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "JPSS-3 long-term storage FY2027 budget",
+   "tool": "WebSearch",
+   "notes": "c9/c11: snippets (not read) from a May/June 2026 SSEC meeting presentation give JPSS-4 planned launch Sept 1 2027 and JPSS-3 in storage, expected launch 2032; CJ says LCD Q1 FY2028/Q1 FY2033. Also found Scientific American and E&E items on NOAA halting, then reversing, deferred upkeep of weather satellites (not read).",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA reverses plan defer upkeep weather satellites 2026",
+   "tool": "WebSearch",
+   "notes": "Not a central claim; possible extra item for coordinator: E&E News (Apr 8, 2025) and Scientific American report NOAA briefly planned to defer JPSS ground maintenance, then exercised the contract option (quote via snippet: The contract option was ultimately exercised, so normal satellite operations continue). Not read.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Enterprise Rainfall Rate GOES-19 PDA November 2026",
+   "tool": "WebSearch",
+   "notes": "c13: no post-Nov 2 confirmation; snippets: June 18-19 2026 GOES-19 Rainfall Rate PDA delivery problem, resumed June 19 (OSPO MSG_20260619_0235, not read). OSPO ERR page lists GOES-18, GOES-19 and Himawari-9.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NEON LEO funding FY2026 enacted 120,000 NOAA",
+   "tool": "WebSearch",
+   "notes": "c8/c12: no contrary figure; snippets say the FY26 CJS minibus was signed Jan 23 2026. The LEO 120,000 figure is confirmed in saved JES line 919.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GeoXO OMB passback cancel contracts April 2025",
+   "tool": "WebSearch",
+   "notes": "c7: passback consistent (CRS R49026). Cost differs: Legis1 snippet says restructuring cut total cost to 11.9 billion dollars by eliminating three of five instruments, vs GAO Table 2 April 2026 baseline 13 billion. Payload says contracts canceled or recompeted (BAE 852M canceled). Not read.",
+   "from": "checker"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NESDIS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NESDIS GOES-R/GOES-19 operational status pages and notices",
+   "query": "GOES-19 operational GOES East 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "GAO reports on GeoXO and geostationary satellites",
+   "query": "GAO GeoXO satellite program report",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "Commerce OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "OIG audits of GeoXO or GOES-R",
+   "query": "Commerce inspector general GeoXO 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA NESDIS / OSPO",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "decommission and status notices for POES, Suomi NPP, JPSS",
+   "query": "NOAA-18 decommissioned 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "GAO reports on JPSS, polar satellites and NEON",
+   "query": "GAO polar weather satellites 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "Commerce OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "OIG audits on JPSS, QuickSounder, LEO",
+   "query": "OIG QuickSounder audit",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "DoD (Space Force, Navy FNMOC)",
+   "publisher": "operator of partner satellites",
+   "subquestion_id": "q3",
+   "aim": "DMSP SSMIS data end announcement and extension",
+   "query": "DMSP SSMIS data discontinued 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NASA",
+   "publisher": "operator/funder of partner satellite",
+   "subquestion_id": "q3",
+   "aim": "GPM mission status, senior review and NASA budget proposals",
+   "query": "NASA FY2026 budget GPM terminate",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "EUMETSAT",
+   "publisher": "operator of partner satellites",
+   "subquestion_id": "q3",
+   "aim": "Metop-B, Metop-C and Metop-SG status",
+   "query": "Metop-SG A1 launch 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9b",
+   "organization": "JAXA",
+   "publisher": "operator of partner satellites",
+   "subquestion_id": "q3",
+   "aim": "GCOM-W AMSR2 status and GOSAT-GW AMSR3",
+   "query": "GCOM-W AMSR2 status 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA",
+   "publisher": "funders, owners (agency budget documents)",
+   "subquestion_id": "q4",
+   "aim": "NESDIS satellite lines in FY2026 and FY2027 Congressional Justifications",
+   "query": "lookup in saved NOAA FY26/FY27 CJ",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "Congress (appropriations committees)",
+   "publisher": "funders (appropriations laws and reports)",
+   "subquestion_id": "q4",
+   "aim": "CJS reports and enacted FY2026 law for NESDIS lines",
+   "query": "FY2026 CJS appropriations enacted NOAA satellites",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "Congressional Research Service",
+   "publisher": "oversight bodies (legislative research)",
+   "subquestion_id": "q4",
+   "aim": "CRS reports on NOAA satellites and NESDIS appropriations",
+   "query": "CRS NOAA satellites 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": null,
+   "publisher": "press",
+   "subquestion_id": "q5",
+   "aim": "news of NOAA satellite data cuts and NESDIS staff cuts",
+   "query": "NOAA satellite data cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "NOAA NESDIS / OSPO",
+   "publisher": "mandatory notices (operations notices)",
+   "subquestion_id": "q5",
+   "aim": "product retirement and change notices for precipitation and microwave products",
+   "query": "OSPO notice product discontinued 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "Executive branch",
+   "publisher": "mandatory filings and notices (Federal Register, executive orders)",
+   "subquestion_id": "q5",
+   "aim": "executive actions or NOAA reorganization touching NESDIS",
+   "query": "executive order NOAA satellites 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r16",
+   "organization": null,
+   "publisher": "affected people and critics",
+   "subquestion_id": "q5",
+   "aim": "AMS and weather-enterprise statements on NOAA satellite budget",
+   "query": "AMS statement NOAA satellite budget 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r17",
+   "organization": null,
+   "publisher": "courts and tribunals",
+   "subquestion_id": "q5",
+   "aim": "litigation over NESDIS satellite programs",
+   "query": null,
+   "skip_reason": "No litigation over satellite programs was found in scoping; NOAA staffing litigation was covered by the 2026-11-17 NCEI run and is not specific to satellite precipitation."
+  }
+ ]
+}

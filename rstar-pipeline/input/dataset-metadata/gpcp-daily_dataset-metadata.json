@@ -1,0 +1,349 @@
+{
+  "schema_version": "0.1",
+  "id": "gpcp-daily",
+  "source": {
+    "file": "markdown/gpcp-daily_dataset-metadata.md",
+    "section": "ChatGPT answer",
+    "converted": "2026-11-21",
+    "followups": [
+      {
+        "date": "2026-11-21",
+        "from": "User: V3.2 start date and DOI, with links"
+      }
+    ]
+  },
+  "dashboard": {
+    "id": "gpcp-daily",
+    "name": "GPCP Daily v3.3: Global Precipitation Climatology Project",
+    "data_archive": "NOAA NCEI; NASA GES DISC",
+    "precipitation_basis": "Satellite + gauges; constrained to GPCP monthly",
+    "period_of_record": "January 1998 - Present",
+    "formal_cdr": "YES — NOAA CDR",
+    "update_status": "Ongoing; updated monthly, with a processing delay.",
+    "spatial_coverage": "Global land + ocean, 90°S-90°N",
+    "resolution": "0.5°",
+    "temporal_frequency": "Daily",
+    "curator": "Robert F. Adler (University of Maryland)",
+    "doi": "10.5067/MEASURES/GPCP/DATA307",
+    "notes": "Merged satellite and gauge analysis: IMERG V07 Final (V07 Late for October–December 2025), GridSat infrared and GPCC gauges, constrained to the GPCP monthly analysis. Computed at the University of Maryland and archived at NOAA NCEI. Replaces the 1° V1.3 One-Degree Daily product.",
+    "access_endpoints": [
+      {
+        "name": "NOAA NCEI dataset record (DOI)",
+        "url": "https://doi.org/10.25921/9b5m-ka77",
+        "role": "primary"
+      },
+      {
+        "name": "NOAA NCEI GPCP Daily CDR page",
+        "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+        "role": "alternative"
+      },
+      {
+        "name": "NOAA NCEI GPCP Daily download archive",
+        "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/",
+        "role": "alternative"
+      },
+      {
+        "name": "NOAA GPCP Daily AWS bucket",
+        "url": "https://noaa-cdr-precip-gpcp-daily-pds.s3.amazonaws.com/index.html",
+        "role": "alternative"
+      },
+      {
+        "name": "NASA GES DISC dataset record (CMR)",
+        "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3405928682-GES_DISC.html",
+        "role": "alternative"
+      }
+    ],
+    "about_url": "dataset.html?id=gpcp-daily"
+  },
+  "identification": {
+    "full_name": "NOAA Climate Data Record (CDR) of the Global Precipitation Climatology Project (GPCP) Daily Version 3.3",
+    "abbreviations": [
+      "GPCP Daily",
+      "GPCP V3.3 Daily"
+    ],
+    "version": "V3.3",
+    "doi": "10.5067/MEASURES/GPCP/DATA307",
+    "doi_url": "https://doi.org/10.5067/MEASURES/GPCP/DATA307",
+    "publisher": "NOAA National Centers for Environmental Information (NCEI)",
+    "publication_date": "2025-08-05",
+    "data_provider": "University of Maryland (analysis); NOAA NCEI (archive)",
+    "dataset_type": "Gridded merged satellite-gauge precipitation analysis",
+    "description": "A global gridded daily precipitation product that combines satellite observations and surface gauge measurements. V3.3 is the latest documented version; the older One-Degree Daily product (V1.3) is at 1° and begins in October 1996.",
+    "other_dois": [
+      {
+        "doi": "10.25921/9b5m-ka77",
+        "issuer": "NOAA NCEI",
+        "note": "NCEI CDR record DOI"
+      }
+    ]
+  },
+  "archives": [
+    {
+      "name": "NOAA NCEI",
+      "role": "primary",
+      "description": "Primary official archive and distribution center for the NOAA CDR"
+    },
+    {
+      "name": "NASA GES DISC",
+      "role": "primary",
+      "description": "NASA archive copy of GPCP Daily V3.3; issues the dataset DOI 10.5067/MEASURES/GPCP/DATA307"
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "role": "mirror",
+      "description": "Cloud-based access to the GPCP Daily V3.3 files"
+    },
+    {
+      "name": "Google Cloud",
+      "role": "mirror",
+      "description": "Cloud-based data access"
+    },
+    {
+      "name": "NASA Goddard Space Flight Center (GSFC)",
+      "role": "project",
+      "description": "GPCP project and scientific data distribution"
+    },
+    {
+      "name": "World Data Center for Meteorology",
+      "role": "secondary",
+      "description": "Secondary distribution conduit for GPCP data"
+    }
+  ],
+  "access_endpoints": [
+    {
+      "name": "NOAA GPCP Daily CDR landing page",
+      "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+      "role": "primary",
+      "type": "landing-page",
+      "purpose": "Official dataset information and access"
+    },
+    {
+      "name": "NOAA direct data download",
+      "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/",
+      "role": "alternative",
+      "type": "download",
+      "purpose": "Browse and download archived files"
+    },
+    {
+      "name": "NOAA GPCP Daily AWS bucket",
+      "url": "https://noaa-cdr-precip-gpcp-daily-pds.s3.amazonaws.com/index.html",
+      "role": "alternative",
+      "type": "cloud",
+      "purpose": "Cloud data access"
+    },
+    {
+      "name": "Google Cloud GPCP bucket",
+      "url": "https://console.cloud.google.com/storage/browser/noaa-cdr-precip-gpcp-daily",
+      "role": "alternative",
+      "type": "cloud",
+      "purpose": "Cloud data access"
+    },
+    {
+      "name": "GPCP Daily V3.3 metadata record",
+      "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC01726",
+      "role": "documentation",
+      "type": "metadata",
+      "purpose": "Detailed metadata, coverage and lineage"
+    },
+    {
+      "name": "Dataset DOI",
+      "url": "https://doi.org/10.25921/9b5m-ka77",
+      "role": "alternative",
+      "type": "doi",
+      "purpose": "Permanent dataset identifier"
+    },
+    {
+      "name": "NASA GES DISC dataset record (CMR)",
+      "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3405928682-GES_DISC.html",
+      "role": "alternative",
+      "type": "metadata",
+      "purpose": "NASA metadata record with the V3.3 DOI"
+    }
+  ],
+  "access_note": "The NOAA landing page warns of cloud-migration delays affecting some data access services; the AWS endpoint is an alternative download route.",
+  "people": {
+    "curator": {
+      "name": "NOAA National Centers for Environmental Information (NCEI)",
+      "organization": "NOAA NCEI",
+      "role": "Data archive and stewardship"
+    },
+    "leads": [
+      {
+        "name": "Robert F. Adler",
+        "organization": "University of Maryland, College Park",
+        "role": "Principal Investigator"
+      }
+    ],
+    "contributors": [
+      "George J. Huffman",
+      "Jian-Jian Wang",
+      "Mathew Sapiano",
+      "Guojun Gu",
+      "Ali Behrangi",
+      "David Bolvin",
+      "Eric Nelkin"
+    ],
+    "note": "The V3.3 daily analysis is computed at the University of Maryland and submitted to NOAA NCEI for archive and distribution."
+  },
+  "instruments": {
+    "summary": "Passive microwave radiometers, infrared imagers, GPM constellation sensors (through IMERG) and GPCC rain gauges",
+    "categories": [
+      {
+        "name": "Passive microwave (PMW) satellite sensors",
+        "type": "satellite passive microwave",
+        "role": "Estimates precipitation from microwave radiances"
+      },
+      {
+        "name": "SSM/I – Special Sensor Microwave/Imager",
+        "type": "satellite passive microwave",
+        "role": "Microwave precipitation observations"
+      },
+      {
+        "name": "SSMIS – Special Sensor Microwave Imager/Sounder",
+        "type": "satellite passive microwave",
+        "role": "Successor to SSM/I"
+      },
+      {
+        "name": "GPM constellation sensors",
+        "type": "satellite passive microwave and radar",
+        "role": "Satellite precipitation estimates brought in through IMERG"
+      },
+      {
+        "name": "Geostationary infrared (IR) imagers",
+        "type": "satellite infrared",
+        "role": "Cloud characteristics and precipitation estimates from IR brightness temperatures"
+      },
+      {
+        "name": "GridSat IR",
+        "type": "satellite infrared",
+        "role": "Extends daily coverage back to January 1998"
+      },
+      {
+        "name": "Rain gauges (GPCC)",
+        "type": "in-situ gauge",
+        "role": "Ground-based observations for calibration and merging"
+      }
+    ],
+    "input_products": [
+      "IMERG Version 07B Final Run",
+      "GridSat infrared observations",
+      "GPCP monthly precipitation analysis",
+      "GPCC gauge data"
+    ],
+    "legacy_inputs": {
+      "version": "V1.3",
+      "items": [
+        "SSM/I and SSMIS microwave radiometers",
+        "Geostationary and low-Earth-orbit infrared imagers",
+        "TOVS (TIROS Operational Vertical Sounder)",
+        "AIRS (Atmospheric Infrared Sounder)",
+        "Surface rain-gauge analyses"
+      ]
+    },
+    "note": "A merged satellite-and-gauge product, not a single instrument. Some entries are instrument families or data products rather than single instruments. Our own web research (GPCP part 6) found that V3.3 used IMERG V07 Late, not Final, for October–December 2025, because IMERG V07 Final ends in September 2025."
+  },
+  "temporal": {
+    "start": "1998-01",
+    "start_note": "V3.3 adds GridSat infrared to start earlier than V3.2 (June 2000).",
+    "end": "present",
+    "end_note": "Delayed, not real time",
+    "frequency": "Daily",
+    "update_frequency": "Monthly",
+    "latency": "Delayed processing; data are not available right after observation"
+  },
+  "spatial": {
+    "coverage": "Global",
+    "extent": {
+      "lat_min": -90,
+      "lat_max": 90,
+      "lon_min": -180,
+      "lon_max": 180
+    },
+    "land_ocean": "Land and ocean",
+    "resolution": "0.5° × 0.5°",
+    "grid": {
+      "spacing_deg": 0.5,
+      "dimensions": "720 × 360",
+      "type": "Cylindrical Equal Distance"
+    }
+  },
+  "data_format": {
+    "format": "NetCDF4 (daily files)",
+    "units": ""
+  },
+  "status": {
+    "state": "Ongoing",
+    "label": "Ongoing",
+    "evidence": [
+      "NOAA continues to maintain and distribute the daily precipitation CDR",
+      "V3.3 is the latest documented version",
+      "Data are updated monthly",
+      "The record runs from January 1998 to the delayed present",
+      "The earlier V1.3 product is superseded (legacy)"
+    ]
+  },
+  "versions": [
+    {
+      "version": "V3.3",
+      "status": "current",
+      "doi": "10.5067/MEASURES/GPCP/DATA307",
+      "resolution": "0.5° × 0.5°",
+      "start": "1998-01"
+    },
+    {
+      "version": "V3.2",
+      "status": "superseded",
+      "doi": "10.5067/MEASURES/GPCP/DATA305",
+      "resolution": "0.5° × 0.5°",
+      "start": "2000-06",
+      "note": "Daily from June 2000 to present; monthly from 1983 to present"
+    },
+    {
+      "version": "V1.3 (One-Degree Daily)",
+      "status": "legacy",
+      "doi": "10.7289/V5RX998Z",
+      "resolution": "1° × 1°",
+      "start": "1996-10"
+    }
+  ],
+  "related_products": [],
+  "references": [
+    {
+      "title": "NOAA NCEI – GPCP Daily CDR landing page",
+      "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+      "type": "landing-page"
+    },
+    {
+      "title": "NOAA – GPCP Daily V3.3 metadata and source information",
+      "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC01726",
+      "type": "metadata"
+    },
+    {
+      "title": "NOAA – GPCP Daily V3.3 lineage and source datasets",
+      "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc%3AC01726/html",
+      "type": "metadata"
+    },
+    {
+      "title": "GPCP Version 3.3: A Refined Global View of Precipitation from Satellite and Gauge Observations",
+      "url": "https://journals.ametsoc.org/view/journals/hydr/aop/JHM-D-26-0048.1/JHM-D-26-0048.1.xml",
+      "type": "paper"
+    },
+    {
+      "title": "NASA – GPCP One-Degree Daily V1.3 Technical Note",
+      "url": "https://esgf.nccs.nasa.gov/esgdoc/GPCP_precip_1DD-V1.3_TechNote_180510.pdf",
+      "type": "documentation"
+    },
+    {
+      "title": "NASA Earthdata – GPCP Daily V3.2 (GPCPDAY 3.2) catalog page",
+      "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpcpday-3.2",
+      "doi": "10.5067/MEASURES/GPCP/DATA305",
+      "type": "catalog"
+    },
+    {
+      "title": "AGU Fall Meeting 2022 abstract (2022AGUFMIN22B0307L) – GPCP V3.2 monthly 1983–present and daily June 2000–present",
+      "url": "https://scixplorer.org/abs/2022AGUFMIN22B0307L/abstract",
+      "type": "abstract"
+    }
+  ],
+  "review_notes": []
+}

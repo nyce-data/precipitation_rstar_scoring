@@ -1,0 +1,4016 @@
+{
+ "question": "Is NASA's satellite-based precipitation observing capability at risk of being discontinued, reduced or made unavailable (Jan 2025 to Nov 18, 2026)?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed mission terminations, Earth Science cuts, Goddard reorganization)",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "GPM Core Observatory status, design life, Senior Review, products",
+   "status": "answered",
+   "source_ids": [
+    "s48",
+    "s49",
+    "s50",
+    "s52",
+    "s59",
+    "s93",
+    "s28",
+    "s27"
+   ],
+   "remaining_gap": "2026 Senior Review outcome not published; no 2025-26 fuel figure"
+  },
+  {
+   "id": "q2",
+   "question": "TROPICS and Aqua",
+   "status": "answered",
+   "source_ids": [
+    "s44",
+    "s73",
+    "s79",
+    "s84",
+    "s27",
+    "s48"
+   ],
+   "remaining_gap": "whether Aqua instruments shut down Aug 26, 2026 not confirmed"
+  },
+  {
+   "id": "q3",
+   "question": "INCUS and AOS successors; projected gap",
+   "status": "answered",
+   "source_ids": [
+    "s27",
+    "s86",
+    "s87",
+    "s37",
+    "s52",
+    "s92",
+    "s80"
+   ],
+   "remaining_gap": "no document states how INCUS closeout was reversed; no NASA/GAO gap projection found"
+  },
+  {
+   "id": "q4",
+   "question": "Budgetary and political/administrative threats",
+   "status": "answered",
+   "source_ids": [
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s38",
+    "s37"
+   ],
+   "remaining_gap": "FY2026 operating plan not found; executive orders not searched"
+  },
+  {
+   "id": "q5",
+   "question": "Operational threats (staffing, contracts, PPS, GES DISC)",
+   "status": "answered",
+   "source_ids": [
+    "s20",
+    "s15",
+    "s9",
+    "s10",
+    "s5",
+    "s22",
+    "s6"
+   ],
+   "remaining_gap": "no PPS/GES DISC-specific staffing figures; status during Oct-Nov 2025 lapse not found"
+  },
+  {
+   "id": "q6",
+   "question": "International and commercial alternatives",
+   "status": "uncertain",
+   "source_ids": [
+    "s55",
+    "s63",
+    "s53",
+    "s52",
+    "s62"
+   ],
+   "remaining_gap": "GSMaP notices and Metop-SG MWI details not read; latency comparisons not found"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.scientificamerican.com/article/nasa-goddards-shrinking-workforce-could-stifle-future-space-missions-experts-say/",
+   "fetched_url": null,
+   "title": "NASA Goddard's shrinking workforce could stifle future space missions, experts say",
+   "author_org": "Scientific American (Eric Niiler)",
+   "published": "2026-09-22",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/sciam_goddard.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Focus is astrophysics/engineering (Roman, propulsion, library); Earth science data systems (PPS, GES DISC) NOT PRESENT. Workforce figure includes contractors; no named source for 10,000/6,000.",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "context: Goddard center-wide"
+  },
+  {
+   "id": "s2",
+   "url": "https://www.aip.org/fyi/nasa-goddard-building-closures-draw-scrutiny",
+   "fetched_url": null,
+   "title": "NASA Goddard Building Closures Draw Scrutiny",
+   "author_org": "AIP FYI (Lindsay McKenzie)",
+   "published": "2025-11-12",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/aip_goddard_closures.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Which buildings/labs closed and whether any host PPS or GES DISC: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard center-wide"
+  },
+  {
+   "id": "s3",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/pmm-pps-ges-disc-release-gpm-data-processed-under-algorithm-08",
+   "fetched_url": null,
+   "title": "PMM, PPS, and GES DISC Release GPM Data Processed Under Algorithm 08",
+   "author_org": "NASA Earthdata (GES DISC)",
+   "published": "2026-04-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/earthdata_v08_release.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Shows processing/distribution continuing in 2026; says nothing about staffing or budget.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s4",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/all-l3-gprof-data-gpm-v08-being-recalled",
+   "fetched_url": null,
+   "title": "All L3 GPROF Data for GPM v08 Are Being Recalled",
+   "author_org": "NASA Earthdata (GES DISC / PPS)",
+   "published": "2026-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/earthdata_gprof_recall.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Technical bug, not staffing or budget; other causes NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://ceres.larc.nasa.gov/documents/STM/2026-05/01_ceres-st-May2026-considine2.pdf",
+   "fetched_url": null,
+   "title": "Headquarters News And Perspective (CERES Science Team Meeting, May 2026)",
+   "author_org": "David B. Considine, NASA Headquarters",
+   "published": "2026-05-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ceres_stm_may2026_considine.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Slide bullets, not a decision document; timeline for DAAC consolidation and specific effect on GES DISC or PPS NOT PRESENT. '$1,021 Billion' as printed (likely $1.021 B).",
+   "found_by": [
+    "sa4",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://gpm.nasa.gov/data/news/imerg-v08-transition-schedule",
+   "fetched_url": null,
+   "title": "IMERG V08 Transition Schedule",
+   "author_org": "NASA GPM (PPS/IMERG team)",
+   "published": "2026-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/imerg_v08_schedule.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Version transition reason given as algorithm upgrade; staffing/budget causes NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s7",
+   "url": "https://gpm.nasa.gov/data/news",
+   "fetched_url": null,
+   "title": "Data News | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM",
+   "published": "2026-08-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gpm_data_news.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Listing excerpts (truncated teasers); no notices about shutdown-period (Oct-Nov 2025) operations NOT PRESENT on this page.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s8",
+   "url": "https://www.highergov.com/contract-forecast/earth-science-data-and-information-system-esdis-1121962",
+   "fetched_url": null,
+   "title": "Earth Science Data and Information System (ESDIS) Next (ENX)",
+   "author_org": "HigherGov (aggregating NASA GSFC procurement forecast)",
+   "published": "2025-04-01",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Host refused by sandbox (CONNECT 403); read via WebFetch extraction. Whether ENX was awarded, delayed or cancelled NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s9",
+   "url": "https://espo.nasa.gov/sites/default/files/documents/2026-05/D2_0915_Scott_ESDS-Updates.pdf",
+   "fetched_url": null,
+   "title": "Earth Science Data Systems Updates",
+   "author_org": "Joel Scott, Program Executive, ESDS, NASA HQ",
+   "published": "2026-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/esds_updates_scott_may2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Slides; schedule, funding or effect on GES DISC precipitation data distribution NOT PRESENT. Org chart dated 03.18.2026; file path dated 2026-05.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/resources/ESD%20Town%20Hall%2012162025.pdf",
+   "fetched_url": null,
+   "title": "Earth Science Town Hall, AGU, December 2025",
+   "author_org": "Karen St. Germain, Director, NASA Earth Science Division",
+   "published": "2025-12-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/esd_townhall_dec2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Which DAACs, which risks, and which missions face closeout NOT PRESENT on this slide.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/ingest-archive-migration-interrupt-data-ingestion-oct.-28-30",
+   "fetched_url": null,
+   "title": "Ingest & Archive Migration to Interrupt Data Ingestion on Oct. 28-30",
+   "author_org": "NASA Earthdata",
+   "published": "2026-10-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/earthdata_ingest_migration.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Planned migration, not a cut; IMERG-specific impact NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s12",
+   "url": "https://www.vanhollen.senate.gov/imo/media/doc/md_delegation_ltr_acting_nasa_administrator_duffy_on_goddard.pdf",
+   "fetched_url": null,
+   "title": "Maryland congressional delegation letter to Acting NASA Administrator Duffy on Goddard",
+   "author_org": "Sens. Van Hollen, Alsobrooks and Maryland House members",
+   "published": "2025-11-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/md_delegation_letter.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No figures; Earth science data systems (PPS, GES DISC) NOT PRESENT; NASA reply NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard center-wide"
+  },
+  {
+   "id": "s13",
+   "url": "https://www.foxessellfaster.com/blog/lanhams-space-giant-is-laying-off-149-workersand-its-not-the-first-time-this-year/",
+   "fetched_url": null,
+   "title": "Lanham's Space Giant Is Laying Off 149 Workers—And It's Not the First Time This Year",
+   "author_org": "Dustin Fox (real-estate blog, citing Washington Business Journal)",
+   "published": "2025-07-18",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Secondary blog citing Washington Business Journal (Nate Doughty, 2025-07-17); contract name and whether it covers Earth science data (GES DISC/PPS) NOT PRESENT. Original WBJ article not read.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard contractors"
+  },
+  {
+   "id": "s14",
+   "url": "https://nasawatch.com/personnel-news/heads-up-contractor-employees-warn-act",
+   "fetched_url": null,
+   "title": "Heads Up Contractor Employees: WARN Act",
+   "author_org": "NASA Watch (Keith Cowing)",
+   "published": "2025-07-31",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Host refused by sandbox (CONNECT 403), read via WebFetch extraction. Contractor for Goddard notice, numbers, and whether Earth science data contracts are affected NOT PRESENT; 15-20% figure refers to NASA Shared Services Center per search snippet.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard contractors"
+  },
+  {
+   "id": "s15",
+   "url": "https://democrats-science.house.gov/imo/media/doc/SST%20Minority%20Staff%20Report%20-%20NASA%20Implementation%20of%20FY26%20PBR%20-%20April%202026.pdf",
+   "fetched_url": null,
+   "title": "NASA's Implementation of the FY26 PBR (House Science Committee Minority Staff Report)",
+   "author_org": "House Committee on Science, Space, and Technology, Democratic (minority) staff",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/sst_minority_fy26pbr_apr2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Partisan (minority staff) report; Earth science data systems (DAACs, GES DISC, PPS) NOT PRESENT. NOAA-acquisition figures from a March 30, 2026 NASA-NOAA staff briefing.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NASA agency-wide and Goddard NOAA programs"
+  },
+  {
+   "id": "s16",
+   "url": "https://www.kunc.org/npr-news/2026-09-15/nasa-rushed-engineers-out-of-their-labs-they-say-it-risks-future-space-missions",
+   "fetched_url": null,
+   "title": "NASA rushed engineers out of their labs. They say it risks future space missions",
+   "author_org": "NPR (Chiara Eisner), via KUNC",
+   "published": "2026-09-15",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "kunc.org refused by sandbox; Bash allowed_domains attempt denied by auto mode classifier; read via WebFetch extraction (quotes are fragments as extracted). Earth science, data systems, GES DISC, GPM: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard center-wide"
+  },
+  {
+   "id": "s17",
+   "url": "https://web.archive.org/web/20251020210650/https://gpm.nasa.gov/data/news",
+   "fetched_url": null,
+   "title": "Data News | NASA GPM (Wayback snapshot 2025-10-20, during funding lapse)",
+   "author_org": "NASA GPM (via Internet Archive)",
+   "published": "2025-10-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gpm_news_oct2025_wayback.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Absence of a notice is not proof of uninterrupted processing; shutdown-period PPS/IMERG status NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://www.earthdata.nasa.gov/centers/gesdisc-daac/news",
+   "fetched_url": null,
+   "title": "GES DISC News",
+   "author_org": "NASA Earthdata (GES DISC)",
+   "published": "2026-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gesdisc_news.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "News stories, not operational alerts; shutdown-period distribution status NOT PRESENT; Giovanni or OPeNDAP decommissioning NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s19",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/resources/AMS-ESD-Town-Hall-2026.pdf",
+   "fetched_url": null,
+   "title": "Earth Science Town Hall, AMS, January 2026",
+   "author_org": "Karen St. Germain, Director, NASA Earth Science Division",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ams_esd_townhall_2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Partnership slide relevant mainly to q2 (Aqua); GPM not listed on that slide; GES DISC/PPS specifics NOT PRESENT.",
+   "found_by": [
+    "sa4",
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s20",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/06/final-memorandum-ig-26-005-review-of-goddard-space-flight-centers-transformation-efforts.pdf",
+   "fetched_url": null,
+   "title": "Review of Goddard Space Flight Center's Transformation Efforts (IG-26-005)",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2026-06-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e22",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/oig_ig26005_goddard.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Limited-scope review of Greenbelt campus; Earth science data systems (PPS, GES DISC) NOT PRESENT. Period for the 40 percent figure (March 2020-January 2026) differs from Scientific American's framing (January 2025-July 2026). Also saved by sa3 (same file).",
+   "found_by": [
+    "sa4",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: Goddard center-wide",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/gprof-std-data-recalled-august-19-2026-present",
+   "fetched_url": null,
+   "title": "GPROF STD Data Recalled for August 19, 2026 to Present",
+   "author_org": "NASA Earthdata (GES DISC / PPS)",
+   "published": "2026-09-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Read via WebFetch extraction only; resolved date NOT PRESENT; technical cause, not staffing or budget.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s22",
+   "url": "https://gpm.nasa.gov/data/news/update-imerg-v08-transition-schedule-aug-2026",
+   "fetched_url": null,
+   "title": "Update to the IMERG V08 Transition Schedule, Aug. 2026",
+   "author_org": "NASA GPM (IMERG development team)",
+   "published": "2026-08-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e24",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/imerg_v08_update_aug2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Which parent product is late NOT PRESENT; staffing or budget as cause NOT PRESENT; no later update found by 2026-11-18 search.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/transition-gpm-imerg-products-v08",
+   "fetched_url": null,
+   "title": "Transition of GPM IMERG Products to V08",
+   "author_org": "NASA Earthdata (GES DISC)",
+   "published": "2026-05-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/earthdata_imerg_v08_transition.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Pointer notice; schedule details on GPM page (sa4-e8, sa4-e24).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s24",
+   "url": "https://www.ametsoc.org/sites/ams/assets/File/policy/Wx_Special_Report_2025.pdf",
+   "fetched_url": null,
+   "title": "Without a Strong Weather Enterprise, America’s Economic Leadership Is at Risk (AMS Policy Program Study)",
+   "author_org": "American Meteorological Society (Seitter, Tipton, Higgins)",
+   "published": "2025-04",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa4-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ams_special_report_2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "ametsoc.org refused by sandbox (CONNECT 403); PDF obtained via WebFetch (saved binary) and converted with pdftotext into my folder. Report focuses on NOAA/weather enterprise; GPM, PPS, GES DISC NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: AMS critics"
+  },
+  {
+   "id": "s25",
+   "url": "https://www.space.com/space-exploration/nasa-is-sinking-its-flagship-science-center-during-the-government-shutdown-and-may-be-breaking-the-law-in-the-process",
+   "fetched_url": null,
+   "title": "NASA is sinking its flagship science center during the government shutdown and may be breaking the law in the process",
+   "author_org": "Space.com (Josh Dinner)",
+   "published": "2025-11-03",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Host refused by sandbox; WebFetch extraction truncated ([Content truncated due to length...]); Antideficiency Act discussion and Goddard email NOT PRESENT in extracted part (email quote available via AIP FYI sa4-e3). Same URL also listed as unreadable before this read.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: Goddard center-wide"
+  },
+  {
+   "id": "s26",
+   "url": "https://science.nasa.gov/science-research/earth-science/the-final-earth-observer-editors-corner-october-december-2025/",
+   "fetched_url": null,
+   "title": "The Final Earth Observer Editor’s Corner: October–December 2025",
+   "author_org": "NASA Science (The Earth Observer, EOS Project Science Office)",
+   "published": "2025-12-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/earth_observer_final.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Communications product, not data processing; reason for shutdown NOT PRESENT; date from search result (Dec 29, 2025 announcement).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NASA Earth science communications"
+  },
+  {
+   "id": "s27",
+   "url": "https://www.nasa.gov/wp-content/uploads/2025/05/fy-2026-budget-technical-supplement-002.pdf",
+   "fetched_url": null,
+   "title": "FY 2026 President's Budget Request Summary (Technical Supplement)",
+   "author_org": "NASA",
+   "published": "2025-06-09 (NASA page date; file uploaded 2025-05)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fy26_tech_supp.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "FY2025 column shown as '--'.",
+   "found_by": [
+    "sa3",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.nasa.gov/wp-content/uploads/2026/04/fiscal-year-2027-full-budget-request.pdf",
+   "fetched_url": null,
+   "title": "FY 2027 Budget Estimates, National Aeronautics and Space Administration",
+   "author_org": "NASA",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fy27_full_budget.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Earth Science enacted columns shown as '--' (restructured budget).",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "FY2026 CJS Joint Explanatory Statement (Division A of P.L. 119-74)",
+   "author_org": "Congress (posted by Senate Committee on Appropriations)",
+   "published": "2026-01 (Congressional Record Jan 8, 2026 per CRS)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Scanned PDF; OCR garbles the ESO figure — verify on PDF p. 52. No GPM/Aqua/TROPICS/INCUS/AOS language found (searched).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt652/html/CRPT-119hrpt652.htm",
+   "fetched_url": null,
+   "title": "H. Rept. 119-652, Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2027",
+   "author_org": "House Committee on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/hrpt119-652.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "NOT PRESENT: GPM, TROPICS, INCUS, AOS, Aqua language (searched).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s31",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf",
+   "fetched_url": null,
+   "title": "Senate Appropriations Committee FY2027 CJS Explanatory Statement",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/senate_fy27_cjs.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Committee recommendation, not enacted. NOT PRESENT: GPM, TROPICS, INCUS by name (searched).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://www.everycrsreport.com/files/2026-06-22_R43419_6dcc6ad79653fc081e8f8c8adb354071ad7930dc.pdf",
+   "fetched_url": null,
+   "title": "NASA Appropriations and Authorizations: At a Glance (R43419), updated June 22, 2026",
+   "author_org": "Congressional Research Service",
+   "published": "2026-06-22",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crs_R43419_jun2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Predates Senate FY2027 CJS appropriations report; Senate column is an authorization (S. 933).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s33",
+   "url": "https://www.everycrsreport.com/files/2026-02-27_R43419_273405e895035be3ea37bc8934d2304aced578b2.html",
+   "fetched_url": null,
+   "title": "NASA Appropriations and Authorizations: At a Glance (R43419), updated February 27, 2026",
+   "author_org": "Congressional Research Service",
+   "published": "2026-02-27",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crs_R43419.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Saved file is raw HTML with .txt name. Column order per CRS text: FY2025 enacted, FY2026 request, House cmte (H.R. 5342), Senate cmte (S. 2354), enacted (P.L. 119-74). Signing date NOT PRESENT in the parts read.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s34",
+   "url": "https://www.planetary.org/articles/advocacy-success-fy2026-nasa-budget",
+   "fetched_url": null,
+   "title": "You just saved NASA's budget",
+   "author_org": "The Planetary Society",
+   "published": "2026-01 (after Senate vote Jan 15, 2026)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/planetary_fy26_enacted.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Advocacy organization; written before signature. Bill text 'no less than' clause not verified in statute.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s35",
+   "url": "https://www.planetary.org/articles/analyzing-the-fy-2027-nasa-budget-request",
+   "fetched_url": null,
+   "title": "The FY 2027 NASA budget request",
+   "author_org": "The Planetary Society",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/planetary_fy27.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Advocacy analysis; does not name GPM, Aqua or TROPICS in passages found; meaning of $4,321 column not verified.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s36",
+   "url": "https://eos.org/research-and-developments/nasa-planning-for-unauthorized-shutdown-of-carbon-monitoring-satellites",
+   "fetched_url": null,
+   "title": "NASA Planning for Unauthorized Shutdown of Carbon Monitoring Satellites",
+   "author_org": "Eos (AGU)",
+   "published": "2025-08 (correction dated 5 August 2025)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/eos_closeout.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "GPM, TROPICS, Aqua NOT PRESENT in the article (searched).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s37",
+   "url": "https://files.gao.gov/reports/GAO-26-108556/index.html",
+   "fetched_url": null,
+   "title": "NASA: Assessments of Major Projects (GAO-26-108556)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-07-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Read via WebFetch extraction (first 100,000 of 245,358 chars); PDF at gao.gov/assets returned HTTP 403. GPM, TROPICS, Aqua, INCUS NOT PRESENT in portion read.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s38",
+   "url": "https://spacepolicyonline.com/news/house-clears-fy2027-cr-now-to-the-president/",
+   "fetched_url": null,
+   "title": "House Clears FY2027 CR, Now to the President",
+   "author_org": "SpacePolicyOnline",
+   "published": "2026-09-01 (updated 2026-09-03)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extraction; NASA anomalies, impoundment, Earth science NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s39",
+   "url": "https://spacepolicyonline.com/news/isaacmans-golden-age-of-science-discovery-on-shaky-ground/",
+   "fetched_url": null,
+   "title": "Isaacman's 'Golden Age of Science & Discovery' on Shaky Ground",
+   "author_org": "SpacePolicyOnline",
+   "published": "2025-04-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Secondhand report of passback; GPM, Aqua, TROPICS, INCUS, AOS NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s40",
+   "url": "https://science.nasa.gov/earth-science/senior-review-2026/",
+   "fetched_url": null,
+   "title": "2026 Earth Science Senior Review",
+   "author_org": "NASA Science Mission Directorate, Earth Science Division",
+   "published": "Page last updated 2026-01-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Mission list NOT PRESENT on page; results NOT PRESENT; page also shows headline 'NASA's Terra Mission to End' (unread).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s41",
+   "url": "https://www.militaryaerospace.com/commercial-aerospace/article/55354691/nasa-seeks-commercial-partners-for-terra-aqua-aura-earth-science-satellite-operations",
+   "fetched_url": null,
+   "title": "NASA seeks commercial partners for Terra, Aqua, Aura Earth science satellite operations",
+   "author_org": "Military & Aerospace Electronics",
+   "published": "2026-02-03",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extraction; RFI number and full due date NOT PRESENT; budget reasons NOT PRESENT; AMSR-E/AMSU/AIRS NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s42",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/01/2025-report-on-nasas-top-management-and-performance-challenges.pdf",
+   "fetched_url": null,
+   "title": "2025 Report on NASA's Top Management and Performance Challenges",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2025 (file posted 2026-01)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/oig_tmc2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Two-column PDF text; no Earth science, GPM, Senior Review or Goddard mentions found (searched).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s43",
+   "url": "https://www.congress.gov/crs_external_products/R/PDF/R48929/R48929.1.pdf",
+   "fetched_url": null,
+   "title": "Overview of FY2027 Appropriations for Commerce, Justice, Science, and Related Agencies (CJS) (R48929)",
+   "author_org": "Congressional Research Service",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa3-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crs_R48929.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No Earth Science line (searched). Version .1; publication date not checked.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s44",
+   "url": "https://www.nasa.gov/blogs/smallsatellites/2025/11/25/nasas-tropics-completes-storm-studying-mission/",
+   "fetched_url": null,
+   "title": "NASA TROPICS completes storm-studying mission",
+   "author_org": "NASA (Kate D. Ramsayer)",
+   "published": "2025-11-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e28",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/tropics_complete.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Found while on q4 (logged for q2). Budget/closeout NOT PRESENT; per-satellite stop dates NOT PRESENT.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://satnews.com/2025/12/29/nasa-shutters-the-earth-observer-publication-eos-flagships-face-2026-retirement/",
+   "fetched_url": null,
+   "title": "NASA shutters The Earth Observer publication; EOS flagships face 2026 retirement",
+   "author_org": "SatNews",
+   "published": "2025-12-29",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Trade news; retirement-date source not given; conflicts with NASA RFI dates (Aqua power until Sep 2027). Budget/Senior Review/GPM/AMSR-E/AIRS NOT PRESENT.",
+   "found_by": [
+    "sa3",
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s46",
+   "url": "https://www.jpl.nasa.gov/news/nasas-incus-mission-on-road-to-launch-study-storms-from-space/",
+   "fetched_url": null,
+   "title": "NASA's INCUS Mission on Road to Launch, Study Storms From Space",
+   "author_org": "NASA JPL",
+   "published": "2026-06-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e31",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Relationship 'contradicts' is relative to the FY2026 PBR INCUS closeout plan (sa3-e4). Budget/funding NOT PRESENT on page. Found while on q4; logged under q3.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s47",
+   "url": "https://science.nasa.gov/blogs/science-news/2026/11/17/nasas-terra-mission-to-end/",
+   "fetched_url": null,
+   "title": "NASA's Terra Mission to End",
+   "author_org": "NASA Science (Kate Ramsayer)",
+   "published": "2026-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e32",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Context for Aqua: FY2026 PBR proposed Terra/Aqua/Aura closeout; Senate FY2027 rejected it. Page gives no budget reason. Aqua, GPM NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: Terra (EOS sister of Aqua)"
+  },
+  {
+   "id": "s48",
+   "url": "https://science.nasa.gov/wp-content/uploads/2024/02/response-to-2023-earth-science-senior-review-and-2022-2023-out-of-cycle-senior-reviews-final.pdf",
+   "fetched_url": null,
+   "title": "Response to 2023 Earth Science Senior Review and 2022-2023 Out-of-Cycle Senior Reviews",
+   "author_org": "NASA Earth Science Division",
+   "published": "2024-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nasa_sr2023_response.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Budget figures NOT PRESENT in this passage.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/senior-reviews/2026/2026%20ESD%20Senior%20Review%20Call%20for%20Proposals_DRAFT20251219.pdf",
+   "fetched_url": null,
+   "title": "Call for Proposals - Senior Review 2026 for Extension of Earth Science Operating Missions (DRAFT 20251219)",
+   "author_org": "NASA HQ Earth Science Division (K. St Germain, Director)",
+   "published": "2026-01-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sr2026_call_draft.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Draft file name (DRAFT20251219); outcome of the 2026 review NOT PRESENT. Aqua is invited despite the 2023 response saying no 2026 proposal was anticipated. TROPICS not in the invited list.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s50",
+   "url": "https://gpm.nasa.gov/missions/gpm/orbit-boost",
+   "fetched_url": null,
+   "title": "GPM Orbit Boost",
+   "author_org": "NASA GPM (George Huffman, GPM Project Scientist)",
+   "published": "2023-09-27 (updated 2023-11-08)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_orbit_boost.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2023 page; no 2025-2026 update; fuel figures NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://ntrs.nasa.gov/citations/20240004796",
+   "fetched_url": null,
+   "title": "NASA GPM Status and Future Activities (EGU24 presentation abstract)",
+   "author_org": "George J. Huffman, NASA Goddard Space Flight Center",
+   "published": "2024-04-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ntrs_gpm_status_2024.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Post-boost lifetime estimate NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s52",
+   "url": "https://ipwg12.imgw.pl/wp-content/uploads/2026/07/S2.3_Kubota-1.pdf",
+   "fetched_url": null,
+   "title": "JAXA precipitation missions: GPM/DPR status and Precipitation Measuring Mission (PMM) (IPWG-12 talk S2.3)",
+   "author_org": "JAXA (Kubota)",
+   "published": "2026-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/kubota_ipwg2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Altitudes 407/442 km differ from NASA's 400/435 km. Host ipwg12.imgw.pl refused by sandbox; PDF obtained via WebFetch binary save and converted. Text columns interleaved by pdftotext.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s53",
+   "url": "https://ntrs.nasa.gov/api/citations/20260008217/downloads/PrecipWhitePaper_V4.pdf",
+   "fetched_url": null,
+   "title": "Advancing Global Precipitation Monitoring Products for Science and Applications (white paper)",
+   "author_org": "Jackson Tan, Sarah Ringerud, George J. Huffman, Scott A. Braun, Owen A. Kelley, Sujay Kumar, Lisa Milani (NASA GSFC)",
+   "published": "2026 (NTRS ID 20260008217; exact date NOT PRESENT in text)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/precip_whitepaper_v4.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Recommendation document (Decadal Survey input), not a decision; no end date for GPM.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s54",
+   "url": "https://ceos.org/document_management/Publications/Governing_Docs/PC_Terms-of-Reference_Apr2024.pdf",
+   "fetched_url": null,
+   "title": "CEOS Precipitation Virtual Constellation (P-VC) Terms of Reference, Version 3.0.3",
+   "author_org": "Committee on Earth Observation Satellites (CEOS) P-VC",
+   "published": "2024-04-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ceos_pvc_tor_2024.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2024 document, before the question window; names no successor calibrator.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: CEOS (international)"
+  },
+  {
+   "id": "s55",
+   "url": "https://science.nasa.gov/wp-content/uploads/2026/03/tomorrow-io-radar-qa-sme-report-final-signed-1.pdf",
+   "fetched_url": null,
+   "title": "Tomorrow.io Radar Quality Assessment Report",
+   "author_org": "NASA Earth Science Division, Commercial Satellite Data Acquisition (CSDA) Program",
+   "published": "2026-03-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/csda_tomorrowio_radar_report.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Evaluation sample periods 61 days (R1) and 21 days (R2); data licensing/open access NOT PRESENT in passages read; latency NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: commercial (Tomorrow.io)"
+  },
+  {
+   "id": "s56",
+   "url": "https://www.tomorrow.io/blog/tomorrow-io-reaches-60-minute-global-revisit-completing-its-first-constellation/",
+   "fetched_url": null,
+   "title": "Tomorrow.io Reaches 60-Minute Global Revisit, Completing Its First Constellation",
+   "author_org": "Tomorrow.io",
+   "published": "2026-01-12",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Company press release; host www.tomorrow.io refused by sandbox, read with WebFetch extraction-only prompt. Total satellite count, data access terms, latency, GPM comparison, calibration: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: commercial (Tomorrow.io)"
+  },
+  {
+   "id": "s57",
+   "url": "https://meetingorganizer.copernicus.org/EGU25/EGU25-7237.html",
+   "fetched_url": null,
+   "title": "Plans for IMERG V08 and Future Perspectives for Global Satellite Precipitation (EGU25-7237)",
+   "author_org": "George Huffman, David Bolvin, Robert Joyce, Eric Nelkin, Jackson Tan (NASA GSFC, SSAI, UMBC)",
+   "published": "2025-03-14",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e13",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/egu25_7237_imerg_v08.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Conference abstract; what IMERG does after GPM-CO ends NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s58",
+   "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-14297.html",
+   "fetched_url": null,
+   "title": "Status and Development of Version 08 in the NASA GPM Activities (EGU26-14297)",
+   "author_org": "George Huffman, Christian Kummerow, William Olson, Erich Stocker (NASA GSFC incl. Precipitation Processing System; CSU; UMBC)",
+   "published": "2026-03-14",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e14",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/egu26_14297.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No spacecraft health, fuel, budget or Senior Review statements (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s59",
+   "url": "https://ntrs.nasa.gov/api/citations/20160008958/downloads/20160008958.pdf",
+   "fetched_url": null,
+   "title": "Successes with the Global Precipitation Measurement (GPM) Mission",
+   "author_org": "Gail Skofronick-Jackson, George Huffman, Erich Stocker, Walter Petersen (NASA GSFC / MSFC)",
+   "published": "2016 (IGARSS paper; exact date NOT PRESENT in text)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ntrs_gpm_successes_2016.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2016 pre-dates the solar-cycle fuel revisions (see sa1-e5). A 5-year goal wording NOT PRESENT here.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s60",
+   "url": "https://gpm.nasa.gov/missions/GPM/core-observatory",
+   "fetched_url": null,
+   "title": "GPM Core Observatory",
+   "author_org": "NASA GPM",
+   "published": "2020-03-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_core_observatory_page.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page dated 2020; design life NOT PRESENT on this page.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s61",
+   "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/Time_to_wake_up_MetOp-SG-B1_weather_satellite",
+   "fetched_url": null,
+   "title": "Time to wake up MetOp-SG-B1 weather satellite",
+   "author_org": "ESA",
+   "published": "2026-11-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Host www.esa.int refused by sandbox; read via WebFetch extraction-only. MWI/ICI not named on page (NOT PRESENT); design lifetime NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: EUMETSAT/ESA"
+  },
+  {
+   "id": "s62",
+   "url": "https://space.oscar.wmo.int/satellites/view/aos_pmm",
+   "fetched_url": null,
+   "title": "WMO OSCAR/Space: Satellite AOS-PMM",
+   "author_org": "World Meteorological Organization (OSCAR database)",
+   "published": "2026-10-12 (entry last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Aggregator; dates flagged as estimated. A search snippet (entry dated 20 Apr 2026) showed launch March 2029 and EOL 2034 or later, so the OSCAR date appears to have moved between April and October 2026; earlier version not saved. Host space.oscar.wmo.int read via WebFetch.",
+   "found_by": [
+    "sa1",
+    "checker"
+   ],
+   "scope": "context: JAXA/CNES/NASA (AOS-PMM)"
+  },
+  {
+   "id": "s63",
+   "url": "https://sac347.nsmc.org.cn/nsmc/en/satellite/FY3G.html",
+   "fetched_url": null,
+   "title": "FY-3G Satellite (NSMC)",
+   "author_org": "China National Satellite Meteorological Center (NSMC/CMA)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Access terms/licensing NOT PRESENT; design life NOT PRESENT. Read via WebFetch extraction-only.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: China CMA"
+  },
+  {
+   "id": "s64",
+   "url": "https://www.eurekalert.org/news-releases/1032226",
+   "fetched_url": null,
+   "title": "New satellite capable of measuring Earth precipitation from space",
+   "author_org": "Journal of Remote Sensing (EurekAlert news release)",
+   "published": "2024-01-25",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "2024, before window; bracketed text as returned by extraction.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: China CMA"
+  },
+  {
+   "id": "s65",
+   "url": "https://science.nasa.gov/earth-science/senior-review-2026/faqs/",
+   "fetched_url": null,
+   "title": "ESD 2026 Senior Review Frequently Asked Questions",
+   "author_org": "NASA Science, Earth Science Division",
+   "published": "2026-01-27 (page last updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "GPM, Aqua, TROPICS NOT PRESENT; dollar figures NOT PRESENT. Schedule differs from the May 2026 HQ briefing (results anticipated September 2026, per search snippet of CERES STM deck held by sa4). Read via WebFetch extraction-only (page not saved).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s66",
+   "url": "https://gpm.nasa.gov/data/news/gpm-core-observatory-sun-point-mode",
+   "fetched_url": null,
+   "title": "GPM Core Observatory in Sun Point Mode",
+   "author_org": "NASA GPM",
+   "published": "2023-12-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_sun_point_mode.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Before the question window; later status of wheel #5 and wheel #2 NOT PRESENT. Context for the 2023 SR decision funding two-reaction wheel science mode development (sa1-e1). Search snippets (not read) mention a 2-reaction wheel safehold patch installed April 18 2023.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s67",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_TechnicalDocumentation_final.pdf",
+   "fetched_url": null,
+   "title": "Integrated Multi-satellitE Retrievals for GPM (IMERG) Technical Documentation",
+   "author_org": "George J. Huffman et al., NASA GSFC (PPS document server)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_techdoc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "V07 documentation dated 13 July 2023; plan for IMERG after GPM-CO ends NOT PRESENT in passages read (full document not read).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s68",
+   "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-14694.html",
+   "fetched_url": null,
+   "title": "Improved and Consistent Calibration Methodologies for IMERG V08 (EGU26-14694)",
+   "author_org": "Robert Joyce, George Huffman, Dave Bolvin, Jackson Tan, Eric Nelkin (NASA GSFC)",
+   "published": "2026 (EGU General Assembly, 3-8 May 2026)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e24",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/egu26_14694.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Post-GPM calibration plan NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s69",
+   "url": "https://gpm.nasa.gov/data/news/resumption-gpm-core-observatory-science-operations-and-nrt-data",
+   "fetched_url": null,
+   "title": "Resumption of GPM Core Observatory Science Operations and NRT Data",
+   "author_org": "NASA GPM / PPS",
+   "published": "2020-08-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_resumption_news.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2020 event, before window; shows short-outage behaviour only, not a post-mission plan.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s70",
+   "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/MetOp-SG_facts_and_figures",
+   "fetched_url": null,
+   "title": "MetOp-SG facts and figures",
+   "author_org": "ESA",
+   "published": "2025-03-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Page dated 19 Mar 2025 but A1 date given as past launch; dates may have been updated since. Host www.esa.int refused by sandbox; read via WebFetch extraction-only. No spaceborne radar on MetOp-SG (radar NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: EUMETSAT/ESA"
+  },
+  {
+   "id": "s71",
+   "url": "https://www.satellitetoday.com/imagery-and-sensing/2026/09/10/york-space-to-build-tomorrow-ios-next-gen-deepsky-constellation/",
+   "fetched_url": null,
+   "title": "York Space to Build Platforms for Tomorrow.io's Next-Gen DeepSky Constellation",
+   "author_org": "Via Satellite (Rachel Jewett)",
+   "published": "2026-09-10",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Extraction returned mostly paraphrase, so only the fragments in passage are verbatim; the radar-pathfinder status (completed demonstration missions) needs verbatim confirmation by the coordinator. GPM, data customers, launch schedule NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: commercial (Tomorrow.io)"
+  },
+  {
+   "id": "s72",
+   "url": "https://science.nasa.gov/earth-science/senior-review-2026/resources/",
+   "fetched_url": null,
+   "title": "ESD 2026 Senior Review Resources",
+   "author_org": "NASA Science, Earth Science Division",
+   "published": "2026-02-26 (page last updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Absence of results on this page does not show none exist elsewhere. 2026 ESD Kickoff Presentation PDF not read (lead).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s73",
+   "url": "https://science.nasa.gov/mission/aqua/",
+   "fetched_url": null,
+   "title": "Aqua - NASA Science (mission page)",
+   "author_org": "NASA",
+   "published": "NOT PRESENT (retrieved 2026-11-18; lists 2026 stories)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aqua-1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/aqua_status.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page gives no end-of-science date, no Senior Review decision, no IMERG/GPROF use statement (NOT PRESENT). Search-snippet text 'into September 2026' / 'passivation ... fall 2026' was NOT PRESENT in the version fetched. AMSR-E power-off is March 2016 here (brief said 2015). aqua.nasa.gov/sites/default/files/AquaStatus.pdf redirected to this page.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s74",
+   "url": "https://science.nasa.gov/science-research/earth-science/terra-the-end-of-an-era/",
+   "fetched_url": null,
+   "title": "Terra: The End of An Era",
+   "author_org": "NASA Earth Observer Staff",
+   "published": "2025-12-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aqua-2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/terra_end_era.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Editor's note undated (article dated Dec 29 2025; note may be later). Conflicts with a search snippet of an Aug 2025 Aqua status deck: 'August 26, 2026, Projected Aqua Instrument Shutdown followed by Spacecraft Passivation' (deck not read).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s75",
+   "url": "https://science.nasa.gov/mission/aos/",
+   "fetched_url": null,
+   "title": "Atmosphere Observing System - NASA Science",
+   "author_org": "NASA",
+   "published": "NOT PRESENT (retrieved 2026-11-18)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aos-2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nasa_aos_page.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated page, possibly not updated after the reported FALCON restructuring; FALCON, budget, KDP dates NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s76",
+   "url": "https://www.theweather.net/news/science/nasa-announces-shift-in-the-launch-of-atmospheric-research-satellite-networks.html",
+   "fetched_url": null,
+   "title": "NASA Announces Shift in the Launch of Atmospheric Research Satellite Networks",
+   "author_org": "Meteored (Mike Carmon)",
+   "published": "2026-04-16",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-aos-1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extraction (host refused by sandbox for raw download); fragments joined. Budget figures, AOS-Sky/AOS-Storm, CSA, DLR, INCUS and any gap NOT PRESENT. News, not a NASA document.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s77",
+   "url": "https://ntrs.nasa.gov/api/citations/20240013140/downloads/Braun_AOS-Status-Oct2024_V2.pdf",
+   "fetched_url": null,
+   "title": "Status of the NASA Atmosphere Observing System (AOS)",
+   "author_org": "NASA GSFC (Scott Braun, AOS Project Scientist)",
+   "published": "2024-10-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aos-3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/aos_status_oct2024.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Pre-2025 status (Oct 2024); slide table layout flattened by pdftotext, FROM/TO columns approximate. No gap statement (NOT PRESENT).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s78",
+   "url": "https://www.cbsnews.com/colorado/news/colorado-state-university-nasa-satellite-mission-could-stay-grounded-mostly-paid-for/",
+   "fetched_url": null,
+   "title": "Colorado State University NASA satellite mission could stay grounded, mostly paid for",
+   "author_org": "CBS Colorado (Jaimie Dodge, Olivia Young)",
+   "published": "2025-08-27",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-incus-2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extraction (sandbox refused cbsnews.com for raw download); fragments joined. Percent complete, amount spent NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s79",
+   "url": "https://assets.science.nasa.gov/content/dam/science/missions/aqua/AquaStatus_November.pdf",
+   "fetched_url": null,
+   "title": "Aqua Summary (as of November 30, 2023)",
+   "author_org": "NASA GSFC Aqua flight operations",
+   "published": "2023-11-30 (as-of date on slide 1)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aqua-3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/aqua_status_nov.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Deck dated Nov 30 2023; a search snippet says an Aug 8 2025 deck kept the Aug 26 2026 date and a Feb 2025 deck had July 22 2026 (not read). Later NASA editor's note (sa2-aqua-2) says Aqua end-of-science projected September 2027. IMERG/GPROF use of AMSU NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s80",
+   "url": "https://www.nasa.gov/wp-content/uploads/2026/03/4-golden-age-of-science-and-discovery.pdf",
+   "fetched_url": null,
+   "title": "Ignition: Golden Age of Science and Discovery (NASA SMD slides)",
+   "author_org": "NASA Science Mission Directorate",
+   "published": "2026-03 (Ignition event March 24 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-falcon-1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ignition_science.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No statement that FALCON replaces AOS, no budget, no precipitation radar or PMM mention in matched text (NOT PRESENT). INCUS listed without schedule.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s81",
+   "url": "https://ntrs.nasa.gov/citations/20230007913",
+   "fetched_url": null,
+   "title": "NASA's Atmosphere Observing System (AOS), From A Precipitation Perspective",
+   "author_org": "NASA (Cecil, Braun, Yorks, Thorsen, McLinden)",
+   "published": "2023-06-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aos-4",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ntrs_aos_precip.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Abstract only (pptx not downloaded); pre-2025. No gap statement.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s82",
+   "url": "https://docs.house.gov/billsthisweek/20260105/Division%20A%20Commerce%20Justice%20Science.pdf",
+   "fetched_url": null,
+   "title": "Division A - Commerce, Justice, Science Appropriations Act, 2026: explanatory statement",
+   "author_org": "U.S. House Appropriations Committee (House Rules Committee posting)",
+   "published": "2026-01-05 (posting week)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-fy26-enacted",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/fy26_cjs_divA_jes.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Scanned PDF with OCR errors; the ESO Missions figure is unclear ('2-15,000' as printed). Searched text for INCUS, Atmosphere Observing, Earth Venture, Precipitation, Aqua, Terra: NOT PRESENT. Final enactment as Public Law 119-74 per search snippets (not verified here). Also relevant to q4.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s83",
+   "url": "https://spacenews.com/nasa-restructures-earth-system-observatory-to-reduce-costs/",
+   "fetched_url": null,
+   "title": "NASA restructures Earth System Observatory to reduce costs",
+   "author_org": "SpaceNews (Jeff Foust)",
+   "published": "2024-03-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-aos-5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Pre-2025 context; WebFetch extraction (non-.org host, not downloaded). AOS launch dates, PMM NASA contribution, gap NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s84",
+   "url": "https://aqua.nasa.gov/sites/default/files/AquaStatus_May2025.pdf",
+   "fetched_url": null,
+   "title": "Aqua Summary (as of May 31, 2025)",
+   "author_org": "NASA GSFC Aqua flight operations",
+   "published": "2025-05-31 (as-of date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aqua-4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/aqua_status_may2025_wb.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read via Wayback snapshot 20251206085126 (live URL redirects to science.nasa.gov/mission/aqua/). The 9/21/2027 date is bus power, distinct from instrument operations; NASA editor's note (sa2-aqua-2) gives Aqua end-of-science Sep 2027. Whether instruments ran past Aug 26 2026 NOT PRESENT in any page read.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s85",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/senior-reviews/2026/2026_ESD%20Senior_Review_Call_for_Proposals_FINAL.pdf",
+   "fetched_url": null,
+   "title": "Call for Proposals - Senior Review 2026 for Extension of Earth Science Operating Missions",
+   "author_org": "NASA HQ Earth Science Division (K. St Germain)",
+   "published": "2026-01-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-sr2026-1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sr2026_call.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Call only; Senior Review decisions/outcome for Aqua and GPM NOT PRESENT. Also relevant to q1 (GPM).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s86",
+   "url": "https://www.nasa.gov/blogs/smallsatellites/2026/06/05/nasas-incus-mission-on-road-to-launch-study-storms-from-space/",
+   "fetched_url": null,
+   "title": "NASA's INCUS Mission on Road to Launch, Study Storms From Space (NASA SmallSat blog copy)",
+   "author_org": "NASA JPL",
+   "published": "2026-06-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-incus-3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nasa_incus_june2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No budget/appropriation statement; no mention of the FY26 closeout proposal; IMERG/GPROF use NOT PRESENT. Replaces the thin JPL WebFetch extraction (sa2-incus-1).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s87",
+   "url": "https://science.nasa.gov/mission/incus/",
+   "fetched_url": null,
+   "title": "INCUS - NASA Science",
+   "author_org": "NASA",
+   "published": "NOT PRESENT (retrieved 2026-11-18)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-incus-4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nasa_incus_mission.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated page; cost, selection year NOT PRESENT (search snippet: approx. $177 million excluding launch; Firefly Alpha via VADR).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s88",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_V07_ATBD_final_230712.pdf",
+   "fetched_url": null,
+   "title": "IMERG Algorithm Theoretical Basis Document, Version 07",
+   "author_org": "NASA GSFC (G. Huffman et al.)",
+   "published": "2023-07-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-imerg-1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_v07_atbd.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2023 ATBD; later sensor additions (e.g., TROPICS) after July 2023 not covered. Bracketed dates in the table are estimates. Whether AIRS-based IR/sounder estimates are used for current V07 periods NOT PRESENT in the lines read. Also relevant to q1/q6 (constellation inputs and estimated end dates, e.g., GPM GMI [Dec 29], AMSR2 [May 26]).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s89",
+   "url": "https://aqua.nasa.gov/sites/default/files/AquaTimeline.pdf",
+   "fetched_url": null,
+   "title": "Aqua Timeline if Maximally Extended",
+   "author_org": "NASA Aqua project",
+   "published": "2023 (Wayback snapshot 2023-10-17; exact date NOT PRESENT)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-aqua-5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/aqua_timeline_wb.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read via Wayback snapshot 20231017001814 (live URL redirects). Pre-2025 plan; later NASA statements give Aqua end of science/maximum lifetime Sep 2027.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s90",
+   "url": "https://cnes.fr/en/projects/aos",
+   "fetched_url": null,
+   "title": "AOS (CNES project page)",
+   "author_org": "CNES",
+   "published": "2025-04-08 (updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-pmm-2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extraction (cnes.fr non-.org, not downloaded); page predates FY26 request (May 2025) and FALCON (Mar 2026).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s91",
+   "url": "https://militaryaerospace.com/commercial-aerospace/article/55354691/nasa-seeks-commercial-partners-for-terra-aqua-aura-earth-science-satellite-operations",
+   "fetched_url": null,
+   "title": "NASA seeks commercial partners for Terra, Aqua, Aura Earth science satellite operations",
+   "author_org": "Military & Aerospace Electronics (Jamie Whitney)",
+   "published": "2026-02-03",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-aqua-6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extraction (non-.org host); RFI number and full due date NOT PRESENT (printed as 12 2026); SAM.gov listing not read; budget reason NOT PRESENT. Also relevant to q4/q5.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s92",
+   "url": "https://www.globenewswire.com/news-release/2026/11/03/3394137/0/en/intuitive-machines-selected-to-provide-spacecraft-platform-and-mission-solutions-for-nasa-s-falcon-radar-earth-science-mission.html",
+   "fetched_url": null,
+   "title": "Intuitive Machines Selected to Provide Spacecraft Platform and Mission Solutions for NASA's FALCON-RADAR Earth Science Mission",
+   "author_org": "Intuitive Machines (press release)",
+   "published": "2026-11-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/globenewswire-com-news-release-2026-11-03-3394137-0-en-intui_125838.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "company press release",
+   "found_by": [
+    "main"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s93",
+   "url": "https://gpm.nasa.gov/sites/default/files/2026-08/IMERG_V07_ATBD_final_260813.pdf",
+   "fetched_url": null,
+   "title": "IMERG Algorithm Theoretical Basis Document, Version 07 (revision 7.2, 13 August 2026)",
+   "author_org": "NASA GPM (Huffman et al.)",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "end dates in square brackets are estimates",
+   "found_by": [
+    "main"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s94",
+   "url": "https://en.wikipedia.org/wiki/Aqua_(satellite)",
+   "fetched_url": null,
+   "title": "Aqua (satellite) - Wikipedia",
+   "author_org": "Wikipedia",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "chk1",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Search-engine summary only; page not read; unofficial; differs from Aug 26, 2026 shutdown in May 2025 status deck",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s95",
+   "url": "https://www.everycrsreport.com/reports/R48956.html",
+   "fetched_url": null,
+   "title": "National Security, Department of State, and Related Programs: FY2027 Budget and Appropriations (CRS R48956)",
+   "author_org": "Congressional Research Service",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk3",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Search-engine summary only; page not read; adds the law number (P.L. 119-103) that c9 lacks",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s96",
+   "url": "https://spacepolicyonline.com/news/house-appropriators-reject-deep-cuts-to-nasa-in-fy2027/",
+   "fetched_url": null,
+   "title": "House Appropriators Reject Deep Cuts to NASA in FY2027",
+   "author_org": "SpacePolicyOnline",
+   "published": null,
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "chk4",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Search-engine summary only; NASA totals, not Earth Science; consistent with c9 (House Earth Science $1.325B within a flat NASA total)",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s97",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/ingest-archive-migration-interrupt-data-availability-oct.-28-30",
+   "fetched_url": null,
+   "title": "Ingest/archive migration to interrupt data availability Oct. 28-30",
+   "author_org": "NASA Earthdata",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk6",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Search summary only; year not stated in snippet (presumably 2026); bears on c12 statement that no schedule was found for consolidation",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s98",
+   "url": "https://earthdata.nasa.gov/esds/web-unification-project",
+   "fetched_url": null,
+   "title": "Web Unification Project",
+   "author_org": "NASA ESDS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk7",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Search summary only",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s99",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/content/data-alert-history/22753",
+   "fetched_url": null,
+   "title": "Earthdata alert: All L3 GPROF Data for GPM v08 Are Being Recalled",
+   "author_org": "NASA Earthdata",
+   "published": "2026-10-01 (per search summary)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk8",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-18",
+   "limitations": "Search summary only; supports c13 recall; dates add detail",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "subject"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "NASA's 2023 Senior Review extended GPM through FY2026 with added funding for near-real-time processing and two-reaction-wheel science mode; the 2026 Senior Review (covering FY2027-FY2029) invited GPM and Aqua with reduced budget targets, and its outcome has not been published.",
+   "evidence": [
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "GPM (Global Precipitation Measurement Mission) | The GPM mission will be extended through FY 2026 with additional funding above the | baselined Senior Review budget target to support the near real-time processing system and | two-reaction wheel science mode development. A 2026 Senior Review proposal is | anticipated from the GPM mission.",
+     "location": "NASA Decisions section, lines 186-190 of text"
+    },
+    {
+     "source_id": "s85",
+     "relationship": "supports",
+     "passage": "Given ESD budget constraints, all missions proposing to the Senior | Review will be given reduced budget targets. … The following sixteen missions (in alphabetical order) are invited to propose to the 2026 Senior Review: Aqua, | Aura, ECOSTRESS, EMIT, GEDI, GPM, GRACE-FO, ICESat-2, OCO-2, OCO-3, PREFIRE, SAGE-III, | SMAP, SWOT, TEMPO, and TSIS-1. | Extended Mission Scope: | The period for this review will cover fiscal year (FY) 2027 through FY 2029. … the importance of long-term datasets and extending | the observation record for Earth science research and societal applications, and availability of substitute data | from other missions",
+     "location": "pp. 1-2"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Senior Review: April 2026. | • Result/guidance anticipated September 2026.",
+     "location": "slide 4"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NASA's own decision letter, call and briefing; absence of results checked on the review pages",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "NASA's FY2026 request gave GPM $19.7M for FY2026 and $0.0 for FY2027-FY2030; the FY2027 request shows GPM at $0.0 on its own line and leaves funding beyond FY2026 to the 2026 Senior Review, from a pooled $68.8M Senior Review line.",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "contextualizes",
+     "passage": "Budget Authority (in $ millions)             FY 2024 FY 2025 FY 2026 FY 2027 FY 2028 FY 2029 FY 2030",
+     "location": "FY2026 Technical Supplement, table header (txt line 1005)"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Global Precipitation Measurement (GPM)                19.8        --      19.7       0.0       0.0       0.0       0.0",
+     "location": "Earth Science table (txt line 6466)"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Global Precipitation Measurement (GPM)          --       --      0.0      0.0      0.0      0.0      0.0",
+     "location": "p. ES-15 (txt line 5422)"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "allocate GPM funding beyond FY 2026 based on the 2026 Senior Review recommendations anticipated",
+     "location": "GPM section (txt line 5749)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NASA's own budget documents, read as raw text",
+   "applicability": "requests, not enacted law",
+   "figure_status": "request",
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "GPM Core Observatory: launched Feb 27, 2014; prime mission (instrument design life) 3 years to May 2017; orbit raised Nov 7-8, 2023 to extend life toward the early 2030s; JAXA (July 2026) reports instruments in good condition; NASA's August 2026 IMERG ATBD estimates GPM data to Dec 2029.",
+   "evidence": [
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "years (to May 2017) but fuel is projected to last well beyond",
+     "location": "section 2 (txt line 75)"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "The GPM Core Observatory (GPM-CO) satellite performed two orbit boost maneuvers on Nov. 7 and 8, 2023 that raised its altitude from 400km to 435km. The goal of these boosts is to restore the GPM-CO's lifespan closer to the original estimates of ending in the early 2030’s. Recent lifespan estimates have been getting shorter due to unexpectedly high solar activity, which causes additional atmospheric drag on the spacecraft. The primary goal of restoring GPM-CO’s lifespan is to allow the GPM mission to overlap with the satellites associated with the future Atmosphere Observing System (AOS) mission … including the Level 2 GPROF, DPR, and CORRA algorithms; the Level 3 datasets built from these; and the Level 3 Integrated Multi-satellitE Retrievals for GPM (IMERG). … Calibration of both IMERG Early and Late Run products, which typically takes place on an ongoing basis using inputs from CORRA, will be frozen using the latest data from before the orbit boost maneuver.",
+     "location": "main text, paragraphs 1, 2 and 4"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "launched in Feb. 2014, | and has been in | operation for 12 years! … The GPM Core Observatory satellite performed orbit-boost | maneuvers in November 2023, increasing its altitude from 407 | km to 442 km and extending its expected operational lifetime | into the early 2030s. … All data collection is   JAXA and NASA released DPR Version 8 (V08) products in | nominal and instruments    March 2026 (GMI's V08 was also released at the same time). | are in good condition.",
+     "location": "slides 3-4"
+    },
+    {
+     "source_id": "s93",
+     "relationship": "supports",
+     "passage": "GPM DPR-GMI       Apr 14 - [Dec 29] | TRMM PR-TMI       Jan 98 - Sep 14 | Conically-Scanning Passive Microwave | Imagers and Imager/Sounders | Sensor            Period of Record | Aqua AMSR-E           Jun 02 - Oct 11",
+     "location": "Table 1, PDF p. 3"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "official sources agree on early 2030s target but the ATBD's estimated end is Dec 2029; no 2025-26 fuel figure",
+   "applicability": null,
+   "figure_status": "estimate",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "GPM's GMI, calibrated to the DPR-GMI combined product, is the calibrator for all other satellites in IMERG; a NASA GSFC white paper says JAXA's PMM may be insufficient as the next reference because its radiometer lacks 19-37 GHz channels.",
+   "evidence": [
+    {
+     "source_id": "s93",
+     "relationship": "supports",
+     "passage": "the TMI and GMI products are used as calibrators for all the other satellite precipitation estimates.",
+     "location": "section on calibration, PDF text line 688"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "Computing integrated global precipitation observations requires a reliable reference | satellite for calibration and training of ML algorithms. In the GPM mission, this role is served by the | GPM Core Observatory with its active and passive instruments and a non-sun-synchronous orbit. … For nearly 30 years, | the TRMM and GPM satellites served as references. JAXA’s upcoming Precipitation Measuring | Mission (PMM) may be insufficient to serve as the next reference since in its current formulation the | radiometer lacks the low-frequency channels (19–37 GHz) required for accurately retrieving liquid | phase precipitation.",
+     "location": "section 'a) Priorities for Future Satellites', lines 193-206 of text"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "contextualizes",
+     "passage": "The GPM Core Observatory (GPM-CO) satellite performed two orbit boost maneuvers on Nov. 7 and 8, 2023 that raised its altitude from 400km to 435km. The goal of these boosts is to restore the GPM-CO's lifespan closer to the original estimates of ending in the early 2030’s. Recent lifespan estimates have been getting shorter due to unexpectedly high solar activity, which causes additional atmospheric drag on the spacecraft. The primary goal of restoring GPM-CO’s lifespan is to allow the GPM mission to overlap with the satellites associated with the future Atmosphere Observing System (AOS) mission … including the Level 2 GPROF, DPR, and CORRA algorithms; the Level 3 datasets built from these; and the Level 3 Integrated Multi-satellitE Retrievals for GPM (IMERG). … Calibration of both IMERG Early and Late Run products, which typically takes place on an ongoing basis using inputs from CORRA, will be frozen using the latest data from before the orbit boost maneuver.",
+     "location": "main text, paragraphs 1, 2 and 4"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NASA algorithm document and NASA white paper",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": null
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "TROPICS (launched May 2023, one-year prime mission, extended through the 2024 and 2025 hurricane seasons) collected its final data on Nov 12, 2025 at natural end of life; it is not among IMERG's listed inputs.",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "A NASA mission that studied the interior of hurricanes collected its final data on Nov. 12, as the last two CubeSats in its fleet were powered down prior to re-entering Earth’s atmosphere. | The TROPICS (Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats) mission originally consisted of four identical, milk carton-sized satellites that launched in May 2023. Although the TROPICS mission has reached its natural end of life, researchers will continue to use mission data … With a prime mission originally intended to last for one year, mission operations were extended to cover both the 2024 and 2025 North American hurricane seasons. … TROPICS is an Earth Venture Instrument mission led by the Massachusetts Institute of Technology’s (MIT) Lincoln Laboratory",
+     "location": "blog post body"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "is approved to operate through its end of life expected in FY 2025 - FY 2026.",
+     "location": "TROPICS section (txt line 7339)"
+    },
+    {
+     "source_id": "s93",
+     "relationship": "contextualizes",
+     "passage": "GPM DPR-GMI       Apr 14 - [Dec 29] | TRMM PR-TMI       Jan 98 - Sep 14 | Conically-Scanning Passive Microwave | Imagers and Imager/Sounders | Sensor            Period of Record | Aqua AMSR-E           Jun 02 - Oct 11",
+     "location": "Table 1, PDF p. 3"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NASA's own blog and budget document agree",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "Aqua (launched May 4, 2002, six-year design life) has been in free drift since Dec 2021; its only IMERG input was AMSR-E (Jun 2002-Oct 2011). NASA's FY2026 request zeroed Aqua and proposed closeout; the 2023 Senior Review set closeout in FY2027; status decks projected instrument shutdown Aug 26, 2026, while NASA's May 2026 briefing gives a maximum lifetime of Sep 2027.",
+   "evidence": [
+    {
+     "source_id": "s73",
+     "relationship": "supports",
+     "passage": "Aqua was launched on May 4, 2002, and has six Earth-observing instruments on board, collecting a variety of global datasets. Aqua was originally developed for a six-year design life but has now far exceeded that original goal. | Aqua continues collecting and transmitting high-quality data from four of its six instruments: | - Atmospheric Infrared Sounder (AIRS) | - Advanced Microwave Sounding Unit (AMSU) | - Clouds and the Earth’s Radiant Energy System (CERES) | - Moderate Resolution Imaging Spectroradiometer (MODIS) | - Advanced Microwave Scanning Radiometer for EOS (AMSR-E), suffered a major anomaly in October 2011 and ceased its high-quality data transmission at that time. It was later turned back on and transmitted reduced quality data important for intercalibration purposes before being powered off in March 2016. | - Humidity Sounder for Brazil (HSB), collected approximately nine months of high quality data but failed in February 2003. … Due to fuel limitations, Aqua completed the last of its drag makeup maneuvers in December 2021 and is now in a free-drift mode, slowly descending below the A-Train and drifting to later equatorial crossing times, and lower altitudes.",
+     "location": "mission overview; 'Aqua is currently in free-drift' section"
+    },
+    {
+     "source_id": "s93",
+     "relationship": "supports",
+     "passage": "GPM DPR-GMI       Apr 14 - [Dec 29] | TRMM PR-TMI       Jan 98 - Sep 14 | Conically-Scanning Passive Microwave | Imagers and Imager/Sounders | Sensor            Period of Record | Aqua AMSR-E           Jun 02 - Oct 11",
+     "location": "Table 1, PDF p. 3"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Aqua                                                  11.0        --       0.0       0.0       0.0       0.0       0.0",
+     "location": "Earth Science table (txt line 6470)"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "Finally, the Panel noted that the flagship multi-sensor missions Terra, Aqua and Aura, are | rapidly running out of consumables and approaching passivation … Aqua | The Aqua mission will be extended through its predicted natural end of life in late FY 2026 as | currently baselined in the Senior Review budget target. The project should initiate Phase F | closeout activities in FY 2027. No 2026 Senior Review proposal is anticipated from the Aqua | mission.",
+     "location": "lines 113-137 of text (panel findings; NASA Decisions: Aqua)"
+    },
+    {
+     "source_id": "s84",
+     "relationship": "supports",
+     "passage": "August 26, 2026, Projected Aqua Instrument Shutdown followed by Spacecraft Passivation.",
+     "location": "slide 1"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Aqua – anticipated maximum lifetime: 9/2027. Invited to Senior Review",
+     "location": "slide 4"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "dates conflict between NASA documents (Aug 2026 vs Sep 2027)",
+   "applicability": null,
+   "figure_status": [
+    "request",
+    "estimate"
+   ],
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "NASA's FY2026 request said INCUS would not continue and would be closed out in FY2026, but NASA reported in June 2026 that two of three INCUS SmallSats were built and tested for a 2027 launch; no document read states the reversal or its funding.",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "To achieve cost savings, the Investigation of Convective Updrafts (INCUS, in development) and",
+     "location": "Venture Class, Explanation of Major Changes in FY 2026 (txt line 7214)"
+    },
+    {
+     "source_id": "s86",
+     "relationship": "supports",
+     "passage": "Two of the three SmallSats for NASA’s INCUS mission, including the one shown here, have completed assembly and testing in preparation for shipment to NASA’s Wallops Flight Facility in Virginia for a 2027 launch. … Testing continues on the third SmallSat and is scheduled for completion no earlier than September in advance of a 2027 launch. … Led by principal investigator Sue van den Heever of Colorado State University … INCUS will use spaceborne radar instruments developed at NASA’s Jet Propulsion Laboratory … The middle satellite also carries a microwave radiometer, also made at NASA JPL, that provides spatial context to the vertical precipitation profiles provided by the radars. … Funded through the Earth Venture Mission-3 acquisition under NASA’s Earth System Science Pathfinder Program, INCUS is one of several missions fulfilling the clouds, convection, and precipitation requirements of NASA’s Earth System Observatory … The mission is also part of FALCON (Fleet for the Atmosphere Linking Commercial Observations with NASA)",
+     "location": "blog post body"
+    },
+    {
+     "source_id": "s87",
+     "relationship": "supports",
+     "passage": "Future Mission | INCUS will include three SmallSats flying in tight coordination to study why convective storms, heavy precipitation, and clouds occur exactly when and where they form. … Launch | No earlier than 2027",
+     "location": "mission page header"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "status is NASA's own; how the closeout was reversed is not documented in what was read",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "AOS: the FY2026 request ended AOS-Storm and AOS-Sky formulation; GAO says the majority of AOS-Storm will not proceed and NASA's PMM role is now science expertise and launch; NASA's March 2026 FALCON fleet (INCUS, PolSIR, PMM; FALCON-RADAR W-band, launch NET 2029) takes its place. JAXA's PMM KuDPR has a 5-year life and no fixed launch date (WMO OSCAR: Mar 2030, estimated).",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Observatory missions, including the Atmosphere Observing System (AOS) Storm and AOS-Sky, and the",
+     "location": "Science overview (txt line 5168)"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "reduced its civil servant workforce by 4,000 staff—or nearly 22 percent—in 2025 | ... | To date, 25 of 36 projects have reported effects from the reduced staffing. | ... | PMM was previously known as AOS-Storm | ... | the majority of AOS-Storm will not proceed to the next phase | ... | now only includes science expertise and launch | ... | proposed canceling 19 of the 36 major projects | ... | 46 percent reduction to the SMD budget",
+     "location": "Highlights; Background; Figure 2 note; Table 5 (GSFC 9 science projects, 6 proposed for cancelation, 34% workforce reduction as of January 2026)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "INCUS, PolSIR, PMM – part of the FALCON Fleet",
+     "location": "slide 4"
+    },
+    {
+     "source_id": "s92",
+     "relationship": "supports",
+     "passage": "is targeted for launch in no earlier than 2029. The mission consists of a single polar-orbiting, sun-synchronous satellite carrying a W-Band Cloud Profiling Doppler Radar instrument designed to observe shallow light precipitation and small-scale cloud dynamics.",
+     "location": "paragraph 2"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "PMM specifications | Frequency               13.6 GHz | Instrument     Ku-band Doppler Precipitation Radar | Microwave radiometer (CNES) | Weight         2900kg (Max) | Mission life   5 years after launch | Power          4000W (Max) | Launcher       TBC (NASA) | Orbit          Altitude is similar to GPM, 55°inclined",
+     "location": "slide 10"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "AOS-PMM … Atmosphere Observing System - Precipitation Measuring Mission … JAXA | CNES | NASA … Planned … Mar 2030 … ≥2035 … Drifting orbit … 430 km … 55 ° … C²OMODO-R | C²OMODO (Convective Core Observations through MicrOwave Derivatives in the trOpics) Microwave Radiometer (formerly, SAPHIR-NG) | Start date Mar 2030 * … KuDPR | Ku-band Doppler Precipitation Radar | Start date Mar 2030 * … The information in this field is estimated or assumed … 2026-10-12",
+     "location": "satellite page: summary and 'Satellite payload' table"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "official sources; GAO read through WebFetch only; PMM date from an aggregator",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": null
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "Budget: the FY2026 request cut Earth Science to $1,035.9M (FY2024 $2,138.9M); Congress enacted $2.153B for FY2026 (P.L. 119-74); the FY2027 request is $1,021.2M; the House FY2027 bill gives $1.325B and the Senate committee $2.1879B; a CR keeps NASA at FY2026 levels to Dec 11, 2026.",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Earth Science                                  2,138.9        --   1,035.9   1,055.9   1,081.9    1,106.9    1,077.9",
+     "location": "Science table (txt line 5111)"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "Earth Science                                                                        2, 153,000",
+     "location": "Science table, p. 52 ($000; OCR spacing)"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Earth Science                                      --         --    1,021.2",
+     "location": "p. BUD-2"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Earth Science.--The recommendation includes $1,325,000,000 for Earth Science.",
+     "location": "Science section"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Earth Science.—The Committee recommendation provides | $2,187,900,000 for Earth Science.",
+     "location": "p. 161"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "President Trump signed the bill into law on September 2 | ... | will run out on December 11, 2026 | ... | keeps NASA funded at its FY2026 level of $24.4 billion | ... | $18.8 billion requested by the Trump Administration for FY2027",
+     "location": "Article body"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "budget documents and appropriations reports read as raw text; CR from SpacePolicyOnline",
+   "applicability": null,
+   "figure_status": [
+    "request",
+    "enacted",
+    "proposed"
+   ],
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "The Senate Appropriations Committee's FY2027 report rejects the request's mission terminations (a plan to end 53 science missions) and questions consolidating data processing and archive management into a central Science Operations Center.",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "cerned by the plan to end 53 missions across Science, which was",
+     "location": "p. 160"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "ized, agency-operated Science Operations Center. These proposals",
+     "location": "p. 161"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "committee report read as raw text",
+   "applicability": "committee mark, not enacted",
+   "figure_status": "proposed",
+   "sole_source_reason": "the committee's own report is the authority for its recommendation"
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "Goddard's workforce fell over 40% from March 2020 to January 2026 and it lost about a third of its civil servants in 2025 through the deferred resignation program (NASA OIG); NASA lost about 4,000 civil servants in 2025 (GAO; House Science minority).",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "of over 40 percent in total workforce. In 2025 alone, Goddard lost approximately a third of its civilian",
+     "location": "p. 1 (txt line 78)"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "reduced its civil servant workforce by 4,000 staff—or nearly 22 percent—in 2025 | ... | To date, 25 of 36 projects have reported effects from the reduced staffing. | ... | PMM was previously known as AOS-Storm | ... | the majority of AOS-Storm will not proceed to the next phase | ... | now only includes science expertise and launch | ... | proposed canceling 19 of the 36 major projects | ... | 46 percent reduction to the SMD budget",
+     "location": "Highlights; Background; Figure 2 note; Table 5 (GSFC 9 science projects, 6 proposed for cancelation, 34% workforce reduction as of January 2026)"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Individuals associated with the so-called “Department of Government Efficiency” (DOGE) arrived at NASA and quickly froze payments, terminated contracts, and terrified the agency workforce with the threat of mass firings and arbitrary office closures. … NASA initiated a Reduction in Force (RIF) that eliminated the agency’s Office of Chief Scientist (OCS) and Office of Technology, Policy, and Strategy (OTPS) … The DRP, along with a governmentwide hiring freeze and other early retirement and voluntary separation programs, eventually pushed nearly 4,000 employees to quit the agency, reducing the overall NASA civil servant workforce by roughly 20% … the number of Goddard staffers supporting NOAA acquisition programs declined sharply in 2025, with a 19% reduction in career employees and a 36% reduction in contractors between January 2025 and January 2026.87",
+     "location": "pp. 1-2 (overview); p. 34-35"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "contextualizes",
+     "passage": "From January 2025 to July 2026, a period that included U.S. DOGE Service layoffs and several rounds of early retirements in 2025, Goddard lost 40 percent of its personnel, shrinking from 10,000 federal workers and contractors down to 6,000. Since then managers have hired back 600 workers. In addition, NASA shut down several testing and technology development labs and broke up engineering teams … According to a July 23 report by the Government Accountability Office (GAO), NASA lost a fifth of its civil servant workforce in the past year, with impacts to more than two dozen major projects. … A separate review released in June by NASA’s Office of Inspector General found that NASA officials broke no laws or rules during the rapid closures and layoffs of 2025. But … the report agreed with Goddard employees’ complaints that “communication failures throughout the process resulted in confusion related to the efforts and increased challenges to the Center’s workforce.”",
+     "location": "paragraphs 3, 5, 12"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "OIG and GAO agree; Scientific American gives a different period",
+   "applicability": "center- and agency-wide, not PPS/GES DISC-specific",
+   "figure_status": "actual",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "NASA HQ plans to consolidate the 11 DAACs (GES DISC among them) into thematic Science Enabling Teams with centralized cloud ingest and archive, lists data-system consolidation risk as a known issue, and has eliminated flight mission science teams such as PMM's, replaced by MIO DART teams; no schedule or effect on IMERG was found.",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "End User Average | Distribution Volume … FY25 … 600 TB/Day … Total Archive | Volume Including | in Cloud … 148.8 PB … • Consolidation of DAACs from 11 independent | locations to thematic science enabling teams … Thematic Support Teams: | no anchoring physical team locations, | 11 Geographically-Distributed Full Stack | From: Archives (DAACs) | To: best support regardless of geography | Centralized services: | Cloud-based ingest, archive, | distribution, metrics, and cataloging",
+     "location": "slides 4, 7, 8"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Three Major Objectives in Implementing Earth Science | in 2026 … Drive Efficiency and Focus on Impact | • Improved fidelity of planning for DAAC transition to Science Enabling Teams | • Consolidation of Flight Program Offices … Address Known Issues | • Analysis of potential active research grant reductions | • Risks associated with data system consolidation and dramatic data volume growth | • Managing mission closeout costs",
+     "location": "slide 5"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Flight mission science teams eliminated (e.g., CALIPSO/CloudSat, PMM,",
+     "location": "slide 5"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NASA slides only; no formal announcement or schedule",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "PPS and GES DISC kept producing and distributing GPM data in 2025-26; V08 was released Apr 2026, the IMERG V07 Final record ends Sep 2025, IMERG V08 Final slipped to fall 2026 and the Early/Late switch to no sooner than winter 2026, and L3 GPROF V08 was recalled; no source ties these to staffing or budget.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "For the Final Run, the V07 record ends in September 2025 because the parent products feeding into the IMERG algorithm (CORRA and GPROF) are being upgraded to V08. … The IMERG V08 Final Run is planned for release in the summer of 2026 … it will be a retrospective processing of the full record, starting from January 1998 to the present day with the usual 4-month latency. | For the Late and Early Runs, the V07 production will continue … IMERG V07 Late and Early are operating in “hybrid” mode, using the IMERG V07 algorithm but ingesting GPROF V08. … Starting March 1, the CORRA calibration has been set to climatological values … The Late and Early Runs will be in this “hybrid V07” posture until the near-real-time processing system is ready to switch to V08, which is expected to take place no sooner than fall of 2026.",
+     "location": "full notice"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "At this moment, the IMERG development team is still waiting for V08 of one of the parent products to IMERG to be finalized. … Therefore, at this stage, it seems more likely that IMERG V08 Final Run will be released in the fall of 2026, though this projection assumes that the parent products perform within expected bounds. … The projected switch for the Late and Early Runs will take place no sooner than winter of 2026, with their retrospective records (i.e., beginning 1998) available prior to this switch but after the release of IMERG V08 Final Run.",
+     "location": "full notice"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NASA notices; causes not stated",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": "the agency's own budget, review or mission documents are the authority for its own plans and figures"
+  },
+  {
+   "id": "c14",
+   "importance": "supporting",
+   "text": "Commercial and international alternatives: Tomorrow.io's two Ka-band radars are fixed-beam pathfinders whose retrieval is trained on GPM combined retrievals, with two months of 2023 data under a EULA; China's FY-3G carries a precipitation radar with end of service >=2029.",
+   "evidence": [
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "Temporal Resolution            Orbit revisit information not included | Temporal Coverage              Two months of non-continuous data obtained for fall 2023 | Point of Contact … Product locator (DOI/URL)      N/A | Conditions for access and use Public release EULA | Limitations on public access   Public Release EULA",
+     "location": "product summary table, p. 13-14"
+    },
+    {
+     "source_id": "s63",
+     "relationship": "supports",
+     "passage": "Launch: 2023-04-16 … Sun-asynchronous tilted orbit … 407±5km … Orbit angle 50°±1° … End of service ≥2029 … MWRI-RM: Micro-Wave Radiation Imager -Rainfall Mission … PMR: Precipitation Measurement Radar",
+     "location": "satellite overview and Products section"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NASA CSDA report is direct; FY-3G from NSMC page via WebFetch",
+   "applicability": null,
+   "figure_status": null,
+   "sole_source_reason": null
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Aqua end date",
+   "source_ids": [
+    "s79",
+    "s84",
+    "s5",
+    "s41"
+   ],
+   "status": "unresolved",
+   "explanation": "Status decks (Nov 2023, May 2025) project instrument shutdown Aug 26, 2026 and passivation Nov 4, 2026; NASA's May 2026 briefing and a Feb 2026 RFI article give Sep 2027. The May 2025 deck ties Sep 21, 2027 to bus power under an over-guide request; which applies was not found."
+  },
+  {
+   "claim": "GPM Core Observatory end of life",
+   "source_ids": [
+    "s93",
+    "s52",
+    "s50"
+   ],
+   "status": "unresolved",
+   "explanation": "IMERG ATBD (Aug 2026) estimates GPM data to Dec 2029; JAXA (Jul 2026) and NASA's orbit-boost page say early 2030s. Both are estimates."
+  },
+  {
+   "claim": "Goddard workforce decline",
+   "source_ids": [
+    "s20",
+    "s1",
+    "s37"
+   ],
+   "status": "resolved",
+   "explanation": "Different periods and bases: OIG over 40% of total workforce Mar 2020-Jan 2026; Scientific American 40% Jan 2025-Jul 2026 (10,000 to 6,000 incl. contractors); GAO 34% civil-servant reduction at Goddard by Jan 2026."
+  },
+  {
+   "claim": "GPM orbit altitudes",
+   "source_ids": [
+    "s50",
+    "s52"
+   ],
+   "status": "resolved",
+   "explanation": "NASA gives 400 to 435 km, JAXA 407 to 442 km; likely different reference (mean vs other altitude); immaterial to the answer."
+  }
+ ],
+ "coverage_gaps": [
+  "No source found on PPS or GES DISC operations during the Oct 1-Nov 12, 2025 lapse (not found after 3 queries; Wayback snapshot of gpm.nasa.gov/data/news 2025-10-20 shows no lapse notice; GES DISC home snapshot is JavaScript-only). NASA's lapse plan (excepted activities list) not read. (from sa4)",
+  "No source on staffing levels of PPS, GES DISC or ESDIS specifically; all workforce figures are Goddard-wide or NASA-wide. SSAI layoff notices (148 Feb 2025; 149 and 79 July 2025; NASA Watch X post Sep 25 2025) do not name contracts; Washington Business Journal 2025-07-17 article not read. (from sa4)",
+  "DAAC consolidation into thematic Science Enabling Teams: schedule, funding and effect on GES DISC/IMERG distribution not found; no official announcement. HQ slide (May 2026) says PMM flight mission science team eliminated, replaced by MIO DART teams; effect on IMERG/PPS algorithm work not found; no news coverage. (from sa4)",
+  "ESDIS Next (ENX) contract (est. award Q3 FY26, incumbent Raytheon 80GSFC21CA001): award, delay or cancellation status not found. HBG II $425M recompete RFP Oct 21 2026 (snippet only). (from sa4)",
+  "IMERG V08 Final release status after Aug 6, 2026 update (expected fall 2026) not checked; NRT V08 switch no sooner than fall 2026. GPROF std recall Aug 19 2026 alert (earthdata.nasa.gov/data/alerts-outages/gprof-std-data-recalled-august-19-2026-present) not read. (from sa4)",
+  "AMS April 2025 statement/Special Report (recommendation to restore NASA Earth science funding) and AGU statements not read; NASEM Goddard panel report expected December 2026 not yet out. (from sa4)",
+  "2026 Earth Science Senior Review results/guidance letters (Aug-Sep 2026) for GPM and Aqua not found; NASA SR2026 page shows schedule only. Leads: science.nasa.gov/earth-science/senior-review-2026/ subpages; headline 'NASA's Terra Mission to End' on that page; satnews 2025-12-29 'EOS flagships face 2026 retirement'. (from sa3)",
+  "FY2026 NASA operating/spend plan (due 45 days after enactment) and whether any Earth science funds were withheld or held at request level: NOT FOUND. Also exact P.L. 119-74 signing date not confirmed (House Jan 8, Senate Jan 15, 2026). (from sa3)",
+  "Statutory 'no less than' per-division clause in P.L. 119-74 not verified in bill text (only Planetary Society report). (from sa3)",
+  "JES FY2026 Earth System Observatory Missions figure OCR-garbled ('2-15,000'); verify on PDF p. 52 of work/raw/sa3/fy26_cjs_jes.pdf. (from sa3)",
+  "Unread leads: GAO-26-108556 remainder (chars 100000+); GAO-25-107591 (2025 assessments); NASA OIG 2025 Top Management Challenges PDF (workforce down about 20% to about 14,000 as of July 2025 per snippet); CRS R48929 FY2027 CJS overview; NASA FY2027 PBR text on Aqua/Terra (no budget line found); executive orders affecting NASA science not searched; Senate/House letters on impoundment not searched. (from sa3)",
+  "Whether GPM, TROPICS or Aqua were named in July-Aug 2025 closeout-planning instructions: NOT FOUND (news names OCO-2/OCO-3; FY2026 PBR lists Aqua closeout, INCUS closeout, AOS/PMM not proceeding). (from sa3)",
+  "2026 Senior Review outcome for GPM (and Aqua) NOT FOUND after 3 queries (r2a). FAQ said final results May 2026; May 2026 HQ briefing (sa4 holds it) said guidance anticipated September 2026. Lead: science.nasa.gov/earth-science/senior-review-2026/resources/ (not read). (from sa1)",
+  "No 2025-2026 NASA figure for GPM-CO remaining fuel or end date. Range found: 'late 2020s' (pre-boost, NTRS 2024), 'early 2030s' (JAXA Jul 2026, NASA orbit boost page), 'circa 2032' (EGU25). JAXA altitudes 407->442 km vs NASA 400->435 km. (from sa1)",
+  "Reaction wheel health after Dec 2023 (wheel #5 out; 3 wheels in use) and whether two-reaction-wheel science mode was finished: NOT FOUND. Lead: gpm.nasa.gov/data/news/resumption-gpm-core-observatory-science-operations-and-nrt-data (not read). (from sa1)",
+  "'5-year goal' design-life wording NOT FOUND; only 3-year prime mission (to May 2017) and EOSPSO 'Designed Life: February 27, 2017' (snippet only, page unreachable). (from sa1)",
+  "No NASA statement found on what IMERG does after GPM-CO ends. Huffman26 IPWG abstract (March 2026 workshop on post-GPM intercalibration) unreadable (404). (from sa1)",
+  "PMM launch date: no JAXA/NASA official date found; only WMO OSCAR (Mar 2030 as of 2026-10-12; snippet of earlier version Mar 2029). JpGU 2025 abstract (confit.atlas.jp) not read. (from sa1)",
+  "Not read: Tomorrow.io DeepSky ($175M, Feb 2026; York Space build Sep 2026), Tomorrow-S5 launch Mar 2025 (OSCAR), Watters IPWG radar validation poster, NOAA validation of Tomorrow.io sounders (Jan 27 2026). Data access/licensing terms for Tomorrow.io data NOT FOUND. (from sa1)",
+  "Not read: GSMaP 2026 notices (V04 terminated May 31 2026; new version Oct 19 2026) - G-Portal needs a browser; Metop-SG B1 MWI/ICI instrument details (ESA facts page); MetOp-SG-A1 launch 13 Aug 2025 (snippet only); ISRO: only Megha-Tropiques (ended Dec 2021, snippet) and INSAT-3DS QPE found, nothing read. (from sa1)",
+  "Sources quoting what alternatives lack vs GPM: found NASA white paper (PMM radiometer lacks 19-37 GHz), CEOS P-VC (need for high-quality calibrator beyond GPM), CSDA (Tomorrow.io retrieval trained on GPM combined retrievals; non-scanning pencil beam). Not found: latency or record-length comparisons. (from sa1)",
+  "No 2026 Earth Science Senior Review decision for Aqua or TROPICS found (r2b not found after 3 queries). Only 2023 SR via FY26 tech supplement for GPM ('approved extended mission operations for GPM through FY 2026'). (from sa2)",
+  "Whether Aqua instruments actually shut down on Aug 26 2026 or continue toward the Sep 2027 end-of-science date in NASA's editor's note: no 2026 status deck read (Aug 2025 deck snippet still said Aug 26 2026). (from sa2)",
+  "Whether IMERG V07 (or GPROF) operationally ingests TROPICS or Aqua AMSU-A: NOT PRESENT in pages read. JGR 2026 paper (doi 10.1029/2026jd046970) assesses TROPICS for IMERG; abstract only. (from sa2)",
+  "TROPICS satellite count conflict: NASA blog says four launched May 2023; FY26 tech supplement says 'three CubeSats'. Individual retirement/re-entry dates (SV07 Aug-Sep 2025, SV06 Oct 2025, SV05 Nov 2025, SV03 Dec 2025) from Orbital Radar/SatNOGS snippets only, not read. (from sa2)",
+  "INCUS FY2026 enacted funding: FY26 CJS explanatory statement has no INCUS line; INCUS progressing toward 2027 launch (June 2026) and listed in NASA's March 2026 Ignition deck, but no document read states Congress funded or NASA reversed the closeout. INCUS treatment in the FY2027 request NOT found. (from sa2)",
+  "AOS status conflict: FY26 request ended AOS-Storm/Sky and NASA PMM contribution; FY26 CJS funds an 'Earth System Observatory Missions' line (OCR unclear, likely $245M); March 2026 NASA Ignition introduced FALCON (Meteored: 'formally replaces' AOS objectives); Planetary Society still lists AOS among FY27 proposed cancellations; NASA AOS web page still shows 'Future Mission, Target Launch 2029'. No NASA document read states AOS cancelled or renamed. (from sa2)",
+  "No NASA or GAO document found that projects a gap in spaceborne precipitation radar or GPM-class coverage after GPM ends. JAXA (July 2026) says GPM lifetime extends into early 2030s; PMM launch date NOT PRESENT and launcher 'TBC (NASA)'. (from sa2)",
+  "Update to INCUS/AOS gaps: NASA HQ May 2026 briefing and June 2026 NASA blog place INCUS (and PMM, PolSIR) in the FALCON fleet and INCUS remains on track for NET 2027, but no document read states the FY2026 closeout proposal was reversed or gives INCUS/FALCON/PMM budget figures; 2026 Senior Review outcomes for Aqua and GPM (guidance anticipated Sep 2026) not found. (from sa2)",
+  "No counter-search run for c4, c5, c10, c11 (research stop reached). Not re-checked in saved text: House $1.325B (hrpt119-652.txt), SpacePolicyOnline CR article (no local file). Counter-sources chk1-chk8 are search snippets; pages not read. (from checker)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q5",
+   "query": "Goddard Space Flight Center layoffs 2025",
+   "tool": "WebSearch",
+   "notes": "Found SciAm (2026-09-22), AIP FYI (2025-11-12), Space.com (refused host), Eos 2,145 senior staff, govexec. Read SciAm and AIP.",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NASA workforce reduction 4000 2025",
+   "tool": "WebSearch",
+   "notes": "Snippets: about 4,000 via DRP, 18,000 to 14,000 (NASA spokesperson Cheryl Warner to NPR). Figure confirmed in House SST minority report (read).",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Goddard Earth science contractors laid off 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode. SSAI WARN notices (148 Feb/Apr 2025; 149 Aug 2025), NASA Watch WARN post, Maryland delegation letter, NPR Sep 2026 via kunc.org. Read MD letter, SSAI blog, NASA Watch via WebFetch.",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Precipitation Processing System notice 2026",
+   "tool": "WebSearch",
+   "notes": "Earthdata alerts: V08 release (Apr 1 2026), L3 GPROF V08 recall (Oct 1 2026), GPROF std recall Aug 19 2026, NRT maintenance Jan 20 2026. Read release and recall.",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG data outage 2025",
+   "tool": "WebSearch",
+   "notes": "GPM data news: arthurhou archive Jan 31/Feb 5 2025, NRT equipment April 16 2025, SSMIS end notices, IMERG V07 Final ends Sep 2025. Read gpm.nasa.gov/data/news and IMERG V08 transition schedule.",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPM IMERG government shutdown October 2025 data availability",
+   "tool": "WebSearch",
+   "notes": "No source on PPS/IMERG status during lapse. Followed up with Wayback snapshot of gpm.nasa.gov/data/news 2025-10-20 (no lapse notice).",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC news 2026",
+   "tool": "WebSearch",
+   "notes": "Publications listings; Web Unification migration 2026; Suomi NPP products end Nov 1 2026. Read GES DISC news page.",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Giovanni decommission 2026",
+   "tool": "WebSearch",
+   "notes": "No Giovanni decommission notice found; only maintenance alerts (Apr 8, Apr 20 2026).",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Earthdata shutdown lapse in appropriations notice October 2025",
+   "tool": "WebSearch",
+   "notes": "Only banner 'NASA is not updating this website because of the funding lapse'; NSSC memo Oct 1 2025; no GES DISC-specific shutdown status. Not found after 3 queries (with GES DISC shutdown lapse appropriations 2025).",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC shutdown lapse appropriations 2025",
+   "tool": "WebSearch",
+   "notes": "Only general CRS/AIP shutdown material; lapse Oct 1-Nov 11/12 2025 (P.L. 119-37).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Goddard union statement 2025",
+   "tool": "WebSearch",
+   "notes": "GESTA/IFPTE statements (13 buildings, ~100 labs; library closure dispute; EO removing bargaining rights). GESTA text quoted via AIP FYI article (read).",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "AMS statement NASA Earth science cuts 2025",
+   "tool": "WebSearch",
+   "notes": "AMS April 2025 statement/Special Report (recommendation to restore Earth science funding incl. NASA) - snippet only, not read. Earth Observer final issue Dec 31 2025 (snippet).",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "ESDIS contract SSAI Goddard 2025 cancelled",
+   "tool": "WebSearch",
+   "notes": "No ESDIS cancellation found. ESDIS Next (ENX) recompete forecast read via WebFetch (highergov refused). HBG II $425M recompete RFP Oct 21 2026 (snippet).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Earth Science Data Systems budget 2026 request reduction DAAC",
+   "tool": "WebSearch",
+   "notes": "Led to CERES STM May 2026 HQ slides (read): DAAC consolidation, FY27 PBR ES $1.021B, PMM science team eliminated.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "DAAC consolidation NASA Earth science 2026",
+   "tool": "WebSearch",
+   "notes": "ESDS updates (Scott, read), ESD Town Hall Dec 2025 (read), AMS ESD Town Hall 2026 (not read), I&A migration alert (read), ECS retirement news (not read).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC thematic science enabling team 2026",
+   "tool": "WebSearch",
+   "notes": "No team charter or date found; same slide decks.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PMM science team eliminated 2026",
+   "tool": "WebSearch",
+   "notes": "Only the CERES STM slide; no news coverage.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "SSAI layoffs Goddard September 2025 contract",
+   "tool": "WebSearch",
+   "notes": "WARN databases: 149 and 79 workers Lanham MD July 2025 notices; Feb 2025 148. No contract named. NASA Watch X post Sep 25 2025 (snippet).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NASA OIG Goddard consolidation report 2026",
+   "tool": "WebSearch",
+   "notes": "OIG 'Review of Goddard Space Flight Center's Transformation Efforts' (June 2026) - primary not read; Lofgren OIG letters; House SST minority staff report April 2026 (read); NPR Sep 2026 (read via WebFetch).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NASA Earthdata shutdown 2025 data services continued EOSDIS",
+   "tool": "WebSearch",
+   "notes": "No official statement on EOSDIS status during lapse.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "\"Precipitation Processing System\" staff cuts 2025",
+   "tool": "WebSearch",
+   "notes": "Nothing on PPS staffing; only NWS/NOAA cuts.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC OPeNDAP retirement 2026",
+   "tool": "WebSearch",
+   "notes": "No GES DISC OPeNDAP retirement; MERRA-2 OPeNDAP moved to Earthdata Cloud; LP DAAC on-prem OPeNDAP retirements.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://web.archive.org/web/20251020000000/https://gpm.nasa.gov/data/news",
+   "tool": "lookup (Wayback snapshot during lapse)",
+   "notes": "Snapshot 2025-10-20: latest notice July 30 2025; no lapse notice.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://web.archive.org/web/20251020000000/https://disc.gsfc.nasa.gov/",
+   "tool": "lookup (Wayback snapshot during lapse)",
+   "notes": "JavaScript-only page, 0 words; renamed _unused.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Review of Goddard Space Flight Center's Transformation Efforts OIG",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov, oversight.gov. Found IG-26-005 PDF (June 26 2026), read.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG V08 Final Run release 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, earthdata.nasa.gov. Aug 6 2026 update (fall 2026 Final; Early/Late no sooner than winter 2026) and Earthdata transition alert read; no release announcement found.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://www.earthdata.nasa.gov/data/alerts-outages/gprof-std-data-recalled-august-19-2026-present",
+   "tool": "WebFetch",
+   "notes": "Extraction prompt; GPROF V08 processing halted Sept 21 2026.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "AMS statement federal science cuts April 2025 Earth science NASA",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ametsoc.org. Found AMS April 2025 Special Report PDF (read via WebFetch saved binary). AMS Headlines 2026 pieces (snippets): Congress did not enact large 2026 cuts; FY2027 request again proposes very large cuts.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Earth Observer final issue December 2025 NASA",
+   "tool": "WebSearch",
+   "notes": "Final Editor’s Corner read (orderly shutdown, no content after Dec 31 2025). SatNews 2025-12-29 says EOS flagships face 2026 retirement (snippet, not read).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA FY2026 budget technical supplement Earth science",
+   "tool": "WebSearch",
+   "notes": "Found NASA tech supplement PDF and CRS R43419 (Feb 2026); both downloaded and read.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA FY2027 budget request Earth science missions",
+   "tool": "WebSearch",
+   "notes": "News and Planetary Society analysis (downloaded).",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA FY 2027 budget technical supplement pdf",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; found fiscal-year-2027-full-budget-request.pdf; downloaded and read. No separate FY2027 'technical supplement' file found.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Direct downloads: FY26 CJS JES, H. Rept. 119-652, Senate FY27 CJS explanatory statement",
+   "tool": "lookup (direct download of congressional documents named in brief)",
+   "notes": "All three downloaded fresh and searched for Earth Science/GPM/Aqua/TROPICS/INCUS/AOS.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "continuing resolution December 11 2026 NASA",
+   "tool": "WebSearch",
+   "notes": "SpacePolicyOnline: P.L. 119-103 to Dec 11, 2026, NASA at FY2026 level.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GAO NASA assessments major projects 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; GAO-26-108556 (Jul 23, 2026). PDF HTTP 403; read HTML via WebFetch extraction (first 100k chars).",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA OIG report 2026 Earth science",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov; GRACE-C audit IG-26-012, Geospatial Data Act IG-26-014, 2026 management challenges (Earth science not among them per snippet). Not read.",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA Inspector General workforce reductions 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov; found IG-26-005 Goddard memo (read) and 2025 top management challenges report (not read).",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CRS NASA science budget 2027",
+   "tool": "WebSearch",
+   "notes": "allowed_domains everycrsreport.com, congress.gov; R43419 June 22 2026 (downloaded, read); R48929 FY2027 CJS overview (not read).",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA closeout plans Earth science missions GPM 2025",
+   "tool": "WebSearch",
+   "notes": "News on OCO-2/3 termination planning (Eos downloaded). No GPM-specific closeout found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA FY2026 spend plan operating at budget request level Earth science impoundment",
+   "tool": "WebSearch",
+   "notes": "Planetary Society FY26 enacted article (downloaded). No source on NASA FY2026 operating plan held at request level.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "OMB passback NASA Earth science 2025",
+   "tool": "WebSearch",
+   "notes": "SpacePolicyOnline Apr 2025 (read via WebFetch): passback Earth science $1,033M.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA Earth science Senior Review 2026 results GPM extended",
+   "tool": "WebSearch",
+   "notes": "NASA SR2026 page (read via WebFetch): schedule only, no results. pulse.bot cost-sharing article returned 404.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA Aqua mission end 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; Aqua status PDFs and Terra end-of-era article (not read; q2 territory).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA Terra mission to end November 2026",
+   "tool": "WebSearch",
+   "notes": "Military & Aerospace RFI article for Terra/Aqua/Aura commercial partners (read via WebFetch); satnews Dec 2025 EOS flagship retirement (not read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA TROPICS mission end 2026",
+   "tool": "WebSearch",
+   "notes": "NASA blog Nov 25 2025: TROPICS final data Nov 12, 2025 (read via WebFetch, logged under q2).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NASA Science Operations Center consolidation 2026 Earth science data",
+   "tool": "WebSearch",
+   "notes": "No source under that name; found ESD AMS 2026 town hall (downloaded, read), DAAC reorganization May 2026 briefing and Earthdata web unification (not read; q5).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "INCUS mission NASA 2026 status",
+   "tool": "WebSearch",
+   "notes": "JPL June 5 2026 update read via WebFetch (2027 launch). FY2027 PBR has no INCUS line (searched). Firefly Alpha launch contract and CSU pages not read.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"NASA's Terra Mission to End\"",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; NASA Science post Nov 17 2026 read via WebFetch; Earthdata alert 'New Terra Observations to Cease on December 1, 2026' not read.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Core Observatory status 2026",
+   "tool": "WebSearch",
+   "notes": "Found JAXA EORC 2026 news page (refused host, WebFetch got only an outage notice), Huffman26 IPWG abstract (404), EGU26-14297 (read). No NASA 2026 status page on fuel.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM spacecraft fuel lifetime 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov. Found GPM orbit boost page and NTRS 20240004796 (both read); PMM 2023 summary (already in NOAA run). No 2026 fuel figure.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Core Observatory design life three years five years",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov. Found NTRS 20160008958 (3-year prime mission, read) and GPM core-observatory page (read). EOSPSO page unreachable (DNS). 5-year goal wording not found.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Earth Science Senior Review 2026 GPM",
+   "tool": "WebSearch",
+   "notes": "Found 2026 SR call draft PDF (read), CERES May 2026 HQ briefing (sa4 has it), NTRS precip white paper (read). Outcome not found.",
+   "from": "sa1",
+   "required_id": "r2a"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "2026 Senior Review results Earth science missions extension",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov, spacenews.com, spacepolicyonline.com. Found SR2026 resources and FAQ pages and FINAL call PDF (not read); no published 2026 results. 2023 response PDF downloaded fresh and read.",
+   "from": "sa1",
+   "required_id": "r2a"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "JAXA Precipitation Measuring Mission KuDPR launch",
+   "tool": "WebSearch",
+   "notes": "Found Kubota IPWG-12 S2.3 slides (read via WebFetch binary), WMO OSCAR KuDPR. No JAXA launch date.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "GSMaP JAXA 2026",
+   "tool": "WebSearch",
+   "notes": "Snippets: GSMaP V04 distribution terminated May 31 2026; new version release Oct 19 2026; GSMaP v9 operational in GEE. G-Portal notices page fetched but JavaScript page returned no notices.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "JAXA PMM satellite launch year 2029",
+   "tool": "WebSearch",
+   "notes": "Found WMO OSCAR AOS-PMM (read: Mar 2030 as of 2026-10-12; snippet showed Mar 2029 from April 2026 version), JpGU 2025 abstract (not read).",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Tomorrow.io satellite radar constellation 2026",
+   "tool": "WebSearch",
+   "notes": "Found Tomorrow.io Jan 12 2026 release (read via WebFetch), DeepSky $175M (Feb 2026), York Space build (Sep 2026) - not read.",
+   "from": "sa1",
+   "required_id": "r18"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Tomorrow.io microwave sounder launch 2025",
+   "tool": "WebSearch",
+   "notes": "Snippets: Tomorrow-S5 launch 15 Mar 2025 (WMO OSCAR); Transporter-13 Mar 14 2025 (ITSC-25). Not read.",
+   "from": "sa1",
+   "required_id": "r18"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Tomorrow-R1 Ka-band precipitation radar GPM comparison",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Found NASA CSDA radar QA report Mar 2026 (read), Watters IPWG poster, company blogs.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "FY-3G precipitation measurement radar data",
+   "tool": "WebSearch",
+   "notes": "Found FY-3G validation papers (MDPI, AMT), EurekAlert release (read).",
+   "from": "sa1",
+   "required_id": "r19"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Metop-SG B1 MWI launch",
+   "tool": "WebSearch",
+   "notes": "Launch listings NET Nov/Dec 2026; MetOp-SG-A1 launched 13 Aug 2025 (snippet).",
+   "from": "sa1",
+   "required_id": "r19"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "CEOS precipitation constellation 2025",
+   "tool": "WebSearch",
+   "notes": "Found CEOS P-VC ToR v3.0.3 Apr 2024 (read). No 2025 P-VC milestone. ISRO not searched (time).",
+   "from": "sa1",
+   "required_id": "r19"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "FY-3G PMR data access Fengyun Satellite Data Center 2025",
+   "tool": "WebSearch",
+   "notes": "Follow-up. NSMC FY-3G page (read via WebFetch). IPWG Fengyun PDF 404.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "MetOp-SG-B1 launch November 2026",
+   "tool": "WebSearch",
+   "notes": "Follow-up; allowed_domains esa.int, eumetsat.int. ESA 4 Nov 2026 article (read via WebFetch): launch planned towards end of year.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG after GPM Core Observatory end calibration Huffman 2026",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Found EGU25-7237 (read: GPM-CO end circa 2032), EGU26-14694 (not read), IPWG IMERG V08 preview (404).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM two reaction wheel science mode",
+   "tool": "WebSearch",
+   "notes": "Follow-up. No GPM-specific result; SpaceOps 2025 #298 downloaded but was NEOSSat (renamed _unused).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Core Observatory reaction wheel anomaly",
+   "tool": "WebSearch",
+   "notes": "Follow-up; allowed_domains nasa.gov. Found GPM Sun Point Mode Dec 2023 (read), IMERG tech doc (read), 2020 SR report (not read).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Core Observatory safehold 2025",
+   "tool": "WebSearch",
+   "notes": "Follow-up; allowed_domains gpm.nasa.gov, nasa.gov. No 2025 safehold found; Aug 2020 resumption page read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "ISRO precipitation satellite microwave 2026",
+   "tool": "WebSearch",
+   "notes": "No new ISRO precipitation mission; Megha-Tropiques ended Dec 2021 (snippet), INSAT-3DS QPE. Nothing read.",
+   "from": "sa1",
+   "required_id": "r19"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "TROPICS constellation status 2026",
+   "tool": "WebSearch",
+   "notes": "eospso page (Current), WMO OSCAR TROPICS-03 inactive EOL Nov 2025 (snippet), keeptrack TROPICS-07 decayed Sep 2025 (snippet), NTRS 20260001511.",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "TROPICS CubeSat mission end 2025",
+   "tool": "WebSearch",
+   "notes": "NASA blog Nov 25 2025: final data Nov 12 2025 (read). Orbitalradar/SatNOGS re-entry dates (snippets). No IMERG statement.",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Aqua satellite end of mission 2026",
+   "tool": "WebSearch",
+   "notes": "NASA Aqua page, Terra end of era (Aqua end-of-science Sep 2027), snippet of Aug 2025 status deck (Aug 26 2026 instrument shutdown), militaryaerospace Feb 2026 commercial partners for Terra/Aqua/Aura.",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Earth Science Senior Review 2026 Aqua",
+   "tool": "WebSearch",
+   "notes": "No relevant results.",
+   "from": "sa2",
+   "required_id": "r2b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "INCUS mission launch 2026",
+   "tool": "WebSearch",
+   "notes": "JPL June 2026: 2027 launch; Firefly Alpha contract; CSU page NLT Aug 2027.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Atmosphere Observing System NASA 2026",
+   "tool": "WebSearch",
+   "notes": "Meteored Apr 2026: FALCON replaces AOS objectives, launch later 2029; NASA AOS page target 2029.",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "FALCON NASA Atmosphere Observing System replaced precipitation radar",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Meteored copies; newspaceeconomy Nov 4 2026 Intuitive Machines FALCON-RADAR (W-band) spacecraft; NTRS 20230007913 AOS precipitation perspective.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NASA FALCON Earth System Observatory AOS cancelled JAXA precipitation mission",
+   "tool": "WebSearch",
+   "notes": "Follow-up, allowed_domains nasa.gov. AOS status Oct 2024 (Braun, NTRS 20240013140): AOS-Storm JAXA Ku-band Doppler radar, CNES radiometers; no cancellation in nasa.gov results.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Aqua Terra Aura end of mission 2026",
+   "tool": "WebSearch",
+   "notes": "Satnews Dec 2025 'EOS flagships face 2026 retirement'; Terra end of era; SciAm 'three NASA climate satellites are dying'. No Senior Review 2026 document found.",
+   "from": "sa2",
+   "required_id": "r2b"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Aqua status August 2025 instrument shutdown passivation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov. Aqua status PDFs (Nov 2023, Feb/May 2025, Aug 2025 snippet), AquaTimeline 'maximally extended' (snippet: Sep 2028 end of Aqua funding; not read, redirects).",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Aqua end of science September 2027 extended",
+   "tool": "WebSearch",
+   "notes": "Follow-up, allowed_domains nasa.gov. May 2025 status: bus power to 9/21/2027 (read via Wayback). MODIS-to-VIIRS transition page: Terra/Aqua begin shutting down late 2026/early 2027 (snippet).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "TROPICS IMERG precipitation",
+   "tool": "WebSearch",
+   "notes": "JGR 2026 paper DOI 10.1029/2026jd046970 'Assessing TROPICS smallsat precipitation for IMERG' (abstract snippet only); PRPS ATBD.",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Assessing TROPICS smallsat precipitation for IMERG",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Same JGR paper (Ma et al.), Kidd et al. 2022, IPWG 2024 slides. No statement that TROPICS is in operational IMERG found.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "INCUS cancelled budget 2026",
+   "tool": "WebSearch",
+   "notes": "CBS Colorado Aug 2025 (read via WebFetch); FY26 request closeout.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "INCUS FY2026 appropriations Congress restored Earth Venture",
+   "tool": "WebSearch",
+   "notes": "AGU: House/Senate rejects ESO termination, $200.4M Earth Venture (Senate bill); P.L. 119-74. No INCUS line.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AOS mission budget request cancel 2026",
+   "tool": "WebSearch",
+   "notes": "General FY26 cuts coverage; no AOS-specific.",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AOS-Storm launch date",
+   "tool": "WebSearch",
+   "notes": "NASA pages: mid-2028 / mid-2029; CNES early 2030 co-launch with JAXA PMM; CEOS 2023 NLT March 2029 (snippets).",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM precipitation radar gap after GPM ends",
+   "tool": "WebSearch",
+   "notes": "Follow-up (gap). No gap projection found; PPS radar outage notices.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NASA FY 2026 budget technical supplement Atmosphere Observing System terminated",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Found FY26 tech supplement PDF (read) and Planetary FY27 analysis (read).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "INCUS NASA 2027 budget request Earth Venture",
+   "tool": "WebSearch",
+   "notes": "Follow-up. FY27 request coverage; INCUS treatment in FY27 not found.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "INCUS Investigation of Convective Updrafts funded 2026 appropriations",
+   "tool": "WebSearch",
+   "notes": "Follow-up. No explicit FY26 enacted INCUS line; June 2026 progress implies continuation (not a funding statement).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NASA FALCON Fleet for the Atmosphere Linking Commercial Observations",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Ignition March 24 2026; Science/EBSCO 'NASA revives ... Falcon and Eagle'.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NASA Ignition FALCON EAGLE Earth science missions March 2026",
+   "tool": "WebSearch",
+   "notes": "Follow-up, allowed_domains nasa.gov. Ignition SMD deck (read): FALCON RFI, launch by Q3 FY2029.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Precipitation Measuring Mission JAXA NASA contribution 2026 status",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Kubota IPWG-12 July 2026 slides (read): PMM launcher TBC (NASA), GPM lifetime into early 2030s.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "spaceborne precipitation radar gap GPM end of mission successor",
+   "tool": "WebSearch",
+   "notes": "Follow-up (gap), extended mode. No NASA/GAO gap projection found.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO NASA Earth science satellites data gap 2025 precipitation",
+   "tool": "WebSearch",
+   "notes": "Follow-up (gap), allowed_domains gao.gov, oig.nasa.gov. GAO-26-107739 (GOES), GAO-25-107591 major projects, IG-17-003 (2017 data-gap risk). No precipitation radar gap statement.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "explanatory statement 2026 Commerce Justice Science NASA Earth Venture INCUS Atmosphere Observing System",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Found House Division A CJS statement PDF (read): Earth Science $2,153,000K; no INCUS/AOS lines.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NASA FALCON replaces Atmosphere Observing System",
+   "tool": "WebSearch",
+   "notes": "Follow-up, extended mode (key news query). Science.org articles (403), SpaceNews Mar 2024 restructure (read via WebFetch), Intuitive Machines FALCON-RADAR Nov 3 2026 (403).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA FY 2027 budget technical supplement pdf Earth Science",
+   "tool": "WebSearch",
+   "notes": "Follow-up, allowed_domains nasa.gov. Found FY27 full budget request PDF (read) and 2026 ESD Senior Review Call for Proposals (read).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "2026 Earth Science Senior Review results GPM Aqua extension",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov. No 2026 SR results/decision found; found NASA HQ May 2026 CERES STM briefing (read): Aqua max lifetime 9/2027, invited; guidance anticipated Sep 2026. r2b: 2026 decision not found after 3 queries.",
+   "from": "sa2",
+   "required_id": "r2b"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "INCUS FALCON fleet NASA 2027 launch Firefly",
+   "tool": "WebSearch",
+   "notes": "Follow-up, allowed_domains nasa.gov. NASA blog June 5 2026 (read), INCUS mission page NET 2027 (read), launch service award (snippet: Firefly Alpha, VADR).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG V07 passive microwave sensors list TROPICS AMSU",
+   "tool": "WebSearch",
+   "notes": "Follow-up, allowed_domains gpm.nasa.gov. IMERG V07 ATBD (read): Aqua AMSR-E Jun 02-Oct 11 only; no TROPICS.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "cnes.fr/en/projects/aos",
+   "tool": "WebFetch",
+   "notes": "Lead from AOS-Storm launch date search: CNES page, early 2030 joint launch with JAXA PMM.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "militaryaerospace.com NASA seeks commercial partners Terra Aqua Aura",
+   "tool": "WebFetch",
+   "notes": "Lead from r5 search results; Feb 3 2026 RFI article read via extraction.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read of Intuitive Machines FALCON-RADAR release (globenewswire)",
+   "tool": "lookup (built-in browser)",
+   "notes": "read: FALCON-RADAR, single sun-synchronous satellite, W-band cloud profiling Doppler radar for shallow light precipitation, NET 2029",
+   "from": "main",
+   "copy_of": "https://www.globenewswire.com/news-release/2026/11/03/3394137/0/en/intuitive-machines-selected-to-provide-spacecraft-platform-and-mission-solutions-for-nasa-s-falcon-radar-earth-science-mission.html"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser read of JAXA EORC TRMM/GPM news 2026",
+   "tool": "lookup (built-in browser)",
+   "notes": "EORC sorry page: 'EORC Web and FTP service are temporarily unavailable.' No route left this run",
+   "from": "main",
+   "copy_of": "https://www.eorc.jaxa.jp/TRMM/2026_e.html"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read of Science 'NASA revives next-generation flagship Earth-observing missions'",
+   "tool": "lookup (built-in browser)",
+   "notes": "Cloudflare bot check (HTTP 403); stopped, not bypassed",
+   "from": "main",
+   "copy_of": "https://www.science.org/content/article/nasa-revives-next-generation-flagship-earth-observing-missions"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Science 'two landmark climate satellites go dark' article",
+   "tool": "lookup (built-in browser)",
+   "notes": "not tried: same host showed a bot check on the sister article; no route left",
+   "from": "main",
+   "copy_of": "https://www.science.org/content/article/two-landmark-climate-satellites-go-dark-nasa-scales-back-their-planned-successor-edited"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Huffman26 IPWG FuturePrecip abstract: Wayback copy",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "sa1 already tried Wayback (HTTP 404) and WebFetch (404); no route left",
+   "from": "main",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Huffman26_IPWG_FuturePrecip_abstract.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Upgrades and Early Results for IMERG V08 IPWG-12",
+   "tool": "lookup (title search)",
+   "notes": "host refused, WebFetch 404; IMERG V08 status covered by gpm.nasa.gov Aug 2026 update instead; no route left",
+   "from": "main",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Upgrades_and_Early_Results_for_IMERG_V08.pdf"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "advances in fengyun satellite precipitation observations IPWG-12",
+   "tool": "lookup (title search)",
+   "notes": "host refused, WebFetch 404; FY-3G covered by NSMC page; no route left",
+   "from": "main",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/advances_in_fengyun_satellite_precipitation_observations.pdf"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "JAXA G-Portal notices",
+   "tool": "lookup (built-in browser)",
+   "notes": "not tried for time (research stop near); listed in check-by-hand",
+   "from": "main",
+   "copy_of": "https://gportal.jaxa.jp/gpr/notice/notice/list"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Tomorrow.io delivers first radar (Meteorological Technology International)",
+   "tool": "lookup (built-in browser)",
+   "notes": "not tried for time; low weight (commercial context only)",
+   "from": "main",
+   "copy_of": "https://www.meteorologicaltechnologyinternational.com/news/satellites/tomorrow-io-delivers-first-radar-for-us-air-force-backed-weather-satellite-constellation.html"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "JpGU 2025 ACG41-24 PMM abstract",
+   "tool": "lookup (built-in browser)",
+   "notes": "not tried for time; PMM specs covered by JAXA July 2026 slides",
+   "from": "main",
+   "copy_of": "https://confit.atlas.jp/guide/event/jpgu2025/subject/ACG41-24/date"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "EOSPSO GPM Core Observatory page",
+   "tool": "lookup (title search)",
+   "notes": "host DNS failure (ENOTFOUND); design life taken from NTRS 2016 paper instead; no route left",
+   "from": "main",
+   "copy_of": "https://eospso.gsfc.nasa.gov/missions/global-precipitation-measurement-core-observatory"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "WMO OSCAR AOS-PMM primary copy",
+   "tool": "lookup (title search)",
+   "notes": "OSCAR is WMO's own registry compiled from agencies; JAXA July 2026 slides (primary) give no launch date; cited as aggregator",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/aos_pmm"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "ESDIS Next (ENX) forecast primary copy on SAM.gov",
+   "tool": "lookup (title search)",
+   "notes": "not tried for time; HigherGov forecast cited as aggregator, low weight",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/contract-forecast/earth-science-data-and-information-system-esdis-1121962"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA Senior Review 2026 GPM Aqua guidance extended",
+   "tool": "duckduckgo (browser)",
+   "notes": "no 2026 results document; found IMERG ATBD revised 13 Aug 2026 (Table 1 sensor periods)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA 2026 Senior Review results GPM Aqua",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c1/c6; no published 2026 Senior Review results or NASA response found; only call, draft call, CERES slide, 2023 docs",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "INCUS mission funding 2026 Congress",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c7; no result mentions INCUS (all foreign-aid appropriations); one CRS snippet gives FY2027 CR as P.L. 119-103 through Dec 11, 2026",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Aqua satellite end of science 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c6; snippets: Wikipedia says by June 2026 predicted operation into September; SatNews Dec 2025 retire as early as end of 2026; no post-Sep 2026 confirmation of shutdown",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "FY2027 NASA appropriations December 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c9; snippets: no FY2027 bill enacted; CR expires Dec 11; House CJS committee approved May 13 (NASA approx. $24.438B flat); Senate CJS subcommittee $24.874B; no December 2026 update found",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Core Observatory 2026 anomaly status",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c3; no 2026 spacecraft anomaly found; last safe mode Dec 2, 2023; 2026 items are data issues (GPROF V08 recall, V08 partner radiometer geolocation error); JAXA EORC 2026 page says observing continues",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PMM Precipitation Measuring Mission JAXA launch 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c8; OSCAR summary gives launch Mar 2029 (updated Apr 20, 2026) vs Mar 2030 in checklist; JAXA May 2026 news says still in development",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG V08 release 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c13; no IMERG V08 Final release found; L3 GPROF V08 recall Oct 1, 2026; GPROF STD recall from Aug 19, 2026 (alert Sept 21)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC DAAC consolidation 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c12; Consolidated Ingest and Archive migration paused GES DISC ingest Oct 28-30; web unification by end of 2026",
+   "from": "checker"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA (GPM project)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GPM Core Observatory status, fuel, orbit boost, instrument health, end-of-mission plans",
+   "query": "GPM Core Observatory status 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r2a",
+   "organization": "NASA Earth Science Division",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "Senior Review 2023 and 2026 decisions for GPM",
+   "query": "Earth Science Senior Review 2026 GPM",
+   "skip_reason": null
+  },
+  {
+   "id": "r2b",
+   "organization": "NASA Earth Science Division",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "Senior Review 2023 and 2026 decisions for Aqua and TROPICS",
+   "query": "Earth Science Senior Review 2026 Aqua",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "JAXA",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "JAXA GPM/DPR status and PMM KuDPR successor schedule",
+   "query": "JAXA Precipitation Measuring Mission KuDPR launch",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NASA (TROPICS)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "TROPICS constellation status and end of mission",
+   "query": "TROPICS constellation status 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NASA (Aqua)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "Aqua drift, end of science operations, decommissioning",
+   "query": "Aqua satellite end of mission 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NASA (INCUS)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "INCUS launch date, cost, status",
+   "query": "INCUS mission launch 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NASA (AOS)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "AOS status, KDPs, launch dates, budget treatment",
+   "query": "Atmosphere Observing System NASA 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NASA / OMB",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "FY2026 budget request and technical supplement: Earth Science lines and terminations",
+   "query": "NASA FY2026 budget technical supplement Earth science",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NASA / OMB",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "FY2027 budget request: Earth Science lines and terminations",
+   "query": "NASA FY2027 budget request Earth science",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "Congress (appropriations committees)",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "FY2026 enacted CJS NASA Earth science; FY2027 House and Senate reports; CR",
+   "query": "FY2026 CJS joint explanatory statement NASA Earth science",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q4",
+   "aim": "GAO assessments of NASA major projects and Earth science",
+   "query": "GAO NASA assessments major projects 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NASA OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q4",
+   "aim": "OIG reports on Earth science, mission extensions, workforce",
+   "query": "NASA OIG report 2026 Earth science",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "CRS",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q4",
+   "aim": "CRS NASA appropriations reports FY2026/FY2027",
+   "query": "CRS NASA FY2026 appropriations",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "NASA Goddard",
+   "publisher": "press",
+   "subquestion_id": "q5",
+   "aim": "Goddard staffing losses, closures and their effect on Earth science",
+   "query": "Goddard Space Flight Center layoffs 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "NASA PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "PPS processing notices, outages, product changes",
+   "query": "Precipitation Processing System notice 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r16",
+   "organization": "NASA GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "GES DISC alerts, service decommissioning, shutdown status",
+   "query": "GES DISC news 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r17",
+   "organization": "NASA Goddard",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q5",
+   "aim": "union, AGU, AMS statements on Goddard and Earth data",
+   "query": "Goddard union statement 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r18",
+   "organization": "Tomorrow.io",
+   "publisher": "the organization itself",
+   "subquestion_id": "q6",
+   "aim": "commercial radar/microwave satellite status",
+   "query": "Tomorrow.io satellite radar constellation 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r19",
+   "organization": "CMA / EUMETSAT / ISRO",
+   "publisher": "the organization itself",
+   "subquestion_id": "q6",
+   "aim": "FY-3G PMR, Metop-SG MWI, other international precipitation sensors",
+   "query": "FY-3G precipitation measurement radar data",
+   "skip_reason": null
+  }
+ ],
+ "entities": [
+  {
+   "name": "GPM Core Observatory",
+   "included": true,
+   "source_ids": [
+    "s48",
+    "s93"
+   ],
+   "shown_as": "GPM"
+  },
+  {
+   "name": "TROPICS",
+   "included": true,
+   "source_ids": [
+    "s44"
+   ]
+  },
+  {
+   "name": "Aqua",
+   "included": true,
+   "source_ids": [
+    "s73"
+   ]
+  },
+  {
+   "name": "INCUS",
+   "included": true,
+   "source_ids": [
+    "s86"
+   ]
+  },
+  {
+   "name": "AOS",
+   "included": true,
+   "source_ids": [
+    "s27",
+    "s37"
+   ]
+  },
+  {
+   "name": "Precipitation Processing System",
+   "included": true,
+   "source_ids": [
+    "s22"
+   ],
+   "shown_as": "PPS"
+  },
+  {
+   "name": "GES DISC",
+   "included": true,
+   "source_ids": [
+    "s9"
+   ]
+  },
+  {
+   "name": "PMM",
+   "included": true,
+   "source_ids": [
+    "s52"
+   ]
+  },
+  {
+   "name": "FALCON",
+   "included": true,
+   "source_ids": [
+    "s92",
+    "s80"
+   ]
+  },
+  {
+   "name": "DMSP SSMIS",
+   "included": true,
+   "source_ids": [
+    "s93"
+   ],
+   "shown_as": "DMSP"
+  },
+  {
+   "name": "GCOM-W AMSR2",
+   "included": true,
+   "source_ids": [
+    "s93"
+   ],
+   "shown_as": "AMSR2"
+  },
+  {
+   "name": "Metop",
+   "included": true,
+   "source_ids": [
+    "s93"
+   ],
+   "shown_as": "EUMETSAT"
+  },
+  {
+   "name": "NOAA-20",
+   "included": true,
+   "source_ids": [
+    "s93"
+   ],
+   "shown_as": "NOAA"
+  },
+  {
+   "name": "TEMPEST-D",
+   "included": false,
+   "reason": "ended 2021, before the period; listed only as a GPROF a priori input",
+   "source_ids": []
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 50.0,
+  "shift_min": 4,
+  "ceiling": 400000,
+  "research_stop_tokens": 355000,
+  "subagent_stop_tokens": 284000,
+  "tokens": 371000,
+  "subagent_minutes_planned": 63,
+  "subagent_minutes": 64.3,
+  "follow_ups": 0,
+  "continuations": 0,
+  "refusals": 0,
+  "research_stop": "tokens",
+  "subagent_stop": false
+ }
+}

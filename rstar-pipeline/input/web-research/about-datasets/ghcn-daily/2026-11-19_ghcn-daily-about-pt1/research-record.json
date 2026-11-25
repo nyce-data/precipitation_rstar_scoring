@@ -1,0 +1,1915 @@
+{
+ "question": "What is the GHCN-Daily dataset, where is it kept and served, and who makes it? (current version; GHCN-Monthly and hourly only as they relate; QC and file formats out of scope)",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions of one dataset; no set of 15+ members, no multi-year figures, no active dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Where it lives: archive and main access points, with URLs",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s3",
+    "s9",
+    "s22",
+    "s25",
+    "s26",
+    "s28",
+    "s31",
+    "s32"
+   ],
+   "remaining_gap": null
+  },
+  {
+   "id": "q2",
+   "question": "What kind of dataset: source networks and data streams, counts or shares, and how they are merged",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s23"
+   ],
+   "remaining_gap": "No official current count per source network; the run counted station IDs by network code instead."
+  },
+  {
+   "id": "q3",
+   "question": "How the data are made: direct measurements and instruments, algorithmic steps, update frequency",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s5",
+    "s9",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s19",
+    "s20",
+    "s21"
+   ],
+   "remaining_gap": "No NCEI document maps instruments to elements; instruments come from the networks' own documents (U.S. networks only)."
+  },
+  {
+   "id": "q4",
+   "question": "Who is responsible: group, parent organization, credited people, staff count",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s9",
+    "s24",
+    "s26",
+    "s27",
+    "s29",
+    "s30",
+    "s32",
+    "s33",
+    "s34"
+   ],
+   "remaining_gap": "The NCEI division or branch running GHCN-Daily is not named on any page read; no staff count is published."
+  },
+  {
+   "id": "q5",
+   "question": "How GHCN-Daily relates to GHCN-Monthly and GHCNh",
+   "status": "answered",
+   "source_ids": [
+    "s2",
+    "s5",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s17",
+    "s18"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+   "fetched_url": null,
+   "title": "GHCN-Daily readme.txt (Version 3.35), section III source flags",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (file header: Version 3.35)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/8b8dc3572e0d91be.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Leading/trailing whitespace and tabs of each line trimmed; internal spacing kept. The readme says 'thirty possible values' but lists more codes. No per-source station counts (NOT PRESENT).",
+   "found_by": [
+    "sa2",
+    "sa3",
+    "main",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/status.txt",
+   "fetched_url": null,
+   "title": "Status of the Global Historical Climatology Network-daily (status.txt)",
+   "author_org": "NOAA NCEI",
+   "published": "latest entry October 1, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/b55a05aa65b44ce8.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "File copied from sa3's fetch cache (same URL) by fetch_page.py; only lines 1-50 read.",
+   "found_by": [
+    "sa2",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-version.txt",
+   "fetched_url": null,
+   "title": "ghcnd-version.txt",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-15 (version stamp)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/4ecbcc3cf1840479.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Copied from sa3's fetch cache (same URL).",
+   "found_by": [
+    "sa2",
+    "sa3",
+    "sa1"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network daily (GHCNd) product page",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_ghcnd.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Text copy saved by the 2026-11-18 run (sa3); only the .txt existed to copy. Page undated.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ncei.noaa.gov/pub/data/ushcn/papers/menne-etal2012.pdf",
+   "fetched_url": null,
+   "title": "An Overview of the Global Historical Climatology Network-Daily Database (Menne, Durre, Vose, Gleason, Houston 2012), abstract",
+   "author_org": "NOAA National Climatic Data Center",
+   "published": "2012-07 (J. Atmos. Oceanic Technol. 29, 897-910)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "10.1175/JTECH-D-11-00103.1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/2ca8a48dd9970116.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Published version hosted by NCEI (AMS journal page refused with 403). '201' is the pdftotext rendering; it may be '20' with footnote marker 1 (the NCEI page now says 'more than 25'). Figures are as of 2012.",
+   "found_by": [
+    "sa2",
+    "sa3",
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_7_NOAA_NCEI_Durre.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data at NCEI (WERA presentation)",
+   "author_org": "Imke Durre, Jessica Matthews (NOAA NCEI)",
+   "published": "2024-06-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_wera2024_durre.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Slide text via pdftotext; list bullets/dashes dropped. Chart on slide 3 (CONUS Precipitation in GHCNd) lost its axis labels in text, so which figure belongs to which network is NOT PRESENT. Fetched through WebFetch, raw PDF bytes copied from the WebFetch save. No station count for CoCoRaHS in GHCNd stated.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network - Daily (GHCN-Daily), Version 3 (NCEI metadata record C00861)",
+   "author_org": "NOAA NCEI",
+   "published": "2012-09-24 (publication); last modified 2025-12-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "doi:10.7289/V5D21VHZ",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/ncei_geoportal_C00861_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction split sentences into quoted segments; join between segments not verified. Station figure (90,000) differs from product page (more than 100,000) and Menne 2012 (80 000); source count (approx. 30) differs from product page (more than 25).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://repository.library.noaa.gov/view/noaa/61558/noaa_61558_DS1.pdf",
+   "fetched_url": null,
+   "title": "The Global Historical Climatology Network Monthly Precipitation Dataset, Version 4 (Scientific Data, Data Descriptor)",
+   "author_org": "Scott Applequist, Imke Durre, Russell Vose (NOAA NCEI)",
+   "published": "NOT PRESENT in lines read",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/dd4ab060aeb8a4dd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read only the abstract and the merge-rule bullet (time). Publication year not checked. Bullet marker dropped.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: GHCNm precipitation v4 (GMP4) source shares"
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network daily (GHCNd)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/14491e0671d7a6be.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Page banner says update cycles are slower during the NCEI migration.",
+   "found_by": [
+    "sa3",
+    "main",
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-monthly",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network monthly (GHCNm)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/3f6fc0cd9a9bd90b.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Temperature only; the page also lists ISTI as a source. GHCNm precipitation relation NOT PRESENT in this passage.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network hourly (GHCNh)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/f35da0ef2b7c35f3.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Related Products also says: \"The Synoptic Summary of the Day offers daily climate summaries computed from the hourly and synoptic reports provided in GHCNh.\"",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_1_NWS_COOP_Update_McGuire_.pdf",
+   "fetched_url": null,
+   "title": "Cooperative Observer Program Updates (WERA 2024)",
+   "author_org": "National Weather Service (Amy Fritz, Scott McGuire)",
+   "published": "2024-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wera2024_coop_update.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Slide deck; equipment for COOP only, which feeds GHCN-Daily (Menne 2012 Table 1); the slide does not mention GHCN-Daily. Stray figure numbers in the text layer omitted via line joins.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.weather.gov/lot/weather_observations_faq",
+   "fetched_url": null,
+   "title": "NWS Chicago observations FAQ",
+   "author_org": "NOAA National Weather Service Chicago",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/lot_obs_faq.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Local WFO page (Chicago). Does not mention GHCN-Daily.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://directives.nrcs.usda.gov/sites/default/files2/1712930525/22448.pdf",
+   "fetched_url": null,
+   "title": "National Engineering Handbook Part 622 Snow Survey and Water Supply Forecasting, Chapter 8 (Amend. 72, February 2015)",
+   "author_org": "USDA Natural Resources Conservation Service",
+   "published": "2015-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/14323e6fa3ce2f01.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Instrument standard; does not mention GHCN-Daily. Readme lists SNOTEL as source flag T. Also: 'A snow pillow is used to measure SWE.' (Snow Pillow SWE Sensor definition).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://www.cocorahs.org/Content.aspx?page=measurerain",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Measuring rain",
+   "author_org": "CoCoRaHS",
+   "published": null,
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/cocorahs_measurerain_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Script fetch refused (cocorahs.org 403 via proxy); read via WebFetch extraction. Reading time and comparison with 8-inch gauge NOT PRESENT on this page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/papers/durre-menne-etal2010.pdf",
+   "fetched_url": null,
+   "title": "Comprehensive Automated Quality Assurance of Daily Surface Observations",
+   "author_org": "Durre, Menne, Gleason, Houston, Vose (NOAA NCDC); J. Appl. Meteor. Climatol. 49, 1615-1633",
+   "published": "2010-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "10.1175/2010JAMC2375.1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/b3443b11156578ee.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only the 'QC is automated' statement taken; QC details out of scope. DOI printed on p. 1615 (line 77 of text).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/v4/readme.txt",
+   "fetched_url": null,
+   "title": "GHCN-M version 4 readme",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/99b7d1eb2cbe1e5f.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Says 'over 25,000'; the GHCNm product page says 26,000. Statement that monthly values are computed directly from GHCNd where possible (Menne et al. 2018, J. Climate, doi:10.1175/JCLI-D-18-0094.1) is from a search snippet only, NOT read.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://repository.library.noaa.gov/view/noaa/45291/noaa_45291_DS1.pdf",
+   "fetched_url": null,
+   "title": "The Global Historical Climatology Network Monthly Temperature Dataset, Version 4",
+   "author_org": "Menne, Williams, Gleason, Rennie, Lawrimore (NOAA NCEI); J. Climate 31, 9835-9854",
+   "published": "2018",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "10.1175/JCLI-D-18-0094.1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cf02d1a5249c4ca1.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Two-column PDF; quoted left column fragments only. Temperature only (GHCNm precipitation not covered). Title taken from the paper's known citation, not checked against the PDF title line.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://media.cocorahs.org/docs/Why%20CoCoRaHS%20requires%20manual%20measurements.pdf",
+   "fetched_url": null,
+   "title": "Why CoCoRaHS Requires Manual Measurements (Rev. 11/2024)",
+   "author_org": "CoCoRaHS",
+   "published": "2024-11",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_manual_measurements.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "PDF bytes obtained via WebFetch (script fetch refused, media.cocorahs.org 403 via proxy), copied into my folder and converted with pdftotext. Earlier lines 10-11 also name 'the National Weather Service (NWS) 8\" diameter manual Standard' gauge.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://www.weather.gov/media/directives/010_pdfs/pd01013007curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 10-1307, Cooperative Station Management",
+   "author_org": "NOAA National Weather Service",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nwsi_10-1307_2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "About reimbursable USBR cooperative networks, not COOP in general; does not mention GHCN-Daily. Also line 767: the functional precision of the MMTS ... is about 1° F.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://web.archive.org/web/20201218051149/https://www.ncdc.noaa.gov/ghcn-daily-description",
+   "fetched_url": null,
+   "title": "Global Historical Climate Network Daily - Description (NCDC page, saved 2020-12-18)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ncdc_ghcnd_description_2020.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Snapshot of the old page as of Dec 2020, not the current page.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://console.cloud.google.com/marketplace/details/noaa-public/ghcn-d",
+   "fetched_url": null,
+   "title": "GHCN Daily (NOAA) - Google Cloud Marketplace listing",
+   "author_org": "Google Cloud / NOAA",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/console-cloud-google-com-marketplace-details-noaa-public-ghc_193833.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Listing text is Google's; station figure (over 100,000) copied from NCEI.",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+   "fetched_url": null,
+   "title": "ghcnd-stations.txt (GHCN-Daily station list), counted by ID network code",
+   "author_org": "NOAA NCEI (counts computed by this run)",
+   "published": "2026-11-13 (file date in directory listing)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/station_counts_2026-11-19.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Computed by this run: entries listed, grouped by the ID numbering system, not by the source of the data values (one station can mingle several sources). Includes inactive stations.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://www.nesdis.noaa.gov/s3dl?path=/s3/2023-02/NCEI_Org_Chart_Feb_2023.pdf",
+   "fetched_url": null,
+   "title": "National Centers for Environmental Information organization chart, February 2023",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "2023-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ncei_org_chart_2023.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Feb 2023 chart; does not name GHCN-Daily, so tying the dataset to a section is an inference from Durre being the dataset PI. NCEI divisions were renamed later (the NESDIS page now lists a Climate Science and Services Division).",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/ghcn/daily/",
+   "author_org": "NOAA NCEI",
+   "published": "listing as of 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/b992cf53e8b77423.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Sizes are bytes as listed (ghcnd_all.tar.gz about 3.8 GB). Listing only; file contents not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network - Daily (GHCN-Daily), Version 3 (NCEI ISO metadata record C00861)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "doi:10.7289/V5D21VHZ; gov.noaa.ncdc:C00861; NCEI DSI 9101_01",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/ncei_iso_C00861.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction (small model); quotes are the extraction's text, not the raw HTML. Also lists NCEI Common Access Search, GIS Map Viewer, ArcGIS service, KMZ.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://api.datacite.org/dois/10.7289/V5D21VHZ",
+   "fetched_url": null,
+   "title": "DataCite record for doi:10.7289/V5D21VHZ",
+   "author_org": "DataCite / NOAA NCEI",
+   "published": "2012 (registered 2014-06-06, updated 2025-04-18)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "doi:10.7289/V5D21VHZ",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/datacite_V5D21VHZ.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "fetch_json.py failed (IncompleteRead); read via WebFetch extraction, so field text is the extraction's rendering of the JSON.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://registry.opendata.aws/noaa-ghcn/",
+   "fetched_url": null,
+   "title": "NOAA Global Historical Climatology Network Daily (GHCN-D) - Registry of Open Data on AWS",
+   "author_org": "AWS Registry of Open Data / NOAA NODD",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "arn:aws:s3:::noaa-ghcn-pds",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/aws_registry_noaa-ghcn.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Host refused by sandbox for scripts; read via WebFetch extraction. Notice says the NODD team is working on improving performance and access to the GHCNd data.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.nesdis.noaa.gov/about/our-offices/national-centers-environmental-information-ncei",
+   "fetched_url": null,
+   "title": "National Centers for Environmental Information (NCEI) | NESDIS",
+   "author_org": "NOAA NESDIS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/0c68c926471a2808.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Names no GHCN-Daily group; the division assignment of GHCN-Daily is NOT PRESENT. No staff count.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.ncei.noaa.gov/about-us",
+   "fetched_url": null,
+   "title": "About | NCEI",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/ncei_about_us.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction; spells the division both 'Climatic' and 'Climate Science and Services'. Does not tie GHCN-Daily to a division.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://cloud.google.com/blog/products/gcp/global-historical-daily-weather-data-now-available-in-bigquery",
+   "fetched_url": null,
+   "title": "Global historical daily weather data now available in BigQuery",
+   "author_org": "Google Cloud (Lak Lakshmanan)",
+   "published": "2016-09-22",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/gcloud_blog_ghcn_bigquery.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2016 post, read via WebFetch extraction; station count (over 80,000) dated. Current Marketplace listing (console.cloud.google.com/marketplace/product/noaa-public/ghcn-d) not read (console page).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/papers/menne-etal2012.pdf",
+   "fetched_url": null,
+   "title": "An Overview of the Global Historical Climatology Network-Daily Database (Menne et al. 2012, J. Atmos. Oceanic Technol. 29, 897-910)",
+   "author_org": "Menne, Durre, Vose, Gleason, Houston (NOAA National Climatic Data Center)",
+   "published": "2012-07",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "doi:10.1175/JTECH-D-11-00103.1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/3c0286c994da4a8d.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only pages 1-2 converted to text. NCEI-hosted copy of the published article (AMS site returned 403). Abstract also says records from over 80 000 stations (2012 figure) and reconstruction from \"201 data source components\" as extracted (likely 20 plus a footnote marker 1; check PDF).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/papers/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/ghcn/daily/papers/",
+   "author_org": "NOAA NCEI",
+   "published": "listing as of 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/0e41c2c7c2095b05.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Listing only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://www.ncei.noaa.gov/news/helene-devastates-southeast-impacts-noaa-ncei-headquarters",
+   "fetched_url": null,
+   "title": "Helene Devastates Southeast, Impacts NOAA NCEI Headquarters",
+   "author_org": "NOAA NCEI",
+   "published": "2024-10-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/ncei_helene_news.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction; partial NCEI-wide figure (excludes Asheville), 2024, not GHCN-specific. Banner text about inaccessible archived data may be from a later migration notice.",
+   "found_by": [
+    "sa1"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "GHCN-Daily is held and served by NOAA's National Centers for Environmental Information (NCEI): over HTTPS from www.ncei.noaa.gov/pub/data/ghcn/daily/ (per-station files and all/GSN/HCN tar files) and www.ncei.noaa.gov/data/global-historical-climatology-network-daily/, and through Climate Data Online; each version is archived at NCEI.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Daily data from GHCN are available as individual ASCII (i.e., plain text) files (one file per station) and as a GZIP-compressed TAR file containing all of the station files. … ## Access Methods | - HTTPS | - Climate Data Online | To determine off-line availability of any country's data, please contact NCEI at ncei.orders@noaa.gov or 828-271-4800.",
+     "location": "Available Data / Access Methods sections, lines 20-27"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "ghcnd-stations.txt | 2026-11-13 22:37 | 11441526 | ghcnd-version.txt | 2026-11-17 22:10 | 270 | ghcnd_all.tar.gz | 2026-11-17 22:36 | 3826140381 | ghcnd_gsn.tar.gz | 2026-11-17 22:37 | 180380753 | ghcnd_hcn.tar.gz | 2026-11-17 22:40 | 316596781",
+     "location": "directory listing rows 29-33"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "- NCEI Direct Download: https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/ … - AWS S3 Explorer (Region: us-east-1): https://noaa-ghcn-pds.s3.amazonaws.com/index.html … - Registry of Open Data on AWS: https://registry.opendata.aws/noaa-ghcn/ | - Google Cloud Landing Page (Region: US-central-1): https://console.cloud.google.com/marketplace/details/noaa-public/ghcn-d",
+     "location": "Access / Download URLs section"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Each daily update to GHCNd is assigned a unique version number, and then archived at NCEI. GHCNd also serves as the official archive for the U.S. Cooperative Observer data, which have been comprehensively integrated into the dataset with other U.S. daily data sources.",
+     "location": "Updates section, line 40"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "The daily updates and weekly reprocessed |             versions of GHCN-Daily are assigned a unique version number, and the most recent dataset version is |             provided on the GHCN-Daily website for free public access. Each version of the dataset is also archived at the |             NOAA/National Climatic Data Center in perpetuity for future retrieval.",
+     "location": "p. 897, abstract"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's own product page, directory listing and ISO record agree; the developers' paper says the same.",
+   "sole_source_reason": "NCEI's own pages are the authority for where NCEI serves its dataset."
+  },
+  {
+   "id": "c2",
+   "text": "Cloud copies: an AWS S3 bucket, noaa-ghcn-pds (us-east-1), through NOAA's Open Data Dissemination program, updated daily; and a Google BigQuery public dataset (bigquery-public-data.ghcn_d), expected to update daily. No Microsoft Planetary Computer copy was found.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "1. **Resource type:** S3 Bucket |    - **ARN:** arn:aws:s3:::noaa-ghcn-pds |    - **AWS Region:** us-east-1",
+     "location": "Resources on AWS"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "- NCEI Direct Download: https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/ … - AWS S3 Explorer (Region: us-east-1): https://noaa-ghcn-pds.s3.amazonaws.com/index.html … - Registry of Open Data on AWS: https://registry.opendata.aws/noaa-ghcn/ | - Google Cloud Landing Page (Region: US-central-1): https://console.cloud.google.com/marketplace/details/noaa-public/ghcn-d",
+     "location": "Access / Download URLs section"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "This public dataset is hosted in Google BigQuery and is included in BigQuery's 1TB/mo of free tier processing.",
+     "location": "Overview"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Expected update frequency: Daily",
+     "location": "Additional details"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "- `bigquery-public-data:ghcn_d.ghcnd_stations` | - `bigquery-public-data:ghcn_d.ghcnd_2016` … refers to the data as \"continually refreshed in BigQuery.\"",
+     "location": "BigQuery dataset/table names; refresh"
+    }
+   ],
+   "applicability": "Microsoft: not found in 2 searches, not proven absent.",
+   "confidence": "high",
+   "confidence_reason": "NCEI's ISO record links both; the AWS registry and Google listing were read."
+  },
+  {
+   "id": "c3",
+   "text": "The dataset's DOI is 10.7289/V5D21VHZ; its NCEI metadata record is gov.noaa.ncdc:C00861 (also NCEI DSI 9101_01, 'daily-summaries' in NCEI's access service).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "To acknowledge the specific version of the dataset used, please cite: | Menne, M.J., I. Durre, B. Korzeniewski, S. McNeill, K. Thomas, X. Yin, S. Anthony, R. Ray, | R.S. Vose, B.E.Gleason, and T.G. Houston, 2012: Global Historical Climatology Network - | Daily (GHCN-Daily), Version 3. [indicate subset used following decimal, | e.g. Version 3.12]. | NOAA National Climatic Data Center. http://doi.org/10.7289/V5D21VHZ [access date].",
+     "location": "lines 16-21 (How to cite)"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "- NCEI Direct Download: https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/ … - AWS S3 Explorer (Region: us-east-1): https://noaa-ghcn-pds.s3.amazonaws.com/index.html … - Registry of Open Data on AWS: https://registry.opendata.aws/noaa-ghcn/ | - Google Cloud Landing Page (Region: US-central-1): https://console.cloud.google.com/marketplace/details/noaa-public/ghcn-d",
+     "location": "Access / Download URLs section"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Readme and ISO record agree.",
+   "sole_source_reason": "NCEI's own records are the authority for its identifiers."
+  },
+  {
+   "id": "c4",
+   "text": "GHCN-Daily is a compilation: it integrates daily station records from many networks and countries (NCEI now says more than 25 source components, its metadata record about 30), not a blend of instrument types and not a single network. NCEI's page says more than 100,000 stations in 180 countries and territories; its sources fall into four groups: the U.S. collection, the international collection, government exchange data, and the Global Summary of the Day.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "The Global Historical Climatology Network daily (GHCNd) is an integrated database of daily climate summaries from land surface stations across the globe. GHCNd is made up of daily climate records from numerous sources that have been integrated and subjected to a common suite of quality assurance reviews. | GHCNd contains records from more than 100,000 stations in 180 countries and territories. NCEI provides numerous daily variables, including maximum and minimum temperature, total daily precipitation, snowfall, and snow depth. About half the stations only report precipitation. … Additionally, the dataset is reconstructed each weekend from more than 25 data source components to ensure that GHCNd is generally in sync with its growing list of constituent sources. … Of the more than 100,000 stations that comprise GHCNd, approximately 20,000 updates with observations are during any given 30-day period.. While many sites report only precipitation, daily maximum and minimum temperatures are also available from more than 25,000 sites",
+     "location": "Intro (lines 9, 11), Updates (line 38), Coverage (line 78)"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "NCEI receives GHCNd source data from National Meteorological and Hydrological Centers (NMHCs) around the world, through official bi-lateral agreements, and from a number of data archives at NCEI. These sources fall into four broad categories: … The U.S. Collection contains daily data from a dozen separate datasets archived at NCEI. … The International Collection contains historical records for approximately 20,000 locations outside the U.S. from more than 100 different countries and largely reflects the data collection efforts that led to the release of Global Daily Climatology Network dataset (the predecessor to GHCNd). … Government Exchange Data refers to data collected through official Global Climate Observing Systems (GCOS) and bilateral agreements. In the best case scenario, an NMHC may offer its complete digital daily climate database to be added to GHCNd, which is the case for Canada (with more than 7500 station records provided) and Australia (with more than 17,000 station records). … The Global Summary of the Day contains 24-hour summaries encoded in the special “climatological code” group transmitted with synoptic (SYNOP) reports on the Global Telecommunications System (GTS).",
+     "location": "Source Data Descriptions (lines 48, 54, 62, 66, 70)"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "contextualizes",
+     "passage": "\"The Global Historical Climatology Network - Daily (GHCN-Daily/GHCNd) dataset integrates daily climate observations\" \"from approximately 30 different data sources.\" … \"Version 3 contains station-based measurements from well over 90,000 land-based stations worldwide,\" \"about two thirds of which are for precipitation measurement only.\" … \"Over 25,000 stations are regularly updated with observations from within roughly the last month.\"",
+     "location": "Daily Summaries paragraph (abstract)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "contextualizes",
+     "passage": "The dataset contains | records from over 80 000 stations in 180 countries and territories, and its processing system produces the official | archive for U.S. daily data. … however, about two-thirds of the stations report precipitation only. … The dataset is also regularly | reconstructed, usually once per week, from its 201 data source components, ensuring that the dataset is | broadly synchronized with its growing list of constituent sources.",
+     "location": "p. 897, Abstract"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "reconstructed, usually once per week, from its 201 data source components",
+     "location": "p. 897, Abstract (page image shows '20+')"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Product page, metadata record and the 2012 paper agree on the design; counts differ by date and wording (see conflicts).",
+   "sole_source_reason": "The maintainer's documentation and its developers' paper are the authority for the dataset's design."
+  },
+  {
+   "id": "c5",
+   "text": "The readme's source flags name the data streams: e.g. U.S. COOP summaries (0, 7, K, 6), CF6 and HPRCC feeds (1, D, d, H), ASOS (A, B, W, M), U.S. First-Order (X), CRN/USRCRN (R), CoCoRaHS (N), SNOTEL (T), RAWS (U), Environment Canada (C), ECA&D (E), Australia (a), GCOS/government data (G), the international collection (I), GSOD (S) and its successor SSODv2 (2), plus national contributions (e.g. Fiji, Mexico CONAGUA, Russia, China, Belarus, Ukraine, Uzbekistan).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "SFLAG1     is the source flag for the first day of the month.  There are | thirty possible values (including blank, upper and | lower case letters): | Blank = No source (i.e., data value missing) | 0     = U.S. Cooperative Summary of the Day (NCDC DSI-3200) | 1     = CF6 (form F6) daily climate summaries from the U.S. | National Weather Service | 2     = Synoptic Summary of the Day (SSOD) \"version 2\", the | successor to GSOD (source 'S') | 6     = CDMP Cooperative Summary of the Day (NCDC DSI-3206) | 7     = U.S. Cooperative Summary of the Day -- Transmitted | via WxCoder3 (NCDC DSI-3207) | A     = U.S. Automated Surface Observing System (ASOS) | real-time data (since January 1, 2006) | a     = Australian data from the Australian Bureau of Meteorology | B     = U.S. ASOS data for October 2000-December 2005 (NCDC | DSI-3211) | b     = Belarus update | C     = Environment Canada | D     = Short time delay US National Weather Service CF6 daily | summaries provided by the High Plains Regional Climate | Center | d     = Short time delay US National Weather Service Daily | Summary Message (DSMs) provided by the High Plains | Regional Climate Center | E     = European Climate Assessment and Dataset (Klein Tank | et al., 2002) | F     = U.S. Fort data | G     = Official Global Climate Observing System (GCOS) or | other government-supplied data | H     = High Plains Regional Climate Center real-time data | I     = International collection (non U.S. data received through | personal contacts) | K     = U.S. Cooperative Summary of the Day data digitized from | paper observer forms (from 2011 to present) | M     = Monthly METAR Extract (additional ASOS data) | f     = Data provided courtesy of the Fiji Met Service | m     = Data from the Mexican National Water Commission (Comision | National del Agua -- CONAGUA) | N     = Community Collaborative Rain, Hail,and Snow (CoCoRaHS) | Q     = Data from several African countries that had been | \"quarantined\", that is, withheld from public release | until permission was granted from the respective | meteorological services | R     = NCEI Reference Network Database (Climate Reference Network | and Regional Climate Reference Network) | r     = All-Russian Research Institute of Hydrometeorological | Information-World Data Center | S     = Global Summary of the Day (NCDC DSI-9618) | NOTE: \"S\" values are derived from hourly synoptic reports | exchanged on the Global Telecommunications System (GTS). | Daily values derived in this fashion may differ significantly | from \"true\" daily data, particularly for precipitation | (i.e., use with caution). | s     = China Meteorological Administration/National Meteorological Information Center/ | Climatic Data Center (http://cdc.cma.gov.cn) | T     = SNOwpack TELemtry (SNOTEL) data obtained from the U.S. | Department of Agriculture's Natural Resources Conservation Service | U     = Remote Automatic Weather Station (RAWS) data obtained | from the Western Regional Climate Center | u     = Ukraine update | W     = WBAN/ASOS Summary of the Day from NCDC's Integrated | Surface Data (ISD). | X     = U.S. First-Order Summary of the Day (NCDC DSI-3210) | Z     = Datzilla official additions or replacements | z     = Uzbekistan update",
+     "location": "readme.txt section III, lines 354-420"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Version 3.35 is released.  Version 3.35 resumes updates for Environment Canada | stations and begins weekly re-integration of the full periods of record daily | climate summaries from the Environment Canada web based database. … Version 3.33 is released.  Version 3.33 adds the Synoptic Summary of the Day | (SSOD) \"version 2\" dataset as a source in GHCNd.  SSODv2 is the successor | dataset to GSOD and is derived from GHCNh. … GHCNd version 3.31 is released.  Version 3.31 provides a new source and set of stations | provided by the Fiji Met Service.  Specifically, daily rainfall for 25 stations are provided | for the period 1980 to 2022. … GHCNd version 3.30 is released.  Version 3.30 changes the prioritization for stations with | source 'D' (NWS CF6 summaries) and source 'W' (ISD Summary of the Day for NOAA stations). | In v3.30 source 'W' takes precedence over source 'D'.",
+     "location": "status.txt lines 5-7, 21-23, 41-43, 48-50"
+    }
+   ],
+   "applicability": "Current readme, Version 3.35.",
+   "confidence": "high",
+   "confidence_reason": "Read from the readme's own list.",
+   "sole_source_reason": "The readme is the maintainer's definition of its source flags."
+  },
+  {
+   "id": "c6",
+   "text": "Of 133,041 station entries in ghcnd-stations.txt (file of 2026-11-13), the ID network codes are: CoCoRaHS 53,167 (40.0%); national met/hydro service numbers 30,703 (23.1%); U.S. COOP 23,115 (17.4%); unspecified 13,188 (9.9%); ECA&D 5,087 (3.8%); WMO 3,116 (2.3%); WBAN 2,293 (1.7%); RAWS 1,509 (1.1%); SNOTEL 859 (0.6%); Pre-Coop 4. U.S. entries: 78,570.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "total station entries: 133041 | distinct country codes: 218 | by network code (all): | 1: 53167 (40.0%) | N: 30703 (23.1%) | C: 23115 (17.4%) | 0: 13188 (9.9%) | E: 5087 (3.8%) | M: 3116 (2.3%) | W: 2293 (1.7%) | R: 1509 (1.1%) | S: 859 (0.6%) | P: 4 (0.0%) | US entries: 78570",
+     "location": "computed from the whole file (work/code/count_stations.py)"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "the third character | is a network code that identifies the station numbering system | used",
+     "location": "readme section IV, lines 462-464"
+    }
+   ],
+   "applicability": "Entries listed, not an official total; includes closed stations.",
+   "confidence": "moderate",
+   "confidence_reason": "Counted by this run from NCEI's own file; ID codes are numbering systems, not data sources, and entries include inactive stations. No official count per source is published.",
+   "sole_source_reason": "NCEI's station list is the authority for the stations in its dataset.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c7",
+   "text": "Published per-source counts date from 2012: COOP DSI-3200 over 20,000 stations; CDMP more than 11,000; First-Order about 1,600; ASOS (2000-05) nearly 900; HPRCC real-time several thousand; international collection about 20,000 locations in over 100 countries; Canada more than 7,500 and Australia more than 17,000 station records; ECA&D over 1,500 stations in more than 50 countries.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "TABLE 2. Data sources composing the U.S. collection. … Dataset includes daily observations from over 20 000 stations in the United States and its territories. … Dataset includes daily summaries primarily for the years before 1948 from more than 11 000 COOP stations … Dataset contains historical and present-day manual and automated observations from approximately 1600 … Dataset contains observations for nearly 900 U.S. Automated Surface Observing System (ASOS) stations … Provides real-time updates to records for several thousand U.S. COOP stations. … Provides daily rain and snow measurements from CoCoRaHS volunteers. Data begin as early as 1998 and",
+     "location": "p. 899, Table 2 (rows for codes 0, 6, X, B, H, N)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "These varied attempts to acquire daily data can be | loosely classified into four broad categories: 1) the inter- | national collection; 2) the U.S. collection; 3) government | exchange data; and 4) the global summary of the day. … The international collection contains historical re- | cords for approximately 20 000 locations outside the | United States (from over 100 different countries) and | largely reflects the data collection efforts for GDCN. … Under such agreements, Environment Canada and the | Australian Bureau of Meteorology, for example, have | provided their complete digital, daily database for in- | clusion in GHCN-Daily (with more than 7500 and 17 000 | station records, respectively). … The European | Climate Assessment and Dataset (ECA&D; Klein Tank | et al. 2002) project also provides a large collection of | government exchange data and currently contains daily | data from over 1500 stations in more than 50 countries. … Finally, under the auspices of GCOS, 76 different | NMHSs have officially provided daily data for just over | half of the 10001 GCOS Surface Network (GSN) stations",
+     "location": "pp. 898-900, section 2 and Table 3"
+    }
+   ],
+   "applicability": "As of 2012.",
+   "confidence": "high",
+   "confidence_reason": "Quoted from the developers' paper (and the current product page repeats the international, Canada and Australia figures).",
+   "sole_source_reason": "The developers' paper is the authority for its own tables.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c8",
+   "text": "Merging: (1) screen out stations of unknown or questionable identity, and drop within-source duplicates (more than 50% identical: keep the longer if within 40 km, neither if farther apart); (2) match each source station to an existing GHCN-Daily station by network ID, then cross-reference lists, then name and location (a new source joins an existing station if it matches at least 50% over the overlap and lies within 40 km); (3) 'mingle' day by day by a fixed source priority (highest first Z, R, W, D, d, 1, 0, 6, C, X ... lowest S), with TMAX/TMIN always from one source per day and GSOD used only when nothing else exists.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "The process of integrating data from multiple sources into GHCNd takes place in three steps: | Screening the source data for stations whose identity is unknown or questionable | Classifying each station in a source dataset either as one that is already represented in GHCNd or as a new site | Mingling the data from the different sources … It does not fail the interstation duplicate check that compares records from all stations within a source dataset in order to identify cases in which more than 50% of a station's record is identical to the data from another station … Whenever possible, stations are matched on the basis of network affiliation and station identification number. If no match exists, then there is consultation from different networks for existing cross-referenced lists that identify the correspondence of station identification numbers. … Mingling takes place according to a hierarchy of data sources and in a manner that attempts to maximize the amount of data included while also minimizing the degree to which data from sources with different characteristics are mixed. While the mingling of precipitation, snowfall, and snow depth are separate, consideration of maximum and minimum temperatures is performed together in order to ensure the temperatures for a particular station and day always originate from the same source. Data from the Global Summary of the Day dataset are used only if no observations are available from any other source for that station, month, and element. Among the other sources, consideration of each day is made individually; if an observation for a particular station and day is available from more than one source, GHCNd uses the observation from the most preferred source available. | Several criteria are used for the hierarchy of data sources used in cases of overlap. In general before integration into GHCNd, the higher priority sources are those that have received the greatest amount of scrutiny versus those from fully automated, real-time data streams. At station networks within the U.S., sources providing Cooperative Summary of the Day data are given preference to other data streams since they contribute the largest amount of data. For international stations, the official Governmental Exchange Data is preferred to the International Collection when observations from these two sources are present on the same day. … If data from the new source match data for a station already added to GHCNd during their common overlap period, and the match rate is at least 50% for all elements, and the new station and the existing GHCNd station are within 40 km of one another (based on their respective coordinates), then the new station data is added as an additional source to the existing GHCNd station record.",
+     "location": "Data Integration (lines 104-108, 118, 122, 130, 132)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "As shown in Table 4, the process of integrating data | from multiple sources into the GHCN-Daily dataset | takes place in three steps: 1) eliminating source data for | stations whose location is unknown or questionable; | 2) classifying each station in a source dataset either as | one that is already represented in GHCN-Daily or as a | new site; and 3) combining the data from the different | source datasets to form comprehensive station records. … the record must not fail the ‘‘intra-source’’ duplicate | check, which compares records from all stations within | a source dataset. If more than 50% of a station’s record is | identical to the data from another station in the same | source, the longer of the two records is retained for in- | clusion in GHCN-Daily, provided that the metadata in- | dicate that the two sites are in close proximity (i.e., within | 40 km). However, if two stations with matching records | are more than 40 km apart, neither is incorporated into | the dataset. … ment. Among the other sources, each day is considered | individually; if an observation for a particular station | and day is available from more than one source, the | observation from the most preferred source available is | used in GHCN-Daily. The hierarchy of data sources | used in cases of overlap is based on several criteria. In | general, data that have received the greatest amount of | scrutiny are chosen over fully automated, real-time data | streams. At stations operated by the United States, | sources providing a cooperative summary of the day are | given preference over other data streams because they | contribute the largest amount of data. For stations | outside the United States, the official governmental | exchange data are preferred over the international col- | lection when summaries from these two sources are | available for the same station, element, and day.",
+     "location": "pp. 900-902, section 3 and Table 4"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "When data are available for the same time from more than one source, | the highest priority source is chosen according to the following | priority order (from highest to lowest): | Z,R,W,D,d,1,0,6,C,X,K,7,F,B,M,f,m,r,E,z,u,b,s,a,G,Q,I,A,N,T,U,H,2,S",
+     "location": "readme.txt section III, lines 422-425"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Current product page, readme and 2012 paper agree.",
+   "sole_source_reason": "The maintainer's documentation is the authority for its merge rules."
+  },
+  {
+   "id": "c9",
+   "text": "The values are station observations: the five core elements are daily precipitation, snowfall, snow depth, maximum and minimum temperature (plus other elements); most U.S. values are read once a day by COOP and CoCoRaHS volunteers, others come from automated stations such as ASOS. Some elements are computed: TAXN = (TMAX+TMIN)/2, and TAVG is computed in varying ways (for source S, from hourly readings).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The five core elements are: | PRCP = Precipitation (tenths of mm) | SNOW = Snowfall (mm) | SNWD = Snow depth (mm) | TMAX = Maximum temperature (tenths of degrees C) | TMIN = Minimum temperature (tenths of degrees C)",
+     "location": "readme.txt lines 147-153 (section III element list)"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "TAXN = Average daily temperature computed as | (TMAX+TMIN)/2.0 (tenths of degrees C) | TAVG = Average daily temperature (tenths of degrees C) | [Note that TAVG from source 'S' corresponds | to an average of hourly readings for the period | ending at 2400 UTC rather than local midnight or other | Local Standard Time according to a specific | Met Service's protocol] | [For sources other than 'S' TAVG is computed in a | variety of ways including | traditional fixed hours of the day whereas TAXN | is solely computed as (TMAX+TMIN)/2.0]",
+     "location": "readme.txt lines 239-250 (other elements)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Dataset includes daily observations from over 20 000 stations in the United States and its territories. Although | most measurements are taken once per day by volunteer observers as part of the NOAA/National Weather | Service (NWS) Cooperative Observer Program (COOP), manual and automated measurements from some | ‘‘first order’’ synoptic sites are also included.",
+     "location": "Table 1 (source list), U.S. Cooperative Summary of the Day (NCDC DSI-3200), source flag 0, p. 898-899"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Dataset contains reports from U.S.-operated ASOS stations beginning in January 2006. Data are updated | daily with observations from the previous day or 2 days before. … Provides daily rain and snow measurements from CoCoRaHS volunteers. Data begin as early as 1998 and | are updated daily. Observation times vary but observers are encouraged to report at 0700 local time.",
+     "location": "Table 1, rows ASOS Summary of the Day 2006-present (DSI-3505) and CoCoRaHS (flag N), p. 898-899"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Readme and 2012 paper.",
+   "sole_source_reason": "The readme defines the dataset's elements."
+  },
+  {
+   "id": "c10",
+   "text": "Instruments belong to the contributing networks, not to GHCN-Daily: COOP uses liquid-in-glass thermometers in a Cotton Region Shelter, MMTS, the standard 8-inch gauge, a plastic 4-inch gauge and Fisher-Porter gauges; ASOS uses heated tipping-bucket or all-weather accumulation gauges, with snow measured by hand on a snow board; SNOTEL uses snow pillows and storage gauges with pressure transducers; CoCoRaHS observers must use a 4-inch manual gauge.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Equipment used to measure temperature | 1) Liquid-in-Glass (LIG) thermometers | housed in a Cotton Region Shelter (CRS) | 2) Max/Min Thermometer System (MMTS) | Equipment used to measure precipitation | 3) Standard 8” Rain Gauge (SRG) | 4 ) Plastic 4” Rain Gauge | 5) Fisher-Porter Rain Gauge",
+     "location": "Slide 1 'COOP Overview'"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "An ASOS station is equipped with one of two types of components that take liquid precipitation observations. The Heated Tipping Bucket (HTB) rain gauge is the original component that all ASOS stations were equipped with, but at many ASOS sites (including at O’Hare and Rockford airports in the NWS Chicago area of responsibility), they have since been replaced with an All Weather Precipitation Accumulation Gauge (AWPAG). … Note that ASOS stations cannot measure snowfall accumulation or snow depth – that has to be done manually by human observers. | How are snowfall and snow depth observations taken? | Snowfall and snow depth observations are taken manually by human observers using a measuring stick and a snow measurement board.",
+     "location": "Sections 'How are precipitation observations taken by ASOS stations?' and 'How are snowfall and snow depth observations taken?'"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Pressure transducers are electronic devices used to measure hydrostatic head. Pressure transducers are used in | fluid snow pillows and storage precipitation gages at SNOTEL installations to measure snow water equivalency | (SWE) and total precipitation.",
+     "location": "Appendix 8C Sensors, 'Pressure Transducer' definition"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Therefore, we require all of our observers to set up a CoCoRaHS 4\" diameter manual gauge and | use that for your daily reports.",
+     "location": "p. 1, text lines 36-37"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "composed of three parts: a funnel, a measuring tube, and a 4-inch diameter overflow tube, and a mounting bracket.",
+     "location": "Measuring rain page (via WebFetch extraction)"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "contextualizes",
+     "passage": "USBR. Installations may include recording, storage, and standard 8-inch precipitation gauges, as | well as temperature, evaporation, solar radiation, and other equipment.",
+     "location": "Section 4.2 U.S. Bureau of Reclamation and Other Reimbursable Networks (text lines 1624-1625)"
+    }
+   ],
+   "applicability": "U.S. networks only; instruments of foreign services not researched.",
+   "confidence": "moderate",
+   "confidence_reason": "Each network's own documents; no NCEI document maps instruments to GHCN-Daily elements."
+  },
+  {
+   "id": "c11",
+   "text": "Algorithmic steps: the integration (screening, matching, mingling) and a fully automated quality-assurance sequence (19 tests, Durre et al. 2010) run in software; values are flagged, not adjusted, and GHCN-Daily is not homogenized for changes in instruments or practice.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "prehensive sequence of fully automated QA procedures | identifies daily values that violate 1 of 19 quality tests. | Described in greater detail in Durre et al. (2010), these",
+     "location": "Section 4 (quality assurance), right column, p. 902"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "This paper describes a comprehensive set of fully automated quality assurance (QA) procedures for ob- | servations of daily surface temperature, precipitation, snowfall, and snow depth. The QA procedures are | being applied operationally to the Global Historical Climatology Network (GHCN)-Daily dataset.",
+     "location": "Abstract, p. 1615"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "contextualizes",
+     "passage": "Unlike GHCNm, GHCNd does not contain adjustments for biases resulting from historical changes in instrumentation and observing practices. It should be noted that historically (and in general), the deployed stations providing daily summaries for the dataset were not designed to meet all of the desired standards for climate monitoring. Rather, the deployment of the stations was to meet the demands of agriculture, hydrology, weather forecasting, aviation, etc.",
+     "location": "Limitations section, line 254"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "The process of integrating data from multiple sources into GHCNd takes place in three steps: | Screening the source data for stations whose identity is unknown or questionable | Classifying each station in a source dataset either as one that is already represented in GHCNd or as a new site | Mingling the data from the different sources … It does not fail the interstation duplicate check that compares records from all stations within a source dataset in order to identify cases in which more than 50% of a station's record is identical to the data from another station … Whenever possible, stations are matched on the basis of network affiliation and station identification number. If no match exists, then there is consultation from different networks for existing cross-referenced lists that identify the correspondence of station identification numbers. … Mingling takes place according to a hierarchy of data sources and in a manner that attempts to maximize the amount of data included while also minimizing the degree to which data from sources with different characteristics are mixed. While the mingling of precipitation, snowfall, and snow depth are separate, consideration of maximum and minimum temperatures is performed together in order to ensure the temperatures for a particular station and day always originate from the same source. Data from the Global Summary of the Day dataset are used only if no observations are available from any other source for that station, month, and element. Among the other sources, consideration of each day is made individually; if an observation for a particular station and day is available from more than one source, GHCNd uses the observation from the most preferred source available. | Several criteria are used for the hierarchy of data sources used in cases of overlap. In general before integration into GHCNd, the higher priority sources are those that have received the greatest amount of scrutiny versus those from fully automated, real-time data streams. At station networks within the U.S., sources providing Cooperative Summary of the Day data are given preference to other data streams since they contribute the largest amount of data. For international stations, the official Governmental Exchange Data is preferred to the International Collection when observations from these two sources are present on the same day. … If data from the new source match data for a station already added to GHCNd during their common overlap period, and the match rate is at least 50% for all elements, and the new station and the existing GHCNd station are within 40 km of one another (based on their respective coordinates), then the new station data is added as an additional source to the existing GHCNd station record.",
+     "location": "Data Integration (lines 104-108, 118, 122, 130, 132)"
+    }
+   ],
+   "applicability": "QC details out of scope.",
+   "confidence": "high",
+   "confidence_reason": "Developers' papers and the product page agree.",
+   "sole_source_reason": "The developers' papers are the authority for their processing system."
+  },
+  {
+   "id": "c12",
+   "text": "Updates: daily updates from many data streams; a full rebuild from the source components each weekend; each daily update and rebuild gets a unique version number and is archived (current 3.35-upd-2026111517 on the 3.35-por-2026110623 rebuild; v3.35 released October 1, 2026); real-time U.S. data are replaced by archive-quality sources 45 to 60 days after month end, and values can change after that. NCEI's page currently warns of slower update cycles during its cloud migration.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "GHCNd receives daily updates from a variety of data streams, which also go through a suite of quality checks. Additionally, the dataset is reconstructed each weekend from more than 25 data source components to ensure that GHCNd is generally in sync with its growing list of constituent sources. During this process, the system applies quality assurance checks to the full dataset. | Each daily update to GHCNd is assigned a unique version number, and then archived at NCEI. GHCNd also serves as the official archive for the U.S. Cooperative Observer data, which have been comprehensively integrated into the dataset with other U.S. daily data sources.",
+     "location": "Updates section"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "GHCNd is continually reprocessed. Because receipt of changes/additions occurs even for archive-quality data sources, a data value and/or quality flag is subject to change even after all archive quality sources are integrated. However, changes to U.S. data values are rare 60 days after the close of a particular data month.",
+     "location": "Source Data section"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Generally, real-time replacement of updated data streams are replaced by archive-ready data sources 45 to 60 days after the end of a month.",
+     "location": "Updates section, line 42"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "The current version of GHCN Daily is 3.35-upd-2026111517 (i.e, an update that started at 2026111517 [yyyymmddhh] UTC; yyyy=year; mm=month; dd=day; hh=hour), | created by appending recently available data updates to the last fully reprocessed version: 3.35-por-2026110623.",
+     "location": "whole file"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Daily updates are provided for many of the station records in GHCN-Daily. The dataset is also regularly | reconstructed, usually once per week, from its 201 data source components, ensuring that the dataset is | broadly synchronized with its growing list of constituent sources. The daily updates and weekly reprocessed | versions of GHCN-Daily are assigned a unique version number, and the most recent dataset version is | provided on the GHCN-Daily website for free public access. Each version of the dataset is also archived at the | NOAA/National Climatic Data Center in perpetuity for future retrieval.",
+     "location": "Abstract, p. 897"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Version 3.35 is released.  Version 3.35 resumes updates for Environment Canada | stations and begins weekly re-integration of the full periods of record daily | climate summaries from the Environment Canada web based database. … Version 3.33 is released.  Version 3.33 adds the Synoptic Summary of the Day | (SSOD) \"version 2\" dataset as a source in GHCNd.  SSODv2 is the successor | dataset to GSOD and is derived from GHCNh. … GHCNd version 3.31 is released.  Version 3.31 provides a new source and set of stations | provided by the Fiji Met Service.  Specifically, daily rainfall for 25 stations are provided | for the period 1980 to 2022. … GHCNd version 3.30 is released.  Version 3.30 changes the prioritization for stations with | source 'D' (NWS CF6 summaries) and source 'W' (ISD Summary of the Day for NOAA stations). | In v3.30 source 'W' takes precedence over source 'D'.",
+     "location": "status.txt lines 5-7, 21-23, 41-43, 48-50"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "contextualizes",
+     "passage": "Please Note: NCEI is currently moving its data and applications to the cloud. This upgrade may result in temporary data access delays. Check the NCEI Alerts page for impacted products and datasets.",
+     "location": "page banner, line 3"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "contextualizes",
+     "passage": "Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products.",
+     "location": "page banner, line 5"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Version file, status file and product page agree with the 2012 paper.",
+   "sole_source_reason": "The maintainer's own version and status files are the authority."
+  },
+  {
+   "id": "c13",
+   "text": "GHCN-Daily is compiled and maintained by NOAA NCEI (part of NESDIS, NOAA, U.S. Department of Commerce); its metadata names the 'GHCNd Operations Team' as point of contact (ncdc.ghcnd@noaa.gov) and Matthew J. Menne and Imke Durre as principal investigators. The dataset citation credits 11 people (Menne, Durre, Korzeniewski, McNeill, Thomas, Yin, Anthony, Ray, Vose, Gleason, Houston); the 2012 overview paper's authors are Menne, Durre, Vose, Gleason and Houston (then NCDC, Asheville).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "- Principal Investigators: Menne, Matthew J.; Durre, Imke (same organization as above) | - Collaborators: Korzeniewski, Bryant; McNeill, Shelley; Thomas, Kristy; Yin, Xungang; Anthony, Steven; Ray, Ron; Vose, Russell S.; Gleason, Byron E.; Houston, Tamara G. (same organization as above) … **Point of Contact** | - GHCNd Operations Team | - \"DOC/NOAA/NESDIS/NCEI > National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce\"",
+     "location": "Citation / Point of Contact sections"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "To acknowledge the specific version of the dataset used, please cite: | Menne, M.J., I. Durre, B. Korzeniewski, S. McNeill, K. Thomas, X. Yin, S. Anthony, R. Ray, | R.S. Vose, B.E.Gleason, and T.G. Houston, 2012: Global Historical Climatology Network - | Daily (GHCN-Daily), Version 3. [indicate subset used following decimal, | e.g. Version 3.12]. | NOAA National Climatic Data Center. http://doi.org/10.7289/V5D21VHZ [access date].",
+     "location": "lines 16-21 (How to cite)"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The journal article describing GHCN-Daily is: | Menne, M.J., I. Durre, R.S. Vose, B.E. Gleason, and T.G. Houston, 2012:  An overview | of the Global Historical Climatology Network-Daily Database.  Journal of Atmospheric | and Oceanic Technology, 29, 897-910, doi:10.1175/JTECH-D-11-00103.1.",
+     "location": "lines 11-14"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": " MATTHEW J. MENNE, IMKE DURRE, RUSSELL S. VOSE, BYRON E. GLEASON, AND TAMARA G. HOUSTON |                                         National Climatic Data Center, Asheville, North Carolina",
+     "location": "p. 897, author block"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "For technical questions regarding GHCNd data, please contact ncdc.ghcnd@noaa.gov.",
+     "location": "Contact section, line 272"
+    }
+   ],
+   "applicability": "Credits date from 2012; current staffing not published.",
+   "confidence": "high",
+   "confidence_reason": "Readme, ISO record and paper agree.",
+   "sole_source_reason": "The maintainer's own records are the authority for its credits."
+  },
+  {
+   "id": "c14",
+   "text": "No page names the NCEI division or branch that runs GHCN-Daily. NCEI's February 2023 org chart (which names no datasets) shows Imke Durre heading the Products Section of the Climatic Science & Development Branch, Climatic Science & Services Division; NESDIS now lists a Climate Science and Services Division (chief Jeff Privette).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "contextualizes",
+     "passage": "Climatic Science & Development Br   Climatic Information Services Br   Climatic Analysis & Synthesis Br … Ken Knapp                       Michael Brewer                      Russell Vose … Dataset Section              User Engagement Section               Assessments Section … Christina Maurin                    Glenn Kerr                       David Easterling … Products Section                                                     Monitoring Section … Imke Durre                                                          Karin Gleason",
+     "location": "p. 1"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "contextualizes",
+     "passage": "Deke Arndt | Director | Joe Pica | Deputy Director | Scott Hausman | Chief, Mission Support Division | Eric Kihn | Chief, Coasts, Oceans, and Geophysics Science Division | Jeff Privette | Chief, Climate Science and Services Division | Aric Whatley | Chief, Resource Management Division | Ken Casey | Chief, Data Stewardship Division",
+     "location": "Our Leadership section, lines 15-41"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "contextualizes",
+     "passage": "**Number of employees or staff:** NOT PRESENT … The page does not mention a \"Center for Weather and Climate.\" … **GHCN:** NOT PRESENT",
+     "location": "whole page (extraction)"
+    }
+   ],
+   "applicability": "Feb 2023 chart.",
+   "confidence": "low",
+   "confidence_reason": "Inference from an org chart that does not name datasets."
+  },
+  {
+   "id": "c15",
+   "text": "No staff count for the GHCN-Daily team is published; NCEI's pages give none, and the only NCEI-wide figure found is partial (300 employees outside Asheville, October 2024).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "contextualizes",
+     "passage": "**Number of employees or staff:** NOT PRESENT … The page does not mention a \"Center for Weather and Climate.\" … **GHCN:** NOT PRESENT",
+     "location": "whole page (extraction)"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "For technical questions regarding GHCNd data, please contact ncdc.ghcnd@noaa.gov.",
+     "location": "Contact section, line 272"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "contextualizes",
+     "passage": "- \"...for the 300 NCEI employees in Colorado, Maryland, Mississippi and around the country...\" (from the paragraph beginning \"All of the employees located at the North Carolina NCEI site...\")",
+     "location": "news post body"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Absence across the maintainer's pages; not proof none exists."
+  },
+  {
+   "id": "c16",
+   "text": "Relation to other GHCN products: GHCN-Monthly v4 temperature takes GHCN-Daily as its primary source, shares its identifiers and computes monthly values from it where possible (before v4 the two were not consistent); GHCN-Monthly precipitation v4 also draws mainly on it. GHCNh, the hourly successor to ISD, is aligned with GHCN-Daily and generally uses the same station IDs; since v3.33 GHCN-Daily takes SSODv2, derived from GHCNh, as a source.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "In addition, GHCNd and GHCNm are not internally consistent (i.e., GHCNm is not necessarily derived from the data in GHCNd) until the release of GHCNm version 4.",
+     "location": "Limitations section, line 256"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Version 4 combines data from a variety of sources for a total 26,000 monthly temperature stations compared to 7,200 in v2 and v3. | Global Historical Climatology Network–daily dataset (GHCNd; Menne et al. 2012) | This primary source consists of temperature observations that have been combined with the original monthly sources used in previous versions of GHCNm.",
+     "location": "Data Sources section, lines 46-50"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "Up to this point, GHCNm and | GHCNd have developed along largely independent | pathways. With the release of GHCNm, version 4 (v4), | GHCNd and GHCNm now share common identifiers, | and monthly values are computed directly from GHCNd | whenever possible.",
+     "location": "Section 1 (Introduction), left column, p. 9835-9836 (text lines 75-80); abstract: 'Version 4 (v4) fulfills the goal of aligning GHCNm temperature values with the GHCN- daily dataset'"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "GHCN-M version 4 currently contains monthly mean temperature for over | 25,000 stations across the globe. In large part GHCN-M version 4 uses | the same quality control and bias correction algorithms as version 3. | The greatest difference from previous version is a greatly expanded | set of stations based on the large data holdings in GHCN-Daily as well | as data collected as part of the International Surface Temperatue | Initiative databank (ISTI; Rennie et al. 2014).",
+     "location": "Section 1.1 Overview, lines 24-30"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "contextualizes",
+     "passage": "The first enhancement is to the station network, which increased in size by a factor of five due to | the inclusion of dozens of new source datasets, most notably GHCN Daily (GHCNd). … consists of time series of monthly precipitation totals at more than 120,000 worldwide stations, | including more than 33,000 active observing sites. … Preventing the merging of two GHCNd stations: As known independent records, two GHCNd sourced | records are not allowed to merge if they overlap.",
+     "location": "Abstract (p. 1); merge rules section (text lines 249-250)"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "GHCNh is NCEI’s next generation hourly/synoptic dataset, replacing the Integrated Surface Dataset (ISD), which has been provided since the early 2000s. … At NCEI, GHCNh was developed to be vertically aligned with its GHCN daily counterpart (GHCNd). This means that, in general, the same GHCN identifiers are used for stations common to the daily and hourly datasets and these identifiers are managed and searchable in NCEI’s Historical Observing Metadata Repository (HOMR) database and NCEI’s Data Access applications.",
+     "location": "How and why was GHCNh developed? (lines 61, 65)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "January 5, 2026 | Version 3.33 is released.  Version 3.33 adds the Synoptic Summary of the Day | (SSOD) \"version 2\" dataset as a source in GHCNd.  SSODv2 is the successor | dataset to GSOD and is derived from GHCNh.  Initially, SSOD will be used only | to provide updates to stations from 2025 onwards. Several weeks later, the full | period of record for SSODv2 will be integrated into GHCNd.",
+     "location": "status.txt lines 20-25"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI product pages and the developers' GHCNm papers agree.",
+   "sole_source_reason": "The maintainer's documentation is the authority for its products' relations."
+  },
+  {
+   "id": "c17",
+   "text": "Other published shares and additions: about 70% of all values came from North American stations (2012); v3.00 (Sept 24, 2012) added SNOTEL (668 stations) and RAWS (1,453 permanent stations); v3.32 (Mar 2025) added HPRCC Daily Summary Messages and v3.34 (Jan 2026) NWS CF6 summaries.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "70% of all values come from North American stations.",
+     "location": "lines 405-406 (two-column text; sentence begins 'About' at end of line 405)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "(1) The SNOwpack TELemtry (SNOTEL) Network (668 stations)",
+     "location": "lines 425-430, entry 'Effective September 24, 2012'; RAWS line 429-430 reads '(2) The Remote Automatic Weather Station (RAWS) Network (1453 permanent stations)'"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Version 3.34 is released.  Version 3.34 adds an addition source of U.S.",
+     "location": "lines 14-16, entry dated January 23, 2026"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Version 3.32 is released. Version 3.32 adds short time delay updates of Daily",
+     "location": "lines 27-30, entry dated March 25, 2025"
+    }
+   ],
+   "applicability": "Counts as of their dates.",
+   "confidence": "high",
+   "confidence_reason": "Developers' paper and NCEI status file.",
+   "sole_source_reason": "NCEI's own status file and paper.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c18",
+   "text": "Not every stream updates daily: Environment Canada's feed stopped on April 28, 2024 until v3.35 (Oct 1, 2026) resumed it with weekly re-integration; ECA&D was static from Sept 20, 2024 and has updated monthly since Jan 20, 2025.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Environment Canada's daily update feed was unexpectedly discontinued on April 28, 2024.",
+     "location": "lines 36-38, entry dated June 21, 2024"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The ECA&D data source, which has been static since September 20, 2024, has resumed monthly",
+     "location": "lines 32-34, entry dated January 25, 2025"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "October 1, 2026 | Version 3.35 is released.  Version 3.35 resumes updates for Environment Canada | stations and begins weekly re-integration of the full periods of record daily | climate summaries from the Environment Canada web based database. Beginning | with v3.35, GHCNd station identifiers for Environment Canada stations are indexed | using network code 'N' (identifier used by a National met service) rather than | network '0' (unspecified). This identifier change aligns the GHCNd identifiers | for Canadian stations with GHCNh.",
+     "location": "status.txt lines 4-11 (latest entry)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI status file.",
+   "sole_source_reason": "NCEI's own status file."
+  },
+  {
+   "id": "c19",
+   "text": "In GHCN-Monthly precipitation v4, almost 85% of the roughly 40 million monthly values come from GHCN-Daily.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "85% are sourced from GHCNd. 13% come from the international collection, and the other sources contribute 1%",
+     "location": "lines 515-517, 'Dataset characteristics'"
+    }
+   ],
+   "applicability": "Context: GHCNm precipitation v4.",
+   "confidence": "high",
+   "confidence_reason": "NCEI developers' data descriptor.",
+   "sole_source_reason": "The dataset's own descriptor.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c20",
+   "text": "About half the stations report only precipitation; record lengths run from under a year to more than 175 years, and some data exist for every year since 1763.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "About half the stations only report precipitation. Both record length and period of record vary by station and cover intervals ranging from less than a year to more than 175 years.",
+     "location": "line 11, overview paragraph"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "includes some data from every year since 1763",
+     "location": "line 26, listing description"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI product page; Google listing.",
+   "sole_source_reason": "NCEI's own page."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Number of stations in GHCN-Daily",
+   "source_ids": [
+    "s9",
+    "s26",
+    "s5",
+    "s23"
+   ],
+   "status": "resolved",
+   "explanation": "Difference of date and definition: the product page says more than 100,000 stations (rounded, undated); the ISO record (last modified 2025-12-04) says well over 90,000; the 2012 paper over 80,000 (as of 2012); the station file lists 133,041 entries on 2026-11-13, which counts every station ID including inactive ones. The answer gives the file count as entries listed and NCEI's rounded figure as NCEI's statement."
+  },
+  {
+   "claim": "Number of source components",
+   "source_ids": [
+    "s9",
+    "s26",
+    "s5",
+    "s1"
+   ],
+   "status": "resolved",
+   "explanation": "Product page 'more than 25', ISO record 'approximately 30', 2012 paper '20+' (text layer reads 201; the page image shows 20+); the readme lists about 35 source flags. Counts grew over time and count components differently; the answer gives NCEI's current wording."
+  }
+ ],
+ "coverage_gaps": [
+  "Current (2026) station counts or shares per source network (e.g. how many GHCNd stations come from CoCoRaHS, COOP, ECA&D, SNOTEL) NOT PRESENT in readme, status.txt or product page; Menne 2012 Table 2 counts are as of 2012. Could be computed from ghcnd-stations.txt / ghcnd-inventory.txt ID prefixes (e.g. US1 = CoCoRaHS per NCEI) but those large files were not downloaded.",
+  "Menne 2012 PDF numbers rendered by pdftotext as 201 data source components and 10001 GSN stations; likely 20 and 1000 with footnote 1; check the PDF image (work/raw/sa2/2ca8a48dd9970116.pdf, pp. 897 and 900).",
+  "Other follow-up searches from the brief (source flag hierarchy merge; station matching duplicates; data sources SNOTEL ECA&D) not run for lack of time; the readme priority order and product page Data Integration section cover them from the maintainer.",
+  "https://www.ncdc.noaa.gov/ghcn-daily-methods (older GHCN-Daily Methods page) not read; likely same integration text as the current product page.",
+  "GMP4 v4 paper (work/raw/sa2/dd4ab060aeb8a4dd.txt) read only in part; its source-dataset table and how GHCNd feeds GMP4 can be read in full.",
+  "Menne et al. 2018 J. Climate (doi 10.1175/JCLI-D-18-0094.1) not read; search snippet says GHCNd and GHCNm v4 share common identifiers and monthly values are computed directly from GHCNd whenever possible. A copy may be at https://repository.library.noaa.gov/view/noaa/45291/noaa_45291_DS1.pdf (search result, unverified).",
+  "CoCoRaHS gauge page read via WebFetch only (cocorahs.org script fetch refused 403 by proxy); a direct statement that CoCoRaHS uses a 4-inch manual gauge (e.g. https://media.cocorahs.org/docs/Why%20CoCoRaHS%20requires%20manual%20measurements.pdf, FAQ page) not read.",
+  "No NCEI/GHCN-Daily document found that names the instruments per element; instrument statements come from the contributing networks (NWS COOP slides, NWS Chicago FAQ for ASOS, NRCS NEH 622 for SNOTEL). NWS instruction 10-1307 (earlier run sa1/nwsi_10-1307_2025.txt) not re-quoted for lack of time; it mentions 'standard 8-inch precipitation gauges' (line 1624) and MMTS.",
+  "Menne 2012 section on version numbering (text lines 572-586, two-column) not quoted; it describes the three-part version number and that each updated and reprocessed version is archived.",
+  "UPDATE to the first q5 gap: Menne et al. 2018 was read after all (NOAA repository copy, work/raw/sa3/cf02d1a5249c4ca1.txt) and is in sources; that gap is closed.",
+  "UPDATE: the CoCoRaHS 4-inch manual gauge gap and the Menne 2012 version-numbering gap are now closed (both added as sources). Still open: NWS instruction 10-1307 not quoted.",
+  "CORRECTION to the NWSI 10-1307 source: its title is \"Cooperative Program Management and Operations\" (National Weather Service Instruction 10-1307, February 10, 2025), not \"Cooperative Station Management\". All q3 gaps listed earlier are now closed except that instrument statements come only from the contributing networks, not from NCEI.",
+  "Staff count for the GHCN-Daily group: NOT PRESENT in the product page, readme, ISO record, NESDIS NCEI page or NCEI About page. NCEI-wide count: no official figure found (only an undated wiki-style 'approximately 500 employees', not read). NOT PRESENT.",
+  "Which NCEI division/branch maintains GHCN-Daily: NOT PRESENT on any page read. ISO record names only the 'GHCNd Operations Team' at NCEI. The Climate Science and Services Division (Monitoring Section) is a plausible lead but no page read ties GHCN-Daily to it. Lead: archived NCDC ghcn-daily-description page (team named Menne and Korzeniewski per snippet, unread).",
+  "Google BigQuery copy (bigquery-public-data.ghcn_d) known only from search snippets and the ISO record's Google Cloud link; official listing not read. Microsoft Planetary Computer / Azure copy: not found after 3 queries (one query run; no result confirms one).",
+  "Climate Data Online (cdo-web) GHCND pages and the NCEI Access Data Service (daily-summaries) documentation not read; link targets for the product page's 'HTTPS' and 'Climate Data Online' access methods not captured in saved text.",
+  "Microsoft Planetary Computer / Azure: no GHCN-Daily collection found in 2 searches (only NOAA NClimGrid, a gridded product derived from GHCN-D, at planetarycomputer.microsoft.com/dataset/group/noaa-nclimgrid; not read). Catalog page not read. Also: CDO documentation PDF https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf was downloaded and found to hold mainly source-flag lists (q2 material, saved as work/raw/sa1/64131c56a8fea1c5_unused.txt) - lead for the q2 subagent.",
+  "The unreadable AMS page for Menne et al. 2012 is covered by the NCEI-hosted PDF (https://www.ncei.noaa.gov/pub/data/ghcn/daily/papers/menne-etal2012.pdf, read in full, work/raw/sa1/3c0286c994da4a8d.txt). That PDF also holds q2 material (source table, source hierarchy for overlapping records, about 70% of values from North American stations) - lead for the q2/q3 subagents.",
+  "Reconciler: coverage candidates marked not relevant. List A: directory-listing timestamps and file sizes; license version 1.0; BigQuery example coordinates and blog date; paper received/accepted dates, DOIs, volume/page numbers and the 2.90 version string; station_counts run metadata (already in draft); dataset IDs 3200/3206/3210 and WBAN example; 1001 GSN/76 NMHS figure (rendering issue already noted in record); readme element/soil-depth codes and TAVG 2400 UTC note (file-format detail); 24-h observation periods and 1800s/1948 record starts of individual U.S. source datasets (2012 detail); 2.5%/8.9% peak-count share (statistics detail); QC false-positive rates and test thresholds (out of scope); GHCNm v4 station counts 25,000/26,000 and GMP4 120,000/33,000 stations and 18 QC checks (other datasets); NCEI Helene staff date (draft has it); instrument, COOP-network and NRCS handbook figures (gauge sizes, 250 COOP stations, 1948 MOU: instrument detail beyond the draft); v3.01 ECA&D snow-depth fix (2013 data fix). List B dates: news-item dates on the product page, directory timestamps, manuscript dates, example weather-event dates in QC paper, NWS planning dates - not relevant. List W: QC flag rates and thresholds (out of scope), GHCNm 10-year/31-source and 12-value checks (other dataset), 25,000 sites with temperature (product page; draft omits but minor - could be added with s9 if wanted). Unread pages (coverage): AMS journal page (refused; NCEI copy read) and UNT web archive copy of ghcn-daily-description (Wayback copy read instead). 45-60 day figure checked: consistent across 2020 description page and current product page; no conflict."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt, status.txt, ghcnd-version.txt",
+   "tool": "lookup (direct download of ghcnd readme, status and version files)",
+   "notes": "all three fetched; readme-by_station.txt not tried (time); ghcnd-stations.txt not downloaded (large); no station total stated in readme",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://journals.ametsoc.org/view/journals/atot/29/7/jtech-d-11-00103_1.xml and downloadpdf PDF",
+   "tool": "lookup (DOI 10.1175/JTECH-D-11-00103.1 at AMS)",
+   "notes": "PDF via fetch_page refused by sandbox proxy (403, host not allowed); article page via WebFetch HTTP 403",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"An overview of the Global Historical Climatology Network-Daily database\" pdf",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NCEI-hosted published PDF (ushcn/papers/menne-etal2012.pdf) and submitted manuscript (ghcn/daily/papers)",
+   "from": "sa2",
+   "required_id": "r3",
+   "copy_of": "https://journals.ametsoc.org/view/journals/atot/29/7/jtech-d-11-00103_1.xml"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCN-Daily CoCoRaHS stations share of network",
+   "tool": "WebSearch",
+   "notes": "no domain filter; led to NCEI WERA 2024 slides on media.cocorahs.org; no share figure found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
+   "tool": "lookup (NCEI metadata record C00861, seen in search results)",
+   "notes": "read via WebFetch extraction-only prompt",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCNd station matching duplicates source integration",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; led to GMP4 v4 paper on repository.library.noaa.gov and ncdc ghcn-daily-methods page (not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt, ghcnd-version.txt, status.txt",
+   "tool": "lookup (NCEI ghcnd readme, version and status files, fetched directly)",
+   "notes": "All three fetched with fetch_page.py; readme was a cache copy from sa2's fetch this run.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "tool": "lookup (GHCNd product page, fetched directly)",
+   "notes": "Cache copy from sa1's fetch this run.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GHCN-Daily overview Menne 2012 updated daily",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Found NCEI copy of Menne et al. 2012 PDF (ncei.noaa.gov/pub/data/ushcn/papers/menne-etal2012.pdf); read in full for update/source passages. Durre et al. 2010 not fetched; automated QA quoted via Menne 2012.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-monthly and https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly",
+   "tool": "lookup (GHCNm and GHCNh product pages, fetched directly)",
+   "notes": "Both fetched with fetch_page.py.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS 4-inch diameter rain gauge",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: cocorahs.org. Script fetch of cocorahs.org refused by proxy (403); measurerain page read via WebFetch extraction.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SNOTEL snow pillow precipitation gauge temperature sensor",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: nrcs.usda.gov. Fetched NEH Part 622 Chapter 8 PDF.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "8-inch|standard rain gauge|MMTS|liquid-in-glass|snow board (find_text over earlier run 2026-11-18_noaa-rain-gauge-threats work/raw)",
+   "tool": "lookup (earlier-run saved text)",
+   "notes": "Reused wera2024_coop_update (sa1) and lot_obs_faq (sa2).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GHCN-Monthly version 4 GHCN-Daily source Menne 2018",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Fetched GHCNm v4 readme; Menne 2018 paper not read (gap).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://www.ncdc.noaa.gov/ghcn-daily-description (Wayback 2020 snapshot)",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved copy 20201218051149 read in full (work/raw/main/ncdc_ghcnd_description_2020.txt); it names no team members. Gives 25-plus sources, weekly rebuild, daily updates, version numbers, 45-60 day replacement.",
+   "from": "main",
+   "copy_of": "https://webarchive.library.unt.edu/web/20201218051500/https://www.ncdc.noaa.gov/ghcn-daily-description"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://console.cloud.google.com/marketplace/details/noaa-public/ghcn-d (built-in browser, get_page_text)",
+   "tool": "lookup (Google Cloud Marketplace listing, browser)",
+   "notes": "Read in full in the browser: BigQuery public dataset, expected update frequency Daily; saved work/raw/main/browser/console-cloud-google-com-marketplace-details-noaa-public-ghc_193833.txt",
+   "from": "main",
+   "copy_of": "https://console.cloud.google.com/marketplace/details/noaa-public/ghcn-d"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://api.datacite.org/dois/10.7289/V5D21VHZ (fetch_json.py, --timeout 45 --retries 1)",
+   "tool": "lookup (DataCite API)",
+   "notes": "Failed again: remote end closed connection. The same 11 creators are in NCEI's own readme citation and ISO record (primary copies), which the answer cites instead.",
+   "from": "main",
+   "copy_of": "https://api.datacite.org/dois/10.7289/V5D21VHZ"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt (download and count by ID network code)",
+   "tool": "lookup (NCEI station list)",
+   "notes": "133,041 station entries; counts by network code saved in work/raw/main/station_counts_2026-11-19.txt (script work/code/count_stations.py).",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Menne 2012 PDF p. 897 checked as image",
+   "tool": "lookup (PDF page image)",
+   "notes": "Abstract prints '20+ data source components'; pdftotext rendered it '201'.",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GHCNd operations team NCEI division",
+   "tool": "duckduckgo (browser)",
+   "notes": "Found NCEI org chart Feb 2023 (read: Durre heads Products Section, Climatic Science & Development Br); ISO record snippet: v3 Sept 2012 allowed updates 7 days a week. No page names the GHCNd team division.",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "fetch https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "tool": "lookup (NCEI product page, direct fetch)",
+   "notes": "fetched directly with fetch_page.py",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "fetch https://www.ncei.noaa.gov/pub/data/ghcn/daily/ and readme.txt",
+   "tool": "lookup (NCEI data directory listing and readme, direct fetch)",
+   "notes": "readme copied from sa2 cache",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "api.datacite.org/dois/10.7289/V5D21VHZ",
+   "tool": "lookup (DataCite DOI record)",
+   "notes": "fetch_json failed IncompleteRead; WebFetch extraction",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI ISO metadata gov.noaa.ncdc:C00861",
+   "tool": "lookup (NCEI geoportal ISO record, URL from DataCite)",
+   "notes": "WebFetch extraction",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI organization divisions Center for Weather and Climate",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; led to NESDIS NCEI page",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "fetch https://registry.opendata.aws/noaa-ghcn/",
+   "tool": "lookup (AWS Registry of Open Data page)",
+   "notes": "fetch_page refused by sandbox; WebFetch extraction",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "BigQuery ghcn_d public dataset",
+   "tool": "WebSearch",
+   "notes": "no domain filter; snippets name bigquery-public-data.ghcn_d.ghcnd_* yearly tables and ghcn_d.ghcnd_stations; official page not read",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN Daily Microsoft Planetary Computer",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no result confirms a Planetary Computer copy",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI GHCN team",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; snippet (unverified, page not read) says an older NCDC GHCN-Daily page named the team as Matt Menne and Bryant Korzeniewski; GHCNh PoC ncei.ghcnh@noaa.gov, GHCN-M Product Team ncdc.ghcnm@noaa.gov",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI Access Data Service daily-summaries GHCND",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov; confirmed 'daily-summaries' access identifier and CDO station pages (cdo-web/datasets/GHCND/...); service docs not found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI number of employees staff 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter; only wiki-style 'approximately 500 employees' undated; no official count found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "fetch https://www.ncei.noaa.gov/about-us",
+   "tool": "lookup (NCEI About page)",
+   "notes": "WebFetch extraction; staff count NOT PRESENT",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Menne 2012 JTECH article page and Crossref record",
+   "tool": "lookup (DOI 10.1175/JTECH-D-11-00103.1)",
+   "notes": "AMS journals 403; api.crossref.org refused by sandbox",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA GHCN-D BigQuery Google Cloud Marketplace listing",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cloud.google.com, console.cloud.google.com; found 2016 launch blog and Marketplace listing noaa-public/ghcn-d (listing not read)",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "web.archive.org/web/2020/https://www.ncdc.noaa.gov/ghcn-daily-description",
+   "tool": "lookup (archived NCDC GHCN-Daily description page)",
+   "notes": "WebFetch: unable to fetch from web.archive.org; UNT web archive copy returned empty content",
+   "from": "sa1",
+   "copy_of": "https://www.ncdc.noaa.gov/ghcn-daily-description"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Planetary Computer GHCN daily dataset catalog",
+   "tool": "WebSearch",
+   "notes": "allowed_domains planetarycomputer.microsoft.com, learn.microsoft.com; no GHCN-Daily collection found, only NOAA NClimGrid (derived from GHCN-D). r6 Microsoft copy: not found after 2 queries",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI employees Asheville staff number 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov, ncei.noaa.gov, commerce.gov; only figure: 300 NCEI employees outside Asheville (Oct 2024 Helene post)",
+   "from": "sa1"
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30,
+  "elapsed_min": 19.6,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 197355,
+  "subagent_minutes_planned": 31,
+  "subagent_minutes": 26.9,
+  "follow_ups": 0,
+  "continuations": 3,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ },
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NCEI's GHCN-Daily product page and data directory",
+   "query": "GHCN-Daily NCEI product page",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "the ghcnd readme source flags, status and version files",
+   "query": "direct fetch of pub/data/ghcn/daily readme.txt, status.txt, ghcnd-version.txt",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "Menne et al. 2012, the developers' overview paper",
+   "query": "An overview of the Global Historical Climatology Network-Daily database",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA NCEI",
+   "publisher": "registries",
+   "subquestion_id": "q1",
+   "aim": "the dataset DOI and ISO metadata record",
+   "query": "GHCN-Daily DOI 10.7289/V5D21VHZ",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA NESDIS",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q4",
+   "aim": "NESDIS/NCEI organization pages naming the division that maintains GHCN",
+   "query": "NCEI organization divisions Center for Weather and Climate",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NOAA NODD",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "cloud copies (AWS, Google, Microsoft)",
+   "query": "NOAA GHCN AWS open data registry",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "elements, version and update statements in the readme, version, status files and product page",
+   "query": "direct fetch of readme.txt, ghcnd-version.txt, status.txt and the product page",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q3",
+   "aim": "Menne et al. 2012 and Durre et al. 2010 on what is measured, updates and automated QA",
+   "query": "Menne 2012 and Durre 2010 PDFs at NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "GHCN-Monthly and GHCNh product pages on their relation to GHCN-Daily",
+   "query": "direct fetch of the GHCNm and GHCNh product pages",
+   "skip_reason": null
+  }
+ ]
+}

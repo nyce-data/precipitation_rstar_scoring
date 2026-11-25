@@ -1,0 +1,175 @@
+{
+  "datasets": [
+    {
+      "id": "ghcn-daily",
+      "name": "GHCN-D: Global Historical Climatology Network Daily",
+      "data_archive": "NOAA NCEI",
+      "precipitation_basis": "Gauge-based",
+      "period_of_record": "January 1880 - Present",
+      "formal_cdr": "",
+      "update_status": "Ongoing; updated daily, with the full dataset rebuilt about each weekend.",
+      "spatial_coverage": "Global land",
+      "resolution": "Station points (no fixed grid)",
+      "temporal_frequency": "Daily",
+      "curator": "NOAA NCEI GHCNd Operations Team",
+      "doi": "10.7289/V5D21VHZ",
+      "notes": "Point observations from more than 100,000 land stations in about 180 countries, compiled from about 30 source networks. Not a gridded product, and not homogenized for changes in instruments or observing practice.",
+      "access_endpoints": [
+        {
+          "name": "GHCN-D: Registry of Open Data on AWS",
+          "url": "https://registry.opendata.aws/noaa-ghcn/",
+          "role": "primary"
+        },
+        {
+          "name": "Global Historical Climatology Network daily (GHCNd)",
+          "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA NCEI direct download directory",
+          "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA Daily Summaries data access",
+          "url": "https://www.ncei.noaa.gov/access/search/data-search/daily-summaries/",
+          "role": "alternative"
+        }
+      ],
+      "about_url": "dataset.html?id=ghcn-daily",
+      "overview_url": "overview.html?id=ghcn-daily"
+    },
+    {
+      "id": "gpcp-daily",
+      "name": "GPCP Daily v3.3: Global Precipitation Climatology Project",
+      "data_archive": "NOAA NCEI; NASA GES DISC",
+      "precipitation_basis": "Satellite + gauges; constrained to GPCP monthly",
+      "period_of_record": "January 1998 - Present",
+      "formal_cdr": "YES — NOAA CDR",
+      "update_status": "Ongoing; updated monthly, with a processing delay.",
+      "spatial_coverage": "Global land + ocean, 90°S-90°N",
+      "resolution": "0.5°",
+      "temporal_frequency": "Daily",
+      "curator": "Robert F. Adler (University of Maryland)",
+      "doi": "10.5067/MEASURES/GPCP/DATA307",
+      "notes": "Merged satellite and gauge analysis: IMERG V07 Final (V07 Late for October–December 2025), GridSat infrared and GPCC gauges, constrained to the GPCP monthly analysis. Computed at the University of Maryland and archived at NOAA NCEI. Replaces the 1° V1.3 One-Degree Daily product.",
+      "access_endpoints": [
+        {
+          "name": "NOAA NCEI dataset record (DOI)",
+          "url": "https://doi.org/10.25921/9b5m-ka77",
+          "role": "primary"
+        },
+        {
+          "name": "NOAA NCEI GPCP Daily CDR page",
+          "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA NCEI GPCP Daily download archive",
+          "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA GPCP Daily AWS bucket",
+          "url": "https://noaa-cdr-precip-gpcp-daily-pds.s3.amazonaws.com/index.html",
+          "role": "alternative"
+        },
+        {
+          "name": "NASA GES DISC dataset record (CMR)",
+          "url": "https://cmr.earthdata.nasa.gov/search/concepts/C3405928682-GES_DISC.html",
+          "role": "alternative"
+        }
+      ],
+      "about_url": "dataset.html?id=gpcp-daily",
+      "overview_url": "overview.html?id=gpcp-daily"
+    },
+    {
+      "id": "imerg-late-run",
+      "name": "IMERG Late Run V07: Integrated Multi-satellitE Retrievals for GPM",
+      "data_archive": "NASA GES DISC; NASA PPS",
+      "precipitation_basis": "Satellite (passive microwave + IR); climatological gauge adjustment",
+      "period_of_record": "January 1998 - Present",
+      "formal_cdr": "",
+      "update_status": "Ongoing; near real time, about 12–14 hours after observation.",
+      "spatial_coverage": "Global land + ocean, 90°S-90°N (small gaps near the poles)",
+      "resolution": "0.1°",
+      "temporal_frequency": "30-minute (daily product also available)",
+      "curator": "George J. Huffman (NASA GSFC)",
+      "doi": "10.5067/GPM/IMERG/3B-HH-L/07",
+      "notes": "NASA Level-3 multi-satellite precipitation from the GPM mission (NASA and JAXA). The Late Run is for near-real-time use and uses a climatological gauge adjustment; the Final Run uses monthly gauge analyses, so the two are different products. Archived at NASA GES DISC.",
+      "access_endpoints": [
+        {
+          "name": "IMERG Late Run – 30-minute data (GES DISC)",
+          "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHL_07/summary",
+          "role": "primary"
+        },
+        {
+          "name": "IMERG Late Run – daily data (GES DISC)",
+          "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDL_07/summary",
+          "role": "alternative"
+        },
+        {
+          "name": "IMERG Late Run – AWS Open Data Registry",
+          "url": "https://registry.opendata.aws/nasa-gpm3imerghhl/",
+          "role": "alternative"
+        },
+        {
+          "name": "IMERG – NASA PPS directory",
+          "url": "https://jsimpsonhttps.pps.eosdis.nasa.gov/imerg/",
+          "role": "alternative"
+        }
+      ],
+      "about_url": "",
+      "overview_url": "overview.html?id=imerg-late-run"
+    },
+    {
+      "id": "persiann-cdr-daily",
+      "name": "PERSIANN-CDR v1r1 Daily",
+      "data_archive": "NOAA NCEI",
+      "precipitation_basis": "Geostationary IR + GPCP gauge adjustment",
+      "period_of_record": "1 Jan 1983 - Present",
+      "formal_cdr": "YES — formal NOAA CDR",
+      "update_status": "Ongoing; updated quarterly, about three months behind real time.",
+      "spatial_coverage": "60°S-60°N, all longitudes",
+      "resolution": "0.25°",
+      "temporal_frequency": "Daily (monthly/yearly aggregations also distributed by CHRS)",
+      "curator": "Soroosh Sorooshian (UC Irvine CHRS)",
+      "doi": "10.7289/V51V5BWQ",
+      "notes": "Daily precipitation estimated from geostationary infrared imagery (GridSat-B1) by an artificial neural network trained on NCEP Stage IV, then bias-adjusted to GPCP v2.2 monthly. Long satellite-based record, useful in gauge-sparse regions. Developed at UC Irvine CHRS; archived and stewarded by NOAA NCEI.",
+      "access_endpoints": [
+        {
+          "name": "NOAA NCEI dataset record (DOI)",
+          "url": "https://doi.org/10.7289/V51V5BWQ",
+          "role": "primary"
+        },
+        {
+          "name": "NOAA / CHRS-UCI",
+          "url": "https://chrsdata.eng.uci.edu",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA NCEI PERSIANN-CDR NetCDF files",
+          "url": "https://data.ncei.noaa.gov/cdr/persiann/files/",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA NCEI ERDDAP data access",
+          "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.html",
+          "role": "alternative"
+        },
+        {
+          "name": "Google Earth Engine – PERSIANN-CDR",
+          "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_PERSIANN-CDR",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA PERSIANN-CDR AWS bucket",
+          "url": "https://noaa-cdr-precip-persiann-pds.s3.amazonaws.com/index.html",
+          "role": "alternative"
+        }
+      ],
+      "about_url": "dataset.html?id=persiann-cdr-daily",
+      "overview_url": "overview.html?id=persiann-cdr-daily"
+    }
+  ]
+}

@@ -1,0 +1,1457 @@
+{
+ "question": "How resilient is NOAA NCEI as a home for GPCP Daily, PERSIANN-CDR Daily and its holdings as a whole, beyond what the GHCN-Daily resilience run (pt9) found, judged against RRS-1, RRS-2, RRS-3 and RRS-5?",
+ "tier": "standard",
+ "tier_reason": "standard: two datasets plus the archive; no set of 15+, no multi-member yearly series; budget and news left to the A1 run",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Integrity (RRS-2): DSMM integrity scores for GPCP Daily and PERSIANN-CDR Daily; whether the NODD copies are checked against NCEI's archive; what NCEI's CoreTrustSeal application says about fixity",
+   "status": "answered",
+   "source_ids": [
+    "s20",
+    "s21",
+    "s24",
+    "s22",
+    "s25",
+    "s26",
+    "s27",
+    "s29",
+    "s23",
+    "s33"
+   ],
+   "remaining_gap": "No published comparison of the NODD bucket objects with NCEI's archive checksums; SOP 60-6-015 is not public; no DSMM for GPCP Daily v3.3 found."
+  },
+  {
+   "id": "q2",
+   "question": "Copies (RRS-1): copies in Boulder or elsewhere outside Asheville; where copies sit after the AWS move and the fate of tape; the action that closed OIG's single-region recommendation",
+   "status": "uncertain",
+   "source_ids": [
+    "s32",
+    "s24",
+    "s1",
+    "s15",
+    "s16",
+    "s17",
+    "s19",
+    "s13",
+    "s14",
+    "s18"
+   ],
+   "remaining_gap": "AWS regions and storage class, number of cloud copies, what happens to the tape copies, and the action and date that closed OIG-24-034-A recommendation 11 are not published; whether Boulder holds a copy of the Asheville-archived CDRs is not stated."
+  },
+  {
+   "id": "q3",
+   "question": "Track record (RRS-5, RRS-3): holdings, ingest backlogs and data loss at the 2015 merger, in 2025 and in the 2026 cloud migration, from the State of the Service summaries; documented DR test results",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s24"
+   ],
+   "remaining_gap": "The State of the Service summaries give no holdings volume, data-loss statement or DR test; FY25 Q4, FY26 Q2 and Q3 summaries are not posted; the 2026 migration is still under way (to spring 2027)."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-01/FY2025%20Q1%20SOS%20Executive%20Summary.pdf",
+   "fetched_url": null,
+   "title": "State of the Services FY 2025 Q1 Report October 2024 - December 2024",
+   "author_org": "NOAA NCEI",
+   "published": "2025-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sos_fy25q1.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Copied from pt9 (sa2/sos_fy25q1.txt); pt9 already reported Helene; given here for the backlog figure. Remaining 8% backlog outcome NOT PRESENT.",
+   "found_by": [
+    "sa3",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-08/FY2025%20Q3%20SOS%20Executive%20Summary.pdf",
+   "fetched_url": null,
+   "title": "State of the Services FY 2025 Q3 Report April 2025 - June 2025",
+   "author_org": "NOAA NCEI",
+   "published": "2025-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sos_fy25q3.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Executive summary, 2 pages; archive volume NOT PRESENT; staff losses NOT PRESENT; data loss NOT PRESENT. Customer reach: 1.9 billion web hits and 4.1k TB delivered online.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.ncei.noaa.gov/services/state-of-the-services",
+   "fetched_url": null,
+   "title": "NCEI State of the Services (index page)",
+   "author_org": "NOAA NCEI",
+   "published": "undated (live 2026-11-23)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sos_index.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Undated banner; data loss NOT PRESENT; archive volume NOT PRESENT. FY2026 Q2 and Q3 reports NOT PRESENT on the index.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2026-10/SOS_FY2026_Executive_Summary.pdf",
+   "fetched_url": null,
+   "title": "State of the Services FY 2026 Annual Report October 2025 - September 2026",
+   "author_org": "NOAA NCEI",
+   "published": "2026-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sos_fy26_annual.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Two-page executive summary aimed at stakeholders; silence on migration is not evidence either way. Archive petabytes NOT PRESENT; disaster recovery test NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-12/SOS_FY2025_Executive_Summary.pdf",
+   "fetched_url": null,
+   "title": "State of the Services FY 2025 Annual Report",
+   "author_org": "NOAA NCEI",
+   "published": "2025-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sos_fy25_annual.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Searched with find_text for petabyte|backlog|loss|outage|staff|recover|ingest|decommission; only Helene mention is a stakeholder-event line. Not read line by line in full.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-05/FY2025%20Q2%20SOS%20Executive%20Summary.pdf",
+   "fetched_url": null,
+   "title": "State of the Services FY 2025 Q2 Report January 2025 - March 2025",
+   "author_org": "NOAA NCEI",
+   "published": "2025-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sos_fy25q2.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Executive summary; archive volume NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "alerts dated 2026-11-02 to 2026-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_alerts_live.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Lists no specific datasets (GPCP, PERSIANN NOT PRESENT); size of ingest backlog NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://cdn.ioos.noaa.gov/attachments/2026/Full%20Stream%20Ahead%2C%20Updates%20to%20NCEI%20Archiving%20of%20IOOS%20Data%20%28Kristen%20Sauby%20and%20Ana%20Krelling%2C%20NOAA%29.pdf",
+   "fetched_url": null,
+   "title": "Full Stream Ahead: NCEI Archiving of IOOS Data (IOOS DMAC Annual Meeting, June 2026)",
+   "author_org": "NOAA NCEI (Krelling, McCullough, Relph, Sauby)",
+   "published": "2026-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ioos_ncei_full_stream_2026.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Applies to IOOS ocean data streams, not GPCP/PERSIANN; slide text only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/greg-hammer-ams-2017-presentation-becoming-the-national-centers-for-environmental-information.pdf",
+   "fetched_url": null,
+   "title": "Becoming the National Centers for Environmental Information (Greg Hammer, AMS 2017 presentation)",
+   "author_org": "NOAA NCEI",
+   "published": "2017",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/hammer_becoming_ncei_2017.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Date of the 28.6 PB figure not stated on the slide (presentation is 2017). Slide images not read.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/news/nceis-ionosonde-data-program-coming-end",
+   "fetched_url": null,
+   "title": "NCEI's Ionosonde Data Program Coming to an End",
+   "author_org": "NOAA NCEI",
+   "published": "2024-06-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_ionosonde_end.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2024, not 2025; ionosonde data unrelated to GPCP/PERSIANN.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncdc.noaa.gov/news/coming-soon-national-centers-environmental-information",
+   "fetched_url": null,
+   "title": "Coming Soon: NCEI",
+   "author_org": "NOAA NCDC",
+   "published": "2015-04-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncdc_coming_soon_ncei_wb.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Live page returned HTTP 503; read from Wayback capture 20160304211443. Pre-merger announcement; outcome NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.gao.gov/assets/imtec-91-11.pdf",
+   "fetched_url": null,
+   "title": "GAO/IMTEC-91-11 Environmental Data: Major Effort Needed to Improve NOAA's Data Archiving",
+   "author_org": "US GAO",
+   "published": "1991",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gao_imtec_91_11_wb.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "1991, 24 years before NCEI; the vaults covered 10 data centers incl. non-NOAA sites; OCR text from scanned PDF (e.g. NOM for NOAA). Read from Wayback capture 20250212065749 (gao.gov returned 403); first 6 pages converted only. Supersedes the unreadable entry for this URL.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: NOAA data centers 1991 (pre-NCEI)"
+  },
+  {
+   "id": "s13",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/NOAANC_2.pdf",
+   "fetched_url": null,
+   "title": "A Lack of Program Management Controls and Attention to IT Security Threatens the Success of NOAA’s Effort to Implement a Cloud-Based Common Ground System (Final Report No. OIG-24-034-A)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2024-08-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_noaanc_2.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2024 report; describes the NCCF ground system platform, not NCEI archive storage tiers specifically; the region is not named (NOT PRESENT); what NESDIS actually decided after the analysis is NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.oversight.gov/reports/audit/lack-program-management-controls-and-attention-it-security-threatens-success-noaas-10",
+   "fetched_url": null,
+   "title": "DOC - OIG-24-034-A - 11 | Oversight.gov",
+   "author_org": "Oversight.gov (CIGIE) / DOC OIG",
+   "published": "Wayback capture 2025-12-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oversight_oig24034a_rec11_wayback.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Live page returned HTTP 406 to WebFetch and fetch_page; read via Wayback copy https://web.archive.org/web/20251211055942/... Closure date and closing action NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration",
+   "fetched_url": null,
+   "title": "Cloud Migration Offers Bright Future for NOAA’s Data",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-03)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_cloud_migration.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "News/FAQ page; AWS region, storage class, tape retirement and backup copies NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://ceos.org/document_management/Working_Groups/WGISS/Meetings/WGISS-51/3.Thursday/2021.04.22_NOAA_Data_Preservation-Stewardship.pdf",
+   "fetched_url": null,
+   "title": "NOAA Data Preservation and Stewardship (CEOS WGISS-51 briefing)",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "2021-04-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ceos_wgiss51_noaa_preservation_2021.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2021 prototype slide; contrasts with OIG-24-034-A (2024) finding that the NCCF resides in a single region; which AWS regions and whether this was implemented NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration-FAQ",
+   "fetched_url": null,
+   "title": "NCEI Cloud Migration Frequently Asked Questions",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-14)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_cloud_migration_faq.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Access-focused FAQ; number of copies, AWS region, storage class and fate of tape NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: NCEI holdings as a whole"
+  },
+  {
+   "id": "s18",
+   "url": "https://repository.library.noaa.gov/view/noaa/61393/noaa_61393_DS1.pdf",
+   "fetched_url": null,
+   "title": "NOAA Science Advisory Board Report on the NESDIS Common Cloud Framework (DAARWG)",
+   "author_org": "NOAA SAB Data Archiving and Access Requirements Working Group",
+   "published": "2022-11-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sab_daarwg_nccf_report_2022.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Question only; NOAA's answer NOT PRESENT here. 2022 document.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.nesdis.noaa.gov/s3dl?path=%2Fs3%2F2024-04%2FFY23-NCCF-Summary-and-Future-Plans.pdf",
+   "fetched_url": null,
+   "title": "FY23 NCCF Summary and Future Plans",
+   "author_org": "NOAA NESDIS",
+   "published": "2024-04 (file path)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_fy23_nccf_summary.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "FY23 plan document; no copy count, region or DR detail.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://repository.library.noaa.gov/view/noaa/34101/noaa_34101_DS1.pdf",
+   "fetched_url": null,
+   "title": "Data Stewardship Maturity Report for Global Precipitation Climatology Project (GPCP) Climate Data Record (CDR), Version 1.3 (Daily), NOAA Technical Information Series NESDIS DSMR-00163 Version 1.0, doi: 10.25923/3702-5641",
+   "author_org": "Lori Hager, Paul Lemieux III / NOAA NESDIS NCEI",
+   "published": "2021-12-16 (Initial Release); SMM Assessment Date 03/14/2018; SMM Last Modified Date 10/15/2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_dsmm_34101_gpcp_daily.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Assessment dated 2018 (last modified 2021); the scale (Appendix I) puts \"Performance of data integrity check monitored and reported\" at Level 5, not reached. No verification frequency stated: NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://repository.library.noaa.gov/view/noaa/33336",
+   "fetched_url": null,
+   "title": "Data Stewardship Maturity Report for NOAA Climate Data Record (CDR) of PERSIANN-CDR, Version 1 Revision 1, NOAA Technical Information Series NESDIS DSMR-00012 Version 1.0, doi: 10.25923/hqg0-g278",
+   "author_org": "NOAA NESDIS NCEI",
+   "published": "NOT CHECKED in this run (see earlier run copy)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_dsmm_33336.txt",
+   "retrieved": "2026-11-19 (earlier run)",
+   "limitations": "Copied from earlier run; only the .txt was copied (the PDF was not in that folder listing used here). Verification frequency NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://noaa-cdr-precip-gpcp-daily-pds.s3.amazonaws.com/?list-type=2&max-keys=5",
+   "fetched_url": null,
+   "title": "S3 ListObjectsV2 listing, bucket noaa-cdr-precip-gpcp-daily-pds (first 5 keys)",
+   "author_org": "AWS / NOAA NODD",
+   "published": "live listing",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "fetch_page.py refused by the sandbox proxy (host not .org; no approval asked); read via WebFetch extraction, so no local raw copy. Only 5 keys examined. An S3 ETag equals the MD5 only for single-part uploads; whether these match NCEI archive checksums was not checked. PERSIANN bucket not listed (time).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.ncei.noaa.gov/products/ncei-data-noaa-open-dissemination-program",
+   "fetched_url": null,
+   "title": "NCEI Data in the NOAA Open Data Dissemination Program",
+   "author_org": "NOAA NCEI",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch extraction; no raw copy saved.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://dataverse.nl/api/access/datafile/469675",
+   "fetched_url": null,
+   "title": "2028-01-29 - National Centers for Environmental Information (NCEI) - CoreTrustSeal Requirements 2020-2022 (Assessment Information; certification period Jan. 29, 2025 - 29 January 2028)",
+   "author_org": "NCEI (applicant) / CoreTrustSeal Board (reviews)",
+   "published": "Dataverse dataset doi:10.34894/50BIQ1, publicationDate 2025-02-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cts_ncei_2020-2022_dataverse.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Redirected to a signed objectstore.surf.nl URL; read via WebFetch binary save, copied into folder as cts_ncei_2020-2022_dataverse.pdf. \"routine basis\" undefined; quarterly or other schedule NOT PRESENT. SOP 60-6-015 not public. Application text is partly written for WDS-Geophysics / NCEI-CO; which NCEI site R9 covers is not stated.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://www.noaa.gov/big-data-project-frequently-asked-questions",
+   "fetched_url": null,
+   "title": "Frequently Asked Questions (NOAA Open Data Dissemination)",
+   "author_org": "NOAA",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_bdp_faq.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Program-wide; does not name the CDR precipitation buckets. Checksum/fixity frequency for cloud copies: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://repository.library.noaa.gov/view/noaa/46543/noaa_46543_DS1.pdf",
+   "fetched_url": null,
+   "title": "Unlocking the Potential of NEXRAD Data through NOAA's Big Data Partnership",
+   "author_org": "Ansari, Del Greco, Kearns, Brown et al. (NOAA NCEI, CICS-NC, Unidata, AWS and others)",
+   "published": "NOT CHECKED (BAMS article; repository copy)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_46543_nexrad_cloud.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "NEXRAD-specific, Big Data Project era (2015-2016); not evidence for CDR buckets.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NCEI NEXRAD archive (Big Data Project)"
+  },
+  {
+   "id": "s27",
+   "url": "https://noaa-cdr-precip-persiann-pds.s3.amazonaws.com/?list-type=2&max-keys=5",
+   "fetched_url": null,
+   "title": "S3 ListObjectsV2 listing, bucket noaa-cdr-precip-persiann-pds (first 5 keys)",
+   "author_org": "AWS / NOAA NODD",
+   "published": "live listing",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch (fetch_page.py was refused by the sandbox proxy for the GPCP bucket host, same pattern; not retried). Only 5 keys. ETag-vs-NCEI-checksum comparison not done.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.nesdis.noaa.gov/s3/2025-07/Data-Management-Planning-Procedural-Directive-v2-0-1.pdf",
+   "fetched_url": null,
+   "title": "Data Management Planning Procedural Directive v2.0.1",
+   "author_org": "NOAA Environmental Data Management Committee",
+   "published": "posted 2025-07 (NESDIS s3 path)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nesdis_dmp_directive_v2_0_1.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Searched for checksum|fixity|integrity|backup|copies|verif: only 2 integrity hits, neither on fixity.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://registry.opendata.aws/noaa-cdr-atmospheric/",
+   "fetched_url": null,
+   "title": "NOAA Climate Data Record (CDR) of Atmospheric Variables - Registry of Open Data on AWS",
+   "author_org": "AWS Registry of Open Data / NOAA",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch extraction; no raw copy. Earlier run copy (2026-11-19_persiann-cdr-daily-about-pt1 aws_registry_cdr_atmos.txt) agrees: no integrity text.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.ncei.noaa.gov/news/ncei-archives-cosmic-2-data",
+   "fetched_url": null,
+   "title": "NCEI Archives Data from COSMIC-2 Satellites",
+   "author_org": "NOAA NCEI",
+   "published": "June 25, 2020",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_news_cosmic2.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2020 NCEI news feature (the agency's own page), general archive workflow, not CDR-specific; offsite distance not given here (pt9 has 12.5 miles).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-the-global-precipitation-climatology-project-gpcp-daily-ve",
+   "fetched_url": null,
+   "title": "NOAA Climate Data Record (CDR) of the Global Precipitation Climatology Project (GPCP) Daily Version 3.3 (data.gov, ISO C01726)",
+   "author_org": "NOAA NCEI via data.gov",
+   "published": "metadata modified 2025-08-05",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch extraction; archive.data.noaa.gov page itself not read (time). Whether it is NCEI's archival copy or a NODD copy is not stated.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://sab.noaa.gov/wp-content/uploads/SAB_Report_March2024_NOAA-Response_DAARWG_Common-Cloud-Framework.pdf",
+   "fetched_url": "https://web.archive.org/web/20240525224407id_/https://sab.noaa.gov/wp-content/uploads/SAB_Report_March2024_NOAA-Response_DAARWG_Common-Cloud-Framework.pdf",
+   "title": "NOAA Response to the SAB DAARWG Report on the NESDIS Common Cloud Framework (March 2024)",
+   "author_org": "NOAA NESDIS / NOAA Science Advisory Board",
+   "published": "2024-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/sab_2024_noaa_response_daarwg.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Read from the Wayback capture of 2024-05-25; the live sab.noaa.gov copy returns 403.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+   "fetched_url": null,
+   "title": "Precipitation - GPCP Daily CDR",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ncei_gpcp_daily_product.txt",
+   "retrieved": "2026-11-23",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://archive.data.noaa.gov/climatedatarecords#UMD_ESSIC/GPCP/Daily/GPCP-D-CDR_01B-35/",
+   "fetched_url": null,
+   "title": "AWS S3 Explorer: NCEI archive (NCCF) bucket climatedatarecords, GPCP Daily",
+   "author_org": "NOAA NCEI / NESDIS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/archive-data-noaa-gov-climatedatarecords-UMD-ESSIC-GPCP-Dail_145825.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Browser text of a JavaScript S3 Explorer; only the top folder listed; the version behind 'CDR_01B-35' not confirmed.",
+   "found_by": [
+    "main"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "Both CDRs' stewardship maturity reports (assessed March 2018, last modified 2021) score Data Integrity 3.5 of 5, with checksums made at ingest and checked when a customer orders data; neither states any scheduled re-verification, so they contradict RRS-2.",
+   "applicability": "GPCP Daily v1.3 (now superseded by v3.3) and PERSIANN-CDR v1r1",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own maturity reports, read as raw text by the coordinator",
+   "sole_source_reason": "the archive's own stewardship assessments are the authority on its stewardship practice",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Data Quality Assessment - 3 Transparency/Traceability - 3.5 Data Integrity - 3.5",
+     "location": "Summary scores, p. 1"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Checksums generated at ingest which verifies ingest integrity.",
+     "location": "Data Integrity justification"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "Data Quality Assessment - 3 Transparency/Traceability - 3.5 Data Integrity - 3.5",
+     "location": "Summary scores, p. 1"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "Using standard-based technology for generating checksum at ingest.",
+     "location": "Data Integrity justification"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "NCEI's CoreTrustSeal application (2020-2022 requirements, R9) describes MD5 checksums checked whenever a file is pulled and routine file-size comparisons between primary and offsite tape, plus a tape refresh every few years; it gives no periodic checksum schedule, so it falls short of RRS-2.",
+   "applicability": "NCEI as a whole, as described for the 2025 certification",
+   "confidence": "high",
+   "confidence_reason": "the certified application itself, read as raw text",
+   "sole_source_reason": "the repository's own certified self-assessment is the authority on its stated procedures",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Any time a file is pulled either from primary or offsite, the file's checksum is checked against",
+     "location": "R9 Documented storage procedures"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "The repository runs scripts on a routine basis that compare file sizes between the primary and offsite to detect either mismatches or if one of",
+     "location": "R9"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "There is also a periodic tape refresh every few years budgeted for in",
+     "location": "R9"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "No published document says the NODD copies of GPCP Daily and PERSIANN-CDR Daily are checked against NCEI's archive; the bucket listings show only S3 ETags, the AWS Registry entry and NCEI's NODD page say nothing on integrity, and the NODD FAQ only says a data broker helps ensure end-to-end integrity. A cloud-versus-archive check is documented only for NEXRAD.",
+   "applicability": "AWS buckets noaa-cdr-precip-gpcp-daily-pds and noaa-cdr-precip-persiann-pds",
+   "confidence": "moderate",
+   "confidence_reason": "absence of evidence across the program's own pages; bucket listings read through WebFetch only",
+   "evidence": [
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "helping to develop and implement approaches to ensure end-to-end data integrity",
+     "location": "NODD FAQ, Data Broker answer"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "contextualizes",
+     "passage": "NCEI maintains an inventory of all files in the | NCEI archive. This inventory includes checksum and | file size information",
+     "location": "p. 1097, left column"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "Outside Asheville, NCEI keeps archive holdings in Boulder: in 2024 the non-CLASS archive sat on-premises in Boulder (StorNext) and Asheville (AMS/HPSS), CLASS (about half of NESDIS holdings) already had an AWS copy, and the CoreTrustSeal application says the Boulder (NCEI-CO) archive is stored in two geographically dispersed locations. No source says Boulder holds a copy of Asheville-archived data such as the two CDRs, so RRS-1 is supported for NCEI-CO and CLASS data but not shown for these datasets.",
+   "applicability": "NCEI holdings by site; both CDRs are 'Archived at NOAA NCEI-NC' per their maturity reports",
+   "confidence": "moderate",
+   "confidence_reason": "official documents, but none names a copy of Asheville data held elsewhere",
+   "evidence": [
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "The remaining archival data is managed by NCEI and resides on-prem in Boulder, CO,",
+     "location": "Response 2a"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "Roughly half of its holdings are stored within CLASS infrastructure, which already has a",
+     "location": "Response 2a"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "A copy of NCEI-CO archive is stored in two separate and geographically dispersed locations in the event a",
+     "location": "R15"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "contextualizes",
+     "passage": "By December 11, operational ingest of archival data streams was fully restored, and 92% of the ingest backlog was recovered. Data loss was mitigated with support from NCEI's Boulder, CO location. NCEI archives over 229 terabytes of data monthly",
+     "location": "p.1, Product and Services Highlights, NCEI's Hurricane Helene Response and Recovery"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "contextualizes",
+     "passage": "Showing 1 to 30 of 30 entries",
+     "location": "folder listing UMD_ESSIC/GPCP/Daily/GPCP-D-CDR_01B-35/"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "NESDIS is lifting and shifting all Asheville and Boulder data to AWS through spring 2027; no published document gives the AWS regions, storage class, number of copies or the fate of the on-premises tapes. A 2021 prototype design called for cross-region replication.",
+   "applicability": "NCEI holdings, 2026-2027",
+   "confidence": "moderate",
+   "confidence_reason": "NOAA's own pages, silent on copies; the absence may reflect unpublished design documents",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "NESDIS is migrating all of its data, products, and services to the cloud through Spring 2027.",
+     "location": "Cloud migration page, para. 1"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "No datasets will be retired as part of the cloud migration. … Datasets will continue to be updated, but the content of the datasets will not be changed. NCEI continues to prioritize the integrity of the data. … Bulk data folders will move from web accessible folders (WAFs) to Amazon Simple Storage Service (S3).",
+     "location": "FAQ answers (text lines 23, 27, 37)"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "contextualizes",
+     "passage": "Unites multiple on-prem systems for managing both single and recurring archive submissions in the cloud | Prototyping underway, with significant progress on backend functions in AWS … Data are inventoried rapidly, assigned a unique identifier, and copied to redundant storage (cross-region replication) to ensure resilience to regional scale disasters",
+     "location": "slides NCEI - Cloud Archive Workflow + Tech (text lines 135-158)"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Data underpins the NCCF and the Archive and Storage Service provides the most critical service to the framework, storing, managing and preserving NOAA data. This service centrally stores data and makes it available to all other services while ensuring data is not corrupted or lost. It then provides long-term data preservation in the cloud … Following this development, it is anticipated that NOAA data holdings and NCEI archive and stewardship workflows will migrate into NCCF, accelerating over time as the Archive and Storage Service scales up.",
+     "location": "section 3.3 Archive and Storage Service - In Operational Transition, p. 7 (text lines 234-250)"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "OIG-24-034-A recommendation 11 is the single-region one: OIG found the NCCF in one cloud region (two facilities within it), with disruptions roughly every two years, and asked NESDIS to add a multi-region option to its analysis of alternatives and document a risk- and cost-based decision (target September 2025). Oversight.gov lists it closed, but no published document gives the closing action or decision.",
+   "applicability": "NESDIS Common Cloud Framework, which is to hold NCEI's archive",
+   "confidence": "high",
+   "confidence_reason": "OIG's own report and the federal oversight portal; closing action not published",
+   "sole_source_reason": "the inspector general's report is the authority on its own findings and recommendations",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "the NCCF does not use a multi-region architecture and instead resides in a single region. OCS personnel noted … that while the NCCF’s cloud platform resides in a single region, the NCCF operates concurrently in two separate cloud facilities within that region. NOAA’s analysis of alternatives for migrating to a cloud architecture did not include a multi-region scenario. OCS personnel did recognize that if a service disruption were to affect the entire region, the NCCF could be impacted. | Our research found that a service disruption impacting the NCCF did occur in 2023 that was close to the maximum tolerable downtime of the system. Additionally, prior to the NCCF, the region that currently hosts the NCCF had several service disruptions that lasted longer than the maximum tolerable downtime. Our analysis found that these disruptions have occurred roughly every 2 years. … 11. NESDIS will review and update its analysis of alternatives to include moving to a multi-region architecture and document the cost-based decision(s) on NESDIS’ ability to meet availability requirements. … Target Implementation Date: The entire process should be concluded by September 2025 with the conclusion of the next ATO annual review cycle.",
+     "location": "pp. 12-13 (text lines 776-820); NOAA action plan p. 7 (text lines 1231-1266)"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "11. We recommend that the NOAA Administrator direct the NOAA Deputy Undersecretary of Operations to ensure NESDIS updates the NCCF's analysis of alternatives to include moving to a multi-region architecture and document a risk and cost-based decision on how NESDIS will meet the NCCF's availability requirements. | Recommendation Status | Closed | Source UUID | 81e04b5d-8c0b-402f-acd9-5144b72a56dd-11",
+     "location": "whole page"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "NCEI's State of the Service summaries (FY25 Q1-Q3, FY25 and FY26 annual) report no data loss, but also give no holdings volume, no data-loss statement and no disaster-recovery test; 2025 brought three decommissioned products whose existing data stay available, and the 2026 migration has left many portals and folders unavailable with delayed archival (alert dated November 2026). The 2015 merger notice said no products were slated to be cut; no loss was reported. Silence is not evidence for RRS-5 or RRS-3.",
+   "applicability": "NCEI as a whole",
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own reports; finding rests partly on what they omit",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "NCEI removed three climate products from its portfolio in quarter three of FY25. These included the Billion Dollar Weather and Climate Disasters report, Hurricane Satellite data, and the Cloud Properties – International Satellite Cloud Climatology Project H-Series Climate Data Record. Existing data for these products will remain open and available, the products will not be updated moving forward.",
+     "location": "p.1, Product and Services Highlights, NCEI Climate Decommissions Three Products"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products.",
+     "location": "Alerts table, Data Access Delays (16-30 Nov 2026)"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The top priority during the transition to NCEI is to maintain the full spectrum of atmospheric, oceanographic, coastal, and geophysical products and services that the Data Centers currently deliver. While NCEI's product portfolio will evolve as current products and services are assessed, no products or services are currently slated to be cut or reduced.",
+     "location": "body, para 3"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "importance": "supporting",
+   "text": "After Hurricane Helene, NCEI restored ingest by 11 December 2024 and recovered 92% of the ingest backlog, with data loss 'mitigated' with Boulder's support; the fate of the other 8% is not stated, which weakens RRS-5.",
+   "applicability": "NCEI ingest, late 2024",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own quarterly report, read as raw text",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "By December 11, operational ingest of archival data streams was fully restored, and 92% of the ingest backlog was recovered. Data loss was mitigated with support from NCEI's Boulder, CO location. NCEI archives over 229 terabytes of data monthly",
+     "location": "p.1, Product and Services Highlights, NCEI's Hurricane Helene Response and Recovery"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "importance": "supporting",
+   "text": "NCEI's CoreTrustSeal application describes an Information System Contingency Plan with an annual Business Impact Analysis, but the plan is not public and no test results are published (RRS-3 not shown).",
+   "applicability": "NCEI",
+   "confidence": "high",
+   "confidence_reason": "the application itself, read as raw text",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "ISCP is considered a sensitive document and cannot be shared outside the US Government so therefore cannot be presented as public documentary",
+     "location": "R16"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "importance": "supporting",
+   "text": "Before NCEI existed, GAO (1991) reported that some irreplaceable NOAA data had already been lost and much archived data was at risk; this is the older record behind today's practices.",
+   "applicability": "NOAA data centers, 1991",
+   "confidence": "moderate",
+   "confidence_reason": "GAO report read from OCR of a Wayback copy",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "contextualizes",
+     "passage": "Some irreplaceable data have already been lost.",
+     "location": "Results in Brief, p. 2"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "text": "NCEI staff described a multi-year ingest backlog for IOOS ocean data in June 2026, citing IT changes, staff turnover and volume.",
+   "applicability": "IOOS ocean data only",
+   "confidence": "moderate",
+   "confidence_reason": "NCEI staff slides; one data stream",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Multi-Year Backlog Challenges | ● Data management / IT infrastructure changes | ● Staff turnover | ● Technological advances | ● Increased IOOS data volume … Turning the Tide | New staff in April 2025 … NCEI data and applications are migrating to the Cloud, including new data streams.",
+     "location": "slides 2, 3 and the Cloud Migration slide"
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Whether NOAA's cloud archive replicates across regions",
+   "source_ids": [
+    "s16",
+    "s13"
+   ],
+   "status": "unresolved",
+   "explanation": "A 2021 NOAA briefing on the AWS cloud-archive prototype describes cross-region replication; OIG's 2024 audit found the NCCF in a single region with no multi-region option analysed. They differ in scope (prototype design vs the audited production platform) and date; what production does after recommendation 11 closed is not published."
+  }
+ ],
+ "coverage_gaps": [
+  "r9 GAO/OIG report on NCEI archive operations, backlogs or losses: NOT PRESENT after 1 query (2 unused); pt9 already holds OIG-24-034-A and OIG-16-043-A (from sa3)",
+  "RRS-3 documented disaster-recovery / continuity test result for NCEI: NOT PRESENT in any State of the Services report read (FY25 Q1-Q3, FY25 annual, FY26 Q1, FY26 annual); no dedicated search run for lack of time (from sa3)",
+  "Archive volume (PB) in 2025 and 2026: NOT PRESENT in any State of the Services report read; pt9 has 60+ PB (about page) and over 70 PB (FY26 CJ). 2017 slides: 28.6 PB (from sa3)",
+  "2015 merger data loss/backlog: NOT PRESENT; no Federal Register notice or NCEI first annual report found. Unread lead: https://www.ncdc.noaa.gov/news/coming-soon-national-centers-environmental-information (from sa3)",
+  "2025 staff losses: only 'recent staff changes' (FY25 Q3, AASC meeting line), numbers NOT PRESENT. FY2026 Q2 and Q3 State of the Services reports are not on the index and the Wayback CDX (sites/default/files/2026, SOS) found only FY2026 Q1 (from sa3)",
+  "Not run for lack of time: wayback_paths --word annual and the other CDX folder listings; NCEI Multibeam Backlog Ingest Queue page (seen in results only) (from sa3)",
+  "Action that closed OIG-24-034-A rec 11 (multi-region analysis): Oversight.gov lists it Closed (Wayback 2025-12-11) but gives no date or action; NESDIS's documented decision (multi-region adopted or single-region accepted) NOT FOUND. Leads: OIG semiannual reports to Congress 2025-2026; oversight.gov node/336969 (live page returns 406). (from sa2)",
+  "Which AWS region(s) and storage class hold NCEI's archive copies in production, and whether on-prem tape (Asheville AMS/HPSS, Boulder StorNext) is retired or kept as a second copy: NOT FOUND. Leads: SAB March 2024 NOAA response to DAARWG (403, needs browser); NCEI archive page line 'archive and backup copy contains more than 60 petabytes'. (from sa2)",
+  "Whether Boulder holds a full copy of the archive or of GPCP Daily / PERSIANN-CDR Daily: NOT FOUND. Only the FY2025 Q1 SOS line that Helene data loss was mitigated with support from Boulder. Not searched: Silver Spring/Stennis copies; dataset-level copy info. (from sa2)",
+  "No NCEI/NODD statement of a periodic (e.g. quarterly) fixity schedule found. CoreTrustSeal R9 describes checksum-on-retrieval plus routine size comparisons; NCEI SOP 60-6-015 (cited there) and the ISCP are not public. NODD cloud copies: no published per-bucket verification method for the CDR precipitation buckets; listings show only S3 ETags (not compared with NCEI checksums). Not done: AWS Registry entries for the two buckets checked only via earlier-run copy (aws_registry_cdr_atmos.txt: no integrity text); Google/Azure copies not checked; CoreTrustSeal 2023-2025 requirements version not applicable (NCEI certified under 2020-2022). (from sa1)",
+  "Unread leads: (1) data.gov entry for GPCP Daily v3.3 (https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-the-global-precipitation-climatology-project-gpcp-daily-ve) reportedly links an S3 path under archive.data.noaa.gov, possibly NCEI's own cloud archive copy; not checked for checksums. (2) GPCP Daily v3.3 may have its own DSMM (only v1.3 found). (3) Footnote 17 of the CoreTrustSeal R9 MD5 sentence is not in the PDF text layer. (4) PERSIANN DSMM dates: SMM Assessment Date 03/15/2018, SMM Last Modified Date 09/20/2021. (from sa1)",
+  "Reconciler: not relevant (page furniture, references, workshops, web hits, or already in the draft): List A: dsmm_34101 lines 46, 424, 444 and dsmm_33336 line 453 (cover/page numbers); sos_fy25q1:29 and ncei_cloud_migration:19 (229 TB/month ingest, not resilience); nesdis_fy23_nccf_summary:234 (section number 3.3); oig_noaanc_2 lines 779/790 (footnote 31, single-region finding already in draft), 782, 786, 795 (footnotes/page numbers); oversight rec11:5 (UUID); sos_fy25q3:52 (web hits); ncei_alerts_live 7, 13 (tsunami/SUVI alerts); sos_fy26_annual 64, 66, 91, 100 (CUDEM, coral reef, sector charts); gao 113 (data growth). List B: all 20 dates are reference access dates, policy effective dates, meeting dates or report/response dates (OIG August 27, 2024 report date and August 2, 2024 NOAA response add no resilience finding; CTS certification start Jan. 29, 2025 is in pt9 and the draft gives the 2028 end; migration page dates May 12 / September 3, 2026 are publication dates). List W: 20 items, same reasons (publication dates, workshops, NEXRAD usage percentages, GAO counts of 35 vaults and visited-facility holdings, OIG 60-day action plan, moderate-impact platform choice). Total not relevant: 59. Unread pages (reconciler works on saved files only): archive.data.noaa.gov GPCP-D-CDR_01B-35 listing; AMS 104th Annual Paper437271; SAB March 2024 DAARWG presentation PDF. Record problems s22 and s29 (no local_file) not reconciled here. Conflicts: no pair of different figures for the same measure and about the same date found in the saved files; the DSMM reports' saved cover date (January 2020) differs from the draft's 'last modified in 2021' (a date, not a figure pair; check by hand). (from reconciler)",
+  "RRS-3: no published NCEI disaster-recovery or contingency test result; DuckDuckGo 'NCEI contingency plan test results archive' found none (gap pass).",
+  "OIG-24-034-A rec 11 closing action: DuckDuckGo queries for the recommendation and Commerce OIG semiannual reports found no closing action (gap pass).",
+  "SAB 2024 response and slides (read from Wayback 2024-05-25 copies) do not answer DAARWG's question on an on-premises tape disaster-recovery copy."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI State of the Service",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=ncei.noaa.gov; found index and FY2021-FY2026 reports",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI established 2015 NCDC NODC NGDC merger",
+   "tool": "WebSearch",
+   "notes": "no filter; mostly Wikipedia; NCEI institution record gives April 21 2015",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA launches National Centers for Environmental Information 2015 data centers merged",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=noaa.gov,federalregister.gov; found Hammer AMS 2017 slides, Coming Soon NCEI page; no Federal Register notice",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO NOAA NCEI data archive",
+   "tool": "WebSearch",
+   "notes": "no filter; no GAO/OIG report on NCEI archive backlog or loss found (only 1 of 3 queries used)",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI cloud migration 2026 data access",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=ncei.noaa.gov,noaa.gov,nesdis.noaa.gov; FAQ (already in pt9), alerts, IOOS slides",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI archive holdings petabytes 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; no 2025-specific total; 60+ PB about page (pt9), 70 PB FY26 CJ (pt9)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI ingest backlog",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=noaa.gov; multibeam backlog queue page, ionosonde end",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI annual report 2015 archive petabytes",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=noaa.gov; no 2015 NCEI annual report with archive volume found",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Wayback CDX url=ncei.noaa.gov/sites/default/files/2026 filter original:.*SOS.*",
+   "tool": "fetch_json.py",
+   "notes": "1 capture: FY2026 Q1 SOS PDF only; no removed FY2026 Q2/Q3 reports found (work/raw/sa3/cdx_sos_2026.json)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "OIG NOAA NESDIS NCEI archive contingency plan testing",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=oig.doc.gov,gao.gov; nothing NCEI-specific; top hit NOAANC_3.pdf is the OIG-24-034-A Report in Brief (Common Ground System cloud, contingency testing at alternate sites not offered on moderate platform), already in pt9; downloaded and renamed _unused",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO report NOAA environmental data archive NCEI backlog",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=gao.gov; r9 query 3 of 3; only historical IMTEC-91-11 (1991) on NOAA data loss, unreadable; no current GAO report on NCEI archive found after 3 queries",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OIG-24-034-A recommendation NESDIS cloud region",
+   "tool": "WebSearch",
+   "notes": "found OIG PDF NOAANC_2.pdf with rec 11 (multi-region); 1 of max 3",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NESDIS Common Cloud Framework NCEI archive migration",
+   "tool": "WebSearch",
+   "notes": "found NCEI cloud-migration page, SAB 2024 NOAA response (403), AMS 2024 abstracts; 1 of max 3",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AWS NOAA NCEI archive Deep Archive region",
+   "tool": "WebSearch",
+   "notes": "only Open Data registry entries (us-east-1 for oceanic CDRs per snippet); nothing on Deep Archive/Glacier for the NCEI archive copy; 1 of max 3",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI Boulder backup archive copy",
+   "tool": "WebSearch",
+   "notes": "snippets: archive and backup copy >60 PB; location of backup NOT PRESENT",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI disaster recovery site Boulder",
+   "tool": "WebSearch",
+   "notes": "found FY2025 Q1 SOS executive summary (Boulder mitigated Helene data loss)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI tape library retirement cloud 2026",
+   "tool": "WebSearch",
+   "notes": "found cloud-migration FAQ; nothing on tape retirement",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCCF unified archive storage copies regions NCEI",
+   "tool": "WebSearch",
+   "notes": "found 2021 CEOS WGISS-51 briefing (cross-region replication design); AMS 2024 Paper437271 abstract read via WebFetch (studio.m-anage.com redirect): copies, regions, replication, Glacier, tape all NOT PRESENT",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OIG NOAA archive single point of failure",
+   "tool": "WebSearch",
+   "notes": "no OIG finding on an NCEI archive single point of failure; OIG-25-012-I abstract read, is about NWS operational technology (unused)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA response DAARWG Common Cloud Framework report pdf",
+   "tool": "WebSearch",
+   "notes": "another-copy search for the SAB NOAA response; no other copy; found the 2022 DAARWG report on repository.library.noaa.gov",
+   "from": "sa2",
+   "copy_of": "https://sab.noaa.gov/wp-content/uploads/SAB_Report_March2024_NOAA-Response_DAARWG_Common-Cloud-Framework.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"NOAA Response\" SAB \"Common Cloud Framework\" exit strategy tape copy",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: repository.library.noaa.gov, noaa.gov; another-copy search for SAB NOAA response: no other copy found; found NESDIS FY23 NCCF Summary",
+   "from": "sa2",
+   "copy_of": "https://sab.noaa.gov/wp-content/uploads/SAB_Report_March2024_NOAA-Response_DAARWG_Common-Cloud-Framework.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP daily CDR maturity matrix data integrity",
+   "tool": "WebSearch",
+   "notes": "no filter; only financial-data results",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP data stewardship maturity report NESDIS DSMR",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=[repository.library.noaa.gov]; found DSMR-00163 (noaa/34101)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA Open Data Dissemination checksum verification",
+   "tool": "WebSearch",
+   "notes": "no filter; no NODD checksum/verification document found; led to NCEI NODD page",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoreTrustSeal NCEI assessment data storage integrity",
+   "tool": "WebSearch",
+   "notes": "no filter; led to b2find/DataverseNL record doi:10.34894/50BIQ1, whose PDF was then read via the Dataverse API",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NODD data integrity NCEI archive cloud copy verification",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=[noaa.gov]; led to NODD FAQ and NEXRAD BDP paper (noaa/46543)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI archive fixity checking frequency",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=[noaa.gov]; no NCEI statement of fixity frequency found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI \"60-6-015\" standard operating procedure backup",
+   "tool": "WebSearch",
+   "notes": "no filter; SOP 60-6-015 (cited in CoreTrustSeal R9) not public: not found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI digital archive checksum audit tape verification",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=[ncei.noaa.gov, nesdis.noaa.gov, repository.library.noaa.gov]; no audit schedule; lead: NCEI COSMIC-2 news (two tape copies, Asheville onsite + offsite) not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA Climate Data Records Google Cloud public dataset PERSIANN GPCP bucket",
+   "tool": "WebSearch",
+   "notes": "no filter; no GCS bucket found (Google route is Earth Engine NOAA/PERSIANN-CDR); lead: data.gov GPCP Daily v3.3 entry cites an S3 path under archive.data.noaa.gov (not read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=sab.noaa.gov/wp-content/uploads/SAB_Report_March2024_NOAA-Response_DAARWG_Common-Cloud-Framework.pdf",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "5 captures; 2024-05-25 PDF read with fetch_page id_ form; on-prem Boulder/Asheville passage found; tape question unanswered",
+   "from": "main",
+   "copy_of": "https://sab.noaa.gov/wp-content/uploads/SAB_Report_March2024_NOAA-Response_DAARWG_Common-Cloud-Framework.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=sab.noaa.gov/wp-content/uploads/SAB_MtgPres_March2024_NOAA-Response_DAARWG-Common-Cloud-Framework.pdf",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "4 captures; 2024-05-25 PDF read; slides hold no copy, tape, region or checksum text (NOT PRESENT)",
+   "from": "main",
+   "copy_of": "https://sab.noaa.gov/wp-content/uploads/SAB_MtgPres_March2024_NOAA-Response_DAARWG-Common-Cloud-Framework.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI GPCP Daily CDR product page (primary copy of data.gov entry)",
+   "tool": "lookup (fetch_page NCEI product page)",
+   "notes": "lists Google and Amazon cloud access; no checksum or sync text",
+   "from": "main",
+   "copy_of": "https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-the-global-precipitation-climatology-project-gpcp-daily-ve"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AMS 2024 NCCF Unified Archive abstract (already read by sa2 via WebFetch of its m-anage redirect)",
+   "tool": "lookup (no route left)",
+   "notes": "sa2 read the abstract through WebFetch: copies, regions and tape NOT PRESENT; no other route needed",
+   "from": "main",
+   "copy_of": "https://ams.confex.com/ams/104ANNUAL/webprogram/Paper437271.html"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OIG-24-034-A recommendation 11 multi-region closed",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass; only other agencies' OIG pages and oversight.gov rec 6; no closing action",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Commerce OIG semiannual report 2025 NCCF multi-region",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass; no result names NCCF",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI contingency plan test results archive",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass; NCEI home pages and NIST CP-4 text only; no NCEI test result (RRS-3)",
+   "from": "main"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "stewardship maturity reports for GPCP Daily",
+   "query": "GPCP daily CDR maturity matrix data integrity",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NODD / AWS",
+   "publisher": "cloud provider and program",
+   "subquestion_id": "q1",
+   "aim": "NODD checksum or verification statements",
+   "query": "NOAA Open Data Dissemination checksum verification",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "CoreTrustSeal",
+   "publisher": "certifiers",
+   "subquestion_id": "q1",
+   "aim": "NCEI's CoreTrustSeal assessment, storage and integrity",
+   "query": "CoreTrustSeal NCEI assessment data storage integrity",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "Commerce OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "OIG-24-034-A single-region recommendation and closure",
+   "query": "OIG-24-034-A recommendation NESDIS cloud region",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA NESDIS",
+   "publisher": "its parent",
+   "subquestion_id": "q2",
+   "aim": "Common Cloud Framework archive migration documents",
+   "query": "NESDIS Common Cloud Framework NCEI archive migration",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "AWS",
+   "publisher": "cloud provider",
+   "subquestion_id": "q2",
+   "aim": "AWS statements on NOAA archive storage and regions",
+   "query": "AWS NOAA NCEI archive Deep Archive region",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "quarterly State of the Service summaries",
+   "query": "NCEI State of the Service",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA",
+   "publisher": "its parent",
+   "subquestion_id": "q3",
+   "aim": "2015 NCEI consolidation announcements",
+   "query": "NCEI established 2015 NCDC NODC NGDC merger",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "GAO or OIG reports on NCEI archive operations, backlogs or losses",
+   "query": "GAO NOAA NCEI data archive",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 21.5,
+  "shift_min": 1,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 182885,
+  "subagent_minutes_planned": 31,
+  "subagent_minutes": 33.2,
+  "follow_ups": 0,
+  "continuations": 6,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

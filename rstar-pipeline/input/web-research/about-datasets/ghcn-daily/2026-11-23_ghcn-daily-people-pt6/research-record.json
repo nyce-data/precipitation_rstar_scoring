@@ -1,0 +1,2577 @@
+{
+ "question": "Who are the people critical to producing and quality-controlling GHCN-Daily at NOAA NCEI now, how close is each to retirement eligibility, and could someone else keep it going? (Adds to runs 2026-11-19_ghcn-daily-about-pt1, -pt2, 2026-11-21_ghcn-daily-funding-pt3, 2026-11-21_ghcn-daily-threats-news-pt4 and 2026-11-17_noaa-ncei-threats; tags findings against P-1 no documented succession plan, P-2 key personnel retirement-eligible within 2 years, P-3 critical knowledge undocumented, P-4 single point of failure.)",
+ "tier": "deep",
+ "tier_reason": "deep: set of ~17 people with per-person figures; topic involves 2025 NOAA staffing cuts",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Menne, Durre, Vose, Gleason, Houston, Korzeniewski: identity, role, ORCID, earliest publication, first GHCN year",
+   "status": "answered",
+   "source_ids": [
+    "s40",
+    "s41",
+    "s42",
+    "s43",
+    "s44",
+    "s45",
+    "s46",
+    "s47",
+    "s48",
+    "s49",
+    "s50",
+    "s51",
+    "s52",
+    "s53",
+    "s54",
+    "s55",
+    "s56",
+    "s57",
+    "s59",
+    "s61",
+    "s63",
+    "s64"
+   ],
+   "remaining_gap": "Gleason, Houston, Korzeniewski current status after 2024 unconfirmed; no birth or start years published for Menne"
+  },
+  {
+   "id": "q2",
+   "question": "Other V3 authors, Rennie, Stevens and current team",
+   "status": "answered",
+   "source_ids": [
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s32",
+    "s33",
+    "s34",
+    "s35",
+    "s36",
+    "s37",
+    "s38",
+    "s39"
+   ],
+   "remaining_gap": "Kristy Thomas, Steven Anthony, Ron Ray: no records found"
+  },
+  {
+   "id": "q3",
+   "question": "Team size, succession plans, GAO/OIG, departures since 2024",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s6",
+    "s7",
+    "s10",
+    "s11"
+   ],
+   "remaining_gap": "Commerce 2026 staffing framework not read (403)"
+  },
+  {
+   "id": "q4",
+   "question": "Datzilla, source integration, code sharing, CISESS staff",
+   "status": "uncertain",
+   "source_ids": [
+    "s3",
+    "s4",
+    "s5",
+    "s8",
+    "s9"
+   ],
+   "remaining_gap": "No page names who reviews Datzilla tickets or integrates sources; code-on-request policy not published"
+  },
+  {
+   "id": "q5",
+   "question": "Retirement-eligibility estimates under FERS",
+   "status": "answered",
+   "source_ids": [
+    "s65",
+    "s66"
+   ],
+   "remaining_gap": "Estimates only; service computation dates and ages not public"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-003_TMC_FY_2026_SECURED-1.pdf",
+   "fetched_url": null,
+   "title": "Top Management and Performance Challenges Facing the Department of Commerce, FY 2026 (OIG-26-003)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/oig_26_003_tmc.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "No NCEI-specific content; NWS-only workforce data.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.noaa.gov/organization/administration/nao-202-1103-noaa-workforce-planning-policy",
+   "fetched_url": null,
+   "title": "NAO 202-1103: NOAA Workforce Planning Policy",
+   "author_org": "NOAA",
+   "published": "2007-10-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nao_202_1103.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "NOAA-wide policy from 2007; says nothing about NCEI products.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+   "fetched_url": null,
+   "title": "README FILE FOR DAILY GLOBAL HISTORICAL CLIMATOLOGY NETWORK (GHCN-DAILY)",
+   "author_org": "NOAA NCEI",
+   "published": "undated (current file)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ghcnd_readme.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Absence of a code statement is not proof the code is internal.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/status.txt",
+   "fetched_url": null,
+   "title": "Status of the Global Historical Climatology Network-daily",
+   "author_org": "NOAA NCEI",
+   "published": "2026-10-01 (latest entry)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ghcnd_status.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Names no staff; does not say who integrates sources.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://ncics.org/about/annual-reports/",
+   "fetched_url": null,
+   "title": "Annual Reports :: North Carolina Institute for Climate Studies",
+   "author_org": "NC State University NCICS",
+   "published": "undated (current page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch extract (curl to ncics.org refused by sandbox); no local copy.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.ncdc.noaa.gov/ghcn-daily-references",
+   "fetched_url": null,
+   "title": "Global Historical Climate Network Daily - References (archived 2021-03-18)",
+   "author_org": "NOAA NCEI (formerly NCDC)",
+   "published": "captured 2021-03-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ghcnd_references_wayback.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2021 capture of a retired ncdc.noaa.gov page; may not reflect 2025-2026 staffing; may list only leads, not all contributors.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://avlwatchdog.org/it-is-a-dark-time-trump-cuts-deeply-into-staff-of-asheville-scientists-who-maintain-worlds-largest-archive-of-environmental-records/",
+   "fetched_url": null,
+   "title": "'It is a dark time' — Trump cuts deeply into staff of Asheville scientists who maintain crucial archive of environmental records",
+   "author_org": "Tom Fiedler, Asheville Watchdog",
+   "published": "early March 2025 (article refers to the Feb. 28 departures as 'last Friday' and to the President's report to Congress 'on Tuesday night')",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/avlwatchdog_dark_time.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Anonymous sources; names no GHCN-Daily staff; later Watchdog piece (Aug 2025, used in noaa-ncei-threats run) gives 58 departures.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://cisess.umd.edu/assets/1/7/Weekly_Updates-Sept26_FINAL.pdf",
+   "fetched_url": null,
+   "title": "NCICS Weekly Report (9/22/25-9/26/25), memo to NCEI Chief of Staff",
+   "author_org": "Otis Brown, Director, NCICS (CISESS NC)",
+   "published": "2025-09-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cisess_weekly_sept26.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "The '(NCEI)' tag may refer to the group or only Rennie; one week's report; weekly reports for other weeks not read.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://repository.library.noaa.gov/",
+   "fetched_url": null,
+   "title": "NESDIS Data Stewardship Maturity Report DSMR-00227 for GHCN-Daily Version 3 (2021)",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/dsmr_00227.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2021 assessment; the URL here is the NOAA repository root (exact URL in the pt3 run's record); state may have changed since.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://www.commerce.gov/sites/default/files/2026-01/Workforce%20Prioritization%20%26%20Staffing%20Plan%20Framework.pdf",
+   "fetched_url": null,
+   "title": "Workforce Prioritization & Annual Staffing Plan Framework (Commerce OHRM, Jan 2026)",
+   "author_org": "U.S. Department of Commerce, Office of Human Resources Management",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "PDF returned HTTP 403 to fetch_page and WebFetch; snippet only, quoted from search tool summary.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://repository.library.noaa.gov/view/noaa/71485/noaa_71485_DS1.pdf",
+   "fetched_url": null,
+   "title": "Global Climate [in State of the Climate in 2024], Bull. Amer. Meteor. Soc., 106 (8), S11-S172",
+   "author_org": "Blunden, J. and J. Reagan, Eds. (BAMS / NOAA NCEI)",
+   "published": "2025-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_71485_soc.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Only first 30 of many pages converted; affiliation lists reflect manuscript time, not departure status after Aug 2025.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C01688.xml",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network-hourly (GHCNh), Version 1 - ISO metadata record C01688",
+   "author_org": "NOAA NCEI",
+   "published": "2023 (citation date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ghcnh_C01688_iso.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "GHCNh, not GHCN-Daily; ORCIDs as xlink hrefs; NCEI geoportal HTML version returned HTTP 503",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-2549-1489/employments",
+   "fetched_url": null,
+   "title": "ORCID employments, Scott E. Stevens (0000-0002-2549-1489)",
+   "author_org": "ORCID (self-asserted)",
+   "published": "undated record",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_stevens_employments.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Self-asserted ORCID; no entry after 2024 listed; OpenAlex records in oa_stevens_search.json and oa_stevens_works_asc.json",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://pub.orcid.org/v3.0/0009-0001-7709-889X/employments",
+   "fetched_url": null,
+   "title": "ORCID employments, Nancy W. Casey (0009-0001-7709-889X)",
+   "author_org": "ORCID (self-asserted)",
+   "published": "undated record",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_casey_employments.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Self-asserted; OpenAlex author search for Casey not run",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-3316-9668/employments",
+   "fetched_url": null,
+   "title": "ORCID employments, Jared Rennie (0000-0002-3316-9668)",
+   "author_org": "ORCID (self-asserted)",
+   "published": "undated record",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_rennie_employments.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "ORCID not updated for any federal move; OpenAlex earliest works file oa_rennie_works_asc.json",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-3775-6587/employments",
+   "fetched_url": null,
+   "title": "ORCID employments, Xungang Yin (0000-0002-3775-6587)",
+   "author_org": "ORCID (NOAA-asserted via ORCID Member Portal, 2024-12-13)",
+   "published": "2024-12-13 (last modified)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_yin_employments.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "No dates on employment entries; OpenAlex files oa_yin_search.json, oa_yin_works_asc.json",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://api.openalex.org/authors?search=Shelley%20McNeill",
+   "fetched_url": null,
+   "title": "OpenAlex author record, Shelley McNeill (A5034735284), and works list",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_mcneill_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "OpenAlex lists 8 works but returned 4 in works query; V3 dataset authorship (2012) not in OpenAlex works; ORCID employments empty (orcid_mcneill_employments.notjson.txt)",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://api.datacite.org/dois/10.7289/V5D21VHZ",
+   "fetched_url": null,
+   "title": "DataCite record for GHCN-Daily Version 3 (doi:10.7289/V5D21VHZ)",
+   "author_org": "NOAA NCDC via DataCite",
+   "published": "2012",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/datacite_V5D21VHZ.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Extraction of the DataCite record by an earlier run",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://www.weather.gov/media/climateservices/CPASW/2023/Tuesday/Menne-GHCNdaily-CPASW2023.pdf",
+   "fetched_url": null,
+   "title": "GHCN-Daily talk, CPASW 2023 (Menne et al.)",
+   "author_org": "NOAA NCEI",
+   "published": "2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/menne_ghcnd_cpasw2023.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Asterisk meaning not read in this run",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.ncei.noaa.gov/2026-industry-partnerships-summit",
+   "fetched_url": null,
+   "title": "2026 Industry Partnerships Summit | NCEI",
+   "author_org": "NOAA NCEI",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_2026_summit.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Exact event date not extracted; role on GHCN-Daily not stated: NOT PRESENT",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://cisess.umd.edu/assets/1/7/Weekly_Updates-Nov14_FINAL.pdf",
+   "fetched_url": null,
+   "title": "CISESS weekly updates, Nov 14 (NCICS section)",
+   "author_org": "CISESS (UMD/NCICS)",
+   "published": "2025-11 (per search; year not confirmed in text read)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cisess_weekly_nov14.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Only matched lines read",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://api.openalex.org/authors?search=Jared%20Rennie",
+   "fetched_url": null,
+   "title": "OpenAlex author search, Jared Rennie",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_rennie_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://api.openalex.org/works?filter=author.id:A5076810549&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Jared Rennie",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_rennie_works_asc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://api.openalex.org/authors?search=Scott%20E.%20Stevens",
+   "fetched_url": null,
+   "title": "OpenAlex author search, Scott E. Stevens",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_stevens_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://api.openalex.org/works?filter=author.id:A5090865265&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Scott E. Stevens",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_stevens_works_asc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Possible name collision for 2002 work not checked",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://api.openalex.org/authors?search=Xungang%20Yin",
+   "fetched_url": null,
+   "title": "OpenAlex author search, Xungang Yin",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_yin_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://api.openalex.org/works?filter=author.id:A5103507069&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Xungang Yin",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_yin_works_asc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Affiliation of 1998 work not checked",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://api.openalex.org/works?filter=author.id:A5034735284&sort=publication_year:asc&per_page=8",
+   "fetched_url": null,
+   "title": "OpenAlex works, Shelley McNeill",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_mcneill_works_asc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://api.openalex.org/authors?search=Diana%20Kantor",
+   "fetched_url": null,
+   "title": "OpenAlex author search, Diana Kantor",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_kantor_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://api.openalex.org/works?filter=author.id:A5124815165&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works, Diana Kantor",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_kantor_works_asc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://api.openalex.org/works?search=Global%20Historical%20Climatology%20Network&filter=from_publication_date:2023-01-01,authorships.institutions.id:I4210157891",
+   "fetched_url": null,
+   "title": "OpenAlex works search, GHCN with NCEI authors, 2023 on",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_ghcn_ncei_2023on.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Only first 25 of 64 read; no Applequist per-person lookup done",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://api.openalex.org/authors?search=Scott%20Applequist",
+   "fetched_url": null,
+   "title": "OpenAlex author search, Scott Applequist",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_applequist_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://api.openalex.org/works?filter=author.id:A5044244834&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Scott Applequist",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_applequist_works_asc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "1997 work affiliation not checked for collision",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://pub.orcid.org/v3.0/0009-0006-2721-0800/employments",
+   "fetched_url": null,
+   "title": "ORCID employments, Scott Applequist (0009-0006-2721-0800)",
+   "author_org": "ORCID",
+   "published": "undated record",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_applequist_employments.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Self/NOAA-asserted; month and day not read",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://api.openalex.org/authors?search=Karen%20Orcutt",
+   "fetched_url": null,
+   "title": "OpenAlex author search, Karen Orcutt",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_orcutt_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Aggregator",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://api.openalex.org/works?filter=author.id:A5008482079&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Karen M. Orcutt",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_orcutt_works_asc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "1960/1964 years are OpenAlex dataset artifacts",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://api.openalex.org/works?filter=author.id:A5090865265&sort=publication_year:desc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex latest works, Scott E. Stevens",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_stevens_works_desc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Top 5 only",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://api.openalex.org/works?filter=author.id:A5076810549&sort=publication_year:desc&per_page=8",
+   "fetched_url": null,
+   "title": "OpenAlex latest works, Jared Rennie",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_rennie_works_desc.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Top 8 only; affiliations not read",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://api.openalex.org/works?search=GHCN%20daily&filter=from_publication_date:2023-01-01,authorships.institutions.id:I4210157891",
+   "fetched_url": null,
+   "title": "OpenAlex works search, GHCN daily with NCEI authors, 2023 on",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (retrieved)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_ghcndaily_ncei_2023on.json",
+   "retrieved": "2026-11-23",
+   "limitations": "OpenAlex text search; authors of these 10 not read",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-5689-3846/activities",
+   "fetched_url": null,
+   "title": "ORCID public record (activities): Imke Durre, 0000-0001-5689-3846",
+   "author_org": "ORCID (self-entered by Imke Durre)",
+   "published": "employment entries created 2025-08-27, last modified 2025-09-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-durre-orcid",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_durre_activities.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Self-entered record; the end date does not say why she left (retirement, deferred resignation, transfer) or where she went. Saved as .notjson.txt (ORCID returned XML).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://api.openalex.org/authors?search=Matthew%20Menne&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Matthew Menne",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-menne-oa-author",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_menne_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "OpenAlex author records can merge or split people.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://api.openalex.org/works?filter=author.id:A5025236587&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works by Matthew J. Menne, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-menne-oa-earliest",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_menne_works.json",
+   "retrieved": "2026-11-23",
+   "limitations": "1991 item has no affiliation; it may or may not be the same person (C.A.W.A.P. is a crop/agriculture data report).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://api.openalex.org/authors?search=Imke%20Durre&per_page=3",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Imke Durre",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-durre-oa-author",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_durre_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "last_known_institutions is derived from papers, not a current-employment record.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://api.openalex.org/works?filter=author.id:A5062803068&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works by Imke Durre, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-durre-oa-earliest",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_durre_works.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Affiliations not selected in this request; 1993 and 1999 items unverified as hers.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s45",
+   "url": "https://api.openalex.org/authors?search=Russell%20Vose&per_page=3",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Russell Vose",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-vose-oa-author",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_vose_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Derived record.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://api.openalex.org/works?filter=author.id:A5067810956&sort=publication_year:asc&per_page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works by Russell S. Vose, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-vose-oa-earliest",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_vose_works.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Affiliation of the 1990 paper not checked (not selected in request).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://api.openalex.org/authors?search=Byron%20Gleason&per_page=3",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Byron Gleason",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-gleason-oa-author",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_gleason_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Split author record.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s48",
+   "url": "https://api.openalex.org/works?filter=author.id:A5111947040|A5112276481&sort=publication_year:asc&per_page=4",
+   "fetched_url": null,
+   "title": "OpenAlex works by Byron E. Gleason (both records), oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-gleason-oa-earliest",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_gleason_works.json",
+   "retrieved": "2026-11-23",
+   "limitations": "1997/1999 items unverified as the same person (affiliations not selected).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://api.openalex.org/authors?search=Tamara%20Houston&per_page=3",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Tamara Houston",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-houston-oa-author",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_houston_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Derived record.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s50",
+   "url": "https://api.openalex.org/works?filter=author.id:A5009917272&sort=publication_year:asc&per_page=4",
+   "fetched_url": null,
+   "title": "OpenAlex works by Tamara G. Houston, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-houston-oa-earliest",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_houston_works.json",
+   "retrieved": "2026-11-23",
+   "limitations": "OpenAlex coverage of NCDC technical reports before 2006 may be incomplete; 2006 is the earliest indexed, not necessarily her first.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s51",
+   "url": "https://api.openalex.org/authors?search=Bryant%20Korzeniewski&per_page=3",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Bryant Korzeniewski",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-korz-oa-author",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_korzeniewski_search.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Derived record.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://api.openalex.org/works?filter=author.id:A5001807221&sort=publication_year:asc&per_page=8",
+   "fetched_url": null,
+   "title": "OpenAlex works by Bryant Korzeniewski, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-korz-oa-earliest",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_korzeniewski_works.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Only 1 of 8 counted works returned (the other 7 are likely datasets like GHCN-Daily V3 2012 and IGRA indexed under other IDs); earliest year therefore unknown from this record.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://api.openalex.org/works?filter=author.id:A5025236587|A5062803068|A5067810956|A5111947040|A5009917272|A5001807221,publication_year:2024-2026&sort=publication_year:desc&per_page=25",
+   "fetched_url": null,
+   "title": "OpenAlex 2024-2026 works by the six q1 people",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-q1-oa-recent",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_q1_recent.json",
+   "retrieved": "2026-11-23",
+   "limitations": "Paper affiliations reflect the time of writing; BAMS State of the Climate 2024 (pub. 2025) was written before Durre's ORCID end date of 2025-04-30.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-6669-3319/activities",
+   "fetched_url": null,
+   "title": "ORCID public record (activities): Russell Vose, 0000-0002-6669-3319",
+   "author_org": "ORCID (self-entered by Russell Vose)",
+   "published": "employment entry created 2017-02-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-vose-orcid",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_vose_activities.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Self-entered in 2017; not updated since; no education years.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s55",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-9725-248X/activities",
+   "fetched_url": null,
+   "title": "ORCID public record (activities): Matthew J. Menne, 0000-0001-9725-248X",
+   "author_org": "ORCID",
+   "published": "peer reviews 2020-2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-menne-orcid",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_menne_activities.notjson.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Empty sections.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://www.weather.gov/media/climateservices/CPASW/2024/Wednesday/5-Wed-Session7-Houston.pdf",
+   "fetched_url": null,
+   "title": "The Value of Environmental Information from NOAA's NCEI (CPASW 2024 slides)",
+   "author_org": "Tamara Houston, Glenn Kerr, Michael Brewer, NCEI",
+   "published": "2024-03-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-houston-cpasw2024",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/houston_cpasw2024.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Slides give no job title or start year.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://search.asu.edu/profile/10976/cv",
+   "fetched_url": null,
+   "title": "Randall S. Cerveny Vita (Arizona State University)",
+   "author_org": "Randall S. Cerveny, Arizona State University",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-vose-asu-phd",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/asu_cerveny_cv.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Faculty CV, not a university record; the table is not in date order and the year may be a typo (Vose published GHCN work from 1992). Treat as a lead.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://southernclimate.org/team/russell-vose",
+   "fetched_url": null,
+   "title": "Russell Vose (SCIPP team page)",
+   "author_org": "Southern Climate Impacts Planning Program, University of Oklahoma",
+   "published": "undated (footer copyright 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-vose-scipp",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-23",
+   "limitations": "Read via WebFetch (sandbox refused southernclimate.org for curl; host not approved); undated, pre-2015 title (NCDC).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://www.ncei.noaa.gov/access/monitoring/monthly-report/briefings/2025-01-10.pdf",
+   "fetched_url": null,
+   "title": "NOAA/NASA Annual Global Analysis for 2024 (briefing slides)",
+   "author_org": "Gavin A. Schmidt (NASA GISS), Russell S. Vose (NOAA NCEI)",
+   "published": "2025-01 (file dated 2025-01-10)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-vose-briefing-2025",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/vose_briefing_2025-01-10.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Only first 2 pages converted to text.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://www.ncei.noaa.gov/monitoring-content/extremes/scec/reports/20251219-Wisconsin-24-Hour-Precipitation.pdf",
+   "fetched_url": null,
+   "title": "State Climate Extremes Committee memorandum, Wisconsin 24-hour precipitation (2025-12-19)",
+   "author_org": "NOAA NCEI",
+   "published": "2025-12-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-scec-2025-gleason",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/scec_20251219_wisconsin.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Shows section-level role change, not Vose's departure; his 2026 papers still list NCEI.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s61",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/papers/menne-etal2012.pdf",
+   "fetched_url": null,
+   "title": "An Overview of the Global Historical Climatology Network-Daily Database (JTECH 29, July 2012)",
+   "author_org": "Menne, Durre, Vose, Gleason, Houston, NCDC",
+   "published": "2012-07",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-ghcnd-2012-identity",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/3c0286c994da4a8d.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Korzeniewski is not an author of this paper; he is in the V3 dataset citation (readme) only.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s62",
+   "url": "https://www.nesdis.noaa.gov/s3dl?path=%2Fs3%2F2023-02%2FNCEI_Org_Chart_Feb_2023.pdf",
+   "fetched_url": null,
+   "title": "NOAA NCEI Org Chart, February 2023",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "2023-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-orgchart-2023",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_org_chart_2023.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2023 snapshot; Menne, Gleason (Byron), Houston, Korzeniewski not shown (non-supervisory).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://star.nesdis.noaa.gov/star/news2016_201606_GoldMedal.php",
+   "fetched_url": null,
+   "title": "STAR Pryor and Smith Honored with DOC Gold Medals (27 June 2016)",
+   "author_org": "NOAA NESDIS STAR",
+   "published": "2016-06-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-doc-gold-2016",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/star_goldmedal_2016.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Team award; no career dates.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://api.openalex.org/works?filter=author.id:A5111947040|A5112276481|A5001807221|A5009917272&sort=publication_year:desc&per_page=8",
+   "fetched_url": null,
+   "title": "OpenAlex latest works by Byron E. Gleason, Bryant Korzeniewski, Tamara G. Houston",
+   "author_org": "OpenAlex",
+   "published": "2026-11-23 (live API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-gkh-oa-latest",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_gleason_korz_houston_latest.json",
+   "retrieved": "2026-11-23",
+   "limitations": "OpenAlex indexes journal papers; dataset authorships after 2020 may be missing. Contractor employer as of 2020 only.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s65",
+   "url": "https://www.opm.gov/retirement-center/fers-information/eligibility/",
+   "title": "FERS Information: Eligibility",
+   "author_org": "U.S. Office of Personnel Management",
+   "published": null,
+   "retrieved": "2026-11-23",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/opm-gov-retirement-center-fers-information-eligibility_140849.txt",
+   "data_period": "current",
+   "evidence_id": null,
+   "limitations": "General rules; individual service computation dates not public"
+  },
+  {
+   "id": "s66",
+   "url": "https://www.opm.gov/retirement-center/csrs-information/eligibility/",
+   "title": "CSRS Information: Eligibility",
+   "author_org": "U.S. Office of Personnel Management",
+   "published": null,
+   "retrieved": "2026-11-23",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/opm-gov-retirement-center-csrs-information-eligibility_140904.txt",
+   "data_period": "current",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s67",
+   "url": "https://html.duckduckgo.com/html/?q=Imke%20Durre%20NOAA%20NCEI%202025",
+   "title": "DuckDuckGo results: Imke Durre NOAA NCEI 2025 (LinkedIn snippet)",
+   "author_org": "DuckDuckGo / LinkedIn snippet",
+   "published": null,
+   "retrieved": "2026-11-23",
+   "access_level": "snippet",
+   "read_via": null,
+   "source_type": "aggregator",
+   "local_file": null,
+   "evidence_id": null,
+   "limitations": "LinkedIn profile behind sign-in; snippet only"
+  },
+  {
+   "id": "s68",
+   "url": "https://html.duckduckgo.com/html/?q=Jared%20Rennie%20NCEI%202026",
+   "title": "DuckDuckGo results: Jared Rennie NCEI 2026 (LinkedIn snippet)",
+   "author_org": "DuckDuckGo / LinkedIn snippet",
+   "published": null,
+   "retrieved": "2026-11-23",
+   "access_level": "snippet",
+   "read_via": null,
+   "source_type": "aggregator",
+   "local_file": null,
+   "evidence_id": null,
+   "limitations": "snippet only"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "Imke Durre, GHCN-Daily co-principal investigator and NCEI Products Section Chief, left NCEI: her ORCID record ends her NCEI employment on 2025-04-30 and lists no later employer; no page says why.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "<common:department-name>Atmospheric Sciences</common:department-name> | <common:role-title>Ph.D.</common:role-title> | <common:start-date> <common:year>1994</common:year> <common:month>09</common:month> <common:day>19</common:day> | <common:end-date> <common:year>2000</common:year> <common:month>12</common:month> <common:day>15</common:day> … <common:name>University of Washington</common:name> … <common:department-name>Applied Mathematics, concentration in Geology and Geophysics</common:department-name> … <common:year>1991</common:year> … <common:year>1994</common:year> … <common:name>Yale University</common:name> … <common:department-name>Climate Science and Services Division</common:department-name> | <common:role-title>Supervisory Physical Scientist / Products Section Chief</common:role-title> | <common:start-date> <common:year>2017</common:year> <common:month>06</common:month> <common:day>26</common:day> | <common:end-date> <common:year>2025</common:year> <common:month>04</common:month> <common:day>30</common:day> | <common:name>NOAA National Centers for Environmental Information</common:name> | <common:city>Asheville</common:city> … <common:created-date>2025-08-27T23:45:10.563Z</common:created-date> … <common:role-title>Physical Scientist</common:role-title> | <common:start-date> <common:year>2001</common:year> <common:month>07</common:month> <common:day>30</common:day> | <common:end-date> <common:year>2017</common:year> <common:month>06</common:month> <common:day>25</common:day> | <common:name>NOAA National Centers for Environmental Information</common:name> … <common:title>Understanding Tropospheric Climate Change of the Last 50 Years</common:title> … <common:year>2000</common:year> <common:month>10</common:month> … <common:year>2001</common:year> <common:month>07</common:month> … <common:name>National Research Council</common:name>",
+     "location": "educations (lines 20-84), employments (lines 88-170), fundings (lines 171-202)"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "contextualizes",
+     "passage": "Climatic Analysis & Synthesis Br … Russell Vose … Products Section                                                     Monitoring Section … Imke Durre                                                          Karin Gleason",
+     "location": "lines 14-21"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "self-entered ORCID dates; consistent with past-tense LinkedIn snippet; reason not published",
+   "figure_status": "actual",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c2",
+   "text": "Matthew J. Menne is still at NCEI (2026 SSOD V2 dataset, 2025 ERSSTv6 paper) and is the only federal technical contact NCEI has named for GHCN-Daily; the 2021 references page names a two-person team, Menne and Korzeniewski.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "\"title\": \"Synoptic Summary of the Day (SSOD), Version 2\", | \"publication_year\": 2026, | \"doi\": \"https://doi.org/10.25921/w1sf-8728\", … \"display_name\": \"Matthew J. Menne\", … \"raw_author_name\": \"Menne, Matthew\", | \"raw_affiliation_strings\": [ | \"NOAA National Centers for Environmental Information\" … \"title\": \"Global Climate\", | \"publication_year\": 2025, … \"raw_author_name\": \"Imke Durre\", | \"raw_affiliation_strings\": [ | \"Climate Science and Services Division, NOAA/NESDIS National Centers for Environmental Information, Asheville, North Carolina\" … \"title\": \"Extended Reconstructed Sea Surface Temperature, Version 6 (ERSSTv6). Part II: Upgrades on Quality Control and Large-Scale Filter\", | \"publication_year\": 2025, … \"raw_author_name\": \"Matthew Menne\", | \"raw_affiliation_strings\": [ | \"NOAA/NCEI, Asheville, North Carolina\" … \"title\": \"The Regional Climate Center Program—Past, Present, and Future: Reflections from 40 Years of Regional Climate Services\", | \"publication_year\": 2024, … \"raw_author_name\": \"Tamara G. Houston\", | \"raw_affiliation_strings\": [ | \"NOAA/National Centers for Environmental Information, Asheville, North Carolina\",",
+     "location": "lines 835-873, 5787-9169, 15640-15941, 27783-28149"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "## Contacts | The GHCN-Daily team includes Matt Menne, and Bryant Korzeniewski. | - For Technical questions regarding GHCN-Daily data, please contact Matt Menne.",
+     "location": "Contacts section, text lines 46-50"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5025236587\", | \"orcid\": \"https://orcid.org/0000-0001-9725-248X\", | \"display_name\": \"Matthew J. Menne\", | \"works_count\": 89,",
+     "location": "results[0], lines 30-48"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "team statement is from a 2021 archived page; no current team page names staff",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c3",
+   "text": "Much of the named hands-on GHCN team are Riverside Technology contractors, not federal staff: Korzeniewski (2020 paper), Nancy Casey (ORCID, from 2019) and Shelley McNeill (OpenAlex institutions).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s64",
+     "relationship": "supports",
+     "passage": "\"title\": \"Quality Control and Processing of Cooperative Observer Program Hourly Precipitation Data\", | \"publication_year\": 2020, … \"display_name\": \"Bryant Korzeniewski\", … \"raw_author_name\": \"Bryant Korzeniewski\", … \"raw_affiliation_string\": \"d Riverside Technology Inc. at NOAA/NCEI, Asheville, North Carolina\", … \"title\": \"Uncertainty Estimates for Sea Surface Temperature and Land Surface Air Temperature in NOAAGlobalTemp Version 5\", | \"publication_year\": 2019, … \"display_name\": \"Byron E. Gleason\", … \"raw_author_name\": \"Byron E. Gleason\", … \"raw_affiliation_string\": \"a NOAA/National Centers for Environmental Information (NCEI), Asheville, North Carolina\",",
+     "location": "lines 559-901 (2020 paper), 1084-1381 (2019 paper), 53-430 (2024 paper)"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "<common:department-name>NOAA National Centers for Environmental Information</common:department-name> | <common:role-title>Scientific Programmer/Analyst</common:role-title> | <common:start-date> | <common:year>2019</common:year> | <common:name>Riverside Technology (United States)</common:name>",
+     "location": "lines 18-26"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "\"display_name\": \"Shelley McNeill\", | \"orcid\": \"https://orcid.org/0000-0001-8000-6813\", | \"works_count\": 8, | \"display_name\": \"National Oceanic and Atmospheric Administration\", | \"display_name\": \"Riverside Technology (United States)\", | \"display_name\": \"NOAA National Centers for Environmental Information\",",
+     "location": "lines 31-59"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "contextualizes",
+     "passage": "hourly (GHCNh) dataset | Matt Menne, Shelley McNeill*, Nancy Casey, Diana | Kantor | NOAA/NCEI",
+     "location": "lines 3-6"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "contextualizes",
+     "passage": "Menne, Matthew J. | NOAA National Centers for Environmental Information | Physical Scientist | Noone, Simon | National University of Ireland Maynooth | Casey, Nancy W. | NOAA National Centers for Environmental Information | Dunn, Robert H. | UK Met Office Hadley Centre | McNeill, Shelley | NOAA National Centers for Environmental Information | Kantor, Diana | NOAA National Centers for Environmental Information | Thorne, Peter W. | National University of Ireland Maynooth | Orcutt, Karen | NOAA National Centers for Environmental Information | Cunningham, Sam | NOAA National Centers for Environmental Information | Risavi, Nicholas | NOAA National Centers for Environmental Information | GHCNh Group Account | ncei.ghcnh@noaa.gov",
+     "location": "lines 131-302"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "affiliation strings and ORCID; McNeill's contractor status rests on OpenAlex institution list only",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c4",
+   "text": "No NOAA, NESDIS or NCEI succession or knowledge-transfer plan for GHCN-Daily is published; NOAA's 2007 workforce-planning order treats succession plans as an optional strategy.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Issued 10/09/07; Effective 09/28/07; Reviewed Last: In Process … d. Implement strategies to close gaps. The WFMO may aid LO/SOs with strategy identification and implementation. Possible strategies include: … - planning for the retention of employees with critical skills; | - succession plans to fill key positions;",
+     "location": "header line 15; Section 7.d, lines 117-122"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "absence of evidence after required searches; internal plans may exist unpublished",
+   "sole_source_reason": "NOAA's own administrative order is the authority for its workforce-planning policy"
+  },
+  {
+   "id": "c5",
+   "text": "Commerce OIG's FY2026 management challenges and GAO's NOAA workforce reports cover NWS, ships and aircraft; none addresses NCEI.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "NWS’s ongoing workforce challenges have been exacerbated by the unplanned departure of | approximately 13 percent of its 4,369 employees between January and April 2025. According to | NWS leadership, the loss of these 564 employees has led to staffing gaps across the agency",
+     "location": "p. 12, section 'Sustaining NOAA’s Capabilities to Safeguard Lives and Property' (text lines 655-657)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "OIG report read in full; GAO by search only",
+   "sole_source_reason": "the OIG's own report is the authority for what it covers"
+  },
+  {
+   "id": "c6",
+   "text": "On Feb. 28, 2025, 20 NCEI employees (about 10% of authorized staff) left, including two retirement-eligible senior scientists and nine deferred resignations; no GHCN-Daily staff were named.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Twenty employees of the National Centers for Environmental Information (NCEI) — about 10 percent of the Center’s authorized staff — were fired or enticed to leave on Feb. 28 … Two others who left that day were “retirement eligible” senior scientists, and the remaining nine others had accepted Musk’s offer of a “deferred resignation,”",
+     "location": "paragraphs 2-4 (text lines 12-16)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "single local news source",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c7",
+   "text": "GHCN-Daily's processing is not public or configuration-managed: NOAA's 2021 stewardship review says it is not under configuration management; no code was found on code.noaa.gov or GitHub, and the readme names only a group mailbox and Datzilla flags.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Level 2.75 | Product information is available in literature: … Transparency /         GHCN-D is not currently under Configuration Management. | Traceability | DOI assigned:10.7289/V5D21VHZ",
+     "location": "Table 3, p. 14 (text lines 464-471); rubric row lines 717-732"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Z     = flagged as a result of an official Datzilla | investigation … Z     = Datzilla official additions or replacements … For additional information, please send an e-mail to ncdc.ghcnd@noaa.gov.",
+     "location": "readme.txt lines 351-352, 419, 644"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "2021 review; code search negative",
+   "sole_source_reason": "NOAA's own maturity review and readme are the authority on its documentation"
+  },
+  {
+   "id": "c8",
+   "text": "New sources were still being added in 2024-2026 (v3.31 to v3.35), and in a funding lapse GHCN-Daily updates automatically without staff monitoring.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "October 1, 2026 | Version 3.35 is released.  Version 3.35 resumes updates for Environment Canada | stations … In the event of a lapse in funding for the U.S. Department of | Commerce, GHCN-Daily will continue to update automatically | (subject to the availability of data input sources and | IT resouces), but will not be monitored by employees.",
+     "location": "status.txt lines 4-6 and 130-134 (Dec 21, 2018 entry)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own status file",
+   "sole_source_reason": "NCEI's own status file"
+  },
+  {
+   "id": "c9",
+   "text": "Russell S. Vose is at NCEI as Chief, Monitoring and Assessment Branch (Jan 2025) and on 2026 papers; ORCID gives NCEI from 2000, earliest OpenAlex work 1990, first GHCN work 1992.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "NOAA/NASA | Annual Global Analysis for 2024 | Gavin A. Schmidt                   Russell S. Vose | Director, NASA Goddard Institute   Chief, Monitoring and Assessment Branch, | for Space Studies                  NOAA’s National Centers for Environmental | Information | January 2025",
+     "location": "slide 1 (only pages 1-2 converted)"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "<common:source-name>Russell Vose</common:source-name> | </common:source> | <common:start-date> | <common:year>2000</common:year> | </common:start-date> | <common:organization> | <common:name>NOAA National Centers for Environmental Information</common:name> | <common:address> | <common:city>Asheville</common:city> | <common:region>NC</common:region>",
+     "location": "employments, lines 6-39"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "\"title\": \"Detection of Climatic Change in the Western North American Arctic Using a Synoptic Climatological Approach\", | \"publication_year\": 1990, … \"title\": \"The global historical climatology network: Long-term monthly temperature, precipitation, and pressure data\", | \"publication_year\": 1992, … \"title\": \"The Global Historical Climatology Network: Long-Term Monthly Temperature, Precipitation, Sea Level Pressure, and Station Pressure Data\", | \"publication_year\": 1992, | \"doi\": \"https://doi.org/10.3334/cdiac/cli.ndp041\"",
+     "location": "results[0]-[2], lines 36-50"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5067810956\", | \"display_name\": \"Russell S. Vose\", | \"orcid\": \"https://orcid.org/0000-0002-6669-3319\", | \"works_count\": 193, … \"display_name\": \"NOAA National Centers for Environmental Information\",",
+     "location": "results[0], lines 30-61"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "ORCID, OpenAlex and NCEI document agree",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c10",
+   "text": "Estimated retirement eligibility (estimates): Vose likely already eligible; Menne possibly eligible within 2 years depending on whether his 1991 work is his; Gleason uncertain and unconfirmed as still at NCEI; Houston, Yin, Applequist, Rennie unlikely within 2 years under the stated rules; Korzeniewski, Casey and McNeill are contractors outside FERS.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s65",
+     "relationship": "contextualizes",
+     "passage": "In 1970 and after\t57",
+     "location": "MRA table"
+    },
+    {
+     "source_id": "s65",
+     "relationship": "contextualizes",
+     "passage": "62\t5 | 60\t20 | MRA\t30 | MRA\t10",
+     "location": "Immediate Retirement table"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "\"title\": \"C.A.W.A.P., 1990 Crop Season Climatic Data\", | \"publication_year\": 1991, … \"raw_affiliation_strings\": [], … \"title\": \"Quality assurance of temperature observations at the National Climatic Data Center\", | \"publication_year\": 2000, … \"raw_affiliation_string\": \"NOAA/NCDC\", … \"title\": \"Using the Special Sensor Microwave Imager to Monitor Surface Wetness\", | \"publication_year\": 2001, … \"raw_affiliation_string\": \"National Climatic Data Center, NOAA/NESDIS, Asheville, North Carolina ϩ\",",
+     "location": "results[0]-[2], lines 36-209"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "\"title\": \"Detection of Climatic Change in the Western North American Arctic Using a Synoptic Climatological Approach\", | \"publication_year\": 1990, … \"title\": \"The global historical climatology network: Long-term monthly temperature, precipitation, and pressure data\", | \"publication_year\": 1992, … \"title\": \"The Global Historical Climatology Network: Long-Term Monthly Temperature, Precipitation, Sea Level Pressure, and Station Pressure Data\", | \"publication_year\": 1992, | \"doi\": \"https://doi.org/10.3334/cdiac/cli.ndp041\"",
+     "location": "results[0]-[2], lines 36-50"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "\"title\": \"An analysis of radar estimated precipitation to rain gauge measurements\", | \"publication_year\": 1997, … \"title\": \"Spatial heterogeneity of albedo over a snow‐covered agricultural landscape\", | \"publication_year\": 1999, … \"title\": \"Revised U.S. Climate Change Indices\", | \"publication_year\": 2001,",
+     "location": "results[0]-[2], lines 44-59"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "\"title\": \"Hurricane Katrina : a climatological perspective : preliminary report\", | \"publication_year\": 2006, … \"title\": \"Freezing rain events: a major weather hazard in the conterminous US\", | \"publication_year\": 2006,",
+     "location": "results[0]-[1], lines 35-44"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "\"title\": \"The water balance of Lake Victoria\", | \"publication_year\": 1998",
+     "location": "lines 36-37"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "\"title\": \"Progress in Characterizing the Route to Geostrophic Turbulence and Redesigning Thermally Driven Rotating Annulus Experiments\", | \"publication_year\": 1997 | \"title\": \"Comparison of Methodologies for Probabilistic Quantitative Precipitation Forecasting*\", | \"publication_year\": 2002 | \"title\": \"U.S. climate normals: hourly-derived products\", | \"publication_year\": 2011",
+     "location": "lines 36-52"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "<common:department-name>Climatic Science and Services Division</common:department-name> | <common:role-title>Physical Scientist</common:role-title> | <common:year>2009</common:year> | <common:name>NOAA National Centers for Environmental Information</common:name>",
+     "location": "lines 130-137"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "\"title\": \"Implementing New Quality Control and Processing Systems for Hourly Precipitation Data\", | \"publication_year\": 2011, | \"title\": \"An overview of the Global Historical Climatology Network monthly mean temperature data set, version 3\", | \"publication_year\": 2011,",
+     "location": "lines 36-157"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "ages inferred from earliest publication year minus 25-30; service dates not public",
+   "figure_status": "estimate"
+  },
+  {
+   "id": "c11",
+   "text": "Xungang Yin is at NCEI but in the Coasts, Oceans & Geophysics Science Division (ORCID, Dec 2024); Scott E. Stevens left NCICS in 2021; Jared Rennie is at NCEI (federal since Oct 2021) but works on applications; Scott Applequist (NCEI since 2009) leads GHCN-Monthly precipitation v4.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "<common:last-modified-date>2024-12-13T18:04:31.336Z</common:last-modified-date> | <common:assertion-origin-name>National Oceanic and Atmospheric Administration (NOAA)</common:assertion-origin-name> | <common:department-name>Coasts, Oceans &amp; Geophysics Science Division</common:department-name> | <common:role-title>Physical Scientist</common:role-title> | <common:name>NOAA National Centers for Environmental Information</common:name> | <common:city>Ashville</common:city>",
+     "location": "lines 79-106"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "<common:department-name>Operations</common:department-name> | <common:role-title>Analytics Lead</common:role-title> | <common:year>2021</common:year> | <common:end-date> | <common:year>2024</common:year> | <common:name>Zipline International (United States)</common:name> | <common:department-name>North Carolina Institute for Climate Studies</common:department-name> | <common:role-title>Data Analyst</common:role-title> | <common:year>2010</common:year> | <common:year>2021</common:year> | <common:name>North Carolina State University</common:name>",
+     "location": "lines 18-70"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Jared Rennie, Physical Scientist, NOAA NCEI | Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products.",
+     "location": "lines 5, 36"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "\"title\": \"Regional Climates\", | \"publication_year\": 2026 | \"title\": \"The Lethal Connection: Investigating the Relationship of Drought Conditions on Firearm and Nonfirearm Suicides Among U.S. Adults\", | \"publication_year\": 2026 | \"title\": \"Compound drought and heatwave extreme weather events: Mortality risk in individuals with chronic respiratory disease\", | \"publication_year\": 2025",
+     "location": "lines 36-47"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "<common:department-name>Climatic Science and Services Division</common:department-name> | <common:role-title>Physical Scientist</common:role-title> | <common:year>2009</common:year> | <common:name>NOAA National Centers for Environmental Information</common:name>",
+     "location": "lines 130-137"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "\"count\": 64, | \"title\": \"The Global Historical Climatology Network Monthly Precipitation Dataset, Version 4\", | \"publication_year\": 2024, | \"display_name\": \"Scott Applequist\", | \"display_name\": \"Imke Durre\", | \"display_name\": \"Russell S. Vose\",",
+     "location": "lines 4-166"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "ORCID and OpenAlex records",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c12",
+   "text": "No CISESS NC annual report after 2022-2023 is published, so 2023-2026 CISESS staffing on GHCN-Daily is not documented.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "2022–2023 CISESS NC Annual Report … 2021–2022 CISESS NC Annual Report … 2020–2021 CISESS NC Annual Report",
+     "location": "list entries 1-3 of 25"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "index page",
+   "sole_source_reason": "the institute's own report index"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Is Jared Rennie federal NCEI staff or CICS/CISESS?",
+   "source_ids": [
+    "s15",
+    "s20"
+   ],
+   "status": "resolved",
+   "explanation": "ORCID lists only CICS-NC from 2010 (not updated); NCEI 2026 page and LinkedIn snippet give Physical Scientist, NOAA NCEI, joined NCEI October 2021."
+  }
+ ],
+ "coverage_gaps": [
+  "r4 GAO: no GAO report on NCEI or GHCN-Daily workforce found (2 queries); NOAA-specific GAO workforce findings are for hurricane hunters (GAO-25-107210), NWS aviation meteorologists (GAO-25-108597) and OMAO mariners (GAO-24-106958). GAO-26-108583 was already used by the pt4 run. (from sa3)",
+  "r5 Commerce OIG: OIG-26-003 (FY2026 challenges) covers NWS, ship and aircraft workforce only; NCEI NOT PRESENT. The July 17, 2025 OIG NWS staffing audit letters (Acting-IG-Letter-to-11-House-Members.pdf) not read. (from sa3)",
+  "r6: no NCEI or NESDIS succession or knowledge-transfer plan found; only NAO 202-1103 (2007) and a 2012 NOAA Workforce Succession Planning Toolkit on opm.gov (not read). Commerce 2026 workforce-planning PDFs (DOC_Strategic_Workforce_Planning_With_Best_Practices.pdf, Strategic Workforce Planning Guiding Questions.pdf) not read; staffing framework returned 403. (from sa3)",
+  "r7: no CISESS NC annual report after 2022-2023 is listed on ncics.org; cisess.umd.edu annual reports for 2023-2026 not checked (UMD side). CISESS Weekly_Updates PDFs on cisess.umd.edu turned up in search but were not read. (from sa3)",
+  "r8: no public GHCN-Daily processing or QC source code found (code.noaa.gov, GitHub: not found after 3 queries); readme and status pages say nothing about code availability. Whether code is shared on request: NOT PRESENT; ask ncdc.ghcnd@noaa.gov. (from sa3)",
+  "Datzilla: no public page names who reviews Datzilla tickets or who integrates new sources; status.txt names no staff. The only team statement is the 2021 references page (Menne, Korzeniewski). (from sa3)",
+  "r9: no 2026 press found naming GHCN-Daily staff departures or retirements (Menne, Durre, Korzeniewski etc.). (from sa3)",
+  "Kristy Thomas, Steven Anthony, Ron Ray: no OpenAlex author with NOAA affiliation, no ORCID, no 2023-2026 evidence found; current status NOT PRESENT. Search-summary claim that Kristy Thomas is on the 2024-09-19 GCOS AOPC GHCN deck unverified (PDF 404, also 404 on web.archive.org/web/2025). (from sa2)",
+  "No 2023-2026 GHCN-Daily-specific paper found (OpenAlex works search with NCEI filter, 64 hits, only first 25 read). nClimGrid-Daily citation (Durre, Squires, Vose, Arguez, Gross, Rennie, Schreck) known only from a search summary. (from sa2)",
+  "Nancy Casey and Shelley McNeill appear tied to Riverside Technology (contractor) per ORCID/OpenAlex; Karen Orcutt, Sam Cunningham, Nicholas Risavi (GHCNh co-authors at NCEI) not looked up. (from sa2)",
+  "Stevens ORCID last entry Zipline International 2021-2024; nothing on 2024-2026 employment. (from sa2)",
+  "No birth year, degree year or joined-NCDC statement found for any q2 person; only ORCID start years: Rennie CICS-NC 2010-07-30, Stevens NCSU/NCICS 2010, Casey Riverside 2019, Applequist NOAA NCEI 2009. Yin start year NOT PRESENT. (from sa2)",
+  "GCOS AOPC-29 (NCEI Asheville, 17-20 Sept 2024) GHCN deck unreadable (404 direct and web.archive.org 2024/2025); its author line reportedly names Kristy Thomas as current team. AOPC-29 report GCOS-264 not read. (from sa2)",
+  "Lead: the 2011 NCDC paper \"Implementing New Quality Control and Processing Systems for Hourly Precipitation Data\" (oa_rennie_works_asc.json lines 66-129) lists Jared Rennie (raw affiliation \"North Carolina State University ,\"), AG Wilson, J. H. Lawrimore and \"Roger D. Ray\". Whether V3 co-author \"Ray, Ron\" is this Roger D. Ray is not established. (from sa2)",
+  "Why and where Imke Durre left NCEI (ORCID end 2025-04-30): retirement vs deferred resignation vs other employer NOT PRESENT; LinkedIn authwall; NCEI OAS person page https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/person/details/5680 timed out in WebFetch. (from sa1)",
+  "Who replaced Durre as Products Section chief: NOT PRESENT in 2025-26 NCEI pages searched. (from sa1)",
+  "Menne: no degree, birth year or NCDC start year found (ORCID employments/educations empty; dissertation not found). Earliest NCDC-affiliated paper 2000. Award leads not read: https://www.ncdc.noaa.gov/news/ncdc-employees-receive-department-commerce-awards (2014) and https://star.nesdis.noaa.gov/star/news2016_201606_GoldMedal.php (2016). (from sa1)",
+  "Byron E. Gleason, Tamara G. Houston, Bryant Korzeniewski: no ORCID iDs; no 2025-26 evidence of current status (Houston latest: March 2024 slides and 2024 BAMS RCC paper; Gleason and Korzeniewski: no 2024-26 works). Korzeniewski's OpenAlex record returned only 1 of 8 works (2020). (from sa1)",
+  "Vose Ph.D. year (May 2004, ASU) is from a faculty CV only; not checked against ASU library/ProQuest. Vose pre-2000 employer (1992 GHCN NDP-041 at CDIAC/ORNL?) not confirmed from a page. (from sa1)",
+  "Checker (search summaries, not read): 2022 WERA1012 NCEI slides on media.cocorahs.org reportedly list Bryant Korzeniewski as 'Datzilla Gatekeeper' and a Riverside Technology contractor; current C00861 metadata reportedly lists Menne as principal investigator and the 'GHCNd Operations Team' as point of contact; a NOAA Workforce Succession Planning Toolkit (2012, opm.gov) and Commerce 'OHCS Succession Planning Guide 04.2022' exist as generic guidance (not read). Southernclimate.org bio of Vose is outdated (Product Development Branch).",
+  "Reconciliation: coordinator read all 77 coverage.py candidates itself (no Reconciler, to stay under the 320k ceiling); added the weekly reconstruction from ~30 sources (DSMR), the April 28, 2024 Environment Canada feed outage (status.txt) and the 40-percent cut rumor (Asheville Watchdog); the rest were JSON metadata, timestamps or off-topic OIG items.",
+  "Follow-up queue: OpenAlex and ORCID API records are the bibliographic registries the question names; no other copy sought. Unread after all routes: Humans of NCEI (Houston) 403; NCEI OAS person page (Durre) 502; GCOS-264 report (WMO bot check); GCOS AOPC 2024 GHCN deck 404 live and Wayback; 2014 NCDC awards page 503; Commerce 2026 staffing framework 403 (Wayback fetch deferred).",
+  "People-search and data-broker sites listing ages appeared in results and were deliberately not used; ages are estimated only from publication years, as asked."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "GAO NOAA workforce staffing 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; hits GAO-25-107210 (hurricane hunters), GAO-25-108597 (aviation meteorologists), GAO-26-108583 (agency workforce changes, already used by pt4); no NCEI item",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO high risk human capital NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; GAO-25-107743 high-risk list (government-wide strategic human capital); no NOAA/NCEI-specific designation",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "OIG NOAA workforce staffing hiring",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov; led to OIG-26-003 TMC FY2026 (read) and July 17, 2025 NWS staffing audit letters; no NCEI item",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA succession planning workforce plan knowledge transfer",
+   "tool": "WebSearch",
+   "notes": "no filter; NAO 202-1103 (read), 2012 NOAA succession toolkit on opm.gov (not read), Commerce succession page",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Department of Commerce human capital operating plan 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; DOC Human Capital Strategic Plan 2023-2026, 2026-01 Workforce Prioritization & Staffing Plan Framework (403), DOC Strategic Workforce Planning With Best Practices (not read)",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CISESS annual report 2024-2025 GHCN-Daily",
+   "tool": "WebSearch",
+   "notes": "no filter; nothing relevant",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CISESS NC annual report 2024 2025 GHCN",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncics.org, cisess.umd.edu, cisess.ncsu.edu; latest listed CISESS NC report is 2022-2023",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GHCN-Daily source code GitHub NOAA ghcnd quality control",
+   "tool": "WebSearch",
+   "notes": "no filter; no NOAA repository found",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "code.noaa.gov GHCN daily",
+   "tool": "WebSearch",
+   "notes": "no filter; no code.noaa.gov result",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ghcnd quality control NOAA NCEI repository",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; only third-party repos (wetterdienst, aus-ref-clim-data-nci, awslabs open-data-docs); not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI scientists retire 2025 Asheville staff departures",
+   "tool": "WebSearch",
+   "notes": "no filter; WUNC/PRE Feb 2025 buyouts, E&E 1,000 early retirements, Columbia climate law (press calls cancelled), Asheville Watchdog (already in noaa-ncei-threats run)",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA deferred resignation NCEI Asheville climate data scientists",
+   "tool": "WebSearch",
+   "notes": "no filter; NYT via Hawaii Tribune-Herald (about 500 deferred resignation), fedscoop; no named GHCN-Daily staff",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI Datzilla data issue report GHCN",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; status.txt, readme; no public Datzilla page naming reviewers",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI Climate Monitoring and Analysis branch GHCN team staff",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; led to ghcn-daily-references page team statement (read via Wayback)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Menne Durre GHCNd 2025 new sources integration paper",
+   "tool": "WebSearch",
+   "notes": "no filter; GCOS AOPC 2024 GHCN presentation (404), ESSD 2026 paper",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Asheville Watchdog NCEI departures 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains avlwatchdog.org, bpr.org, citizen-times.com; refused (citizen-times.com not accessible to user agent)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CISESS annual report 2024 GHCN Menne",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cisess.umd.edu; weekly reports and 2024/2025 article lists; no 2023-2026 annual report with GHCN; r7 not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "(download) DOC_Strategic_Workforce_Planning_With_Best_Practices.pdf",
+   "tool": "fetch_page",
+   "notes": "HTTP 403 from commerce.gov",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Workforce Prioritization\" \"Staffing Plan Framework\" Commerce",
+   "tool": "WebSearch",
+   "notes": "no filter; no other copy found; also found DOC Workforce Planning Framework (2025-11) which returned 403",
+   "from": "sa3",
+   "required_id": "r6",
+   "copy_of": "https://www.commerce.gov/sites/default/files/2026-01/Workforce%20Prioritization%20%26%20Staffing%20Plan%20Framework.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO NCEI environmental information staffing",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; nothing on NCEI staffing; r4 not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Commerce OIG audit NWS staffing levels hiring limitations 2026 report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov; OIG-26-017-I (Kerr County NWS vacancies), July 2025 NWS staffing audit announcement; nothing on NCEI; r5 not found after 2 queries",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Matthew Menne NOAA retired 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; no result names Menne; departure or retirement of Menne NOT PRESENT in press",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Imke Durre NCEI 2025 GHCN",
+   "tool": "WebSearch",
+   "notes": "no filter; led to State of the Climate in 2024 Global Climate chapter (read pages 1-30)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "authors?search= Jared Rennie; Scott E. Stevens; Xungang Yin; Shelley McNeill; Diana Kantor; Kristy Thomas (NOAA filter); Steven Anthony (NOAA filter); Nancy Casey (NOAA filter); Scott Applequist; then works?filter=author.id sorted publication_year:asc for each found",
+   "tool": "lookup (OpenAlex)",
+   "notes": "api.openalex.org, one GET each",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "pub.orcid.org/v3.0/<orcid>/employments for 0000-0002-3316-9668 (Rennie), 0000-0002-2549-1489 (Stevens), 0000-0002-3775-6587 (Yin), 0000-0001-8000-6813 (McNeill), 0009-0001-7709-889X (Casey), 0009-0006-2721-0800 (Applequist)",
+   "tool": "lookup (ORCID)",
+   "notes": "ORCIDs from OpenAlex and GHCNh ISO metadata",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCN-Daily 2024 quality control",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Global Historical Climatology Network daily 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "works?search=Global Historical Climatology Network&filter=from_publication_date:2023-01-01,authorships.institutions.id:I4210157891 (also works?search=GHCN-Daily&filter=from_publication_date:2023-01-01, 1092 hits, unused)",
+   "tool": "lookup (OpenAlex)",
+   "notes": "api.openalex.org",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Jared Rennie NCEI 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCNh hourly Menne 2024 authors",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Xungang Yin NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Scott Stevens CISESS GHCN",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Shelley McNeill NCEI Riverside Technology",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Kristy Thomas NCEI GHCN",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Ron Ray Steven Anthony NCDC GHCN-Daily",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Nancy Casey NCEI GHCN daily",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "nClimGrid-Daily Durre 2025 authors",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Clay McNeill NOAA",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"ghcn-for-aopc-2024\" GHCN hourly daily monthly datasets",
+   "tool": "WebSearch",
+   "notes": "copy_of https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf; also tried web.archive.org/web/2025 (404)",
+   "from": "sa2",
+   "copy_of": "https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Kristy Thomas\" NOAA NCEI 2024",
+   "tool": "WebSearch",
+   "notes": "no domain filter; copy_of GCOS deck tried",
+   "from": "sa2",
+   "copy_of": "https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AOPC 2024 GHCN Menne presentation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gcos.wmo.int, wmo.int",
+   "from": "sa2",
+   "copy_of": "https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GCOS-264 AOPC-29 report Asheville 2024",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gcos.wmo.int, library.wmo.int, wmo.int",
+   "from": "sa2",
+   "copy_of": "https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Matthew Menne NCEI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; leads: WDC contact page, 2017 NESDIS awards; no current staff page",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Imke Durre NCEI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; latest dated item 2021 Normals interview",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Russell Vose NCEI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; SCEC memos 2021-22 FOR: Russell Vose (Acting Chief Monitoring Section); 2024 media advisory",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search= Matthew Menne / Imke Durre / Russell Vose / Byron Gleason / Tamara Houston / Bryant Korzeniewski; works sorted publication_year:asc for each; combined 2024-2026 works",
+   "tool": "lookup (OpenAlex)",
+   "notes": "api.openalex.org, 13 requests",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "pub.orcid.org/v3.0/<orcid>/activities for Durre 0000-0001-5689-3846, Menne 0000-0001-9725-248X, Vose 0000-0002-6669-3319",
+   "tool": "lookup (ORCID)",
+   "notes": "returned XML; Gleason, Houston, Korzeniewski have no ORCID in OpenAlex, so no ORCID lookup possible",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Menne Durre GHCN-Daily 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Imke Durre 2026",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Imke Durre retired NCEI 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Tamara Houston NCEI retired",
+   "tool": "WebSearch",
+   "notes": "no domain filter; Humans of NCEI page 403",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Byron Gleason NOAA NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Matthew Menne Ph.D. dissertation climatology",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Russell Vose Ph.D. Arizona State University climatology",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Korzeniewski NCDC",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Menne NCEI Gold Medal Department of Commerce",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov, commerce.gov, ametsoc.org; leads: 2014 NCDC DOC awards, 2016 STAR Gold Medal team",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Vose NCEI Monitoring branch chief 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Durre NCEI Products Section chief 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Imke Durre climate data scientist Asheville / \"Imke Durre\" North Carolina Institute for Climate Studies",
+   "tool": "WebSearch",
+   "notes": "no domain filter; 2 queries; ncics.org/?p=10239 checked via WebFetch: Jaci Crossman page (2024-05-06), Durre NOT PRESENT",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Menne\" NCEI retired 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass / coordinator"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Imke Durre NOAA NCEI 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass / coordinator"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Russell Vose NCEI retires",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass / coordinator"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Jared Rennie NCEI 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass / coordinator"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Durre\" Asheville 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass / coordinator"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser read of https://www.ncei.noaa.gov/news/humans-ncei-tamara-houston",
+   "tool": "lookup (built-in browser, follow-up queue)",
+   "notes": "built-in browser: HTTP 403 (same as curl, WebFetch, Wayback)",
+   "copy_of": "https://www.ncei.noaa.gov/news/humans-ncei-tamara-houston"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser read of https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/person/details/5680",
+   "tool": "lookup (built-in browser, follow-up queue)",
+   "notes": "built-in browser: HTTP 502 proxy error",
+   "copy_of": "https://www.ncei.noaa.gov/archive/archive-management-system/OAS/bin/prd/jquery/person/details/5680"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "browser read of https://library.wmo.int/idurl/4/69082",
+   "tool": "lookup (built-in browser, follow-up queue)",
+   "notes": "built-in browser: bot-check slider; stopped, not bypassed",
+   "copy_of": "https://library.wmo.int/idurl/4/69082"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NCEI pages naming GHCN-Daily staff",
+   "query": "Matthew Menne NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": null,
+   "publisher": "registries (OpenAlex)",
+   "subquestion_id": "q1",
+   "aim": "author records and earliest works",
+   "query": "authors?search=<name>",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": null,
+   "publisher": "registries (ORCID)",
+   "subquestion_id": "q1",
+   "aim": "ORCID employment and education",
+   "query": "pub.orcid.org/<id>",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA",
+   "publisher": "oversight bodies (GAO)",
+   "subquestion_id": "q3",
+   "aim": "GAO NOAA workforce reports",
+   "query": "GAO NOAA workforce",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA",
+   "publisher": "oversight bodies (Commerce OIG)",
+   "subquestion_id": "q3",
+   "aim": "OIG NOAA staffing reports",
+   "query": "OIG NOAA workforce",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NOAA / Commerce",
+   "publisher": "the organization itself (plans)",
+   "subquestion_id": "q3",
+   "aim": "succession and workforce plans",
+   "query": "NOAA succession planning",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "CISESS",
+   "publisher": "funders, owners, customers (cooperative institute reports)",
+   "subquestion_id": "q4",
+   "aim": "CISESS annual reports 2023-2026",
+   "query": "CISESS annual report 2024",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself (code)",
+   "subquestion_id": "q4",
+   "aim": "GHCN-Daily code on code.noaa.gov / GitHub",
+   "query": "code.noaa.gov GHCN",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA NCEI",
+   "publisher": "press",
+   "subquestion_id": "q3",
+   "aim": "NCEI staff departures",
+   "query": "NCEI scientists retire 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "recent GHCN-Daily paper authors",
+   "query": "GHCN-Daily 2024 quality control",
+   "skip_reason": null
+  }
+ ],
+ "entities": [
+  {
+   "name": "Matthew J. Menne",
+   "included": true,
+   "source_ids": [
+    "s41",
+    "s42",
+    "s53"
+   ]
+  },
+  {
+   "name": "Imke Durre",
+   "included": true,
+   "source_ids": [
+    "s40",
+    "s43"
+   ]
+  },
+  {
+   "name": "Russell S. Vose",
+   "included": true,
+   "source_ids": [
+    "s45",
+    "s46",
+    "s54"
+   ]
+  },
+  {
+   "name": "Byron E. Gleason",
+   "included": true,
+   "source_ids": [
+    "s47",
+    "s48"
+   ]
+  },
+  {
+   "name": "Tamara G. Houston",
+   "included": true,
+   "source_ids": [
+    "s49",
+    "s50",
+    "s56"
+   ]
+  },
+  {
+   "name": "Bryant Korzeniewski",
+   "included": true,
+   "source_ids": [
+    "s51",
+    "s64"
+   ]
+  },
+  {
+   "name": "Shelley McNeill",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s18"
+   ]
+  },
+  {
+   "name": "Kristy Thomas",
+   "included": true,
+   "source_ids": [
+    "s18"
+   ]
+  },
+  {
+   "name": "Xungang Yin",
+   "included": true,
+   "source_ids": [
+    "s16",
+    "s26"
+   ]
+  },
+  {
+   "name": "Steven Anthony",
+   "included": true,
+   "source_ids": [
+    "s18"
+   ]
+  },
+  {
+   "name": "Ron Ray",
+   "included": true,
+   "source_ids": [
+    "s18"
+   ]
+  },
+  {
+   "name": "Jared Rennie",
+   "included": true,
+   "source_ids": [
+    "s15",
+    "s22"
+   ]
+  },
+  {
+   "name": "Scott E. Stevens",
+   "included": true,
+   "source_ids": [
+    "s13",
+    "s24"
+   ]
+  },
+  {
+   "name": "Nancy W. Casey",
+   "included": true,
+   "source_ids": [
+    "s14"
+   ]
+  },
+  {
+   "name": "Diana Kantor",
+   "included": true,
+   "source_ids": [
+    "s29"
+   ]
+  },
+  {
+   "name": "Scott Applequist",
+   "included": true,
+   "source_ids": [
+    "s32",
+    "s34"
+   ]
+  },
+  {
+   "name": "Karen M. Orcutt",
+   "included": true,
+   "source_ids": [
+    "s35"
+   ],
+   "shown_as": "Karen Orcutt"
+  }
+ ]
+}

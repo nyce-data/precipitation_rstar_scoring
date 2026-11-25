@@ -1,0 +1,3365 @@
+{
+ "question": "Which satellites and sensors supply data to GPCP Daily (1DD V1.3 and V3.x Daily), by which route, and over what dates did each contribute?",
+ "tier": "deep",
+ "mode": "thorough",
+ "tier_reason": "deep: set of 40+ candidate satellites, each with contribution dates",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "GPCP 1DD V1.3 direct inputs: satellites, sensors and dates (SSM/I, SSMIS, TOVS, AIRS, TMPI geo-IR, LEO-IR)",
+   "status": "answered",
+   "source_ids": [
+    "s11",
+    "s33",
+    "s34",
+    "s35",
+    "s44",
+    "s45",
+    "s46",
+    "s71"
+   ],
+   "remaining_gap": "NOAA satellite numbers behind the TOVS input and the AVHRR leo-IR fill are not stated; which SSMIS feed 1DD uses after the RSS CDR ended (2023) is not documented."
+  },
+  {
+   "id": "q2",
+   "question": "GPCP Monthly V2.3 (1DD's scaling) satellite inputs and dates; DMSP/NOAA/Aqua operational lives",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s36",
+    "s37",
+    "s38",
+    "s39",
+    "s40",
+    "s41",
+    "s42",
+    "s43"
+   ],
+   "remaining_gap": "OPI and F08/F11 periods fall before the 1DD record and do not reach GPCP Daily."
+  },
+  {
+   "id": "q3",
+   "question": "GPCP V3.x Daily and V3.x Monthly satellite inputs, routes and dates",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17"
+   ],
+   "remaining_gap": "No V3.x file 'Source' attribute value was read (Earthdata login)."
+  },
+  {
+   "id": "q4",
+   "question": "IMERG constellation (V06/V07) satellites, sensors and dates as used by V3.x Daily",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s32",
+    "s47",
+    "s69",
+    "s70",
+    "s72"
+   ],
+   "remaining_gap": "IMERG end dates are bracketed estimates; actual last-use dates in V07 Final for SSMIS, ATMS, AMSR2, GMI are not published."
+  },
+  {
+   "id": "q5",
+   "question": "Geostationary IR via CPC merged IR, GPI histograms and GridSat-B1: satellites and dates",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s3",
+    "s33",
+    "s37",
+    "s47",
+    "s48",
+    "s49",
+    "s50",
+    "s51",
+    "s52",
+    "s53",
+    "s54",
+    "s55",
+    "s56",
+    "s57",
+    "s58",
+    "s59",
+    "s60",
+    "s61",
+    "s62",
+    "s63",
+    "s64",
+    "s65",
+    "s66",
+    "s67",
+    "s68"
+   ],
+   "remaining_gap": "Geostationary satellite numbers behind the 1DD's CPC IR histograms are not documented; CPC merged-IR handovers are given by year only."
+  },
+  {
+   "id": "q6",
+   "question": "Overlaps, single-satellite periods, and conflicting dates between documents",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s5",
+    "s17",
+    "s36",
+    "s47"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) for GPCP Version 3.3 Daily",
+   "author_org": "NASA GSFC / GPCP MEaSUREs team (Huffman, Behrangi et al.)",
+   "published": "2025 (V3.3; covers 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-v33atbd-inputs",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpcp_v33_daily_atbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Figure 2 (inputs by time) text is partly cut off in the pdftotext copy.",
+   "found_by": [
+    "sa2",
+    "sa3",
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.2_Daily.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) for GPCP Version 3.2 Daily",
+   "author_org": "NASA GSFC / GPCP MEaSUREs team",
+   "published": "about 2022 (V3.2)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-v32atbd-inputs",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpcp_v32_daily_atbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Table end dates cut off in text copy.",
+   "found_by": [
+    "sa2",
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/Release_Notes.GPCPV3.3.pdf",
+   "fetched_url": null,
+   "title": "GPCPV3.3 Release Notes",
+   "author_org": "NASA GSFC GPCP team",
+   "published": "5 March 2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-v33rn-gridsat",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpcp_v33_release_notes.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Dates of red lines in Fig. 2 not in text. Pause date March 2024 conflicts with Earthdata page 'paused at September 2024' and CMR end 2025-12-31 (later extension).",
+   "found_by": [
+    "sa2",
+    "sa4"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpcpmon-3.3",
+   "fetched_url": null,
+   "title": "GPCP Version 3.3 Satellite-Gauge Combined Precipitation Monthly (GPCPMON) - Earthdata catalog",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-earthdata-mon33",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/earthdata_gpcpmon33.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Satellites listed without dates. Pause stated as September 2024 (release notes: March 2024).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.3_Monthly.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) for GPCP Version 3.3 Monthly",
+   "author_org": "NASA GSFC / GPCP MEaSUREs team (Huffman et al.)",
+   "published": "2025 (covers 1983-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-v33mon-table1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpcp_v33_monthly_atbd.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "New this run (not in earlier runs). TOVS NOAA satellite numbers not given.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "README for GPCP V3.3 Daily",
+   "author_org": "NASA GSFC (G. Huffman, E. Nelkin)",
+   "published": "Last revised May 28, 2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-readme33-revhist",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/readme_gpcpday33.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "PDF was obtained via WebFetch's saved binary (curl failed with SSL EOF), converted with pdftotext. The README calls AIRS the 'Advanced Infrared Sounder' (sic).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPCPDAY&provider=GES_DISC",
+   "fetched_url": null,
+   "title": "CMR UMM-C records for GPCPDAY 3.3 and 3.2 (GES DISC)",
+   "author_org": "NASA CMR / GES DISC",
+   "published": "NOT PRESENT (ReleaseDate 2025-02-12 for 3.3; 2022-02-02 for 3.2)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-cmr-day33",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cmr_gpcpday.json",
+   "retrieved": "2026-11-20",
+   "limitations": "Platforms listed without dates.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPCPMON&provider=GES_DISC",
+   "fetched_url": null,
+   "title": "CMR UMM-C records for GPCPMON 3.3 and 3.2 (GES DISC)",
+   "author_org": "NASA CMR / GES DISC",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-cmr-mon",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cmr_gpcpmon.json",
+   "retrieved": "2026-11-20",
+   "limitations": "Platforms without dates. FY-2 (in GridSat Fig. 3) is not in the CMR list.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Geostationary_IR_Channel_Brightness_Temperature/AlgorithmDescription_01B-02.pdf",
+   "fetched_url": null,
+   "title": "C-ATBD: Geostationary IR Channel Brightness Temperature - GridSat B1, CDRP-ATBD-0571, Rev 2",
+   "author_org": "Ken Knapp / NOAA CDR Program (NCEI)",
+   "published": "2026-03-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-gridsat-vgac",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gridsat_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GridSat document, not a GPCP document; link to GPCP V3.3 pause is via GPCP release notes ('retirement of the previous calibration source').",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://ipwg12.imgw.pl/wp-content/uploads/2026/07/S3.4-BEHRANGI-IPWG2026.pdf",
+   "fetched_url": null,
+   "title": "S3.4 Behrangi IPWG 2026 presentation (GPCP V3.3 and V4)",
+   "author_org": "A. Behrangi (Univ. of Arizona)",
+   "published": "2026 (IPWG-12)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-ipwg26-v33",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/behrangi_ipwg2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Slide text; 'June 1998' conflicts with ATBD/README/CMR 'January 1998'.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://acdisc.gesdisc.eosdis.nasa.gov/data/TOVS/TOVSAMNE.02/doc/README.TOVS.Pathfinder.PathA.v2.pdf",
+   "fetched_url": null,
+   "title": "README for TOVS Pathfinder Path A Version 2 (TOVSAMNE.02)",
+   "author_org": "NASA GES DISC / GSFC Sounder Research Team",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-patha-sats",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/tovs_patha_readme.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "This is the TOVS Pathfinder Path A product README, not a GPCP document; GPCP ATBDs cite Susskind et al. (1997) 'Characteristics of the TOVS Pathfinder' but do not say which Path A satellites fed GPCP. NOAA-11 end (Dec 1998 here) vs GPCP ATBDs' 2-satellite period through Feb 1999 / 26 Feb 1999. PDF obtained from WebFetch's saved binary after curl SSL EOF.",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-5885.html",
+   "fetched_url": null,
+   "title": "EGU26-5885 abstract: GPCP Version 3.3",
+   "author_org": "GPCP team (EGU General Assembly 2026)",
+   "published": "updated on 13 Mar 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-egu26",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/egu26_5885_gpcp_v33.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "End year 2024 here vs 2025 in CMR/ATBD/IPWG slides.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?short_name=GPCPDAY&version=3.3&provider=GES_DISC&page_size=1&sort_key=-start_date",
+   "fetched_url": null,
+   "title": "CMR UMM-G latest GPCPDAY 3.3 granule",
+   "author_org": "NASA CMR / GES DISC",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-cmr-gran33",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cmr_gpcpday33_granule.json",
+   "retrieved": "2026-11-20",
+   "limitations": "Granule file attributes not read (OPeNDAP 401).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://experts.arizona.edu/en/publications/the-new-version-32-global-precipitation-climatology-project-gpcp-/",
+   "fetched_url": null,
+   "title": "The New Version 3.2 Global Precipitation Climatology Project (GPCP) Monthly and Daily Precipitation Products (Huffman et al. 2023, J. Climate 36(21), 7635-7655)",
+   "author_org": "Huffman, Adler, Behrangi, Bolvin, Nelkin, Gu, Ehsani (Univ. of Arizona research portal listing)",
+   "published": "Nov 1 2023",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-huffman2023-abs",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/huffman2023_experts_arizona_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Abstract only via WebFetch extraction; journal full text HTTP 403.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.2_Monthly.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) for GPCP Version 3.2 Monthly",
+   "author_org": "NASA GSFC / GPCP MEaSUREs team",
+   "published": "V3.2 (2022; extended 2023)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-v32mon-table1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/gpcp_v32_monthly_atbd.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "PDF via WebFetch saved binary (curl SSL EOF).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://gpm.nasa.gov/sites/default/files/2026-08/IMERG_V07_ATBD_final_260813.pdf",
+   "fetched_url": null,
+   "title": "IMERG Algorithm Theoretical Basis Document, Version 07 (revision 7.2, 13 August 2026)",
+   "author_org": "NASA GPM (G. Huffman et al.)",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Gray shading (which rows are future-only, e.g. AMSR3, MWI) is lost in text conversion. F11 SSMI is NOT PRESENT in Table 1 although source code 16 = SSMI F11 appears in the MWprecipSource list.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_TechnicalDocumentation_final.pdf",
+   "fetched_url": null,
+   "title": "Integrated Multi-satellitE Retrievals for GPM (IMERG) Technical Documentation",
+   "author_org": "George J. Huffman et al., NASA GSFC (PPS document server)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_techdoc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Conflicts with 2026 ATBD: AMSR2 start Jun 12 here vs Jul 12 in 2026 ATBD; GMI end [Jan 29] here vs [Dec 29].",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: IMERG V07 (input to GPCP V3.3 Daily)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://gpm.nasa.gov/sites/default/files/2020-10/IMERG_doc_201006.pdf",
+   "fetched_url": null,
+   "title": "Integrated Multi-satellitE Retrievals for GPM (IMERG) Technical Documentation (V06, 6 October 2020)",
+   "author_org": "G. J. Huffman et al., NASA GSFC",
+   "published": "2020-10-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_v06_techdoc_201006.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Bracketed end dates are estimates as of Oct 2020. V06 IMERG record started June 2000 (per GPCP V3.2 Daily ATBD), so Jan 98 starts precede V06 use.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/partner_anomalous.html",
+   "fetched_url": null,
+   "title": "PPS Partner Satellite - Data Discrepancies and Anomalous Events Table",
+   "author_org": "NASA PPS (Responsible official Erich Stocker, GSFC Code 610)",
+   "published": "2024-10-10 (Last Revised)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_partner_anomalous.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No dates; NOAA-21 ATMS NOT PRESENT (page last revised 10 October 2024). Per-sensor sub-pages not read. This is PPS's processing list, not IMERG's input list.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/gpm_anomalous.html",
+   "fetched_url": null,
+   "title": "PPS Anomalous Granule Table (GPM Spacecraft Data Discrepancies and Anomalous Events)",
+   "author_org": "NASA PPS",
+   "published": "2026-09-25 (Last Revised)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_gpm_anomalous.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "GPM Core only; constellation sensors on separate partner page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://gpm.nasa.gov/data/news",
+   "fetched_url": null,
+   "title": "Data News | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM",
+   "published": "list read 2026-11-19 (latest item 2026-08-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_data_news_list.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Whether SSMIS actually stopped by Sept 2026 NOT PRESENT in this list. GPCP V3.3 Daily ATBD says Oct-Dec 2025 used IMERG V07 Late instead of Final.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://space.oscar.wmo.int/satellites/view/megha_tropiques",
+   "fetched_url": null,
+   "title": "WMO OSCAR: Megha-Tropiques",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2022-06-27 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_megha_tropiques_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Conflicts with IMERG V07 tech doc: SAPHIR flew to 23 March 2022 and inventory 13 October 2011 – 23 March 2022. OSCAR EOL marked estimated; page last updated 2022.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://space.oscar.wmo.int/satellites/view/trmm",
+   "fetched_url": null,
+   "title": "WMO OSCAR: TRMM",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2019-10-30 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_trmm_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Instrument start dates estimated. IMERG uses PR-TMI combined only to Sep 14 (Table 1).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://space.oscar.wmo.int/satellites/view/noaa_21",
+   "fetched_url": null,
+   "title": "WMO OSCAR: NOAA-21",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2026-11-09 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_noaa21_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "OSCAR ATMS start (estimated) differs from IMERG docs' IMERG-use start: 1 February 2023 (2023 tech doc Table 6), [Feb 23] (Table 10), Jun 23 (2026 ATBD).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://space.oscar.wmo.int/satellites/view/gcom_w",
+   "fetched_url": null,
+   "title": "WMO OSCAR: GCOM-W",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2026-10-12 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e30",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_gcomw_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "IMERG tables give AMSR2 start Jun 12 (2020, 2023 docs) or Jul 12 (2026 ATBD) — both earlier than OSCAR's 10 Aug 2012 instrument start.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://gpm.nasa.gov/missions/GPM/core-observatory",
+   "fetched_url": null,
+   "title": "GPM Core Observatory",
+   "author_org": "NASA GPM",
+   "published": "2020-03-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e31",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_core_observatory_page.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "End date NOT PRESENT. IMERG tables give GMI from Mar 14 and DPR-GMI from Apr 14.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://space.oscar.wmo.int/satellites/view/metop_a",
+   "fetched_url": null,
+   "title": "WMO OSCAR: Metop-A",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2024-04-15 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e33",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_metop_a_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Mission life, not IMERG use. IMERG docs: MHS use from 5 December 2006 (before OSCAR's MHS start); IMERG Final stopped using METOP-A after 5 December 2019.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://space.oscar.wmo.int/satellites/view/snpp",
+   "fetched_url": null,
+   "title": "WMO OSCAR: Suomi NPP",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2026-11-02 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e34",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_snpp_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Extraction by WebFetch small model; not verified against raw HTML. IMERG docs give SNPP ATMS use from 10 December 2011, end [Dec 24] (estimated). No NASA/NOAA notice on SNPP end read.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://space.oscar.wmo.int/satellites/view/noaa_19",
+   "fetched_url": null,
+   "title": "WMO OSCAR: NOAA-19",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2025-08-18 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e35",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_noaa19_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "IMERG docs give NOAA-19 MHS use end as 8 September 2019 (V06 Table 8), Sep 20 (Table 10), current (V07 Table 8), [Dec 23] (2026 ATBD); none matches the Aug 2025 decommissioning.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://space.oscar.wmo.int/satellites/view/noaa_20",
+   "fetched_url": null,
+   "title": "WMO OSCAR: NOAA-20",
+   "author_org": "WMO OSCAR/Space",
+   "published": "2026-11-09 (Last update)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e37",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/oscar_noaa20_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "IMERG docs give NOAA-20 ATMS use from 29 November 2017 (earlier than OSCAR instrument start), end [Jan 24] (2023 doc) or [Aug 24] (2026 ATBD), both estimates.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/Err_Rpts/NOAA19_MHS_EmptyGranules.html",
+   "fetched_url": null,
+   "title": "Empty Granules for NOAA19_MHS",
+   "author_org": "NASA PPS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e38",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_noaa19_mhs_empty.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Shows PPS processing, not IMERG use; does not state an end date. Contradicts IMERG tables ending NOAA-19 in Sep 2019 / Sep 2020 only if PPS processing implies IMERG use, which the page does not say.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/Err_Rpts/F16_SSMIS_EmptyGranules.html",
+   "fetched_url": null,
+   "title": "Empty Granules for F16_SSMIS",
+   "author_org": "NASA PPS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e39",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_f16_ssmis_empty.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Partner index page last revised 10 October 2024, so these sub-pages appear not updated after late 2024; no SSMIS end date.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/AlgorithmDescription_01B-35.pdf",
+   "fetched_url": null,
+   "title": "Precipitation - GPCP Daily C-ATBD (CDRP-ATBD-0913, 01B-35, Rev. 0)",
+   "author_org": "Robert Adler, Mathew Sapiano, Jian-Jian Wang (UMD) / NOAA CDR Program",
+   "published": "2017-08-14 (Rev. 0)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_daily_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Rev. 0 of 2017; table gives years only (no months/days) for the 1DD; 'present' = 2017.",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/2002/gpcp_v01r03_daily_d20021231_c20170530.nc",
+   "fetched_url": null,
+   "title": "GPCP 1DD V1.3 netCDF file headers (ncdump -h), sampled dates 1997-07-01, 2002-12-31, 2003-01-01, 2005-07-01, 2008-12-31, 2009-01-01, 2010-07-01",
+   "author_org": "UMD/ESSIC (Jian-Jian Wang) / NOAA NCEI",
+   "published": "files created 2017-05-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_1dd_sampled_headers.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Sampled days only (not every file); attributes are generic labels written at 2017 reprocessing; 1997-07-01 file shows same TOVS/SSMI labels as 2002-12-31; GMS label persists even in years when MTSAT/Himawari would be the Japanese geo (label, not a satellite record).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/2026/gpcp_v01r03_daily_d20260831_c20261109.nc",
+   "fetched_url": null,
+   "title": "GPCP 1DD V1.3 netCDF file header (ncdump -h), 2026-08-31 (latest file in 2026 listing)",
+   "author_org": "UMD/ESSIC (Jian-Jian Wang) / NOAA NCEI",
+   "published": "2026-11-09 (date_created)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_1dd_20260831_header.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Generic label; does not prove which DMSP satellite fed the day. Pt5 run listing shows the last 2026 file is d20260831.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-monthly/doc/CDPR-ATBD-0848%20Rev%201%20Precipitation%20-%20GPCP%20Monthly%20C-ATBD%20(01B-34)%20(DSR-1083).pdf",
+   "fetched_url": null,
+   "title": "GPCP-Monthly C-ATBD, CDRP-ATBD-0848 Rev. 1 (01B-34)",
+   "author_org": "Robert Adler et al. (UMD) / NOAA CDR Program",
+   "published": "2016-10-18 (Rev. 1)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_v23_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Table row says 'Aug 1987' start while note says F08 from 'Jul 1987'. 'present' = 2016.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6043897/",
+   "fetched_url": null,
+   "title": "The Global Precipitation Climatology Project (GPCP) Monthly Analysis (New Version 2.3) and a Review of 2017 Global Precipitation",
+   "author_org": "Adler R.F. et al. (NASA GSFC / UMD)",
+   "published": "2018 (Atmosphere 9(4):138)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/adler2018_gpcp_v23.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Explains the 2003 vs 2005 TOVS/AIRS conflict as V2.3 vs V2.2. 'AIRS on-line September 2002' differs from C-ATBDs' 'AIRS data are available from May 2002'. F-numbers NOT PRESENT here.",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://space.oscar.wmo.int/instruments/view/ssm_i",
+   "fetched_url": null,
+   "title": "WMO OSCAR | Details for Instrument SSM/I",
+   "author_org": "WMO OSCAR/Space",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/oscar_ssmi_ssmis_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Mission/instrument lives, not GPCP use periods; ranges unlabelled; WebFetch extract (curl refused). F08 OSCAR start Sep 1987 vs GPCP V2.3 table 'F08: Jul 1987'.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://space.oscar.wmo.int/instruments/view/ssmis",
+   "fetched_url": null,
+   "title": "WMO OSCAR | Details for Instrument SSMIS",
+   "author_org": "WMO OSCAR/Space",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/oscar_ssmi_ssmis_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Mission lives, not GPCP use; ranges unlabelled. The F17 end 'Sep 2026' is a mission/instrument date from OSCAR; the latest 1DD file seen is 2026-08-31.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://space.oscar.wmo.int/satellites/view/dmsp_f13",
+   "fetched_url": null,
+   "title": "WMO OSCAR | Satellite: DMSP-F13",
+   "author_org": "WMO OSCAR/Space",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": "work/raw/sa1/oscar_ssmi_ssmis_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Search snippet only, page not fetched. Conflicts with GPCP Monthly C-ATBD note g 'F13 SSMI failed in September 2009'.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://space.oscar.wmo.int/instruments/view/airs",
+   "fetched_url": null,
+   "title": "WMO OSCAR | Details for Instrument AIRS",
+   "author_org": "WMO OSCAR/Space",
+   "published": "last update 2026-06-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/oscar_airs_f17_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Mission dates, not GPCP use; 2027 end looks planned/estimated. Differs from C-ATBDs (AIRS available from May 2002) and Adler 2018 (on-line September 2002).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://space.oscar.wmo.int/satellites/view/dmsp_f17",
+   "fetched_url": null,
+   "title": "WMO OSCAR | Satellite: DMSP-F17",
+   "author_org": "WMO OSCAR/Space",
+   "published": "last update 2025-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/oscar_airs_f17_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Last updated 2025-11-17, so Sep 2026 EOL is a projection, not a confirmed end; status says Operational. Mission dates, not GPCP use.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://space.oscar.wmo.int/instruments/view/hirs_2",
+   "fetched_url": null,
+   "title": "WMO OSCAR | Details for Instrument HIRS/2",
+   "author_org": "WMO OSCAR/Space",
+   "published": "last update 2017-03-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/oscar_hirs2_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Instrument/mission lives, not GPCP TOVS use; OSCAR NOAA-11 end Jun 2004 conflicts with GPCP Monthly C-ATBD (NOAA-11 failure causing single-satellite TOVS from March 1999) and TOVS Path-A README (NOAA-11 stopped December 1998).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/1996/gpcp_v01r03_daily_d19961001_c20170530.nc",
+   "fetched_url": null,
+   "title": "GPCP 1DD V1.3 netCDF file headers (ncdump -h), 1996-10-01 and 2020-07-01",
+   "author_org": "UMD/ESSIC (Jian-Jian Wang) / NOAA NCEI",
+   "published": "files created 2017-05-30 (1996) and 2020-10-07 (2020)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_1dd_sampled_headers.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Generic labels; no F-number or NOAA number.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.gspdc.shtml",
+   "fetched_url": null,
+   "title": "Climate Prediction Center - GPCP Geostationary Satellite Precipitation Data Center",
+   "author_org": "NOAA NWS Climate Prediction Center",
+   "published": "page last modified January 9, 2006",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cpc_gspdc.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "2006 page; names operators (IMD implies an Indian satellite, not named) but no satellite numbers or dates; the GPCP C-ATBDs list only GOES, GMS, MTSat, Meteosat. 1-degree 3-hourly from Oct 1996 per C-ATBD vs 24-class individual 3-hour histograms 'after March 1998' here.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://ftp.cpc.ncep.noaa.gov/precip/TRMM/IR_0.5-deg_product-file_README",
+   "fetched_url": null,
+   "title": "Global (60N-60S) half hourly, 0.5 degree lat/lon, geostationary satellite IR products file description (CPC)",
+   "author_org": "NOAA CPC",
+   "published": "NOT PRESENT (data collection begins Feb 26, 1999)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cpc_ir05_readme.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "This is CPC's TRMM-era 0.5-degree half-hourly IR product, not stated to be the GPCP 3-hourly 1-degree histogram input to the 1DD TMPI; satellite list fixed at writing (circa 1999), no end dates; GMS number not given.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s47",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/CPC-4kmIR-Sats.pdf",
+   "fetched_url": null,
+   "title": "NOAA/NWS/CPC Merged 4 Km IR Tb dataset documentation extracted from IMERG Technical Documentation",
+   "author_org": "Huffman, Bolvin, Joyce et al. (NASA GSFC); dataset produced by NOAA NCEP CPC",
+   "published": "2025-04-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cpc_4kmir_sats.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "FY-2, INSAT, Kalpana: NOT PRESENT anywhere in the document. Extension date 'April 2025' conflicts with Earthdata catalog page 'June, 2025' (sa4-e4).",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "context: CPC merged IR record (IMERG IR input)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpm-mergir-1",
+   "fetched_url": null,
+   "title": "NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR) catalog page",
+   "author_org": "NASA GES DISC / Earthdata (data from NOAA/NCEP CPC)",
+   "published": "NOT PRESENT (page current at retrieval)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/earthdata_gpm_mergir.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Contradicts CPC-4kmIR-Sats.pdf on the month of the back-extension ('June, 2025' here vs 'In April 2025' in sa4-e1). List has no dates per satellite. FY-2/INSAT: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://disc2.gesdisc.eosdis.nasa.gov/data/MERGED_IR/GPM_MERGIR.1/doc/README.MERGIR.pdf",
+   "fetched_url": null,
+   "title": "README for NCEP/CPC L3 Half Hourly 4km Global Merged IR V1 (GPM_MERGIR)",
+   "author_org": "NASA GES DISC (Savtchenko; Huffman)",
+   "published": "Last Revised March 9, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/readme_mergir.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No per-satellite dates. FY-2, INSAT: NOT PRESENT. Meteosat-12/MTG: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s50",
+   "url": "https://www.cpc.ncep.noaa.gov/products/global_precip/html/wpage.full_res.html",
+   "fetched_url": null,
+   "title": "CPC: Monitoring and Data - Full-resolution IR Data",
+   "author_org": "NOAA NWS NCEP Climate Prediction Center",
+   "published": "Page last modified: September 27, 2002",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cpc_full_res_page.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Snapshot of the 2002 constellation only; no start date. Agrees with CPC-4kmIR-Sats Table 12 rows 1998-2002. Janowiak et al. 2001 BAMS article itself not read (snippet/citation only).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s51",
+   "url": "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPMON.3.2/doc/README.GPCPV3.2_Monthly.pdf",
+   "fetched_url": null,
+   "title": "README for GPCP V3.2 Monthly",
+   "author_org": "NASA GSFC / GES DISC (Huffman, Behrangi, Bolvin, Nelkin)",
+   "published": "2022 (V3.2 release; citation 'last updated January 21, 2022')",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/readme_gpcpv32_monthly.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "GridSat, GridSat-B1, CPC 4-km IR: NOT PRESENT. Satellite names: NOT PRESENT. The GridSat link comes from PERSIANN-CDR's own file metadata (sa4-e12, sa4-e13). Read from a WebFetch-saved PDF (direct curl got SSL EOF), converted with pdftotext. V3.3 Monthly README not read.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://www.ncei.noaa.gov/thredds/dodsC/cdr/persiann/1983/PERSIANN-CDR_v01r01_19830101_c20140523.nc.das",
+   "fetched_url": null,
+   "title": "NCEI THREDDS .das of PERSIANN-CDR_v01r01_19830101_c20140523.nc",
+   "author_org": "NOAA NCEI (file attributes by UC-IRVINE/CHRS)",
+   "published": "date_created 2014-05-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/thredds_das_19830101.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "One day. Shows GridSat-B1 enters GPCP V3.x Monthly via PERSIANN-CDR from the record start; does not itself name GPCP V3.x.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.das",
+   "fetched_url": null,
+   "title": "NCEI ERDDAP .das, cdr_persiann_by_time_lon_lat (global attributes of latest file)",
+   "author_org": "NOAA NCEI (attributes written by UC-IRVINE/CHRS)",
+   "published": "date_created 2026-10-13 (latest file)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/erddap_persiann_das.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Latest file only. Earlier run found some PERSIANN-CDR days (e.g. 2013-12-31, 2014-01-01, 2015-04-01) with 'missing_00 … missing_21' in place of GridSat names. Whether GPCP V3.x Monthly uses the NCEI PERSIANN-CDR or a GPCP-internal PERSIANN-CDR run is NOT PRESENT in these files.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://www.ncei.noaa.gov/thredds/dodsC/cdr/persiann/2018/PERSIANN-CDR_v01r01_20180101_c20181102.nc.das",
+   "fetched_url": null,
+   "title": "NCEI THREDDS .das, PERSIANN-CDR 2018-01-01",
+   "author_org": "NOAA NCEI",
+   "published": "date_created 2018-11-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/thredds_das_20180101.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "One day.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s55",
+   "url": "https://www.ncei.noaa.gov/thredds/dodsC/cdr/gridsat/2005/GRIDSAT-B1.2005.12.01.12.v02r01.nc.das",
+   "fetched_url": null,
+   "title": "GridSat-B1 v02r01 file header (OPeNDAP .das), 2005-12-01 12Z",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gridsat_das_2005120112.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Contradicts obs4MIPs GridSat tech note (sa4-e15) saying Chinese satellites were not incorporated into GridSat. One file; INSAT/Kalpana: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://www.ncei.noaa.gov/thredds/dodsC/cdr/gridsat/",
+   "fetched_url": null,
+   "title": "GridSat-B1 v02r01 header samples: first/last sampled date per satellite (earlier run's gridsat_satellite_ranges.csv from gridsat_samples.csv)",
+   "author_org": "NOAA NCEI file headers; tabulated by earlier run",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gridsat_satellite_ranges.csv",
+   "retrieved": "2026-11-19",
+   "limitations": "Sampled dates, not true first/last dates (sampling roughly every 6 months). Derived table from the earlier run, not a publisher document. MTSAT-2 NOT PRESENT in the samples although ISCCP B1 lists MTS-2 2010-2015. Sample files 1998-2000 in the earlier run: see gridsat_samples.csv rows.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s57",
+   "url": "https://ncics.org/ncics/pdfs/obs4MIPs/GriddedSatelliteB1FCDR-MonthlyMeans_technical-note_final.pdf",
+   "fetched_url": null,
+   "title": "Gridded Satellite B1 FCDR - Monthly Means (obs4MIPs technical note), Rev 0",
+   "author_org": "Kenneth R. Knapp, NOAA/NCEI (POC); NCICS",
+   "published": "2016-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/obs4mips_gridsat_technote.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Contradicts GridSat-B1 v02r01 headers that list FY-2C (2005-2011 samples) and FY2-E (Oct 2012) (sa4-e13, sa4-e14); the note is about the Monthly Means FCDR (Jan 1980 - Mar 2016), which may differ from the 3-hourly v02r01 files. INSAT: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://www.ncei.noaa.gov/products/satellite/international-satellite-cloud-climatology-b1",
+   "fetched_url": null,
+   "title": "International Satellite Cloud Climatology Project (ISCCP) B1 Data, Satellite Information table",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (page current at retrieval)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_isccp_b1.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "ISCCP B1 table, not GridSat itself; not updated past HIM-8/GOES-17 (no GOES-18, GOES-19, Himawari-9, GOES-14 rows), and 'current' entries are stale (e.g. MET-7 at 63E 'current' though GridSat samples end Met-7 2017; GOES-17 'current'). Apparent typos: MET-2 period '1983/08/31-2020/03/02'; MET-5 period starts 1994/01/01 before the listed launch date 1994/04/13; footnote ⁴ not defined in the text. MET-6/MET-7 dates and GOES-9 (155E) dates differ from CPC Table 12 years (GMS-5 to GOES-9 in 2003 agrees). FY-2, INSAT: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://www.ncei.noaa.gov/thredds/dodsC/cdr/gridsat/1998/GRIDSAT-B1.1998.01.01.12.v02r01.nc.das",
+   "fetched_url": null,
+   "title": "GridSat-B1 v02r01 file header (OPeNDAP .das), 1998-01-01 12Z",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gridsat_das_1998010112.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "One 3-hourly file (earlier run record s137).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://www.ncei.noaa.gov/thredds/dodsC/cdr/gridsat/1998/GRIDSAT-B1.1998.07.01.12.v02r01.nc.das",
+   "fetched_url": null,
+   "title": "GridSat-B1 v02r01 file header (OPeNDAP .das), 1998-07-01 12Z",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gridsat_das_1998070112.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "One file. Earlier-run sample 1998-06-15 12Z (gridsat_samples.csv) lists GMS-5;GOES-8;GOES-9;Meteosat-7 only.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s61",
+   "url": "https://www.ncei.noaa.gov/thredds/dodsC/cdr/gridsat/2000/GRIDSAT-B1.2000.01.01.12.v02r01.nc.das",
+   "fetched_url": null,
+   "title": "GridSat-B1 v02r01 file header (OPeNDAP .das), 2000-01-01 12Z",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gridsat_das_2000010112.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "One file.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://ntrs.nasa.gov/api/citations/20000068519/downloads/20000068519.pdf",
+   "fetched_url": null,
+   "title": "Global Precipitation at One-Degree Daily Resolution from Multi-Satellite Observations (Huffman et al., J. Hydrometeor. 2001, NTRS preprint)",
+   "author_org": "Huffman, Adler, Morrissey, Bolvin, Curtis, Joyce, McGavock, Susskind",
+   "published": "2000 (NTRS preprint of 2001 paper)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa4-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/huffman2001_ntrs.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "OCR text with run-together words, quoted as extracted. Names no satellites by number. Whether/when 1DD V1.3 moved from these histograms to CPC merged 4-km IR: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpcpmon-3.3",
+   "fetched_url": null,
+   "title": "GPCP Precipitation Level 3 Monthly 0.5-Degree V3.3 (GPCPMON) | NASA Earthdata",
+   "author_org": "NASA GES DISC / Earthdata",
+   "published": "NOT PRESENT (page current at retrieval)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/earthdata_gpcpmon33.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Names no GridSat explicitly in the saved text (the 'IR input dataset from NCEI' is not named). Platform/instrument keywords carry no dates. Temporal extent end 2025-12-31 sits uneasily with 'paused at September 2024'. FY-2, INSAT: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.1_Monthly.pdf",
+   "fetched_url": null,
+   "title": "ATBD for GPCP V3.1 Monthly",
+   "author_org": "NASA GSFC / UMD GPCP team (Huffman, Behrangi, Bolvin, Nelkin et al.)",
+   "published": "NOT PRESENT in extracted text (V3.1 release era)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gpcp_atbd_v31_monthly.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "V3.1 ATBD, not V3.2/V3.3; V3.2 README (sa4-e9) and V3.3 Earthdata page (sa4-e23) still name PERSIANN-CDR as the geo-IR route. Contrasts with 1DD C-ATBD statement that pre-V3 GPCP Monthly used OPI for 1979-1985 (geo-IR summaries did not extend before 1986).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s65",
+   "url": "https://cpc.ncep.noaa.gov/products/global_precip/html/wpage.gspdc.shtml",
+   "fetched_url": null,
+   "title": "Climate Prediction Center - GPCP Geostationary Satellite Precipitation Data Center (GSPDC)",
+   "author_org": "NOAA NWS NCEP Climate Prediction Center",
+   "published": "Page last modified: January 9, 2006",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cpc_gspdc_page.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Names IMD (India Meteorological Department) as an operator supplying IR to the GPCP GSPDC, but names no INSAT/Kalpana satellite and gives no dates for IMD data: NOT PRESENT. No satellite numbers. Conflicts mildly with Huffman et al. 2001 (sa4-e22), which says the 3-hourly 1x1 deg histograms were collected starting October 1996 (this page: 24-class individual 3-hour histograms after March 1998). Same page also saved by sa1 of this run (work/raw/sa1/cpc_gspdc.html).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s66",
+   "url": "https://confluence.ecmwf.int/x/el47E",
+   "fetched_url": null,
+   "title": "Precipitation products brokered from the Global Precipitation Climatology Project (GPCP): Product User Guide and Specification (PUGS), Version 5",
+   "author_org": "Copernicus C3S / DWD contributors (Konrad, Schroeder, Mikalsen, Hollmann, Sikorski)",
+   "published": "last updated on Apr 11, 2022 (old version, Version 5)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/ecmwf_gpcp_pugs_v5_extract.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Read via WebFetch extraction (table rows as returned by the extractor, not raw HTML). Geostationary satellite names: NOT PRESENT. GridSat, CPC merged 4-km IR: NOT PRESENT. The daily row says 1996 to present vs monthly row Jan 1997 to present. Does not say whether the CPC 3-hourly histograms were later built from the CPC 4-km merged IR.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s67",
+   "url": "https://gpm.nasa.gov/data/directory/ncepcpc-level-3-merged-infrared-brightness-temperatures-0",
+   "fetched_url": null,
+   "title": "NCEP/CPC Level 3 Merged Infrared Brightness Temperatures | NASA GPM data directory",
+   "author_org": "NASA GPM",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gpm_dir_cpc_mergir.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Stale list (stops at Meteosat-10, Himawari-8, GOES-16) and start '2000 - Present' predates the 2025 back-extension to 1998 (sa4-e1, sa4-e4). No per-satellite dates. FY-2, INSAT: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s68",
+   "url": "https://data.ornldaac.earthdata.nasa.gov/public/safari2k/climate_meteorology/GPCP_precip/comp/GPCP_1DD_doc.pdf",
+   "fetched_url": null,
+   "title": "GPCP One-Degree Daily (1DD) documentation (ORNL DAAC SAFARI 2000 copy, 1DD_doc)",
+   "author_org": "Huffman / Bolvin (GPCP, NASA GSFC); PDF metadata creator 'lah'",
+   "published": "PDF created 2004-04-30; text says latest version includes data through January 2004",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e30",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gpcp_1dd_doc_2004.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Version 1 era (data through January 2004), not V1.3. Satellite numbers other than Meteosat-5: NOT PRESENT (only operators GOES, GMS, Meteosat). No mention of CPC 4-km merged IR. Read from WebFetch-saved PDF (curl to the ORNL CloudFront redirect host refused by sandbox), converted with pdftotext; only searched lines read, not the full document.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s69",
+   "url": "https://space.oscar.wmo.int/satellites/view/snpp",
+   "fetched_url": null,
+   "title": "WMO OSCAR: Satellite SNPP (rendered page)",
+   "author_org": "WMO",
+   "published": "2026-11-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/oscar_snpp_noaa19_browser.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Registry page; no NASA/NOAA notice read",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s70",
+   "url": "https://space.oscar.wmo.int/satellites/view/noaa_19",
+   "fetched_url": null,
+   "title": "WMO OSCAR: Satellite NOAA-19 (rendered page)",
+   "author_org": "WMO",
+   "published": "2025-08-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/oscar_snpp_noaa19_browser.txt",
+   "retrieved": "2026-11-20",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s71",
+   "url": "https://esgf.nccs.nasa.gov/esgdoc/GPCP_precip_1DD-V1.3_TechNote_180510.pdf",
+   "fetched_url": null,
+   "title": "GPCP_precip_1DD-V1.3 Technical Note (obs4MIPs), 2018-05-10",
+   "author_org": "NASA GSFC / obs4MIPs",
+   "published": "2018-05-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/obs4mips_1dd_v13_technote.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "2018 note; does not cover post-2018 changes",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s72",
+   "url": "https://gpm.nasa.gov/data/news/end-ssmis-data-coming-gpm-near-real-time-products",
+   "fetched_url": null,
+   "title": "End of SSMIS data coming to GPM Near Real-time Products",
+   "author_org": "NASA GPM",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/gpm_end_ssmis_news.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Announcement; later notices (pt5 run) say the flow was extended",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "1DD V1.3 microwave input: SSM/I on DMSP F13 from Oct 1996 to Dec 2008, then SSMIS on F17 only from Jan 2009 to present (RSS CDR at NCEI); file attributes switch SSMI to SSMIS on 2009-01-01.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "RSS SSMI Tb         Tb      1996 to       NCEI          F13: 1996 to 2008 | CDR                         2008 | RSS SSMIS Tb        Tb      2009 to       NCEI          Replaces SSM/I Tb; data only from F17 | CDR                         present",
+     "location": "Section 3.3.1, Table 1: Inputs to GPCP Daily Analysis, p. 11"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "GPCP daily analysis makes use of data from the F13 satellites. SSM/I Tb is obtained from NCEI from the CDR produced by Remote … Sensing Systems (RSS; Santa Clara, CA). … At present, only data from F17 is used in GPCP. SSMIS data is also obtained from the NCEI CDR produced by RSS.",
+     "location": "Section 3.3.1, 'RSS SSM/I Tb' and 'RSS SSMIS Tb', pp. 11-12"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "F13: 1996 to 2008",
+     "location": "Table 1"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Replaces SSM/I Tb; data only from F17",
+     "location": "Table 1"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": ":sensor = \"Imager, AIRS > Atmospheric Infrared Sounder, SSMIS > Special Sensor Microwave Imager/Sounder\" ;",
+     "location": "global attribute sensor (2009-01-01 file)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "C-ATBD table and text agree with the files' own attributes",
+   "subquestion_id": "q1",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c2",
+   "text": "1DD V1.3 sounder input: TOVS (NOAA polar orbiters, two satellites to Feb 1999, one from Mar 1999) Oct 1996-Dec 2002; AIRS on Aqua from 2003-01-01 to present; no NOAA satellite numbers are given.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "TOVS                Precip 1996 to       GPCP/GSFC | 2002 | AIRS V6             Precip 2003 to        GSFC DISC     Replaces TOVS | present … The TOVS data are used for 1999 - 2002 and are provided as daily 1° gridded estimates. The data covering the span October 1996 - February 1999 are based on information from two satellites. For the period March 1999 - December 2002, the TOVS estimates are based on information from one satellite due to changes in satellite data format. … The Advanced Infrared Sounder (AIRS) instrument flew aboard the Earth Observing System Aqua polar-orbiting satellite and was used to replace TOVS data. … AIRS data are available from May 2002 and used for the period from January 2003 – present.",
+     "location": "Section 3.3.1, Table 1 and 'TOVS precipitation' / 'AIRS precipitation (V6)', p. 12"
+    },
+    {
+     "source_id": "s71",
+     "relationship": "supports",
+     "passage": "1DD Version 1.2 employed TOVS data through April 2005, but subsequent | diagnotics revealed efficiencies in the TOVS data starting in 2003. This prompted the | switch to AIRS in January 2003",
+     "location": "Technical note, data description"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": ":sensor = \"Imager, TOVS > TIROS Operational Vertical Sounder, SSMI > Special Sensor Microwave/Imager\" ;",
+     "location": "global attribute sensor (2002-12-31 file)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": ":time_coverage_start = \"2003-01-01T00:00:00Z\" ;",
+     "location": "global attribute time_coverage_start"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "C-ATBD and file attributes agree",
+   "subquestion_id": "q1",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c3",
+   "text": "1DD V1.3 geo-IR (TMPI, 40N-40S) comes from CPC-compiled 3-hourly IR histograms from GOES, GMS/MTSat and Meteosat (Meteosat-5 over the Indian Ocean from 16 Jun 1998), with AVHRR leo-IR fill; documents and files give no satellite numbers or dates.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "The data is processed and provided by Pingping Xie at NOAA CPC. The geostationary data includes inputs from the Geosynchronous Operational Environmental Satellites (GOES, USA), the Geosynchronous Meteorological Satellite (GMS, Japan), the Multifunctional Transport Satellite (MTSat, Japan) and the Meteorological Satellite (Meteosat, European Community). The data is three-hourly channel 4 ~10.7 micron thermal infrared (IR) imagery that is merged and zenith angle corrected at NOAA CPC. Starting with October 1996 the geostationary IR data were accumulated on a 1° grid for individual three hourly images. Gaps in geostationary data are filled with leo-IR data from the NOAA series of polar orbiting meteorological satellites. The Indian Ocean sector routinely lacked geo-IR coverage until Meteosat-5 was repositioned to that region starting 06 UTC 16 June 1998.",
+     "location": "Section 3.3.1, 'Geostationary Data', pp. 12-13"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "1. SSMI, then SSMIS (0.5°x0.5° by orbit, GPROF algorithm) provides fractional occurrence of precipitation, and | 2. GPCP monthly analysis Version 2.3 (2.5°x2.5°) provides monthly accumulation of precipitation to algorithms applied to | 3. Geosynchronous-orbit IR (geo-IR) Tb histograms (1°x1° grid in the band 40°N-40°S, 3- hourly), | 4. Advanced Very High Resolution Radiometer (AVHRR) low-orbit IR (leo-IR) GPI (same time/space grid as geo-IR), and | 5. TIROS Operational Vertical Sounder, then Atmospheric Infrared Sounder (TOVS, AIRS; 1°x1° on daily nodes, Susskind algorithm).",
+     "location": "Section 3.1 Algorithm Overview, p. 9"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Precipitation estimates from mainly geosynchronous and some polar-orbit data are made using the Geosynchronous Precipitation Index (GPI) (Janowiak and Arkin, 1991) for the latitude band 40N-40S. The infrared (IR) data are collected from a variety of sensors. The primary source of IR data is the international constellation of geosynchronous-orbit meteorological satellites – the Geosynchronous Operational Environmental Satellites (GOES, United States); the Geosynchronous Meteorological Satellite (GMS), then the Multifunctional Transport Satellite (MTSat, both Japanese); and the Meteorological Satellite (Meteosat, European Community). . Gaps in geosynchronous coverage (most notably over the Indian Ocean before METEOSAT-5 began imaging there in June 1998) are filled with IR data from the NOAA-series polar-orbiting meteorological satellites. The data are accumulated for processing from full- resolution (roughly 4x8 km) images.",
+     "location": "Section 2, 'IR Data from Geosynchronous Satellites', p.8"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "Startingin October 1996the GPCPsetthe stagefor higherresolutionestimatesby working with the geosynchronous-satellite operatorsaroundthe world to collecthistogramsof geo-IR brightnesstemperature(Tb) on a 1°xl ° grid covering 40°N-40°S at 3-hourly intervals. … 1. GPCPhistogramsofgeo-IR Tb are compiled on a I°X1 ° lat/long grid over 40°N-40°S at 3-hr intervals. The histograms have 24 classes covering 190-270K. … Holes occur in individual geo-IR images, most routinely in the Indian Ocean sector, where no geo-IR data were available until June 1998. To compensate, leo-IR estimates are processed to fill in holes as necessary.",
+     "location": "Section 1 (text lines 97-107), Section 2 (lines 134-136, 216-218 of the .txt)"
+    },
+    {
+     "source_id": "s68",
+     "relationship": "supports",
+     "passage": "The *IR Tb histogram data set* is produced by the Geostationary Satellite Precipitation Data Centre (GSPDC) of the GPCP under the direction of J. Janowiak, located in the Climate Prediction Center, NOAA National Centers for Environmental Prediction, Washington, DC, 20233 USA. Each cooperating geostationary (geo) satellite operator (the Geosynchronous Operational Environmental Satellites, or GOES, United States; the Geosynchronous Meteorological Satellite, or GMS, Japan; and the Meteorological Satellite, or Meteosat, European Community) accumulates three-hourly infrared (IR) imagery. These are forwarded to GSPDC as 24-class histograms of Tb on a 1x1-deg lat/lon grid. The global geo-IR are then merged on a global grid. | In parallel, the NOAA-series low-earth-orbit (leo) satellite operator (United States) provides GPI values on a 1x1-deg lat/lon grid accumulated to the nearest 3-hrly time. … Meteosat-5 was repositioned in June 1998.",
+     "location": "Section on input data sets (text lines 600-614, 698 of .txt)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Consistent documents, but satellite numbers are not stated anywhere for this route",
+   "subquestion_id": "q1",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c4",
+   "text": "GPCP Monthly V2.3 (1DD's scaling): SSM/I F08 Jul 1987-Dec 1991, F11 Jan 1992-May 1995, F13 Jun 1995-Dec 2008, SSMIS F17 from Jan 2009; TOVS to Dec 2002, AIRS from Jan 2003; OPI from TIROS-N and NOAA-6/7/9 AVHRR before 1986; GPI geo-IR.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "RSS SSMI Tb      Tb      Aug 1987    NCEI           F08: Jul 1987 to Dec 1991 (excl. dec 1987); | CDR                      to Dec                     F11: Jan 1992 to May 1995; F13: June 1995 | 2008                       to Dec 2008 | RSS SSMIS Tb     Tb      Jan 2009 to NCEI           Replaces SSM/I Tb; data only from F17 | CDR                      present … TOVS             Precip Aug 1987     GPCP/GSFC      No TOVS/AIRS used for Dec 1987 | to Dec | 2002 | AIRS V6          Precip Jan 2003 to GSFC DISC       Replaces TOVS | present | OPI              Precip Jan 1979 to GPCP/GSFC       Satellites used listed in Table 2. | Dec 1985 | IR Monthly       Tb      Jan 1986 to GPCP/GSFC | Dec 1996 | IR 3 hourly      Tb      Jan 1997 to CPC            Files include IR histograms and OPI | files                    present                    precipitation (see table 2)",
+     "location": "Section 3.3.1, Table 1 (input table), p. 13"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Table 2: Satellites used for OPI estimate | Satellite       Equator              Periods used for OPI | crossing time | TIROS-N         15:30                1 Jan 1979 to 31 Jan 1980 | NOAA-6          07:30                1 Feb 1980 to 6 Sep 1981 | NOAA-7          14:30                7 Sep 1981 to 4 Feb 1985 | NOAA-9          14:30                5 Feb 1985 to 7 Nov 1988",
+     "location": "Section 3.3.1, Table 2, p. 14; also p. 8 'These estimates are used as input before 1986.'"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "contradicts",
+     "passage": "The TIROS Operational Vertical Sounder (TOVS) dataset of surface and atmospheric parameters is derived from analysis of High-Resolution Infrared Sounder 2 (HIRS2) and Microwave Sounding Unit (MSU) data aboard the NOAA series of polar-orbiting operational meteorological satellites. … For the period January 1979 - February 1999 (used July 1987 – February 1999), the TOVS estimates are based on two NOAA satellites. Beginning in March 1999, the TOVS estimates are based on a single NOAA satellite. This occurred as the result of the failure of NOAA-11. … The Atmospheric Infrared Sounder (AIRS) aboard the NASA Aqua polar-orbiting satellite is the source of precipitation estimates to follow-on after TOVS (in 2005).",
+     "location": "Section 2 overview, 'TOVS' and 'AIRS', p. 8"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "contradicts",
+     "passage": "g. Beginning with January 2009, SSMIS precipitation estimates replaced the SSMI estimates because the F13 SSMI failed in September 2009 … h. The TOVS precipitation estimates for the SSMI period July 1987 – February 1999 are based on two satellites. For February 1999 – April 2005, the TOVS estimates are based on only one satellite. | i. TOVS data were partially denied for the period 10-18 September 2001 and cannot be recovered. As well, various operational issues caused partially or completely missing days of TOVS data, particularly in the last few months of NOAA-14's useful life. … k. Beginning with May 2005, AIRS precipitation estimates replaced the TOVS estimates at high latitudes because of TOVS instrument termination.",
+     "location": "Known issues / caveats list, items g-k, pp. 26-27"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "the Geosynchronous Operational Environmental Satellites (GOES, United States); the Geosynchronous Meteorological Satellite (GMS), then the Multifunctional Transport Satellite (MTSat, both Japanese); and the Meteorological Satellite (Meteosat, European Community). . Gaps in geosynchronous coverage (most notably over the Indian Ocean before METEOSAT-5 began imaging there in June 1998) are filled with IR data from the NOAA-series polar-orbiting meteorological satellites. … For the period 1986-March 1998 the GPI estimates are accumulated on a 2.5°lat/lon grid for pentads (5-day periods). Starting with October 1996 the GPI data are accumulated on a 1° lat/lon grid for individual 3-hrly images. The boundary is set at January 1997 … GPCP makes use of data from the F08, F11 and F13 satellites.",
+     "location": "p. 9 'IR Data from Geosynchronous Satellites'; p. 14 'RSS SSM/I Tb'"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "C-ATBD tables plus Adler et al. 2018",
+   "subquestion_id": "q2",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c5",
+   "text": "GPCP V3.3 Daily direct inputs: IMERG V07 Final (Jan 1998-Sep 2025) and IMERG V07 Late (Oct-Dec 2025) within 55N-S; TOVS Jan 1998-Aug 2002; AIRS IR-only on Aqua Sep 2002-Dec 2025.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The Atmospheric Infrared Sounder (AIRS) aboard the NASA Aqua polar-orbiting satellite is the source of precipitation estimates that succeeded TOVS (in September 2002, although TOVS continued to produce successively more-degraded observations into 2005). … Because the Advanced Microwave Sounding Unit (AMSU) aboard Aqua failed in late September 2016, GPCP Version 3.3 Daily uses AIRS precipitation values for the entire record that were reprocessed and are based on infrared-only data for the sake of homogeneity. … AIRS data are available from September 2002 and used for the period from September 2002 – 2025. [The TOVS data continued to May 2005, but are considered questionable after early 2003.] … The Aqua satellite carrying the AIRS sensor performed station-keeping at 1:30 p.m. as part of the A-Train until it started to drift in Spring 2021 after exhausting station-keeping fuel, exiting the Science Upper Limit of the time box in February 2023.",
+     "location": "Section 2.2 (AIRS) p. 6; Section 3.3.1 'AIRS precipitation' p. 8; Section 6 item h p. 16"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "\"Version\": \"3.3\" … \"BeginningDateTime\": \"1998-01-01T00:00:00.000Z\", \"EndingDateTime\": \"2025-12-31T23:59:59.999Z\" … \"ShortName\": \"DMSP\" … \"ShortName\": \"SSM/I\" … \"ShortName\": \"SSMIS\" … \"ShortName\": \"NOAA POES\" … \"ShortName\": \"TOVS\" … \"ShortName\": \"Aqua\" … \"ShortName\": \"AIRS\" … \"ShortName\": \"GOES\" … \"ShortName\": \"GOES-15 Imager\" … \"ShortName\": \"GOES-16 Imager\" … \"ShortName\": \"METEOSAT\" … \"ShortName\": \"VISSR-METEOSAT\" … \"ShortName\": \"GMS\" … \"ShortName\": \"VISSR-GMS\" … \"ShortName\": \"MTSAT\" … \"ShortName\": \"MTSAT 1R Imager\" … \"ShortName\": \"MTSAT 2 Imager\" … \"ShortName\": \"Himawari-8\" … \"ShortName\": \"AHI\" … \"ShortName\": \"WEATHER STATIONS\" … \"ShortName\": \"RAIN GAUGES\"",
+     "location": "items[0].umm: Version, TemporalExtents.RangeDateTimes, Platforms[].ShortName, Platforms[].Instruments[].ShortName"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "No primary sensor data are used in the V3.3 Daily. The IMERG Final, TOVS, and AIRS daily",
+     "location": "section 3"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "1998 to Aug 2002",
+     "location": "Table 1, TOVS row"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Sep 2002 to Dec 2025",
+     "location": "Table 1, AIRS IR-only V6 row"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "k. October-December 2025 was computed with IMERG V07 Late instead of IMERG V07 Final due",
+     "location": "Known issues, item k"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "V3.3 Daily ATBD and CMR agree",
+   "subquestion_id": "q3",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c6",
+   "text": "GPCP V3.2 Daily: June 2000-Sep 2021 (CMR), IMERG V06 Final with PERSIANN-CCS IR from CPC merged IR, TOVS Jun 2000-Aug 2002, AIRS from Sep 2002.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "For the period January 1979 - February 1999 (not currently used), the TOVS estimates are based on two NOAA satellites. Beginning in March 1999 (used June 2000 – August 2002), the TOVS … GPCP V3.2 Monthly Precip June 2000 to GSFC/GPCP Companion Monthly product | TOVS Precip June 2000 to GSFC/SRT | AIRS IR-only V6 Precip Sep 2002 to GES DISC Replaces TOVS | IMERG V6 Final Precip June 2000 to GES DISC … The TOVS data are used June 2000-August 2002 and are provided as daily 1° gridded estimates … AIRS data are available from September 2002 and used for the period from September 2002 – present.",
+     "location": "Section 2.2 (TOVS) p. 5; Table 1 p. 8; Section 3.3.1 pp. 8-9"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "converted to Level 2 precipitation estimates using the V05 Goddard Profiling (GPROF; Kummerow et al. 2015) scheme. … climatologically calibrated to the GPCP V2.3 Monthly SG estimates … In the TRMM era, TMI and CORRA-TRMM (CORRA-T) are used. … the CPC assembles the zenith-angle-corrected, inter-calibrated “even-odd” and merged geo-IR fields for use in the PERSIANN-CCS computations. … Note that each IMERG version, including V06, is uniformly processed over the entire record (currently June 2000 – September 2021)",
+     "location": "Section 3.3.1 'IMERG precipitation', p. 10"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "\"Version\": \"3.2\" … \"BeginningDateTime\": \"2000-06-01T00:00:00.000Z\", \"EndingDateTime\": \"2021-09-30T23:59:59.999Z\" … \"ShortName\": \"DMSP\" … \"ShortName\": \"SSM/I\" … \"ShortName\": \"NOAA POES\" … \"ShortName\": \"TOVS\" … \"ShortName\": \"Aqua\" … \"ShortName\": \"AIRS\" … \"ShortName\": \"GOES\"",
+     "location": "items[1].umm: TemporalExtents, Platforms"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "converted to Level 2 precipitation estimates using the V05 Goddard | Profiling (GPROF; Kummerow et al. 2015) scheme. … Information using Artificial Neural Networks – Cloud Classification System (PERSIANN-CCS; | Hong et al. 2004) infrared estimates … the CPC assembles the zenith-angle-corrected, inter-calibrated | “even-odd” and merged geo-IR fields for use in the PERSIANN-CCS computations. … Note | that each IMERG version, including V06, is uniformly processed over the entire record | (currently June 2000 – September 2021)",
+     "location": "section IMERG precipitation (about p. 10); flowchart caption line 225 'Daily GPCP V3 Flowchart (IMERG V06B period)'"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "V3.2 Daily ATBD and CMR agree",
+   "subquestion_id": "q3",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c7",
+   "text": "GPCP V3.x Monthly (V3.x Daily's scaling): SSMI F11 Jan 1992-May 1995, F13 May 1995-Dec 2008, SSMIS F17 only Jan 2009-2025; F08 not used; TOVS Jan 1983-Aug 2002; AIRS Sep 2002-2025; geo-IR through PERSIANN-CDR on GridSat-B1 from 1983.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "although SSMI data began in July 1987, the first sensor aboard the Defense Meteorological Satellite Program (DMSP) F08 platform had significant problems that prevent the available versions of the Goddard Profiling (GPROF) retrieval algorithm from providing useful data for much of its record. Thus, for the sake of homogeneity we choose to begin the SSMI/SSMIS era with 1992 the first full year of data from the SSMI aboard the DMSP F11, and run to 2025",
+     "location": "Section 3.3.1, p. 9; Fig. 2 p. 10"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "c. Beginning with January 2009, SSMIS precipitation estimates replaced the SSMI estimates because the F13 SSMI failed in September 2009 and we wanted to both avoid possible degraded performance late in the SSMI record and to establish a whole-year data boundary to aid in diagnosing possible biases.",
+     "location": "Section 6 known issues item c, p. 23"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Passive microwave (PMW) radiometer estimates are computed from the Defense Meteorological Satellite Program (DMSP) Special Sensor Microwave/Imager (SSMI) that flew on the F11 and F13 spacecraft, and Special Sensor Microwave Imager/Sounder (SSMIS) that is flying on the F17 spacecraft, all using the GPROF 2010 Version 2 (GPROF2010v2; Kummerow et al. 2011) and the Microwave Emission Brightness Temperature Histograms (METH; Chiu et al. 1993, Chiu and Chokngamwong 2010) computed as part of GPCP V2.3. Infrared data from the global collection of geosynchronous weather satellites are converted to precipitation estimates using the PERSIANN Climate Data Record (PERSIANN-CDR; Ashouri et al. 2015).",
+     "location": "Section 3.3.1 'GPCP V3.2 precipitation', p. 11"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "F11: Jan 1992 to May 1995;",
+     "location": "Table 1"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "F13: May 1995 to Dec 2008",
+     "location": "Table 1"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "For the period January 1979 - February 1999 (used January 1983 – February 1999), the TOVS",
+     "location": "TOVS section"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "The TOVS data are used for the early SSMI period 1983-August 2002 and are provided as monthly",
+     "location": "Table 1 notes"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "GridSat-B1 IRWIN IR data (Fig. 3) are used as input to create an intermediate output product",
+     "location": "PERSIANN-CDR section"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "V3.2 and V3.3 Monthly ATBD tables agree",
+   "subquestion_id": "q3",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c8",
+   "text": "IMERG V07 passive-microwave imagers with periods: TRMM TMI/PR Jan 1998-Apr 2015 (PR to Oct 2014); GMI from Mar 2014; SSMI F11 to 16 May 2000, F13 to 30 Nov 2009, F14 to 23 Aug 2008, F15 23 Feb 2000-14 Aug 2006; SSMIS F16 from 20 Nov 2005, F17 from 19 Mar 2008, F18 from 8 Mar 2010, F19 1 Dec 2014-11 Feb 2016; AMSR-E Jun 2002-Oct 2011; AMSR2 from mid-2012.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Table 3. The inventory of SSMIS data used in IMERG, period of record, | and sensor status. | DMSP                Period of Record                    Status | F16       20 November 2005 - ongoing             active | F17       19 March 2008      - ongoing           active | F18       8 March 2010       - ongoing           active | F19       1 December 2014 - 11 February 2016 inactive | Note that F20 was built, but never launched.",
+     "location": "Table 3, p. 29"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Table 4. The inventory of SSMI data used in IMERG, period of record, and | sensor status. | DMSP                             Period of Record                                           Status | F11           1 January 1998 - 16 May 2000                                  inactive | F13           1 January 1998 - 30 November 2009                             inactive | F14           1 January 1998 - 23 August 2008                               inactive | F15           23 February 2000 - 14 August 2006                             inactive, unusable thereafter",
+     "location": "Table 4, p. 31"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contextualizes",
+     "passage": "Another issue arose on 14 | August 2006: DoD activated the RADCAL beacon on the F15 DMSP, which interfered with the | 22V and 85.5V channels and prevented reliable estimates using then-current GPROF code.",
+     "location": "SSMI sensor description, p. 30"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "The descent of TRMM following fuel | exhaustion in July 2014 prevented useful retrievals after 7 October 2014, except for a short period | in 2015 from 12 February to 1 April as TRMM descended past its original at-launch altitude of | 350 km. … The TMI continued | to be operated during the descent of TRMM following fuel exhaustion in July 2014, until | passivation (shutdown of the satellite) on 8 April 2015.",
+     "location": "PR and TMI descriptions, pp. 26-27"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Square brackets ([ ]) indicate an estimated date. … Gray-shaded | entries are not currently used, but are stated for possible future use. | Merged Radar – Passive Microwave | Imager Products | Product         Period of Record | GPM DPR-GMI       Apr 14 - [Dec 29] | TRMM PR-TMI       Jan 98 - Sep 14 | … Aqua AMSR-E           Jun 02 - Oct 11 | DMSP F13 SSMI         Jan 98 - Nov 09 | DMSP F14 SSMI         Jan 98 - Aug 08 | DMSP F15 SSMI         Feb 00 - Aug 06 | DMSP F16 SSMIS        Nov 05 - [Dec 24] | DMSP F17 SSMIS        Mar 08 - [Dec 25] | DMSP F18 SSMIS        Mar 10 - [Mar 26] | DMSP F19 SSMIS        Dec 14 – Feb 16 | GCOMW1 AMSR2          Jul 12 - [May 26] | GOSAT-3 AMSR3         [Feb 24] - [Jan 32] | GPM GMI               Mar 14 - [Dec 29] | … TRMM TMI              Jan 98 – Apr 15",
+     "location": "Table 1, pp. 3-4"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "GPM DPR-GMI        Apr 14 - [Dec 29] | TRMM PR-TMI          Jan 98 - Sep 14 | … Aqua AMSR-E             Jun 02 - Oct 11       JAXA | DMSP F13 SSMI           Jan 98 - Nov 09     U.S. DoD | DMSP F14 SSMI           Jan 98 - Aug 08     U.S. DoD | DMSP F15 SSMI           Feb 00 - Aug 06     U.S. DoD | DMSP F16 SSMIS         Nov 05 - [Dec 24]    U.S. DoD | DMSP F17 SSMIS          Mar 08 - [Dec 25]     U.S. DoD | DMSP F18 SSMIS          Mar 10 - [Mar 26]     U.S. DoD | DMSP F19 SSMIS           Dec 14 - Feb 16      U.S. DoD | GCOMW1 AMSR2            Jun 12 - [May 26]      JAXA | … GPM GMI                 Mar 14 - [Jan 29]      NASA | … TRMM TMI                 Jan 98 - Apr 15       NASA",
+     "location": "Table 10, pp. 36-37"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Launch Date: 1:37pm EST, February 27th, 2014",
+     "location": "Launch details"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "IMERG V07 tech doc day-level tables and 2026 ATBD",
+   "subquestion_id": "q4",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c9",
+   "text": "IMERG V07 cross-track sounders: AMSU-B NOAA-15/16/17 (2000-2010), MHS NOAA-18 (2005-2018), NOAA-19 (from Feb 2009), MetOp-A/B/C (from 2006/2013/2019), ATMS SNPP (Dec 2011), NOAA-20 (Nov 2017), NOAA-21 (Feb or Jun 2023); SAPHIR used in V06 only.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Table 6. Inventory of ATMS data used in IMERG, period of record, and sensor | status. … Satellite                            Period of Record        Status | SNPP                      10 December 2011 – current      active | NOAA-20                   29 November 2017 – current      active | NOAA-21                   1 February 2023 – current       active",
+     "location": "Table 6, p. 31"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Table 8. Inventory of MHS data used in IMERG, period of record, … Satellite                 Period of Record                    Status | NOAA-18        25 May 2005         – 20 October 2018        inactive | NOAA-19        25 February 2009 – current                   active | MetOp-A        5 December 2006 – 30 November 2021           inactive | MetOp-B        1 April 2013        – current                active | MetOp-C        10 November 2019 – current                   active … Starting with NOAA-20 MHS has been superseded by ATMS on the NOAA series.",
+     "location": "Table 8, pp. 33-34"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Table 9. The inventory of AMSU-B data used in IMERG, period | of record, and sensor status. … NOAA-15*      1 January 2000 - 14 September 2010          inactive | NOAA-16       4 October 2000 - 16 February 2011           inactive | (last used for 30 April 2010) | NOAA-17                28 June 2002 - 17 December 2009 inactive | * NOAA-15 starts 26 October 1998, but RFI issues prevent | use before 1 January 2000.",
+     "location": "Table 9, pp. 34-35"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "(*SAPHIR*) is a multi-channel passive microwave radiometer that flew on the Megha-Tropiques | platform from 12 October 2011 to 23 March 2022. … Satellite                                               Period of Record                   Status | Megha-Tropiques                     13 October 2011 – 15 December 2018,                   inactive | 27 June 2019 – 23 March 2022 intermittently",
+     "location": "SAPHIR description and Table 5, p. 31"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "WSF-M1 MWI             Aug 26 – [Jan 30] | WSF-M2 MWI             [Jan 28 – Jan 34] | JPSS-3 ATMS **         [Jan 26] - [Jan 32] | JPSS-4 ATMS **         [Jan 31] - [Jan 37] | METOP-2/A MHS ** Dec 06 - Jan 20 | METOP-1/B MHS ** Apr 13 - [Aug 26] | METOP-3/C MHS          Nov 19 - [Apr 27] | … M-T SAPHIR *           Oct 11 - Mar 22 | NOAA-15 AMSU **        Jan 00 - Sep 10 | NOAA-16 AMSU **        Oct 00 - Apr 10 | NOAA-17 AMSU **        Jun 02 - Dec 09 | NOAA-18 MHS **         May 05 – Oct 18 | NOAA-19 MHS **         Feb 09 - [Dec 23] | NOAA-20 ATMS **        Nov 17 - [Aug 24] | NOAA-21 ATMS **        Jun 23 - [Jan 30] | SNPP ATMS **           Dec 11 - [Dec 24] | *    Parts of the SAPHIR record suffer dropouts. … SAPHIR is | not used in V07 IMERG because additional retrieval development is necessaryto provide | precipitation estimates whosespatial patterns are more consistent with other PMW retrievals.",
+     "location": "Table 1, continued, p. 4"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "In V07, GPROF 2021 is used to compute precipitation estimates for all microwave sensors as | input. … V07 adapted PDIR–NOW as the IR precipitation algorithm, involving dynamically shifting | relationships between the IR brightness temperatures and the precipitation rate (Nguyen et al. | 2020), that replaced PERSIANN-CCS. … In V07, GPROF-TMI 2021 estimates are computed for the GPM era and incorporated in the | V07 IMERG datasets and incorporated as another PMW sensor, while GPROF-GMI 2021 | estimates are computed for the TRMM era and incorporated as another PMW sensor. … SAPHIR estimates are not used in V07 to give additional time to develop estimates that are | spatially consistent with other sensors’ output.",
+     "location": "V07 changes list, pp. 17-18"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "14 June 2023 NOAA21 data entered Early and Late Runs as of 10:00 UTC 14 June 2023.",
+     "location": "Change log, front of document (text line 27)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contradicts",
+     "passage": "7 February 2020 The METOP-A channel 2 started degrading in early December 2019 and has | been judged unusable for IMERG. … The Final Run stops using METOP-A after 5 December | 2019 based on a conservative analysis that includes the fact that METOP-B and -C are in nearly | redundant orbits. … 20 November 2019 METOP-C data began to be used in Early and Late Runs with 10 November | 2019 at 0740 UTC.",
+     "location": "Change log (text lines 4444-4456)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "IMERG tech docs; end dates are estimates",
+   "subquestion_id": "q4",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c10",
+   "text": "CPC merged 4-km IR (route into IMERG from Feb 2000): uniformly processed from 17 Feb 2000, extended back to 1998 in 2025; satellites by year include GMS-5, GOES-8 to -19, MTSAT-1R/-2, Himawari-8/-9, Meteosat-5/-7 and MSG-1 to -4; no FY-2 or INSAT.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Each cooperating geostationary (geo) satellite operator (the Geosynchronous Operational Environmental Satellites [GOES], United States; the Geosynchronous Meteorological Satellite [GMS], followed by the Multi-functional Transport Satellite [MTSat] and then Himawari, Japan; and the Meteorological Satellite [Meteosat], European Community) forwards infrared (IR) imagery to CPC. … The dataset was first produced in late 1999, then a uniformly processed record was made available starting 17 February 2000. In April 2025, CPC extended the record back to 1 January 1998. | All 5 geo-IR satellites are used, with essentially continuous coverage. Note that there is an extended data dropout in the presently available IR dataset for Japanese sector from late on 17 November 2005 to the middle of 22 March 2006",
+     "location": "p.1"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "there was no geo-IR coverage in the Indian | Ocean sector until 06 UTC 16 June 1998 … GMS-5 was replaced by GOES-9 starting | 01 UTC 22 May 2003, which introduced slightly different instrument characteristics. MTSat-1R | went operational starting 19 UTC 17 November 2005, and was replaced by MTSat-2 on 1 July | 2010. Himawari 8 took over from MTSat-2 effective 0200 UTC on 7 July 2015. Meteosat 8 | replaced Meteosat 7 as of 1 February 2017.",
+     "location": "IR data description, p. 35"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "Table 12. Geo-IR satellites contained in the Merged 4-km IR Tb dataset provided by | NOAA/NWS/CPC. | GMS            GOES-          GOES-       METEOSAT INDOEX | WEST           EAST | 1998         GMS-5          GOES-10        GOES-8      MET-7           MET-5 | … 2003         GMS-5/         GOES-10        GOES-8/     MET-7           MET-5 | GOES9                         GOES-12 | … 2016         H-8            GOES-15        GOES-13     MSG-3           MET-7 | … 2018          H-8            GOES-15      GOES-16    MSG-3          MSG-1 | * The beginning of the MTSat-1 record, 19 UTC on 17 November 2005 to the | middle of 22 March 2006 is not available in the current IR record due to format | issues at the time the data were introduced. | These data are used as input to IMERG processing.",
+     "location": "Table 12, pp. 47-48"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Himawari-9 (formerly 140°E 00 30 | MTSAT-2, MTSat-1R, GMS, | Himawari-8) | GOES-E (8, 12, 13, now 16) 75°W 45 15 | GOES-W (10, 11, 15, 17, 18, 135°W 00 30 | 19) | Meteosat-11 (formerly 5, 7, 8, 9.5°E 00 30 | 9, 10) | Meteosat-9 (formerly 5, 7, 8) 45.5°E 00 30 | (63°E for 5, 7; | 41.5°E for 8)",
+     "location": "Table 11, p.2"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "starting 17 February 2000. In April 2025, CPC extended the record back to 1 January 1998.",
+     "location": "record history"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CPC's own table gives years only",
+   "subquestion_id": "q5",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c11",
+   "text": "IMERG V07 (V3.3 Daily) used GridSat geo-IR for 1998 to 6 Feb 2000; GridSat headers in that window list GMS-5, GOES-8/-9/-10 and Meteosat-5/-6/-7.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Zenith-angle-corrected, inter-calibrated, and merged geo-IR fields are provided by GridSat (Knapp 2008) during the period 1998–6 February 2000, and CPC Merged 4 km IR (Joyce et al. 2011) subsequently, for use in the PDIR computations.",
+     "location": "IMERG precipitation section, pp.9-10"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "contradicts",
+     "passage": "GridSat IR is adapted for use before February 2000 (with CPC used thereafter), and the calibration data for IMERG switches from TRMM to GPM in June 2014.",
+     "location": "p.5, discussion of Fig. 3"
+    },
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "String Satellite_Name_satid \"GMS-5,GOES-8,GOES-9,Meteosat-6\";",
+     "location": "NC_GLOBAL Satellite_Name_satid (line 333)"
+    },
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "String Satellite_Name_satid \"GMS-5,GOES-8,GOES-9,Meteosat-5,Meteosat-7\";",
+     "location": "NC_GLOBAL Satellite_Name_satid (line 334)"
+    },
+    {
+     "source_id": "s61",
+     "relationship": "supports",
+     "passage": "String Satellite_Name_satid \"GMS-5,GOES-10,GOES-8,Meteosat-5,Meteosat-7\";",
+     "location": "NC_GLOBAL Satellite_Name_satid (line 334)"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Note that the use of GridSat in IMERG V07 allows IMERG, and therefore GPCP V3.3 Daily to cover January 1998-May 2000 for the first time. … V3.3 production is currently paused at March 2024 while NCEI is developing a new calibration procedure for the GridSat IR input product due to the retirement of the previous calibration source. … The vertical red lines denote the start of the DMSP F11/SSMI, F13/SSMI, and F17/SSMIS sensors (left to right) used in turn for calibration. … GridSat IR is adapted for use before February 2000 (with CPC used thereafter), and the calibration data for IMERG switches from TRMM to GPM in June 2014.",
+     "location": "pp. 1-5 (What's New; Additional Notes; Fig. 2 and Fig. 3 captions)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "ATBD statement plus file headers",
+   "subquestion_id": "q5",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c12",
+   "text": "V3.x Monthly geo-IR comes through PERSIANN-CDR built on GridSat-B1 for its whole record (1983 on), so GridSat's satellites (GOES-5 onward, Meteosat-2 onward, GMS-1 onward, MTSAT, Himawari-8/-9, FY-2C/-2E) enter V3.x Daily through the monthly scaling.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "String source \"GRIDSAT-B1.1983.01.01.00.v02r01.nc,GRIDSAT-B1.1983.01.01.03.v02r01.nc, … GRIDSAT-B1.1983.01.01.21.v02r01.nc,gpcp_m8301.bin\";",
+     "location": "NC_GLOBAL source"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "String source \"GRIDSAT-B1.2026.07.30.00.v02r01.nc,GRIDSAT-B1.2026.07.30.03.v02r01.nc, … GRIDSAT-B1.2026.07.30.21.v02r01.nc,gpcpv23_m2607.bin\";",
+     "location": "NC_GLOBAL source (line 89)"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "contradicts",
+     "passage": "String Satellite_Name_satid \"FY-2C,GOES-10,GOES-12,Meteosat-5,Meteosat-7,Meteosat-8,MTSAT-1R\"; | String B1U_File_satid \"ISCCP.B1U.a.FY2-C.2005.12.01.1200.CMA.gz,ISCCP.B1U.a.GOE-10.2005.12.01.1200.CSU.gz,ISCCP.B1U.a.GOE-12.2005.12.01.1145.MSC.gz,ISCCP.B1U.a.MET-5.2005.12.01.1130.EUM.gz,ISCCP.B1U.a.MET-7.2005.12.01.1130.EUM.gz,ISCCP.B1U.a.MSG-1.2005.12.01.1200.EUM.gz,ISCCP.B1U.a.MTS-1.2005.12.01.1132.JMA.gz\";",
+     "location": "NC_GLOBAL Satellite_Name_satid, B1U_File_satid (lines 334-335)"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "satellite,first_sampled,last_sampled,n_files | Meteosat-2,1983010100,1988070112,13 | GOES-6,1983010100,1988070112,12 | GOES-5,1983010100,1984070112,6 | GMS-2,1983010100,1984070112,6 | GOES-1,1983030100,1983030100,1 | GMS-1,1984030100,1984030100,1 | GMS-3,1985010112,1989070112,10 | GOES-7,1987070112,1996010112,15 | Meteosat-3,1989010112,1994070112,5 | Meteosat-4,1989070112,1994010112,10 | GMS-4,1990010112,1995010112,11 | Meteosat-5,1994070112,2007010112,25 | GMS-5,1995070112,2003010112,17 | GOES-8,1995070112,2003010112,16 | GOES-9,1996010112,2005070112,12 | Meteosat-6,1997070112,1998010112,2 | Meteosat-7,1998061512,2017010112,45 | GOES-10,1999010112,2011010112,20 | GOES-12,2003070112,2013070112,23 | Meteosat-8,2005010112,2022010112,17 | FY-2C,2005120112,2011070112,11 | MTSAT-1R,2005120112,2015070112,26 | GOES-11,2006070112,2011070112,13 | Meteosat-9,2007070112,2026070112,23 | GOES-13,2010070112,2018010112,19 | GOES-15,2012010112,2020010112,21 | FY2-E,2012100112,2012100112,1 | GOES-14,2012100112,2013060112,2 | Meteosat-10,2013060112,2026070112,18 | Himawari 8,2015071003,2022070112,15 | GOES-16,2018010112,2025010112,15 | Meteosat-11,2018070112,2023010112,10 | GOES-17,2019010112,2023010112,8 | Himawari 9,2023010112,2026070112,8 | GOES-18,2023010112,2026070112,8 | GOES-19,2025070112,2026070112,3",
+     "location": "gridsat_satellite_ranges.csv (all rows); per-file data in gridsat_samples.csv"
+    },
+    {
+     "source_id": "s64",
+     "relationship": "supports",
+     "passage": "The Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks – Climate Data Record (PERSIANN-CDR; Ashouri et al., 2015) is used to convert the GridSat geo-IR Tb (Knapp 2008) to precipitation rates on a 0.25°x0.25° latitude/longitude grid every 3 hours. | Note that prior versions of the GPCP SG Monthly product were computed using Outgoing Longwave Radiation (OLR) Precipitation Index (OPI) for 1979-1985, because the summaries of geo-IR data available at that time did not extend before 1986. However, the GridSat archive extends back to 1980. We choose to begin the GPCP V3.1 in 1983, which is the first full year of essentially complete geo-IR coverage … GridSat-B1 IRWIN IR data are used as input to create an intermediate output product called PERSIANN-B1. … The GridSat data contains residual intersatellite differences at the boundaries between the areas of coverage of the geo-IR sensors, and these boundaries are partially carried through into the PERSIANN-CDR output.",
+     "location": "Section 3 (PERSIANN-CDR summary, p.~6 text lines 253-263); PERSIANN-CDR precipitation (lines 641-646); Data limitations b (lines 931-933)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Route from ATBDs and PERSIANN-CDR file sources; per-satellite dates from GridSat tables that disagree in places",
+   "subquestion_id": "q5",
+   "sole_source_reason": "The data producers' own algorithm documents and file metadata are the authority for which inputs a product uses."
+  },
+  {
+   "id": "c13",
+   "text": "Mission records (WMO OSCAR, NASA) give operational lives that differ from contribution dates, e.g. TRMM 1997-2015, GCOM-W AMSR2 from Aug 2012, NOAA-19 decommissioned 13 Aug 2025, MetOp-A EOL 15 Nov 2021, SNPP EOL 01 Nov 2026, DMSP F13 recorder failed 19 Nov 2009.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Launch: \"27 Nov 1997\"; EOL: \"08 Apr 2015\" … TMI | \"TRMM Microwave Imager\" | \"Feb 1998 *\" | \"08 Apr 2015\" | \"N/A\" | PR | \"Precipitation Radar\" | \"Feb 1998 *\" | \"01 Apr 2015\" | \"N/A\"",
+     "location": "Satellite details; Satellite payload table"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "contextualizes",
+     "passage": "**Launch date:** \"17 May 2012\" … **End of life (expected):** \"≥2027\" … \"AMSR2\" | \"Advanced Microwave Scanning Radiometer - 2\" (start date \"10 Aug 2012\", status \"Active\")",
+     "location": "Satellite details; Satellite payload table"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "contextualizes",
+     "passage": "Launch: \"19 Oct 2006\"; EOL: \"15 Nov 2021\"; Status: \"Inactive\" … MHS (Microwave Humidity Sounding): Start date \"15 Jan 2007\"; EOL date \"15 Nov 2021\"",
+     "location": "Satellite details; Satellite payload table"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "contextualizes",
+     "passage": "Status: \"Operational\"; Launch: \"18 Nov 2017\"; EOL: \"≥2031\" … ATMS (Satellite payload table): Start date \"Feb 2018\"; EOL date \"≥2031 *\"; Status \"Active\"",
+     "location": "Satellite details; Satellite payload table"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "contradicts",
+     "passage": "Status: \"Inactive\"; Launch: \"12 Oct 2011\"; EOL: \"Jan 2022\" … SAPHIR | \"15 Jan 2012\" | \"Jan 2022 *\" | \"Active\"",
+     "location": "Satellite details; Satellite payload table"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "contextualizes",
+     "passage": "Status: \"Operational\"; Launch: \"10 Nov 2022\"; EOL: \"≥2029\" … ATMS (Satellite payload table): Start date \"Nov 2023 *\"; EOL date \"≥2029 *\"; Status \"Active *\"",
+     "location": "Satellite details; Satellite payload table"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "contextualizes",
+     "passage": "DMSP-F08: Sep 1987 - Oct 2006 | DMSP-F10: Mar 1991 - Oct 1997 | DMSP-F11: Feb 1992 - Aug 2000 | DMSP-F12: Nov 1994 - Oct 2008 | DMSP-F13: Jun 1995 - Feb 2015 | DMSP-F14: Jul 1997 - 2015 | DMSP-F15: Mar 2000 - Dec 2020",
+     "location": "'Satellites this instrument is flying on' list"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "contextualizes",
+     "passage": "DMSP-F16 ... Jan 2004 - 2023 | DMSP-F17 ... 2007 - Sep 2026 | DMSP-F18 ... Jan 2010 - Sep 2026 | DMSP-F19 ... Aug 2014 - Feb 2016",
+     "location": "Satellite list under 'Defense Meteorological Satellite Program - Block 5D-3'"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "contradicts",
+     "passage": "Status · Inactive. Details on Status (as available) · Tape recorder failed 19th Nov 2009, thus no global data since then. Satellite exploded in orbit on 3 February 2015.",
+     "location": "Status field (WebSearch snippet)"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "contextualizes",
+     "passage": "Aqua (see instrument status) Aug 2002 - 2027 … Utilization Period: 2002 to 2027",
+     "location": "Satellites this instrument is flying on; Utilization Period"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "contextualizes",
+     "passage": "NOAA-9: Mar 1985 - Feb 1998 | NOAA-10: Dec 1986 - Aug 2001 | NOAA-11: Nov 1988 - Jun 2004 | NOAA-12: Sep 1991 - Aug 2007 | NOAA-13: Aug 1993 - Aug 1993 | NOAA-14: Apr 1995 - May 2007",
+     "location": "Satellites this instrument flew on"
+    },
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "Products no longer sent after 16 June 2025 | Decommissioned on 13 August 2025",
+     "location": "Details on Status"
+    },
+    {
+     "source_id": "s72",
+     "relationship": "supports",
+     "passage": "Department of Defense (DOD) FNMOC has announced its intention to shut down the current flow of operational SSMIS data on 30 June 2025. This is much earlier than the earlier announced date of September 2026, and would suspend the use of F16, F17, and F18 SSMIS data in GPM PPS.",
+     "location": "news item"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "Satellite retired on 1st Sept 2026",
+     "location": "Details on Status"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "WMO OSCAR registry pages read via WebFetch",
+   "subquestion_id": "q6"
+  },
+  {
+   "id": "c14",
+   "text": "TOVS Pathfinder Path A processed dates per NOAA satellite (NOAA-10, -11, -12, -14) are given, but no GPCP document links GPCP's TOVS to specific satellites except NOAA-11.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "contextualizes",
+     "passage": "NOAA-11         September 24, 1988     November 1988 -         1.62 to 5.27         470 nmi | December 1994           then after standby | (placed in standby      mode | then reactivated)       7.80 to 9.00 | August 1997 - | December 1998 … NOAA-12         May 14, 1991            June 1991 –              7.47 to 5.80           450 nmi | November 1998 | NOAA-14         December 20, 1994       February 1995 and        1.65 to 8.60           470 nmi | April 1995 - | December 2004 | Table 1. Launch Dates for each TOVS instrument … only NOAA-14 was used as input to the model/analysis as NOAA-11 stopped in December 1998.",
+     "location": "Section 1, Table 1 (Launch Dates for each TOVS instrument), pp. 7-8; file-naming section"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "contextualizes",
+     "passage": "NOAA-9: Mar 1985 - Feb 1998 | NOAA-10: Dec 1986 - Aug 2001 | NOAA-11: Nov 1988 - Jun 2004 | NOAA-12: Sep 1991 - Aug 2007 | NOAA-13: Aug 1993 - Aug 1993 | NOAA-14: Apr 1995 - May 2007",
+     "location": "Satellites this instrument flew on"
+    }
+   ],
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "Context only: not tied to GPCP",
+   "subquestion_id": "q1"
+  },
+  {
+   "id": "c15",
+   "text": "V3.3 production dates conflict: paused at March 2024 (release notes) or September 2024 (Earthdata), yet CMR records run to 2025-12-31.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Note that the use of GridSat in IMERG V07 allows IMERG, and therefore GPCP V3.3 Daily to cover January 1998-May 2000 for the first time. … V3.3 production is currently paused at March 2024 while NCEI is developing a new calibration procedure for the GridSat IR input product due to the retirement of the previous calibration source. … The vertical red lines denote the start of the DMSP F11/SSMI, F13/SSMI, and F17/SSMIS sensors (left to right) used in turn for calibration. … GridSat IR is adapted for use before February 2000 (with CPC used thereafter), and the calibration data for IMERG switches from TRMM to GPM in June 2014.",
+     "location": "pp. 1-5 (What's New; Additional Notes; Fig. 2 and Fig. 3 captions)"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "1983-01-01 to 2025-12-31 … Product latency/update: The products are currently paused at September 2024 because the IR input dataset from NCEI requires a new calibration scheme to extend past that point. … Platforms | DMSP , | NOAA POES , | Aqua , | GOES , | METEOSAT , | GMS , | MTSAT , | Himawari-8 , | WEATHER STATIONS | Instruments | SSMIS , | SSM/I , | TOVS , | AIRS , | GOES-15 Imager , | GOES-16 Imager , | VISSR-METEOSAT , | VISSR-GMS , | MTSAT 1R Imager ,",
+     "location": "Temporal Extent; Description; Product Summary Platforms/Instruments"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "contradicts",
+     "passage": "Monthly GPCP V3.3 product: DOI:10.5067/MEASURES/GPCP/DATA307 (01/1983-12/2025) | Daily GPCP V3.3 product: DOI:10.5067/MEASURES/GPCP/DATA307 (01/1998-12/2025) … GPCP V3.3 – Daily Product Approach (released in Feb 2025) | June 1998-March 2024 (global 0.5º x 0.5º lat./lon. Grid) … • histogram-calibrate TOVS/AIRS-IR to IMERG (we are currently working on switching to | AVHRR precipitation record due to its better resolution and consistent record)",
+     "location": "final slides and back-up slide"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The latest release, Version 3.3 of the GPCP Daily (1998–2024) and Monthly (1983–2024) products, issued in February 2025, represents the final generation before the transition to GPCP Version 4. … Enhancements in the GPCP V3.3 Daily product stem from updates to the Monthly analysis and incorporation of IMERG V07B Final Run, which uses GridSat to extend daily coverage back to January 1998 through May 2000.",
+     "location": "abstract text"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "\"URL\": \"https://data.gesdisc.earthdata.nasa.gov/data/GPCP/GPCPDAY.3.3/2025/GPCPDAY_L3_20251231_V3.3.nc4\" … \"BeginningDateTime\": \"2025-12-31T00:00:00.000Z\" … \"GranuleUR\": \"GPCPDAY.3.3:GPCPDAY_L3_20251231_V3.3.nc4\"",
+     "location": "items[0].umm: RelatedUrls, TemporalExtent, GranuleUR"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Sources quoted directly",
+   "subquestion_id": "q3"
+  },
+  {
+   "id": "c16",
+   "text": "Reconciled details: TMI used to 8 Apr 2015; TRMM PR gap 29 May-19 Jun 2009; F17 37V channel missing in IMERG from 9 Mar 2017; dated geo-IR handovers in IMERG (GMS-5 to GOES-9 22 May 2003, MTSat-1R 17 Nov 2005, MTSat-2 1 Jul 2010, Himawari 8 7 Jul 2015, Meteosat 8 1 Feb 2017); IMERG V07 TRMM era to 2014-05-31; TOVS partially denied 10-18 Sep 2001; CPC merged IR extended back to 1 Jan 1998 in 2025.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "The PR suffered an electronics failure on 29 May 2009. Data were lost until the “B-side” electronics were activated on 19 June 2009.",
+     "location": "PR sensor section (text line about 1296-1297)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contextualizes",
+     "passage": "In particular, for the periods 5 April – 18 May | 2016 and 9 March 2017 to the presentthe F17 SSMIS 37V channel experienced intermittent noisy | values and the values have been set to missing.",
+     "location": "SSMIS sensor section (text lines about 1417-1419)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "As well, GMS-5 was replaced by GOES-9 starting | 01 UTC 22 May 2003, which introduced slightly different instrument characteristics. MTSat-1R | went operational starting 19 UTC 17 November 2005, and was replaced by MTSat-2 on 1 July | 2010. Himawari 8 took over from MTSat-2 effective 0200 UTC on 7 July 2015. Meteosat 8 | replaced Meteosat 7 as of 1 February 2017.",
+     "location": "Geo-IR section (text lines about 1685-1689; repeated about 2197-2199)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contextualizes",
+     "passage": "TRMM_FINAL Compute Kalman Filter Precip (8) Month 1998-01-01 2014-05-31 V07T | TRMM_FINAL Compute Sat-Gauge Precip (9) Month 1998-01-01 2014-05-31 V07A | GPM_FINAL Grid MWprecipitation (1) Day 2014-03-01 TBD V07A … GPM_FINAL Compute Kalman Filter Precip (8) Month 2014-06-01 TBD V07G | GPM_FINAL Compute Sat-Gauge Precip (9) Month 2014-06-01 TBD V07G",
+     "location": "Table 13 (text lines about 2797-2814)"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "d. TOVS data were partially denied for the period 10-18 September 2001 and cannot be | recovered. As well, various operational issues caused partially or completely missing days of | TOVS data. … j. There are days when the TOVS or AIRS data are unavailable, and in such cases the areas | outside the IR-based domain (55°N-S) are set to missing. One example is the span 1-18 | November 2003.",
+     "location": "Known issues list, items d and j (text lines about 656-658, 684-686)"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "contextualizes",
+     "passage": "The dataset was first produced in late 1999, then a uniformly processed record was made available | starting 17 February 2000. In April 2025, CPC extended the record back to 1 January 1998.",
+     "location": "Introduction (text lines about 28-29)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Reconciler passages from saved IMERG, GPCP and CPC documents",
+   "subquestion_id": "q4"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Date of the TOVS-to-AIRS switch",
+   "source_ids": [
+    "s36",
+    "s37",
+    "s71",
+    "s1",
+    "s34"
+   ],
+   "status": "resolved",
+   "explanation": "Version difference: 1DD V1.2/Monthly V2.2 used TOVS to April 2005; 1DD V1.3 and Monthly V2.3 switch to AIRS on 1 Jan 2003 (C-ATBD table, Adler 2018, tech note, file attributes); V3.x switches in Sep 2002. The V2.3 C-ATBD text that still says 2005 is carried over from V2.2."
+  },
+  {
+   "claim": "AIRS availability start",
+   "source_ids": [
+    "s33",
+    "s37",
+    "s41"
+   ],
+   "status": "resolved",
+   "explanation": "May 2002 (C-ATBD 'available'), Aug 2002 (OSCAR instrument start), Sep 2002 (Adler 2018 'on-line'; V3.x first use). Different events: launch/availability vs first GPCP use."
+  },
+  {
+   "claim": "Start of single-satellite TOVS period",
+   "source_ids": [
+    "s1",
+    "s5",
+    "s11"
+   ],
+   "status": "unresolved",
+   "explanation": "March 1999 (V3.3 Daily ATBD) vs February 1999 / 27 Feb 1999 (V3.3 Monthly ATBD); Path A README says NOAA-11 stopped Dec 1998. Days apart; no source settles it."
+  },
+  {
+   "claim": "F13 SSM/I start in GPCP monthly",
+   "source_ids": [
+    "s36",
+    "s5"
+   ],
+   "status": "unresolved",
+   "explanation": "June 1995 (V2.3 C-ATBD) vs May 1995 (V3.3 Monthly ATBD). Different products, may genuinely differ. Before the daily records start, so no effect on GPCP Daily."
+  },
+  {
+   "claim": "F13 SSM/I failure date",
+   "source_ids": [
+    "s5",
+    "s36",
+    "s40"
+   ],
+   "status": "unresolved",
+   "explanation": "GPCP ATBDs say F13 SSMI failed in September 2009; OSCAR says the tape recorder failed 19 Nov 2009; IMERG uses F13 to 30 Nov 2009. GPCP stopped using F13 in Dec 2008 either way."
+  },
+  {
+   "claim": "Switch from GridSat to CPC IR in IMERG V07",
+   "source_ids": [
+    "s1",
+    "s3",
+    "s47"
+   ],
+   "status": "resolved",
+   "explanation": "6 Feb 2000 (V3.3 Daily ATBD), 'before February 2000' (release notes), CPC uniform record from 17 Feb 2000. Consistent within days; the ATBD date is the producer's."
+  },
+  {
+   "claim": "NOAA-19 MHS end in IMERG",
+   "source_ids": [
+    "s18",
+    "s17",
+    "s16",
+    "s29",
+    "s70"
+   ],
+   "status": "unresolved",
+   "explanation": "8 Sep 2019 (V06 doc), Sep 2020 (Table 10), 'current' (V07 Table 8, 2023), [Dec 23] (2026 ATBD); OSCAR: products no longer sent after 16 June 2025, decommissioned 13 Aug 2025. IMERG's own tables disagree."
+  },
+  {
+   "claim": "MetOp-A MHS end in IMERG",
+   "source_ids": [
+    "s17",
+    "s16",
+    "s27"
+   ],
+   "status": "unresolved",
+   "explanation": "Final Run stopped after 5 Dec 2019 (change log) vs 30 Nov 2021 (V07 Table 8) vs Jan 2020 (2026 ATBD); OSCAR EOL 15 Nov 2021. The change log is the most specific."
+  },
+  {
+   "claim": "NOAA-21 ATMS start in IMERG",
+   "source_ids": [
+    "s17",
+    "s16",
+    "s24"
+   ],
+   "status": "unresolved",
+   "explanation": "1 Feb 2023 (V07 Table 6) vs 14 June 2023 Early/Late (change log) vs Jun 2023 (2026 ATBD); OSCAR ATMS start Nov 2023 (estimated). Final Run start not stated."
+  },
+  {
+   "claim": "AMSR2 start in IMERG",
+   "source_ids": [
+    "s17",
+    "s16",
+    "s25"
+   ],
+   "status": "unresolved",
+   "explanation": "Jun 2012 (2020/2023 docs) vs Jul 2012 (2026 ATBD); OSCAR AMSR2 start 10 Aug 2012."
+  },
+  {
+   "claim": "FY-2 in GridSat-B1",
+   "source_ids": [
+    "s57",
+    "s55",
+    "s56"
+   ],
+   "status": "resolved",
+   "explanation": "obs4MIPs technote says Chinese satellites were not incorporated; GridSat file headers list FY-2C (2005-2011 samples) and FY2-E (2012). File metadata wins."
+  },
+  {
+   "claim": "Month CPC merged IR was extended back to 1 Jan 1998",
+   "source_ids": [
+    "s47",
+    "s48"
+   ],
+   "status": "resolved",
+   "explanation": "April 2025 (CPC-4kmIR-Sats, CPC's own document dated 17 Apr 2025) vs June 2025 (Earthdata GPM_MERGIR page); CPC's date relied on; the Earthdata date may be when GES DISC published it."
+  },
+  {
+   "claim": "V3.3 pause and end dates",
+   "source_ids": [
+    "s3",
+    "s4",
+    "s7",
+    "s10",
+    "s12"
+   ],
+   "status": "resolved",
+   "explanation": "Release notes 'paused at March 2024', Earthdata 'September 2024', EGU26 '1998-2024'; CMR and ATBDs now run to 2025-12-31 after the May 2025 extension. Older statements predate the extension."
+  }
+ ],
+ "coverage_gaps": [
+  "Whether GPCP V3.3 'extended' (May 2025; data now to Dec 2025) uses GridSat recalibrated with VIIRS VGAC after HIRS all-sky ended in 2024: no GPCP document seen says so. Release notes say paused at March 2024; Earthdata/ECMWF say paused at September 2024; CMR, ATBDs and IPWG slides show data to 2025-12-31. (from sa2)",
+  "No AIRS successor (CrIS on SNPP/NOAA-20) appears in any V3.x document or CMR record: V3.3 Daily/Monthly ATBDs use AIRS IR-only V6 Sep 2002-Dec 2025; CrIS, VIIRS, Suomi NPP, NOAA-20 NOT PRESENT in GPCP V3.x sources. (from sa2)",
+  "Which NOAA satellites supplied the GPCP TOVS input by period is not stated in GPCP documents (only NOAA-11 named). Path A README gives per-satellite processed dates (NOAA-10/11/12/14 etc.) but does not link them to GPCP. (from sa2)",
+  "IMERG constellation members (GMI, TMI, AMSR-E, AMSR2, SSMIS F16-F19, MHS, ATMS, SAPHIR) and per-satellite dates are not listed in GPCP V3.x documents; would need IMERG V06/V07 ATBDs (likely another subagent's subquestion). (from sa2)",
+  "Conflicts to weigh: V3.3 Daily start January 1998 (ATBD, README, CMR, release notes) vs 'June 1998-March 2024' on IPWG26 back-up slide; one-satellite TOVS start 'March 1999' (Daily ATBD) vs 'February 1999' (Monthly ATBD item d) vs '27 February 1999' (Monthly ATBD Fig. 2); NOAA-11 'stopped in December 1998' (Path A README); reason for single satellite given as NOAA-11 failure and as 'changes in satellite data format' in the same Monthly ATBD; TOVS degraded record to 'April 2005' (Monthly item d) vs 'May 2005' (ATBDs); F13 SSMI failure 'September 2009' (Monthly ATBD); CMR GPCPDAY 3.2 lists only SSM/I under DMSP while V3.2 ATBD includes F17 SSMIS. (from sa2)",
+  "Actual last-use dates in IMERG V07 Final (record ends September 2025 per GPM Data News) for F16/F17/F18 SSMIS, NOAA-19 MHS, NOAA-20/SNPP ATMS, AMSR2, GMI: IMERG tables give only bracketed estimated end dates; no per-sensor V07 Final end found. (from sa3)",
+  "NOAA-19 MHS end in IMERG conflicts across documents: 8 September 2019 (V06 tech doc Table 8), Sep 20 (V06 and V07 Table 10), 'current' (V07 tech doc Table 8, 2023), [Dec 23] (V07 ATBD 2026). OSCAR: decommissioned 13 August 2025. Not resolved. (from sa3)",
+  "MetOp-A MHS end conflicts: Final Run stopped after 5 December 2019 (V07 tech doc change log) vs 30 November 2021 (V07 tech doc Table 8) vs Jan 20 (2026 ATBD) vs OSCAR EOL 15 Nov 2021. (from sa3)",
+  "NOAA-21 ATMS start in IMERG: 1 February 2023 (Table 6), [Feb 23] (Table 10), 14 June 2023 Early/Late (change log), Jun 23 (2026 ATBD); OSCAR ATMS start Nov 2023 (estimated). Final Run start date NOT PRESENT. (from sa3)",
+  "F11 SSMI (1 January 1998 - 16 May 2000) appears only in V07 tech doc Table 4 and as MWprecipSource code 16; absent from V06 doc and from Table 10/Table 1 lists. Whether V06 IMERG (used by GPCP V3.2, record from June 2000) ever used F11 is unclear (V06 record starts after F11 end). (from sa3)",
+  "PPS partner per-sensor anomaly sub-pages (e.g. NOAA19_MHS, F16_SSMIS) not read; may hold removal dates. IMERG V07 ATBD 2023-07 version (IMERG_V07_ATBD_final_230712.pdf) not compared with 2026-08 revision. OSCAR pages for MetOp-B, MetOp-C, DMSP F16/F18/F19, Aqua not fetched; OSCAR gpm_core URL returned 404. (from sa3)",
+  "TOVS/AIRS/CrIS: V06 tech doc Table 10 lists Aqua AIRS (Sep 02 - [Sep 20]), NOAA-14 TOVS (Jan 98 - April 05), SNPP CrIS as 'IR/Passive Microwave Sounders' contributing; whether IMERG itself uses them (vs GPCP's own TOVS/AIRS input) NOT stated in passages read; the V07 2026 ATBD Table 1 does not list them. (from sa3)",
+  "Which NOAA satellites carried the TOVS used by the 1DD (Oct 1996-Dec 2002): GPCP docs say two satellites to Feb 1999, one from March 1999 (NOAA-11 failure; NOAA-14 named for end-of-life gaps) but never list numbers. TOVS Path-A README lists NOAA-11 (to Dec 1998), NOAA-12 (to Nov 1998), NOAA-14 (to Dec 2004) without tying them to GPCP. Susskind et al. 1997 not read. (from sa1)",
+  "Individual geostationary satellites (GOES, Meteosat, GMS/MTSAT/Himawari numbers) and dates in the CPC IR histograms used by TMPI: NOT PRESENT in C-ATBDs or file metadata (metadata says only GOES, GMS, METEOSAT, Imager). CPC GSPDC page also names IMD as an operator. CPC IR_0.5-deg README (https://ftp.cpc.ncep.noaa.gov/precip/TRMM/IR_0.5-deg_product-file_README) and half-degree page not read. (from sa1)",
+  "AVHRR leo-IR fill satellites (NOAA numbers) and dates: NOT PRESENT in 1DD or V2.3 C-ATBDs. (from sa1)",
+  "Which DMSP SSMIS satellite feeds the 1DD after 2017 and around the DMSP data cutoff (June 2025 FNMOC / Sep 2026 program end): C-ATBD 2017 says F17 only; file metadata just says DMSP/SSMIS through 2026-08-31. GPM news page and SSMIS-MWI transition PDF found in search, not read (pt5 run territory). (from sa1)",
+  "OSCAR pages for MetOp-A/B/C, NOAA-15..19 and the Aqua satellite page not fetched; not named as GPCP 1DD/V2.3 inputs in the documents read. Exact AIRS start: C-ATBDs say available from May 2002, Adler 2018 on-line in September 2002, OSCAR Aug 2002. (from sa1)",
+  "When (or whether) GPCP 1DD V1.3 and V2.3 Monthly switched from the CPC-compiled 3-hourly 1x1 deg geo-IR histograms (GPI/TMPI, from Oct 1996) to the CPC merged 4-km IR: NOT PRESENT in the 1DD C-ATBD (2017) or Huffman et al. 2001. The C-ATBD input table only says 'IR 3 hourly files, Tb, 1996 to present, CPC'. Lead: GPCP V2.3 Monthly README / Adler et al. 2018, and the earlier GPCP histogram documentation (GPCP Geostationary Satellite Precipitation Data Centre). (from sa4)",
+  "Satellite numbers for the pre-2000 CPC/GPCP geo-IR histograms (GPI) used for V2.3 Monthly and 1DD 1996-2000: NOT PRESENT in sources read; only 'GOES, GMS, MTSat, Meteosat' and Meteosat-5 (Indian Ocean from 16 June 1998). CPC 2002 page names GMS-5, GOES-8, GOES-10, Meteosat-7, Meteosat-5 for the 4-km product at that time. (from sa4)",
+  "GPCP V3.3 Monthly README / ATBD not read; V3.2 Monthly README names PERSIANN-CDR as the geo-IR route (GridSat-B1 is identified only through PERSIANN-CDR file 'source' attributes). Whether V3.3 Monthly still uses NCEI PERSIANN-CDR (GridSat-B1) throughout, or CPC IR after 2000: not checked. (from sa4)",
+  "CPC Table 12 lacks a 2014 row and a 2026 row and puts GOES-19 under GOES-WEST in 2025; exact switch days for CPC merged IR satellites not found (year only). Conflict on back-extension month: CPC-4kmIR-Sats 'April 2025' vs Earthdata 'June, 2025'. (from sa4)",
+  "FY-2 in GridSat-B1: headers show FY-2C (samples 2005-12 to 2011-07) and FY2-E (2012-10), contradicting the obs4MIPs GridSat technote ('not incorporated into GridSat'). FY-2/INSAT/Kalpana are not named in any CPC merged IR document read (NOT PRESENT). Janowiak et al. 2001 BAMS full text not read. (from sa4)",
+  "Switch date GridSat to CPC in IMERG for GPCP V3.3 Daily differs: ATBD '1998–6 February 2000', Release Notes 'before February 2000', CPC record 'starting 17 February 2000', EGU26 abstract 'January 1998 through May 2000' (in sa2's folder of this run, not re-read). (from sa4)",
+  "Which NOAA polar orbiters supplied GPCP's TOVS (only NOAA-11 named) and AVHRR leo-IR fill: not stated by GPCP.",
+  "Geostationary satellite numbers behind the 1DD's CPC IR histograms: not stated.",
+  "Which SSMIS satellite and feed 1DD uses after the RSS SSMIS CDR ended in 2023 and after FNMOC's June 2025 change: not documented.",
+  "V3.x 'Source' file attribute values not read (Earthdata login).",
+  "Huffman et al. 2023 J. Climate full text: HTTP 403 (helper and browser)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "earlier runs: TOVS|AIRS|CrIS|VGAC|GridSat|HIRS in gpcp_v33_daily_atbd.txt, gpcp_v32_daily_atbd.txt; VGAC|CrIS|paus|GridSat|F1x|1983|platform in pt5/persiann files",
+   "tool": "lookup (find_text.py over earlier run folders)",
+   "notes": "Earlier V3.2/V3.3 Daily ATBDs, release notes, Earthdata GPCPMON 3.3, EGU26 abstract, IPWG26 slides, GridSat C-ATBD Rev 2 reused",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "README GPCPV3.3 Daily GPCPDAY 3.3 pdf",
+   "tool": "WebSearch",
+   "notes": "README not in results; URL then taken from CMR RelatedUrls; curl failed SSL EOF, WebFetch saved PDF, converted",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "docserver GPCP_ATBD_V3.3_Monthly.pdf and README.GPCPV3.3_Daily.pdf (docserver path 404)",
+   "tool": "lookup (direct fetch of documented URLs)",
+   "notes": "Monthly ATBD fetched (new); docserver README path HTTP 404",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Huffman 2023 GPCP Version 3.2 daily precipitation IMERG TOVS AIRS",
+   "tool": "WebSearch",
+   "notes": "Found NTRS poster (already in earlier run), GDEX, data.gov; paper full text not reached",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"New Version 3.2 Global Precipitation Climatology Project\" Monthly and Daily",
+   "tool": "WebSearch",
+   "notes": "J. Climate 2023 paper identified (experts.arizona.edu listing); full text not read",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP Version 3.3 GridSat recalibration VGAC VIIRS IR 2025",
+   "tool": "WebSearch",
+   "notes": "EGU26-5885, IPWG26 abstract/slides, ECMWF forum (paused Sept 2024) - V3.3 release notes and EGU26 already in earlier runs",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CMR collections.umm_json short_name=GPCPDAY provider=GES_DISC; short_name=GPCPMON",
+   "tool": "fetch_json (CMR)",
+   "notes": "Both versions 3.2 and 3.3 returned for each",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CMR granules.umm_json GPCPDAY 3.3 latest granule; OPeNDAP .das for GPCPDAY_L3_20251231_V3.3.nc4",
+   "tool": "fetch_json (CMR) + fetch_page",
+   "notes": "granule found; .das HTTP 401 (Earthdata login)",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP V3.3 extended 2025 GridSat VGAC calibration resumed",
+   "tool": "WebSearch",
+   "notes": "No GPCP statement on VGAC-calibrated GridSat; ECMWF forum still says paused at Sept 2024",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "TOVS Pathfinder Path A precipitation NOAA-10 NOAA-11 NOAA-12 NOAA-14 HIRS2 MSU",
+   "tool": "WebSearch",
+   "notes": "Led to Path A README v2 with per-satellite dates",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG V06 technical documentation SSMIS inventory period of record",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, arthurhou.pps.eosdis.nasa.gov, docserver.gesdisc.eosdis.nasa.gov, pps.gsfc.nasa.gov; V07 tech doc (2023) and V07 ATBD (2026-08) reused from 2026-11-18_nasa-satellite-precip-threats; found V06 doc IMERG_doc_201006.pdf",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG NOAA-21 ATMS added 2023",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.eosdis.nasa.gov, gpmweb2https.pps.eosdis.nasa.gov, earthdata.nasa.gov; confirmed tech doc change-log entry 14 June 2023",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PPS anomaly tables gpm_anomalous.html and partner_anomalous.html (URL from IMERG V07 ATBD Table 1 caption)",
+   "tool": "lookup (PPS constellation anomaly pages)",
+   "notes": "fetched with fetch_page.py; partner page lists sensors without dates; GPM Data News list reused from 2026-11-19_persiann-cdr-daily-inputs-pt5",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "WMO OSCAR satellite pages megha_tropiques, trmm, noaa_21, gpm_core",
+   "tool": "lookup (WMO OSCAR via WebFetch)",
+   "notes": "gpm_core returned HTTP 404; GCOM-W extract reused from 2026-11-18_noaa-satellite-precip-threats; GPM Core launch from gpm.nasa.gov page reused from 2026-11-18_nasa-satellite-precip-threats. Suomi NPP, NOAA-20, MetOp-A/B/C OSCAR pages not fetched (time).",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP daily C-ATBD CDRP-ATBD (earlier-run lookup: F13|F17|SSMIS etc. in 2026-11-19_gpcp-daily-about-pt1/work/raw/sa2)",
+   "tool": "lookup (find_text.py over earlier run folder)",
+   "notes": "Found CDRP-ATBD-0913 Rev. 0 (01B-35) text already saved; no web search spent.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "gpcp_v01r03_daily netCDF global attributes",
+   "tool": "WebSearch",
+   "notes": "Returned catalog pages only, no attribute list; then THREDDS .das (https://www.ncei.noaa.gov/thredds/dodsC/cdr/gpcp_daily/2010/gpcp_v01r03_daily_d20100101_c20170530.nc.das) hung >120 s and was stopped; then downloaded 8 files directly from ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/<year>/ (2005 listing used for filename pattern) and read with ncdump -h.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP Monthly V2.3 C-ATBD and Adler 2018 V2.3 (earlier-run lookup in 2026-11-19_persiann-cdr-daily-inputs-pt5/work/raw/sa2)",
+   "tool": "lookup (find_text.py over earlier run folder)",
+   "notes": "Both texts already saved by earlier run; no web search spent.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "WMO OSCAR DMSP F13 SSM/I",
+   "tool": "WebSearch",
+   "notes": "allowed_domains space.oscar.wmo.int. Then WebFetch of OSCAR instrument pages ssm_i, ssmis, airs, hirs_2 and satellite page dmsp_f17 (curl refused: host not allowed). MetOp-A/B/C, NOAA-15..19 OSCAR pages not fetched (not inputs named by the GPCP 1DD/V2.3 documents).",
+   "from": "sa1",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP 1DD version 1.3 SSMIS F17 F18 2025",
+   "tool": "WebSearch",
+   "notes": "No GPCP-specific document on post-2017 DMSP feed; hits on GPM SSMIS end-of-NRT news and SSMIS-MWI transition (pt5 territory, not read).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "TOVS NOAA satellites (earlier-run lookup NOAA-1x in 2026-11-19_persiann-cdr-daily-satellites/work/raw)",
+   "tool": "lookup (find_text.py over earlier run folder)",
+   "notes": "Found TOVS Pathfinder Path-A README Table 1.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP geostationary IR histograms CPC satellites GOES-8 Meteosat-7 GMS-5 1996",
+   "tool": "WebSearch",
+   "notes": "Led to CPC GSPDC page (read). CPC half-degree IR page and IR_0.5-deg README snippets (GMS-5, GOES-8, GOES-10, Meteosat-5, Meteosat-7) not read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPCP V3.2 Monthly ATBD GridSat PERSIANN-CDR geo-IR",
+   "tool": "WebSearch",
+   "notes": "Found README.GPCPV3.2_Monthly.pdf; read via WebFetch-saved PDF (curl SSL EOF).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Janowiak 2001 real-time global half-hourly pixel-resolution infrared dataset BAMS",
+   "tool": "WebSearch",
+   "notes": "Found CPC full-res IR page (read) and Earthdata GPM_MERGIR page. GPM_MERGIR README and CPC-4kmIR-Sats.pdf reused from earlier run 2026-11-20_gpcp-daily-inputs-pt5 (already read in full there). BAMS article itself not read.",
+   "from": "sa4",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GridSat-B1 satellites list ISCCP B1 FY-2 period of record",
+   "tool": "WebSearch",
+   "notes": "Found NCEI ISCCP B1 page with satellite table (read). GridSat C-ATBD and header samples reused from 2026-11-19_persiann-cdr-daily-satellites; C-ATBD has no satellite-by-date table (only format/channel tables).",
+   "from": "sa4",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "earlier runs: GOES|Meteosat|GMS|MTSAT|Himawari|FY-2|INSAT; GridSat; String source; Satellite_Name_satid",
+   "tool": "lookup (find_text over earlier run folders)",
+   "notes": "Earlier runs 2026-11-20_gpcp-daily-inputs-pt5, 2026-11-19_persiann-cdr-daily-satellites, 2026-11-19_gpcp-daily-about-pt1 searched.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "README GPCPV3.3 Monthly PERSIANN-CDR GridSat CPC IR",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gesdisc.eosdis.nasa.gov, nasa.gov. Read Earthdata GPCPMON 3.3 page.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPCP V3.1 Monthly ATBD Table 2 GridSat satellites",
+   "tool": "lookup (PDF from WebSearch result for README GPCPV3.3 query; page 15 rendered with pdftoppm because Table 2 is an image)",
+   "notes": "Not a new web search; follow-up read of a result from the V3.3 Monthly query.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPCP 1DD Version 1.3 TMPI CPC merged IR 4 km histograms",
+   "tool": "WebSearch",
+   "notes": "Read CPC GSPDC page. JAXA IPWG GPCP-1DD inventory and ECMWF confluence (IR 3 hourly files Jan 1997 to present, CPC, IR histograms and OPI) not read: listed as leads.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "(follow-up read) ECMWF C3S GPCP PUGS v5 page from the 1DD v1.3 search",
+   "tool": "lookup (WebFetch of a result from the GPCP 1DD Version 1.3 query)",
+   "notes": "Not a new web search.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPCP Version 2.3 monthly README geo-IR CPC merged IR 4 km histograms",
+   "tool": "WebSearch",
+   "notes": "V2.3 README not in results; read Adler et al. 2018 (PMC). No IR source switch date found.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://web.archive.org/web/2024/https://www.eorc.jaxa.jp/IPWG/algorithms/inventory/GPCP-1DD",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404 from Wayback; page stays unreadable.",
+   "from": "sa4",
+   "copy_of": "https://www.eorc.jaxa.jp/IPWG/algorithms/inventory/GPCP-1DD"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPCP One-Degree Daily 1DD V1.2 documentation geo-IR TMPI satellites",
+   "tool": "WebSearch",
+   "notes": "Read GPCP_1DD_doc.pdf (2004) from ORNL DAAC via WebFetch. NCEI C00931 V1.2 metadata and IRI V1DD documentation not read (leads).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/trmm",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Rendered page read: Launch 27 Nov 1997, EOL 08 Apr 2015; PR off 1 April, other sensors 8 April 2015. Matches sa3 extract. OSCAR is WMO's own registry.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/trmm"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/gcom_w",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Launch 17 May 2012, Operational, EOL >=2027; last update 2026-10-12.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/gcom_w"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/noaa_21",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Launch 10 Nov 2022, Operational, EOL >=2029; primary afternoon satellite from 20 March 2024.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/noaa_21"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/noaa_19",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Products no longer sent after 16 June 2025; decommissioned 13 August 2025; EOL 13 Aug 2025.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/noaa_19"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/metop_a",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Officially retired 15 November 2021; EOL 15 Nov 2021.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/metop_a"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/snpp",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Status Inactive; 'Satellite retired on 1st Sept 2026'; EOL 01 Nov 2026; CrIS data distribution ceased Sept 2024.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/snpp"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/noaa_20",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Launch 18 Nov 2017, Operational, EOL >=2031; secondary PM satellite from 20 March 2024.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/noaa_20"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser rendered page https://space.oscar.wmo.int/satellites/view/megha_tropiques",
+   "tool": "lookup (WMO OSCAR page, built-in browser)",
+   "notes": "Launch 12 Oct 2011, EOL Jan 2022, Inactive.",
+   "from": "main",
+   "copy_of": "https://space.oscar.wmo.int/satellites/view/megha_tropiques"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser https://journals.ametsoc.org/view/journals/clim/36/21/JCLI-D-23-0123.1.xml",
+   "tool": "lookup (journal page, built-in browser)",
+   "notes": "HTTP 403 (CloudFront block) in the browser too; no route left this run.",
+   "from": "main",
+   "copy_of": "https://journals.ametsoc.org/view/journals/clim/36/21/JCLI-D-23-0123.1.xml"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "OPeNDAP .das GPCPDAY_L3_20251231_V3.3.nc4",
+   "tool": "lookup (OPeNDAP)",
+   "notes": "Needs Earthdata Login (401 for sa2); no sign-in allowed; no route left.",
+   "from": "main",
+   "copy_of": "https://opendap.earthdata.nasa.gov/collections/C3405928682-GES_DISC/granules/GPCPDAY.3.3%3AGPCPDAY_L3_20251231_V3.3.nc4.das"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP TOVS precipitation NOAA-14 NOAA-15 Susskind",
+   "tool": "duckduckgo (browser)",
+   "notes": "Gap pass: no result names the NOAA satellites behind GPCP TOVS; general GPCP pages only.",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP one-degree daily F17 SSMIS replaced F16 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "Gap pass: found the obs4MIPs 1DD V1.3 tech note (F13 SSMI and F17 SSMIS; TOVS to Apr 2005 in V1.2, AIRS from Jan 2003 in V1.3) and the GPM End of SSMIS news (FNMOC shutdown 30 June 2025). Nothing on which SSMIS feeds 1DD after 2023.",
+   "from": "main"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "GPCP / NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GPCP 1DD C-ATBD (CDRP-ATBD) input section",
+   "query": "GPCP daily C-ATBD CDRP-ATBD",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself (file metadata)",
+   "subquestion_id": "q1",
+   "aim": "1DD V1.3 netCDF global attributes",
+   "query": "gpcp_v01r03_daily netCDF",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "GPCP / NOAA NCEI",
+   "publisher": "the organization itself; researchers",
+   "subquestion_id": "q2",
+   "aim": "GPCP Monthly V2.3 C-ATBD and Adler et al. 2018 input table",
+   "query": "GPCP Monthly version 2.3 Adler 2018 SSMIS",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NASA GES DISC / GPCP",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "GPCP V3.2/V3.3 Daily ATBD or README",
+   "query": "GPCP Version 3.2 daily ATBD",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "GPCP",
+   "publisher": "researchers",
+   "subquestion_id": "q3",
+   "aim": "Huffman et al. 2023 V3.2 paper; V3.3 release notes",
+   "query": "Huffman 2023 GPCP Version 3.2",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NASA GES DISC",
+   "publisher": "the organization itself (file metadata)",
+   "subquestion_id": "q3",
+   "aim": "CMR collection and granule metadata for GPCPDAY 3.2/3.3",
+   "query": "CMR GPCPDAY_3.3",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NASA GPM / PPS",
+   "publisher": "operator (algorithm documents)",
+   "subquestion_id": "q4",
+   "aim": "IMERG V07/V06 Technical Documentation constellation table",
+   "query": "IMERG V07 technical documentation",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NASA PPS",
+   "publisher": "operator (notices)",
+   "subquestion_id": "q4",
+   "aim": "PPS IMERG input and constellation notices",
+   "query": "IMERG input passive microwave sensors dates",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA CPC / NASA GES DISC",
+   "publisher": "operator (documentation)",
+   "subquestion_id": "q5",
+   "aim": "GPM_MERGIR README; CPC 4-km IR; Janowiak 2001",
+   "query": "GPM_MERGIR README satellites",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA NCEI",
+   "publisher": "operator (algorithm documents, file metadata)",
+   "subquestion_id": "q5",
+   "aim": "GridSat-B1 C-ATBD satellite list and file headers",
+   "query": "GridSat-B1 satellites ISCCP B1",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "WMO / DoD / NOAA / NASA",
+   "publisher": "registries and mission documents",
+   "subquestion_id": "q2",
+   "aim": "DMSP, NOAA POES, MetOp, Aqua operational dates",
+   "query": "WMO OSCAR DMSP F13",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "WMO / NASA / JAXA / CNES",
+   "publisher": "registries and mission documents",
+   "subquestion_id": "q4",
+   "aim": "TRMM, GPM, GCOM-W1, Megha-Tropiques, SNPP, NOAA-20/-21, MetOp dates",
+   "query": "GCOM-W1 AMSR2 operational dates",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "GPCP",
+   "publisher": "press",
+   "subquestion_id": "q6",
+   "aim": "news on GPCP input changes",
+   "query": null,
+   "skip_reason": "Not an event question: the press doesn't publish algorithm input lists by date."
+  },
+  {
+   "id": "r14",
+   "organization": "GPCP",
+   "publisher": "oversight bodies, courts, filings",
+   "subquestion_id": "q6",
+   "aim": "n/a",
+   "query": null,
+   "skip_reason": "No bearing on which satellites feed an algorithm."
+  }
+ ],
+ "entities": [
+  {
+   "name": "DMSP F11",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "DMSP F13",
+   "included": true,
+   "source_ids": [
+    "s33",
+    "s17",
+    "s5"
+   ]
+  },
+  {
+   "name": "DMSP F14",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "DMSP F15",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "DMSP F16",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "DMSP F17",
+   "included": true,
+   "source_ids": [
+    "s33",
+    "s5",
+    "s17"
+   ]
+  },
+  {
+   "name": "DMSP F18",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "DMSP F19",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "TRMM",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s23"
+   ]
+  },
+  {
+   "name": "GPM Core",
+   "included": true,
+   "source_ids": [
+    "s16",
+    "s26"
+   ]
+  },
+  {
+   "name": "Aqua",
+   "included": true,
+   "source_ids": [
+    "s1",
+    "s33",
+    "s17"
+   ],
+   "shown_as": [
+    "Aqua AIRS",
+    "Aqua AMSR-E"
+   ]
+  },
+  {
+   "name": "GCOM-W1",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s25"
+   ]
+  },
+  {
+   "name": "NOAA-15",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "NOAA-16",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "NOAA-17",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "NOAA-18",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "NOAA-19",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s70"
+   ]
+  },
+  {
+   "name": "MetOp-A",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s27"
+   ]
+  },
+  {
+   "name": "MetOp-B",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "MetOp-C",
+   "included": true,
+   "source_ids": [
+    "s17"
+   ]
+  },
+  {
+   "name": "Suomi NPP",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s69"
+   ],
+   "shown_as": [
+    "SNPP"
+   ]
+  },
+  {
+   "name": "NOAA-20",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s30"
+   ]
+  },
+  {
+   "name": "NOAA-21",
+   "included": true,
+   "source_ids": [
+    "s17",
+    "s24"
+   ]
+  },
+  {
+   "name": "Megha-Tropiques",
+   "included": true,
+   "source_ids": [
+    "s18",
+    "s22"
+   ]
+  },
+  {
+   "name": "NOAA polar orbiters (TOVS)",
+   "included": true,
+   "source_ids": [
+    "s33",
+    "s1"
+   ],
+   "shown_as": [
+    "TOVS"
+   ]
+  },
+  {
+   "name": "NOAA polar orbiters (AVHRR leo-IR)",
+   "included": true,
+   "source_ids": [
+    "s33"
+   ],
+   "shown_as": [
+    "AVHRR"
+   ]
+  },
+  {
+   "name": "GOES",
+   "included": true,
+   "source_ids": [
+    "s33",
+    "s47",
+    "s56"
+   ]
+  },
+  {
+   "name": "Meteosat",
+   "included": true,
+   "source_ids": [
+    "s33",
+    "s47",
+    "s56"
+   ]
+  },
+  {
+   "name": "GMS-5",
+   "included": true,
+   "source_ids": [
+    "s47",
+    "s59"
+   ]
+  },
+  {
+   "name": "MTSAT-1R",
+   "included": true,
+   "source_ids": [
+    "s47",
+    "s17"
+   ]
+  },
+  {
+   "name": "MTSAT-2",
+   "included": true,
+   "source_ids": [
+    "s47",
+    "s17"
+   ]
+  },
+  {
+   "name": "Himawari-8",
+   "included": true,
+   "source_ids": [
+    "s47",
+    "s17"
+   ]
+  },
+  {
+   "name": "Himawari-9",
+   "included": true,
+   "source_ids": [
+    "s47"
+   ]
+  },
+  {
+   "name": "FY-2C",
+   "included": true,
+   "source_ids": [
+    "s55",
+    "s56"
+   ]
+  },
+  {
+   "name": "FY-2E",
+   "included": true,
+   "source_ids": [
+    "s56"
+   ]
+  },
+  {
+   "name": "DMSP F08",
+   "included": false,
+   "reason": "Used only in Monthly V2.3 Jul 1987-Dec 1991, before either daily record; not used in V3.x (GPROF problems).",
+   "source_ids": [
+    "s36",
+    "s5"
+   ]
+  },
+  {
+   "name": "DMSP F10",
+   "included": false,
+   "reason": "No GPCP or IMERG document names it as an input.",
+   "source_ids": [
+    "s38"
+   ]
+  },
+  {
+   "name": "DMSP F12",
+   "included": false,
+   "reason": "No GPCP or IMERG document names it as an input.",
+   "source_ids": [
+    "s38"
+   ]
+  },
+  {
+   "name": "OPI satellites (TIROS-N, NOAA-6, NOAA-7, NOAA-9)",
+   "included": false,
+   "reason": "OPI enters Monthly V2.3 only before 1986, before either daily record.",
+   "source_ids": [
+    "s36"
+   ]
+  },
+  {
+   "name": "CrIS",
+   "included": false,
+   "reason": "Listed in the IMERG V06 doc's sounder table only; no GPCP V3.x document uses it; no AIRS successor.",
+   "source_ids": [
+    "s18",
+    "s1"
+   ]
+  },
+  {
+   "name": "INSAT",
+   "included": false,
+   "reason": "Not named in any CPC IR or GridSat document read; CPC lists IMD only as a data provider.",
+   "source_ids": [
+    "s45"
+   ]
+  },
+  {
+   "name": "VIIRS",
+   "included": false,
+   "reason": "Only as GridSat-B1's 2026 calibration reference (VGAC), not a precipitation input; no GPCP document says the 2025 extension used it.",
+   "source_ids": [
+    "s9"
+   ]
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 50.0,
+  "elapsed_min": 32.2,
+  "shift_min": 0,
+  "ceiling": 400000,
+  "research_stop_tokens": 355000,
+  "subagent_stop_tokens": 284000,
+  "tokens": 368070,
+  "subagent_minutes_planned": 63,
+  "subagent_minutes": 59.4,
+  "follow_ups": 0,
+  "continuations": 4,
+  "refusals": 0,
+  "research_stop": "tokens",
+  "subagent_stop": true
+ }
+}

@@ -1,0 +1,1451 @@
+{
+ "question": "How is the IMERG Late Run (V07B, hybrid since March 2026) produced and quality-controlled, where does its processing differ from the Early and Final Runs, and which documents describe it?",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions (processing, QC, validation, documents) of one dataset; no set of 15+ members, no multi-year figures, no active dispute; user limits 30 min / 240k tokens",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Processing steps from satellite observations to the gridded Late Run, with algorithms, software and Early/Late/Final differences",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9"
+   ],
+   "remaining_gap": "Current-sensor list for the hybrid Late Run and a V07/V08-era Level 1C ATBD not found"
+  },
+  {
+   "id": "q2",
+   "question": "Quality control: checks, automated or manual, flags and fields, who does it, input QC",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s6",
+    "s12",
+    "s13",
+    "s16",
+    "s17",
+    "s19",
+    "s28"
+   ],
+   "remaining_gap": "Whether IMERG screens GPROF input by qualityFlag values is not stated; Late-specific QI formula not given; effect of the Oct 2026 GPROF V08 L3 recall on the Late Run not stated"
+  },
+  {
+   "id": "q3",
+   "question": "Validation against gauges and ground radar, by whom",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s6",
+    "s20",
+    "s21",
+    "s24",
+    "s29"
+   ],
+   "remaining_gap": "Few Late-Run-specific validation figures read in full; Wang and Wolff (2025) published version not found"
+  },
+  {
+   "id": "q4",
+   "question": "Documentation with links and dates; what is not published",
+   "status": "answered",
+   "source_ids": [
+    "s3",
+    "s4",
+    "s6",
+    "s10",
+    "s22",
+    "s23",
+    "s27",
+    "s30"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA GSFC IMERG team",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "current IMERG V07 ATBD",
+   "query": "IMERG V07 ATBD",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NASA GSFC IMERG team",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "current IMERG Technical Documentation",
+   "query": "IMERG technical documentation V07",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NASA GSFC IMERG team",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "IMERG Quality Index documentation",
+   "query": "IMERG quality index precipitationQualityIndex",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NASA GES DISC",
+   "publisher": "registries and archives",
+   "subquestion_id": "q4",
+   "aim": "GPM_3IMERGHHL 07 README and dataset page",
+   "query": "GPM_3IMERGHHL 07 README",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NASA GPM Ground Validation",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "GV program validation of IMERG",
+   "query": "GPM Ground Validation IMERG Validation Network",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q3",
+   "aim": "studies validating the V07 Late Run against gauges",
+   "query": "IMERG V07 Late Run validation gauges",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "GPROF team (CSU)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "GPROF ATBD quality flags",
+   "query": "GPROF V07 ATBD quality flag",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "IPWG",
+   "publisher": "standards bodies and certifiers",
+   "subquestion_id": "q3",
+   "aim": "IPWG validation of IMERG",
+   "query": "IPWG IMERG validation",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NASA PPS / X-CAL",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "Level 1C intercalibration documentation",
+   "query": "GPM Level 1C intercalibration XCAL",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "UC Irvine CHRS",
+   "publisher": "researchers",
+   "subquestion_id": "q1",
+   "aim": "PDIR-Now developers paper",
+   "query": "PDIR-NOW precipitation algorithm",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NASA PPS",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q2",
+   "aim": "operational data anomaly and outage notices",
+   "query": "PPS GPM data anomalies",
+   "skip_reason": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://gpm.nasa.gov/sites/default/files/2026-08/IMERG_V07_ATBD_final_260813.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) NASA GPM IMERG Version 07 (13 August 2026)",
+   "author_org": "Huffman, Bolvin, Joyce, Nelkin, Tan, Braithwaite, Hsu, Kelley, Nguyen, Sorooshian, Watters, West, Xie / NASA GSFC",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-atbd-outline",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "ATBD says GPROF2021 '(currently)'; the 2026 hybrid GPROF V08 input in Early/Late is NOT PRESENT in this passage.",
+   "found_by": [
+    "sa1",
+    "sa2",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_TechnicalDocumentation_final_230713.pdf",
+   "fetched_url": null,
+   "title": "Integrated Multi-satellitE Retrievals for GPM (IMERG) Technical Documentation (13 July 2023)",
+   "author_org": "Huffman, Bolvin, Joyce, Kelley, Nelkin, Tan, Watters, West / NASA GSFC",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-td-latency",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_techdoc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Landing page dated 13 July 2023; no newer Technical Documentation found online on 2026-11-21.",
+   "found_by": [
+    "sa1",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://gpm.nasa.gov/resources/documents/imerg-v07-technical-documentation",
+   "fetched_url": null,
+   "title": "IMERG V07 Technical Documentation (landing page)",
+   "author_org": "NASA GPM",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-td-landing",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/techdoc_landing.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "",
+   "found_by": [
+    "sa1",
+    "sa3"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://gpm.nasa.gov/resources/documents/imerg-v07-atbd",
+   "fetched_url": null,
+   "title": "IMERG V07 ATBD (landing page)",
+   "author_org": "NASA GPM",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-atbd-landing",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/atbd_landing.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://gpm.nasa.gov/sites/default/files/2020-05/L1C_ATBD_v1.6_V04_0.pdf",
+   "fetched_url": null,
+   "title": "GPM Level 1C Algorithms ATBD v1.6 (V04)",
+   "author_org": "GPM Intercalibration (X-CAL) Working Group / PPS",
+   "published": "2016-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-l1c-xcal",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/l1c_atbd_v1.6.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Version 1.6 (V04 products) dated 2016; a newer L1C ATBD for V07/V08 was not located in the time available.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://gpm.nasa.gov/sites/default/files/2024-12/IMERG_V07_ReleaseNotes_241126.pdf",
+   "fetched_url": null,
+   "title": "IMERG V07 Release Notes (20 November 2024)",
+   "author_org": "Huffman, Bolvin, Joyce, Kelley, Nelkin, Portier, Stocker, Tan, Watters, West / NASA GSFC",
+   "published": "2024-11-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-rn-v07changes",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_v07_releasenotes_241126.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No 2026 release-notes revision found online (search 2026-11-21); the hybrid GPROF V08 change is NOT PRESENT in these notes.",
+   "found_by": [
+    "sa1",
+    "sa2",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://gpm.nasa.gov/data/news/imerg-v08-transition-schedule",
+   "fetched_url": null,
+   "title": "IMERG V08 Transition Schedule (28 April 2026)",
+   "author_org": "NASA GPM",
+   "published": "2026-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-v08-hybrid",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_v08_schedule.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "An 'Update to the IMERG V08 Transition Schedule, Aug. 2026' page exists (gpm.nasa.gov/data/news/update-imerg-v08-transition-schedule-aug-2026) and was not read.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://gpm.nasa.gov/data/news/update-imerg-v08-transition-schedule-aug-2026",
+   "fetched_url": null,
+   "title": "Update to the IMERG V08 Transition Schedule, Aug. 2026",
+   "author_org": "NASA GPM",
+   "published": "2026-08-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-v08-aug2026",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/v08_schedule_aug2026.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Does not name which parent product is pending (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8216223/",
+   "fetched_url": null,
+   "title": "PERSIANN Dynamic Infrared–Rain Rate (PDIR-Now): A Near-Real-Time, Quasi-Global Satellite Precipitation Dataset (J. Hydrometeorol. 21(12):2893–2906, 2020)",
+   "author_org": "Nguyen, Ombadi, Afzali Gorooh, Shearer, Sadeghi, Sorooshian, Hsu, Bolvin, Ralph / UC Irvine CHRS, NASA GSFC, CW3E",
+   "published": "2020-11-25",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-pdir-paper",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pdir_now_nguyen2020.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Describes the stand-alone CHRS PDIR-Now dataset, not the IMERG-internal implementation (which IMERG ATBD says is re-calibrated asynchronously with IMERG PMW).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://gpm.nasa.gov/resources/documents/gpm-level-1c-algorithm-theoretical-basis-document-atbd",
+   "fetched_url": null,
+   "title": "GPM Level 1C Algorithm Theoretical Basis Document (ATBD) landing page",
+   "author_org": "Precipitation Processing System; GPM Intercalibration (X-CAL) Working Group",
+   "published": "2016-04-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-l1c-landing",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/l1c_atbd_landing.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Older than V07; no newer L1C ATBD listed.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/Documents/IMERG_TechnicalDocumentation_final.pdf",
+   "fetched_url": null,
+   "title": "Integrated Multi-satellitE Retrievals for GPM (IMERG) Technical Documentation",
+   "author_org": "George J. Huffman et al., NASA GSFC",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_techdoc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "July 2023 document; field list for V07, not checked against a 2026 Late Run file.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/all-l3-gprof-data-gpm-v08-being-recalled",
+   "fetched_url": null,
+   "title": "All L3 GPROF Data for GPM v08 Are Being Recalled",
+   "author_org": "NASA Earthdata / PPS",
+   "published": "2026-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/earthdata_gprof_recall.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not mention IMERG.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s16",
+   "url": "https://gpm.nasa.gov/sites/default/files/2025-02/FAQ%20for%20IMERG%20V07%20Applications%20Users_202502.pdf",
+   "fetched_url": null,
+   "title": "FAQ for IMERG V07 Applications Users",
+   "author_org": "NASA GPM",
+   "published": "2025-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_v07_faq_202502.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://gpm.nasa.gov/sites/default/files/2022-06/ATBD_GPM_V7_GPROF.pdf",
+   "fetched_url": null,
+   "title": "GPROF2021 Version 1 (used in GPM V7 processing) ATBD",
+   "author_org": "GPROF team (Colorado State University) for NASA GPM",
+   "published": "2022-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gprof_v7_atbd.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "GPROF V7 (not V08). Whether IMERG uses pixelStatus/qualityFlag to screen GPROF input: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "sa3"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/tsdis/AB/docs/partner_anomalous.html",
+   "fetched_url": null,
+   "title": "PPS Partner Satellite - Data Discrepancies and Anomalous Events Table",
+   "author_org": "NASA PPS",
+   "published": "2024-10-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e32",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pps_partner_anomalous.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Per-sensor sub-pages not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://gpm.nasa.gov/science/ground-validation/validation",
+   "fetched_url": null,
+   "title": "Validation | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM",
+   "published": "2020-01-15 (page date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_gv_validation.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Dated 2020 and TRMM-era text; IMERG not named on page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.mdpi.com/2072-4292/18/17/2867",
+   "fetched_url": null,
+   "title": "Cross-Scale Performance Evaluation of GPM IMERG V07 Precipitation Products in a Typical Mountainous Monsoon Region (Remote Sens. 18(17) 2867, 24 Aug 2026)",
+   "author_org": "Yang, Chen, Xie, Huang (Guangxi Academy of Agricultural Sciences; Guangxi Institute of Meteorological Science)",
+   "published": "2026-08-24",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e9",
+   "access_level": "abstract",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/mdpi-com-2072-4292-18-17-2867_121702.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Highlights and abstract read in the built-in browser; full text not read.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://arthurhou.pps.eosdis.nasa.gov/GPMprelimdocs.html",
+   "fetched_url": null,
+   "title": "GPM Documentation (PPS)",
+   "author_org": "NASA PPS",
+   "published": "Page Last Updated: August 31, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_gpm_docs.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "File spec PDFs not opened; their dates NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpm-3imerghhl-07",
+   "fetched_url": null,
+   "title": "GPM IMERG Late Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHHL) - Earthdata catalog (GES DISC)",
+   "author_org": "NASA GES DISC / Earthdata",
+   "published": "2024-06-01 (Published and Updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/earthdata_gpm_3imerghhl_07.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Link targets not in text copy; README not opened.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://www-ipwg.kugi.kyoto-u.ac.jp/IPWG/python/dailyval.2024.html",
+   "fetched_url": null,
+   "title": "Daily validation results for daily precipitation estimates (IPWG, Japan site, 2024)",
+   "author_org": "IPWG validation site hosted at Kyoto University (operator NOT PRESENT on page)",
+   "published": "2024 (Oct-Dec 2024 sections; archive 2020-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-21",
+   "limitations": "WebFetch extraction (small model), first 100k of 486k characters; no local copy saved; labels as relayed.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/pub/GPMfilespec/new/filespec.GPM.V7.pdf",
+   "fetched_url": null,
+   "title": "PPS File Specification for GPM Products, Version 7.18 TKIO 3.101",
+   "author_org": "NASA Precipitation Processing System",
+   "published": "2024-09-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/filespec_gpm_v7.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Only pages 1-3 converted (pdftotext -l 3); 8.6 MB PDF saved as filespec_gpm_v7.pdf for further reading.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://gpmweb2https.pps.eosdis.nasa.gov/pub/GPMfilespec/new/filespec.GPM.V7.pdf",
+   "fetched_url": null,
+   "title": "PPS File Specification for GPM Products v7.18 (5 Sep 2024), 3IMERGHH field definitions",
+   "author_org": "NASA PPS",
+   "published": "2024-09-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/filespec_gpm_v7_full.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Section identity of the 0-3000 QI entry (lines about 110157) not confirmed; MWprecipSource value table not read.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://link.springer.com/article/10.1007/s00704-025-05569-x",
+   "fetched_url": null,
+   "title": "Comparative evaluation of GPM IMERG V07 early, late and final run products compared to IMERG V06 in Sichuan Province, China (Theor. Appl. Climatol. 156, 354)",
+   "author_org": "Li, Liu, ... Gao",
+   "published": "2025-06-09",
+   "data_period": "2014-10 to 2021-09",
+   "source_type": "study",
+   "evidence_id": "doi:10.1007/s00704-025-05569-x",
+   "access_level": "abstract",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/link-springer-com-article-10-1007-s00704-025-05569-x_121651.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Abstract only (paywalled); found in the DuckDuckGo gap pass."
+  },
+  {
+   "id": "s30",
+   "url": "https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/doc/README.GPM.pdf",
+   "fetched_url": "https://web.archive.org/web/20260410024130/https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/doc/README.GPM.pdf",
+   "title": "GES DISC README for GPM Level 3 data (Wayback copy, 10 Apr 2026)",
+   "author_org": "NASA GES DISC",
+   "published": "2017-03-12 (last revised; links updated 2023-07-17)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/gesdisc_readme_gpm_wayback.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "Generic GPM README; no IMERG processing or QC detail."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "The Late Run chain: PMW Level 1 brightness temperatures received at PPS are converted to Level 1C intercalibrated temperatures (GMI reference, X-CAL offset tables), then to Level 2 precipitation by GPROF2021; gridded, intercalibrated to CORRA by probability matching on a rolling 45-day basis, ratio-adjusted to GPCP over high-latitude oceans; CPC supplies merged geo-IR for PDIR; a Kalman-filter quasi-Lagrangian scheme (from CMORPH) combines PMW and IR into half-hourly 0.1-degree fields.",
+   "importance": "central",
+   "applicability": "V07 as documented; the ATBD says GPROF2021 '(currently)', while the Late Run has used GPROF V08 inputs since 2026",
+   "confidence": "high",
+   "confidence_reason": "the developers' own ATBD (Aug 2026) and Technical Documentation agree",
+   "sole_source_reason": "the algorithm team's own ATBD is the authority for its processing",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "the input precipitation estimates | computed from the various satellite PMW sensors are assembled, mostly received at PPS as Level | 1 brightness temperatures from the relevant providers, converted to GPM Level 1C intercalibrated | brightness temperatures, then converted to Level 2 precipitation estimates using GPROF2021 | (currently). All estimates are gridded, intercalibrated to the CORRA product on a rolling 45-day | basis using probability matching, and climatologically calibrated to the GPCP monthly estimates | with a simple ratio in high-latitude oceans (where CORRA V07 is deficient in precipitation). … In parallel, CPC | assembles the zenith-angle-corrected, intercalibrated merged geo-IR fields and forwards them to | PPS for use in the PDIR computation routines.",
+     "location": "Sec. 3.2.1 Initial Processing, pp. 8-9"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "The GPM L1C implementation uses GMI as the reference standard. … For each sensor and satellite, an intercalibration table provided by the X-CAL team is | implemented in the L1CXCAL algorithm to produce the intercalibrated brightness temperature | (Tc). The intercalibration table consists of a series of tie points and offsets for each channel. … Note that the resulting offset values are added to the Tb so the | final intercalibrated brightness temperature is Tc= Tb + offset. … Current L1C includes L1CXCALgmi, L1CXCALtmi, L1CXCALssmis, | L1CXCALamsr2, L1CXCALsaphir, L1CXCALatms, and L1CXCALmhs.",
+     "location": "Sec. 3 and Sec. 6.3"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The gridded 2AGPROFGMI is calibrated to the gridded 2BCMB using a matched histogram | correction computed afresh for a 45-day period once a pentad. In the Early and Late Runs this | period is necessarily trailing, but for the Final we take advantage of the delay in waiting for | the gauge analysis and use a centered 45-day period updated once a pentad.",
+     "location": "CORRA calibration entry"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "Late differs from Early and Final (ATBD Table 3): latency 12 h (text ~14 h) vs 4 h and 3.5 months; 100% of PMW sensors vs 95% in Early; research CORRA vs near-real-time in Early; trailing 45-day CORRA calibration (Final centered); GEOS FP motion vectors (Final MERRA-2); forward and backward propagation (Early forward only); trailing 3-month Kalman window; Final-climatological gauge adjustment (Final uses GPCC); JMA forecast for phase (Final ERA5); no manual inspection (Final has visual inspection with manual flagging).",
+   "importance": "central",
+   "applicability": "V07 Early/Late/Final",
+   "confidence": "high",
+   "confidence_reason": "the ATBD table read verbatim by the coordinator; Tech Doc agrees except the latency figure",
+   "sole_source_reason": "the algorithm team's own ATBD is the authority for the Run differences",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Run (latency)                 Early (4 hours)         Late (12 hours)          Final (3.5 months) | GPROF product                 Near-real-time          Near-real-time           Climate | Fraction of input PMW         95%                     100%                     100% | sensors | CORRA product                 Near-real-time          Research                 Research | CORRA calibration             Trailing 45-day         Trailing 45-day          Centered 45-day | Motion vector source          GEOS FP                 GEOS FP                  MERRA-2 | PMW propagation               Forward only            Forward and              Forward and | backward                 backward | Kalman correlation            Trailing 3-month        Trailing 3-month         3-month with one- | window                                                                         month off-center | Gauge adjustment              Final Climatological    Final Climatological     GPCC analysis | PLP source                    JMA Forecast            JMA Forecast             ERA5 | Others                        No manual               No manual                Visual inspection | inspection              inspection               for bad PMW and | IR, manually | flagged for removal",
+     "location": "Table 3, p. 11"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The global | merged geo-IR data are assembled by NOAA/NWS/CPC, and the Precipitation Processing | System (PPS) accesses JMA Forecast from JAXA, GEOS FP forecast fields through the | Goddard NCCS, and Autosnow from NOAA. … PPS converts the microwave data to precipitation | estimates and computes the IMERG Early Run, which only uses forward propagation | morphing (plus IR in the Kalman filter) by about 4 hours after observation time. … To compute the IMERG Late Run, which entails both forward and backward propagation | morphing (plus IR), PPS has to wait long enough that the following microwave overpass has | a chance to occur and then following the delivery chain described above. So, PPS waits about | 11 hours to capture a reasonably complete set of “next overpass” data, and then start | processing. The nominal latency is 14 hours, but in recent data it’s more like 12. | 3. The IMERG Final Run uses MERRA-2 for the atmospheric fields used to estimate | displacement vectors, GPCC monthly Monitoring Analysis for gauge, and \"climatologically | tuned” GPROF precipitation retrievals that depend on ERA5 (originally ERA-I). The pacing | items are the GPCC and ERA5, usually giving a latency of about 3.5 months.",
+     "location": "'latency' entry"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "text": "No gauge data enter the Late Run directly: its land estimates are calibrated to the Final Run with climatological coefficients by month and location (new in V07); only the Final Run is adjusted to the monthly GPCC satellite-gauge combination.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "ATBD and release notes agree",
+   "sole_source_reason": "the algorithm team's own documents are the authority",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The baseline is for the Early and Late half-hour land estimates to be calibrated to the Final Run | with climatological coefficients that vary by month and location, while in the Final Run the half- | hour multi-satellite estimates are adjusted so that they sum to the monthly satellite-gauge | combination computed in IMERG (following the TMPA approach). In V06 we chose not to apply | climatological coefficients to the Early and Late estimates, believing that there was minimal | impact, but in V07 we include it.",
+     "location": "Sec. 3.2.1, p. 10"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "This field is combined with the monthly GPCC precipitation gauge | analysis (over land) in several steps. First, the gauge analysis is audited to remove isolated island | stations … The ratio between the monthly satellite-gauge and the monthly accumulation of half-hourly multi- | satellite-only fields is limited to the range of 0.2 to 3. … The baseline IMERG near-real-time products follow the TMPA procedure in providing both the | original multi-satellite estimate and a climatologically calibrated field. The climatological | calibration is intended to make the near-real-time products as consistent as possible with the Final | product. … Accordingly, in GPM we compute a straightforward calibration to the Final product using a | climatological CORRA-G calibration.",
+     "location": "Secs. 3.8-3.9, pp. 21-23"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "discovery of some 162 orbits of defective V07 GPROF precipitation estimates across all passive microwave | satellites over the TRMM and GPM eras led to a second RP for the V07 Final Run, now labeled V07B. … climatological calibrations were | computed for the Early and Late Runs to the Final Run, and both Initial Processing (IP) and RP for the Early and Late | Runs began on 3 June 2024, with IP taking effect starting 1 June. … •   Upgraded the IR precipitation algorithm to PDIR–NOW. The upgrade to PDIR–NOW, involves dynamically | shifting relationships between the IR brightness temperatures and the precipitation rate (Nguyen et al. 2020), and | replaced PERSIANN-CCS. … •   Applied climatological adjustment to the Early and Late Runs based on the Final Run.",
+     "location": "Summary and 'Changes from V06 to V07', pp. 1-2"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "V07 replaced PERSIANN-CCS with PDIR-Now (UC Irvine CHRS) for IR estimates, re-calibrated asynchronously against IMERG PMW.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "release notes, ATBD and the developers' paper agree",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "discovery of some 162 orbits of defective V07 GPROF precipitation estimates across all passive microwave | satellites over the TRMM and GPM eras led to a second RP for the V07 Final Run, now labeled V07B. … climatological calibrations were | computed for the Early and Late Runs to the Final Run, and both Initial Processing (IP) and RP for the Early and Late | Runs began on 3 June 2024, with IP taking effect starting 1 June. … •   Upgraded the IR precipitation algorithm to PDIR–NOW. The upgrade to PDIR–NOW, involves dynamically | shifting relationships between the IR brightness temperatures and the precipitation rate (Nguyen et al. 2020), and | replaced PERSIANN-CCS. … •   Applied climatological adjustment to the Early and Late Runs based on the Final Run.",
+     "location": "Summary and 'Changes from V06 to V07', pp. 1-2"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Here, we adapt PDIR (Nguyen et al. 2020a,b), which is based on the framework of the | PERSIANN-Cloud Classification System (PERSIANN-CCS, Hong et al. 2004) and the original | PERSIANN framework (Hsu et al. 1997, Sorooshian et al. 2000). … PDIR advances the framework of the | PERSIANN-CCS system by … (iv) improving the skill of the Tb–RR curves with IMERG | Merged PMW precipitation dataset; and (v) utilizing gridded climatology data from WorldClim | version 2 (Fick and Hijmans 2017), and PERSIANN-CDR to create a dynamical Tb–RR curve | model",
+     "location": "Sec. 3.6 Microwave-Calibrated IR, p. 18"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "This dataset provides hourly, quasi-global, infrared-based precipitation estimates at 0.04° × 0.04° spatial resolution with a short latency (15–60 min). It is intended to supersede the PERSIANN–Cloud Classification System (PERSIANN-CCS) dataset previously produced as the near-real-time product of the PERSIANN family. … PDIR-Now improves the estimation of rain/no-rain days as demonstrated by a critical success index (CSI) of 0.53 compared to 0.47 of PERSIANN-CCS.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "Since 1 March 2026 the Early and Late Runs run in 'hybrid' mode (IMERG V07 algorithm ingesting GPROF V08), with the CORRA calibration set to seasonal climatological values; the switch to V08 Early/Late is projected no sooner than winter 2026.",
+   "importance": "central",
+   "applicability": "news items; not in the ATBD, Tech Doc or release notes",
+   "confidence": "moderate",
+   "confidence_reason": "only GPM news items document the hybrid mode",
+   "sole_source_reason": "the GPM mission's own notices are the authority for its processing schedule",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Already, IMERG V07 Late and Early are operating in “hybrid” mode, using the IMERG V07 algorithm but ingesting GPROF V08. As such, there may be discontinuities in the record. To mitigate these discontinuities, the dynamic calibration of the GPROF passive microwave precipitation estimates to the CORRA reference has been modified. Starting March 1, the CORRA calibration has been set to climatological values that are periodically updated to reflect seasonal conditions. That is, the calibration of GPROF V08 to CORRA V07 is being computed from selected seasonal periods in previous years, then used for the same time period in 2026.",
+     "location": "Page body"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "At this moment, the IMERG development team is still waiting for V08 of one of the parent products to IMERG to be finalized. … The projected switch for the Late and Early Runs will take place no sooner than winter of 2026, with their retrospective records (i.e., beginning 1998) available prior to this switch but after the release of IMERG V08 Final Run. Until this switch, the Late and Early Runs will operate in the “hybrid” mode outlined in https://gpm.nasa.gov/data/news/imerg-v08-transition-schedule.",
+     "location": "Page body"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "text": "All Runs share one IMERG code; PPS installs separate instances; Early and Late run in the PPS Real Time system, Final in PPS Production; the RT system cannot reprocess, so retrospective Late is computed in Production.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "ATBD text read verbatim",
+   "sole_source_reason": "the algorithm team's own ATBD",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The system is run twice in near real-time: | • “Early” Run ~4 hours after observation time and | • “Late” Run ~14 hours after observation time, | and once after the monthly gauge analysis is received | • “Final” Run ~3.5 months after the observation month. … it is key to IMERG maintainability and | consistency that all of the Runs share a common code. The different Runs are achieved with | options programmed into the single system, even though PPS chooses to install separate | instantiations of the code for each Run. The Early and Late Runs are executed in the PPS Real | Time (RT) processing system, which focuses on current data, while the Final Run is executed in | the PPS Production processing system.",
+     "location": "Sec. 3.2.1, pp. 9-10"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "text": "The Late Run half-hourly files carry precipitation, precipitationUncal, randomError, MWprecipitation, MWprecipSource, MWobservationTime, IRprecipitation, IRinfluence, probabilityLiquidPrecipitation and precipitationQualityIndex; no QC flag field is listed.",
+   "importance": "central",
+   "applicability": "V07 field list (2023 Tech Doc, 2024 file spec); not checked against a 2026 Late file",
+   "confidence": "high",
+   "confidence_reason": "Tech Doc and PPS file spec agree",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Multi-satellite precipitation estimate with            precipitation *               mm/hr | gauge calibration (Final) | Multi-satellite precipitation estimate (Early and | Late) … Multi-satellite precipitation estimate                 precipitationUncal            mm/hr | Random error for precipitation                         randomError                   mm/hr | Merged microwave-only precipitation estimate           MWprecipitation *             mm/hr | Microwave satellite source identifier                  MWprecipSource                index values | Microwave satellite observation time                   MWobservationTime             min. into | half hour | IR-only precipitation estimate                         IRprecipitation               mm/hr | Aggregate influence of the IR precipitation to the     IRinfluence                   percent | multi-satellite precipitation | Probability of liquid phase                           probabilityLiquid           percent | Precipitation | Quality Index for precipitation field                 precipitationQualityIndex index",
+     "location": "3IMERGHH data fields table, p. 23"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "randomError (4-byte float, array size: lat x lon x time): | Random error estimate of precipitation. Values range from 0 to 1000 mm/hr. … probabilityLiquidPrecipitation (2-byte integer, array size: lat x lon x time): | Probability of liquid precipitation. 0=definitely frozen. 100=definitely liquid. 50=equal | probability frozen or liquid. … precipitationQualityIndex (4-byte float, array size: lat x lon x time): | Estimated quality of precipitation where 0 is worse and 1 is better. Values range from 0 | to 1. Special values are defined as: | -9999.9 Missing value … IRinfluence (2-byte integer, array size: lat x lon x time): | IR weighting in the final precipitation estimate. The values range from 0 to 100, where",
+     "location": "Section 5.58 3IMERGHH - IMERG 30-minute, p. 2379-2380 (text lines 109897-109963)"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "text": "precipitationQualityIndex (QIh) is computed from Kalman-filter correlations against GMI/TMI combined over instantaneous, forward- and backward-propagated PMW and IR; it is reduced over frozen surfaces using NOAA Autosnow, set to 0 where IR fill is used; users decide whether to discard low values.",
+   "importance": "central",
+   "applicability": "no Late-specific QI formula is published",
+   "confidence": "high",
+   "confidence_reason": "ATBD and FAQ agree",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "𝑐𝑡 = tanh (√arctanh2 (𝑐        ) + arctanh2 (𝑐𝑓𝑝 ) + arctanh2 (𝑐𝑏𝑝 ) + arctanh2 (𝑐𝑖𝑟 )) ,   (6) … where cmw is the instantaneous PMW estimate correlation, cfp is the forward-propagated PMW | estimate correlation, cbp is the backward-propagated PMW estimate correlation, and cir is the IR | estimate correlation. Note that IR estimates are only included when there is no PMW estimate | within ±30 minutes from the current half-hour",
+     "location": "Appendix 9.2 QIh, p. 43"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "over frozen surfaces, the correlations used in calculating the QIh value are | reduced by a multiplicative factor depending on whether the sensor is an imager or sounder, and | whether the grid box is over sea ice or frozen land (as indicated by the daily NOAA Autosnow | product). Specifically, this factor is 0.112 for imagers and 0.275 for sounders over frozen land, | and 0.495 for imagers and 0.282 for sounders over sea ice.",
+     "location": "Appendix 9.2, p. 44"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Lastly, there are rare occasions in which the QIh value is set to zero. This occurs when all four | possible inputs into the Kalman filter are missing. … IMERG will simply select a | precipitation rate from the IR field within ±12 h and flag it by assigning zero to the QIh value. Of | course, this only works in the IR coverage area of 60°N-S; at higher latitudes the values are left at | “missing”.",
+     "location": "Appendix 9.2, p. 44"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "QI is an indicator of the expected reliability of the data and is included in the native half-hourly and |    monthly files under the variable precipitationQualityIndex. … Half-Hourly QI |                 0-0.5      \"red\" questionable quality |                 0.5-0.75   \"yellow\" mid-range quality |                 0.75-1     \"green\" good-to-excellent quality",
+     "location": "IMERG Quality Index section, p. 6-7"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "text": "Automated QC in the Late Run: IR artifact masking (V07; arc screen at 182 K, GOES-17 noise screen at 150 K) by the IMERG team; CPC filtering of merged IR; SPEEDe auto-encoder post-processing of GPROF orbits for anomalously high values (misses unphysically low ones); GPROF preprocessor checks of Level 1C flags (CSU code) with qualityFlag and pixelStatus fields; PPS screening of faulty NRT MetOp granules.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "release notes, Tech Doc and GPROF ATBD read; passages checked",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Implemented the SPEEDe scheme. Early analysis of the IMERG V07A Final Run Retrospective Processing |     revealed orbits in which GPROF retrievals provided unphysical, generally anomalously high estimates. An auto- |     encoding routine (Satellite Precipitation Estimate Error Detector, or SPEEDe [Tan et al. 2024]) was developed |     and integrated into IMERG to detect these bad orbits in both the archived record and in future data, then a second |     retrospective processing created IMERG V07B Final Run. See Appendix 3 for more details. Note that SPEEDe |     is not designed to catch cases where the GPROF estimates are unphysically low.",
+     "location": "Changes from V06 to V07, p. 2"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "A few of these orbits were previously flagged as having bad | Level 1C channel values, flagging that was honored by GPROF in V05, but missed in V07. … Thereafter, SPEEDe is being run as a post- | processor for GPROF orbits to catch any new problem orbits, with the intent that it will eventually be incorporated | into GPROF. … Table 2: Listing of Level 2 GPROF orbit files deleted from the original V07 computation due to contamination by bad data. This | includes both those orbits directly identified by SPEEDe as contaminated using sensor-dependent scoring thresholds and manual | review (denoted by italic)",
+     "location": "Appendix 3: Orbits with Bad GPROF Retrievals (20 Dec 2023, rev. 15 May 2024)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Automated IR quality control was implemented. The geostationary IR Tb field sporadically |     exhibits distinct artifacts (stripes and arcs) in the Early and Late Runs and required manual |     intervention in the Final Run. A quality control mechanism was implemented in V07 that |     automatically scans for anomalous features and attempts to mask out these artifacts.",
+     "location": "Changes in V07, p. 17"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The IR Tb screening routine | was developed to remove artifacts in the IR field that manifest as arcs of low Tb. … Since this merged IR product is not produced | by the IMERG team, our approach is to develop a screening routine that removes the artifacts. | This was first implemented in V06. | … the screening | routine identifies Tb pixels below 182 K that have a missing value (designated with a value of 330 | K) in any of its eight surrounding pixels. Upon detection of such a pixel, a region stretching 95 | pixels in both latitude directions and 50 pixels in both longitude directions is masked.",
+     "location": "IR sensor error detection/correction, p. 64"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Beginning with data from February 15, 2021, a screening technique was implemented in the post- | real-time IMERG V06, and now V07, to prevent these artifacts from affecting subsequent | processing. At each pixel, the sum of the absolute value differences between the pixel and its eight | surrounding neighbors is computed. If the total difference exceeds 150 K, the pixel is changed to | a missing value of 330 K. This process is applied to every half-hourly IR field at every pixel.",
+     "location": "p. 64"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Starting in February 2023, the NRT MetOp 1C data stream has occasionally provided partial orbit | granules that duplicate previous granules, but contain faulty data. PPS instituted QC procedures | as of 11 July 2023 that can successfully screen out 12 of 16 known cases. … The satellite operators are responsible for | detecting and eliminating navigation and telemetry errors.",
+     "location": "PMW/IR data correction sections, p. 63"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "This was |     traced to noise in the GOES-W Tb’s (as the result of the faulty sensor cooling system), which |     made it past the filtering at CPC, where the Merged Global 4-km IR dataset is assembled. The |     V06 Early and Late datasets contained these errors, which were dealt with in the Final |     computation and all V07 Runs.",
+     "location": "Known errors and anomalies item 33, p. 69"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Value 0: pixel is “good” and has the highest confidence of the best retrieval. |        Value 1: “use with caution”. Pixels can be set to value 1 for the following reasons: |        1) Sunglint is present, RFI, geolocate, warm load or other L1C ‘positive value” |           quality warning flags |        2) All sea-ice covered surfaces |        3) All snow covered surfaces |        4) Sensor channels are missing, but not critical ones. … Value 3: “Use with extreme caution”. Pixels are set to value 3 if they have channels |        missing critical to the retrieval, but the choice has been made to continue the |        retrieval for these pixels.",
+     "location": "Quality Flag, p. 31"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Within the Preprocessor, checks are made of the L1C quality flag. These quality flags |      have both fatal error and non-fatal warnings. These are checks and a new code 0,1,3 is |      passed through to GPROF. … If the L1C quality flag have a fatal error, the pixel’s Tbs are set to missing.",
+     "location": "L1C Quality Flag, p. 31"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "text": "Manual QC is not done routinely in the Late Run; bad real-time input is handled by people stopping data streams (e.g., NOAA-19 MHS artifacts reached Early and Late for almost 24 h in Oct 2017, not reprocessed); the Final Run gets visual inspection and manual flagging.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "ATBD table plus a documented case",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Run (latency)                 Early (4 hours)         Late (12 hours)          Final (3.5 months) | GPROF product                 Near-real-time          Near-real-time           Climate | Fraction of input PMW         95%                     100%                     100% | sensors | CORRA product                 Near-real-time          Research                 Research | CORRA calibration             Trailing 45-day         Trailing 45-day          Centered 45-day | Motion vector source          GEOS FP                 GEOS FP                  MERRA-2 | PMW propagation               Forward only            Forward and              Forward and | backward                 backward | Kalman correlation            Trailing 3-month        Trailing 3-month         3-month with one- | window                                                                         month off-center | Gauge adjustment              Final Climatological    Final Climatological     GPCC analysis | PLP source                    JMA Forecast            JMA Forecast             ERA5 | Others                        No manual               No manual                Visual inspection | inspection              inspection               for bad PMW and | IR, manually | flagged for removal",
+     "location": "Table 3, p. 11"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "At about 4:57 UTC on 9 October 2017 the NOAA-19 MHS precipitation estimates started |     displaying artifacts, which was eventually traced to the instrument going into safe mode |     without shutting down data delivery. Since this happened over the long Columbus Day |     weekend, it took until 01:47 UTC on 10 October 2017 to shut down the data stream, so the |     Early and Late IMERG have these (very obvious) artifacts for almost 24 hours. No |     reprocessing is planned.",
+     "location": "Known errors and anomalies item 28, p. 68"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "text": "Validation is done by the IMERG team and the NASA GPM Ground Validation program (MRMS, Validation Network radars, Kwajalein, CPC/GPCC gauges, IPWG sites, atolls, buoys); IPWG daily pages include IMERG NRT Late; results feed version upgrades, not file-level QC.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "the team's own account; IPWG page read by extraction only",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The main features to be validated between the near-real-time and production instantiations are the use of somewhat different input data sets and the addition of monthly gauge calibration in the Final run. … At the snapshot level, comparison to the fine-scale NOAA Multi-Radar Multi-Sensor (MRMS) analyses, and to the PMM Kwajalein and GPM VN radar archives are considered key. As part of this effort, we carry out similar comparisons against the gridded Level 2 input data. The performance at larger space-time scales is assessed using accumulations of these datasets, as well as the CPC daily gauge analysis, the IPWG validation sites (Australia, CONUS, Japan, South America, Western Europe), the GPCC global monthly gauge analysis, the Pacific atoll data, and the ATLAS II buoy data. … At a minimum, metrics include bias, root-mean-square error, mean absolute error, correlation, and skill scores. Decompositions into hit error, miss error, etc. following Tian et al. (2009) are considered as well. We are working with the validation teams to examine the IMERG datasets with the detailed validation approaches that they manage.",
+     "location": "Sections 4.2 and 4.3, p. 31"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The GPM Ground Validation *GV* team is responsible for assembling the necessary data and computing validation and error statistical products. In some cases this includes organizing or participating in field experiments to collect high-quality data that are not otherwise available for particular climatic zones.",
+     "location": "Section 2 (roles), about line 360 of text copy"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Daily validation results for daily precipitation estimates | NASA(IMERG_NRT_E) | NASA(IMERG_NRT_L) | Rain Rate, Correlation, ETS, Bias error, RMS error, POD, FAR | Valid Date (12-12 UTC) | the CAWCR validation page for the Australia | the U. Maryland validation page for the US | the NASA/GSFC Precipitation validation page for Europe | the U. Maryland validation page for South America",
+     "location": "Legend and links (first 100000 characters of page)"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "In Summer 2022, a geolocation error was identified in the IMERG V06 gridding code (Figure 1) … In V07, this gridder geolocation error was rectified. … To better understand the impact of this gridded PMW geolocation error, the IMERG V06B PMW-gridded precipitation rates are compared to those from the ground radar (GR) on the Kwajalein Atoll. … the Kwajalein GR precipitation rates, as provided using the GPROF-footprint scale in the GPM Validation Network GRtoGPROF matchup files (Gatlin et al., 2020; NASA-GSFC, 2015), are gridded using IMERG’s method for gridding PMW footprints.",
+     "location": "Appendix 1, p. 7-8"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "text": "Late-Run-specific validation: the developers' V07 Late test data against GV-MRMS (CONUS, Jun-Aug 2014) showed higher Heidke Skill Score and correlation and smaller bias than V06B; independent gauge studies (Sichuan, 723 stations; Guangxi, 91 gauges) find better daily detection but larger systematic positive bias (Guangxi: 67.2-68.9% vs 62.3-64.8% in V06).",
+   "importance": "central",
+   "applicability": "regional; abstracts only for the two independent studies",
+   "confidence": "moderate",
+   "confidence_reason": "release-note figures only in an image; independent studies read as abstracts",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Initial evaluations of IMERG V07 Late Run test data suggest that the changes implemented lead to improved",
+     "location": "Appendix 2"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "The V07 Late run is suitable for short-term daily hydrological applications, but long-term cumulative uses (e.g., drought or agricultural monitoring) require rigorous, physical-based bias correction.",
+     "location": "Highlights"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "This study selected daily precipitation data from 723 stations in Sichuan, China, spanning from October 2014 to September 2021, to evaluate the improvements and limitations of V07_ER, V07_LR, and V07_FR relative to the previous V06 version.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "text": "Documents: ATBD V07 (13 Aug 2026; QI in Appendix 9), Technical Documentation (13 Jul 2023, latest), V07 Release Notes (20 Nov 2024, also cover V07B), PPS File Specification V7.18 (5 Sep 2024), GPROF2021 ATBD (2022), L1C ATBD v1.6 (2016); no document yet describes the 2026 hybrid Late Run beyond news items, and there is no separate V07B note or standalone V07 QI document.",
+   "importance": "central",
+   "applicability": "as found online on 2026-11-21",
+   "confidence": "high",
+   "confidence_reason": "landing pages read directly",
+   "sole_source_reason": "the publisher's own document pages",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Date Last Updated | Thursday, August 13, 2026 … IMERG_V07_ATBD_final_260813.pdf2.03 MB",
+     "location": "Landing page"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Date Last Updated | Thursday, July 13, 2023 … In parallel, the Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2) and Goddard Earth Observing System Forward Processing (GEOS FP) precipitation (PRECTOT), total precipitable liquid water (TQL), and total precipitable water vapor (TQV) fields are used in the CMORPH-KF quasi-Lagrangian time interpolation procedure. … IMERG_TechnicalDocumentation_final_230713.pdf1.75 MB",
+     "location": "Landing page"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "However, discovery of some 162 orbits of defective V07 GPROF precipitation estimates across all passive microwave satellites over the TRMM and GPM eras led to a second RP for the V07 Final Run, now labeled V07B. … climatological calibrations were computed for the Early and Late Runs to the Final Run, and both Initial Processing (IP) and RP for the Early and Late Runs began on 3 June 2024, with IP taking effect starting 1 June.",
+     "location": "Summary, p. 1"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "PRECIPITATION PROCESSING SYSTEM | GLOBAL PRECIPITATION MEASUREMENT | File Specification for GPM Products | Version 7.18 TKIO 3.101 | September 5, 2024",
+     "location": "Title page"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Date Last Updated | Friday, April 1, 2016 | Author(s) | Precipitation Processing System | GPM Intercalibration (X-CAL) Working Group … The Level 1C algorithms transform equivalent Level 1B radiance data into Level 1C products. The input source data are geolocated and radiometric calibrated antenna temperature (Ta) or brightness temperature (Tb). The output Level 1C products are common intercalibrated brightness temperature (Tc) products using the GPM Microwave Imager (GMI) as the reference standard.",
+     "location": "Landing page"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Algorithm Theoretical Basis Document (ATBD) | NASA Global Precipitation Measurement (GPM) | Integrated Multi-satellitE Retrievals for GPM | (IMERG) Version 07 … 13 August 2026 | … 9     APPENDIX: IMERG V07 QUALITY INDEX | 9.1   Summary | Users have requested a “simple” quality index (QI) to give some guidance on the degree to which | they should trust the Integrated Multi-satellitE Retrievals for GPM (IMERG).",
+     "location": "Title page; Section 9 Appendix"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "text": "Late timing and inputs: PPS waits about 11 hours for 'next overpass' data before starting the Late Run; IR enters the Kalman filter only when no PMW estimate is within ±30 minutes; V07 Early/Late processing began 3 June 2024 once the climatological calibrations to the Final were computed.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "the team's own documents, read in saved text",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "So, PPS waits about 11 hours to capture a reasonably complete set of",
+     "location": "Tech Doc, latency section"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "IR estimates are only included when there is no PMW estimate within ±30 minutes from the current half-hour",
+     "location": "Appendix 9"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "both Initial Processing (IP) and RP for the Early and Late Runs began on 3 June 2024",
+     "location": "p. 1"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "text": "In the Guangxi study, the V07 climatological calibration (CCA) improved dry-season estimates but added positive bias in the wet season.",
+   "importance": "supporting",
+   "applicability": "one region; abstract only",
+   "confidence": "low",
+   "confidence_reason": "single regional study, abstract only",
+   "evidence": [
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "The introduced CCA effectively improved dry season estimations but failed during wet season by introducing substantial positive biases.",
+     "location": "Abstract"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "text": "The Oct 2026 recall of L3 GPROF V08 (precipitationYesNoFlag bug) does not state any effect on IMERG.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "single official notice",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "The Precipitation Processing System (PPS) is recalling Level 3 GPROF data for GPM v08 because a minor bug was discovered in the Level 2 GPROF v08 program. GPM science data users should be aware that all GPM v08 L3 GPROF data will be reprocessed from v08A to v08B. L2 will not be reprocessed. … Please use \"probabilityOfPrecip>50\" rather than the \"precipitationYesNoFlag\" variable for all L2 V08 GPROF products.",
+     "location": "Data alert, issued Oct. 1, 2026"
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Late Run latency",
+   "source_ids": [
+    "s1",
+    "s2"
+   ],
+   "status": "resolved",
+   "explanation": "ATBD Table 3 says 12 h, ATBD text ~14 h; Tech Doc says nominal 14 h but 'more like 12' recently: 14 h is the design figure, 12 h the recent practice."
+  },
+  {
+   "claim": "Half-hourly QI stoplight thresholds",
+   "source_ids": [
+    "s12",
+    "s16",
+    "s1"
+   ],
+   "status": "resolved",
+   "explanation": "Tech Doc (Jul 2023) 0.4/0.6; FAQ (Feb 2025) and ATBD (Aug 2026) 0.5/0.75; the newer documents are taken as current."
+  },
+  {
+   "claim": "Projected switch of Early/Late to V08",
+   "source_ids": [
+    "s7",
+    "s8"
+   ],
+   "status": "resolved",
+   "explanation": "Apr 2026 notice: 'no sooner than fall of 2026'; Aug 2026 update: 'no sooner than winter of 2026'. The later update supersedes."
+  }
+ ],
+ "coverage_gaps": [
+  "No V07- or V08-era Level 1C ATBD found: gpm.nasa.gov L1C ATBD landing page still shows v1.6 (V04), last updated 1 April 2016. Current XCAL table versions used in V07/V08 1C products NOT PRESENT in sources read. Lead: PPS file specification / CSU XCAL tables page (not read). (from sa1)",
+  "IMERG Technical Documentation on gpm.nasa.gov is still dated 13 July 2023 (no newer version online on 2026-11-21); it predates V07B Early/Late and the 2026 hybrid GPROF V08 mode. (from sa1)",
+  "Which sensors are actually active in the current hybrid Late Run, and which GPROF V08 version, NOT PRESENT in sources read; the ATBD lists MWprecipSource index values for the whole record only. (from sa1)",
+  "Not read: Huffman 2024 slides (https://ntrs.nasa.gov/citations/20240011596), 'Lessons Learned in V07 IMERG' (https://mdsoar.org/handle/11603/27231), Tan et al. 2019 on TQV motion vectors, Joyce et al. 2011 KF paper. No peer-reviewed IMERG V07 overview paper found. (from sa1)",
+  "Software names: ATBD names PPS RT (Early/Late) and PPS Production (Final), a single IMERG code, CPC for merged geo-IR, L1CXCAL for 1C; GES DISC role in processing NOT PRESENT (distribution only, per release notes). Name of the IMERG code package beyond 'IMERG algorithm' NOT PRESENT. (from sa1)",
+  "Inconsistency to note: ATBD Table 3 gives Late latency 12 hours; ATBD text and landing page say ~14 hours; Technical Documentation says nominal 14 h, 'in recent data it’s more like 12'. (from sa1)",
+  "q2: Whether IMERG screens GPROF input by GPROF qualityFlag/pixelStatus values (and which values) is NOT PRESENT in the Tech Doc, ATBD or release notes read; GPROF V08 ATBD not read. (from sa2)",
+  "q2: A Late-Run-specific Quality Index formula is NOT PRESENT; the ATBD gives one equation (instantaneous, forward, backward PMW, IR). Tech Doc says backward-propagated PMW is not available for Early, implying the Late QI can include it; not stated explicitly. (from sa2)",
+  "q2: Whether SPEEDe screens GPROF orbits in real time before the Late Run is not stated (release notes: 'post-processor for GPROF orbits to catch any new problem orbits'). Tan et al. 2024 SPEEDe paper not read. (from sa2)",
+  "q2: Conflicting half-hourly QI stoplight thresholds: Tech Doc (13 Jul 2023) 0-0.4/0.4-0.6/0.6-1 vs FAQ (Feb 2025) and ATBD (Aug 2026) 0-0.5/0.5-0.75/0.75-1. (from sa2)",
+  "q2: Effect of the Oct 2026 GPROF V08 L3 recall on the hybrid IMERG Late Run (V07 algorithm with GPROF V08 inputs) NOT PRESENT; the recall notice covers L3 GPROF only (L2 not reprocessed). IMERG V08 transition pages (gpm.nasa.gov/data/news/update-imerg-v08-transition-schedule-aug-2026) not read by sa2. (from sa2)",
+  "q2: PPS partner_anomalous.html (constellation sensor anomalies) not read; GPROF V7 ATBD's other QC (Tbs out of range thresholds) not read in full; V08 file-level check of in-file fields in a 2026 3B-HHR-L file not done. (from sa2)",
+  "IPWG validation pages for IMERG (e.g., www-ipwg.kugi.kyoto-u.ac.jp/IPWG/python/dailyval.2024.html) and Watters et al. IPWG 2022 talk (ntrs 20220008925) not opened; whether IPWG sites evaluate the Late Run specifically NOT verified. (from sa3)",
+  "Watters et al. Validation Network IMERG paper (J. Hydrometeor., cited as submitted in ATBD) and Wang and Wolff (2025) MRMS study: published versions and figures not found. (from sa3)",
+  "No source read states that validation results feed back into operational Late Run QC; feedback seen only at version upgrades (geolocation fix V07, release notes 'implemented in response to feedback on V06'). (from sa3)",
+  "V07 File Specification PDF (filespec.GPM.V7.pdf) and V08 file spec not opened; dates NOT PRESENT. GPROF V07 ATBD (ATBD_GPM_V7_GPROF.pdf) and GPROF V08 release notes/addendum not opened. (from sa3)",
+  "No published document found on the March 2026 'hybrid' GPROF V08-input V07B Late Run beyond Earthdata/GPM news items (see Part 1 record); Tech Doc last updated 13 July 2023 and release notes 20 Nov 2024 predate it. No separate V07B release note and no standalone V07 Quality Index document (QI is in ATBD Appendix 9; PPS lists only 'IMERG V06 Quality Index'). (from sa3)",
+  "Other docs seen only as search titles: IMERG V07 Climatology Documentation 22 Jan 2025 (gpm.nasa.gov/sites/default/files/2025-01/IMERG.V07.Climatology.Release.250122.pdf); FAQ for IMERG V07 Applications Users Feb 2025 (gpm.nasa.gov/sites/default/files/2025-02/FAQ%20for%20IMERG%20V07%20Applications%20Users_202502.pdf); Nguyen et al. 2020 PDIR-Now paper (NTRS 20210016443). (from sa3)",
+  "MDPI Remote Sensing 18(17) 2867 (Guangxi Late Run gauge study): Wayback copy attempt via WebFetch (https://web.archive.org/web/2026/https://www.mdpi.com/2072-4292/18/17/2867) was denied by the auto-mode classifier; not retried. Coordinator may try another copy (e.g., DOI 10.3390/rs18172867 on another host). (from sa3)",
+  "GES DISC README (README.GPM.pdf) read via its Wayback copy (10 Apr 2026): a generic GPM README last revised 2017, with no IMERG processing or QC content.",
+  "Wang and Wolff (2025) MRMS study and the release notes' Figure 3 values not read (figures are images)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG V07 ATBD",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; landing page shows ATBD last updated 13 Aug 2026 (same as saved copy)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG technical documentation V07",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; landing page still 13 July 2023",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM Level 1C intercalibration XCAL",
+   "tool": "WebSearch",
+   "notes": "found L1C ATBD v1.6 (2016) on gpm.nasa.gov",
+   "from": "sa1",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PDIR-NOW precipitation algorithm Nguyen Hsu Sorooshian",
+   "tool": "WebSearch",
+   "notes": "found Nguyen et al. 2020 JHM (PMC8216223, NTRS 20210016443); not read in time",
+   "from": "sa1",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG V08 transition schedule hybrid GPROF V08",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; found Aug 2026 update",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "IMERG V07 release notes 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; no 2026 release notes found; latest 20 Nov 2024",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Late Run|backward|climatolog|PDIR|TQV|Kalman|CORRA|XCAL|latency",
+   "tool": "lookup (find_text.py on saved ATBD 2026-08 and Technical Documentation)",
+   "notes": "earlier runs' saved text",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "V07B|hybrid|GPROF V08|PDIR|PERSIANN-CCS",
+   "tool": "lookup (find_text.py on Part 1 saved files and V07 release notes)",
+   "notes": "earlier runs' saved text",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Level 1C ATBD GPM V07 intercalibrated brightness temperature",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; second query for r9; no V07-specific L1C ATBD found",
+   "from": "sa1",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Huffman IMERG V07 paper 2024 algorithm changes",
+   "tool": "WebSearch",
+   "notes": "no peer-reviewed V07 paper found; NTRS 20240011596 Huffman slides and 'Lessons Learned in V07 IMERG' (mdsoar) not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PDIR-Now paper (PMC8216223)",
+   "tool": "WebFetch",
+   "notes": "read via fetch_page.py raw",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG quality index precipitationQualityIndex",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, nasa.gov; found V07 FAQ (read) and V07 ATBD (Aug 2026 version already saved)",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPROF V07 ATBD quality flag",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found GPROF V05B release notes, L3GPROF V07 info",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPROF 2021 ATBD qualityFlag pixel",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.eosdis.nasa.gov, nasa.gov; found ATBD_GPM_V7_GPROF.pdf (read)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PPS GPM data anomalies outages",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, nasa.gov; read GPM Product Outages page; GPROF V08 recall already saved",
+   "from": "sa2",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG V07 hybrid GPROF V08 Late Run 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, earthdata.nasa.gov; read 2022 Upgrade to IMERG Early and Late Runs notice; V08 transition pages not read (other subagents/Part 1 have them)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "precipitationQualityIndex|randomError|IRinfluence|quality control|screen|SPEEDe in earlier-run files",
+   "tool": "lookup (find_text.py over earlier runs' imerg_techdoc, imerg_atbd_2026-08, release notes, gprof recall, pps_gpm_anomalous)",
+   "notes": "source of most items",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPM Ground Validation IMERG Validation Network",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; opened gpm.nasa.gov/science/ground-validation/validation",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG V07 Late Run validation gauges 2025",
+   "tool": "WebSearch",
+   "notes": "found MDPI Remote Sensing 18(17) 2867 Guangxi study (mdpi.com refused)",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IPWG IMERG validation",
+   "tool": "WebSearch",
+   "notes": "snippets: IPWG daily validation pages (www-ipwg.kugi.kyoto-u.ac.jp/IPWG/python/dailyval.2024.html), Watters et al. IPWG 2022 talk (V06B); not opened for time",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPM_3IMERGHHL 07 README",
+   "tool": "WebSearch",
+   "notes": "allowed_domains disc.gsfc.nasa.gov; README link found in earlier-run Earthdata HTML: https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/doc/README.GPM.pdf (fetch failed)",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG V07 evaluation MRMS Early Late Final",
+   "tool": "WebSearch",
+   "notes": "returned release notes editions 230713, 231220, 240221, 241126",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG V07 Late Run evaluation rain gauges Early Final comparison 2026",
+   "tool": "WebSearch",
+   "notes": "again MDPI 2072-4292/18/17/2867",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "IMERG Technical Documentation 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.eosdis.nasa.gov, arthurhou.pps.eosdis.nasa.gov, docserver.gesdisc.eosdis.nasa.gov; found IMERG V07 Climatology doc 250122, FAQ for V07 Applications Users 202502",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PDIR-NOW algorithm documentation IMERG",
+   "tool": "WebSearch",
+   "notes": "Nguyen et al. 2020 J. Hydrometeor. is the documentation",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPROF ATBD Version 07 file specification PPS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, pps.eosdis.nasa.gov, arthurhou.pps.eosdis.nasa.gov; opened arthurhou GPMprelimdocs.html",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "find_text Ground Validation|Validation Network|MRMS in 2026-11-18 run work/raw",
+   "tool": "lookup (earlier-run files)",
+   "notes": "ATBD section 4, techdoc GV role",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Watters IMERG V07 GPM Validation Network oceanic radars Journal of Hydrometeorology",
+   "tool": "WebSearch",
+   "notes": "found JHM 2025 paper (NTRS 20250002249)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www-ipwg.kugi.kyoto-u.ac.jp/IPWG/python/dailyval.2024.html",
+   "tool": "WebFetch",
+   "notes": "extraction prompt; read first 100000 of 485630 characters",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://gpmweb2https.pps.eosdis.nasa.gov/pub/GPMfilespec/new/filespec.GPM.V7.pdf",
+   "tool": "WebFetch",
+   "notes": "binary saved, copied to filespec_gpm_v7.pdf, pdftotext pages 1-3",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/doc/README.GPM.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Wayback copy 20260410 read; generic README",
+   "copy_of": "https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/doc/README.GPM.pdf",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG V07 Late Run evaluation rain gauges 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "found Springer Sichuan study (abstract read), MDPI Texas study, Atmos. Res. typhoon study; Guangxi MDPI page then read in browser"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "SPEEDe Tan 2024 GPROF orbits IMERG near-real-time",
+   "tool": "duckduckgo (browser)",
+   "notes": "only the SPEEDe GitHub repository and the paper title; nothing on whether SPEEDe screens orbits before each Late Run (code openness is out of scope)"
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30,
+  "elapsed_min": 18.7,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 180298,
+  "subagent_minutes_planned": 31.5,
+  "subagent_minutes": 24.4,
+  "follow_ups": 0,
+  "continuations": 2,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

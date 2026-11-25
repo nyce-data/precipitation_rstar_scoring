@@ -1,0 +1,2545 @@
+{
+ "question": "How is the production of PERSIANN-CDR Daily funded, and has that funding been stable, or cut or threatened, between January 1, 2025 and November 2026? (Part 3: funding routes for the producing group, CHRS at UC Irvine, and NCEI only as host; ratings imminent / emerging / no current threat found)",
+ "tier": "deep",
+ "tier_reason": "deep: dispute: proposed NOAA/NASA cuts and federal grant terminations in 2025-2026; several funding routes",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "NOAA program funding for PERSIANN-CDR (the CDR Program, transition to operations, budget lines FY2024-FY2027) and threats to it",
+   "status": "uncertain",
+   "source_ids": [
+    "s20",
+    "s48",
+    "s61",
+    "s62",
+    "s41",
+    "s60",
+    "s44",
+    "s47"
+   ],
+   "remaining_gap": "No source names what pays for the quarterly extension after the 2009-2014 CICS sub-award; no NOAA budget document has a CDR line."
+  },
+  {
+   "id": "q2",
+   "question": "Grants and contracts to CHRS/UCI that pay for PERSIANN-CDR, with amounts, award numbers and years, and any terminations",
+   "status": "answered",
+   "source_ids": [
+    "s17",
+    "s27",
+    "s16",
+    "s65",
+    "s28",
+    "s29",
+    "s66"
+   ],
+   "remaining_gap": "The recent awards fund related CHRS products (CCS-CDR v2, PERSIANN-Unet), not named as paying for PERSIANN-CDR Daily; no renewal found for NA23OAR4310443 after 2026-08-31."
+  },
+  {
+   "id": "q3",
+   "question": "University/institutional and other support for CHRS, and threats to the producing group",
+   "status": "answered",
+   "source_ids": [
+    "s2",
+    "s9",
+    "s5",
+    "s6",
+    "s14"
+   ],
+   "remaining_gap": "Date of the change of director; the NOAA, NASA and DOE exhibits in Thakur v. Trump not found."
+  },
+  {
+   "id": "q4",
+   "question": "NCEI's hosting role and its budget only as it bears on hosting PERSIANN-CDR",
+   "status": "answered",
+   "source_ids": [
+    "s38",
+    "s58",
+    "s39",
+    "s44",
+    "s47"
+   ],
+   "remaining_gap": "Date and cause of NCEI's pause notice."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers (budget documents)",
+   "subquestion_id": "q1",
+   "aim": "NOAA congressional justifications naming Climate Data Records",
+   "query": "NOAA congressional justification Climate Data Records 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA CDR Program (NCEI)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "CDR Program pages on PERSIANN-CDR operations and funding",
+   "query": "NOAA Climate Data Record Program PERSIANN-CDR operational",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA",
+   "publisher": "funders: award database",
+   "subquestion_id": "q2",
+   "aim": "USAspending NOAA awards to UC Irvine for PERSIANN/precipitation",
+   "query": "USAspending PERSIANN University of California Irvine NOAA",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NASA",
+   "publisher": "funders: award records",
+   "subquestion_id": "q2",
+   "aim": "NASA awards to UCI CHRS PIs",
+   "query": "PERSIANN NASA award Sorooshian",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NSF",
+   "publisher": "funders: award database",
+   "subquestion_id": "q2",
+   "aim": "NSF Award Search for PERSIANN and CHRS PIs",
+   "query": "NSF Award Search API keyword PERSIANN",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NOAA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "GAO/CRS reports on NOAA climate data records",
+   "query": "GAO NOAA climate data records",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "Congress",
+   "publisher": "funders: appropriations reports",
+   "subquestion_id": "q1",
+   "aim": "CJS report language on climate data records",
+   "query": "appropriations report NOAA climate data records 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "CHRS pages on sponsors, funding, news",
+   "query": "Center for Hydrometeorology and Remote Sensing sponsors",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "UC Irvine",
+   "publisher": "its parent",
+   "subquestion_id": "q3",
+   "aim": "UCI statements on federal grant terminations 2025",
+   "query": "UC Irvine federal grant terminations 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "CHRS",
+   "publisher": "press",
+   "subquestion_id": "q3",
+   "aim": "news of PERSIANN or CHRS funding events",
+   "query": "PERSIANN funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "UC researchers",
+   "publisher": "courts and tribunals",
+   "subquestion_id": "q3",
+   "aim": "Thakur v. Trump grant lists naming CHRS PIs",
+   "query": "Thakur v. Trump terminated grants UC Irvine",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": null,
+   "publisher": "affected people and critics (grant-termination trackers)",
+   "subquestion_id": "q2",
+   "aim": "public trackers of terminated NSF/NASA/NOAA grants",
+   "query": "Grant Witness terminated grants UC Irvine",
+   "skip_reason": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://chrs.web.uci.edu/",
+   "fetched_url": null,
+   "title": "CHRS - The Center for Hydrometeorology and Remote Sensing at UCI (home page)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "page footer (c) 2017; undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_home.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Sponsor list is logos only (no text); page not updated since 2017 footer; says nothing about 2025-2026.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s2",
+   "url": "https://chrs.web.uci.edu/about.php",
+   "fetched_url": null,
+   "title": "CHRS About page",
+   "author_org": "CHRS, UC Irvine",
+   "published": "footer (c) 2017",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_about.txt",
+   "retrieved": null,
+   "limitations": "Undated (c) 2017 page.",
+   "found_by": [
+    "sa3"
+   ],
+   "retrieved_note": "2026-11-19 (Part 1 run)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://research.uci.edu/center/center-for-hydrometeorology-and-remote-sensing-chrs/",
+   "fetched_url": null,
+   "title": "Center for Hydrometeorology and Remote Sensing (CHRS) - UCI Office of Research centers listing",
+   "author_org": "UC Irvine Office of Research",
+   "published": "undated (footer (c) 2026 UC Regents)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction only (fetch_page.py got HTTP 403); breadcrumb 'School Centers' and director name reported by the extractor, not saved.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6326112/",
+   "fetched_url": null,
+   "title": "The CHRS Data Portal, an easily accessible public repository for PERSIANN global satellite precipitation data (Nguyen et al. 2019, Sci. Data 6:180296, doi:10.1038/sdata.2018.296)",
+   "author_org": "Nguyen, P. et al. (CHRS, UC Irvine)",
+   "published": "2019-01-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nguyen2019_chrs_portal_pmc.txt",
+   "retrieved": null,
+   "limitations": "2019 paper; support for the Portal paper, not a statement of current funding. 'University of California (#4600010378 TO #15 Am 22)' format looks like a state contract task order; not explained in the paper.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "retrieved_note": "Part 1 run"
+  },
+  {
+   "id": "s5",
+   "url": "https://research.uci.edu/wp-content/uploads/250521-Research-Town-Hall_Final.pdf",
+   "fetched_url": null,
+   "title": "Recent Federal Agency Actions: Impacts on Research at UC Irvine (Research Town Hall slides)",
+   "author_org": "UC Irvine Office of Research (Nancy Lewis, Jeff Warner, D'Elia Wernecke)",
+   "published": "2025-05-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/uci_research_townhall_20250521.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Campus-wide counts; nothing ties the NOAA subaward or NSF terminations to CHRS. Copy obtained via WebFetch binary save (curl got 403).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.450653/gov.uscourts.cand.450653.211.5.pdf",
+   "fetched_url": null,
+   "title": "Thakur v. Trump, No. 3:25-cv-04737-RFL (N.D. Cal.), Dkt. 211-5, Exhibit E: National Science Foundation stipulation and grant spreadsheet",
+   "author_org": "U.S. District Court N.D. Cal. (filed by plaintiffs; NSF spreadsheet)",
+   "published": "2026-07-15",
+   "data_period": null,
+   "source_type": "court",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/thakur_dkt211-5.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only the NSF exhibit (E) read; NOAA, NASA, DOE exhibits of Dkt. 211 not checked. Copy obtained through WebFetch binary save (storage.courtlistener.com refused by sandbox proxy for curl). The grant is not a PERSIANN grant.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://news.research.uci.edu/cg-news/uc-irvine-receiving-suspension-notices-for-mcas-where-ucla-serves-as-the-prime-recipient/",
+   "fetched_url": null,
+   "title": "UC Irvine receiving suspension notices for MCAs where UCLA serves as the prime recipient",
+   "author_org": "UCI Vice Chancellor for Research Aileen Anderson",
+   "published": "2025-08-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "No local copy (403 to curl); extraction only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-persiann",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR (NCEI product page)",
+   "author_org": "NOAA NCEI",
+   "published": "undated, retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_persiann_product.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Pause notice seen only in search-engine summary, not in saved copy (may be a removed or rotating banner). Mainly q4/q1 relevance.",
+   "found_by": [
+    "sa3",
+    "sa1"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://news.uci.edu/2026/04/22/water-warming-and-a-world-at-risk/",
+   "fetched_url": null,
+   "title": "Water, warming and a world at risk (UC Irvine News)",
+   "author_org": "UC Irvine News (Brian Bell)",
+   "published": "2026-04-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/uci_news_20260422_water_warming.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "News feature; date of the director change NOT PRESENT. Does not name PERSIANN-CDR or funding.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://engineering.uci.edu/users/soroosh-sorooshian",
+   "fetched_url": null,
+   "title": "Soroosh Sorooshian faculty profile (UCI Samueli School of Engineering)",
+   "author_org": "UC Irvine Samueli School of Engineering",
+   "published": "undated, retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "Extraction only, no local copy.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://drought.eng.uci.edu/about",
+   "fetched_url": null,
+   "title": "Global Drought Monitoring and Prediction System - About (CHRS)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "undated; cites De Michele et al. 2026 and Nguyen et al. 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_drought_about.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Sponsor logos not in saved HTML (script-rendered); a browser may show them. Not about PERSIANN-CDR funding directly.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "alerts dated 2026-11-02 to 2026-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_alerts.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Shows only current alerts; past alerts (e.g., Oct-Nov 2025 shutdown) not listed. The 'pause in operations due to processing delays' text quoted by a search engine for the PERSIANN product page is NOT PRESENT in either the curl copy or a WebFetch read on 2026-11-19.",
+   "found_by": [
+    "sa3",
+    "sa1"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.thompsoncoburn.com/wp-content/uploads/2026/08/Thakur-184-Third-Amended-Complaint-1.pdf",
+   "fetched_url": null,
+   "title": "Thakur v. Trump, No. 3:25-cv-04737-RFL, Dkt. 184, Third Amended Complaint",
+   "author_org": "Plaintiffs (UC researchers), N.D. Cal.",
+   "published": "2026-02-03 (filed)",
+   "data_period": null,
+   "source_type": "court",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/thakur_dkt184_tac.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Searched by keyword only, not read in full. Copy saved via WebFetch binary (third-party law-firm host). 'Commerce' figure is UC-wide, not CHRS.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://amir.eng.uci.edu/",
+   "fetched_url": null,
+   "title": "Amir AghaKouchak lab home page",
+   "author_org": "Amir AghaKouchak, UC Irvine",
+   "published": "undated, retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/aghakouchak_lab_home.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Undated personal page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://ntrs.nasa.gov/api/citations/20260002308",
+   "fetched_url": null,
+   "title": "NTRS record: PERSIANN-Unet: A Global Deep Learning Framework for Near-Real-Time Precipitation Estimation Using Infrared Data (J. Hydrometeorology, 2026)",
+   "author_org": "NASA Technical Reports Server (authors Phu Nguyen, Kuolin Hsu, Soroosh Sorooshian, Amir AghaKouchak et al., UC Irvine; Huffman, GSFC)",
+   "published": "2026-06-24 (publication date); record submitted 2026-03-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ntrs_20260002308.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Q2 lead found late by sa3; funding numbers only, no amounts or agency names; paper PDF (downloads link) not read. Agency attribution from prefixes is inference for the coordinator to verify.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://ntrs.nasa.gov/api/citations/20260002308/downloads/PERSIANN_Unet_JHM_final.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN-Unet: A Global Deep Learning Framework for Near-Real-Time Precipitation Estimation Using Infrared Data (accepted manuscript, J. Hydrometeorology 2026)",
+   "author_org": "Nguyen, Dao, Ung, Jimenez Arellano, Hsu, Sorooshian, AghaKouchak (UC Irvine), Huffman (NASA GSFC), Ralph (UCSD)",
+   "published": "2026-06-24",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nguyen2026_persiann_unet_jhm.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "About PERSIANN-Unet, a newer CHRS product; shows CHRS group funding mix in 2026, not PERSIANN-CDR production funding. Found late; q2 subagent may hold more on these awards.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA23OAR4310443_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA23OAR4310443 (NOAA cooperative agreement to University of California Irvine)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "last_modified_date 2024-08-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usasp_NA23OAR4310443/2495d3a473800b49.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Record does not name the PI or program office; description truncated at 'ALGOR'. Negative total_account_obligation not explained in the record. Tie to PERSIANN-CCS-CDR v2 rests on the coordinator's lead and a UCI thesis search snippet, not on this record.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://cisess.umd.edu/updates-to-a-global-precipitation-product/",
+   "fetched_url": null,
+   "title": "Updates to a Global Precipitation Product",
+   "author_org": "CISESS (UMD), Maureen Cribb & Debra Baker",
+   "published": "2026-03-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cisess_umd_precip_update.html/94091bf1f8cb604a.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Project is not PERSIANN-CDR production.",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.highergov.com/grant/NA23OAR4310443/",
+   "fetched_url": null,
+   "title": "HigherGov grant page NA23OAR4310443",
+   "author_org": "HigherGov (aggregator of USAspending data)",
+   "published": "NOT PRESENT (last modified 8/20/24 shown)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction only; no local copy. Aggregator, not the official record.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://doi.org/10.1175/BAMS-D-13-00068.1",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR: Daily Precipitation Climate Data Record from Multisatellite Observations (Ashouri et al. 2015), Acknowledgments",
+   "author_org": "CHRS UC Irvine",
+   "published": "2015",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ashouri2015.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Two-column pdftotext layout interleaves text; awards are 2006-2012 era. Note NA09NES440006 here vs NA09NES4400006 in Sadeghi 2019.",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://doi.org/10.1038/s41597-021-00940-9",
+   "fetched_url": null,
+   "title": "PERSIANN-CCS-CDR, a 3-hourly 0.04° global precipitation climate data record (Sadeghi et al. 2021), Acknowledgements",
+   "author_org": "CHRS UC Irvine",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sadeghi2021_ccscdr.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2021; pre-dates 2025.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://repository.library.noaa.gov/view/noaa/65498/noaa_65498_DS1.pdf",
+   "fetched_url": null,
+   "title": "Sadeghi et al. 2019, Funding statement",
+   "author_org": "CHRS UC Irvine",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sadeghi2019_noaa_repo.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Awards pre-date 2025.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://web.archive.org/web/20250923051723/https://cpo.noaa.gov/noaa-climate-program-offices-climate-observations-and-monitoring-program-awards-1-2-million-for-new-precipitation-data-development-and-analysis/",
+   "fetched_url": null,
+   "title": "NOAA Climate Program Office’s Climate Observations and Monitoring Program awards $1.2 million for new precipitation data development and analysis",
+   "author_org": "NOAA Climate Program Office (CPO)",
+   "published": "NOT PRESENT on the saved page (FY23 awards; page text cites 2023 data as of November 8; Wayback capture 2025-09-23)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cpo_37644_wb.html/a9c5264bfbcc7182.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Live page cpo.noaa.gov returned 403; Wayback copy used. Page does not give award numbers; the match to NA23OAR4310443 (sa2-e1) rests on matching description wording ('high-resolution ... precipitation dataset that will contribute to the understanding of precipitation variability ... extreme events') and the FY23 CPO opportunity, not on a stated number.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://api.nsf.gov/services/v1/awards.json?keyword=PERSIANN",
+   "fetched_url": null,
+   "title": "NSF Award Search API, keyword PERSIANN",
+   "author_org": "National Science Foundation",
+   "published": "NOT PRESENT (live query 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nsf_persiann.json/c63947737420e9ed.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Keyword search covers award titles/abstracts only; does not rule out NSF awards that fund PERSIANN work without naming it.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://api.nsf.gov/services/v1/awards.json?awardeeName=Irvine&pdPIName=Kuolin%20Hsu",
+   "fetched_url": null,
+   "title": "NSF Award Search API, awardee Irvine, PI Kuolin Hsu",
+   "author_org": "National Science Foundation",
+   "published": "NOT PRESENT (live query 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nsf_hsu/6fe02cc3884f78c6.json",
+   "retrieved": "2026-11-19",
+   "limitations": "The name form may not match NSF's PI record (e.g. 'Kuo-lin Hsu'); the same query for Sorooshian failed twice (connection closed), so NSF coverage is incomplete.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://api.crossref.org/works/10.1038/s41597-026-06625-5",
+   "fetched_url": null,
+   "title": "Crossref record: A Global High-Resolution Precipitation Climate Record: PERSIANN-CCS-CDR Version 2.0 (Sci Data 2026)",
+   "author_org": "Crossref / Springer Nature",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e12",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/crossref_sdata2026/97a02955a42de79d.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Acknowledgements text not in Crossref; article page (nature.com) not readable.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://web.archive.org/web/20260129091627/https://www.nature.com/articles/s41597-026-06625-5",
+   "fetched_url": null,
+   "title": "A Global High-Resolution Precipitation Climate Record: PERSIANN-CCS-CDR Version 2.0 (Zadeh et al., Scientific Data 13, 314)",
+   "author_org": "CHRS UC Irvine (Zadeh, Nguyen, Hsu, AghaKouchak, Ung, Sorooshian)",
+   "published": "2026-01-29",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sdata2026_wb.html/a5164f43f4bd179f.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Live nature.com refused by the sandbox (non-.org host) and redirected to a sign-in on WebFetch; Wayback capture of 2026-01-29 used. Acknowledgements cover the CCS-CDR v2 research, not necessarily PERSIANN-CDR Daily production.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.highergov.com/grant/80NSSC23K0136/",
+   "fetched_url": null,
+   "title": "HigherGov grant page 80NSSC23K0136 (NASA to UC Irvine)",
+   "author_org": "HigherGov (aggregator of USAspending data)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction only (USAspending API calls for this ID failed with IncompleteRead); the second part of the passage is WebFetch's paraphrase of the analysis notes, not verbatim. No local copy.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.highergov.com/grant/80NSSC21K1668/",
+   "fetched_url": null,
+   "title": "HigherGov grant page 80NSSC21K1668 (NASA to UC Irvine)",
+   "author_org": "HigherGov (aggregator of USAspending data)",
+   "published": "NOT PRESENT (last modified 7/5/23)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction only; USAspending API failed (connection closed). No local copy.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.highergov.com/grant/NA24NESX432C0001/",
+   "fetched_url": null,
+   "title": "HigherGov grant page NA24NESX432C0001 (CISESS renewal, University of Maryland)",
+   "author_org": "HigherGov (aggregator of USAspending data)",
+   "published": "NOT PRESENT (Last Modified 9/30/26)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction only; UCI's share under this award (cited in sa2-e13) NOT PRESENT. No local copy.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Sorooshian",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName Sorooshian",
+   "author_org": "National Science Foundation",
+   "published": "NOT PRESENT (live query 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nsf_sorooshian2/159a4aa704bb430f.json",
+   "retrieved": "2026-11-19",
+   "limitations": "pdPIName matches PI and possibly co-PI records; awards with Hsu, Nguyen or AghaKouchak as PI were not checked successfully.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=AghaKouchak",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName AghaKouchak",
+   "author_org": "National Science Foundation",
+   "published": "NOT PRESENT (live query 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nsf_aghakouchak/18c3dc9542632665.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Not tied to PERSIANN-CDR; awardee field not checked for each record.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Hsu&awardeeName=Irvine",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName Hsu, awardee Irvine",
+   "author_org": "National Science Foundation",
+   "published": "NOT PRESENT (live query 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nsf_hsu_irvine/dc3321a8127f8189.json",
+   "retrieved": "2026-11-19",
+   "limitations": "awardeeName matching may need the full form University of California-Irvine; not retried.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Phu%20Nguyen&awardeeName=University%20of%20California-Irvine",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName Phu Nguyen, awardee University of California-Irvine",
+   "author_org": "National Science Foundation",
+   "published": "NOT PRESENT (live query 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nsf_nguyen/c0193808234ea3cb.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Name-form matching in the NSF API is not verified.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://www.highergov.com/contract/1305M423DNEEA0014-1332KP24F0017/",
+   "fetched_url": null,
+   "title": "HigherGov contract page 1305M423DNEEA0014-1332KP24F0017 (NCEI Science Support task order)",
+   "author_org": "HigherGov (aggregator of USAspending/FPDS data)",
+   "published": "NOT PRESENT (page Last Modified 9/8/26)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction only, description abridged by the fetch model; no local copy. This is an NCEI-side stewardship contract (bears on q1/q4), not a grant to CHRS. Earlier search snippet attributed a related order 1332KP24F0021 (approx. $23.3M, PoP to 2026-09-30) to Riverside Technology; not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://www.highergov.com/contract/1305M423DNEEA0014-1332KP24F0021/",
+   "fetched_url": null,
+   "title": "HigherGov contract page 1305M423DNEEA0014-1332KP24F0021 (NCEI IRA/BIL science support task order)",
+   "author_org": "HigherGov (aggregator of USAspending/FPDS data)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction only; awardee attribution conflicts with the Riverside press release and search snippets; no local copy. Not the ST133017CQ0058 contract credited in the 2026 paper.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://repository.library.noaa.gov/view/noaa/46518",
+   "fetched_url": null,
+   "title": "Sadeghi et al. 2019, PERSIANN-CDR / PERSIANN-CCS-CDR paper (NOAA IR copy)",
+   "author_org": "UCI CHRS",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sadeghi2019_noaa_repo.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Funds research on PERSIANN-CCS-CDR as well; amounts NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://www.ncei.noaa.gov/node/8306",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR processing delay",
+   "author_org": "NOAA NCEI",
+   "published": "undated (retrieved 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_node8306.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Undated; may be stale. Access listing (sa1-e6) shows files created 2026-10-13 through data date 2026-07-31, so the notice may predate that delivery.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2026/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/2026/",
+   "author_org": "NOAA NCEI",
+   "published": "listing as of 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/persiann_access_2026.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "A file listing; says nothing about who runs the extension or funding.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/",
+   "author_org": "NOAA NCEI",
+   "published": "listing as of 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/persiann_access_dir.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Modification dates only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/",
+   "fetched_url": null,
+   "title": "PERSIANN CDR User Guide CDRP-GUID-1665 Rev 0 12/31/2025",
+   "author_org": "NOAA CDR Program / NCEI",
+   "published": "2025-12-31",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/userguide.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "'produced and delivered' implies an external producer delivering to NCEI but does not name it. URL is the CDR document folder; exact file URL in Part 1 record.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/html",
+   "fetched_url": null,
+   "title": "NCEI ISO metadata record C00854, PERSIANN-CDR (Wayback 2026-10-31 copy)",
+   "author_org": "NOAA NCEI",
+   "published": "record as of 2026-10-31",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_iso_c00854_wb20261031.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Metadata only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://cisess.umd.edu/",
+   "fetched_url": null,
+   "title": "CISESS-NC Annual Report 2022-23 (as saved in GHCN-D pt3 run)",
+   "author_org": "CISESS North Carolina (NCSU)",
+   "published": "2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_nc_annual_2022-23.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "FY2022-23 report; URL given is the CISESS site (exact PDF URL in GHCN pt3 record).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://www.noaa.gov/organization/budget-finance-performance/budget-and-reports",
+   "fetched_url": null,
+   "title": "NOAA FY2027 Congressional Justification (as saved in NCEI threats run)",
+   "author_org": "NOAA",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Column headers of the summary table not quoted (read in NCEI run); CDR work is not broken out, so effect on PERSIANN-CDR is not stated.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://www.commerce.gov/sites/default/files/2025-06/NOAA-FY2026-Congressional-Budget-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2026 Congressional Justification (as saved in NCEI threats run)",
+   "author_org": "NOAA",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "PDR&A is STAR's line, not the CDR Program; whether CDR Program money sits in NCEI or PDR&A is NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s46",
+   "url": "https://www.congress.gov/congressional-report/119th-congress/senate-report/44",
+   "fetched_url": null,
+   "title": "S. Rept. 119-44, CJS Appropriations FY2026 (as saved in NCEI threats run)",
+   "author_org": "Senate Appropriations Committee",
+   "published": "2025-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/srpt119-44.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Absence checked by text search of saved copies only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s47",
+   "url": "https://www.congress.gov/",
+   "fetched_url": null,
+   "title": "FY2026 CJS Joint Explanatory Statement (as saved in NCEI threats run)",
+   "author_org": "Congress",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "URL is generic; exact source URL in NCEI run record.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA09NES4400006_1330/",
+   "fetched_url": null,
+   "title": "USAspending award NA09NES4400006 (Cooperative Institute for Climate and Satellites)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "record retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/usaspending_NA09NES4400006.json/73cfa24f20be82cf.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Whole-institute figure; PERSIANN share NOT PRESENT. Subawards not queried (USAspending subaward search needs POST).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA19NES4320002_1330/",
+   "fetched_url": null,
+   "title": "USAspending award NA19NES4320002 (CISESS 2019-2025)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "record retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/usaspending_NA19NES4320002.json/4d875056dab59d78.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Whether CDR Program money for PERSIANN-CDR flows through CISESS after 2014 is NOT PRESENT in any source read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s50",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA24NESX432C0001_1330/",
+   "fetched_url": null,
+   "title": "USAspending award NA24NESX432C0001 (CISESS renewal 2024-2029)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "record retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/usaspending_NA24NESX432C0001.json/86939b68844556ae.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Obligated to date vs $388M announced (sa1-e19). UCI subaward NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s51",
+   "url": "https://today.umd.edu/umd-awarded-388m-noaa-cooperative-agreement-for-earth-system-studies",
+   "fetched_url": null,
+   "title": "UMD Awarded $388M NOAA Cooperative Agreement for Earth System Studies",
+   "author_org": "University of Maryland (Maryland Today)",
+   "published": "2024-07-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/umd_cisess_388m.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "University press release; ceiling not obligation.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/sds/cdr/CDRs/PERSIANN/ (CDR Program documents)",
+   "author_org": "NOAA NCEI",
+   "published": "listing as of 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/persiann_cdr_docs_dir.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Listing only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/DataFlowDiagram_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR Data Flow Diagram CDRP-DIA-0351 Rev. 1",
+   "author_org": "NOAA CDR Program",
+   "published": "2013-05-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/persiann_dataflow.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2013 diagram; text extraction of a figure.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/MaturityMatrix_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN CDR Maturity Matrix (as of 07/17/2013)",
+   "author_org": "NOAA CDR Program",
+   "published": "2013-07-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/persiann_maturity.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Scores are probably shown graphically; check PDF visually.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s55",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CDR (CHRS UCI data server)",
+   "author_org": "CHRS, University of California, Irvine",
+   "published": "listing as of 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/chrs_persiann_cdr_dir.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Timestamps only; matching dates are suggestive, not a statement of who produces the quarterly extension.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-08/FY2025%20Q3%20SOS%20Executive%20Summary.pdf",
+   "fetched_url": null,
+   "title": "NCEI FY2025 Q3 SOS Executive Summary",
+   "author_org": "NOAA NCEI",
+   "published": "2025-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_fy25q3_sos.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Shows a CDR was ended in 2025 but not PERSIANN-CDR; not a statement about CDR Program budget.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records",
+   "fetched_url": null,
+   "title": "Climate Data Records (NCEI CDR Program page)",
+   "author_org": "NOAA NCEI",
+   "published": "undated (retrieved 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_cdr_program_page.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Developers Guidelines not read (may describe who operates CDRs after transition).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://web.archive.org/web/20250913132027/https://www.ncei.noaa.gov/node/8306",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR processing delay (Wayback capture 2025-09-13)",
+   "author_org": "NOAA NCEI (Internet Archive capture)",
+   "published": "captured 2025-09-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e26",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_node8306_wb20250913.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Earliest capture is not the posting date; the notice may be older.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s59",
+   "url": "https://web.archive.org/cdx/search/cdx?url=ncei.noaa.gov/node/8306&output=json&limit=10",
+   "fetched_url": null,
+   "title": "Wayback CDX capture list for ncei.noaa.gov/node/8306",
+   "author_org": "Internet Archive",
+   "published": "retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wayback_cdx_node8306.json/59bac722aba3a50f.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Capture dates only; contents of later captures not compared.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://www.ncei.noaa.gov/erddap/info/cdr_persiann_by_time_lon_lat/index.html",
+   "fetched_url": null,
+   "title": "ERDDAP - Information about NOAA Climate Data Record of PERSIANN-CDR daily precipitation",
+   "author_org": "NOAA NCEI ERDDAP (netCDF global attributes from the files)",
+   "published": "retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e28",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/erddap_persiann_info.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "ERDDAP aggregates (history FMRC Best Dataset), so attributes come from one granule, probably the latest; the project title may be a legacy string from the original development.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s61",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/Guidelines/IOC_to_FOC_Transition.pdf",
+   "fetched_url": null,
+   "title": "Climate Data Record (CDR) Program IOC to FOC Transition Process, CDRP-PRCS-0001 v1.0",
+   "author_org": "NOAA NCDC CDR Program",
+   "published": "2011-07-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ioc_to_foc.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2011 process document; predates the 2015 reorganization (sa1-e30).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://ams.confex.com/ams/2019Annual/webprogram/Paper352356.html",
+   "fetched_url": null,
+   "title": "1053 NOAA’s Climate Data Records—10 Years of Innovation (AMS 2019 abstract)",
+   "author_org": "Daniel Wunder (GST Inc.), G. L. Ellingson, J. L. Privette",
+   "published": "2019-01-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e30",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "ams.confex.com refused by sandbox for direct download (not .org); read via WebFetch extraction only, not saved. NCEI pages still say 'CDR Program' (sa1-e9, e10), so the name persists.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.das",
+   "fetched_url": null,
+   "title": "ERDDAP DAS attributes, PERSIANN-CDR daily (latest granule)",
+   "author_org": "NOAA NCEI ERDDAP",
+   "published": "retrieved 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e31",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction, not saved locally.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/Guidelines/Transitioning_CDRs_from_R2O.pdf",
+   "fetched_url": null,
+   "title": "Transitioning CDRs from Research to Operations, CDRP-PLAN-0017 Revision 2",
+   "author_org": "NOAA CDR Program (NCDC)",
+   "published": "2014-03-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e32",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/r2o_transition.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2014 document, from before the 2015 reorganization; not read in full (keyword scan only).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s65",
+   "url": "https://cpo.noaa.gov/noaa-climate-program-offices-climate-observations-and-monitoring-program-awards-1-2-million-for-new-precipitation-data-development-and-analysis/",
+   "title": "NOAA Climate Program Office's Climate Observations and Monitoring Program awards $1.2 million for new precipitation data development and analysis",
+   "author_org": "NOAA Climate Program Office",
+   "published": null,
+   "data_period": "FY2023 awards (page cites 2023 data 'as of November 8')",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/cpo-noaa-gov-noaa-climate-program-offices-climate-observatio_235155.txt",
+   "retrieved": "2026-11-19",
+   "evidence_id": null,
+   "limitations": "No award numbers or per-project amounts."
+  },
+  {
+   "id": "s66",
+   "url": "https://www.usaspending.gov/award/CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330",
+   "fetched_url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330/",
+   "title": "USAspending: delivery order 1332KP20FNEED0029 to Riverside Technology Inc (parent IDV DOCST133017CQ0058)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/usasp_1332KP20FNEED0029.json",
+   "retrieved": "2026-11-19",
+   "evidence_id": "ST133017CQ0058",
+   "limitations": "This RTMEE order is one Riverside order under the IDIQ the 2026 papers cite; whether it is the one that supported CHRS is not stated. Subaward recipients not read."
+  },
+  {
+   "id": "s67",
+   "url": "https://ncics.org/cics-news/persiann-climate-data-record-and-smartphone-app/",
+   "title": "PERSIANN: Climate Data Record and Smartphone App",
+   "author_org": "North Carolina Institute for Climate Studies (CICS-NC)",
+   "published": "2015-02",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/ncics-org-cics-news-persiann-climate-data-record-and-smartph_234039.txt",
+   "retrieved": "2026-11-19",
+   "evidence_id": null,
+   "limitations": "2015; read in the built-in browser because the sandbox refused ncics.org."
+  },
+  {
+   "id": "s69",
+   "url": "https://www.usaspending.gov/award/ASST_NON_80NSSC23K0136_080",
+   "fetched_url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_80NSSC23K0136_080/",
+   "title": "USAspending: NASA grant 80NSSC23K0136 to UC Irvine",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/usasp_80NSSC23K0136.json",
+   "retrieved": "2026-11-19",
+   "evidence_id": "80NSSC23K0136",
+   "limitations": "Primary copy of the HigherGov figure (s28)."
+  },
+  {
+   "id": "s70",
+   "url": "https://cisess.umd.edu/assets/1/7/CISESS_Weekly_2026.03.13.pdf",
+   "title": "CISESS Weekly 2026.03.13",
+   "author_org": "CISESS, University of Maryland",
+   "published": "2026-03-13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/checker/cisess_weekly_20260313.txt",
+   "retrieved": "2026-11-19",
+   "evidence_id": null,
+   "limitations": "Found by the checker; names funding programs, not amounts."
+  },
+  {
+   "id": "s68",
+   "url": "https://www.usaspending.gov/keyword_search/ST133017CQ0058",
+   "title": "USAspending keyword search ST133017CQ0058",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/usaspending-gov-keyword-search-ST133017CQ0058_235531.txt",
+   "retrieved": "2026-11-19",
+   "evidence_id": "ST133017CQ0058",
+   "limitations": "Keyword search page; one contract transaction matched."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "PERSIANN-CDR was developed with NOAA CDR Program money routed through the CICS cooperative agreement (prime award NA09NES4400006 to the University of Maryland, 2009-07-01 to 2014-06-30, $66,720,558 total for all of CICS) and an NCSU CICS sub-award (2009-1380-01) to UC Irvine; the sub-award's amount is not published.",
+   "importance": "central",
+   "applicability": "Development phase, 2009-2014; the obligation is for all of CICS, not PERSIANN.",
+   "confidence": "high",
+   "confidence_reason": "The paper's own acknowledgment and the award database agree on the award number and recipient.",
+   "figure_status": "obligation",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Partial financial support was provided by the NOAA/ … Cooperative Institute for Climate and Satellites (CICS) and … the NOAA NCDC/Climate Data Record program (Prime … Award NA09NES440006 and NCSU CICS Sub-Award … 2009-1380-01), the NOAA Climate Change Data and … Detection (CCDD) (NA10DAR4310122), the NASA Energy",
+     "location": "Acknowledgments, p. 81 (lines 596-601 of txt; two-column layout, reference text interleaved and skipped)"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "\"description\": \"COOPERATIVE INSTITUTE FOR CLIMATE AND SATELLITES\" … \"total_obligation\": 66720558.0 … \"date_signed\": \"2009-05-18\" … \"start_date\": \"2009-07-01\" … \"end_date\": \"2014-06-30\" … \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\"",
+     "location": "fields description, total_obligation, date_signed, period_of_performance.start_date/end_date, recipient.recipient_name"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "NOAA's FY2026 and FY2027 budget documents and the FY2026 appropriations texts have no line or report language for Climate Data Records, the CDR Program or PERSIANN-CDR; the nearest lines are NCEI and Product Development, Readiness and Application.",
+   "importance": "supporting",
+   "applicability": "Absence found by text search of the saved documents.",
+   "confidence": "moderate",
+   "confidence_reason": "Text search of full saved documents; absence can't be proved beyond them.",
+   "figure_status": [
+    "enacted",
+    "request"
+   ],
+   "sole_source_reason": "NOAA's and Congress's own budget documents are the authority for NOAA's budget lines.",
+   "evidence": [
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Product Development, Readiness and Application ..................... ........ ..                        59,000 … National Centers for Environmental Information ................................. .. .                            69,000",
+     "location": "NESDIS table lines 784 and 791"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "Product Development, Readiness and Application                          82       74          59,250    (13)       (7)        (15,750)     69        67          43,500",
+     "location": "Summary table line 879"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "text": "NOAA's CDR Program was set up to select PIs competitively to develop CDRs, with routine production possibly at another facility; an AMS 2019 abstract by NCEI says the CDR Program ended as a program in the 2015 NCEI reorganization, while NCEI documents (2025 user guide) still call PERSIANN-CDR part of the CDR Program with quarterly operational updates.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own documents; the 2015 statement rests on one abstract read by WebFetch extraction.",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s61",
+     "relationship": "supports",
+     "passage": "The CDR Program of the Remote Sensing and Applications Division (RSAD) of NCDC | is responsible for the development of CDRs. The CDR Program competitively selects | Principal Investigators (PIs) to perform the research and development necessary to | bring a scientifically defensible CDR to the IOC level. … NCDC will be responsible for routinely and systematically generating CDR data using | codes and systems that conform to the CDR Programs standards. The actual | production of CDR data may take place within NCDC or at another suitable facility.",
+     "location": "Sec. 2.1 Background (txt lines 187-190); Sec. 3.1 (lines 268-270)"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "The PERSIANN CDR dataset is publicly available as an operational climate data record through | NOAA's National Centers for Environmental Information (NCEI). … Yes, PERSIANN CDR is part of NOAA’s Climate Data Record (CDR) Program and is | subject to operational updates (forward processing). Quarterly updates to the CDR data | sets are produced and delivered to extend the time series from the end of the previously | delivered CDR to the most recent achievable update interval.",
+     "location": "Appendices, Data Access p. 11; Known FAQs p. 12-13 (txt lines 497-498, 591-595)"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "contextualizes",
+     "passage": "During the NCEI reorganization in 2015, the CDR Program ended. … To date, over 40 CDRs have transitioned from Research to Operations (R2O). … Implementing a Portfolio Management approach provides a process to help guide NCEI leadership’s resource and budgetary decisions.",
+     "location": "Abstract (WebFetch extraction; order as returned)"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "Production continues at CHRS: the newest daily files at NCEI (created 2026-10-13) run to 2026-07-31 and name a UC Irvine creator and UC-IRVINE/CHRS as the institution; CHRS's own data folders were updated the same day.",
+   "importance": "central",
+   "applicability": "As of 2026-11-19.",
+   "confidence": "high",
+   "confidence_reason": "The files' own metadata and two server listings agree.",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "attribute | NC_GLOBAL | cdr_program | String | NOAA Climate Data Record Program … attribute | NC_GLOBAL | creator_email | String | dbraithw at uci.edu … attribute | NC_GLOBAL | creator_name | String | Dan Braithwaite … attribute | NC_GLOBAL | date_created | String | 2026-10-13T23:58:33Z … attribute | NC_GLOBAL | institution | String | UC-IRVINE/CHRS, Center for Hydrometeorology and Remote Sensing, University of California, Irvine … attribute | NC_GLOBAL | project | String | Satellite Data Support for Hydrologic and Water Resources Planning and Management. Sponsor: NOAA … attribute | NC_GLOBAL | time_coverage_end | String | 2026-07-31T00:00:00Z",
+     "location": "ERDDAP attribute table, NC_GLOBAL rows (txt lines 18, 24-27, 41, 51, 58)"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20260101_c20260709.nc | 2026-07-09 07:38 | 1337516 … PERSIANN-CDR_v01r01_20260731_c20261013.nc | 2026-10-13 23:58 | 1193337",
+     "location": "Directory listing first and last file rows (columns Name | Last modified | Size)"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "adj_3hB1/ | 2026-10-13 16:55 | - … aliB/ | 2026-10-14 17:43 | - … daily/ | 2026-10-13 16:57 | - … daily_netcdf/ | 2025-04-09 11:52 | - … mthly/ | 2026-07-09 11:00 | - … yearly/ | 2026-03-24 10:08 | -",
+     "location": "Directory listing rows (Name | Last modified | Size)"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "NCEI shows an undated notice that PERSIANN-CDR 'is experiencing a pause in operations due to processing delays'; it was already online on 2025-09-13 (before the Oct-Nov 2025 shutdown) and is still up, with no cause or funding link stated.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Live page and its Wayback capture say the same.",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Please note: The Precipitation - PERSIANN CDR is experiencing a pause in operations due to processing delays. This message will be updated when processing resumes. We apologize for any inconvenience.",
+     "location": "Notice body"
+    },
+    {
+     "source_id": "s58",
+     "relationship": "supports",
+     "passage": "Please note: The Precipitation - PERSIANN CDR is experiencing a pause in operations due to processing delays. This message will be updated when processing resumes. We apologize for any inconvenience.",
+     "location": "Notice body"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "text": "CHRS's main recent NOAA grant is NA23OAR4310443, a Climate Program Office (Climate Observations and Monitoring) cooperative agreement to UC Irvine for a high-resolution precipitation climate data record: $390,000 obligated, 2023-09-01 to 2026-08-31; CPO said future-year funding was 'conditional on appropriations'.",
+   "importance": "central",
+   "applicability": "Funds a new HRPCDR / PERSIANN-CCS-CDR v2 work, not named as paying for PERSIANN-CDR Daily's extension.",
+   "confidence": "moderate",
+   "confidence_reason": "Award record and paper acknowledgment agree on the number; the CPO page names the project but not the number.",
+   "figure_status": "obligation",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "\"fain\": \"NA23OAR4310443\" … \"type_description\": \"COOPERATIVE AGREEMENT (B)\" … \"description\": \"IT HAS NOW BEEN WELL ESTABLISHED (THROUGH RESEARCH CONDUCTED UNDER THE GEWEX PROGRAM OF THE WORLD CLIMATE RESEARCH PROGRAM) THAT AS A RESULT OF CLIMATE CHANGE AND THE RISING GLOBAL TEMPERATURE … THE GOAL OF THIS INVESTIGATION IS TO PROVIDE A CONSISTENT HIGH-RESOLUTION CLIMATE-RELEVANT PRECIPITATION DATASET … WE PROPOSE TO COLLECT AND PROCESS SATELLITE-BASED AND GROUND PRECIPITATION OBSERVATIONS GOING BACK TO THE EARLY 1980S TO GENERATE AN ALGOR\" … \"total_obligation\": 390000.0 … \"date_signed\": \"2023-07-07\" … \"total_funding\": 390000.0 … \"total_account_outlay\": 390000.0 … \"total_account_obligation\": -100800.23 … \"cfda_number\": \"11.431\" … \"cfda_title\": \"Climate and Atmospheric Research\" … \"start_date\": \"2023-09-01\" … \"end_date\": \"2026-08-31\" … \"last_modified_date\": \"2024-08-20\" … \"recipient_name\": \"UNIVERSITY OF CALIFORNIA IRVINE\"",
+     "location": "fields fain, type_description, description, total_obligation, date_signed, total_funding, total_account_outlay, total_account_obligation, cfda_number, cfda_title, period_of_performance, recipient_name"
+    },
+    {
+     "source_id": "s65",
+     "relationship": "supports",
+     "passage": "PI: Phu Nguyen, University of California, Irvine",
+     "location": "project list, HRPCDR entry"
+    },
+    {
+     "source_id": "s65",
+     "relationship": "supports",
+     "passage": "future-year funding is conditional on appropriations",
+     "location": "footnote 1"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "This research was supported by NOAA Climate Program Office’s Climate Observations and Monitoring Program under Grant NA23OAR4310443. Furthermore, this work was supported by NESDIS JPSS Program Office through Grant NA24NESX432C0001, administered by the Cooperative Institute for Satellite Earth System Studies (CISESS) at the University of Maryland/ESSIC, NASA under Grants 80NSSC23K0136 and 80NSSC21K1668, the Center for Western Weather and Water Extremes (CW3E) at the Scripps Institution of Oceanography through the AR Program Grant 4600013361, sponsored by the California Department of Water Resources, and the USACE FIRO III Grant W912HZ2420001. Additionally, this work was funded by NOAA through Grant ST133017CQ0058 with Riverside Technology, Inc. … funding acquisition, S.S. … Received: 11 July 2025 | Accepted: 12 January 2026 | Published: 29 January 2026",
+     "location": "Acknowledgements (line 147); Author contributions (line 197); dates (lines 227-231)"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "text": "CHRS's 2026 papers credit, besides NA23OAR4310443: NESDIS JPSS grant NA24NESX432C0001 through CISESS (University of Maryland), NASA 80NSSC23K0136 and 80NSSC21K1668, CW3E/California DWR 4600013361, USACE W912HZ2420001, and NOAA contract ST133017CQ0058 with Riverside Technology; no amounts are given in the papers.",
+   "importance": "central",
+   "applicability": "These fund related products (PERSIANN-CCS-CDR v2.0, PERSIANN-Unet), not named as paying for PERSIANN-CDR Daily.",
+   "confidence": "high",
+   "confidence_reason": "Two papers' acknowledgments agree.",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "This research was supported by NOAA Climate Program Office’s Climate Observations and Monitoring Program under Grant NA23OAR4310443. Furthermore, this work was supported by NESDIS JPSS Program Office through Grant NA24NESX432C0001, administered by the Cooperative Institute for Satellite Earth System Studies (CISESS) at the University of Maryland/ESSIC, NASA under Grants 80NSSC23K0136 and 80NSSC21K1668, the Center for Western Weather and Water Extremes (CW3E) at the Scripps Institution of Oceanography through the AR Program Grant 4600013361, sponsored by the California Department of Water Resources, and the USACE FIRO III Grant W912HZ2420001. Additionally, this work was funded by NOAA through Grant ST133017CQ0058 with Riverside Technology, Inc. … funding acquisition, S.S. … Received: 11 July 2025 | Accepted: 12 January 2026 | Published: 29 January 2026",
+     "location": "Acknowledgements (line 147); Author contributions (line 197); dates (lines 227-231)"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "This research was supported by NOAA Climate Program Office's Climate Observations and | Monitoring Program under Grant NA23OAR4310443, NASA under Grants 80NSSC23K0136 | and 80NSSC21K1668, the Center for Western Weather and Water Extremes (CW3E) at the | Scripps Institution of Oceanography through the AR Program Grant 4600013361, sponsored by | the California Department of Water Resources and the USACE FIRO III Grant | W912HZ2420001. Additionally, this work was funded by NOAA through Grant | ST133017CQ0058 with Riverside Technology, Inc. We also gratefully acknowledge the support | from the NVIDIA Academic Hardware Grant Program. The computational resources were | supported by Google Cloud through the Google Cloud Research Credits program.",
+     "location": "Acknowledgments, manuscript lines 757-766 (txt lines 1086-1096)"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "\"fain\": \"80NSSC23K0136\"",
+     "location": "fain"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "\"description\": \"EO14042  CHRS UCI IR-BASED ALGORITHM INTEGRATION INTO ONGOING IMERG DEVELOPMENT\"",
+     "location": "description"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "\"total_obligation\": 279993.61",
+     "location": "total_obligation"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "\"start_date\": \"2022-10-15\",",
+     "location": "period_of_performance.start_date"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "\"end_date\": \"2025-10-12\",",
+     "location": "period_of_performance.end_date"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "text": "No termination, suspension or non-renewal of a PERSIANN or CHRS precipitation award was found for 2025-2026; the one CHRS-linked termination found is NSF 2332263 (PI AghaKouchak, flood infrastructure), terminated 4/18/2025 and reinstated 6/30/2025.",
+   "importance": "central",
+   "applicability": "The Thakur exhibit covers NSF only; NOAA, NASA and DOE lists not found.",
+   "confidence": "moderate",
+   "confidence_reason": "Court exhibit plus NSF API; absence elsewhere is not proof.",
+   "figure_status": [
+    "obligation"
+   ],
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "NSF     2332263     CLIMA/Collaborativ University of         University Amir AghaKouchak                9/8/2023    11/1/2023     10/31/2026   4/18/2025     6/30/2025    $      325,267 $          325,267 $      268,163.96",
+     "location": "Page 51 of 70; header row columns: Granting Agency, Award ID, Project Name, Grantee/Recipient, Location, UC PI Name, Date Awarded, Grant Start Date, Award Expiration Date, Date Terminated, Date Reinstated, Total Award Amount, Amount Obligated as of March 30, 2026, Amount Remaining when Terminated (txt lines 3444-3456)"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "text": "By 21 May 2025 UC Irvine counted 56 awards impacted by federal actions (5 suspended, 51 terminated; $36,481,025.21 anticipated), including one NOAA incoming subaward terminated; the deck names no awards, and none is tied to CHRS.",
+   "importance": "supporting",
+   "applicability": "Campus-wide; not tied to CHRS.",
+   "confidence": "high",
+   "confidence_reason": "UCI's own town-hall slides.",
+   "figure_status": "estimate",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Suspended: 5 awards | Department of Energy 2 incoming subawards - | Terminated: 51 awards … National Science Foundation - 15 direct awards, 4 incoming subawards | Total: 56 awards impacted … National Oceanic and Atmospheric Administration - 1 incoming subaward | Total Anticipated Amount for Impacted Awards: … $36,481,025.21 … The Provost has created a special fund to help those whose grants have been impacted … Federal Awards: $285M ($306M in 23-24)",
+     "location": "slides 'Grant Termination & Suspensions', 'Mitigation for Impacted Grants', 'FY25 Agency Budgets & Actions' (txt lines 25-50, 98-114)"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "text": "CHRS is an informal group whose research is mostly funded by NASA, NOAA and NSF; by April 2026 UCI named Amir AghaKouchak director, with Sorooshian as founder and former director and Hsu and Nguyen on the leadership team. No core campus budget was found.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CHRS's and UCI's own pages; the CHRS page is old (footer 2017).",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "As an informal interdisciplinary group, the Center brings together faculty and researchers from the Civil and Environmental Engineering and Earth System Science in the University of California, Irvine. … The majority of CHRS research activities are funded by NASA, NOAA, and NSF.",
+     "location": "chrs_about.txt line 31"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Amir AghaKouchak, Chancellor’s Professor of civil and environmental engineering and director of the Center for Hydrometeorology and Remote Sensing … The leadership team of UC Irvine’s Center for Hydrometeorology and Remote Sensing includes (from left) Phu Nguyen, associate adjunct professor of civil and environmental engineering; Kuo-Lin Hsu, professor of civil and environmental engineering; Amir AghaKouchak, Chancellor’s Professor of civil and environmental engineering; and CHRS founder and former director Soroosh Sorooshian … Phu Nguyen, associate adjunct professor of civil and environmental engineering and CHRS associate director … At the center of that effort are a widely used global rainfall data record, a near-real-time rainfall monitoring system, and a global drought monitoring and prediction system – all created and maintained at UC Irvine. … UC Irvine’s CHRS data platform annually draws 1.8 million visitors globally, and people from more than 200 countries download over 160 terabytes of data every year.",
+     "location": "txt lines 11, 29, 45, 47, 49"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "text": "NCEI, which hosts the record, had $69.0M enacted for FY2026 (Senate committee $70.0M); the FY2027 request is $52.0M, a $17.8M cut, while saying NOAA will continue the core mission of preserving, hosting and providing access.",
+   "importance": "central",
+   "applicability": "Hosting only; FY2027 is under a CR to 2026-12-11 (earlier NCEI run).",
+   "confidence": "high",
+   "confidence_reason": "NOAA's justification and Congress's tables.",
+   "figure_status": [
+    "enacted",
+    "request",
+    "proposed"
+   ],
+   "sole_source_reason": "NOAA's and Congress's own budget documents are the authority for NOAA's budget lines.",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information                     185       140          69,000         0         0             807               0     185       140         69,807                           (17,807)    185       140            52,000 … National Centers for Environmental Information Decrease (-$17,807, 0 FTE/ 0 Positions) – NOAA will continue the core mission | of preserving, hosting, and providing access to its extensive environmental data archives. With this decrease, NOAA will reduce | engagement services, tailored products, and eliminate the Regional Climate Services program.",
+     "location": "Summary table line 1172; NESDIS program change narrative lines 21091-21093"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Product Development, Readiness and Application ..................... ........ ..                        59,000 … National Centers for Environmental Information ................................. .. .                            69,000",
+     "location": "NESDIS table lines 784 and 791"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information [NCEI].--The … Committee provides $70,000,000 for NCEI, including not less … than $10,000,000 for Regional Climate Services, and $5,500,000 … for Coastal Data Development.",
+     "location": "NESDIS section, lines 3622-3625"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "text": "NOAA's FY2026 request also proposed cutting NCEI to $52.0M from $70.0M enacted in FY2024 (−$18.0M, −16 positions); Congress enacted $69.0M for FY2026, so that proposed cut did not take effect, and the FY2027 request proposes $52.0M again.",
+   "importance": "central",
+   "applicability": "Hosting role only.",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own control tables and the enacted explanatory statement.",
+   "figure_status": [
+    "enacted",
+    "request"
+   ],
+   "sole_source_reason": "NOAA's and Congress's own budget documents are the authority for NOAA's budget lines.",
+   "evidence": [
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "FY 2024 | Program | FY 2026 | POS FTE Enacted POS FTE Changes POS FTE Estimate",
+     "location": "Exhibit 4B, NESDIS control table, header lines 875-876"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information 202 184 70,000 (16) (6) (18,000) 186 178 52,000",
+     "location": "Exhibit 4B, NESDIS control table, line 885"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Product Development, Readiness and Application ..................... ........ ..                        59,000 … National Centers for Environmental Information ................................. .. .                            69,000",
+     "location": "NESDIS table lines 784 and 791"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information                     185       140          69,000         0         0             807               0     185       140         69,807                           (17,807)    185       140            52,000 … National Centers for Environmental Information Decrease (-$17,807, 0 FTE/ 0 Positions) – NOAA will continue the core mission | of preserving, hosting, and providing access to its extensive environmental data archives. With this decrease, NOAA will reduce | engagement services, tailored products, and eliminate the Regional Climate Services program.",
+     "location": "Summary table line 1172; NESDIS program change narrative lines 21091-21093"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "text": "NCEI decommissioned one CDR (ISCCP H-Series) and two other climate products in FY2025 Q3; PERSIANN-CDR is not named.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's own quarterly summary.",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "NCEI Climate Decommissions Three Products | NCEI removed three climate products from its portfolio in quarter three of FY25. These included the Billion | Dollar Weather and Climate Disasters report, Hurricane Satellite data, and the Cloud Properties – International | Satellite Cloud Climatology Project H-Series Climate Data Record. Existing data for these products will remain | open and available, the products will not be updated moving forward.",
+     "location": "p. 1, 'NCEI Climate Decommissions Three Products' (txt lines 47-51)"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "text": "ST133017CQ0058 is a NOAA multiple-award IDIQ; the one Riverside Technology order found under it (1332KP20FNEED0029, RTMEE) had $7,173,047.52 obligated, two subawards totalling $2,478,740, and ended 2026-01-31; whether it is the order that supported CHRS isn't stated.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "Link from the paper's contract number to this order is inferred.",
+   "figure_status": "obligation",
+   "evidence": [
+    {
+     "source_id": "s66",
+     "relationship": "supports",
+     "passage": "\"description\": \"RESEARCH&TECHNOLOGY MATURATION FOR THE EXPLOITATION OF EMERGING TECHNOLOGIES (RTMEE) REQUIREMENT.\" … \"total_obligation\": 7173047.52 … \"subaward_count\": 2 … \"total_subaward_amount\": 2478740.0",
+     "location": "description; total_obligation; subaward_count; total_subaward_amount"
+    },
+    {
+     "source_id": "s68",
+     "relationship": "supports",
+     "passage": "1332KP20FNEED0029",
+     "location": "results table"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "text": "UCI CHRS scientists are CISESS consortium scientists, with a CISESS project funded by JPSS PGRR (2026); in 2015 CICS-NC described PERSIANN-CDR as developed by CHRS and NCEI with CICS-NC support and as one of NCEI's operational CDRs.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CISESS's and CICS-NC's own news items.",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "CISESS Consortium Scientists Kuo-lin Hsu, Phu Nguyen , and Soroosh Sorooshian from the University of California Irvine (UCI), recently published an article … Hsu, Nguyen and Sorooshian have been working on a CISESS project to improve predictions of orographic precipitation for the last two years. … They receive funding from JPSS PGRR for this work.",
+     "location": "news item body, paragraphs 1 and 3"
+    },
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "(Phu Nguyen, CISESS, ndphu@uci.edu, Funding: JPSS PGRR; Kuo-Lin Hsu, CISESS, | kuolinh@uci.edu, Funding: LEO; Soroosh Sorooshian, CISESS, soroosh@uci.edu, Funding: JPSS",
+     "location": "lines 118-119"
+    },
+    {
+     "source_id": "s67",
+     "relationship": "supports",
+     "passage": "It is now one of NCEI’s operational CDRs.",
+     "location": "paragraph 3"
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "The CICS prime award number credited for PERSIANN-CDR",
+   "source_ids": [
+    "s20",
+    "s37",
+    "s48"
+   ],
+   "status": "resolved",
+   "explanation": "Ashouri et al. 2015 prints NA09NES440006 (one zero fewer); Sadeghi et al. 2019 prints NA09NES4400006, which USAspending lists as UMD's CICS agreement. Taken as a misprint in the 2015 paper (checker finding); neither paper says so."
+  },
+  {
+   "claim": "NCEI FY2026 funding level",
+   "source_ids": [
+    "s45",
+    "s46",
+    "s47"
+   ],
+   "status": "resolved",
+   "explanation": "Different statuses: the FY2026 request $52,000K (s45), the Senate committee $70,000,000 (s46), and the enacted $69,000K (s47); all three are stated in the answer (Reconciler)."
+  },
+  {
+   "claim": "Who directs CHRS",
+   "source_ids": [
+    "s3",
+    "s9"
+   ],
+   "status": "resolved",
+   "explanation": "The undated UCI Office of Research listing names Sorooshian; UCI News of 2026-04-22 and AghaKouchak's lab page name AghaKouchak director and Sorooshian former director. The dated 2026 source is taken as current; the change's date is unknown."
+  },
+  {
+   "claim": "Whether PERSIANN-CDR operations are paused",
+   "source_ids": [
+    "s38",
+    "s39"
+   ],
+   "status": "unresolved",
+   "explanation": "NCEI's notice (online since at least 2025-09-13) says operations are paused, but NCEI received 2026 files created 2026-07-09 and 2026-10-13. The notice may be stale or the updates late; no source says which."
+  }
+ ],
+ "coverage_gaps": [
+  "Date and announcement of CHRS directorship passing from Sorooshian to AghaKouchak: NOT FOUND. A search summary says a September 2025 UCI article (Horton lecture, engineering.uci.edu/node/15146) calls AghaKouchak director; engineering.uci.edu returned 404 to fetch_page.py and WebFetch for news pages. Lead: https://engineering.uci.edu/node/2983 (AghaKouchak profile), https://amir.eng.uci.edu, research.uci.edu/?p=35408. (from sa3)",
+  "Thakur v. Trump exhibits for NOAA, NASA, DOE (Dkt. 211 series other than 211-3 NEH and 211-5 NSF) not located or read; only the NSF exhibit was checked for CHRS PIs. Lead: CourtListener docket gov.uscourts.cand.450653 (storage.courtlistener.com is refused by the sandbox proxy for curl; WebFetch works). (from sa3)",
+  "Which UCI award was the 'National Oceanic and Atmospheric Administration - 1 incoming subaward' terminated (UCI town hall, May 2025): NOT PRESENT in deck; no source ties it to CHRS. (from sa3)",
+  "Any effect of the Oct-Nov 2025 federal shutdown on CHRS or PERSIANN-CDR updates: no source found. The NCEI 'pause in operations due to processing delays' notice for PERSIANN CDR appears only in search-engine summaries; not on the page as fetched 2026-11-19; date and cause NOT PRESENT. (from sa3)",
+  "UNESCO G-WADI/IHP current (2025-2026) arrangement with CHRS: no current source; only 2019 paper acknowledgment and CHRS home-page logos. ihp-wins.unesco.org G-WADI page 404. (from sa3)",
+  "University/institutional core funding for CHRS (campus budget lines, ORU status): NOT PRESENT anywhere read; only the Henry Samueli Endowed Chair held by Sorooshian, a 2019 'University of California (#4600010378 TO #15 Am 22)' acknowledgment, and the UCI Provost's special fund for impacted grants (not tied to CHRS). (from sa3)",
+  "Staff losses at CHRS 2025-2026: none found; April 2026 UCI News still lists Nguyen, Hsu, AghaKouchak, Sorooshian on leadership team. No search done for Ashouri, Ombadi, Braithwaite status. (from sa3)",
+  "q2: Contract ST133017CQ0058 (NOAA with Riverside Technology, credited in Sci Data 2026) not found in USAspending (404) or HigherGov (404); scope, amount, whether UCI is a subcontractor, and status NOT FOUND. Riverside NCEI task order 1332KP24F0021 (PoP end 2026-09-30 per aggregator snippet) not read in an award database. (from sa2)",
+  "q2: No award found that names PERSIANN-CDR (daily) production itself for 2025-2026; whether NA23OAR4310443 (ends 2026-08-31) was renewed or followed by a new award NOT FOUND. NSF PI searches incomplete (Sorooshian query failed; Hsu name form may be wrong). Grant Witness NSF/NIH lists not read in full; no NOAA termination tracker found. Lead: UCI research town hall 2025-05-21 PDF and UCI FAQs for suspended federal grants (Aug 2025), Thakur v. Trump class lists (q3). (from sa2)",
+  "Who runs the quarterly PERSIANN-CDR extension today (CHRS vs NCEI/CISESS) and how it is paid for after 2014: NOT PRESENT in any source read. Only the 2009-2014 CICS prime award NA09NES4400006 with NCSU CICS sub-award 2009-1380-01 is named (sa1-e1, e2, e16). UCI is a CISESS consortium member (sa1-e3, e19), but no source ties CISESS money to PERSIANN-CDR. (from sa1)",
+  "No budget line or figure for the CDR Program FY2024-FY2027: the FY26 and FY27 CJs, S.Rept 119-44, H.Rept 119-272, H.Rept 119-652, FY26 JES and CRS IF13024/IF13275/R49353 saved texts never name Climate Data Records or the CDR Program. Nearest lines: NCEI PPA (FY26 enacted 69,000; FY27 request 52,000, -17,807) and STAR PDR&A ($ thousands). (from sa1)",
+  "The NCEI 'pause in operations' notice for PERSIANN-CDR (node/8306) is undated; data.commerce.gov copy returned 403. 2026 files through 2026-07-31 were created 2026-10-13, so the pause may predate that. (from sa1)",
+  "No GAO report on the CDR Program 2024-2026 found; no FY2025-26 CDR Program funding opportunity found. (from sa1)",
+  "netCDF project attribute names a NOAA-sponsored project \"Satellite Data Support for Hydrologic and Water Resources Planning and Management\"; no award record found for that title. (from sa1)",
+  "CDR R2O guidelines CDRP-PLAN-0017 Rev 2 (March 2014) not read: https://www.ncei.noaa.gov/pub/data/sds/cdr-r2o-guidelines.pdf returned HTTP 404. (from sa1)",
+  "Coordinator follow-up: NOAA contract ST133017CQ0058 identified as a NOAA multiple-award IDIQ; the order that supported CHRS and its subawards (USAspending sub-award tab: 2 subawards, names not read) not confirmed.",
+  "Who pays for PERSIANN-CDR Daily's quarterly extension after 2014 is not stated in any source found; ask NCEI (CDR Program contact) or CHRS.",
+  "Metadata project title 'Satellite Data Support for Hydrologic and Water Resources Planning and Management. Sponsor: NOAA' not matched to an award record.",
+  "Follow-up queue items not tried for lack of time: Sorooshian CV PDFs (engineering.uci.edu, 404), UCI engineering news pages (404 to fetchers), UNESCO G-WADI page (404), HigherGov NASA pages' USAspending originals."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "Center for Hydrometeorology and Remote Sensing sponsors",
+   "tool": "WebSearch",
+   "notes": "Found chrs.web.uci.edu pages and research.uci.edu CHRS center listing; sponsors by logo only; no 2025-2026 news.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "lookup chrs.web.uci.edu home page and drought.eng.uci.edu/about, chrsdata.eng.uci.edu",
+   "tool": "lookup (fetch_page.py)",
+   "notes": "Home sponsor logos: NASA, NOAA, NSF, Army ARO, CA DWR, ICIWaRM, IHP, UNESCO, DOE, CEC, CERC-WET, NVIDIA. No news section; footer 2017. Data portal home has no funding text (renamed _unused).",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UC Irvine federal grant terminations 2025 Samueli School of Engineering",
+   "tool": "WebSearch",
+   "notes": "UCI Research Town Hall 21 May 2025 deck (campus-wide counts, 1 NOAA incoming subaward terminated, NSF 15+4); UCI MCA suspension notice Aug 2025. Nothing names CHRS or its PIs.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "University of California Office of the President federal research funding 2025 terminated grants statement",
+   "tool": "WebSearch",
+   "notes": "UCOP statements about UCLA $584M suspensions (Aug 2025); none names UCI CHRS. Not fetched.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN funding 2025",
+   "tool": "WebSearch",
+   "notes": "No press about PERSIANN funding events; hits are CISESS UMD page on PERSIANN updates (JPSS PGRR), Hamburg ICDC extension note, general NSF/NOAA cut stories not naming PERSIANN.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UC Irvine NSF grant terminated 2025 hydrology Sorooshian OR AghaKouchak OR Nguyen",
+   "tool": "WebSearch",
+   "notes": "No press naming CHRS PIs; MIT Tech Review on >100 NSF climate grants terminated (UCI CLIMATE Justice Initiative named, not CHRS).",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Thakur v. Trump UC Irvine terminated grants list",
+   "tool": "WebSearch",
+   "notes": "Found Dkt 211-3 (NEH, Exhibit C) and 211-5 (NSF, Exhibit E) spreadsheets. 211-5 lists NSF 2332263 (PI AghaKouchak, terminated 4/18/2025, reinstated 6/30/2025). 211-3 NEH has no CHRS rows (renamed _unused).",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Thakur v. Trump NOAA grants terminated University of California exhibit",
+   "tool": "WebSearch",
+   "notes": "No NOAA exhibit found in results; 211-2 is a DOT exhibit (not read). NOAA, NASA, DOE exhibits of Dkt. 211 not located.",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Sorooshian UC Irvine 2025",
+   "tool": "WebSearch",
+   "notes": "2025 AGU Bowie Medal; profile says Samueli Endowed Chair, founding director.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CHRS UC Irvine UNESCO G-WADI",
+   "tool": "WebSearch",
+   "notes": "No current partnership page found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UNESCO G-WADI PERSIANN geoserver 2025",
+   "tool": "WebSearch",
+   "notes": "Only older UNESCO/ITU items; ihp-wins G-WADI page 404 via WebFetch.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR update delayed 2025 shutdown",
+   "tool": "WebSearch",
+   "notes": "Search summary says NCEI product page shows a pause notice 'due to processing delays'; not in saved copy; no shutdown link.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI government shutdown October 2025 data updates suspended climate data records",
+   "tool": "WebSearch",
+   "notes": "Nothing ties the Oct-Nov 2025 shutdown to PERSIANN-CDR or CHRS.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Kuolin Hsu UC Irvine retire",
+   "tool": "WebSearch",
+   "notes": "No retirement notice found; April 2026 UCI News lists Kuo-Lin Hsu as professor on CHRS leadership team.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Amir AghaKouchak 2025 UC Irvine",
+   "tool": "WebSearch",
+   "notes": "Led to finding AghaKouchak now CHRS director.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Sorooshian Bowie Medal 2025 engineering.uci.edu Center for Hydrometeorology",
+   "tool": "WebSearch",
+   "notes": "allowed_domains engineering.uci.edu, news.uci.edu; profile and CV links (CV 404).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AghaKouchak Plinius Medal 2026 European Geosciences Union UC Irvine",
+   "tool": "WebSearch",
+   "notes": "allowed_domains engineering.uci.edu, news.uci.edu; found UCI News 2026-04-22 article.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Phu Nguyen CHRS UC Irvine 2026",
+   "tool": "WebSearch",
+   "notes": "Nothing relevant.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AghaKouchak named director Center for Hydrometeorology and Remote Sensing",
+   "tool": "WebSearch",
+   "notes": "No appointment announcement; summary says Sept 2025 UCI article calls him director (page 404).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR NCEI \"pause in operations\" processing delays",
+   "tool": "WebSearch",
+   "notes": "Search summary quotes pause notice; not on page via curl or WebFetch 2026-11-19; NCEI alerts page has no PERSIANN alert.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Thakur v. Trump Department of Commerce NOAA stipulation spreadsheet UC grants",
+   "tool": "WebSearch",
+   "notes": "Third query for r11. No NOAA/Commerce exhibit found; Third Amended Complaint (Dkt 184) read by keyword: no NOAA, no CHRS PIs. r11 NOAA part: not found after 3 queries.",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PUnetCDR CHRS UC Irvine precipitation dataset 2026 funding",
+   "tool": "WebSearch",
+   "notes": "Lead for q2: NOAA CPO project page cpo.noaa.gov/?p=37644 (Phu Nguyen PI) 403; EGU26-2633 PUnet-CDR abstract withdrawn 19 May 2026 per summary (not read); NTRS 20260002308 lists funding numbers (not read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USAspending GET /api/v2/awards/ASST_NON_NA23OAR4310443_1330/",
+   "tool": "lookup (USAspending API)",
+   "notes": "Found: $390,000, 2023-09-01 to 2026-08-31, UCI recipient, CFDA 11.431 (sa2-e1). USAspending search endpoints are POST-only (autocomplete returned HTTP 405), so a keyword PERSIANN recipient search was not possible.",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USAspending University of California Irvine NOAA PERSIANN cooperative agreement",
+   "tool": "WebSearch",
+   "notes": "No USAspending record surfaced; HigherGov pages for other awards only.",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "highergov grant University of California Irvine Sorooshian NOAA NA24 OR NA25 precipitation",
+   "tool": "WebSearch",
+   "notes": "Led to CPO COM FY23 awards page (sa2-e9). No NA24/NA25 NOAA award to UCI CHRS found.",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA grant Sorooshian UC Irvine precipitation 80NSSC award PERSIANN",
+   "tool": "WebSearch",
+   "notes": "No 80NSSC number found; UCI news of a $1.1M NASA drought grant (undated, not read). Sorooshian CV 2025 link returned 404.",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "HigherGov 80NSSC23K0136 and 80NSSC21K1668 (from Sci Data 2026 acknowledgements); USAspending API for both failed (IncompleteRead / connection closed)",
+   "tool": "lookup (HigherGov via WebFetch)",
+   "notes": "sa2-e14, sa2-e15",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "api.nsf.gov awards.json?keyword=PERSIANN",
+   "tool": "lookup (NSF Award API)",
+   "notes": "totalCount 0 (sa2-e10)",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "api.nsf.gov awards.json?awardeeName=Irvine&pdPIName=Kuolin Hsu; same with pdPIName=Sorooshian; keyword=satellite precipitation&awardeeName=University of California-Irvine",
+   "tool": "lookup (NSF Award API)",
+   "notes": "Hsu: 0; Sorooshian: failed twice (connection closed); satellite precipitation UCI: IncompleteRead. Not found after 3 queries.",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Grant Witness terminated grants University of California Irvine NSF NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "Grant Witness tracks NIH/NSF (and EPA beta), not NOAA; no UCI CHRS or PERSIANN item surfaced in results; grant-witness.us pages not read in full. Leads: research.uci.edu town hall 2025-05-21 PDF, UCI FAQs for suspended federal grants (Aug 2025), Thakur v. Trump.",
+   "from": "sa2",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PERSIANN-CCS-CDR Version 2.0 acknowledgements NA23OAR4310443 Riverside Technology",
+   "tool": "WebSearch",
+   "notes": "UCI eScholarship thesis snippet credits NA23OAR4310443 and CW3E AR Program 4600013361; thesis PDF and item page came back empty.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Riverside Technology NCEI Climate Data Record contract 2025",
+   "tool": "WebSearch",
+   "notes": "Riverside NCEI task order 1332KP24F0021 (approx. $23.3M obligated, 2024-04 to 2026-09-30, per aggregator snippets); USAspending lookup failed (connection closed). Not tied to CHRS in what was read.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ST133017CQ0058 Riverside Technology NOAA contract",
+   "tool": "WebSearch",
+   "notes": "No record found. USAspending CONT_AWD_ST133017CQ0058_1330_-NONE-_-NONE- returned 404; HigherGov /contract/ST133017CQ0058/ 404.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Long-term probabilistic precipitation records\" Phu Nguyen NOAA CPO",
+   "tool": "WebSearch",
+   "notes": "Nothing new; CPO page read via Wayback instead.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "api.nsf.gov awards.json?pdPIName=Sorooshian; pdPIName=AghaKouchak",
+   "tool": "lookup (NSF Award API)",
+   "notes": "Sorooshian 15 awards, only UCI one is 1331915 (2013-2018) (sa2-e17); AghaKouchak 7 awards, none on PERSIANN (sa2-e18). Phu Nguyen not checked.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "grant-witness NSF terminated Sorooshian OR \"Kuo-lin Hsu\" OR \"Phu Nguyen\" Irvine",
+   "tool": "WebSearch",
+   "notes": "No termination reports for these PIs surfaced; results were CVs and UCI pages.",
+   "from": "sa2",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"ST1330-17-CQ-0058\" OR \"ST133017CQ0058\"",
+   "tool": "WebSearch",
+   "notes": "No page with the number; nearest is the unrelated NOAA solicitation ST-133R-17-RP-0057 (HPCC).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USAspending CONT_AWD_ST133017CQ0058_1330_-NONE-_-NONE- (retry) and CONT_IDV_ST133017CQ0058_1330",
+   "tool": "lookup (USAspending API)",
+   "notes": "Both HTTP 404. Contract not found under these ID forms.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Climate Data Record|CDR Program|CDRP|PERSIANN|Interim CDR|operational CDR (find_text, --ignore-case) over 2026-11-17_noaa-ncei-threats work/raw/sa1",
+   "tool": "find_text.py (local)",
+   "notes": "No match in 19 files (FY26/FY27 CJs, Senate/House reports, JES, CRS). A second pass for \\bCDRs?\\b found only 'Critical Design Review' satellite milestones in FY27 CJ.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA congressional justification Climate Data Records 2026",
+   "tool": "WebSearch",
+   "notes": "Found FY26 CJ, CRS IF13024; nothing CDR-specific.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NESDIS budget Climate Data Records FY2027",
+   "tool": "WebSearch",
+   "notes": "NESDIS toplines only; no CDR line.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA Climate Data Record Program PERSIANN-CDR operational",
+   "tool": "WebSearch",
+   "notes": "NCEI ISO record, C-ATBD, GEE; no funding info.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI CDR program funding opportunity",
+   "tool": "WebSearch",
+   "notes": "Only an archived 2020 ncdc.noaa.gov/cdr/opportunities page (JS, empty when fetched); mentions of FY2011 CDR Program Announcement in snippet.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO NOAA climate data records",
+   "tool": "WebSearch",
+   "notes": "No GAO report on the CDR Program found 2024-2026; only older GAO-11-800, GAO-16-37, GAO-07-1172.",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CRS report NOAA NESDIS \"climate data records\" funding",
+   "tool": "WebSearch",
+   "notes": "CRS IF series for FY2023-FY2026; none names climate data records. Saved CRS texts in NCEI run also have no match.",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "appropriations report NOAA climate data records 2026",
+   "tool": "WebSearch",
+   "notes": "CRS IF13024/IF13275; no CDR line item. Saved S.Rept 119-44, H.Rept 119-272, H.Rept 119-652, FY26 JES and Senate explanatory statement searched locally: no CDR language.",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR CDR program grant UC Irvine NOAA award",
+   "tool": "WebSearch",
+   "notes": "No award record; led to acknowledgments in saved papers.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR NCEI operational transition CICS UC Irvine subaward",
+   "tool": "WebSearch",
+   "notes": "Found NCEI processing-delay notice (node/8306) and CISESS 2026-03-13 news item.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA climate data record program budget cut 2025",
+   "tool": "WebSearch",
+   "notes": "News on FY2026 passback (NCEI to lose about a quarter); no CDR Program mention.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA climate data record program federal funding opportunity 2025",
+   "tool": "WebSearch",
+   "notes": "CPO FY2025 NOFOs only; no CDR Program NOFO.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS cooperative agreement renewal 2025 University of Maryland NOAA NESDIS award",
+   "tool": "WebSearch",
+   "notes": "UMD $388M renewal (2024); award numbers NA19NES4320002 and NA24NESX432C0001.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASST_NON_NA09NES4400006_1330; ASST_NON_NA19NES4320002_1330; ASST_NON_NA24NESX432C0001_1330",
+   "tool": "lookup (USAspending API)",
+   "notes": "Three award records saved; subawards to UCI not queried (POST only).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR \"processing delay\" NCEI 2026",
+   "tool": "WebSearch",
+   "notes": "NCEI node/8306 notice undated; data.commerce.gov copy 403; ERDDAP snippets mention 2026 history entries.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Wayback CDX ncei.noaa.gov/node/8306",
+   "tool": "lookup (Wayback CDX API)",
+   "notes": "Earliest capture 2025-09-13; read that capture.",
+   "from": "sa1",
+   "copy_of": "https://www.ncei.noaa.gov/node/8306"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Satellite Data Support for Hydrologic and Water Resources Planning and Management\" NOAA",
+   "tool": "WebSearch",
+   "notes": "Project string from PERSIANN-CDR netCDF attributes; no matching award or project page found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Transitioning CDRs from Research to Operations\" NCEI",
+   "tool": "WebSearch",
+   "notes": "Found CDR R2O guidelines, IOC-to-FOC doc, AMS 2019 abstract (CDR Program ended in 2015 reorg). ams.confex.com download refused by sandbox; read via WebFetch.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Wayback CDX data.commerce.gov/node/141869",
+   "tool": "lookup (Wayback CDX API)",
+   "notes": "0 captures.",
+   "from": "sa1",
+   "copy_of": "https://data.commerce.gov/node/141869"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS annual report 2024-2025 PERSIANN-CDR UC Irvine",
+   "tool": "WebSearch",
+   "notes": "No 2024-25 CISESS annual report found; led to 2025 UCI thesis (unreadable).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PERSIANN-CDR NOAA CDR program funding 2025",
+   "tool": "WebSearch (extended)",
+   "notes": "Found the 2026 Sci Data paper credit to NA23OAR4310443 and Riverside; passed to sa2."
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://ncics.org/cics-news/persiann-climate-data-record-and-smartphone-app/",
+   "tool": "lookup (browser page read)",
+   "notes": "Sandbox refused ncics.org for fetch_page; read in the built-in browser. 2015 note on CICS-NC role."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://cpo.noaa.gov/?p=37644",
+   "tool": "lookup (browser page read)",
+   "notes": "Read the CPO COM FY23 awards page live (sa2 had a Wayback copy).",
+   "copy_of": "https://cpo.noaa.gov/?p=37644"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "80NSSC23K0136",
+   "tool": "lookup (USAspending keyword search, browser; then API)",
+   "copy_of": "s28",
+   "notes": "Primary copy of the HigherGov record: ASST_NON_80NSSC23K0136_080, $279,993.61, 2022-10-15 to 2025-10-12."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ST133017CQ0058",
+   "copy_of": "https://www.highergov.com/grant/NA23OAR4310443/",
+   "tool": "lookup (USAspending keyword search, browser)",
+   "notes": "One contract: 1332KP20FNEED0029, Riverside Technology, parent IDV DOCST133017CQ0058."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330",
+   "tool": "lookup (USAspending API)",
+   "notes": "First form 404; with DOC prefix ok. RTMEE order, $7.17M obligated, ended 2026-01-31, 2 subawards $2.48M."
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 29.0,
+  "shift_min": 2,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 288000,
+  "subagent_minutes_planned": 47,
+  "subagent_minutes": 45.7,
+  "follow_ups": 0,
+  "continuations": 6,
+  "refusals": 0,
+  "research_stop": "tokens",
+  "subagent_stop": true
+ }
+}

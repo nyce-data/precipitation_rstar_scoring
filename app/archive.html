@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data archive — Precipitation Workshop Datasets</title>
+  <link rel="stylesheet" href="assets/dashboard/dashboard.css">
+</head>
+
+<body>
+
+<main class="dashboard">
+
+  <!-- HEADER (filled in by archive.js) -->
+  <header class="dashboard-header archive-header">
+    <div class="header-top">
+      <a class="back-link" id="backLink" href="index.html">
+        <span aria-hidden="true">←</span> Back to dashboard
+      </a>
+      <span class="header-label" id="kindLabel">Precipitation workshop / Data archive</span>
+    </div>
+
+    <h1 class="dashboard-title" id="archiveTitle">Data archive</h1>
+
+    <p class="dashboard-description" id="archiveFullName"></p>
+
+    <div class="header-divider"></div>
+
+    <div class="header-meta">
+      <span id="archiveDatasetCount"></span>
+      <span id="archivePageCount"></span>
+    </div>
+  </header>
+
+  <div class="content-panel archive-panel">
+
+    <!-- Tabs, one per page about this archive (shown when there are two or more) -->
+    <div class="archive-tabs" id="archiveTabs" role="tablist" aria-label="Pages about this archive" hidden></div>
+
+    <div id="archiveContent">
+      <p class="status-message">Loading…</p>
+    </div>
+
+    <section class="archive-datasets" id="archiveDatasets" aria-labelledby="archiveDatasetsHeading" hidden>
+      <h2 id="archiveDatasetsHeading">Datasets in this archive</h2>
+      <ul class="archive-dataset-list" id="archiveDatasetList"></ul>
+    </section>
+
+  </div>
+
+  <footer class="dashboard-footer">
+    PRECIPITATION WORKSHOP — 2026
+  </footer>
+
+</main>
+
+<script src="assets/dashboard/shared.js"></script>
+<script src="assets/dashboard/markdown.js"></script>
+<script src="assets/dashboard/archive.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,3665 @@
+{
+ "question": "How is the production of GHCN-Daily funded, and are that funding, its team or the data sources it depends on at risk (threats 2025-01-01 to 2026-11; news 2024-2026)?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute — the question covers proposed budget cuts, staff losses and network terminations",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Funding route for GHCN-Daily (appropriation line, program, grants, partner money), amounts and fiscal years",
+   "status": "answered",
+   "source_ids": [
+    "s38",
+    "s54",
+    "s44",
+    "s45",
+    "s50",
+    "s39",
+    "s40",
+    "s42",
+    "s49"
+   ],
+   "remaining_gap": "No document names GHCN-Daily in a budget; its own cost, staff count and the CISESS-NC share spent on it are unpublished."
+  },
+  {
+   "id": "q2",
+   "question": "Threats 2025-01-01 to 2026-11 to GHCN-Daily, its products and team",
+   "status": "answered",
+   "source_ids": [
+    "m1",
+    "m2",
+    "m4",
+    "m5",
+    "s20",
+    "s22",
+    "s26",
+    "s30",
+    "s54",
+    "s38"
+   ],
+   "remaining_gap": "NOAA has published no statement on how many stations GHCN-Daily lost after August 2025 or whether coverage has fully recovered."
+  },
+  {
+   "id": "q3",
+   "question": "US source networks: COOP, ASOS, CoCoRaHS, USCRN, SNOTEL/SCAN, RAWS",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s4",
+    "s5",
+    "s6",
+    "s10",
+    "s11",
+    "s14",
+    "s17",
+    "s15",
+    "s16"
+   ],
+   "remaining_gap": "No COOP decision after the May 2026 RFC; AWOS-C site list vs climate sites unknown; CoCoRaHS funding route not public; USCRN has no budget line."
+  },
+  {
+   "id": "q4",
+   "question": "Non-US sources: WMO exchange (GTS/WIS2), national services, ECA&D, Environment Canada",
+   "status": "answered",
+   "source_ids": [
+    "m1",
+    "s56",
+    "s57",
+    "s58",
+    "s59",
+    "s60",
+    "s66",
+    "s67",
+    "s68",
+    "s70",
+    "s75",
+    "s71"
+   ],
+   "remaining_gap": "Why Environment Canada's feed stopped in April 2024 is not published; global SYNOP/CLIMAT receipt figures for 2025-26 not found."
+  },
+  {
+   "id": "q5",
+   "question": "News 2024-2026 naming GHCN-Daily, maintainers or staff with political decisions, layoffs or funding",
+   "status": "answered",
+   "source_ids": [
+    "s33",
+    "s32",
+    "s62",
+    "s37",
+    "s31",
+    "s36"
+   ],
+   "remaining_gap": "No news found naming GHCN-Daily's maintainers; news naming GHCN is advocacy, blog and foreign press, not major US outlets."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://public-inspection.federalregister.gov/2026-09099.pdf",
+   "fetched_url": null,
+   "title": "Request for Comments on the National Weather Service Cooperative Observing Program (COOP)",
+   "author_org": "NOAA National Weather Service (Federal Register)",
+   "published": "2026-05-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fr_2026_09099.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "A request for comment, not a decision; no site list or closure numbers. Reused from earlier run.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=%22Cooperative+Observer%22&conditions[publication_date][gte]=2025-01-01",
+   "fetched_url": null,
+   "title": "Federal Register API search: \"Cooperative Observer\" since 2025-01-01",
+   "author_org": "Federal Register (Office of the Federal Register)",
+   "published": "2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/fr_api_coop_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction because fetch_json.py failed (connection closed). Full-text term search; a notice using other wording could be missed.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=%22Climate+Reference+Network%22&conditions[publication_date][gte]=2025-01-01",
+   "fetched_url": null,
+   "title": "Federal Register API searches: \"Climate Reference Network\" and \"Automated Surface Observing\" since 2025-01-01",
+   "author_org": "Federal Register (Office of the Federal Register)",
+   "published": "2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/fr_api_uscrn_asos_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Term search only; read via WebFetch extraction (fetch_json.py failed with IncompleteRead).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s4",
+   "url": "https://app.govly.com/public/opportunities/16692860",
+   "fetched_url": null,
+   "title": "NOAA NWS Market Research for COOP Network Modernization: Weather Stations, Sensors, O&M, and Data Services (SAM 1305M2-COOP)",
+   "author_org": "NOAA NWS via Govly (aggregator of SAM.gov)",
+   "published": "2026-06-12",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/govly_1305M2-COOP_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Aggregator copy, not SAM.gov itself; WebFetch extraction. Scope of Work also says up to 3,000 distributed surface observation sites. samsearch.co copy listed it as Closed Solicitation (snippet only, page blocked).",
+   "found_by": [
+    "sa3",
+    "reconciler",
+    "reconciler2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://www.weather.gov/mpx/NWS_COOP_Program_Request_For_Comment",
+   "fetched_url": null,
+   "title": "Opportunity for Comment: Modernization of the NWS Cooperative Observing Program (COOP)",
+   "author_org": "NWS Twin Cities WFO",
+   "published": "NOT PRESENT (comment deadline June 8, 2026; page still live 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nws_mpx_coop_rfc.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Local WFO page; no publication date; no decision or site numbers.",
+   "found_by": [
+    "sa3",
+    "reconciler2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.weather.gov/asos/faq.html",
+   "fetched_url": null,
+   "title": "ASOS Frequently Asked Questions",
+   "author_org": "NOAA National Weather Service ASOS Program",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/asos_faq.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "206 vs 207 inconsistency within page; reused from earlier run.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s7",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx",
+   "fetched_url": null,
+   "title": "ASOS Equipment Sites spreadsheet (linked from ASOS Equip page, the FAQ's 'complete list')",
+   "author_org": "NOAA National Weather Service ASOS Program",
+   "published": "2025-03-18 (T/Td updated 13 August 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/asos_sites_by_equipment.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Spreadsheet dated March 2025; AWOS-C site list NOT PRESENT; ASOS 2.0 tab empty. Sheet19 (888 rows, WFO/SID/Region) has no label explaining its purpose.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s8",
+   "url": "https://www.weather.gov/asos/asosequip.html",
+   "fetched_url": null,
+   "title": "ASOS Equip (ASOS Equipment FAQ)",
+   "author_org": "NOAA National Weather Service ASOS Program",
+   "published": "NOT PRESENT (T/Td updated 13 August 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/asos_awosc_sitelist.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "AWOS-C: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s9",
+   "url": "https://www.padilla.senate.gov/wp-content/uploads/12.22.25-Letter-to-USDA-DOC-on-Diminished-Water_Weather-Forecasting-and-Snowpack-Survey-Capacity.pdf",
+   "fetched_url": null,
+   "title": "Letter to USDA and Commerce on diminished water/weather forecasting and snowpack survey capacity",
+   "author_org": "Sens. Alex Padilla and Adam B. Schiff",
+   "published": "2025-12-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/padilla_snotel_letter.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Advocacy letter; manual snow surveys (snow courses), not SNOTEL stations specifically; no NRCS figures.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s10",
+   "url": "https://www.opb.org/article/2025/03/11/snow-or-no-northwests-water-outlook-gets-murky-with-federal-cuts/",
+   "fetched_url": null,
+   "title": "Snow or no? Northwest's water outlook gets murky with federal cuts",
+   "author_org": "John Ryan, KUOW (via OPB)",
+   "published": "2025-03-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/opb_snotel_2025_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "News; WebFetch extraction (curl refused by sandbox). USDA did not respond; no NRCS-official figures.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s11",
+   "url": "https://content.govdelivery.com/accounts/USDAFARMERS/bulletins/4003651",
+   "fetched_url": null,
+   "title": "Snow Survey Newsletter - January 2026 (NRCS Idaho)",
+   "author_org": "USDA NRCS Idaho",
+   "published": "2026-01-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/nrcs_idaho_snow_newsletter_2026-01_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction (curl refused by sandbox); outages not attributed to staffing.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s12",
+   "url": "https://www.nrcs.usda.gov/state-offices/nevada/news/nevada-snow-survey-whats-new-for-2026",
+   "fetched_url": null,
+   "title": "Nevada Snow Survey - What's New for 2026?",
+   "author_org": "USDA NRCS Nevada",
+   "published": "2025-12-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nrcs_nevada_2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "One state office; cuts/closures NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s13",
+   "url": "https://www.nrcs.usda.gov/state-offices/colorado/news/record-low-april-1-snowpack-across-western-us-means-impending-water",
+   "fetched_url": null,
+   "title": "Record Low April 1 Snowpack across Western U.S. Means Impending Water Shortages",
+   "author_org": "USDA NRCS",
+   "published": "2026-04-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nrcs_april1_2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Count combines NRCS and California DWR; no comparison with earlier years' counts.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s14",
+   "url": "https://insideclimatenews.org/news/08042026/trump-usda-staff-cuts/",
+   "fetched_url": null,
+   "title": "Under Trump, the Department of Agriculture Has Ditched Conservation and Climate Efforts",
+   "author_org": "Inside Climate News (Georgina Gustin, Peter Aldhous)",
+   "published": "2026-04-08",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/icn_usda_staff_cuts_2026-04_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Agency-wide figure, not tied to SNOTEL/SCAN; WebFetch extraction.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NRCS-wide staffing"
+  },
+  {
+   "id": "s15",
+   "url": "https://raws.nifc.gov/",
+   "fetched_url": null,
+   "title": "Home | RAWS (NIFC Remote Sensing/Fire Weather Support Unit, RAWS Depot)",
+   "author_org": "Interagency RAWS Depot (BLM/NIFC, Boise)",
+   "published": "NOT PRESENT (latest news item July 19, 2024)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/raws_nifc_home.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "A sensor end-of-life, not a network threat; no 2025-2026 news posted; absence of a notice is not proof of no cuts.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s16",
+   "url": "https://www.notus.org/climate-environment/trump-weather-monitoring-funding-lapse-regional-climate-centers",
+   "fetched_url": null,
+   "title": "The Trump Administration Let Weather Monitoring Centers Shut Down. The Impact Is Huge.",
+   "author_org": "Anna Kramer, NOTUS",
+   "published": "2025-04-18",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/notus_rcc_lapse_2025-04_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "News; partly paraphrased by extraction; does not tie RCCs to GHCN-Daily or RAWS; WRCC's RAWS role is not stated in the page (coordinator should check). Later restoration not covered here.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NOAA Regional Climate Centers (data intermediaries, not a GHCN-Daily source network as such)"
+  },
+  {
+   "id": "s17",
+   "url": "https://wcc.sc.egov.usda.gov/nwcc/yearcount",
+   "fetched_url": null,
+   "title": "NRCS National Water Climate Center - Active SNOTEL Stations as of 2026-November-19",
+   "author_org": "USDA NRCS National Water and Climate Center",
+   "published": "2026-11-19 (live report)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nwcc_yearcount.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Counts active stations, not data completeness or outages; SCAN count not pulled (same report has a SCAN option).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://www.mountaineers.org/conservation/advocacy/comment-letters/2025-comment-letters/04-17-25-outdoor-recreation-snotel-support-letter-to-usda-nrcs.pdf",
+   "fetched_url": null,
+   "title": "RE: Request to Exempt the SNOTEL Program from Reduction in Force cuts (outdoor-recreation coalition letter)",
+   "author_org": "Winter Wildlands Alliance (Hilary Eisen) on behalf of fifty organizations; hosted by The Mountaineers",
+   "published": "2025-04-17",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/mountaineers_snotel_letter.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Advocacy letter; no NRCS figures or site counts offline.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s19",
+   "url": "https://wcc.sc.egov.usda.gov/nwcc/yearcount?network=scan&counttype=statelist&state=",
+   "fetched_url": null,
+   "title": "NRCS National Water Climate Center - Active SCAN Stations as of 2026-November-19",
+   "author_org": "USDA NRCS National Water and Climate Center",
+   "published": "2026-11-19 (live report)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nwcc_yearcount_scan.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "210 is a count made by this subagent from the list, not a figure printed on the page; no earlier-year comparison pulled (the report has a count-by-year option for SCAN not fetched).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s20",
+   "url": "https://berkeleyearth.org/september-2025-temperature-update/",
+   "fetched_url": null,
+   "title": "September 2025 Temperature Update",
+   "author_org": "Berkeley Earth",
+   "published": "2025-10 (data as of mid-October 2025)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/berkeley_sep2025.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Third-party user's description; no cause from NOAA stated; the station-cluster detail is for GHCN-M, not GHCN-Daily.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://berkeleyearth.org/october-2025-temperature-update/",
+   "fetched_url": null,
+   "title": "October 2025 Temperature Update",
+   "author_org": "Berkeley Earth",
+   "published": "2025-11 (data as of mid-November 2025)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/berkeley_oct2025.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Station counts are Berkeley Earth's own merged input across sources, not GHCN-Daily station counts.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s22",
+   "url": "https://berkeleyearth.org/march-2026-temperature-update/",
+   "fetched_url": null,
+   "title": "March 2026 Temperature Update",
+   "author_org": "Berkeley Earth",
+   "published": "2026-04 (data as of early April 2026)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/berkeley_mar2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Third-party description; counts are Berkeley Earth's merged inputs. This page is the source the UCS May 2026 blog links for its '6,000 of 20,000' GHCN figure.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://berkeleyearth.org/september-2026-temperature-update/",
+   "fetched_url": null,
+   "title": "September 2026 Temperature Update",
+   "author_org": "Berkeley Earth",
+   "published": "2026-10",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/berkeley_sep2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GHCN and NOAA data problems: NOT PRESENT on the page (find_text for NOAA/GHCN found only Climate Prediction Center lines). Absence does not show the GHCN-Daily problem was fixed.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: Berkeley Earth's own station pipeline"
+  },
+  {
+   "id": "s24",
+   "url": "https://web.archive.org/web/20250819081047id_/https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-version.txt",
+   "fetched_url": null,
+   "title": "ghcnd-version.txt (Wayback capture 2025-08-19)",
+   "author_org": "NOAA NCEI (via Internet Archive)",
+   "published": "2025-08-19 capture",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_ghcnd_version_20250819.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "A single capture; shows the update run happened, not how complete the data were.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s25",
+   "url": "https://web.archive.org/web/20251205025828id_/https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-version.txt",
+   "fetched_url": null,
+   "title": "ghcnd-version.txt (Wayback capture 2025-12-05)",
+   "author_org": "NOAA NCEI (via Internet Archive)",
+   "published": "2025-12-05 capture",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_ghcnd_version_20251205.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Wayback CDX found no ghcnd-version.txt capture between 2025-08-19 and 2025-12-05, so this file alone cannot show whether updates ran during Oct 1-Nov 12 2025; see sa2-e7.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s26",
+   "url": "https://web.archive.org/web/20251111202310id_/https://www.ncei.noaa.gov/pub/data/ghcn/daily/superghcnd/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/ghcn/daily/superghcnd/ (Wayback capture 2025-11-11)",
+   "author_org": "NOAA NCEI (via Internet Archive)",
+   "published": "2025-11-11 capture",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_superghcnd_20251111.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Contradicts only a claim that updates stopped in the shutdown; file timestamps show runs, not data completeness. Some diff files span 2 days (e.g. 20251001_to_20251003, 20251012_to_20251014, 20251014_to_20251016); full files are daily without gaps. The shutdown dates (Oct 1-Nov 12 2025) are not stated on this page.",
+   "found_by": [
+    "sa2",
+    "reconciler2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/news/update-hurricane-helenes-impacts-ncei",
+   "fetched_url": null,
+   "title": "Update on Hurricane Helene’s Impacts to NCEI",
+   "author_org": "NOAA NCEI (Amy Camper)",
+   "published": "2024-10-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_node6756.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GHCN-Daily: NOT PRESENT (not named). Helene event is Sept 2024, before the 2025 threat window.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: NCEI-wide"
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/node/7146",
+   "fetched_url": null,
+   "title": "Helene Restoration Update",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (undated page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_node7146.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Undated; does not list which datasets; GHCN-Daily NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: NCEI-wide"
+  },
+  {
+   "id": "s29",
+   "url": "https://psl.noaa.gov/data/ncei_impacted_data/",
+   "fetched_url": null,
+   "title": "PSL datasets and data products impacted by NCEI outage due to Hurricane Helene",
+   "author_org": "NOAA Physical Sciences Laboratory",
+   "published": "NOT PRESENT (undated; from fall 2024)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/psl_ncei_helene_impacted.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Undated; it is PSL's view of its own derived products; GHCN-Daily itself NOT PRESENT; the tie of nClimDiv to GHCN-Daily is from the brief, not this page.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: NOAA PSL products built from NCEI data"
+  },
+  {
+   "id": "s30",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes",
+   "fetched_url": null,
+   "title": "2025 Notice of Changes (NESDIS)",
+   "author_org": "NOAA NESDIS",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noc2025.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Teaser text is cut off ('…'); full notice not read. Search of noc2025*.txt and noc_index*.txt in the earlier run for GHCN, Normals, nClim, Daily Summar, Climate Data Online, GSOD found only nClimGrid-Daily. The earlier run's ncei_os_outage.txt says ISD and GSOD reached end of life Aug 29 2025 (GSOD replaced; not GHCN-Daily).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s31",
+   "url": "https://avlwatchdog.org/top-climate-scientists-departure-is-sign-of-brain-drain-at-noaa-hub-in-asheville-and-of-deep-cuts-to-research-across-the-country/",
+   "fetched_url": null,
+   "title": "Top climate scientist’s departure is sign of 'brain drain' at NOAA hub in Asheville – and of deep cuts to research across the country",
+   "author_org": "Asheville Watchdog",
+   "published": "2025-08 (per earlier run)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/avlwatchdog_brain_drain.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "GHCN, GHCN-Daily and its named maintainers (Menne, Durre, Vose, Rennie, Williams): NOT PRESENT in the article. Easterling is not tied to GHCN-Daily by this source.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: NCEI-wide staff"
+  },
+  {
+   "id": "s32",
+   "url": "https://moyhu.blogspot.com/2025/09/ghcn-data-late-this-month-interim.html",
+   "fetched_url": null,
+   "title": "GHCN data late this month - interim",
+   "author_org": "Nick Stokes (Moyhu blog)",
+   "published": "2025-09-11",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/moyhu_ghcn_late_2025-09_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extract, not raw (host refused by sandbox). Likely about GHCN-Monthly (V4) not GHCN-Daily; the extract does not say which. Cause is speculation.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: GHCN-Monthly as used by a blogger"
+  },
+  {
+   "id": "s33",
+   "url": "https://blog.ucs.org/carlos-martinez/the-trump-administration-threatens-noaa-again-as-extreme-weather-looms/",
+   "fetched_url": null,
+   "title": "The Trump Administration Threatens NOAA—Again—as Extreme Weather Looms",
+   "author_org": "Union of Concerned Scientists (Carlos Javier Martinez)",
+   "published": "2026-05-21",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/ucs_noaa_again_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Advocacy blog; WebFetch extract (host refused by sandbox). The 6,000/20,000 figure is Berkeley Earth's merged station count, not a GHCN count (Berkeley Mar 2026 says ~6,700 for March, ~6,000 initially for Feb). NCEI and Asheville NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://www.nesdis.noaa.gov/news/global-historical-climate-network-daily-ghcnd",
+   "fetched_url": null,
+   "title": "Global Historical Climate Network daily (GHCNd) [Notice of Changes]",
+   "author_org": "NOAA NESDIS / NCEI Data Access Branch",
+   "published": "2023-05-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nesdis_noc_ghcnd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Outside the 2025-2026 window; no 2025-2026 GHCNd notice found in searches.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s35",
+   "url": "https://berkeleyearth.org/october-2026-temperature-update/",
+   "fetched_url": null,
+   "title": "October 2026 Temperature Update",
+   "author_org": "Berkeley Earth",
+   "published": "2026-11 (land data as of 7 November 2026)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/berkeley_oct2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GHCN, GHCN-Daily and NOAA data problems: NOT PRESENT (find_text for GHCN, 'NOAA data', 'NOAA input', aggregation found none). The 16,088 count is from Berkeley's new pipeline (71 sources), so it is not comparable with its 2025 counts and does not show GHCN-Daily recovered.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: Berkeley Earth station count"
+  },
+  {
+   "id": "s36",
+   "url": "https://fedscoop.com/ncei-working-to-recoup-data-after-helene-outage/",
+   "fetched_url": null,
+   "title": "NCEI working to recoup data after Helene outage",
+   "author_org": "FedScoop (Madison Alder)",
+   "published": "2024-10-17",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/fedscoop_helene_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GHCN, daily summaries and station data: NOT PRESENT. WebFetch extract, not raw. Was first listed as unreadable (fetch_page refused); WebFetch later succeeded, so this entry supersedes that one.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "context: NCEI-wide"
+  },
+  {
+   "id": "s37",
+   "url": "https://www.axios.com/2025/03/13/noaa-cancels-global-warming-briefings-cuts",
+   "fetched_url": null,
+   "title": "Scoop: NOAA monthly media calls on climate change suspended",
+   "author_org": "Axios (Andrew Freedman)",
+   "published": "2025-03-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/axios_ncei_calls.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read from Wayback copy of 2026-09-30 (direct page returned 403 to WebFetch). GHCN and named GHCN maintainers: NOT PRESENT; the monthly U.S. and global analyses rest on NCEI station data but the article does not name GHCN-Daily.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: NCEI-wide staff"
+  },
+  {
+   "id": "s38",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2027 Congressional Justification (NESDIS, NCEI activity)",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "NCEI-wide; GHCN-Daily NOT PRESENT. Whether GHCN-Daily counts among 'tailored products' is not stated.",
+   "found_by": [
+    "sa1",
+    "reconciler2"
+   ],
+   "scope": "context: NCEI-wide",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA24NESX432C0001_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA24NESX432C0001 (CISESS renewal, University of Maryland)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified 2026-09-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/usasp_NA24NESX432C0001.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Whole-CISESS award (satellite and Earth system work, College Park and NC); the share for NCEI Asheville or GHCN-Daily NOT PRESENT. cfda_obligations are program-wide for all NOAA CIs. Account obligations are DEFC Q (regular) and AAB.",
+   "found_by": [
+    "sa1",
+    "reconciler2"
+   ],
+   "scope": "context: CISESS-wide award"
+  },
+  {
+   "id": "s40",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA19NES4320002_013/",
+   "fetched_url": null,
+   "title": "USAspending award record NA19NES4320002 (first CISESS agreement, University of Maryland)",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "last_modified 2025-08-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/usasp_NA19NES4320002.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Whole-CISESS; NCEI/GHCN share NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: CISESS-wide award"
+  },
+  {
+   "id": "s41",
+   "url": "https://cisess.umd.edu/about-us/affiliations-acknowledgements/",
+   "fetched_url": null,
+   "title": "Affiliations & Acknowledgements - CISESS",
+   "author_org": "CISESS, University of Maryland",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_acknowledgements.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No amounts; no GHCN mention.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: CISESS-wide"
+  },
+  {
+   "id": "s42",
+   "url": "https://ncics.org/cics-news/nc-state-to-receive-95-million-as-part-of-noaa-cooperative-agreement-for-earth-system-studies/",
+   "fetched_url": null,
+   "title": "NC State to Receive $95 Million as Part of NOAA Cooperative Agreement for Earth System Studies",
+   "author_org": "NCICS (NC State University)",
+   "published": "2024-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/ncics_95m_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction (fetch_page refused: CONNECT tunnel 403 for ncics.org). No GHCN-specific tie.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: CISESS-NC (NCICS) share"
+  },
+  {
+   "id": "s43",
+   "url": "https://cisess.umd.edu/assets/1/7/CISESS-NC_Weekly_Updates-Aug1_FINAL.pdf",
+   "fetched_url": null,
+   "title": "NCICS Weekly Report (7/28/25-8/1/25), memo to NCEI Chief of Staff",
+   "author_org": "NCICS / CISESS-NC (Otis Brown, Director)",
+   "published": "2025-08-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_nc_weekly_aug1.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "One week only; no funding figures; GHCN-Daily production by NCICS NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: CISESS-NC (NCICS) activities"
+  },
+  {
+   "id": "s44",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf",
+   "fetched_url": null,
+   "title": "Senate Appropriations Committee FY2027 CJS report / explanatory statement (NESDIS, NCEI)",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/senate_cjs_explanatory_stmt.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "NCEI-wide; the 20 decommissioned products are not listed here; no GHCN tie.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NCEI-wide"
+  },
+  {
+   "id": "s45",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt652/html/CRPT-119hrpt652.htm",
+   "fetched_url": null,
+   "title": "H. Rept. 119-652, House CJS Appropriations FY2027 (NESDIS table)",
+   "author_org": "House Committee on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/hrpt119-652.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "NCEI-wide; no GHCN tie.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NCEI-wide"
+  },
+  {
+   "id": "s46",
+   "url": "https://www.highergov.com/contract-opportunity/national-centers-for-environmental-information-nc-1332kp26r0028-o-686c2/",
+   "fetched_url": null,
+   "title": "NCEI Western Regional Weather Records Center (WRWRC), solicitation 1332KP26R0028",
+   "author_org": "HigherGov (aggregator of SAM.gov notice by NOAA NCEI)",
+   "published": "2026-05-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/highergov_1332KP26R0028_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Aggregator copy via WebFetch extraction; SAM.gov original not read. That WRWRC replaces a Regional Climate Center is not stated on the page; tie to GHCN-Daily NOT PRESENT. Other regional solicitation numbers are from search-result titles only.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NCEI regional centers contracts"
+  },
+  {
+   "id": "s47",
+   "url": "https://www.eenews.net/articles/trump-cuts-would-cripple-noaas-wide-ranging-science-partnerships/",
+   "fetched_url": null,
+   "title": "Trump cuts would cripple NOAA's wide-ranging science partnerships",
+   "author_org": "E&E News (Chelsea Harvey)",
+   "published": "2025-04-21",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/eenews_ci_cuts_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "NOAA-wide CI context; CISESS is a NESDIS-funded CI (not OAR) and is not named. Extraction via WebFetch.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NOAA cooperative institutes (all)"
+  },
+  {
+   "id": "s48",
+   "url": "https://cisess.umd.edu/assets/1/7/CISESS_Weekly_2026.04.17.pdf",
+   "fetched_url": null,
+   "title": "CISESS Weekly Report - April 17, 2026 (NOAA/NESDIS/STAR)",
+   "author_org": "CISESS, University of Maryland (Maureen Cribb)",
+   "published": "2026-04-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_weekly_2026-04-17.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "College Park report, not CISESS-NC Asheville; no amounts; GHCN NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: CISESS-wide"
+  },
+  {
+   "id": "s49",
+   "url": "https://ncics.org/wp-content/uploads/2023/06/CISESS%20NC%20Annual%20Report%202022%E2%80%932023.pdf",
+   "fetched_url": null,
+   "title": "Annual Scientific Report, CISESS NC Task Reports, April 1, 2022 - March 31, 2023",
+   "author_org": "CISESS NC / NCICS (NC State University)",
+   "published": "2023-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_nc_annual_2022-23.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2022-23 only (older award); task budget amounts NOT PRESENT; does not show who funds day-to-day GHCN-Daily production.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject (GHCN-D task) / context: CISESS NC personnel"
+  },
+  {
+   "id": "s50",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "FY2026 CJS joint explanatory statement (accompanying P.L. 119-74), NOAA tables",
+   "author_org": "House and Senate Committees on Appropriations",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Table only; no NCEI report language; OCR spacing errors in figures (as saved). No GHCN tie.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NCEI-wide and OAR line"
+  },
+  {
+   "id": "s51",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119srpt44/html/CRPT-119srpt44.htm",
+   "fetched_url": null,
+   "title": "S. Rept. 119-44, Senate CJS Appropriations FY2026 (NESDIS, NCEI)",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/srpt119-44.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "NCEI-wide; committee mark, not enacted (enacted NCEI = $69,000K per JES).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NCEI-wide"
+  },
+  {
+   "id": "s52",
+   "url": "https://blog.ucs.org/?p=97437",
+   "fetched_url": null,
+   "title": "The Trump Administration Threatens NOAA—Again—as Extreme Weather Looms",
+   "author_org": "Union of Concerned Scientists (Carlos Javier Martinez)",
+   "published": "2026-05-21",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/ucs_noaa_2026-05_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Advocacy analysis; WebFetch extraction gives fragments, not full sentences; NOAA-wide; no CISESS/NCEI tie.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NOAA-wide / cooperative institutes",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s53",
+   "url": "https://berkeleyearth.org/march-2026-temperature-update/",
+   "fetched_url": null,
+   "title": "March 2026 Temperature Update (section: Continuing NOAA Data Problems)",
+   "author_org": "Berkeley Earth",
+   "published": "2026-04-23 (page also shows 2026-06-29)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/berkeleyearth_2026-03_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction; the list of archives (GSOD, GHCN-Daily, GHCN-M) is paraphrased by the extractor between quoted fragments, so the exact wording naming GHCN-Daily should be checked on the page. Station counts are Berkeley Earth's monthly input counts across all sources, not GHCN-Daily's own count.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject (GHCN-Daily named among degraded NOAA archives); counts: context: Berkeley Earth input"
+  },
+  {
+   "id": "s54",
+   "url": "https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2026 Congressional Justification, NCEI Program Decrease",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "NCEI-wide request, not enacted (FY2026 enacted $69,000K per JES).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NCEI-wide",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s55",
+   "url": "https://cisess.umd.edu/publication/noaa-weekly-reports/",
+   "fetched_url": null,
+   "title": "NOAA Weekly Reports - Publications (CISESS)",
+   "author_org": "CISESS, University of Maryland",
+   "published": "undated (latest listed 2026-11-06)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_weekly_index.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Shows reporting continues, not funding amounts; CISESS-NC status in 2026 NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: CISESS-wide"
+  },
+  {
+   "id": "s56",
+   "url": "https://wmo.int/sites/default/files/2026-08/WMO%20Secretariat%20Reorganization%20%282026%29.pdf",
+   "fetched_url": null,
+   "title": "Transforming the World Meteorological Organization (Secretariat reorganization slides)",
+   "author_org": "WMO (Prof. Celeste Saulo, Secretary-General)",
+   "published": "2026-07 (PDF created 2026-08-14)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/wmo_secretariat_reorg_2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Secretariat staffing only; no statement that GTS/WIS, GBON or station data exchange were cut; arrears not attributed to a named Member in this deck.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: WMO Secretariat-wide",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s57",
+   "url": "https://www.thestar.com.my/news/world/2025/10/24/un-weather-agency-reviews-priorities-as-funding-falls-short",
+   "fetched_url": null,
+   "title": "UN weather agency reviews priorities as funding falls short",
+   "author_org": "Reuters (Emma Farge), via The Star",
+   "published": "2025-10-24",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/reuters_wmo_funding_2025-10_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No mention of observations, station data, GTS, GBON or SOFF (NOT PRESENT). Passage partly paraphrased by the extraction; exact Reuters wording only for quoted phrases.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: WMO-wide"
+  },
+  {
+   "id": "s58",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/01/withdrawing-the-united-states-from-international-organizations-conventions-and-treaties-that-are-contrary-to-the-interests-of-the-united-states/",
+   "fetched_url": null,
+   "title": "Withdrawing the United States from International Organizations, Conventions, and Treaties that Are Contrary to the Interests of the United States",
+   "author_org": "The White House",
+   "published": "2026-01-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/whitehouse_withdraw_66_orgs_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Absence of WMO based on WebFetch extraction of the list; count of 66 made by the extraction, not stated on page.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: US government, all international organizations",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s59",
+   "url": "https://community.wmo.int/site/knowledge-hub/programmes-and-initiatives/wmo-information-system-wis/guidance-transition-from-gtswis1-wis2",
+   "fetched_url": null,
+   "title": "Guidance on transition from GTS/WIS1 to WIS2",
+   "author_org": "WMO",
+   "published": "last updated 2026-10-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/wmo_gts_wis2_transition_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No statement on SYNOP/CLIMAT discontinuation or risk of data loss (NOT PRESENT); nothing on NOAA/NCEI ingest of WIS2.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: WMO GTS/WIS2 exchange system",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s60",
+   "url": "https://public.wmo.int/node/37911",
+   "fetched_url": null,
+   "title": "GCOS Statement to COP30-SBSTA63",
+   "author_org": "WMO / Global Climate Observing System",
+   "published": "2025-11-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/gcos_cop30_statement_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GSN not mentioned (NOT PRESENT); no named funders; no figures for the decline.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: GCOS (sponsor of GSN, a GHCN-Daily source)"
+  },
+  {
+   "id": "s61",
+   "url": "https://bichosdecampo.com/esta-situacion-golpea-de-lleno-a-la-produccion-advierten-los-trabajadores-del-servicio-meteorologico-nacional-ante-una-nueva-oleada-de-despidos-y-la-posibilidad-de-que-cierren-estaciones/",
+   "fetched_url": null,
+   "title": "\"Esta situación golpea de lleno a la producción\": advierten los trabajadores del Servicio Meteorológico Nacional ante una nueva oleada de despidos y la posibilidad de que cierren estaciones",
+   "author_org": "Bichos de Campo",
+   "published": "2026-04-08",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/bichos_smn_estaciones_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Union-sourced figures; station closures not confirmed; no mention of WMO or international exchange (NOT PRESENT). Other reports (canal26 2026-04-16, iprofesional) give 140 dismissals - not read.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Argentina SMN (national service; source of GHCN-Daily data via GTS/SYNOP)"
+  },
+  {
+   "id": "s62",
+   "url": "https://www.futura-sciences.com/planete/actualites/meteorologie-moitie-donnees-meteo-mondiale-disparu-surveillance-devient-floue-avec-consequences-128063/",
+   "fetched_url": null,
+   "title": "La moitié des données météo mondiale a disparu : la surveillance devient floue",
+   "author_org": "Futura Sciences (Karine Durand)",
+   "published": "2025-11-29",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/futura_ghcnm_moitie_2025-11_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GHCN-Monthly, not GHCN-Daily; secondary report of Berkeley Earth; cause attributed to NOAA side, not national services.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: GHCN-Monthly (built from GHCN-Daily and CLIMAT)"
+  },
+  {
+   "id": "s63",
+   "url": "https://moyhu.blogspot.com/2025/09/ghcn-data-late-this-month-interim.html",
+   "fetched_url": null,
+   "title": "GHCN data late this month - interim",
+   "author_org": "Nick Stokes (Moyhu blog)",
+   "published": "2025-09-11",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa4-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/moyhu_ghcn_late_2025-09_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Blog; GHCN product (Daily vs Monthly) not specified; cause speculative.",
+   "found_by": [
+    "sa4",
+    "reconciler2"
+   ],
+   "scope": "context: GHCN (likely GHCN-Monthly) non-US station counts"
+  },
+  {
+   "id": "s64",
+   "url": "https://search.open.canada.ca/qpnotes/record/ec%2CECCC-QP-000010",
+   "fetched_url": null,
+   "title": "Question Period Note: The Future of Hydro-Meteorological Services in Canada",
+   "author_org": "Environment and Climate Change Canada",
+   "published": "2025-09-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/eccc_qp_hydromet_2025-09_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No MSC budget, staff or station figures (NOT PRESENT); nothing on ECCC's daily feed to NCEI or its April 2024 interruption.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Environment and Climate Change Canada"
+  },
+  {
+   "id": "s65",
+   "url": "https://cfjctoday.com/2025/09/11/extreme-weather-u-s-funding-cuts-add-pressure-for-canadas-weather-service-report/",
+   "fetched_url": null,
+   "title": "Extreme weather, U.S. funding cuts add pressure for Canada's weather service: report",
+   "author_org": "The Canadian Press (Jordan Omstead)",
+   "published": "2025-09-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/cp_cca_canada_weather_2025-09_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No station closures or staff cuts reported (NOT PRESENT).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Environment and Climate Change Canada"
+  },
+  {
+   "id": "s66",
+   "url": "https://wmo.int/sites/default/files/2026-06/EC-80-inf05-7%285%29-REPORT-OF-THE-CHAIR-OF-THE-FINAC-46_en.pdf",
+   "fetched_url": null,
+   "title": "Report and recommendations of the forty-sixth meeting of the Financial Advisory Committee to the eightieth session of the Executive Council (EC-80/INF. 5.7(5))",
+   "author_org": "WMO Financial Advisory Committee (FINAC-46)",
+   "published": "2026-06 (PDF created 2026-06-25)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/wmo_ec80_finac46.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No Member named as owing (United States NOT PRESENT); no output tied to GTS/WIS, GBON or station data exchange.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: WMO-wide finances",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s67",
+   "url": "https://mptf.undp.org/sites/default/files/documents/2026-05/soff_fund_report_2025.pdf",
+   "fetched_url": null,
+   "title": "SOFF Annual Programme Narrative Progress Report 2025",
+   "author_org": "SOFF Secretariat (UN Multi-Partner Trust Fund)",
+   "published": "2026-05-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/soff_fund_report_2025.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Concerns LDC/SIDS observing expansion, not loss of existing GHCN-Daily source stations; no statement of a funder withdrawing.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: SOFF / GBON (LDCs and SIDS)"
+  },
+  {
+   "id": "s68",
+   "url": "https://www.ecad.eu/",
+   "fetched_url": null,
+   "title": "European Climate Assessment & Dataset (ECA&D) home page",
+   "author_org": "KNMI (ECA&D project team)",
+   "published": "database updated until 2026-10-31",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/ecad_home_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Counts partly rendered by extraction; no budget figures; NOAA/GHCN not mentioned.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: ECA&D (GHCN-Daily source E)"
+  },
+  {
+   "id": "s69",
+   "url": "https://climate.weather.gc.ca/archived_messages_e.html",
+   "fetched_url": null,
+   "title": "Historical Climate Data - archived messages",
+   "author_org": "Environment and Climate Change Canada",
+   "published": "notices 2009-2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/eccc_climate_archived_messages_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch limited quotes to 125 characters; last 3,148 characters not read; whether Alberta stations are in GHCN-Daily not checked.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Environment and Climate Change Canada climate data service"
+  },
+  {
+   "id": "s70",
+   "url": "https://www.lacapital.com.ar/la-region/despidos-el-servicio-meteorologico-nacional-ya-son-dos-las-estaciones-santa-fe-que-perdieron-personal-n10256935.html",
+   "fetched_url": null,
+   "title": "Despidos en el Servicio Meteorológico Nacional: ya son dos las estaciones en Santa Fe que perdieron personal",
+   "author_org": "La Capital (Rosario)",
+   "published": "2026-04-30",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/lacapital_smn_santafe_2026-04_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Station-level effects from SMN sources via press; no confirmed closures; no WMO/international exchange mention (NOT PRESENT).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Argentina SMN"
+  },
+  {
+   "id": "s71",
+   "url": "https://gcos.wmo.int/sites/default/files/2026-07/2025.pdf",
+   "fetched_url": null,
+   "title": "Activities of Lead Centre for GCOS Networks for the WMO RA VI in the year 2025",
+   "author_org": "Deutscher Wetterdienst (DWD) Hamburg, GCOS Lead Centre RA VI",
+   "published": "2026-05-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/gcos_gsn_2025_report.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Region VI (Europe) only; CLIMAT is monthly (feeds GHCN-Monthly; GSN daily data reach GHCN-Daily via SYNOP/GSOD and GCOS exchange); no year-on-year comparison given; no funding statement.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: GCOS Surface Network / CLIMAT exchange (RA VI)"
+  },
+  {
+   "id": "s72",
+   "url": "https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/thread/KZGOZT6XQGUMKMVLD3JQ2UQWVM2JTUF3/",
+   "fetched_url": null,
+   "title": "[LAST REMINDER] Climate daily update to come (MSC Datamart dd_info list)",
+   "author_org": "Meteorological Service of Canada (ECCC)",
+   "published": "2025-03-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/msc_datamart_climate_daily_2025-03_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Dates after the 2024-04-28 GHCN-Daily stop, so it does not explain it; whether NCEI ingests from this Datamart path is NOT PRESENT; no ECCC explanation of the April 2024 stop found.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Environment and Climate Change Canada daily climate data distribution"
+  },
+  {
+   "id": "s73",
+   "url": "https://wmo.int/node/27060",
+   "fetched_url": null,
+   "title": "Resilience and Innovation: Advancing Early Warnings in Sudan and South Sudan",
+   "author_org": "WMO",
+   "published": "2025-04-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/wmo_sudan_south_sudan_2025-04_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No station counts or GTS status for Sudan (NOT PRESENT); not tied to GHCN-Daily.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Sudan Meteorological Authority"
+  },
+  {
+   "id": "s74",
+   "url": "https://healthpolicy-watch.news/wmo-focuses-on-ramping-up-early-warning-system-makes-staff-cuts-amidst-financial-crunch/",
+   "fetched_url": null,
+   "title": "WMO Calls for Countries to Ramp Up Early Warning Systems; Makes Staff Cuts Amidst Financial Crunch",
+   "author_org": "Health Policy Watch (Disha Shetty)",
+   "published": "2025-10-27",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e19",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/hpw_wmo_staff_cuts_2025-10_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Figures (7.2%, $138.7 million, 60%) paraphrased by the extraction, not quoted; no US arrears amount.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: WMO-wide",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s75",
+   "url": "https://www.iprofesional.com/actualidad/452572-despediran-140-trabajadores-del-servicio-meteorologico-amenazan-con-paralizar-vuelos",
+   "fetched_url": null,
+   "title": "Despedirán 140 trabajadores del Servicio Meteorológico: amenazan con paralizar vuelos",
+   "author_org": "iProfesional",
+   "published": "2026-04-16",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/iprofesional_smn_140_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Press; staff figures differ from other reports (La Capital about 600 by year-end; Bichos de Campo just over 800); no WMO/international exchange mention (NOT PRESENT).",
+   "found_by": [
+    "sa4",
+    "reconciler2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s76",
+   "url": "https://berkeleyearth.org/october-2025-temperature-update/",
+   "fetched_url": null,
+   "title": "October 2025 Temperature Update",
+   "author_org": "Berkeley Earth",
+   "published": "2025-11-19",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa4-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/berkeley_oct2025_update_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Station counts refer to Berkeley Earth monthly input (GHCN-M), not GHCN-Daily counts; cause not stated beyond loss of NOAA services; points to NOAA-side ingest rather than cuts at the national services.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: GHCN-Daily / GSOD / GHCN-M non-US ingest (as reported by Berkeley Earth)"
+  },
+  {
+   "id": "s77",
+   "url": "https://hadisd.blogspot.com/2025/09",
+   "fetched_url": null,
+   "title": "HadISD v342_202508p - potentially the final release",
+   "author_org": "Met Office Hadley Centre (Robert Dunn, HadISD blog)",
+   "published": "2025-09-04",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa4-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/hadisd_blog_2025-09_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "ISD, not GHCN-Daily; cause not stated in text (linked NOAA page URL mentions an operating-system-upgrade outage; see 2026-11-17 run sa4/ncei_os_outage.txt). Relevant because GHCN-Daily takes SSODv2 derived from GHCNh and GSOD from GTS SYNOP.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NCEI ISD/GHCNh (feeds of non-US SYNOP data)"
+  },
+  {
+   "id": "s78",
+   "url": "https://wmo.int/site/world-meteorological-day-2026/closing-gap-observations",
+   "fetched_url": null,
+   "title": "Closing the gap in observations (World Meteorological Day 2026)",
+   "author_org": "WMO",
+   "published": "last updated 2026-03-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/wmo_closing_gap_2026_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Long-standing gaps, not new 2025-2026 cuts; no figures; not tied to GHCN-Daily.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: WMO global observing system"
+  },
+  {
+   "id": "s79",
+   "url": "https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/2024/4/",
+   "fetched_url": null,
+   "title": "MSC Datamart dd_info mailing list, April 2024 archive",
+   "author_org": "Meteorological Service of Canada (ECCC)",
+   "published": "2024-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/msc_dd_info_2024-04_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Subjects only; message bodies not read; no link to the 2024-04-28 GHCN-Daily Canada stop shown; climate daily: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Environment and Climate Change Canada Datamart"
+  },
+  {
+   "id": "s80",
+   "url": "https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/2024/12/",
+   "fetched_url": null,
+   "title": "MSC Datamart dd_info mailing list, December 2024 archive",
+   "author_org": "Meteorological Service of Canada (ECCC)",
+   "published": "2024-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/msc_dd_info_2024-12_fetch.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "After the 2024-04-28 stop, so not its cause; bodies only partly read; GovAB SWOB change may relate to the 2026 Alberta-station removal (not checked).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject: Environment and Climate Change Canada Datamart"
+  },
+  {
+   "id": "s81",
+   "url": "https://www.commerce.senate.gov/wp-content/uploads/2026/11/WIL26506.pdf",
+   "fetched_url": null,
+   "title": "S. 3923 amendment in the nature of a substitute (WIL26506 CS2), Cruz, Cantwell et al.",
+   "author_org": "U.S. Senate Committee on Commerce, Science, and Transportation",
+   "published": "NOT PRESENT in text (upload path 2026/11)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/checker/senate_commerce_WIL26506.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Proposed amendment text, not enacted; date and committee action NOT PRESENT; GHCN NOT PRESENT; checker read only these two passages",
+   "found_by": [
+    "checker"
+   ],
+   "scope": "context: NOAA-wide bill"
+  },
+  {
+   "id": "s82",
+   "url": "https://www.ncei.noaa.gov/alerts?layers=0",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "alert dated Mon, 11/16/2026 - 15:21 to Mon, 11/30/2026 - 17:00",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/checker/ncei_alerts.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "GHCN-Daily NOT PRESENT; does not list impacted datasets; search summary said an earlier alert ran Aug 5 to Sep 25, 2026 (not in saved page)",
+   "found_by": [
+    "checker",
+    "reconciler"
+   ],
+   "scope": "context: NCEI-wide"
+  },
+  {
+   "id": "m1",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/status.txt",
+   "title": "Status of the Global Historical Climatology Network-daily (status.txt)",
+   "author_org": "NOAA NCEI",
+   "published": "2026-09-30 (last modified)",
+   "data_period": "2019-2026 entries",
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/ghcnd_status.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "NCEI's own change log; gives no causes or station counts"
+  },
+  {
+   "id": "m2",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-version.txt",
+   "title": "ghcnd-version.txt",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/ghcnd_version.txt",
+   "retrieved": "2026-11-19",
+   "limitations": null
+  },
+  {
+   "id": "m3",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/",
+   "title": "Index of /pub/data/ghcn/daily/",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-19 (listing)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/ghcnd_dir_listing.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "file dates only"
+  },
+  {
+   "id": "m4",
+   "url": "https://www.ncei.noaa.gov/operating-system-upgrade-outage",
+   "fetched_url": "https://www.ncei.noaa.gov/node/8231",
+   "title": "Operating System Upgrade Disruptions",
+   "author_org": "NOAA NCEI",
+   "published": "2025 (undated page; upgrade from August 22)",
+   "data_period": "August 2025",
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/ncei_node8231.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "page gives no year; the 2025 date comes from HadISD's dated post (s77) and the earlier NCEI run"
+  },
+  {
+   "id": "m6",
+   "url": "https://tennesseelookout.com/2025/09/30/map-shows-how-trumps-proposed-noaa-budget-cuts-could-affect-tennessee/",
+   "title": "Map shows how Trump's proposed NOAA budget cuts could affect Tennessee",
+   "author_org": "Tennessee Lookout (Cassandra Stephenson)",
+   "published": "2025-09-30",
+   "data_period": "FY2026 request",
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/tennesseelookout-com-2025-09-30-map-shows-how-trumps-propose_205234.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "news summary of the request; read in the built-in browser"
+  },
+  {
+   "id": "m7",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+   "title": "GHCN-Daily station inventory (ghcnd-inventory.txt), counts computed by the run",
+   "author_org": "NOAA NCEI (data); counts by this run",
+   "published": "2026-11-13 (last modified)",
+   "data_period": "through 2026-11",
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/inventory_counts.txt",
+   "retrieved": "2026-11-19",
+   "data_file": "work/raw/main/ghcnd_inventory.txt",
+   "limitations": "counted from work/raw/main/ghcnd_inventory.txt; inventory gives only the last year with data, not months; 2026 is a partial year and international data arrive late, so the 2026 count is a lower bound"
+  },
+  {
+   "id": "m5",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+   "title": "README file for GHCN-Daily",
+   "author_org": "NOAA NCEI",
+   "published": "2026-10-05 (last modified)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/ghcnd_readme.txt",
+   "retrieved": "2026-11-19",
+   "limitations": null
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "GHCN-Daily has no budget line of its own: it is paid for inside the NESDIS Operations, Research and Facilities activity 'National Centers for Environmental Information'; no NOAA justification, House or Senate report, explanatory statement or CRS report read names GHCN.",
+   "importance": "central",
+   "applicability": "FY2024-FY2027 documents",
+   "confidence": "high",
+   "confidence_reason": "NOAA's and Congress's own budget documents; absence of GHCN checked by text search across all saved budget files",
+   "figure_status": [
+    "enacted",
+    "request",
+    "actual"
+   ],
+   "sole_source_reason": "the agency's own budget tables are the authority for its budget lines",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Activity: National Centers for Environmental Information … National Centers for Pos/BA 126 76,035 185 69,000 185 69,807 | Environmental Information FTE/OBL 139 72,950 140 69,000 140 69,807 … NCEI ingests raw observational and model environmental data from NOAA’s observational platforms and partners, and calibrates, derives, and assembles data products and services that empower U.S. industry and inform policy. … National Centers for Environmental Information Decrease (-$17,807, 0 FTE/ 0 Positions) – NOAA will continue the core mission of preserving, hosting, and providing access to its extensive environmental data archives. With this decrease, NOAA will reduce engagement services, tailored products, and eliminate the Regional Climate Services program.",
+     "location": "NESDIS-23 to NESDIS-26 (Exhibits 12 and 13), txt lines 20983-21098"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "PROGRAM DECREASE FOR 2026 … 2024 Enacted 2026 Estimate Decrease | Personnel Amount Personnel Amount Personnel Amount | National Centers for Pos./BA 202 70,000 186 52,000 (16) (18,000) | Environmental FTE/OBL 184 70,000 178 52,000 (6) (18,000) … National Centers for Environmental Information Decrease (-$18,000, -6 FTE/ -16 Positions): NOAA requests this reduction in | order to support Administration priorities. This realignment will reduce engagement services, tailored products, and eliminate the | Regional Climate Services program.",
+     "location": "NESDIS-14, Exhibit 13, txt lines 8386-8400"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "Climate Research: | Clim ate Laboratories and Cooperative Institutes … $ 104, 102 | Regional Climate Data and In formation … 48,932 | Climate Competitive Research … 7 1, 116 … Product Development, Readiness and Application … 59,000 … National Centers for Environmental Information … 69,000",
+     "location": "OAR ORF table (txt lines 660-663); NESDIS ORF table p. 20 (txt lines 782-791); OCR text, spacing as in file"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "NCEI line: FY2024 enacted $70.0M (202 positions); FY2025 actual $76.0M; FY2026 request $52.0M (-$18.0M, -16 positions); FY2026 enacted $69.0M; FY2027 request $52.0M (-$17.8M from a $69.8M base); FY2027 House $60.0M; Senate committee $70.0M including at least $10M for Regional Climate Services.",
+   "importance": "central",
+   "applicability": "figures are for all of NCEI, not GHCN-Daily (context)",
+   "confidence": "high",
+   "confidence_reason": "official budget documents read as raw text",
+   "figure_status": [
+    "enacted",
+    "actual",
+    "request",
+    "proposed"
+   ],
+   "sole_source_reason": "the agency's own budget tables and the committee reports are the authority",
+   "evidence": [
+    {
+     "source_id": "s54",
+     "relationship": "contextualizes",
+     "passage": "PROGRAM DECREASE FOR 2026 … 2024 Enacted 2026 Estimate Decrease | Personnel Amount Personnel Amount Personnel Amount | National Centers for Pos./BA 202 70,000 186 52,000 (16) (18,000) | Environmental FTE/OBL 184 70,000 178 52,000 (6) (18,000) … National Centers for Environmental Information Decrease (-$18,000, -6 FTE/ -16 Positions): NOAA requests this reduction in | order to support Administration priorities. This realignment will reduce engagement services, tailored products, and eliminate the | Regional Climate Services program.",
+     "location": "NESDIS-14, Exhibit 13, txt lines 8386-8400"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental   Pos/BA       126         76,035   185         69,000        185        69,807         185         52,000          0      (17,807)",
+     "location": "FY2027 CJ, NESDIS ORF NCEI summary table (line 20357 of text)"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "contextualizes",
+     "passage": "National Centers for Environmental Information........ 60,000 | ================= | Total, National Environmental Satellite, Data 344,500 | and Information Service, Operations, | Research, and Facilities..................... … Regional Climate Centers (RCCs).--The recommendation | includes $6,100,000 for RCCs.",
+     "location": "NESDIS ORF table, txt lines 2222-2230"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "contextualizes",
+     "passage": "National Centers for Environmental Information [NCEI].—The | Committee provides $70,000,000 for NCEI, including not less than | $10,000,000 for Regional Climate Services, and $5,500,000 for | Coastal Data Development. … Regional Climate Centers.—The Committee provides no less than | $6,100,000 to Regional Climate Centers for collecting and quality- | assuring data nationwide … NESDIS Data Products.—The Committee is concerned that | NOAA has decommissioned at least 20 datasets, products and cata- | logs during the prior fiscal year. … The | Committee directs NOAA to restart these products and awaits the | update required in Senate Report 119–44 and adopted by the joint | explanatory statement accompanying Public Law 119–74.",
+     "location": "pp. 76-77, txt lines 4162-4210"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "text": "Partner money: NCEI Asheville's co-located cooperative institute work runs through CISESS (University of Maryland lead, NC State's CISESS-NC in Asheville): NA19NES4320002 ($162.8M obligated, 2019-2025) and NA24NESX432C0001 (from 2024-07-01, five-year renewal); NC State's share announced as $95M; CISESS-NC task reports include GHCN-Daily work, but no source says what share pays for GHCN-Daily.",
+   "importance": "supporting",
+   "applicability": "partner funding, not a GHCN-Daily budget",
+   "confidence": "moderate",
+   "confidence_reason": "award records are official, but the link to GHCN-Daily rests on one task report",
+   "figure_status": [
+    "obligation",
+    "estimate"
+   ],
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "contextualizes",
+     "passage": "\"fain\": \"NA19NES4320002\" … \"type_description\": \"COOPERATIVE AGREEMENT (B)\" … \"description\": \"COOPERATIVE INSTITUTE FOR SATELLITE EARTH SYSTEM STUDIES\" … \"subaward_count\": 45 … \"total_subaward_amount\": 69667397.98 … \"total_obligation\": 162772973.0 … \"date_signed\": \"2019-05-21\" … \"start_date\": \"2019-07-01\" … \"end_date\": \"2025-06-30\" … \"last_modified_date\": \"2025-08-20\" … \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\" … \"total_outlay\": 61186017.65",
+     "location": "fields fain, type_description, description, subaward_count, total_subaward_amount, total_obligation, date_signed, period_of_performance, recipient.recipient_name, total_outlay"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "\"fain\": \"NA24NESX432C0001\" … \"type_description\": \"COOPERATIVE AGREEMENT (B)\" … \"description\": \"THIS PROPOSAL IS FOR THE FIVE-YEAR RENEWAL OF THE COOPERATIVE INSTITUTE FOR SATELLITE EARTH SYSTEM STUDIES (CISESS). THE COOPERATIVE INSTITUTE IS FORMED THROUGH A NATIONAL CONSORTIUM OF ACADEMIC, NON-PROFIT AND COMMUNITY ORGANIZATIONS WITH LEADERSHIP FROM THE UNIVERSITY OF MARYLAND, COLLEGE PARK (UMCP) AND THE UNIVERSITY OF NORTH CAROLINA (UNC) SYSTEM. OVER THE COURSE OF THE FIVE-YEAR AWARD, THE RESEARCH PROPOSES TO ADDRESS THE FOLLOWING THREE THEMES: I. SATELLITE SERVICES II. EARTH SYSTEM OBSERVATIONS AND SERVICES III. EARTH SYSTEM RESEARCH\" … \"subaward_count\": 29 … \"total_subaward_amount\": 26102529.0 … \"total_obligation\": 77486317.0 … \"date_signed\": \"2024-06-12\" … \"total_account_outlay\": 39866071.99 … \"total_account_obligation\": 12962325.03 … \"cfda_obligations\": \"(Cooperative Agreement) FY 24$297,950,000.00; FY 25$324,566,531.00; FY 26 est $300,000,000.00; - \" … \"start_date\": \"2024-07-01\" … \"end_date\": \"2029-06-30\" … \"last_modified_date\": \"2026-09-30\" … \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\" … \"number\": \"NOAA-NESDIS-CIPO-2025-29887\"",
+     "location": "fields fain, type_description, description, subaward_count, total_subaward_amount, total_obligation, date_signed, total_account_outlay, total_account_obligation, cfda_info.cfda_obligations, period_of_performance, recipient.recipient_name, funding_opportunity.number"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "NC State to Receive $95 Million as Part of NOAA Cooperative Agreement for Earth System Studies … will continue hosting the North Carolina anchor of CISESS in Asheville, N.C. … is co-located with the headquarters of NOAA's National Centers for Environmental Information in the Veach-Baley Federal Building in Asheville. … Our staff will be enhancing and developing datasets by blending information from multiple observing systems,",
+     "location": "news item, Jul 2024"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "Annual Scientific Report | CISESS NC TASK REPORTS | For the period: | April 1, 2022 – March 31, 2023 | NOAA Grant NA19NES4320002 | Subaward 80848-Z7553201 … CISESS NC | serves as one of the two primary CISESS sites and is collocated with NCEI in the Veach–Baley Federal | Complex in Asheville, NC. … CISESS personnel are hired as NCSU employees … Global Historical Climatology Network-Daily (GHCN-D) Graph Database | Task Leader Denis Willett | Task Code NC-ITS-01-NCICS-DW … The GHCN-D dataflow process consists of a custom research code base run on machines in-house. GHCN- | D contains more than 3 billion weather observations. While the database is growing at a rate of about | only 1% per year in data volume, the GHCN-D processing platform is already facing challenges to its daily | updating quality control process. … some stations had not yet been ingested into NClimGrid-Daily’s main | data source: GHCN-Daily. … Total Scientists 27 Total Scientists 26 … Total Personnel 59 Total Personnel 64",
+     "location": "cover; p. ~6 (administration, txt lines 518-528); p. 48 (task NC-ITS-01-NCICS-DW, txt lines 1946-1968); txt lines 4701-4705; Appendix 1 p. 166 (txt lines 6228-6241; left column CISESS personnel, right column CISESS subcontractors)"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "GHCN-Daily itself has not been retired or frozen: NCEI released v3.32 (Mar 2025), v3.33 (Jan 5, 2026), v3.34 (Jan 23, 2026) and v3.35 (Oct 1, 2026), and the current version string dates from 2026-11-15; daily update files continued through the Oct-Nov 2025 shutdown; NESDIS's 2025 Notice of Changes lists only an nClimGrid-Daily duplicate access point among GHCN-derived products.",
+   "importance": "central",
+   "applicability": "as of 2026-11-19",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own files read raw, plus a dated Wayback capture",
+   "sole_source_reason": "NCEI's own release log and files are the authority for whether the product is updated",
+   "evidence": [
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "Version 3.35 resumes updates for Environment Canada",
+     "location": "status.txt, October 1, 2026 entry"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "Version 3.33 adds the Synoptic Summary of the Day",
+     "location": "status.txt, January 5, 2026 entry"
+    },
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "The current version of GHCN Daily is 3.35-upd-2026111517",
+     "location": "line 1"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Name | Last modified | Size | Description … superghcnd_diff_20250930_to_20251001.tar.gz | 2025-10-01 14:41 | 939363 | superghcnd_diff_20251001_to_20251003.tar.gz | 2025-10-03 14:35 | 232324 … superghcnd_diff_20251110_to_20251111.tar.gz | 2025-11-11 14:30 | 305883 … superghcnd_full_20251001.csv.gz | 2025-10-01 11:33 | 12617333785 … superghcnd_full_20251015.csv.gz | 2025-10-15 11:19 | 12611803010 … superghcnd_full_20251111.csv.gz | 2025-11-11 11:35 | 12633435589",
+     "location": "directory listing table, txt lines 5, 3200-3236, 5857-5898"
+    },
+    {
+     "source_id": "s82",
+     "relationship": "contextualizes",
+     "passage": "Data Access Delays | Mon, 11/16/2026 - 15:21 | Mon, 11/30/2026 - 17:00 | Please Note: NCEI is currently moving its data and applications to the cloud. This upgrade may result in temporary data access delays. Check the NCEI Alerts page for impacted products and datasets. Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. | severity-high",
+     "location": "alerts table, row Data Access Delays (txt line 16)"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "GHCN-Daily's inputs were degraded from late August 2025: NCEI ended the Global Summary of the Day (GSOD, GHCN-Daily source 'S') on August 29 during an operating-system upgrade begun August 22, and Berkeley Earth reported GHCN-Daily 'broken or incomplete' from late August 2025 and still 'broken or in a degraded state' in April 2026; NCEI added GSOD's successor SSODv2 as a GHCN-Daily source on January 5, 2026.",
+   "importance": "central",
+   "applicability": "Berkeley Earth's station counts are its own merged inputs, not GHCN-Daily counts",
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own notices give the GSOD end and the SSOD successor; the degradation of GHCN-Daily itself is stated by Berkeley Earth, a third party, and NCEI has not stated the loss",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "Global Summary of the Day (GSOD) reached end of life on August 29, and will receive no further updates.",
+     "location": "Affected Products as of August 29"
+    },
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "NCEI will be performing an extensive operating system upgrade beginning August 22.",
+     "location": "first paragraph"
+    },
+    {
+     "source_id": "m5",
+     "relationship": "supports",
+     "passage": "successor to GSOD (source 'S')",
+     "location": "SFLAG list"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Since late August 2025, core NOAA climate archives, including the Global Summary of the Day, Global Historical Climatology Network – Daily, and Global Historical Climatology Network – Monthly (GHCN-M), have been broken or incomplete. … In the case of GHCN-M, which is NOAA’s flagship climate monitoring platform, the defects are strongly clustered with NOAA failing to report nearly all observations from China, Kazakhstan, the Philippines, Spain, and certain other areas. … However, the current disruption resulting from the loss of NOAA services is large than the typical delays and more spatially clustered.",
+     "location": "section 'Continuing NOAA Data Problems' (txt lines 36-46)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Since late August 2025, core NOAA climate archives, including the Global Summary of the Day, Global Historical Climatology Network – Daily, and Global Historical Climatology Network – Monthly (GHCN-M), have been either broken or in a degraded state. … the disruption to NOAA services has cut that number to ~15,000 during late 2025. Due to additional delays in reporting, the March data set is reduced even further to ~6,700 stations. … We wish to note that this situation has been slowly improving with some of the missing stations having been restored in recent months. NOAA’s launch of the Synoptic Summary of the Day (a replacement for the Global Summary of the Day) should also help.",
+     "location": "section 'Continuing NOAA Data Problems' (txt lines 47-51)"
+    },
+    {
+     "source_id": "s77",
+     "relationship": "contextualizes",
+     "passage": "As of August 29th 2025, the ISD dataset has stopped receiving updates. … the HadISD can no longer append new data to the end of the station time series. … As a replacement, the Global Historical Climatology Network hourly",
+     "location": "post of 4 Sept 2025"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "text": "NCEI-wide staff losses in 2025 (probationary releases, deferred resignations, retirements) were reported by NCEI itself as the reason it stopped monthly climate media calls, and NCEI's chief of scientific services left; no source ties the losses to GHCN-Daily or names its maintainers.",
+   "importance": "supporting",
+   "applicability": "NCEI-wide context",
+   "confidence": "moderate",
+   "confidence_reason": "news quoting an internal NCEI notice",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "\"Due to the loss of a significant number of staff resulting from the recent release of probationary employees, the Deferred Resignation Program and employees retiring, NCEI will no longer be able to support the monthly NOAA Communications media briefing on the U.S. and global temperature and precipitation analyses and associated products,\" an agency spokesperson stated via email. | The briefings will be discontinued starting in April. an agency spokesperson said. … \"NOAA's National Centers for Environmental Information will continue to publish articles each month with data and analyses of U.S. and global temperatures and precipitation, according to its previously published schedule,\" the agency said in a statement.",
+     "location": "article body, txt lines 45-51"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Easterling, the centers’ chief of scientific services – and, peers say, one of the nation’s top climate-change researchers – first set his departure date for November. | He moved it up to April 30 after he was offered a small retirement bonus and learned he was on a list of centers’ staffers eligible for reclassification as political employees. … Easterling, 69, said he is one of 58 employees who have retired or resigned under similar circumstances from the NCEI – about one third of the workforce at the Asheville headquarters and smaller installations in Maryland, Colorado and Mississippi.",
+     "location": "txt lines 14-20"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "text": "COOP faces an emerging threat: NWS's May 7, 2026 request for comments proposes 'right-sizing' the ~6,700-site network and leaning on mesonets; a sources-sought notice (1305M2-COOP) closed July 13, 2026; no decision was found.",
+   "importance": "central",
+   "applicability": "as of 2026-11-19",
+   "confidence": "high",
+   "confidence_reason": "Federal Register notice and NWS page read raw",
+   "figure_status": "proposed",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Request for Comments on the National Weather Service Cooperative Observing | Program (COOP) … ● Integrating other high-quality environmental data (e.g., state and private | mesonets) sets to augment federally-provided COOP data where appropriate; | ● Right-sizing and optimizing the scope and coverage of the existing ~6,700-site | COOP network. … external networks be suitable alternatives to federally managed COOP stations? … change if the role shifted from daily manual observation to site stewardship",
+     "location": "Federal Register notice 2026-09099, public-inspection copy, lines 13-15, 137-143, 259, 268 of text"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "The National Weather Service is planning to modernize its Cooperative Observer Program (COOP) network by harnessing new technology, optimizing observation sites and leveraging high-quality commercial data. … Comments are accepted until June 8, 2026. … The existing network faces sustainability challenges due to aging manual equipment and rising maintenance costs. … Optimizing the Footprint: \"Right-sizing\" the network to address geographic data deserts while minimizing redundancy. … Attitudes toward supplementing the federal network with state mesonet or other commercial surface observations.",
+     "location": "Main body, lines 144-168 of text"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "\"NOAA NWS Market Research for COOP Network Modernization: Weather Stations, Sensors, O&M, and Data Services\"",
+     "location": "Govly listing title"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "text": "ASOS: NWS and FAA are moving 206-207 FAA ASOS sites to AWOS-C because FAA funding cannot recondition all 570 FAA ASOS; which of them are GHCN-Daily climate sites is not published.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "official FAQ, but site mapping unknown",
+   "figure_status": "current_plan",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "There are no NWS plans to transition ASOS to AWOS. | ## NWS and FAA Transitioning 206 Sites | - Why is the NWS and FAA transitioning 207 ASOS sites to AWOS-C? | The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. The decision to transition to the AWOS-C in lieu of ASOS 2.0 was therefore a budgetary decision by the FAA. | - What sites will be affected under the 207 transition and what parameters were used for their selection? | See a complete list here",
+     "location": "FAQ, lines 154-164 of text; schedule answer (WebFetch 2026-11-19): \"The schedule currently has a start date of 2025 and lasts through 2029.\""
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "text": "SNOTEL: NRCS snow-survey staff were cut in 2025 (Oregon-Washington office from 12 to 5; the national snow program about 50 people), but active SNOTEL stations rose from 909 (WY2025) to 919 (WY2026).",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "official counts and press; staffing figures from news and an NRCS newsletter",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "\"has shrunken from a staff of 12 to just five.\" … Three probationary employees were fired … A hiring freeze prevented filling four open positions … \"collects data on snowpack, mountain weather, and soil moisture at 178 sites in Oregon and 129 in Washington.\" … \"Without any of this maintenance, basically the SNOTEL stations, one by one, by next winter will start dying.\"",
+     "location": "Article body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "\"The NRCS Snow Program is only about 50 people.\"",
+     "location": "newsletter"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contradicts",
+     "passage": "Network | WaterYear | Active | SNOTEL | 2027 | 919 | SNOTEL | 2026 | 919 | SNOTEL | 2025 | 909 | SNOTEL | 2024 | 905",
+     "location": "Count-by-year table, rows 2024-2027 (lines 9-13)"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "text": "Environment Canada's daily feed to GHCN-Daily stopped unexpectedly on April 28, 2024 and was restored with v3.35 on October 1, 2026; ECA&D was static from September 20, 2024 to January 20, 2025 and is now current to October 31, 2026.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's own log and ECA&D's own page",
+   "figure_status": null,
+   "sole_source_reason": "NCEI's own status log is the authority for its feeds",
+   "evidence": [
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "Environment Canada's daily update feed was unexpectedly discontinued on April 28, 2024.",
+     "location": "status.txt, June 21, 2024 entry"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "The ECA&D data source, which has been static since September 20, 2024, has resumed monthly",
+     "location": "status.txt, January 25, 2025 entry"
+    },
+    {
+     "source_id": "s68",
+     "relationship": "contradicts",
+     "passage": "The database is updated until: Oct 31, 2026. … 106802 series of observations … 26348 meteorological stations … has received financial support from the EUMETNET and the European Commission … maintained and elaborated as part of the Copernicus Climate Change Services",
+     "location": "home page and news list"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "text": "WMO exchange: the WMO is under financial strain (arrears; 68 posts abolished in a 2026 restructuring) and the US did not withdraw from it in January 2026; GTS is to be replaced by WIS2 (migration 2025-2030, GTS decommissioned by 2033); no source ties these to a loss of station data.",
+   "importance": "central",
+   "applicability": "context for the WMO exchange stream",
+   "confidence": "moderate",
+   "confidence_reason": "WMO's own documents, but read via subagent; the post count is from slides",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s66",
+     "relationship": "supports",
+     "passage": "over half (59%) of the total 2026 | assessment remained outstanding on 30 April 2026, with 98% of the amounts in arrears at the | beginning of 2026 remaining outstanding. The Committee also noted that 99 Members had not | made a payment in 2026 as of 30 April 2026 and that 37 Members were subject to the | provisions of Resolution 37 (Cg-XI). The Committee noted that the outstanding balance of | 84.1 million Swiss francs (CHF) at 30 April 2026 is significant, as this outstanding amount | represents over 120% of the total 2026 regular budget assessment. … liquidity of the General Fund is likely to be able to be | maintained through the first half of 2027; however, the Working Capital Fund is forecast to be | utilized in the second half of 2027 … prioritizing the protection of core operational and normative functions of the | Organization, and maintaining the integrity of global systems … outputs placed in Tier 2 … could be scaled, | sequenced or reduced",
+     "location": "paras 9, 11, 13-14, pp. 2-3"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "Reduce the impact of arrears in assessed contributions by reducing | programme/staff spending and administrative overhead … Department of Earth System Data & Prediction (ESDP) | • Coordinates global observing networks, information systems, and prediction … • Facilitates data exchange and sets international standards … Structural cost reductions of CHF 6.0 million (8.7% of budget) annually: | • CHF 5.2 million in staff costs | • CHF 0.8 million in activity costs | • 68 posts abolished, 49 new vacancies (7 on hold) … Realized CHF 5 million of savings in 2025 … Total (68) 49 (19)",
+     "location": "slides 'Why transform the Secretariat?', 'One WMO: reorganization overview', 'Fiscal responsibility & liquidity', 'A right-sized staffing structure' table"
+    },
+    {
+     "source_id": "s58",
+     "relationship": "supports",
+     "passage": "\"Intergovernmental Panel on Climate Change;\" … \"UN Framework Convention on Climate Change;\"",
+     "location": "Sec. 2(a)(xiv), Sec. 2(b)(xxii); WMO: NOT PRESENT"
+    },
+    {
+     "source_id": "s74",
+     "relationship": "supports",
+     "passage": "several senior (D2) roles have been eliminated … has so far not withdrawn support from the meteorological agency … We need their support. We count on their support.",
+     "location": "article body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "Migration to WIS2 is planned to occur between 2025 and 2030 … The GTS is planned to be decommissioned by 2033. … 2025-2033 transition period … continuity of operations and data exchange throughout the process",
+     "location": "page body (WebFetch extraction)"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "text": "Argentina's national weather service (SMN) dismissed 140 staff on April 15, 2026, with up to 240 possible, and staff report reduced night observations at stations; no closure of stations sending data abroad is confirmed.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "two Argentine news reports",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "El 15 de abril, el gobierno nacional despidió a 140 personas del SMN … operatoria normal ya comenzó a resentirse … antes de fin del 2026",
+     "location": "article body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "\"la desvinculación de 140 empleados contratados\"",
+     "location": "article"
+    },
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "\"972 empleados\"",
+     "location": "article"
+    },
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "\"el plantel ideal del Servicio Meteorológico Nacional es de 1.156 trabajadores\"",
+     "location": "article"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "text": "News naming GHCN in connection with political decisions: a UCS blog (May 21, 2026) tied GHCN's 'severe disruptions' to the administration's actions against NOAA, citing Berkeley Earth; a climate blog (Sept 11, 2025) and Futura (Nov 29, 2025) reported the station losses in GHCN-Monthly (not GHCN-Daily); no news names GHCN-Daily's maintainers.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "several outlets, all relying on Berkeley Earth; advocacy and blog sources",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "\"One of NOAA's core climate archives, the Global Historical Climatological Network, is still facing severe disruptions\" followed by \"with only about 6,000 of its 20,000 observational stations reporting valuable weather and climate information.\" … The hyperlink is on the words \"severe disruptions\" in the same sentence: https://berkeleyearth.org/march-2026-temperature-update/ … \"Over the last year, the administration has relentlessly attacked staffing, budgets and scientific resources at the agency.\"",
+     "location": "blog body (WebFetch extract)"
+    },
+    {
+     "source_id": "s63",
+     "relationship": "supports",
+     "passage": "ROW=3657 US=4705 Sea=3558 … ROW=2016 US=4692 Sea=3557 … I normally require ROW>3200 for posting. … the big gaps are in China, Iran and Khazakstan",
+     "location": "post body"
+    },
+    {
+     "source_id": "s63",
+     "relationship": "supports",
+     "passage": "- On August 11: \"ROW=3657 US=4705 Sea=3558\" | - On September 11: \"ROW=2016 US=4692 Sea=3557\" | - \"I normally require ROW>3200 for posting.\"",
+     "location": "Section \"Non-US (ROW) stations reporting in GHCN and usual threshold\", lines 9-11"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "environ 20 000 stations par mois … les perturbations des services de la NOAA ont réduit ce nombre de moitié en août et septembre … l'ensemble de données d'octobre est encore plus réduit à environ 7 500 stations … leurs observations n'ont pas été intégrées aux services d'agrégation de la NOAA … Chine, du Kazakhstan, des Philippines",
+     "location": "article body (WebFetch extraction)"
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "text": "NCEI positions (all of NCEI): 126 in FY2025 actual against 185 in FY2026 enacted and 185 in the FY2027 request; the FY2027 cut of $17.8M carries no position change.",
+   "importance": "supporting",
+   "applicability": "NCEI-wide context; positions are budgeted slots, not people on staff",
+   "confidence": "high",
+   "confidence_reason": "agency's own budget table",
+   "figure_status": [
+    "actual",
+    "enacted",
+    "request"
+   ],
+   "sole_source_reason": "the agency's own budget table is the authority for its positions",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "2025 2026 2027 2027 Increase/Decrease | Actual Enacted Base Estimate from 2027 Base | Comparison by Subactivity Personnel Amount Personnel Amount Personnel Amount Personnel Amount Personnel Amount … National Centers for Environmental Pos/BA 126 76,035 185 69,000 185 69,807 185 52,000 0 (17,807) | Information FTE/OBL 139 72,950 140 69,000 140 69,807 140 52,000 0 (17,807)",
+     "location": "Exhibit 10, Program and Performance: Direct Obligations (dollar amounts in thousands), NESDIS, lines 20342-20358 of the text file"
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "text": "CISESS renewal NA24NESX432C0001 (2024-07-01 to 2029-06-30): $77.5M obligated, $39.9M outlaid, 29 subawards worth $26.1M, as of the record's last change on 2026-09-30.",
+   "importance": "supporting",
+   "applicability": "whole cooperative institute, not GHCN-Daily",
+   "confidence": "high",
+   "confidence_reason": "USAspending award record",
+   "figure_status": [
+    "obligation",
+    "actual"
+   ],
+   "evidence": [
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "\"subaward_count\": 29, … \"total_subaward_amount\": 26102529.0, … \"total_obligation\": 77486317.0, … \"date_signed\": \"2024-06-12\", … \"start_date\": \"2024-07-01\", … \"end_date\": \"2029-06-30\", … \"last_modified_date\": \"2026-09-30\" … \"total_outlay\": 39866071.99,",
+     "location": "JSON fields subaward_count, total_subaward_amount, total_obligation, date_signed, period_of_performance.start_date, period_of_performance.end_date, period_of_performance.last_modified_date, total_outlay (lines 10-15, 94-96, 170)"
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "text": "GHCN-Daily's daily update files show two further gaps over 3 days in the period, 2025-01-14 to 2025-01-18 and 2025-02-03 to 2025-02-09, and none from 2025-02-10 to 2025-11-11, August-September 2025 included.",
+   "importance": "supporting",
+   "applicability": "file dates show when update runs happened, not what they held",
+   "confidence": "moderate",
+   "confidence_reason": "one dated Wayback capture of NCEI's listing; NCEI states no cause",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "ghcnd_diff_status.txt | 2025-01-26 20:40 | 1632 … superghcnd_diff_20250113_to_20250114.tar.gz | 2025-01-14 10:18 | 325558 | superghcnd_diff_20250114_to_20250118.tar.gz | 2025-01-18 10:39 | 506769487 | superghcnd_diff_20250114_to_20250121.tar.gz | 2025-01-21 21:13 | 13282516 | superghcnd_diff_20250118_to_20250119.tar.gz | 2025-01-19 10:43 | 550234584",
+     "location": "Listing lines 7 and 2965-2968"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "superghcnd_diff_20250202_to_20250203.tar.gz | 2025-02-03 11:22 | 299880 | superghcnd_diff_20250203_to_20250209.tar.gz | 2025-02-09 04:41 | 4418869 | superghcnd_diff_20250209_to_20250210.tar.gz | 2025-02-10 12:37 | 547487",
+     "location": "Listing lines 2983-2985"
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "text": "58 NCEI employees retired or resigned in 2025, about one third of the workforce (NCEI-wide), and NOAA had cut about 800 staff by March 2025.",
+   "importance": "supporting",
+   "applicability": "NCEI- and NOAA-wide context",
+   "confidence": "moderate",
+   "confidence_reason": "local and national news",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Easterling, 69, said he is one of 58 employees who have retired or resigned under similar circumstances from the NCEI – about one third of the workforce at the Asheville headquarters and smaller installations in Maryland, Colorado and Mississippi.",
+     "location": "line 20"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "contextualizes",
+     "passage": "Zoom out: This move comes soon after NOAA cut about 800 staff members in the run-up to what is expected to be a deeper round of layoffs of just over 1,000 people, possibly as soon as this week.",
+     "location": "line 53"
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "text": "The COOP sources-sought notice scopes 'up to 3,000' sites against the ~6,700-site network; FY2027 House and Senate bills each give $6.1M for Regional Climate Centers.",
+   "importance": "supporting",
+   "applicability": "COOP figure read via an aggregator extract",
+   "confidence": "moderate",
+   "confidence_reason": "aggregator copy for COOP; committee reports for RCCs",
+   "figure_status": [
+    "proposed"
+   ],
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "**Number of sites:** \"up to 3,000 distributed surface observation sites\" (Scope of Work); \"approximately 6,700 highly distributed surface observation sites\" (Description) | **Number of stations to price:** \"Tiered volume pricing for up to 3,000 units\"",
+     "location": "Scope of Work and Description (extraction lines 10-11)"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "contextualizes",
+     "passage": "Regional Climate Centers (RCCs).--The recommendation | includes $6,100,000 for RCCs.",
+     "location": "NESDIS section, lines 2229-2230, after the NESDIS ORF table"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "contextualizes",
+     "passage": "Regional Climate Centers.—The Committee provides no less than $6,100,000 to Regional Climate Centers for collecting and quality- assuring data nationwide, and disseminating information to diverse stakeholders",
+     "location": "NESDIS/NCEI section, line 4171"
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "text": "NESDIS's 2025 Notice of Changes lists, among GHCN-derived products, only the decommissioning of a duplicate access point for nClimGrid-Daily (April 28, 2025).",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "official list, read by a subagent",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "The duplicative access point will be decommissioned for nClimGrid-Daily.",
+     "location": "2025 Notice of Changes table"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "text": "In NCEI's own inventory (2026-11-13), stations with precipitation or temperature data reaching 2026 number 29,401 US and 8,901 non-US, against 31,998 and 11,458 reaching 2025: a 22% drop outside the US against 8% in the US, consistent with incomplete international input in 2026 (partial year; a lower bound).",
+   "importance": "supporting",
+   "applicability": "computed by this run; last-year counts, not monthly reporting",
+   "confidence": "low",
+   "confidence_reason": "run's own computation from NCEI data; partial year and reporting lags blur the comparison",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "m7",
+     "relationship": "supports",
+     "passage": "stations with PRCP/TMAX/TMIN data in or after 2024: US-prefixed 34192, non-US 11933, total 46125",
+     "location": "run's count file"
+    },
+    {
+     "source_id": "m7",
+     "relationship": "supports",
+     "passage": "stations with PRCP/TMAX/TMIN data in or after 2025: US-prefixed 31998, non-US 11458, total 43456",
+     "location": "run's count file"
+    },
+    {
+     "source_id": "m7",
+     "relationship": "supports",
+     "passage": "stations with PRCP/TMAX/TMIN data in or after 2026: US-prefixed 29401, non-US 8901, total 38302",
+     "location": "run's count file"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "text": "USCRN: the FY2026 request would have ended all funding for NOAA's Office of Oceanic and Atmospheric Research, whose labs include the Crossville, Tennessee site feeding the U.S. Climate Reference Network; the FY2026 enacted statement kept 'Climate Laboratories and Cooperative Institutes' at $104.1M. USCRN has no budget line of its own.",
+   "importance": "supporting",
+   "applicability": "USCRN funding is inside OAR lines",
+   "confidence": "moderate",
+   "confidence_reason": "news for the request, official explanatory statement for the enacted level",
+   "figure_status": [
+    "request",
+    "enacted"
+   ],
+   "evidence": [
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "Trump's proposal would terminate all funding for the Office of Oceanic and Atmospheric Research",
+     "location": "para 3"
+    },
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "A NOAA research location in Crossville is one of more than 138 stations nationwide that feeds climate monitoring data to the U.S. Climate Reference Network.",
+     "location": "para 7"
+    },
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "represents a 30% cut, focused on programs having to do with climate research",
+     "location": "para 8"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "contextualizes",
+     "passage": "Climate Research: | Clim ate Laboratories and Cooperative Institutes … $ 104, 102 | Regional Climate Data and In formation … 48,932 | Climate Competitive Research … 7 1, 116 … Product Development, Readiness and Application … 59,000 … National Centers for Environmental Information … 69,000",
+     "location": "OAR ORF table (txt lines 660-663); NESDIS ORF table p. 20 (txt lines 782-791); OCR text, spacing as in file"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "text": "Hurricane Helene (late September 2024) disrupted all of NCEI's ingest streams; GHCN-Daily's update files show one 19-day gap (Sept 27 to Oct 16, 2024).",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI file listing plus news quoting NCEI",
+   "figure_status": null,
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "contextualizes",
+     "passage": "\"the storm disrupted all of NCEI's ingest streams.\" (Fortune) … NCEI maintains 275 data ingest streams. \"49% of these data ingest streams are on and operational\" | \"51% data ingest streams are in the process of restarting.\" (Fortune) | \"We have also started recouping data not ingested during the outage on 39% of the data streams.\" (Fortune)",
+     "location": "article body (WebFetch extract)"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "superghcnd_diff_20240926_to_20240927.tar.gz | 2024-09-27 11:44 | 770395 | superghcnd_diff_20240927_to_20241016.tar.gz | 2024-10-16 19:22 | 5271638 | superghcnd_diff_20241016_to_20241017.tar.gz | 2024-10-17 12:29 | 315349 … superghcnd_diff_20250819_to_20250821.tar.gz | 2025-08-21 14:13 | 12668082 … superghcnd_diff_20250828_to_20250829.tar.gz | 2025-08-29 14:19 | 316467 … superghcnd_diff_20250924_to_20250925.tar.gz | 2025-09-25 14:35 | 285633",
+     "location": "directory listing table, txt lines 2875-2877, 3163, 3171, 3195"
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "How many GHCN stations were reporting in early 2026",
+   "source_ids": [
+    "s33",
+    "s22"
+   ],
+   "status": "resolved",
+   "explanation": "UCS calls '6,000 of its 20,000' GHCN's stations, but it links Berkeley Earth's March 2026 update, whose ~20,000 and ~6,700 figures are Berkeley's own merged monthly inputs, not a GHCN-Daily count. Neither gives GHCN-Daily's own station count."
+  },
+  {
+   "claim": "NCEI FY2025 actual",
+   "source_ids": [
+    "s38",
+    "s54"
+   ],
+   "status": "resolved",
+   "explanation": "The FY2027 CJ gives FY2025 actual as 76,035 (budget authority, Pos/BA row) and 72,950 (obligations, FTE/OBL row); the answer gives budget authority and notes the obligation figure. s54 supplies the FY2024 enacted 70,000 for comparison."
+  },
+  {
+   "claim": "How many WMO Secretariat posts are being cut",
+   "source_ids": [
+    "s57",
+    "s56"
+   ],
+   "status": "resolved",
+   "explanation": "Reuters (Oct 24, 2025) reported a plan cutting 26 posts; WMO's 2026 reorganization slides list 68 posts abolished and 49 new vacancies. Different dates and measures (an early plan against the adopted restructuring); the answer uses the 2026 figure and notes the earlier one."
+  },
+  {
+   "claim": "Whether GHCN-Daily stopped updating after late August 2025",
+   "source_ids": [
+    "s20",
+    "s26"
+   ],
+   "status": "resolved",
+   "explanation": "Berkeley Earth says GHCN-Daily was broken or incomplete; NCEI's daily diff files continued. Both hold: the update runs continued while parts of the input (GSOD-based international stations) were missing."
+  }
+ ],
+ "coverage_gaps": [
+  "COOP: no decision, site list, award or follow-on solicitation after the May 7, 2026 RFC and the 1305M2-COOP sources-sought (closed July 13, 2026) was found; the Federal Register lists no later COOP notice. SAM.gov page for 1305M2-COOP not read directly (aggregator copy only). (from sa3)",
+  "ASOS/AWOS-C: the ASOS FAQ's 'complete list' of the 207 sites points to an equipment spreadsheet (March 2025) that has no AWOS-C/transition column; which of the 206/207 sites are climate sites remains unknown. Rerun on DuckDuckGo: 'ASOS AWOS-C transition site list 207'. (from sa3)",
+  "USCRN: no Federal Register notice and no budget line found; Tennessee Lookout (Sept 30, 2025) says the FY2026 request would close 5 Tennessee NOAA labs incl. a Crossville site feeding USCRN (not read). FY2027 House/Senate treatment of OAR Climate Laboratories not checked by this subagent. (from sa3)",
+  "CoCoRaHS: no 2025-2026 funding announcement on cocorahs.org or in news; current NOAA funding route still not public. Rerun: 'CoCoRaHS NOAA funding 2026', 'CoCoRaHS Colorado State budget 2025'. (from sa3)",
+  "SNOTEL/SCAN: Salem Statesman claim that NRCS 'may discontinue measuring mountain snowpack by summer 2026' unread (403); April 2025 coalition letter unread (host refused); Western States Water Council item (7 NWCC positions, nearly 40% of the Snow Survey federal workforce, March 2025) seen only as a snippet; NWCC 'yearcount' page (911 active SNOTEL as of April 10, 2026) and OSU FY2026 $400,000 SNOTEL QC agreement seen only as snippets. No SCAN-specific cut found. (from sa3)",
+  "RAWS: no RAWS-specific cut, closure or budget found in 4 searches; NIFC RAWS Depot posts nothing after July 2024. FY2026/FY2027 Interior/USFS fire budgets and the WRCC RAWS archive status not checked. Rerun: 'RAWS Depot Boise 2026', 'Western Regional Climate Center RAWS 2025 funding'. (from sa3)",
+  "Regional Climate Centers (ACIS, WRCC): April 2025 contract lapse found (NOTUS); restoration date and 2026 status not read by this subagent. (from sa3)",
+  "Other GHCN-Daily US contributors (Hawaii/Alaska networks, state networks, WBAN first-order) not searched for lack of time; pt1 run's ghcnd-stations.txt network codes not reviewed by this subagent. (from sa3)",
+  "r4 (Commerce OIG): no NCEI-specific OIG report 2025-2026 found after 1 query (oig.doc.gov); the Sept 2025 and Mar 2026 Semiannual Reports to Congress were not read. Rerun: 'OIG National Centers for Environmental Information 2026'. (from sa2)",
+  "r3 (GAO): only GAO-25-108597 (aviation meteorologists) and GAO-26-108013 (weather modification) surfaced; no GAO report on NCEI, GHCN or climate data records found. Neither GAO report read in full. (from sa2)",
+  "r13 (courts): no lawsuit naming NCEI or GHCN found; earlier run has the 4th Circuit probationary case (sa2/ca4_25-1248.txt). (from sa2)",
+  "r8: 'GHCN layoffs Asheville 2025' returned nothing GHCN-specific; not found after 3 queries. No news names Menne, Durre, Vose, Rennie or Williams in connection with cuts; Vose appears still active at NCEI Nov 2025 (CISESS weekly update snippet, not read: https://cisess.umd.edu/assets/1/7/Weekly_Updates-Nov21_FINAL.pdf). (from sa2)",
+  "Oct-Nov 2025 shutdown: no press or NCEI notice found on GHCN-Daily during the shutdown; the superghcnd file listing (sa2-e7) shows daily runs continued. Whether CDO web access was up during the shutdown not found. (from sa2)",
+  "Whether NOAA's Aug 2025 GHCN-Daily/GHCN-M ingest problem (Berkeley Earth) was ever explained by NOAA, and whether it is fixed: Berkeley Sep 2026 no longer reports it but does not say it ended; GISTEMP home page (Nov 13 2026) no longer carries a GHCN v4 data-gap note (page saved as gistemp_home_unused.txt). Check Berkeley Earth Oct 2026 update and GISTEMP updates history. (from sa2)",
+  "FedScoop Helene article unread (host refused); Axios Mar 13 2025 on suspended NCEI monthly climate calls not read (in earlier run? not checked). (from sa2)",
+  "Asheville Citizen-Times and BPR 2026 coverage of NCEI not found; Asheville Watchdog March 2025 article (177 staff before cuts, rumored 40 pct cut) is in the earlier run as sa2/avlwatchdog_ncei_cuts.txt, not copied here. (from sa2)",
+  "No NOAA CJ (FY2026, FY2027), House or Senate CJS report (H. Rept. 119-272, 119-652; S. Rept. 119-44; FY2027 Senate report), FY2026 JES or CRS file names GHCN, GHCN-Daily, GHCNd or Historical Climatology (find_text, all files). GHCN-Daily has no budget line found; it sits inside the NESDIS ORF 'National Centers for Environmental Information' activity (FY2026 enacted $69.0M; FY2027 request $52.0M, House $60.0M, Senate committee $70.0M). GAO documents not searched (time). (from sa1)",
+  "CISESS share for NCEI Asheville / GHCN-Daily not found: USAspending subaward and transaction endpoints are POST-only, so the NC State subaward under NA24NESX432C0001 (NC share reported as $95M in 2024 news) and FY2025-2026 obligation actions were not pulled. Coordinator could run POST /api/v2/subawards/ with award_id ASST_NON_NA24NESX432C0001_013, or read the award page https://www.usaspending.gov/award/ASST_NON_NA24NESX432C0001_013 in a browser. (from sa1)",
+  "CISESS NC annual reports after 2022-2023 not found (ncics.org/about/annual-reports/ lists 2022-2023 as latest per search summary); 2025-2026 CISESS-NC weekly memos beyond 2025-08-01 not read (cisess.umd.edu/publication/noaa-weekly-reports/). (from sa1)",
+  "Historical funders of GHCN-Daily (DOE CDIAC, NASA, NIDIS, CPO) not found; Menne et al. 2012 acknowledgments unreadable (AMS 403). Try DuckDuckGo: 'GHCN-Daily Menne 2012 acknowledgments', 'GHCN Daily NOAA Climate Program Office support'. (from sa1)",
+  "Contractors: no source ties Riverside/Cadmus NCEI task orders or the 2026 NCEI Regional Weather Records Center solicitations (1332KP26R0023/24/27/28) to GHCN-Daily. Queries that returned little: 'GHCN-Daily contractor NCEI support contract Riverside 2025', '\"Global Historical Climatology Network\" funded by NOAA Climate Program Office grant', 'GHCN-Daily funding NOAA acknowledgment Department of Energy'. (from sa1)",
+  "q2 lead (for coordinator): Berkeley Earth March 2026 update says GHCN-Daily and GHCN-M 'broken or in a degraded state' since late August 2025; verify exact wording on the page and check later Berkeley Earth monthly updates (2026-04 to 2026-10) for recovery. (from sa1)",
+  "Total web searches for q1 = 10 (plus USAspending GET lookups and find_text lookups). (from sa1)",
+  "q4: No ECCC statement found explaining why Environment Canada's daily feed to GHCN-Daily stopped on 2024-04-28; ECCC notices (climate.weather.gc.ca archived messages) have no March-April 2024 notice and never name NOAA/NCEI/GHCN. Only related change: MSC Datamart daily climate files reorganized monthly-to-yearly on 2025-03-12 (announced 2024-10-11). Rerun on DuckDuckGo: 'Environment Canada GHCN-Daily 2024', 'MSC Datamart climate daily April 2024', or ask NCEI. (from sa4)",
+  "q4: ECCC notice says historical data for 174 Government of Alberta climate stations will be permanently removed (Aug 2026); not checked whether these stations are in GHCN-Daily (search ghcnd-stations.txt for Alberta 'CA00' IDs from ACIS). (from sa4)",
+  "q4: No ECA&D funding information for 2025-2026 found (queries 'ECA&D funding Copernicus 2025 KNMI', 'ECA&D European Climate Assessment Dataset 2025 update funding' returned little); ECA&D site shows no interruption and data to 2026-10-31. (from sa4)",
+  "q4: No US arrears amount in WMO official documents read (FINAC-46 names no Member); Reuters says US owes over CHF 30 million (Oct 2025). WMO Q2/Q3 2026 'Status of contributions' circulars (extranet.wmo.int CMS-FIN PDFs) not read. (from sa4)",
+  "q4: No global 2025 figure on SYNOP/CLIMAT receipt decline found; WDQMS (wdqms.wmo.int) and other GCOS Lead Centre reports (other Regions) not read. Query 'WMO WDQMS 2025 SYNOP CLIMAT reports received decline' returned little. (from sa4)",
+  "q4: Argentina SMN: whether reduced night coverage at about 50 stations cut SYNOP reports sent on the GTS not established; legislative declaration (rest.hcdn.gob.ar) timed out; iprofesional, canal26, ambito, eleconomista not read. (from sa4)",
+  "q4: Brazil INMET (2024 union cut claims vs 2025 expansion), Australia BoM (only local closures found), UK Met Office (no network cuts found; DataPoint retired 2025-12-01), Mexico SMN/CONAGUA, India IMD, Russia RIHMI-WDC and China: not searched or only one search; no cuts found. Ukraine: only GSN station 33915 Askaniya-Nova silent since Sept 2022 (DWD report). (from sa4)",
+  "q4: Berkeley Earth's own statement on GHCN-M station loss (Aug-Oct 2025) not read; Futura (secondary) and Moyhu blog only; neither says GHCN-Daily. (from sa4)",
+  "q4: EUMETSAT ending satellite data on the GTS from 14 Jan 2027 (WMO news 2026-11-10) seen in search only, not read; satellite data, not station data. (from sa4)",
+  "q4: MSC dd_info list archive (comm.collab.science.gc.ca, 2024/4 and 2024/12 months) not browsed month by month; the Dec 2024 \"MSC Datamart tree structure update\" notice and the 2024-04 messages could show whether an ECCC Datamart change coincides with the 2024-04-28 GHCN-Daily stop. Searches found none. (from sa4)",
+  "Checker: c13 not counter-searched; Futura date not verified; FY26 CJ page NESDIS-14 not confirmed from PDF; lead not read: https://www.commerce.senate.gov/wp-content/uploads/2026/11/WIL26506.pdf (Senate Commerce, Nov 2026, from the COOP decision search). (from checker)",
+  "Correction to the earlier checker gap: c13 was counter-searched (NCEI GHCN scientists laid off 2025), the Futura date 29 novembre 2025 is confirmed in the saved file, and WIL26506.pdf was read in part (S. 3923 substitute; source chk1). The FY2026 CJ page NESDIS-14 is still unconfirmed from a PDF. (from checker)",
+  "No saved file says whether the four Regional Climate Center contracts that lapsed in April 2025 were restored (find_text over work/raw for restor/resum/reinstat/renew near climate center: no match). Also coverage problem: s75 iProfesional passage not found in work/raw/sa4/iprofesional_smn_140_fetch.txt (claim c12, 140 SMN dismissals); not rechecked. (from reconciler)",
+  "Menne et al. 2012 (JTECH) acknowledgments, possible historical funders: AMS returned 403 to WebFetch and to the browser; no route left.",
+  "Riverside NCEI task-order page: 404 in the browser (page removed); no source ties NCEI support contracts to GHCN-Daily.",
+  "COOP sources-sought 1305M2-COOP and NCEI WRWRC solicitation 1332KP26R0028: read only via aggregators (Govly, HigherGov); Wayback has no 2026 copy of either aggregator page, and samsearch.co has none; SAM.gov itself not read (needs a browser session).",
+  "NCICS June 2025 presentation (Google Slides) opened in the browser: a NODD data overview with no GHCN content; not used."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=\"Cooperative Observer\"&conditions[publication_date][gte]=2025-01-01",
+   "tool": "fetch_json (Federal Register API) then WebFetch",
+   "notes": "fetch_json.py failed 3 times (connection closed / IncompleteRead) with various term forms; WebFetch returned count 1 (2026-09099 only).",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=\"Climate Reference Network\"&conditions[publication_date][gte]=2025-01-01",
+   "tool": "WebFetch",
+   "notes": "count 0.",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=\"Automated Surface Observing\"&conditions[publication_date][gte]=2025-01-01",
+   "tool": "WebFetch",
+   "notes": "count 6, none about ASOS retirement/replacement (FAA exemptions, EPA air plans, BVLOS drone rule).",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Cooperative Observer Program NWS 2026 notice",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov; only local WFO COOP pages, no service change notice.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AWOS-C ASOS replacement climate sites 2026",
+   "tool": "WebSearch",
+   "notes": "Frankfort KY (known), FAA ASWON, NWS ASOS FAQ; FAQ list link followed to asosequip.html and its xlsx (no AWOS-C column).",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS funding NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; only 2012-2017 pages (2015-16 appeals: NOAA grant ended, budget about $425,000). No 2025-2026 funding announcement found. Not found after 1 query on site; see also next.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS 2026 funding cut NOAA grant",
+   "tool": "WebSearch",
+   "notes": "No result names CoCoRaHS; NOAA-wide context only.",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SNOTEL cuts 2025 NRCS snow survey staff",
+   "tool": "WebSearch",
+   "notes": "OPB/KUOW Portland 12 to 5; Padilla letter; Mountaineers letter (host refused); CBS Colorado item turned out to be from 2013 (not used).",
+   "from": "sa3",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NRCS snow survey program reorganization 2026 SNOTEL staffing",
+   "tool": "WebSearch",
+   "notes": "NRCS Idaho newsletter (Snow Program about 50 people); Salem Statesman via lincolnchronicle.org (403) says NRCS may discontinue snowpack measurement by summer 2026; Western States Water Council: 7 NWCC positions lost (~40%) (snippet only).",
+   "from": "sa3",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "SNOTEL stations funding 2026 NRCS",
+   "tool": "WebSearch",
+   "notes": "OSU agreement FY2026 $400,000 for SNOTEL QC (snippet, not read); datalogger recompete forecast; NWCC 911 active SNOTEL as of April 10, 2026 (snippet, not read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Cooperative Observer Program cuts 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode; no decision after RFI; NWS X post on comment window.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWS COOP modernization decision mesonet contract 2026",
+   "tool": "WebSearch",
+   "notes": "1305M2-COOP closed July 13, 2026; National Mesonet contract to KBR from September 1, 2026 (separate program; snippet only).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network funding 2026 Congress",
+   "tool": "WebSearch",
+   "notes": "No USCRN line; NOAA-wide CRS and news.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN Climate Reference Network 2026 budget Oak Ridge ATDD",
+   "tool": "WebSearch",
+   "notes": "Tennessee Lookout Sept 2025 (FY2026 request would close 5 TN labs incl. Crossville feeding USCRN; not read); ARL July 2026 upgrade (known).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "RAWS weather stations cuts 2025",
+   "tool": "WebSearch",
+   "notes": "Nothing RAWS-specific.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Remote Automatic Weather Stations RAWS funding 2026 fire weather",
+   "tool": "WebSearch",
+   "notes": "CRS IF12884 fire weather (Jan 2026); nothing RAWS-specific.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "RAWS stations Forest Service BLM maintenance cuts 2026",
+   "tool": "WebSearch",
+   "notes": "USFS closing 57 of 77 research stations (March 2026; research stations, not RAWS); nothing RAWS-specific.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "RAWS remote automated weather stations network 2025 2026 decommission budget",
+   "tool": "WebSearch",
+   "notes": "extended mode; NIFC RAWS Depot (read); no decommissioning.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Soil Climate Analysis Network SCAN NRCS stations 2025 cuts",
+   "tool": "WebSearch",
+   "notes": "No SCAN-specific cut; NRCS-wide staff losses (ICN, Marketplace, Harvest Public Media Aug-Sept 2026).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Salem Statesman Journal snowpack measurement discontinue 2026 NRCS",
+   "tool": "WebSearch",
+   "notes": "copy search for lincolnchronicle.org/?p=58144 (403); no other copy found; NRCS April 1 2026 release read.",
+   "from": "sa3",
+   "copy_of": "https://lincolnchronicle.org/?p=58144"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Western States Water Council National Water and Climate Center positions lost 2025",
+   "tool": "WebSearch",
+   "notes": "Looked for the source of the snippet: 7 NWCC positions, nearly 40 percent of Snow Survey federal workforce; not found. WSWC Sept 2025 newsletter mentions 30% federal staff turnover in WestFAST (unread). Candidate: https://westernstateswater.org/wp-content/uploads/2025/09/News-2678.pdf",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO NOAA climate data 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; found GAO-26-108013 (weather modification database), GAO-26-107739 (GeoXO), GAO-25-106236; nothing on NCEI, GHCN or climate data records",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO National Weather Service staffing 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; found GAO-25-108597 Aviation Meteorologists (Aug 28 2025; 69 active CWSU meteorologists June 2025); no NCEI/GHCN content; not read in full",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Commerce OIG NCEI report 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov; results were NWS OT security, hurricane, tornado, hurricane hunter, grants audits and SARs; no NCEI-specific report found after 1 query",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI products no longer updated 2025",
+   "tool": "WebSearch",
+   "notes": "Billion-Dollar Disasters, ADT-HURSAT, ISCCP H, SNODAS etc.; no GHCN-Daily item",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI notice of changes retirement 2025 GHCN",
+   "tool": "WebSearch",
+   "notes": "found NESDIS GHCNd notice (May 2023, service transition) and ISD to GHCNh notices; no 2025-2026 GHCNd retirement",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEI Asheville layoffs 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode; Asheville Watchdog Mar 2025 (20 NCEI staff, about 10 pct), Citizen Times nearly 60 resignations; already in 2026-11-17 run",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEI scientists fired climate data 2025",
+   "tool": "WebSearch",
+   "notes": "monthly NCEI climate press calls suspended (Axios Mar 13 2025; Columbia Sabin); no GHCN staff named",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GHCN layoffs Asheville 2025",
+   "tool": "WebSearch",
+   "notes": "no result names GHCN with Asheville layoffs; not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA reduction in force lawsuit NCEI 2025",
+   "tool": "WebSearch",
+   "notes": "AGU RIF lawsuit, CBD records suit, 4th Circuit probationary case; none names NCEI or GHCN; earlier run has sa2/ca4_25-1248.txt",
+   "from": "sa2",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCN-Daily NOAA data problems 2025 Berkeley Earth",
+   "tool": "WebSearch",
+   "notes": "led to Berkeley Sep 2025 update and Moyhu blog",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI shutdown data updates October 2025",
+   "tool": "WebSearch",
+   "notes": "Helene pages, IBTrACS status; nothing on GHCN-Daily in the Oct-Nov 2025 shutdown",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA climate data government shutdown October 2025 NCEI not updated",
+   "tool": "WebSearch",
+   "notes": "extended mode; only 2018-2019 shutdown precedents; nothing for 2025",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Climate Data Online shutdown 2025 NCEI lapse in appropriations notice",
+   "tool": "WebSearch",
+   "notes": "no 2025 CDO notice found; Regional Climate Centers lapse April 2025 (separate)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCN-Daily Helene outage NCEI data access 2024",
+   "tool": "WebSearch",
+   "notes": "NCEI Oct 17 2024 update, PSL impacted list; no GHCN-Daily-specific notice",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Berkeley Earth temperature update 2026 NOAA data problems restored",
+   "tool": "WebSearch",
+   "notes": "allowed_domains berkeleyearth.org; Feb, Mar, Sep 2026 updates",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Russell Vose NCEI 2025",
+   "tool": "WebSearch",
+   "notes": "Vose still active at NCEI in Nov 2025 (CISESS weekly update Nov 17-21 2025, snippet only); no news of departure or cut",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "\"Global Historical Climatology Network\" Trump cuts 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode; UCS May 2026 blog; WaPo, CNN, E&E roundups not GHCN-specific",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Matthew Menne Imke Durre NOAA GHCN 2025",
+   "tool": "WebSearch",
+   "notes": "only a 2025 GHCN-Daily dataset citation listing Menne, Durre, Korzeniewski; no news of their status",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Wayback CDX ghcnd-version.txt 2025-08 to 2025-12",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "captures 20250812, 20250819, 20251205 only; saved as cdx_ghcnd_version_2025_unused.json",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Wayback CDX ncei.noaa.gov/pub/data/ghcn/daily/ prefix 2025-10-01 to 2025-11-30",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "39 captures; used the superghcnd listing of 20251111; saved as cdx_ghcnd_dir_octnov2025_unused.json",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEI Asheville staff cuts 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode; no 2026 NCEI cuts reported; only 2025 Watchdog (177 staff before cuts; rumored 40 pct) and Citizen Times (nearly 60 resignations)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://web.archive.org/web/2026/https://www.axios.com/2025/03/13/noaa-cancels-global-warming-briefings-cuts",
+   "tool": "lookup (Wayback copy)",
+   "notes": "WebFetch of axios.com returned 403; Wayback 2026-09-30 copy read",
+   "from": "sa2",
+   "copy_of": "https://www.axios.com/2025/03/13/noaa-cancels-global-warming-briefings-cuts"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN|Historical Climatology|in situ|station (find_text on noaa_fy27_cj.txt, noaa_fy26_cj.txt and earlier sa1 folder)",
+   "tool": "lookup (find_text.py on 2026-11-17_noaa-ncei-threats/work/raw/sa1)",
+   "notes": "No GHCN or Historical Climatology line in either CJ; 'in situ' hits only for OMAO, NWS, IOOS. NCEI narrative read at NESDIS-23..28 of FY27 CJ.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN|Historical Climatology|climate data|station|National Centers for Environmental Information (find_text on hrpt119-272, hrpt119-652, srpt119-44, srpt119_154_govinfo, fy26_cjs_jes, senate_cjs_explanatory_stmt)",
+   "tool": "lookup (find_text.py on earlier report files)",
+   "notes": "No GHCN / Historical Climatology in any House or Senate CJS report or explanatory statement. NCEI lines: FY26 JES 69,000; House FY27 (H. Rept. 119-652) 60,000. Station hits only ASOS and Mount Washington earmark.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS|NCICS|CICS|cooperative institute (find_text on all earlier runs work/raw)",
+   "tool": "lookup (find_text.py on web_search_results)",
+   "notes": "CRS IF13275 mentions only OAR cooperative institutes; no CISESS/NCICS in any earlier file except CICS-NC/NCEI in a GHCN metadata record (pt2 sa3/bb9bb327ac7f18a8.txt).",
+   "from": "sa1",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS cooperative agreement NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "standard mode. Leads: UMD $388M renewal (2024), award numbers NA19NES4320002 and NA24NESX432C0001 (CISESS acknowledgments page), ncics.org $95M NC State, E&E News April 2025 CI funding delays, CISESS Weekly PDFs 2025-12 and 2026-04.",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASST_NON_NA24NESX432C0001 and ASST_NON_NA19NES4320002 award records",
+   "tool": "fetch_json (USAspending /api/v2/awards/<id>/ GET)",
+   "notes": "Second r5 lookup. Award IDs from CISESS acknowledgements page. Transactions and subawards endpoints are POST-only, not used.",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCICS GHCN-Daily NC State CISESS 2025",
+   "tool": "WebSearch",
+   "notes": "Third r5 query. Found CISESS-NC weekly memos to NCEI Chief of Staff (2025), June 2025 NCICS presentation (docs.google.com, not read).",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN-Daily funding NOAA acknowledgment Department of Energy",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Only catalog records; no funding statement. Menne et al. 2012 acknowledgments not readable (AMS 403).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Global Historical Climatology Network\" funded by NOAA Climate Program Office grant",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Nothing on funding.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN-Daily contractor NCEI support contract Riverside 2025",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Riverside/Cadmus NCEI science support task orders (2024) and 2026 NCEI Regional Weather Records Center solicitations; none tied to GHCN.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI Asheville cooperative institute staff cuts 2025",
+   "tool": "WebSearch",
+   "notes": "Follow-up. NOAA-wide cuts; E&E News April 2025 CI article read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS-NC weekly report GHCN-Daily 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cisess.umd.edu, ncics.org. Found CISESS NC Annual Report 2022-2023 (read).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS NC annual report 2024-2025 GHCN",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncics.org, cisess.umd.edu. Latest annual report listed is 2022-2023.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCICS NC State NOAA funding cuts 2026 Asheville",
+   "tool": "WebSearch",
+   "notes": "Follow-up. UCS May 2026 blog (OMB slowing CI disbursements; GHCN station figure) read; led to Berkeley Earth March 2026 update.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI|Environmental Information|climate data (find_text on crs_*.txt in 2026-11-17_noaa-ncei-threats/work/raw/sa1)",
+   "tool": "lookup (find_text.py on earlier CRS files)",
+   "notes": "Only CRS IF13024 (2025-06) mentions NCEI: passback 'proposes decreases for certain offices and programs within NESDIS, such as the National Centers for Environmental Information.' No GHCN in any CRS file. No new CRS search run (time).",
+   "from": "sa1",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI GHCNd budget cut 2026 NOAA climate data products terminated",
+   "tool": "WebSearch",
+   "notes": "Follow-up. No GHCNd-specific item; Billion-Dollar Disasters, snow/ice products, HURSAT-ADT, HPRCC contract lapse (q2 leads, not read).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "WMO budget cuts 2025 staff",
+   "tool": "WebSearch",
+   "notes": "Reuters copy, WMO reorg PDF, Health Policy Watch found",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "WIS2 GTS decommissioning date",
+   "tool": "WebSearch",
+   "notes": "allowed_domains wmo.int; GTS decommission by 2033; EUMETSAT ends satellite data on GTS 14 Jan 2027",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "WMO Executive Council budget 2025 arrears United States contributions",
+   "tool": "WebSearch",
+   "notes": "FINAC-45/46, revised 2026-2027 budget CHF 138,746,200; no US amount in official docs read",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Servicio Meteorológico Nacional despidos 2025",
+   "tool": "WebSearch",
+   "notes": "Spanish; Argentina SMN 2026 layoffs (140) found",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "weather stations closed 2025 meteorological service",
+   "tool": "WebSearch",
+   "notes": "US results only (NWS balloons, FAA METAR outage); no non-US closures",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Servicio Meteorológico Nacional 140 despidos estaciones cierre 2026",
+   "tool": "WebSearch",
+   "notes": "La Capital, legislative declaration (night coverage lost at dozens of stations from 17 Apr 2026), DNU 274/2026",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "global surface observations decline 2025 data gaps WMO",
+   "tool": "WebSearch",
+   "notes": "GCOS COP30 statement, WMO 'Closing the gap'",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "station data decline GHCN 2025 study",
+   "tool": "WebSearch",
+   "notes": "Moyhu blog, Futura Sciences (Berkeley Earth GHCN-M halved); no peer-reviewed study",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "WMO WDQMS 2025 SYNOP CLIMAT reports received decline",
+   "tool": "WebSearch",
+   "notes": "GCOS RA VI 2025 Lead Centre report found; no global 2025 decline figure",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Environment Canada climate data daily discontinued 2024 Datamart change",
+   "tool": "WebSearch",
+   "notes": "Coordinator asked WHY ECCC feed stopped 2024-04-28; only Datamart daily-file restructuring (announced 2024-10-11, done 2025-03-12) found",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Environment Canada daily climate data NOAA GHCN exchange interrupted 2024",
+   "tool": "WebSearch",
+   "notes": "no ECCC statement about NCEI feed found",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ECA&D funding Copernicus 2025 KNMI",
+   "tool": "WebSearch",
+   "notes": "nothing on ECA&D funding",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ECA&D European Climate Assessment Dataset 2025 update funding",
+   "tool": "WebSearch",
+   "notes": "ECA&D site current to 2026-10-31",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "United States withdraw WMO 2026",
+   "tool": "WebSearch",
+   "notes": "results only about WHO withdrawal 2026-01-22",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "January 2026 executive order withdraw 66 international organizations list World Meteorological Organization",
+   "tool": "WebSearch",
+   "notes": "led to White House memo; WMO not listed",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Environment and Climate Change Canada weather stations cuts 2025 spending review",
+   "tool": "WebSearch",
+   "notes": "ECCC planned spending falls to about $1.54B by 2027-28; CCA report; no station closures found",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Bureau of Meteorology weather station closures 2025",
+   "tool": "WebSearch",
+   "notes": "only local closures (Yanakie, Ocean Reef, Kanagulk third-party); no network cut",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SOFF funding shortfall 2025 observations GBON",
+   "tool": "WebSearch",
+   "notes": "SOFF 2025 report read",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Sudan Ukraine weather stations lost war data exchange WMO 2025",
+   "tool": "WebSearch",
+   "notes": "Sudan SMA premises inaccessible since 15 Apr 2023 (WMO article, not read); nothing on Ukraine",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Met Office weather stations closed 2025 cuts",
+   "tool": "WebSearch",
+   "notes": "no Met Office network cuts; DataPoint retired 2025-12-01 (data service)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://www.whitehouse.gov/presidential-actions/2026/01/withdrawing-the-united-states-from-international-organizations-conventions-and-treaties-that-are-contrary-to-the-interests-of-the-united-states/",
+   "tool": "WebFetch",
+   "notes": "read the memo list directly to check for WMO",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GHCN-Daily Canada stations missing 2024 Environment Canada feed",
+   "tool": "WebSearch",
+   "notes": "no explanation of 2024-04-28 stop found",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "INMET estações meteorológicas cortes orçamento 2025",
+   "tool": "WebSearch",
+   "notes": "Portuguese; Brazil INMET 2024 union cut claims (budget R$29.1M in 2020 vs R$11.5M) and 2025 expansion (98 + 220 new stations); not read",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://wmo.int/node/27060",
+   "tool": "WebFetch",
+   "notes": "Sudan SMA article",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Berkeley Earth GHCN station data loss 2025 NOAA",
+   "tool": "WebSearch",
+   "notes": "Berkeley Earth Sept/Oct 2025 updates; HadISD blog: ISD stopped updating 29 Aug 2025 (not read)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://rest.hcdn.gob.ar/web/proyectos/291763/adjuntos/105639",
+   "tool": "WebFetch",
+   "notes": "second try: ETIMEDOUT; Wayback via WebFetch: unable to fetch from web.archive.org",
+   "from": "sa4",
+   "copy_of": "https://rest.hcdn.gob.ar/web/proyectos/291763/adjuntos/105639"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://berkeleyearth.org/october-2025-temperature-update/",
+   "tool": "WebFetch",
+   "notes": "read",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://hadisd.blogspot.com/2025/09",
+   "tool": "WebFetch",
+   "notes": "read",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://wmo.int/site/world-meteorological-day-2026/closing-gap-observations",
+   "tool": "WebFetch",
+   "notes": "read",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "MSC Datamart climate observations daily April 2024 change announcement",
+   "tool": "WebSearch",
+   "notes": "no April 2024 climate-observation notice; only CanSIPS notice of 2024-04-19 and a Dec 2024 Datamart tree structure update (not read)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCN-Daily discontinued 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c4; no retirement notice found; ISD (not GHCN-Daily) services retirement date July 31, 2026 per search summary",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FY2027 NOAA appropriations NCEI final",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c1/c2; no enacted FY2027 figure; follow-up CJS appropriations FY2027 enacted NOAA December 2026 also found nothing enacted (CR to December 11)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWS COOP network decision 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c7; no decision or award found; samsearch.co lists 1305M2-COOP as Closed Solicitation",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Environment Canada GHCN daily data 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c10; nothing on the GHCN feed. Also ran United States withdraw WMO 2026 for c11: results only about WHO withdrawal, nothing on WMO",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Berkeley Earth GHCN NOAA data restored 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c5; no restoration announcement; latest Berkeley update found is March 2026. Also ran NCEI GHCN-Daily status update November 2026 (allowed_domains ncei.noaa.gov): only directory indexes stamped 2026-11-04",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEI GHCN scientists laid off 2025",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c13; no result names GHCN or its maintainers; NOAA-wide firings and about 20 NCEI staff fired or induced to leave per search summary",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI system upgrade in progress September 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov; led to NCEI Alerts page (chk2). Earlier checker searches: ECA&D data update stopped 2026 (nothing on ECA&D), WMO budget cuts global observing data exchange 2026 (Reuters Oct 2025 via reprints: WMO envisages cutting 26 posts; no data-exchange cut found), Synoptic Summary of the Day SSOD NCEI 2026 problems (no outage reports)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA FY2026 spend plan NCEI funds withheld",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for c2 (FY2026 enacted 69.0M actually reaching NCEI); nothing NCEI-specific; CRS IF13024 says it is unclear if NOAA submitted a spend plan; OMB withholding of NOAA funds reported generally (sej.org, savingseafood.org snippets, unread)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GHCN NOAA climate data stations missing 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode; checker news counter-search for c13; only wetterdienst GitHub issues on GHCN-Daily station-list defects (147 stations with no inventory line; sign errors; -999.9 elevations), no news naming GHCN maintainers",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser: journals.ametsoc.org Menne 2012 JTECH page",
+   "tool": "lookup (browser)",
+   "notes": "HTTP 403 in the browser",
+   "copy_of": "https://journals.ametsoc.org/view/journals/atot/29/7/jtech-d-11-00103_1.xml"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser: riverside.com NCEI task order page",
+   "tool": "lookup (browser)",
+   "notes": "HTTP 404",
+   "copy_of": "https://www.riverside.com/noaa-ncei-awards-the-riverside-team-the-follow-on-task-order-providing-science-support-services/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser: Google Slides NCICS presentation",
+   "tool": "lookup (browser)",
+   "notes": "opened; NODD data overview, no GHCN",
+   "copy_of": "https://docs.google.com/presentation/d/1TyaH2Kg9QAPNoj0sYvvqanVdCzgs2yRF/htmlpresent"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://web.archive.org/web/2026/https://app.govly.com/public/opportunities/16692860",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404, no capture",
+   "copy_of": "https://app.govly.com/public/opportunities/16692860"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://web.archive.org/web/2026/https://www.highergov.com/contract-opportunity/national-centers-for-environmental-information-nc-1332kp26r0028-o-686c2/",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404, no capture",
+   "copy_of": "https://www.highergov.com/contract-opportunity/national-centers-for-environmental-information-nc-1332kp26r0028-o-686c2/"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://web.archive.org/web/2026/https://samsearch.co/gov-explore/federal/cooperative-observer-program-coop-network-modernization-management-paradigm-anal/1305M2-COOP",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404, no capture",
+   "copy_of": "https://samsearch.co/gov-explore/federal/cooperative-observer-program-coop-network-modernization-management-paradigm-anal/1305M2-COOP"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser: Tennessee Lookout NOAA budget map article",
+   "tool": "lookup (browser)",
+   "notes": "read; Crossville USCRN station named",
+   "copy_of": "https://tennesseelookout.com/2025/09/30/map-shows-how-trumps-proposed-noaa-budget-cuts-could-affect-tennessee/"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"1305M2-COOP\" sources sought COOP network modernization",
+   "tool": "WebSearch",
+   "notes": "other copies: g2xchange, cleat.ai, fundinglandscape (aggregators); SAM.gov original not in results",
+   "copy_of": "s4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Environment Canada GHCN-Daily feed 2024",
+   "tool": "duckduckgo (browser)",
+   "notes": "only NCEI status.txt and ECCC portal pages; no cause for the 2024 stop"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS NOAA funding 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "NWS recruiting pages and NOAA CJ; no funding change found"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network FY2027 budget terminate",
+   "tool": "duckduckgo (browser)",
+   "notes": "no results"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEI Asheville staff cuts 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "GovExec July 2026 on statistical agencies; nothing on NCEI or GHCN"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI Integrated Surface Database retired GHCNh 2025",
+   "tool": "WebSearch",
+   "notes": "coordinator gap search; led to NCEI OS-upgrade notice (GSOD/ISD end of life Aug 29)"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCN-Daily missing international stations 2025 NOAA",
+   "tool": "WebSearch",
+   "notes": "coordinator, extended mode; only wetterdienst GitHub issues; no NOAA statement"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NOAA FY2026/FY2027 Congressional Justification text naming GHCN or in situ climate data under NCEI",
+   "query": "NOAA budget justification NCEI GHCN",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "US Congress",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "House and Senate CJS report language FY2026/FY2027 on NCEI or climate data",
+   "query": "CJS report NCEI climate data 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "GAO reports 2025-2026 on NCEI, climate data or observing networks",
+   "query": "GAO NOAA climate data 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "Commerce OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "OIG reports on NCEI 2025-2026",
+   "query": "OIG NOAA NCEI audit 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "CISESS / NCICS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "cooperative institute award records staffing NCEI Asheville work",
+   "query": "CISESS cooperative agreement NOAA 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NWS / NOAA",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q3",
+   "aim": "Federal Register notices 2025-2026 on COOP, ASOS or USCRN",
+   "query": "Federal Register Cooperative Observer 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "NCEI notices of changes and product retirements 2025",
+   "query": "NCEI notice of changes retirement 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NCEI",
+   "publisher": "press",
+   "subquestion_id": "q5",
+   "aim": "news on GHCN/NCEI Asheville layoffs and funding 2024-2026",
+   "query": "NCEI Asheville layoffs 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "NWS service change notices on COOP and ASOS 2025-2026",
+   "query": "NWS service change notice COOP 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "CoCoRaHS",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q3",
+   "aim": "CoCoRaHS own announcements on funding 2025-2026",
+   "query": "CoCoRaHS funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "WMO",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "WMO budget, staff cuts, WIS2/GTS transition dates",
+   "query": "WMO budget cuts 2025 staff",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "national meteorological services",
+   "publisher": "press",
+   "subquestion_id": "q4",
+   "aim": "station cuts or layoffs at national weather services 2025-2026",
+   "query": "national weather service station cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NOAA",
+   "publisher": "courts and tribunals",
+   "subquestion_id": "q2",
+   "aim": "lawsuits over NOAA RIFs or data removal naming NCEI",
+   "query": "NOAA reduction in force lawsuit NCEI 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "CRS",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "CRS reports on NOAA FY2026/FY2027 appropriations mentioning NCEI",
+   "query": "CRS NOAA appropriations FY2026 NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "USDA NRCS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "SNOTEL/SCAN cuts or staff losses 2025-2026",
+   "query": "SNOTEL cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r16",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q4",
+   "aim": "studies on declining station data in GHCN or global exchange",
+   "query": "station data decline GHCN 2025",
+   "skip_reason": null
+  }
+ ],
+ "entities": []
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dataset web research — Precipitation Workshop Datasets</title>
+  <link rel="stylesheet" href="assets/dashboard/dashboard.css">
+</head>
+
+<body>
+
+<main class="dashboard">
+
+  <!-- HEADER (filled in by dataset.js) -->
+  <header class="dashboard-header archive-header">
+    <div class="header-top">
+      <a class="back-link" id="backLink" href="index.html">
+        <span aria-hidden="true">←</span> Back to dashboard
+      </a>
+      <span class="header-label" id="kindLabel">Precipitation workshop / Dataset</span>
+    </div>
+
+    <h1 class="dashboard-title" id="pageTitle">Dataset web research</h1>
+
+    <p class="dashboard-description" id="pageSubtitle"></p>
+
+    <div class="header-divider"></div>
+
+    <div class="header-meta">
+      <span id="pageMeta"></span>
+    </div>
+  </header>
+
+  <!-- SEARCH: this dataset's research only (dataset-search.js) -->
+  <div class="search-container" role="search">
+    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" />
+      <line x1="16.5" y1="16.5" x2="21" y2="21" />
+    </svg>
+    <label for="researchSearch" class="visually-hidden">Search this dataset's web research</label>
+    <input
+      type="search"
+      id="researchSearch"
+      class="search-input"
+      placeholder="Search this dataset's web research…"
+      autocomplete="off"
+    >
+  </div>
+  <p class="visually-hidden" id="searchStatus" role="status" aria-live="polite"></p>
+
+  <div class="content-panel archive-panel">
+    <div id="searchResults" hidden></div>
+    <div id="pageContent">
+      <p class="status-message">Loading…</p>
+    </div>
+  </div>
+
+  <footer class="dashboard-footer">
+    PRECIPITATION WORKSHOP — 2026
+  </footer>
+
+</main>
+
+<script src="assets/dashboard/shared.js"></script>
+<script src="assets/dashboard/markdown.js"></script>
+<script src="assets/dashboard/dataset-search.js"></script>
+<script src="assets/dashboard/dataset.js"></script>
+
+</body>
+</html>

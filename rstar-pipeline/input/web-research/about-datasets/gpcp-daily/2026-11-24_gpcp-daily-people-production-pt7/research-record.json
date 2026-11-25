@@ -1,0 +1,2585 @@
+{
+ "question": "Who are the people critical to producing GPCP Daily (1DD V1.3 and V3.x daily) now, how close is each to retirement, and who runs and pays for each version's production, on what computers? (Part 7, building on runs pt1-pt6)",
+ "tier": "deep",
+ "tier_reason": "deep: restructuring (GSFC science-support contract moved from SSAI to STC) and cuts found by earlier runs; user budget 40 min / 320k tokens",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Adler, Huffman, Behrangi, Gu: role, activity, ORCID, earliest publication, first GPCP year, estimated age, FERS eligibility",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s3",
+    "s4",
+    "s8",
+    "s6",
+    "s11",
+    "s13",
+    "s15",
+    "s16",
+    "s17",
+    "s21",
+    "s20",
+    "s26",
+    "s101"
+   ],
+   "remaining_gap": "No second source for Huffman's 2012 federal start; Gu's title and whether his 1994 work is his are unconfirmed; ages are estimates."
+  },
+  {
+   "id": "q2",
+   "question": "Bolvin, Nelkin, Wang, Sapiano; team size; succession and knowledge-transfer plan; NOAA CDR R2O requirements",
+   "status": "answered",
+   "source_ids": [
+    "s53",
+    "s54",
+    "s43",
+    "s44",
+    "s45",
+    "s46",
+    "s47",
+    "s40",
+    "s41",
+    "s52",
+    "s48",
+    "s56",
+    "s49",
+    "s51"
+   ],
+   "remaining_gap": "Wang's current employer and ORCID not found; no team size or succession plan published; maturity ratings for GPCP Daily are shading in a PDF (not read)."
+  },
+  {
+   "id": "q3",
+   "question": "Who computes NCEI's V3.3 CDR copy and V1.3, on what machines; NCCS or workstations; code sharing; V1.3 end; V3.3 restart",
+   "status": "uncertain",
+   "source_ids": [
+    "s34",
+    "s35",
+    "s1",
+    "s33",
+    "s37",
+    "s38",
+    "s103",
+    "s49",
+    "s28"
+   ],
+   "remaining_gap": "No source names the computers for either version; no V1.3 end date; no formal restart notice; no statement on sharing V3.x code."
+  },
+  {
+   "id": "q4",
+   "question": "Contract paying Bolvin and Nelkin; Behrangi's 2022 MEaSUREs award number and end; GPCP share of CISESS NA24NESX432C0001",
+   "status": "uncertain",
+   "source_ids": [
+    "s53",
+    "s54",
+    "s30",
+    "s101",
+    "s102",
+    "s32"
+   ],
+   "remaining_gap": "MEaSUREs award number not found (end about 2028 from a UA handbook only); no document ties Bolvin and Nelkin to the ATMOS contract by name; no GPCP share of CISESS published."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NASA GSFC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GSFC staff biographies of the GPCP team",
+   "query": "George Huffman Goddard 612 biography",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "UMD ESSIC/CISESS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "ESSIC/CISESS staff pages",
+   "query": "Guojun Gu ESSIC GPCP",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": null,
+   "publisher": "researchers (ORCID, OpenAlex registries)",
+   "subquestion_id": "q1",
+   "aim": "ORCID and OpenAlex author records",
+   "query": "OpenAlex/ORCID lookups per person",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA CDR Program",
+   "publisher": "regulators, standards bodies",
+   "subquestion_id": "q2",
+   "aim": "CDR Program R2O transition procedures",
+   "query": "NOAA CDR program research to operations transition requirements",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "GPCP Daily CDR documentation package",
+   "query": "GPCP daily CDR C-ATBD NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NASA GES DISC / NCCS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "processing location and V3.3 restart notices",
+   "query": "GPCP V3.3 GES DISC processing restart 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NASA",
+   "publisher": "funders (award records)",
+   "subquestion_id": "q4",
+   "aim": "Behrangi's MEaSUREs award record",
+   "query": "Behrangi MEaSUREs GPCP award 80NSSC",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NASA GSFC",
+   "publisher": "mandatory filings (contract awards)",
+   "subquestion_id": "q4",
+   "aim": "STC's GSFC atmospheres support contract",
+   "query": "Science and Technology Corporation Goddard Earth science support contract",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA",
+   "publisher": "funders (award records)",
+   "subquestion_id": "q4",
+   "aim": "CISESS NA24NESX432C0001 subawards and GPCP share",
+   "query": "USAspending NA24NESX432C0001 lookup",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NASA / NOAA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "OIG/GAO reports on GPCP staffing",
+   "query": null,
+   "skip_reason": "Earlier runs (pt4, A2) searched oversight reports on cuts; the user asked to leave cuts and news to them, and no OIG/GAO report on a single product team's staffing is expected."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/george.j.huffman",
+   "fetched_url": null,
+   "title": "George J Huffman - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (mentions IMERG V08 'slated to begin production in late 2026')",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa1/huffman_gsfc_bio.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Self-maintained bio, undated; still says V3.2 is current. Retirement plans NOT PRESENT. ORCID NOT PRESENT on page.",
+   "found_by": [
+    "sa1",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://api.openalex.org/authors?search=George%20J.%20Huffman",
+   "fetched_url": null,
+   "title": "OpenAlex author search: George J. Huffman",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_authors_huffman.json",
+   "retrieved": "2026-11-24",
+   "limitations": "last_known_institutions list is noisy (GISS, USGS, MSFC); ORCID public record lists no employments (pub.orcid.org employments element empty), so second-source check of the ORCID is OpenAlex only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://api.openalex.org/works?filter=author.id:A5091084750&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works of A5091084750 (Huffman), oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_huffman_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Authorship of the 1980 paper not checked beyond topic fit (cumulus modeling, MIT PhD era).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://api.openalex.org/works?filter=author.id:A5091084750,title.search:Global%20Precipitation%20Climatology%20Project&sort=publication_year:asc",
+   "fetched_url": null,
+   "title": "OpenAlex: Huffman works with 'Global Precipitation Climatology Project' in title, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_huffman_gpcp_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Title search only; GSFC bio says he 'produced GPCP and Pathfinder data sets using SGM concepts' in 1991-1993 work, so GPCP involvement predates 1997.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://api.openalex.org/authors?search=Robert%20F.%20Adler",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Robert F. Adler",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_authors_adler.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Merged/split profiles; the ORCID 0009-0006-7323-9516 belongs to a different (SUNY Downstate) Robert Adler, not checked further.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-6945-8242/record",
+   "fetched_url": null,
+   "title": "ORCID public record 0000-0002-6945-8242",
+   "author_org": "ORCID",
+   "published": "record created 2018-03-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_adler_record.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Family name not public on ORCID; identification rests on the works list.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://api.openalex.org/works?filter=author.id:A5105879339&sort=publication_year:asc&per-page=8",
+   "fetched_url": null,
+   "title": "OpenAlex works of A5105879339 (Robert F. Adler, merged), oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_adler_suny_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Authorship of the 1973 work inferred from topic only; not opened.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://api.openalex.org/works?filter=author.id:A5113915536&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works of A5113915536 (Robert F. Adler, ESSIC), oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_adler_essic_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Split profile; earlier works sit in A5105879339.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://api.openalex.org/authors?search=Ali%20Behrangi",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Ali Behrangi",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_authors_behrangi.json",
+   "retrieved": "2026-11-24",
+   "limitations": "ORCID check from work/raw/sa1/orcid_behrangi_person.notjson.txt: given-names Ali, family-name Behrangi.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-7594-8793/person",
+   "fetched_url": null,
+   "title": "ORCID public person record 0000-0001-7594-8793",
+   "author_org": "ORCID",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_behrangi_person.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://api.openalex.org/works?filter=author.id:A5063210465&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works of A5063210465 (Behrangi), oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_behrangi_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "OpenAlex coverage of pre-2007 conference items may be incomplete.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://api.openalex.org/works?filter=author.id:A5063210465,title.search:GPCP&sort=publication_year:asc",
+   "fetched_url": null,
+   "title": "OpenAlex: Behrangi works with GPCP in title, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_behrangi_gpcp_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Title search only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://water.arizona.edu/person/ali-behrangi",
+   "fetched_url": null,
+   "title": "Ali Behrangi | Water (University of Arizona)",
+   "author_org": "University of Arizona",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ua_water_behrangi.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated self-description.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://api.openalex.org/authors?search=Guojun%20Gu",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Guojun Gu",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_authors_gu.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Second small profile A5025403807 'GU Guojun' (3 works, no ORCID) not checked.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-6219-8006/person",
+   "fetched_url": null,
+   "title": "ORCID public person record 0000-0001-6219-8006",
+   "author_org": "ORCID",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_gu_person.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://api.openalex.org/works?filter=author.id:A5041338380&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works of A5041338380 (Gu), oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_gu_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "1994 work authorship not verified (could be a merged namesake).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://api.openalex.org/works?filter=author.id:A5041338380,title.search:GPCP&sort=publication_year:asc",
+   "fetched_url": null,
+   "title": "OpenAlex: Gu works with GPCP in title, oldest first",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_gu_gpcp_asc.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Title search only; 2005 item may be a conference abstract.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://cisess.umd.edu/meet-our-scientists/guojun-gu/",
+   "fetched_url": null,
+   "title": "Guojun Gu | CICS-MD",
+   "author_org": "UMD CISESS",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_gu.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Old CICS-MD branded page; no dates, no title.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://essic.umd.edu/review-of-global-precipitation-for-2025/",
+   "fetched_url": null,
+   "title": "Review of Global Precipitation for 2025 (ESSIC)",
+   "author_org": "UMD ESSIC",
+   "published": "2026-01-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/essic_review_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Titles of Adler and Gu NOT PRESENT here; emeritus status NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/",
+   "fetched_url": null,
+   "title": "GPCP V3.3 Monthly ATBD (rev. June 12, 2026)",
+   "author_org": "NASA GSFC / GES DISC",
+   "published": "2026-06-12 (latest revision)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_v33_monthly_atbd.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Exact docserver file URL as in pt6 record; monthly ATBD, not daily.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://essic.umd.edu/global-precipitation-summary-for-october-2026/",
+   "fetched_url": null,
+   "title": "Global Precipitation Summary for October 2026 - ESSIC",
+   "author_org": "UMD ESSIC",
+   "published": "2026-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/essic_summary_oct2026.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Titles, emeritus status, successor NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s22",
+   "url": "https://essic.umd.edu/global-precipitation-summary-for-july-2026/",
+   "fetched_url": null,
+   "title": "Global Precipitation Summary for July 2026 - ESSIC",
+   "author_org": "UMD ESSIC",
+   "published": "2026-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/essic_p27987.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Emeritus status NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://pub.orcid.org/v3.0/0000-0003-3858-8308/employments",
+   "fetched_url": null,
+   "title": "ORCID public employments 0000-0003-3858-8308 (Huffman)",
+   "author_org": "ORCID",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_huffman_employments.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Empty record; employment history NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://science.gsfc.nasa.gov/awardee/12222/",
+   "fetched_url": null,
+   "title": "George J Huffman profile (GSFC awardee page)",
+   "author_org": "NASA GSFC",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "WebFetch extraction only, no local copy (fetch_page.py refused the http redirect); same bio system as sa1-e1, so not an independent second source for the 2012 federal entry.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://essic.umd.edu/people/faculty-bio/?id=1",
+   "fetched_url": null,
+   "title": "Faculty Bio - ESSIC (Robert Adler)",
+   "author_org": "UMD ESSIC",
+   "published": "page footer: Last Updated 24 November 2026 (site-wide footer)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "WebFetch extraction only; local copy lacks the JS content. The Last Updated date looks like a site-wide footer, not a record date.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://ipwg12.imgw.pl/wp-content/uploads/2026/07/S3.4-BEHRANGI-IPWG2026.pdf",
+   "fetched_url": null,
+   "title": "Behrangi et al., GPCP V3.3 and V4.0, IPWG 2026 slides",
+   "author_org": "University of Arizona / IPWG",
+   "published": "2026-07",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/behrangi_ipwg2026.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Already reported in pt3; included here as the latest (2026) document naming Huffman and Adler as active. Gu not listed as Co-I.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://cisess.umd.edu/people-a/",
+   "fetched_url": null,
+   "title": "People: A | CICS-MD",
+   "author_org": "UMD CISESS (CICS-MD)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_people_a.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Old CICS-MD-branded directory, undated; a people-g page for Gu returned 404.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://deliverables.ceos.org/task_manager/deliverables/890/",
+   "fetched_url": null,
+   "title": "CEOS Deliverables: VC-25-13 GPCP v3.3 release",
+   "author_org": "CEOS (Precipitation Virtual Constellation, P-VC)",
+   "published": "2026-01-21 (created); last updated 2026-03-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ceos_vc2513.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Search-result snippet had said 'Open'/overdue; saved page says Closed. No restart date. Production site and code sharing NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://forum.ecmwf.int/t/new-gpcp-v3-3-dataset-now-available-on-cds/14469",
+   "fetched_url": null,
+   "title": "New GPCP v3.3 dataset now available on CDS (ECMWF Forum)",
+   "author_org": "ECMWF Support (poster 'Michela')",
+   "published": "2025-12-02; follow-up 2026-10-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "Read via WebFetch extraction only (host forum.ecmwf.int refused by sandbox proxy; not .org so no approval asked); no local copy; quotes come from WebFetch's extraction, and the 14 Oct post text was paraphrased apart from the short quotes; exact end month of the 2025 extension NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.highergov.com/idv/80GSFC26D0002",
+   "fetched_url": null,
+   "title": "HigherGov: 80GSFC26D0002 Atmosphere Support (ATMOS) Research and Development Contract",
+   "author_org": "HigherGov (aggregator of FPDS/USAspending data)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "Aggregator, read by WebFetch extraction, no local copy; NASA release gives effective date Nov 3, 2025 vs 11/30/25 here. Confirm on USAspending/SAM.gov. Whether Bolvin/Nelkin moved to STC: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "http://science.gsfc.nasa.gov/earth/mesoscale/localnews/",
+   "fetched_url": null,
+   "title": "Local News - Mesoscale Atmospheric Processes Laboratory (Code 612)",
+   "author_org": "NASA GSFC Code 612",
+   "published": "items 2023-2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "WebFetch extraction only, no local copy; release date is not the restart after the pause.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA24NESX432C0001_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA24NESX432C0001 (CISESS cooperative agreement)",
+   "author_org": "USAspending.gov (US Treasury)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_cisess_award.json.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Subaward list (POST-only endpoint) not read, so no per-project breakdown. Same record as pt4 run, re-fetched today.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpcpday-3.3",
+   "fetched_url": null,
+   "title": "GPCP Precipitation Level 3 Daily 0.5-Degree V3.3 (GPCPDAY) | NASA Earthdata",
+   "author_org": "NASA Earthdata / GES DISC",
+   "published": "2025-02-12 (Published and Updated fields)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa3/earthdata_gpcpday33.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "The page does not date the restart; the extent comes from CMR metadata and the description may be out of date. V1.3 end date: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C01726.xml",
+   "fetched_url": null,
+   "title": "NOAA Climate Data Record (CDR) of the Global Precipitation Climatology Project (GPCP) Daily Version 3.3 (NCEI ISO metadata C01726)",
+   "author_org": "NOAA NCEI",
+   "published": "2025-08-05 (citation date); metadata dateStamp 2026-05-22T20:26:09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa3/ncei_iso_C01726.xml.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "The metadata (last stamped 2026-05-22) still shows Bolvin as SSAI. Machines and code sharing: NOT PRESENT. Explanation of the split: NOT PRESENT.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C00999.xml",
+   "fetched_url": null,
+   "title": "GPCP Climate Data Record (CDR), Version 1.3 (Daily) - NCEI ISO metadata C00999",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (a 2015-04-22 date appears in the record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa3/ncei_iso_C00999.xml.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Machines: NOT PRESENT. The metadata dateStamp was not checked, so it may be out of date.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+   "fetched_url": null,
+   "title": "NCEI CDR product page: Precipitation - GPCP Daily",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "WebFetch extraction only, no local copy; the tarball was not opened, so its version and date are not confirmed here.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPCPDAY&version=3.3&sort_key=-start_date&page_size=2",
+   "fetched_url": null,
+   "title": "NASA CMR granule search: latest GPCPDAY V3.3 granules",
+   "author_org": "NASA EOSDIS Common Metadata Repository",
+   "published": "query run 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cmr_gpcpday33_latest.json.json",
+   "retrieved": "2026-11-24",
+   "limitations": "The CMR updated field is the metadata update time, not necessarily the production date.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPCPDAY&version=3.3&temporal=2024-10-01T00:00:00Z,2024-10-02T00:00:00Z&page_size=2",
+   "fetched_url": null,
+   "title": "NASA CMR granule search: first post-pause GPCPDAY V3.3 granules (Oct 2024)",
+   "author_org": "NASA EOSDIS Common Metadata Repository",
+   "published": "query run 2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cmr_gpcpday33_202410.json.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Metadata update times, not a production log; a granule could have been re-ingested after its first release. No GES DISC notice found.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/",
+   "fetched_url": null,
+   "title": "Index of /data/global-precipitation-climatology-project-gpcp-daily/access/ (NCEI GPCP Daily V1.3 CDR files)",
+   "author_org": "NOAA NCEI",
+   "published": "directory listing, latest entry 2026-11-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_gpcp_daily_access.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Folder modification times only; the files inside and their version label were not listed in the time available.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-6938-6683/employments",
+   "fetched_url": null,
+   "title": "ORCID public record 0000-0001-6938-6683 (Mathew Sapiano), employments",
+   "author_org": "ORCID (self-asserted by record holder)",
+   "published": "2019-10-09 (last modified)",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_sapiano/2b548884bae0dcba.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Self-asserted, last modified 2019-10-09; does not list earlier UMD employment; C00999 (2017) still names him as V1.3 collaborator, so metadata may be stale or he remained nominally attached.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://api.openalex.org/authors?search=Mathew%20Sapiano",
+   "fetched_url": null,
+   "title": "OpenAlex author record A5071713826 Mathew R. P. Sapiano",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_sapiano.json/db8ce3cef70c11a8.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Profile merges climate (2005-2015) and public-health (2016-) works under one ORCID; the ORCID ties them, so likely the same person.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://api.openalex.org/works?filter=author.id:A5071713826&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works of Mathew R. P. Sapiano",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_sapiano/79d47ce11eb2f460.json",
+   "retrieved": "2026-11-24",
+   "limitations": "First GPCP co-authorship year not established here.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://pub.orcid.org/v3.0/0000-0003-1689-7767/employments",
+   "fetched_url": null,
+   "title": "ORCID public record 0000-0003-1689-7767 (David Bolvin), employments",
+   "author_org": "ORCID (self-asserted by record holder)",
+   "published": "2019-09-13 (last modified)",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_bolvin/f1bca405fa1295ef.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Self-asserted, last modified 2019-09-13; any 2025-26 move to STC would not show.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://api.openalex.org/authors?search=Bolvin",
+   "fetched_url": null,
+   "title": "OpenAlex author record A5048740426 David T. Bolvin",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_bolvin/ac4dae696284b105.json",
+   "retrieved": "2026-11-24",
+   "limitations": "OpenAlex institution tags (e.g. Marshall Space Flight Center 2023) are machine-assigned and unreliable.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s45",
+   "url": "https://api.openalex.org/works?filter=author.id:A5048740426&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works of David T. Bolvin",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_bolvin/f12c01844e583db0.json",
+   "retrieved": "2026-11-24",
+   "limitations": "First GPCP paper not identified here; earlier runs may hold it.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://api.openalex.org/authors?search=Eric%20Nelkin",
+   "fetched_url": null,
+   "title": "OpenAlex author record A5007206904 Eric J. Nelkin",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_nelkin.json/9ff53c5dea7ccd89.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Did not check orcid.org search directly.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s47",
+   "url": "https://api.openalex.org/works?filter=author.id:A5007206904&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works of Eric J. Nelkin",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_nelkin/1bd1b81016c27e8b.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Only first 5 works checked; earlier GPCP co-authorship (e.g. Huffman et al. 1997 GPCP combined dataset) not checked here.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s48",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/Guidelines/Transitioning_CDRs_from_R2O.pdf",
+   "fetched_url": null,
+   "title": "Transitioning CDRs from Research to Operations (R2O), CDRP-PLAN-0017 Rev 2",
+   "author_org": "NOAA NCDC/NCEI Climate Data Record Program",
+   "published": "2014-03-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/transitioning_cdrs_r2o.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Generic program document (2014), not GPCP-specific; no succession/staffing requirement found in sections read; Appendix F (ORR) not read.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: NOAA CDR Program (all CDRs)"
+  },
+  {
+   "id": "s49",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/",
+   "author_org": "NOAA NCEI",
+   "published": "directory last modified 2024-04-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_gpcp_daily_dir.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Did not download tarball; 01B-35 assumed V1.3 from C-ATBD date. Parent CDRs/ listing shows only Precipitation_GPCP-Daily/ and Precipitation_GPCP-Monthly/ for GPCP, no V3 folder.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s50",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/sds/cdr/CDRs/",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-24 (listing)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_cdrs_dir.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "V3.3 docs could be elsewhere at NCEI.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s51",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/MaturityMatrix_01B-35.pdf",
+   "fetched_url": null,
+   "title": "CDR Maturity Matrix, Precipitation - GPCP Daily, CDRP-MM-0915 Rev 0",
+   "author_org": "NOAA NCEI CDR Program",
+   "published": "2017-08-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/maturity_matrix_01b35.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "The PDF marks the achieved level per column by shading; pdftotext loses it, so GPCP Daily actual ratings are NOT read. Coordinator could view the PDF.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://climatedataguide.ucar.edu/experts/jian-jian-wang",
+   "fetched_url": null,
+   "title": "Wang, Jian-Jian | Climate Data Guide",
+   "author_org": "NCAR/UCAR Climate Data Guide",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdg_wang.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated; no ORCID; no current title.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://science.gsfc.nasa.gov/earth/bio/eric.j.nelkin",
+   "fetched_url": null,
+   "title": "Eric J Nelkin - NASA Sciences and Exploration Directorate (GSFC staff page)",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa2/gsfc_bio_nelkin.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated page; STC start date NOT PRESENT; ORCID NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s54",
+   "url": "https://science.gsfc.nasa.gov/earth/bio/david.t.bolvin",
+   "fetched_url": null,
+   "title": "David T Bolvin - NASA Sciences and Exploration Directorate (GSFC staff page)",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa2/gsfc_bio_bolvin.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated; GPCP role NOT PRESENT on page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s55",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/DataFlowDiagram_01B-35.pdf",
+   "fetched_url": null,
+   "title": "GPCP Daily Analysis (V1.3) Data Flow Diagram, CDRP-DIA-0914 Rev 0",
+   "author_org": "NOAA NCEI CDR Program",
+   "published": "2017-08-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/dataflow_01b35.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Diagram only; no names or computers.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/Guidelines/IOC_to_FOC_Transition.pdf",
+   "fetched_url": null,
+   "title": "IOC to FOC Process, CDRP-PRCS-0001 Version 1.0",
+   "author_org": "NOAA NCDC Climate Data Record Program",
+   "published": "2011-07-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ioc_to_foc.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2011 doc; not GPCP-specific.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://api.openalex.org/works/doi:10.3390/atmos9040138?select=id,title,publication_year,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex work record: The GPCP Monthly Analysis (New Version 2.3) and a Review of 2017 Global Precipitation (Atmosphere 2018)",
+   "author_org": "OpenAlex",
+   "published": "2018",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "Read via WebFetch extraction (not saved; fetch_json failed on IncompleteRead). The ORCID OpenAlex attaches to Wang belongs to a different person (see sa2-e20).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-8244-0760/employments",
+   "fetched_url": null,
+   "title": "ORCID public record 0000-0001-8244-0760 (Jianjian Wang), employments",
+   "author_org": "ORCID",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_wang/9d014654e0db7f15.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "none",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://api.openalex.org/works?filter=author.id:A5100743391&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works of author A5100743391 (Jianjian Wang)",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_wang_id/cce84dd8e0e9320c.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Merged profile; authorship of the 1994 paper by the same Wang not confirmed from the paper itself.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/MaturityMatrix_01B-35.pdf",
+   "fetched_url": null,
+   "title": "CDR Maturity Matrix, Precipitation - GPCP Daily (original PDF, for visual check of shading)",
+   "author_org": "NOAA NCEI CDR Program",
+   "published": "2017-08-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/maturity_matrix_01b35.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "Ratings not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s61",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/Guidelines/Transitioning_CDRs_from_R2O.pdf",
+   "fetched_url": null,
+   "title": "Transitioning CDRs from R2O, CDRP-PLAN-0017 Rev 2 (original PDF)",
+   "author_org": "NOAA NCDC/NCEI CDR Program",
+   "published": "2014-03-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/transitioning_cdrs_r2o.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "Appendix F needs a visual read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/Guidelines/IOC_to_FOC_Transition.pdf",
+   "fetched_url": null,
+   "title": "IOC to FOC Process, CDRP-PRCS-0001 (original PDF)",
+   "author_org": "NOAA NCDC CDR Program",
+   "published": "2011-07-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ioc_to_foc.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "none",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/DataFlowDiagram_01B-35.pdf",
+   "fetched_url": null,
+   "title": "GPCP Daily Analysis (V1.3) Data Flow Diagram (original PDF)",
+   "author_org": "NOAA NCEI CDR Program",
+   "published": "2017-08-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/dataflow_01b35.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "none",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://api.openalex.org/works?filter=author.id:A5100743391,title_and_abstract.search:precipitation&sort=publication_year:desc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex latest precipitation works of author A5100743391 (Jianjian Wang)",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_wang_latest/d959cb2f14885092.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Merged profile; 2021 item authorship and venue not checked; current employer still NOT FOUND.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s65",
+   "url": "https://api.openalex.org/works?filter=author.id:A5071713826,title_and_abstract.search:precipitation&sort=publication_year:desc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex latest precipitation works of Mathew R. P. Sapiano",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_works_sapiano_latest/4c937e60a9ddb2d9.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Affiliation on 2020/2021 items not checked.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s66",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Nelkin",
+   "fetched_url": null,
+   "title": "ORCID registry expanded search, family-name Nelkin",
+   "author_org": "ORCID",
+   "published": "2026-11-24 (API)",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_search_nelkin/106f1244a5709138.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "A private ORCID record would not appear.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s67",
+   "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-5885.html",
+   "fetched_url": null,
+   "title": "The Newly Released Global Precipitation Climatology Project (GPCP) V3.3 Daily and Monthly Products and the Future Plans (EGU26-5885)",
+   "author_org": "Behrangi et al., EGU General Assembly 2026",
+   "published": "2026 (updated on 13 Mar 2026)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "chk1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/checker/egu26_5885.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Author affiliations in conference abstracts may be out of date; abstract only.",
+   "found_by": [
+    "checker",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s101",
+   "url": "https://has.arizona.edu/news/ali-behrangi-named-principal-investigator-new-3-million-nasa-grant-advance-global",
+   "title": "Ali Behrangi Named Principal Investigator on New $3 Million NASA Grant ...",
+   "author_org": "University of Arizona, Hydrology and Atmospheric Sciences",
+   "published": "2023-07-24",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/has_behrangi_3m_grant.txt",
+   "retrieved": "2026-11-24",
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": "University news item; no award number or end date"
+  },
+  {
+   "id": "s102",
+   "url": "https://has.arizona.edu/sites/default/files/2026-08/ATMO-PhD-Handbook-draft-FINAL_Fall_2026.pdf",
+   "title": "Doctor of Philosophy in Atmospheric Sciences Graduate Student Handbook (Fall 2026, draft final)",
+   "author_org": "University of Arizona, HAS",
+   "published": "2026-08",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/ua_atmo_phd_handbook_2026.txt",
+   "retrieved": "2026-11-24",
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": "Recruiting text in a student handbook; gives a span, not an award record"
+  },
+  {
+   "id": "s103",
+   "url": "https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/2026/",
+   "title": "Index of /data/global-precipitation-climatology-project-gpcp-daily/access/2026/",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/ncei_gpcp_daily_access_2026.txt",
+   "retrieved": "2026-11-24",
+   "data_period": "2026-01-01 to 2026-08-31",
+   "evidence_id": null,
+   "limitations": "Directory listing; file names give data date (d) and creation date (c)"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "Huffman moved to GSFC in 1988 as a consultant (SSAI on site 1993-2012) and entered federal service in September 2012; he is Supervisory Research Physical Scientist (from 2019). His earliest OpenAlex work is 1980 (BS 1976, PhD 1982), so his estimated age is about 71-76 and he is very likely already FERS-eligible (age 62 with 5 years' service).",
+   "importance": "central",
+   "applicability": "Age is an estimate from publication and degree years",
+   "confidence": "moderate",
+   "confidence_reason": "Bio is NASA's own; age inferred; no second source for the 2012 start",
+   "figure_status": "estimate",
+   "sole_source_reason": "NASA's own staff biography is the authority for his NASA employment dates",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "moved to GSFC in 1988, where he consulted until entering government service in 2012",
+     "location": "biography"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "These are computed at Goddard and archived in the Goddard Earth Sciences Data and Information Services Center (GES DISC).",
+     "location": "biography, GPCP paragraph"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "\"title\": \"A Stochastic Model of Cumulus Clumping\", | \"publication_year\": 1980 | \"title\": \"A cumulus ensemble model with simple mesoscale structure\", | \"publication_year\": 1982",
+     "location": "results[0], results[1]"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "Adler is a UMD ESSIC research scientist (no emeritus label), still co-authoring GPCP monthly summaries in 2026; earliest work fitting him is 1973, giving an estimated age of about 78-83; no federal rule applies now.",
+   "importance": "central",
+   "applicability": "Age is an estimate; the 1973 item is in a split OpenAlex profile (A5105879339) that also holds another person's 1963 work; the ESSIC profile starts 1981",
+   "confidence": "moderate",
+   "confidence_reason": "Activity from ESSIC's own pages; OpenAlex profile split, earliest work checked by topic",
+   "evidence": [
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "- Robert Adler & Guojun Gu | - November 12, 2026 | This global precipitation summary is based on V3.2 of the Monthly Global Precipitation Climatology Project (GPCP) product",
+     "location": "byline; data note"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "He has also led, and is still involved with, the Global Precipitation Climatology Project (GPCP) … Dr. Adler has published over 180 papers in scientific journals on these topics. … He received his B.S. and M.S. from Penn State and his Ph.D. from Colorado State University. | Dr. Gu has published over 60 papers in the field. He received his B.S. from Nanjing University and his Ph.D. from University of Miami.",
+     "location": "lines 73 and 77"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "\"title\": \"Mean meridional circulation in the Southern Hemisphere stratosphere during the polar night\", | \"publication_year\": 1973",
+     "location": "OpenAlex works of A5105879339, item 2"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "contextualizes",
+     "passage": "\"title\": \"Summary of requirements and recommendations\", | \"publication_year\": 1981 | \"title\": \"Regional Rainfall Climatologies Derived from Special Sensor Microwave Imager (SSM/I) Data\", | \"publication_year\": 1994",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "<common:created-date>2018-03-14T14:09:17.023Z</common:created-date> | <personal-details:given-names>Robert</personal-details:given-names> | <common:title>Satellite observed trends of global mean net atmospheric shortwave and longwave irradiances and diabatic heating by precipitation</common:title> | <common:year>2025</common:year> | <work:journal-title>Science Advances</work:journal-title> | <common:title>Global Precipitation for the Year 2023 and How It Relates to Longer Term Variations and Trends</common:title> | <common:year>2024</common:year> | <work:journal-title>Atmosphere</work:journal-title>",
+     "location": "person; works"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "text": "Behrangi (UA professor, GPCP PI since 2017, earliest publications 2007) was selected in July 2023 as PI of a $3M NASA award to develop GPCP V4 for 5 more years; a UA handbook dates the NASA support 2017-2028. Estimated age about 44-49.",
+   "importance": "central",
+   "applicability": "Award number not found; 2028 end from a handbook, not an award record",
+   "confidence": "moderate",
+   "confidence_reason": "University's own pages; no NASA award record found",
+   "figure_status": [
+    "obligation",
+    "estimate"
+   ],
+   "evidence": [
+    {
+     "source_id": "s101",
+     "relationship": "supports",
+     "passage": "selected as the principal investigator on a $3 million NASA award to lead efforts on developing the next generation Global Precipitation Climatology Project (GPCP) for 5 more years",
+     "location": "para 1"
+    },
+    {
+     "source_id": "s102",
+     "relationship": "supports",
+     "passage": "Precipitation Climatology Project (GPCP) product under NASA support (2017-2028)",
+     "location": "p. 4 (faculty research list)"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "UA Distinguished Scholar and Professor, Hydrology and Atmospheric Sciences | I joined the Department of Hydrology and Atmospheric Sciences at the University of Arizona as an associate professor in January 2018. … As a NASA JPL scientist (2012-2018) … since 2017 I have been the PI for the popular Global Precipitation Climatology Project (GPCP)",
+     "location": "profile text"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "\"title\": \"Delineation of Aerial Extent of Precipitation Using Multi-Spectral Remotely Sensed Data\", | \"publication_year\": 2007, | \"raw_source_name\": \"AGU Fall Meeting Abstracts\", | \"title\": \"Comment on “Dynamically dimensioned search algorithm for computationally efficient watershed model calibration” by Bryan A. Tolson and Christine A. Shoemaker\", | \"publication_year\": 2008,",
+     "location": "results[0], results[4]"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "Bolvin and Nelkin are now listed on GSFC staff pages with employer Science and Technology Corp, Org Code 613; STC holds GSFC's Atmosphere Support (ATMOS) contract IDV 80GSFC26D0002 (start Nov 2025, ordering to Dec 2030), the likely vehicle, though no document names them on it.",
+   "importance": "central",
+   "applicability": "Contract link inferred from employer and contract scope; EGU26-5885 (updated 13 Mar 2026) still gives Nelkin as SSAI, so the move dates from after early 2026 or the abstract used an old affiliation",
+   "confidence": "moderate",
+   "confidence_reason": "Employer is on NASA's own pages; contract data from an aggregator (HigherGov) read by extraction",
+   "evidence": [
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "(SR RESEARCH METEOR.) | Org Code: | 613 Climate and Radiation | Address: | NASA/GSFC Mail Code 613 Greenbelt, MD 20771 | Employer: | Science and Technology Corp | David T Bolvin has nothing here yet. Check back soon!",
+     "location": "contact card"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "(SCIENTIST/ENGINEER) | Org Code: | 613 Climate and Radiation | Employer: | Science and Technology Corp | #### GPM - Global Precipitation Measurement | #### GPCP - Global Precipitation Climatology Project | #### American Meteorological Society | 1988 - Present | 2024. \"Oceanic Validation of IMERG-GMI Version 6 Precipitation Using the GPM Validation Network.\"",
+     "location": "contact card, Current Projects, Publications"
+    },
+    {
+     "source_id": "s67",
+     "relationship": "contradicts",
+     "passage": "Ali Behrangi1, George Huffman2, Robert F. Adler3, Yang Song1, K. Kingsley Kumah1, David T. Bolvin2, Eric J. Nelkin4, and Guojun Gu3 | - 4Science Systems and Applications, Inc., Lanham, Maryland | The latest release, Version 3.3 of the GPCP Daily (1998–2024) and Monthly (1983–2024) products, issued in February 2025, represents the final generation before the transition to GPCP Version 4.",
+     "location": "author list, affiliations, abstract para 1"
+    },
+    {
+     "source_id": "s67",
+     "relationship": "contradicts",
+     "passage": "Ali Behrangi1, George Huffman2, Robert F. Adler3, Yang Song1, K. Kingsley Kumah1, David T. Bolvin2, Eric J. Nelkin4, and Guojun Gu3 | 1University of Arizona, Tucson, AZ, USA | 2NASA Goddard Space Flight Center, Greenbelt, MD, USA | 3University of Maryland, College Park, MD, USA | 4Science Systems and Applications, Inc., Lanham, Maryland",
+     "location": "lines 16-23"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "NCEI's own metadata says both GPCP Daily V1.3 and V3.3 are 'currently computed by the University of Maryland and submitted to NCEI', while Huffman's GSFC bio says V3 is 'computed at Goddard'.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Both are the bodies' own records; the conflict is between them",
+   "sole_source_reason": "Each body's own metadata or staff page is the authority for its own statement",
+   "evidence": [
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "The GPCP Daily V3.3 analysis is currently computed by the University of Maryland and submitted to NCEI.",
+     "location": "abstract"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The GPCP Daily V1.3 analysis is currently computed by the University of Maryland and submitted to NCEI. The routine update of the product takes place two months after the end of the month, once all input data sets become available. | codeListValue=\"onGoing\">onGoing</gmd:MD_ProgressCode> | Global Precipitation Climatology Project (GPCP) - Daily, Version 1.2 (Version Superseded) | <gml:endPosition indeterminatePosition=\"now\" />",
+     "location": "lines 396-1801 of saved XML text"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The GPCP Daily V1.3 analysis is currently computed by the University of Maryland and submitted to NCEI. The routine update of the product takes place two months after the end of the month, once all input data sets become available.",
+     "location": "line 396 (abstract)"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "moved to GSFC in 1988, where he consulted until entering government service in 2012",
+     "location": "biography"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "These are computed at Goddard and archived in the Goddard Earth Sciences Data and Information Services Center (GES DISC).",
+     "location": "biography, GPCP paragraph"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "text": "V1.3 production continues: NCEI's 2026 folder holds v01r03 daily files through 2026-08-31, created 2026-11-09; no end date for V1.3 was found.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's own directory listing",
+   "sole_source_reason": "NCEI's own archive listing is the authority for what it holds",
+   "evidence": [
+    {
+     "source_id": "s103",
+     "relationship": "supports",
+     "passage": "gpcp_v01r03_daily_d20260831_c20261109.nc | 2026-11-10 04:18 | 289938",
+     "location": "listing, last row"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The GPCP Daily V1.3 analysis is currently computed by the University of Maryland and submitted to NCEI. The routine update of the product takes place two months after the end of the month, once all input data sets become available. | codeListValue=\"onGoing\">onGoing</gmd:MD_ProgressCode> | Global Precipitation Climatology Project (GPCP) - Daily, Version 1.2 (Version Superseded) | <gml:endPosition indeterminatePosition=\"now\" />",
+     "location": "lines 396-1801 of saved XML text"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The GPCP Daily V1.3 analysis is currently computed by the University of Maryland and submitted to NCEI. The routine update of the product takes place two months after the end of the month, once all input data sets become available.",
+     "location": "line 396 (abstract)"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "text": "V3.3 daily restarted after the September 2024 pause: CMR shows the first post-pause granules updated 2026-02-05 and the latest (2025-12-31) updated 2026-05-01, while the Earthdata page still says products are paused.",
+   "importance": "central",
+   "applicability": "Metadata update times, not a production log",
+   "confidence": "moderate",
+   "confidence_reason": "NASA's own CMR records; no restart notice found",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "\"producer_granule_id\": \"GPCPDAY_L3_20241001_V3.3.nc4\", | \"time_start\": \"2024-10-01T00:00:00.000Z\", | \"updated\": \"2026-02-05T21:20:00.000Z\", | \"producer_granule_id\": \"GPCPDAY_L3_20241002_V3.3.nc4\", | \"time_start\": \"2024-10-02T00:00:00.000Z\", | \"updated\": \"2026-02-05T21:20:00.000Z\",",
+     "location": "granule entries, lines 8-101"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "\"producer_granule_id\": \"GPCPDAY_L3_20251231_V3.3.nc4\", | \"time_start\": \"2025-12-31T00:00:00.000Z\", | \"updated\": \"2026-05-01T16:12:19.000Z\",",
+     "location": "first granule entry, lines 8-13"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "contradicts",
+     "passage": "Product latency/update: The products are currently paused at September 2024 because the IR input dataset from NCEI requires a new calibration scheme to extend past that point.",
+     "location": "product description"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "text": "NOAA's CDR Program R2O rules require the PI to deliver source code, a C-ATBD, data flow diagram and maturity matrix and pass an Operational Readiness Review for IOC; at FOC NCDC/NCEI becomes responsible for generating the CDR. NCEI holds only the 2017 V1.3 package (01B-35, source code tarball), no Operational Algorithm Description and nothing for V3.x.",
+   "importance": "central",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NOAA's own procedures and NCEI's own directory",
+   "figure_status": "actual",
+   "sole_source_reason": "NOAA's own procedure documents and archive listing",
+   "evidence": [
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "A CDR is considered IOC once it has met all the source code, documentation, and data | requirements; is preserved in the NCDC archive; passes an Operational Readiness | Review (ORR) (Appendix F), and is made publicly accessible. The CDR is at a level of | maturity such that all criteria on the Maturity Matrix (Appendix E) are at level 3 or | greater. … The source code will also be accompanied by a README file which provides step by | step instructions on how to setup and run the source code. … An Implementation Plan using the template provided by the CDRP office … Climate Algorithm Theoretical Basis Document (C-ATBD) using the template … Data Flow Diagram outlining the CDR production process (e.g. Appendix D) … Maturity Matrix … In order to | reach IOC, all columns must be rated at a level 3 or above … The Operations Branch team member will enter the CDR source code into the NCDC | version control system.",
+     "location": "sections 1.3, 3.2.1-3.2.4, 3.3.3 (pp. 5, 8-9)"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "Acknowledging there is no ‘end state’ to a climate record, the Operations and | Maintenance (O&M) and FOC processes describe the stewardship that maintains | continuous production and cyclical improvements to a CDR. The guidelines defined in | this document specifically deal only with the IOC processes. … allows for future personnel resource planning when transitioning from IOC to FOC. | When a CDR is selected for FOC transition, any vulnerability that was identified will | need to be fixed before the code can be deployed in the production environment.",
+     "location": "section 1.1 (p.3-4) and 3.3.4 (p.10)"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "NCDC will be responsible for routinely and systematically generating CDR data using | codes and systems that conform to the CDR Programs standards. The actual | production of CDR data may take place within NCDC or at another suitable facility. To | achieve FOC status, the CDR must have achieved maturity level 5 in all categories in … Operations Branch will be responsible for creating the Operational Algorithm Description | (OAD) and will participate in readiness reviews led by the CDR Program.",
+     "location": "section 3.1 and roles section (lines 268-271, 421-422 of txt)"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "AlgorithmDescription_01B-35.pdf | 2017-08-14 13:44 | 308729 | CDR_Flyer_01B-35.pdf | 2019-11-18 10:10 | 1464479 | DataFlowDiagram_01B-35.pdf | 2017-08-14 13:44 | 68368 | MaturityMatrix_01B-35.pdf | 2017-08-14 13:44 | 134161 | SourceCode_01B-35.tar.gz | 2017-09-18 08:45 | 15408824 | UseAgreement_01B-35.pdf | 2017-08-10 14:47 | 22310",
+     "location": "directory listing"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "text": "CISESS agreement NA24NESX432C0001 has $77.5M obligated and 29 subawards ($26.1M), ending 2029-06-30; no GPCP share is published.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "USAspending record",
+   "figure_status": "obligation",
+   "sole_source_reason": "The federal award database is the authority for the award",
+   "evidence": [
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "\"type_description\": \"COOPERATIVE AGREEMENT\", | \"description\": \"THIS PROPOSAL IS FOR THE FIVE-YEAR RENEWAL OF THE COOPERATIVE INSTITUTE FOR SATELLITE EARTH SYSTEM STUDIES (CISESS). | \"subaward_count\": 29, | \"total_subaward_amount\": 26102529.0, | \"total_obligation\": 77486317.0, | \"end_date\": \"2029-06-30\",",
+     "location": "JSON fields lines 8-95"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "text": "STC holds GSFC IDV 80GSFC26D0002, the Atmosphere Support (ATMOS) Research and Development Contract (start 11/30/25, ordering to 12/1/30, ceiling $163.1M, $19,729,764.22 obligated).",
+   "importance": "supporting",
+   "applicability": "Aggregator read by WebFetch extraction; no saved copy; not checked on SAM.gov",
+   "confidence": "moderate",
+   "confidence_reason": "Single aggregator source",
+   "figure_status": [
+    "ceiling",
+    "obligation"
+   ],
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "\"80GSFC26D0002\" | \"Science & Technology Corporation\" | \"Atmosphere Support (ATMOS) Research and Development Contract\" | \"This contract is for the support of the full range of atmospheric science research and development\" | Awarding Office: \"80GSFC NASA GODDARD SPACE FLIGHT CENTER\" | Start Date: \"11/30/25\" | Ordering Period End Date: \"12/1/30\" | Vehicle Ceiling: \"$163,100,000 (12% Used)\" | Total Obligated: \"$19.7M\" | \"Direct Award $19,729,764.22 was obligated directly to this IDV\" | NAICS: \"541715 - Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)\"",
+     "location": "IDV summary fields"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "text": "Sapiano has been a CDC statistician since 2015-11 (last GPCP co-authorship 2021); Wang's latest GPCP paper is 2021 and his current employer was not found.",
+   "importance": "supporting",
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "ORCID checked against OpenAlex for Sapiano; Wang unresolved",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "<common:source-name>Mathew Sapiano</common:source-name> | <common:department-name>Division of HealthCare Quality Promotion</common:department-name> | <common:role-title>Statistician</common:role-title> | <common:year>2015</common:year> | <common:month>11</common:month> | <common:name>Centers for Disease Control and Prevention</common:name> | <common:city>Atlanta</common:city>",
+     "location": "employments XML, lines 16-29"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5071713826\", | \"orcid\": \"https://orcid.org/0000-0001-6938-6683\", | \"display_name\": \"Mathew R. P. Sapiano\", | \"full_name\": \"Mathew Raymond Paul Sapiano\", | \"works_count\": 77, | \"display_name\": \"Centers for Disease Control and Prevention\", | 2025, | 2023, | 2022, | 2021, | 2020, | 2019, | 2018, | 2017, | 2016",
+     "location": "results[0], lines 30-87"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "Dr. Jian-Jian Wang at University of Maryland | … - 1979-01 to 2020-07 | … - Pendergrass, Angeline, Wang, Jian-Jian",
+     "location": "page body"
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Who computes GPCP Daily V3.x",
+   "source_ids": [
+    "s34",
+    "s1"
+   ],
+   "status": "unresolved",
+   "explanation": "NCEI's V3.3 metadata (2026-05-22) says UMD computes it and submits it; Huffman's GSFC bio (written when V3.2 was current) says V3 is computed at Goddard and archived at GES DISC. The NCEI sentence repeats the V1.3 record's wording word for word, so it may be inherited text; the likely reading is that GSFC runs the V3.x code and the UMD/ESSIC group (Adler, Gu, the NOAA CDR PI) is NCEI's producer of record. No source states this."
+  },
+  {
+   "claim": "Who produces 1DD V1.3",
+   "source_ids": [
+    "s35",
+    "s1"
+   ],
+   "status": "unresolved",
+   "explanation": "NCEI's V1.3 record says UMD computes it; Huffman's GSFC job line says he produces the One-Degree Daily and his bio lists himself as lead developer. No source says which machine or group runs the monthly job."
+  },
+  {
+   "claim": "Bolvin's and Nelkin's employer in 2026",
+   "source_ids": [
+    "s54",
+    "s53",
+    "s67"
+   ],
+   "status": "unresolved",
+   "explanation": "GSFC staff pages (retrieved 2026-11-24) give Science and Technology Corp; EGU26-5885 (updated 13 Mar 2026) gives Nelkin as SSAI and Bolvin as NASA GSFC; NCEI's V3.3 metadata gives Bolvin as SSAI. The GSFC pages are the latest; the move date is not published."
+  },
+  {
+   "claim": "Whether V3.3 daily is still paused",
+   "source_ids": [
+    "s33",
+    "s37"
+   ],
+   "status": "resolved",
+   "explanation": "The Earthdata page text still says paused at September 2024, but CMR granules run to 2025-12-31 and the page's own extent ends 2025-12-31; the page text is stale."
+  }
+ ],
+ "coverage_gaps": [
+  "No source names the computers used for V1.3 or V3.x; NCCS hosts only V1.3 technotes on its ESGF node.",
+  "No GPCP team size, succession plan or knowledge-transfer plan is published.",
+  "Behrangi's 2022 MEaSUREs award number not found (USAspending/NSPIRES route not reached).",
+  "No statement found of who would take over any of the four people's GPCP roles (searched ESSIC pages, GSFC bio, UA profile, earlier runs' raw files for retire/succession wording). (from sa1)",
+  "Huffman: no retirement plan or notice found; federal entry 2012 (GSFC bio, Sept 2012) has no independent second source read (mynasadata page 403; ORCID employments empty). Possible lead: NASA NTRS author pages, GSFC awardee page science.gsfc.nasa.gov/awardee/12222 (not read). (from sa1)",
+  "Adler: emeritus/retired status NOT PRESENT in any page read; ESSIC faculty bio (JS) gives title Research Scientist via WebFetch only; search snippets also say Senior Research Scientist. Not federal since 2008. (from sa1)",
+  "Gu: current title not found on an official page (third-party snippet says Associate Research Scientist, not verified). Earliest OpenAlex work 1994 not verified as his; 2001 ITCZ papers fit. (from sa1)",
+  "Behrangi's earliest journal paper before 2007 and earliest GPCP co-authorship beyond the 2018 title search not checked; ATBD/paper co-authorship as first GPCP year may differ from his self-stated GPCP PI start (2017). (from sa1)",
+  "Restart of V3.3 production at GES DISC after the Sept 2024 pause: no GES DISC/README notice found; only ECMWF CDS's 14 Oct 2026 post on ICDR extensions 'to 2025'. Not found: who computes NCEI's CDR copy (NCEI C00999 V1.3 and V3.3 landing pages timed out at 45 s and 60 s), V1.3 end date, NCCS project list, and code-on-request wording. precip.gsfc.nasa.gov did not resolve (ENOTFOUND, and a 502 via curl). (from sa3)",
+  "(b) Behrangi 2022 MEaSUREs award number and end date: not found after 3 queries (UA news has no number; HigherGov hits for 80NSSC23K1276 and 80NSSC23K1211 are on other topics). Next: TechPort/NSPIRES or a 2024-26 GPCP paper acknowledgment. (c) CISESS NA24NESX432C0001 GPCP share: not searched within the time limit; reuse pt4's USAspending record. (a) Whether Bolvin and Nelkin are on STC's 80GSFC26D0002: NOT PRESENT. (from sa3)",
+  "NCEI C00999 (V1.3) metadata dateStamp is 2023-08-10, so its onGoing status and the University of Maryland computing statement are as of 2023. Who runs V1.3 now, on what machines, and its end date are still open. Lead to follow: the NCEI CDR page ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily (not read). (from sa3)",
+  "Jian-Jian Wang current employer/title, ORCID, earliest publication: NOT FOUND. Tried OpenAlex author search (many Jian Wang profiles, none matched; files renamed _unused), 3 web searches, Climate Data Guide page (UMD, undated). Next: get his OpenAlex author id from the 2014 TRMM climatology paper (NTRS 20150000213) or 2018 GPCP V2.3 Atmosphere paper; ESSIC staff directory. (from sa2)",
+  "GPCP team size and any written succession/knowledge-transfer plan: NOT PRESENT in anything read (two roster searches, one succession search, R2O and IOC-to-FOC guidelines). GEWEX GPCP reports and CISESS annual reports unchecked. Also unread: GPCP Daily maturity ratings (shading in MaturityMatrix_01B-35.pdf needs a visual check), SourceCode_01B-35.tar.gz contents (15.4 MB, not downloaded), UseAgreement_01B-35.pdf, Appendix F ORR checklist (image only). (from sa2)",
+  "First year on GPCP: Nelkin earliest GPCP-titled item on his GSFC bio is a 1998 conference paper; Bolvin GSFC page lists no publications and first GPCP paper not identified; Sapiano first GPCP co-authorship not found. Nelkin ORCID NOT PRESENT in OpenAlex; orcid.org search not run. STC start dates for Bolvin and Nelkin NOT PRESENT. (from sa2)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "George Huffman Goddard 612 biography",
+   "tool": "WebSearch",
+   "notes": "no relevant results (George W. Goddard pages)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "George Huffman NASA Goddard research physical scientist",
+   "tool": "WebSearch",
+   "notes": "found science.gsfc.nasa.gov bio (already saved in pt4), mynasadata career page",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Guojun Gu ESSIC GPCP",
+   "tool": "WebSearch",
+   "notes": "CISESS profile page; no GPCP role statement",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Ali Behrangi University of Arizona professor",
+   "tool": "WebSearch",
+   "notes": "UA water profile",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Robert Adler ESSIC senior research scientist",
+   "tool": "WebSearch",
+   "notes": "ESSIC faculty bio (JS page), CISESS bob-adler 404",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=George J. Huffman; works author A5091084750 sorted asc",
+   "tool": "lookup (OpenAlex)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=Robert F. Adler; works A5113915536 and A5105879339 sorted asc",
+   "tool": "lookup (OpenAlex)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=Ali Behrangi; works A5063210465 sorted asc",
+   "tool": "lookup (OpenAlex)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=Guojun Gu; works A5041338380 sorted asc",
+   "tool": "lookup (OpenAlex)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "pub.orcid.org/v3.0/0000-0003-3858-8308/employments",
+   "tool": "lookup (ORCID)",
+   "notes": "empty employments element",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "pub.orcid.org/v3.0/0000-0002-6945-8242/record",
+   "tool": "lookup (ORCID)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "George Huffman retirement GPM project scientist 2026",
+   "tool": "WebSearch",
+   "notes": "no retirement notice; leads to 2026 EGU/IPWG items still naming him",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Adler Gu Huffman Behrangi global precipitation 2025 GPCP",
+   "tool": "WebSearch",
+   "notes": "ESSIC 2025 review and monthly summaries",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Robert Adler emeritus University of Maryland precipitation GPCP 2026",
+   "tool": "WebSearch",
+   "notes": "ESSIC monthly summaries through Oct 2026; no emeritus wording",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP Version 4 Behrangi lead successor Huffman Adler team",
+   "tool": "WebSearch",
+   "notes": "irrelevant results",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "pub.orcid.org/v3.0/0000-0001-7594-8793/person and 0000-0001-6219-8006/person",
+   "tool": "lookup (ORCID)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OpenAlex works filter title.search GPCP for Gu, Behrangi; title.search Global Precipitation Climatology Project for Huffman, Adler",
+   "tool": "lookup (OpenAlex)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "r1 required search: George Huffman Goddard 612 biography",
+   "tool": "WebSearch",
+   "notes": "r1 satisfied by 2nd query (bio page found); 2 queries used",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Guojun Gu precipitation variability ESSIC research scientist",
+   "tool": "WebSearch",
+   "notes": "allowed_domains umd.edu; search summary says ESSIC profile title Associate Research Scientist; old joom2 profile (user_id=62) fetched via WebFetch shows no name/title (NOT PRESENT); lead: cisess.umd.edu/assets/1/7/1-8_Goujun_Gu.pdf not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "science.gsfc.nasa.gov/awardee/12222",
+   "tool": "WebFetch",
+   "notes": "Huffman profile variant with 2022 awards",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Behrangi GPCP V4 2027 team University of Arizona Yang Song",
+   "tool": "WebSearch",
+   "notes": "irrelevant results; no succession statement",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "cisess.umd.edu/people-a/ and people-g/",
+   "tool": "fetch_page",
+   "notes": "people-a lists Adler as Research Scientist; people-g 404",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "cisess.umd.edu/assets/1/7/1-8_Goujun_Gu.pdf",
+   "tool": "fetch_page",
+   "notes": "old Gu/Adler/Smith slides, no title info; renamed _unused",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP V3.3 GES DISC processing restart 2025",
+   "tool": "WebSearch",
+   "notes": "found ECMWF forum pause/restart post, CEOS VC-25-13; no GES DISC restart notice",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCCS projects GPCP precipitation Goddard",
+   "tool": "WebSearch (allowed_domains nasa.gov)",
+   "notes": "only ESGF-NCCS-hosted tech notes; no NCCS project list entry for GPCP",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Behrangi MEaSUREs GPCP award 80NSSC",
+   "tool": "WebSearch",
+   "notes": "UA news only; no award number",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Behrangi Next-Generation Global Precipitation Climatology Project grant University of Arizona NASA 2023",
+   "tool": "WebSearch (allowed_domains usaspending.gov, highergov.com, techport.nasa.gov, grantome.com)",
+   "notes": "no matching award; not found after 2 queries in time limit",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Science and Technology Corporation Goddard atmospheric research support contract",
+   "tool": "WebSearch",
+   "notes": "NASA release, HigherGov IDV 80GSFC26D0002",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://www.highergov.com/idv/80GSFC26D0002",
+   "tool": "lookup (HigherGov IDV record)",
+   "notes": "contract number, dates, ceiling",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA24NESX432C0001_1330/",
+   "tool": "lookup (USAspending award GET)",
+   "notes": "subaward_count 29; no GPCP share; reused pt4's award ID",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://api.usaspending.gov/api/v2/awards/count/subaward/ASST_NON_NA24NESX432C0001_1330/",
+   "tool": "lookup (USAspending subaward count GET)",
+   "notes": "HTTP 404",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP 1DD V1.3 end production",
+   "tool": "WebSearch",
+   "notes": "no relevant results",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP One-Degree Daily V1.3 discontinued GES DISC",
+   "tool": "WebSearch (allowed_domains nasa.gov, umd.edu, noaa.gov)",
+   "notes": "NCEI C00999 snippet: computed by University of Maryland, Ongoing; page timed out",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP Version 3.3 CDR NCEI computed University of Maryland ESSIC",
+   "tool": "WebSearch",
+   "notes": "led to NCEI ISO XML C01726 (V3.3 Daily)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Behrangi GPCP 80NSSC23K MEaSUREs acknowledgment",
+   "tool": "WebSearch",
+   "notes": "no relevant results; r7 not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP Version 3.3 data extended 2025 GES DISC alert",
+   "tool": "WebSearch (allowed_domains earthdata.nasa.gov, disc.gsfc.nasa.gov, gpm.nasa.gov)",
+   "notes": "no restart notice; GES DISC data-release page (first page, 25 of 80 items) has no GPCP item (WebFetch: NOT PRESENT)",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPCPDAY&version=3.3&sort_key=-start_date&page_size=2",
+   "tool": "lookup (NASA CMR granule metadata)",
+   "notes": "latest granule 2025-12-31, updated 2026-05-01",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=GPCPDAY&version=3.3&temporal=2024-10-01T00:00:00Z,2024-10-02T00:00:00Z&page_size=2",
+   "tool": "lookup (NASA CMR granule metadata)",
+   "notes": "Oct 2024 granules updated 2026-02-05",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+   "tool": "lookup (NCEI CDR product page, WebFetch)",
+   "notes": "PI Adler UMD; SourceCode_01B-35.tar.gz",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA CDR program research to operations transition requirements",
+   "tool": "WebSearch",
+   "notes": "found CDRP-PLAN-0017 Rev 2 (2014); read",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP daily CDR C-ATBD NCEI",
+   "tool": "WebSearch",
+   "notes": "C-ATBD 01B-35 (already in pt3); led to NCEI 01B-35 folder",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP CDR operational algorithm description",
+   "tool": "WebSearch",
+   "notes": "no GPCP OAD found; found MaturityMatrix_01B-35.pdf; OAD template exists in NCEI Guidelines folder",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "authors?search=Mathew Sapiano; authors?search=Bolvin; authors?search=Eric Nelkin; authors?search=Jian-Jian Wang; works sorted asc for A5071713826, A5048740426, A5007206904",
+   "tool": "lookup (OpenAlex)",
+   "notes": "Sapiano ORCID 0000-0001-6938-6683, Bolvin ORCID 0000-0003-1689-7767, Nelkin no ORCID; Jian-Jian Wang: no matching profile among many Jian Wang records (files renamed _unused)",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "pub.orcid.org v3.0 employments for 0000-0001-6938-6683 and 0000-0003-1689-7767",
+   "tool": "lookup (ORCID)",
+   "notes": "both read",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Matthew Sapiano CDC statistician",
+   "tool": "WebSearch",
+   "notes": "covidauthors.org lists Matthew R P Sapiano at CDC Atlanta (not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Jian-Jian Wang ESSIC precipitation",
+   "tool": "WebSearch",
+   "notes": "2014 TRMM climatology, 2018 GPCP V2.3 paper; Climate Data Guide expert page read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Jian-Jian Wang\" Maryland ESSIC 2024",
+   "tool": "WebSearch",
+   "notes": "nothing on Wang",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Jian-Jian Wang\" precipitation 2022 OR 2023 OR 2024 OR 2025 University of Maryland",
+   "tool": "WebSearch",
+   "notes": "nothing on Wang after 2018",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Eric Nelkin Science and Technology Corporation precipitation GSFC",
+   "tool": "WebSearch",
+   "notes": "GSFC bio page: employer STC; read; Bolvin bio by URL pattern",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP succession plan knowledge transfer team",
+   "tool": "WebSearch",
+   "notes": "only generic HR pages; nothing GPCP-specific",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Global Precipitation Climatology Project Bolvin Nelkin 2025 GPCP team",
+   "tool": "WebSearch",
+   "notes": "EGU26-5885 author list (already in pt3); no roster or team size",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP team members CISESS Adler Gu Behrangi Huffman Bolvin Nelkin team",
+   "tool": "WebSearch",
+   "notes": "no team size stated; 2015 CICS meeting archive lists Adler talk GPCP Research to Climate Monitoring (not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "works/doi:10.3390/atmos9040138 authorships; works by author A5100743391 asc; pub.orcid.org 0000-0001-8244-0760 employments",
+   "tool": "lookup (OpenAlex)",
+   "notes": "Wang OpenAlex id found via 2018 GPCP V2.3 paper; attached ORCID belongs to a mechanical engineer",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "pub.orcid.org expanded-search family-name:Nelkin; family-name:Wang AND given-names:Jian-Jian; OpenAlex latest precipitation works for A5100743391 and A5071713826",
+   "tool": "lookup (ORCID registry and OpenAlex)",
+   "notes": "Nelkin: no Eric among 7 records; Wang: 1728 hits, no identifiable ESSIC match (file _unused)",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "George Huffman NASA Goddard retired 2026",
+   "tool": "WebSearch",
+   "notes": "counter-search c1; nothing found against",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Robert Adler emeritus ESSIC GPCP 2026",
+   "tool": "WebSearch",
+   "notes": "counter-search c2; no emeritus found; CISESS Weekly 2026.04.17 calls him ESSIC Research Scientist (snippet only)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Behrangi MEaSUREs GPCP award number 80NSSC23",
+   "tool": "WebSearch",
+   "notes": "counter-search c3; no award number found",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Bolvin Nelkin Science Systems and Applications GPCP 2026",
+   "tool": "WebSearch",
+   "notes": "counter-search c4; no relevant results; EGU26-5885 found via c5 search lists Nelkin at SSAI",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP version 3.3 daily computed University of Maryland NCEI",
+   "tool": "WebSearch",
+   "notes": "counter-search c5/c7; led to EGU26-5885",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP 1DD version 1.3 discontinued end production",
+   "tool": "WebSearch",
+   "notes": "counter-search c6; no relevant results",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA CDR Program R2O transition operational readiness review revision",
+   "tool": "WebSearch",
+   "notes": "counter-search c8; no newer revision than Rev 2 (2014) surfaced",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Goddard Atmosphere Support ATMOS contract 2025 award Science and Technology Corporation",
+   "tool": "WebSearch",
+   "notes": "second counter-search c4. Search summary only (pages not saved): Washington Technology Sept 2025 'STC wins $163M NASA atmospheric research contract' reports start Nov. 3 (HigherGov field says 11/30/25), and that STC displaced SSAI, holder since 2017 of SAMDA. Supports that STC replaced SSAI; start dates differ by source. https://www.washingtontechnology.com/contracts/2025/09/stc-wins-163m-nasa-atmospheric-research-contract/408371 ; https://www.nasa.gov/news-release/nasa-awards-atmosphere-research-support-contract/",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Eric Nelkin GPCP 2026 affiliation",
+   "tool": "WebSearch",
+   "notes": "third counter-search c4; no relevant results",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Huffman Supervisory Research Physical Scientist Goddard 612",
+   "tool": "WebSearch",
+   "notes": "second counter-search c1. Search summary only, page not saved: NASA STEM Career Connections profile (https://mynasadata.larc.nasa.gov/stem-career-connections/meet-dr-george-huffman-research-physical-scientist, undated) titles him Research Physical Scientist, with no supervisory title. No source found that names him Supervisory.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Robert F. Adler 1973 thunderstorm satellite paper",
+   "tool": "WebSearch",
+   "notes": "second counter-search c2 (earliest year 1973). Search summary only, nothing saved: no 1973 Adler paper surfaced. Earliest items named were Adler and Fenn 1977 (10th Conf. Severe Local Storms preprint), Adler and Fenn 1979 (J. Appl. Meteor. 18, 502-517), and a 1977 CSU report naming him Technical Monitor. Neither 1973 nor 1981 is confirmed as his first publication.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Behrangi MEaSUREs GPCP 80NSSC23K award",
+   "tool": "WebSearch",
+   "notes": "extended mode; 2024 IPWG poster cites 80NSSC19M0006 and says funded 5 more years under 2022 MEaSUREs; no new number",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "University of Arizona Behrangi NASA award GPCP high latitude 2023",
+   "tool": "WebSearch",
+   "notes": "domain filter usaspending.gov, nasa.gov, arizona.edu, highergov.com; found HAS $3M news (2023-07-24) and PhD handbook (2017-2028)"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://mynasadata.larc.nasa.gov/stem-career-connections/meet-dr-george-huffman-research-physical-scientist",
+   "tool": "built-in browser",
+   "notes": "HTTP 403 in the browser too",
+   "copy_of": "https://mynasadata.larc.nasa.gov/stem-career-connections/meet-dr-george-huffman-research-physical-scientist"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://web.archive.org/web/2025/https://mynasadata.larc.nasa.gov/stem-career-connections/meet-dr-george-huffman-research-physical-scientist",
+   "tool": "fetch_page (Wayback)",
+   "notes": "20250705 capture is a video shell with no career text (saved _unused)",
+   "copy_of": "https://mynasadata.larc.nasa.gov/stem-career-connections/meet-dr-george-huffman-research-physical-scientist"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://www.ncei.noaa.gov/data/global-precipitation-climatology-project-gpcp-daily/access/2026/",
+   "tool": "lookup (NCEI directory)",
+   "notes": "v01r03 files through d20260831, created c20261109"
+  }
+ ],
+ "entities": [
+  {
+   "name": "Robert Adler",
+   "included": true,
+   "source_ids": [
+    "s21",
+    "s8"
+   ]
+  },
+  {
+   "name": "George Huffman",
+   "included": true,
+   "source_ids": [
+    "s1",
+    "s3"
+   ]
+  },
+  {
+   "name": "Ali Behrangi",
+   "included": true,
+   "source_ids": [
+    "s13",
+    "s101"
+   ]
+  },
+  {
+   "name": "Guojun Gu",
+   "included": true,
+   "source_ids": [
+    "s15",
+    "s16"
+   ]
+  },
+  {
+   "name": "David Bolvin",
+   "included": true,
+   "source_ids": [
+    "s54",
+    "s43"
+   ]
+  },
+  {
+   "name": "Eric Nelkin",
+   "included": true,
+   "source_ids": [
+    "s53",
+    "s46"
+   ]
+  },
+  {
+   "name": "Mathew Sapiano",
+   "included": true,
+   "source_ids": [
+    "s40",
+    "s41"
+   ]
+  },
+  {
+   "name": "Jian-Jian Wang",
+   "included": true,
+   "source_ids": [
+    "s52",
+    "s59"
+   ]
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40,
+  "elapsed_min": 28.4,
+  "shift_min": 1,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 246314,
+  "subagent_minutes_planned": 42,
+  "subagent_minutes": 47.4,
+  "follow_ups": 0,
+  "continuations": 8,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

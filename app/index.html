@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precipitation Workshop Datasets</title>
+  <link rel="stylesheet" href="assets/dashboard/dashboard.css">
+</head>
+
+<body>
+
+<main class="dashboard">
+
+  <!-- HEADER -->
+  <header class="dashboard-header">
+    <div class="header-top">
+      <span class="header-label">Precipitation workshop / Dataset archive</span>
+      <span class="header-label">2026</span>
+    </div>
+
+    <h1 class="dashboard-title">Precipitation Datasets</h1>
+
+    <p class="dashboard-description">
+      An organized collection of gauge-based, satellite, reanalysis and merged
+      precipitation products, with their archives, coverage, resolution and
+      record status.
+    </p>
+
+    <div class="header-divider"></div>
+
+    <div class="header-meta">
+      <span id="totalCount">— DATASETS</span>
+      <span>GLOBAL &amp; REGIONAL COLLECTION</span>
+    </div>
+  </header>
+
+  <!-- SEARCH -->
+  <div class="search-container">
+    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" />
+      <line x1="16.5" y1="16.5" x2="21" y2="21" />
+    </svg>
+    <label for="searchInput" class="visually-hidden">Search datasets</label>
+    <input
+      type="search"
+      id="searchInput"
+      class="search-input"
+      placeholder="Search datasets, archives, coverage..."
+      autocomplete="off"
+    >
+  </div>
+
+  <!-- WHITE PANEL: filters + dataset index -->
+  <div class="content-panel">
+
+  <!-- FILTERS (buttons are built from the data in assets/dashboard/dashboard.js) -->
+  <section class="filter-section" aria-label="Filters">
+    <div class="filter-group">
+      <h2 class="filter-heading" id="categoryHeading">Filter by data source</h2>
+      <div class="filter-buttons" id="categoryFilters"
+           role="group" aria-labelledby="categoryHeading"></div>
+    </div>
+
+    <div class="filter-group">
+      <h2 class="filter-heading" id="coverageHeading">Filter by coverage</h2>
+      <div class="filter-buttons" id="coverageFilters"
+           role="group" aria-labelledby="coverageHeading"></div>
+    </div>
+
+    <!-- Links to the archive pages (built from data/archives.json in assets/dashboard/dashboard.js) -->
+    <div class="filter-group" id="rstarGroup" hidden>
+      <h2 class="filter-heading" id="rstarHeading">R* metadata</h2>
+      <ul class="rstar-links" id="rstarLinks" aria-labelledby="rstarHeading"></ul>
+    </div>
+  </section>
+
+  <!-- DATASET INDEX -->
+  <section aria-labelledby="indexHeading">
+    <div class="dataset-index-heading">
+      <h2 id="indexHeading">Dataset index</h2>
+      <span class="dataset-count" id="datasetCount" aria-live="polite"></span>
+    </div>
+
+    <div class="dataset-list" id="datasetList">
+      <p class="status-message">Loading datasets…</p>
+    </div>
+  </section>
+
+  </div>
+
+  <footer class="dashboard-footer">
+    PRECIPITATION WORKSHOP — 2026
+  </footer>
+
+</main>
+
+<script src="data/rstar-data.js"></script>
+<script src="assets/dashboard/shared.js"></script>
+<script src="assets/dashboard/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+# e2e test tools for app/. Install into the project venv (.work/venv), then install browsers:
+#   .work/venv/bin/pip install -r app/requirements-dev.txt
+#   .work/venv/bin/python -m playwright install firefox webkit
+playwright==1.65.2
+pytest==9.2.0
+pytest-playwright==0.10.0

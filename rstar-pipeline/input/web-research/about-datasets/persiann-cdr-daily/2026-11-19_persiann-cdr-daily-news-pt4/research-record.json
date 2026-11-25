@@ -1,0 +1,2091 @@
+{
+ "question": "Between January 2024 and November 2026, has news coverage mentioned PERSIANN-CDR Daily, its producer (CHRS, UC Irvine), its people, or the programs that fund it, in connection with political decisions, federal priority shifts, budget cuts, layoffs, funding reductions, restructuring or threats to its continuation?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (the topic is proposed cuts, terminations and restructuring)",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Press and UCI/CHRS announcements naming PERSIANN, CHRS or its people in connection with cuts or threats",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7"
+   ],
+   "remaining_gap": "The one NOAA subaward UCI lists as terminated is unidentified."
+  },
+  {
+   "id": "q2",
+   "question": "Press naming the funding programs (NOAA CDR Program, CPO/OAR, CICS/CISESS, NASA PMM) in connection with cuts",
+   "status": "answered",
+   "source_ids": [
+    "s27",
+    "s28",
+    "s29",
+    "s31",
+    "s32",
+    "s33",
+    "s34",
+    "s35",
+    "s36",
+    "s37",
+    "s38",
+    "s40"
+   ],
+   "remaining_gap": "Science (Apr 2025) and Nature Climate Change pieces not read in full (bot check / paywall)."
+  },
+  {
+   "id": "q3",
+   "question": "Official notices, budget documents, court and award records that confirm or refute any claim",
+   "status": "answered",
+   "source_ids": [
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s39"
+   ],
+   "remaining_gap": "No successor NOAA/NASA award to CHRS checked; Jan-Jun 2026 NESDIS notices may be incomplete."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "PERSIANN-CDR",
+   "publisher": "press",
+   "subquestion_id": "q1",
+   "aim": "news naming PERSIANN with funding cuts",
+   "query": "PERSIANN funding cuts",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "UC Irvine / CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "UCI and CHRS news on federal grant terminations",
+   "query": "UC Irvine federal grants terminated 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "CHRS researchers",
+   "publisher": "press",
+   "subquestion_id": "q1",
+   "aim": "press quoting named CHRS people about cuts",
+   "query": "AghaKouchak NOAA cuts",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA CDR Program",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "coverage of cuts to the CDR Program",
+   "query": "NOAA climate data records program cuts",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA CPO / OAR",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "CPO grant terminations and OAR elimination",
+   "query": "Climate Program Office grants terminated 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "CICS / CISESS",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q2",
+   "aim": "cooperative institute funding lapses or layoffs",
+   "query": "CISESS funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA NCEI",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q3",
+   "aim": "NESDIS Notice of Changes retirements",
+   "query": "NCEI product retirement 2025 list",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q3",
+   "aim": "budget justifications naming CDRs",
+   "query": "NOAA FY2026 congressional justification climate data records",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "UC researchers",
+   "publisher": "courts and tribunals",
+   "subquestion_id": "q3",
+   "aim": "court records and terminated-grant lists naming CHRS people",
+   "query": "Thakur v. Trump NOAA grants UC",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NASA Earth science",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "PMM/GPM budget cuts",
+   "query": "NASA precipitation measurement missions budget cut 2026",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 28.5,
+  "shift_min": 2,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 249703,
+  "subagent_minutes_planned": 48,
+  "subagent_minutes": 48.9,
+  "follow_ups": 0,
+  "continuations": 6,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ },
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://news.uci.edu/2025/10/10/research-realities-in-the-face-of-funding-restrictions/",
+   "fetched_url": null,
+   "title": "Research realities in the face of funding restrictions",
+   "author_org": "UC Irvine News",
+   "published": "2025-10-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/uci_research_realities_20251010.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "General UCI funding piece; names no CHRS people or the dataset; no NOAA/NASA mention.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s2",
+   "url": "https://portal.datarescueproject.org/datasets/precipitation---persiann-climate-data-record-cdr/",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN Climate Data Record (CDR) - Data Rescue Project Portal",
+   "author_org": "Data Rescue Project",
+   "published": "2025-04-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/portal-datarescueproject-org-datasets-precipitation-persiann_011203.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Catalog entry; JS page, only 47 words captured.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.technologyreview.com/2025/06/02/1117653/the-trump-administration-has-shut-down-more-than-100-climate-studies/",
+   "fetched_url": null,
+   "title": "The Trump administration has shut down more than 100 climate studies",
+   "author_org": "MIT Technology Review (James Temple)",
+   "published": "2025-06-02",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/mittr_100_climate_studies_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "UCI named for a non-CHRS NSF grant; read via WebFetch extract (host not reachable by curl).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://research.uci.edu/wp-content/uploads/250521-Research-Town-Hall_Final.pdf",
+   "fetched_url": null,
+   "title": "Recent Federal Agency Actions: Impacts on Research at UC Irvine (Research Town Hall slides)",
+   "author_org": "UC Irvine Office of Research",
+   "published": "2025-05-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/uci_research_town_hall_20250521.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Slides do not identify the NOAA subaward or its PI; cannot be tied to CHRS from this source. PDF obtained via WebFetch (curl got HTTP 403).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.nbcnews.com/science/science-news/us-hit-record-number-flash-flood-warnings-rcna219187",
+   "fetched_url": null,
+   "title": "U.S. hit with record number of flash flood warnings",
+   "author_org": "NBC News (Denise Chow)",
+   "published": "2025-07-17",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/nbc_flash_flood_warnings_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extract; not tied to funding.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.450653/gov.uscourts.cand.450653.211.5.pdf",
+   "fetched_url": null,
+   "title": "Thakur v. Trump, No. 3:25-cv-04737-RFL, Doc. 211-5: Parties' Stipulations ... NSF's Stipulations of Fact and Agreement to Produce Grants Spreadsheet",
+   "author_org": "U.S. District Court, N.D. Cal. (filed by plaintiffs and NSF)",
+   "published": "2026-07-15",
+   "data_period": null,
+   "source_type": "court",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/thakur_cand450653_211_5.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Court exhibit (spreadsheet) filed for litigation; covers NSF only; reinstatement date 6/30/2025 per the table (likely from the Thakur injunction, not stated here). PDF obtained via WebFetch (curl refused by sandbox proxy for storage.courtlistener.com). The project lead per NSF/Tufts pages is Farshid Vahedifard (Tufts); UCI is a collaborative award.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.yalescientific.org/?p=21637",
+   "fetched_url": null,
+   "title": "Levees and Inequality",
+   "author_org": "Yale Scientific (Joelle Kim)",
+   "published": "2026-05-08",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/yalescientific_levees_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Does not name AghaKouchak/UCI; the article does not mention the June 2025 reinstatement shown for the UCI award in the court spreadsheet.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes",
+   "fetched_url": null,
+   "title": "2025 Notice of Changes (page 1 of 2)",
+   "author_org": "NOAA NESDIS",
+   "published": "2025 (entries dated April 25 - December 5, 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_2025_notice_of_changes.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Listing shows only truncated teasers; individual notices not opened. No 2026 Notice of Changes page exists at the parallel URL (HTTP 404).",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes?page=1",
+   "fetched_url": null,
+   "title": "2025 Notice of Changes (page 2 of 2)",
+   "author_org": "NOAA NESDIS",
+   "published": "2025 (entries dated April 4 - April 22, 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_2025_notice_of_changes_p2.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No further page beyond ?page=1 was checked; teasers truncated.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/node/8306",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR processing delay",
+   "author_org": "NOAA NCEI",
+   "published": "undated (online since at least 2025-09-13 per Part 3 run's Wayback copy)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_node8306_20261119.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Notice is undated; no reason beyond 'processing delays'. The cloud-migration banner is site-wide, not specific to PERSIANN.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2026/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/2026/",
+   "author_org": "NOAA NCEI",
+   "published": "directory listing, last file modified 2026-10-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_persiann_access_2026.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Listing shows file dates only; it does not say who produced the files or under what funding.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-persiann",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR",
+   "author_org": "NOAA NCEI",
+   "published": "undated product page",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_persiann_product_20261119.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Page does not mention the pause notice or funding.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.everycrsreport.com/files/2026-07-28_IF13275_2ef80027d87ecf872e321ed150aee97e81f9c127.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA) FY2027 Budget Request and Appropriations (CRS In Focus IF13275)",
+   "author_org": "Congressional Research Service (Eva Lipiec)",
+   "published": "2026-07-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crs_IF13275_noaa_fy2027.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Two-column PDF; passage joined across columns. No NESDIS/NCEI line items in text form (Figure 2 is a chart). The NOAA FY2027 CJ itself returned HTTP 403.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://www.thompsoncoburn.com/wp-content/uploads/2026/08/Thakur-184-Third-Amended-Complaint-1.pdf",
+   "fetched_url": null,
+   "title": "Thakur v. Trump, No. 3:25-cv-04737-RFL, Document 184, Third Amended Class Action Complaint",
+   "author_org": "US District Court N.D. Cal. (plaintiffs' filing; copy hosted by Thompson Coburn)",
+   "published": "2026-02-03",
+   "data_period": null,
+   "source_type": "court",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/thakur_184_third_amended_complaint.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Copy obtained via WebFetch (host thompsoncoburn.com refused by sandbox for fetch_page); the PDF was saved by WebFetch and converted with pdftotext. Later filings could add defendants.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.450653/gov.uscourts.cand.450653.211.3.pdf",
+   "fetched_url": null,
+   "title": "Thakur v. Trump, Document 211-3, Exhibit C: National Endowment for the Humanities (stipulation and terminated-grant list)",
+   "author_org": "US District Court N.D. Cal. (via CourtListener RECAP)",
+   "published": "2026-07-15",
+   "data_period": null,
+   "source_type": "court",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/thakur_dkt211-3.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Saved through WebFetch (storage.courtlistener.com refused by sandbox for fetch_page). Only 211-3 read here; 211-5 (NSF) was read in Part 3.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA23OAR4310443_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA23OAR4310443",
+   "author_org": "USAspending.gov (US Treasury)",
+   "published": "record last modified 2024-08-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_NA23OAR4310443.json",
+   "retrieved": "2026-11-19",
+   "limitations": "USAspending award search (POST) not available with GET-only helper, so no search for a successor award by recipient/keyword was possible.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-2633.html",
+   "fetched_url": null,
+   "title": "EGU26-2633: PUnet-CDR: A Global High-Resolution Precipitation Climate Data Record for Hydroclimate and Drought Applications",
+   "author_org": "Phu Nguyen, Vu Dao, Tu Ung, Amir AghaKouchak, Kuolin Hsu, Soroosh Sorooshian (UC Irvine CHRS); EGU General Assembly 2026",
+   "published": "2026 (withdrawn 2026-05-19)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e10",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/egu26_2633_punet_cdr_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Withdrawal reason not stated; withdrawn abstracts are common for travel reasons. WebFetch extract, not raw page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=PERSIANN",
+   "fetched_url": null,
+   "title": "Federal Register API search: PERSIANN (all years)",
+   "author_org": "Federal Register (Office of the Federal Register)",
+   "published": "query run 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fedreg_persiann.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Full-text term search only; NCEI product retirements are posted on the NESDIS Notice of Changes page, not normally in the Federal Register.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[term]=%22climate%20data%20record%22&conditions[agencies][]=national-oceanic-and-atmospheric-administration&conditions[publication_date][gte]=2024-01-01",
+   "fetched_url": null,
+   "title": "Federal Register API search: \"climate data record\", NOAA, published since 2024-01-01",
+   "author_org": "Federal Register (Office of the Federal Register)",
+   "published": "query run 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fedreg_noaa_cdr_2024on.json",
+   "retrieved": "2026-11-19",
+   "limitations": "Exact-phrase search; plural 'climate data records' not separately run.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://calmatters.org/education/higher-education/2026/11/uc-research/",
+   "fetched_url": null,
+   "title": "U.S. Supreme Court rejects Trump&apos;s effort to impose DEI policies on UC researchers",
+   "author_org": "CalMatters (Mikhail Zinshteyn)",
+   "published": "2026-11-16",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/calmatters_20261116_uc_research_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extract, not raw page; quotes are fragments as returned by the extractor.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.nesdis.noaa.gov/news/cloud-properties-isccp-h-series-cdr",
+   "fetched_url": null,
+   "title": "Cloud Properties - ISCCP H-Series CDR (Notice of Changes)",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "2025-05-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_isccp_h_cdr_notice.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Does not concern PERSIANN; context only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.nesdis.noaa.gov/news-events/search-news?tag=1116",
+   "fetched_url": null,
+   "title": "NESDIS Search News: Notice of Changes tag (latest page)",
+   "author_org": "NOAA NESDIS",
+   "published": "entries Jul 20 - Nov 2, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_notice_tag_latest.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only the first page of the tag listing (8 entries back to 2026-07-20) was read; January-July 2026 notices not checked.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.nesdis.noaa.gov/news-events/search-news?tag=1116&page=1",
+   "fetched_url": null,
+   "title": "NESDIS Search News: Notice of Changes tag (page 2)",
+   "author_org": "NOAA NESDIS",
+   "published": "entries 2012 - Jun 23, 2026 (listing not strictly by date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_notice_tag_p2.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Tag listing is not strictly chronological and may not include every Notice of Changes; the separate 2025 Notice of Changes page has more 2025 items than this tag.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "alerts dated 2026-11-02 to 2026-11-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_alerts_20261119.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Cloud-migration alert began 2026-11-16, long after the PERSIANN pause notice (online since at least 2025-09-13), so it does not explain that pause.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://republicans-science.house.gov/_cache/files/6/2/62ab6dcc-da12-4a11-add5-dc8cec492630/CA20681883AEB28A5CF5F9B4AD3D027EEE3EF877E96FC71932EC163D246C1A4F.04.28.26-fy27-noaa-budget-hearing-charter.pdf",
+   "fetched_url": null,
+   "title": "Hearing Charter: A Review of the President&apos;s Fiscal Year 2027 Budget Request for the National Oceanic and Atmospheric Administration",
+   "author_org": "House Committee on Science, Space, and Technology, Subcommittee on Environment",
+   "published": "2026-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/house_sst_fy27_noaa_charter.pdf.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Charter summarizes the request; no NCEI line item given.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2027 Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy2027_cj.pdf.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Table column headers not copied (2026 enacted 69,000; adjustments 807; base 69,807; change -17,807; request 52,000 inferred from layout, check against the PDF). Only an exact search for Climate Data Record and PERSIANN was run; a CDR mention in other wording is possible.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://eos.org/research-and-developments/proposed-noaa-budget-calls-for-0-for-climate-research",
+   "fetched_url": null,
+   "title": "Proposed NOAA Budget Calls for $0 for Climate Research",
+   "author_org": "Eos (AGU), Grace van Deelen",
+   "published": "2025-07 (about 1 July 2025; refers to 30 June budget document)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-eos-fy26-oar",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/eos_noaa_budget_0_climate.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Program level only; no mention of PERSIANN, CHRS, CDR Program, CPO/MAPP or CISESS. Proposal, not enacted.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.eenews.net/articles/trump-cuts-would-cripple-noaas-wide-ranging-science-partnerships/",
+   "fetched_url": null,
+   "title": "Trump cuts would cripple NOAA’s wide-ranging science partnerships",
+   "author_org": "E&E News, Chelsea Harvey",
+   "published": "2025-04-21",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-ee-ci-partnerships",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "Read via WebFetch extraction only (no local copy saved); program-level coverage that does not name the PERSIANN funders.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://blog.ucs.org/science-blogger/the-presidents-fy27-budget-request-more-bad-news-for-science/",
+   "fetched_url": null,
+   "title": "The President’s FY27 Budget Request: More Bad News For Science",
+   "author_org": "Union of Concerned Scientists blog",
+   "published": "2026 (after FY27 request, April 2026 or later)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-ucs-fy27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ucs_fy27_budget.html.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Advocacy analysis; program level only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.everycrsreport.com/files/2026-07-28_IF13275_2ef80027d87ecf872e321ed150aee97e81f9c127.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA) FY2027 Budget Request and Appropriations (IF13275)",
+   "author_org": "Congressional Research Service",
+   "published": "2026-07-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-crs-fy27-oar",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/crs_if13275_2026-07.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Official check of press claims; program level only. Copied from earlier run 2026-11-17_noaa-ncei-threats sa1.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://insideclimatenews.org/news/29042026/noaa-defends-trump-cuts/",
+   "fetched_url": null,
+   "title": "NOAA Defends Cuts to Research and Climate Monitoring at Budget Hearing",
+   "author_org": "Inside Climate News, Gabriel Matias Castilho",
+   "published": "2026-04-29",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-icn-20260429",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "fetch_page.py got HTTP 403; read via WebFetch extraction only, no local copy.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.planetary.org/articles/analyzing-the-fy-2027-nasa-budget-request",
+   "fetched_url": null,
+   "title": "The FY 2027 NASA budget request",
+   "author_org": "The Planetary Society, Casey Dreier",
+   "published": "2026-04-23",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-tps-fy27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "fetch_page.py blocked (www.planetary.org not in allowed hosts); read via WebFetch extraction; no local copy.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://cig.uw.edu/2025/05/cig-update-termination-of-the-northwest-climate-resilience-collaborative",
+   "fetched_url": null,
+   "title": "CIG Update: Termination of the Northwest Climate Resilience Collaborative",
+   "author_org": "University of Washington Climate Impacts Group",
+   "published": "2025-05-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-cig-cap-termination",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "Not news; not PERSIANN-related; 'Climate Program Office' NOT PRESENT on page (CPO link only from grantedai aggregator snippet). WebFetch extraction, no local copy.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://www.ametsoc.org/sites/ams/assets/File/policy/Wx_Study_Report_Part_1_2025.pdf",
+   "fetched_url": null,
+   "title": "American Meteorological Society Policy Program Study (Weather Enterprise study, Part 1)",
+   "author_org": "American Meteorological Society Policy Program",
+   "published": "2025-10",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa2-ams-policy-2025",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ams_policy_wx_study_2025.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Professional-society policy study, program level only; does not name PERSIANN or the CDR Program.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://www.scientificamerican.com/article/white-house-budget-puts-54-nasa-science-missions-on-the-chopping-block/",
+   "fetched_url": null,
+   "title": "White House budget seeks to scrap 54 major NASA science missions",
+   "author_org": "Scientific American, Meghan Bartels",
+   "published": "2026-04-09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-sciam-54-missions",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction, no local copy; NASA precipitation program named only via TROPICS, not GPM/PMM.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://assets.science.nasa.gov/content/dam/science/esd/earth-science-division/senior-reviews/2026/2026%20ESD%20Senior%20Review%20Call%20for%20Proposals_DRAFT20251219.pdf",
+   "fetched_url": null,
+   "title": "Call for Proposals – Senior Review 2026 for Extension of Earth Science Operating Missions",
+   "author_org": "NASA HQ Earth Science Division (K. St Germain)",
+   "published": "2026-01-16 (file name DRAFT20251219)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-nasa-senior-review-2026",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nasa_esd_senior_review_2026_cfp.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Saved from WebFetch binary copy; file name says DRAFT. No outcome of the Senior Review found.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://www.eenews.net/articles/white-house-outlines-plan-to-gut-noaa-smother-climate-research",
+   "fetched_url": null,
+   "title": "White House outlines plan to gut NOAA, smother climate research",
+   "author_org": "E&E News by POLITICO, Daniel Cusick, Chelsea Harvey, Scott Waldman",
+   "published": "2025-04-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-ee-20250411-omb",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction, no local copy. Found while looking for another copy of the Science 2025-04 article (403); Science article itself still unread.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://www.commerce.gov/sites/default/files/2025-06/NOAA-FY2026-Congressional-Budget-Submission.pdf",
+   "fetched_url": "https://web.archive.org/web/20251113182804/https://www.commerce.gov/sites/default/files/2025-06/NOAA-FY2026-Congressional-Budget-Submission.pdf",
+   "title": "NOAA Budget Estimates, Fiscal Year 2026 Congressional Justification (read via Wayback copy)",
+   "author_org": "NOAA / U.S. Department of Commerce",
+   "published": "2025-06",
+   "data_period": "FY2024 enacted; FY2026 request",
+   "source_type": "official",
+   "evidence_id": "NOAA FY2026 CJ",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/noaa_fy2026_cj_wb.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Budget request, not enacted; Congress retained OAR in FY2026 (CRS). No 'Climate Data Record' text in the document."
+  },
+  {
+   "id": "s39",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes",
+   "fetched_url": null,
+   "title": "Notice of Changes (current list, page 1 of 16)",
+   "author_org": "NOAA NESDIS",
+   "published": "2026-11-02",
+   "data_period": "Aug-Nov 2026 entries",
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/nesdis-noaa-gov-about-documents-reports-notice-of-changes_011143.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only page 1 of 16 read in the browser; find() for PERSIANN on it: no match."
+  },
+  {
+   "id": "s40",
+   "url": "https://flowingdata.com/2025/04/22/list-of-noaa-datasets-to-be-discontinued/",
+   "fetched_url": null,
+   "title": "List of NOAA datasets to be discontinued",
+   "author_org": "FlowingData (Nathan Yau)",
+   "published": "2025-04-22",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/flowingdata-com-2025-04-22-list-of-noaa-datasets-to-be-disco_011127.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Blog post pointing to NESDIS's running list; names no CDR."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "No news story, trade or science press piece, or UCI/CHRS announcement found for Jan 2024-Nov 2026 names PERSIANN-CDR, CHRS or its named people in connection with budget cuts, layoffs, funding reductions, restructuring or threats to the dataset; coverage of UC Irvine's federal grant losses names other programs.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "the federal government announced it was suspending approximately $584 million in funding from the National Science Foundation, National Institutes of Health and other agencies to UCLA, putting the entire UC system on alert for what might be next.",
+     "location": "line 9"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "One of the largest terminations cut off about $4 million dollars of remaining funds for the CLIMATE Justice Initiative, a fellowship program at the University of California, Irvine.",
+     "location": "body"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "contextualizes",
+     "passage": "So naturally you expect more warnings just because our systems are getting better and better.",
+     "location": "body"
+    }
+   ],
+   "applicability": "Absence claim: rests on about 100 logged searches (WebSearch, DuckDuckGo) and the pages read; paywalled outlets (Science, E&E News archive) only partly read.",
+   "confidence": "moderate",
+   "confidence_reason": "Many searches in each voice and outlet found nothing; an absence cannot be proven and some paywalled pages were not read in full."
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "The only item naming the dataset itself in this context is the Data Rescue Project portal, which archived PERSIANN-CDR (16.0 GB) on 24 April 2025 during the volunteer rescue of NOAA data, without stating any threat specific to it.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Archived Apr 24, 2025 | by DRP, SRC … Archive size: 16.0 GB",
+     "location": "Archived resources"
+    }
+   ],
+   "applicability": "Not news coverage; a volunteer archive catalog.",
+   "confidence": "high",
+   "confidence_reason": "Read directly from the portal's own catalog entry, which is the authority for what it archived and when (it is an aggregator only of NCEI's data, not of this fact)."
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "A named CHRS person appears in a court record: NSF award 2332263 (CLIMA flood-protection infrastructure), UC PI Amir AghaKouchak, was terminated 4/18/2025 and reinstated 6/30/2025; the project is not PERSIANN work.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "NSF     2332263     CLIMA/Collaborativ University of         University Amir AghaKouchak                9/8/2023    11/1/2023     10/31/2026   4/18/2025     6/30/2025    $      325,267 $          325,267 $      268,163.96",
+     "location": "Doc 211-5, p. 51 of 70; columns: Date Awarded, Grant Start Date, Award Expiration Date, Date Terminated, Date Reinstated, Total Award Amount, Amount Obligated, Amount Remaining when Terminated"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "contextualizes",
+     "passage": "Cuts in NSF funding led to the termination of Vahedifard's CLIMA project in April.",
+     "location": "body"
+    }
+   ],
+   "applicability": "Court exhibit, not news; the press covering the project (Yale Scientific) names the Tufts lead, not AghaKouchak.",
+   "confidence": "high",
+   "confidence_reason": "Sworn stipulation spreadsheet filed by the government in Thakur v. Trump.",
+   "sole_source_reason": "A court record of the government's own stipulated grant list."
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "UC Irvine's own May 2025 tally lists one NOAA incoming subaward terminated among 51 terminated awards, without naming the project or PI, so it cannot be tied to CHRS.",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "National Oceanic and Atmospheric Administration   -                      1 incoming subaward",
+     "location": "Research Town Hall slides, 2025-05-21, txt line 46"
+    }
+   ],
+   "applicability": "UCI-wide; unidentified award.",
+   "confidence": "high",
+   "confidence_reason": "UCI's own slides.",
+   "sole_source_reason": "UCI's own record of its awards."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "Official notices do not list PERSIANN-CDR for retirement: NESDIS's 2025 Notice of Changes names one CDR to be decommissioned (ISCCP H-Series cloud CDR, May 8, 2025), the 2026 notices read name none, and the Federal Register has no document matching PERSIANN.",
+   "evidence": [
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "Name of product or service: International Satellite Cloud Climatology Project H-Series CDR | Type of change: Product will be decommissioned | Description of change: This will no longer be updated.",
+     "location": "lines 5-16"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "\"description\": \"Documents matching 'PERSIANN'\", | \"count\": 0",
+     "location": "JSON lines 2-3"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "contextualizes",
+     "passage": "Service Location Change for Integrated Surface Data (Global Hourly) | Jun 23, 2026",
+     "location": "lines 99-163"
+    }
+   ],
+   "applicability": "The 2026 notices were read from the tag listing (Jun-Nov 2026) and page 1 of the current list; Jan-Jun 2026 may be incomplete.",
+   "confidence": "moderate",
+   "confidence_reason": "Official lists read directly; the 2026 list was not read in full."
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "The dataset is still listed and still updated: NCEI's notice of a 'pause in operations due to processing delays' remains up, but daily files through 2026-07-31 were added on 2026-10-13, and the product page still says 1982-present.",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Please note: The Precipitation - PERSIANN CDR is experiencing a pause in operations due to processing delays. This message will be updated when processing resumes.",
+     "location": "lines 3-9"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20260731_c20261013.nc | 2026-10-13 23:58 | 1193337",
+     "location": "last entry"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The Precipitation - PERSIANN Climate Data Record (CDR) is a daily, quasi-global precipitation product that spans from 1982–present.",
+     "location": "line 9"
+    }
+   ],
+   "applicability": "As read on 2026-11-19.",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own pages and file listing.",
+   "sole_source_reason": "NCEI's own pages are the authority for the dataset's status."
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "Coverage of the funding programs is program-level only: the FY2026 request would terminate OAR's climate laboratories and cooperative institutes and Climate Competitive Research (the CPO line that paid CHRS's NOAA grant), and the FY2027 request proposed eliminating OAR again; Congress retained OAR in FY2026. None of this coverage names PERSIANN, CHRS, the CDR Program or CISESS.",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "The Budget does not provide funding for Climate Laboratories and Cooperative Institutes, Regional Climate Data and Information, | and Climate Competitive Research.",
+     "location": "OAR-4, txt lines 5779-5780"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Termination of OAR’s Climate Laboratories and Cooperative Institutes (-$102,292, -204 FTE/ -216 Positions)",
+     "location": "OAR-4 Exhibit 13, txt line 5801"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "Termination of OAR’s Climate Competitive Research (-$69,600, -51 FTE/ -60 Positions)",
+     "location": "OAR-7, txt line 5858"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "“With this termination, NOAA will no longer support climate research grants,” the proposal states.",
+     "location": "body"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "In FY2026, Congress transferred some OAR programs to NWS as requested and retained OAR and its funding.",
+     "location": "'Modifications to OAR'"
+    }
+   ],
+   "applicability": "Requests are proposals; the FY2027 outcome depends on the bill after the current CR.",
+   "confidence": "high",
+   "confidence_reason": "Budget document read directly; press and CRS agree.",
+   "figure_status": [
+    "request",
+    "enacted"
+   ]
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "The FY2027 request would cut NCEI, the dataset's host archive, by $17.807M from a $69.807M FY2027 base (FY2026 enacted $69.0M) to $52.0M and says NOAA will reduce tailored products while keeping archiving; it names no Climate Data Record line.",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Environmental                    FTE/OBL          140     69,807                  140     52,000                      0      (17,807) | Information | National Centers for Environmental Information Decrease (-$17,807, 0 FTE/ 0 Positions) – NOAA will continue the core mission",
+     "location": "NESDIS-27 (txt lines 21088-21091); $ thousands"
+    }
+   ],
+   "applicability": "Request, not enacted.",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own CJ text, checked by the coordinator.",
+   "figure_status": "request",
+   "sole_source_reason": "NOAA's own budget justification is the authority for its request."
+  },
+  {
+   "id": "c9",
+   "importance": "supporting",
+   "text": "NASA's 2026 Senior Review gave all extended Earth missions, including GPM, reduced budget targets; press lists of NASA missions at risk in FY2027 name TROPICS, CYGNSS, OCO-2/3 and Aura but not GPM.",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Given ESD budget constraints, all missions proposing to the Senior Review will be given reduced budget targets.",
+     "location": "page 1"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "contextualizes",
+     "passage": "four Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats (TROPICS) satellites that help track tropical storms may also be targeted for cancellation, according to the analysis.",
+     "location": "body"
+    }
+   ],
+   "applicability": "GPM is an input to related CHRS products, not a named PERSIANN-CDR funder.",
+   "confidence": "moderate",
+   "confidence_reason": "Official letter read; SciAm via extract."
+  },
+  {
+   "id": "c10",
+   "importance": "supporting",
+   "text": "CHRS's EGU 2026 abstract for a new precipitation CDR (PUnet-CDR) was withdrawn on 19 May 2026, with no reason given.",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "This abstract has been withdrawn on 19 May 2026.",
+     "location": "abstract page"
+    }
+   ],
+   "applicability": "No link to funding is stated.",
+   "confidence": "moderate",
+   "confidence_reason": "One page, read via extract."
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "text": "CHRS's NOAA CPO cooperative agreement NA23OAR4310443 shows no termination; it ran its full term to 2026-08-31 ($390,000).",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "\"total_obligation\": 390000.0, | \"date_signed\": \"2023-07-07\", | \"start_date\": \"2023-09-01\", | \"end_date\": \"2026-08-31\", | \"last_modified_date\": \"2024-08-20\"",
+     "location": "JSON"
+    }
+   ],
+   "applicability": "No successor award was checked (USAspending search needs POST).",
+   "confidence": "high",
+   "confidence_reason": "Federal award record.",
+   "figure_status": "obligation",
+   "sole_source_reason": "The federal award database is the authority for the award."
+  },
+  {
+   "id": "c12",
+   "importance": "supporting",
+   "text": "The UC researchers' class action (Thakur v. Trump) does not name Commerce, NOAA or NASA as defendants, and CalMatters reports almost all of more than $900M in terminated UC grants restored.",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "contextualizes",
+     "passage": "EXHIBIT C | National Endowment for the Humanities",
+     "location": "p. 1"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "\"almost all\" of the more than $900 million in UC grants terminated",
+     "location": "body"
+    }
+   ],
+   "applicability": "Defendant list per sa3's read of Dkt. 184.",
+   "confidence": "moderate",
+   "confidence_reason": "Subagent read; extract-level for CalMatters.",
+   "figure_status": "actual"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "c8",
+   "source_ids": [
+    "s26",
+    "s13"
+   ],
+   "status": "resolved",
+   "explanation": "The FY2027 NCEI cut: the CJ gives (17,807) thousand from the FY2027 base of 69,807; measured from FY2026 enacted (69,000) it is about $17.0M. A Science search snippet (unread) says '$18 million', consistent with 17.807 rounded. The answer gives the CJ figure and both baselines."
+  }
+ ],
+ "coverage_gaps": [
+  "No news item, UCI/CHRS announcement or interview found (2024-2026) that names PERSIANN/PERSIANN-CDR or CHRS in connection with funding cuts, layoffs, NOAA/NASA restructuring or threats. Only indirect items: Data Rescue Project archived PERSIANN-CDR on 2025-04-24; UCI's own May 2025 tally shows 1 NOAA incoming subaward terminated, not identified. (from sa1)",
+  "The one NOAA incoming subaward terminated at UCI (town hall slides 2025-05-21) is unidentified; whether it involves CHRS is unknown. Lead: UCI Office of Research or Thakur v. Trump exhibits if NOAA/Commerce ever produced a spreadsheet (none found). (from sa1)",
+  "NSF award 2332263 (AghaKouchak, levee project) termination 4/18/2025 and reinstatement 6/30/2025 come only from the Thakur court spreadsheet; NSF award page is JS-only and blank via WebFetch; NSF API query returned 0 items; Grant Witness record not checked (site not fetched). No press coverage naming AghaKouchak for this termination found (Yale Scientific covers it under Vahedifard/Tufts only). (from sa1)",
+  "Not searched for lack of time: E&E News/Inside Climate News/Science by name for CHRS; UNU-INWEH own statements (only one search); LA Times archive search for AghaKouchak 2024; Daily Bruin pieces (UCLA-focused). (from sa1)",
+  "Successor NOAA/NASA award to CHRS (2025-2026) not checked in USAspending: award search needs POST (GET-only helper). Coordinator could run the USAspending Advanced Search in a browser: recipient Regents of the University of California, Irvine; agencies NOAA and NASA; keywords PERSIANN, precipitation; action dates 2025-01-01 to 2026-11-19. (from sa3)",
+  "NOAA FY2027 Congressional Justification (commerce.gov PDF) refused with HTTP 403 to both fetch_page and WebFetch; NCEI line and any CDR mention not checked in the primary text by this subagent (Part 3 run reported no CDR line and NCEI request $52.0M). Needs browser read. (from sa3)",
+  "No 2026 NESDIS Notice of Changes index found (the 2026-notice-of-changes URL returns 404); 2026 notices (e.g., S-NPP cessation Nov 2, 2026) appear only as individual news items under the Notice of Changes tag (https://www.nesdis.noaa.gov/news-events/search-news?tag=1116), not read. Grant Witness has no NOAA dataset seen; no official NOAA terminated-grant list found. CPO HRPCDR project page (cpo.noaa.gov/?p=37644) not re-read for status. (from sa3)",
+  "No news item found (2024-Nov 2026) that names the NOAA CDR Program, a list of CDRs at risk, or PERSIANN/CHRS in connection with cuts. Unread leads that might: Science 'Trump seeks to end climate research at premier U.S. climate agency' (NCEI -$18 million; 403), FlowingData list of discontinued NOAA datasets (403), Nature Climate Change 'Data under duress' (paywall redirect), Nature Geoscience 'Save the data'. The ISCCP H-Series CDR decommissioning appeared only in a search snippet (unverified). (from sa2)",
+  "CPO/MAPP: no coverage names MAPP; CPO appears only via Climate Adaptation Partnership terminations (UW CIG, NOTUS, Washington v. Commerce lawsuit). NOTUS article redirect to another host not followed. (from sa2)",
+  "CISESS/CICS/NCICS: no news of cuts, layoffs or lapses naming them; only generic cooperative-institute elimination in FY2026 and FY2027 requests (Eos, UCS, CRS) and Congress restoring OAR (AGU: FY27 House $620.16 million). Not checked: NCICS news page, NC State news on Asheville NCEI buyouts affecting CISESS-NC staff. (from sa2)",
+  "NASA PMM/GPM: no coverage names GPM or the PMM program as cut; Planetary Society FY2027 count of 16 Earth Science cancellations without a full list. Scientific American '54 NASA science missions' list not read. (from sa2)",
+  "EDGI tracker not found in searches; AMS 17 April 2025 statement on OAR elimination (headlines.ametsoc.org tag page) not read. (from sa2)",
+  "NESDIS 2025 Notice of Changes: only page 1 of 3 read (ISCCP H-Series CDR retired 2025-05-08); pages 2-3 and the 2026 Notice of Changes not checked for PERSIANN-CDR. (from sa2)",
+  "Science (2025-04, 'Trump seeks to end climate research at premier U.S. climate agency'): bot check in the browser, WebFetch 403; not read.",
+  "USAspending successor-award search for CHRS (needs POST or a browser form): not run."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN funding cuts",
+   "tool": "WebSearch standard",
+   "notes": "No result names PERSIANN/CHRS; all general NOAA/climate cuts coverage (E&E News, NPR, Daily Bruin, etc.).",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN satellite rainfall NOAA cuts 2025",
+   "tool": "WebSearch extended",
+   "notes": "Only dataset pages (NCEI user guide rev 12/31/2025, ERDDAP, Data Rescue Project portal entry, UCAR guide, Earth Engine). No news tying PERSIANN to cuts. Data Rescue entry read (sa1-e2).",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN UC Irvine 2025",
+   "tool": "WebSearch standard",
+   "notes": "Theses/dissertation (Bolboli Zadeh, Vu Dao), ICDC Hamburg mirror, ERDDAP. No news on cuts. r1: not found after 3 queries.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UC Irvine federal grants terminated 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains news.uci.edu, engineering.uci.edu. Found UCI News 2025-10-10 'Research realities...' (read, sa1-e1: no CHRS/NOAA/NASA), Keck and Moore bridge funding items. No CHRS item.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CHRS UC Irvine news 2025",
+   "tool": "WebSearch standard",
+   "notes": "Only UCI Digest issues; nothing on CHRS.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UC Irvine research funding cuts 2025",
+   "tool": "WebSearch standard",
+   "notes": "UCI federal-updates pages, May 2025 research town hall slides (read, sa1-e4: 1 NOAA incoming subaward terminated, unnamed), UCI physics 'Fears about NASA funding' (physics/astronomy, not CHRS). r2: no CHRS-specific item after 3 queries.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak NOAA cuts",
+   "tool": "WebSearch standard",
+   "notes": "No result names AghaKouchak; all general NOAA cuts coverage.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sorooshian NOAA budget",
+   "tool": "WebSearch standard",
+   "notes": "No result names Sorooshian; general FY2026/FY2027 NOAA budget coverage.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak Trump climate research 2025",
+   "tool": "WebSearch standard",
+   "notes": "No result names AghaKouchak. r3: no press quoting these people on cuts after 3 queries (plus 'Phu Nguyen UC Irvine flood 2025' extra starting query: only profiles and UCI flood features, no cuts).",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Phu Nguyen UC Irvine flood 2025",
+   "tool": "WebSearch standard",
+   "notes": "Brief starting query under r3. Profiles, UCI 'When the Levee Breaks' (Sanders), no cuts coverage.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Grant Witness Sorooshian terminated grant",
+   "tool": "WebSearch standard",
+   "notes": "Only Grant Witness background; no Sorooshian record found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak NASA Earth science cuts interview",
+   "tool": "WebSearch extended",
+   "notes": "Mongabay 2025-12 interview on inland seas (unrelated to funding); Fulcrum op-ed checked (by Catherine Nakalembe, UMD, 2026-05-17; PERSIANN/CHRS/AghaKouchak NOT PRESENT).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN satellite rainfall flood 2025 news",
+   "tool": "WebSearch standard",
+   "notes": "No 2025 news naming PERSIANN; CISESS update and CHRS pages only.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak Los Angeles Times 2025 federal cuts drought",
+   "tool": "WebSearch standard",
+   "notes": "No LA Times piece quoting AghaKouchak on cuts found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sorooshian UC Irvine 2025 satellite precipitation funding",
+   "tool": "WebSearch standard",
+   "notes": "Sorooshian 2025 AGU Bowie Medal (UCI/Arizona news, context); Iran International 2025-09-29 result checked: Sorooshian/UCI NOT PRESENT (unrelated).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UNU-INWEH AghaKouchak US funding withdrawal",
+   "tool": "WebSearch standard",
+   "notes": "No UNU-INWEH/AghaKouchak statement found; only general Jan 2026 US withdrawal from UN bodies.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UC Irvine NOAA climate grant terminated 2025 hydrology",
+   "tool": "WebSearch standard",
+   "notes": "MIT Technology Review 2025-06-02 names UCI CLIMATE Justice Initiative (about $4M NSF) termination (read, sa1-e3); no CHRS.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN drought 2024 news satellite rainfall",
+   "tool": "WebSearch standard",
+   "notes": "Only research papers; no 2024 news coverage.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Center for Hydrometeorology and Remote Sensing\" 2026",
+   "tool": "WebSearch standard",
+   "notes": "CISESS March/May 2026 updates (already in pt3 run), AGU newsletter; no cuts coverage.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak quoted NOAA data loss 2025",
+   "tool": "WebSearch extended",
+   "notes": "No result names AghaKouchak.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN 2026 news",
+   "tool": "WebSearch standard",
+   "notes": "Only data/publication notices; CHRS portal PERSIANN-CDR dirs modified March 2026; no news.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak Orange County Register 2025",
+   "tool": "WebSearch standard",
+   "notes": "Nothing naming AghaKouchak.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UC Irvine engineering faculty NASA grant cancelled 2025",
+   "tool": "WebSearch standard",
+   "notes": "No engineering NASA termination found; UCI physics NASA fears item only.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Texas California faces major dangers extreme floods AghaKouchak",
+   "tool": "WebSearch standard",
+   "notes": "Led to NBC News 2025-07-17 quoting AghaKouchak as CHRS director (read, sa1-e5; unrelated to cuts).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak NBC News flash flood warnings record 2025",
+   "tool": "WebSearch standard",
+   "notes": "Found NBC original; read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sorooshian Bowie Medal 2025 UC Irvine",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains news.uci.edu, engineering.uci.edu. Context only (honors); ASCE Distinguished Member 2026-04 item.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "satellite precipitation climate data record NOAA cuts PERSIANN Eos",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains eos.org, eenews.net, insideclimatenews.org, science.org, nature.com. Only papers; no news on cuts naming PERSIANN.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UC Irvine Center for Hydrometeorology and Remote Sensing grant terminated NSF",
+   "tool": "WebSearch standard",
+   "notes": "Led to Thakur v. Trump NSF spreadsheet (read, sa1-e6): NSF 2332263, PI AghaKouchak, terminated 4/18/2025, reinstated 6/30/2025.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NSF 2332263 Equitable Adaptive Strategies Flood Protection Infrastructure terminated",
+   "tool": "WebSearch standard",
+   "notes": "Yale Scientific 2026-05-08 (read, sa1-e7) reports termination of Vahedifard (Tufts) CLIMA project; Tufts news 2023-11-01 names AghaKouchak as team member and award 2401545 for Tufts. NSF award page is JS-only (blank via WebFetch).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Grant Witness NSF terminated UC Irvine AghaKouchak levee",
+   "tool": "WebSearch standard",
+   "notes": "No Grant Witness record surfaced in search.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kuolin Hsu UC Irvine 2025 news precipitation",
+   "tool": "WebSearch standard",
+   "notes": "Context only: CW3E/UCI student AGU award (advisors Sorooshian, Nguyen, Hsu); no cuts coverage.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Grant Witness NOAA terminated grants University of California Irvine",
+   "tool": "WebSearch standard",
+   "notes": "Led to Thakur docket Doc 211-3 (checked: NEH stipulation; renamed _unused; CHRS people NOT PRESENT) and LAist/CalMatters 2026-07-21 'White House admits it used keywords to kill billions worth of California research grants' (Mikhail Zinshteyn; checked via WebFetch: UC Irvine, NOAA, NASA, AghaKouchak, Sorooshian, Hsu, Nguyen, PERSIANN NOT PRESENT; reports agencies terminated 'more than a thousand research grants at the University of California').",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak 2026 federal funding climate science interview",
+   "tool": "WebSearch standard",
+   "notes": "No result names AghaKouchak.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sorooshian LAist Daily Pilot 2025 rain satellite UC Irvine",
+   "tool": "WebSearch standard",
+   "notes": "No LAist/Daily Pilot 2024-2026 piece quoting Sorooshian found; only older UCI items (iRain 2017) and 2025 Bowie Medal.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "(page check) https://uci.edu/federal-updates/research-impacts.php",
+   "tool": "WebFetch",
+   "notes": "UCI 'Research Impacts' page: NOAA, NASA, CHRS, PERSIANN, Sorooshian, AghaKouchak, Hsu, Nguyen all NOT PRESENT.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "(page check) https://thefulcrum.us/environment/nasa-earth-science-vs-artemis-budget",
+   "tool": "WebFetch",
+   "notes": "Op-ed by Catherine Nakalembe (UMD), 2026-05-17, on FY2027 NASA Earth science cuts; PERSIANN, CHRS, UC Irvine and named people NOT PRESENT.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "(page check) https://www.iranintl.com/en/202509299076",
+   "tool": "WebFetch",
+   "notes": "Unrelated (UN sanctions on Iran); Sorooshian/UCI NOT PRESENT.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "(page check) https://engineering.tufts.edu/news-events/news/preparing-equitable-adaptation-strategies-levees-changing-climate",
+   "tool": "WebFetch",
+   "notes": "Tufts news 2023-11-01: team includes 'Amir Aghakouchak from the University of California, Irvine'; lead PI Vahedifard; Tufts award number 2401545. Grant amount NOT PRESENT. Background to sa1-e6.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "(page check) https://par.nsf.gov/search/award_ids:2332263",
+   "tool": "WebFetch",
+   "notes": "NSF-PAR lists 5 publications under award 2332263, each with AghaKouchak and/or Vahedifard as author (e.g., 'Comprehensive portfolio of adaptation measures to safeguard against evolving flood risks in a changing climate', Azhar, Kane, Vahedifard, AghaKouchak, Commun. Earth Environ. 2025). Awardee institution/PI NOT PRESENT on the page. Corroborates AghaKouchak's link to award 2332263.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"2332263\" NSF award UC Irvine",
+   "tool": "WebSearch standard",
+   "notes": "No page names the award number; surfaced other UCI NSF awards (2023 $1.5M shared NSF flood-adaptation award with U. Miami; CLIMATE Justice $7.5M). Termination status of these other awards not checked (Thakur NSF spreadsheet search for AghaKouchak returned only 2332263).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "(local search) Thakur Doc 211-5 rows naming California-Irvine",
+   "tool": "find_text.py",
+   "notes": "About 20 UC Irvine NSF rows in the spreadsheet, mostly STEM education/DEI-related. Only AghaKouchak (2332263, levee) is a CHRS person. Also flood-related: NSF 2305476 'SCC-IRG Track 2: Equitable-Access Flood Modeling for Timely and Just ...', grantee University of Miami, UC PI Brett Sanders (UC Irvine; not CHRS), terminated 4/18/2025, reinstated 6/30/2025, $1,499,549 awarded (txt lines 3085-3092). Sorooshian, Hsu, Phu Nguyen, Hydrometeorology, PERSIANN, precipitation NOT PRESENT anywhere in the 70-page file.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI product retirement 2025 list",
+   "tool": "WebSearch",
+   "notes": "Led to NESDIS 2025 Notice of Changes page (read in full, 2 pages). PERSIANN-CDR / precipitation CDRs NOT PRESENT among 2025 retirements; ISCCP H-Series cloud CDR is the only CDR listed.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA NESDIS decommission datasets 2025 notice of changes",
+   "tool": "WebSearch",
+   "notes": "Results: POES, NOAA-18, HURSAT, AMSR2, S-NPP cessation (Nov 2026) notices; none names PERSIANN. 2026-notice-of-changes URL returns 404.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR NCEI notice",
+   "tool": "WebSearch",
+   "notes": "Top result NCEI node/8306 (pause notice), re-read 2026-11-19: still up, now with site-wide cloud-migration banner. No retirement notice found.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA FY2026 congressional justification climate data records",
+   "tool": "WebSearch",
+   "notes": "FY2026 CJ PDF on commerce.gov gave HTTP 403; Part 3 run already found no Climate Data Records line. Snippets: request terminated OAR climate labs/CIs, 'Total, Climate Research' zero (Axios, Eos). None name PERSIANN/CHRS.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NESDIS FY2027 budget justification NCEI",
+   "tool": "WebSearch",
+   "notes": "FY2027 CJ PDF (commerce.gov) HTTP 403 to fetch_page and WebFetch. Read CRS IF13275 (2026-07-28) instead: names OAR climate research and data elimination; NCEI/CDR NOT PRESENT.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "FY2027 NOAA Congressional Justification \"Climate Data Records\" NESDIS",
+   "tool": "WebSearch",
+   "notes": "Third r8 query. No result quoting a CDR line from the FY2027 CJ; not found after 3 queries.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Thakur v. Trump NOAA grants UC",
+   "tool": "WebSearch",
+   "notes": "No result ties NOAA to Thakur. Read Dkt. 184 Third Amended Complaint (2026-02-03): Commerce/NOAA/NASA not defendants. Newest coverage: Supreme Court declined review (KPBS/LAist/CalMatters, Nov 17, 2026) - not checked for CHRS names.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Grant Witness NOAA terminated grants University of California Irvine",
+   "tool": "WebSearch",
+   "notes": "Grant Witness covers NIH, NSF, EPA (snippet: 'Grant Witness • NIH Data • NSF Data • EPA Data (Beta)'); no NOAA dataset seen. Led to Thakur Dkt. 211-3 (NEH exhibit; read, no CHRS names). UCI town hall 2025-05-21 (56 awards impacted) already in Part 3.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Thakur v. Trump Department of Commerce NOAA grant termination exhibit",
+   "tool": "WebSearch",
+   "notes": "Third r9 query. No NOAA/Commerce exhibit exists in results; found Dkt. 184 (third amended complaint). Not found after 3 queries.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UC Irvine CHRS NOAA award 2026 precipitation climate data record",
+   "tool": "WebSearch",
+   "notes": "No 2026 NOAA award to CHRS found. Leads: CPO HRPCDR project page (cpo.noaa.gov/?p=37644, undated, PI Phu Nguyen = NA23OAR4310443 project); EGU26-2633 PUnet-CDR abstract withdrawn 2026-05-19 (read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Federal Register NOAA NCEI climate data record discontinue 2025",
+   "tool": "WebSearch",
+   "notes": "News on 2025 NCEI discontinuations (Billion-Dollar Disasters, Arctic sea ice/NSIDC products, ocean/earthquake datasets: Fox Weather, Juneau Empire, E&E News). None names PERSIANN, CHRS or precipitation CDRs (snippets only).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA Climate Program Office 2026 funded projects Climate Observations and Monitoring University of California Irvine",
+   "tool": "WebSearch",
+   "notes": "No 2026 COM award list naming UCI. Follow-up NOAA Climate Program Office awards $38.8M 2026 led to a climate.gov item actually dated November 1, 2017 (renamed _unused).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA Climate Program Office awards $38.8M 2026",
+   "tool": "WebSearch",
+   "notes": "Item dated 2017-11-01 on climate.gov; not relevant.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA grant terminations list 2025 climate research cooperative agreements universities",
+   "tool": "WebSearch",
+   "notes": "No official NOAA termination list exists in results; documented cases are Princeton ($4M, CIMES etc., April 2025), UW Northwest Climate Resilience Collaborative (May 2025), climate adaptation centers. None names UC Irvine or CHRS (snippets).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AghaKouchak grant terminated 2026",
+   "tool": "WebSearch",
+   "notes": "18 results, all on NIH/AHRQ/NSF terminations generally; none mentions AghaKouchak.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Federal Register API: conditions[term]=PERSIANN; and \"climate data record\" + agency NOAA + published since 2024-01-01",
+   "tool": "lookup (Federal Register API)",
+   "notes": "Both returned count 0.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USAspending API: GET /api/v2/awards/ASST_NON_NA23OAR4310443_1330/; GET /api/v2/autocomplete/recipient/ (HTTP 405, POST only)",
+   "tool": "lookup (USAspending API)",
+   "notes": "Award record re-read (unchanged). Recipient/keyword award search needs POST, which the GET-only helper cannot send, so successor search by recipient + PERSIANN/precipitation was not possible.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "calmatters.org UC research Supreme Court Nov 2026 (read from r9 results)",
+   "tool": "WebFetch",
+   "notes": "Checked for CHRS/NOAA names: NOT PRESENT (no-coverage evidence). KPBS and LAist copies of the same story not read.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Budget Estimates Fiscal Year 2027\" NOAA Congressional Justification pdf",
+   "tool": "WebSearch",
+   "notes": "Search for another copy of the FY2027 CJ. Found commerce.gov/media/15062 (same host, not tried) and the House Science FY27 hearing charter (read: NESDIS $1.66B, no NCEI/CDR line). Wayback copy fetch denied by auto-mode classifier.",
+   "from": "sa3",
+   "copy_of": "https://www.commerce.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Inside Climate News, NOAA Defends Cuts to Research and Climate Monitoring at Budget Hearing (2026-04-29, Gabriel Matias Castilho), read via WebFetch",
+   "tool": "WebFetch",
+   "notes": "No-coverage evidence: names Global Monitoring Laboratory, Mauna Loa, 14 other climate labs; NCEI, CDRs, PERSIANN, UC Irvine, Sorooshian, AghaKouchak, CPO, cooperative institutes all NOT PRESENT. Extract not saved as file.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA climate data records program cuts",
+   "tool": "WebSearch",
+   "notes": "Results: Billion-Dollar Disasters retirement, RCC lapse, NOAA website shutdowns, ICN ocean monitoring. None named the CDR Program or PERSIANN.",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI climate data records budget 2026",
+   "tool": "WebSearch",
+   "notes": "Results: bipartisan pushback, Billion-dollar database, E&E 2025-08-07 'Here's where the Trump team is scrubbing climate data' (WebFetch: PERSIANN, CHRS, UC Irvine, Climate Data Record, precipitation datasets, cooperative institutes, Data Rescue Project NOT PRESENT; only Billion Dollar product named). No CDR Program coverage.",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Climate Data Record program NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode. Only dataset/catalog pages (GPCP Daily v3.3 published 2025-08-05; NSIDC AMSR2 prototype discontinued 2025-09-01). No news naming the CDR Program in connection with cuts. r4: not found after 3 queries.",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Climate Program Office grants terminated 2025",
+   "tool": "WebSearch",
+   "notes": "All results EPA/DOE grant terminations; nothing on NOAA CPO.",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA MAPP program cut",
+   "tool": "WebSearch",
+   "notes": "Results: AIP FYI, E&E 'White House details proposed NOAA research, science cuts', Axios 2025-07-01, NPR 2025-04-11 on OAR elimination; MAPP not named in any result.",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA cooperative institutes eliminated FY2027 budget request",
+   "tool": "WebSearch",
+   "notes": "Results: CRS IF13275, UCS FY27 blog, ICN 2026-04-29, AGU Bridge 2026-05-26, EDF, CU federal update. None named CPO/MAPP or PERSIANN. r5: CPO/MAPP named in coverage not found after 3 queries.",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "cooperative institute NOAA funding lapse 2025",
+   "tool": "WebSearch",
+   "notes": "Results: E&E 2025-04-21 (read), Axios Boulder, Colorado Sun 2026-04-03 GML furloughs, Boulder Reporting Lab CIRES contract 2025-05-15, CU letter 2025-04-29, Eos $0 climate research (read). None named CISESS/CICS/NCICS.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS funding 2025",
+   "tool": "WebSearch",
+   "notes": "Only CISESS's own 2025 seed grants announcement (six projects); no news of CISESS cuts.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCICS North Carolina Institute for Climate Studies NOAA cuts",
+   "tool": "WebSearch",
+   "notes": "Results: Southeast Regional Climate Center shutdown/reprieve (Cardinal News 2025-04-23, AOL), NCICS 'NOAA Cooperative Agreement Renewed' (CISESS $388M five-year, NC State $95M; undated in snippet), WFAE 2025-04-25. No report that NCICS/CISESS lost NOAA funding. r6: not found after 3 queries.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA precipitation measurement missions budget cut 2026",
+   "tool": "WebSearch",
+   "notes": "Results: Scientific American 54 missions (FY2027), NPR on OCO, AIP, grantedai (Congress preserved 55 missions in FY2026). Snippet mentions AOS-Storm partnership with JAXA PMM. GPM/PMM program not named as cut.",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA Earth science cuts GPM 2026",
+   "tool": "WebSearch",
+   "notes": "Results: Planetary Society FY2027 analysis (read: GPM NOT PRESENT; 16 Earth Science missions canceled), Columbia climate law, AGU Bridge. No result names GPM. r10: not found after 2 queries.",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"climate data records\" NOAA FY2027 budget",
+   "tool": "WebSearch",
+   "notes": "extended mode. Only older NOAA CJs (FY2022, FY2023 'Climate Data Records' NESDIS line $6,000K in snippets). No FY2027 coverage naming CDRs.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PERSIANN Data Rescue Project",
+   "tool": "WebSearch",
+   "notes": "Found DRP portal entry for PERSIANN-CDR (archived 2025-04-24).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "EDGI NOAA datasets decommissioned tracker 2025 precipitation",
+   "tool": "WebSearch",
+   "notes": "No EDGI tracker in results. NESDIS notices: nClimGrid-Daily FTP retirement 2025-06-30; GOES-R Rainfall Rate/QPE legacy product retirement 2026-11-02. PERSIANN not named.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA \"climate data record\" satellite datasets discontinued 2026",
+   "tool": "WebSearch",
+   "notes": "Results: NSIDC SIC CDR retirements 2026-01-15, FlowingData 'List of NOAA datasets to be discontinued' 2025-04-22 (403 on WebFetch), Columbia 'NOAA Decommissions Sea Ice Datasets', snippet mentions ISCCP H-Series CDR and HURSAT decommissioning. PERSIANN not named in snippets.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA decommissioning ISCCP climate data record HURSAT 2025",
+   "tool": "WebSearch",
+   "notes": "HURSAT decommission notice 2025-05-08 (NESDIS), DMSP data termination reversed 2025-07-30. No ISCCP or PERSIANN item.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PERSIANN funding cut 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode. No results naming PERSIANN; all unrelated (Iran, foreign aid).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA climate data records at risk cuts",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: science.org, nature.com, washingtonpost.com, eos.org, ametsoc.org. Results: Nature Geoscience 'Save the data', Nature Climate Change 'Data under duress', Science 'Trump seeks to end climate research at premier U.S. climate agency' (snippet: NCEI cut by $18 million; 403), WaPo 2025-05-08 billion-dollar tracker, Eos 'NOAA Datasets Will Soon Disappear' (read via WebFetch: CDR, PERSIANN, precipitation datasets NOT PRESENT; only Billion Dollar product named), Nature news on European institutes saving US data.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AGU Bridge FY2027 appropriations update NASA NOAA NSF (read)",
+   "tool": "WebFetch",
+   "notes": "https://thebridge.agu.org/2026/05/26/fy2027-appropriations-update-nasa-noaa-and-nsf/ (Michael Villafranca, 2026-05-26): OAR FY26 Final $633.88 million, FY27 PBR $0, FY27 House $620.16 million; NESDIS FY26 Final $1,665.70M, FY27 PBR $1,576.47M, House $1,755.62M; NASA Earth Science FY26 Final $2,153.00M, FY27 PBR $1,021.20M (-52.6%), House $1,325.00M; NCEI, climate data records, Climate Program Office, GPM, PERSIANN NOT PRESENT. Program level only.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCICS layoffs NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "Only Feb 2025 NOAA probationary layoffs coverage (NPR syndication, Bloomberg, NBC); NCICS not named.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Climate Program Office staff cuts 2026",
+   "tool": "WebSearch",
+   "notes": "Results: Eos, ICN, Bloomberg Law NOAA budget cuts, AP 1,000 more jobs, climate.gov staff eliminated (NPR). CPO not named in snippets.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CHRS UC Irvine NOAA grant terminated precipitation",
+   "tool": "WebSearch",
+   "notes": "Results: CHRS project pages (PERSIANN-CDR via NCDC CDR Program; no termination), CISESS 'Updates to a global precipitation product' (Mar 2026), HeraldNet editorial on UW CIG grant termination. No report of a CHRS grant termination.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Climate Adaptation Partnerships grant terminated 2025 Climate Program Office",
+   "tool": "WebSearch",
+   "notes": "Results: UW CIG termination notice 2025-05-08 (read), Washington v. Commerce lawsuit, E&E 'Judge orders NOAA to release Washington state climate money', NOTUS (redirect), EHN heat resilience. PERSIANN not named.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AMS statement NOAA budget climate data records 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: ametsoc.org. Results: AMS Policy Program study Oct 2025 (read), AMS 17 April 2025 statement on OAR elimination (tag page, not read), State of the Climate 2025. No CDR Program or PERSIANN.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Scientific American 54 NASA missions (read) / Nature Geoscience 'Save the data' (paywall redirect)",
+   "tool": "WebFetch",
+   "notes": "SciAm 2026-04-09 read (GPM NOT PRESENT). Nature Geoscience s41561-025-01729-w redirected to idp.nature.com login; not read.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Asheville NCEI cooperative institute scientists funding cut 2026",
+   "tool": "WebSearch",
+   "notes": "Results: E&E 2025-04-21, ICN 2025-09-13 (House rejects OAR elimination; directs no closure of labs or cooperative institutes), UCS 2026 post, NCAR break-up coverage Dec 2025, NBC AI weather institute. None named CISESS/NCICS/Asheville CI or PERSIANN.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPM Core Observatory mission termination budget 2026",
+   "tool": "WebSearch",
+   "notes": "Third r10 query. No news of GPM termination. Snippets: JAXA 12th anniversary Feb 2026 (still observing); GPM among 16 missions in NASA 2026 ESD Senior Review (FY2027-FY2029; call invites cost cuts with data degradation risk); SSMIS F16/F17/F18 data ending in GPM NRT products earlier than Sept 2026; JAXA TRMM/TMI L1C terminated 2026-07-14. Not read in full (snippets only). r10 not found after 3 queries.",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA Earth Science Senior Review 2026 results GPM extended",
+   "tool": "WebSearch",
+   "notes": "Follow-up. Read https://science.nasa.gov/earth-science/senior-review-2026/ via WebFetch: Page Last Updated Jan 21, 2026; no published results; GPM NOT PRESENT; schedule lists SR Panel Report May 2026, PPBE2028/Senior Review Budget Decisions May-July 2026; news headline NASA Terra Mission to End. GPM Senior Review outcome not found.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI \"pause in operations\" climate data record 2025",
+   "tool": "WebSearch",
+   "notes": "No news uses the NCEI PERSIANN-CDR pause wording; results are Billion-Dollar product, NSIDC snow/ice cutbacks (E&E Threats to NOAA-funded snow and ice data products), monthly briefings scrapped (E&E, Axios 2025-03-13), HURSAT. PERSIANN not named. The NCEI PERSIANN-CDR pause notice found by part 3 has no press coverage in these results.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Trump seeks to end climate research at premier U.S. climate agency\"",
+   "tool": "WebSearch",
+   "notes": "Search for another copy of the Science article; no full copy found (only reposts: feddit, SolarDaily/AFP, Axios 2025-04-11). Read E&E 2025-04-11 OMB passback piece instead (no CDR/PERSIANN).",
+   "from": "sa2",
+   "copy_of": "https://www.science.org/content/article/trump-seeks-end-climate-research-premier-u-s-climate-agency"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA NESDIS notice of changes products decommissioned list 2025",
+   "tool": "WebSearch",
+   "notes": "Lead to official 2025 Notice of Changes (read page 1). Also POES end 2025-06-16, HURSAT, AVHRR Pathfinder SST discontinued, SPSRB site, AMSR2 to AMSR3 (June 2026). Pages 2-3 of the notice list not read (gap).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NESDIS 2025 Notice of Changes pages 2 and 3 (?page=1, ?page=2)",
+   "tool": "WebFetch",
+   "notes": "Page 2 lists 15 entries 2025-04-04 to 2025-04-22 (Global Ocean Currents Database, NOAA Marine Environmental Buoy Database, WSA-Enlil, OceanNOMADS, marine geology sets, IMLGS, SPSRB, earthquake sets, geothermal hot springs, Shoreline resources); page 3 lists Coastline Extractor, NCEI Coastal Water Temperature Guide, NCEI Coastal Ecosystem Maps (2025-04-01/04). PERSIANN, precipitation, CDR NOT PRESENT on pages 2-3. Across all 3 pages the only CDR is ISCCP H-Series (2025-05-08). Closes the page 2-3 part of the Notice of Changes gap; the 2026 Notice of Changes is still unchecked.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NESDIS 2026 notice of changes NCEI decommission",
+   "tool": "WebSearch",
+   "notes": "2026 notices (snippets only): HDGM/HDGM-RT end no earlier than 2026-09-25; ISD Global Hourly FTP/HTTPS retirement 2026-07-31; Storm Events Database location change; AMSR2 NRT end Sept 2026; Metop-B/C HRPT retired 2026-09-01; PolarProd termination 2026-09-30; manual Dvorak 2026-09-10; GOES-R GRR/QPE legacy retirement 2026-11-02. No PERSIANN-CDR or other CDR retirement in these 2026 notices; not a full index.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Other copies of the Science 2025-04 article: Axios 2025-04-11 (403); SolarDaily/TerraDaily AFP 2025-04-11 (read)",
+   "tool": "WebFetch",
+   "notes": "TerraDaily/AFP, Trump wants to halt climate research by key agency: reports (2025-04-11), cites the internal White House document seen by CNN and Science: about 75 percent of funding for NOAA research branch could be eliminated. NCEI figure, climate data records, cooperative institutes, Climate Program Office, precipitation, PERSIANN: NOT PRESENT. The Science article itself remains unread.",
+   "from": "sa2",
+   "copy_of": "https://www.science.org/content/article/trump-seeks-end-climate-research-premier-u-s-climate-agency"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://flowingdata.com/2025/04/22/list-of-noaa-datasets-to-be-discontinued/",
+   "tool": "browser (get_page_text)",
+   "notes": "Read; points to NESDIS running list; names no CDR",
+   "copy_of": "https://flowingdata.com/2025/04/22/list-of-noaa-datasets-to-be-discontinued/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://www.science.org/content/article/trump-seeks-end-climate-research-premier-u-s-climate-agency",
+   "tool": "browser (navigate)",
+   "notes": "Cloudflare bot check (403); stopped, not bypassed",
+   "copy_of": "https://www.science.org/content/article/trump-seeks-end-climate-research-premier-u-s-climate-agency"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://portal.datarescueproject.org/datasets/precipitation---persiann-climate-data-record-cdr/",
+   "tool": "browser (get_page_text)",
+   "notes": "Read in full; archived Apr 24 2025, 16.0 GB; no reason given",
+   "copy_of": "https://portal.datarescueproject.org/datasets/precipitation---persiann-climate-data-record-cdr/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://headlines.ametsoc.org/tag/ams-statement/",
+   "tool": "browser (find)",
+   "notes": "Opened; 'climate data record' not on page",
+   "copy_of": "https://headlines.ametsoc.org/tag/ams-statement/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://www.notus.org/trump-white-house/trump-cut-climate-adaptation-centers-noaa",
+   "tool": "browser (find)",
+   "notes": "Redirected to washingtonsun.com; 'Climate Program Office' not on page",
+   "copy_of": "https://www.notus.org/trump-white-house/trump-cut-climate-adaptation-centers-noaa"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://www.nature.com/articles/s41558-025-02323-z",
+   "tool": "browser (find)",
+   "notes": "Opened; PERSIANN and precipitation not on visible page (likely paywalled)",
+   "copy_of": "https://www.nature.com/articles/s41558-025-02323-z"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://web.archive.org/web/2025/https://www.commerce.gov/sites/default/files/2025-06/NOAA-FY2026-Congressional-Budget-Submission.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved 2025-11-13 capture; no 'Climate Data Record' text; OAR-4 terminations found",
+   "copy_of": "https://www.commerce.gov/sites/default/files/2025-06/NOAA-FY2026-Congressional-Budget-Submission.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "FY2027 CJ commerce.gov copy",
+   "tool": "none (covered by noaa.gov copy, s26)",
+   "notes": "sa3 read the noaa.gov copy of the same CJ",
+   "copy_of": "https://www.commerce.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes",
+   "tool": "browser (get_page_text, find)",
+   "notes": "Page 1 of 16 read; PERSIANN not found"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN NOAA cuts 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "Only NCEI product pages and general NOAA-layoff news; nothing naming PERSIANN with cuts"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak federal funding cuts",
+   "tool": "duckduckgo (browser)",
+   "notes": "Unrelated results (tribal programs, parks); nothing on AghaKouchak"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=portal.datarescueproject.org/datasets/precipitation---persiann-climate-data-record-cdr/",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "Saved copy exists: 20260210173144 (status 200); not opened, the live page was read in full",
+   "copy_of": "s2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"PERSIANN\" data rescue archived 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "Refused by the rule guard (follow-up queue first); the other copy the portal itself lists is the academictorrents torrent 448dd345e52d3a0b0953b7f2d86f75089ca61a24 (not fetched)",
+   "copy_of": "s2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://www.usaspending.gov/search",
+   "tool": "none (form-based search)",
+   "notes": "No GET route; the browser may not fill in forms in this run; left as a gap",
+   "copy_of": "https://www.usaspending.gov/search"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Center for Hydrometeorology and Remote Sensing\" funding 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "CHRS home (Sorooshian 2025 AGU Bowie Medal), social pages, iRain app; nothing on cuts"
+  }
+ ]
+}

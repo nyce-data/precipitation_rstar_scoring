@@ -1,0 +1,366 @@
+{
+  "schema_version": "0.1",
+  "id": "persiann-cdr-daily",
+  "source": {
+    "file": "markdown/persiann-cdr-daily_dataset-metadata.md",
+    "section": "ChatGPT answer",
+    "converted": "2026-11-21",
+    "followups": [
+      {
+        "date": "2026-11-21",
+        "from": "ChatGPT follow-up answers on PERSIANN-CDR AWS/Azure access and on its latest dates (pasted by the user)"
+      }
+    ]
+  },
+  "dashboard": {
+    "id": "persiann-cdr-daily",
+    "name": "PERSIANN-CDR v1r1 Daily",
+    "data_archive": "NOAA NCEI",
+    "precipitation_basis": "Geostationary IR + GPCP gauge adjustment",
+    "period_of_record": "1 Jan 1983 - Present",
+    "formal_cdr": "YES — formal NOAA CDR",
+    "update_status": "Ongoing; updated quarterly, about three months behind real time.",
+    "spatial_coverage": "60°S-60°N, all longitudes",
+    "resolution": "0.25°",
+    "temporal_frequency": "Daily (monthly/yearly aggregations also distributed by CHRS)",
+    "curator": "Soroosh Sorooshian (UC Irvine CHRS)",
+    "doi": "10.7289/V51V5BWQ",
+    "notes": "Daily precipitation estimated from geostationary infrared imagery (GridSat-B1) by an artificial neural network trained on NCEP Stage IV, then bias-adjusted to GPCP v2.2 monthly. Long satellite-based record, useful in gauge-sparse regions. Developed at UC Irvine CHRS; archived and stewarded by NOAA NCEI.",
+    "access_endpoints": [
+      {
+        "name": "NOAA NCEI dataset record (DOI)",
+        "url": "https://doi.org/10.7289/V51V5BWQ",
+        "role": "primary"
+      },
+      {
+        "name": "NOAA / CHRS-UCI",
+        "url": "https://chrsdata.eng.uci.edu",
+        "role": "alternative"
+      },
+      {
+        "name": "NOAA NCEI PERSIANN-CDR NetCDF files",
+        "url": "https://data.ncei.noaa.gov/cdr/persiann/files/",
+        "role": "alternative"
+      },
+      {
+        "name": "NOAA NCEI ERDDAP data access",
+        "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.html",
+        "role": "alternative"
+      },
+      {
+        "name": "Google Earth Engine – PERSIANN-CDR",
+        "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_PERSIANN-CDR",
+        "role": "alternative"
+      },
+      {
+        "name": "NOAA PERSIANN-CDR AWS bucket",
+        "url": "https://noaa-cdr-precip-persiann-pds.s3.amazonaws.com/index.html",
+        "role": "alternative"
+      }
+    ],
+    "about_url": "dataset.html?id=persiann-cdr-daily"
+  },
+  "identification": {
+    "full_name": "Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks – Climate Data Record",
+    "abbreviations": [
+      "PERSIANN-CDR",
+      "PERSIANN-CDR Daily"
+    ],
+    "version": "Version 1, Revision 1 (v01r01)",
+    "doi": "10.7289/V51V5BWQ",
+    "doi_url": "https://doi.org/10.7289/V51V5BWQ",
+    "data_provider": "NOAA NCEI (steward); UC Irvine CHRS (science)",
+    "dataset_type": "Gridded satellite-derived precipitation estimates",
+    "description": "A NOAA climate data record that estimates daily precipitation from satellite infrared observations with an artificial neural network. NOAA NCEI is the authoritative data provider; the science was developed at the Center for Hydrometeorology and Remote Sensing (CHRS), University of California, Irvine."
+  },
+  "archives": [
+    {
+      "name": "NOAA NCEI",
+      "role": "primary",
+      "description": "Climate Data Record archive; primary authoritative archive and long-term data steward"
+    },
+    {
+      "name": "University of California, Irvine – CHRS",
+      "role": "project",
+      "description": "Scientific development and data distribution through the CHRS Data Portal"
+    },
+    {
+      "name": "NOAA THREDDS / ERDDAP",
+      "role": "access-service",
+      "description": "Online data access, subsetting and gridded-data services"
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "role": "mirror",
+      "description": "Cloud-hosted access through the Registry of Open Data"
+    },
+    {
+      "name": "Microsoft Azure",
+      "role": "mirror",
+      "description": "Cloud-hosted data access"
+    },
+    {
+      "name": "Google Earth Engine",
+      "role": "mirror",
+      "description": "Cloud-based access for analysis and processing"
+    }
+  ],
+  "access_endpoints": [
+    {
+      "name": "NOAA NCEI – PERSIANN-CDR dataset landing page",
+      "url": "https://doi.org/10.7289/V51V5BWQ",
+      "role": "primary",
+      "type": "doi"
+    },
+    {
+      "name": "NOAA NCEI – PERSIANN-CDR product page",
+      "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-persiann",
+      "role": "alternative",
+      "type": "landing-page"
+    },
+    {
+      "name": "NOAA NCEI – direct download (NetCDF files)",
+      "url": "https://data.ncei.noaa.gov/cdr/persiann/files/",
+      "role": "alternative",
+      "type": "download",
+      "purpose": "Download the original daily NetCDF files"
+    },
+    {
+      "name": "NOAA NCEI – ERDDAP data access",
+      "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.html",
+      "role": "alternative",
+      "type": "subsetting-service",
+      "purpose": "Select particular dates and areas"
+    },
+    {
+      "name": "NOAA NCEI – THREDDS data service",
+      "url": "https://www.ncei.noaa.gov/thredds/",
+      "role": "alternative",
+      "type": "subsetting-service"
+    },
+    {
+      "name": "UC Irvine – CHRS Data Portal",
+      "url": "https://chrsdata.eng.uci.edu/",
+      "role": "alternative",
+      "type": "portal",
+      "purpose": "Visualization and spatial analysis"
+    },
+    {
+      "name": "Google Earth Engine – PERSIANN-CDR",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_PERSIANN-CDR",
+      "role": "alternative",
+      "type": "cloud",
+      "purpose": "Cloud-based processing"
+    },
+    {
+      "name": "NOAA – PERSIANN-CDR User Guide (PDF)",
+      "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/UserGuide_01B-16.pdf",
+      "role": "documentation",
+      "type": "documentation"
+    },
+    {
+      "name": "NOAA – Algorithm Description (PDF)",
+      "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/AlgorithmDescription_01B-16.pdf",
+      "role": "documentation",
+      "type": "documentation"
+    },
+    {
+      "name": "NOAA PERSIANN-CDR AWS bucket",
+      "url": "https://noaa-cdr-precip-persiann-pds.s3.amazonaws.com/index.html",
+      "role": "alternative",
+      "type": "cloud",
+      "details": {
+        "bucket": "s3://noaa-cdr-precip-persiann-pds/",
+        "region": "us-east-1"
+      }
+    },
+    {
+      "name": "AWS Open Data Registry – NOAA CDR atmospheric",
+      "url": "https://registry.opendata.aws/noaa-cdr-atmospheric/",
+      "role": "alternative",
+      "type": "cloud"
+    },
+    {
+      "name": "Microsoft Azure – NOAA CDR datasets",
+      "url": "https://microsoft.github.io/AIforEarthDataSets/data/noaa-cdr.html",
+      "role": "alternative",
+      "type": "cloud",
+      "details": {
+        "region": "us-east"
+      }
+    },
+    {
+      "name": "NOAA NCEI – direct download archive",
+      "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/",
+      "role": "alternative",
+      "type": "download"
+    },
+    {
+      "name": "NOAA NCEI – THREDDS catalog (PERSIANN)",
+      "url": "https://www.ncei.noaa.gov/thredds/catalog/satellite/persiann.html",
+      "role": "alternative",
+      "type": "subsetting-service"
+    }
+  ],
+  "access_note": "",
+  "people": {
+    "curator": {
+      "name": "NOAA National Centers for Environmental Information (NCEI)",
+      "organization": "NOAA NCEI",
+      "role": "Data curator and archive steward"
+    },
+    "leads": [
+      {
+        "name": "Soroosh Sorooshian",
+        "organization": "Center for Hydrometeorology and Remote Sensing (CHRS), University of California, Irvine",
+        "role": "Principal Investigator / project leader"
+      }
+    ],
+    "contributors": [
+      "Kuolin Hsu",
+      "Dan Braithwaite",
+      "Hamed Ashouri",
+      "NOAA CDR Program"
+    ],
+    "note": "UC Irvine/CHRS developed the scientific product; NOAA NCEI provides the official CDR archive and stewardship."
+  },
+  "instruments": {
+    "summary": "Infrared imagers on geostationary satellites (through GridSat-B1); not a direct rainfall measurement",
+    "categories": [
+      {
+        "name": "GridSat-B1 (Gridded Satellite Data from ISCCP B1)",
+        "type": "satellite infrared",
+        "role": "Principal satellite input dataset"
+      },
+      {
+        "name": "Infrared window (IRWIN) channel, about 10–12 µm (11 µm brightness temperature)",
+        "type": "satellite infrared",
+        "role": "Measurement the precipitation estimates are made from"
+      }
+    ],
+    "platforms": [
+      {
+        "platform": "Meteosat",
+        "instrument": "MVIRI / SEVIRI"
+      },
+      {
+        "platform": "GOES",
+        "instrument": "GOES Imager"
+      },
+      {
+        "platform": "Himawari",
+        "instrument": "AHI"
+      },
+      {
+        "platform": "GMS / MTSAT",
+        "instrument": "VISSR / JAMI"
+      },
+      {
+        "platform": "Fengyun (FY)",
+        "instrument": "VISSR / related IR imagers"
+      }
+    ],
+    "input_products": [
+      "NCEP Stage IV hourly precipitation estimates (trains the neural network)",
+      "GPCP Version 2.2 monthly analysis (bias adjustment; includes satellite and rain-gauge data)"
+    ],
+    "processing_chain": [
+      "Geostationary satellite IR observations (GridSat-B1, about 3-hourly)",
+      "PERSIANN artificial neural network, trained on NCEP Stage IV hourly precipitation",
+      "GPCP v2.2 bias adjustment (monthly, at 2.5°)",
+      "PERSIANN-CDR daily precipitation (0.25° grid, mm/day)"
+    ],
+    "note": "The satellite measurement is infrared brightness temperature, not rainfall; precipitation is estimated by the neural-network algorithm."
+  },
+  "temporal": {
+    "start": "1983-01-01",
+    "end": "present",
+    "end_note": "Delayed; depends on processing and upstream satellite inputs",
+    "frequency": "Daily",
+    "accumulation_period": "24 hours, 00:00–23:59 UTC",
+    "input_frequency": "About every 3 hours (satellite input)",
+    "update_frequency": "Quarterly, about three months behind",
+    "record_length": "More than 43 years as of November 2026",
+    "latest_data_check": {
+      "note": "Ongoing but not up to today: there is a delay between observation and the processed CDR. As of 2026-11-21 the archive has daily files from 2026.",
+      "urls": [
+        "https://www.ncei.noaa.gov/thredds/catalog/cdr/persiann/2026/catalog.html",
+        "https://www.ncei.noaa.gov/data/precipitation-persiann/access/"
+      ]
+    }
+  },
+  "spatial": {
+    "coverage": "Quasi-global",
+    "extent": {
+      "lat_min": -60,
+      "lat_max": 60,
+      "lon_min": 0,
+      "lon_max": 360
+    },
+    "land_ocean": "Land and ocean",
+    "resolution": "0.25° × 0.25°",
+    "grid": {
+      "spacing_deg": 0.25,
+      "dimensions": "1,440 columns × 480 rows",
+      "approx_km_at_equator": 27.8
+    },
+    "note": "No coverage poleward of 60°N and 60°S. Ground size of a cell shrinks with latitude."
+  },
+  "data_format": {
+    "format": "NetCDF (.nc)",
+    "variable": "Daily precipitation",
+    "units": "mm/day"
+  },
+  "status": {
+    "state": "Ongoing",
+    "label": "Ongoing / operational CDR (not real time)",
+    "evidence": [
+      "The record begins in 1983",
+      "NOAA maintains it through the Climate Data Record Program",
+      "New data are processed and released quarterly",
+      "The record is extended as upstream satellite data become available",
+      "The current version is v01r01"
+    ],
+    "purpose": "Built for long-term climate and precipitation research, not real-time monitoring (for that, see IMERG Early or Late Run)."
+  },
+  "versions": [
+    {
+      "version": "v01r01",
+      "status": "current",
+      "doi": "10.7289/V51V5BWQ"
+    }
+  ],
+  "related_products": [],
+  "references": [
+    {
+      "title": "NOAA NCEI – PERSIANN-CDR dataset landing page",
+      "url": "https://doi.org/10.7289/V51V5BWQ",
+      "type": "landing-page"
+    },
+    {
+      "title": "Ashouri et al. (2015), PERSIANN-CDR: Daily Precipitation Climate Data Record from Multi-Satellite Observations for Hydrological and Climate Studies",
+      "url": "https://doi.org/10.1175/BAMS-D-13-00068.1",
+      "doi": "10.1175/BAMS-D-13-00068.1",
+      "type": "paper"
+    },
+    {
+      "title": "NOAA PERSIANN-CDR User Guide",
+      "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/UserGuide_01B-16.pdf",
+      "type": "documentation"
+    },
+    {
+      "title": "UCAR Climate Data Guide – PERSIANN-CDR",
+      "url": "https://climatedataguide.ucar.edu/climate-data/persiann-cdr-precipitation-estimation-remotely-sensed-information-using-artificial",
+      "type": "assessment"
+    },
+    {
+      "title": "NOAA PERSIANN-CDR Algorithm Description",
+      "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/AlgorithmDescription_01B-16.pdf",
+      "type": "documentation"
+    }
+  ],
+  "review_notes": [
+    "GPCP version for the bias adjustment: ChatGPT says v2.2. Later PERSIANN-CDR processing may use a newer GPCP monthly version; check the current User Guide.",
+    "There are now two NCEI download links: data.ncei.noaa.gov/cdr/persiann/files/ (first answer) and www.ncei.noaa.gov/data/precipitation-persiann/access/ (follow-up). Both are kept; check which one works."
+  ]
+}

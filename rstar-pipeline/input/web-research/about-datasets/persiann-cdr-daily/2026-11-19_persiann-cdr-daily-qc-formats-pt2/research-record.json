@@ -1,0 +1,1832 @@
+{
+ "question": "How is PERSIANN-CDR Daily quality-controlled and processed, what formats is it published in, and can the public inspect and use its software? (Part 2)",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions of one dataset; no set of 15+, no multi-year figures, no dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "How is PERSIANN-CDR Daily quality-controlled, by whom, and what reviews apply?",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s8",
+    "s10",
+    "s13",
+    "s16",
+    "s33"
+   ],
+   "remaining_gap": "Native netCDF variable list not opened; 2013 maturity matrix scores are graphical."
+  },
+  {
+   "id": "q2",
+   "question": "What algorithm and software produce the daily estimates?",
+   "status": "answered",
+   "source_ids": [
+    "s6",
+    "s12",
+    "s44",
+    "s45",
+    "s46"
+   ],
+   "remaining_gap": null
+  },
+  {
+   "id": "q3",
+   "question": "Is the code published, where and under what license?",
+   "status": "answered",
+   "source_ids": [
+    "s5",
+    "s33",
+    "s35",
+    "s36",
+    "s44"
+   ],
+   "remaining_gap": "GitHub API refused; any later CHRS code versions unpublished."
+  },
+  {
+   "id": "q4",
+   "question": "What formats and access routes exist and how FAIR is each?",
+   "status": "answered",
+   "source_ids": [
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s21",
+    "s22",
+    "s23",
+    "s25",
+    "s28",
+    "s29",
+    "s30"
+   ],
+   "remaining_gap": "THREDDS catalog not read; CHRS README/terms not read."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/AlgorithmDescription_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR C-ATBD (CDRP-ATBD-0286), section 5.3 Quality Assessment and Diagnostics",
+   "author_org": "CHRS UC Irvine / NOAA CDR Program",
+   "published": "2014",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/persiann_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Wording is conditional ('could be included'); does not say this was implemented. Reused_from 2026-11-19_persiann-cdr-daily-about-pt1.",
+   "found_by": [
+    "sa1",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/UserGuide_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN CDR User Guide CDRP-GUID-1665 Rev 0 12/31/2025, 5.3 Limitations and 5.4 Using quality flags",
+   "author_org": "NOAA CDR Program / CHRS",
+   "published": "2025-12-31",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/userguide.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Flag variable name/values not given in the guide: NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://repository.library.noaa.gov/view/noaa/33336",
+   "fetched_url": null,
+   "title": "Data stewardship maturity report for PERSIANN-CDR v01r01 (NCEI, January 2020)",
+   "author_org": "NOAA NCEI",
+   "published": "2020-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_dsmm_33336.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Assessor is NCEI (archive), not the producer. Text of Data Quality Assessment row cites 'Knapp, Cecil, Nelson, et al, 2015' with the BAMS DOI 10.1175/BAMS-D-13-00068.1 (Ashouri et al. 2015 DOI) as written.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/MaturityMatrix_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN Climate Data Record (CDR) Maturity Matrix, maturity level as of 07/17/2013 (CDRP-MM-0352 Rev 2 08/26/2013)",
+   "author_org": "NOAA CDR Program",
+   "published": "2013-08-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ed112198e5fb9917.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Scores not readable from text; the PDF needs visual inspection (no browser tools used). No QC category in this matrix.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/sds/cdr/CDRs/PERSIANN/",
+   "author_org": "NOAA NCEI",
+   "published": "2026-01-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/40f7de8e9a152abe.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Absence in this folder does not prove no such review exists elsewhere.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/DataFlowDiagram_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR Data Flow Diagram CDRP-DIA-0351 Rev. 1 5/8/13",
+   "author_org": "NOAA CDR Program / CHRS",
+   "published": "2013-05-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/dataflow.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Absence-of-QC finding is from text search of the pdftotext output.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ncei.noaa.gov/erddap/info/cdr_persiann_by_time_lon_lat/index.html",
+   "fetched_url": null,
+   "title": "NCEI ERDDAP cdr_persiann_by_time_lon_lat .das attributes",
+   "author_org": "NOAA NCEI",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/erddap_persiann_das.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "ERDDAP view; native netCDF files may contain more variables. Reused_from Part 5 (sa2); its source URL as recorded there may be the .das endpoint.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Geostationary_IR_Channel_Brightness_Temperature/AlgorithmDescription_01B-02.pdf",
+   "fetched_url": null,
+   "title": "GridSat B1 C-ATBD CDRP-ATBD-0571 Rev 2 03/02/2026, 3.4.7.2 and 5.3.1",
+   "author_org": "NOAA NCEI (Knapp et al.)",
+   "published": "2026-03-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gridsat_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Input dataset QC, not PERSIANN QC. Reused_from Part 5.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/products/gridded-geostationary-brightness-temperature",
+   "fetched_url": null,
+   "title": "Geostationary IR Channel Brightness Temperature - GridSat B1 (NCEI product page)",
+   "author_org": "NOAA NCEI",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/f0c1fe2ad40906a0.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Input dataset; which GridSat version PERSIANN-CDR v01r01 uses is not stated on this page.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-monthly",
+   "fetched_url": null,
+   "title": "GPCP Monthly Analysis C-ATBD (NOAA CDR Program)",
+   "author_org": "NOAA CDR Program / GPCP (Adler et al.)",
+   "published": "unknown",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_v23_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "URL is the product family page; exact C-ATBD PDF URL as recorded in Part 5 sa2 return. Gauge QC details are GPCC's, not described here.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://doi.org/10.1175/BAMS-D-13-00068.1",
+   "fetched_url": null,
+   "title": "Ashouri et al. 2015, PERSIANN-CDR: Daily precipitation climate data record from multisatellite observations for hydrological and climate studies (BAMS)",
+   "author_org": "CHRS UC Irvine (Ashouri, Hsu, Sorooshian et al.)",
+   "published": "2015-01",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ashouri2015.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Two-column pdftotext layout; passage joins column fragments as they appear in text order. Units of thd (mm/3h implied) not stated in extracted text: NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://repository.library.noaa.gov/view/noaa/15745/noaa_15745_DS1.pdf",
+   "fetched_url": null,
+   "title": "Nelson et al. 2016, Assessment and Implications of NCEP Stage IV Quantitative Precipitation Estimates for Product Intercomparisons (Weather and Forecasting)",
+   "author_org": "NOAA NCEI / CICS-NC (Nelson, Prat, et al.)",
+   "published": "2016",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/1da9ebbdcbd9d674.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "About Stage IV generally, not PERSIANN-CDR training period specifically; two-column layout fragments joined.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/html",
+   "fetched_url": null,
+   "title": "NCEI dataset overview / ISO metadata, PERSIANN-CDR v01r01 (gov.noaa.ncdc:C00854), Wayback copy 2026-10-31",
+   "author_org": "NOAA NCEI",
+   "published": "unknown",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_iso_c00854_wb20261031.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Reused Wayback copy from Part 1 main folder.",
+   "found_by": [
+    "sa1",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.das",
+   "fetched_url": null,
+   "title": "NCEI ERDDAP cdr_persiann_by_time_lon_lat .das (variable attributes)",
+   "author_org": "NOAA NCEI",
+   "published": "read 2026-11-20T00:14Z (UTC)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/erddap_persiann_das.txt",
+   "retrieved": "2026-11-19 (Part 5)",
+   "limitations": "ERDDAP aggregation attributes; per-file attributes not read here. Conventions value differs (CF-1.4 vs Metadata_Conventions CF-1.6).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2026/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/2026/",
+   "author_org": "NOAA NCEI",
+   "published": "listing read 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_access_2026_dir.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Size in bytes as listed; no login was needed for curl.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://api.datacite.org/dois/10.7289/V51V5BWQ",
+   "fetched_url": null,
+   "title": "DataCite record for DOI 10.7289/V51V5BWQ",
+   "author_org": "DataCite / NOAA NCEI",
+   "published": "read 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/datacite_v51v5bwq.json",
+   "retrieved": "2026-11-19",
+   "limitations": "JSON API record.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://registry.opendata.aws/noaa-cdr-atmospheric/",
+   "fetched_url": null,
+   "title": "NOAA Atmospheric Climate Data Records - Registry of Open Data on AWS",
+   "author_org": "AWS / NOAA NODD",
+   "published": "read 2026-11-19 (Part 1)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/aws_registry_cdr_atmos.txt",
+   "retrieved": "2026-11-19 (Part 1)",
+   "limitations": "Registry entry covers all atmospheric CDRs; formats in bucket not stated in matched lines.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_PERSIANN-CDR",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR, Earth Engine Data Catalog",
+   "author_org": "Google Earth Engine",
+   "published": "read 2026-11-19 (Part 1)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/gee_persiann_cdr.txt",
+   "retrieved": "2026-11-19 (Part 1)",
+   "limitations": "WebFetch extract (developers.google.com refused by sandbox curl). Login requirement for Earth Engine NOT PRESENT in extract.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s23",
+   "url": "https://chrsdata.eng.uci.edu/",
+   "fetched_url": null,
+   "title": "CHRS Data Portal, PERSIANN-CDR panel (browser capture, Part 1)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "read 2026-11-19 (Part 1)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrsdata-eng-uci-edu_231141.txt",
+   "retrieved": "2026-11-19 (Part 1)",
+   "limitations": "Browser text capture; license/terms not seen in it.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CDR (CHRS HTTPS server)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "listing read 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_persiann_cdr_dir.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Did not open daily/ or daily_netcdf/ to see file names/formats (time).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6326112/",
+   "fetched_url": null,
+   "title": "Nguyen et al. 2019, The CHRS Data Portal (Scientific Data)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nguyen2019_chrs_portal_pmc.txt",
+   "retrieved": "2026-11-19 (Part 1)",
+   "limitations": "2019 paper, covers PERSIANN family, not CDR-specific.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/daily/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CDR/daily (CHRS HTTPS server)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "listing read 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_cdr_daily_dir.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Only first lines read; binary layout described elsewhere (CHRS README, not read).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-precipitation-estimation-from-remotely-sensed-information-",
+   "fetched_url": null,
+   "title": "data.gov catalog: NOAA CDR PERSIANN-CDR v1r1",
+   "author_org": "data.gov (harvested from NOAA NCEI ISO)",
+   "published": "metadata modified 2014-06-01",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/datagov_persiann_cdr.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extract; the URL ending \"...information-\" was read, \"...using2\" gave 404. License field conflicts with Access Level non-public / otherRestrictions on the same page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.CDR/.PERSIANN-CDR/.v01r01/",
+   "fetched_url": null,
+   "title": "IRI/LDEO Climate Data Library PERSIANN-CDR v01r01 (redirected to sign-in page)",
+   "author_org": "IRI, Columbia University",
+   "published": "read 2026-11-19",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/iridl_persiann_login.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Redirect to /auth/login; dataset contents not seen. The coverage end date comes from a search summary only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/UseAgreement_01B-16.pdf",
+   "fetched_url": null,
+   "title": "Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation (UseAgreement_01B-16)",
+   "author_org": "NOAA CDR Program",
+   "published": "file date 2017-03-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/use_agreement.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Named open-source software license: NOT PRESENT. Same page has a Known Issues note (Feb 1992 unusable because of bad IR input values) relevant to q1.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true,
+   "original_file": "work/raw/main/3f8a860fb131f6f2.pdf"
+  },
+  {
+   "id": "s35",
+   "url": "https://github.com/mojtabasadeghi77/PERSIANN-CCS-CDR",
+   "fetched_url": null,
+   "title": "mojtabasadeghi77/PERSIANN-CCS-CDR (GitHub)",
+   "author_org": "M. Sadeghi (CHRS)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/github_sadeghi_ccscdr_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction of front page only; not all files listed",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://github.com/bolbolim/PERSIANN-CCS-CDR-V02",
+   "fetched_url": null,
+   "title": "bolbolim/PERSIANN-CCS-CDR-V02 (GitHub)",
+   "author_org": "NOT PRESENT",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/github_bolbolim_ccscdr_v02_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Whether it contains the CCS-CDR algorithm itself: NOT PRESENT on the front page",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://github.com/samashti/chrs-persiann-util",
+   "fetched_url": null,
+   "title": "samashti/chrs-persiann-util (GitHub)",
+   "author_org": "samashti (third party)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/github_samashti_chrs_util_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction; data access tool, not production software",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/SourceCode_01B-16.tar.gz",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR package V1 source code (SourceCode_01B-16.tar.gz): persiann-cdr_daily.c header",
+   "author_org": "CHRS, UC Irvine (Dan K. Braithwaite) for NOAA CDR Program",
+   "published": "2014-03-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "SourceCode_01B-16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/srccode/x/persiann-cdr_daily.c.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Downloaded with the user's approval; listed and read as data, not run. Only three files read in full (persiann-cdr_daily.c, Run_PERSIANN.sh, PERSIANN.README.pdf); file list in work/raw/main/srccode/tar_listing.txt."
+  },
+  {
+   "id": "s45",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/SourceCode_01B-16.tar.gz",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR package V1: PERSIANN.README.pdf and Run_PERSIANN.sh (inside SourceCode_01B-16.tar.gz)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "2014-05-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "SourceCode_01B-16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/srccode/x/PERSIANN.README.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "README written for v01r01 setup in 2014; names GPCP v2.2 and old NCDC/NASA ftp addresses."
+  },
+  {
+   "id": "s46",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/SourceCode_01B-16.tar.gz",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR package V1: file listing of SourceCode_01B-16.tar.gz",
+   "author_org": "CHRS, UC Irvine",
+   "published": "2014",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "SourceCode_01B-16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/srccode/tar_listing.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "tar -tzvf listing only."
+  },
+  {
+   "id": "s11",
+   "url": "https://catalog.data.gov/dataset/national-centers-for-environmental-prediction-ncep-national-stage-iv-multi-sensor-precipit",
+   "fetched_url": null,
+   "title": "NCEP National Stage IV Multi-sensor Precipitation Analysis (data.gov)",
+   "author_org": "NOAA (catalog record)",
+   "published": "unknown",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/3d8c58cc55e10764.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Search snippets (not read) from Nelson and Prat 2016 (repository.library.noaa.gov/view/noaa/15745) say Stage IV uses RFC manual QC and hourly estimates at some RFCs lack manual QC; not verified.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://esd.copernicus.org/articles/15/225/2024/",
+   "fetched_url": null,
+   "title": "Pietroiusti et al. 2024, Possible role of anthropogenic climate change in the record-breaking 2020 Lake Victoria levels and floods (ESD 15, 225)",
+   "author_org": "Pietroiusti, Vanderkelen, Otto, Barnes, Temple, Akurut, Bally, van Lipzig, Thiery",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/pietroiusti2024_esd_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Regional (Lake Victoria) count by users, not producer; only first 100000 characters of page read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://chrs.web.uci.edu/projects_nasa.php",
+   "fetched_url": null,
+   "title": "CHRS NASA projects page (MEaSUREs Next-Generation GPCP)",
+   "author_org": "CHRS UC Irvine",
+   "published": "unknown",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/26f958594c866856.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "About PERSIANN for GPCP v3, not PERSIANN-CDR; project plan, not a QC method.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.json?keyword=PERSIANN-CDR",
+   "fetched_url": null,
+   "title": "NASA CMR collection search: PERSIANN-CDR",
+   "author_org": "NASA Earthdata CMR",
+   "published": "read 2026-11-19",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cmr_persiann_cdr.json",
+   "retrieved": "2026-11-19",
+   "limitations": "License field not checked in the CMR JSON (not in the matched lines).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://climatedataguide.ucar.edu/climate-data/persiann-cdr-precipitation-estimation-remotely-sensed-information-using-artificial-neural",
+   "fetched_url": null,
+   "title": "UCAR Climate Data Guide: PERSIANN-CDR",
+   "author_org": "NCAR/UCAR",
+   "published": "read 2026-11-19 (Part 1)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ucar_cdg_persiann_cdr.txt",
+   "retrieved": "2026-11-19 (Part 1)",
+   "limitations": "Old NCDC ftp address; url field approximate (from Part 1).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://planetarycomputer.microsoft.com/dataset/group/noaa-cdr",
+   "fetched_url": null,
+   "title": "Azure / AI for Earth NOAA CDR page (extract, Part 1)",
+   "author_org": "Microsoft",
+   "published": "read 2026-11-19 (Part 1)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/azure_aiforearth_noaa_cdr.txt",
+   "retrieved": "2026-11-19 (Part 1)",
+   "limitations": "Extract from Part 1; url taken as approximate (Part 1 file does not name it in matched lines).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/daily_netcdf/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CDR/daily_netcdf (CHRS server)",
+   "author_org": "CHRS, UC Irvine",
+   "published": "listing read 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_cdr_daily_netcdf_dir.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Listing only; files may be served by the portal Download tool instead.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00854",
+   "fetched_url": null,
+   "title": "NCEI ISO metadata landing page C00854 (Wayback 2026-10-31 copy)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_iso_c00854_wb20261031.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Code license: NOT PRESENT in this passage",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://doi.org/10.1038/s41597-021-00940-9",
+   "fetched_url": null,
+   "title": "Sadeghi et al. 2021, PERSIANN-CCS-CDR, Scientific Data 8:157 (PMC copy)",
+   "author_org": "CHRS UC Irvine",
+   "published": "2021-06-23",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sadeghi2021_ccscdr.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "applies to CCS-CDR, not PERSIANN-CDR",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://chrs.web.uci.edu/SP_approach.php",
+   "fetched_url": null,
+   "title": "CHRS Satellite Precipitation: Approach",
+   "author_org": "CHRS UC Irvine",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/chrs_sp_approach.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "describes PERSIANN generally, not PERSIANN-CDR specifically; page date NOT PRESENT; code download NOT PRESENT on this page",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://doi.org/10.25923/hqg0-g278",
+   "fetched_url": null,
+   "title": "Data Stewardship Maturity Report for PERSIANN-CDR v1r1 (NESDIS DSMR-00012 v1.0)",
+   "author_org": "NOAA NESDIS / NCEI",
+   "published": "NOT PRESENT in lines read",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/noaa_dsmm_33336.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "License of the source code package: NOT PRESENT in passage",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://chrs.web.uci.edu/SP_activities00.php",
+   "fetched_url": null,
+   "title": "CHRS Satellite Precipitation activities page",
+   "author_org": "CHRS UC Irvine",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/chrs_sp_activities00_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction; amir.eng.uci.edu/software/ toolbox not read (lead)",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://amir.eng.uci.edu/software/",
+   "fetched_url": null,
+   "title": "Software – Amir AghaKouchak (CHRS software toolbox link)",
+   "author_org": "A. AghaKouchak, UC Irvine",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/amir_uci_software_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://github.com/YiwenMei/Rain_Processors",
+   "fetched_url": null,
+   "title": "YiwenMei/Rain_Processors (GitHub)",
+   "author_org": "Yiwen Mei (third party)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/github_yiwenmei_rainproc_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction; PERSIANN-CDR not named",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://github.com/Martins6/persiann_api",
+   "fetched_url": null,
+   "title": "Martins6/persiann_api (GitHub)",
+   "author_org": "Martins6 (third party)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/github_martins6_persiann_api_extract.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "WebFetch extraction",
+   "found_by": [
+    "sa2"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "The producer (CHRS) runs automated, in-code QC during production: missing-input checks, corrupt-file checks, and removal of out-of-range or abnormally connected IR pixels, plus a rain-rate threshold that filters noisy pixels; no separate manual QC step is described.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "At each stage that a file is | input, code is included to check if the file is missing and handle it by using a NODATA file or | flagging that time step for possible reprocessing. Corrupt data files from the GridSat-B1 | CDR data set have been identified and that data will need to be reprocessed. Noise can be | found in some satellite data and the code checks abnormally connected (unnatural) IR data | pixels outside of expected normal ranges and extreme differences between neighboring | pixels. These connected \"bad\" pixels are usually in a linear row and can be removed and | missing data interpolated if necessary to meet the resolution for input into the model. … we | will, at this time, remove rather than reprocess any time steps that were generated from | problem files prior to bias correction.",
+     "location": "Section 5.4 Exception Handling"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The existing code does include checks for missing input files, corrupt data, and | abnormally connected (unnatural) IR data pixels that fall outside expected normal ranges | or show extreme differences from neighboring pixels.",
+     "location": "FAQ, page 12-13"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "data values out of the normal range for IR data.",
+     "location": null
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "estimates to filter out noisy pixels.",
+     "location": null
+    }
+   ],
+   "applicability": "PERSIANN-CDR v01r01 production as documented in the C-ATBD (2014) and User Guide (2025)",
+   "confidence": "high",
+   "confidence_reason": "Producer's C-ATBD and the 2025 User Guide agree; Ashouri 2015 gives the same steps.",
+   "sole_source_reason": "The producer's own algorithm documents are the authority on its production checks."
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "Suspect or missing values are handled by substitution and omission, not by a per-pixel quality flag: a missing input gives a NODATA file or a flagged time step; bad IR months are left out (all of Feb 1992); the files carry missing_value -9999 and _FillValue -1 on the one precipitation variable. The C-ATBD's bias-adjustment QC flagging is only proposed ('could be included').",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "At each stage that a file is | input, code is included to check if the file is missing and handle it by using a NODATA file or | flagging that time step for possible reprocessing. Corrupt data files from the GridSat-B1 | CDR data set have been identified and that data will need to be reprocessed. Noise can be | found in some satellite data and the code checks abnormally connected (unnatural) IR data | pixels outside of expected normal ranges and extreme differences between neighboring | pixels. These connected \"bad\" pixels are usually in a linear row and can be removed and | missing data interpolated if necessary to meet the resolution for input into the model. … we | will, at this time, remove rather than reprocess any time steps that were generated from | problem files prior to bias correction.",
+     "location": "Section 5.4 Exception Handling"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "During the GPCP bias adjustment phase, some code could be included to quantify the level | of bias correction applied and flag any data well out of the ordinary range for further | examination. Also, newer PERSIANN-CDR data files can be compared to data from other | sources to check anomalies.",
+     "location": "Section 5.3 Quality Assessment and Diagnostics"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Float32 _FillValue -1.0; … Float32 missing_value -9999.0; | String standard_name \"precipitation_amount\"; | String units \"mm\"; | Float32 valid_max 999999.0; | Float32 valid_min 0.0;",
+     "location": "precipitation attributes, lines 38-49"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "There are months where the input IR data have areas of bad values (e.g. Feb 11-25, | 1992) which could not be properly cleaned up",
+     "location": "Known Issues, p. 1"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "contextualizes",
+     "passage": "char license[] = \"No constraints on data access or use.\";",
+     "location": "persiann-cdr_daily.c line 125"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Documents agree; the native file's full variable list was not opened, only ERDDAP's view and the netCDF writer's code.",
+   "sole_source_reason": "Producer and archive documents are the authority on how the files are built."
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "NCEI's 2020 data stewardship maturity assessment scores Data Quality Control/Monitoring at 1.5 ('Procedure not documented or available'), Quality Assurance 4 and Quality Assessment 3; the CDR Program's 2013 maturity matrix and the C-ATBD, data flow diagram, user guide and use agreement are published, but no QA-procedures or operational-readiness document is in NCEI's PERSIANN folder.",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Data Quality Assurance - 4",
+     "location": "p. 1 summary"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Control/Monitoring - 1.5",
+     "location": "p. 1 summary"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Data Quality Assessment - 3",
+     "location": "p. 1 summary"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Procedure not documented or available",
+     "location": "Data Quality Control/Monitoring row"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "No data quality information in the metadata record.",
+     "location": "Data Quality Control/Monitoring comments"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "AlgorithmDescription_01B-16.pdf | 2017-03-10 08:21 | 1404046 | CDR_Flyer_01B-16.pdf | 2019-11-18 10:15 | 3912088 | DataFlowDiagram_01B-16.pdf | 2017-03-10 08:21 | 1226119 | MaturityMatrix_01B-16.pdf | 2017-03-10 08:21 | 62314 | SourceCode_01B-16.tar.gz | 2017-03-10 08:22 | 4604083 | UseAgreement_01B-16.pdf | 2017-03-10 08:21 | 40654 | UserGuide_01B-16.pdf | 2026-01-06 09:11 | 220921",
+     "location": "Directory listing"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "PERSIANN                                                                                           maturity level as of 07/17/2013 | Climate Data Record (CDR) Maturity Matrix | Maturity    Software Readiness                    Metadata                      Documentation                 Product Validation                  Public Access                           Utility … 1&2      Research … 3&4      IOC                                                                                                                                                   CDRP-MM-0352 Rev 2 08/26/2013 | 5&6      FOC",
+     "location": "Single page"
+    }
+   ],
+   "applicability": "Assessment of v01r01 by NCEI (the archive)",
+   "confidence": "high",
+   "confidence_reason": "Read from NCEI's own report and directory listing.",
+   "figure_status": "actual",
+   "sole_source_reason": "NCEI's own stewardship report is the authority on its assessment."
+  },
+  {
+   "id": "c4",
+   "importance": "supporting",
+   "text": "The first release (v01r00) took in bad/noisy GridSat-B1 data, was withdrawn and reprocessed as v01r01 on GridSat v2.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "The initial release of PERSIANN (V01r00) incorporated bad/noisy data from the input source (GridSat-B1 IRWIN), resulting in the dataset needing to be re-processed. Version v01r00 of PERSIANN is not available from the Archive. However, PERSIANN-CDR v01r01, the current PERSIANN-CDR, is based on version v2 of the GridSat CDR which contains fewer issues.",
+     "location": "Lineage Statement and source description (lines 76-80)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI lineage statement.",
+   "sole_source_reason": "The archive's own metadata."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "Input QC is done upstream by each input's producer: GridSat-B1 (NCEI) runs a Fortran scan-line QC, an automated inter-satellite calibration outlier test (flagged intergeo_cal_flag) and visual image checks; GPCP edits artifacts before merging and its GPCC gauges get automated screening plus a manual step; Stage IV gets RFC manual QC, though some hourly RFC analyses lack it.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "There is a Fortran routine that provide scanline-level quality control. It analyzes each | channel separately to identify scan lines with errors, missing lines, etc. … Data are analyzed for quality by creating an image plot of each 3-hourly GridSat file. The | routine ‘gridsat_2_image.pro’ produces PNG files. These can be inspected visually for | corrupt data. If images are found with significant corruption, they are removed from | processing and the data are reprocessed. | NOTE: This process has only been implemented for dates after Dec. 31, 2012. Prior to 2013, | there hasn’t been reprocessing for corrupted data found in images.",
+     "location": "Sections 3.4.7.2 (ISCCP B1U QC files) and 5.3.1 (Image quality control), p.31"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "There are some lower quality geostationary images that slipped past the quality checks. The v02r01 uses enhanced tests to remove some of these. … intergeo_cal_flag | When intergeo_cal_flag=1, it means that a geostationary satellite image was deemed to have been in error based on comparisons with neighboring geostationary satellites and a correction was applied to reduce the inter-satellite brightness difference.",
+     "location": "Known issues and variable table"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "emission and scattering fields are edited before the merger to remove known and",
+     "location": "GPCP C-ATBD, merger QC"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "An extensive quality-control system is run, | featuring an automated screening and then a manual step designed to retain legitimate | extreme events that characterize precipitation.",
+     "location": "Section on GPCC Gauge precipitation"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "In addition it is found that the hourly estimates at certain RFCs suffer from lack of | manual quality control and caution should be used. … For example, RFCs generate hourly and 6-hourly analyses … first in an automated sense with no manual quality control. … Then, the analysis is done several hours later in manual … mode with quality control performed by a human analyst.",
+     "location": "Abstract; section on Stage IV processing (left column, about p.3)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "contextualizes",
+     "passage": "Weather Service (NWS) do manual quality control",
+     "location": null
+    }
+   ],
+   "applicability": "Input datasets' own documentation",
+   "confidence": "high",
+   "confidence_reason": "Each input's own C-ATBD or product page, plus a NOAA-authored Stage IV assessment."
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "Processing: PERSIANN neural-network estimates from GridSat-B1 IR (model pretrained on NCEP Stage IV hourly data, parameters then fixed), 3-hourly at 0.25 degree, bias-adjusted to GPCP monthly and summed to daily. The software is shell scripts, C/C++ programs (e.g. B1tosubs.c, merg_PERSIANN.c, persiann-cdr_daily.c) and MATLAB bias-adjustment code, with per-region parameter files.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Read in GridSat-B1 IR data (.07 degree)",
+     "location": "data flow diagram"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "Requires gcc | and g++ | as well as netcdf-4 libraries. To do the bias corrections matlab",
+     "location": "PERSIANN.README, lines 11-13"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "B1tosubs.c",
+     "location": "tar listing line 1324"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "model/seqSOLO/seqSOLO.cc",
+     "location": "tar listing line 1367"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "This program converts the input binary PERSIANN daily data to netcdf-4",
+     "location": "persiann-cdr_daily.c, PURPOSE"
+    }
+   ],
+   "applicability": "Package V1 (v01r01), 2013-2014",
+   "confidence": "high",
+   "confidence_reason": "Read directly in the published code package and the data flow diagram.",
+   "sole_source_reason": "The published code package is the authority on its own contents."
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "The production code is published by NCEI (SourceCode_01B-16.tar.gz, 4,604,083 bytes) but not under an open-source license: its header says it is the proprietary property of the UC Regents and permits redistribution and use by nonprofit research institutions for research use only; the CDR Program's use agreement puts production software outside the Open Data policies.",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "AlgorithmDescription_01B-16.pdf | 2017-03-10 08:21 | 1404046 | CDR_Flyer_01B-16.pdf | 2019-11-18 10:15 | 3912088 | DataFlowDiagram_01B-16.pdf | 2017-03-10 08:21 | 1226119 | MaturityMatrix_01B-16.pdf | 2017-03-10 08:21 | 62314 | SourceCode_01B-16.tar.gz | 2017-03-10 08:22 | 4604083 | UseAgreement_01B-16.pdf | 2017-03-10 08:21 | 40654 | UserGuide_01B-16.pdf | 2026-01-06 09:11 | 220921",
+     "location": "Directory listing"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR package V1 is the proprietary property of",
+     "location": "persiann-cdr_daily.c, COPYRIGHT"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "are permitted by nonprofit, research institutions for research use only,",
+     "location": "persiann-cdr_daily.c, COPYRIGHT"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "The software used to produce the CDRs may or may not be Government owned, and is outside | of the scope of the Open Data policies",
+     "location": "CDR Program Open Data Policy, p. 1"
+    }
+   ],
+   "applicability": "Package V1; later CHRS changes, if any, are not published",
+   "confidence": "high",
+   "confidence_reason": "License text read in the code itself and in NCEI's use agreement.",
+   "figure_status": "actual",
+   "sole_source_reason": "The code's own copyright header and the program's own use agreement are the authority."
+  },
+  {
+   "id": "c8",
+   "importance": "supporting",
+   "text": "No public repository of the PERSIANN-CDR algorithm was found; the GitHub repositories found are for the related PERSIANN-CCS-CDR (one with no license, one Apache-2.0) or third-party download tools.",
+   "evidence": [
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "persiann-ccs-cdr_algorithm.c.txt | plot_code_Harvey.m | processing_1dd.m … License: NOT PRESENT. … README text: NOT PRESENT.",
+     "location": "repository front page"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Files/folders: CCS_CDR_analysis.py | LICENSE | README.md | mine.py | License name: \"Apache-2.0 license\"",
+     "location": "repository front page"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "Repository description: \"A utility to search, download global level PERSIANN precipitation data from CHRS Data Portal\" … License name: GPL-3.0 license … Algorithm code: NOT PRESENT",
+     "location": "repository front page"
+    }
+   ],
+   "applicability": "GitHub web search first pages; GitHub API refused",
+   "confidence": "moderate",
+   "confidence_reason": "Absence from a partial search."
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "NCEI's route (HTTPS, THREDDS/OPeNDAP, ERDDAP, AWS) serves daily netCDF-4 files (~1.3 MB) with DOI 10.7289/V51V5BWQ, CF conventions, standard_name precipitation_amount and units mm, no login; the license is stated as 'No constraints on data access or use' and NODD's open-use statement, but DataCite's rightsList is empty and data.gov shows CC0 beside 'non-public'/'otherRestrictions'.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "doi:10.7289/V51V5BWQ | NCEI DSI 3611_01 | gov.noaa.ncdc:C00854 … Download Data | Direct Download (download) Download the data from a public NCEI server. NCEI THREDDS Catalog (download) THREDDS Data Service for the dataset. NCEI ERDDAP Server (download) ERDDAP Data Service for the dataset. AWS S3 Explorer (Region: us-east-1) (download) Browse view to explore the S3 bucket. | Distribution Formats | netCDF (Version: 4) File Specification: The NetCDF data files comply with the Climate and Forecast (CF) Metadata Conventions and the NetCDF Attribute Convention for Dataset Discovery (ACDD). … Fees | In most cases, electronic downloads of the data are free. … Lineage Statement | The data were produced by the University of California at Irvine, and are archived at the NOAA National Centers for Environmental Information (NCEI). The initial release of PERSIANN (V01r00) incorporated bad/noisy data from the input source (GridSat-B1 IRWIN), resulting in the dataset needing to be re-processed.",
+     "location": "lines 16-20, 37-38, 70-76"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "String long_name \"NOAA Climate Data Record of PERSIANN-CDR daily precipitation\"; | Float32 missing_value -9999.0; | String standard_name \"precipitation_amount\"; | String units \"mm\"; … String Conventions \"CF-1.4\"; … String license \"No constraints on data access or use.\"; … String Metadata_Conventions \"CF-1.6,Unidata Dataset Discovery v1.0, NOAA CDR v1.0, GDS v2.0\"; … String sourceUrl \"https://www.ncei.noaa.gov/thredds/dodsC/ncFC/cdr/persiann-fc/PERSIANN:_aggregation_best.ncd\";",
+     "location": "lines 43-46, 58, 81, 83, 90"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20260101_c20260709.nc | 2026-07-09 07:38 | 1337516",
+     "location": "line 7"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "\"publisher\": \"NOAA National Climatic Data Center\", … \"resourceTypeGeneral\": \"Dataset\" … \"formats\": [], | \"version\": null, | \"rightsList\": [], … \"url\": \"https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/html\",",
+     "location": "lines 65, 84, 89-91, 96"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "#### License | NOAA data disseminated through NODD are open to the public and can be used as desired. | NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. … arn:aws:s3:::noaa-cdr-precip-persiann-pds … aws s3 ls --no-sign-request s3://noaa-cdr-precip-persiann-pds/",
+     "location": "lines 19-23, 391, 399"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "**License:** \"https://creativecommons.org/publicdomain/zero/1.0/\" … - Access Level: \"non-public\" | - Rights: \"otherRestrictions\" … - Identifier: \"https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C00854.xml\"",
+     "location": "License, Access level / rights, Identifier fields"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Archive metadata, file listings and registry records read directly."
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "CHRS's own routes: the CHRS Data Portal offers ArcGrid, TIFF and NetCDF on request; its HTTPS/FTP server holds daily .bin.gz binaries (daily_netcdf/ is empty); no license or DOI is stated on CHRS's pages read.",
+   "evidence": [
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Data from the PERSIANN family of algorithms is provided in various raster formats (ArcGrid, TIFF, and NetCDF) and is available for request on-site for instant download using the Download tool. Data requests for spatial coverages smaller than global scale come with ESRI shapefiles for easy importation into Geographic Information Systems (GIS) programs.",
+     "location": "line 85; line 185"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "NOTICE: Download links available again 2024-10-11 | HTTP Download (full globe): daily, mthly, yearly | FTP also available: ftp://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR",
+     "location": "lines 36-40"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "aB1_d00001.bin.gz | 2014-02-24 19:30 | 1.0M",
+     "location": "line 7"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "adj_3hB1/ | 2026-10-13 16:55 | - | aliB/ | 2026-10-14 17:43 | - | daily/ | 2026-10-13 16:57 | - | daily_netcdf/ | 2025-04-09 11:52 | - | monthly/ | 2021-03-15 12:53 | - | mthly/ | 2026-07-09 11:00 | - | yearly/ | 2026-03-24 10:08 | -",
+     "location": "lines 7-13"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CHRS README and portal terms not read."
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "text": "Secondary routes: Google Earth Engine (NOAA/PERSIANN-CDR, units mm, CDR terms of no restriction) and IRI Data Library, which now requires sign-in.",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "**Earth Engine collection ID (snippet):** ee.ImageCollection('NOAA/PERSIANN-CDR') … `precipitation` | mm | 0* | 718.62* | 27830 meters | \"Estimated daily precipitation\" … **Terms of Use:** \"CDR data sets are nonproprietary, publicly available,\" and \"and no restrictions are placed upon their use.\"",
+     "location": "lines 9, 23, 26"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "# Please sign in | The Data Library now requires all users to sign in. Learn more. | Don't have an account? Create one.",
+     "location": "lines 3-6"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "GEE read via a WebFetch extract; IRI only its sign-in page."
+  },
+  {
+   "id": "c12",
+   "importance": "supporting",
+   "text": "Reconciliation additions: time steps from problem files are removed rather than reprocessed before bias correction; the run is split into 4 major subareas of 24 subareas; validation against CPC Unified gauges and Stage IV over CONUS was 'under evaluation' in 2014; NCEI calls the code package for reference only and not portable; Earth Engine says the data are produced quarterly with about a three-month lag.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Due to the length of time required to run the PERSIANN model for the 30+ year record, we | will, at this time, remove rather than reprocess any time steps that were generated from | problem files prior to bias correction. This version and revision of PERSIANN-CDR | (v01r01) will eventually be reprocessed with improved data filtering to remove erroneous | parts of each B1 grid prior to running PERSIANN.",
+     "location": "C-ATBD section 5.4 Exception Handling, p. 23"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The PERSIANN algorithm is currently run using parallel jobs running on 4 major subareas | which then are split up into 24 subareas … The operating system is currently CENTOS 5.5 … A year of data on one system running 4-cores in parallel can take 5 days to finish. | Another system with faster Xeon 8-cores and better compiler optimized code can now | finish a year of data in 10-12 hrs.",
+     "location": "C-ATBD sections 5.1 and 5.6, pp. 23-24"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR is under evaluation using CPC Unified gauge observation and Stage IV | radar data over CONUS. Statistics will cover the probability of detecting extremes, the | volume of correctly identified precipitation, and false alarm ratio of various extreme | thresholds",
+     "location": "C-ATBD section 5.5 Algorithm Validation, p. 23"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "This source code is for reference only. The source code is provided to maintain transparency of the algorithm and processes used in creating the Climate Data Record (CDR). The source code is not intended to be portable to any computer system(s) beyond that of the original CDR producer's environment.",
+     "location": "Lineage, Processing Documents (also Distribution section)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "that spans the period from 1983-01-01 to present. The data is produced quarterly, with a typical lag of three months.",
+     "location": "Description"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Read by the Reconciler from saved producer and archive files; passages checked by merge_returns.py."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Whether the data carry a formal license: data.gov lists CC0 1.0 while the same record says Access Level non-public and Rights otherRestrictions; the files and ERDDAP say 'No constraints on data access or use'; DataCite's rightsList is empty.",
+   "source_ids": [
+    "s29",
+    "s17",
+    "s19"
+   ],
+   "status": "unresolved",
+   "explanation": "All say use is unrestricted in practice; only data.gov names a license (CC0), harvested metadata with contradictory fields. NCEI's own ISO record names no license."
+  }
+ ],
+ "coverage_gaps": [
+  "PERSIANN Maturity Matrix (MaturityMatrix_01B-16.pdf, 2013) scores are shown graphically; extracted text carries no scores. Needs visual check of work/raw/sa1/ed112198e5fb9917.pdf. (from sa1)",
+  "No QA procedures document, no Operational Readiness Review / IOR document found in NCEI PERSIANN doc folder or by searches (NOT PRESENT). DSMM says IOC stage and 'Assessment carried out in the NCEI CDR R2O process'. (from sa1)",
+  "No numeric missing-data threshold found. Lead not read: ESD 15, 225, 2024 figure of PERSIANN-CDR missing days per year (esd.copernicus.org/articles/15/225/2024/). (from sa1)",
+  "Stage IV QC lead not read: Nelson and Prat 2016 Weather and Forecasting (repository.library.noaa.gov/view/noaa/15745), snippet says hourly estimates at certain RFCs lack manual QC. (from sa1)",
+  "Native netCDF quality-flag variable name/values not verified (User Guide says 'Data/no data' flags; ERDDAP lists only precipitation). SourceCode_01B-16.tar.gz not opened here (q2/q3). (from sa1)",
+  "CHRS (chrs.web.uci.edu) pages not checked for QC text due to time. (from sa1)",
+  "data.gov catalog record not read (both result URLs returned HTTP 404); its license field (search summary said CC0) is unverified. (from sa3)",
+  "NCEI THREDDS catalog https://www.ncei.noaa.gov/thredds/catalog/cdr/persiann/files/2026/catalog.html fetch failed (timeout/exit 1); OPeNDAP route evidenced only via ERDDAP sourceUrl (thredds/dodsC aggregation). (from sa3)",
+  "CHRS daily/ and daily_netcdf/ folders, CHRS README and portal terms of use not opened: CHRS daily file format (binary?) and any CHRS license NOT PRESENT in what was read. (from sa3)",
+  "IRI Data Library entry not checked this run (Part 1 copy was marked _unused). Earth Engine login requirement and GEE license field beyond the Terms of Use quote not verified. NCEI landing-page CC0/license wording not found in the ISO copy. (from sa3)",
+  "SourceCode_01B-16.tar.gz (NCEI, 4604083 bytes) not downloaded: its file list, languages, copyright owner and any license text inside the code are unverified (needs user approval to download). (from sa2)",
+  "PERSIANN model internals (SOFM / hidden-layer ANN, parameter set, whether network was trained on Stage IV or other data) not found in C-ATBD by text search; Ashouri 2015 and Hsu 1997 not re-read for this in the time available. (from sa2)",
+  "GitHub API repository search refused (api.github.com blocked); GitHub web search covered only first-page results. (from sa2)",
+  "No CHRS page offering PERSIANN or PERSIANN-CDR algorithm code found; CHRS website (chrs.web.uci.edu) software pages not read. (from sa2)",
+  "PDIR-Now code availability not checked. (from sa2)",
+  "User Guide CDRP-GUID-1665 (2025) line 282 also names shell/C/C++/MATLAB; not copied or cited by sa2 (Part 1 sa2/userguide.txt). (from sa2)",
+  "Lead for the coordinator: the NCEI product page (Part 1 sa2/ncei_persiann_page.html line 439) links its Source Code item to https://ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/SourceCode_01B-16.tar.gz, and the NCEI ISO page (Part 1 main/ncei_iso_c00854_wb20261031.html line 514) links a Wayback copy at web.archive.org/web/20261031104050/. Either copy could be opened after user approval to read the license and copyright headers. The maturity matrix PDF levels (Part 1 sa2/maturity_unused.txt: Data and source code archived) were not re-read. (from sa2)",
+  "Text search of the C-ATBD copy (work/raw/sa2/persiann_catbd.txt) for copyright|license|licence|open source finds no code license or copyright statement (NOT PRESENT); only the Use Agreement addresses software reuse. (from sa2)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR quality control CHRS",
+   "tool": "WebSearch",
+   "notes": "no domain filter; pointed to C-ATBD 5.3, no separate QC doc",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR quality assurance 3-hourly",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no QA doc found",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR maturity matrix NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter; DSMM report noaa/33336, DOI 10.25923/hqg0-g278 (data.gov snippet)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR operational readiness CDR program",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no operational readiness / IOR document found",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Ashouri 2015 PERSIANN-CDR quality",
+   "tool": "WebSearch",
+   "notes": "no domain filter; validation studies only",
+   "from": "sa1",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR missing data threshold",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no threshold found; ESD 15 225 2024 figure of missing days",
+   "from": "sa1",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR flag missing values -9999",
+   "tool": "WebSearch",
+   "notes": "no domain filter; ERDDAP missing_value -9999",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI CDR quality assurance procedures PERSIANN",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no standalone QA procedures doc",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GridSat-B1 quality control satellite artifacts",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEP Stage IV precipitation quality control manual",
+   "tool": "WebSearch",
+   "notes": "no domain filter; Nelson & Prat 2016 lead",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/",
+   "tool": "lookup (NCEI CDR doc directory listing)",
+   "notes": "7 files, no QA/IOR doc",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR quality control CHRS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains chrs.web.uci.edu, chrsdata.eng.uci.edu; only project plan text found",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://api.datacite.org/dois/10.7289/V51V5BWQ",
+   "tool": "lookup (DataCite)",
+   "notes": "fetch_json.py; rightsList empty",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR data.gov",
+   "tool": "WebSearch",
+   "notes": "allowed_domains catalog.data.gov, data.gov; result pages ...using2 returned HTTP 404 (curl) and ...using1 404 (WebFetch); CC0 claim only in search summary, not read",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR AWS open data registry",
+   "tool": "WebSearch",
+   "notes": "allowed_domains registry.opendata.aws; registry page reused from Part 1",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CHRS Data Portal PERSIANN-CDR download formats",
+   "tool": "WebSearch",
+   "notes": "no domain filter",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CHRS FTP PERSIANN-CDR daily",
+   "tool": "WebSearch",
+   "notes": "no domain filter; led to persiann.eng.uci.edu listing",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR Earth Engine catalog",
+   "tool": "WebSearch",
+   "notes": "allowed_domains developers.google.com; catalog page reused from Part 1 extract",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://cmr.earthdata.nasa.gov/search/collections.json?keyword=PERSIANN-CDR",
+   "tool": "lookup (CMR)",
+   "notes": "fetch_json.py",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR IRI Data Library",
+   "tool": "WebSearch",
+   "notes": "allowed_domains iridl.ldeo.columbia.edu; dataset URL redirects to login",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR source code NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NCEI ISO page and ATBD, not the tarball itself; tarball found via directory listing",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA CDR program source code package PERSIANN",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; confirms Source Code link on NCEI product page",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/",
+   "tool": "lookup (NCEI directory listing, fetch_page.py)",
+   "notes": "listing saved; SourceCode_01B-16.tar.gz present",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN GitHub",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; found samashti/chrs-persiann-util, mojtabasadeghi77, YiwenMei/Rain_Processors, topic persiann",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.github.com/search/repositories?q=PERSIANN",
+   "tool": "lookup (GitHub repository search API, fetch_json.py)",
+   "notes": "REFUSED by sandbox: api.github.com not in allowed_domains (CONNECT 403); non-.org host, approval not requested",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR code repository",
+   "tool": "WebSearch",
+   "notes": "no filter; found bolbolim/PERSIANN-CCS-CDR-V02; no PERSIANN-CDR production code repository found",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CHRS PERSIANN algorithm software download",
+   "tool": "WebSearch",
+   "notes": "no filter; CHRS distributes data (portal, iRain), no algorithm software download found after 1 query",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PERSIANN neural network SOFM training Stage IV",
+   "tool": "WebSearch",
+   "notes": "follow-up; results describe SOFM for PERSIANN-CCS/MSA; no source ties PERSIANN-CDR training to Stage IV",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA CDR Program source code open source policy",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; Fair Use agreements across CDRs share the same software clause",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PDIR-Now source code GitHub CHRS",
+   "tool": "WebSearch",
+   "notes": "no filter; no PDIR-Now code repository found; results unrelated",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "seqSOLO PERSIANN code",
+   "tool": "WebSearch",
+   "notes": "no filter; only the NCEI data flow diagram names seqSOLO_PERSIANN.cc; no public repository with that file found; Martins6/persiann_api is a data-download tool",
+   "from": "sa2"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "CHRS documentation of PERSIANN-CDR QC",
+   "query": "PERSIANN-CDR quality control CHRS",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA CDR Program",
+   "publisher": "standards bodies and certifiers",
+   "subquestion_id": "q1",
+   "aim": "maturity matrix / readiness review",
+   "query": "PERSIANN-CDR maturity matrix NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "NCEI source-code deliverable",
+   "query": "PERSIANN-CDR source code NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": null,
+   "publisher": "practitioners",
+   "subquestion_id": "q3",
+   "aim": "code repositories",
+   "query": "PERSIANN GitHub",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "DataCite / data.gov",
+   "publisher": "registries",
+   "subquestion_id": "q4",
+   "aim": "DOI and catalog metadata",
+   "query": "DataCite 10.7289/V51V5BWQ",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "AWS NODD",
+   "publisher": "registries",
+   "subquestion_id": "q4",
+   "aim": "AWS registry license",
+   "query": "PERSIANN-CDR AWS open data registry",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "CHRS portal formats",
+   "query": "CHRS Data Portal PERSIANN-CDR download formats",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q1",
+   "aim": "developers' papers on QC",
+   "query": "Ashouri 2015 PERSIANN-CDR quality",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "CHRS software downloads",
+   "query": "CHRS PERSIANN algorithm software download",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "Google Earth Engine",
+   "publisher": "registries",
+   "subquestion_id": "q4",
+   "aim": "GEE catalog terms",
+   "query": "PERSIANN-CDR Earth Engine catalog",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 14.3,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 141180,
+  "subagent_minutes_planned": 31.5,
+  "subagent_minutes": 27.3,
+  "follow_ups": 0,
+  "continuations": 6,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": false
+ }
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "0.1",
+  "id": "ghcn-daily",
+  "identification": {
+    "full_name": "Global Historical Climatology Network – Daily",
+    "abbreviations": [
+      "GHCN-D",
+      "GHCNd",
+      "GHCN-Daily"
+    ],
+    "version": "Version 3",
+    "doi": "10.7289/V5D21VHZ",
+    "doi_url": "https://doi.org/10.7289/V5D21VHZ",
+    "data_provider": "NOAA",
+    "dataset_type": "Station observations (point data, not gridded)",
+    "description": "A NOAA-maintained global collection of historical and near-real-time daily weather observations from land-based stations. It brings together observations from about 30 source networks and applies standard quality-control checks.",
+    "citation": "Menne, M. J., Durre, I., Korzeniewski, B., McNeill, S., Thomas, K., Yin, X., Anthony, S., Ray, R., Vose, R. S., Gleason, B. E., and Houston, T. G. (2012). Global Historical Climatology Network - Daily (GHCN-Daily), Version 3. [indicate subset used]. NOAA National Climatic Data Center. doi:10.7289/V5D21VHZ [access date].",
+    "citation_source": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html"
+  },
+  "archives": [
+    {
+      "name": "NOAA NCEI",
+      "role": "primary",
+      "description": "Primary authoritative archive and data curator"
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "role": "mirror",
+      "description": "NOAA Open Data Dissemination (NODD) cloud-hosted copy"
+    },
+    {
+      "name": "Google Cloud Platform (GCP)",
+      "role": "mirror",
+      "description": "Cloud-hosted access to GHCN-Daily"
+    },
+    {
+      "name": "NOAA Climate Data Online (CDO)",
+      "role": "access-service",
+      "description": "Search and retrieval interface for station observations"
+    }
+  ],
+  "access_endpoints": [
+    {
+      "name": "NOAA GHCN-Daily official project page",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+      "role": "primary",
+      "type": "landing-page"
+    },
+    {
+      "name": "NOAA NCEI dataset DOI / landing page",
+      "url": "https://doi.org/10.7289/V5D21VHZ",
+      "role": "alternative",
+      "type": "doi"
+    },
+    {
+      "name": "NOAA direct data download directory",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/",
+      "role": "alternative",
+      "type": "download"
+    },
+    {
+      "name": "NOAA Daily Summaries data access",
+      "url": "https://www.ncei.noaa.gov/access/search/data-search/daily-summaries/",
+      "role": "alternative",
+      "type": "search-portal"
+    },
+    {
+      "name": "AWS Open Data Registry",
+      "url": "https://registry.opendata.aws/noaa-ghcn/",
+      "role": "alternative",
+      "type": "cloud"
+    },
+    {
+      "name": "AWS S3 bucket",
+      "url": "https://noaa-ghcn-pds.s3.amazonaws.com/",
+      "role": "alternative",
+      "type": "cloud",
+      "details": {
+        "bucket": "noaa-ghcn-pds",
+        "region": "us-east-1",
+        "update_frequency": "Daily",
+        "access": "Public; no AWS account needed for anonymous access"
+      }
+    },
+    {
+      "name": "GHCN-Daily README and data-format documentation",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+      "role": "documentation",
+      "type": "documentation"
+    },
+    {
+      "name": "GHCN-Daily station metadata",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+      "role": "documentation",
+      "type": "station-list"
+    },
+    {
+      "name": "GHCN-Daily station inventory",
+      "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+      "role": "documentation",
+      "type": "station-list"
+    }
+  ],
+  "access_note": "",
+  "people": {
+    "curator": {
+      "name": "GHCNd Operations Team",
+      "organization": "NOAA/NESDIS/NCEI",
+      "role": "Dataset curator / operational manager"
+    },
+    "leads": [
+      {
+        "name": "Matthew J. Menne",
+        "organization": "NOAA NCEI",
+        "role": "Principal scientific developer; lead author of the 2012 GHCN-Daily overview paper"
+      }
+    ],
+    "contributors": [],
+    "note": "NOAA metadata does not name one current individual as project leader, so the Operations Team is listed as curator."
+  },
+  "instruments": {
+    "summary": "Ground-based rain gauges and other station-based precipitation measurement systems",
+    "categories": [
+      {
+        "name": "Rain gauges",
+        "type": "in-situ gauge",
+        "role": "Primary instrument category named in NOAA metadata"
+      }
+    ],
+    "examples": [
+      "Conventional/manual rain gauges",
+      "Standard meteorological precipitation gauges",
+      "Automated precipitation-measuring systems",
+      "Other nationally operated precipitation-observation instruments"
+    ],
+    "note": "A compilation of many national and international networks, so no single instrument applies to all stations. The data are not homogenized for historical changes in instruments and observing practice; check station source networks and station metadata for instrument-level detail."
+  },
+  "temporal": {
+    "start": "1880-01-01",
+    "start_note": "Official Version 3 metadata. The earliest observation in the archive is 1832-01-01 (precipitation, Parramatta, Australia).",
+    "earliest_observation": "1832-01-01",
+    "end": "present",
+    "frequency": "Daily",
+    "update_frequency": "Daily, with a full-dataset rebuild about each weekend",
+    "record_length": "Less than 1 year to more than 175 years, depending on station",
+    "note": "Daily values are not always measured over the same 24-hour period at every station; observation times and conventions differ between networks."
+  },
+  "spatial": {
+    "coverage": "Global land",
+    "extent": {
+      "lat_min": -90,
+      "lat_max": 83,
+      "lon_min": -180,
+      "lon_max": 180
+    },
+    "land_ocean": "Land only",
+    "resolution": "Station points; variable and irregular",
+    "grid": null,
+    "station_count": "More than 100,000",
+    "countries": "About 180",
+    "note": "Station density varies: dense in North America, Europe and parts of Australia; sparse in Africa, Antarctica and parts of South America."
+  },
+  "data_format": {
+    "format": "Station files with geographic coordinates (latitude and longitude)",
+    "units": ""
+  },
+  "status": {
+    "state": "Ongoing",
+    "label": "Ongoing / actively updated",
+    "evidence": [
+      "Receives daily observations from many national and international sources",
+      "Station records are updated as new observations arrive",
+      "Quality-control checks are applied",
+      "The full dataset is rebuilt periodically, generally each weekend",
+      "Successive daily updates are archived with unique version numbers"
+    ]
+  },
+  "versions": [
+    {
+      "version": "Version 3",
+      "status": "current",
+      "doi": "10.7289/V5D21VHZ"
+    },
+    {
+      "version": "Version 2",
+      "status": "superseded",
+      "doi": "",
+      "note": "NCEI: not to be used except in rare cases"
+    }
+  ],
+  "related_products": [],
+  "references": [
+    {
+      "title": "NOAA NCEI – Global Historical Climatology Network Daily (GHCNd) project page",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+      "type": "landing-page"
+    },
+    {
+      "title": "GHCN-Daily Version 3 metadata and DOI",
+      "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc%3AC00861/html",
+      "type": "metadata"
+    },
+    {
+      "title": "NOAA Daily Summaries data access",
+      "url": "https://www.ncei.noaa.gov/access/search/data-search/daily-summaries/",
+      "type": "data-access"
+    },
+    {
+      "title": "AWS GHCN-Daily repository",
+      "url": "https://registry.opendata.aws/noaa-ghcn/",
+      "type": "data-access"
+    },
+    {
+      "title": "Menne et al. (2012), An Overview of the Global Historical Climatology Network-Daily Database, Journal of Atmospheric and Oceanic Technology, 29, 897–910",
+      "url": "https://doi.org/10.1175/JTECH-D-11-00103.1",
+      "doi": "10.1175/JTECH-D-11-00103.1",
+      "type": "paper"
+    }
+  ]
+}

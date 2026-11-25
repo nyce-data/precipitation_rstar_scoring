@@ -1,0 +1,2831 @@
+{
+ "question": "Who are the people critical to producing the IMERG Late Run now, how close is each to retirement, and which contracts pay them and run its processing?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (threats to the program, D-1; Goddard workforce cuts) with figures for each of eight people",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Who are the people critical to the IMERG Late Run now (roles, ORCID, earliest publication, estimated age, FERS eligibility)?",
+   "status": "answered",
+   "source_ids": [
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s32",
+    "s33",
+    "s34",
+    "s35",
+    "s36",
+    "s37",
+    "s38",
+    "s39",
+    "s40",
+    "s41",
+    "s42",
+    "s43",
+    "s44",
+    "s45",
+    "s51"
+   ],
+   "remaining_gap": "Stocker's birth year and federal service start; no PPS operations lead named."
+  },
+  {
+   "id": "q2",
+   "question": "Team sizes, succession or knowledge-transfer plans, departures since 2024, and why Kidd left the author list?",
+   "status": "uncertain",
+   "source_ids": [
+    "s44",
+    "s46",
+    "s47",
+    "s48",
+    "s49",
+    "s50",
+    "s51",
+    "s52",
+    "s53",
+    "s54",
+    "s55",
+    "s56",
+    "s57",
+    "s58",
+    "s59",
+    "s60",
+    "s61",
+    "s62",
+    "s63",
+    "s64",
+    "s65",
+    "s66",
+    "s67",
+    "s68",
+    "s69",
+    "s70",
+    "s71",
+    "s72",
+    "s73",
+    "s77"
+   ],
+   "remaining_gap": "No published PPS or IMERG headcount; no reason for Kidd's departure; live Code 612/619 staff lists read only in part."
+  },
+  {
+   "id": "q3",
+   "question": "Which contracts pay the IMERG staff and run PPS, the GMU CEOSR role, where PDIR-Now runs and V08's IR plan, and whether code is shared on request?",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s74",
+    "s75",
+    "s76"
+   ],
+   "remaining_gap": "PPS contract and funding line not found; no ATMOS task order names IMERG; GMU award number not found."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_IDV_80GSFC26D0002_8000/",
+   "fetched_url": null,
+   "title": "USAspending award record, IDV 80GSFC26D0002 (ATMOS), Science & Technology Corporation",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "last_modified_date 2026-11-17",
+   "data_period": null,
+   "source_type": "government_database",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_atmos_idv.json/ef7b354b57ba354e.json",
+   "retrieved": "2026-11-24",
+   "limitations": "IDV record only; task orders under it not listed here (subaward_count 0). The GPCP pt7 run had the same IDV from HigherGov (start 11/30/25); USAspending gives start_date 2025-12-01 and date_signed 2025-10-01. No staff named. NASA news release said award from Nov 3, 2025 (pt4).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://science.gsfc.nasa.gov/earth/bio/robert.joyce",
+   "fetched_url": null,
+   "title": "Robert Joyce - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gsfc_joyce_bio.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Page is undated and names no contract. The 2023 IMERG Technical Documentation gives Joyce as SSAI. URL robert.j.joyce returned 404; robert.joyce worked.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.highergov.com/contract-opportunity/atmosphere-support-atmos-request-for-proposal-r-80gsfc24r0037-o-b8c8b/",
+   "fetched_url": null,
+   "title": "Atmosphere Support (ATMOS) Request For Proposal (RFP), 80GSFC24R0037",
+   "author_org": "HigherGov (republishing SAM.gov notice)",
+   "published": "Posted Oct. 28, 2024; amendments to Nov. 21, 2024",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "Read through WebFetch extraction (no local copy); aggregator of SAM.gov notice; RFP and SOW attachments (ATMOS FINAL RFP 11.18.24) not read.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://ceosr.science.gmu.edu/microwave-remote-sensing-group/",
+   "fetched_url": null,
+   "title": "Microwave Remote Sensing Group - Center for Earth Observing and Spatial Research",
+   "author_org": "George Mason University CEOSR",
+   "published": "undated (mentions August 2021 media item)",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ceosr_p138.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated member list may be stale. No funding instrument named. Stocker listed as a CEOSR member: whether he is GMU staff or civil servant now not settled here.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://ceosr.science.gmu.edu/microwave-remote-sensing-group/inside-the-microwave-remote-sensing-group/",
+   "fetched_url": null,
+   "title": "Inside The Microwave Remote Sensing Group - CEOSR",
+   "author_org": "George Mason University CEOSR",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ceosr_p525.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated; linked overview PDF is from 2013 (sa3-e7).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://ceosr.science.gmu.edu/nasa-announces-release-of-19-year-record-of-global-precipitation/",
+   "fetched_url": null,
+   "title": "NASA Announces Release of 19-year Record of Global Precipitation (August 2019) - CEOSR",
+   "author_org": "George Mason University CEOSR",
+   "published": "August 2019",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ceosr_p926.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2019 news item; no contract named.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://ceosr.science.gmu.edu/wp-content/uploads/2014/11/ceosr2013kwi.pdf",
+   "fetched_url": null,
+   "title": "CEOSR Microwave Remote Sensing Group overview slides (Precipitation Data System Overview), 2013",
+   "author_org": "George Mason University CEOSR",
+   "published": "2013 (uploaded 2014-11)",
+   "data_period": null,
+   "source_type": "presentation",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ceosr2013kwi.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2013 slides, historical only; funding instrument NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://gpm.nasa.gov/resources/documents/algorithm-information/IMERG-V07-ATBD",
+   "fetched_url": null,
+   "title": "IMERG V07 ATBD (copy saved 2026-08 by earlier run)",
+   "author_org": "NASA GSFC (Huffman et al.)",
+   "published": "Version 07",
+   "data_period": null,
+   "source_type": "technical_document",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_atbd_2026-08.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "V07 text; V08 ATBD not available. URL is the GPM document page as recorded by the earlier run (txt copied from 2026-11-18 run main folder).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_V07_Technical_Documentation.pdf",
+   "fetched_url": null,
+   "title": "IMERG Technical Documentation, 13 July 2023",
+   "author_org": "NASA GSFC (Huffman, Bolvin, Joyce, Kelley, Nelkin, Tan, Watters, West)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "technical_document",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_techdoc.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2023 affiliations; KBR contract for West not identified. URL as recorded by earlier run (not re-checked).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://arxiv.org/html/2605.07167v1",
+   "fetched_url": null,
+   "title": "GPROF-IR: An Improved Single-Channel Infrared Precipitation Retrieval for Merged Satellite Precipitation Products",
+   "author_org": "Pfreundschuh, Kummerow (Colorado State Univ.), Tan (UMBC/NASA GSFC), Huffman (NASA GSFC)",
+   "published": "2026-05-08 (arXiv:2605.07167v1)",
+   "data_period": null,
+   "source_type": "preprint",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "Read via WebFetch extraction (arxiv.org download refused by sandbox; no local copy). Passage pieces are as returned by the extraction; preprint, not peer reviewed. Operational location (PPS vs CSU) NOT PRESENT; only says GPROF-IR (GMI, 3) was selected as the preferred configuration for operational processing.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://gpm.nasa.gov/data/faq",
+   "fetched_url": null,
+   "title": "Data Frequently Asked Questions | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_data_faq.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Absence of evidence only; ATBD and Tech Doc also searched (upon request, on request): NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://ceosr.science.gmu.edu/large-rainfall-accumulation-from-hurricane-melissa-2025-as-it-passes-over-jamaica/",
+   "fetched_url": null,
+   "title": "Large rainfall accumulation from Hurricane Melissa (2025)",
+   "author_org": "George Mason University CEOSR (Owen Kelley, GMU; Jason West, KBR)",
+   "published": "2025-10-29 (updated 2025-10-31)",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ceosr_melissa_2025.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "No contract/grant number; a USAspending search for a GMU-GSFC award was not possible with GET-only helpers and a WebSearch found none.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://ntrs.nasa.gov/api/citations/20250003538/downloads/20250003538%20Huffman%20G%20slides.pdf",
+   "fetched_url": null,
+   "title": "Plans for IMERG V08 and Future Perspectives for Global Satellite Precipitation (slides)",
+   "author_org": "Huffman, Bolvin, Joyce, Nelkin, Tan (NASA GSFC, SSAI, UMBC)",
+   "published": "2025 (NTRS 20250003538)",
+   "data_period": null,
+   "source_type": "presentation",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/huffman_2025_v08_plans.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Slide text; exact 2025 meeting date not read. Later Earthdata notice (per search summary) says V08 transition no sooner than fall 2026 (not fetched). SSAI affiliation in 2025 predates STC employer on GSFC pages.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://gpm.nasa.gov/data/news/imerg-v08-transition-schedule",
+   "fetched_url": null,
+   "title": "IMERG V08 Transition Schedule",
+   "author_org": "NASA GPM",
+   "published": "2026-04-28",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_imerg_v08_transition.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "April 2026 notice; status at 2026-11-24 not checked here (earlier calibration-copies pt7 run may cover it).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://science.gsfc.nasa.gov/earth/bio/erich.f.stocker",
+   "fetched_url": null,
+   "title": "Erich F Stocker - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gsfc_stocker_bio.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Page does not state PPS Project Manager title; that role comes from earlier runs. Org code 616 vs mail code 619 as given on page. Whether Tony Stocker is related or the same person is not established.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp",
+   "fetched_url": null,
+   "title": "PPS Contacts (STORM)",
+   "author_org": "NASA PPS",
+   "published": "Last Updated 02/21/2024",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pps_contacts.html.txt",
+   "retrieved": "2026-11-21 (earlier run)",
+   "limitations": "Page gives no employer for West; KBR affiliation comes from sa3-e9 and sa3-e12. No KBR contract number found.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://gpm.nasa.gov/data/news/update-imerg-v08-transition-schedule-aug-2026",
+   "fetched_url": null,
+   "title": "Update to the IMERG V08 Transition Schedule, Aug. 2026",
+   "author_org": "NASA GPM",
+   "published": "2026-08-06",
+   "data_period": null,
+   "source_type": "official_page",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_imerg_v08_update_aug2026.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Newest schedule found; no later notice checked. Names no IR scheme. Search summary of the IPWG-12 slides (unreadable) says V08 has a new IR precipitation algorithm.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://ntrs.nasa.gov/api/citations/20040121129/downloads/20040121129.pdf",
+   "fetched_url": null,
+   "title": "Summary Report for Joint Interdisciplinary Earth Science Information Center: A Cooperative Agreement Between NASA Goddard Space Flight Center And George Mason University, 2001-2003",
+   "author_org": "George Mason University (Menas Kafatos, PI)",
+   "published": "2004 (NTRS 20040121129)",
+   "data_period": null,
+   "source_type": "report",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ntrs_jiesic_2004.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Historical (2001-2003); only searched, not read in full; the current GMU-GSFC award is not identified.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://api.openalex.org/authors?search=Erich%20Stocker",
+   "fetched_url": null,
+   "title": "OpenAlex author record A5027050046 Erich Franz Stocker",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_stocker.json/58e20e51cf90b185.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Aggregator record; affiliation years not quoted here. Birth year, employment start NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://api.openalex.org/works?filter=author.id:A5027050046&sort=publication_year:asc&per-page=5&select=id,title,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Erich F. Stocker (A5027050046)",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_stocker_works/ed96061efc83af58.json",
+   "retrieved": "2026-11-24",
+   "limitations": "OpenAlex coverage of 1980s-1990s technical reports is incomplete; a 1999 first paper by a PPS (then TSDIS) manager likely understates career length. Service start date NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Stocker+AND+given-names:Erich",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Erich Stocker",
+   "author_org": "ORCID",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "database",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_stocker/b307ae39252ab8d6.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Search result only; employment dates NOT PRESENT (record not opened).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/erich.f.stocker",
+   "fetched_url": null,
+   "title": "Erich F Stocker - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/stocker_bio.html/56baae49e4070554.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "No bio, no start date, no PPS Project Manager title on this page (title comes from earlier runs/PPS docs). Retirement plans NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://api.openalex.org/authors?search=Jackson%20Tan",
+   "fetched_url": null,
+   "title": "OpenAlex author record A5058050012 Jackson Tan",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_tan.json/f22547e41c2bead9.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Several namesakes in results; only results[0] matches the GSFC bio.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://api.openalex.org/works?filter=author.id:A5058050012&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Jackson Tan (A5058050012)",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_tan_works/7c55995d7336c00a.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Contradicts P-2 for Tan. The 2005 item predates his B.Sc. start (Aug 2005), likely a misattribution.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Tan+AND+given-names:Jackson",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Jackson Tan",
+   "author_org": "ORCID",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "database",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_tan/a2781379aa3e7be1.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Search result only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/jackson.tan",
+   "fetched_url": null,
+   "title": "Jackson Tan - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/tan_bio.html/5e2f1ad01f730945.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Contradicts P-2 for Tan; page text on projects is stale (mentions V07 planned for late 2021). Latest publication listed on page 2024; 2026 activity is from EGU26-14694 (earlier run file).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://api.openalex.org/authors?search=Owen%20Kelley",
+   "fetched_url": null,
+   "title": "OpenAlex author record A5057707686 Owen Kelley",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_kelley.json/c5675a6d6759ae29.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Affiliations not quoted.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://api.openalex.org/works?filter=author.id:A5057707686&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Owen Kelley (A5057707686)",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_kelley_works/d6346d2b8d4aa793.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Age is an estimate.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Kelley+AND+given-names:Owen",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Owen Kelley",
+   "author_org": "ORCID",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "database",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_kelley/95cbe0cd3cd9d684.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Search result only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/owen.a.kelley",
+   "fetched_url": null,
+   "title": "Owen A Kelley - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/kelley_bio.html/09d09e40a3388a9d.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated page. Funding vehicle for his GMU position NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://gpm.nasa.gov/missions/gpm/10-in-10-webinar-series/applications-missions/webinar-7-data",
+   "fetched_url": null,
+   "title": "Webinar 7: Data | NASA Global Precipitation Measurement Mission",
+   "author_org": "NASA GPM",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/webinar7.html/acbaed658c830023.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Webinar date NOT PRESENT in the quoted text.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://api.openalex.org/authors?search=Robert%20J.%20Joyce",
+   "fetched_url": null,
+   "title": "OpenAlex author record A5008388322 Robert J. Joyce",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_joyce.json/58bc80f4e81c5440.json",
+   "retrieved": "2026-11-24",
+   "limitations": "The 0009- ORCID prefix indicates a recently created ORCID iD.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://api.openalex.org/works?filter=author.id:A5008388322&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works, Robert J. Joyce (A5008388322)",
+   "author_org": "OpenAlex",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_joyce_works/ef7889f0b4e0c9ef.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Merged profile; 1990 CERES item attribution not verified. Age is an estimate.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Joyce+AND+given-names:Robert",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Robert Joyce",
+   "author_org": "ORCID",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "database",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_joyce/a970737709d1d5d3.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Institution NOT PRESENT for this iD in search result; weak confirmation.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/robert.joyce",
+   "fetched_url": null,
+   "title": "Robert Joyce - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/joyce_bio2.html/87e2703d08381776.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "No bio, no dates. The STC contract number NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_TechnicalDocumentation_final_230713.pdf",
+   "fetched_url": null,
+   "title": "IMERG Technical Documentation (13 July 2023)",
+   "author_org": "NASA GSFC (Huffman et al.)",
+   "published": "2023-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/imerg_techdoc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2023 affiliations; GSFC bios now show STC for Bolvin, Joyce, Nelkin. Supports P-4/P-1: no named PPS production operator or deputy.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://science.gsfc.nasa.gov/earth/bio/george.j.huffman",
+   "fetched_url": null,
+   "title": "George J Huffman - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/huffman_gsfc_bio.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Age is an estimate from the earlier run. Retirement plans NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://science.gsfc.nasa.gov/earth/bio/david.t.bolvin",
+   "fetched_url": null,
+   "title": "David T Bolvin - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gsfc_bio_bolvin.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://science.gsfc.nasa.gov/earth/bio/eric.j.nelkin",
+   "fetched_url": null,
+   "title": "Eric J Nelkin - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gsfc_bio_nelkin.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Undated; ORCID NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://pub.orcid.org/v3.0/0000-0003-0657-0066/employments",
+   "fetched_url": null,
+   "title": "ORCID public employments 0000-0003-0657-0066 (Erich Stocker)",
+   "author_org": "ORCID (self-reported)",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "database",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_stocker_emp/847e30e239e8069f.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Self-reported; whether service since 1991 was all federal (vs contractor) is NOT PRESENT; birth year NOT PRESENT; end date NOT PRESENT (implies current). Supersedes the Stocker age gap in part.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-4481-9005/employments",
+   "fetched_url": null,
+   "title": "ORCID public employments 0000-0002-4481-9005 (Owen Kelley)",
+   "author_org": "ORCID (self-reported)",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "database",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_kelley_emp/c5f79899884de0fa.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Self-reported; end date NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://pub.orcid.org/v3.0/0009-0003-7168-1237/employments",
+   "fetched_url": null,
+   "title": "ORCID public employments 0009-0003-7168-1237 (Robert Joyce)",
+   "author_org": "ORCID",
+   "published": "retrieved 2026-11-24",
+   "data_period": null,
+   "source_type": "database",
+   "evidence_id": "sa1-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_joyce_emp/692a6ebf1eac9a24.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Empty record; ORCID-to-person match rests on OpenAlex only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://gpm.nasa.gov/sites/default/files/document_files/TRMMSenRevProp_v1.2.pdf",
+   "fetched_url": null,
+   "title": "Tropical Rainfall Measuring Mission Senior Review Proposal 2011",
+   "author_org": "NASA GSFC TRMM Project",
+   "published": "2011",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/trmm_senrev2011.pdf/8b58d87eeba5ca58.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2011 document; current PPS staffing NOT PRESENT. Rest of the 10 MB proposal not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://science.gsfc.nasa.gov/earth/projects/212/",
+   "fetched_url": null,
+   "title": "Precipitation Processing System | NASA GSFC (project page)",
+   "author_org": "NASA GSFC Earth Sciences Division",
+   "published": "undated (retrieved 2026-11-24)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gsfc_pps_project.html/5bc250c1d2d1c2b6.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Staff names NOT PRESENT; PPS operations lead NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s45",
+   "url": "https://web.archive.org/web/20150309053643/http://science.gsfc.nasa.gov:80/earth/gcdc/",
+   "fetched_url": null,
+   "title": "Home Page - Global Change Data Center - 610.2 (Wayback copy 2015-03-09)",
+   "author_org": "NASA GSFC Code 610.2",
+   "published": "captured 2015-03-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gcdc_2015.html/f16a1234826bd1c9.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2015 archived copy; current page gone. PPS staff below manager NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_V07_ATBD_final_230712.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) NASA GPM IMERG Version 07 (12 July 2023)",
+   "author_org": "G.J. Huffman et al., NASA/GSFC Code 612",
+   "published": "2023-07-12",
+   "data_period": null,
+   "source_type": "official_document",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_v07_atbd_2023.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Only one 'Kidd' match in the text (a reference at line 1770). A web search summary cited a 2023a ATBD author list 'Huffman, G. J., D. T. Bolvin, D. Braithwaite, K. Hsu, R. Joyce, C. Kidd, E. J. Nelkin, S. Sorooshian, J. Tan, and P. Xie, 2023a' - that 10-author list (with Kidd) is NOT the one on the 2023 V07 PDF; it matches the earlier V06 ATBD author list in form, which was not read here. Kidd's departure therefore likely happened between V06 (2019-2020) and V07 (2023): unverified.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://web.archive.org/web/20240521055833/https://storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp",
+   "fetched_url": null,
+   "title": "PPS STORM Contacts (Wayback capture 2024-05-21)",
+   "author_org": "NASA GSFC PPS (Code 619)",
+   "published": "2024-02-21 (page Last Updated)",
+   "data_period": null,
+   "source_type": "archived_web_page",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_ppscontacts_20240521.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Contacts page is a help-contact list, not a staff roster. 19 captures exist 2020-10-29 to 2026-04-11 (cdx_storm_PPSContacts.json); only 2024-05-21 and 2026-04-11 read.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://web.archive.org/web/20260411213639/https://storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp",
+   "fetched_url": null,
+   "title": "PPS STORM Contacts (Wayback capture 2026-04-11)",
+   "author_org": "NASA GSFC PPS (Code 619)",
+   "published": "unknown",
+   "data_period": null,
+   "source_type": "archived_web_page",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_ppscontacts_20260411.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2026 capture has only 93 words (inner content); footer with curator/last-updated NOT PRESENT. Also the live page read in pt3 (pps_contacts.html.txt) shows the same three entries.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/01/2025-report-on-nasas-top-management-and-performance-challenges.pdf",
+   "fetched_url": null,
+   "title": "Office of Inspector General 2025 Report on NASA's Top Management and Performance Challenges",
+   "author_org": "NASA OIG",
+   "published": "2025 (uploaded 2026-01)",
+   "data_period": null,
+   "source_type": "government_report",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_2025_tmpc.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Two-column PDF; passage taken from the right column only. Agency-wide, not GSFC/ESD-specific. The word 'succession' NOT PRESENT in the report text.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://gpm.nasa.gov/sites/default/files/2020-05/IMERG_ATBD_V06.3.pdf",
+   "fetched_url": null,
+   "title": "Algorithm Theoretical Basis Document (ATBD) Version 06 NASA GPM IMERG (3 January 2020, V06.3)",
+   "author_org": "G.J. Huffman et al., NASA/GSFC Code 612",
+   "published": "2020-01-03",
+   "data_period": null,
+   "source_type": "official_document",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_v06_3_atbd_2020.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Only first 3 pages converted with pdftotext -l 3. Reason for Kidd's removal NOT PRESENT in either ATBD.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://api.openalex.org/works?filter=author.id:A5084463178,from_publication_date:2024-01-01&sort=publication_date:desc",
+   "fetched_url": null,
+   "title": "OpenAlex works by Christopher Kidd (A5084463178) since 2024",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (query date)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/openalex_kidd_works_2024on.json",
+   "retrieved": "2026-11-24",
+   "limitations": "The 2026 record's Kidd authorship has raw_orcid null, so the Birmingham affiliation could be an OpenAlex author-merge error or a dual/honorary affiliation (Kidd was at Birmingham before GSFC per his earlier career; not verified here). ORCID employments for 0000-0001-5906-8446 is empty (orcid_kidd_employments.notjson.txt), so ORCID cannot confirm.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://api.openalex.org/authors?search=Christopher%20Kidd",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Christopher Kidd",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (query date)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/openalex_kidd_authors.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Earliest publication year not extracted (age estimate not made).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-5906-8446/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: Christopher Kidd 0000-0001-5906-8446",
+   "author_org": "ORCID",
+   "published": "2026-11-24 (query date)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_kidd_employments.notjson.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Returned XML not JSON; empty employments element.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://web.archive.org/web/20250208101416/https://science.gsfc.nasa.gov/earth/mesoscale/staff",
+   "fetched_url": null,
+   "title": "Code 612 Mesoscale Atmospheric Processes Laboratory Staff List (Wayback 2025-02-08)",
+   "author_org": "NASA GSFC Code 612",
+   "published": "capture 2025-02-08",
+   "data_period": null,
+   "source_type": "archived_web_page",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_code612_staff_20250208.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Only page 1 of 4 captured; full 82 names not available. Only captures since 2021 are 2025-02-08 (cdx_code612_staff.json lists 12 captures 2014-2025; no 2024 or 2026 capture).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s55",
+   "url": "https://science.gsfc.nasa.gov/earth/mesoscale/staff/",
+   "fetched_url": null,
+   "title": "Code 612 Staff List (live, 2026-11-24)",
+   "author_org": "NASA GSFC Code 612",
+   "published": "read 2026-11-24",
+   "data_period": null,
+   "source_type": "official_web_page",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/code612_staff_live.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Only page 1 (24 of 103) read; Bolvin/Braun absence inferred from alphabetical order on page 1 only. Not a statement of departure.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://science.gsfc.nasa.gov/earth/mesoscale/staff/?limit=24&subOrgs=true&direction=ascending&research=1&s=true",
+   "fetched_url": null,
+   "title": "Code 612 Staff List filtered by research interest Precipitation (live)",
+   "author_org": "NASA GSFC Code 612",
+   "published": "read 2026-11-24",
+   "data_period": null,
+   "source_type": "official_web_page",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/code612_staff_research_live.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Research-interest tags are self-entered; untagged staff (e.g. Bolvin, Nelkin, Tan) would not appear, so this is not a headcount of the IMERG group. Search summary said this filter showed 78 records at an earlier unknown date (search snippet only).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://science.gsfc.nasa.gov/earth/mesoscale/orgchart/",
+   "fetched_url": null,
+   "title": "Org Chart - Mesoscale Atmospheric Processes Laboratory",
+   "author_org": "NASA GSFC Code 612",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official_web_page",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "WebFetch extraction, no saved copy; small-model extraction.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://web.archive.org/cdx/search/cdx?url=storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp",
+   "fetched_url": null,
+   "title": "Wayback CDX captures of PPS STORM Contacts page",
+   "author_org": "Internet Archive",
+   "published": "2026-11-24 (query)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdx_storm_PPSContacts.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Index only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://web.archive.org/cdx/search/cdx?url=science.gsfc.nasa.gov/earth/projects/212/",
+   "fetched_url": null,
+   "title": "Wayback CDX captures of GSFC PPS project page 212",
+   "author_org": "Internet Archive",
+   "published": "2026-11-24 (query)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdx_gsfc_project212.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Captures not opened.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://web.archive.org/cdx/search/cdx?url=science.gsfc.nasa.gov/earth/mesoscale/staff/",
+   "fetched_url": null,
+   "title": "Wayback CDX captures of Code 612 staff list",
+   "author_org": "Internet Archive",
+   "published": "2026-11-24 (query)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdx_code612_staff.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Index only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s61",
+   "url": "https://web.archive.org/web/20240501224602/https://gpm.nasa.gov/science/pmm-science-team",
+   "fetched_url": null,
+   "title": "PMM Science Team (Wayback 2024-05-01)",
+   "author_org": "NASA GPM",
+   "published": "capture 2024-05-01",
+   "data_period": null,
+   "source_type": "archived_web_page",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_pmm_team_20240501.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Reason for Petersen's removal NOT PRESENT. PI table still headed '(2021 - 2022)' in both captures, so the PI list is not current.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://web.archive.org/web/20261028182629/https://gpm.nasa.gov/science/pmm-science-team",
+   "fetched_url": null,
+   "title": "PMM Science Team (Wayback 2026-10-28)",
+   "author_org": "NASA GPM",
+   "published": "capture 2026-10-28",
+   "data_period": null,
+   "source_type": "archived_web_page",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_pmm_team_20261028.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "63 captures exist (cdx_pmm_science_team.json); only 2024-05-01 and 2026-10-28 compared.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s63",
+   "url": "https://web.archive.org/cdx/search/cdx?url=gpm.nasa.gov/science/pmm-science-team",
+   "fetched_url": null,
+   "title": "Wayback CDX captures of PMM Science Team page",
+   "author_org": "Internet Archive",
+   "published": "2026-11-24 (query)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdx_pmm_science_team.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Index only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/06/final-memorandum-ig-26-005-review-of-goddard-space-flight-centers-transformation-efforts.pdf",
+   "fetched_url": null,
+   "title": "Review of Goddard Space Flight Center Transformation Efforts (IG-26-005)",
+   "author_org": "NASA OIG",
+   "published": "2026-06-26",
+   "data_period": null,
+   "source_type": "government_report",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_ig26005_goddard.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Center-wide figures only; Earth Sciences Division, Building 32 and precipitation NOT PRESENT in a keyword search of the text (only workforce/knowledge terms matched). Read lines 1-105 in full; rest searched by keyword.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s65",
+   "url": "https://api.openalex.org/works?filter=raw_author_name.search:Bolvin,from_publication_date:2025-06-01",
+   "fetched_url": null,
+   "title": "OpenAlex works with author name Bolvin since 2025-06-01",
+   "author_org": "OpenAlex",
+   "published": "2026-11-24 (query date)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/openalex_bolvin_works_2025on.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Affiliation strings name GSFC, not the employer (contractor name NOT PRESENT). Name search also returns an unrelated chemist Bolvin (lanthanide/actinide papers). The API reply carried a notice asking for an API key via the user email; not acted on.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s66",
+   "url": "https://gpm.nasa.gov/sites/default/files/2020-05/IMERG_ATBD_V06.3.pdf",
+   "fetched_url": null,
+   "title": "IMERG ATBD V06.3 (original PDF of sa2-e6)",
+   "author_org": "G.J. Huffman et al., NASA/GSFC Code 612",
+   "published": "2020-01-03",
+   "data_period": null,
+   "source_type": "official_document",
+   "evidence_id": "sa2-e6-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_v06_3_atbd_2020.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "Duplicate entry for the PDF file.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s67",
+   "url": "https://gpm.nasa.gov/sites/default/files/2023-07/IMERG_V07_ATBD_final_230712.pdf",
+   "fetched_url": null,
+   "title": "IMERG ATBD V07 2023 (original PDF of sa2-e1)",
+   "author_org": "G.J. Huffman et al., NASA/GSFC Code 612",
+   "published": "2023-07-12",
+   "data_period": null,
+   "source_type": "official_document",
+   "evidence_id": "sa2-e1-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/imerg_v07_atbd_2023.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "Duplicate entry for the PDF file.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s68",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/01/2025-report-on-nasas-top-management-and-performance-challenges.pdf",
+   "fetched_url": null,
+   "title": "OIG 2025 Top Management and Performance Challenges (original PDF of sa2-e5)",
+   "author_org": "NASA OIG",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "government_report",
+   "evidence_id": "sa2-e5-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_2025_tmpc.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "Duplicate entry for the PDF file.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s69",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/06/final-memorandum-ig-26-005-review-of-goddard-space-flight-centers-transformation-efforts.pdf",
+   "fetched_url": null,
+   "title": "OIG IG-26-005 (original PDF of sa2-e20, sa2-e21)",
+   "author_org": "NASA OIG",
+   "published": "2026-06-26",
+   "data_period": null,
+   "source_type": "government_report",
+   "evidence_id": "sa2-e20-pdf",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_ig26005_goddard.pdf.pdf",
+   "retrieved": "2026-11-24",
+   "limitations": "Duplicate entry for the PDF file.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s70",
+   "url": "https://web.archive.org/cdx/search/cdx?url=science.gsfc.nasa.gov/earth/gcdc/orgchart",
+   "fetched_url": null,
+   "title": "Wayback CDX captures of GCDC org chart",
+   "author_org": "Internet Archive",
+   "published": "2026-11-24 (query)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdx_gcdc_orgchart.json",
+   "retrieved": "2026-11-24",
+   "limitations": "Index only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s71",
+   "url": "https://web.archive.org/web/20150926053024/http://science.gsfc.nasa.gov/earth/gcdc/orgchart",
+   "fetched_url": null,
+   "title": "Org Chart - Global Change Data Center - 610.2 (Wayback 2015-09-26)",
+   "author_org": "NASA GSFC Code 610.2",
+   "published": "2015-09-25 (Last Updated)",
+   "data_period": null,
+   "source_type": "archived_web_page",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_gcdc_orgchart_2015.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "2015 page, too old to show the merger. Merger text and date remain unverified (see unreadable item).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s72",
+   "url": "https://science.gsfc.nasa.gov/earth/terrestrialinfo/orgchart/",
+   "fetched_url": null,
+   "title": "Org Chart - Terrestrial Information Systems Laboratory (619)",
+   "author_org": "NASA GSFC Code 619",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official_web_page",
+   "evidence_id": "sa2-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "WebFetch extraction (small model), no saved copy. Staff list https://science.gsfc.nasa.gov/earth/terrestrialinfo/staff/ (198 records per search snippet) not read: deadline.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s73",
+   "url": "https://science.gsfc.nasa.gov/earth/terrestrialinfo/staff/",
+   "fetched_url": null,
+   "title": "Code 619 Terrestrial Information Systems Laboratory Staff List (live)",
+   "author_org": "NASA GSFC Code 619",
+   "published": "read 2026-11-24",
+   "data_period": null,
+   "source_type": "official_web_page",
+   "evidence_id": "sa2-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/code619_staff_live.html.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Lab-level headcount only; PPS team size remains a gap. Pages 2-8 not read (deadline).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s74",
+   "url": "https://www.nasa.gov/news-release/nasa-awards-atmosphere-research-support-contract/",
+   "fetched_url": null,
+   "title": "NASA Awards Atmosphere Research Support Contract",
+   "author_org": "NASA",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/nasa_atmos_release.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Names no branch, project or staff."
+  },
+  {
+   "id": "s76",
+   "url": "https://arxiv.org/abs/2605.07167",
+   "fetched_url": null,
+   "title": "GPROF-IR: An Improved Single-Channel Infrared Precipitation Retrieval for Merged Satellite Precipitation Products (arXiv abstract page, v2, 22 Sep 2026)",
+   "author_org": "Pfreundschuh, Kummerow, Tan, Huffman",
+   "published": "2026-09-22",
+   "data_period": null,
+   "source_type": "preprint",
+   "evidence_id": "arXiv:2605.07167",
+   "access_level": "abstract",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/arxiv_2605.07167_abs.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Abstract page read in the browser; preprint, not peer reviewed; v2 of the paper sa3 read as v1 (s10)."
+  },
+  {
+   "id": "s77",
+   "url": "https://www.nasa.gov/wp-content/uploads/2025/10/sustaining-knowledge-through-transitions.pdf",
+   "fetched_url": null,
+   "title": "Sustaining Knowledge Through Transitions Guide",
+   "author_org": "NASA APPEL Knowledge Services and the NASA CKO Community",
+   "published": "2025-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/nasa_sustaining_knowledge.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Agency-wide generic guide (lead from the checker); names no program, IMERG or PPS; no evidence it was applied to IMERG or PPS."
+  },
+  {
+   "id": "s78",
+   "url": "https://www.highergov.com/idv/80GSFC26D0002",
+   "fetched_url": null,
+   "title": "HigherGov, IDV 80GSFC26D0002 (ATMOS)",
+   "author_org": "HigherGov",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "80GSFC26D0002",
+   "access_level": "snippet",
+   "read_via": null,
+   "local_file": null,
+   "retrieved": "2026-11-24",
+   "limitations": "Snippet only (checker); primary record is USAspending (s1)."
+  },
+  {
+   "id": "s75",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_80NSSC22M0109_8000/",
+   "fetched_url": null,
+   "title": "USAspending award record, cooperative agreement 80NSSC22M0109, George Mason University",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": null,
+   "data_period": "2022-05-01 to 2027-08-31",
+   "source_type": "official",
+   "evidence_id": "80NSSC22M0109",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/usaspending_80NSSC22M0109.json",
+   "retrieved": "2026-11-24",
+   "limitations": "The description field holds only its last sentence; it does not name PPS, CEOSR or IMERG, so its tie to the PPS job-control work is an inference. Lead from the checker (HigherGov page)."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "The three IMERG contractor scientists, Bolvin, Joyce and Nelkin, are now listed by GSFC as employees of Science and Technology Corp (STC) in Org 613 Climate and Radiation; the 2023 IMERG documents listed them as SSAI.",
+   "confidence": "high",
+   "confidence_reason": "NASA's own staff pages for all three agree; dated 2023 author list shows the earlier employer.",
+   "applicability": "Staff pages are undated; retrieved 2026-11-24.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "(Lead Research Scientist) … Org Code: | 613 Climate and Radiation | Address: | NASA/GSFC Mail Code 613 Greenbelt, MD 20771 | Employer: | Science and Technology Corp",
+     "location": "contact card"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "(SR RESEARCH METEOR.) | Org Code: | 613 Climate and Radiation | Employer: | Science and Technology Corp",
+     "location": "contact card"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "(SCIENTIST/ENGINEER) | Org Code: | 613 Climate and Radiation | Employer: | Science and Technology Corp",
+     "location": "contact card"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "contextualizes",
+     "passage": "George J. Huffman (1), David T. Bolvin (1,2), Robert Joyce (1,2), Owen A. Kelley (1,3), | Eric J. Nelkin (1,2), Jackson Tan (1,4), Daniel C. Watters (5), B. Jason West (1,6) … (2) Science Systems and Applications, Inc. | (3) George Mason University | (4) University of Maryland Baltimore County | (5) NASA Marshall Space Flight Center | (6) KBR, Inc. … V07 adapted PDIR–NOW as the IR precipitation algorithm",
+     "location": "title page lines 3-11; line 870"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "contradicts",
+     "passage": "\"raw_author_name\": \"Robert Joyce\", | \"raw_affiliation_strings\": [ | \"NASA Goddard Space Flight Center  Greenbelt MD USA\", | \"Science Systems and Applications, Inc.  Lanham MD USA\"",
+     "location": "results, raw_author_name; raw_affiliation_strings (lines 362-365)"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "ATMOS (IDV 80GSFC26D0002, STC) runs 2025-12-01 to 2030-12-01 with a $163.1 million ceiling and $19.7 million obligated; its scope is all GSFC Earth Science Division-Atmospheres research support and names neither IMERG, GPM nor a branch, so its paying the IMERG staff is an inference from their STC employer.",
+   "confidence": "moderate",
+   "confidence_reason": "The award record is authoritative; the link to the IMERG staff is inferred, no task order names them.",
+   "figure_status": [
+    "ceiling",
+    "obligation"
+   ],
+   "sole_source_reason": "USAspending is the federal government's own award record for the contract's terms.",
+   "applicability": "IDV record only; task orders not listed.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "\"piid\": \"80GSFC26D0002\" | \"description\": \"THIS CONTRACT IS FOR THE SUPPORT OF THE FULL RANGE OF ATMOSPHERIC SCIENCE RESEARCH AND DEVELOPMENT, APPLICATIONS, AND RELATED ENGAGEMENT ACTIVITIES CONDUCTED BY GODDARD SPACE FLIGHT CENTER PERSONNEL IN THE EARTH SCIENCE DIVISION-ATMOSPHERES.\", | \"total_obligation\": 19729764.22, | \"date_signed\": \"2025-10-01\", | \"base_and_all_options\": 163100000.0, | \"solicitation_identifier\": \"80GSFC24R0037\", | \"number_of_offers_received\": \"5\", | \"type_set_aside_description\": \"SMALL BUSINESS SET ASIDE - TOTAL\", | \"multiple_or_single_award_description\": \"SINGLE AWARD\", | \"start_date\": \"2025-12-01\", | \"end_date\": \"2030-12-01\", | \"recipient_name\": \"SCIENCE & TECHNOLOGY CORPORATION\",",
+     "location": "JSON fields description, total_obligation, date_signed, base_and_all_options, period_of_performance, recipient"
+    },
+    {
+     "source_id": "s74",
+     "relationship": "supports",
+     "passage": "The Atmosphere Support is a cost-plus-fixed-fee, single-award indefinite-delivery/indefinite-quantity contract with a maximum ordering value of $163.1 million. The contract will have an effective date of Monday, Nov. 3, 2025, for a period of five years.",
+     "location": "para. 2"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "Huffman is a NASA civil servant (since 2012) who holds the IMERG lead, GPM Project Scientist and PMM Science Team Lead roles at once; earliest publication 1980 gives an estimated age of about 71-76, so he very likely already meets FERS's 62-with-5-years rule.",
+   "confidence": "moderate",
+   "confidence_reason": "Roles from NASA pages; age is an estimate from publication history, not a birth date.",
+   "figure_status": "estimate",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "Org Code: | 612 Mesoscale Atmospheric Processes … Employer: | NASA … moved to GSFC in 1988, where he consulted until entering government service in 2012. … September 2012 - Present … leading IMERG, the U.S. GPM Day-1 multi-satellite algorithm; … 2025. \"Understanding Overland Satellite-Based Precipitation Errors in IMERG Products as a Function of Input Sources.\", Journal of Hydrometeorology, 26 (8): 1219-1235",
+     "location": "contact card; bio; Positions/Employment; Publications"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "Dr. Will McCarty | NASA Headquarters | GPM Program Scientist | Dr. George Huffman | NASA Goddard Space Flight Center | GPM Project Scientist and PMM Science Team Lead | Dr. Erich F. Stocker | NASA Goddard Space Flight Center | GPM Deputy Project Scientist for Data and Precipitation Processing System Project Manager | David B. Wolff | NASA Wallops Flight Facility | GPM Deputy Project Scientist - Ground Validation, GPM Ground Validation System Manager | Sarah Ringerud | NASA Goddard Space Flight Center | GPM Ground Validation Deputy Project Scientist | Andrea Portier | NASA Goddard Space Flight Center | GPM Senior Applications Lead",
+     "location": "PMM Science Program Management Team table, lines 25-31"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "Stocker is a NASA civil servant (Mail Code 619), GPM Deputy Project Scientist for Data and PPS Project Manager, at GSFC since 1991 per ORCID and PPS/TSDIS manager since at least 2011; no deputy or successor is named. With about 35 years at GSFC he is likely FERS-eligible now or within 2 years if that service is federal (estimate).",
+   "confidence": "low",
+   "confidence_reason": "Roles are sourced; birth year and how much service was federal are not published, so eligibility is inferred.",
+   "figure_status": "estimate",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "# Erich F Stocker | (AST, DATA SYSTEMS) … Org Code: | 616 Ocean Ecology | Address: | NASA/GSFC Mail Code 619 Greenbelt, MD 20771 | Employer: | NASA | TRMM | GPM",
+     "location": "contact card"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "<common:department-name>Code 610.2</common:department-name> | <common:role-title>Deputy Project Scientist for Data</common:role-title> | <common:start-date> | <common:year>1991</common:year> | </common:start-date> | <common:name>NASA Goddard Space Flight Center</common:name>",
+     "location": "employment-summary, lines 18-26"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "Dr. Will McCarty | NASA Headquarters | GPM Program Scientist | Dr. George Huffman | NASA Goddard Space Flight Center | GPM Project Scientist and PMM Science Team Lead | Dr. Erich F. Stocker | NASA Goddard Space Flight Center | GPM Deputy Project Scientist for Data and Precipitation Processing System Project Manager | David B. Wolff | NASA Wallops Flight Facility | GPM Deputy Project Scientist - Ground Validation, GPM Ground Validation System Manager | Sarah Ringerud | NASA Goddard Space Flight Center | GPM Ground Validation Deputy Project Scientist | Andrea Portier | NASA Goddard Space Flight Center | GPM Senior Applications Lead",
+     "location": "PMM Science Program Management Team table, lines 25-31"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "TRMM data processing has shifted to the | Precipitation Processing System (PPS), being developed as part of NASA’s Precipitation Program to process | TRMM, GPM and other relevant satellite precipitation data. … TRMM Project Scientist: Scott A. Braun (Laboratory for Atmospheres, NASA Goddard Space Flight Center) … Precipitation Processing System (PPS) Manager: Erich Stocker | TRMM Mission Director: Julio Marius",
+     "location": "executive summary, text lines 110-125"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "The other named staff are not federal employees: Kelley is George Mason University staff on site at PPS since 1997 (est. age about 55), Tan is UMBC staff at GSFC since 2014 (est. about 39-40), Joyce is STC (est. 61-66); no federal retirement rule applies to them.",
+   "confidence": "moderate",
+   "confidence_reason": "Employers from NASA bios and ORCID; ages are estimates.",
+   "figure_status": "estimate",
+   "evidence": [
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "<common:department-name>Center for Earth Observing and Spatial Research</common:department-name> | <common:role-title>Assistant Research Professor</common:role-title> | <common:year>1997</common:year> | <common:name>George Mason University</common:name>",
+     "location": "employment-summary, lines 18-24"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "(RESEARCH SCIENTIST) | Org Code: | 619 Terrestrial Information Systems | Employer: | GEORGE MASON UNIVERSITY | Research Assistant Professor | George Mason University - Fairfax, Virginia (on-site at NASA Goddard) | 1998 - Present | Develop visualization software at NASA Goddard's Precipitation Processing System (PPS); ad-hoc analysis of science algorithms before and after they are put into production; … mentor newer members of the PPS team; … Senior Programmer | … 1997 - 1998 | Working at the NASA Goddard Precipitation Processing System (PPS), which at that time was called the TRMM Science Data and Information Systems (TSDIS). … Ph.D. Computational Science, George Mason University, Fairfax, Virginia, 2008. | M.S. Applied Physics, George Mason University, Fairfax, Virginia, 1997. | B.A. Liberal Arts, St. John's College, Annapolis, Maryland, 1993.",
+     "location": "contact card; Positions/Employment; Education"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "(ASSOCIATE RESEARCH SCIENTIST) | Org Code: | 613 Climate and Radiation | Employer: | UNIVERSITY OF MARYLAND BALTIMORE CO | I am an Associate Research Scientist with the University of Maryland Baltimore County working at NASA Goddard Space Flight Center. My work focuses on precipitation and clouds, specifically the development of the Integrated Multi-satellitE Retrievals for GPM (IMERG) … December 2021 - Present … Universities Space Research Association - NASA Goddard Space Flight Center | November 2017 - November 2021 … NASA Postdoctoral Program Fellow … November 2014 - November 2017 … B.Sc. (Hon.), National University of Singapore, Aug 2005–Jun 2009",
+     "location": "contact card; Brief Bio; Positions/Employment; Education"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "\"title\": \"Gathering and Use of Water Quality Data: A Symposium\", | \"publication_year\": 1961 | \"title\": \"Accuracy of ERB measurements from the Clouds and the Earth's Radiant Energy System Instrument\", | \"publication_year\": 1990 | \"title\": \"The estimation of global monthly mean rainfall using infrared satellite data: The GOES precipitation index (GPI)\", | \"publication_year\": 1994",
+     "location": "results, lines 36-47"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "No PPS operations lead for the Late Run is named on any NASA page: the PPS project page lists no people, and the PPS contacts page showed the same three entries (Cosner, operators, Stocker) in May 2024 and April 2026.",
+   "confidence": "moderate",
+   "confidence_reason": "Absence on the pages read; PPS may have unlisted staff.",
+   "applicability": "Absence of evidence on public pages.",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "The Precipitation Processing System (PPS) evolved from the Tropical Rainfall Measuring Mission (TRMM) Science Data and Information System (TSDIS). The purpose of the PPS is to process, analyze and archive data from the Global Precipitation Measurement (GPM) mission, partner satellites and the TRMM mission.",
+     "location": "project description"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "NAME: Cosner, Charles … NAME: operators … NAME: Stocker, Dr. Erich … Curator: Jason West NASA Official: Erich Stocker, Code 619, NASA/GSFC Last Updated: 02/21/2024",
+     "location": "Contacts block and footer"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "NAME: Cosner, Charles | ORGANIZATION: NASA/GSFC | PHONE: 301-614-5294 … ADDRESS: Code 619 Bldg 32 Room S062 … NAME: operators … NAME: Stocker, Dr. Erich | ORGANIZATION: NASA/GSFC … ADDRESS: Code 619 Bldg 32 Room S070",
+     "location": "Contacts block (capture is the inner frame only; no footer)"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "Kidd left the IMERG ATBD author list between V06.3 (3 January 2020) and V07 (12 July 2023), not between 2023 and 2026; neither ATBD gives a reason, and he still publishes on IMERG in 2025-2026.",
+   "confidence": "high",
+   "confidence_reason": "Both author lists read in the ATBD texts; the reason is not published.",
+   "evidence": [
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "Prepared by: | George J. Huffman | NASA/GSFC | NASA/GSFC Code 612 | Greenbelt, MD 20771 | and David T. Bolvin, Dan Braithwaite, Kuolin Hsu, Robert Joyce, | Christopher Kidd, Eric J. Nelkin, Soroosh Sorooshian, Jackson Tan, | Pingping Xie | 3 January 2020",
+     "location": "Title page (only pages 1-3 converted)"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "Prepared by: | George J. Huffman | NASA/GSFC | NASA/GSFC Code 612 | Greenbelt, MD 20771 | and David T. Bolvin, Robert Joyce, Eric J. Nelkin, Jackson Tan, Dan | Braithwaite, Kuolin Hsu, Owen A. Kelley, Phu Nguyen, Soroosh | Sorooshian, Daniel C. Watters, B. Jason West, Pingping Xie | 12 July 2023",
+     "location": "Title page, lines 18-29 of the .txt"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "contextualizes",
+     "passage": "\"publication_date\": \"2026-08-14\", | \"title\": \"Assessing TROPICS SmallSat Precipitation for IMERG\", … \"raw_author_name\": \"Chris Kidd\", | \"raw_affiliation_strings\": [ | \"School of Geography Earth and Environmental Sciences University of Birmingham  Birmingham UK\" … \"publication_date\": \"2025-08-26\", | \"title\": \"GIRAFE v1: a global climate data record for precipitation accompanied by a daily sampling uncertainty\", … \"raw_author_name\": \"Christopher Kidd\", | \"raw_affiliation_strings\": [ | \"NASA/Goddard Space Flight Center, 8800 Greenbelt Rd, Greenbelt, MD 20771, USA\", | \"University of Maryland, Earth System Science Interdisciplinary Center,  5825 University Research Ct., College Park, MD 20740, USA\"",
+     "location": "results[0] (lines 39-414) and GIRAFE record (lines 590-1027)"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "No written succession or knowledge-transfer plan for IMERG, PPS or the GSFC labs was found; NASA's OIG reports the agency lacks a workforce planning process, and Goddard's workforce fell over 40 percent from March 2020 to January 2026.",
+   "confidence": "moderate",
+   "confidence_reason": "Oversight reports are direct at agency/center level; IMERG-level absence is by not finding one.",
+   "applicability": "Agency and center level, not IMERG-specific.",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "addressing a retirement wave for the technical | workforce. While these challenges continue this year, | they are exacerbated by workforce reductions occurring | across the Agency. As of July 2025, NASA's workforce | decreased by approximately 20 percent since 2023, | from over 18,000 to roughly 14,000 employees. The | reductions present difficulties to maintaining institutional | knowledge and ensuring the continuity of mission | critical operations. … the OIG, Government Accountability Office, and | National Academies of Sciences, Engineering, and | Medicine (National Academies) have all reported on the | Agency's lack of a workforce planning process",
+     "location": "p. 12, Sustaining Mission Critical Capabilities (right column, .txt lines 564-583)"
+    },
+    {
+     "source_id": "s64",
+     "relationship": "supports",
+     "passage": "Specifically, from March 2020 to January 2026, Goddard experienced a decrease | of over 40 percent in total workforce. In 2025 alone, Goddard lost approximately a third of its civilian | workforce due to the deferred resignation program.",
+     "location": "p. 2, Decision-Making Process, .txt lines 77-79"
+    },
+    {
+     "source_id": "s64",
+     "relationship": "supports",
+     "passage": "For many years, Goddard has | grappled with tight annual budgets, a senior workforce increasingly eligible for retirement, aging | infrastructure, and substantial deferred maintenance costs.",
+     "location": "Enclosure I, .txt lines 380-382"
+    },
+    {
+     "source_id": "s77",
+     "relationship": "contradicts",
+     "passage": "When teams experience rapid transitions, there are key steps | that leaders and group members can take to determine | which knowledge gaps must be resolved, provide support for | team members who are learning new roles, and maintain the | team’s knowledge to move forward effectively.",
+     "location": "p. 2"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "PDIR-Now IR estimates for IMERG V07 are computed at PPS from CPC's merged geo-IR, not at UC Irvine; V08 is to use CSU's open GPROF-IR instead, but the Late Run stays on V07 'hybrid' until no sooner than winter 2026.",
+   "confidence": "moderate",
+   "confidence_reason": "ATBD and GPM notices are direct; GPROF-IR's V08 role is from a preprint (abstract checked in the browser); where GPROF-IR will run is not stated.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Infrared-Rain Rate (PDIR; Nyugen et al. 2020a,b) re-calibration scheme. In parallel, CPC | assembles the zenith-angle-corrected, intercalibrated merged geo-IR fields and forwards them to | PPS for use in the PDIR computation routines.",
+     "location": "ATBD V07, page 8, lines 552-555 of txt"
+    },
+    {
+     "source_id": "s76",
+     "relationship": "supports",
+     "passage": "We introduce GPROF-IR, a neural-network-based precipitation retrieval designed to provide precipitation estimates from single-channel geostationary IR observations for the upcoming IMERG V08.",
+     "location": "Abstract"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Already, IMERG V07 Late and Early are operating in “hybrid” mode, using the IMERG V07 algorithm but ingesting GPROF V08. … The Late and Early Runs will be in this “hybrid V07” posture until the near-real-time processing system is ready to switch to V08, which is expected to take place no sooner than fall of 2026.",
+     "location": "paragraph 2"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Therefore, at this stage, it seems more likely that IMERG V08 Final Run will be released in the fall of 2026, though this projection assumes that the parent products perform within expected bounds. … The projected switch for the Late and Early Runs will take place no sooner than winter of 2026, with their retrospective records (i.e., beginning 1998) available prior to this switch but after the release of IMERG V08 Final Run.",
+     "location": "paragraphs 3-4"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "George Mason University's CEOSR group develops PPS job-control, archiving and distribution software and tests IMERG versions, funded by NASA GSFC; the likely current vehicle is NASA-GMU cooperative agreement 80NSSC22M0109 (2022-05-01 to 2027-08-31, $7,683,374 obligated, a 'science data system' partnership), though its record does not name PPS.",
+   "confidence": "moderate",
+   "confidence_reason": "GMU's own pages for the role; the agreement's link to PPS is inferred from its description.",
+   "figure_status": "obligation",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "The Microwave Remote Sensing group within CEOSR contributes to NASA’s Precipitation Processing System (PPS) at NASA Goddard. This group works with satellite precipitation retrieval algorithms and develops job-control, archiving, and distribution software along with prototyping visualization software and data analysis products. … Joyce Chou | Owen Kelley | Patrick Kolbe | John Kwiatkowski | Patty McCaughey | Jon Mitchell | Quyen Nguyen | Bala Pillai | Tony Stocker | John Stout … The CEOSR staff tests new versions of the algorithm and prepares the algorithm for operational use. CEOSR staff monitors the algorithm’s execution, and visualize the algorithms latest estimates in near real time.",
+     "location": "Microwave Remote Sensing Group; Members; Highlights"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "By examining this storm and other severe weather events, researchers at George Mason’s Center for Earth Observing and Spatial Research (CEOSR) assist the team of scientists who develop the IMERG algorithm. This work is funded by NASA’s Goddard Space Flight Center. It includes helping to test new versions of the algorithm and searching for anomalies in the current version. … The Precipitation Processing System (PPS) at NASA Goddard runs the IMERG algorithm and distributes the data products. | Credits: Animation created by Jason West (KBR). Images created by Owen Kelley (GMU).",
+     "location": "paragraphs 4, final, credits"
+    },
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "\"fain\": \"80NSSC22M0109\", … \"type_description\": \"COOPERATIVE AGREEMENT (B)\", | \"description\": \"LASTLY  THE COLLABORATION BETWEEN NASA AND GMU OPTIMIZES SCIENCE DATA SYSTEM CAPABILITIES IN A LONG STANDING  COST EFFECTIVE PARTNERSHIP BETWEEN TWO INSTITUTIONS.\", … \"total_obligation\": 7683374.0, | \"date_signed\": \"2022-04-25\",",
+     "location": "fain; type_description; description; total_obligation; date_signed"
+    },
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "\"start_date\": \"2022-05-01\", | \"end_date\": \"2027-08-31\",",
+     "location": "period_of_performance"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "contextualizes",
+     "passage": "Joint Interdisciplinary Earth Science Information | Center | A | Cooperative Agreement | Between | NASA Goddard Space Flight Center | And | George Mason University | 2001 - 2003 … MDS has been selected to support the Precipitation Processing System (PPS) that | is the science processing component of GPM, as well as the Aquarius mission. … demonstration of the Precipitation Processing System took place in November of 2002.",
+     "location": "title page; lines 111-115 of txt"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "text": "No IMERG document read says the production code is shared on request; only the V08 GPROF-IR component is stated as openly available.",
+   "confidence": "moderate",
+   "confidence_reason": "Absence in the ATBD, technical document, FAQ and slides.",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The IR scheme has shifted from VAR to PDIR—very different approaches.",
+     "location": "TMPA-to-IMERG answer (line 95 of txt)"
+    },
+    {
+     "source_id": "s76",
+     "relationship": "contextualizes",
+     "passage": "We introduce GPROF-IR, a neural-network-based precipitation retrieval designed to provide precipitation estimates from single-channel geostationary IR observations for the upcoming IMERG V08.",
+     "location": "Abstract"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c12",
+   "importance": "supporting",
+   "text": "The Code 612 staff list grew from 82 records (Feb 2025) to 103 (Nov 2026) with ocean and land staff added, and only three staff list precipitation as a research interest; Huffman's org code now shows 613.",
+   "confidence": "low",
+   "confidence_reason": "Entries listed on the pages, not official headcounts; only page 1 of the live list read.",
+   "evidence": [
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "Displaying records 1 to 24 of 82. … David T Bolvin | SCIENCE SYSTEMS AND APPLICATIONS INC | Org Code: 612 | Mail Code: 612 … Scott A Braun | NASA | Org Code: 612 … George J Huffman … Org Code: 612 | Mail Code: 612 … George Huffman | Chief",
+     "location": "lines 19-352"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "Displaying records 1 to 24 of 103. … Lillian N Addy | SCIENCE SYSTEMS AND APPLICATIONS INC … Sara E Blumberg | SCIENCE SYSTEMS AND APPLICATIONS INC … George Frederick Boward | SCIENCE SYSTEMS AND APPLICATIONS INC … Eric Brown De Colstoun | NASA | Org Code: 612 | Mail Code: 618 … Ivona Cetinic | MORGAN STATE UNIV. … Carlos E Del Castillo | NASA … George Huffman | Chief | 301-614-6308 george.j.huffman@nasa.gov",
+     "location": "lines 19-450"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "Displaying records 1 to 3 of 3. … Mircea Grecu | MORGAN STATE UNIV. | Org Code: 612 … Research Interest: | Earth Science: Precipitation … George J Huffman | NASA | Org Code: 613 | Mail Code: 612 … Research Interest: | Earth Science: Precipitation … Robert Meneghini | CATHOLIC UNIV OF AMERICA | Org Code: 612",
+     "location": "lines 19-86"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c13",
+   "importance": "supporting",
+   "text": "Between May 2024 and October 2026 the PMM management table dropped Walter Petersen (Deputy Project Scientist, Ground Validation); the Huffman and Stocker rows are unchanged.",
+   "confidence": "moderate",
+   "confidence_reason": "Two dated Wayback captures; reason not stated.",
+   "evidence": [
+    {
+     "source_id": "s61",
+     "relationship": "supports",
+     "passage": "Dr. Walter A. Petersen | NASA Marshall Space Flight Center | Deputy Project Scientist, Ground Validation | David B. Wolff | NASA Wallops Flight Facility | GPM Ground Validation System Manager",
+     "location": "PMM Science Program Management Team table, lines 29-30"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "Dr. Will McCarty | NASA Headquarters | GPM Program Scientist | Dr. George Huffman | NASA Goddard Space Flight Center | GPM Project Scientist and PMM Science Team Lead | Dr. Erich F. Stocker | NASA Goddard Space Flight Center | GPM Deputy Project Scientist for Data and Precipitation Processing System Project Manager | David B. Wolff | NASA Wallops Flight Facility | GPM Deputy Project Scientist - Ground Validation, GPM Ground Validation System Manager | Sarah Ringerud | NASA Goddard Space Flight Center | GPM Ground Validation Deputy Project Scientist | Andrea Portier | NASA Goddard Space Flight Center | GPM Senior Applications Lead",
+     "location": "PMM Science Program Management Team table, lines 25-31"
+    }
+   ],
+   "applicability": null
+  },
+  {
+   "id": "c14",
+   "importance": "supporting",
+   "text": "Bolvin is still publishing IMERG V08 and GPCP V3.3 work in 2026 with a GSFC affiliation, after SAMDA ended.",
+   "confidence": "moderate",
+   "confidence_reason": "OpenAlex records; aggregator of the papers' metadata.",
+   "evidence": [
+    {
+     "source_id": "s65",
+     "relationship": "supports",
+     "passage": "\"publication_date\": \"2026-08-26\", | \"title\": \"GPCP Version 3.3: A Refined Global View of Precipitation from Satellite and Gauge Observations\", … \"raw_author_name\": \"Dave T. Bolvin\", | \"raw_affiliation_strings\": [ | \"NASA Goddard Space Flight Center, Greenbelt, Maryland\", … \"publication_date\": \"2026-03-14\", | \"title\": \"Improved and Consistent Calibration Methodologies for IMERG V08\", … \"raw_author_name\": \"Dave Bolvin\", | \"raw_affiliation_strings\": [ | \"NASA/GSFC, GSFC-612.0, (robert.joyce@nasa.gov)\"",
+     "location": "results 1-2 (lines 40-617)"
+    }
+   ],
+   "applicability": null
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "ATMOS start date: NASA's release gives an effective date of Nov. 3, 2025; USAspending gives period start 2025-12-01 (signed 2025-10-01).",
+   "source_ids": [
+    "s74",
+    "s1"
+   ],
+   "status": "unresolved",
+   "explanation": "Likely an announced effective date versus the recorded period of performance start; neither source explains. The answer gives both."
+  },
+  {
+   "claim": "Joyce's employer: his GSFC staff page (undated, retrieved 2026-11-24) gives Science and Technology Corp; the 2026-08-14 TROPICS paper's metadata gives SSAI.",
+   "source_ids": [
+    "s2",
+    "s51"
+   ],
+   "status": "resolved",
+   "explanation": "Paper affiliations usually date from submission; the staff page is the current record. The answer relies on the staff page and notes the paper."
+  },
+  {
+   "claim": "ATMOS obligations: USAspending gives total_obligation $19,729,764.22 (record modified 2026-11-17); a HigherGov snippet gives $4,150,875 obligated directly to the IDV.",
+   "source_ids": [
+    "s1",
+    "s78"
+   ],
+   "status": "resolved",
+   "explanation": "Different dates of the same running total; the answer uses the primary USAspending record."
+  },
+  {
+   "claim": "ATMOS obligation in one record (2026-11-17): total_obligation $19,729,764.22 vs total_account_obligation $14,585,308.22 (outlay $11,064,375.29).",
+   "source_ids": [
+    "s1",
+    "s78"
+   ],
+   "status": "unresolved",
+   "explanation": "Two measures in the same USAspending record (award-level vs account-level obligations); the record doesn't explain the gap. The answer gives both. (Flagged by the Reconciler; s78 is the other snippet figure for the same measure.)"
+  }
+ ],
+ "coverage_gaps": [
+  "(a) No document names the IMERG contractor staff (Bolvin, Joyce, Nelkin) on ATMOS 80GSFC26D0002 or any task order; tie rests on GSFC staff pages giving employer Science and Technology Corp (Joyce page retrieved here; Bolvin/Nelkin in GPCP pt7) plus ATMOS scope (clouds, aerosols, precipitation). No SSAI bridge/extension found (not searched further after STC employer found). ATMOS task orders and SOW (ATMOS FINAL RFP 11.18.24 attachment) not read. (from sa3)",
+  "(b) PPS contract and funding line NOT FOUND after 3 queries (r10). No source names a PPS contractor, contract number, or whether PPS is funded by the GPM project, ESDIS or an SMD line. Known: PPS staff include GMU CEOSR (funded by NASA GSFC, no award ID) and KBR (Jason West, 2025); KBR GSMO-3 (2022-06-01 to 2027-05-31, $640M) surfaced but no tie to PPS. Lead: USAspending award search (POST, not available) for KBR/GMU awards with GSFC Code 610 / Terrestrial Information Systems; PPS contacts page (storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp). (from sa3)",
+  "(c) GMU CEOSR PPS work: the funding instrument (contract, grant or cooperative agreement number) NOT FOUND after 3 queries (r11). CEOSR says the work is funded by NASA GSFC (Oct 2025). Only historical vehicle found: the JIESIC cooperative agreement 2001-2004 (NTRS 20040121129 report, not read). Tony Stocker appears on the CEOSR member list, which would make the PPS lead a university employee if current: needs checking against GSFC bio. (from sa3)",
+  "(d) V08 status: GPROF-IR (CSU) is to replace PDIR-Now as the V08 IR scheme (arXiv preprint, May 2026); where GPROF-IR will run (PPS or CSU) NOT PRESENT; IPWG-12 V08 slides unreadable; whether V08 is released by 2026-11-24 not checked (Earthdata V08 transition notice and gpm.nasa.gov IMERG V08 Transition Schedule not fetched). Whether UCI CHRS still supplies anything for V07 PDIR (ATBD says PDIR computed in PPS routines from CPC IR) not confirmed from CHRS pages. (from sa3)",
+  "(e) No statement that IMERG production code is shared on request found in the V07 ATBD, 2023 Technical Documentation, GPM Data FAQ or 2025 V08 plans slides (P-3 stands). Only the V08 IR component (GPROF-IR) is stated as openly available (github.com/simonpf/gprof_ir). r13 searched 1 query plus saved-text searches. (from sa3)",
+  "No current PPS day-to-day Late Run production/operations lead is named on any NASA page found (PPS site, IMERG tech doc, GSFC bios). Only Stocker (PPS Project Manager, civil servant), Kelley (GMU, pre/post-production algorithm checks) and B. Jason West (KBR, PPS visualization) appear; PPS Operations contact is a helpdesk address. Supports P-1/P-4 (no named deputy or ops lead). Unread lead: 2011 TRMM Senior Review proposal https://gpm.nasa.gov/sites/default/files/document_files/TRMMSenRevProp_v1.2.pdf may list PPS staff roles; GPM Science Implementation Plan April 2013 (PPS delegated to Deputy Project Scientist for Data). (from sa1)",
+  "Stocker age and service start not found: GSFC bio is empty; OpenAlex earliest 1999 (TRMM real-time production) gives an estimate of about 52-57 that likely understates his age, since he managed TSDIS/PPS from TRMM launch (1997). FERS eligibility within 2 years cannot be settled without a service start; if federal service began by about 1997 he has about 29 years, so MRA+30 eligibility is plausible within 2 years (inference, not sourced). Supports P-2 as unresolved. (from sa1)",
+  "ORCID employment records (pub.orcid.org/v3.0/<id>/employments) for Stocker, Tan, Kelley, Joyce were not opened for lack of time; only expanded-search results were saved. (from sa1)",
+  "Which contract pays STC staff (Bolvin, Joyce, Nelkin now Science and Technology Corp) after SAMDA NNG17HP01C (SSAI) ended 2025-05-31: NOT found by sa1 (left to the contracts subquestion). (from sa1)",
+  "2025-2026 activity: Huffman (2025 paper on bio), Tan, Joyce, Bolvin, Nelkin (EGU26-14694, May 2026, from earlier run), Kelley (Typhoon Sinlaku story April 2026, per search snippet only, page not saved). Stocker 2025-2026 activity NOT found. (from sa1)",
+  "Team size of PPS (Code 619): NOT PRESENT on the GSFC PPS project page (projects/212, no people list), the PPS STORM contacts page (2024-05 and 2026-04 captures: 3 entries, Cosner, operators, Stocker), or the PMM science team page. No published headcount for PPS. Risk P-4 context. (from sa2)",
+  "Team size of the IMERG group within Code 612: NOT PRESENT. Code 612 lab totals only: 82 staff-list records (Wayback 2025-02-08) vs 103 records (live 2026-11-24); live list filtered to research interest Precipitation shows 3 (Grecu, Huffman, Meneghini). The live 103 includes ocean/land staff (mail code 618, Cetinic, Del Castillo), suggesting a lab merger; and Huffman's Org Code shows 613 under the filter. Pages 2-5 of the live list were not read, so whether Bolvin (SSAI), Nelkin and Tan are still listed is unverified. (from sa2)",
+  "Written succession or knowledge-transfer plan for IMERG, PPS, GSFC Code 612/619 or NASA ESD: NOT FOUND after 3 queries (r8). Agency level only: OIG 2025 Top Management Challenges says OIG, GAO and National Academies reported 'the Agency's lack of a workforce planning process'; the word 'succession' is NOT PRESENT in that report. Supports P-1 (no documented succession plan, by absence). (from sa2)",
+  "Reason Kidd left the ATBD author list: the brief's premise (left between 2023 and 2026) is contradicted; he is on V06 (2020-01-03) and absent from V07 (2023-07-12) and V07.2 (2026-08-13). No reason stated anywhere read. OpenAlex shows a 2026-08 paper with a University of Birmingham UK affiliation (raw_orcid null) vs GSFC/ESSIC in 2025-08: a possible move, unverified; ESSIC staff page not checked; ORCID employments empty. (from sa2)",
+  "Unread leads: (1) OIG IG-26-005 'Review of Goddard Space Flight Center's Transformation Efforts' (2026-06; https://oig.nasa.gov/wp-content/uploads/2026/06/final-memorandum-ig-26-005-review-of-goddard-space-flight-centers-transformation-efforts.pdf) - Goddard consolidation, may cover ESD labs/Bldg 32 where PPS sits; (2) search snippet that GCDC (610.2) 'has merged with Code 619, the Terrestrial Information Systems Laboratory' (PPS is Code 619) - GCDC org chart URL redirects to notFound; (3) OIG IG-27-002 (2026-11) says workforce down over 4,000 (more than 25 percent) in FY2025-2026 vs FY2024 (snippet only); (4) Code 612 staff list pages 2-5 live, to confirm Bolvin/Nelkin/Tan listings; (5) Walter Petersen dropped from PMM management table between 2024-05 and 2026-10 (reason not read). (from sa2)",
+  "PPS contractor, contract number and funding line: not published on any page found; NASA GSFC procurement (or a FOIA request to GSFC) holds it.",
+  "Stocker's birth year and federal service computation date: not public; only NASA HR holds them, so FERS eligibility is an estimate."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.usaspending.gov/api/v2/awards/CONT_IDV_80GSFC26D0002_8000/",
+   "tool": "lookup (USAspending award GET, ATMOS IDV)",
+   "notes": "ID from GPCP pt7 HigherGov record; found. Also WebFetch of HigherGov ATMOS RFP page 80GSFC24R0037.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Robert Joyce NASA GSFC IMERG employer Science and Technology Corp",
+   "tool": "WebSearch",
+   "notes": "no employer found by search; GSFC bio page fetched directly (robert.joyce)",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Precipitation Processing System contract Goddard PPS contractor",
+   "tool": "WebSearch",
+   "notes": "no PPS contractor or contract number found",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Precipitation Processing System\" task order contractor GSFC Code 610.2",
+   "tool": "WebSearch",
+   "notes": "no PPS task order found; turned up ceosr p=138",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "KBR NASA Goddard contract Terrestrial Information Systems PPS 2024",
+   "tool": "WebSearch",
+   "notes": "only GSMO-3 (KBR Wyle, $640M, 2022-06-01 to 2027-05-31) surfaced; no tie to PPS. r10: not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "George Mason Precipitation Processing System software",
+   "tool": "WebSearch",
+   "notes": "found ceosr p=525",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "George Mason University NASA Precipitation Processing System cooperative agreement",
+   "tool": "WebSearch",
+   "notes": "found JIESIC cooperative agreement 2001-2004 report (NTRS 20040121129, not read) and ceosr p=926",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "George Mason University NASA Goddard award precipitation processing system 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains usaspending.gov, highergov.com, grantforward.com, govtribe.com; only NOAA/NSF GMU awards; r11 award: not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PDIR-Now IMERG V08 GPROF-IR",
+   "tool": "WebSearch",
+   "notes": "found arXiv 2605.07167 GPROF-IR and IPWG12 IMERG V08 slides (ipwg12.imgw.pl, host refused); plus saved ATBD/techdoc/EGU texts searched with find_text",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG code \"upon request\" Huffman",
+   "tool": "WebSearch",
+   "notes": "no code-sharing statement; GPM data FAQ fetched and searched; ATBD/techdoc saved texts searched for upon request/on request: none",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Precipitation Processing System SIPS ESDIS GPM ground system funding",
+   "tool": "WebSearch",
+   "notes": "no current PPS funding line found; GPM 2010 and PMM 2009 progress reports mention NASA PPS as a GPM element and planned NOAA transition (not read)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Owen Kelley George Mason University PPS IMERG 2025",
+   "tool": "WebSearch",
+   "notes": "found CEOSR Hurricane Melissa 2025 post (funded by NASA GSFC)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "IMERG V08 infrared GPROF-IR replaces PDIR",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, ntrs.nasa.gov, earthdata.nasa.gov, meetingorganizer.copernicus.org; found Huffman 2025 V08 plans slides and IMERG V08 Transition Schedule",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "KBR \"Precipitation Processing System\" NASA Goddard",
+   "tool": "WebSearch",
+   "notes": "follow-up to r10; no KBR-PPS contract; only historical PPS papers crediting NASA Goddard, GMU and RSIS (NTRS 20040013033, not read)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Upgrades and Early Results for IMERG V08\"",
+   "tool": "WebSearch",
+   "notes": "no other copy; Wayback CDX for the address returned [] (empty); found Aug 2026 transition update",
+   "from": "sa3",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Upgrades_and_Early_Results_for_IMERG_V08.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "80GSFC26D0002 task order Science and Technology Corporation",
+   "tool": "WebSearch",
+   "notes": "no task orders under ATMOS found; HigherGov snippet gives $4.2M obligated (conflicts with USAspending total_obligation 19,729,764.22); USAspending child-award listing is POST, not available",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=Erich Stocker; works author.id:A5027050046 sort publication_year:asc",
+   "tool": "lookup (OpenAlex authors and works)",
+   "notes": "Found A5027050046, ORCID 0000-0003-0657-0066, earliest 1999",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=Jackson Tan; works author.id:A5058050012 sort asc",
+   "tool": "lookup (OpenAlex authors and works)",
+   "notes": "A5058050012, ORCID 0000-0001-7085-3074; first try with country filter failed on args, re-run without",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=Owen Kelley; works author.id:A5057707686 sort asc",
+   "tool": "lookup (OpenAlex authors and works)",
+   "notes": "A5057707686, ORCID 0000-0002-4481-9005, earliest 1997; first works call failed IncompleteRead, retried ok",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "authors?search=Robert J. Joyce; works author.id:A5008388322 sort asc",
+   "tool": "lookup (OpenAlex authors and works)",
+   "notes": "A5008388322, ORCID 0009-0003-7168-1237; a second search with select failed IncompleteRead twice (not saved). Huffman, Bolvin, Nelkin reused from 2026-11-24_gpcp-daily-people-production-pt7",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "expanded-search family-name:Stocker AND given-names:Erich; Kelley/Owen; Tan/Jackson; Joyce/Robert",
+   "tool": "lookup (ORCID public API expanded-search)",
+   "notes": "All four returned XML (saved .notjson.txt); each ORCID matched the OpenAlex orcid field. Huffman/Bolvin ORCIDs from earlier run.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Erich Stocker PPS GSFC",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov, gpm.nasa.gov, pps.gsfc.nasa.gov; led to sci/bio/erich.f.stocker",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "science.gsfc.nasa.gov/sci/bio/jackson.tan, /owen.a.kelley, /robert.joyce (robert.j.joyce gave HTTP 404)",
+   "tool": "lookup (GSFC staff bio pages, direct fetch)",
+   "notes": "Direct fetches of GSFC bio pages",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PPS operations manager GPM precipitation processing system",
+   "tool": "WebSearch",
+   "notes": "allowed_domains pps.gsfc.nasa.gov, gpm.nasa.gov, science.gsfc.nasa.gov; no current PPS ops lead named; 2011 TRMM Senior Review lists Stocker as PPS Manager; helpdesk@mail.pps.eosdis.nasa.gov as PPS Operations contact",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Jason West PPS KBR GPM",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov, gpm.nasa.gov, pps.gsfc.nasa.gov; West credited as animator/visualizer NASA GSFC PPS KBR on GPM stories (Melissa 2025, Sinlaku 2026); no job description",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Owen Kelley GPM PPS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov, gpm.nasa.gov, pps.gsfc.nasa.gov; led to Webinar 7 bio",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Jackson Tan IMERG 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov, gpm.nasa.gov, meetingorganizer.copernicus.org, umbc.edu; EGU26-14694 (Joyce, Huffman, Bolvin, Nelkin, Tan; V08 calibration) shows 2026 activity; that abstract is already saved in 2026-11-18 run (egu26_14694.txt)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Robert Joyce CMORPH IMERG SSAI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov, gpm.nasa.gov; returned IMERG docs only",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Precipitation Processing System\" PPS production lead bio",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov; only Kelley bio, GSFC PPS project page (no staff), GCDC 610.2 page (Stocker Manager, PPS) returned",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=science.gsfc.nasa.gov/earth/gcdc/",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "Remote end closed connection without response; not retried (deadline)",
+   "from": "sa1",
+   "copy_of": "https://science.gsfc.nasa.gov/earth/gcdc"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "fetch https://science.gsfc.nasa.gov/earth/projects/212/",
+   "tool": "fetch_page.py",
+   "notes": "http:// refused by tool (https only); https read: no people list",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "19 captures; read 2024-05-21 and 2026-04-11: same 3 entries",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=science.gsfc.nasa.gov/earth/projects/212/",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "8 captures; not opened (live page has no people)",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=science.gsfc.nasa.gov/earth/mesoscale/staff/",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "12 captures 2014-2025-02; no 2024/2026 capture; compared 2025-02 (82 records) with live (103 records)",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=gpm.nasa.gov/science/pmm-science-team",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "63 captures; diffed 2024-05-01 vs 2026-10-28",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG ATBD V07 2023 Huffman Kidd",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; found IMERG_V07_ATBD_final_230712.pdf",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG V06 ATBD Huffman Kidd 2020",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov; found IMERG_ATBD_V06.3.pdf (Kidd is an author)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA succession planning workforce OIG 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov, nasa.gov; found OIG 2025 TMPC report",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Goddard succession planning knowledge transfer Earth Sciences Division",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov, oig.nasa.gov; no ESD/GSFC succession plan; only NPD 1000.3F center line of succession and FY2004 GSFC plan (knowledge management goal)",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG knowledge transfer GPM transition plan",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; only version-transition documents (V08 schedule, TMPA-to-IMERG); no knowledge-transfer plan. r8 not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Christopher Kidd ESSIC 2025",
+   "tool": "WebSearch",
+   "notes": "only old ESSIC news (2013, 2015); nothing 2025",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Chris Kidd precipitation 2026",
+   "tool": "WebSearch",
+   "notes": "irrelevant results (CoCoRaHS station pages)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Precipitation Processing System team GSFC",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; no PPS roster or headcount",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Mesoscale Atmospheric Processes Laboratory Code 612 people",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov; found staff list and org chart",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "authors?search=Christopher Kidd",
+   "tool": "lookup (OpenAlex authors)",
+   "notes": "A5084463178, ORCID 0000-0001-5906-8446",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "works?filter=author.id:A5084463178,from_publication_date:2024-01-01",
+   "tool": "lookup (OpenAlex works)",
+   "notes": "19 works; 2026-08-14 Birmingham UK affiliation; 2025-08-26 GSFC/ESSIC",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "0000-0001-5906-8446/employments",
+   "tool": "lookup (ORCID employments)",
+   "notes": "empty",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Walter Petersen NASA Marshall retired 2025 GPM ground validation",
+   "tool": "WebSearch",
+   "notes": "no retirement source found; Petersen GV lead 2011-2019, later MSFC SRPD Division Chief (undated page). Reason for his removal from PMM table not found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "works?filter=raw_author_name.search:Bolvin,from_publication_date:2025-06-01",
+   "tool": "lookup (OpenAlex works)",
+   "notes": "7 results; 3 precipitation works 2026 with GSFC affiliation",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=science.gsfc.nasa.gov/earth/gcdc/orgchart",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "3 captures; only 2015 has content; no merger statement",
+   "from": "sa2",
+   "copy_of": "https://science.gsfc.nasa.gov/earth/gcdc/orgchart"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Terrestrial Information Systems Laboratory 619 staff list",
+   "tool": "WebSearch",
+   "notes": "allowed_domains science.gsfc.nasa.gov; 619 org chart (Chief Devadiga; 2022 merger with 610.2); staff list 198 records per snippet, not read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Atmosphere Support ATMOS 80GSFC24R0037",
+   "tool": "WebSearch",
+   "notes": "allowed_domains sam.gov, nasa.gov. Found NASA's own award release (primary copy of the award facts the HigherGov RFP page gave); SAM.gov Industry Day page listed. Read the release.",
+   "copy_of": "https://www.highergov.com/contract-opportunity/atmosphere-support-atmos-request-for-proposal-r-80gsfc24r0037-o-b8c8b/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Erich Stocker Precipitation Processing System 2026",
+   "tool": "WebSearch",
+   "notes": "No 2026 Stocker item; an EGU25 V07B NRT abstract with Stocker as co-author (withdrawn, no-show) per search summary only."
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OpenAlex/ORCID identity cross-check",
+   "tool": "lookup (ORCID record vs OpenAlex orcid field)",
+   "notes": "Each OpenAlex author record (Stocker, Tan, Kelley, Joyce, Kidd) was checked against the person's ORCID record, the registry's own copy, saved by sa1/sa2; ORCID is the primary registry, so no further copy applies.",
+   "copy_of": "https://api.openalex.org/authors?search=Erich%20Stocker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OpenAlex works cross-check",
+   "tool": "lookup (ORCID, GSFC bios)",
+   "notes": "Earliest-work lists checked against GSFC bios' degree years (Tan B.Sc. 2005-09, Kelley B.A. 1993) and ORCID employment start years.",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5027050046&sort=publication_year:asc&per-page=5&select=id,title,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Wayback CDX listings",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "The CDX listings are the archive's own index; the captures they list were read (PPS contacts 2024-05-21 and 2026-04-11; PMM team 2024-05-01 and 2026-10-28; Code 612 staff 2025-02-08; GCDC org chart 2015).",
+   "copy_of": "https://web.archive.org/cdx/search/cdx?url=storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Tan identity cross-check",
+   "tool": "lookup (ORCID 0000-0001-7085-3074 and GSFC bio)",
+   "notes": "OpenAlex record checked against the ORCID registry record and the GSFC bio (saved by sa1).",
+   "copy_of": "https://api.openalex.org/authors?search=Jackson%20Tan"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Tan earliest works cross-check",
+   "tool": "lookup (GSFC bio degree years)",
+   "notes": "Earliest OpenAlex items 2005/2010 judged misattributed against the GSFC bio's B.Sc. 2005-2009; first climate papers 2013.",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5058050012&sort=publication_year:asc&per-page=5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kelley identity cross-check",
+   "tool": "lookup (ORCID 0000-0002-4481-9005 and GSFC bio)",
+   "notes": "OpenAlex record checked against ORCID employments (GMU CEOSR from 1997) and GSFC bio.",
+   "copy_of": "https://api.openalex.org/authors?search=Owen%20Kelley"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kelley earliest works cross-check",
+   "tool": "lookup (GSFC bio degree years)",
+   "notes": "Earliest work 1997 checked against GSFC bio B.A. 1993.",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5057707686&sort=publication_year:asc&per-page=5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Joyce identity cross-check",
+   "tool": "lookup (ORCID 0009-0003-7168-1237 and GSFC bio)",
+   "notes": "ORCID record has no public employment, so identity rests on OpenAlex orcid field plus GSFC bio; no other copy exists.",
+   "copy_of": "https://api.openalex.org/authors?search=Robert%20J.%20Joyce"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Joyce earliest works cross-check",
+   "tool": "lookup (OpenAlex works list)",
+   "notes": "1961 item is another person (merged profile); 1990 CERES and 1994 GPI papers taken as earliest; no birth or degree year published.",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5008388322&sort=publication_year:asc&per-page=5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Kidd works cross-check",
+   "tool": "lookup (ATBD author lists)",
+   "notes": "Kidd's 2025-2026 OpenAlex works compared with the V06.3 and V07 ATBD author lists read in full; Birmingham affiliation on a 2026 paper has raw_orcid null, unconfirmed.",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5084463178,from_publication_date:2024-01-01&sort=publication_date:desc"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Kidd identity cross-check",
+   "tool": "lookup (ORCID 0000-0001-5906-8446)",
+   "notes": "OpenAlex author matched to the ORCID registry record; ORCID employments empty.",
+   "copy_of": "https://api.openalex.org/authors?search=Christopher%20Kidd"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Kidd ORCID employments",
+   "tool": "lookup (ORCID registry)",
+   "notes": "Registry's own record; no other copy applies.",
+   "copy_of": "https://pub.orcid.org/v3.0/0000-0001-5906-8446/employments"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PPS project page captures",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "Archive's own index; the live page (no people list) was read directly.",
+   "copy_of": "https://web.archive.org/cdx/search/cdx?url=science.gsfc.nasa.gov/earth/projects/212/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Code 612 staff list captures",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "Archive's own index; the 2025-02-08 capture and the live list were read.",
+   "copy_of": "https://web.archive.org/cdx/search/cdx?url=science.gsfc.nasa.gov/earth/mesoscale/staff/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PMM team captures",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "Archive's own index; the 2024-05-01 and 2026-10-28 captures were read.",
+   "copy_of": "https://web.archive.org/cdx/search/cdx?url=gpm.nasa.gov/science/pmm-science-team"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Bolvin 2025-2026 works cross-check",
+   "tool": "lookup (GSFC bio)",
+   "notes": "OpenAlex works cross-checked with Bolvin's GSFC bio (STC, Org 613), saved by sa1.",
+   "copy_of": "https://api.openalex.org/works?filter=raw_author_name.search:Bolvin,from_publication_date:2025-06-01"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GCDC org chart captures",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "Archive's own index; the 2015-09-26 capture was read; live page redirects to notFound.",
+   "copy_of": "https://web.archive.org/cdx/search/cdx?url=science.gsfc.nasa.gov/earth/gcdc/orgchart"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "80GSFC26D0002 award record",
+   "tool": "lookup (USAspending award API)",
+   "notes": "Primary federal record read instead of HigherGov (s1).",
+   "copy_of": "https://www.highergov.com/idv/80GSFC26D0002"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "80NSSC22M0109 award record",
+   "tool": "lookup (USAspending award API)",
+   "notes": "Primary federal record read instead of HigherGov: GMU cooperative agreement, 2022-05-01 to 2027-08-31, $7,683,374 obligated; description does not name PPS.",
+   "copy_of": "https://www.highergov.com/contract/80NSSC22M0109"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=science.gsfc.nasa.gov/earth/gcdc",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "Live page removed; sa1 read the 2015-03-09 Wayback copy (s45).",
+   "copy_of": "https://science.gsfc.nasa.gov/earth/gcdc"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "IMERG staff",
+   "publisher": "researchers",
+   "subquestion_id": "q1",
+   "aim": "OpenAlex author records and earliest works per person",
+   "query": "OpenAlex author search <name>",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "IMERG staff",
+   "publisher": "registries",
+   "subquestion_id": "q1",
+   "aim": "ORCID iDs and employment records per person",
+   "query": "ORCID expanded search <name>",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NASA GSFC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GSFC staff bio pages",
+   "query": "<name> GSFC bio",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "PPS staff and contacts pages naming the Late Run operator",
+   "query": "Precipitation Processing System staff contacts",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "GSFC PPS project page 212 and its people list",
+   "query": "science.gsfc.nasa.gov/earth/projects/212",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "PPS / Code 612",
+   "publisher": "the organization itself (past pages)",
+   "subquestion_id": "q2",
+   "aim": "Wayback captures of PPS contacts and Code 612 staff list",
+   "query": "url=storm.pps.eosdis.nasa.gov/storm/PPSContacts.jsp",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "GPM project",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "IMERG ATBD author lists 2020, 2023, 2026",
+   "query": "IMERG ATBD V07 2023 authors",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NASA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "NASA OIG workforce, succession and knowledge-transfer reports",
+   "query": "NASA OIG workforce succession planning 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NASA GSFC",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q3",
+   "aim": "USAspending record for ATMOS and SSAI/STC GSFC awards",
+   "query": "ATMOS contract Goddard Science and Technology Corporation",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "PPS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q3",
+   "aim": "PPS contractor and funding line",
+   "query": "Precipitation Processing System contract",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "George Mason University",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q3",
+   "aim": "GMU CEOSR PPS job-control software award",
+   "query": "George Mason Precipitation Processing System software",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "GPM project",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "Where PDIR-Now is computed and the V08 IR scheme",
+   "query": "PDIR-Now IMERG V08 GPROF-IR",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "GPM project",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "IMERG code availability statement",
+   "query": "IMERG code available upon request",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 28.6,
+  "shift_min": 0,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 280583,
+  "subagent_minutes_planned": 42,
+  "subagent_minutes": 44.8,
+  "follow_ups": 0,
+  "continuations": 8,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

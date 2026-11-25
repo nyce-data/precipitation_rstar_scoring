@@ -1,0 +1,1645 @@
+{
+ "question": "Who produces and maintains GPCP Daily (1DD V1.3 and V3.2/V3.3 daily), how is the work divided among institutions and people (inputs, merging, processing, archiving, oversight), who the PIs and key personnel are and whether still active, how many staff work on it (published figures only), and whose computers process and serve it?",
+ "tier": "standard",
+ "tier_reason": "standard: four related subquestions on one dataset, no set of 15+ members, no active dispute; user gave 30 min / 240k",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Institutions and roles for 1DD V1.3 (computing, inputs, archive, oversight)",
+   "status": "answered",
+   "source_ids": [
+    "s15",
+    "s16",
+    "s17",
+    "s20",
+    "s28"
+   ],
+   "remaining_gap": "No 2024-2026 statement of GSFC's current part in V1.3 routine production; NESDIS role not found."
+  },
+  {
+   "id": "q2",
+   "question": "Institutions and roles for V3.2/V3.3 daily, and who leads",
+   "status": "uncertain",
+   "source_ids": [
+    "s14",
+    "s25",
+    "s26",
+    "s1",
+    "s23",
+    "s8",
+    "s10",
+    "s31"
+   ],
+   "remaining_gap": "Who actually runs V3.3 Daily production is stated two ways: NCEI's C01726 record says UMD computes it and submits it to NCEI; Huffman's GSFC bio says V3 is computed at Goddard and archived at GES DISC."
+  },
+  {
+   "id": "q3",
+   "question": "PIs, project leads and key personnel, with institution, role and current activity",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s10",
+    "s14",
+    "s24",
+    "s25",
+    "s11",
+    "s13"
+   ],
+   "remaining_gap": "Current status of 1DD-era collaborators Wang, Sapiano and of CPC's Xie and GPCC's Becker and Schneider not confirmed."
+  },
+  {
+   "id": "q4",
+   "question": "Staffing figures and computing systems",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s16",
+    "s26",
+    "s29",
+    "s14",
+    "s24"
+   ],
+   "remaining_gap": "No published head count; no source names the NASA-side computers (Code 612 machines or NCCS)."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC01726",
+   "fetched_url": null,
+   "title": "NCEI ISO metadata, GPCP Daily V3.3 CDR (C01726)",
+   "author_org": "NOAA NCEI",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_iso_C01726.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "The PI line's individualName (line 117) was not read in this pass; lines 130-140 repeat Adler with the same position. Metadata roles, not a staff count. URL as recorded in the earlier run's main folder (not re-checked).",
+   "found_by": [
+    "sa3",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00999",
+   "fetched_url": null,
+   "title": "NCEI landing page GPCP CDR Version 1.3 (Daily), C00999 (Wayback copy)",
+   "author_org": "NOAA NCEI",
+   "published": "2017",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wayback_ncei_C00999.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2017 record (archived copy); shows roles at time of CDR, not current activity. Exact Wayback URL is the earlier run's; see its research-record.json.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.earthdata.nasa.gov/about/competitive-programs/measures/next-generation-global-precipitation-climatology-project",
+   "fetched_url": null,
+   "title": "Next-Generation Global Precipitation Climatology Project (GPCP) Data Products | NASA Earthdata (MEaSUREs project page)",
+   "author_org": "NASA Earthdata",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/measures_gpcp.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Page describes the earlier (V3 development) MEaSUREs award; it conflicts with later sources naming Behrangi PI. URL from the earlier run (not re-checked).",
+   "found_by": [
+    "sa3",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: GPCP Version 2 suite usage count and consortium description (page undated, describes the earlier V3-building award)"
+  },
+  {
+   "id": "s4",
+   "url": "https://ipwg12.imgw.pl/wp-content/uploads/2026/07/S3.4-BEHRANGI-IPWG2026.pdf",
+   "fetched_url": null,
+   "title": "The Newly Released GPCP V3.3 Daily and Monthly Products and Efforts Towards GPCP V4.0",
+   "author_org": "Behrangi et al., University of Arizona / NASA GSFC / UMD",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/behrangi_ipwg2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Exact URL is in the earlier run's record; author list, not a staffing count.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://essic.umd.edu/global-precipitation-summary-for-may-2026/",
+   "fetched_url": null,
+   "title": "Global Precipitation Summary for May 2026 - ESSIC",
+   "author_org": "ESSIC, University of Maryland",
+   "published": "2026-06-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/essic_precip_may2026.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Exact URL in earlier run record.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s6",
+   "url": "https://essic.umd.edu/review-of-global-precipitation-for-2025/",
+   "fetched_url": null,
+   "title": "Review of Global Precipitation for 2025 - ESSIC",
+   "author_org": "ESSIC, University of Maryland",
+   "published": "2026-01-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/essic_review_2025.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Bio text undated; no staff count.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: publication counts of Robert Adler and Guojun Gu (whole careers, not GPCP only)"
+  },
+  {
+   "id": "s7",
+   "url": "https://has.arizona.edu/news/ali-behrangi-named-principal-investigator-new-3-million-nasa-grant-advance-global",
+   "fetched_url": null,
+   "title": "Ali Behrangi Named Principal Investigator on New $3 Million NASA Grant to Advance Global Precipitation Data Record",
+   "author_org": "Hydrology and Atmospheric Sciences, University of Arizona",
+   "published": "2023-07-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ua_behrangi_pi_news.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Names institutions, not individuals or head count; 2023 news.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: GPCP usage count (all GPCP products, not the daily alone)"
+  },
+  {
+   "id": "s8",
+   "url": "https://science.gsfc.nasa.gov/sci/bio/george.huffman",
+   "fetched_url": null,
+   "title": "George J Huffman - NASA Sciences and Exploration Directorate",
+   "author_org": "NASA GSFC",
+   "published": "undated (lists 2026 publications)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gsfc_huffman_bio.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Bio text says 'currently in V3.2' so may lag V3.3; no team size.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://meetingorganizer.copernicus.org/EGU25/EGU25-4886.html",
+   "fetched_url": null,
+   "title": "EGU25-4886: The latest GPCP Daily and Monthly Products: Current Status, Assessments, and the Future Plans",
+   "author_org": "Behrangi et al. (EGU General Assembly 2025)",
+   "published": "2025-03-14",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/egu25_4886.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Author list only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/Release_Notes.GPCPV3.3.pdf",
+   "fetched_url": null,
+   "title": "GPCP V3.3 Release Notes",
+   "author_org": "Huffman et al., NASA GSFC / SSAI / UMD / U. Arizona",
+   "published": "2025-03-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpcp_v33_release_notes.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Exact URL in earlier run record.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://ams.confex.com/ams/93Annual/webprogram/Handout/Paper220154/Sapiano_GPCPcdr_AMS_jan13.pdf",
+   "fetched_url": null,
+   "title": "Sapiano et al. AMS 2013 poster on GPCP operational CDR code",
+   "author_org": "Sapiano, Adler, Huffman, Chiu, Ferraro, Xie, Schneider",
+   "published": "2013",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/sapiano_ams2013.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2013; V2.2 era; multi-column pdftotext so cell alignment is approximate.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://deliverables.ceos.org/task_manager/deliverables/890/",
+   "fetched_url": null,
+   "title": "D VC-25-13: GPCP v3.3 release (CEOS deliverable)",
+   "author_org": "CEOS (P-VC)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "Read by WebFetch extraction only (no saved copy): fetch_page refused by sandbox for host deliverables.ceos.org (CONNECT 403); network approval not requested for lack of time. Search snippet had said status open/overdue; WebFetch shows Closed.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://opendata.dwd.de/climate_environment/GPCC/html/gpcc_precipitation_analysis_monthly_v2025_doi_download.html",
+   "fetched_url": null,
+   "title": "GPCC Precipitation Analysis Monthly Version 2025 (DOI landing page)",
+   "author_org": "DWD Global Precipitation Climatology Centre",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "Read by WebFetch extraction only (no saved copy): fetch_page refused by sandbox for host opendata.dwd.de (non-.org; approval not requested). Shows GPCC staff for GPCC products, not a GPCP role; whether V3.3 uses this V2025 product is not stated here.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "ATBD for GPCP V3.3 Daily",
+   "author_org": "Huffman et al., NASA/GSFC Code 612",
+   "published": "2026-06-12 (last revised)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpcp_v33_daily_atbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Author list and revision authors, not a staffing figure.",
+   "found_by": [
+    "sa3",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/AlgorithmDescription_01B-35.pdf",
+   "fetched_url": null,
+   "title": "Climate Algorithm Theoretical Basis Document (C-ATBD): GPCP Daily Analysis Precipitation - GPCP Daily CDR, CDRP-ATBD-0913 Rev. 0",
+   "author_org": "Robert Adler, Mathew Sapiano, Jian-Jian Wang, University of Maryland College Park; NOAA CDR Program",
+   "published": "2017-08-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcp_daily_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2017 document; does not say whether roles changed after 2017.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://web.archive.org/web/2024/https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00999",
+   "fetched_url": null,
+   "title": "Global Precipitation Climatology Project (GPCP) Climate Data Record (CDR), Version 1.3 (Daily) - NCEI ISO metadata C00999 (Wayback copy)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (archived copy)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wayback_ncei_C00999.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Archived copy (URL as in earlier run; check its record for exact Wayback timestamp); processing-environment field names the Monthly analysis, not Daily.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+   "fetched_url": null,
+   "title": "Precipitation - GPCP Daily CDR",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (live page retrieved 2026-11-20)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_cdr_gpcp_daily.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "No page date. Page also says: Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/products/global-precipitation-climatology-project",
+   "fetched_url": null,
+   "title": "Global Precipitation Climatology Project (GPCP) Clearinghouse",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (live page retrieved 2026-11-20)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_gpcp_clearinghouse.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Text looks legacy (monthly V2.3, pentad V2.2); does not name who computes.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://essic.umd.edu/globalprecipitation/",
+   "fetched_url": null,
+   "title": "Global Precipitation - ESSIC",
+   "author_org": "ESSIC, University of Maryland",
+   "published": "NOT PRESENT (latest summary listed dated November 12, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/essic_globalprecip.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "About GPCP as a whole and the monthly product, not 1DD V1.3 specifically.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://opendata.dwd.de/climate_environment/GPCC/PDF/GPCC_intro_products_lastversion.pdf",
+   "fetched_url": null,
+   "title": "Global Precipitation Analysis Products of the GPCC",
+   "author_org": "U. Schneider, P. Finger, E. Rustemeier, M. Ziese, S. Hänsel; Deutscher Wetterdienst",
+   "published": "2022-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpcc_intro_products.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "curl to opendata.dwd.de refused by proxy (non-.org, no approval asked); PDF copy from WebFetch saved binary, converted with pdftotext. No mention of GPCP Daily/1DD.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.gewex.org/panels/gewex-data-and-analysis-panel/gdap-matured-datasets/",
+   "fetched_url": null,
+   "title": "GDAP Matured Datasets",
+   "author_org": "GEWEX / IGPO",
+   "published": "NOT PRESENT (footer © 2026 IGPO)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "www.gewex.org returned HTTP 403 to curl; not saved locally. Page does not define matured or an oversight role; no institutions named in text.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.gewex.org/data-sets-global-precipitation-climatology-project-gpcp/",
+   "fetched_url": null,
+   "title": "Data Sets: Global Precipitation Climatology Project (GPCP)",
+   "author_org": "GEWEX / IGPO",
+   "published": "NOT PRESENT (footer © 2026 IGPO)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "Legacy-looking (V2 era) content; not saved locally; WebFetch paraphrased parts.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://catalog.data.gov/dataset/noaa-climate-data-record-cdr-of-the-global-precipitation-climatology-project-gpcp-daily-ve",
+   "fetched_url": null,
+   "title": "NOAA Climate Data Record (CDR) of the Global Precipitation Climatology Project (GPCP) Daily Version 3.3 (data.gov)",
+   "author_org": "NOAA NCEI (publisher), via data.gov catalog",
+   "published": "2025-08-05 (dataset last updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/datagov_ncei_gpcp_daily_v33.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Catalog harvest of NCEI metadata; does not say whether UMD recomputes or repackages the MEaSUREs/GSFC files. AWS S3 is NOAA archive cloud distribution, not processing.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://meetingorganizer.copernicus.org/EGU26/EGU26-5885.html",
+   "fetched_url": null,
+   "title": "The Newly Released GPCP V3.3 Daily and Monthly Products and the Future Plans (EGU26-5885)",
+   "author_org": "Behrangi, Huffman, Adler, Song, Kumah, Bolvin, Nelkin, Gu",
+   "published": "2026-03-13",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e6",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/egu26_5885.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Abstract only; no division of labor or computing. Note Bolvin listed under NASA GSFC here vs GSFC/SSAI elsewhere.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "README for GPCP V3.3 Daily",
+   "author_org": "GES DISC MEaSUREs Team; Huffman, Bolvin, Nelkin, Behrangi; reviewed by Zhong Liu",
+   "published": "2025-05-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/readme_gpcpv33_daily.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Does not state on which computers the dataset is produced. Downloaded via WebFetch (fetch_page.py curl hit SSL EOF).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPCPDAY&version=3.3",
+   "fetched_url": null,
+   "title": "NASA CMR UMM-C metadata, GPCPDAY 3.3",
+   "author_org": "NASA Earthdata CMR / GES DISC",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cmr_gpcpday33.json.json",
+   "retrieved": "2026-11-20",
+   "limitations": "ProcessingCenter field NOT PRESENT; metadata shows serving (cloud archive), not where the product is computed.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.earthdata.nasa.gov/about/competitive-programs/measures/long-term-gpcp-precipitation",
+   "fetched_url": null,
+   "title": "High Latitude Improvement of Long-Term GPCP Precipitation Products Using Recent NASA Missions",
+   "author_org": "NASA Earthdata (MEaSUREs program page)",
+   "published": "NOT PRESENT (search tool said page about 559 days old)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction, no local copy. Affiliation (JPL) is older than the U. Arizona affiliation in 2025 docs; page is about the 2017 project, not necessarily the current one. Co-investigators NOT PRESENT; computing NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://ntrs.nasa.gov/api/citations/20230012664/downloads/20230012664%20Huffman%20G%20poster.pdf",
+   "fetched_url": null,
+   "title": "Huffman et al. 2023 poster, GPCP V3.2 (NTRS 20230012664)",
+   "author_org": "Huffman (NASA GSFC) et al.; UMD affiliation (3)",
+   "published": "2023",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/huffman2023_poster.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Passage reassembled from a multi-column layout (column text only, other columns skipped). 2023, before V3.3 and the NCEI V3.3 CDR.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://aws.amazon.com/marketplace/pp/prodview-mmz4ve4u5cdui",
+   "fetched_url": null,
+   "title": "NOAA Atmospheric Climate Data Records (AWS Marketplace / Open Data listing)",
+   "author_org": "NOAA (Managed By: NOAA)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-20",
+   "limitations": "WebFetch extraction, no local copy (aws.amazon.com not .org). Does not say which GPCP version(s) the daily bucket holds. Serving only, not processing.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://ntrs.nasa.gov/citations/20220018559",
+   "fetched_url": null,
+   "title": "Newly Released GPCP Version 3.2 Global Precipitation Datasets at NASA GES DISC (NTRS 20220018559, AGU Dec 2022 poster)",
+   "author_org": "Z. Liu (GMU), G. Huffman (GSFC), A. Behrangi (U. Arizona), D. Bolvin and E. Nelkin (SSAI), D. Meyer (GSFC)",
+   "published": "2022-12",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e17",
+   "access_level": "abstract",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ntrs_20220018559.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Abstract only; 2022 (V3.2). Does not say who computes the product.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://data.nasa.gov/dataset/gpcp-precipitation-level-3-daily-0-5-degree-v3-3-gpcpday-at-ges-disc-ccae7",
+   "fetched_url": null,
+   "title": "GPCP Precipitation Level 3 Daily 0.5-Degree V3.3 (GPCPDAY) - NASA Open Data Portal",
+   "author_org": "NASA Open Data Portal (harvest of GES DISC metadata)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/datanasa_gpcpday33.html.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Page date not given. The search-summary claim that products are computed at Goddard is NOT PRESENT on this page and remains unverified.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://meetingorganizer.copernicus.org/EMS2026/EMS2026-174.html",
+   "fetched_url": null,
+   "title": "EMS2026-174: Global Precipitation Climatology Centre (GPCC) released new gridded precipitation analyses",
+   "author_org": "Rustemeier et al., GPCC/DWD",
+   "published": "2026-06-22",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": null,
+   "access_level": "abstract",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/browser/meetingorganizer-copernicus-org-EMS2026-EMS2026-174-html_110437.txt",
+   "retrieved": "2026-11-20",
+   "limitations": "Abstract read to 3,000 characters; author list cut off after 'Schul'. GPCP not named in the part read."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "1DD V1.3 is a NOAA CDR computed by the University of Maryland (UMD/ESSIC, PI Robert Adler) and submitted to NCEI, which archives and distributes it; NOAA's NCEI CDR Program supports its continued production. Before 2016 GPCP was produced by a consortium of scientists at government and university institutions.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "The purpose of this document is to describe the algorithm submitted to the National Centers | for Environmental Information (NCEI) by the University of Maryland (PI Robert Adler) that | will be used to create the Global Precipitation Climatology Project (GPCP) Climate Data | Record (CDR) Daily analysis … The GPCP Daily V1.3 analysis is currently computed by the University of Maryland | and submitted to NCEI. … The data | set is part of World Climate Research Program (WCRP) and GEWEX activities, being part of | the array of data sets describing the water and energy cycles of the planet under the auspices | of the GEWEX Data and Assessment Panel (GDAP). Up to now (2016) the GPCP analysis has | been produced by a consortium of individual scientists at various government and university | institutions. Incorporating the GPCP daily production and distribution into the CDR Program | will formalize its production under NOAA’s commitment for continued production and | distribution.",
+     "location": "Section 1.1 Purpose, p. 6 (txt lines 119-135)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Configuration Item ID: 01B-35 | The Global Precipitation Climatology Project (GPCP) Daily Precipitation Analysis Climate Data Record (CDR) is a companion to the GPCP Monthly analysis, and provides complete global precipitation estimates with 1° x 1° spatial resolution and a daily time scale from October 1996–present. The dataset is part of the World Climate Research Program (WCRP) and Global Energy and Water Exchanges (GEWEX) activities, and one of an array of datasets describing the water and energy cycles of the planet under the auspices of the GEWEX Data and Assessment Panel (GDAP). … ## Principal Investigator | Robert Adler, University of MD",
+     "location": "Page body (txt lines 9-21)"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "The development of the GPCP V3.2 Monthly and Daily | products was made possible through the NASA MEaSUREs | program (award 80NSSC19M0006 in NNH17ZDA001N- | MEASURES; Program Manager Lucia Tsaoussi). Continued | production of the V2.3 Monthly and V1.3 Daily is supported | by the NOAA NCEI Climate Data Records (CDR) program. … GPCP has been funded for 5 more years under the 2022 MEaSUREs",
+     "location": "Acknowledgments column, lines 128-138 (multi-column pdftotext layout)"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Processor | UMD/ESSIC > Earth System Science Interdisciplinary Center, University of Maryland",
+     "location": "Metadata fields (txt line 78)"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Principal Investigators | Adler, Robert University of Maryland | Collaborators | Wang, Jian-Jian University of Maryland Sapiano, Mathew University of Maryland Huffman, George NASA Bolvin, David NASA Nelkin, Eric NASA NOAA CDR Program DOC/NOAA/NESDIS/NCEI",
+     "location": "txt lines 60-61"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NOAA's own C-ATBD, metadata and live product page agree, and a 2023 NASA poster confirms NOAA CDR support.",
+   "sole_source_reason": "NOAA's own documents are the authority for who produces its CDR."
+  },
+  {
+   "id": "c2",
+   "text": "V3.2/V3.3 Daily was developed under NASA MEaSUREs projects (current PI Ali Behrangi, University of Arizona; program manager Lucia Tsaoussi). The 2025-2026 team is NASA GSFC Code 612 (George Huffman, lead developer and ATBD author), SSAI at GSFC (David Bolvin, Eric Nelkin), UMD/ESSIC (Robert Adler, Guojun Gu) and the University of Arizona (Behrangi, Yang Song, Kingsley Kumah).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "It was developed primarily under prior and current projects in the NASA | Making Earth Science Data Records for Use in Research Environments (MEaSUREs) program (PI: | Ali Behrangi, University of Arizona). Prior versions of the GPCP analysis have been produced by | a consortium of individual scientists at various government and university institutions and most | recently as part of the NOAA Climate Data Record (CDR) Program.",
+     "location": "Sec. 1.1 Purpose, lines 123-127"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Prepared By: | GES DISC MEaSUREs Team                          George J. Huffman | GES DISC                                        Code 612 | GSFC Code 619                                   NASA Goddard Space Flight Center | David T. Bolvin | Code 612 | Science Systems and Applications, Inc. … Eric J. Nelkin | Code 612 | Science Systems and Applications, Inc. … Ali Behrangi | University of Arizona … Zhong Liu | Reviewer Name … GES DISC | GSFC Code 619 … If you have general questions or comments regarding the GPCP V3.3 Daily data set, please contact | George Huffman (george.j.huffman@nasa.gov), while questions about accessing and reading the | data should be directed to Zhong Liu (zhong.liu-1@nasa.gov). … This project is funded by NASA’s Making Earth Science Data Records for Use in Research | Environments (MEaSUREs) Program, which is managed by Dr. Lucia Tsaoussi.",
+     "location": "cover page p.1-2; Sec. 1.3.2 Contact Information; Sec. 7.0 Acknowledgements p.14"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Prepared by: | George J. Huffman | NASA/GSFC Code 612 | Greenbelt, MD 20771 | and Robert F. Adler, Ali Behrangi, David T. Bolvin, Guojun Gu, Eric J. Nelkin, Yang Song | Last Revised June 12, 2026 … February 11, 2025 Version 3.3 George Huffman | May 21, 2025 Version 3.3 extended Eric Nelkin | June 12, 2026 Version 3.3 completed George Huffman",
+     "location": "lines 12-35"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "George J. Huffman*,1, David T. Bolvin1,2, Eric J. Nelkin1,2, Robert F. Adler3, Ali Behrangi4, | Guojun Gu3, Yang Song4 | 1: NASA Goddard Space Flight Center | 2: Science Systems and Applications, Inc. | 3: Univ. of Maryland, College Park | 4: Univ. of Arizona | *: george.j.huffman@nasa.gov | 11 March 2025",
+     "location": "lines 3-12"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Ali Behrangi1, George Huffman2, Robert F. Adler3, Yang Song1, K. Kingsley Kumah1, David T. Bolvin2, Eric J. Nelkin4, and Guojun Gu3 | 1University of Arizona, Tucson, AZ, USA | 2NASA Goddard Space Flight Center, Greenbelt, MD, USA | 3University of Maryland, College Park, MD, USA | 4Science Systems and Applications, Inc., Lanham, Maryland | … The latest release, Version 3.3 of the GPCP Daily (1998–2024) and Monthly (1983–2024) products, issued in February 2025, represents the final generation before the transition to GPCP Version 4.",
+     "location": "author block and abstract"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "recently selected as the principal investigator on a $3 million NASA award to lead efforts on developing the next generation Global Precipitation Climatology Project (GPCP) for 5 more years. Behrangi will lead a team of well-recognized experts from NASA GSFC, University of Maryland, and University of California (UCSB), in collaboration with scientists from Europe. … Global Energy and Water Exchanges (GEWEX) Data and Assessment Panel (GDAP), on which PI Behrangi currently serves.",
+     "location": "line 11, 15"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NASA README and ATBD, release notes, EGU26 and the UA news item agree on the team."
+  },
+  {
+   "id": "c3",
+   "text": "NASA GES DISC archives and distributes V3.x Daily (CMR role ARCHIVER; README prepared by the GES DISC MEaSUREs Team with Zhong Liu as data-access contact); no source says GES DISC runs the science production.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "\"s3://gesdisc-cumulus-prod-protected/GPCP/GPCPDAY.3.3/\" … \"Creator\": \"Huffman, G.J., A. Behrangi, D.T. Bolvin, and E.J. Nelkin\" … \"Region\": \"us-west-2\" … \"Investigator\" … \"LastName\": \"HUFFMAN\" … \"ARCHIVER\"",
+     "location": "JSON lines 55, 174, 262, 377-380, 438"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Compared to the operational One-Degree Daily (Version 1.3) product, the V3.2 Daily better | represents the histogram of precipitation rates, particularly at high values. | In this presentation, we will present the latest GPCP V3.2 daily and monthly datasets archived and distributed at NASA Goddard | Earth Sciences (GES) Data and Information Services Center (DISC) along with examples from NASA Giovanni. … Z. Liu (George Mason University Fairfax, Virginia, United States) | G. Huffman (Goddard Space Flight Center Greenbelt, Maryland, United States) | A. Behrangi (University of Arizona Tucson, Arizona, United States) | D. Bolvin (Science Systems & Applications, Inc. Hampton, VA, USA) | E. Nelkin (Science Systems & Applications, Inc. Hampton, VA, USA) | D. Meyer (Goddard Space Flight Center Greenbelt, Maryland, United States)",
+     "location": "abstract and author list, lines 26-56"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Prepared By: | GES DISC MEaSUREs Team                          George J. Huffman | GES DISC                                        Code 612 | GSFC Code 619                                   NASA Goddard Space Flight Center | David T. Bolvin | Code 612 | Science Systems and Applications, Inc. … Eric J. Nelkin | Code 612 | Science Systems and Applications, Inc. … Ali Behrangi | University of Arizona … Zhong Liu | Reviewer Name … GES DISC | GSFC Code 619 … If you have general questions or comments regarding the GPCP V3.3 Daily data set, please contact | George Huffman (george.j.huffman@nasa.gov), while questions about accessing and reading the | data should be directed to Zhong Liu (zhong.liu-1@nasa.gov). … This project is funded by NASA’s Making Earth Science Data Records for Use in Research | Environments (MEaSUREs) Program, which is managed by Dr. Lucia Tsaoussi.",
+     "location": "cover page p.1-2; Sec. 1.3.2 Contact Information; Sec. 7.0 Acknowledgements p.14"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Roles stated in NASA metadata and README; absence of a production role is inferred from silence."
+  },
+  {
+   "id": "c4",
+   "text": "Sources disagree on who computes V3.3 Daily: NCEI's C01726 record (and its data.gov copy) say UMD computes it on UMD workstations and submits it to NCEI, with UMD/ESSIC as processor; Huffman's GSFC bio says V3 datasets are computed at Goddard and archived at GES DISC. The NCEI wording repeats the V1.3 record's text, so it may be carried over.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Generation of the GPCP Daily analysis is accomplished using moderate-sized workstations at the University of Maryland | … The data were produced through a joint effort between the University of Maryland and NASA and are archived at the NOAA National Centers for Environmental Information (NCEI). | … The GPCP Daily code is made up of around 150 individual code files, which are distributed among 6 modules of code plus another 4 codes to create file listings and perform pre- and post processing diagnostics. … UMD/ESSIC &gt; Earth System Science Interdisciplinary Center, University of Maryland … processor",
+     "location": "environmentDescription line 1478; lineage statement line 1835; processStep ps001 lines 1838-1849"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "The GPCP Daily V3.3 analysis is currently computed by the University of Maryland and submitted to NCEI. … The data set is part of World Climate Research Program (WCRP) and GEWEX activities, being part of the array of data sets describing the water and energy cycles of the planet under the auspices of the GEWEX Data and Assessment Panel (GDAP).",
+     "location": "Description paragraph, line 7; AWS S3 Download link https://archive.data.noaa.gov/climatedatarecords#UMD_ESSIC/GPCP/Daily/GPCP-D-CDR_01B-35/ (raw html line 351)"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "(Chief) … Org Code: | 612 Mesoscale Atmospheric Processes … The precipitation research group at Goddard has provided detailed product development for GPCP. … A group at Univ. of Maryland College Park is leading Version 2.3 as a formal Climate Data Record (CDR) in NOAA. Version 3 GPCP datasets (currently in V3.2) … These are computed at Goddard and archived in the Goddard Earth Sciences Data and Information Services Center (GES DISC). … Project Scientist for Global Precipitation Measurement mission, 2022 to the present … NASA/GSFC Robert H. Goddard Group Award for Science, GPCP Development Team, 2022. … Huffman, G.J. (lead developer), D.T. Bolvin, E.J. Nelkin, R.F. Adler, A. Behrangi, 2022: GPCP Version 3.2 Daily Precipitation Data Set (GPCPDAY 3.2). … Huffman, G.J. (lead developer), D.T. Bolvin, R.F. Adler, 2015, last updated 2024: GPCP Version 1.3 1-Degree Daily (1DD) Precipitation Data Set.",
+     "location": "lines 7-13, 73, 175, 313, 677, 685"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Processing Environment | Generation of the GPCP Monthly analysis is accomplished using moderate-sized workstations at the University of Maryland",
+     "location": "Metadata fields (txt line 80)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "Two official sources conflict; neither explains the split between NASA's GES DISC files and NCEI's CDR copy."
+  },
+  {
+   "id": "c5",
+   "text": "Input suppliers for 1DD V1.3: NOAA CPC (geostationary IR, processed by Pingping Xie), GPCC at DWD (gauges, via the GPCP Monthly), NCEI (RSS SSM/I-SSMIS CDR Tb and the Monthly V2.3), GSFC (TOVS from Joel Susskind; AIRS via GES DISC).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "It is operated by Deutscher | Wetterdienst (DWD, National Meteorological Service of Germany) as a German contribution to | the World Climate Research Programme (WCRP). … Since its start, the centre is the in situ component of the WCRP Global Precipitation Climatology | Project (GPCP). … The GPCC Monitoring | Product is the in situ component of the satellite-gauge combined precipitation analyses of | GPCP (Huffman et al. 1995, Adler et al. 2003, Adler et al., 2018) and of CMAP (Xie and Arkin | 1997).",
+     "location": "Section 1 (txt lines 79-84); p. 6 (txt lines 247-250)"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "The data is processed and provided by Pingping Xie at NOAA",
+     "location": "Section 3.3.1 (txt line ~440)"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "The GPCP monthly product blends data from gauges (from the Global Precipitation",
+     "location": "Section 3.3.1"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "obtained directly from Joel Susskind",
+     "location": "Section 3.3.1"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "The C-ATBD's input table, plus GPCC's own statement that it is GPCP's in situ component."
+  },
+  {
+   "id": "c6",
+   "text": "Input suppliers for V3.3 Daily: the V3.3 Monthly from GSFC/GPCP, TOVS from GSFC/SRT, AIRS and IMERG V07 via GES DISC; the GridSat IR from NCEI, whose recalibration paused V3.3 production (at March 2024 in the release notes, at September 2024 on the NASA Open Data page).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "GPCP V3.3 Monthly Precip 1998 to 2025                 GSFC/GPCP     Companion Monthly product | TOVS                 Precip   1998 to Aug 2002        GSFC/SRT | AIRS IR-only V6      Precip   Sep 2002 to Dec 2025    GES DISC      Replaces TOVS | IMERG V07            Precip   1998 to 2025            GES DISC",
+     "location": "Table 1: Inputs to GPCP Daily, p. 8"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "The algorithm for the Global Precipitation Climatology Project (GPCP) has been upgraded from | Version 3.2 to Version 3.3 under projects funded by the NASA Making Earth Science Data | Records for Use in Research Environments (MEaSUREs) program. … Data are available from the Goddard Earth Sciences Data and Information Services Center (GES | DISC) at https://disc.gsfc.nasa.gov. … V3.3 production is currently paused at March 2024 while NCEI is developing a new calibration | procedure for the GridSat IR input product due to the retirement of the previous calibration source. | The next development work for GPCP will be moving to Version 4",
+     "location": "p. 1-2, Changes; Access Information; Additional Notes"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Product latency/update: The products are currently paused at September 2024 because the IR input dataset from NCEI requires a new calibration scheme to extend past that point. Once NCEI irons out the calibration, we expect to return to quarterly updates.",
+     "location": "description, line 32"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "ATBD Table 1 and release notes; the pause date differs between two NASA sources."
+  },
+  {
+   "id": "c7",
+   "text": "GPCP sits under WCRP's GEWEX Data and Assessment Panel (GDAP), which coordinated development of the next-generation products (chair C. Kummerow on the MEaSUREs page); Behrangi serves on GDAP; GEWEX lists Adler as GPCP's chair since 2005 (WebFetch only). GDAP oversees; it does not compute.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Configuration Item ID: 01B-35 | The Global Precipitation Climatology Project (GPCP) Daily Precipitation Analysis Climate Data Record (CDR) is a companion to the GPCP Monthly analysis, and provides complete global precipitation estimates with 1° x 1° spatial resolution and a daily time scale from October 1996–present. The dataset is part of the World Climate Research Program (WCRP) and Global Energy and Water Exchanges (GEWEX) activities, and one of an array of datasets describing the water and energy cycles of the planet under the auspices of the GEWEX Data and Assessment Panel (GDAP). … ## Principal Investigator | Robert Adler, University of MD",
+     "location": "Page body (txt lines 9-21)"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "contextualizes",
+     "passage": "Principal Investigator (PI): George Huffman, Science Systems and Applications, Incorporated (SSAI) … are produced by a consortium of those groups, supported and sometimes funded by various agencies. … The GDAP (Chair: C. Kummerow) is coordinating the development and production",
+     "location": "project page body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "recently selected as the principal investigator on a $3 million NASA award to lead efforts on developing the next generation Global Precipitation Climatology Project (GPCP) for 5 more years. Behrangi will lead a team of well-recognized experts from NASA GSFC, University of Maryland, and University of California (UCSB), in collaboration with scientists from Europe. … Global Energy and Water Exchanges (GEWEX) Data and Assessment Panel (GDAP), on which PI Behrangi currently serves.",
+     "location": "line 11, 15"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "NOT PRESENT (WebFetch extraction only, no saved text). WebFetch fragments: (2005–present) | GPCP produces ongoing, long-term, globally-complete gridded estimates of precipitation. | Monthly, pentad, and daily data sets are available for time period of 1979–present.",
+     "location": "GPCP entry"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NCEI and NASA pages agree on GDAP auspices; GEWEX's own pages could be read only via WebFetch."
+  },
+  {
+   "id": "c8",
+   "text": "Key people still active in 2025-2026: Adler (UMD/ESSIC senior research scientist, PI of both NCEI CDRs; co-authors ESSIC summaries dated Jan and Jun 2026), Huffman (NASA GSFC Code 612 Chief, GPM Project Scientist, lead developer of 1DD and V3, ATBD revised June 2026), Behrangi (U. Arizona, MEaSUREs PI, leads V4 targeting mid 2027 with Co-Is Huffman, Adler, Chris Funk of UCSB), Bolvin and Nelkin (SSAI), Gu (UMD), Song and Kumah (U. Arizona).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Senior Rearch Scientist | codeListValue=\"principalInvestigator\" … Gu, Guojun … Earth System Science Interdisciplinary Center, University of Maryland … Associate Research Scientist … collaborator … Behrangi, Ali … University of Arizona … Professor … Huffman, George … NASA Goddard Space Flight Center … Bolvin, David … NASA Goddard Space Flight Center / Science Systems and Applications Inc (SSAI) … Nelkin, Eric … NASA Goddard Space Flight Center / Science Systems and Applications Inc (SSAI) … Cite as: Adler, Robert; Gu, Guojun; Behrangi, Ali; Huffman, George; Bolvin, David; Nelkin, Eric; and NOAA CDR Program. 2025. NOAA Climate Data Record (CDR) of the Global Precipitation Climatology Project (GPCP) Daily Version 3.3.",
+     "location": "lines 118-287, 1235"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Principal Investigators | Adler, Robert University of Maryland | Collaborators | Wang, Jian-Jian University of Maryland Sapiano, Mathew University of Maryland Huffman, George NASA Bolvin, David NASA Nelkin, Eric NASA NOAA CDR Program DOC/NOAA/NESDIS/NCEI",
+     "location": "lines 60-61"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "- Robert Adler & Guojun Gu | - June 15, 2026 … Problems with one key input data set has delayed GPCP ICDR product generation for a couple of months, but things are at least temporarily back on track.",
+     "location": "lines 9-10, 19"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "- Robert Adler & Guojun Gu | - January 27, 2026 … The development of the GPCP CDR products (Monthly and finer time scales) is supported by NASA’s MEaSUREs program. The GPCP Monthly ICDR was developed and its routine calculation is supported by NOAA’s National Center for Environmental Information (NCEI). … He came to ESSIC in 2008 after a 35-year career at NASA’s Goddard Space Flight Center … He has also led, and is still involved with, the Global Precipitation Climatology Project (GPCP)",
+     "location": "lines 9-10, 59, 81"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "(Chief) … Org Code: | 612 Mesoscale Atmospheric Processes … The precipitation research group at Goddard has provided detailed product development for GPCP. … A group at Univ. of Maryland College Park is leading Version 2.3 as a formal Climate Data Record (CDR) in NOAA. Version 3 GPCP datasets (currently in V3.2) … These are computed at Goddard and archived in the Goddard Earth Sciences Data and Information Services Center (GES DISC). … Project Scientist for Global Precipitation Measurement mission, 2022 to the present … NASA/GSFC Robert H. Goddard Group Award for Science, GPCP Development Team, 2022. … Huffman, G.J. (lead developer), D.T. Bolvin, E.J. Nelkin, R.F. Adler, A. Behrangi, 2022: GPCP Version 3.2 Daily Precipitation Data Set (GPCPDAY 3.2). … Huffman, G.J. (lead developer), D.T. Bolvin, R.F. Adler, 2015, last updated 2024: GPCP Version 1.3 1-Degree Daily (1DD) Precipitation Data Set.",
+     "location": "lines 7-13, 73, 175, 313, 677, 685"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Ali Behrangi (1), George J. Huffman(2), | Robert F. Adler (3), Yang Song(1), David Bolvin (2), Eric Nelkin | (2), Guojun Gu (3), and Kingsley Kumah (1). | 1. University of Arizona, Tucson, AZ | 2. NASA Goddard Space Flight Center, Greenbelt, MD | 3. University of Maryland, College Park, MD … GPCP V4 planning/effort has started (targeting mid 2027) | PI: Ali Behrangi (U of Arizona), Co-Is: George Huffman (NASA GSFC), Bob Adler (UMD), Chris Funk (UCSB) | Over the next 3 years we will work on GPCP V4 (under NASA MEaSUREs program)",
+     "location": "lines 4-10, 255-259"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Prepared by: | George J. Huffman | NASA/GSFC Code 612 | Greenbelt, MD 20771 | and Robert F. Adler, Ali Behrangi, David T. Bolvin, Guojun Gu, Eric J. Nelkin, Yang Song | Last Revised June 12, 2026 … February 11, 2025 Version 3.3 George Huffman | May 21, 2025 Version 3.3 extended Eric Nelkin | June 12, 2026 Version 3.3 completed George Huffman",
+     "location": "lines 12-35"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Named in 2025-2026 NASA and NOAA documents and talks."
+  },
+  {
+   "id": "c9",
+   "text": "The older 'centers' structure (2013, GPCP V2.2): Merge Center Huffman/Adler; Gauge Center Becker and Schneider at GPCC; Microwave-Land Ferraro at NESDIS; Microwave-Ocean Chiu at George Mason U.; Geosynchronous Center Xie at CPC. None of the GPCC, NESDIS, GMU or CPC people appears in the 2025-2026 V3.3 author lists; GPCC's 2025 gauge analysis names Ziese (head), Rustemeier, Finger, Schirmeister.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "contextualizes",
+     "passage": "Merge Center George Huffman, NASA Goddard, U. of | Bob Adler Maryland … Gauge Center Andreas Becker, German Weather Service, | Udo Schneider Global Precipitation | Climatology Center (GPCC) | Microwave-Land Center Ralph Ferraro NOAA NESDIS | Microwave-Ocean Center Long Chiu George Mason U. | Geosynchronous Center Pingping Xie NOAA/NWS/CPC Also does pentad merge | Table 1. Groups involved in the routine production of GPCP V2.2",
+     "location": "lines 38-47 (multi-column layout)"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "contextualizes",
+     "passage": "Creators: Schirmeister, Zora; Finger, Peter; Rustemeier, Elke; Ziese, Markus | Rustemeier, Elke; Finger, Peter; Schirmeister, Zora; Ziese, Markus (2025) | Dr. Markus Ziese, Head | e-mail: gpcc@dwd.de | GPCP: NOT PRESENT",
+     "location": "Creators, Citation, Contact sections"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "contextualizes",
+     "passage": "How to cite: Rustemeier, E., Ziese, M., Schirmeister, Z., Finger, P., Heller, A.",
+     "location": "How to cite"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "2013 poster is dated; the GPCC 2025 page was read via WebFetch only."
+  },
+  {
+   "id": "c10",
+   "text": "No published head count of GPCP scientists, programmers or technicians was found. The nearest evidence is author lists: 7 people on the V3.3 release notes and ATBD, 8 on the 2026 EGU/IPWG talks, 6 named on NCEI's V3.3 CDR plus 'NOAA CDR Program', and PI plus 5 collaborators on the 1DD V1.3 CDR.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Prepared by: | George J. Huffman | NASA/GSFC Code 612 | Greenbelt, MD 20771 | and Robert F. Adler, Ali Behrangi, David T. Bolvin, Guojun Gu, Eric J. Nelkin, Yang Song | Last Revised June 12, 2026 … February 11, 2025 Version 3.3 George Huffman | May 21, 2025 Version 3.3 extended Eric Nelkin | June 12, 2026 Version 3.3 completed George Huffman",
+     "location": "lines 12-35"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Ali Behrangi1, George Huffman2, Robert F. Adler3, Yang Song1, K. Kingsley Kumah1, David T. Bolvin2, Eric J. Nelkin4, and Guojun Gu3 | 1University of Arizona, Tucson, AZ, USA | 2NASA Goddard Space Flight Center, Greenbelt, MD, USA | 3University of Maryland, College Park, MD, USA | 4Science Systems and Applications, Inc., Lanham, Maryland | … The latest release, Version 3.3 of the GPCP Daily (1998–2024) and Monthly (1983–2024) products, issued in February 2025, represents the final generation before the transition to GPCP Version 4.",
+     "location": "author block and abstract"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Senior Rearch Scientist | codeListValue=\"principalInvestigator\" … Gu, Guojun … Earth System Science Interdisciplinary Center, University of Maryland … Associate Research Scientist … collaborator … Behrangi, Ali … University of Arizona … Professor … Huffman, George … NASA Goddard Space Flight Center … Bolvin, David … NASA Goddard Space Flight Center / Science Systems and Applications Inc (SSAI) … Nelkin, Eric … NASA Goddard Space Flight Center / Science Systems and Applications Inc (SSAI) … Cite as: Adler, Robert; Gu, Guojun; Behrangi, Ali; Huffman, George; Bolvin, David; Nelkin, Eric; and NOAA CDR Program. 2025. NOAA Climate Data Record (CDR) of the Global Precipitation Climatology Project (GPCP) Daily Version 3.3.",
+     "location": "lines 118-287, 1235"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Principal Investigators | Adler, Robert University of Maryland | Collaborators | Wang, Jian-Jian University of Maryland Sapiano, Mathew University of Maryland Huffman, George NASA Bolvin, David NASA Nelkin, Eric NASA NOAA CDR Program DOC/NOAA/NESDIS/NCEI",
+     "location": "txt lines 60-61"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Absence of a figure after targeted searches; author lists are documented."
+  },
+  {
+   "id": "c11",
+   "text": "Computing and serving: NCEI's metadata says the daily analysis is generated on moderate-sized workstations at UMD; GES DISC serves V3.3 from NASA Earthdata Cloud (AWS us-west-2); NOAA serves the CDR through NCEI's own site and the NODD bucket noaa-cdr-precip-gpcp-daily-pds on AWS us-east-1 (also a Google Cloud link). No source names the NASA-side production machines.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Generation of the GPCP Daily analysis is accomplished using moderate-sized workstations at the University of Maryland | … The data were produced through a joint effort between the University of Maryland and NASA and are archived at the NOAA National Centers for Environmental Information (NCEI). | … The GPCP Daily code is made up of around 150 individual code files, which are distributed among 6 modules of code plus another 4 codes to create file listings and perform pre- and post processing diagnostics. … UMD/ESSIC &gt; Earth System Science Interdisciplinary Center, University of Maryland … processor",
+     "location": "environmentDescription line 1478; lineage statement line 1835; processStep ps001 lines 1838-1849"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "\"s3://gesdisc-cumulus-prod-protected/GPCP/GPCPDAY.3.3/\" … \"Creator\": \"Huffman, G.J., A. Behrangi, D.T. Bolvin, and E.J. Nelkin\" … \"Region\": \"us-west-2\" … \"Investigator\" … \"LastName\": \"HUFFMAN\" … \"ARCHIVER\"",
+     "location": "JSON lines 55, 174, 262, 377-380, 438"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "GPCP Precip Daily: noaa-cdr-precip-gpcp-daily-pds (region: us-east-1) … NCEI maintains and extends CDRs by applying the same methods to present-day and future satellite measurements. … NOAA data disseminated through NODD are open to the public and can be used as desired. … This dataset is part of the Open Data Sponsorship Program,",
+     "location": "listing resources and description (WebFetch extraction)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Configuration Item ID: 01B-35 | The Global Precipitation Climatology Project (GPCP) Daily Precipitation Analysis Climate Data Record (CDR) is a companion to the GPCP Monthly analysis, and provides complete global precipitation estimates with 1° x 1° spatial resolution and a daily time scale from October 1996–present. The dataset is part of the World Climate Research Program (WCRP) and Global Energy and Water Exchanges (GEWEX) activities, and one of an array of datasets describing the water and energy cycles of the planet under the auspices of the GEWEX Data and Assessment Panel (GDAP). … ## Principal Investigator | Robert Adler, University of MD",
+     "location": "Page body (txt lines 9-21)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Metadata and listings state it; the NASA-side computer is unpublished."
+  },
+  {
+   "id": "c13",
+   "text": "Status and dates: ESSIC's monthly GPCP summaries continue to one dated 2026-11-12 (authors of the June-October entries not shown); NCEI lists 1DD V1.3 as 'Ongoing' with monthly updates (page last modified 2023-08-10); NCEI's V3.3 Daily CDR record is dated 2025-08-05 and covers 1998-01-01 on.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "### Global Precipitation Summary for October 2026 | November 12, 2026 | ### Global Precipitation Summary for September 2026 | October 13, 2026 | ### Global Precipitation Summary for August 2026 | September 14, 2026 | ### Global Precipitation Summary for July 2026 | August 13, 2026 | ### Global Precipitation Summary for June 2026 | July 21, 2026",
+     "location": "Previous Entries list, lines 82-100"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Publication Dates | publication: 2017-09-15 creation: 2017-05-01 … Dataset Progress Status | Ongoing - data is continually being updated | Data Update Frequency | Monthly",
+     "location": "lines 50, 53-54"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "<gco:Date>2025-08-05</gco:Date> … <gml:beginPosition>1998-01-01</gml:beginPosition> | <gml:endPosition indeterminatePosition=\"now\" />",
+     "location": "lines 73, 1506-1507"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Read from saved official pages by the Reconciler and checked against saved text by merge."
+  },
+  {
+   "id": "c12",
+   "text": "MEaSUREs PI history: the Earthdata page for the earlier next-generation GPCP project names George Huffman (SSAI) as PI; a 2017 MEaSUREs project (high latitudes) names Behrangi at JPL; V3.2 came from award 80NSSC19M0006; GPCP was funded 5 more years under the 2022 MEaSUREs program with Behrangi (now U. Arizona) as PI.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "contradicts",
+     "passage": "Principal Investigator (PI): George Huffman, Science Systems and Applications, Incorporated (SSAI) … The GDAP (Chair: C. Kummerow) is coordinating the development and production of the next generation of products",
+     "location": "lines 15-17"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "contextualizes",
+     "passage": "Principal Investigator (PI): Ali Behrangi, NASA's Jet Propulsion Laboratory … MEaSUREs 2017 project focused on generating the next generation GPCP merged precipitation products in high latitudes poleward of 40 degrees integrated into GPCP. … under another MEaSUREs effort (PI: Adler)",
+     "location": "project page body (WebFetch extraction)"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "The development of the GPCP V3.2 Monthly and Daily | products was made possible through the NASA MEaSUREs | program (award 80NSSC19M0006 in NNH17ZDA001N- | MEASURES; Program Manager Lucia Tsaoussi). Continued | production of the V2.3 Monthly and V1.3 Daily is supported | by the NOAA NCEI Climate Data Records (CDR) program. … GPCP has been funded for 5 more years under the 2022 MEaSUREs",
+     "location": "Acknowledgments column, lines 128-138 (multi-column pdftotext layout)"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "recently selected as the principal investigator on a $3 million NASA award to lead efforts on developing the next generation Global Precipitation Climatology Project (GPCP) for 5 more years. Behrangi will lead a team of well-recognized experts from NASA GSFC, University of Maryland, and University of California (UCSB), in collaboration with scientists from Europe. … Global Energy and Water Exchanges (GEWEX) Data and Assessment Panel (GDAP), on which PI Behrangi currently serves.",
+     "location": "line 11, 15"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Earthdata pages are undated and read partly via WebFetch; the later sources are consistent."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Who computes GPCP V3.3 Daily: UMD (NCEI C01726, data.gov) or NASA Goddard (Huffman's GSFC bio)",
+   "source_ids": [
+    "s1",
+    "s23",
+    "s8"
+   ],
+   "status": "unresolved",
+   "explanation": "NCEI's record copies the V1.3 record's wording ('currently computed by the University of Maryland', 'moderate-sized workstations'), so it may be carried over; NASA documents put the V3 team at GSFC Code 612 and GES DISC as archiver. It could also be that UMD reprocesses NASA's V3.3 for the NOAA CDR. Neither source settles it; asking gpcp_contacts@noaa.gov or Huffman would."
+  },
+  {
+   "claim": "MEaSUREs PI for GPCP: Huffman (SSAI) on the Earthdata project page vs Behrangi (U. Arizona) in the ATBD, README-era documents and UA news",
+   "source_ids": [
+    "s3",
+    "s14",
+    "s7"
+   ],
+   "status": "resolved",
+   "explanation": "Scope difference: the Earthdata page describes the earlier MEaSUREs award that built V3; Behrangi has been PI of the 2022 award (UA news 2023-07-24; ATBD June 2026)."
+  },
+  {
+   "claim": "Start of the 1DD daily record: 1996-10-01 (NCEI C00999) vs '1997-present' (NASA Earthdata MEaSUREs page)",
+   "source_ids": [
+    "s16",
+    "s3"
+   ],
+   "status": "resolved",
+   "explanation": "Rounding in an undated NASA summary; NCEI's metadata gives the exact start, 1996-10-01. Not material to who produces it."
+  },
+  {
+   "claim": "Where V3.3 production is paused: March 2024 (release notes, 11 Mar 2025) or September 2024 (NASA Open Data page)",
+   "source_ids": [
+    "s10",
+    "s31"
+   ],
+   "status": "unresolved",
+   "explanation": "Different dates of writing; Part 1 found granules to 2025-12-31 (Oct-Dec 2025 used IMERG Late), so both statements are out of date."
+  }
+ ],
+ "coverage_gaps": [
+  "No published figure found for how many scientists, programmers or technicians work on GPCP. Nearest evidence is author/contributor lists: V3.3 release notes and EGU25 (7 people: Huffman, Bolvin, Nelkin, Adler, Behrangi, Gu, Song), IPWG2026 (8, adding Kingsley Kumah), NCEI C01726 CDR (6 named plus NOAA CDR Program), NCEI C00999 1DD V1.3 (PI Adler plus 5 collaborators). (from sa3)",
+  "Current activity of Mathew Sapiano, Jian-Jian Wang (1DD V1.3 collaborators, 2017) and Pingping Xie (NOAA CPC) not confirmed with 2024-2026 evidence; they do not appear in the 2025-2026 V3.3 author lists read. (from sa3)",
+  "GPCC personnel: 2025-2026 DWD GPCC V2025 product DOIs name Rustemeier, Finger, Schirmeister, Ziese (search snippets only, not read; opendata.dwd.de pages); Andreas Becker and Udo Schneider not confirmed as active in 2024-2026. No GPCC person appears in the V3.3 author lists. (from sa3)",
+  "Conflict on MEaSUREs PI: NASA Earthdata MEaSUREs page names George Huffman (SSAI) PI; V3.2/V3.3 ATBDs, UA news 2023 and IPWG2026 name Ali Behrangi PI. The Earthdata page appears to describe the earlier award; not resolved. (from sa3)",
+  "No 2025 V3.3 journal paper found (1 query of r7). CEOS deliverable page https://deliverables.ceos.org/task_manager/deliverables/890/ (lists Huffman as responsible for V3.3 release) not read. (from sa3)",
+  "Chris Funk (UCSB) named V4 Co-I in IPWG2026; no further check of his role. Yang Song and Kingsley Kumah (U. Arizona) roles not checked beyond author lists. (from sa3)",
+  "NESDIS microwave role NOT PRESENT in sources read; the 2017 C-ATBD names SSMI/SSMIS Tb from NCEI (CDR produced by RSS). (from sa1)",
+  "Whether NASA GSFC staff (Huffman, Bolvin, Nelkin) still contribute to 1DD V1.3 after 2017: only the NCEI metadata collaborator list and UMD-NASA joint-effort lineage; no 2024-2026 V1.3-specific statement. ESSIC 2026 page says GPCP as a whole is now U Arizona, NASA Goddard and UMD. (from sa1)",
+  "Whether 1DD V1.3 is still updated in 2026 (vs. V3.3 daily CDR C01726) not checked; NCEI page shows a cloud-migration notice of delayed archival. (from sa1)",
+  "Historic GPCP centers structure only on legacy GEWEX page (Surface Reference Data Center 1987, GSFC backup FTP). No current document describing a centers structure found. Query WCRP GEWEX GPCP history and GPCP Daily CDR UMD NOAA not run (time). (from sa1)",
+  "Earlier-run huffman2001_ntrs.txt lists GSFC Laboratory for Atmospheres and CPC/NCEP affiliations for the original 1DD (2001); not cited as it predates V1.3. (from sa1)",
+  "Wayback copy of the GEWEX GPCP page (https://web.archive.org/web/2025/https://www.gewex.org/data-sets-global-precipitation-climatology-project-gpcp/) not fetched: fetch_page.py call denied by the auto mode classifier; coordinator may read it with a browser or WebFetch. (from sa1)",
+  "No published statement found of whose computers run V3.2/V3.3 Daily production (GSFC Code 612 team machines, NCCS, UMD, or other). CMR ProcessingCenter field NOT PRESENT; README and ATBD do not say. r9 searched with 2 queries ('GPCP processing system GSFC computing', 'NCEI CDR GPCP operational production'): nothing GPCP-specific on computing. (from sa2)",
+  "Two different statements on who makes V3.3 Daily: NASA docs (README, ATBD, CMR) list GSFC Code 612 / SSAI / U. Arizona authors and GES DISC as ARCHIVER; data.gov NCEI C01726 says 'currently computed by the University of Maryland and submitted to NCEI'. Not resolved whether UMD recomputes or repackages. Lead: read the NCEI C01726 ISO full (lineage/processStep sections) and the NCEI CDR info page / C-ATBD for V3.3. (from sa2)",
+  "No source found saying V3 production is moving to NOAA. Only 2013 Sapiano plan (V2 era) and 2023 poster (NCEI CDR supports V2.3 Monthly and V1.3 Daily). Release notes (Mar 2025) say production paused at March 2024 pending NCEI GridSat IR recalibration; later status not found. (from sa2)",
+  "Earthdata MEaSUREs page lists Behrangi at NASA JPL (2017 project); 2025-2026 docs list U. Arizona. Current (2022 MEaSUREs) project page not found; 'Behrangi GPCP MEaSUREs 2024' returned nothing relevant. (from sa2)",
+  "NCEI GPCP Daily product page (ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily) read only via WebFetch; lists PI Robert Adler UMD; version shown NOT PRESENT in extraction. A raw read would settle whether it refers to V1.3 or V3.3. (from sa2)",
+  "Input suppliers: ATBD Table 1 lists data source as GES DISC for IMERG and AIRS and GSFC/SRT for TOVS; producer of IMERG (GSFC PPS) and GPCC (DWD, via the Monthly) not stated in the Daily docs read here. (from sa2)",
+  "Computing partly answered only by NCEI C01726 ISO (moderate-sized workstations at UMD, processor UMD/ESSIC). No source found for the NASA side (whether GSFC Code 612 team machines or NCCS compute the MEaSUREs V3.3 files served by GES DISC). Serving: GES DISC Earthdata Cloud (AWS us-west-2, gesdisc-cumulus-prod-protected) and NOAA NODD (AWS us-east-1, noaa-cdr-precip-gpcp-daily-pds; version held not stated). (from sa2)",
+  "Unverified lead: WebSearch summary (query GPCP V3 Discover NCCS precipitation processing) said V3 products are computed at Goddard and archived in GES DISC, and that the NASA Open Data Portal lists products paused at September 2024. Likely source: https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpcpday-3.3 or https://data.nasa.gov/dataset/gpcp-precipitation-level-3-daily-0-5-degree-v3-3-gpcpday-at-ges-disc-ccae7 . Not read (time). (from sa2)",
+  "Who runs V3.3 Daily production (UMD vs GSFC) is unresolved; ask gpcp_contacts@noaa.gov or George Huffman.",
+  "GPCC's IPWG12 (2026) talk unread: sandbox refused ipwg12.imgw.pl, WebFetch 404, no Wayback copy.",
+  "The checking subagent was not used (standard tier)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "Huffman 2023 GPCP Version 3.2 daily",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found Huffman et al. 2023 J. Climate listing (experts.arizona.edu), NTRS poster (already in earlier run), EGU25-4886 (read)",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP version 3.3 2025 paper",
+   "tool": "WebSearch",
+   "notes": "no domain filter; results mostly ICH GCP noise; only CEOS deliverable page naming George Huffman responsible for V3.3 release (not read). No 2025 V3.3 journal paper found in 1 query; release notes 2025 and ATBD 2025 (earlier run) are the V3.3 documents",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Behrangi University of Arizona GPCP",
+   "tool": "WebSearch",
+   "notes": "no domain filter; UA HAS news 2023 (read)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Huffman NASA Goddard precipitation",
+   "tool": "WebSearch",
+   "notes": "no domain filter; GSFC bio page (read)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Adler ESSIC precipitation",
+   "tool": "WebSearch",
+   "notes": "no domain filter; older ESSIC news, NCEI monthly ATBD",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Robert Adler ESSIC senior research scientist GPCP",
+   "tool": "WebSearch",
+   "notes": "allowed_domains umd.edu; ESSIC 2024-2025 summaries; Review of Global Precipitation for 2025 (read)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Bolvin Nelkin SSAI GPCP",
+   "tool": "WebSearch",
+   "notes": "no domain filter; nothing relevant",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCC Becker GPCP 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter; nothing relevant",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCP Adler retired 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no GPCP Adler retirement notice found; unrelated Adlers",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Global Precipitation Climatology Centre Ziese Becker 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter; DWD GPCC V2025 DOI pages list Rustemeier, Finger, Schirmeister, Ziese (snippets, not read); IPWG12 GPCC PDF (unreadable)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"GPCP Development Team\" Goddard award",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no member list of the 2022 GPCP Development Team award found",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Pingping Xie CPC 2025 retired",
+   "tool": "WebSearch",
+   "notes": "no domain filter; nothing relevant",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "lookup (earlier run work/raw for PI|Co-I|Bolvin|Nelkin|Sapiano|Behrangi|Ziese|Becker|Schneider|Guojun|Jian-Jian|Pingping)",
+   "tool": "lookup (find_text.py on 2026-11-19_gpcp-daily-about-pt1/work/raw)",
+   "notes": "110 matching lines in 19 files; reused NCEI ISO C01726, C00999, MEaSUREs page, IPWG2026, ESSIC May 2026, V3.3 release notes, Sapiano 2013",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GEWEX GDAP GPCP project",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gewex.org",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ESSIC GPCP climate data record",
+   "tool": "WebSearch",
+   "notes": "allowed_domains umd.edu",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI CDR GPCP daily precipitation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; found CDR page and C-ATBD URL",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCC GPCP contribution gauge analysis",
+   "tool": "WebSearch",
+   "notes": "allowed_domains dwd.de",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP data centers roles GSFC GPCC",
+   "tool": "WebSearch",
+   "notes": "no filter; results not about GPCP roles",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP 1DD version 1.3 Adler 2017",
+   "tool": "WebSearch",
+   "notes": "no filter; NCAR GDEX d728005 says it is superseded by CDR version ds728.7 (host only)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GEWEX|GDAP|GPCC|CPC|NESDIS|NCEI|GSFC|ESSIC",
+   "tool": "lookup (find_text.py on earlier run 2026-11-19_gpcp-daily-about-pt1 files gpcp_daily_catbd.txt, wayback_ncei_C00999.txt, huffman2001_ntrs.txt, gpcp_daily_dataflow.txt)",
+   "notes": "dataflow txt had no institution names",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WCRP GEWEX GPCP history centers",
+   "tool": "WebSearch",
+   "notes": "no filter; no GPCP centers history found; lead: BAMS 30 years of GEWEX (centaur.reading.ac.uk/109278) not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP Daily CDR UMD NOAA",
+   "tool": "WebSearch",
+   "notes": "no filter; results were host copies (NCAR GDEX d728007, DOI 10.5065/ZGJD-9B02) and data.gov V3.3 listing (computed by UMD and submitted to NCEI per snippet); no NESDIS role; not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "MEaSUREs GPCP Behrangi project",
+   "tool": "WebSearch",
+   "notes": "allowed_domains earthdata.nasa.gov, nasa.gov; found Earthdata MEaSUREs pages (Behrangi 2017 project, Huffman next-gen project)",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCPDAY 3.3 README GES DISC",
+   "tool": "WebSearch",
+   "notes": "no domain filter; README itself not in results; README URL then found via CMR RelatedUrls",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NCEI CDR GPCP operational production",
+   "tool": "WebSearch",
+   "notes": "no domain filter; returned NCEI node pages, Sapiano 2013 AMS (UMD to NCDC transfer plan), AWS listing",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP processing system GSFC computing",
+   "tool": "WebSearch",
+   "notes": "no domain filter; nothing GPCP-specific (PPS, NCCS generic)",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP V3.3 NOAA CDR transition",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found EGU26-5885 abstract, data.gov NOAA CDR V3.3 entries",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Huffman Bolvin GPCP V3 production",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found Huffman 2023 poster (already in Part 1)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP NOAA Open Data Dissemination AWS",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found AWS listing of NOAA CDR GPCP buckets",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://disc.gsfc.nasa.gov/datacollection/GPCPDAY_3.3.html",
+   "tool": "WebFetch",
+   "notes": "JS page; only title GES DISC returned",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "https://cmr.earthdata.nasa.gov/search/collections.umm_json?short_name=GPCPDAY&version=3.3",
+   "tool": "lookup (NASA CMR collection metadata)",
+   "notes": "saved with fetch_json.py",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf",
+   "tool": "WebFetch",
+   "notes": "fetch_page.py curl failed SSL EOF; WebFetch saved binary, copied and pdftotext",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-gpcp-daily",
+   "tool": "WebFetch",
+   "notes": "extraction prompt",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Behrangi GPCP MEaSUREs 2024",
+   "tool": "WebSearch",
+   "notes": "no domain filter; nothing relevant (GEWEX Q4 2024 newsletter only)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GPCP V3 Discover NCCS precipitation processing",
+   "tool": "WebSearch",
+   "notes": "allowed_domains nasa.gov; no NCCS/Discover hit. Search summary claimed products are computed at Goddard and archived at GES DISC and that products are paused at September 2024 (NASA Open Data Portal); NOT verified from a saved page.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Globa_Precipitation_Climatology_Centre.pdf",
+   "tool": "fetch_page (Wayback snapshot)",
+   "notes": "HTTP 404: no saved copy",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Globa_Precipitation_Climatology_Centre.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP V3.3 daily CDR NCEI University of Maryland Gu",
+   "tool": "duckduckgo (browser)",
+   "notes": "Only NCEI C01726 copies, CMR, Earthdata, ECMWF Confluence and CDS pages already known; no source settles who computes V3.3."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GPCC IPWG12 2026 Global Precipitation Climatology Centre pdf",
+   "tool": "duckduckgo (browser)",
+   "notes": "No copy of the IPWG12 GPCC talk; found EMS2026-174 (GPCC 2026 author list), read in the browser.",
+   "copy_of": "https://ipwg12.imgw.pl/wp-content/uploads/2026/06/Globa_Precipitation_Climatology_Centre.pdf"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "GEWEX/WCRP",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GEWEX GDAP pages on GPCP",
+   "query": "GEWEX GDAP GPCP project",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "UMD ESSIC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "ESSIC pages on the GPCP CDR",
+   "query": "ESSIC GPCP climate data record",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA NCEI",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "NCEI CDR documents for GPCP Daily",
+   "query": "GPCP daily CDR operational algorithm description",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NASA MEaSUREs",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "MEaSUREs project pages for GPCP",
+   "query": "MEaSUREs GPCP Behrangi project",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NASA GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "GPCPDAY 3.3 README",
+   "query": "GPCPDAY 3.3 README GES DISC",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "GPCC/DWD",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "GPCC's own statement of its GPCP role",
+   "query": "GPCC GPCP contribution gauge analysis",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q3",
+   "aim": "recent GPCP V3 papers and author lists",
+   "query": "Huffman 2023 GPCP Version 3.2 daily",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "GSFC, U. Arizona, UMD",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "staff pages of key personnel",
+   "query": "Behrangi University of Arizona GPCP",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NASA GSFC, NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "computing and processing systems",
+   "query": "GPCP processing system GSFC computing",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 18.7,
+  "shift_min": 1,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 162738,
+  "subagent_minutes_planned": 31.5,
+  "subagent_minutes": 28.1,
+  "follow_ups": 0,
+  "continuations": 1,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

@@ -1,0 +1,3772 @@
+{
+ "question": "Is NOAA's ground-based precipitation observing network at risk of reduction, disruption, defunding or termination (January 2025 to 2026-11-18)?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed cuts, staffing losses and restructuring of NOAA observing networks)",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "COOP: operator, funder, threats 2025-2026",
+   "status": "answered",
+   "source_ids": [
+    "s33",
+    "s34",
+    "s35",
+    "s1",
+    "s2",
+    "s42"
+   ],
+   "remaining_gap": "Outcome of the COOP modernization (no decision or closure list published); COOP staffing losses not found."
+  },
+  {
+   "id": "q2",
+   "question": "ASOS and NWS-run station gauges: operator, funder, threats",
+   "status": "answered",
+   "source_ids": [
+    "s9",
+    "s10",
+    "s11",
+    "s8",
+    "s7"
+   ],
+   "remaining_gap": "No national count of ASOS outages or technician vacancies; AWOS-C site list not read."
+  },
+  {
+   "id": "q3",
+   "question": "USCRN: operator, funder, threats",
+   "status": "answered",
+   "source_ids": [
+    "s54",
+    "s55",
+    "s56",
+    "s6",
+    "s67"
+   ],
+   "remaining_gap": "USCRN budget line not found in any budget document."
+  },
+  {
+   "id": "q4",
+   "question": "CoCoRaHS: operator, funder, threats",
+   "status": "uncertain",
+   "source_ids": [
+    "s75",
+    "s76",
+    "s77"
+   ],
+   "remaining_gap": "Current NOAA funding route and amount for CoCoRaHS not public."
+  },
+  {
+   "id": "q5",
+   "question": "Impacts of gauge loss; how far radar and satellite fill the gap",
+   "status": "answered",
+   "source_ids": [
+    "s60",
+    "s62",
+    "s66",
+    "s64"
+   ],
+   "remaining_gap": "No 2025-2026 study quantifying effects on normals or homogeneity."
+  },
+  {
+   "id": "q6",
+   "question": "NOAA/NWS-wide actions tied to precipitation observations",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s5",
+    "s49",
+    "s45",
+    "s7"
+   ],
+   "remaining_gap": "OIG staffing audit (2025-523) final report not found."
+  },
+  {
+   "id": "q7",
+   "question": "Other federally supported precipitation networks",
+   "status": "answered",
+   "source_ids": [
+    "s78",
+    "s5",
+    "s81",
+    "s84",
+    "s85"
+   ],
+   "remaining_gap": "USGS gauges, HADS, IFLOWS and ALERT not researched (time)."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2027, Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-17_noaa-ncei-threats/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Request document; reused from 2026-11-17_noaa-ncei-threats.",
+   "found_by": [
+    "main",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2026, Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-17_noaa-ncei-threats/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Request.",
+   "found_by": [
+    "main",
+    "sa2",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3923es/html/BILLS-119s3923es.htm",
+   "fetched_url": null,
+   "title": "S. 3923 Engrossed in Senate (ES), Weather Research and Forecasting Innovation Reauthorization Act of 2026",
+   "author_org": "U.S. Senate (GPO govinfo)",
+   "published": "2026-11-10 (passed the Senate)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-17_noaa-ncei-threats/s3923_es_govinfo.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Passed Senate only; House action pending.",
+   "found_by": [
+    "main",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt652/html/CRPT-119hrpt652.htm",
+   "fetched_url": null,
+   "title": "House Report 119-652, Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2027",
+   "author_org": "House Committee on Appropriations",
+   "published": "2026-05-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-17_noaa-ncei-threats/hrpt119-652.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Committee mark, not enacted.",
+   "found_by": [
+    "main",
+    "sa1",
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "Division A - Commerce, Justice, Science, and Related Agencies Appropriations Act, 2026 (joint explanatory statement)",
+   "author_org": "House and Senate Committees on Appropriations",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/reused/2026-11-17_noaa-ncei-threats/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "OCR text from scanned PDF; amounts in thousands. Enacted 2026-01-23 per earlier run.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/upgrading-arls-largest-meteorological-network/",
+   "fetched_url": null,
+   "title": "The marathon effort to upgrade ARL's largest meteorological network",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "2026-07-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/arl-noaa-gov-news-pubs-arl-news-stories-upgrading-arls-large_141231.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Agency news item about its own work; read in the built-in browser (site refuses scripts).",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.cnn.com/2025/05/02/weather/nws-forecasting-layoffs-trump",
+   "fetched_url": "https://web.archive.org/web/20260104181700/https://www.cnn.com/2025/05/02/weather/nws-forecasting-layoffs-trump",
+   "title": "National Weather Service forecasting is more crippled than previously thought as hurricane season nears",
+   "author_org": "CNN",
+   "published": "2025-05-02",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/cnn_2025-05-02_wayback.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Anonymous NOAA staff member; read via Wayback saved copy.",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "context: NWS-wide staffing",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://www.weather.gov/asos/CurrentEvents.html",
+   "fetched_url": null,
+   "title": "ASOS Current Events",
+   "author_org": "NOAA National Weather Service, ASOS National Program",
+   "published": "2025-03-20 (memo); page undated, T/Td file updated 1 July 2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_current_events.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Gives no count of vacancies, outages or sites down; does not name precipitation sensors.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.weather.gov/asos/faq.html",
+   "fetched_url": null,
+   "title": "ASOS Frequently Asked Questions",
+   "author_org": "NOAA National Weather Service, ASOS National Program",
+   "published": "undated (sensor answer last updated April 28, 2023)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_faq.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page gives both 206 and 207 sites; sensor schedule last updated 2023; site list linked but not read; does not say whether AWOS-C at the transitioned sites will measure precipitation accumulation (FAA ASWON page lists it for AWOS-C).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://www.faa.gov/air_traffic/weather/aswon",
+   "fetched_url": null,
+   "title": "Aviation Surface Weather Observation Network (ASWON)",
+   "author_org": "Federal Aviation Administration",
+   "published": "Last updated 2025-09-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/faa_aswon.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No dollar figures, no schedule; FY2026/FY2027 FAA budget line for ASWON S2 NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://www.weather.gov/media/lmk/2026/KFFT%20Press%20Release.docx.pdf",
+   "fetched_url": null,
+   "title": "Frankfort ASOS Retiring as Official NWS Climate Site (press release)",
+   "author_org": "NOAA National Weather Service, WFO Louisville KY",
+   "published": "2026-07-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/kfft_press_release.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "One site; same text also on the web page (frankfort_asos.txt).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.weather.gov/lmk/FrankfortASOSRetiringasOfficialNWSClimateSite",
+   "fetched_url": null,
+   "title": "Frankfort ASOS Retiring as Official NWS Climate Site (web page)",
+   "author_org": "NOAA National Weather Service, WFO Louisville KY",
+   "published": "undated web page (press release dated 2026-07-17)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/frankfort_asos.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Web copy of sa2-e5.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.weather.gov/ilx/kspi-outage",
+   "fetched_url": null,
+   "title": "Information on Observation Outage at the Springfield Airport",
+   "author_org": "NOAA National Weather Service, WFO Lincoln IL",
+   "published": "undated (NOT PRESENT on page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/kspi_outage.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page has no date, so it may predate January 2025; cause of outage NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://www.weather.gov/gyx/AirportWeatherObservationOutages",
+   "fetched_url": null,
+   "title": "Augusta Airport Weather Observation Partial Outage",
+   "author_org": "NOAA National Weather Service, WFO Gray/Portland ME",
+   "published": "undated (NOT PRESENT on page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gyx_outages.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated; one site; may predate January 2025.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://www.weather.gov/media/directives/030_pdfs/pd03021011curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 30-2111, ASOS Maintenance",
+   "author_org": "NOAA National Weather Service",
+   "published": "2025-01-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nwsi_30_2111.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Sets targets only; actual outage durations NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://www.weather.gov/media/notification/pdf_2026/scn26-34_Updated_WR_RTP_Discontinuation.aaa.pdf",
+   "fetched_url": null,
+   "title": "Service Change Notice 26-34 Updated: Discontinuation of the Max/Min Temperature and Precipitation Table Product (RTP)",
+   "author_org": "NOAA National Weather Service Headquarters",
+   "published": "2026-05-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/scn26_34.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "A product discontinuation, not a reduction in gauge observations.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2026-05-11/html/2026-09272.htm",
+   "fetched_url": null,
+   "title": "FAA Surface Weather Status Dashboard, information collection notice (FR Doc 2026-09272)",
+   "author_org": "Federal Aviation Administration",
+   "published": "2026-05-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/fr_2026_09272.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No outage counts; dashboard launch status NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://www.congress.gov/congressional-report/119th-congress/senate-report/44",
+   "fetched_url": null,
+   "title": "Senate Report 119-44, CJS Appropriations Bill, 2026",
+   "author_org": "U.S. Senate Committee on Appropriations",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/srpt119-44.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "URL is the congress.gov report address (local copy from earlier run); no dollar figure for ASOS. FY2026 enacted JES (fy26_cjs_jes.txt) and House reports hrpt119-272 / hrpt119-652: ASOS NOT PRESENT (find_text hits only 'automated surface spectral radiometry').",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.govinfo.gov/app/details/BILLS-119s3923es",
+   "fetched_url": null,
+   "title": "S. 3923, Weather Research and Forecasting Innovation Reauthorization Act of 2026 (engrossed in Senate)",
+   "author_org": "U.S. Senate",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa3/s3923_es_govinfo.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Bill passed Senate only (enactment NOT PRESENT in this file); no funding authorized in the quoted text; URL is the govinfo details address for the local copy.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://www.campbellsci.com/us-asos-weather-network",
+   "fetched_url": null,
+   "title": "U.S. ASOS Weather Network (case study)",
+   "author_org": "Campbell Scientific",
+   "published": "2026-01-12",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/campbell_asos_fetch.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Vendor marketing page; curl refused (host www.campbellsci.com CONNECT 403), read with WebFetch extraction; precipitation sensors NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.weather.gov/asos/PrecipitationAccumulation.html",
+   "fetched_url": null,
+   "title": "ASOS All Weather Precipitation Accumulation Gauge",
+   "author_org": "NOAA National Weather Service, ASOS National Program",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_precip_accum.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated; number of sites with AWPAG vs tipping bucket NOT PRESENT; Ott Pluvio NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.spokesman.com/stories/2025/mar/01/national-weather-service-already-had-staff-shortag",
+   "fetched_url": null,
+   "title": "National Weather Service already had staff shortages (Washington Post, republished)",
+   "author_org": "Scott Dance and Kasha Patel, Washington Post (via The Spokesman-Review)",
+   "published": "2025-03-01",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/spokesman_wapo_2025-03-01_fetch.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Not tied to ASOS or precipitation gauges (both NOT PRESENT); WebFetch extraction, not raw text.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.weather.gov/media/ilx/NWS%20Lincoln%20ET%20Flyer%20-%20July%202025.pdf",
+   "fetched_url": null,
+   "title": "The National Weather Service in Lincoln, IL is Hiring! (Electronics Technician flyer)",
+   "author_org": "NOAA National Weather Service, WFO Lincoln IL",
+   "published": "2025-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ilx_et_flyer_jul2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Shows a vacancy being filled, not its duration or effect; one office.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://militaryaerospace.com/commercial-aerospace/article/55294487/faa-selects-cherokee-federal-to-update-weather-observation-tech-at-more-than-500-airports",
+   "fetched_url": null,
+   "title": "FAA selects Cherokee Federal to update weather observation tech at more than 500 airports",
+   "author_org": "Military & Aerospace Electronics",
+   "published": "2025-06-04",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/militaryaerospace_cherokee_awos_fetch.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not say whether these AWOS replace the 206/207 FAA ASOS sites; trade press.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://www.weather.gov/iwx/ASOSoutage_page",
+   "fetched_url": null,
+   "title": "KBEH (Benton Harbor, MI) ASOS Data To Remain Missing through at least June 15",
+   "author_org": "NOAA National Weather Service, WFO Northern Indiana",
+   "published": "undated (year NOT PRESENT)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/iwx_kbeh_outage.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated, may predate 2025; communications, not sensor.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.weather.gov/iwx/ASOSOutage",
+   "fetched_url": null,
+   "title": "Lima Ohio (KAOH) ASOS Out of Service",
+   "author_org": "NOAA National Weather Service, WFO Northern Indiana",
+   "published": "undated (NOT PRESENT)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/iwx_kaoh_outage.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated, may predate 2025.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://scholarworks.alaska.edu/uaa_iser_reports/1853",
+   "fetched_url": null,
+   "title": "Alaska AWOS/ASOS METAR Data Availability: Complete Outages and Parameter-Level Availability for Q4CY25",
+   "author_org": "Michael S. Jones, UAA Institute of Social and Economic Research",
+   "published": "2026-03-17",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e25",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/alaska_iser_1853.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Abstract only; full PDF refused (HTTP 403 by curl and WebFetch); availability figures and precipitation parameter results NOT PRESENT in what was read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.weather.gov/asos/TippingBucket.html",
+   "fetched_url": null,
+   "title": "Heated Tipping Bucket - ASOS",
+   "author_org": "NOAA National Weather Service, ASOS National Program",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_tipping_bucket.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated; counts of HTB vs AWPAG sites NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.weather.gov/lot/weather_observations_faq",
+   "fetched_url": null,
+   "title": "Weather Observations and NWS Climate Products FAQ",
+   "author_org": "NOAA National Weather Service, WFO Chicago",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/lot_obs_faq.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated; national count of AWPAG sites NOT PRESENT; Ott Pluvio not named.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx",
+   "fetched_url": null,
+   "title": "ASOS Sites by Equipment As Of 3_18_2025 (spreadsheet)",
+   "author_org": "NOAA National Weather Service, ASOS National Program",
+   "published": "2025-03-18 (T/Td updated 13 August 2025 per linking page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_sites_by_equipment_2025-03-18.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "The 323 and 575 in the header rows look like column totals of the trailing 1s but are not labeled; snapshot as of March 18, 2025; owner split (NWS/FAA/DoD) per gauge type not counted here; xlsx converted with xlsx_to_text.py (dates as serial numbers).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://www.weather.gov/asos/asosequip.html",
+   "fetched_url": null,
+   "title": "ASOS Equipment FAQ",
+   "author_org": "NOAA National Weather Service, ASOS National Program",
+   "published": "undated (T/Td updated 13 August 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_equip.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "The spreadsheet has no AWOS-C transition tab in the sheet list read (sheet names: ACU, DCP, SCA, Legacy ASOS In Service Dates, Ceilometer, Visibility, Present WX, AWPAG, Freezing Rain, Tipping Bucket, ... ASOS 2.0 In Service Dates, Sheet19), so the 207-site list was NOT FOUND.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.transportation.gov/sites/dot.gov/files/2025-05/FAA_FY_2026_Budget_Estimates_CJ.pdf",
+   "fetched_url": null,
+   "title": "FAA FY 2026 President's Budget Submission, F&E 2C04 Weather Systems Portfolio",
+   "author_org": "Federal Aviation Administration / DOT",
+   "published": "2025-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e30",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/faa_fy26_cj_p192-193.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read from the Wayback copy (20260112085710) as page images with the Read tool and transcribed, because transportation.gov returned 403 and pdftotext was denied; portfolio line also covers JAWS, TDWR and wind shear, so ASOS share NOT PRESENT; FY2026 enacted and FY2027 request for this line NOT FOUND. Supersedes the unreadable entry for this URL.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://public-inspection.federalregister.gov/2026-09099.pdf",
+   "fetched_url": null,
+   "title": "Request for Comments on the National Weather Service Cooperative Observing Program (COOP) (FR Doc. 2026-09099)",
+   "author_org": "NOAA National Weather Service (Michael Lee Hopkins, Director, Surface and Upper Air Division)",
+   "published": "2026-05-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fr_2026_09099.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Public-inspection copy; comment deadline shown as placeholder (30 days after publication). Does not say how many sites would be closed; 'right-sizing' undefined. Earlier NWS pages cite 8,500-12,000 stations/observers, so ~6,700 may reflect a different counting basis.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://www.weather.gov/mpx/NWS_COOP_Program_Request_For_Comment",
+   "fetched_url": null,
+   "title": "Opportunity for Comment: Modernization of the NWS Cooperative Observing Program (COOP)",
+   "author_org": "NWS Weather Forecast Office Twin Cities, MN",
+   "published": "2026 (undated; comments accepted until June 8, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/mpx_coop_rfc.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Outreach page; no figures for stations or budget.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://app.govly.com/public/opportunities/16692860",
+   "fetched_url": null,
+   "title": "NOAA NWS Market Research for COOP Network Modernization: Weather Stations, Sensors, O&M, and Data Services (SAM #1305M2-COOP)",
+   "author_org": "Department of Commerce, NOAA, NWS (Buyer: DEPT OF COMMERCE NOAA EAD-NORFOLK-SAP), via Govly aggregator",
+   "published": "2026-06-12",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/govly_1305M2-COOP_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read via WebFetch extraction of aggregator copies (SAM.gov original not read; samsearch.co copy blocked by Cloudflare). Responses due July 13, 2026; no award or decision found. Whether 3,000 is a subset to be kept/automated vs closed is NOT stated.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://appropriations.house.gov/sites/evo-subsites/republicans-appropriations.house.gov/files/evo-media-document/FY26-CJS-JES.pdf",
+   "fetched_url": null,
+   "title": "FY2026 CJS Joint Explanatory Statement (Division A)",
+   "author_org": "House and Senate Appropriations Committees",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-18 (saved by earlier run)",
+   "limitations": "OCR artifacts in text ('Stafjing', 'perfo nn'). JES table amounts in thousands. No COOP-specific line in the JES (search for 'Cooperative Observ' found none).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://www.commerce.senate.gov/press/dem/release/cantwell-statement-on-crippling-of-national-weather-service-2025-5/",
+   "fetched_url": null,
+   "title": "Cantwell Statement on Crippling of National Weather Service",
+   "author_org": "U.S. Senate Committee on Commerce, Science, and Transportation (Ranking Member Maria Cantwell)",
+   "published": "2025-05-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cantwell_2025-05_nws.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Minority-party press release relying on CNN report; figure not from NOAA. Ties staffing to ASOS (which carries precipitation gauges) but does not mention precipitation or COOP.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/2025-07-17-NWS-Staffing-Announcement-SECURED.pdf",
+   "fetched_url": null,
+   "title": "Audit of National Weather Service Staffing, Project No. 2025-523 (announcement memo)",
+   "author_org": "Department of Commerce Office of Inspector General",
+   "published": "2025-07-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_nws_staffing_announce.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Announcement only; scope is forecasts/warnings, observations NOT PRESENT. Final report not found in this subagent's searches.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://www.cbsnews.com/news/national-weather-service-hurricane-season-less-experienced-staff-missing-data/",
+   "fetched_url": null,
+   "title": "National Weather Service faces hurricane season with less experienced staff, missing data",
+   "author_org": "CBS News (Emily Mae Czachor)",
+   "published": "2026-07-20 (updated)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/cbs_nws_2026_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "WebFetch extraction partly paraphrased; only items in double quotes verbatim. Balloon (upper-air) data is not precipitation.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://docs.house.gov/meetings/AP/AP19/20260325/119094/HHRG-119-AP19-Wstate-JordanT-20260325.pdf",
+   "fetched_url": null,
+   "title": "Testimony of Taylor Jordan, Assistant Secretary of Commerce for Environmental Observation and Prediction, House CJS Appropriations Subcommittee",
+   "author_org": "NOAA",
+   "published": "2026-03-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/house_approps_jordan_20260325.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Only pages 1-3 read; COOP, staffing numbers NOT PRESENT in searched text.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://www.farms.com/news/shutdown-affected-long-term-weather-data-234833.aspx",
+   "fetched_url": null,
+   "title": "Shutdown affected long-term weather data",
+   "author_org": "Farms.com (author NOT PRESENT)",
+   "published": "2025-11-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/farms_shutdown_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not mention COOP observers stopping or data gaps; access interruption only. curl blocked (CONNECT 403 www.farms.com).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://www.weather.gov/media/directives/010_pdfs/pd01013007curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 10-1307, Cooperative Program Management and Operations",
+   "author_org": "NOAA National Weather Service (OPR W/OBS31; certified by W/OBS3 M. Hopkins)",
+   "published": "2025-02-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nwsi_10-1307_2025.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Procedural directive; no station counts, budgets or staffing levels. Closing section (9.15) is procedural, not evidence of closures.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://balancedweather.substack.com/p/balancedwx-special-evaluating-nws",
+   "fetched_url": null,
+   "title": "Updated BalancedWx Special: Evaluating NWS staffing and operational posture at the end of 2025",
+   "author_org": "Balanced Weather newsletter (Alan Gerard)",
+   "published": "2025-12-15",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/balancedwx_2025-12_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Independent newsletter by a former NWS official; relies on CNN for counts. No precipitation-network content.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://www.commerce.senate.gov/press/dem/release/as-hurricane-season-begins-cantwell-demands-trump-administration-stop-putting-lives-property-at-risk-immediately-lift-national-weather-service-hiring-freeze-2025-5/",
+   "fetched_url": null,
+   "title": "As Hurricane Season Begins, Cantwell Demands Trump Administration ... Immediately Lift National Weather Service Hiring Freeze (with letter to Lutnick and OPM)",
+   "author_org": "U.S. Senate Committee on Commerce, Science, and Transportation (Ranking Member Maria Cantwell)",
+   "published": "2025-05-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cantwell_2025-05_hiring_freeze.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Minority senator's letter; figures not sourced to NOAA in text. '33% reduction from historic levels' is the letter's own characterization. Does not mention COOP or precipitation specifically.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s45",
+   "url": "https://www.congress.gov/119/plaws/publ103/PLAW-119publ103.htm",
+   "fetched_url": null,
+   "title": "Public Law 119-103, Division A, Continuing Appropriations Act, 2027",
+   "author_org": "U.S. Congress",
+   "published": "2026-09-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/plaw_119-103.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No NWS or COOP anomaly found by searching 'National Weather' (no match). What happens after Dec 11, 2026 NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://www.everycrsreport.com/files/2026-07-28_IF13275_f48bb12a25db1d3445b31a62ef4a7b6069697bf3.html",
+   "fetched_url": null,
+   "title": "CRS IF13275, NOAA FY2027 Budget Request and Appropriations",
+   "author_org": "Congressional Research Service",
+   "published": "2026-07-28",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/crs_if13275_2026-07.txt",
+   "retrieved": "2026-11-18 (saved by earlier run)",
+   "limitations": "NOAA-wide FTEs; NWS-specific FTEs and COOP NOT PRESENT. URL from the search result (saved copy from earlier run may be a different version).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s47",
+   "url": "https://www.eenews.net/articles/national-weather-service-in-transition-as-hurricane-season-begins/",
+   "fetched_url": null,
+   "title": "National Weather Service in 'transition' as hurricane season begins",
+   "author_org": "E&E News by POLITICO (Chelsea Harvey)",
+   "published": "2026-06-09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/eenews_2026-06_transition_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Reorg description paraphrased by fetch tool; only quoted fragments verbatim. No observing-network content.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s48",
+   "url": "https://abc13.com/post/national-weather-service-says-new-rain-gauge-system-coming-bush-airport-construction-impacted-data/18251660/",
+   "fetched_url": null,
+   "title": "National Weather Service says new rain gauge system coming after Bush Airport construction impacted data",
+   "author_org": "ABC13 KTRK Houston (author NOT PRESENT)",
+   "published": "2025-12-04",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/abc13_iah_raingauge_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Single-station ASOS outage caused by third-party construction, not budget or staffing; belongs to the ASOS subquestion. Fetch tool output: wording of the last quote has they have vs they ve (apostrophe). Staffing NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-003_TMC_FY_2026_SECURED-1.pdf",
+   "fetched_url": null,
+   "title": "Top Management and Performance Challenges Facing the Department of Commerce in FY 2026 (OIG-26-003)",
+   "author_org": "Department of Commerce Office of Inspector General",
+   "published": "FY2026 (late 2025; exact date not checked)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_tmc_fy2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Ties staffing to 'collecting observational data' in general; COOP, ASOS, precipitation NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NWS-wide staffing (not specific to precipitation gauges)"
+  },
+  {
+   "id": "s50",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-017-I-SECURED.pdf",
+   "fetched_url": null,
+   "title": "Review of the National Weather Service's Actions to Support Kerr County During the Catastrophic Flash Flood in Texas (OIG-26-017-I)",
+   "author_org": "Department of Commerce Office of Inspector General",
+   "published": "2026-04-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_26-017-I_texas.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Single office/event; rain gauges discussed are automated gauges used in warnings (owner not stated in matched lines); river gauges are USGS. COOP NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s51",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119srpt44/html/CRPT-119srpt44.htm",
+   "fetched_url": null,
+   "title": "Senate Report 119-44, Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2026",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2025-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/srpt119-44.txt",
+   "retrieved": "2026-11-18 (saved by earlier run)",
+   "limitations": "Committee report; JES adopted the Senate $10M staffing direction. Apostrophe in NWS s dropped for JSON quoting. COOP NOT PRESENT. Publication month assumed (report number 119-44); URL follows govinfo pattern, not checked.",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_1_NWS_COOP_Update_McGuire_.pdf",
+   "fetched_url": null,
+   "title": "Cooperative Observer Program Updates (WERA presentation)",
+   "author_org": "NWS (Amy Fritz, National COOP Program Manager; Scott McGuire, Western Region HQ Data & Observations Program Manager)",
+   "published": "2024-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera2024_coop_update.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "June 2024, before the Jan 2025-Nov 2026 window. The first passage segment is paraphrased because the run rules forbid the tilde character in commands; see line 72 of the saved text for the exact wording. Budget chart values not readable ($1,600,000 is an axis label, not a stated amount). Earlier listed as unreadable; download later succeeded with allowed_domains media.cocorahs.org.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/SAR-2026-03.pdf",
+   "fetched_url": null,
+   "title": "Commerce OIG Semiannual Report to Congress, March 2026",
+   "author_org": "Department of Commerce Office of Inspector General",
+   "published": "2026-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_sar_2026-03.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Search for 2025-523, NWS staffing, observing, Automated Surface found no match; staffing audit status NOT PRESENT. COOP NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://www.commerce.gov/sites/default/files/2025-06/NOAA-FY2026-Congressional-Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2026 Congressional Justification (budget request), OAR Climate Laboratories and Cooperative Institutes program change",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Find_text for Reference Network|USCRN|ATDD in this file: NO match; only ARL/Oak Ridge matches at lines 5806, 5952 (and 7831, Gaea supercomputer, unrelated). The CJ does not name USCRN or its precipitation gauges; the soil moisture sensors are presumably the USCRN soil moisture component (see sa3-e4) but the CJ does not say so. URL is the presumed commerce.gov location; file saved by earlier run.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: OAR Climate Laboratories and Cooperative Institutes (includes ARL, which maintains USCRN)"
+  },
+  {
+   "id": "s55",
+   "url": "https://www.commerce.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY2027 Congressional Justification, Terminate Climate Laboratories and Cooperative Institutes",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Find_text for Reference Network|USCRN|ATDD: NO match in FY27 CJ; ARL/Oak Ridge matches only at 15623, 16178 (19881 is Gaea, unrelated). USCRN precipitation gauges not named.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s56",
+   "url": "https://www.congress.gov/",
+   "fetched_url": null,
+   "title": "FY2026 enacted CJS joint explanatory statement, OAR table",
+   "author_org": "U.S. Congress (House and Senate Appropriations Committees)",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "URL is a placeholder: exact JES address was not found in this run; the coordinator has it from the 2026-11-17 run. Find_text for Reference Network|USCRN|Air Resources|ATDD across all saved sa1 and sa3 appropriations files (JES, hrpt119-272, hrpt119-652, srpt119-44, srpt119_154, bills): NO match. Enacted text does not name ARL or USCRN.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://repository.library.noaa.gov/view/noaa/67359/noaa_67359_DS1.pdf",
+   "fetched_url": null,
+   "title": "Soil moisture components of the U.S. Climate Reference Network: An assessment on the utilization, value, and potential impacts of downsizing or discontinuation (NOAA Technical Report OAR-NIDIS-001)",
+   "author_org": "NIDIS; NOAA Air Resources Laboratory; NOAA NCEI",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/uscrn_soil_moisture_report.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Concerns the soil moisture sensors of USCRN, not its precipitation gauges; precipitation is mentioned only in passing. Does not state a decision, dollar figure or date for downsizing. Ties the 'nation-wide network of soil moisture sensors' in the FY26/FY27 CJ to USCRN only by inference.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://www.ncei.noaa.gov/access/crn/overview.html",
+   "fetched_url": null,
+   "title": "USCRN Program Overview",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (page undated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/uscrn_overview.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated; ATDD role, funding line and any 2025-2026 changes NOT PRESENT on this page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://ak-wx.blogspot.com/2025/12/declining-alaska-observations.html?m=0",
+   "fetched_url": null,
+   "title": "Declining Alaska Observations (Alaska Weather and Climate blog post and comments)",
+   "author_org": "Richard James (blog author); comments by Rick Thoman and others",
+   "published": "2025-12-02",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/akwx_declining_obs_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Blog and comments, not an official source; read through a WebFetch extraction (small model), so quotes should be checked against the page. Does not give a funding figure or say which stations are offline beyond Ivotuk and Deadhorse; no precipitation-specific data.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://vlab.noaa.gov/web/wdtd/-/qpe-w-gauge-bias-correcti-1",
+   "fetched_url": null,
+   "title": "Radar QPE w/ Gauge Bias Correction (MRMS product guide)",
+   "author_org": "NOAA NWS Warning Decision Training Division (WDTD)",
+   "published": "NOT PRESENT (undated; refers to MRMS Version 12)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wdtd_mrms_gauge_bias.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Training/product guide; gives no figures on how much skill is lost per gauge removed; Stage IV and RFC use NOT PRESENT here.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s61",
+   "url": "https://media.cocorahs.org/docs/WERA1012_2022_NDMC.pdf",
+   "fetched_url": null,
+   "title": "Data needs of the US Drought Monitor related to the NWS COOP and CoCoRaHS Programs (WERA1012 2022 presentation)",
+   "author_org": "National Drought Mitigation Center (NDMC)",
+   "published": "2022",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ndmc_coop_cocorahs_needs.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2022 presentation, before the 2025-2026 period; slide text only; no quantification of how USDM depicts drought with fewer stations. Host media.cocorahs.org needed an allowed_domains addition (.org) which was granted.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://ams.confex.com/ams/94Annual/webprogram/Manuscript/Paper241627/FINAL%20-%20Retrospective%20Case%20Study%20of%20the%20Impact%20of%20Rain%20Gage%20Network%20Reductions%20on%20National%20Weather%20Service%20River%20Forecasts%20in%20the%20Susquehanna%20River%20Basin.pdf",
+   "fetched_url": null,
+   "title": "Retrospective Case Study of the Impact of Rain Gage Network Reductions on National Weather Service River Forecasts in the Susquehanna River Basin (AMS 94th Annual Meeting paper 5.4)",
+   "author_org": "Peter Ahnert, Kevin Hlywiak, Cody Moser, Seann Reed, NOAA/NWS Middle Atlantic River Forecast Center",
+   "published": "2014-02 (AMS 94th Annual Meeting)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/susquehanna_gage_reduction.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2013-2014 regional case study, not the 2025-2026 period; USGS-funded gauges rather than NOAA-funded ones. ams.confex.com refused by sandbox; PDF obtained via WebFetch's saved binary and converted with pdftotext.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s63",
+   "url": "https://www.cantwell.senate.gov/imo/media/doc/07092025_oar_program_examples_--_cuts.pdf",
+   "fetched_url": null,
+   "title": "NOAA Office of Oceanic and Atmospheric Research FY 2026 Presidential Budget: program examples of cuts",
+   "author_org": "Office of Sen. Maria Cantwell (Senate Commerce Committee Democrats)",
+   "published": "2025-07-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cantwell_oar_cuts.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Minority/member summary of the request, not an enacted action; USCRN and its precipitation gauges not named (find_text for Reference Network|USCRN|ATDD: no match).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://www.nationalacademies.org/read/11128/chapter/7",
+   "fetched_url": null,
+   "title": "Flash Flood Forecasting Over Complex Terrain: With an Assessment of the Sulphur Mountain NEXRAD in Southern California, Chapter 5: Observational Challenges of Low-Level Radar Coverage in Complex Terrain and Coastal Areas",
+   "author_org": "National Research Council (National Academies Press)",
+   "published": "2005",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nrc_flash_flood_complex_terrain_ch.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2005 report focused on Southern California; does not quantify gauge substitution; bright band NOT PRESENT in matched text.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s65",
+   "url": "https://gigafact.org/fact-briefs/does-the-national-oceanic-and-atmospheric-administration-fabricate-data-for-decommissioned-weather-monitoring-stations-no/",
+   "fetched_url": null,
+   "title": "Does the National Oceanic and Atmospheric Administration fabricate data for decommissioned weather-monitoring stations?",
+   "author_org": "Arizona Center for Investigative Reporting (Gigafact network)",
+   "published": "2025-05-23",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gigafact_coop_estimates.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "About temperature, not precipitation; date from search result listing; secondary source citing NCEI correspondence.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s66",
+   "url": "https://repository.library.noaa.gov/view/noaa/47949/noaa_47949_DS1.pdf",
+   "fetched_url": null,
+   "title": "Evaluation of IMERG Satellite Precipitation over the Land-Coast-Ocean Continuum. Part II: Quantification (Journal of Hydrometeorology 23(8))",
+   "author_org": "Derin, Kirstetter, Brauer, Gourley, Wang (University of Oklahoma; NOAA National Severe Storms Laboratory; NASA GSFC)",
+   "published": "2022-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/imerg_land_coast_ocean_eval.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Reference is gauge-corrected radar (GV-MRMS), not gauges directly; coastal regions only; IMERG V06B (later versions exist).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s67",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-reference-network",
+   "fetched_url": null,
+   "title": "U.S. Climate Reference Network (USCRN) product page",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (page lists related news to May 20, 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_uscrn_product.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No funding line, staff numbers or 2025-2026 threats on page; banner notes 'Expect delayed data archival and slower update cycles for many products' due to cloud migration (not tied to budget).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s68",
+   "url": "https://www.drought.gov/news/research-confirms-role-citizen-science-contributions-drought-detection-and-monitoring",
+   "fetched_url": null,
+   "title": "Research Confirms the Role of Citizen Science Contributions to Drought Detection and Monitoring",
+   "author_org": "NOAA NIDIS (Drought.gov)",
+   "published": "2022-09-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/droughtgov_citizen_science.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "About CoCoRaHS qualitative condition reports, not its precipitation gauge totals; 2022, before the 2025-2026 period.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s69",
+   "url": "https://www.ncei.noaa.gov/news/what-is-a-uscrn-station",
+   "fetched_url": null,
+   "title": "What's a USCRN Station?",
+   "author_org": "NOAA NCEI",
+   "published": "2018-08-27 (updated 2019-07-17)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_what_is_uscrn_station.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "2018/2019 article (22 of 29 Alaska stations then); no 2025-2026 status, staffing or funding.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s70",
+   "url": "https://www.ncei.noaa.gov/access/crn/current-observations",
+   "fetched_url": null,
+   "title": "USCRN Current Observations (All Stations table)",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-18 (live table as retrieved)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crn_current_observations.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Snapshot of one moment; row count (161, lines 23-183) and stale-row count are my tally of the saved text, not page-stated figures; table includes an ATDD test site and possibly USRCRN-AL rows (page offers 'USCRN Stations Only' and 'USRCRN-AL Stations Only' filters not applied). '—' may mean a missing hourly value rather than a failed gauge.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s71",
+   "url": "https://www.weather.gov/owp/oh_hrl_papers_2000mou_Jay_Jay00",
+   "fetched_url": null,
+   "title": "Seasonal Variation in multi-radar coverage for WSR-88D precipitation estimation in a Mountainous region (NWS Office of Hydrologic Development, Hydrology Laboratory, 2000 MOU report section 4)",
+   "author_org": "NOAA NWS Office of Hydrology / Hydrology Laboratory",
+   "published": "2000 (per URL; 1996-1999 data)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nws_nwrfc_radar_coverage.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Old (1996-1999 data, pre-dual-pol, pre-MRMS); Northwest only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s72",
+   "url": "https://www.ncei.noaa.gov/access/crn/usrcrn.html",
+   "fetched_url": null,
+   "title": "U.S. Regional Climate Reference Network",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (page undated; notice refers to June 1, 2014)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_usrcrn.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Pre-2025 event; the current-observations page still offers a 'USRCRN-AL Stations Only' filter (Alabama regional stations), whose status this page does not describe.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s73",
+   "url": "https://www.climatehubs.usda.gov/sites/default/files/DroughtImpact&CoCoRaHS.pdf",
+   "fetched_url": null,
+   "title": "Drought Impact Reporter (and CoCoRaHS): Benefits and Importance to Producers",
+   "author_org": "USDA Climate Hubs",
+   "published": "NOT PRESENT (undated fact sheet)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usda_hub_drought_cocorahs.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "About condition/impact reports, not gauge precipitation totals; undated; does not quantify USDM reliance on any network.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s74",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network daily (GHCNd) product page",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (undated product page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_ghcnd.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Describes dataset construction, not impacts of station loss; no counts of U.S. COOP stations; CoCoRaHS not matched in text.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s75",
+   "url": "https://www.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Community Collaborative Rain, Hail & Snow Network (home page)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "page as of 2026-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cocorahs_home.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Self-reported counts; 'active observers' not defined. No funding information on this page. Nothing about cuts: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s76",
+   "url": "https://www.cocorahs.org/Content.aspx?page=sponsors",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Our Sponsors",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cocorahs_sponsors.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No dollar amounts, no NOAA office named beyond NOAA and NWS, no award numbers; page date unknown, so 'present' may be stale. NOAA line office (NWS/NCEI/NIDIS/OAR) for any current award: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s77",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending award search: keyword 'CoCoRaHS'",
+   "author_org": "U.S. Treasury, USAspending.gov",
+   "published": "retrieved 2026-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/usaspending_cocorahs.json",
+   "retrieved": "2026-11-18",
+   "limitations": "Keyword search only matches award descriptions; current CoCoRaHS NOAA funding may come through awards whose descriptions do not name CoCoRaHS (e.g., a CIRA cooperative agreement or NWS contract) and would not appear. The NSF 2313996 end date of 2025-04-18 sits inside a project described as three-year, but the record does not say it was terminated: termination NOT PRESENT. A second search on 'Community Collaborative Rain' (2015-2026, usaspending_ccr_name.json) returned only NASA NNX17AF94A (CSU, $161,544.97, CoCoRaHS founder as collaborator) and the same NSF 2313996.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s78",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt272/html/CRPT-119hrpt272.htm",
+   "fetched_url": null,
+   "title": "House Report 119-272, Commerce, Justice, Science Appropriations Bill FY2026 - National Mesonet Program",
+   "author_org": "House Committee on Appropriations",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/hrpt119-272.txt",
+   "retrieved": "2026-11-18 (saved by earlier run)",
+   "limitations": "The '1,200 observation platforms' figure is the committee's description of the request; the CJ passage stating it was not located in the saved FY26 CJ by name search (search terms 'mesonet' and '1,200' found only lines 6760 and 6797). Does not say how many platforms measure precipitation.",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s79",
+   "url": "https://appropriations.house.gov/",
+   "fetched_url": null,
+   "title": "FY2026 Commerce, Justice, Science joint explanatory statement - National Mesonet Program",
+   "author_org": "House and Senate Appropriations Committees",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-18 (saved by earlier run)",
+   "limitations": "OCR text with broken words; quoted as saved. The url field is a placeholder: the exact original URL of this saved JES copy is recorded in the 2026-11-17 run, not here. govinfo URLs for the House reports are by the standard pattern, not re-fetched.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s80",
+   "url": "https://www.civilbeat.org/2025/05/hawaii-readies-weather-stations-against-trump-assault-on-climate-research/",
+   "fetched_url": null,
+   "title": "Hawaiʻi Readies Weather Stations Against Trump Assault On Climate Research",
+   "author_org": "Honolulu Civil Beat",
+   "published": "2025-05",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/civilbeat_hi_mesonet.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Describes a feared, not an actual, cut; no NOAA confirmation of any contract change.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s81",
+   "url": "https://www.opb.org/article/2025/03/11/snow-or-no-northwests-water-outlook-gets-murky-with-federal-cuts/",
+   "fetched_url": null,
+   "title": "Snow or no? Northwest’s water outlook gets murky with federal cuts",
+   "author_org": "OPB / KUOW (Northwest News Network)",
+   "published": "2025-03-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/opb_snotel.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Source O'Neill is identified in article (not quoted here) and is not an NRCS official statement; March 2025 snapshot; reinstatement order of Mar 5 for USDA probationary staff noted at line 75. Site counts here (178 OR) differ from NRCS Oregon doc (82 OR SNOTEL sites), likely because OPB counts include other site types.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s82",
+   "url": "https://www.padilla.senate.gov/wp-content/uploads/12.22.25-Letter-to-USDA-DOC-on-Diminished-Water_Weather-Forecasting-and-Snowpack-Survey-Capacity.pdf",
+   "fetched_url": null,
+   "title": "Letter to USDA and Commerce on diminished water/weather forecasting and snowpack survey capacity",
+   "author_org": "Sens. Alex Padilla and Adam B. Schiff",
+   "published": "2025-12-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/padilla_snow_letter.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Advocacy letter; manual snow courses rather than SNOTEL precipitation gauges; no staff counts or site counts. Precipitation gauges: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s83",
+   "url": "https://nrcs-prod.azureedge.us/sites/default/files/2026-08/2026-NWSSR-Oregon-SNOTEL-Sites-Get-Upgraded-With-Newly-Added-Soil-Moisture-and-Temperature-Sensors.pdf",
+   "fetched_url": null,
+   "title": "Oregon Snow Telemetry (SNOTEL) Sites Get Upgraded With Newly Added Soil Moisture and Temperature Sensors",
+   "author_org": "USDA NRCS Soil and Plant Science Division, Northwest Soil Survey Region",
+   "published": "2026-08 (folder date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/nrcs_oregon_snotel_2026.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Host nrcs-prod.azureedge.us refused by shell guard; PDF read via WebFetch's saved binary converted with pdftotext. Covers two sites only; staffing levels NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s84",
+   "url": "https://nadp.slh.wisc.edu/wp-content/uploads/2026/04/joint2025fall.pdf",
+   "fetched_url": null,
+   "title": "NADP Joint Subcommittee and Executive Committee Fall 2025 meeting minutes",
+   "author_org": "National Atmospheric Deposition Program (Wisconsin State Laboratory of Hygiene)",
+   "published": "meeting 2025 fall; posted 2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/nadp_fall2025_minutes.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Minutes; number of NTN (precipitation chemistry) sites closed NOT PRESENT; which two federal partners withdrew NOT PRESENT; the NOAA-sites remark implies NOAA sites had left but gives no count.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s85",
+   "url": "https://www.hppr.org/hppr-news/2025-04-18/regional-climate-centers-shut-down-abruptly-this-week-heres-why-it-matters",
+   "fetched_url": null,
+   "title": "Regional Climate Centers shut down abruptly this week. Here's why it matters",
+   "author_org": "High Plains Public Radio (Harvest Public Media)",
+   "published": "2025-04-18",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/hppr_rcc_shutdown.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "RCCs distribute and quality-control COOP/CoCoRaHS precipitation data but do not operate gauges; link to precipitation observation not stated in this passage.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s86",
+   "url": "https://www.stlpr.org/2025-04-24/regional-climate-center-resume-operations",
+   "fetched_url": null,
+   "title": "Regional Climate Centers resume operations after funding loss led to closures",
+   "author_org": "St. Louis Public Radio (Harvest Public Media)",
+   "published": "2025-04-24",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/stlpr_rcc_resume.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Outcome of the mid-June 2025 renewal and later contracts NOT PRESENT here; search snippets indicate 2026 NCEI solicitations (e.g., 1332KP26R0024 Midwestern, 1332KP26R0027 Southern) but these were not read.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s87",
+   "url": "https://www.noaa.gov/",
+   "fetched_url": null,
+   "title": "NOAA FY2026 Congressional Justification - NWS Observations deliverables",
+   "author_org": "NOAA",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results/web_search_results/2026-11-17_noaa-ncei-threats/work/raw/sa1/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-18 (saved by earlier run)",
+   "limitations": "The url is a placeholder for the CJ's original address (recorded in the 2026-11-17 run). The '1,200 observation platforms' elimination that the House report attributes to the request was not found by searching this text for 'mesonet' or '1,200'; the program-change table for it was not read: gap.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s88",
+   "url": "https://washingtontechnology.com/contracts/2026/06/kbr-wins-11b-weather-data-collection-recompete/414128/",
+   "fetched_url": null,
+   "title": "KBR wins $1.1B weather data collection recompete",
+   "author_org": "Washington Technology (Ross Wilkers)",
+   "published": "2026-06-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa4/wt_kbr_mesonet_extract.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Read via WebFetch extraction (host refused for download); $1.1 billion is a contract ceiling over five years, not annual obligations; precipitation NOT PRESENT. Search snippets say performance starts Sept 1, 2026.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s89",
+   "url": "https://www.mountaineers.org/conservation/advocacy/comment-letters/2025-comment-letters/04-17-25-outdoor-recreation-snotel-support-letter-to-usda-nrcs.pdf",
+   "fetched_url": null,
+   "title": "Request to Exempt the SNOTEL Program from Reduction in Force cuts (letter to USDA NRCS)",
+   "author_org": "The Mountaineers and 49 other organizations",
+   "published": "2025-04-17",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa4-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/mountaineers_snotel_letter.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Advocacy letter; number of sites offline and durations NOT PRESENT; whether the RIF occurred NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s90",
+   "url": "https://pubs.usgs.gov/fs/2025/3041/fs20253041.pdf",
+   "fetched_url": null,
+   "title": "USGS Fact Sheet 2025-3041 (USGS and the National Atmospheric Deposition Program)",
+   "author_org": "U.S. Geological Survey",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/usgs_fs2025_3041.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Two-column layout; quoted from the right column only. No 2025-2026 funding change: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s91",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending award search: recipient Colorado State University, NOAA, keyword 'precipitation', FY2021-2026",
+   "author_org": "U.S. Treasury, USAspending.gov",
+   "published": "retrieved 2026-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/usaspending_csu_noaa_precip.json",
+   "retrieved": "2026-11-18",
+   "limitations": "Keyword filter 'precipitation' may miss a CoCoRaHS award described differently; contracts (types A-D) not searched. CoCoRaHS award: NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s92",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending award search: keyword 'Community Collaborative Rain', 2015-10-01 to 2026-11-18",
+   "author_org": "U.S. Treasury, USAspending.gov",
+   "published": "retrieved 2026-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/usaspending_ccr_name.json",
+   "retrieved": "2026-11-18",
+   "limitations": "Grants/cooperative agreements only; contracts not searched.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s93",
+   "url": "https://alaskaaircarriers.org/Advocacy",
+   "fetched_url": null,
+   "title": "Alaska Air Carriers Association - Advocacy (August 12, 2026 Member Briefing: FAA Alaska Infrastructure, Weather Reporting, and DYAASI Updates)",
+   "author_org": "Alaska Air Carriers Association",
+   "published": "2026-08-12",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "chk_c3_aaca",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/checker/aaca_advocacy.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Alaska Region only; does not say whether the 50 AWOS sites replace ASOS units or are new sites; NOT PRESENT: any link to the 206/207 ASOS-to-AWOS-C program.",
+   "found_by": [
+    "checker"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "NWS has formally proposed modernizing and 'right-sizing' the ~6,700-site COOP network, asking when state or private mesonet data could replace federally managed COOP stations (Federal Register RFC, May 7, 2026; comments closed June 8, 2026), and in June 2026 issued a sources-sought notice weighing contractor-operated and data-as-a-service models with up to 3,000 all-in-one stations; no decision or closure list has been published.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "To transition this historic network into a real-time observing program, the NWS | aims to deploy commercial sensor technology, automate data collection to reduce | volunteer burden, optimize the national footprint to address geographic data gaps, and | leverage mesonet data as a key network augmentation tool. … ● Upgrading aging COOP equipment with easier-to-maintain commercially | available weather observation systems; | ● Automating data collection to reduce volunteer burden; | ● Increasing observations in data-sparse regions; | ● Integrating other high-quality environmental data (e.g., state and private | mesonets) sets to augment federally-provided COOP data where appropriate; | ● Right-sizing and optimizing the scope and coverage of the existing ~6,700-site | COOP network.",
+     "location": "lines 31-37, 129-143 of saved text (Summary; Supplementary Information)"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "We request input on geographic optimization, specifically identifying where COOP is the | sole or primary observation source, and determining when external, high-quality mesonet | data can supplement the Federal backbone of COOP stations. Additionally, the NWS | seeks strategies for maintaining snowfall and snow depth data continuity during | automation and understanding how the volunteer role might evolve from manual | observation to site stewardship. … would data from | external networks be suitable alternatives to federally managed COOP stations? Please be | specific.",
+     "location": "lines 164-174, 255-260 (Issues for Comment; Question III.4)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Comments are accepted until June 8, 2026. … The existing network faces sustainability challenges due to aging manual equipment and rising maintenance costs. Our modernization objectives include: | Transforming Observations: Leveraging commercial sensor technology to increase data volume and provide near-real-time reporting. | Optimizing the Footprint: \"Right-sizing\" the network to address geographic data deserts while minimizing redundancy. | Creating Efficiencies: Reducing volunteer and field office burden through automation and easier-to-maintain sensors.",
+     "location": "lines 146-156"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The NWS is evaluating the feasibility, cost-effectiveness, and data continuity risks associated with blending three distinct management paradigms across approximately 6,700 highly distributed surface observation sites:",
+     "location": "Description (extract line 24)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS's own Federal Register notice read in full; sources-sought read via aggregator copies only.",
+   "sole_source_reason": "The agency's own Federal Register notice is the authority for its own proposal."
+  },
+  {
+   "id": "c2",
+   "text": "NOAA's FY2026 and FY2027 budget justifications say COOP relies on equipment no longer supported by manufacturers and plan only to 'initiate refresh' of its end-of-life sensors.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The Cooperative Observer Program, the NWS’ longest operating and oldest observation | program, relies on equipment that is no longer supported by manufacturers and the support systems are nearing obsolescence.",
+     "location": "NWS-58, PAC Observations, Explanation and Justification (text lines 19231-19232)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Sustain the Cooperative Observer Program (COOP) … Surface Observations Program provides meteorological data at the Earth’s surface. To provide on-the-ground observations, NWS | operates the ASOS, the COOP, and the National Mesonet Program.",
+     "location": "NWS-3 to NWS-5, ORF Observations (text lines 6729, 6796-6797)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Volunteer Observing Programs | ● Initiate refresh of end-of-life sensors for Cooperative Observer Program … Cooperative Observer Programs | ● Targeted refresh of critical observing sites providing climatological and oceanic data … The Cooperative Observer Program, the NWS’ longest operating and oldest observation | program, relies on equipment that is no longer supported by manufacturers and the support systems are nearing obsolescence.",
+     "location": "lines 7464-7465, 7484-7485, 7514-7515"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Agency's own budget documents, two years.",
+   "sole_source_reason": "The agency's own budget justification is the authority for its own equipment status."
+  },
+  {
+   "id": "c3",
+   "text": "Because FAA funding is insufficient to recondition all 570 FAA-owned ASOS sites, 207 ASOS sites are being moved to AWOS-C from 2025 through 2029 (an FAA budgetary decision); NWS-owned ASOS (308 units) are not being converted.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "There are approximately 950 active ASOS sites. … Whereas AWOS data typically includes ceiling and sky conditions, visibility, temperature, dew point, altimeter setting, and wind speed, gusts, and direction, ASOS can additionally provide type and intensity of precipitation and obstructors to visibility such as fog and haze. … The NWS has undertaken a comprehensive plan to replace most of the sensors on the ASOS sensor array by the end of 2030. … Precipitation Accumulation Sensor: Planned for FY2024 … Last update was April 28, 2023. … ## NWS and FAA Transitioning 206 Sites | - Why is the NWS and FAA transitioning 207 ASOS sites to AWOS-C? | The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. The decision to transition to the AWOS-C in lieu of ASOS 2.0 was therefore a budgetary decision by the FAA. … The schedule currently has a start date of 2025 and lasts through 2029.",
+     "location": "lines 94-168"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "* The National Oceanic and Atmospheric Administration National Weather Service (NWS) maintains ASOS through an interagency agreement. | AWOS-C and ASOS provide required surface weather observations. These systems generate weather observations containing the following: … - Precipitation accumulation … ASWON S2 address obsolescence of hardware components no longer manufactured or supported by the vendor coupled with insufficient inventory of sub-systems and parts. … - Replacing obsolescent weather sensors, processors and software … - Providing Operation and Maintenance cost savings by reducing the number of surface weather system types in the NAS … - Replace 206 ASOS with AWOS-C",
+     "location": "lines 25-70"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "There are no NWS plans to transition ASOS to AWOS.",
+     "location": "FAQ, NWS transition question"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS FAQ and FAA ASWON page agree (206 vs 207 count differs).",
+   "sole_source_reason": "NWS and FAA pages describe their own program."
+  },
+  {
+   "id": "c4",
+   "text": "NWS retired the Frankfort, KY ASOS as an official climate site in July 2026 after it was offline from late June 2025; NWS says the AWOS replacing it cannot serve as a direct replacement for official climate archiving.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "July 17, 2026 … The National Weather Service (NWS) is announcing the official retirement of the Frankfort, KY Automated | Surface Observing System (ASOS) as a designated climate site. This decision follows a prolonged outage and | upcoming equipment transitions that prevent the station from meeting strict federal climate recording | standards. | The Frankfort ASOS station has been offline since late June 2025 due to unresolved power supply issues, in | which Kentucky Mesonet data have been used as supplemental data to NWS climate products. The site is also | scheduled to transition to an Automated Weather Observing System (AWOS) by the summer of 2027: AWOS | configurations typically do not meet the rigorous sensor, reporting, and maintenance criteria required to | maintain an uninterrupted, high-precision official NWS climate record. Furthermore, the power supply issues are | not expected to be resolved prior to equipment transition from ASOS to AWOS.",
+     "location": "lines 8-26"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "While the upcoming AWOS installation will continue to provide critical, real-time aviation weather data for pilots | and local airport operations, it cannot serve as a direct replacement for official NWS climate archiving. … This local Mesonet station is fully equipped to provide much of the | same high-quality meteorological data historically generated by the Frankfort ASOS, including temperature, | precipitation, wind speed, and humidity.",
+     "location": "lines 176-184"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS's own press release and web page.",
+   "sole_source_reason": "NWS statement about its own station."
+  },
+  {
+   "id": "c5",
+   "text": "Staff losses in 2025 hit the technicians who maintain ASOS: NWS reorganized offices into maintenance 'pods' in March 2025 to mitigate critical staffing shortages, OIG counted 564 NWS departures (about 13%) Jan-Apr 2025, and a NOAA staffer told CNN there were more than 90 vacancies among radar and surface-station repair staff.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "In an effort to mitigate critical staffing shortages and enhance the maintenance of Automated Surface Observing Systems (ASOS), these pods are responsible for assisting one another with necessary repairs",
+     "location": "March 20, 2025 memo"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "There are also more than 90 vacancies among the staff responsible for repairing NWS Doppler radars and automated surface weather observation stations, the NOAA staff member said, greatly raising the likelihood of prolonged equipment outages",
+     "location": "article body (Wayback capture 2026-01-04)"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "There are also more than 90 vacancies among the staff responsible for repairing NWS Doppler radars and automated surface weather observation stations, greatly raising the likelihood of prolonged equipment outages that could affect air travel.",
+     "location": "line 23"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "NWS’s ongoing workforce challenges have been exacerbated by the unplanned departure of | approximately 13 percent of its 4,369 employees between January and April 2025. According to | NWS leadership, the loss of these 564 employees has led to staffing gaps across the agency, with | some Weather Forecast Offices unable to sustain daily 24-hour coverage. … NWS | also secured direct-hire authority to ﬁll up to 450 mission-critical positions. … accelerated the implementation of its “roadmap” for strategic transformation—originally intended | as a 10-year plan but now compressed to 18 months—to modernize its operational model and | staffing requirements. | NWS must effectively manage both its workforce challenges and its transformation plan if it is to | continue to meet its foundational mission of collecting observational data and issuing timely,",
+     "location": "p. 12-13, lines 655-667"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Official memo and OIG count; the 90-vacancy figure rests on one anonymous source via CNN.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c6",
+   "text": "Both the FY2026 and FY2027 budget requests propose terminating OAR climate labs and closing ARL's Oak Ridge lab (whose ATDD maintains USCRN), but the enacted FY2026 law kept Climate Laboratories funded ($104,102K) and ARL completed a 139-tower USCRN transmitter upgrade by April 25, 2026.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "Termination of OAR’s Climate Laboratories and Cooperative Institutes (-$102,292, -204 FTE/ -216 Positions) –NOAA will | continue to support high priority ocean and weather research programs in NOS and NWS. … NOAA will close the Atlantic Oceanographic & Meteorological Laboratory | (AOML) in Miami, FL; the Air Resources Laboratory (ARL) in College Park, MD, Idaho Falls, ID, and Oak Ridge, TN, as well as a | nation-wide network of soil moisture sensors;",
+     "location": "page OAR-5, lines 5801-5807 (same text in Weather Labs change, line 5952)"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "Terminate Climate Laboratories and Cooperative Institutes (-$104,964, -180 FTE/ -211 Positions) – NOAA will continue to | support high priority research programs in other Line Offices. … NOAA will close the Atlantic Oceanographic & Meteorological Laboratory | (AOML) in Miami, FL; the Air Resources Laboratory (ARL) in College Park, MD, Idaho Falls, ID, and Oak Ridge, TN, as well as a | nation-wide network of soil moisture sensors;",
+     "location": "lines 15618-15624 (repeated at 16178 under Weather Labs termination, -$95,095)"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "contradicts",
+     "passage": "Climate Research: | Clim ate Laboratories and Cooperative Institutes ........... ................. . .. ............ ................. .             $ 104, 102 | … Weather and Air Chemistry Research: | 94,000 | Weather Laboratories and Cooperative Institutes",
+     "location": "OAR table (in thousands of dollars), lines 656-671"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "contradicts",
+     "passage": "This project required replacing transmitters at 139 towers across 45 states … In January 2025 there were still 94 old transmitters in the field. Over the last year and a half, a crew of five technicians and engineers traveled the country to complete the replacements. After a marathon effort the final transmitter was installed in Newton, Mississippi on April 25, 2026.",
+     "location": "article body"
+    },
+    {
+     "source_id": "s67",
+     "relationship": "contextualizes",
+     "passage": "NCEI manages and maintains USCRN station observations, and NOAA's Atmospheric Turbulence and Diffusion Division (ATDD) maintains instrumentation and field sites in a long term partnership with NCEI. | … The contiguous U.S. network of 114 stations was completed in 2008. There are two USCRN stations in Hawaii, and a network of 29 stations are in the process of being deployed in Alaska … Each station collects independent measurements of temperature, precipitation, and soil moisture at 5 depths",
+     "location": "Quality Control and Stations sections (lines 24, 28); banner at line 3-5 says NCEI cloud migration may delay data access"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Budget documents, enacted statement and ARL's own report agree.",
+   "figure_status": [
+    "request",
+    "enacted"
+   ],
+   "sole_source_reason": "Agency budget documents and the enacted statement are the authority for budget figures."
+  },
+  {
+   "id": "c7",
+   "text": "NWS Observations funding has held roughly flat: ORF Observations $266,830K actual FY2025, $262,500K enacted FY2026, $262,500K requested FY2027; its FY2027 cuts target buoys and NEXRAD upkeep, not COOP or ASOS. PAC Observations (sustainment) fell from $36,200K actual FY2025 to $16,200K enacted FY2026.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "2025 Actual 2026 Enacted 2027 Base 2027 Estimate from 2027 Base | National Weather Service (NWS) Personnel Amount Personnel Amount Personnel Amount Personnel Amount Personnel Amount | Observations Pos/BA 615 266,830 710 262,500 710 265,803 710 262,500 0 (3,303)",
+     "location": "Exhibit 10, NWS ORF, FY2027 CJ (text line 17473-17475)"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "2025 Actual 2026 Enacted 2027 Base Program | Personnel Amount Personnel Amount Personnel Amount | Observations Pos/BA 2 36,200 4 16,200 4 16,200",
+     "location": "NWS-58, PAC Observations (text lines 19214-19216)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "2024 Enacted 2026 Estimate Increase/Decrease | Personnel Amount Personnel Amount Personnel Amount | Pos/BA 712 249,962 711 251,462 -1 1,500",
+     "location": "NWS-6, Program Increase for 2026 (text lines 6819-6821)"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "NATIONAL WEATHER SERVICE … Observations … $262,500",
+     "location": "NWS ORF table, JES p. (text lines 724-733); PAC table line 909"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "contextualizes",
+     "passage": "Reduce Marine Observations (-$1,803, 0 FTE/ 0 Positions) - With this reduction the National Data Buoy Center (NDBC) will | disestablish seven weather buoys across the system",
+     "location": "NWS-17 to NWS-18, Program Decrease for 2027"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "contextualizes",
+     "passage": "Reduce NEXRAD Radome and Tower Maintenance Services (-$1,500, 0 FTE/ 0 Positions) - This reduction will limit NEXRAD | radome and tower maintenance services to only urgent inspections.",
+     "location": "NWS-20, Program Decrease for 2027"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Agency CJ tables and enacted statement agree.",
+   "figure_status": [
+    "actual",
+    "enacted",
+    "request"
+   ],
+   "sole_source_reason": "Agency budget tables and enacted statement are the authority for budget figures."
+  },
+  {
+   "id": "c8",
+   "text": "No 2025-2026 threat to CoCoRaHS was found; it is run by the Colorado Climate Center at CSU with more than 28,000 volunteers, NOAA and NWS are listed as sponsors, and no NOAA award naming CoCoRaHS after 2015 was found on USAspending.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "Reports received today 11/18/2026 as of 9:10 AM EST | Daily | Multi-day | SigWx | Hail | Condition | ET | 6,379 | 46 | 0 | 0 | 6 | 7 … CoCoRaHS is currently the largest source of daily precipitation observations in North America. It is composed of more than 28,000 active observers in the United States, Canada, Puerto Rico, the U.S. Virgin Islands, Guam, and the Bahamas. … Copyright © 1998-2025, Colorado Climate Center, All rights reserved.",
+     "location": "home page, report counter and About CoCoRaHS paragraph; footer"
+    },
+    {
+     "source_id": "s76",
+     "relationship": "contextualizes",
+     "passage": "Our current CoCoRaHS Sponsors CIRA - CSU Cooperative Institute for Research in the Atmosphere 1997, 1999-2001, 2004-present The Colorado Agricultural Experiment Station at Colorado State University 1998-present Colorado State University—Department of Atmospheric Science 1998-present … National Oceanic and Atmospheric Administration 2006-present National Science Foundation 1999-2006, 2010 - present National Weather Service 1999-present … U.S. Department of Interior, Bureau of Land Management 2005-present",
+     "location": "Sponsors page, list"
+    },
+    {
+     "source_id": "s91",
+     "relationship": "contextualizes",
+     "passage": "\"Award ID\":\"NA26OARX431G0023\",\"Recipient Name\":\"COLORADO STATE UNIVERSITY\",\"Award Amount\":762266.0,\"Awarding Sub Agency\":\"National Oceanic and Atmospheric Administration\",\"Start Date\":\"2026-09-01\",\"End Date\":\"2028-08-31\" … \"Award ID\":\"NA23OAR4050140D\",\"Recipient Name\":\"COLORADO STATE UNIVERSITY\",\"Award Amount\":239511.0, … \"Start Date\":\"2023-06-01\",\"End Date\":\"2025-10-31\",\"Description\":\"THE STUDY OF PRECIPITATION, THE LOWER ATMOSPHERE AND SURFACE FOR HYDROMETEOROLOGY (SPLASH) … \"page_metadata\":{\"page\":1,\"hasNext\":false",
+     "location": "API JSON results array (19 records)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Absence of evidence after targeted searches; current funding route not public."
+  },
+  {
+   "id": "c9",
+   "text": "The FY2026 request sought to eliminate about 1,200 National Mesonet observation platforms; Congress rejected it and enacted $30,000,000 for FY2026, and the House FY2027 bill recommends $40,000,000.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s78",
+     "relationship": "supports",
+     "passage": "National Mesonet Program.--The recommendation includes | $30,000,000 for the National Mesonet Program to leverage large | investments by other sponsors, increase the number of | observations, include new types of data, and introduce | innovative capabilities to address capacity and geographic | coverage gaps. … Of the funds provided, up to $1,500,000 may | be used for costs associated with the National Mesonet Program | Office. … The Committee rejects the request to eliminate | approximately 1,200 observation platforms and instead directs | NOAA to sustain the current level of procurement of non-Federal | surface and near-surface mesonet observational data, with a | focus on university partnerships.",
+     "location": "lines 1781-1796"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "National Mesonet Program.- The agreement adopts House language and provides | $30,000,000 for the National Mesonet Program to ex pand observations, including up to $ 1,500,000",
+     "location": "NWS ORF narrative (text lines 754-755)"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "National Mesonet Program.--The recommendation includes | $40,000,000 for the continuation and expansion of the National | Mesonet Program … Within the funding provided, the | Committee directs NOAA to sustain and expand the current level | of procurement of non-federal surface and near-surface mesonet | observational data, with a focus on university partnerships. … Regional Climate Centers (RCCs).--The recommendation | includes $6,100,000 for RCCs.",
+     "location": "lines 2129-2141; 2229-2230"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "House report and enacted statement.",
+   "figure_status": [
+    "request",
+    "enacted",
+    "proposed"
+   ],
+   "sole_source_reason": "Committee reports and the enacted statement are the authority for appropriations."
+  },
+  {
+   "id": "c10",
+   "text": "Gauges anchor radar and satellite precipitation estimates: MRMS gauge-corrected QPE outperforms radar-only but weights radar where gauges are sparse; IMERG underestimates heavy rain over the U.S.; radar suffers beam blockage and covers under half of the Northwest RFC area in the cool season; losing 63 hourly gauges in 2013 degraded 9% of MARFC crest forecasts by more than 20%.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "1-hr QPE – Radar Only, HADS and MADIS gauge data … The goal of the Radar QPE w/ Gauge Bias Correction product is to improve upon the QPE – Radar Only product by using surface-based observations (i.e. rain gauges) to bias correct the QPEs. … - ->For a radar pixel with few or only one gauge available for the interpolation, α < 1 and more weight to be given to the radar estimates, as opposed to the gauge network. … The Radar QPE w/ Gauge Bias Correction leverages the spatial coverage of radar data, adjusted with direct rainfall observations. It has proven to outperform the Radar-Only product. … Complex terrain and sparse rain gauge densities impact the estimates in the Western U.S. and in mountainous areas.",
+     "location": "lines 121, 133, 166, 196, 204"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "headwater basins without the 63 gages. In 9% of the … degraded by more than 20%.",
+     "location": "Summary and conclusions (right column)"
+    },
+    {
+     "source_id": "s66",
+     "relationship": "supports",
+     "passage": "IM-F and its components overestimate the contribution of light rainfall (,1 mm h21) and underestimate the | contribution of high rainfall rates (.10 mm h21) to the total rainfall volume. Strong regional dependencies are highlighted, | especially over the West Coast, where the proximity of complex terrain to the coastline challenges precipitation estimates. … suggesting that the | monthly gauge correction does not inﬂuence the quantity of | precipitation across IM-L and IM-F products. It could be | due to lack of reporting rain gauges over land–coast–ocean | continuum or monthly rain gauge adjustment technique is | not sufﬁcient to improve performance of IM-L.",
+     "location": "Abstract (lines 35-37) and Conclusions bullet (lines 736-743, right column); pdftotext renders < and > as , and . and minus as 2"
+    },
+    {
+     "source_id": "s64",
+     "relationship": "supports",
+     "passage": "Regions of complex terrain present a challenging environment for using NEXRAD to observe potential flash flood-causing weather systems. Two of the more serious problems are those of beam blockage and beam overshoot. … Placing the radar at a higher elevation or on a mountaintop may alleviate this problem, but doing so may cause the radar beam to overshoot lower levels. As a result, the precipitation intensity can be underestimated, or some precipitation may go undetected altogether … the radar beam spreads as it propagates away from the radar so that the NEXRAD beam is more than 1 km wide at a distance of about 60 km from the radar site.",
+     "location": "Chapter 5, paragraphs 1 and 4 (text lines 24, 40)"
+    },
+    {
+     "source_id": "s71",
+     "relationship": "supports",
+     "passage": "Klazura et al (1999) and others have shown that while the computational range of the PPS is 230 km, the true range for valid rainfall estimates is generally less than 230 km due to severe range degradation associated with beam overshoot and partial beam filling. … The main point brought out in figures 29 - 32 is that there are significant gaps in radar coverage for precipitation estimation in the NWRFC area of forecast responsibility. The problem is much worse in the cool season when the climatology is dominated by stratiform events and significantly affected by snow. Figure 30 indicates that radar covers less than half of the NWRFC area of forecast responsibility for precipitation estimation in the cool season.",
+     "location": "section 4.1 and 4.3 (text line 94)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Agency guide and studies, several older than 2025.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c11",
+   "text": "COOP and CoCoRaHS feed the U.S. Drought Monitor and GHCN-Daily, the official archive for COOP data.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s61",
+     "relationship": "supports",
+     "passage": "How the US Drought Monitor uses | COOP and CoCoRaHS data | • RCC's ACIS program | • Precipitation and Temperature Maps | • SPI/SPEI Calculations … • Daily CoCoRaHS precipitation reports … • Archive of historical drought indices | based off the best/most complete COOP | sites … • The NWS COOP network is a key cog in the USDM system. | • CoCoRaHS data helps to fill in data gaps and validate other | products. | • Legacy stations in the COOP network are invaluable to the | drought and climate communities … • If a legacy station is shutting down, it should be a priority to | get replaced somehow.",
+     "location": "slides, text lines 100-137"
+    },
+    {
+     "source_id": "s74",
+     "relationship": "supports",
+     "passage": "About half the stations only report precipitation. … GHCNd also serves as the official archive for the U.S. Cooperative Observer data, which have been comprehensively integrated into the dataset with other U.S. daily data sources. … At station networks within the U.S., sources providing Cooperative Summary of the Day data are given preference to other data streams since they contribute the largest amount of data. … Checks for precipitation totals that differ significantly from totals (and percentiles) reported at neighboring stations on the preceding, current, and following days.",
+     "location": "Overview and Integration/QC sections (text lines 11, 40, 132, 226)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NDMC slides (2022) and NCEI page."
+  },
+  {
+   "id": "c12",
+   "text": "The Senate-passed S. 3923 (Nov 10, 2026) would require a NOAA-FAA-DoD ASOS assessment and plan and a GAO report on ASOS within 4 years; it is pending in the House.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "(b) Joint Assessment and Plan for Automated Surface Observing | System.-- | (1) In general.--The Under Secretary, in collaboration with | the Administrator of the Federal Aviation Administration and | the Secretary of Defense, shall-- | (A) conduct an assessment of resources, personnel,",
+     "location": "Sec. 705(b) (text lines 6510-6515)"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "(d) Report on Automated Surface Observing System.--Not later than 4 | years after the date of the enactment of this Act, the Comptroller | General of the United States shall submit to Congress a report that-- | (1) evaluates the functionality, utility, reliability, and | operational status of the automated surface observing system",
+     "location": "text lines 7043-7047"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Bill text.",
+   "sole_source_reason": "Bill text."
+  },
+  {
+   "id": "c13",
+   "text": "Non-NOAA federal precipitation networks saw 2025 disruptions: NRCS SNOTEL staff cuts (Portland office 12 to 5) and longer site outages, some NADP federal sites closed in 2025 while funding stayed about $3.1 million, and four NOAA Regional Climate Centers went dark April 17-21, 2025.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s81",
+     "relationship": "supports",
+     "passage": "The Portland office that runs the Northwest’s network of remote snow-telemetry or SNOTEL sites has lost more than half its staff. … The U.S. Department of Agriculture’s Natural Resources Conservation Service (NRCS) office in Portland has shrunken from a staff of 12 to just five. Three probationary employees were fired as part of a government-wide purge of newer employees, and a hiring freeze prevented filling four open positions, according to O’Neill. … The SNOTEL network collects data on snowpack, mountain weather, and soil moisture at 178 sites in Oregon and 129 in Washington. … “Without any of this maintenance, basically the SNOTEL stations, one by one, by next winter will start dying,” he said.",
+     "location": "article body, lines 41-61"
+    },
+    {
+     "source_id": "s89",
+     "relationship": "supports",
+     "passage": "RE: Request to Exempt the SNOTEL Program from Reduction in Force cuts … The fifty undersigned organizations and businesses … The SNOTEL network includes 900 sites … reduced staffing and with federal travel restrictions in place, SNOTEL sites were offline for | unusually long periods as remaining staff were stretched thin in their efforts to reach remote | sites and repair sensitive equipment. If vacant positions remain unfilled and further cuts are | instituted through a RIF2, NRCS will lose its ability to maintain the SNOTEL network to the | current standard. … According to an April 7, 2025 Government Executive article, NRCS is expecting a 23% RIF",
+     "location": "pages 1-2, lines 11-23, 92-96, footnote line 118"
+    },
+    {
+     "source_id": "s84",
+     "relationship": "supports",
+     "passage": "She also discussed NADP’s financial status, noting that federal and state | funding remained stable, with total expected funding of approximately $3.1 million. … Some federal sites did close during 2025, but many | have been picked up by other federal agencies. BLM no longer supports its sites. … MDN site numbers continue to decline, with about 15 sites switching to biweekly sampling at the | beginning of the new year, which will help reduce costs for those sites. … Grant funding for PFAS and NTN monitoring: Although grant funding was paused, plans are | underway to establish a PFAS science committee … David Gay noted that NOAA sites might rejoin the network. … all federal funding was successfully | distributed to the participating agencies, except for two federal partners that withdrew.",
+     "location": "lines 74-85, 113-114, 126, 745-746"
+    },
+    {
+     "source_id": "s85",
+     "relationship": "supports",
+     "passage": "One regional climate center director said funding approval did not come by the time the previous year's contract ended on April 17 because of additional contract review procedures in Washington, D.C. … their operations ceased at midnight on Thursday due to a lapse in federal funding, which comes from the Department of Commerce through the National Oceanic and Atmospheric Administration. … The other centers that were shut down included the Midwestern Regional Climate Center; which covers nine states; the High Plains Regional Climate Center, covering six states; and the Southeastern Regional Climate Center, which covers six states and two U.S. territories. … Meanwhile, the Western and Northeastern centers have a funding deadline for June 17.",
+     "location": "article body, lines 53-77"
+    },
+    {
+     "source_id": "s86",
+     "relationship": "contextualizes",
+     "passage": "The centers and their websites shut down abruptly on April 17 due to a lapse in federal funding, but resumed operations this week after receiving stop-gap funds. | They will now continue to operate as normal until a deadline in mid-June, when all six of the centers are set to renew their contracts with the National Oceanic and Atmospheric Administration through the Department of Commerce. | Under the guidance of Secretary Howard Lutnick, the Department of Commerce is reportedly reviewing all federal contracts over $100,000, which has led to some federal funding delays. … Both the SRCC and the Midwest Regional Climate Center — which covers nine states — were among those whose climate data services were restored on April 21 … The High Plains Regional Climate Center — which covers six states — resumed operations April 18, some 36 hours after going dark.",
+     "location": "article body, lines 55-71"
+    },
+    {
+     "source_id": "s83",
+     "relationship": "contradicts",
+     "passage": "During June and July 2026, staff | from the Salem MLRA SSO supported NRCS Oregon Snow Survey and National Water | and Climate Center (NWCC) staff with the installation of new soil moisture and | temperature sensors at the Mud Ridge and Mt. Hood Test Site SNOTEL locations. … Oregon Snow Survey staff also completed regular annual site | maintenance. … Since 2023, NRCS Oregon Soil Survey, NWCC, and SPSD staff have upgraded 30 of | Oregon’s 82 SNOTEL sites with soil moisture and temperature sensor capability",
+     "location": "pages 1-2"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "News and stakeholder letters plus NADP minutes.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c14",
+   "text": "NOAA is funded through Dec 11, 2026 by a CR at FY2026 rates (P.L. 119-103), with no NWS-specific provision.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "Sec. 101.  Such amounts as may be necessary, at a rate for | operations as provided in the applicable appropriations Acts for fiscal | year 2026 and under the authority and conditions provided in such Acts, … (2) The Commerce, Justice, Science, and Related Agencies | Appropriations Act, 2026 (division A of Public Law 119-74), | except sections 521(c)(2) and 544. … (3) <<NOTE: Expiration date.>>  December 11, 2026. … Sec. 121.  Amounts made available by section 101 for ``Department of | Commerce--National Oceanic and Atmospheric Administration--Procurement, | Acquisition and Construction'' shall be apportioned at the rate for | operations necessary to maintain the planned launch schedules for the | Geostationary Extended Observations (GeoXO) satellite system.",
+     "location": "Div. A Sec. 101(2), Sec. 106(3), Sec. 121 (lines 57-73, 152, 297-301)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Public law text.",
+   "sole_source_reason": "Public law text."
+  },
+  {
+   "id": "c15",
+   "text": "During the Oct-Nov 2025 shutdown state climatologists lost access to NCEI's quality-controlled observations; no COOP-specific data loss was reported.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "State climatologists \"have lost access to some data sources, such as quality-controlled climatological observations from the National Centers for Environmental Information,\" per Justin Glisan.",
+     "location": "article body (WebFetch extract)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "Single news source."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Number of FAA ASOS sites moving to AWOS-C",
+   "source_ids": [
+    "s9",
+    "s10"
+   ],
+   "status": "unresolved",
+   "explanation": "NWS FAQ question says 207, its heading and FAA's ASWON page say 206; neither explains the difference."
+  },
+  {
+   "claim": "Size of the COOP network",
+   "source_ids": [
+    "s33",
+    "s52"
+   ],
+   "status": "unresolved",
+   "explanation": "2026 RFC says ~6,700 sites; older NWS/NCEI pages give 8,500-12,000; no source says whether the difference is attrition or counting."
+  }
+ ],
+ "coverage_gaps": [
+  "ASOS-specific dollar amounts: NOT PRESENT in FY26 and FY27 NOAA CJs (ASOS sits inside ORF/PAC Observations PPAs; coordinator reads those lines). FAA's FY2026 Weather Systems Portfolio request ($28,050K per search summary only) unverified: FAA FY2026 Budget Estimates PDF saved at work/raw/sa2/faa_fy26_cj.pdf from the Wayback copy, but pdftotext was denied by the permission classifier; the coordinator can convert it and search 'Weather Systems Portfolio', 'ASWON', 'AWOS-C'. FAA FY2027 budget and FY2026 enacted FAA line for ASWON NOT FOUND. (from sa2)",
+  "No 'ASOS Next' or named ASOS replacement program found in FY26/FY27 CJs (only SLEP/ASOS 2.0 ACU-DCP refresh and sensor replacement); only Radar Next is named. (from sa2)",
+  "No 2025-2026 GAO or OIG report on ASOS maintenance found; only OIG-25-012-I (NWS operational technology cybersecurity, 2/27/2025) via FY27 CJ table; that OIG report itself not read. S.3923 (Senate-passed) would require a future GAO ASOS report; enactment status not checked. (from sa2)",
+  "No national count of ASOS sites down, outage durations, or ET vacancy totals found; evidence is site-level NWS notices (Frankfort offline since late June 2025; KAUG, KSPI, KBEH, KAOH undated) and the March 20, 2025 staffing memo. Alaska ISER Q4CY25 availability report full text refused (403). (from sa2)",
+  "Which of the 206/207 FAA ASOS sites move to AWOS-C (site list linked from weather.gov/asos/faq.html, not read) and whether NWS treats them as climate sites; Frankfort notice says AWOS 'typically do not meet' climate-record criteria. FAA ASWON page says AWOS-C reports precipitation accumulation. (from sa2)",
+  "Number of ASOS sites with AWPAG weighing gauges vs heated tipping buckets, and the status of the precipitation accumulation sensor replacement (FAQ said 'Planned for FY2024', last updated 2023): NOT FOUND. Ott Pluvio not named in NWS pages read. (from sa2)",
+  "Leads not read: WKYT July 17 2026 Frankfort story; Longmont Leader Leadville ASOS article (host refused); NPR June 2025 NWS rehiring; Washington Post Dec 6 2025 winter staffing story; VLab Aug 2025 thread on low ASOS/AWOS 48-hour rainfall totals (404); Peraton Alaska AWOS order (Jan 2026); KMEI Meridian 2025 outage; Nov 13 2026 NWS communications outage news. (from sa2)",
+  "No source found on COOP-specific staffing losses (Observations Program Leaders, HMTs) in 2025-2026, on COOP stations closed in 2025-2026, or on a 2025-2026 observer count other than the ~6,700-site figure in the May 2026 RFC and June 2026 SAM notice. Older NWS/NCEI pages give 8,500-12,000 stations/observers; whether the drop is real attrition or a different counting basis is NOT stated. (from sa1)",
+  "Outcome of the COOP modernization (RFC closed June 8 2026; SAM 1305M2-COOP sources-sought closed July 13 2026): no decision, award, site list or closure plan found. Whether 'up to 3,000' AIO sites means the rest of the ~6,700 would close or move to mesonet data is NOT stated. (from sa1)",
+  "Effect of the Oct-Nov 2025 shutdown on COOP observers or COOP data delivery to NCEI not found; only state climatologists losing access to NCEI data (Farms.com Nov 13 2025). WERA 2024 COOP update (media.cocorahs.org) could not be downloaded. (from sa1)",
+  "OIG NWS staffing audit (Project 2025-523) final report not found as of search; OIG SAR-2026-03 not read. GAO has no 2025-2026 report on NWS surface observing systems found (only GAO-25-108597 aviation meteorologists, GAO-26-107739 GeoXO). S.3923 (Senate-passed) would require a future GAO ASOS report. (from sa1)",
+  "Original CNN reports (May 2 and May 14, 2025) behind the 'more than 90 vacancies' among radar/ASOS repair staff and '16 electronics technicians' figures could not be read (HTTP 451). NOAA's own count of electronics technician vacancies NOT found. (from sa1)",
+  "No NWSEO statement tying staffing to precipitation/surface observations found; NWSEO site blog has no 2025-26 staffing posts. Status of FY2027 appropriations after the CR expires December 11, 2026 not checked. (from sa1)",
+  "Note: queries from items_queries2.json were added twice to return.json by mistake (7 duplicate query entries). (from sa1)",
+  "The WERA 2024 COOP update listed under unreadable was later downloaded and read (source sa1-e25); disregard that unreadable entry. (from sa1)",
+  "USCRN budget line NOT found: no saved CJ or appropriations text names USCRN, Reference Network or ATDD (find_text across FY26/FY27 CJs, FY26 JES, House reports 119-272 and 119-652, Senate reports, bills). USCRN funding presumably sits in NESDIS/NCEI and/or OAR ARL lines, but no source read here says which. (from sa3)",
+  "ATDD staff cuts, Oak Ridge office lease termination, deferred USCRN maintenance: NOT found. ARL pages (arl.noaa.gov) return 403 to fetch_page and WebFetch; they need a browser read: 'Upgrading ARL's largest meteorological network' (July 23, 2026, per search summary: 139 towers, 45 states, last transmitter at Newton MS April 25, 2026) and the 2025 OAR awards page (snippet: staff 'navigated the proposed termination of their facility's 40-year lease' serving INL, i.e., ARL Idaho Falls). (from sa3)",
+  "Idaho Falls NOAA office (1750 Foote Drive) was on DOGE's March 2025 lease-termination list with expected cancellation Aug 31 per Idaho Statesman/Spokesman-Review (search summary only; eastidahonews.com and spokesman.com not read). This is ARL's Idaho Falls division, not the USCRN/ATDD Oak Ridge office. (from sa3)",
+  "USRCRN (regional network) and HCN-Modernization current status NOT found; only 2008-2012 material (NCEI usrcrn.html page in search results not read). (from sa3)",
+  "NCEI CRN 'current observations' page (https://www.ncei.noaa.gov/access/crn/current-observations) not read; would show how many stations lack current data now (a Dec 4, 2025 blog comment said 6 of 25 Alaska sites). (from sa3)",
+  "NOAA Science Advisory Board Nov 2023 radar gaps presentation (https://sab.noaa.gov/wp-content/uploads/SAB_MtgPres_Nov2023_EISWG-Radar-Gaps.pdf) returned 403; not read. Martinaitis et al. MRMS gap-filling paper and NWS NWRFC radar coverage paper (radar covers less than half of NWRFC area in cool season, per search summary) not read. (from sa3)",
+  "No 2025-2026 study quantifying impact of COOP/CoCoRaHS loss on GHCN-Daily, normals or homogeneity was found; Drought Monitor dependence only from NDMC 2022 slides. Bright band effects NOT PRESENT in sources read. (from sa3)",
+  "No source found for current (2016-2026) NOAA funding of CoCoRaHS: which NOAA office funds it now, award amounts and periods. USAspending keyword search returns only NOAA awards ending 2010 and 2015. Funding may flow via a CIRA cooperative agreement or NWS contracts not naming CoCoRaHS; try USAspending recipient=Colorado State University with NOAA sub-agency 2020-2026, and the CoCoRaHS Donate page. (from sa4)",
+  "No evidence found of any 2025-2026 NOAA cut, cancellation or delay to CoCoRaHS, CSU staff cuts or coordinator reductions (r17, r22). NSF 2313996 (NC State, CoCoRaHS partner) ends 2025-04-18 within a stated three-year project; termination not confirmed - check NSF award page. CSU give page (403) not read. AASC 2025 statement not found. (from sa4)",
+  "FY2026 request to eliminate approximately 1,200 observation platforms (House report 119-272) not traced to the CJ program-change table; share that measure precipitation not stated. RCC 2026 contract outcomes (NCEI solicitations 1332KP26R0024, 1332KP26R0027) not confirmed. CBS Colorado (NRCS Colorado snow sites 72 to 25) and Western States Water Council (NWCC lost 7 positions, approx. 40% of snow survey workforce) seen only in snippets. USGS precipitation gauges and NWS HADS/IFLOWS/ALERT not searched (time). NYS Mesonet funding cut (Schumer release, DHS money) seen in snippet only. (from sa4)",
+  "c1: confirmed. All 4 passages found word for word (ignoring whitespace): fr_2026_09099.txt lines 141, 259; mpx_coop_rfc.txt lines 146-156; govly_1305M2-COOP_extract.txt lines 10-11. Counter-search found no decision, closure list or award. (from checker)",
+  "c3: confirmed (text matches: asos_faq.txt lines 94, 156-168; faa_aswon.txt lines 25, 55, 70), with a figure note: the FAQ heading says Transitioning 206 Sites while its question says 207; FAA ASWON says Replace 206 ASOS. The claim figure of 308 NWS-owned ASOS and the statement that they are not being converted are not in the checklist passages and not found in asos_faq.txt (NOT PRESENT there). No counterevidence; Alaska Air Carriers Association Aug 12, 2026 briefing (50 AWOS sites finalized, timelines fluid) added as contextualizes. (from checker)",
+  "c4: confirmed. Passages found word for word: kfft_press_release.txt lines 8, 16, 21-23; frankfort_asos.txt lines 177, 182. Counter-search found no correction. (from checker)",
+  "c5: confirmed. Passages found word for word: asos_current_events.txt lines 92-104; cnn_2025-05-02_wayback.txt line 47; cantwell_2025-05_nws.txt line 23; oig_tmc_fy2026.txt lines 656-663. No counterevidence; search snippets only point to 2025 rehiring (126 positions; authority to hire 450 by Sept 2026), not read. (from checker)",
+  "c6: confirmed. Passages found word for word: noaa_fy26_cj.txt lines 5801, 5806, 5952; noaa_fy27_cj.txt lines 15618, 15623, 16178; fy26_cjs_jes.txt lines 661 (as $ 104, 102), 669-671; ARL article lines 18, 26; ncei_uscrn_product.txt lines 24, 28. FY27 CJ line 1071 also shows 104,102 for Climate Laboratories in the 2026 column. Counter-search found no Oak Ridge closure in 2026. (from checker)",
+  "c9: confirmed. Passages found word for word: hrpt119-272.txt lines 1782, 1792-1793; fy26_cjs_jes.txt lines 754-755; hrpt119-652.txt lines 2130, 2139, 2230. No enacted FY2027 or Senate FY2027 Mesonet figure found; lead not read: commerce.senate.gov WIL26506.pdf (Nov 2026, FY2027 authorization figure for the program). (from checker)",
+  "c2: confirmed. Passages found word for word: FY27 CJ line 19232; FY26 CJ lines 6729, 6796-6797, 7465, 7485, 7515 (reused copies). FY27 CJ line 19179 repeats Initiate refresh of end-of-life sensors for Cooperative Observer Program, so the claim of both years holds. Counter-search found no award or change. (from checker)",
+  "c7: confirmed. Table rows found (whitespace differs only): FY27 CJ lines 17473-17475 (also 17642-17644), 19214-19216; FY26 CJ lines 6819-6821; FY27 CJ lines 17704 and 17821 for the buoy and NEXRAD decreases. JES line not re-checked. Counter-search found no Senate FY2027 figure (CRS IF13275, July 28, 2026: no Senate CJS bill introduced). (from checker)",
+  "c8: confirmed. Passages found: cocorahs_home.txt line 12; cocorahs_sponsors.txt line 7; usaspending_cocorahs.json and usaspending_csu_noaa_precip.json line 1 (field order as quoted). Counter-search CoCoRaHS funding cut 2026 found nothing specific to CoCoRaHS. Report counter not re-checked. (from checker)",
+  "c10: not checked against saved text (time); one counter-search found nothing disputing it. (from checker)",
+  "c10 (update, replaces the not-checked note): confirmed. Passages found: wdtd_mrms_gauge_bias.txt lines 166, 196, 204; susquehanna_gage_reduction.txt lines 13, 32, 801 (two-column text, passage reassembled column-wise as its location says); imerg_land_coast_ocean_eval.txt lines 35, 739 (two-column); nrc_flash_flood_complex_terrain_ch.txt lines 24, 40; nws_nwrfc_radar_coverage.txt line 94. Counter-search found nothing disputing it. (from checker)",
+  "DuckDuckGo gap pass not run: token budget reached by the research subagents (see method.md).",
+  "Follow-up queue items not tried after the merge (token budget): CNN May 14 2025, The Hill, SAM.gov original 1305M2-COOP, Alaska ISER full text, Longmont Leader, VLab thread, Heartland brief, NPR, FAA FY2027 CJ, Stage IV EOL page, SAB radar gaps slides."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/upgrading-arls-largest-meteorological-network/",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "Read in browser after 403 to fetch tools; found 139 towers upgrade, counterevidence to USCRN threat",
+   "from": "main",
+   "copy_of": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/upgrading-arls-largest-meteorological-network/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://sam.gov/search/?index=opp&keywords=1305M2-COOP",
+   "tool": "lookup (SAM.gov search, built-in browser)",
+   "notes": "Search page shows no results (closed notices excluded by default); primary copy of 1305M2-COOP not read",
+   "from": "main",
+   "copy_of": "https://app.govly.com/public/opportunities/16692860"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "url=https://web.archive.org/web/2025/https://www.cnn.com/2025/05/02/weather/nws-forecasting-layoffs-trump",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved copy opened; 90+ radar/ASOS repair vacancies passage found",
+   "from": "main",
+   "copy_of": "https://www.cnn.com/2025/05/02/weather/nws-forecasting-layoffs-trump"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=sam.gov/opp/1305M2-COOP (Wayback availability API, timestamp 20260701)",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "No saved copy of the SAM notice; aggregator copy remains the only read",
+   "from": "main",
+   "copy_of": "https://app.govly.com/public/opportunities/16692860"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS outages technician shortage 2025",
+   "tool": "WebSearch",
+   "notes": "No filter. Only ASOS retailer results; nothing on the weather system.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS sustainment 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov, noaa.gov. Found ASOS Current Events (March 2025 staffing memo, SLEP), FAQ (950 sites, 207 to AWOS-C), NWSI 30-2111, Frankfort retirement.",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS service change notice 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov. Found SCN 26-34 (RTP product discontinued; ASOS DSM continues) and SCN26-90 (GOES ASOS cloud product station changes, not read). No SCN reducing ASOS gauges found.",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FAA ASOS sustainment budget 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains faa.gov. Found ASWON page (ASWON S2, replace 206 ASOS with AWOS-C). No ASOS dollar line found; FAA CIP/budget justification not read.",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO surface weather observing systems ASOS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov. Only 1992-2006 GAO reports; no 2025-2026 GAO work on ASOS found.",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OIG ASOS maintenance",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.doc.gov, oig.dot.gov. Only old DOT OIG/Commerce OIG items; 2025 Commerce OIG OIG-25-012-I (NWS operational technology security) found via FY27 CJ table instead.",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS weather station broken repairs 2025",
+   "tool": "WebSearch",
+   "notes": "Extended mode, no filter. Found Frankfort, KSPI, NWSI 30-2111, Campbell case study, FAA dashboard blog, Alaska StateScoop.",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "airport weather sensor outage NWS technicians 2025",
+   "tool": "WebSearch",
+   "notes": "Extended mode, no filter. Found GYX Augusta KAUG present weather sensor outage (missing rainfall), Nov 13 2026 NWS communications outage news (not read).",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "find_text.py ASOS|Automated Surface in FY26 CJ, FY27 CJ, FY26 JES, House reports, Senate reports, bills",
+   "tool": "lookup (saved CJ and report files)",
+   "notes": "Hits: FY26 CJ lines 6723, 6744, 6751, 6768, 6797, 6827, 7447, 7477, 7522; FY27 CJ lines 17588, 17600, 17608, 17636, 17647, 17674, 19171, 19187, 19270, 28363, 28368; srpt119-44 lines 3468-3474; srpt119_154 lines 1629, 1706; s3923_es lines 6510-6578, 7043-7047. fy26_cjs_jes.txt, hrpt119-272, hrpt119-652, hr3816_ih: ASOS NOT PRESENT.",
+   "from": "sa2",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS electronics technicians vacancies 2025",
+   "tool": "WebSearch",
+   "notes": "USAJOBS postings and NWS Lincoln ET flyers (July 2025, Jan 2025). No vacancy totals.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Automated Surface Observing System replacement 2026",
+   "tool": "WebSearch",
+   "notes": "Found Campbell ASOS 2.0 case study (1,529 units delivered by 2025), KFFT press release (July 17 2026), Pago Pago ASOS foundation forecast. No 'ASOS Next' program found.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS precipitation sensor failures 2025",
+   "tool": "WebSearch",
+   "notes": "Found GYX KAUG, Frankfort, VLab forum thread on low 48-hour ASOS/AWOS rainfall totals (Aug 2025; page 404).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "National Weather Service technician shortage weather stations offline 2025",
+   "tool": "WebSearch",
+   "notes": "Extended mode. AP/CBS/WaPo staffing stories (20% vacancy at about half of offices; balloon launches cut). None ties staffing to ASOS gauges; not read in full.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FAA AWOS ASOS outage dashboard 2026",
+   "tool": "WebSearch",
+   "notes": "Found FR 2026-09272 (Surface Weather Status Dashboard), Alaska ScholarWorks Q4CY25 AWOS/ASOS METAR availability report (page 404).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS precipitation gauge Pluvio replacement 2026",
+   "tool": "WebSearch",
+   "notes": "Found NWS AWPAG page, TippingBucket page, Iowa Heartland brief (CY2026 ASOS 2.0 incl. weighing gauge, not read). Pluvio not named.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Washington Post weather service electronics technicians radar ASOS repairs 2025",
+   "tool": "WebSearch",
+   "notes": "Found Spokesman (WaPo) March 1 2025 article (read), NPR June 2025 rehiring, Longmont Leader Leadville ASOS (host refused).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS to AWOS-C transition sites list precipitation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov, faa.gov. No site list with precipitation details; FAQ only.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS hires electronics technicians 2026 staffing ASOS",
+   "tool": "WebSearch",
+   "notes": "Only mid-2025 NPR rehiring stories (126 positions) and an opinion Substack claiming ASOS drifting out of calibration (not read).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FAA AWOS-C ASOS replacement contract 2026",
+   "tool": "WebSearch",
+   "notes": "Found Cherokee $69.4M AWOS award (June 2025, read), Peraton Alaska AWOS order up to $30M (Jan 2026, not read), Crooked Creek AWOS-C replacement $7.2M (not read).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS outage weeks weather.gov 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov. Found KBEH, KAOH (undated, read), KMEI Meridian 2025 (not read).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"ASOS 2.0\" deployment 2026",
+   "tool": "WebSearch",
+   "notes": "No filter. Only ASOS retailer results.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS ASOS sensor deployment precipitation weighing gauge 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov, noaa.gov. Found LOT observations FAQ (HTB replaced by AWPAG at many sites; read), TippingBucket page (read), AWPAG release notes (old, not read). No 2026 deployment counts.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FAA FY 2026 budget estimates Weather Sensors ASWON Sustainment",
+   "tool": "WebSearch",
+   "notes": "allowed_domains faa.gov, transportation.gov. Found FAA FY2026 Budget Estimates CJ (403; archive copy saved, conversion denied), CIP FY25-29 (not read), FAA FY2026 AFR (not read).",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://web.archive.org/web/2025/https://www.transportation.gov/sites/dot.gov/files/2025-05/FAA_FY_2026_Budget_Estimates_CJ.pdf",
+   "tool": "lookup (Wayback Machine copy of FAA FY2026 budget estimates)",
+   "notes": "Archive copy 20260112085710 downloaded; text conversion denied.",
+   "from": "sa2",
+   "copy_of": "https://www.transportation.gov/sites/dot.gov/files/2025-05/FAA_FY_2026_Budget_Estimates_CJ.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "airport ASOS out of service NWS 2026",
+   "tool": "WebSearch",
+   "notes": "Extended mode. Only Frankfort (plus WKYT July 17 2026 story, not read) and general pages; no other 2026 multi-week ASOS outages found.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FAA FY 2027 budget estimates Weather Systems Portfolio",
+   "tool": "WebSearch",
+   "notes": "allowed_domains transportation.gov, faa.gov. Found FAA FY2027 Budget Estimates CJ PDF (transportation.gov/sites/dot.gov/files/FAA_FY_2027_Budget_Estimates_CJ.pdf); Wayback download denied by the permission classifier, not read. 2C04 FY2027 figure NOT FOUND.",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Cooperative Observer Program 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: weather.gov. Only undated/older regional COOP pages (11,000-12,000 stations; 8,700+ volunteers). No 2025 notice.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "GAO National Weather Service staffing 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: gao.gov. GAO-25-108597 Aviation Meteorologists (CWSU staffing, 69 meteorologists June 2025) - not observations. Not read.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "GAO weather observations 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: gao.gov. GAO-26-107739 GeoXO satellites; GAO-26-108013 weather modification; GAO-26-107992 FAA ATC (AWOS). Nothing on surface precipitation networks or COOP.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "OIG National Weather Service 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: oig.doc.gov. Found 2025-07-17 staffing audit announcement (Project 2025-523; read), Texas flood evaluation 2025-524, OIG-25-026-I tornado, OIG-25-012-I OT security, Radar audit terminated Aug 2025. No final staffing report found.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NWSEO statement staffing observations 2025",
+   "tool": "WebSearch",
+   "notes": "No domain filter. News citing NWSEO (nearly 600 left, 700 vacancies, April 2025 Reduced Service Operations agreement). nwseo.org/blog fetched: no 2025-26 staffing posts.",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NWSEO hydrometeorological technicians cooperative observer 2025",
+   "tool": "WebSearch",
+   "notes": "Nothing tying NWSEO/HMTs to COOP; NWSI 10-1307 (Feb 10, 2025) COOP directive found, not read.",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "cooperative weather observers stations 2025",
+   "tool": "WebSearch",
+   "notes": "No filter. Found FR 2026-09099 COOP RFC (read), NWSI 10-1307 Feb 2025, NCEI '8,500 volunteers', WERA 2024 COOP update (media.cocorahs.org blocked).",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "COOP weather station closed 2026",
+   "tool": "WebSearch",
+   "notes": "No specific 2026 closures; NWSI 10-1307 Sec. 9.15 station closing procedure; Lookout Santa Cruz 2022 station stopped; mpx RFC page (read).",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "National Weather Service Observations appropriations 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: congress.gov, appropriations.house.gov, appropriations.senate.gov. FY26 JES (saved earlier; searched with find_text: Observations $262,500K ORF, $16,200K PAC, $10M WFO staffing, Sec. 114), Senate summary, S.3923. Also searched saved hrpt119-652 and CJs for 'Cooperative Observ', 'surface observ', 'staffing'.",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWS COOP program staffing cuts 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode. Only NWS-wide staffing news (FactCheck, NPR, PBS, The Hill); no COOP-specific.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Cooperative Observer Program modernization 2026",
+   "tool": "WebSearch",
+   "notes": "Found SAM 1305M2-COOP sources sought (June 12, 2026) via govly/fundinglandscape/samsearch copies.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "National Weather Service reorganization 2026 observations",
+   "tool": "WebSearch",
+   "notes": "Bloomberg/E&E/political.org reorg news; House approps testimony Jordan 2026-03-25 (read); Senate Commerce WIL26506 bill text (saved, no COOP match).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "government shutdown cooperative observers weather data 2025",
+   "tool": "WebSearch",
+   "notes": "Farms.com Nov 13 2025 (read via WebFetch), E&E, NOTUS; nothing COOP-specific.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "COOP Network Modernization Management Paradigm Analysis 1305M2-COOP",
+   "tool": "lookup (SAM notice title)",
+   "notes": "No relevant results (DoD network pages).",
+   "from": "sa1",
+   "copy_of": "https://app.govly.com/public/opportunities/16692860"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NWS hiring 2026 meteorologists technicians positions filled",
+   "tool": "WebSearch",
+   "notes": "Mostly June 2025 NPR (126 hires), 450-job authorization; no 2026 fill counts in results.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "cooperative observer network 6,700 stations NWS 2026",
+   "tool": "WebSearch",
+   "notes": "Confirms ~6,700 figure from FR and SAM notice; SAM notice up to 3,000 AIO units.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Lutnick testimony National Weather Service 589 vacancies hiring 2025",
+   "tool": "WebSearch",
+   "notes": "Lutnick June 4 2025 'fully staffed'; Cantwell 40 hydrologist vacancies; 126 hires. Not read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "National Weather Service staff cuts observations 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode. Cantwell May 3 2025 statement (read: >90 vacancies radar/ASOS repair staff); CBS 2026 (read); balloon launch cuts (upper-air context).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "FY2027 budget request National Weather Service observations cut",
+   "tool": "WebSearch",
+   "notes": "CRS IF13275 (saved by earlier run), news: FY27 request cuts NWS marine observations and streamflow/rainfall research grants; House draft requires NWS staffing levels.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "ASOS outages electronics technicians vacancies 2025",
+   "tool": "WebSearch",
+   "notes": "Only retail/job-ad noise (ASOS the retailer). Nothing useful.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "cooperative observers volunteers NWS visits equipment 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode. Only general WFO COOP pages (8,700 / 11,000 volunteers, 1-2 visits per year). No 2026 news.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NWS electronics technicians vacancies ASOS maintenance 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: eenews.net, cnn.com, npr.org, washingtonpost.com, senate.gov, house.gov. Found Cantwell May 29 2025 letter (read), CNN May 2/May 14 2025 (CNN returned HTTP 451), E&E June 2026 (read), HR 3809 bill.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Weather Workforce Improvement Act 2025 electronic technicians direct hire",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: congress.gov, house.gov, senate.gov. H.R.3809 (introduced June 6 2025, referred), S.1958 FORECAST Act, S.3923 direct hire (saved copy searched).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"cooperative observer\" weather station volunteer retires no replacement 2025",
+   "tool": "WebSearch",
+   "notes": "Anecdotes only: Santa Cruz station stopped 2022 (Lookout, 2026), Bill Pancake WV retirement 2025, Lockwood MO observer (KSMU Apr 2026). Not read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NOAA continuing resolution FY2027 National Weather Service 2026",
+   "tool": "WebSearch",
+   "notes": "FY27 request news; CRS IF13275 (saved by earlier run, searched); no CR info.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "continuing resolution fiscal year 2027 enacted September 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: congress.gov, appropriations.house.gov, appropriations.senate.gov, whitehouse.gov. P.L. 119-103 (Sept 2 2026, through Dec 11 2026) read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "ASOS outages electronics technicians vacancies 2025",
+   "tool": "WebSearch",
+   "notes": "Only retail/job-ad noise (ASOS the retailer). Nothing useful.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "cooperative observers volunteers NWS visits equipment 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode. Only general WFO COOP pages (8,700 / 11,000 volunteers, 1-2 visits per year). No 2026 news.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NWS electronics technicians vacancies ASOS maintenance 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: eenews.net, cnn.com, npr.org, washingtonpost.com, senate.gov, house.gov. Found Cantwell May 29 2025 letter (read), CNN May 2/May 14 2025 (CNN returned HTTP 451), E&E June 2026 (read), HR 3809 bill.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Weather Workforce Improvement Act 2025 electronic technicians direct hire",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: congress.gov, house.gov, senate.gov. H.R.3809 (introduced June 6 2025, referred), S.1958 FORECAST Act, S.3923 direct hire (saved copy searched).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"cooperative observer\" weather station volunteer retires no replacement 2025",
+   "tool": "WebSearch",
+   "notes": "Anecdotes only: Santa Cruz station stopped 2022 (Lookout, 2026), Bill Pancake WV retirement 2025, Lockwood MO observer (KSMU Apr 2026). Not read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NOAA continuing resolution FY2027 National Weather Service 2026",
+   "tool": "WebSearch",
+   "notes": "FY27 request news; CRS IF13275 (saved by earlier run, searched); no CR info.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "continuing resolution fiscal year 2027 enacted September 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: congress.gov, appropriations.house.gov, appropriations.senate.gov, whitehouse.gov. P.L. 119-103 (Sept 2 2026, through Dec 11 2026) read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "weather service volunteer observer network modernize mesonet 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode. Only the COOP RFC (FR, govinfo copy at https://www.govinfo.gov/content/pkg/FR-2026-05-07/pdf/2026-09099.pdf), NWS X posts, local Mississippi news reposts. No final decision or site list found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "COOP newsletter 2025 cooperative observer",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: weather.gov. Newsletter index page only (weather.gov/coop/Training-Awards-Newsletter); no 2025 issue surfaced. Not read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Fischer-Porter rain gauge replacement NWS 2026",
+   "tool": "WebSearch",
+   "notes": "No 2026 FPR replacement program found. WeatherNation 2019 (read via WebFetch: ~1900 C-HPD stations; out of date range, not saved as source); AMS paper (>2,000 F&P gauges, undated); ABC13 Dec 2025 ASOS rain sensor at IAH (read).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "OIG National Weather Service staffing audit report 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: oig.doc.gov. Staffing audit 2025-523 final report NOT found; read OIG-26-003 TMC FY2026 and OIG-26-017-I (Apr 9 2026). SAR-2026-03 not read.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "COOP modernization comments state climatologists concern 2026",
+   "tool": "WebSearch",
+   "notes": "No stakeholder comments or reactions found; only the RFC and SAM copies (congress.wiki, policyrisk, open-gov aggregators).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Cooperative Observer Program budget cut FY2027 request",
+   "tool": "WebSearch",
+   "notes": "No source names COOP in FY2027 cuts; IOOS, NMFS cuts reported. COOP lines are in the FY27 CJ (coordinator reading).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NWS hydrometeorological technician positions cut 2025 observations program leader",
+   "tool": "WebSearch",
+   "notes": "Only NPR June 2025 hiring syndications (126 positions: meteorologist, hydrologist, physical scientist, electronic technicians). HMT / OPL losses NOT found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WxCoder cooperative observers shutdown October 2025 data",
+   "tool": "WebSearch",
+   "notes": "No relevant results (software shutdown pages, Wikipedia COOP). Shutdown effect on COOP reporting NOT found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "U.S. Climate Reference Network 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov. Found USCRN overview (114 CONUS, 25 AK of 29 planned, 2 HI), monthly reports; no 2025 funding/operations change found.",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network news 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov. Found NCEI USCRN product page (ATDD partnership) and ARL July 23, 2026 story on transmitter upgrade at 139 towers (page 403).",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Air Resources Laboratory closure 2026 budget",
+   "tool": "WebSearch",
+   "notes": "Found Cantwell OAR cuts PDF (July 2025) listing ARL closure; news on lab closures; no enacted closure found.",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ATDD Oak Ridge USCRN 2025",
+   "tool": "WebSearch",
+   "notes": "Nothing on ATDD/USCRN in 2025; only an ORAU 2024 story and unrelated DOE Oak Ridge documents. No lease-termination or staff-cut item.",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network cuts 2025",
+   "tool": "WebSearch",
+   "notes": "Extended mode. Found NOAA tech report on USCRN soil moisture downsizing assessment (OAR-NIDIS-001, 2025); otherwise general NOAA cuts coverage, nothing USCRN-precipitation-specific.",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN stations maintenance 2026",
+   "tool": "WebSearch",
+   "notes": "Found ARL upgrade page (403); general maintenance description (annual visits); no deferred maintenance reports.",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA Oak Ridge atmospheric turbulence lab layoffs 2025",
+   "tool": "WebSearch",
+   "notes": "Extended mode. No Oak Ridge/ATDD-specific layoffs found; only FY26 closure proposal and general NOAA 2025 layoffs.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "climate reference network stations Alaska 2025",
+   "tool": "WebSearch",
+   "notes": "Found ak-wx blog Dec 2025 (25 AK CRN sites, 6 of 25 without current data Dec 4, 2025; funding comment).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN funding FY2026",
+   "tool": "WebSearch",
+   "notes": "No relevant results; USCRN budget line NOT found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI staff cuts 2025 climate data",
+   "tool": "WebSearch",
+   "notes": "News: NCEI lost about twenty employees (FedScoop), monthly briefings ended, billion-dollar disasters product ended; not read in full (likely covered by other subagents).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Historical Climatology Network Modernization HCN-M stations status",
+   "tool": "WebSearch",
+   "notes": "Only 2008-2012 material (plan for 1,000 of 1,221 HCN stations; pilot of 141 SW stations); no current status found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "find_text Reference Network|USCRN|Air Resources|ATDD|Oak Ridge in FY26 and FY27 CJ and saved appropriations files",
+   "tool": "lookup (saved CJ and appropriations texts)",
+   "notes": "FY26 CJ: ARL lines 5806, 5952; Oak Ridge 7831 (Gaea, unrelated). FY27 CJ: ARL 15623, 16178; Oak Ridge 19881 (Gaea). No USCRN/Reference Network/ATDD match in any saved file (CJs, JES, House/Senate reports, bills).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "MRMS gauge bias correction radar precipitation",
+   "tool": "WebSearch",
+   "notes": "Found WDTD product guide (read) and AMS LGC papers.",
+   "from": "sa3",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "rain gauge network loss impact flood forecasting",
+   "tool": "WebSearch",
+   "notes": "Found MARFC Susquehanna 2013 gauge loss study (read), NRC 1998 chapter, Pew 2013 article.",
+   "from": "sa3",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Drought Monitor CoCoRaHS COOP observations importance",
+   "tool": "WebSearch",
+   "notes": "Found NDMC WERA1012 2022 slides (read), USDA Climate Hub fact sheet, drought.gov citizen-science item.",
+   "from": "sa3",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG gauge comparison United States accuracy",
+   "tool": "WebSearch",
+   "notes": "Studies use MRMS as reference; IMERG better east than west.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "radar satellite precipitation estimates cannot replace gauges",
+   "tool": "WebSearch",
+   "notes": "General literature; gauges are the reference for satellite/radar; not read in full.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NEXRAD coverage gaps beam blockage precipitation estimation West",
+   "tool": "WebSearch",
+   "notes": "Found NRC 2005 flash flood complex terrain chapter (read); NOAA SAB 2023 radar gaps presentation (403).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "loss of COOP stations climate record",
+   "tool": "WebSearch",
+   "notes": "Found Gigafact 2025 brief (read) on estimates for offline USHCN stations; NRC 1998 chapter not read.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "IMERG underestimates heavy rainfall gauges evaluation CONUS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains repository.library.noaa.gov, ntrs.nasa.gov, journals.ametsoc.org. Found Derin et al. 2022 (read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Stage IV precipitation analysis River Forecast Centers gauges quality control",
+   "tool": "WebSearch",
+   "notes": "Stage IV is NCEP mosaic of 12 RFC analyses with manual QC; Dec 2024 NW station-data exclusion notice (page JS-only, unreadable).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Air Resources Laboratory reorganization 2026 Oak Ridge",
+   "tool": "WebSearch",
+   "notes": "Found ARL news snippet (2025 OAR awards page) about staff navigating 'the proposed termination of their facility's 40-year lease' while serving Idaho National Laboratory (Idaho Falls, not Oak Ridge); page 403 to fetch_page/WebFetch. No Oak Ridge reorganization found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA Oak Ridge office lease termination 2025 GSA",
+   "tool": "WebSearch",
+   "notes": "House Natural Resources Democrats GSA lease list downloaded: Interior agencies only, no NOAA/Oak Ridge TN entries (file renamed _unused). No NOAA Oak Ridge lease termination found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA Air Resources Laboratory Idaho Falls lease termination 2025",
+   "tool": "WebSearch",
+   "notes": "DOGE March 2025 list included NOAA office at 1750 Foote Drive, Idaho Falls (expected cancel Aug 31 per Idaho Statesman via Spokesman-Review); ARL Feb 2026 item says staff navigated the proposed lease termination. Outcome not confirmed; pages not read (spokesman.com, eastidahonews.com not .org; ARL 403).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "lookup (NCEI CRN current observations table)",
+   "tool": "lookup (NCEI USCRN current observations page)",
+   "notes": "Read live table 2026-11-18: 4 stale rows of 161; see sa3-e17.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "lookup (NCEI USRCRN page)",
+   "tool": "lookup (NCEI usrcrn.html from r12 results)",
+   "notes": "72 Southwest USRCRN stations' data stopped June 1, 2014 (SCN 14-25); see sa3-e19.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS NOAA funding 2025 cut",
+   "tool": "WebSearch",
+   "notes": "No CoCoRaHS-specific funding item; general FY26 NOAA budget coverage only (CRS IF13024, Inside Climate News). Left to the CoCoRaHS subagent.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "lookup (NWS Hydrology Lab NWRFC radar coverage paper)",
+   "tool": "lookup (weather.gov page from NEXRAD gaps search)",
+   "notes": "Read; radar covers less than half of NWRFC area in cool season; see sa3-e18.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "lookup (USDA Climate Hub CoCoRaHS fact sheet)",
+   "tool": "lookup (PDF from r16 results)",
+   "notes": "Read; USDM affects USDA disaster relief funding; see sa3-e20.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "gauge density impact MRMS QPE accuracy study",
+   "tool": "WebSearch",
+   "notes": "allowed_domains repository.library.noaa.gov, journals.ametsoc.org, nssl.noaa.gov. No direct MRMS gauge-thinning study found; Velasquez et al. 2025 (JHM) read but it alters QPE with an error term rather than removing gauges (renamed _unused).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS funding 2025",
+   "tool": "WebSearch",
+   "notes": "No CoCoRaHS funding item; only a CAPS 2026 presentation listing. No domain filter.",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS NOAA funding cut",
+   "tool": "WebSearch",
+   "notes": "No article naming CoCoRaHS; general NOAA FY26 cut coverage (RCC elimination mention). No filter.",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS observers 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org. Home page (28,000+ observers), 2026 Rain Gauge Rally (1,544 new observers in April per snippet), state newsletters. No funding/cut news.",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USAspending keyword CoCoRaHS (grants/coop agreements 2008-2026)",
+   "tool": "lookup (USAspending spending_by_award API)",
+   "notes": "4 awards: NOAA NA06SEC4690004 and NA10SEC0080012 to CSU (ended 2010, 2015); NSF 1010888 to CSU (ended 2017); NSF 2313996 to NC State (2024-01-01 to 2025-04-18). No current NOAA award found by keyword.",
+   "from": "sa4",
+   "required_id": "r18"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USAspending keyword Community Collaborative Rain (2015-2026)",
+   "tool": "lookup (USAspending spending_by_award API)",
+   "notes": "Only NASA NNX17AF94A and NSF 2313996. No NOAA award.",
+   "from": "sa4",
+   "required_id": "r18"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "National Mesonet Program funding 2026",
+   "tool": "WebSearch",
+   "notes": "Snippets: NYS Mesonet DHS cut (Schumer), Nebraska Mesonet USACE money, S.613 and S.3923 bills, KBR contract. Saved House/JES/Senate files searched with find_text.py for 'Mesonet': FY26 House $30M (rejects elimination of approx. 1,200 platforms), Senate not less than $27M, JES $30M, FY27 House $40M.",
+   "from": "sa4",
+   "required_id": "r19"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "SNOTEL staffing cuts 2025",
+   "tool": "WebSearch",
+   "notes": "OPB/KUOW Mar 2025 (Portland NRCS 12 to 5 staff), Mountaineers Apr 2025 letter (50 orgs), Water Desk Jun 2025.",
+   "from": "sa4",
+   "required_id": "r20"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "NRCS snow survey cuts 2025",
+   "tool": "WebSearch",
+   "notes": "Padilla/Schiff Dec 22 2025 letter; CBS Colorado (72 to 25 sites, undated, not read); Western States Water Council NWCC 7 positions lost (not read); Nevada NRCS 2025/2026 updates.",
+   "from": "sa4",
+   "required_id": "r20"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "Regional Climate Centers funding lapse 2025",
+   "tool": "WebSearch",
+   "notes": "Apr 17 2025 lapse for 4 of 6 RCCs; restored Apr 18-21; mid-June deadline; WRAL: SERCC extension through April 2026.",
+   "from": "sa4",
+   "required_id": "r21"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "American Association of State Climatologists statement 2025",
+   "tool": "WebSearch",
+   "notes": "No AASC statement found; only AASC 2026 newsletters, 2025 annual meeting listing.",
+   "from": "sa4",
+   "required_id": "r22"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS volunteers 2025 federal cuts",
+   "tool": "WebSearch",
+   "notes": "No CoCoRaHS-specific cut; Yahoo/USA Today recruiting piece says NWS under pressure; NRCC Apr 2025 presentation 27,400+ volunteers (not read).",
+   "from": "sa4",
+   "required_id": "r22"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS NOAA grant 2025",
+   "tool": "WebSearch",
+   "notes": "give.colostate.edu CoCoRaHS 2025 fundraiser (403, unreadable); citizenscience.gov Apr 2024: Data Explorer funded by NOAA Office of Education grant; NWS flyer: sponsored by NOAA and NSF.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "NADP funding 2025 precipitation chemistry",
+   "tool": "WebSearch",
+   "notes": "NADP fall 2025 minutes (read), USGS FS 2025-3041 (USGS largest federal funder, 69 NTN sites - not read), NIFA NRSP-3 award.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "mesonet NOAA contract 2025 observation platforms eliminated",
+   "tool": "WebSearch",
+   "notes": "Civil Beat May 2025 (read); KBR Wyle National Mesonet contract from Sept 1 2026 (samsearch, not read); Undark/ICN Aug 2025 private data.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "NOAA Regional Climate Centers contract 2026",
+   "tool": "WebSearch",
+   "notes": "NCEI 2026 solicitations 1332KP26R0024 (Midwestern, IDIQ 2026-2031, due June 17 2026), 1332KP26R0027 (Southern, due June 26 2026); awards NOT PRESENT.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "SNOTEL sites maintenance 2026",
+   "tool": "WebSearch",
+   "notes": "NRCS Oregon Jun-Jul 2026 upgrades (read); Idaho repairs Jan 2026; Synoptic SNOTEL web service degraded Mar 27 2026 (resolved).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USAspending recipient Colorado State University, NOAA subtier, keyword precipitation, FY2021-2026",
+   "tool": "lookup (USAspending spending_by_award API)",
+   "notes": "19 OAR research awards; none CoCoRaHS.",
+   "from": "sa4",
+   "required_id": "r18"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "ALERT flood warning rain gauges NWS funding 2025",
+   "tool": "WebSearch",
+   "notes": "No ALERT/IFLOWS/HADS source; snippets on USGS streamgages at risk (Lever/Jacobin July 2025: proposed 22 percent cut to the USGS line funding the flood-warning gauge network; 6 TX, 4 Asheville, 14 FL gauges at risk). Streamflow, not precipitation; not read.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWS COOP modernization decision 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c1; Counter-search. No decision, closure list or contract award found. Results: FR 2026-09099 (May 7, 2026; comments to June 8, 2026), MPX RFC page, sources-sought 1305M2-COOP copies (samsearch.co snippet: posted June 12, 2026, closed July 13, 2026; no contracts from the notice). Nothing against c1.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AWOS-C transition ASOS sites 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c3; Counter-search. Results: ASOS FAQ (207 sites, 2025-2029), FAA ASWON (Replace 206 ASOS), Frankfort KY press release (AWOS by summer 2027), Alaska Air Carriers Association Aug 12, 2026 briefing (50 AWOS sites list, read, added as source). No reversal or differing schedule for the program found.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Frankfort ASOS climate site retired 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c4; Counter-search. Only the NWS LMK press release and web page already in checklist; no correction or reinstatement found.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS electronics technicians hired 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c5; Counter-search. No 2026 count of technicians hired found. Search summary (not read): NPR June 3, 2025 rehiring story (126 new positions incl. electronic technicians, per union official); USA Today Aug 2025 (permission to hire 450 by Sept 2026, incl. electronics technicians); NWS Lincoln ET flyer July 2025. Context of later rehiring, not a reversal of the 2025 figures.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Air Resources Laboratory Oak Ridge 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c6; Counter-search. No Oak Ridge closure or ATDD reduction news found for 2026. ARL site items dated Feb 19, Apr 16, May 11, 2026 (awards, gas release study, Assistant Administrator visit) show lab active; not read.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q7",
+   "query": "National Mesonet Program 2027 appropriations",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c9; Counter-search. No enacted FY2027 figure and no Senate FY2027 Mesonet appropriation figure found. AGU The Bridge May 26, 2026 post (snippet) says House bill sets 40 million for the Mesonet (consistent). Lead not read: commerce.senate.gov/wp-content/uploads/2026/11/WIL26506.pdf (Nov 2026, has a National Mesonet Program section with FY2027 authorization figure, amount not seen).",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS funding cut 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c8; Counter-search. Nothing specific to CoCoRaHS; results are general FY2026/FY2027 science budget coverage (CBPP, NPR Mar 3 and May 5, 2026, UCS FY27 blog). No threat to CoCoRaHS found.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Cooperative Observer Program equipment refresh 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c2; Counter-search. Results are the May 2026 RFC, MPX page, sources-sought 1305M2-COOP copies (up to 3,000 All-in-One systems; responses due July 13, 2026), NWSI 10-1307 (Feb 10, 2025). No award, final equipment list or 2026 deployment schedule found; nothing against c2.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NWS Observations PPA FY2027 Senate appropriations",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c7; Counter-search. No Senate FY2027 Observations figure. CRS IF13275 (July 28, 2026, snippet, not read): no Senate CJS bill introduced at that date; FY2027 request for NOAA 4.54 billion discretionary, 1.1 billion below FY2026 enacted; House committee bill about 1% below FY2026 enacted for ORF and PAC. Nothing against c7 figures.",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "MRMS gauge-corrected QPE evaluation sparse gauges 2025",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c10; Counter-search. Nothing disputes c10; results (not read) are the WDTD MRMS product guide already cited, NOAA IR gauge QC papers (noaa/32147, 32245, 32145), and a July 2025 Remote Sensing merging-methods paper reporting limits where gauge coverage is sparse. Passages for c10 not checked (time).",
+   "from": "checker"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA/NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NWS COOP pages and notices",
+   "query": "Cooperative Observer Program 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q6",
+   "aim": "GAO reports on NWS staffing or observing systems",
+   "query": "GAO National Weather Service staffing 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "Commerce OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q6",
+   "aim": "OIG reports on NWS",
+   "query": "OIG National Weather Service 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NWSEO",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q6",
+   "aim": "union statements on staffing and observations",
+   "query": "NWSEO statement staffing observations 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": null,
+   "publisher": "press",
+   "subquestion_id": "q1",
+   "aim": "news on COOP stations",
+   "query": "cooperative weather observers stations 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "Congress",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q6",
+   "aim": "appropriations reports on NWS Observations",
+   "query": "National Weather Service Observations appropriations 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA/NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "NWS ASOS pages and service change notices",
+   "query": "ASOS sustainment 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "FAA",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q2",
+   "aim": "FAA ASOS sustainment and budget",
+   "query": "FAA ASOS sustainment budget 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "GAO/OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "oversight reports on ASOS",
+   "query": "GAO surface weather observing systems ASOS",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": null,
+   "publisher": "press",
+   "subquestion_id": "q2",
+   "aim": "news on ASOS outages",
+   "query": "ASOS weather station broken repairs 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "ASOS in saved CJs and appropriations reports",
+   "query": "find_text ASOS in saved CJs",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "NCEI USCRN pages",
+   "query": "U.S. Climate Reference Network 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "OAR ARL",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "ARL/ATDD status",
+   "query": "Air Resources Laboratory closure 2026 budget",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": null,
+   "publisher": "press",
+   "subquestion_id": "q3",
+   "aim": "news on USCRN cuts",
+   "query": "Climate Reference Network cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q5",
+   "aim": "studies on gauge loss and radar QPE",
+   "query": "MRMS gauge bias correction radar precipitation",
+   "skip_reason": null
+  },
+  {
+   "id": "r16",
+   "organization": "NIDIS/NDMC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "Drought Monitor data needs",
+   "query": "Drought Monitor CoCoRaHS COOP observations importance",
+   "skip_reason": null
+  },
+  {
+   "id": "r17",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "CoCoRaHS news on funding",
+   "query": "CoCoRaHS funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r18",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "award records for CoCoRaHS",
+   "query": "USAspending CSU CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r19",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q7",
+   "aim": "National Mesonet Program funding",
+   "query": "National Mesonet Program funding 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r20",
+   "organization": "USDA NRCS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q7",
+   "aim": "SNOTEL staffing and operations",
+   "query": "SNOTEL staffing cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r21",
+   "organization": "NOAA NCEI",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q7",
+   "aim": "Regional Climate Centers funding",
+   "query": "Regional Climate Centers funding lapse 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r22",
+   "organization": "AASC",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q4",
+   "aim": "state climatologists statements",
+   "query": "American Association of State Climatologists statement 2025",
+   "skip_reason": null
+  }
+ ],
+ "entities": [
+  {
+   "name": "Cooperative Observer Program (COOP)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s33",
+    "s1"
+   ]
+  },
+  {
+   "name": "Automated Surface Observing System (ASOS)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s9",
+    "s1"
+   ]
+  },
+  {
+   "name": "U.S. Climate Reference Network (USCRN)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s6",
+    "s67"
+   ]
+  },
+  {
+   "name": "CoCoRaHS",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s75",
+    "s76"
+   ]
+  },
+  {
+   "name": "National Mesonet Program",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s78",
+    "s5"
+   ]
+  },
+  {
+   "name": "NRCS SNOTEL",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s81",
+    "s89"
+   ]
+  },
+  {
+   "name": "National Atmospheric Deposition Program (NADP)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s84",
+    "s90"
+   ]
+  },
+  {
+   "name": "Regional Climate Centers (RCCs)",
+   "included": true,
+   "reason": null,
+   "source_ids": [
+    "s85",
+    "s86",
+    "s4"
+   ]
+  },
+  {
+   "name": "U.S. Regional Climate Reference Network (USRCRN)",
+   "included": false,
+   "reason": "Data stopped June 1, 2014; outside the period.",
+   "source_ids": [
+    "s72"
+   ]
+  },
+  {
+   "name": "USGS precipitation gauges, HADS, IFLOWS and ALERT flood gauges",
+   "included": "not_researched",
+   "reason": "Not searched: time and token budget.",
+   "source_ids": []
+  }
+ ]
+}
