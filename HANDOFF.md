@@ -23,11 +23,11 @@ Last updated 2026-11-25. Update this file before compacting a session and at the
   the gap queries are now committed; `docs/ideas/` stays git-ignored (the user's notes for Claude to read; the user
   removes it when finished); the `local-notes` branch and its snapshot script are not used here; `.work/` was not
   copied (the venv was rebuilt here, see "Tests").
-- **Setup (2026-11-25):** the user ran `git init` and the empty first commit on `main`, made `develop`, rebuilt the venv
-  (all e2e tests pass here), checked the site, created both GitHub repos and pushed `main` to the user's. The repo's
-  commit email was set to the placeholder text from Claude's instructions by mistake, so the pushed "Initial commit"
-  (`4546d98`) carries it; the fix (set the real noreply address, amend that commit, force-push the one-commit `main`)
-  and the two push URLs are the user's next step. Then the first real commit on `develop`.
+- **Setup (done 2026-11-25):** the user made the repo (`main` with an empty "Initial commit", then `develop`), set the
+  repo's commit email to the GitHub noreply address, rebuilt the venv (all e2e tests pass here), checked the site and
+  created both GitHub repos. The first commit, `b87f55c` "Start precipitation_rstar_scoring from
+  Rstar_precipitation-relationships" (308 files), is on `develop` and `main` and was pushed to both. Both commits carry
+  the noreply address. (An earlier "Initial commit" with a placeholder email was amended and force-pushed away.)
 
 ## Goal
 
