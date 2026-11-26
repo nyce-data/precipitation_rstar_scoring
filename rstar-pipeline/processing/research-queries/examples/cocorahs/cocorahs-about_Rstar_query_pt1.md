@@ -16,8 +16,9 @@ P-4 (which groups do the work).
 
 Research the CoCoRaHS (Community Collaborative Rain, Hail and Snow Network) daily precipitation observations as a
 dataset; mention its hail, snow, condition-monitoring, soil-moisture and evapotranspiration reports only to say how they
-relate. Where is it stored and served: the CoCoRaHS data site (cocorahs.org ViewData, the Station Data Explorer at
-dex.cocorahs.org, the Water Year Summaries at wys.cocorahs.org and the maps), any bulk download, API or web service, and
+relate. Where is it stored and served: the CoCoRaHS data site (cocorahs.org ViewData, the Data Export Portal and
+Export Manager at data.cocorahs.org, the Station Data Explorer at dex.cocorahs.org, the Water Year Summaries at
+wys.cocorahs.org and the maps), any other bulk download, API or web service, and
 every other place that holds a copy, such as NOAA NCEI's GHCN-Daily, the National Weather Service and state
 climatologists, with URLs, which one is the archive of record, and whether each is a shared archive, CoCoRaHS's own
 data site, or a copy? What are its inputs: how many volunteer observers and stations it has in each country and how
@@ -40,6 +41,13 @@ infrastructure". With a time limit of 30 minutes and a token ceiling of 240,000.
   - the ViewData page lists report pages and summaries, but says nothing about download formats, an API, a DOI or a
     data version;
   - the data use policy makes the data free under CC BY 4.0, provided "as is".
+- **Already known (metadata file `rstar-pipeline/input/dataset-metadata/markdown/cocorahs_dataset-metadata.md`, a ChatGPT answer, added 2026-11-25, not yet checked):**
+  - a Data Export Portal (data.cocorahs.org) with an Export Manager and a daily CSV export endpoint that takes start
+    and end dates, state, station and units as parameters, so a bulk route does exist; no DOI for the dataset;
+  - coverage: the United States, Canada, Puerto Rico, the U.S. Virgin Islands and the Bahamas;
+  - users documented beyond NCEI: NWS river forecasting (NOAA report noaa/62044) and the METplus verification
+    software, whose CoCoRaHS page describes the data and how to retrieve them.
+  Ask the run to confirm these and say whether the export route is documented as public and stable.
 - **Already known (earlier runs in web_search_results/):** CoCoRaHS stations are about 40% of GHCN-Daily's entries, and
   about 2,139 CoCoRaHS station IDs had 2025 data but none in 2026, against normal turnover of 1,785–2,078 a year
   (`2026-11-21_ghcn-daily-sources-pt5`). The rain-gauge run reports more than 28,000 volunteers

@@ -23,9 +23,9 @@ for D-3.
 
 Using the earlier runs' records in web_search_results/ on CoCoRaHS (`*_cocorahs-about-pt1` and
 `*_cocorahs-qc-formats-pt2`) and on NOAA NCEI (`2026-11-17_noaa-ncei-threats` and NCEI's A2 run, if it has run), how
-resilient is the CoCoRaHS data site (cocorahs.org, the ViewData reports, dex.cocorahs.org, wys.cocorahs.org,
-media.cocorahs.org and the data-entry system) as a home for the network's data? Add to what those runs found rather
-than repeating it.
+resilient is the CoCoRaHS data site (cocorahs.org, the ViewData reports, the data.cocorahs.org export portal,
+dex.cocorahs.org, wys.cocorahs.org, media.cocorahs.org and the data-entry system) as a home for the network's data?
+Add to what those runs found rather than repeating it.
 
 - **Who runs it (D-3):** who built and maintains the website, database and data-entry apps (Colorado Climate Center
   staff, CSU IT, students, or an outside developer), how many people, and whether it depends on one developer; how the
@@ -81,8 +81,8 @@ Using the earlier runs' records in web_search_results/ on CoCoRaHS (the `*_cocor
 `*_cocorahs-qc-formats-pt2` and `*_cocorahs-people-funding-pt3` folders), on GHCN-Daily's sources
 (2026-11-21_ghcn-daily-sources-pt5) and on NOAA NCEI (2026-11-17_noaa-ncei-threats and
 2026-11-23_ghcn-daily-repository-resilience-pt9), how resilient is the CoCoRaHS data site (cocorahs.org, the ViewData
-reports, dex.cocorahs.org, wys.cocorahs.org, media.cocorahs.org and the data-entry system) as a home for the network's
-data? Build on those runs rather than repeating them.
+reports, the data.cocorahs.org export portal, dex.cocorahs.org, wys.cocorahs.org, media.cocorahs.org and the
+data-entry system) as a home for the network's data? Build on those runs rather than repeating them.
 
 - Who runs it (D-3): who built and maintains the website, database and data-entry apps (Colorado Climate Center staff,
   CSU IT, students or an outside developer), how many people, whether it depends on one developer, and how it is paid

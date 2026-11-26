@@ -31,7 +31,8 @@ defunded or under threat". With a time limit of 40 minutes and a token ceiling o
 - **People to confirm, not facts.** These names come from Claude's own knowledge, not from the research: Nolan Doesken
   (founder, former Colorado State Climatologist), Henry Reges (national coordinator) and Russ Schumacher (Colorado State
   Climatologist). Confirm each one's current role from CoCoRaHS's and CSU's pages, and add whoever the staff page
-  lists now. Part 1 may name others.
+  lists now. Part 1 may name others. The metadata file (a ChatGPT answer, 2026-11-25) also names Doesken as founder and
+  Reges as national coordinator, which is still not confirmation.
 - **No federal retirement rule applies.** The staff are Colorado State University employees. Give estimated ages and
   say whether a CSU or Colorado PERA rule is published; don't apply FERS.
 - **Where to find ORCID iDs and earliest publication years:** ORCID (orcid.org, pub.orcid.org), OpenAlex

@@ -37,7 +37,12 @@ DIRS-4 "needs outside processing infrastructure". With a time limit of 30 minute
   - reusable: a stated license and provenance.
 
   The site's data use policy states CC BY 4.0 (reusable), but the ViewData page mentions no DOI or download format.
+  The metadata file (a ChatGPT answer, 2026-11-25) names a CSV route through the Export Manager at data.cocorahs.org;
+  rate that route on its own.
   GHCN-Daily's copy is a separate route with its own DOI; rate it separately.
+- **Start from the QC document.** The metadata file points to "CoCoRaHS Data Quality Assurance and Quality Control"
+  (April 2019, media.cocorahs.org/docs/CoCoRaHS_QA_QC_April_2019.pdf). Ask the run to read it first, and to say
+  whether a newer version exists.
 - **Code, item by item.** Tell published code apart from software only described on the site.
 - **Outside facilities (DIRS-4):** CSU's or a vendor's servers, and any outside developer or contractor that built the
   data-entry system or the Station Data Explorer.

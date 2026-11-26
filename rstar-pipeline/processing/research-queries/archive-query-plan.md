@@ -38,12 +38,17 @@ The templates are in `Rstar_query_results/queries/archive_queries/general_archiv
 
 | Repository | Kind | Datasets | A1 threats | A2 resilience |
 |---|---|---|---|---|
-| NOAA NCEI | Shared archive | GHCN-Daily, GPCP Daily (1DD V1.3, V3.3 CDR), PERSIANN-CDR Daily; also holds CoCoRaHS reports inside GHCN-Daily | Done: `2026-11-17_noaa-ncei-threats` | Written: `A2_Rstar_query-noaa_ncei.md` |
+| NOAA NCEI | Shared archive | GHCN-Daily, GPCP Daily (1DD V1.3, V3.3 CDR), PERSIANN-CDR Daily, ASOS and USCRN Daily (both added 2026-11-25); also holds CoCoRaHS reports inside GHCN-Daily | Done: `2026-11-17_noaa-ncei-threats` | Done: `2026-11-23_A2_Rstar_query-noaa_ncei` |
 | NASA GES DISC | Shared archive | IMERG Late Run, GPCP Daily (V3.x) | Not planned: IMERG's funding and news runs and the NASA satellite run cover NASA's data-systems budget | Written, with PPS: `A2_Rstar_query-nasa_gesdisc_pps.md` |
 | NASA PPS | Producer's site | IMERG Late Run | — (IMERG's Part 4 runs) | In the GES DISC run |
 | UC Irvine CHRS | Producer's site | PERSIANN-CDR Daily (and PDIR-Now, an IMERG input) | — (PERSIANN-CDR's pt3 and pt4) | Written: `A2_Rstar_query-uci_chrs.md` |
 | CoCoRaHS (Colorado Climate Center, CSU) | Producer's site | CoCoRaHS (new dataset) | — (CoCoRaHS's Part 4) | Written: `A2_Rstar_query-cocorahs.md`; the five dataset parts are in `dataset_queries/about_dataset_queries/cocorahs/` with a run sheet |
-| NODD buckets, Earth Engine, dynamical.org, IRI, Data Rescue Project, NCAR GDEX, Copernicus CDS | Copies | various | — | — (checked in the datasets' gap runs) |
+| NODD buckets, Earth Engine, dynamical.org, IRI, Data Rescue Project, NCAR GDEX, Copernicus CDS, Iowa Environmental Mesonet (IEM) | Copies | various (IEM: ASOS) | — | — (checked in the datasets' gap runs, or for ASOS and USCRN Daily in their Part 1) |
+
+ASOS and USCRN Daily (queries written 2026-11-25, in `dataset_queries/about_dataset_queries/asos/` and `uscrn-daily/`,
+each with a run sheet) need only their five dataset parts, since NCEI's A1 and A2 runs are done. If ASOS's Part 1
+finds that IEM, NWS or FAA keeps a full archive of its own, or USCRN's finds that ATDD serves a full copy, that host
+would need an A2 run.
 
 GDEX and the Copernicus CDS are run by large institutions and could become shared archives if a future dataset's
 archive of record is there. For GPCP they only hold copies.

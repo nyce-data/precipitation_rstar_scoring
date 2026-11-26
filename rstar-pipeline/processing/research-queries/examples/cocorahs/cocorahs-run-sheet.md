@@ -25,10 +25,16 @@ others.
 2. **Run each in its own session,** in this project, in the order above.
 3. **Copy the results** into precipitation_rstar_scoring: the dataset runs into
    `rstar-pipeline/input/web-research/about-datasets/cocorahs/`, and the A2 run into `rstar-pipeline/input/web-research/archives/cocorahs/`.
-4. **Before categorizing,** add a metadata file for CoCoRaHS in `rstar-pipeline/input/dataset-metadata/`, so the website shows its full
-   name (see `rstar-pipeline/processing/instructions/categorizing-web-searches_README.md`). The dataset id used here is `cocorahs`.
+4. **Before categorizing,** convert the metadata Markdown (added 2026-11-25:
+   `rstar-pipeline/input/dataset-metadata/markdown/cocorahs_dataset-metadata.md`) into
+   `rstar-pipeline/input/dataset-metadata/cocorahs_dataset-metadata.json` (see that folder's README), so the website shows
+   its card and full name. The dataset id used here is `cocorahs`.
 
 ## Notes
+
+- **Refreshed 2026-11-25** from the new metadata file: Parts 1–3 now mention the Data Export Portal and its CSV
+  route, the 2019 QA/QC document, the METplus page and the countries covered; the A2 query's host list now includes
+  data.cocorahs.org. Still not rewritten or run, except the A2 query, which was already rewritten.
 
 - **Names in Part 3 come from Claude's own knowledge** (Nolan Doesken, Henry Reges, Russ Schumacher), not from the
   research. The query asks the run to confirm them.
