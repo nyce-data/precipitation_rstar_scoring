@@ -22,9 +22,12 @@ Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitatio
      "Publishing"). See "Ninth session" below.
   3. The research and categorizing work in "Next steps" (IMERG and GPCP's NASA GES DISC + PPS A2 run, then
      PERSIANN-CDR Daily, then CoCoRaHS).
-  4. **Three new datasets (tenth session, 2026-11-25):** ASOS, USCRN Daily and CoCoRaHS have queries ready for the user
-     to rewrite and run (see "Tenth session" below). Each needs its metadata Markdown converted to JSON before it gets a
-     dashboard card.
+  4. **Three new datasets (tenth session, 2026-11-25):** ASOS, USCRN Daily and CoCoRaHS have queries ready; at the end
+     of the session the user went to rewrite and run them (see "Tenth session" below). When the user comes back: check
+     which runs are in `Rstar_query_results/web_search_results/`, copy them into
+     `rstar-pipeline/input/web-research/about-datasets/<id>/`, convert each metadata Markdown to JSON
+     (`rstar-pipeline/input/dataset-metadata/README.md`; fix ASOS's ISD links from its Part 1), then categorize with
+     `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md`.
 - **Saved scores collected on the droplet:** later, not yet (see "Hosting").
 
 ## This repo (started fresh 2026-11-25)
@@ -73,8 +76,8 @@ the knowledge graph of dataset relationships is not started. GHCN-Daily, GPCP Da
 PERSIANN-CDR Daily is waiting on supplemental research, and CoCoRaHS is a new dataset not yet researched.
 
 **Tenth session (2026-11-25): queries for three new datasets.** The user added metadata Markdown for ASOS (`asos`),
-USCRN Daily (`uscrn-daily`) and CoCoRaHS (`cocorahs`) in `rstar-pipeline/input/dataset-metadata/markdown/` (untracked,
-the user's files; no JSON yet). Wrote five draft queries and a run sheet each for ASOS (`Rstar_query_results/queries/dataset_queries/about_dataset_queries/asos/`) and
+USCRN Daily (`uscrn-daily`) and CoCoRaHS (`cocorahs`) in `rstar-pipeline/input/dataset-metadata/markdown/` (committed
+at the end of the session; no JSON yet). Wrote five draft queries and a run sheet each for ASOS (`Rstar_query_results/queries/dataset_queries/about_dataset_queries/asos/`) and
 USCRN Daily (`Rstar_query_results/queries/dataset_queries/about_dataset_queries/uscrn-daily/`), from the templates, with what earlier runs already found (rain-gauge run,
 GHCN-Daily pt5 and pt8). **ASOS is scored as the network as a whole** (user's choice): Part 1 lists its 1-minute,
 5-minute, hourly (GHCNh; ISD ended Aug 29, 2025, so the metadata file's ISD links may be stale) and daily products.
@@ -83,7 +86,9 @@ Both are NCEI-hosted, so no new repository runs: five sessions each. USCRN's Par
 choice) from its new metadata file: data.cocorahs.org export portal and CSV route, 2019 QA/QC document, METplus page;
 its already-rewritten A2 query gained data.cocorahs.org in its host list. The CoCoRaHS copies in
 `rstar-pipeline/processing/research-queries/examples/` were synced. The repository register in `archive-query-plan.md`
-now lists ASOS, USCRN Daily and IEM (a copy), and marks NCEI's A2 as done. Nothing committed in either repo.
+now lists ASOS, USCRN Daily and IEM (a copy), and marks NCEI's A2 as done. Committed on `develop`: queries in
+`Rstar_query_results` as `ea7ebfc` (its IMERG pt7 answer copies separately), this repo's notes as `b259d93`, then the
+metadata Markdown and this update. Not merged into `main` or pushed.
 
 **Ninth session (2026-11-25): the card-list script.** New
 `rstar-pipeline/processing/scripts/dashboard/build_datasets.py` builds `app/data/datasets.json` from each
