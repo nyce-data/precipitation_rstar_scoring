@@ -1,7 +1,7 @@
 # Handoff
 
 Notes for the next session: what the project is for, where things stand, and what to do next.
-Last updated 2026-11-25. Update this file before compacting a session and at the end of every session
+Last updated 2026-11-26. Update this file before compacting a session and at the end of every session
 (see CLAUDE.md).
 
 ## Next session (start here)
@@ -24,7 +24,8 @@ Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitatio
      PERSIANN-CDR Daily, then CoCoRaHS).
   4. **Three new datasets (tenth session, 2026-11-25):** ASOS, USCRN Daily and CoCoRaHS have queries ready; at the end
      of the session the user went to rewrite and run them (see "Tenth session" below). When the user comes back: check
-     which runs are in `Rstar_query_results/web_search_results/`, copy them into
+     which runs are in `Rstar_query_results/web_search_results/` (ASOS, CoCoRaHS) and
+     `Rstar_query_results_pt2/web_search_results/` (USCRN Daily; see "Research queries"), copy them into
      `rstar-pipeline/input/web-research/about-datasets/<id>/`, convert each metadata Markdown to JSON
      (`rstar-pipeline/input/dataset-metadata/README.md`; fix ASOS's ISD links from its Part 1), then categorize with
      `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md`.
@@ -203,6 +204,13 @@ GitHub Pages home page (https://lmerchant.github.io/). Committed on `develop` an
 (its own git repo, also on `develop`). Runs save to its `web_search_results/`; the user copies finished runs into this
 project's `rstar-pipeline/input/web-research/`.
 
+**A second folder for parallel runs (2026-11-26):** `/Users/claude/SIDE_WORK/NYCE_project/Rstar_query_results_pt2` is
+a clone of `Rstar_query_results` on branch `uscrn-runs`, so USCRN Daily can run there while ASOS runs in
+`Rstar_query_results`, without the two sessions writing the same files (the run index and HANDOFF.md). It has the
+skill's allowed-domains file and the saved pages (`work/`) of the five earlier runs the USCRN queries name. Finished USCRN
+runs can be copied into this project from pt2 directly. Both query-results HANDOFF.md files say how to merge the branch
+back afterwards.
+
 **The design** (details in the two notes):
 - **Five parts per dataset:** 1 overview, 2 QC/calibration/code/formats, 3 people and funding route (standard tier);
   4 threats and news, 5 threats to inputs (deep tier). Parts 1–3 keep threat words out so they stay standard.
@@ -228,8 +236,8 @@ project's `rstar-pipeline/input/web-research/`.
 | PERSIANN-CDR pt7 (people and production) | `datasets-gap-queries/<id>_gap-queries/`; run sheet `datasets-gap-queries/supplemental-queries-run-sheet.md` | To rewrite and run |
 | NASA GES DISC + PPS A2; UC Irvine CHRS A2 | `Rstar_query_results/.../archive_specific_queries/` | To rewrite and run |
 | CoCoRaHS Parts 1–5 and its data-site A2 | `Rstar_query_results/queries/dataset_queries/about_dataset_queries/cocorahs/` (with `cocorahs-run-sheet.md`) and `A2_Rstar_query-cocorahs.md` | To rewrite and run. Part 3's names (Doesken, Reges, Schumacher) are from Claude's knowledge, to confirm |
-| ASOS Parts 1–5 | `Rstar_query_results/queries/dataset_queries/about_dataset_queries/asos/` (with `asos-run-sheet.md`) | To rewrite and run. NCEI-hosted: no repository run |
-| USCRN Daily Parts 1–5 | `Rstar_query_results/queries/dataset_queries/about_dataset_queries/uscrn-daily/` (with `uscrn-daily-run-sheet.md`) | To rewrite and run. NCEI-hosted: no repository run. Part 3's names beyond Howard Diamond are from Claude's knowledge, to confirm |
+| ASOS Parts 1–5 | `Rstar_query_results/queries/dataset_queries/about_dataset_queries/asos/` (with `asos-run-sheet.md`) | To rewrite and run, in `Rstar_query_results`. NCEI-hosted: no repository run |
+| USCRN Daily Parts 1–5 | `Rstar_query_results/queries/dataset_queries/about_dataset_queries/uscrn-daily/` (with `uscrn-daily-run-sheet.md`) | To rewrite and run, in `Rstar_query_results_pt2` (branch `uscrn-runs`). NCEI-hosted: no repository run. Part 3's names beyond Howard Diamond are from Claude's knowledge, to confirm |
 | IMERG inputs-pt6 | `rstar-pipeline/input/web-research/about-datasets/imerg-late-run/` | Copied 2026-11-23 (answer, query, record only). Rechecked: its leftover gaps were added to IMERG's coverage note and pt7 query |
 
 The coverage notes (`datasets-gap-queries/<id>_coverage-gaps.md`) are not categorizations. Categorize each dataset once,
