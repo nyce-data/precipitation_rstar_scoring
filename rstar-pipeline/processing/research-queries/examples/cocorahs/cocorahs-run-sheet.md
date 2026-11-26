@@ -18,11 +18,21 @@ others.
 
 ## Steps
 
-1. **Rewrite all six in one session** with `/my:rewrite-research-query`, passing the six files. Tell it to keep the
-   standard tier for Parts 1–3 and A2 (no cuts, threats or news), and to replace each `*_cocorahs-...` folder pattern
-   with the real folder name once that run exists. Rewrite Parts 4 and 5 again after Parts 1–3 run if you want them to
-   name those runs exactly.
-2. **Run each in its own session,** in this project, in the order above.
+1. **Rewrite all five dataset parts in one session** with this prompt. The A2 data-site query was already rewritten
+   (2026-11-23), so it is left out:
+
+   ```text
+   /my:rewrite-research-query queries/dataset_queries/about_dataset_queries/cocorahs/cocorahs-about_Rstar_query_pt1.md queries/dataset_queries/about_dataset_queries/cocorahs/cocorahs-about_Rstar_query_pt2.md queries/dataset_queries/about_dataset_queries/cocorahs/cocorahs-about_Rstar_query_pt3.md queries/dataset_queries/about_dataset_queries/cocorahs/cocorahs-about_Rstar_query_pt4.md queries/dataset_queries/about_dataset_queries/cocorahs/cocorahs-about_Rstar_query_pt5.md
+
+   Rewrite all five files in one go. In each file, read the draft from "## Query to refine", including its "Context for the rewrite" and "What the answer should give" subsections. Write the rewritten question into "## Claude web research skill query", starting with the line "/my:broad-web-research", and write your notes into "## Claude comments about the rewritten query". Each of those sections replaces "(not written yet)"; leave the rest of the file as it is.
+
+   Keep these in the questions, because they define the answer: in Part 3, the age proxy (ORCID iD where they publish, earliest publication year or career dates, and estimated age; the staff are Colorado State University employees, so ask whether a CSU or Colorado PERA retirement rule is published rather than applying FERS); in every query, the request to say whether each finding supports or contradicts the subcategory statements. Keep Parts 1–3 standard tier (no cuts, threats or news). Where a file names a run folder with a `*_cocorahs-...` pattern, keep the pattern; I will fill in the real folder name once that run exists.
+   ```
+
+   Rewrite Parts 4 and 5 again after Parts 1–3 have run if you want them to name those runs exactly.
+2. **Run each in its own session,** in this project, in the order above (the A2 run uses the already-rewritten
+   `## Claude web research skill query` section of `A2_Rstar_query-cocorahs.md`): paste the file's
+   `## Claude web research skill query` section, starting with `/my:broad-web-research`.
 3. **Copy the results** into precipitation_rstar_scoring: the dataset runs into
    `rstar-pipeline/input/web-research/about-datasets/cocorahs/`, and the A2 run into `rstar-pipeline/input/web-research/archives/cocorahs/`.
 4. **Before categorizing,** convert the metadata Markdown (added 2026-11-25:
