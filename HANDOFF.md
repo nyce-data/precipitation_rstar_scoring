@@ -4,89 +4,82 @@ Notes for the next session: what the project is for, where things stand, and wha
 Last updated 2026-11-27. Update this file before compacting a session and at the end of every session
 (see CLAUDE.md).
 
-## Status at a glance (2026-11-27, after `744041f`)
+## Status at a glance (end of 2026-11-27, twelfth session)
 
-**On the website now.** The dashboard has cards for seven datasets (ASOS's card and pages added 2026-11-27, below). Each card's "Dataset web research" link opens every
-part of its research:
+**Repo:** `develop`, `main` and `origin/main` are all at `ea8bb0a` (the user merged and pushed). This HANDOFF update is
+committed on `develop` after it. In `Rstar_query_results`, `develop` has the ASOS `query_answers` copies (`cc94615`),
+not pushed.
 
-| Dataset | Web research pages | R* scores |
+**On the website now:** the dashboard has cards for seven datasets. Every card has an overview page and its web
+research pages; three datasets are categorized (R* scores).
+
+| Dataset | Web research pages | R* categorization |
 |---|---|---|
-| GHCN-Daily | 9 parts | Categorized |
-| GPCP Daily | 8 parts | Categorized |
-| IMERG Late Run | 8 parts | Categorized |
+| GHCN-Daily | 9 parts | Fourth pass (2026-11-23): 210 items, 17 of 19 NA |
+| GPCP Daily | 8 parts | Second pass (2026-11-27): 134 items, 11 of 19 NA |
+| IMERG Late Run | 8 parts | Third pass (2026-11-27): 149 items, 10 of 19 NA |
 | PERSIANN-CDR | 6 parts | Not categorized yet |
-| CoCoRaHS | 5 parts and an overview (new, `744041f`) | Not categorized yet |
-| USCRN Daily | 5 parts and an overview (new, `744041f`) | Not categorized yet |
-| ASOS | 5 parts and an overview (new, 2026-11-27) | Not categorized yet |
+| CoCoRaHS | 5 parts | Not categorized yet |
+| USCRN Daily | 5 parts | Not categorized yet |
+| ASOS | 5 parts | Not categorized yet |
 
-**CoCoRaHS and USCRN Daily (done in `744041f`):** metadata JSON converted from their Markdown, so they have cards and
-overview pages; Parts 1–5 on the dashboard (topic names Overview, Quality control and formats, People and funding,
-Threats and news, Threats to inputs, from the folder names; the user can rename them); empty
-`rstar-pipeline/output/categories/<id>/` folders (`.gitkeep`) so their cards read "Not categorized yet"; the dashboard
-e2e tests expect six cards and open every new page (now seven cards; 152 pass, 2026-11-27).
-- **To check (user):** each metadata JSON's `review_notes` lists the corrections taken from the web research. For
-  USCRN: its NCEI DOI and C00546 record, station counts, the Diamond et al. DOI. For CoCoRaHS: Russ Schumacher added as
-  a current lead (Part 3), the observer count (about 28,000, Part 1), Guam, and **Nolan Doesken's death on
-  15 November 2026 (from Part 4; check it)**.
-- **Not on the dashboard:** CoCoRaHS's data-site run (`web-research/archives/cocorahs/`) has no archive page, nor do
-  the GES DISC/PPS and UCI CHRS runs (`app/content/archives/` has only `noaa-ncei/`).
+R* is NA for all three categorized datasets (expected: any NA subcategory makes R* NA). All 152 e2e tests pass
+(Firefox and WebKit, 2026-11-27).
 
-**ASOS: card, overview and web research pages done (2026-11-27).** Its research is in this project:
-`rstar-pipeline/input/web-research/about-datasets/asos/` holds Parts 1–5 (query, answer, record and a reworded
-`query_questions.txt` each) and the Part 4 follow-up `2026-11-26_asos-1min-gap-followup/` (answer only, with a question
-file written from the run index row, since it has no record). The follow-up has no `-ptN` ending, so it gets no page;
-its findings are already in Part 4's answer. The `query_answers` copies are committed in `Rstar_query_results`
-(`cc94615`). Steps left:
-1. ~~Make the `query_answers` copies, copy them in, prepare the question files~~ **done 2026-11-27.**
-2. ~~Metadata JSON and card~~ **done 2026-11-27:** `rstar-pipeline/input/dataset-metadata/asos_dataset-metadata.json`,
-   its overview page, an empty `rstar-pipeline/output/categories/asos/` (card reads "Not categorized yet"), and the
-   dashboard e2e tests (seven cards, ASOS's overview, a new ASOS card test). Fixes from the research are listed in its
-   `review_notes`: ISD's Global Hourly search link dropped and its two AWS buckets marked frozen (no updates after
-   24 Aug 2025), GHCNh added as the hourly successor, DSI 3285 replaced by DSI 6405/6406, and the 5-minute data noted
-   as having no precipitation amounts. **To check (user):** the leads come from Part 3 with low confidence on whether
-   they are still in post (Kenneth Boutin, named 2024; an undated LinkedIn snippet names Christine Smith (Schultz) as
-   ASOS Program Manager).
-3. ~~Web research pages~~ **done 2026-11-27:** Parts 1–5 in `app/data/dataset_pages.json` with CoCoRaHS's and USCRN's
-   topics (Overview, Quality control and formats, People and funding, Threats and news, Threats to inputs; the user's
-   choice), imported and checked in the browser; the e2e test for new datasets now covers ASOS too.
-   **Cleaner fix:** `import_archive_page.py`'s `_FILE_SENTENCE` no longer ends a sentence at a period inside
-   backticks. It had cut ASOS pt4's "…is in `research-record.json` (…`results.csv`)." to "…in `research-record.", and
-   left "…md\` lists the hosts the sandbox refused…" fragments on GHCN-Daily pt3 and USCRN Daily pt5 (both re-imported;
-   no other page changed). Pages still carry `../<run>/answer.md` links to other runs (ASOS pt4's follow-up link,
-   and older ones in GHCN-Daily and IMERG), which don't resolve on the site.
-
-**NASA GES DISC + PPS run added to IMERG and GPCP (2026-11-27):** IMERG's third pass (130 → 149 items) changed RRS-1
-0 → NA, RRS-2 NA → 0 and RRS-3 NA → 0 (now 10 of 19 NA); GPCP's second pass (124 → 134) changed no score. The judgment
-calls are in each gaps note. After that: categorizing PERSIANN-CDR Daily (its UCI CHRS run is in) and the three new
-datasets, in "Next steps" below.
+**All research runs are copied into `rstar-pipeline/input/web-research/`:** every dataset's Parts, plus the repository
+runs for NOAA NCEI (A1, A2), NASA GES DISC + PPS (A2), UC Irvine CHRS (A2) and CoCoRaHS's data site (A2). The only
+query still to run is PERSIANN-CDR's pt7 (people and production).
 
 ## Next session (start here)
 
-Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring`), not the old
-`Rstar_precipitation-relationships`. Where things stood at the end of 2026-11-27 (eleventh session):
-- **Repo:** the user merged this session's work (`c5f42de`) into `main` and pushed it on 2026-11-27. This HANDOFF
-  update is committed on `develop` after it.
-- **Dashboard web research pages are current** for all seven carded datasets: CoCoRaHS and USCRN Daily got cards,
-  overviews and Parts 1–5 in `744041f`, and ASOS on 2026-11-27 (see "Status at a glance"). `main` and `origin/main`
-  are at `744041f`. The GES DISC/PPS run is in IMERG's and GPCP's categorizations
-  (2026-11-27); next is PERSIANN-CDR Daily with the UCI CHRS run (see "Next steps").
-- **`Rstar_query_results`:** its query templates and examples now name this project and its current paths, and its
-  HANDOFF.md says finished runs are copied here (committed there on `develop` as `0c94550`, not pushed).
-- **Next, in order:**
-  1. **The DigitalOcean droplet:** the user is setting it up in a different folder and session (said 2026-11-25) and
-     will say how it is set up. Then plan this site's part: how it is deployed there and under which password (see
-     "Hosting").
-  2. ~~The card-list script~~ **done 2026-11-25 (ninth session)**: committed on `develop` as `ebc9a90`; all 140 e2e
-     tests pass (Firefox and WebKit). Not yet merged into `main` or pushed (the user runs the command in
-     "Publishing"). See "Ninth session" below.
-  3. The research and categorizing work in "Next steps" (~~IMERG and GPCP's NASA GES DISC + PPS A2 run~~ done
-     2026-11-27; next PERSIANN-CDR Daily, then CoCoRaHS, USCRN Daily and ASOS).
-  4. **Three new datasets:** all their runs are done. CoCoRaHS and USCRN Daily are on the dashboard (`744041f`: cards,
-     overviews, Parts 1–5). **ASOS's runs (Parts 1–5 and a Part 4 follow-up) are copied in** (2026-11-27,
-     `about-datasets/asos/`, question files ready). Its card, overview and Parts 1–5 are on the
-     dashboard (2026-11-27). Then categorize all three with
-     `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md`.
-- **Saved scores collected on the droplet:** later, not yet (see "Hosting").
+Open sessions in `/Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring`, not the old
+`Rstar_precipitation-relationships`. Read `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md`
+before any categorizing; the user's prompts are in `categorizing-web-searches_README.md` (Prompt 1 categorizes a
+dataset, Prompt 5 adds new research).
+
+**Next steps, in order:**
+
+1. **PERSIANN-CDR Daily (`persiann-cdr-daily`): decide, then categorize.** Its Parts 1–6 and the UC Irvine CHRS A2 run
+   (`archives/uci-chrs/2026-11-27_uci-chrs-resilience`) are in; its pt7 people-and-production query
+   (`datasets-gap-queries/persiann-cdr-daily_gap-queries/`, run sheet `supplemental-queries-run-sheet.md`) is still to
+   rewrite and run. **Ask the user:** run pt7 first (the plan so far: "categorize once they are back"), or categorize
+   now and add pt7 later with Prompt 5. Use its coverage note `datasets-gap-queries/persiann-cdr-daily_coverage-gaps.md`
+   and copy `build_gpcp-daily.py` or `build_imerg-late-run.py` (satellite products). PERSIANN's people overlap with
+   IMERG's (UC Irvine CHRS makes PDIR-Now, an IMERG input): note shared names. Its categories folder exists (empty), so
+   the first JSON in it puts its scores on the site.
+2. **Categorize the three new station datasets** with Prompt 1, copying `build_ghcn-daily.py` (station data):
+   - **CoCoRaHS** (`cocorahs`): Parts 1–5 and its data-site A2 (`archives/cocorahs/`). Its copy at NCEI is inside
+     GHCN-Daily, so the NCEI A2 run applies to that copy.
+   - **USCRN Daily** (`uscrn-daily`): Parts 1–5; NCEI-hosted, so both `archives/noaa-ncei` runs apply.
+   - **ASOS** (`asos`): Parts 1–5 and the Part 4 follow-up (`2026-11-26_asos-1min-gap-followup`, answer only: cite it
+     as a source; it has no page). Scored as the network as a whole (user's choice). NCEI-hosted (both NCEI runs);
+     IEM is an independent outside archive (Part 1): decide its repository role when categorizing (it reprocesses
+     the 1-minute data, so it may not count as serving the original format).
+   - Each has an empty `rstar-pipeline/output/categories/<id>/` (`.gitkeep`). After writing its JSON, re-run
+     `build_data.py`; check `app/e2e/test_dashboard.py`, whose new-dataset test expects "Not categorized yet" on
+     these three cards (change it to the "R* scores" link for each one categorized).
+   - Station datasets also use `instruments/noaa-rain-gauges` (COOP, ASOS, USCRN and CoCoRaHS are all in it).
+3. **Things for the user to check** (no new searches needed):
+   - **Metadata facts flagged in `review_notes`:** CoCoRaHS (Nolan Doesken's death on 15 November 2026, from Part 4;
+     Russ Schumacher as a current lead); USCRN Daily (DOI 10.7289/V5H13007 and record C00546; station counts);
+     ASOS (leads Boutin and Day from Part 3, low confidence they are still in post; an undated snippet names
+     Christine Smith (Schultz) as ASOS Program Manager).
+   - **Judgment calls in the gaps notes:** GHCN-Daily's fourth-pass stance calls and GPCP's list are still unreviewed.
+     IMERG's third-pass RRS-1 to RRS-3 calls were reviewed and kept (2026-11-27).
+4. **The DigitalOcean droplet:** the user is setting it up in another folder and session and will say how. Then plan
+   this site's deployment there under the workshop password (see "Hosting"). Saved scores collected on the droplet:
+   later, not yet.
+5. **Smaller site items, when wanted:**
+   - **Archive pages** for the newer repository runs: only `noaa-ncei` has one (`app/content/archives/`); GES DISC/PPS,
+     UCI CHRS and CoCoRaHS's data site have none (`import_archive_page.py --record`).
+   - **Cross-run links:** some pages link `../<run>/answer.md` (ASOS pt4's follow-up link, older ones in GHCN-Daily and
+     IMERG), which don't resolve on the site; the importer could drop or rewrite them.
+   - **An R* score badge on each card** and filling blank archive websites in `data/archive_links.json` (see "The
+     dashboard").
+   - Score graph and knowledge graph ideas: "Next steps" items 6–7 below.
+
+**At the end of the session** (CLAUDE.md): update this file, then commit on `develop` when the user asks. The user
+merges into `main` and pushes (command in "Publishing").
 
 ## This repo (started fresh 2026-11-25)
 
@@ -133,6 +126,21 @@ The weighted network graph of a dataset's R* scores is built (`app/graph.html`, 
 the knowledge graph of dataset relationships is not started. GHCN-Daily, GPCP Daily and IMERG Late Run are categorized;
 PERSIANN-CDR Daily is waiting on supplemental research. CoCoRaHS, USCRN Daily and ASOS are new datasets whose research
 runs are done and copied in but which are not categorized; all three have dashboard cards and web research pages (CoCoRaHS and USCRN Daily in `744041f`, ASOS 2026-11-27).
+
+**Twelfth session (2026-11-27): ASOS on the dashboard; NASA repository run categorized.** All merged and pushed
+(`main` = `ea8bb0a`).
+- **Point values settled** (`a573e08`): the user confirmed `how_to_score_rstar.md`'s P-3 25, DIRS-2 25, DIRS-4 15;
+  the decisions doc's table (which said 20, 20, 20) now matches. No score changed (the site already used them).
+- **ASOS** (`6df50b0`): `query_answers` copies made and committed in `Rstar_query_results` (`cc94615`); runs copied to
+  `about-datasets/asos/` with reworded question files; metadata JSON (ISD links fixed from Part 1, GHCNh added, DSI
+  6405/6406; `review_notes` list every change); card, overview and Parts 1–5 (same topics as CoCoRaHS and USCRN).
+- **Page cleaner fix** (same commit): `import_archive_page.py`'s `_FILE_SENTENCE` lets a period inside backticks pass,
+  which fixed a cut sentence on ASOS pt4 and "md\` lists …" fragments on GHCN-Daily pt3 and USCRN Daily pt5.
+- **NASA GES DISC + PPS A2 run categorized** (`ea8bb0a`): IMERG third pass (130 → 149 items; RRS-1 0 → NA, RRS-2 and
+  RRS-3 NA → 0; the user kept these calls) and GPCP second pass (124 → 134; no score change). The rules used (transfer-
+  only checksums and a not-found DR plan are "against"; two separate holders are an RRS-1 "for") are in the
+  categorizing instructions' precedents.
+- **e2e:** seven cards; ASOS's overview and five parts are opened; 152 pass.
 
 **Eleventh session (2026-11-27): research copied in; every web research part on the dashboard.**
 - **`Rstar_query_results`:** merged pt2's `uscrn-runs` (USCRN Daily Parts 1–5) into its `develop`, keeping both sets
