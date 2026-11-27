@@ -6,8 +6,8 @@ Last updated 2026-11-27. Update this file before compacting a session and at the
 
 ## Status at a glance (2026-11-27, fourteenth session)
 
-**Repo:** `develop` has PERSIANN-CDR's first pass (`a3f6141`) and its second pass ("Add PERSIANN-CDR Daily's pt7
-and pt8 runs (second pass)", fourteenth session, below). `main` and `origin/main` are still at `ea8bb0a`, so
+**Repo:** `develop` has PERSIANN-CDR's first pass (`a3f6141`) and its second pass (`7ea5086`, fourteenth session,
+below), plus this HANDOFF update. `main` and `origin/main` are still at `ea8bb0a`, so
 the PERSIANN work is **not merged or pushed** (command in "Publishing"). In `Rstar_query_results`, `develop` has the
 merge of pt2's PERSIANN pt8 run (`4ddb0b4`, with the pt7 and pt8 `query_answers` copies), not pushed.
 
@@ -41,12 +41,14 @@ dataset, Prompt 5 adds new research).
 
 **Next steps, in order:**
 
-0. **Publish the PERSIANN commit if wanted:** the user merges `develop` into `main` and pushes (see "Publishing").
-1. **PERSIANN-CDR Daily's second pass: done 2026-11-27** (fourteenth session; committed on `develop`). pt7 and
+0. **Publish the PERSIANN commits if wanted** (`a3f6141`, `7ea5086`): the user merges `develop` into `main` and pushes (see "Publishing").
+1. **PERSIANN-CDR Daily's second pass: done 2026-11-27** (fourteenth session; committed on `develop` as `7ea5086`). pt7 and
    pt8 are copied in with question files and pages (parts 7 and 8), and added with Prompt 5: 122 items, P-1 0 → NA,
    P-4 NA → 15. What's left is not public (who runs and pays for the extension, its computers, whether the months
    from October 2024 use VGAC-calibrated GridSat-B1): an inquiry to CHRS or `PERSIANN_contacts@noaa.gov`, if wanted.
    The gaps note's "Things to check by hand" lists a few file and page checks (a 2010 file's `source` attribute).
+   Your pt8 `query_answers` copy of the answer (in `Rstar_query_results`) still links to the old `…_calibration-copies`
+   folder on its last line; the pipeline copy and its page don't show that line.
 2. **Categorize the three new station datasets** with Prompt 1, copying `build_ghcn-daily.py` (station data):
    - **CoCoRaHS** (`cocorahs`): Parts 1–5 and its data-site A2 (`archives/cocorahs/`). Its copy at NCEI is inside
      GHCN-Daily, so the NCEI A2 run applies to that copy.
@@ -140,7 +142,7 @@ copies brought over by hand; that project's HANDOFF has the merge steps). pt7 an
 production") and 8 ("Calibration and copies"), and added to `build_persiann-cdr-daily.py` (33 added, 11 dropped,
 100 → 122; GPCP's borrowed substitutes inference dropped). Gaps note rewritten (with "Changes from the first pass"),
 `rstar-data.js` rebuilt, instructions' state table and a precedent added, README row and the prep how-to updated.
-Pages checked in the built-in browser; all 152 e2e tests pass (Firefox and WebKit). Committed on `develop`; not merged or pushed.
+Pages checked in the built-in browser; all 152 e2e tests pass (Firefox and WebKit). Committed on `develop` as `7ea5086`; not merged or pushed.
 
 **Thirteenth session (2026-11-27): PERSIANN-CDR Daily categorized (first pass).** The user chose to categorize now
 rather than wait for pt7 (the user asked whether pt7 had been run: it hadn't; no PERSIANN pt7 run exists in either
