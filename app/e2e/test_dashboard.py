@@ -9,6 +9,8 @@ DATASETS = {
     "gpcp-daily": "GPCP Daily v3.3: Global Precipitation Climatology Project",
     "imerg-late-run": "IMERG Late Run V07: Integrated Multi-satellitE Retrievals for GPM",
     "persiann-cdr-daily": "PERSIANN-CDR v1r1 Daily",
+    "cocorahs": "CoCoRaHS: Community Collaborative Rain, Hail and Snow Network",
+    "uscrn-daily": "USCRN Daily: U.S. Climate Reference Network Daily Products",
 }
 
 
@@ -27,7 +29,7 @@ def test_dashboard_shows_a_card_per_dataset(page: Page, console_errors):
     expect(page.get_by_role("heading", level=1, name="Precipitation Datasets")).to_be_visible()
     for dataset_id in DATASETS:
         expect(toggle(page, dataset_id)).to_be_visible()
-    expect(page.locator("#datasetCount")).to_have_text("04 OF 4 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("06 OF 6 DATASETS")
     assert console_errors == []
 
 
@@ -35,10 +37,10 @@ def test_search_and_filter_narrow_the_cards_and_stay_in_the_url(page: Page):
     page.goto("/")
 
     page.get_by_role("button", name=re.compile(r"^Satellite")).click()
-    expect(page.locator("#datasetCount")).to_have_text("03 OF 4 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("03 OF 6 DATASETS")
     page.get_by_role("searchbox", name="Search datasets").fill("persiann")
 
-    expect(page.locator("#datasetCount")).to_have_text("01 OF 4 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("01 OF 6 DATASETS")
     expect(card(page, "persiann-cdr-daily")).to_be_visible()
     expect(card(page, "ghcn-daily")).to_be_hidden()
     expect(page).to_have_url(re.compile(r"\?q=persiann&category=satellite$"))
@@ -111,6 +113,8 @@ def test_back_to_dashboard_opens_the_dataset_picked_on_the_rstar_page(page: Page
         ("/dataset.html?id=ghcn-daily&open=ghcn-daily", "GHCN-D: Web research"),
         ("/dataset.html?id=persiann-cdr-daily&part=2&open=persiann-cdr-daily",
          "PERSIANN-CDR v1r1 Daily: Quality control and formats"),
+        ("/overview.html?id=cocorahs&open=cocorahs", "CoCoRaHS: Overview"),
+        ("/overview.html?id=uscrn-daily&open=uscrn-daily", "USCRN Daily: Overview"),
         ("/archive.html?id=noaa-ncei", "NOAA NCEI"),
         ("/archive.html?id=noaa-satellites", "NOAA Satellites"),
     ],
@@ -121,5 +125,22 @@ def test_dataset_and_archive_pages_load_and_go_back(page: Page, console_errors, 
     expect(page.get_by_role("heading", level=1, name=heading)).to_be_visible()
     page.get_by_role("link", name="Back to dashboard").click()
     expect(page).to_have_url(re.compile(r"/index\.html"))
-    expect(page.locator("#datasetCount")).to_have_text("04 OF 4 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("06 OF 6 DATASETS")
     assert console_errors == []
+
+
+@pytest.mark.parametrize("dataset_id", ["cocorahs", "uscrn-daily"])
+def test_new_datasets_have_cards_and_five_web_research_parts(page: Page, console_errors, dataset_id):
+    page.goto("/")
+
+    expect(card(page, dataset_id).get_by_role("link", name="R* scores")).to_be_visible()
+    expect(card(page, dataset_id).get_by_text("Not categorized yet")).to_be_visible()
+    short = DATASETS[dataset_id].split(":")[0]
+    topics = ["Overview", "Quality control and formats", "People and funding", "Threats and news",
+              "Threats to inputs"]
+    for part, topic in enumerate(topics, start=1):
+        page.goto(f"/dataset.html?id={dataset_id}&part={part}")
+        expect(page.get_by_role("heading", level=1, name=f"{short}: {topic}")).to_be_visible()
+        expect(page.get_by_text("Searched on", exact=False).first).to_be_visible()
+    # Moving on before a web font finishes loading makes Firefox log "downloadable font: download failed".
+    assert [e for e in console_errors if "downloadable font" not in e] == []

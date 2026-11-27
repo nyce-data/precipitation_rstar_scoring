@@ -216,6 +216,25 @@ window.RSTAR_DATA = {
  ],
  "datasets": [
   {
+   "id": "cocorahs",
+   "name": "CoCoRaHS: Community Collaborative Rain, Hail and Snow Network",
+   "meta": {
+    "name": "CoCoRaHS: Community Collaborative Rain, Hail and Snow Network",
+    "data_archive": "CoCoRaHS (Colorado State University); NOAA NCEI (copy in GHCN-Daily)",
+    "doi": "",
+    "curator": "CoCoRaHS headquarters, Colorado Climate Center (Colorado State University)",
+    "update_status": "Ongoing; daily reports, entered through the day as volunteers submit them.",
+    "period_of_record": "1998 - Present",
+    "spatial_coverage": "North America: U.S., Canada, Puerto Rico, U.S. Virgin Islands and the Bahamas",
+    "temporal_frequency": "Daily (plus event reports for hail and intense rain)",
+    "precipitation_basis": "Gauge-based (volunteer-read manual 4-inch gauges)",
+    "identifier": "https://data.cocorahs.org/"
+   },
+   "file": null,
+   "categorizations": null,
+   "scores": null
+  },
+  {
    "id": "ghcn-daily",
    "name": "GHCN-D: Global Historical Climatology Network Daily",
    "meta": {
@@ -815,6 +834,25 @@ window.RSTAR_DATA = {
     "temporal_frequency": "Daily (monthly/yearly aggregations also distributed by CHRS)",
     "precipitation_basis": "Geostationary IR + GPCP gauge adjustment",
     "identifier": "10.7289/V51V5BWQ"
+   },
+   "file": null,
+   "categorizations": null,
+   "scores": null
+  },
+  {
+   "id": "uscrn-daily",
+   "name": "USCRN Daily: U.S. Climate Reference Network Daily Products",
+   "meta": {
+    "name": "USCRN Daily: U.S. Climate Reference Network Daily Products",
+    "data_archive": "NOAA NCEI",
+    "doi": "10.7289/V5H13007",
+    "curator": "Howard Diamond (NOAA ARL), USCRN Program Manager",
+    "update_status": "Ongoing; updated daily.",
+    "period_of_record": "November 2000 - Present",
+    "spatial_coverage": "United States: contiguous U.S., Alaska and Hawaii",
+    "temporal_frequency": "Daily (5-minute, hourly and monthly products also available)",
+    "precipitation_basis": "Gauge-based (Geonor T-200B weighing gauges)",
+    "identifier": "10.7289/V5H13007"
    },
    "file": null,
    "categorizations": null,

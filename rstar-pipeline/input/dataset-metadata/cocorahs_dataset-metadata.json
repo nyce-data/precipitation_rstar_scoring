@@ -1,0 +1,255 @@
+{
+  "schema_version": "0.1",
+  "id": "cocorahs",
+  "source": {
+    "file": "markdown/cocorahs_dataset-metadata.md",
+    "section": "ChatGPT answer",
+    "converted": "2026-11-27"
+  },
+  "dashboard": {
+    "id": "cocorahs",
+    "name": "CoCoRaHS: Community Collaborative Rain, Hail and Snow Network",
+    "data_archive": "CoCoRaHS (Colorado State University); NOAA NCEI (copy in GHCN-Daily)",
+    "precipitation_basis": "Gauge-based (volunteer-read manual 4-inch gauges)",
+    "period_of_record": "1998 - Present",
+    "formal_cdr": "",
+    "update_status": "Ongoing; daily reports, entered through the day as volunteers submit them.",
+    "spatial_coverage": "North America: U.S., Canada, Puerto Rico, U.S. Virgin Islands and the Bahamas",
+    "resolution": "Station points (no fixed grid)",
+    "temporal_frequency": "Daily (plus event reports for hail and intense rain)",
+    "curator": "CoCoRaHS headquarters, Colorado Climate Center (Colorado State University)",
+    "doi": "",
+    "notes": "Volunteer citizen-science network started in Colorado in 1998. About 28,000 observers read a standard 4-inch manual rain gauge at about 7 a.m. each day, and also report snowfall, snow depth and hail. Point observations, not gridded. The CoCoRaHS database is the archive of record; NOAA NCEI receives a daily stream into GHCN-Daily. No DOI or version number.",
+    "access_endpoints": [
+      {
+        "name": "CoCoRaHS Data Export Portal",
+        "url": "https://data.cocorahs.org/",
+        "role": "primary"
+      },
+      {
+        "name": "CoCoRaHS Data Reports",
+        "url": "https://www.cocorahs.org/ViewData/",
+        "role": "alternative"
+      },
+      {
+        "name": "CoCoRaHS Data Explorer (station histories)",
+        "url": "https://dex.cocorahs.org/",
+        "role": "alternative"
+      },
+      {
+        "name": "NOAA NCEI GHCN-Daily (copy of the CoCoRaHS reports)",
+        "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+        "role": "alternative"
+      }
+    ]
+  },
+  "identification": {
+    "full_name": "Community Collaborative Rain, Hail and Snow Network",
+    "abbreviations": [
+      "CoCoRaHS"
+    ],
+    "version": "",
+    "doi": "",
+    "doi_note": "No DOI for the CoCoRaHS dataset itself. GHCN-Daily's DOI belongs to that separate product and should not be used for CoCoRaHS.",
+    "data_provider": "CoCoRaHS, Colorado Climate Center, Colorado State University",
+    "dataset_type": "Station observations (point data, not gridded)",
+    "description": "A volunteer-based, citizen-science precipitation network started in Colorado in 1998. Observers measure rainfall, snowfall, snow depth and hail at their homes with standard manual equipment. The network is housed at the Colorado Climate Center at Colorado State University, and its observations are used by NOAA, the National Weather Service, researchers and hydrologists."
+  },
+  "archives": [
+    {
+      "name": "CoCoRaHS central database",
+      "role": "primary",
+      "description": "Archive of record, run by CoCoRaHS headquarters at Colorado State University; served through the CoCoRaHS website, data reports and export system"
+    },
+    {
+      "name": "NOAA NCEI (GHCN-Daily)",
+      "role": "secondary",
+      "description": "Observations are streamed daily to NCEI and included in GHCN-Daily, subject to its station-inclusion and quality-control rules"
+    }
+  ],
+  "access_endpoints": [
+    {
+      "name": "CoCoRaHS official website",
+      "url": "https://www.cocorahs.org/",
+      "role": "primary",
+      "type": "landing-page"
+    },
+    {
+      "name": "CoCoRaHS Data Export Portal",
+      "url": "https://data.cocorahs.org/",
+      "role": "alternative",
+      "type": "download"
+    },
+    {
+      "name": "CoCoRaHS Export Manager",
+      "url": "https://data.cocorahs.org/cocorahs/Export/ExportManager.aspx",
+      "role": "alternative",
+      "type": "download"
+    },
+    {
+      "name": "Daily precipitation CSV export (example for one day)",
+      "url": "https://data.cocorahs.org/cocorahs/export/exportreports.aspx?ReportType=Daily&Format=CSV&StartDate=2022-09-14&EndDate=2022-09-14",
+      "role": "alternative",
+      "type": "download",
+      "purpose": "Change StartDate and EndDate for another period; State and Station parameters narrow the results; metric or imperial units"
+    },
+    {
+      "name": "CoCoRaHS Data Reports",
+      "url": "https://www.cocorahs.org/ViewData/",
+      "role": "alternative",
+      "type": "search-portal"
+    },
+    {
+      "name": "CoCoRaHS Data Explorer (station histories)",
+      "url": "https://dex.cocorahs.org/",
+      "role": "alternative",
+      "type": "search-portal"
+    },
+    {
+      "name": "NOAA NCEI GHCN-Daily",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+      "role": "alternative",
+      "type": "landing-page",
+      "purpose": "Copy of CoCoRaHS observations within GHCN-Daily"
+    },
+    {
+      "name": "CoCoRaHS Data Usage Policy",
+      "url": "https://www.cocorahs.org/content.aspx?page=datausagepolicy",
+      "role": "documentation",
+      "type": "documentation"
+    },
+    {
+      "name": "CoCoRaHS Data Quality Assurance and Quality Control (April 2019)",
+      "url": "https://media.cocorahs.org/docs/CoCoRaHS_QA_QC_April_2019.pdf",
+      "role": "documentation",
+      "type": "documentation"
+    }
+  ],
+  "access_note": "Publicly accessible. Data licence: Creative Commons Attribution 4.0, unless otherwise noted.",
+  "people": {
+    "curator": {
+      "name": "CoCoRaHS headquarters",
+      "organization": "Colorado Climate Center, Colorado State University",
+      "role": "Runs the network and its central database"
+    },
+    "leads": [
+      {
+        "name": "Russ Schumacher",
+        "organization": "Colorado Climate Center, Colorado State University",
+        "role": "Colorado State Climatologist and director of the Colorado Climate Center"
+      },
+      {
+        "name": "Henry Reges",
+        "organization": "Colorado Climate Center, Colorado State University",
+        "role": "National coordinator"
+      }
+    ],
+    "contributors": [],
+    "note": "CoCoRaHS headquarters at the Colorado Climate Center curates the dataset. Nolan Doesken, former Colorado State Climatologist, founded the network in 1998; he died on 15 November 2026."
+  },
+  "instruments": {
+    "summary": "Manual instruments read by volunteers; CoCoRaHS is not an automated weather-station network.",
+    "categories": [
+      {
+        "name": "Standard 4-inch diameter rain gauge",
+        "type": "in-situ gauge (manual)",
+        "role": "Primary instrument: clear plastic gauge for liquid precipitation, read once each morning, in inches to hundredths"
+      },
+      {
+        "name": "Snowboard and snow ruler",
+        "type": "manual snow measurement",
+        "role": "New snowfall and total snow depth; snow-water equivalent may also be reported"
+      },
+      {
+        "name": "Hail pad",
+        "type": "manual hail measurement",
+        "role": "Hailstone size, number and characteristics"
+      }
+    ],
+    "note": "The standard CoCoRaHS precipitation observation is the manually read 4-inch rain gauge."
+  },
+  "temporal": {
+    "start": "1998",
+    "end": "present",
+    "frequency": "Daily",
+    "accumulation_period": "About 24 hours, read around 7:00 a.m. local time",
+    "update_frequency": "Daily, with reports submitted throughout the day",
+    "note": "The main dataset is the daily precipitation observation for the preceding 24 hours. Hail, intense rainfall and other significant-weather reports are submitted when events happen, so they are not daily measurements.",
+    "other_frequencies": [
+      {
+        "frequency": "Multiple-day accumulation",
+        "availability": "Reports covering more than one day"
+      },
+      {
+        "frequency": "Event reports",
+        "availability": "Intense rainfall, hail and significant weather, when they happen"
+      }
+    ]
+  },
+  "spatial": {
+    "coverage": "United States, Canada, Puerto Rico, U.S. Virgin Islands, the Bahamas and other participating locations",
+    "land_ocean": "Land only",
+    "resolution": "Station points; variable and irregular",
+    "grid": null,
+    "note": "Point observations at volunteer stations, each with its own latitude and longitude. There is no fixed resolution: station spacing depends on where volunteers live, so it varies between rural and urban areas, and some places have several stations close together."
+  },
+  "data_format": {
+    "format": "CSV, downloadable reports and web-based data products",
+    "units": "Inches (metric available in the CSV export)"
+  },
+  "status": {
+    "state": "Ongoing",
+    "label": "Ongoing / actively updated",
+    "evidence": [
+      "Observations collected continuously since 1998",
+      "Volunteers submit daily observations to the central database",
+      "Historical observations are kept and can be accessed through the CoCoRaHS reports and export systems",
+      "Observations are streamed to NOAA and included in GHCN-Daily"
+    ]
+  },
+  "versions": [],
+  "related_products": [
+    {
+      "name": "GHCN-Daily",
+      "difference": "NOAA NCEI's global station dataset, which includes CoCoRaHS stations; a separate product with its own DOI and versions"
+    }
+  ],
+  "references": [
+    {
+      "title": "CoCoRaHS Network",
+      "url": "https://www.cocorahs.org/",
+      "type": "landing-page"
+    },
+    {
+      "title": "CoCoRaHS Data Reports",
+      "url": "https://www.cocorahs.org/ViewData/",
+      "type": "data-access"
+    },
+    {
+      "title": "CoCoRaHS Data Usage Policy",
+      "url": "https://www.cocorahs.org/content.aspx?page=datausagepolicy",
+      "type": "documentation"
+    },
+    {
+      "title": "METplus documentation: CoCoRaHS Precipitation Reports",
+      "url": "https://metplus.readthedocs.io/en/develop/Verification_Datasets/datasets/cocorahs.html",
+      "type": "documentation"
+    },
+    {
+      "title": "CoCoRaHS Data Quality Assurance and Quality Control (April 2019)",
+      "url": "https://media.cocorahs.org/docs/CoCoRaHS_QA_QC_April_2019.pdf",
+      "type": "documentation"
+    },
+    {
+      "title": "NOAA: Integration of CoCoRaHS Observations into River Forecasting Operations",
+      "url": "https://repository.library.noaa.gov/view/noaa/62044/noaa_62044_DS1.pdf",
+      "type": "report"
+    }
+  ],
+  "review_notes": [
+    "Coverage is worded \"North America: ...\" so the dashboard tags it North America rather than CONUS (it has stations in Canada and the Bahamas).",
+    "The card's observer count (about 28,000) comes from Part 1 of the web research (cocorahs-about-pt1), not the Markdown.",
+    "Leads: the Markdown names Nolan Doesken (founder) and Henry Reges. Russ Schumacher was added from Part 3 (cocorahs-people-funding-pt3), which says CSU names him and Reges as the current leaders. Doesken's death on 15 November 2026 is from Part 4 (cocorahs-threats-news-pt4); check it.",
+    "Part 1 research also lists Guam among observer locations; the Markdown does not."
+  ]
+}

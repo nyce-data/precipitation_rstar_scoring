@@ -1,6 +1,45 @@
 {
   "datasets": [
     {
+      "id": "uscrn-daily",
+      "name": "USCRN Daily: U.S. Climate Reference Network Daily Products",
+      "data_archive": "NOAA NCEI",
+      "precipitation_basis": "Gauge-based (Geonor T-200B weighing gauges)",
+      "period_of_record": "November 2000 - Present",
+      "formal_cdr": "",
+      "update_status": "Ongoing; updated daily.",
+      "spatial_coverage": "United States: contiguous U.S., Alaska and Hawaii",
+      "resolution": "Station points (no fixed grid)",
+      "temporal_frequency": "Daily (5-minute, hourly and monthly products also available)",
+      "curator": "Howard Diamond (NOAA ARL), USCRN Program Manager",
+      "doi": "10.7289/V5H13007",
+      "notes": "Reference-quality climate network: 141 stations (114 in the contiguous U.S., 25 in Alaska, 2 in Hawaii), run by NOAA's Atmospheric Turbulence and Diffusion Division (ATDD). Precipitation comes from a Geonor T-200B weighing gauge with three sensors, read every 5 minutes and summed into daily values; a tipping-bucket gauge is for comparison only. The daily files also hold temperature, humidity, solar radiation and soil values. Archived and served by NOAA NCEI.",
+      "access_endpoints": [
+        {
+          "name": "USCRN Daily01 data archive (NCEI)",
+          "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/",
+          "role": "primary"
+        },
+        {
+          "name": "USCRN Data Portal",
+          "url": "https://www.ncei.noaa.gov/access/crn/",
+          "role": "alternative"
+        },
+        {
+          "name": "USCRN daily, hourly, monthly and sub-hourly products",
+          "url": "https://www.ncei.noaa.gov/access/crn/products.html",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA NCEI dataset record (USCRN Quality Controlled Datasets)",
+          "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00546",
+          "role": "alternative"
+        }
+      ],
+      "about_url": "dataset.html?id=uscrn-daily",
+      "overview_url": "overview.html?id=uscrn-daily"
+    },
+    {
       "id": "ghcn-daily",
       "name": "GHCN-D: Global Historical Climatology Network Daily",
       "data_archive": "NOAA NCEI",
@@ -38,6 +77,45 @@
       ],
       "about_url": "dataset.html?id=ghcn-daily",
       "overview_url": "overview.html?id=ghcn-daily"
+    },
+    {
+      "id": "cocorahs",
+      "name": "CoCoRaHS: Community Collaborative Rain, Hail and Snow Network",
+      "data_archive": "CoCoRaHS (Colorado State University); NOAA NCEI (copy in GHCN-Daily)",
+      "precipitation_basis": "Gauge-based (volunteer-read manual 4-inch gauges)",
+      "period_of_record": "1998 - Present",
+      "formal_cdr": "",
+      "update_status": "Ongoing; daily reports, entered through the day as volunteers submit them.",
+      "spatial_coverage": "North America: U.S., Canada, Puerto Rico, U.S. Virgin Islands and the Bahamas",
+      "resolution": "Station points (no fixed grid)",
+      "temporal_frequency": "Daily (plus event reports for hail and intense rain)",
+      "curator": "CoCoRaHS headquarters, Colorado Climate Center (Colorado State University)",
+      "doi": "",
+      "notes": "Volunteer citizen-science network started in Colorado in 1998. About 28,000 observers read a standard 4-inch manual rain gauge at about 7 a.m. each day, and also report snowfall, snow depth and hail. Point observations, not gridded. The CoCoRaHS database is the archive of record; NOAA NCEI receives a daily stream into GHCN-Daily. No DOI or version number.",
+      "access_endpoints": [
+        {
+          "name": "CoCoRaHS Data Export Portal",
+          "url": "https://data.cocorahs.org/",
+          "role": "primary"
+        },
+        {
+          "name": "CoCoRaHS Data Reports",
+          "url": "https://www.cocorahs.org/ViewData/",
+          "role": "alternative"
+        },
+        {
+          "name": "CoCoRaHS Data Explorer (station histories)",
+          "url": "https://dex.cocorahs.org/",
+          "role": "alternative"
+        },
+        {
+          "name": "NOAA NCEI GHCN-Daily (copy of the CoCoRaHS reports)",
+          "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+          "role": "alternative"
+        }
+      ],
+      "about_url": "dataset.html?id=cocorahs",
+      "overview_url": "overview.html?id=cocorahs"
     },
     {
       "id": "gpcp-daily",

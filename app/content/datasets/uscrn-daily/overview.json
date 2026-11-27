@@ -1,0 +1,214 @@
+{
+  "schema_version": "0.1",
+  "id": "uscrn-daily",
+  "identification": {
+    "full_name": "U.S. Climate Reference Network (USCRN) Daily Products (Daily01)",
+    "abbreviations": [
+      "USCRN Daily",
+      "USCRN Daily01",
+      "CRN"
+    ],
+    "version": "",
+    "doi": "10.7289/V5H13007",
+    "doi_note": "This DOI belongs to NCEI's record for all the USCRN quality-controlled datasets (gov.noaa.ncdc:C00546), which includes the daily product; Daily01 has no DOI of its own. The DOI 10.1175/BAMS-D-12-00170.1 is a paper about the network (Diamond et al. 2013), not the dataset.",
+    "doi_source": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00546/html",
+    "project": "U.S. Climate Reference Network (USCRN)",
+    "data_provider": "NOAA National Centers for Environmental Information (NCEI)",
+    "dataset_type": "Station observations (point data, not gridded)",
+    "description": "Quality-controlled daily measurements from NOAA's nationwide U.S. Climate Reference Network, a network of stations built to give long-term, consistent climate observations for monitoring climate variability and change. NOAA NCEI archives and distributes the data; NOAA's Atmospheric Turbulence and Diffusion Division (ATDD) runs the stations."
+  },
+  "archives": [
+    {
+      "name": "NOAA NCEI public HTTPS/FTP archive",
+      "role": "primary",
+      "description": "Primary archive for the daily station files, organized by station and year, with snapshots of the complete archive"
+    },
+    {
+      "name": "NOAA NCEI USCRN Data Portal",
+      "role": "access-service",
+      "description": "Dataset discovery, documentation, observations and visualizations"
+    },
+    {
+      "name": "Data.gov",
+      "role": "secondary",
+      "description": "Federal dataset catalog and metadata record; not a data archive"
+    }
+  ],
+  "access_endpoints": [
+    {
+      "name": "USCRN Daily01 data archive",
+      "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/",
+      "role": "primary",
+      "type": "download",
+      "purpose": "Year folders from 2000, plus a snapshots folder for the complete archive"
+    },
+    {
+      "name": "USCRN Daily01 archive (FTP)",
+      "url": "ftp://ftp.ncei.noaa.gov/pub/data/uscrn/products/daily01/",
+      "role": "alternative",
+      "type": "download"
+    },
+    {
+      "name": "USCRN Data Portal",
+      "url": "https://www.ncei.noaa.gov/access/crn/",
+      "role": "alternative",
+      "type": "landing-page"
+    },
+    {
+      "name": "USCRN daily, hourly, monthly and sub-hourly products",
+      "url": "https://www.ncei.noaa.gov/access/crn/products.html",
+      "role": "alternative",
+      "type": "landing-page"
+    },
+    {
+      "name": "NOAA NCEI dataset record (USCRN Quality Controlled Datasets)",
+      "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00546",
+      "role": "alternative",
+      "type": "metadata"
+    },
+    {
+      "name": "Data.gov dataset catalog: USCRN Quality Controlled Datasets",
+      "url": "https://catalog.data.gov/dataset/united-states-climate-reference-network-uscrn-quality-controlled-datasets",
+      "role": "alternative",
+      "type": "metadata"
+    },
+    {
+      "name": "USCRN measurements and variables",
+      "url": "https://www.ncei.noaa.gov/access/crn/measurements.html",
+      "role": "documentation",
+      "type": "documentation"
+    },
+    {
+      "name": "USCRN instruments",
+      "url": "https://www.ncei.noaa.gov/access/crn/instruments.html",
+      "role": "documentation",
+      "type": "documentation"
+    }
+  ],
+  "access_note": "",
+  "people": {
+    "curator": {
+      "name": "NOAA National Centers for Environmental Information (NCEI)",
+      "organization": "NOAA NCEI",
+      "role": "Data archive, curation and distribution"
+    },
+    "leads": [
+      {
+        "name": "Howard Diamond",
+        "organization": "NOAA Air Resources Laboratory (ARL)",
+        "role": "USCRN Program Manager"
+      }
+    ],
+    "contributors": [
+      "NOAA Atmospheric Turbulence and Diffusion Division (ATDD), Air Resources Laboratory"
+    ],
+    "note": "Howard Diamond is the named USCRN Program Manager. ATDD manages and maintains the stations; NCEI archives and curates the data."
+  },
+  "instruments": {
+    "summary": "Automated weighing precipitation gauges, with a rain detector and a comparison tipping-bucket gauge.",
+    "categories": [
+      {
+        "name": "Geonor T-200B weighing precipitation gauge",
+        "type": "in-situ gauge (weighing)",
+        "role": "Primary instrument for the official precipitation values: three vibrating-wire load-cell sensors give independent depth readings every 5 minutes; wind/snow shield and heater"
+      },
+      {
+        "name": "Vaisala DRD11A rain detector",
+        "type": "precipitation detector",
+        "role": "Detects precipitation and its intensity, to tell real precipitation from other changes in gauge depth"
+      },
+      {
+        "name": "Hydrological Services TB-3 tipping-bucket rain gauge",
+        "type": "in-situ gauge (tipping bucket)",
+        "role": "Auxiliary, for comparison at most stations; not quality-controlled and not used for the official values"
+      }
+    ],
+    "note": "The Geonor T-200B gives the official precipitation measurements; the rain detector and tipping-bucket gauge are supporting or comparison instruments."
+  },
+  "temporal": {
+    "start": "2000-11-15",
+    "start_note": "Start of the USCRN observational record. Stations were installed at different dates, so each station's period of record differs.",
+    "end": "present",
+    "frequency": "Daily",
+    "input_frequency": "5-minute precipitation measurements, processed into daily values",
+    "update_frequency": "Daily",
+    "note": "Besides daily precipitation, the daily files include maximum, minimum and average air temperature, solar radiation, relative humidity, surface temperature, and soil moisture and temperature.",
+    "other_frequencies": [
+      {
+        "frequency": "5-minute",
+        "availability": "Separate sub-hourly product"
+      },
+      {
+        "frequency": "Hourly",
+        "availability": "Separate hourly product"
+      },
+      {
+        "frequency": "Monthly",
+        "availability": "Separate monthly product"
+      }
+    ]
+  },
+  "spatial": {
+    "coverage": "United States: contiguous U.S., Alaska and Hawaii",
+    "extent": {
+      "lat_min": 18,
+      "lat_max": 72,
+      "lon_min": -172,
+      "lon_max": -65
+    },
+    "land_ocean": "Land only",
+    "resolution": "Station points; spacing varies geographically",
+    "grid": null,
+    "station_count": "141 (114 contiguous U.S., 25 Alaska, 2 Hawaii)",
+    "note": "Stations are placed across representative climate regions. The extent is the catalog's broad bounding box, not a claim that observations fill it. Use the station coordinates for spatial analysis rather than a grid resolution."
+  },
+  "data_format": {
+    "format": "Text files, one per station per year",
+    "units": ""
+  },
+  "status": {
+    "state": "Ongoing",
+    "label": "Ongoing / actively updated",
+    "evidence": [
+      "NOAA continues to operate and maintain the stations",
+      "Daily observations are continually collected and processed",
+      "The NCEI archive continues to receive updates",
+      "Historical observations are kept alongside newer records"
+    ]
+  },
+  "versions": [],
+  "related_products": [
+    {
+      "name": "USCRN sub-hourly, hourly and monthly products",
+      "difference": "The same stations at other time steps, published as separate products"
+    }
+  ],
+  "references": [
+    {
+      "title": "NOAA NCEI – USCRN daily, hourly, monthly and sub-hourly data access",
+      "url": "https://www.ncei.noaa.gov/access/crn/products.html",
+      "type": "data-access"
+    },
+    {
+      "title": "NOAA NCEI – USCRN Quality Controlled Datasets metadata",
+      "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00546",
+      "type": "metadata"
+    },
+    {
+      "title": "NOAA NCEI – USCRN measurement methods and precipitation instruments",
+      "url": "https://www.ncei.noaa.gov/access/crn/measurements.html",
+      "type": "documentation"
+    },
+    {
+      "title": "NOAA NCEI – USCRN instrument specifications",
+      "url": "https://www.ncei.noaa.gov/access/crn/instruments.html",
+      "type": "documentation"
+    },
+    {
+      "title": "Diamond et al. (2013), U.S. Climate Reference Network after One Decade of Operations: Status and Assessment, Bulletin of the American Meteorological Society",
+      "url": "https://doi.org/10.1175/BAMS-D-12-00170.1",
+      "doi": "10.1175/BAMS-D-12-00170.1",
+      "type": "paper"
+    }
+  ]
+}

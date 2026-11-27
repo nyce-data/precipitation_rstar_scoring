@@ -69,6 +69,8 @@ DROP_ITEM_PREFIXES = (
     "- [sites-to-trust.md](",
     "- `check-by-hand.md`",  # 2026-11-27: bullets about the research files left "- md` lists …" fragments
     "- `sites-to-trust.md`",
+    "- **Earlier copies:**",  # CoCoRaHS pt3, pt4 (2026-11-27): notes on the research project's query_answers copies
+    "- **Earlier runs' copies.**",
 )
 
 # Files that exist only in the research project. A sentence that names
