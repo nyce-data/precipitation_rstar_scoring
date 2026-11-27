@@ -1,0 +1,1649 @@
+{
+ "question": "How resilient is the CoCoRaHS data site (cocorahs.org, ViewData, data/dex/wys/media.cocorahs.org, data entry) as a home for the network's data, against RRS-1, RRS-2, RRS-3, RRS-5, D-2 and D-3?",
+ "tier": "standard",
+ "tier_reason": "standard: four dimensions, no set of 15+ members; 2025 funding/news left to Part 4 by the user",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Who runs the site, how many, one developer, how paid (D-3)",
+   "status": "answered",
+   "source_ids": [
+    "s7",
+    "s12",
+    "s13",
+    "s29",
+    "s6",
+    "s10"
+   ],
+   "remaining_gap": "No staff count or 2025-26 IT deck found; current hosting funding after AI for Earth not stated."
+  },
+  {
+   "id": "q2",
+   "question": "Hosting, backups, copies at NCEI and NWS, reconciliation (D-2, RRS-1)",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s7",
+    "s10",
+    "s23",
+    "s24",
+    "s26",
+    "s9",
+    "s21"
+   ],
+   "remaining_gap": "Azure region, backup redundancy and retention not published; NCEI transfer protocol not documented."
+  },
+  {
+   "id": "q3",
+   "question": "Checksums, integrity checks, CSU backup/DR policy, CoCoRaHS DR plan and test (RRS-2, RRS-3)",
+   "status": "uncertain",
+   "source_ids": [
+    "s14",
+    "s19",
+    "s17",
+    "s20",
+    "s8"
+   ],
+   "remaining_gap": "Nothing published on CoCoRaHS backups, fixity or DR; only CSU-wide audits of central systems."
+  },
+  {
+   "id": "q4",
+   "question": "Outages, award endings, shutdowns, lost reports (RRS-5)",
+   "status": "answered",
+   "source_ids": [
+    "s28",
+    "s29",
+    "s33",
+    "s23",
+    "s30",
+    "s31",
+    "s10"
+   ],
+   "remaining_gap": "No outage log; nothing found for 2021-2026; actual Aug 2020 downtime not reported."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.cocorahs.org/",
+   "fetched_url": null,
+   "title": "www.cocorahs.org HTTP response headers (GET, 2026-11-26)",
+   "author_org": "CoCoRaHS (server response)",
+   "published": "2026-11-26",
+   "data_period": null,
+   "source_type": "observation",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/headers_www_cocorahs.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Headers show the serving platform, not where backups are kept.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://data.cocorahs.org/",
+   "fetched_url": null,
+   "title": "data.cocorahs.org HTTP response headers (GET, 2026-11-26)",
+   "author_org": "CoCoRaHS (server response)",
+   "published": "2026-11-26",
+   "data_period": null,
+   "source_type": "observation",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/headers_data.cocorahs.org.txt",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://dex.cocorahs.org/",
+   "fetched_url": null,
+   "title": "dex.cocorahs.org HTTP response headers (GET, 2026-11-26)",
+   "author_org": "CoCoRaHS (server response)",
+   "published": "2026-11-26",
+   "data_period": null,
+   "source_type": "observation",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/headers_dex.cocorahs.org.txt",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://wys.cocorahs.org/",
+   "fetched_url": null,
+   "title": "wys.cocorahs.org HTTP response headers (GET, 2026-11-26)",
+   "author_org": "CoCoRaHS (server response)",
+   "published": "2026-11-26",
+   "data_period": null,
+   "source_type": "observation",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/headers_wys.cocorahs.org.txt",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://media.cocorahs.org/",
+   "fetched_url": null,
+   "title": "media.cocorahs.org HTTP response headers (GET, 2026-11-26)",
+   "author_org": "CoCoRaHS (server response)",
+   "published": "2026-11-26",
+   "data_period": null,
+   "source_type": "observation",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/headers_media.cocorahs.org.txt",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://media.cocorahs.org/docs/JulianWERA20.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2020 CoCoRaHS IT Update",
+   "author_org": "Julian Turner, Colorado Climate Center",
+   "published": "2020",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/julian_wera20.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Slides; no backup or DR detail.",
+   "found_by": [
+    "main",
+    "sa1",
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://media.cocorahs.org/docs/Turner-WERA21.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2021 CoCoRaHS IT Update",
+   "author_org": "Julian Turner, Colorado Climate Center",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/turner_wera21.txt",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main",
+    "sa2",
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_10_IT_Update_Turner.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2024 CoCoRaHS IT Update",
+   "author_org": "Julian Turner, Colorado Climate Center",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/turner_wera24.txt",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://madis.ncep.noaa.gov/madis_hydro.shtml",
+   "fetched_url": null,
+   "title": "MADIS Hydrological Surface Dataset",
+   "author_org": "NOAA NCEP MADIS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/madis_hydro.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Partial, real-time feed; not an archive copy.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://mailchi.mp/cocorahs/newsletter_the-catch_july_2020",
+   "fetched_url": null,
+   "title": "The CoCoRaHS Catch - A Tribute, and Big News (July 28, 2020)",
+   "author_org": "Nolan Doesken, CoCoRaHS",
+   "published": "2020-07-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/mailchi-mp-cocorahs-newsletter-the-catch-july-2020_124118.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "A plan; the actual downtime was not reported in later issues read.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.cocorahs.org/Content.aspx?page=Catch_Archive20",
+   "fetched_url": null,
+   "title": "The Catch archive 2020",
+   "author_org": "CoCoRaHS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/catch_archive20.txt",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.atmos.colostate.edu/people/research/",
+   "fetched_url": null,
+   "title": "Research Staff - Department of Atmospheric Science, CSU",
+   "author_org": "Colorado State University Department of Atmospheric Science",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/atmos_research_staff.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Staff directory; does not say how many people work on CoCoRaHS IT, how the role is funded, or whether backup developers exist (NOT PRESENT). reused_from 2026-11-25_cocorahs-people-funding-pt3.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.cocorahs.org/Content.aspx?page=25years",
+   "fetched_url": null,
+   "title": "CoCoRaHS 25 years history page",
+   "author_org": "CoCoRaHS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/447cf80eeeabdd81.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Pre-2025 history only; current IT funding source, staff count and any server/backup arrangements NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://content.leg.colorado.gov/sites/default/files/documents/audits/2316f-a_colorado_state_university_system_fy23.pdf",
+   "fetched_url": null,
+   "title": "Colorado State University System Financial Audit, Fiscal Years Ended June 30, 2023 and 2022",
+   "author_org": "Colorado Office of the State Auditor",
+   "published": "2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/bcaf529fb212d50d.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Covers central CSU IT systems (Kuali, Oracle, Banner) only; details in a confidential memorandum; nothing about the Colorado Climate Center, College of Engineering ETS or CoCoRaHS (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://content.leg.colorado.gov/sites/default/files/documents/audits/2416f-a_colorado_state_university_system_fy_24_23-accessible.pdf",
+   "fetched_url": null,
+   "title": "Colorado State University System Financial Audit, Fiscal Year 2024",
+   "author_org": "Colorado Office of the State Auditor",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/7f6d96e26c76c79e.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Status only; whether a DR plan was later tested, and any coverage of departmental units such as the Colorado Climate Center, NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://policylibrary.colostate.edu/policy.aspx?id=537",
+   "fetched_url": null,
+   "title": "CSU Policy Library - Records retention policy (id 537)",
+   "author_org": "Colorado State University Office of Policy and Compliance",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/28f55c5371dffbb4.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Records-management policy, not an IT backup or DR standard; checksum/fixity NOT PRESENT; backup frequency NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://www.engr.colostate.edu/ets/policies/",
+   "fetched_url": null,
+   "title": "Policies - Engineering Technology Services",
+   "author_org": "CSU Walter Scott, Jr. College of Engineering, Engineering Technology Services",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/228cbacf021ba822.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "College file-server policy; no mention of CoCoRaHS, the Colorado Climate Center, databases or cloud-hosted apps (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://content.leg.colorado.gov/sites/default/files/documents/audits/2516f-a-colorado-state-university-system-fy25-accessible.pdf",
+   "fetched_url": null,
+   "title": "Colorado State University System Financial and Compliance Audit, Years Ended June 30, 2025 and 2024",
+   "author_org": "Colorado Office of the State Auditor",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/e3de4ee379a207a2.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Central CSU IT only; content of the confidential finding, DR plan test dates and any coverage of the Colorado Climate Center or CoCoRaHS (Azure-hosted per WERA 2021) NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://campuscloud.colostate.edu/explanation.aspx",
+   "fetched_url": null,
+   "title": "CSU Campus Cloud - Explanation",
+   "author_org": "Colorado State University Division of IT (Campus Cloud)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/f23292e461688061.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Page undated and appears old (search snippet noted Windows Server 2008 R2 reference); CoCoRaHS, checksums, offsite copies and DR testing NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://media.cocorahs.org/docs/WERA1012_2022_NCEI.pdf",
+   "fetched_url": null,
+   "title": "NCEI and CoCoRaHS Data (WERA 1012, May 2022)",
+   "author_org": "Bryant Korzeniewski, Riverside Technology on behalf of NOAA NCEI",
+   "published": "2022-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/d5471605ad27cf40.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Compares CoCoRaHS values against NWS COOP values, not the NCEI copy against the CoCoRaHS database; no reconciliation between the two CoCoRaHS copies is described (NOT PRESENT).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://media.cocorahs.org/docs/WCC_2026_Day1_Meene_NOAA_NCEI_update.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS, Volunteer Networks...and an update on the GHCN family (WCC 2026)",
+   "author_org": "Matt Menne, NOAA NCEI",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/7393a84805c82297.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Slide text truncated at 'Data flow into'; transfer route, cadence, backups NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/status.txt",
+   "fetched_url": null,
+   "title": "GHCN-Daily Status Reports (status.txt)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ghcnd_status.txt",
+   "retrieved": "2026-11-21",
+   "limitations": null,
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://media.cocorahs.org/docs/CoCoRaHS_QA_QC_April_2019.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data Quality Assurance and Quality Control (April 2019)",
+   "author_org": "CoCoRaHS",
+   "published": "2019-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/4a1012a4cad44a36.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Transfer protocol NOT PRESENT. GHCN QA covers 'Precipitation, Snowfall and Snow Depth'; whether QC flags feed back into the CoCoRaHS database NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s25",
+   "url": "https://doi.org/10.1175/BAMS-86-8-1069",
+   "fetched_url": null,
+   "title": "Cifelli et al. 2005, The Community Collaborative Rain, Hail, and Snow Network (BAMS)",
+   "author_org": "Cifelli et al., BAMS",
+   "published": "2005-08",
+   "data_period": null,
+   "source_type": "peer_reviewed",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cifelli_2005.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "2005 description; where the CoCoRaHS server is located NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_6_SigWx_Gimmestad.pdf",
+   "fetched_url": null,
+   "title": "Update on NWS use of Real Time CoCoRaHS Reports (WERA 2024)",
+   "author_org": "Chad Gimmestad, NWS Boulder",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/114ef42aaa58628a.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Covers significant weather/hail reports only; SHEF route for daily reports NOT PRESENT; single forwarding point (NWS Boulder) is as stated.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/nws/readme.txt",
+   "fetched_url": null,
+   "title": "GHCN-Daily nws/ flagged-values readme",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/b94538ca2280cdb7.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Whether CoCoRaHS ingests these flags back into its own database: NOT PRESENT; update date of files NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://media.cocorahs.org/docs/TheCatch_2013-04-09.pdf",
+   "fetched_url": null,
+   "title": "The Catch: COCORAHS -- UPDATE (Tuesday, April 9, 2013)",
+   "author_org": "CoCoRaHS / Nolan Doesken, Colorado State University",
+   "published": "2013-04-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/772f47c08e42b137.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Relationship is to RRS-5 / D-2 wording only as a disruption record; the newsletter states no data loss figure (NOT PRESENT) and no backup/failover description (NOT PRESENT). Also says: 'If you tried to enter your observations this morning and were unable to, please go ahead and type them in now. We got over 1200 e-mails this morning, some asking us to type in their data.' Host company name NOT PRESENT.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://media.cocorahs.org/docs/TheCatch_2010-04-22.pdf",
+   "fetched_url": null,
+   "title": "The Catch: COCORAHS -- WILD APRIL WEATHER (Friday, April 22, 2011; file name says 2010-04-22)",
+   "author_org": "CoCoRaHS / Nolan Doesken, Colorado State University; quote from Julian, CoCoRaHS Web developer",
+   "published": "2011-04-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/0b99864905ae9b8c.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Date note: the PDF's header reads 'Friday, April 22, 2011' though the file name is TheCatch_2010-04-22.pdf; the outage is 'Back on April 7th'. Also quoted on the page: 'Most of us eventually went back and filled in the data for April 7th, but we're still about 500 reports short of what we usually get.' and 'The CoCoRaHS site has been added to our hosts firewall whitelist, so this problem should not happen again.' The page shows the website and database ran at a third-party web host (name NOT PRESENT). Whether the 500 missing reports were never taken or lost data: the page frames them as not entered, not as stored data lost.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://web.archive.org/web/20131006064617/http://www.cocorahs.org:80/",
+   "fetched_url": null,
+   "title": "CoCoRaHS home page, Wayback Machine capture 2013-10-06 06:46 UTC (during the 1-16 Oct 2013 federal shutdown)",
+   "author_org": "CoCoRaHS (Colorado Climate Center) via Internet Archive",
+   "published": "2013-10-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/efdd74b8daa3b513.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Relationship: the site was serving pages during the 2013 shutdown (operating-status fact only). Any shutdown or outage notice: NOT PRESENT on the captured page. Footer reads 'Copyright © 1998-2011, Colorado Climate Center'. Availability API reply saved as work/raw/sa3/avail_20131005.json. One capture shows status at one moment only, not uptime across the shutdown.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://web.archive.org/web/20190106011850/https://www.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS home page, Wayback Machine capture 2019-01-06 01:18 UTC (during the 22 Dec 2018-25 Jan 2019 federal shutdown)",
+   "author_org": "CoCoRaHS (Colorado Climate Center) via Internet Archive",
+   "published": "2019-01-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/126a1cef00cfdf99.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Operating-status fact only. Any shutdown or outage notice: NOT PRESENT. Footer 'Copyright © 1998-2018, Colorado Climate Center'. Availability API reply saved as work/raw/sa3/avail_20190105.json. Whether 8,615 is normal for a January Saturday: NOT PRESENT on the page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.cocorahs.org/Content.aspx?page=app-install",
+   "fetched_url": null,
+   "title": "CoCoRaHS App Installation Guide",
+   "author_org": "CoCoRaHS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/4d17492fe5cd4a33.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Relationship is to D-3 wording (access infrastructure fragile). Retirement date of the legacy app: NOT PRESENT. Page date: NOT PRESENT. New app is at mobile.cocorahs.org.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://media.cocorahs.org/docs/TheCatch_2013-12-22.pdf",
+   "fetched_url": null,
+   "title": "The Catch: CoCoRaHS -- Merry Christmas, Happy Holidays -- safe travels -- good times (December 22, 2013)",
+   "author_org": "CoCoRaHS / Nolan Doesken, Colorado State University",
+   "published": "2013-12-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/9d7487d480330822.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Relationship to D-3 wording (access infrastructure fragile). Second quote, same page: 'The NSF and NOAA assistance that have supported the staff, coordination and web | development costs to launch a national precipitation network, are coming to an end this | next year.' Also: donations 'help cover the salaries of our small staff, our website and database | hosting and development costs'. Resolution of the slowness: NOT PRESENT. Data loss: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://media.cocorahs.org/docs/TheCatch_2013-10-15.pdf",
+   "fetched_url": null,
+   "title": "The Catch: CoCoRaHS -- Closing Out One Water Year, Starting Another (October 15, 2013)",
+   "author_org": "CoCoRaHS / Nolan Doesken, Colorado State University",
+   "published": "2013-10-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/44b5955baad0babc.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Shutdown, government, furlough, NOAA, server: NOT PRESENT (searched with find_text.py, no matches). Absence of mention is not evidence the site was unaffected; read alongside the 2013-10-06 Wayback capture.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://www.cocorahs.org/Content.aspx?page=Catch_Archive13",
+   "fetched_url": null,
+   "title": "\"THE CATCH\" ARCHIVES 2013",
+   "author_org": "CoCoRaHS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/dd6ea4938a7cf890.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Index only; shutdown topic NOT PRESENT in any 2013 entry title or topic list.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://www.cocorahs.org/Content.aspx?page=Catch_Archive18",
+   "fetched_url": null,
+   "title": "\"THE CATCH\" ARCHIVES 2018",
+   "author_org": "CoCoRaHS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/bbcca4dc1ade1f70.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Index only. Shutdown/website/server/outage NOT PRESENT in 2018 topic lists. The 2019 archive page (covering Jan 2019) was not read for lack of time.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://www.cocorahs.org/Content.aspx?page=Catch_Archive19",
+   "fetched_url": null,
+   "title": "\"THE CATCH\" ARCHIVES 2019",
+   "author_org": "CoCoRaHS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ef83963536625b70.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Index only; shutdown/government/furlough/website/server/outage NOT PRESENT in 2019 topic lists. The January 3, 2019 PDF itself was not read.",
+   "found_by": [
+    "sa3"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "The website, database and data-entry systems are built and run by one CSU developer (Julian Turner, Colorado Climate Center), named as CoCoRaHS's web developer since at least 2011; CoCoRaHS itself put its IT capacity at one developer in 2021, with an outside vendor (Solliance) for the Azure move. Supports D-3.",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "One developer => 50 Work weeks a year",
+     "location": "slide 'Roadmap: What is our IT capacity?'"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Web developer and database administrator for the CoCoRaHS (Community Collaborative Rain, Hail and Snow) Network",
+     "location": "Julian Turner entry"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "the rest of the story from Julian, our Web developer.",
+     "location": "p. 'What Happened to the CoCoRaHS website?' (issue dated April 22, 2011)"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Solliance helped CoCoRaHS prepare for and implement the migration to Azure",
+     "location": "slide 'Roadmap: Increase IT capacity'"
+    }
+   ],
+   "applicability": "Staffing as of 2021 decks and the current CSU staff page; a 2025-26 IT deck was not found.",
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own slides, CSU's staff page and a 2011 newsletter agree; no source names a second developer.",
+   "sole_source_reason": "The organization's own statements are the authority on its own staffing."
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "Since a migration scheduled for 7 August 2020, all CoCoRaHS systems run in one commercial cloud, Microsoft Azure: the primary database is an Azure SQL Database, files sit in Azure Blob Storage, and every public host answers through Azure Front Door today. Before that a commercial web host ran the site and database. Supports D-2 (single provider); the backup location and region are not published.",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "This time we will be migrating all of CoCoRaHS to the Microsoft Azure cloud.",
+     "location": "section 'Scheduled downtime Friday evening, Aug 7'"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Migration All CoCoRaHS Cyberinfrastructure is running in Azure",
+     "location": "slide 'Rearview Mirror: Migration'"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Azure SQL Database | Primary CoCoRaHS DB",
+     "location": "slide 'Architecture Overview'"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "set-cookie: ARRAffinity=",
+     "location": "response headers, 2026-11-26"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "x-azure-ref: 20261126T123021Z-17569f4bcd86snsthC1LAXgngs0000000e8g000000004nvq",
+     "location": "response headers, 2026-11-26"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Implement an Azure Front Door service with Web Application Firewall across all public facing",
+     "location": "slide 'Behind the scenes'"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "contextualizes",
+     "passage": "company that hosts our | website and database",
+     "location": "April 9, 2013 issue"
+    }
+   ],
+   "applicability": "Headers show the serving platform as of 2026-11-26, not the backup setup.",
+   "confidence": "high",
+   "confidence_reason": "Own slides, own newsletter and live headers agree.",
+   "sole_source_reason": "The organization's own architecture slides and its live server responses are the authority on its hosting."
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "NCEI holds an independent copy of CoCoRaHS daily precipitation and snow in GHCN-Daily (source flag N since 12 July 2010; multiday precipitation since v3.27, May 2019), retrieved daily. NCEI's documents name only precipitation and snow elements, not hail, significant weather, condition monitoring or ET reports; significant-weather reports go to NWS offices in real time, and MADIS carries a CoCoRaHS feed for nine states. Partly supports RRS-1 for daily precipitation and snow only.",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Effective 12 July 2010, data from the Community Collaborative Rain, Hail, and Snow (CoCoRaHS) Network",
+     "location": "status.txt, 09 July 2010 entry"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "SnowFall (WEFS).  The source flag (SFLAG) for CoCoRaHS is \"N\".",
+     "location": "status.txt, 09 July 2010 entry"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "All data submitted into CoCoRaHS since 1998 are continually streamed to NCDC and stations",
+     "location": "QA/QC April 2019"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "• Reports are then forwarded to the relevant NWS offices | under the AWIPS product header DENCCRAHS and can | be set to alarm at the forecaster workstations.",
+     "location": "WERA 2024 SigWx slides"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "contextualizes",
+     "passage": "The geographic coverage for automated networks and for the CoCoRaHS mesonet includes data from these states: CO, IN, KS, MO, NM, PA, TX, VA, WY.",
+     "location": "Geographic Coverage"
+    }
+   ],
+   "applicability": "No source says hail, condition monitoring or ET reports are held outside CoCoRaHS.",
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own status log and CoCoRaHS's QA/QC document agree on the daily copy; the absence of other report types rests on what NCEI's pages list, not a statement."
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "Nothing published by CoCoRaHS, CSU or NCEI describes checksum or fixity checks, database-integrity checks, backup copies, a disaster recovery plan or a test of one for the CoCoRaHS system, or a check of NCEI's copy against CoCoRaHS's database. CSU's state audit found in FY2023 that CSU IT had no formalized disaster planning policy (implemented by FY2025), but that audit covered Kuali, Oracle and Banner only. Contradicts RRS-2 and RRS-3 as far as public evidence goes.",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "During Fiscal Year 2023, we found that CSU IT had not established a formalized IT policy for the | development, documentation, and dissemination of disaster planning.",
+     "location": "FY2023 audit, Rec. 2023-001"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "contextualizes",
+     "passage": "Kuali – Supports the University’s general ledger and financial accounting.",
+     "location": "FY2023 audit, IT scope"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "contextualizes",
+     "passage": "a) Implementing the recommendation as               Implemented",
+     "location": "FY2025 audit, prior recommendations"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Review Database | Data Versioning",
+     "location": "slide 'What to do next: Potential projects'"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "contextualizes",
+     "passage": "This directory contains values that have failed a GHCN Daily quality control | check.  All values for stations in the U.S. Cooperative Observer and | CoCoRaHS Networks as well as airport sites (ASOS/AWOS) are provided.",
+     "location": "nws/readme.txt"
+    }
+   ],
+   "applicability": "Absence of published evidence, not proof that no backups or plan exist; Azure SQL keeps automatic backups by default (vendor documentation, not read).",
+   "confidence": "moderate",
+   "confidence_reason": "Searched CoCoRaHS, CSU, ETS, Campus Cloud, state audits and NCEI pages; none describe it."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "CoCoRaHS has come through several disruptions with its stored archive intact, but observations were lost in at least one: on 7 April 2011 a host firewall blocked the site from its database and the network ended up about 500 daily reports short after back-filling; on 9 April 2013 a power issue at the hosting company's data centre took the site down for at least 3 hours; in late 2013 the site was painfully slow for weeks; NCEI's daily CoCoRaHS updates were interrupted by a provider issue fixed on 1 December 2020. The site was up during the October 2013 and January 2019 federal shutdowns. Partly supports RRS-5.",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "Most of us eventually | went back and filled in the data for April 7th, but we're still about 500 | reports short of what we usually get.",
+     "location": "p. 'What Happened to the CoCoRaHS website?'"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "website down for at least 3 hours at a very critical time of day.",
+     "location": "April 9, 2013 issue"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Some of you have contacted me to let us know our website has become painfully slow.",
+     "location": "December 22, 2013 issue"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "December 1, 2020 | Daily updates for CoCoRaHS station's station's will resume with this evening's update.",
+     "location": "status.txt"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "5 daily precipitation reports received today as of 10/6/2013 2:45 AM EDT",
+     "location": "Wayback capture 2013-10-06"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Reports received today 1/05/2019 as of 8:16 PM EST",
+     "location": "Wayback capture 2019-01-06"
+    }
+   ],
+   "applicability": "Only events CoCoRaHS or NCEI wrote about; no outage log exists publicly; nothing found after 2020.",
+   "confidence": "moderate",
+   "confidence_reason": "Primary newsletters and NCEI log; no complete outage record."
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "Money for the IT has been thin and short-term: the 2003 NSF grant hired the first Web developer; NSF and NOAA support for staff and web development was ending in 2014; Microsoft's AI for Earth grant covered operational hosting from 2020; in 2021 CoCoRaHS said it lacked budget to outsource more IT, and in 2024 it had turned watershed maps off for budget reasons. Supports D-3.",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "the proposal was funded in 2003, providing support to hire a small staff, a project coordinator, and a Web developer.",
+     "location": "25 years page"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "The NSF and NOAA assistance that have supported the staff, coordination and web | development costs to launch a national precipitation network, are coming to an end this | next year.",
+     "location": "December 22, 2013 issue"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "CoCoRaHS has received permission to extend the scope of the grant | to include operational hosting expenses",
+     "location": "slide 'AI for Earth: Next Steps'"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "CSU has a $150K limit for any vendor | (not that we have the budget for it, but it provides a theoretical limit)",
+     "location": "slide 'Roadmap: Increase IT capacity'"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Recreating the watershed mapping functionality that we had to turn off for budget reasons",
+     "location": "slide 'Mapping: What'"
+    }
+   ],
+   "applicability": "Pre-2025 only; 2025 on is in Part 4.",
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own documents across 2003-2024.",
+   "sole_source_reason": "The organization's own statements about its own budget."
+  },
+  {
+   "id": "c7",
+   "importance": "supporting",
+   "text": "Parts of the system are described by CoCoRaHS itself as fragile or straining: the QC ticketing system (separate MySQL database) is 'fragile', the legacy mobile apps were built by a volunteer observer who no longer wanted to maintain them, the data export struggles with demand, and maps slow at peak use. Supports D-3.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "The current system is fragile",
+     "location": "slide 'QC Ticketing System: Why'"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "The CoCoRaHS mobile apps were | created by an observer years ago. | He no longer wants to maintain them",
+     "location": "slide 'Mobile Apps'"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "The current data export is having a harder time keeping up with the export",
+     "location": "slide 'New API: Why'"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "The legacy mobile apps have not been under active development for some time.",
+     "location": "app-install page"
+    }
+   ],
+   "applicability": "2024.",
+   "confidence": "high",
+   "confidence_reason": "Own statements.",
+   "sole_source_reason": "The organization's own assessment of its own systems."
+  },
+  {
+   "id": "c8",
+   "importance": "supporting",
+   "text": "NCEI's own copy was not interrupted by federal shutdowns: GHCN-Daily announced it would keep updating automatically, unmonitored, during the October 2013 and January 2018 shutdowns. NCEI's side has had its own pauses (hardware, Nov 17-20, 2019; ftp, Oct 10-13, 2020; a failed update, Jan 6, 2021; maintenance, Jan 30-31, 2021; hardware, Apr 2021).",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "October 1, 2013 | During the shutdown of government operations, GHCN-Daily will | continue to update automatically (subject to the availability",
+     "location": "status.txt, 1 Oct 2013"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "January 22, 2018 | During the shutdown of government operations, GHCN-Daily will | continue to update automatically (subject to the availability",
+     "location": "status.txt, 22 Jan 2018"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "contextualizes",
+     "passage": "Issues with NCEI's ftp services prevented updates and access to GHCNd | from October 10-13.",
+     "location": "status.txt, 13 Oct 2020"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "contextualizes",
+     "passage": "Internal hardware issues have prevented daily updates to GHCNd since | 17 November 2019.",
+     "location": "status.txt, 20 Nov 2019"
+    }
+   ],
+   "applicability": "NCEI's processing, not cocorahs.org.",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own status log.",
+   "sole_source_reason": "NCEI's own log is the authority on its own updates."
+  }
+ ],
+ "conflicts": [],
+ "coverage_gaps": [
+  "URL CORRECTION: the WERA 2021 source (local_file work/raw/sa1/turner_wera21.txt) was entered with url https://media.cocorahs.org/docs/JulianWERA21.pdf; the correct URL per the earlier run's fetch-log is https://media.cocorahs.org/docs/Turner-WERA21.pdf. Please fix when merging. (from sa1)",
+  "q1: No CoCoRaHS or Colorado Climate Center page states how many people build/maintain the website, database and apps, or names any second developer/DBA; only Julian Turner is named (staff list, WERA decks). Funding of IT pre-2025: only the 2003 NSF grant (hired a Web developer) and the Microsoft AI for Earth grant extended to operational hosting expenses (2020). NOT PRESENT: CSU IT or ETS hosting cost share, NOAA/NWS funding line for IT. (from sa1)",
+  "q1: r3 found no CoCoRaHS or Colorado Climate Center annual report naming IT staff (not found after 1 query; CCC staff pages already read in pt3). (from sa1)",
+  "q3: No CoCoRaHS page found on checksums, fixity, database integrity checks, backups, geo-redundant storage or a disaster recovery / continuity plan or its testing (NOT PRESENT after searches on cocorahs.org). Azure configuration (backup retention, geo-replication of Azure SQL) NOT PRESENT in the WERA 2020/2021 decks. (from sa1)",
+  "q3: No CSU university-wide IT backup or disaster recovery policy page found on colostate.edu (r2, 2 queries); state audits FY2023 (Rec 2023-001, Significant Deficiency: no formalized DR policy) and FY2024 (Partially Implemented, full by June 2025) cover central CSU IT systems (Kuali, Oracle, Banner) only. Unread lead: FY2025 CSU System audit https://content.leg.colorado.gov/sites/default/files/documents/audits/2516f-a-colorado-state-university-system-fy25-accessible.pdf for final status of 2023-001; also CMMC readiness status report https://content.leg.colorado.gov/sites/default/files/1a_cmmc_agency_status_report.pdf. (from sa1)",
+  "q3: Unread leads: Wayback copies of later WERA IT updates (e.g. 2022-2024 decks on media.cocorahs.org) may describe Azure backups; CSU Division of IT pages (it.colostate.edu) on backup services not searched. (from sa1)",
+  "Update to earlier gap: the FY2025 CSU System audit was read (Recommendation 2023-001 parts a and b now Implemented); CMMC readiness status report remains unread. (from sa1)",
+  "Azure region(s), geo-redundant backup setting, backup retention and location for the CoCoRaHS Azure SQL primary DB: NOT PRESENT in CoCoRaHS pages/slides read. Search 'CoCoRaHS Azure SQL backup geo-redundant disaster recovery' returned only generic Microsoft docs (Azure SQL default: backups in geo-redundant storage replicated to a paired region) - vendor default, not evidence of CoCoRaHS configuration. (from sa2)",
+  "Transfer route and protocol from CoCoRaHS to NCEI not documented: QA/QC 2019 says 'continually streamed' and 'retrieved by GHCN-Daily on a daily basis'; 2022 NCEI diagram shows 'CoCoRaHS Web Services'; 2021 bulk.cocorahs.org pipeline has an endpoint named GHCNPrecipByYear. Link between them NOT PRESENT. Lead: view slide 35 image of WERA1012_2022_NCEI.pdf; read JulianWERA20.pdf (already fetched by sa1). (from sa2)",
+  "Whether NCEI holds hail, significant weather, condition monitoring, ET reports: NOT PRESENT; NCEI sources name only PRCP, SNOW, SNWD, WEFS, multiday precipitation. NWS route for daily reports via SHEF not found; MADIS lists CoCoRaHS as a hydro provider (earlier run 2026-11-25_cocorahs-about-pt1 sa1/madis_hydro_providers.txt line 175) - lead for a second copy outside CoCoRaHS. (from sa2)",
+  "Reconciliation of the NCEI copy against the CoCoRaHS database, and whether GHCN QC flags feed back to CoCoRaHS: NOT PRESENT. Only GHCN-internal duplicate checks and CoCoRaHS-vs-COOP data-match lists (2022 NCEI slides) and NCEI QC flag files per WFO at pub/data/ghcn/daily/nws/ found. Not read: https://www.ncei.noaa.gov/pub/data/ghcn/daily/nws/readme.txt. (from sa2)",
+  "No NOAA/NWS statement on CoCoRaHS during the Oct 2013 or Dec 2018-Jan 2019 shutdowns found (weather.gov filter: NOT PRESENT). No CoCoRaHS notice of a shutdown effect found in the 2013 Catch archive. 2018-19: only the Wayback capture; the Catch archive for 2018/2019 and Message of the Day archives (e.g. MODarchive_0813.pdf pattern) not read. Actual date/downtime of the 2020 Azure go-live NOT PRESENT; Catch/blog posts from mid-2020 not read. Legacy app retirement date NOT PRESENT. Cyberattacks, CSU network events and any post-2014 outages not found in time; Wayback captures show status at one moment only, not uptime. (from sa3)",
+  "Reconciler notes: (1) s29 URL file name is TheCatch_2010-04-22.pdf but the saved text (work/raw/sa3/0b99864905ae9b8c.txt line 4) is dated Friday, April 22, 2011; the draft dates the outage 7 Apr 2011, which matches the text; keep the URL as is but do not read the file name as the date. (2) Unread page found by sa3, never read: https://www.wxforum.net/index.php?topic=41737.0. (3) No differing figures found in saved files for the draft figures 500 reports, 3 hours, 8,615 reports, 345 stations, 12 July 2010, $150 per hour, $150K, 25%; the 345 in the CSU audit tables is an unrelated enrollment-style table figure. (from reconciler)",
+  "Azure configuration (region, geo-redundant backups, retention, point-in-time restore) not published; the Microsoft default could not be read (learn.microsoft.com refused by the sandbox).",
+  "wxforum.net thread 'CoCoRaHS page not displaying previous dates' not read: bot check; no Wayback copy.",
+  "No CoCoRaHS IT update for 2025 or 2026 found (the committee became WCC 1012 in 2025)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS website Microsoft Azure cloud migration",
+   "tool": "WebSearch",
+   "notes": "found JulianWERA20.pdf and Turner-WERA21.pdf on media.cocorahs.org",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS new website server move",
+   "tool": "WebSearch",
+   "notes": "cocorahs.org filter; JulianWERA20 again; no announcement page",
+   "from": "main",
+   "required_id": "r1b"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WERA 1012 CoCoRaHS IT update 2023",
+   "tool": "WebSearch",
+   "notes": "found WERA_2024_10_IT_Update_Turner.pdf; no 2022/2023 IT deck surfaced",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS Julian Turner Azure SQL database backup",
+   "tool": "WebSearch",
+   "notes": "only generic Azure SQL backup docs (learn.microsoft.com, refused by sandbox); nothing CoCoRaHS-specific",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GET headers of www/data/dex/wys/media.cocorahs.org",
+   "tool": "lookup (HTTP response headers)",
+   "notes": "all show x-azure-ref (Azure Front Door); www and data set ARRAffinity (Azure App Service)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read of wxforum.net topic 41737",
+   "tool": "lookup (built-in browser)",
+   "notes": "bot check (security verification, 403); stopped, not bypassed",
+   "from": "main",
+   "copy_of": "https://www.wxforum.net/index.php?topic=41737.0"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=wxforum.net/index.php?topic=41737.0",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "no snapshot",
+   "from": "main",
+   "copy_of": "https://www.wxforum.net/index.php?topic=41737.0"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS website down outage",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass: only down-checker sites and cocorahs.org pages; no outage report after 2013",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS blog website maintenance downtime",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass: who.is uptime page and cocorahs.org pages; nothing dated",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS Azure Solliance",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass: solliancenet/cocorahs-ai GitHub repo, AI for Earth grantee profile; WERA20/21 decks again; no hosting cost or backup detail",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "madis.ncep.noaa.gov madis_hydro.shtml",
+   "tool": "lookup (MADIS page)",
+   "notes": "CoCoRaHS mesonet covers 9 states only",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS Catch 2020 website moved cloud downtime",
+   "tool": "WebSearch",
+   "notes": "cocorahs.org filter; Catch_Archive20 lists Scheduled Downtime (Jul 2020) and Another CoCoRaHS Blackout (Oct 2020)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read of mailchi.mp Catch July 2020 and October 2020",
+   "tool": "lookup (built-in browser)",
+   "notes": "July: Azure migration Aug 7 2020; October: blackout = wildfire gaps on maps, not an outage",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS web developer database administrator",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; contact page lists Julian Turner as Web Developer; no separate DBA or programmer team listed",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Julian Turner CoCoRaHS web developer since 2003",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; found 25years and 20years history pages (2003 NSF grant hired a Web developer)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Colorado State University disaster recovery policy",
+   "tool": "WebSearch",
+   "notes": "allowed_domains colostate.edu; only Emergency Operations Plan / emergency policies; no IT DR policy page found",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CSU data backup policy information technology",
+   "tool": "WebSearch",
+   "notes": "allowed_domains colostate.edu; records retention policy id 537, unit IT pages (CHHS, CS dept); no university-wide backup standard",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Colorado State University information technology audit",
+   "tool": "WebSearch",
+   "notes": "allowed_domains leg.colorado.gov; FY2022, FY2023, FY2024 CSU System audits, CMMC readiness report",
+   "from": "sa1",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Colorado Climate Center staff CoCoRaHS annual report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains climate.colostate.edu, colostate.edu; no CoCoRaHS annual report; staff pages already in pt3",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Walter Scott College of Engineering ETS server backup",
+   "tool": "WebSearch",
+   "notes": "allowed_domains colostate.edu; ETS policies page (nightly tape backup of college file servers)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS database backup server outage",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; found JulianWERA20.pdf (Azure migration); no outage or backup statement",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS Azure migration cloud hosting",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; only JulianWERA20.pdf; no page on Azure backup or geo-redundancy",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CSU Division of IT backup service data center",
+   "tool": "WebSearch",
+   "notes": "allowed_domains it.colostate.edu, colostate.edu; Campus Cloud tiers, RSTOR storage snippet, desktop support; no DR policy page",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS data NWS AWIPS SHEF",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov; found NWSI 10-1305, AWIPS-2 archiver page (LDAD hydro store), WFO pages; no CoCoRaHS-specific SHEF route",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS data available NCDC",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; found WCC 2026 Menne NCEI slides, WERA1012 2022 NCEI slides, QA/QC 2019",
+   "from": "sa2",
+   "required_id": "r1b"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCN-Daily readme source flag CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov; readme.txt and status.txt already saved by run 2026-11-21_ghcn-daily-sources-pt5 (reused)",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS hosted server Colorado State University data center backup",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; nothing on hosting/backup; 20years page read, no data-system text (renamed _unused)",
+   "from": "sa2",
+   "required_id": "r1b"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS reports SHEF real time NWS offices",
+   "tool": "WebSearch",
+   "notes": "no filter; found Gimmestad WERA 2024 SigWx slides (DENCCRAHS)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS data export web services",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; JulianWERA20 IT update (also fetched by sa1, my copy _unused)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS website database server migration cloud 2023",
+   "tool": "WebSearch",
+   "notes": "no filter; found Turner WERA21 and WERA 2024 IT updates (Azure)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS Azure SQL backup geo-redundant disaster recovery",
+   "tool": "WebSearch",
+   "notes": "no filter; only generic Microsoft Azure docs, nothing CoCoRaHS-specific",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS IT update WERA 2025 Azure",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; no 2025 IT update found; committee renamed WCC 1012 in 2025 (wera1012 page) - lead: look for WCC 2025/2026 IT update deck on media.cocorahs.org",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS website down",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found TheCatch_2013-04-09 and TheCatch_2010-04-22 PDFs",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS outage reddit",
+   "tool": "WebSearch",
+   "notes": "allowed_domains reddit.com, wxforum.net, americanwx.com; API error 400: reddit.com not accessible to user agent",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS outage website down observers",
+   "tool": "WebSearch",
+   "notes": "allowed_domains wxforum.net, americanwx.com; only wxforum thread 'CoCoRaHS page not displaying previous dates' (403 on WebFetch); not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS server problems data entry",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; FAQ pages only, no outage notice",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS website \"Service Unavailable\" apologize",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; nothing",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS \"The Catch\" website problems database",
+   "tool": "WebSearch",
+   "notes": "allowed_domains media.cocorahs.org; led to MODarchive_0813.pdf and Catch 2013-09-13 (flood letter, unused)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=cocorahs.org timestamp=20131005",
+   "tool": "lookup (Wayback availability API)",
+   "notes": "after wayback_paths.py cocorahs.org --years 2013-2019; closest capture 20131006064617 status 200",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=cocorahs.org timestamp=20190105",
+   "tool": "lookup (Wayback availability API)",
+   "notes": "closest capture 20190106011850 status 200",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS shutdown weather.gov furlough",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov; undated NWS shutdown notices (psr, tbw) without CoCoRaHS mention; no NWS statement on CoCoRaHS in a shutdown",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS government shutdown 2013",
+   "tool": "WebSearch",
+   "notes": "no filter; general shutdown coverage, nothing on CoCoRaHS",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS Messages of the Day October 2013",
+   "tool": "WebSearch",
+   "notes": "allowed_domains media.cocorahs.org, cocorahs.org; Catch_Archive13 lists 15 Oct 2013 issue; not read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS app retired legacy mobile app",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; app-install page read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS website down \"please enter\" observations later server",
+   "tool": "WebSearch",
+   "notes": "allowed_domains media.cocorahs.org; found JulianWERA20.pdf",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS new website database moved Colorado State servers",
+   "tool": "WebSearch",
+   "notes": "no filter; JulianWERA20, Turner-WERA21",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS government shutdown 2019 reports still",
+   "tool": "WebSearch",
+   "notes": "no filter; nothing on CoCoRaHS in 2018-19 shutdown",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS Catch December 22 2013 \"Slow Website\"",
+   "tool": "WebSearch",
+   "notes": "allowed_domains media.cocorahs.org, cocorahs.org; PDF link then taken from the Catch_Archive13 page HTML (TheCatch_2013-12-22.pdf, TheCatch_2013-10-15.pdf)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS Azure migration website downtime 2020",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org, media.cocorahs.org, cocorahs.blogspot.com; led to Catch_Archive20 (read, topic list has no migration item)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS \"The Catch\" archives 2019",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; 2019 archive page not in results; read Catch_Archive18 instead",
+   "from": "sa3"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "CoCoRaHS pages naming its programmer/developer",
+   "query": "CoCoRaHS staff programmer",
+   "skip_reason": null
+  },
+  {
+   "id": "r1b",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "CoCoRaHS pages on hosting and data flow to NCDC",
+   "query": "CoCoRaHS data hosted server",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "Colorado State University",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "CSU IT backup and disaster recovery policies",
+   "query": "Colorado State University disaster recovery policy",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "Colorado Climate Center",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "Colorado Climate Center staff and reports naming CoCoRaHS IT",
+   "query": "Colorado Climate Center staff CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA NCEI",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "GHCN-Daily readme/status on CoCoRaHS source",
+   "query": "GHCN-Daily readme source flag CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA NWS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "NWS ingest of CoCoRaHS reports",
+   "query": "CoCoRaHS data NWS AWIPS SHEF",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NOAA NWS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "NWS statements on CoCoRaHS during shutdowns",
+   "query": "CoCoRaHS government shutdown",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": null,
+   "publisher": "affected people and critics",
+   "subquestion_id": "q4",
+   "aim": "observer reports of outages",
+   "query": "CoCoRaHS website down",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "newsletters and Wayback captures on outages",
+   "query": "CoCoRaHS Catch server outage",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "Colorado State University",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "Colorado State Auditor IT audits of CSU",
+   "query": "Colorado State University information technology audit",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 18.1,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 150298,
+  "subagent_minutes_planned": 31.5,
+  "subagent_minutes": 23.2,
+  "follow_ups": 0,
+  "continuations": 3,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": false
+ }
+}

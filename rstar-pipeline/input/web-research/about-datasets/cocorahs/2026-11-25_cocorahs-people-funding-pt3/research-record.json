@@ -1,0 +1,3112 @@
+{
+ "question": "Using the earlier runs' records (*_cocorahs-about-pt1 and *_cocorahs-qc-formats-pt2), who are the people critical to running CoCoRaHS now, how big is its paid staff, and how is the network paid for? For each person: role, employer, whether active, ORCID, earliest publication year, age estimate, and CSU/PERA retirement eligibility within 2 years; the team's size, tenure, backup and any succession plan; funding routes with award numbers, amounts and years. Each finding judged against P-1 (no documented succession plan), P-2 (key personnel retirement-eligible within 2 years), P-4 (single person is a point of failure) and D-1 (defunded or under threat; funding baseline only, before January 2025).",
+ "tier": "standard",
+ "tier_reason": "standard: one organization, a handful of people, funding baseline only (post-January 2025 developments left to a later run); user's 40-minute, 320k budget",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Who runs CoCoRaHS now (founder, national coordinator, Climate Center staff, developers, state coordinators)?",
+   "status": "answered",
+   "source_ids": [
+    "s69",
+    "s30",
+    "s41",
+    "s74"
+   ],
+   "remaining_gap": "Stolz's and Talmadge's employment terms; Bolinger's departure date."
+  },
+  {
+   "id": "q2",
+   "question": "Per person: role, employer, active, ORCID, earliest publication, career dates",
+   "status": "answered",
+   "source_ids": [
+    "s52",
+    "s50",
+    "s54",
+    "s81",
+    "s60"
+   ],
+   "remaining_gap": "No birth dates; OpenAlex merges for Schumacher, Turner, Newman; Talmadge, Stolz, Erikson have no dates."
+  },
+  {
+   "id": "q3",
+   "question": "CSU / Colorado PERA retirement rules and eligibility within 2 years",
+   "status": "uncertain",
+   "source_ids": [
+    "s23",
+    "s31",
+    "s36"
+   ],
+   "remaining_gap": "Which plan each person is in is not published; ages are estimates."
+  },
+  {
+   "id": "q4",
+   "question": "Paid staff size and tenure, backup, written succession plan, founder's retirement",
+   "status": "answered",
+   "source_ids": [
+    "s45",
+    "s76",
+    "s40",
+    "s26",
+    "s27"
+   ],
+   "remaining_gap": "FTE and hire dates not published; internal plans may exist."
+  },
+  {
+   "id": "q5",
+   "question": "Funding routes with award numbers, amounts and years; which staff depend on each",
+   "status": "answered",
+   "source_ids": [
+    "s8",
+    "s9",
+    "s11",
+    "s17",
+    "s1"
+   ],
+   "remaining_gap": "Data-user payers, National Mesonet contract terms, Data Dashboard award number, CSU/AES amounts not published."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://media.cocorahs.org/docs/WERA1012_2022_Budget.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Headquarters: Support update (WERA1012 2022 budget slides)",
+   "author_org": "Henry Reges, CoCoRaHS National Coordinator / Colorado Climate Center",
+   "published": "2022 (WERA1012 meeting)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-01",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wera_budget_charts_transcription.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Chart text is an image; transcribed by sa3 from rendered pages wera22_p-3.png / wera22_p-4.png (pdftotext gives only slide titles, see wera2022_budget.txt). Projections, not actuals. 'Users of CoCoRaHS data' is not broken down by payer on the slide (NOT PRESENT). Revenue for staff: no award number or payer per staff member (NOT PRESENT).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://media.cocorahs.org/docs/Reges-WERA21.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Headquarters: Support update (WERA 2021)",
+   "author_org": "Henry Reges and Nolan Doesken / Colorado Climate Center",
+   "published": "2021 (WERA1012 meeting)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-02",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/reges_wera21.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Chart figures (FY21 expenses projected total $499K, HQ staff 58%; revenues projected total $498K: Users of CoCoRaHS data 47%, National Mesonet Program 17%, donations 36%) are in images and transcribed in work/raw/sa3/wera_budget_charts_transcription.txt. No award numbers or amounts for NIDIS, NASA, NSF or Microsoft items (amount not published).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://media.cocorahs.org/docs/RegesWERA20.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Headquarters: Support update (WERA 2020)",
+   "author_org": "Henry Reges and Nolan Doesken / Colorado Climate Center",
+   "published": "2020 (WERA1012 meeting)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-03",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/reges_wera20.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "FY20 chart figures (expenses approx. total $420K, HQ staff 56%, CSU indirect 16%; revenues approx. $400K: Users of CoCoRaHS data 52%, National Mesonet Program 15%, donations 33%) transcribed from images in work/raw/sa3/wera_budget_charts_transcription.txt.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.cocorahs.org/Content.aspx?page=CoCoRaHSLetter15",
+   "fetched_url": null,
+   "title": "CoCoRaHS Fundraiser 2015 Letter",
+   "author_org": "Nolan Doesken and the CoCoRaHS Staff",
+   "published": "2015-12-01 (letter date stated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-04",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_letter15.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Fundraising appeal; sponsors not named.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.cocorahs.org/Content.aspx?page=cocoletter16",
+   "fetched_url": null,
+   "title": "CoCoRaHS Fundraising 2016 letter",
+   "author_org": "Nolan Doesken and the CoCoRaHS Staff",
+   "published": "2016-11-29 (letter date stated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-05",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_letter16.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Fundraising appeal; organizations giving support not named.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.cocorahs.org/Content.aspx?page=donate",
+   "fetched_url": null,
+   "title": "CoCoRaHS Donate",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (page footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-06",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_donate.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No donation totals on page (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.cocorahs.org/Content.aspx?page=sponsors",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Our Sponsors",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-07",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_sponsors.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No amounts (amount not published). 'present' end dates conflict with the 2015/2016 letters saying NOAA and NSF funding ended; Weather Underground NOT PRESENT on the list.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA06SEC4690004_013/",
+   "fetched_url": null,
+   "title": "USAspending award NA06SEC4690004",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "last_modified_date 2011-04-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-08",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_na06sec.json",
+   "retrieved": "2026-11-25",
+   "limitations": "PI not in record (NOT PRESENT); staff paid NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA10SEC0080012_013/",
+   "fetched_url": null,
+   "title": "USAspending award NA10SEC0080012",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "unknown",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-09",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_na10sec.json",
+   "retrieved": "2026-11-25",
+   "limitations": "PI not in record; CSU 2010 news (sa3-q5-12) names Doesken as lead. Award ID first found by RUN-3 search (work/raw/sa3/usaspending_cocorahs.json, reused).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending spending_by_award search for CoCoRaHS (RUN-3 result)",
+   "author_org": "USAspending.gov",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_cocorahs.json",
+   "retrieved": "2026-11-18",
+   "limitations": "Search window starts 2007-10-01 per API message; the keyword match depends on award descriptions, so awards whose description does not name CoCoRaHS (e.g. NOAA Data Dashboard via CIRA, NIDIS, National Mesonet Program contracts) would not appear.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://api.nsf.gov/services/v1/awards.json?keyword=CoCoRaHS",
+   "fetched_url": null,
+   "title": "NSF Award Search API, keyword=CoCoRaHS",
+   "author_org": "National Science Foundation",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsf_cocorahs.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Award 2313996 is a research project on inclusion (NC State lead), not operating support; its 'Administratively Terminated' status and 2025 end date are the award record's own fields. pdPIName=Doesken returned only 1010888 (nsf_doesken.json); pdPIName=Reges returned totalCount 0 (nsf_reges.json). Which staff were paid by the NSF awards: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://newsmediarelations.colostate.edu/2010/11/22/colorado-state-university-gets-funding-to-improve-national-precipitation-monitoring-network/",
+   "fetched_url": null,
+   "title": "Colorado State University Gets Funding to Improve National Precipitation Monitoring Network",
+   "author_org": "CSU News & Media Relations",
+   "published": "2010-11-22",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-q5-12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/csu_2010_noaa_grant.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Award number NOT PRESENT (matched to NA10SEC0080012 by USAspending description and dates).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://dex.cocorahs.org/about",
+   "fetched_url": null,
+   "title": "About DEx the CoCoRaHS Data Explorer",
+   "author_org": "CoCoRaHS",
+   "published": "undated (Version 1.0)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/dex_about.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Award number, amount, dates NOT PRESENT; likely the 'NOAA CoCoRaHS Data Dashboard project' line in the FY22 budget (77,670) but the page does not say so.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Doesken",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName=Doesken",
+   "author_org": "National Science Foundation",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsf_doesken.json",
+   "retrieved": "2026-11-25",
+   "limitations": "API covers PI name only, not co-PI.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Reges",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName=Reges",
+   "author_org": "National Science Foundation",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsf_reges.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Zero result; does not cover co-PI roles.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://media.cocorahs.org/docs/WERA1012_2022_Budget.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Headquarters: Support update (WERA1012 2022) - slide text",
+   "author_org": "Henry Reges / Colorado Climate Center",
+   "published": "2022",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wera2022_budget.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Fundraiser year not stated on slide (NOT PRESENT); figure printed with a period ('$197.745'), likely $197,745. Charts with dollar figures are in sa3-q5-01.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://nimss.org/storage/3841/WERA1012_Summary_of_Meeting_Minutes_2020-2022.pdf",
+   "fetched_url": null,
+   "title": "WERA1012 Summary of Meeting Minutes 2020-2022",
+   "author_org": "WERA1012 multistate committee (USDA NIMSS)",
+   "published": "2020-2022",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wera1012_minutes_2020_2022.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Only payer named among 'users of the data' is PRISM; other data-user payers NOT PRESENT. The 2022 session summary does not give figures.",
+   "found_by": [
+    "sa3",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://noaa.gov/node/13099",
+   "fetched_url": null,
+   "title": "New CoCoRaHS Data Explorer gives volunteers an easier, more in-depth way to view data",
+   "author_org": "NOAA",
+   "published": "2023-10-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/noaa_dex_2023_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Extract, not full text; sentence given in two fragments by the extractor. Likely the FY22 slide line NOAA CoCoRaHS Data Dashboard project (77,670) but not stated.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://web.archive.org/web/20141202023708/http://www.cocorahs.org/Content.aspx?page=sponsors",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Our Sponsors (Wayback snapshot 2014-12-02)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "2014-12-02 (snapshot)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wayback_sponsors_2014.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No amounts. Sponsor list end dates were not updated when NOAA (Sept 2015) and NSF (2016-17) funding ended per the 2015/2016 letters, so -present on the current page is not evidence of current funding.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://newsmediarelations.colostate.edu/2003/07/31/weather-watchers-needed-nsf-and-ucar-grants-promote-expansion-of-colorado-states-coco-rahs-program-across-great-plains-states/",
+   "fetched_url": null,
+   "title": "Weather Watchers Needed - NSF and UCAR Grants Promote Expansion of Colorado State CoCoRaHS Program Across Great Plains States",
+   "author_org": "CSU News & Media Relations",
+   "published": "2003-07-31",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-q5-20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/csu_2003_nsf_ucar.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No award numbers or amounts (amount not published); the NSF grant matches 0229723 (PI Robert Cifelli, 2003-2006) in the NSF API by date and title; UCAR grant number NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://media.cocorahs.org/docs/Hoosier_June_2025.pdf",
+   "fetched_url": null,
+   "title": "The Hoosier Observer, Indiana CoCoRaHS monthly e-newsletter, June 2025",
+   "author_org": "Indiana CoCoRaHS",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q1-01",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/hoosier_june2025.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Byline only; role title, employment status and paid/volunteer status NOT PRESENT. Not a statement that he is the coordinator contact (the WebSearch summary said so; the text does not).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://content.copera.org//wp-content/uploads/2024/11/colorado-pera-and-dps-benefit-structures-fact-sheet.pdf",
+   "fetched_url": null,
+   "title": "Colorado PERA Retirement Eligibility: PERA and DPS Benefit Structures (fact sheet 5/138 REV 6-20)",
+   "author_org": "Colorado Public Employees' Retirement Association",
+   "published": "2020-06 (footer 'June 2020', '5/138 (REV 6-20)'; uploaded 2024-11)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/pera_benefit_structures_factsheet.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Fact sheet dated June 2020 (REV 6-20); PERA says statute (C.R.S. Title 24 Art. 51) and PERA Rules take precedence. Two-column layout; table for 2017-2019 hires 'NOT in the School or DPS Divisions' reads Any age/35, 60/30, 65/any (txt lines 70-83). Applies only to CSU staff who are PERA members (classified staff, and faculty/AP only in limited cases per CSU HR). Does not use 'Rule of 80/85/88/90' terms: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://hr.colostate.edu/current-employees/benefits/afap/retirement/",
+   "fetched_url": null,
+   "title": "Retirement | Human Resources | Colorado State University",
+   "author_org": "Colorado State University Human Resources",
+   "published": "undated web page (mentions 12% effective 7/1/17 and loans before June 1, 2023)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/csu_hr_afap_retirement.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Page undated. Covers faculty/AP/non-classified staff only; classified staff (state personnel system) are PERA members, not covered by this page. Phased retirement or transitional retirement rule: NOT PRESENT on this page. Which plan each CoCoRaHS staff member is in: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://www.atmos.colostate.edu/2017/08/atmos-celebrates-state-climatologist-nolan-doeskens-retirement/",
+   "fetched_url": null,
+   "title": "Atmos celebrates State Climatologist Nolan Doesken's retirement",
+   "author_org": "CSU Department of Atmospheric Science",
+   "published": "2017-08-09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/atmos_ccc_update_2017.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Says nothing of CoCoRaHS succession or Doesken's later role (NOT PRESENT). Same story also at engr.source.colostate.edu (saved as csu_doesken_retirement_2017.txt).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://engr.source.colostate.edu/atmos-celebrates-state-climatologist-nolan-doeskens-retirement/",
+   "fetched_url": null,
+   "title": "Department of Atmospheric Science celebrates State Climatologist Nolan Doesken's retirement",
+   "author_org": "CSU Walter Scott, Jr. College of Engineering (Jayme DeLoss)",
+   "published": "2017-08 (date not in saved text)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/csu_doesken_retirement_2017.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Copy of the atmos.colostate.edu story (sa2-e3); publication date not in saved text.",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://mountainscholar.org/bitstreams/577906e2-f9d0-4e09-bc23-94055d6d0a67/download",
+   "fetched_url": null,
+   "title": "Colorado Climate Center Yearly Update (WERA 102, September 2017), Peter Goble",
+   "author_org": "Colorado Climate Center, CSU (Peter Goble)",
+   "published": "2017-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ccc_wera102_update_2017.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slides; does not say in what capacity (paid, part-time, emeritus) Doesken returned: NOT PRESENT. No written CoCoRaHS succession plan mentioned: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://source.colostate.edu/new-state-climatologist-challenge-colorados-fascinating-diverse-climate/",
+   "fetched_url": null,
+   "title": "New state climatologist up for the challenge of Colorado's 'fascinating, diverse' climate",
+   "author_org": "Colorado State University (SOURCE; Anne Manning)",
+   "published": "2017-10 (date not in saved text; search result 2017-10-09)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/csu_schumacher_new_climatologist_2017.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Year comes from URL date path /2017/10/09/ of the newsmediarelations copy, not from saved text.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://engr.source.colostate.edu/every-drop-counts-precipitation-measuring-network-celebrates-25-years-with-no-signs-of-slowing-down/",
+   "fetched_url": null,
+   "title": "Every drop counts: Precipitation measuring network celebrates 25 years, with no signs of slowing down",
+   "author_org": "CSU College of Engineering (Russ Schumacher)",
+   "published": "2023-06-12",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/csu_cocorahs_25years.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No number of staff, names or roles: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://media.cocorahs.org/docs/WERA1012-2017FinalAgenda.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2017 annual Conference, Program Agenda",
+   "author_org": "CoCoRaHS / WERA-1012",
+   "published": "2017-05 (meeting May 16-18, 2017)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2017_agenda.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Agenda lists names, not FTE, paid status or hire dates. Content of the sustainability session: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://media.cocorahs.org/wera/2024/ewExternalFiles/WERA1012-2024Agenda06-03.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2024 Annual Meeting, Final Agenda",
+   "author_org": "CoCoRaHS / WERA-1012",
+   "published": "2024-06 (meeting June 10, 2024)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2024_agenda.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Agenda; FTE, paid status, deputy or backup roles: NOT PRESENT. Doesken's 2024 role not shown in grep hits.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://hr.colostate.edu/preparing-for-retirement/",
+   "fetched_url": null,
+   "title": "Preparing for Retirement | Human Resources | Colorado State University",
+   "author_org": "Colorado State University Human Resources",
+   "published": "undated web page (mentions a rule effective January 1, 2026 per search snippet)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/csu_hr_preparing_retirement.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Page undated. This is CSU's definition of retiree status (for retiree benefits), separate from PERA benefit eligibility. Faculty Manual E.2.1.6 itself not saved (only search snippet: tenured faculty only, 1-4 years, normally 50%).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://media.cocorahs.org/docs/WERA%201012%20-%202012Agenda.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 Managing and Utilizing Precipitation Observations from Volunteer Networks Conference, 2012 Program Agenda",
+   "author_org": "CoCoRaHS / WERA-1012",
+   "published": "2012-05 (meeting from Tuesday May 15)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2012_agenda.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Attendee list, not payroll; FTE, hire dates and roles NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://climate.colostate.edu/ccc_info.html",
+   "fetched_url": null,
+   "title": "Colorado Climate Center - About Us",
+   "author_org": "Colorado Climate Center, CSU",
+   "published": "undated (search tool said about nine years old)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ccc_info_staff.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Roles, paid status and which are CoCoRaHS vs Climate Center: NOT PRESENT in saved text (mouse-over). Page date unknown. Same page also saved by sa1 of this run (fetch_page reported copied_from work/raw/sa1/ccc_info.html).",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://media.cocorahs.org/docs/WERA1012_2018ExSum.pdf",
+   "fetched_url": null,
+   "title": "11th Annual Meeting of the WERA 1012 Technical Committee, May 16-18, 2018, Executive Summary",
+   "author_org": "WERA-1012 Technical Committee / CoCoRaHS",
+   "published": "2018-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2018_exsum.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "'maintain continuity from year to year' refers to WERA committee communication, not staff succession. No succession plan: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://media.cocorahs.org/docs/WERA1012-2023AgendaMAY1.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2023 Annual Meeting Agenda",
+   "author_org": "CoCoRaHS / WERA-1012",
+   "published": "2023-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2023_agenda.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Agenda only; not read in full (name search). FTE and paid status NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://facultycouncil.colostate.edu/faculty-manual-section-e/",
+   "fetched_url": null,
+   "title": "Faculty Manual, Section E, E.2.1.6 Transitional Appointments",
+   "author_org": "Colorado State University Faculty Council",
+   "published": "E.2.1.6 last revised 2024-12-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/csu_faculty_manual_e.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Applies to tenured faculty only; CoCoRaHS HQ staff roles (coordinator, developer, QC) appear to be non-faculty posts per agendas, but their appointment type is NOT PRESENT in any saved source.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://media.cocorahs.org/docs/WERA-1012-2015%20Meeting%20Notes.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2015 Meeting Notes (with 2015 Program Agenda)",
+   "author_org": "CoCoRaHS / WERA-1012",
+   "published": "2015-05 (meeting from Sunday May 17)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2015_notes.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Read by keyword search only (retire|succession|staff|personnel|hire|replace|leadership|sustainab|funding), not in full; succession/retirement terms: NOT PRESENT in hits.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://csulife.source.colostate.edu/cocorahs-weather-monitoring-volunteers-collect-50-million-daily-precipitation-reports/",
+   "fetched_url": null,
+   "title": "CoCoRaHS weather monitoring volunteers collect 50 million daily precipitation reports",
+   "author_org": "CSU Walter Scott, Jr. College of Engineering (Jayme DeLoss)",
+   "published": "about 2020 (22 years after 1998; 2019-20 award; archive snapshot 2021-04-15)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/csulife_50million.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Live URL returned HTTP 500 (fetch_page and WebFetch); read from web.archive.org snapshot 20210415074457 of the engr.source.colostate.edu copy. Publication date not in saved text.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://media.cocorahs.org/docs/WERA1012-2016AgendaMay12th.pdf",
+   "fetched_url": null,
+   "title": "WERA 1012 2016 Program Agenda (May 17-19, 2016)",
+   "author_org": "CoCoRaHS / WERA-1012",
+   "published": "2016-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2016_agenda.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Agenda only; content of the sustainability session NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://nimss.org/projects/view/mrp/outline/18627",
+   "fetched_url": null,
+   "title": "WERA1012: Managing and Utilizing Precipitation Observations from Volunteer Networks (from WDC43), project outline",
+   "author_org": "NIMSS / WERA-1012",
+   "published": "project 2019-10-01 to 2024-09-30 (archive snapshot 2024-09-12)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nimss_wera1012_outline.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Read via web.archive.org snapshot 20240912154041 (live NIMSS pages returned only a generic list to WebFetch). Searched by keyword, not read in full. Successor project after 2024-09-30: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://www.cocorahs.org/Content.aspx?page=contactus",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Contact Us",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer: Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_contactus_live.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Page is undated; footer copyright 1998-2025 only. No staff count, no employment terms. Julian Turner (web developer) not named on this page.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://www.cocorahs.org/Content.aspx?page=coord",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Volunteer Observer Coordinators",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer: Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_coord_live.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Undated; 'National Director Nolan Doesken' conflicts with the Contact Us page's 'Founder' and with his 2017 retirement as State Climatologist (sa1-e6); the block may be stale. Page does not say whether state coordinators are paid or volunteer.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://www.atmos.colostate.edu/people/research/",
+   "fetched_url": null,
+   "title": "Research Staff - Department of Atmospheric Science, CSU",
+   "author_org": "CSU Department of Atmospheric Science",
+   "published": "undated (live page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/atmos_research_staff.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No start dates at CSU; degree years only. Undated page. Page spells Goble as 'Peter Globe, M.S.' in the summary list (line 251).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://www.atmos.colostate.edu/2017/10/russ-schumacher-selected-as-colorado-climate-center-director-and-colorado-state-climatologist/",
+   "fetched_url": null,
+   "title": "Russ Schumacher selected as climate center director, Colorado State Climatologist",
+   "author_org": "CSU Department of Atmospheric Science",
+   "published": "2017-10-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/atmos_schumacher_2017.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "2017 article; does not mention CoCoRaHS or a written succession plan. Current tenure in 2026 not stated here (CCC About Us lists him first, sa1-e3).",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://www.buzzsprout.com/1136681/8628856-cocorahs-citizen-science-in-weather-reporting",
+   "fetched_url": null,
+   "title": "Come Rain or Shine podcast: CoCoRaHS - Citizen Science in Weather Reporting (Season 2, Episode 8)",
+   "author_org": "Come Rain or Shine podcast",
+   "published": "2021-06-01",
+   "data_period": null,
+   "source_type": "interview",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/podcast_come_rain_or_shine_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extract (small-model extraction), not raw text; curl fetch refused by sandbox proxy for www.buzzsprout.com. Speaker attribution for the 'core staff' quote not given in extract.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s46",
+   "url": "https://www.cocorahs.org/Content.aspx?page=coord_MN",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Minnesota Coordinators",
+   "author_org": "CoCoRaHS",
+   "published": "undated (footer: Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_coord_mn.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "One state only; whether CoCoRaHS duties are paid by those employers or done voluntarily is NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://www.cocorahs.org/State.aspx?state=WI",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Wisconsin",
+   "author_org": "CoCoRaHS",
+   "published": "undated (footer: Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_state_wi.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "One state; paid vs volunteer status NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://media.cocorahs.org/docs/NovDec10WxWise.pdf",
+   "fetched_url": null,
+   "title": "Weatherwise Nov/Dec 2010 article by Nolan Doesken and Henry Reges",
+   "author_org": "Weatherwise (Nolan Doesken, Henry Reges)",
+   "published": "2010 (Nov/Dec)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/reges_wxwise_2010.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Two-column pdftotext layout interleaves the right column on the same lines; passage takes the left column only. No start year.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://api.openalex.org/authors?search=Henry%20Reges&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Henry Reges",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_reges.json",
+   "retrieved": "2026-11-25",
+   "limitations": "ORCID public expanded-search for family-name Reges + given-names Henry returned num-found=\"0\" (work/raw/sa1/orcid_reges.notjson.txt).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s50",
+   "url": "https://api.openalex.org/works?filter=author.id:A5013377998&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Henry W. Reges",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_reges_works.json",
+   "retrieved": "2026-11-25",
+   "limitations": "OpenAlex coverage of conference abstracts is incomplete; podcast (sa1-e7) puts his start at CoCoRaHS in 2004; CSU staff page gives B.S. 1997.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://api.openalex.org/authors?search=Nolan%20Doesken&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Nolan Doesken",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_doesken.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Second profile looks like repository/presentation records split from the main profile.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://api.openalex.org/works?filter=author.id:A5050540601&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Nolan J. Doesken",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_doesken_works.json",
+   "retrieved": "2026-11-25",
+   "limitations": "None beyond OpenAlex coverage.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s53",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=Doesken",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Doesken",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_doesken.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "XML response (saved as .notjson.txt). No affiliation on the record, so identity is not confirmed by affiliation. Person record fetch (orcid_doesken_person.notjson.txt) shows given-names Nolan only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://api.openalex.org/authors?search=Russ%20Schumacher&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Russ Schumacher",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_schumacher.json",
+   "retrieved": "2026-11-25",
+   "limitations": "ORCID expanded search (orcid_schumacher.notjson.txt) confirms the iD 0000-0002-4404-3104 with given-names Russ, family-names Schumacher, institutions incl. American Geophysical Union, American Meteorological Society.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s55",
+   "url": "https://api.openalex.org/works?filter=author.id:A5080597419,institutions.id:I92446798&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Russ S. Schumacher (CSU-affiliated)",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_schumacher_works_csu.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Author-merge problem: unfiltered list starts 'Aerosol Measurements at Ny-Ålesund/ Spitzbergen and its Possible Climate Impact' (2000). CSU M.S. 2003 / Ph.D. 2008 per sa1-e5.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s56",
+   "url": "https://api.openalex.org/authors?search=Peter%20Goble&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Peter Goble",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_goble.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Earliest works (openalex_goble_works.json): 2015 'Assessing the Merit of Soil Moisture as both a Metric and Predictor of Drought...' then 2016. Goble is Colorado Climate Center, not CoCoRaHS-specific.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s57",
+   "url": "https://api.openalex.org/authors?search=Noah%20Newman&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Noah Newman",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_newman.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Earliest-work year for the CSU profile not fetched. Career start about 2004 per podcast (sa1-e7); B.S. 1997 per CSU staff page (sa1-e4).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://api.openalex.org/authors?search=Julian%20Turner&filter=last_known_institutions.id:I92446798&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Julian Turner (CSU)",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_turner.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Author-merge problem: openalex_turner_works.json lists 'Energy from the Ocean: Discussion' 1982 and 'Observation of Low-Energy μ+ Emission from Solid Surfaces' 1986. CSU M.A. 2019 per sa1-e4; start year at CoCoRaHS NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://api.openalex.org/works?filter=author.id:A5111823995,institutions.id:I92446798&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest CSU works: Julian Turner",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_turner_works_csu.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Publication year, not hire date.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://api.openalex.org/works?filter=author.id:A5034896726&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex: Steven D. Hilberg author and earliest works",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_hilberg_works.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Identity by name and Illinois climate topics; CSU staff page gives B.S. 1974 (sa1-e4). Start year at CoCoRaHS NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s61",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Reges%20AND%20given-names:Henry",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Henry Reges",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_reges.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Fielded query; a free-text query was not tried.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=Schumacher%20Colorado%20State",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Schumacher Colorado State",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_schumacher.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Earliest ORCID work year not fetched.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=Goble%20Colorado",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Goble Colorado",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e25",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_goble.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Institution lines of this result not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-6699-515X/person",
+   "fetched_url": null,
+   "title": "ORCID person record 0000-0001-6699-515X",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_doesken_person.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Works/employment endpoints not fetched.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s65",
+   "url": "https://api.openalex.org/works?filter=author.id:A5080597419&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works (unfiltered): Russ S. Schumacher",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_schumacher_works.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Merge problem; use CSU-filtered result (sa1-e17).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s66",
+   "url": "https://api.openalex.org/works?filter=author.id:A5049277871&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Peter E. Goble",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_goble_works.json",
+   "retrieved": "2026-11-25",
+   "limitations": "None noted.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s67",
+   "url": "https://api.openalex.org/works?filter=author.id:A5111823995&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works (unfiltered): Julian Turner",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_turner_works.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Merge problem; use CSU-filtered result (sa1-e21).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s68",
+   "url": "https://api.openalex.org/authors?search=Steven%20Hilberg&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Steven Hilberg",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e30",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_hilberg.json",
+   "retrieved": "2026-11-25",
+   "limitations": "ORCID not searched for Hilberg.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s69",
+   "url": "https://media.cocorahs.org/docs/Coordinator_Training_April_2024.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Coordinator Training Webinar (Noah Newman, April 20, 2024)",
+   "author_org": "CoCoRaHS (Noah Newman)",
+   "published": "2024-04-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e31",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/coordinator_training_2024.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "pdftotext layout of a chart: column alignment of names to titles is inferred from layout; the '~250' figures' alignment to 'State/Reginal' vs 'Local (County)' coordinators is from position. Chart does not say whether staff are full-time, or whether Stolz/Erikson are paid or volunteers. Paid vs volunteer status of state coordinators NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s70",
+   "url": "https://media.cocorahs.org/docs/CoCoRaHs_LocalCoordinatorDescription2006.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Local Coordinator – Volunteer Position Responsibilities",
+   "author_org": "CoCoRaHS",
+   "published": "2006 (per filename)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e32",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/local_coordinator_description_2006.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Covers local (county) coordinators only, 2006; state/regional coordinator pay status NOT PRESENT. The April 2024 training deck still links this document (sa1-e31).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s71",
+   "url": "https://api.openalex.org/works?filter=author.id:A5159417133&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Noah Newman (CSU profile)",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e33",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_newman_works.json",
+   "retrieved": "2026-11-25",
+   "limitations": "OpenAlex profile unreliable for Newman; podcast gives start about 2004 (sa1-e7).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s72",
+   "url": "https://www.coloradopolitics.com/2023/07/26/qa-with-becky-bolinger-colorados-assistant-state-climatologist-reflects-on-a-dozen-years-of-service-aec3f9f2-2bee-11ee-8f4c-eb4fe1c2c434",
+   "fetched_url": null,
+   "title": "Q&A with Becky Bolinger | Colorado’s assistant state climatologist reflects on a dozen years of service",
+   "author_org": "Colorado Politics",
+   "published": "2023-07-26 (updated 2025-07-05)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e34",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/bolinger_qa_2023_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extract; departure, destination and replacement NOT PRESENT. Not CoCoRaHS-specific.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s73",
+   "url": "https://api.openalex.org/authors?search=Talmadge&filter=last_known_institutions.id:I92446798&select=id,display_name,orcid,works_count,last_known_institutions",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Talmadge (CSU)",
+   "author_org": "OpenAlex",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e35",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/openalex_talmadge.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Non-publishing staff; career dates NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s74",
+   "url": "https://climate.colostate.edu/ccc_info.html",
+   "fetched_url": null,
+   "title": "Colorado Climate Center - About Us (mouse-over staff cards in page script)",
+   "author_org": "Colorado Climate Center, Colorado State University",
+   "published": "undated (Hilberg photo file named Hilberg202512.jpg)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e36",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ccc_info.html",
+   "retrieved": "2026-11-25",
+   "limitations": "Raw HTML script text, not visible page text; that Bolinger's card is not linked is inferred from the link list (content[1] not called in lines 285-298 as read) and should be checked. Carol Stolz and Linda Erikson have no cards. Undated.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s75",
+   "url": "https://media.cocorahs.org/docs/Steve%20Hilberg_Biography.pdf",
+   "fetched_url": null,
+   "title": "Steve Hilberg Biography",
+   "author_org": "CoCoRaHS",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e38",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/hilberg_biography.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Undated bio; MRCC retirement year and CSU start year NOT PRESENT. pdftotext output separates words with tab+spaces.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s76",
+   "url": "https://media.cocorahs.org/docs/Turner-WERA21.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS IT update, WERA 2021 (Julian Turner, Colorado Climate Center)",
+   "author_org": "Julian Turner, Colorado Climate Center",
+   "published": "2021 (per filename WERA21)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e39",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/turner_wera21.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "2021 slide deck; 2024 deck (RUN-2 wera2024_it_update_turner.txt) has a similar 'Constraints on IT Dev Capacity' slide but its developer count was not checked. Whether Solliance is still engaged in 2026 NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s77",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Hilberg",
+   "fetched_url": null,
+   "title": "ORCID expanded search: family-name Hilberg",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e40",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_hilberg.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Absence established by searching the saved XML for Steve|Steven.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s78",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=Reges%20CoCoRaHS",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Reges CoCoRaHS",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e41",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_reges_free.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Free-text query matched 225 records; only the first page was saved and searched; why Turner matches the query (likely CoCoRaHS keyword) is not shown. The 0009- prefix indicates a recently registered iD.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s79",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=Newman%20Colorado%20State%20University%20climate",
+   "fetched_url": null,
+   "title": "ORCID expanded search: Newman Colorado State University climate",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e42",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_newman.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Identity of 0000-0003-0300-0789 not confirmed by co-authorship; works list not fetched.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s80",
+   "url": "https://pub.orcid.org/v3.0/0000-0003-0300-0789/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: 0000-0003-0300-0789 (Noah Newman)",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e43",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_newman_employments.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No start-date element in the saved record (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s81",
+   "url": "https://pub.orcid.org/v3.0/0009-0005-6395-157X/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: 0009-0005-6395-157X (Julian Turner)",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e44",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_turner_employments.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Self-reported; start year may cover CSU employment generally, not CoCoRaHS role specifically. No end date shown.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s82",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-5991-7268/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: 0000-0001-5991-7268 (Peter Goble)",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e45",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_goble_employments.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Absence established by searching saved XML.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s83",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-4404-3104/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: 0000-0002-4404-3104 (Russ Schumacher)",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e46",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_schumacher_employments.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Self-reported; State Climatologist/Director role not shown as a separate entry; consulting role scope and whether part-time NOT PRESENT. Remaining entries beyond line 164 not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s84",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-6699-515X/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: 0000-0001-6699-515X (Nolan Doesken)",
+   "author_org": "ORCID",
+   "published": "live API",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e47",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_doesken_employments.notjson.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Absence established by searching saved XML for role-title/year/organization name.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "m1",
+   "url": "https://nationalmesonet.us/cocorahs/",
+   "title": "CoCoRaHS | National Mesonet Program",
+   "author_org": "National Mesonet Program",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "retrieved": "2026-11-25",
+   "local_file": "work/raw/main/browser/nationalmesonet-us-cocorahs_034454.txt",
+   "data_period": "2026-11",
+   "evidence_id": null,
+   "limitations": "Partner listing only; no amounts or contract terms."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "confidence": "high",
+   "text": "CoCoRaHS headquarters is a small Colorado State University staff inside the Colorado Climate Center: the April 2024 org chart names Doesken (Founder/Emeritus), Schumacher (Director, Colorado Climate Center), Hilberg (Project Coordinator), Turner (Web Developer), Reges (National Coordinator), Newman (Education and Outreach), Talmadge (QA/QC), Stolz (Help Desk) and Erikson (Station Admin); the 2023 and 2024 WERA agendas give the same five CSU CoCoRaHS roles; the live contact page (2026-11-25) still lists Stolz, Newman, Reges, Hilberg and Doesken as Founder.",
+   "evidence": [
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "Noah Newman | April 20, 2024 … Organization chart               Nolan                               Russ | Doesken                           Schumacher | Professor and Director, | Founder/Emeritus                 Colorado Climate Center … Steve         Julian                      Henry                         Noah                     Dani | Hilberg       Turner                      Reges                         Newman                   Talmadge | Project                                   National                     Education and | Web                                                      Outreach                    QA/QC | Coordinator   Developer                   Coordinator … Carol   Linda | State                                    Stolz   Erikson | Coordinators | Help Desk     Station Admin | Coordinator   for new signups | ~250 | Reginal | Coordinators … Local (County) | ~250           Coordinators … ~25,000                Rain Gauge | Volunteers",
+     "location": "Slide 3 'Organization chart' (text lines 7-55)"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Henry Reges, National CoCoRaHS Coordinator, Colorado State University, Fort Collins, CO … Noah Newman, CoCoRaHS Education Coordinator, Colorado State University, Fort Collins, CO … Julian Turner, CoCoRaHS Web Development, Colorado State University, Fort Collins, CO … Steve Hilberg, CoCoRaHS Project Manager, Colorado State University., Fort Collins, CO | Dani Talmadge, CoCoRaHS QC, Colorado State University, Fort Collins, CO",
+     "location": "txt lines 9, 48, 51, 58-59"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "Henry Reges, National CoCoRaHS Coordinator, Colorado State University, Fort Collins, CO … Steve Hilberg, CoCoRaHS Project Manager, Colorado State University., Fort Collins, CO | Dani Talmadge, CoCoRaHS QC, Colorado State University, Fort Collins, CO … Julian Turner, CoCoRaHS Web Development, Colorado State University, Fort Collins, CO … Noah Newman, CoCoRaHS Education Coordinator, Colorado State University, Fort Collins, CO",
+     "location": "txt lines 9, 42-46, 92"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "Help Desk (station/observer questions) - Carol Stolz - info@cocorahs.org (970) 491-8545 Education/Schools/Outreach - Noah Newman (970) 491-8545 U.S. National Coordinator - Henry Reges (970) 491-1196 In Canada National Coordinator - Janvi Mirchandani … For questions about the Data Explorer, interactive mapping, the mobile app, or CoCoRaHS data, email: Noah Newman (noah.newman@colostate.edu) or Steve Hilberg (hberg@cocorahs.org) … For State/Regional Coordinator changes, contact our National Coordinator, Henry Reges at: henry.reges@colostate.edu … Contact CoCoRaHS Founder, Nolan Doesken at nolan.doesken@colostate.edu with suggestions, questions, or comments.",
+     "location": "Contact Us page, 'Call or visit us' and 'email us' rows"
+    },
+    {
+     "source_id": "s74",
+     "relationship": "supports",
+     "passage": "<b>Nolan Doesken<br>State Climatologist Emeritus</b><br>2006 - 2017 … <b>Becky Bolinger<br>Assistant State Climatologist<br>Research Scientist II</b> … <b>Peter Goble<br>Assistant State Climatologist<br>Research Associate IV</b> … <b>Noah Newman<br>CoCoRaHS Education Coordinator<br>Research Associate III</b> … <b>Henry Reges<br>CoCoRaHS National Coordinator<br>Prof/Indiv Contrib III</b> … <p>Contact me for:<br>CoCoRaHS Information<br>Fundraising for CoCoRaHS</p> … <b>Julian Turner<br>CoCoRaHS Web Developer<br>Sr Research Associate</b> … <p>Contact me for:<br>Questions about the CoCoRaHS website</p> … <b>Russ Schumacher<br>State Climatologist<br>Professor</b> … <b>Dani Talmadge<br>CoCoRaHS Data Quality Coordinator<br>Research Associate I</b> … <b>Steve Hilberg<br>CoCoRaHS Project Manager</b>",
+     "location": "ccc_info.html page script, content[0]-content[15] (lines 105-120); visible link list lines 285-298"
+    }
+   ],
+   "confidence_reason": "CoCoRaHS's own chart, its meeting agendas and the live CSU and CoCoRaHS pages agree.",
+   "sole_source_reason": "The organization's own staff pages and agendas are the authority for who it employs.",
+   "applicability": null,
+   "figure_status": null
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "confidence": "moderate",
+   "text": "The paid core is about five to seven people, most of them in place for two decades: Reges and Newman joined about 2004, Turner's ORCID gives a CSU start in 2003, Talmadge appears from 2016, and the 2021 podcast says 'a core staff now of about five' each with over 10 years. Erikson's station processing is listed as in-kind (volunteer) support in the FY22 slides.",
+   "evidence": [
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "\"back in 2004, I was working at the American Meteorological Society headquarters in Boston\" … \"it's been 17 years now going on working with the network.\" … \"right around that same time of around 2004\" … \"we wrote in the notion of an Education Coordinator named Noah Newman. And once the funding happened, it was a nice way to, to get me in the door.\" … \"we've got a core staff now of about five of us that have been with the program over 10 years.\" … \"We've got a pretty small staff.\"",
+     "location": "Episode transcript (via WebFetch extract)"
+    },
+    {
+     "source_id": "s81",
+     "relationship": "supports",
+     "passage": "<common:source-name>Julian Turner</common:source-name> … <common:department-name>Atmospheric Science</common:department-name> | <common:role-title>Senior Research Associate</common:role-title> | <common:start-date> | <common:year>2003</common:year> … <common:name>Colorado State University</common:name>",
+     "location": "employment-summary, lines 16-25"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "2:00 PM        Sustainability – Path to the Future | Nolan Doesken, CoCoRaHS National Office … CoCoRaHS Staff | Peter Goble          peter@cocorahs.org | Noah Newman          noah@cocorahs.org | Henry Reges          hreges@atmos.colostate.edu | Zach Schwalbe        zach.schwalbe@colostate.edu | Dani Talmadge        qc@cocorahs.org | Julian Turner        Julian.turner@colostate.edu",
+     "location": "txt lines 108-109, 193-199"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "contextualizes",
+     "passage": "Successful fundraiser | $197.745 … • Over 250 state/regional volunteer coordinators | • WeatherYourWay.com | • Each volunteer’s daily observation . . . . Wow! | • KRESL Design – our shirt & logo graphic design | • Linda Erikson – Station processing/Onboarding",
+     "location": "slides 5-6"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "contextualizes",
+     "passage": "CoCoRaHS Staff | Nolan Doesken     nolan@atmos.colostate.edu      CoCoRaHS HTQRS | Julian Turner     julian.turner@colostate.edu    CoCoRaHS HTQRS | Henry Reges       henry.reges@colostate.edu      CoCoRaHS HTQRS | Zach Schwalbe     zach@cocorahs.org              CoCoRaHS HTQRS | Noah Newman       nnewman@atmos.colostate.edu    CoCoRaHS HTQRS | Peter Goble       qc@cocorahs.org                CoCoRaHS HTQRS",
+     "location": "attendee list, txt lines 151-157"
+    }
+   ],
+   "confidence_reason": "Self-reported dates (podcast, ORCID) and agenda appearances, not HR records; FTE not published.",
+   "applicability": null,
+   "figure_status": null
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "confidence": "high",
+   "text": "P-4 supported: CoCoRaHS's IT rests on one developer (Julian Turner): his 2021 roadmap slide says 'One developer => 50 Work weeks a year', with operations outsourced in part to a vendor (Solliance, $150 per hour); in 2018 he said more people were ideally needed for the website, database, apps and system administration.",
+   "evidence": [
+    {
+     "source_id": "s76",
+     "relationship": "supports",
+     "passage": "Roadmap What is our IT capacity? … • One developer => 50 Work weeks a year | • Operations related tasks take roughly 25% of the available | development time (12 weeks per year) … • That leaves 36 weeks a year for application development … •   CoCoRaHS can outsource IT operations and development work to increase IT capacity | while maintaining budget sustainability | •   Solliance helped CoCoRaHS prepare for and implement the migration to Azure | •   They are currently helping with monitoring and operations of the | cyber-infrastructure in Azure … • CSU has a $150K limit for any vendor | (not that we have the budget for it, but it provides a theoretical limit) | • Solliance charges $150 per hour … • We don’t have the capacity to do it all in the timeframe we would like … Julian Turner",
+     "location": "Slides 'Roadmap What is our IT capacity?', 'Roadmap Increase IT capacity', 'Takeaways' (text lines 211-278)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Russ Schumacher, the new Colorado State | Climatologist talked about his background and perspective coming to the Colorado Climate | Center and to CoCoRaHS. … Nolan Doesken reported that CoCoRaHS is going strong. We have gone several years without | any of the federal grants that helped us to get to the national and international scale. … Julian | Turner from CoCoRaHS headquarters provided an update on the status of IT. There are a | number of overarching issues to deal with. Ideally, additional personnel resources are needed | to work on the operational website and database, web development, app development, and | system administration. … how to best maintain continuity from year to year",
+     "location": "Executive Summary, txt lines 15-18, 60-72"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Henry Reges and Nolan Doesken reported the approximate expenses for FY2020 are $420K with about | 56% covering HQ staff including observer support, web development, database management, | education, and the help desk. … The CoCoRaHS website is maintained by Julian Turner, who keeps detailed notes on the | organizations’ priorities, and uses annual meetings to tweak priorities according to the | demands of stakeholders.",
+     "location": "txt lines 30-32, 363-365"
+    }
+   ],
+   "figure_status": "actual",
+   "confidence_reason": "Stated by the developer himself in two CoCoRaHS documents, and by the 2020-22 minutes.",
+   "sole_source_reason": "The organization's own meeting records are the authority on its staffing.",
+   "applicability": null
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "confidence": "moderate",
+   "text": "P-4 supported for the national coordinator too: Henry Reges is the U.S. National Coordinator, the contact for 'Fundraising for CoCoRaHS', the person behind the NIDIS Intermountain West DEWS support, and the one CoCoRaHS NSF searches show no award for; no deputy or backup for him is named in any source read.",
+   "evidence": [
+    {
+     "source_id": "s74",
+     "relationship": "supports",
+     "passage": "<b>Nolan Doesken<br>State Climatologist Emeritus</b><br>2006 - 2017 … <b>Becky Bolinger<br>Assistant State Climatologist<br>Research Scientist II</b> … <b>Peter Goble<br>Assistant State Climatologist<br>Research Associate IV</b> … <b>Noah Newman<br>CoCoRaHS Education Coordinator<br>Research Associate III</b> … <b>Henry Reges<br>CoCoRaHS National Coordinator<br>Prof/Indiv Contrib III</b> … <p>Contact me for:<br>CoCoRaHS Information<br>Fundraising for CoCoRaHS</p> … <b>Julian Turner<br>CoCoRaHS Web Developer<br>Sr Research Associate</b> … <p>Contact me for:<br>Questions about the CoCoRaHS website</p> … <b>Russ Schumacher<br>State Climatologist<br>Professor</b> … <b>Dani Talmadge<br>CoCoRaHS Data Quality Coordinator<br>Research Associate I</b> … <b>Steve Hilberg<br>CoCoRaHS Project Manager</b>",
+     "location": "ccc_info.html page script, content[0]-content[15] (lines 105-120); visible link list lines 285-298"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "CoCoRaHS operational expenses (approximate for FY20) … CoCoRaHS required revenues (approximate for FY20) … • NIDIS Intermountain West Drought Early Warning System (continued support | for condition monitoring) – note that NIDIS support wasn’t counted in the | numbers above (primarily Henry Reges) … Other potential funding sources going forward | • Data users outside of Colorado | • Other research or education grants? | • More grants for computing resources?",
+     "location": "slides 3-7"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "Help Desk (station/observer questions) - Carol Stolz - info@cocorahs.org (970) 491-8545 Education/Schools/Outreach - Noah Newman (970) 491-8545 U.S. National Coordinator - Henry Reges (970) 491-1196 In Canada National Coordinator - Janvi Mirchandani … For questions about the Data Explorer, interactive mapping, the mobile app, or CoCoRaHS data, email: Noah Newman (noah.newman@colostate.edu) or Steve Hilberg (hberg@cocorahs.org) … For State/Regional Coordinator changes, contact our National Coordinator, Henry Reges at: henry.reges@colostate.edu … Contact CoCoRaHS Founder, Nolan Doesken at nolan.doesken@colostate.edu with suggestions, questions, or comments.",
+     "location": "Contact Us page, 'Call or visit us' and 'email us' rows"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "contextualizes",
+     "passage": "\"award\": [], … \"totalCount\": 0",
+     "location": "response"
+    }
+   ],
+   "confidence_reason": "Roles are documented; the absence of a backup is absence of evidence across the pages read.",
+   "applicability": null,
+   "figure_status": null
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "confidence": "moderate",
+   "text": "P-1 supported: no written succession, workforce or knowledge-transfer plan was found in CoCoRaHS's WERA1012 agendas (2012-2024), the 2015 notes, the 2018 executive summary, the 2020-22 minutes or the WERA1012 2019-2024 outline; the outline's 'sustainability' objective is about partnerships, money and people for the volunteer networks, and the 2015 Sustainability Committee was 'Funding mostly'. The only knowledge-transfer trace is that Turner 'keeps detailed notes' on priorities.",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "Duration: 10/01/2019 to 09/30/2024 … - Establish new and strengthen existing partnerships to provide financial assets, human resources and the intellectual capital needed to sustain these volunteer networks for years to come. … We plan to continue using the successful governance structure of a chair and chair-elect. CoCoRaHS leadership will administer the meeting.",
+     "location": "txt lines 32, 60, 122"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "Sustainability/Funding – Henry Reges … Sustainability Committee – Funding mostly – Henry Reges, Nolan Doesken … Unless something international comes with a very large amount | of money, this is something we don’t currently have time or personnel to do. … CoCoRaHS Staff | Nolan Doesken              nolan@atmos.colostate.edu   CoCoRaHS HTQRS | Julian Turner              julian.turner@colostate.edu CoCoRaHS HTQRS | Henry Reges                henry.reges@colostate.edu   CoCoRaHS HTQRS | Zach Schwalbe              zach@cocorahs.org           CoCoRaHS HTQRS | Noah Newman                nnewman@atmos.colostate.edu CoCoRaHS HTQRS | Michael Willette           qc@cocorahs.org             CoCoRaHS HTQRS",
+     "location": "txt lines 150, 464, 593-594, 693-699"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contextualizes",
+     "passage": "Henry Reges and Nolan Doesken reported the approximate expenses for FY2020 are $420K with about | 56% covering HQ staff including observer support, web development, database management, | education, and the help desk. … The CoCoRaHS website is maintained by Julian Turner, who keeps detailed notes on the | organizations’ priorities, and uses annual meetings to tweak priorities according to the | demands of stakeholders.",
+     "location": "txt lines 30-32, 363-365"
+    }
+   ],
+   "confidence_reason": "Absence of evidence across the organization's own records; a plan could exist internally.",
+   "applicability": null,
+   "figure_status": null
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "confidence": "high",
+   "text": "The founder's retirement was handled as a phased handover, not by a written plan: Doesken retired in August 2017 after 40 years at CSU (11 as State Climatologist), came back in October 'primarily to work on CoCoRaHS', CSU searched for and appointed Russ Schumacher State Climatologist and Climate Center director from 6 October 2017, and by 2024 Doesken is 'Founder/Emeritus'.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "August 9, 2017 … Former department members and National Weather Service employees joined the department and Colorado Climate Center today to celebrate Nolan Doesken’s 40 years of service to CSU, 11 of those as Colorado’s State Climatologist. … Professor Emeritus and former State Climatologist Tom McKee, left, shared memories dating back to 1977, the year Nolan started working at CSU as Assistant State Climatologist.",
+     "location": "lines 3-17"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "• Nolan Doesken has retired | • The new State Climatologist is to be named next | month … • He retired in | August … • He’ll be back in | October, | primarily to work | on CoCoRaHS. … • Colorado State has conducted and completed | a search for a new state climatologist | • Expect this person to be a tenured faculty | member within Colorado State, and to be | named next month | • Expect this person to name a deputy director | of the Climate Center | • …but we are not currently running headless",
+     "location": "slides 1-3, txt lines 1-44"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "An associate professor in the Department of Atmospheric Science at Colorado State University, Schumacher became Colorado State Climatologist Oct. 6. He’ll continue in his academic role while taking on the added, vast responsibility of key statewide climate expert and spokesperson. … As State Climatologist, Schumacher will lead the Colorado Climate Center … and administration of the Community Collaborative Rain, Hail and Snow Network. … Schumacher succeeds Nolan Doesken, who has served as Colorado State Climatologist since 2006 and as assistant state climatologist for close to three decades prior.",
+     "location": "lines 31-39"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "CSU Atmospheric Science Associate Professor Russ Schumacher has been chosen as the next director of the Colorado Climate Center and Colorado State Climatologist. His appointment begins Oct. 6. Schumacher will continue in his role as a faculty member in the Department of Atmospheric Science … It will never be possible to fill the shoes of my predecessor, Nolan Doesken … Schumacher first came to Colorado as a CSU Department of Atmospheric Science graduate student in fall 2001. He completed his M.S. in 2003 and Ph.D. in 2008. Schumacher joined department faculty in 2011 following a postdoc stint at the National Center for Atmospheric Research in Boulder and three years as an assistant professor at Texas A&M.",
+     "location": "Article, paragraphs 1, 4, 5"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "Noah Newman | April 20, 2024 … Organization chart               Nolan                               Russ | Doesken                           Schumacher | Professor and Director, | Founder/Emeritus                 Colorado Climate Center … Steve         Julian                      Henry                         Noah                     Dani | Hilberg       Turner                      Reges                         Newman                   Talmadge | Project                                   National                     Education and | Web                                                      Outreach                    QA/QC | Coordinator   Developer                   Coordinator … Carol   Linda | State                                    Stolz   Erikson | Coordinators | Help Desk     Station Admin | Coordinator   for new signups | ~250 | Reginal | Coordinators … Local (County) | ~250           Coordinators … ~25,000                Rain Gauge | Volunteers",
+     "location": "Slide 3 'Organization chart' (text lines 7-55)"
+    }
+   ],
+   "confidence_reason": "CSU news, Climate Center slides and the CoCoRaHS org chart agree.",
+   "applicability": null,
+   "figure_status": null
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "confidence": "moderate",
+   "text": "Retirement rules: most CoCoRaHS staff are CSU faculty or administrative professionals, who must join CSU's Defined Contribution Plan (PERA only in limited cases); CSU pays 12%, and CSU defines a 'retiree' as age 55+ with 20 years of service or 60+ with 5 years. Phased (transitional) retirement is for tenured faculty only. PERA's own eligibility tables apply only to staff in PERA.",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Faculty, Administrative Professionals, Non-Classified Staff … Employees appointed on or after April 1, 1993, are required as a condition of employment under Colorado law, to participate in either the University’s DCP for retirement or, in limited cases, Colorado PERA. … Employees may be eligible to participate in PERA if they have at least 12 months of prior PERA credited service, have money in a PERA account, and have not previously elected to participate in an Optional Retirement Plan (ORP) at any public college or university in Colorado. … The University will contribute an amount equal to 12% (effective 7/1/17) of your covered monthly salary to the DCP accounts of: … When you leave CSU at or after age 55, you are entitled to your entire DCP account balance. … If you leave CSU prior to “normal” retirement age (55) for any reason other than death or disability:",
+     "location": "txt lines 19-52"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "To be considered a “retiree” an academic faculty member, administrative professional or state classified employee who is a participant in the Defined Contribution Plan for Retirement (DCP) or who is a participant in the Colorado Public Employees Retirement Association (PERA) appointed or reappointed on or after July 1, 2005 must be: | - Age 55 or greater with at least 20 years of “service” or | - Age 60 or greater with at least 5 years of “service” … Periods of “service” need not be continuous but there must be a minimum of five consecutive years of “service” immediately preceding the date of “retirement”. … PERA Participants Appointed Prior to June 2005: Academic faculty, administrative professional or state classified employees who are participants in PERA and who were appointed on or before June 30, 2005 or reappointed only on or before that date, who are eligible for “retirement” (full or reduced) under the PERA provisions at the time of separation and who have at least five consecutive years of service at Colorado State University in a half‐time or greater, benefit eligible appointment immediately prior to the date of separation are considered “retirees”. … Transitional Appointments are negotiated directly with your department as per section E.2.1.6 of the Academic Faculty and Administrative Professional Manual.",
+     "location": "Retirement Eligibility section, txt lines 16-31; Transitional Retirement, line 163"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "PERA Participants Appointed Prior to June 2005: Academic faculty, administrative professional or state classified employees who are participants in PERA and who were appointed on or before June 30, 2005 or reappointed only on or before that date, who are eligible for “retirement” (full or reduced) under the PERA provisions at the time of separation and who have at least five consecutive years of service at Colorado State University in a half‐time or greater, benefit eligible appointment immediately prior to the date of separation are considered “retirees”.",
+     "location": "line 31"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "E.2.1.6 Transitional Appointments (last revised December 6, 2024) … Administrative professionals and non-tenured faculty members are not eligible for transitional appointments due to the legal conflict between the statutory “at will” status of such appointments and the appointment term guarantees embodied in a transitional appointment. … a. Only tenured faculty members on full-time or part-time tenured appointments who are currently eligible for retirement under the University’s definition of retirement … have the opportunity of requesting transitional appointments. … c. A transitional appointment is for a specified term of at least one (1) year and not more than four (4) years",
+     "location": "Section E.2.1.6, txt lines 320-334"
+    }
+   ],
+   "figure_status": "current_plan",
+   "confidence_reason": "CSU's own HR pages and Faculty Manual; which plan each person is in is not published.",
+   "sole_source_reason": "The employer's own HR rules are the authority for its retirement definitions.",
+   "applicability": null
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "confidence": "low",
+   "text": "P-2 (estimates): Doesken (CSU from 1977; earliest OpenAlex work 1978) is already retired and about 72-78; Hilberg (B.S. 1974; earliest work 1982; retired once as MRCC director) is about 73-76 and past every age threshold, so he is retirement-eligible now; Reges, Newman, Turner and Schumacher (earliest work or start 2003-2005) are about 44-53 and unlikely to reach CSU's age-55 threshold by November 2028, Turner being the only possible exception.",
+   "evidence": [
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "\"display_name\": \"Colorado's Two Tough Winters: The past Two Winters in Colorado Have Brought Record—Breaking Drought Followed by Unusually Heavy Precipitation\" … \"publication_year\": 1978 … \"display_name\": \"Colorado climate summary water-year series: January 1977-September 1977, October 1977-September 1978\" … \"publication_year\": 1978",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "August 9, 2017 … Former department members and National Weather Service employees joined the department and Colorado Climate Center today to celebrate Nolan Doesken’s 40 years of service to CSU, 11 of those as Colorado’s State Climatologist. … Professor Emeritus and former State Climatologist Tom McKee, left, shared memories dating back to 1977, the year Nolan started working at CSU as Assistant State Climatologist.",
+     "location": "lines 3-17"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "Peter Goble — Climatologist and Water Availability Specialist | - M.S. in Atmospheric Science — 2016 — Colorado State University — Fort Collins, CO | - Research associate with Colorado Climate Center … Steve Hilberg — Research Associate II | - B.S. in Meteorology — 1974 — St. Louis University — St. Louis, MO | - Research associate with Colorado Climate Center | - CoCoRaHS Project Manager, CoCoRaHS data QA/QC … Noah Newman — Colorado Climate Center Education and Outreach Coordinator | - B.S. in Liberal Arts — 1997 — Colorado State University — Fort Collins, CO | - Coordinator with Colorado Climate Center | - Climate education and outreach | Henry Reges — CoCoRaHS National Coordinator/International Relations Envoy | - B.S. in Atmospheric Sciences — 1997 — University of North Carolina — Asheville, NC | - National coordinator for the Community Collaborative Rain, Hail and Snow network (Colorado Climate Center) | - Supports more than 250 state and regional coordinators, network operations, member of WMO’s Expert Team on Climate Monitoring and Assessment … Julian Turner — Senior Research Associate | - M.A. in Computer Information Systems — 2019 — Colorado State University | - Research associate with Colorado Climate Center | - Web developer and database administrator for the CoCoRaHS (Community Collaborative Rain, Hail and Snow) Network",
+     "location": "Research Staff page, detail entries (text lines 495-541)"
+    },
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "\"display_name\": \"Illinois Water Survey\" … \"publication_year\": 1982 … \"display_name\": \"Crops and Climate: The Variation and Prediction of Yields\" … \"publication_year\": 1982",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "Steve\t  Hilberg\t  is\t  a\t  meteorologist/climatologist\t  and\t  recently\t  retired\t  as\t  Director\t  of\t  the | Illinois\t  CoCoRaHS\t  coordinator\t  and\t  very\t  interested\t  in\t  the\t  quality\t  control\t  and\t  use\t  of",
+     "location": "p.1, lines 5 and 10"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "\"display_name\": \"The Community Collaborative Rain, Hail and Snow Network (CoCoRaHS)—A Great Way to Learn and Teach about Our Climate\" … \"publication_year\": 2005",
+     "location": "results[0]"
+    },
+    {
+     "source_id": "s81",
+     "relationship": "supports",
+     "passage": "<common:source-name>Julian Turner</common:source-name> … <common:department-name>Atmospheric Science</common:department-name> | <common:role-title>Senior Research Associate</common:role-title> | <common:start-date> | <common:year>2003</common:year> … <common:name>Colorado State University</common:name>",
+     "location": "employment-summary, lines 16-25"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "\"display_name\": \"Organization and Environmental Properties of Extreme-Rain-Producing Mesoscale Convective Systems\" … \"publication_year\": 2005 … \"display_name\": \"WRF model simulations of a quasi-stationary, extreme–rain–producing mesoscale convective system\" … \"publication_year\": 2005",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "CSU Atmospheric Science Associate Professor Russ Schumacher has been chosen as the next director of the Colorado Climate Center and Colorado State Climatologist. His appointment begins Oct. 6. Schumacher will continue in his role as a faculty member in the Department of Atmospheric Science … It will never be possible to fill the shoes of my predecessor, Nolan Doesken … Schumacher first came to Colorado as a CSU Department of Atmospheric Science graduate student in fall 2001. He completed his M.S. in 2003 and Ph.D. in 2008. Schumacher joined department faculty in 2011 following a postdoc stint at the National Center for Atmospheric Research in Boulder and three years as an assistant professor at Texas A&M.",
+     "location": "Article, paragraphs 1, 4, 5"
+    }
+   ],
+   "confidence_reason": "Ages are estimates from publication and career years; no birth dates or HR plan records are published.",
+   "applicability": null,
+   "figure_status": null
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "confidence": "high",
+   "text": "Federal grants ended by 2017: NOAA NA06SEC4690004 ($1,170,009, 2006-10-01 to 2010-09-30) and NA10SEC0080012 ($1,252,293, 2010-10-01 to 2015-09-30), and NSF 1010888 (PI Doesken, 2010-09-15 to 2017-02-28, $870,994 obligated); USAspending's CoCoRaHS keyword search shows no later CSU award. The 2015 letter says NOAA funding 'ended in September'; the 2016 letter says 'The future of CoCoRaHS was very much in doubt'.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "\"fain\": \"NA06SEC4690004\" … \"description\": \"COCORAHS: THE COMMUNITY COLLABORATIVE RAIN, HAIL AND SNOW NETWORK - ENHANCING ENVIRONMENTAL LITERACY THROUGH PARTICIPATION IN CLIMATE MONITORING AND\" … \"total_obligation\": 1170009.0 … \"date_signed\": \"2006-08-29\" … \"cfda_title\": \"Congressionally Identified Awards and  Projects\" … \"start_date\": \"2006-10-01\" … \"end_date\": \"2010-09-30\" … \"recipient_name\": \"COLORADO STATE UNIVERSITY\"",
+     "location": "JSON fields"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "\"fain\": \"NA10SEC0080012\" … \"description\": \"COCORAHS: CAPITALIZING ON TECHNOLOGICAL ADVANCEMENTS TO EXPAND ENVIRONMENTAL LITERACY THROUGH A SUCCESSFUL CITIZEN SCIENCE NETWORK\" … \"total_obligation\": 1252293.0 … \"date_signed\": \"2010-07-22\" … \"cfda_number\": \"11.008\" … \"cfda_title\": \"NOAA Mission-Related Education Awards\" … \"start_date\": \"2010-10-01\" … \"end_date\": \"2015-09-30\" … \"recipient_name\": \"COLORADO STATE UNIVERSITY\"",
+     "location": "JSON fields"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "\"awardee\": \"NORTH CAROLINA STATE UNIVERSITY\" … \"awdSpAttnDesc\": \"Administratively Terminated Award\" … \"coPDPI\": [ … \"Russ S Schumacher russ.schumacher@colostate.edu\" … \"estimatedTotalAmt\": \"1999449\", … \"expDate\": \"04/18/2025\" … \"fundsObligatedAmt\": \"1123487\" … \"id\": \"2313996\" … \"awardee\": \"COLORADO STATE UNIVERSITY\" … \"estimatedTotalAmt\": \"724944\", … \"expDate\": \"02/28/2017\" … \"fundsObligated\": [ … \"FY 2010 = $238,626.00\", … \"FY 2011 = $247,569.00\", … \"FY 2012 = $241,158.00\", … \"FY 2015 = $143,641.00\" … \"fundsObligatedAmt\": \"870994\" … \"id\": \"1010888\" … \"pdPIName\": \"Nolan J Doesken\" … \"startDate\": \"09/15/2010\", … \"title\": \"The Community Collaborative Rain, Hail and Snow (CoCoRaHS) Network: Enhancements to increase participation for tens of thousands in an important nationwide climate-literacy projec\" … \"awardee\": \"COLORADO STATE UNIVERSITY\" … \"estimatedTotalAmt\": \"897341\", … \"expDate\": \"12/31/2006\" … \"id\": \"0229723\" … \"pdPIName\": \"Robert Cifelli\" … \"startDate\": \"01/01/2003\", … \"title\": \"Bringing CoCoRaHS to the Central Great Plains:  An Informal Science Education Project for Rural Communities\"",
+     "location": "response.award[] (9 awards; others are to other institutions: Oklahoma, CU Boulder, Stony Brook, Oklahoma State, Island Institute, Paleontological Research Institution)"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "\"Award ID\":\"NA10SEC0080012\",\"Recipient Name\":\"COLORADO STATE UNIVERSITY\",\"Award Amount\":1252293.0 … \"Start Date\":\"2010-10-01\",\"End Date\":\"2015-09-30\" … \"Award ID\":\"NA06SEC4690004\",\"Recipient Name\":\"COLORADO STATE UNIVERSITY\",\"Award Amount\":1170009.0 … \"Award ID\":\"2313996\",\"Recipient Name\":\"NORTH CAROLINA STATE UNIVERSITY\",\"Award Amount\":1123487.0 … \"Award ID\":\"1010888\",\"Recipient Name\":\"COLORADO STATE UNIVERSITY\",\"Award Amount\":870994.0 … \"Start Date\":\"2010-09-15\",\"End Date\":\"2017-02-28\" … \"messages\":[\"For searches, time period start and end dates are currently limited to an earliest date of 2007-10-01.",
+     "location": "results array"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "This year’s fundraiser comes at a significant crossroads for us. Our grant funding from NOAA (which has helped us financially for nearly a decade as we grew nationally) ended in September. We are receiving support from several sponsors who use and rely on high quality, reliable precipitation data. The National Science Foundation is still providing some help for one more year. This is great, but it only gets us part way toward our annual cost of operation. … We operate on an annual budget of about $400,000 per year, which is pretty amazing for a national program like this. This supports a small team of full time and part-time staff",
+     "location": "page body"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Since we started fundraising back in December of 2007, donations have helped raise approximately $50,000 each year to sustain and expand CoCoRaHS’s backyard rain gauge effort. Last year about this time I asked for help from you all. Our financial support from NOAA and the National Science Foundation was coming to an end. The future of CoCoRaHS was very much in doubt. The result was a generous outpouring of over 3,000 donations totaling over $100,000. … These donations, along with support from several organizations that count on our accurate data each day, propelled us through another successful year. … We operate on an annual budget of about $425,000 per year",
+     "location": "page body"
+    }
+   ],
+   "figure_status": "obligation",
+   "confidence_reason": "Federal award records (USAspending, NSF API) and CoCoRaHS's own letters agree.",
+   "sole_source_reason": "Federal award databases are the system of record for awards.",
+   "applicability": null
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "confidence": "high",
+   "text": "D-1 baseline: since 2017 CoCoRaHS has run on data users' payments, donations and the NOAA-funded National Mesonet Program, not grants: FY2020 expenses about $420K (56% HQ staff), revenue 52% data users, 33% donations, 15% National Mesonet Program; FY2021 expenses $499K and revenue $498K (47% data users, 36% donations); FY22 projected revenue $598K (data users $227,623, donations $218,278, NOAA Data Dashboard project $77,670, National Mesonet Program $74,394) against $592K expenses, $301,780 of it HQ staff.",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Henry Reges and Nolan Doesken reported the approximate expenses for FY2020 are $420K with about | 56% covering HQ staff including observer support, web development, database management, | education, and the help desk. … The | revenue comes from users of the data (52%), donations (33%) and the National Mesonet Program | (15%). The Year-End fundraiser exceeded the goal by $20K. This year there is an anticipated shortfall | of $20K (~5%) … Expenses for FY2021 are $499K with about 58% | for equipment and staff, 23% for web hosting, 0% for travel this year, 4% for materials and supplies, | 14% for CSU overhead. The revenues were $498K, with 47% from users of the data, including PRISM, | 36% from donations. The Year-End fundraiser, $10 for CoCoRaHS, raised $175,342 from 3,346 donors. | We lost some municipal funding this year. Would like to see if states could get some state and regional | funding for the program and share with headquarters. … Session 2 Summary (CoCoRaHS Support and Operations): CoCoRaHS is supported by a mix of | data user funding and volunteer support. This funding varies somewhat unpredictably from | year-to-year, but the most recent funding campaign was the most successful in the | organization’s history.",
+     "location": "lines 30-37, 153-158, 350-353 of the text copy"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "CoCoRaHS expenses: FY22 projections | Projected total $592K | CoCoRaHS HQ staff (coordinator/observer support; help desk; quality control; web development; education; data management; and more!) $301,780 (51%) | travel $6,626 (1%) | materials and supplies $49,207 (8%) | website hosting and maintenance, data services, cyberinfrastructure upgrades, webinars $167,494 (28%) | CSU indirect costs (offices, electricity, administrative staff, etc.) $67,007 (12%) … CoCoRaHS revenues: FY22 projections | Projected total $598K | Users of CoCoRaHS data 227,623 (38%) | National Mesonet Program 74,394 (12%) | NOAA CoCoRaHS Data Dashboard project 77,670 (13%) | Donations 218,278 (37%)",
+     "location": "PDF pages 3-4 (pie charts)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "contextualizes",
+     "passage": "Russ Schumacher, the new Colorado State | Climatologist talked about his background and perspective coming to the Colorado Climate | Center and to CoCoRaHS. … Nolan Doesken reported that CoCoRaHS is going strong. We have gone several years without | any of the federal grants that helped us to get to the national and international scale. … Julian | Turner from CoCoRaHS headquarters provided an update on the status of IT. There are a | number of overarching issues to deal with. Ideally, additional personnel resources are needed | to work on the operational website and database, web development, app development, and | system administration. … how to best maintain continuity from year to year",
+     "location": "Executive Summary, txt lines 15-18, 60-72"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "contextualizes",
+     "passage": "Community Collaborative Rain, Hail and Snow Network",
+     "location": "page heading"
+    }
+   ],
+   "figure_status": [
+    "actual",
+    "estimate"
+   ],
+   "confidence_reason": "CoCoRaHS's own minutes and budget slides (slide charts transcribed by a subagent; minutes are text).",
+   "sole_source_reason": "The organization's own budget reports are the authority for its revenue mix.",
+   "applicability": null
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "confidence": "moderate",
+   "text": "The sponsors page lists NOAA '2006-present' and NSF '2010 - present', but these entries are unchanged from a December 2014 snapshot and are not evidence of current federal funding.",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "contextualizes",
+     "passage": "Our current CoCoRaHS Sponsors CIRA - CSU Cooperative Institute for Research in the Atmosphere 1997, 1999-2001, 2004-present The Colorado Agricultural Experiment Station at Colorado State University 1998-present Colorado State University—Department of Atmospheric Science 1998-present … National Oceanic and Atmospheric Administration 2006-present National Science Foundation 1999-2006, 2010 - present National Weather Service 1999-present … WeatherYouWay.com 2006 - present … Weather Station Advisor 2017 - present Climalytic Instruments, LLC. - 2023 - present",
+     "location": "page body"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "contextualizes",
+     "passage": "Our current CoCoRaHS Sponsors CIRA - CSU Cooperative Institute for Research in the Atmosphere1997, 1999-2001, 2004-present The Colorado Agricultural Experiment Station at Colorado State University 1998-present … National Oceanic and Atmospheric Administration 2006-present National Science Foundation 1999-2006, 2010 - present National Weather Service 1999-present … PRISM 2008 - present American Rainwater Catchment Systems Association (ARCSA) 2012-present Colorado Springs Utilities 2014 - present",
+     "location": "page body"
+    }
+   ],
+   "confidence_reason": "Two snapshots of the same page.",
+   "applicability": null,
+   "figure_status": null
+  },
+  {
+   "id": "c12",
+   "importance": "supporting",
+   "confidence": "moderate",
+   "text": "CSU support is in kind and unquantified: gifts go through the CSU Foundation, CSU takes indirect costs ($67K-plus in FY22), and the Climate Center works 'with the support of the Agricultural Experiment Station'; no amount for CSU or state support was found.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "contextualizes",
+     "passage": "501 (c) (3) status - We operate alongside the CSU Foundation, which accepts and administers all gifts to the University, of which CoCoRaHS is a part. Our Employer Identification Number is 23-7098397",
+     "location": "page body"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "contextualizes",
+     "passage": "CoCoRaHS expenses: FY22 projections | Projected total $592K | CoCoRaHS HQ staff (coordinator/observer support; help desk; quality control; web development; education; data management; and more!) $301,780 (51%) | travel $6,626 (1%) | materials and supplies $49,207 (8%) | website hosting and maintenance, data services, cyberinfrastructure upgrades, webinars $167,494 (28%) | CSU indirect costs (offices, electricity, administrative staff, etc.) $67,007 (12%) … CoCoRaHS revenues: FY22 projections | Projected total $598K | Users of CoCoRaHS data 227,623 (38%) | National Mesonet Program 74,394 (12%) | NOAA CoCoRaHS Data Dashboard project 77,670 (13%) | Donations 218,278 (37%)",
+     "location": "PDF pages 3-4 (pie charts)"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "contextualizes",
+     "passage": "With the support of the Agricultural Experiment Station, it is the Center's privilege and duty to provide services and expertise related to Colorado's complex climate.",
+     "location": "Our Mission"
+    }
+   ],
+   "figure_status": "estimate",
+   "confidence_reason": "Own pages; no budget figure published.",
+   "applicability": null
+  },
+  {
+   "id": "c13",
+   "importance": "supporting",
+   "confidence": "moderate",
+   "text": "State and regional coordinators (over 250) are not CoCoRaHS staff: the FY22 slides count them as in-kind support, local coordinators are a 'Volunteer Position', and in Minnesota and Wisconsin they are state-climate-office and NWS employees.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Successful fundraiser | $197.745 … • Over 250 state/regional volunteer coordinators | • WeatherYourWay.com | • Each volunteer’s daily observation . . . . Wow! | • KRESL Design – our shirt & logo graphic design | • Linda Erikson – Station processing/Onboarding",
+     "location": "slides 5-6"
+    },
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "CoCoRaHS Local Coordinator – Volunteer Position Responsibilities … You are one of our most valuable resources and we truly appreciate your time and efforts!",
+     "location": "Title line and closing line"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "Minnesota State Coordinator Peter Boulay, Assistant State Climatologist Luigi Romolo, State Climatologist Minnesota State Climatology Office … Northwest Region Amanda Lee, Jacob Spender Grand Forks NWS Weather Forecast Office … Northland/Arrowhead Region Ketzel Levens, Steve Gohde National Weather Service Duluth Weather Forecast Office",
+     "location": "Minnesota Coordinators page"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Wisconsin State Co-Coordinators Sarah Marquardt National Weather Service - Sullivan, WI sarah.marquardt@noaa.gov Steve Vavrus Wisconsin State Climatologist - Univ. of Wisconsin, Madison, WI sjvavrus@wisc.edu",
+     "location": "Wisconsin state page"
+    }
+   ],
+   "confidence_reason": "Own slides and coordinator pages; only two states' pages read.",
+   "applicability": null,
+   "figure_status": null
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Whether NOAA and NSF fund CoCoRaHS now",
+   "source_ids": [
+    "s7",
+    "s4"
+   ],
+   "status": "resolved",
+   "explanation": "The sponsors page says NOAA 2006-present and NSF 2010-present, but the entries are unchanged since 2014 (s19); the 2015/2016 letters and the award records (s8, s9, s11) show both grants ended by 2017. The page is stale."
+  },
+  {
+   "claim": "NSF 1010888 amount",
+   "source_ids": [
+    "s10",
+    "s14"
+   ],
+   "status": "resolved",
+   "explanation": "USAspending gives $870,994 (award amount) and the NSF API gives fundsObligatedAmt 870994 but estimatedTotalAmt 724944: a difference of scope (obligations including supplements vs the original estimate). The answer uses $870,994 obligated and states the $724,944 estimate."
+  }
+ ],
+ "coverage_gaps": [
+  "Who the 'Users of CoCoRaHS data' payers are (38-52% of revenue FY20-FY22): not broken down on the WERA slides. Candidates to check: NWS, state agencies, water utilities, the Colorado Agricultural Experiment Station. Next: WERA1012 minutes 2020-2022 (RUN-2 work/raw/sa1/wera1012_minutes_2020_2022.txt) and later WERA budget slides (2023, 2024) on media.cocorahs.org. (from sa3)",
+  "National Mesonet Program payments to CoCoRaHS (12-17% of revenue FY20-FY22): no contract/award number found; NMP is run through NOAA contracts (prime contractor), so USAspending keyword search on CoCoRaHS does not show it. (from sa3)",
+  "NOAA Office of Education Data Explorer/Dashboard grant (77,670 in FY22 projections): award number, total and dates not found; possibly routed via CIRA (noaa.gov/node/13099 per search summary, not read). (from sa3)",
+  "NIDIS Intermountain West DEWS condition-monitoring support (primarily Henry Reges): amount not published; no award number found. (from sa3)",
+  "CSU / Colorado Agricultural Experiment Station base support and Colorado state budget for the Colorado Climate Center: not found (r12 not found after 1 query; CSU AES annual reports not searched in time). USDA NIFA WERA1012 is a multistate coordinating committee; no funding to CoCoRaHS seen. Colorado Water Conservation Board, state-climatologist funding of state coordinators, CoCoRaHS store revenue: not searched (time). (from sa3)",
+  "Wayback snapshots of the sponsors page (wayback_paths.py --word sponsor) not run; sponsors page lists NOAA and NSF as '-present' while the 2015/2016 letters say both ended. (from sa3)",
+  "give.colostate.edu/cocorahs-2025 campaign (reported $351,517 raised, ended January 20, 2026) is after the January 2025 baseline cut-off, so it was not read or used. (from sa3)",
+  "Lead for q1/q4 (not checked): a WebSearch summary said a June 2025 Indiana CoCoRaHS newsletter (https://media.cocorahs.org/docs/Hoosier_June_2025.pdf) lists Steve Hilberg, CoCoRaHS Headquarters, as the coordinator contact. Not read; the sa3 Wayback-sponsors gap is now resolved (2014 snapshot read, sa3-q5-19). (from sa3)",
+  "Written CoCoRaHS succession, workforce or knowledge-transfer plan: NOT PRESENT after r7 searches (2 queries), WERA agendas 2012/2017/2024 and minutes 2020-2022. Only related text: 2017 agenda session 'Sustainability – Path to the Future' (content not found) and 2020-22 minutes saying Turner 'keeps detailed notes'. (from sa2)",
+  "Backup/cross-training (deputy national coordinator, second web developer/IT backup): NOT PRESENT in any saved source. RUN-1 contact page lists Noah Newman or Steve Hilberg for data/mapping/app questions. (from sa2)",
+  "Hire dates and FTE of HQ staff not found; only appearance in agendas: Reges, Turner, Newman listed as CoCoRaHS Staff in 2012, 2017 and 2024 agendas; Talmadge 2017 and 2024; Hilberg as MRCC/Illinois in 2017 and as CoCoRaHS Project Manager, CSU in 2024. Lead: WERA1012 2010/2011/2013-2016/2018/2022/2023 agendas at media.cocorahs.org/docs/ (URLs in search results) not read. (from sa2)",
+  "Doesken's role after October 2017 (paid, part-time, volunteer, emeritus) not stated; he co-reported FY2020 expenses in 2020 minutes; he is not named in the 2024 agenda grep hits. (from sa2)",
+  "CSU Faculty Manual section E.2.1.6 (Transitional Appointments) not saved; only search snippet. PERA Law 2025 / PERA Rules 2025 (statutory text C.R.S. 24-51-602) not read; fact sheet is REV 6-20. Which retirement plan each CoCoRaHS staff member is in: NOT PRESENT. (from sa2)",
+  "Becky Bolinger (Assistant State Climatologist; read AASC letter at Doesken retirement, sa1-e6) is NOT PRESENT on the live Colorado Climate Center staff list (sa1-e3) or CSU research staff page; web search snippet (Colorado Politics / Denver Gazette, 2023-07-26) says she 'reflects on a dozen years of service'. Her current status was not confirmed; article not read (non-.org hosts, time). (from sa1)",
+  "Paid vs volunteer status of the ~250 state/regional coordinators NOT PRESENT in any page read; MN and WI pages show them employed by state climate offices and NWS offices (sa1-e8, sa1-e9). Count of states with a coordinator: coordinator index lists 50 states + DC, PR, VI pages, but not checked that each page has a named person. (from sa1)",
+  "Employment status (paid/part-time) of Carol Stolz, Linda Erikson, Dani Talmadge and Nolan Doesken (Founder/Emeritus) NOT PRESENT. Canada coordinator Janvi Mirchandani's employer not checked. (from sa1)",
+  "Start years at CSU/CoCoRaHS NOT PRESENT for Julian Turner, Steve Hilberg, Dani Talmadge, Carol Stolz; Reges and Newman about 2004 only from podcast extract (sa1-e7). ORCID not searched for Hilberg, Turner, Newman (CSU), Talmadge; ORCID works endpoints not fetched for earliest ORCID-listed year. (from sa1)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q5",
+   "query": "https://api.nsf.gov/services/v1/awards.json?keyword=CoCoRaHS",
+   "tool": "lookup (NSF Award Search API)",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Doesken",
+   "tool": "lookup (NSF Award Search API)",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Reges",
+   "tool": "lookup (NSF Award Search API)",
+   "notes": "keyword 'Community Collaborative Rain' not run (time); the CoCoRaHS keyword already matched abstracts with the full name",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA06SEC4690004_1330/ (resolved to ASST_NON_NA06SEC4690004_013)",
+   "tool": "lookup (USAspending award API)",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA10SEC0080007_013/",
+   "tool": "lookup (USAspending award API)",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA10SEC0080012_013/",
+   "tool": "lookup (USAspending award API)",
+   "notes": "ID from RUN-3 spending_by_award result (reused)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS NOAA award Colorado State University NA",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS NOAA funding NIDIS",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Colorado Climate Center annual report funding CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS sponsors donate",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS National Mesonet Program funding",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS Environmental Literacy Grant 2010 NA10SEC award",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS Data Explorer dashboard NOAA Office of Education grant",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://web.archive.org/web/2014/http://www.cocorahs.org/Content.aspx?page=sponsors",
+   "tool": "lookup (Wayback snapshot)",
+   "notes": "wayback_paths.py not used (time)",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Colorado Agricultural Experiment Station CoCoRaHS Colorado Climate Center funding",
+   "tool": "WebSearch",
+   "notes": "r12 not found after 2 queries",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Colorado PERA service retirement eligibility State Division",
+   "tool": "WebSearch",
+   "notes": "allowed_domains copera.org",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Colorado State University retirement plan PERA DCP",
+   "tool": "WebSearch",
+   "notes": "allowed_domains colostate.edu",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Colorado State University transitional retirement faculty phased retirement",
+   "tool": "WebSearch",
+   "notes": "allowed_domains colostate.edu; follow-up",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS WERA1012 minutes staff",
+   "tool": "WebSearch",
+   "notes": "found WERA1012 agendas 2012, 2017, 2024 (saved); also reused RUN-2 minutes 2020-2022",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS succession plan Doesken retirement",
+   "tool": "WebSearch",
+   "notes": "no succession plan document found; retirement news only",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS transition new director",
+   "tool": "WebSearch",
+   "notes": "nothing CoCoRaHS-specific",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Nolan Doesken retires Colorado State Climatologist",
+   "tool": "WebSearch",
+   "notes": "found CSU retirement stories (Aug 2017) and Schumacher appointment (Oct 2017); saved",
+   "from": "sa2",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Nolan Doesken back in October primarily CoCoRaHS 2017",
+   "tool": "WebSearch",
+   "notes": "follow-up",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS staff headquarters Colorado Climate Center",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org, climate.colostate.edu; follow-up",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "nimss.org WERA1012 project outline 18627 and SAES/18627",
+   "tool": "lookup (WebFetch of NIMSS project pages)",
+   "notes": "pages returned only generic project lists; CoCoRaHS content NOT PRESENT",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS evaluation DHA consultants 2015 report",
+   "tool": "WebSearch",
+   "notes": "follow-up from WERA 2015 notes",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Nolan Doesken CoCoRaHS founder 2024",
+   "tool": "WebSearch",
+   "notes": "follow-up on Doesken current status",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS staff contact us",
+   "tool": "fetch (live page)",
+   "notes": "Fetched https://www.cocorahs.org/Content.aspx?page=contactus and page=coord live instead of a web search; RUN-1 copies searched first with find_text.py",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Colorado Climate Center staff",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: colostate.edu",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Nolan Doesken CoCoRaHS founder retired",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS national coordinator Henry Reges joined",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS state coordinators volunteers National Weather Service state climatologist",
+   "tool": "WebSearch",
+   "notes": "allowed_domains: cocorahs.org (query longer than 8 words)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Carol Stolz CoCoRaHS help desk",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Henry Reges; Nolan Doesken; Russ Schumacher; Peter Goble; Noah Newman; Julian Turner (CSU filter); Steven Hilberg",
+   "tool": "lookup (OpenAlex authors)",
+   "notes": "api.openalex.org/authors?search=...&select=...; unselected queries failed with IncompleteRead",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "author.id for Reges, Doesken, Schumacher (all + CSU filter), Goble, Turner (all + CSU filter), Hilberg",
+   "tool": "lookup (OpenAlex works, oldest first)",
+   "notes": "sort=publication_year:asc&per-page=3",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Reges/Henry; Doesken; Schumacher Colorado State; Goble Colorado; plus person record 0000-0001-6699-515X",
+   "tool": "lookup (ORCID expanded-search)",
+   "notes": "pub.orcid.org/v3.0 returns XML (saved .notjson.txt)",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Becky Bolinger assistant state climatologist left Colorado Climate Center",
+   "tool": "WebSearch",
+   "notes": "no filter; follow-up to Bolinger absent from staff list",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Steve Hilberg CoCoRaHS Midwestern Regional Climate Center retired",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Talmadge (CSU filter)",
+   "tool": "lookup (OpenAlex authors)",
+   "notes": "api.openalex.org",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Julian Turner CoCoRaHS web developer",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "family-name:Hilberg; Reges CoCoRaHS",
+   "tool": "lookup (ORCID expanded-search)",
+   "notes": "pub.orcid.org XML",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Newman Colorado State University climate",
+   "tool": "lookup (ORCID expanded-search)",
+   "notes": "pub.orcid.org XML",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "0000-0003-0300-0789; 0009-0005-6395-157X",
+   "tool": "lookup (ORCID employments)",
+   "notes": "pub.orcid.org/v3.0/<id>/employments XML",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "0000-0001-5991-7268; 0000-0002-4404-3104",
+   "tool": "lookup (ORCID employments)",
+   "notes": "pub.orcid.org XML",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "copy try: https://archive.informalscience.org/sites/default/files/CoCoRaHS_NSF_PI_Meeting_2014.pdf",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no route left; listed in coverage_gaps",
+   "copy_of": "https://archive.informalscience.org/sites/default/files/CoCoRaHS_NSF_PI_Meeting_2014.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "copy try: https://climate.colostate.edu/staff.html",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no route needed: guessed URL (404); the live staff list ccc_info.html was read instead",
+   "copy_of": "https://climate.colostate.edu/staff.html"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "copy try: https://nimss.org/projects/view/SAES/18627",
+   "tool": "lookup (follow-up queue)",
+   "notes": "tried built-in browser: redirects to NIMSS home page (login wall); the project outline was read from its Wayback copy (sa2)",
+   "copy_of": "https://nimss.org/projects/view/SAES/18627"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "copy try: https://archive.informalscience.org/cocorahs-capitalizing-technological-advancements-expand-environmental-literacy-through-successful",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no route left: host refused by sandbox, WebFetch connection refused; award itself read from USAspending (NA10SEC0080012)",
+   "copy_of": "https://archive.informalscience.org/cocorahs-capitalizing-technological-advancements-expand-environmental-literacy-through-successful"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "copy try: https://climate.colostate.edu/pdfs/dbams_talk_ccc_feb2019.pdf",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no route left: file over 50 MB; not opened in browser (file link)",
+   "copy_of": "https://climate.colostate.edu/pdfs/dbams_talk_ccc_feb2019.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Henry%20Reges&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Henry%20Reges&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5013377998&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5013377998&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Nolan%20Doesken&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Nolan%20Doesken&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5050540601&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5050540601&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/expanded-search/?q=Doesken",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/expanded-search/?q=Doesken"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Russ%20Schumacher&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Russ%20Schumacher&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5080597419,institutions.id:I92446798&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5080597419,institutions.id:I92446798&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Peter%20Goble&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Peter%20Goble&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Noah%20Newman&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Noah%20Newman&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Julian%20Turner&filter=last_known_institutions.id:I92446798&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Julian%20Turner&filter=last_known_institutions.id:I92446798&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5111823995,institutions.id:I92446798&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5111823995,institutions.id:I92446798&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5034896726&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5034896726&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Reges%20AND%20given-names:Henry",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Reges%20AND%20given-names:Henry"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/expanded-search/?q=Schumacher%20Colorado%20State",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/expanded-search/?q=Schumacher%20Colorado%20State"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/expanded-search/?q=Goble%20Colorado",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/expanded-search/?q=Goble%20Colorado"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/0000-0001-6699-515X/person",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/0000-0001-6699-515X/person"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5080597419&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5080597419&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5049277871&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5049277871&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5111823995&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5111823995&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Steven%20Hilberg&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Steven%20Hilberg&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/works?filter=author.id:A5159417133&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5159417133&sort=publication_year:asc&per-page=3&select=id,display_name,publication_year"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://api.openalex.org/authors?search=Talmadge&filter=last_known_institutions.id:I92446798&select=id,display_name,orcid,works_count,last_known_institutions",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://api.openalex.org/authors?search=Talmadge&filter=last_known_institutions.id:I92446798&select=id,display_name,orcid,works_count,last_known_institutions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Hilberg",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Hilberg"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/expanded-search/?q=Reges%20CoCoRaHS",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/expanded-search/?q=Reges%20CoCoRaHS"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/expanded-search/?q=Newman%20Colorado%20State%20University%20climate",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/expanded-search/?q=Newman%20Colorado%20State%20University%20climate"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/0000-0003-0300-0789/employments",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/0000-0003-0300-0789/employments"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/0009-0005-6395-157X/employments",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/0009-0005-6395-157X/employments"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/0000-0001-5991-7268/employments",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/0000-0001-5991-7268/employments"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/0000-0002-4404-3104/employments",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/0000-0002-4404-3104/employments"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "copy try: https://pub.orcid.org/v3.0/0000-0001-6699-515X/employments",
+   "tool": "lookup (follow-up queue)",
+   "notes": "no other copy: an OpenAlex/ORCID API record is the registry's own primary record; cross-checked against the other registry (ORCID vs OpenAlex) and CSU staff pages where possible",
+   "copy_of": "https://pub.orcid.org/v3.0/0000-0001-6699-515X/employments"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS \"National Mesonet Program\"",
+   "tool": "duckduckgo (browser)",
+   "notes": "found nationalmesonet.us/cocorahs/ partner page (read; partner listing, no amounts) and Synoptic Data as NMP lead subcontractor (snippet); no contract number"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "\"Colorado Climate Center\" funding \"Agricultural Experiment Station\"",
+   "tool": "duckduckgo (browser)",
+   "notes": "CCC About Us says the Center works with the support of the Agricultural Experiment Station; Adaptation Clearinghouse snippet: established by the state in 1974 through CSU AES; no amounts"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "url=https://archive.informalscience.org/sites/default/files/CoCoRaHS_NSF_PI_Meeting_2014.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404 at web.archive.org/web/2016/; no saved copy",
+   "copy_of": "https://archive.informalscience.org/sites/default/files/CoCoRaHS_NSF_PI_Meeting_2014.pdf"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS data users funding support PRISM",
+   "tool": "duckduckgo (browser)",
+   "notes": "no result text mentions funding; data-user payers stay unknown"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "staff / contact page",
+   "query": "CoCoRaHS staff contact us",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "Colorado State University",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "Colorado Climate Center staff page",
+   "query": "Colorado Climate Center staff",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "ORCID and OpenAlex records of each person",
+   "query": "ORCID / OpenAlex lookups",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "Colorado PERA",
+   "publisher": "regulators, standards bodies, certifiers",
+   "subquestion_id": "q3",
+   "aim": "PERA service retirement eligibility",
+   "query": "Colorado PERA service retirement eligibility State Division",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "Colorado State University",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "CSU HR retirement plans",
+   "query": "Colorado State University retirement plan PERA DCP",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "WERA1012 minutes and agendas listing staff",
+   "query": "CoCoRaHS WERA1012 minutes staff",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "succession or transition plan",
+   "query": "CoCoRaHS succession plan Doesken retirement",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q5",
+   "aim": "USAspending award records",
+   "query": "CoCoRaHS NOAA award Colorado State University",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NSF",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q5",
+   "aim": "NSF Award Search API",
+   "query": "keyword=CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA/NWS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q5",
+   "aim": "NOAA/NIDIS support",
+   "query": "CoCoRaHS NOAA funding NIDIS",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "sponsors and donate pages",
+   "query": "CoCoRaHS sponsors donate",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "Colorado State University",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q5",
+   "aim": "Climate Center / AES annual report funding",
+   "query": "Colorado Climate Center annual report funding",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "CoCoRaHS",
+   "publisher": "press",
+   "subquestion_id": "q4",
+   "aim": "news of Doesken's retirement",
+   "query": "Nolan Doesken retires Colorado State Climatologist",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 25.5,
+  "shift_min": 1,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 240937,
+  "subagent_minutes_planned": 42,
+  "subagent_minutes": 36.7,
+  "follow_ups": 0,
+  "continuations": 4,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

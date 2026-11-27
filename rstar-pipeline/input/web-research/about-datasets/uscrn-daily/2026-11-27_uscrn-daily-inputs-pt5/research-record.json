@@ -1,0 +1,2355 @@
+{
+ "question": "Which of USCRN Daily's inputs (stations and site agreements, Geonor T-200B gauge and maker, Vaisala DRD11A, TB-3, dataloggers, the GOES DCS link, ATDD's field maintenance and calibration team) faced funding cuts, end of life, end of manufacturer support, operational disruption or news about these between January 2024 and November 2026, and what could replace them or the dataset? Rated imminent / emerging / no current threat, with DIRS-1, DIRS-2, DIRS-3 and DIRS-5.",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (FY2026 and FY2027 requests proposed closing ARL, which runs USCRN's field team); set of about 141-161 stations with yearly counts 2024-2026",
+ "mode": "thorough",
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NCEI / ATDD (USCRN)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "station decommissioning or relocation notices",
+   "query": "USCRN station decommissioned 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NCEI / ATDD (USCRN)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "Alaska build-out progress",
+   "query": "USCRN Alaska stations installed 2024",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA NESDIS (GOES DCS)",
+   "publisher": "operator of the link",
+   "subquestion_id": "q1",
+   "aim": "DCS outages and certification changes",
+   "query": "GOES DCS outage 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "USCRN",
+   "publisher": "press",
+   "subquestion_id": "q1",
+   "aim": "news on stations 2024-2026",
+   "query": "Climate Reference Network station 2025 news",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "Geonor AS",
+   "publisher": "maker",
+   "subquestion_id": "q2",
+   "aim": "T-200B product status",
+   "query": "Geonor T-200B discontinued",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "Vaisala",
+   "publisher": "maker",
+   "subquestion_id": "q2",
+   "aim": "DRD11A product status",
+   "query": "Vaisala DRD11A obsolete replacement",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "Hydrological Services",
+   "publisher": "maker",
+   "subquestion_id": "q2",
+   "aim": "TB3 product status",
+   "query": "Hydrological Services TB3 rain gauge",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "Campbell Scientific",
+   "publisher": "maker",
+   "subquestion_id": "q2",
+   "aim": "CR3000 retirement",
+   "query": "Campbell Scientific CR3000 retired",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "WMO / ATDD",
+   "publisher": "researchers and standards bodies",
+   "subquestion_id": "q2",
+   "aim": "intercomparisons of alternative weighing gauges",
+   "query": "SPICE weighing gauge intercomparison Geonor Pluvio",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "GAO / Commerce OIG reports on observing-system maintenance",
+   "query": "GAO NOAA observing systems maintenance 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NRCS (SNOTEL)",
+   "publisher": "funder / operator",
+   "subquestion_id": "q4",
+   "aim": "SNOTEL staffing and budget 2025",
+   "query": "SNOTEL NRCS staff cuts 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "Environment and Climate Change Canada",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "Reference Climate Stations status",
+   "query": "Reference Climate Stations Environment Canada",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NOAA National Mesonet Program",
+   "publisher": "funder",
+   "subquestion_id": "q4",
+   "aim": "mesonet funding 2025",
+   "query": "National Mesonet Program funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "NWS (ASOS, COOP)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "COOP decline and ASOS outages",
+   "query": "COOP observer network decline 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "NOAA ARL ATDD",
+   "publisher": "press",
+   "subquestion_id": "q3",
+   "aim": "staff cuts at Oak Ridge",
+   "query": "Oak Ridge ATDD staff cuts 2025",
+   "skip_reason": null
+  }
+ ],
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Stations, site agreements, daily01 counts, Alaska build-out, GOES DCS link",
+   "status": "answered",
+   "source_ids": [
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s24",
+    "s26",
+    "s46",
+    "s47"
+   ],
+   "remaining_gap": "causes of the 2025-2026 Alaska outages, Ivotuk's end and the Alaska pause; the 2026 DCS overview deck"
+  },
+  {
+   "id": "q2",
+   "question": "Instruments and suppliers",
+   "status": "answered",
+   "source_ids": [
+    "s30",
+    "s31",
+    "s32",
+    "s33",
+    "s34",
+    "s39",
+    "s40",
+    "s41",
+    "s42"
+   ],
+   "remaining_gap": "NOAA's datalogger replacement plan and spares; Vaisala lifecycle list"
+  },
+  {
+   "id": "q3",
+   "question": "ATDD field maintenance and calibration team",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s44",
+    "s46"
+   ],
+   "remaining_gap": "no 2024-2026 staffing or visit records; who re-certifies the NIST-traceable standards"
+  },
+  {
+   "id": "q4",
+   "question": "Substitutes for USCRN Daily",
+   "status": "answered",
+   "source_ids": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s15"
+   ],
+   "remaining_gap": "Canada RCS count and status; ASOS network-wide status"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/X041_d0.pdf",
+   "fetched_url": null,
+   "title": "USCRN Field Site Maintenance Plan (CRN Series X041, NOAA-CRN/OSD-2003-00010R0UD0)",
+   "author_org": "NOAA/NESDIS (USCRN program)",
+   "published": "2003-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/x041_field_site_maintenance_plan.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2003 plan; who certifies the NIST-traceable standards each year (an outside lab) is NOT PRESENT; no 2024-2026 information",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://public-inspection.federalregister.gov/2026-09099.pdf",
+   "fetched_url": null,
+   "title": "Request for Comments on the National Weather Service Cooperative Observing Program (COOP), FR Doc. 2026-09099",
+   "author_org": "NOAA National Weather Service",
+   "published": "2026-05-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fr_2026_09099.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Request for comment only; outcome NOT PRESENT; no statement that COOP is or is not reference quality",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.schumer.senate.gov/newsroom/press-releases/schumer-demands-trump-admin-immediately-reverse-ripping-away-funding-for-ualbanys-mesonet-new-yorks-state-of-the-art-weather-tracking-system-that-helps-keep-upstate-ny-communities-prepared-and-safe-during-storms",
+   "fetched_url": null,
+   "title": "Schumer demands Trump admin immediately reverse ripping away funding for UAlbany's Mesonet",
+   "author_org": "Office of Sen. Charles Schumer",
+   "published": "2025-07-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/schumer_nysm_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extract; press release from an advocate; whether the grant was restored NOT PRESENT",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.opb.org/article/2025/03/11/snow-or-no-northwests-water-outlook-gets-murky-with-federal-cuts/",
+   "fetched_url": null,
+   "title": "Snow or no? Northwest's water outlook gets murky with federal cuts",
+   "author_org": "OPB / KUOW (John Ryan)",
+   "published": "2025-03-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/opb_snotel_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Regional (Northwest) only; warning is a projection by a state climatologist, not NRCS; precipitation measurement NOT PRESENT; direct download refused by sandbox proxy, read via WebFetch",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://insideclimatenews.org/news/08042026/trump-usda-staff-cuts/",
+   "fetched_url": null,
+   "title": "Under Trump, the Department of Agriculture Has Ditched Conservation and Climate Efforts",
+   "author_org": "Inside Climate News (Georgina Gustin, Peter Aldhous)",
+   "published": "2026-04-08",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/icn_nrcs_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Agency-wide figure, not SNOTEL-specific; extract wording not verified against page text",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.weather.gov/lmk/FrankfortASOSRetiringasOfficialNWSClimateSite",
+   "fetched_url": null,
+   "title": "Frankfort ASOS Retiring as Official NWS Climate Site",
+   "author_org": "NWS Louisville",
+   "published": "undated (after late June 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/frankfort_asos_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Single station; page undated; extract quotes not checked against saved HTML",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ou.edu/news/articles/2025/august/oklahoma-mesonet-honored-for-30-years-of-service",
+   "fetched_url": null,
+   "title": "Oklahoma Mesonet honored for 30 years of service",
+   "author_org": "University of Oklahoma",
+   "published": "2025-08-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/ou_okmesonet_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "University press release; no budget figures",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://repository.library.noaa.gov/view/noaa/29193/noaa_29193_DS1.pdf",
+   "fetched_url": null,
+   "title": "A Comparison of the U.S. Climate Reference Network Precipitation Data to the Parameter-Elevation Regressions on Independent Slopes Model (PRISM) (Buban, Lee, Baker; J. Hydrometeor. 21, Oct 2020)",
+   "author_org": "CIMMS / NOAA ARL ATDD",
+   "published": "2020-10",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/leeper2015_uscrn_coop.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "2020 study; Leeper 2015 itself not read (its 1.5% overall figure is from a search snippet only)",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://repository.library.noaa.gov/view/noaa/69347/noaa_69347_DS1.pdf",
+   "fetched_url": null,
+   "title": "Evaluating the Reliability of the U.S. Cooperative Observer Program Precipitation Observations for Extreme Events Analysis Using the LTAR Network (Demaria, Goodrich, Kunkel; JTECH 36, March 2019)",
+   "author_org": "USDA ARS Southwest Watershed Research Center; CICS-NC / NCDC",
+   "published": "2019-03",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_69347.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Compares COOP with LTAR (USDA), not USCRN; warm season only; abstract only read",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-adjusted-climate-data.html",
+   "fetched_url": null,
+   "title": "Technical documentation: Adjusted and homogenized Canadian climate data (AHCCD)",
+   "author_org": "Environment and Climate Change Canada",
+   "published": "2021-05-21 (date modified)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/eccc_ahccd_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Extract only (quote truncated by extractor); 2021 page; no status information",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.mountaineers.org/conservation/advocacy/comment-letters/2025-comment-letters/04-17-25-outdoor-recreation-snotel-support-letter-to-usda-nrcs.pdf",
+   "fetched_url": null,
+   "title": "RE: Request to Exempt the SNOTEL Program from Reduction in Force cuts (letter to NRCS Chief Aubrey Bettencourt)",
+   "author_org": "Fifty outdoor-recreation organizations and businesses (hosted by The Mountaineers)",
+   "published": "2025-04-17",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/snotel_letter_2025.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Advocacy letter, not NRCS data; no counts of offline sites. Supersedes the earlier unreadable entry for this URL: PDF obtained via WebFetch binary save, copied and converted with pdftotext",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://stateclimate.org/docs/AASC%20Recommendations%20and%20Best%20Practices%20for%20Mesonets%20-%20Final,%20Ver%201;%20approved%2026%20Jun%2019.pdf",
+   "fetched_url": null,
+   "title": "AASC Recommendations and Best Practices for Mesonets, Version 1 (approved 26 June 2019)",
+   "author_org": "American Association of State Climatologists",
+   "published": "2019-06-26",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/aasc_mesonet_best_practices.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "2019 guidance; not network-specific. Supersedes the earlier unreadable entry for this URL: PDF obtained via WebFetch binary save, converted with pdftotext",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.nrcs.usda.gov/state-offices/nevada/news/nevada-snow-survey-whats-new-for-2026",
+   "fetched_url": null,
+   "title": "Nevada Snow Survey: What is new for 2026",
+   "author_org": "USDA NRCS Nevada",
+   "published": "2025-12-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/nrcs_nevada_2026_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Regional; read via the nrcs-prod.azureedge.us mirror (www.nrcs.usda.gov timed out); relationship = counter-evidence to network-wide maintenance collapse. Supersedes the earlier unreadable entry for this URL",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.ncei.noaa.gov/access/crn/usrcrn.html",
+   "fetched_url": null,
+   "title": "U.S. Regional Climate Reference Network (USRCRN)",
+   "author_org": "NOAA NCEI",
+   "published": "undated (after 2014-06-01)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/ncei_usrcrn_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Extract only; funding termination wording (FY14 Omnibus) is in NWS SCN14-25, not read",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://www.weather.gov/media/notification/pdfs/scn14-25usrcrn_decom.pdf",
+   "fetched_url": null,
+   "title": "Service Change Notice 14-25: Termination of USRCRN Observation Data on or about June 1, 2014",
+   "author_org": "NWS Headquarters (John Murphy, Director, Office of Science and Technology)",
+   "published": "2014-04-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/scn14_25_usrcrn.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Historical context (2014), outside 2024-2026 window",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/snapshots/CRND0103-202611160850.zip",
+   "fetched_url": null,
+   "title": "USCRN daily01 snapshot CRND0103-202611160850.zip (all years), counted with count_daily01.py",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/daily01_counts_output.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Counts are station files in the snapshot (columns year total CONUS AK HI); a file can exist with all values -9999. Region by state code in file name. My own count, not an NCEI statement.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/stations.tsv",
+   "fetched_url": null,
+   "title": "USCRN stations.tsv (station list with status, commissioning, closing)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/stations_tsv.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Ivotuk still listed Commissioned/Operational with no closing date although its daily01 files stop after 2023 (the list may not be updated). Duplicate AK rows inflate AK count.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/access/crn/element-listing",
+   "fetched_url": null,
+   "title": "USCRN element listing (period of record per station)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/ncei_crn_element_listing_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Model extract (WebFetch); no reason for Ivotuk end; stations.tsv still lists Ivotuk Commissioned/Operational with no closing date.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://www.ncei.noaa.gov/access/crn/overview.html",
+   "fetched_url": null,
+   "title": "USCRN Program Overview",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_crn_overview.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Undated page; daily01 shows 24 AK station files in 2024-2026 (25 in 2023), so the 25 may date from 2023.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-reference-network",
+   "fetched_url": null,
+   "title": "U.S. Climate Reference Network (USCRN) product page",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_uscrn_product_page.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Banner undated; affects NCEI access, not station operation.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://ospo.noaa.gov/data/messages/2025/02/MSG_20250212_1541.html",
+   "fetched_url": null,
+   "title": "ESPC notice: DCS Data Outage, February 12, 2025",
+   "author_org": "NOAA NESDIS OSPO / ESPC",
+   "published": "2025-02-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_msg_20250212_1541.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Outage in ESPC PDA distribution; effect on USCRN (which gets DCS via other paths, e.g. Wallops/LRGS) not stated. Saved file is HTML stored as .txt by fetch_page (type detected text).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://ospo.noaa.gov/data/messages/2026/07/MSG_20260716_1637.html",
+   "fetched_url": null,
+   "title": "ESPC notice: GOES-19 Safehold, all products (July 15-16, 2026), Update #3 DCS returned",
+   "author_org": "NOAA NESDIS OSPO / ESPC",
+   "published": "2026-07-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_msg_20260716_1637.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Duration is my reading of start/return times; whether USCRN platforms on GOES-East lost data (or were later backfilled) not stated. The earlier satellite run may already cover this GOES-19 event.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/snapshots/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/snapshots/",
+   "author_org": "NOAA NCEI",
+   "published": "listing retrieved 2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/daily01_snapshots_listing.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Missing 2026-11-23 snapshot may be the NCEI cloud migration or listing lag; cause not stated.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://www.arl.noaa.gov/wp_arl/wp-content/uploads/2025/02/ARL-Review-Response-Sept-30-2023-edited.pdf",
+   "fetched_url": null,
+   "title": "NOAA Air Resources Laboratory Science Review (March 22-24, 2022) response, edited Sept 30 2023 (read via Wayback 20250819)",
+   "author_org": "NOAA OAR Air Resources Laboratory",
+   "published": "2023-09-30 (uploaded 2025-02)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/arl_review_response_2023.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Two-column table text joined by pdftotext; total 29 conflicts with NCEI overview (25 with plan of 29) and with 24-25 AK daily01 files; the 29 may count sites incl. planned. Direct arl.noaa.gov URL gives 403; Wayback copy used.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ospo.noaa.gov/data/messages/2026/04/MSG_20260430_1808.html",
+   "fetched_url": null,
+   "title": "ESPC notice: Continuity of Operations (COOP) Exercise for JPSS, GOES-R, EWS-G, and ESPC (May 4-7, 2026)",
+   "author_org": "NOAA NESDIS OSPO / ESPC",
+   "published": "2026-04-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ospo_msg_20260430_1808.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Says nothing about DCS/DADDS or Wallops DCS backup; relevance to USCRN data flow is indirect.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.noaasis.noaa.gov/pdf/docs/TWG2024/Spring2024TWGMinutes.pdf",
+   "fetched_url": null,
+   "title": "GOES DCS Technical Working Group Spring 2024 Meeting minutes, April 2-3, 2024 (read via Wayback 20241127)",
+   "author_org": "NOAA NESDIS GOES DCS",
+   "published": "2024-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/twg_spring2024_minutes_wayback.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "2024 minutes; does not name USCRN/ARL. Link between this deadline and the ARL 139-tower upgrade is inferred, not stated in this source.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.noaasis.noaa.gov/pdf/docs/TWG2025/1025%20DCS%20Update%20Dronen.pdf",
+   "fetched_url": null,
+   "title": "GOES DCS Update (Dronen), TWG 2025 (read via Wayback 20251014)",
+   "author_org": "NOAA NESDIS GOES DCS",
+   "published": "2025 (TWG 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/twg2025_dcs_update_dronen_wayback.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No mention of USCRN/ARL; USCRN upgrade finished 2026-04-25, before the deadline (known).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://noaasis.noaa.gov/pdf/docs/TWG2025/1105%20Wallops%20Command%20and%20Data%20Acquisition%20Update%20Sullivan.pdf",
+   "fetched_url": null,
+   "title": "Wallops Command and Data Acquisition Update (Sullivan), TWG 2025 (read via Wayback 20251014)",
+   "author_org": "NOAA NESDIS OSPO WCDAS",
+   "published": "2025 (TWG 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/twg2025_wallops_sullivan_wayback.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Whether the move to CBU happened is NOT PRESENT; no USCRN-specific content.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://www.noaasis.noaa.gov/pdf/docs/TWG2025/1400%20Replacement%20DADDS%20Demo%20&%20User%20Input%20Detwiler.pdf",
+   "fetched_url": null,
+   "title": "Replacement DADDS Demo & User Input (Detwiler), TWG 2025 (read via Wayback 20251014)",
+   "author_org": "NOAA NESDIS GOES DCS",
+   "published": "2025 (TWG 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/twg2025_rdadds_detwiler_wayback.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Short deck; no statement about the effect on users such as USCRN.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://s.campbellsci.com/documents/us/miscellaneous/cr3000-discontinuation-notice.pdf",
+   "fetched_url": null,
+   "title": "Discontinuation Notice for CR3000 Datalogger",
+   "author_org": "Campbell Scientific, Inc.",
+   "published": "2021-09-23",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cr3000_discontinuation_notice.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Vendor notice; says nothing about USCRN or NOAA plans. PDF obtained via WebFetch binary save (fetch_page.py blocked by sandbox for s.campbellsci.com).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://www.campbellsci.com/products/cr3000",
+   "fetched_url": null,
+   "title": "CR3000 Micrologger product page",
+   "author_org": "Campbell Scientific, Inc.",
+   "published": "NOT PRESENT (page live 2026-11-27)",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/campbell_cr3000_page.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extract (small model); replacement product NOT PRESENT on this page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://www.vaisala.com/en/products/weather-environmental-sensors/rain-detector-drd11a",
+   "fetched_url": null,
+   "title": "Rain Detector DRD11A",
+   "author_org": "Vaisala",
+   "published": "NOT PRESENT (page live, Copyright Vaisala 2026)",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/vaisala_drd11a_page.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Absence of notice on product page is not proof of continued manufacture; Vaisala obsolete-product list not found/checked.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://geonor.com/t-200b-all-weather-precipitation---rain-gauge",
+   "fetched_url": null,
+   "title": "T-200B Series All Weather Precipitation Gauge (Geonor, Inc.); also geonor.com home and geonor.no home",
+   "author_org": "Geonor, Inc. (Augusta, NJ) / Geonor AS (Østerås, Norway)",
+   "published": "NOT PRESENT (© 2026)",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/geonor_inc_t200b_page.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extracts; Geonor AS product list page not opened; no news items with dates on either site.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://hydromet-products.kisters-group.com/products/instruments/meteorology/tb3/",
+   "fetched_url": null,
+   "title": "TB3: Tipping bucket rain gauge",
+   "author_org": "KISTERS AG",
+   "published": "NOT PRESENT (© 2026 KISTERS AG)",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/kisters_tb3_page.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extract. Datasheet codes EN_2603, EN_2609 may indicate 2026 document revisions (not stated).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://www.kisters.net/hydrological-services-america-hsa-joins-the-kisters-group/",
+   "fetched_url": null,
+   "title": "Hydrological Services America (HSA) joins the KISTERS Group",
+   "author_org": "KISTERS",
+   "published": "2020-08-06",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/kisters_hsa_2020.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Products and NOAA NOT PRESENT; 2015 and 2023 facts are search snippets only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://www.campbellsci.com/resources/case-studies/2063",
+   "fetched_url": null,
+   "title": "U.S. Climate Reference Network (case study); also campbellsci.ca/t-200b",
+   "author_org": "Campbell Scientific",
+   "published": "2013-04-26",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/campbell_uscrn_case_study.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "2013 case study; WebFetch extracts.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s37",
+   "url": "https://www.ncei.noaa.gov/access/crn/instruments.html",
+   "fetched_url": null,
+   "title": "USCRN Instruments",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/crn_instruments.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Page undated; spares NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://mural.maynoothuniversity.ie/6481/1/PT_US%20climate.pdf",
+   "fetched_url": null,
+   "title": "U.S. Climate Reference Network after One Decade of Operations: Status and Assessment (Diamond et al., BAMS 94(4), 2013)",
+   "author_org": "NOAA NCDC / ATDD",
+   "published": "2013",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/diamond2013.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2013; repository copy (URL from earlier run record s40).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/technotes/TN05002PrecipTesting.pdf",
+   "fetched_url": null,
+   "title": "USCRN TN05002 precipitation gauge testing (Sterling VA / Johnstown PA, 2003-2005)",
+   "author_org": "NOAA NCDC",
+   "published": "2005",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/tn05002_precip_testing.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Old test (2003-2005).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://arc.lib.montana.edu/snow-science/objects/ISSW2024_P8.30.pdf",
+   "fetched_url": null,
+   "title": "Comparison of the performance of precipitation gauges during snowfall in windy conditions (ISSW 2024 P8.30)",
+   "author_org": "Jóhannes Andrésson, Harpa Grímsdóttir, Icelandic Meteorological Office",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/issw2024_p830.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Preliminary single-winter results, Iceland; text is from two-column layout (line-joined).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://www.campbellsci.com/products/cr1000x",
+   "fetched_url": null,
+   "title": "CR1000X and CR1000Xe product pages",
+   "author_org": "Campbell Scientific, Inc.",
+   "published": "NOT PRESENT (pages live 2026-11-27)",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/campbell_cr1000x_cr1000xe_pages.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extracts; nothing about USCRN; second URL https://www.campbellsci.com/products/cr1000xe.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://www.campbellsci.com/products/tx320",
+   "fetched_url": null,
+   "title": "TX320 product page",
+   "author_org": "Campbell Scientific, Inc.",
+   "published": "NOT PRESENT (page live 2026-11-27)",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/campbell_tx320_page.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extract; vendor page; no USCRN reference.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://bluehill.org/climate-reference-network-instruments-operational-at-blue-hill-observatory/",
+   "fetched_url": null,
+   "title": "Climate Reference Network Instruments Operational at Blue Hill Observatory",
+   "author_org": "Blue Hill Observatory & Science Center",
+   "published": "2024-09-20",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/bluehill_crn.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Host observatory post; whether the station appears in daily01 (station ID) NOT PRESENT; instrument models NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/uscrn-at-arl/",
+   "fetched_url": null,
+   "title": "US Climate Reference Network at NOAA Air Resources Laboratory",
+   "author_org": "NOAA ARL ATDD",
+   "published": "NOT PRESENT (ARL 75th anniversary story)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/arl_uscrn_at_arl.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Undated in text read; read with browser in earlier run (live URL 403 to scripts).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://virksomhet.brreg.no/en/oppslag/enheter/911954567",
+   "fetched_url": null,
+   "title": "GEONOR AS, Brønnøysund Register Centre entry",
+   "author_org": "Brønnøysundregistrene (Norway)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/brreg_geonor_as.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extract (page may be JS-rendered); absence of bankruptcy flag in extract not conclusive.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/uscrn-at-blue-hill-observatory/",
+   "title": "Air Resources Laboratory adds Blue Hill Observatory and Science Center to climate network",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "2024-09-26",
+   "retrieved": "2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/arl-noaa-gov-news-pubs-arl-news-stories-uscrn-at-blue-hill-o_130859.txt",
+   "data_period": "2024-09",
+   "evidence_id": null,
+   "limitations": "read in the built-in browser (site refuses scripts)"
+  },
+  {
+   "id": "s47",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/snapshots/CRND0103-202611160850.zip",
+   "fetched_url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/snapshots/CRND0103-202611160850.zip",
+   "title": "USCRN daily01 snapshot of 2026-11-16: runs of 10+ days with missing daily precipitation, 2024-2026 (computed by this run)",
+   "author_org": "NOAA NCEI (data); computed by this run (work/code/gap_runs.py)",
+   "published": "2026-11-16",
+   "retrieved": "2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/daily01_gap_runs.txt",
+   "data_period": "2024-01-01 to 2026-11-15",
+   "evidence_id": "CRND0103-202611160850",
+   "limitations": "computed from the same snapshot as s16; -9999 = missing"
+  },
+  {
+   "id": "s48",
+   "url": "https://www.ncei.noaa.gov/access/isis/station.htm?stationid=1043",
+   "title": "Station History for RI Kingston 1 W: Integrated Station Information System",
+   "author_org": "NOAA NCEI (ISIS)",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/ncei-noaa-gov-access-isis-station-htm-stationid-1043_131418.txt",
+   "data_period": "2001-2026",
+   "evidence_id": null,
+   "limitations": "event log; may lag actual visits"
+  },
+  {
+   "id": "s49",
+   "url": "https://www.ncei.noaa.gov/access/isis/station.htm?stationid=1793",
+   "title": "Station History for AK Deadhorse 3 S: Integrated Station Information System",
+   "author_org": "NOAA NCEI (ISIS)",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/ncei-noaa-gov-access-isis-station-htm-stationid-1793_131426.txt",
+   "data_period": "2014-2026",
+   "evidence_id": null,
+   "limitations": "event log; may lag actual visits"
+  },
+  {
+   "id": "s50",
+   "url": "https://www.ncei.noaa.gov/access/isis/station.htm?stationid=1026",
+   "title": "Station History for NC Asheville 8 SSW: Integrated Station Information System",
+   "author_org": "NOAA NCEI (ISIS)",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/ncei-noaa-gov-access-isis-station-htm-stationid-1026_131515.txt",
+   "data_period": "2015-2026",
+   "evidence_id": null,
+   "limitations": "first 1,200 characters read; event log may lag visits"
+  },
+  {
+   "id": "s51",
+   "url": "https://www.ncei.noaa.gov/access/isis/station.htm?stationid=1800",
+   "title": "Station History for AK Bethel 87 WNW: Integrated Station Information System",
+   "author_org": "NOAA NCEI (ISIS)",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/ncei-noaa-gov-access-isis-station-htm-stationid-1800_131814.txt",
+   "data_period": "2018-2026",
+   "evidence_id": null,
+   "limitations": "event log may lag visits"
+  },
+  {
+   "id": "s52",
+   "url": "https://www.ncei.noaa.gov/access/isis/station.htm?stationid=1019",
+   "title": "NCEI ISIS station histories for 22 more USCRN stations (ids 1019, 1020, 1109, 1024, 1021, 1046, 1015, 1009, 1039, 1407, 1066, 1008, 1007, 1166, 1005, 1037, 1041, 1011, 1186, 1532, 1802, 1107), newest entries copied and tallied by this run",
+   "author_org": "NOAA NCEI (ISIS)",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/isis_station_histories_2026-11-27.txt",
+   "data_period": "2022-2026",
+   "evidence_id": null,
+   "limitations": "newest entries only, copied by hand from the browser text (follow-up pass); the url is the first station's page, the others follow the same pattern; event log lags (only one 2026 entry although the 2026 transmitter swap and Alaska repairs happened)"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "daily01 station files held steady at 159 per year in 2024, 2025 and 2026 (CONUS 133, AK 24, HI 2; counts include the Alabama regional sites and the Egbert, Ontario test site); the only change was Ivotuk AK (record ends 2023-04-07) out and Blue Hill MA (from 2024-09-17) in, with no station added or dropped in 2025 or 2026.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "2024 159 133 24 2 | 2025 159 133 24 2 | 2026 159 133 24 2",
+     "location": "Station files per year"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "2024 dropped: ['AK_Ivotuk_1_NNE'] added: ['MA_Blue_Hill_0_W'] | 2025 dropped: [] added: [] | 2026 dropped: [] added: []",
+     "location": "dropped/added by year"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "AK Ivotuk 1 NNE | May 14 2014 – Apr 07 2023",
+     "location": "element listing"
+    }
+   ],
+   "figure_status": "actual",
+   "confidence": "high",
+   "confidence_reason": "counted by script from NCEI's own snapshot; element listing agrees",
+   "applicability": "file counts, not commissioned-station counts",
+   "sole_source_reason": "NCEI's own data files are the authority for which stations report"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "ARL announced in Sept 2024 that a Kingston, Rhode Island station, compromised by a new parking lot about 300 feet away, is scheduled to be decommissioned in summer 2026 and replaced by Blue Hill MA; both Kingston stations still had daily01 data to 2026-11-14, so the closure is planned but not yet visible in the files.",
+   "evidence": [
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "will replace one in nearby Rhode Island that recently saw construction of a large, paved parking lot just over 300 feet away. The parking lot will affect the accuracy of the climate measurements from that site so is scheduled to be decommissioned the summer of 2026.",
+     "location": null
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "RI_Kingston_1_NW 2026-11-14 | RI_Kingston_1_W 2026-11-14",
+     "location": "Each station's last date with data"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "ARL's own statement plus NCEI's own files",
+   "applicability": null,
+   "sole_source_reason": "ARL's own announcement about its own network"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "The Alaska build-out is stalled against its plan: ARL planned (2023) the final 6-7 Alaska stations by Sept 2026, two a year 2023-25, 'funding dependent'; NCEI still says 25 Alaska stations with a plan for 29; daily01 shows the last Alaska additions in 2023 (Galena, Huslia) and none in 2024-2026. No source states a pause or its cause.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "We plan to install the final 6‐7 stations in Alaska by 2026; with two station",
+     "location": "p. Recommendation 4"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "slated for September 2026. … installations in Alaska are funding dependent.",
+     "location": "Recommendation 4, status"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "25 stations in Alaska (with a plan to eventually have a total of 29)",
+     "location": null
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "2023 dropped: [] added: ['AK_Galena_44_SW', 'AK_Huslia_27_E'] | 2024 dropped: ['AK_Ivotuk_1_NNE']",
+     "location": null
+    }
+   ],
+   "figure_status": [
+    "proposed",
+    "actual"
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "plan and files agree there is a shortfall; no source on why",
+   "applicability": null
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "daily01 shows growing operational gaps: network days with missing daily precipitation rose from 1,893 (2024) to 2,810 (2025) to 4,481 (2026, to Nov 15); eight Alaska stations (Bethel, Cordova, Deadhorse, Denali, Galena, Glennallen, Ruby, Tok) had no precipitation (and no temperature) from late 2025 or Jan 2026 until mid-May to late Aug 2026; three CONUS precipitation records (Gadsden AL, Bedford IN, Denio NV) are missing all of 2026. No source gives causes.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "2024 stations 159 absent days 260 precip -9999 days 1893 | 2025 stations 159 absent days 0 precip -9999 days 2810 | 2026 stations 159 absent days 85 precip -9999 days 4481",
+     "location": "Totals per year"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "AK_Bethel_87_WNW 2026 20260101-20260826 (238 d)",
+     "location": null
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "AK_Deadhorse_3_S 2025 20250101-20250113 (13 d); 20250330-20251231 (277 d)",
+     "location": null
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "AK_Ruby_44_ESE 2026 20260101-20260821 (233 d)",
+     "location": null
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "AL_Gadsden_19_N 2026 319 2026-01-01 2026-11-15 0 319 319 4",
+     "location": null
+    }
+   ],
+   "figure_status": "actual",
+   "confidence": "high",
+   "confidence_reason": "counted by script from NCEI's snapshot (the figures are counts of -9999 days, not causes)",
+   "applicability": "2026 counts run to 2026-11-15",
+   "sole_source_reason": "NCEI's own data files are the authority for what daily01 holds"
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "Three stations stopped reporting in 2026: Joplin MO (last data 2026-09-24), St. Mary MT (2026-10-11) and Edinburg TX (all values missing after 2026-07-21); stations.tsv gives no USCRN closing date in 2024-2026.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "MO_Joplin_24_N last data 2026-09-24 last row 2026-09-25 | MT_St._Mary_1_SSW last data 2026-10-11 last row 2026-10-12 | TX_Edinburg_17_NNE last data 2026-07-21 last row 2026-11-15",
+     "location": null
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contextualizes",
+     "passage": "Ivotuk\t1 NNE\tArctic Slope Regional Corporation, Ivotuk Airstrip\t68.48\t-155.75\t1909\tCommissioned\t2015-09-29 00:00:00.0\t\tOperational",
+     "location": null
+    }
+   ],
+   "figure_status": "actual",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own files",
+   "applicability": "snapshot of 2026-11-16",
+   "sole_source_reason": "NCEI's own data files"
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "The transmission link faced an enacted deadline, not a cut: GOES DCS required CS2-certified transmitters by May 31, 2026 with no waivers; USCRN's listed Campbell TX320 transmitter was retired (2015) with end of life 2025-03-31, and ARL said in 2023 new transmitters 'must be in place by 2026'. The swap finished 2026-04-25 (known).",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Certification Deadline as of May 31, 2026 | o No waivers will be issued",
+     "location": null
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "Free Support Until: March 31, 2025 | - End of Life: March 31, 2025",
+     "location": null
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "must be in place by 2026 to meet a critical satellite",
+     "location": null
+    }
+   ],
+   "figure_status": "enacted",
+   "confidence": "high",
+   "confidence_reason": "NESDIS's own minutes, the vendor's own page and ARL's own document agree",
+   "applicability": null
+  },
+  {
+   "id": "c7",
+   "importance": "supporting",
+   "text": "GOES DCS had short operational outages (2025-02-12, 1 h 16 min; GOES-19 safehold 2026-07-15/16, DCS back 1630Z); the backup DCS receive system is at NSOF Suitland, and no USCRN-specific backup path (Iridium, cellular) was found.",
+   "evidence": [
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "utage for DCS in OPS PDA was from 1500Z - 1616Z, totaling 1 hour and 16 minutes.",
+     "location": null
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Update #3: DCS and SAR have returned to service as of 1630Z. … Update #1: Engineers report GOES-19 is in Safehold. … Date/Time Issued: July 16, 2026 1637Z … Date/Time of Initial Impact: July 15, 2026 2023Z",
+     "location": "message body"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "Provides full mission backup capability for GOES 14-18 with the exception of a DCS receive ground system. | Provides the Backup DCS Pilot at 401.7 MHz | Currently holds the backup DCS receive system, including DAMS-NT, DADDS, and LRGS. | Tentative plans to move all DCS backup ground equipment to CBU scheduled for 2024 following the GOES U launch.",
+     "location": "NESDIS GOES Backup Sites slide (txt lines 135-147)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NESDIS notices; backup from a 2025 slide deck",
+   "applicability": null
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "Dataloggers: Campbell retired the CR3000 (USCRN's datalogger) on 2022-01-06 for parts obsolescence; free support ends 2027-12-31 and repair/calibration 2032-12-31. Its named replacement, the CR1000X, was itself retired 2024-12-31 (replaced by the CR1000Xe). No NOAA plan for replacing USCRN's loggers was found.",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "\"Retired\": January 6, 2022 … \"Free Support Until\": December 31, 2027 … \"End of Life\": December 31, 2032",
+     "location": null
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "The purchase of a CR3000 includes Campbell Scientific free support through 2027.",
+     "location": null
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "\"Replaced by\" CR1000Xe … Retired: December 31, 2024 … End of Life: December 31, 2034",
+     "location": null
+    }
+   ],
+   "figure_status": "enacted",
+   "confidence": "high",
+   "confidence_reason": "the vendor's own notice and product pages",
+   "applicability": "vendor dates; NOAA spares unknown"
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "Geonor T-200B (Geonor Inc. and Geonor AS), Vaisala DRD11A and the TB3 (now KISTERS) are all still listed for sale in Nov 2026 with no discontinuation or end-of-support wording; Geonor AS is a registered Norwegian company. No current threat found for these instruments.",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Discontinued / new model / replaced wording: NOT PRESENT",
+     "location": null
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "Discontinued, obsolete, end-of-life, or replacement wording:** NOT PRESENT",
+     "location": null
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Discontinued/obsolete/replaced/successor wording:** NOT PRESENT",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "absence of notices on live vendor pages read via extraction; no lifecycle lists found",
+   "applicability": "as of 2026-11-27",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "More than one maker could supply a weighing gauge (OTT Pluvio, Geonor's US and Norwegian companies), and NOAA tested an Ott Pluvio for USCRN in 2003-2005 (over-caught up to 3% vs Geonor) and stated a policy (2013) of running alternate models in case one is discontinued; but no NOAA test since 2024 was found, and a 2024 Icelandic comparison found Pluvio2 L caught much less than Geonor in snow.",
+   "evidence": [
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "Precipitation gauges evaluated included: the Geonor, Frise, Ott Pluvio All Weather Precipitation Accumulation Weighing Gauge (AWPAG), Hydrologic Services LTD Tipping Bucket Gauge (TB3) and nonrecording 8-inch gauges. … At Sterling, for all observations, the Geonor gauge caught less precipitation than the Ott and the TB gauges. … The TBs over caught by 1 to 2 percent. The Otts over caught up to 3 percent.",
+     "location": "Executive Summary p. 5"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "instrument model in case that model is discontinued.",
+     "location": "p. (text lines 482-489)"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "creases steadily and equals to around 50% less",
+     "location": "pp. 1211-1212, sections 3 and 4"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "tests are old; recent evidence is foreign",
+   "applicability": null,
+   "figure_status": "actual"
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "ATDD's field team is small (eight technicians and engineers per ARL's page; ORAU technicians in 2024) and does annual visits, calibrating sensors at ATDD before trips; calibration is in-house against NIST-traceable standards re-certified annually (2003 plan). No 2024-2026 evidence of staff loss, delayed visits or an outside calibration service dependency, and no backup maintenance provider was found.",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "ATDD has a small team of eight technicians and engineers responsible for annual maintenance visits to each station.",
+     "location": null
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "USCRN technicians Mike Rutherford, Blake Randolph, Brandon McCloy and Tony Hamby from NOAA’s Air Resources Laboratory (ARL) and Oak Ridge Associated University (ORAU)",
+     "location": null
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "ATDD calibrates the temperature, wind speed, and solar radiation sensors against National Institute of Standards and Technology (NIST) traceable standards that are re-certified annually. The Geonor precipitation gauges are calibrated in the field using calibration weights that were compared to a NIST traceable standard weight. The factory calibrations have been determined to be accurate and are used in the event that a site host needs to swap a sensor in the field. … The datalogger is certified to be within the manufacturer’s operational specifications annually at ATDD by a process that uses NIST traceable standards to supply reference voltages and frequencies to the datalogger input ports. … It is important to note that ATDD not only is the current USCRN maintenance provider, and is also responsible for field site preparation and installation efforts.",
+     "location": "Section 2, Current Maintenance Operations, p. 2 (txt lines 349-372); Section 1.1 lines 323-325"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "official but undated/old pages; absence of news is not proof",
+   "applicability": null
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "No substitute matches USCRN's reference quality: COOP faces a proposed 'right-sizing' (May 2026); SNOTEL lost staff in 2025 with sites offline longer; most mesonets use unheated tipping buckets, while weighing gauges are used in high-quality networks such as USCRN; an ASOS climate site was retired in 2025 for not meeting climate-record standards; the regional USRCRN was defunded in 2014; Canada's RCS status was not found.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Upgrading aging COOP equipment with easier-to-maintain commercially available weather observation systems; … Integrating other high-quality environmental data (e.g., state and private mesonets) sets to augment federally-provided COOP data where appropriate; | Right-sizing and optimizing the scope and coverage of the existing ~6,700-site COOP network. … Under which conditions–such as operating within high-density data regions or monitoring environmental parameters of lesser criticality to your application–would data from external networks be suitable alternatives to federally managed COOP stations?",
+     "location": "Background objectives and Questions III.4 (txt lines 129-143, 251-259)"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The SNOTEL network includes 900 sites and produces forecasts for 600 water supply points. … the SNOTEL program currently has many vacant positions that cannot be filled due to the federal hiring freeze. … This past winter, due to reduced staffing and with federal travel restrictions in place, SNOTEL sites were offline for unusually long periods as remaining staff were stretched thin in their efforts to reach remote sites and repair sensitive equipment.",
+     "location": "p. 1-2 (txt lines 23-24, 87-94)"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "178 sites in Oregon and 129 in Washington … has shrunken from a staff of 12 to just five.",
+     "location": "article body"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "contradicts",
+     "passage": "over 90% of snow depth sensors and air temperature sensors | The Jakes Fire damaged equipment at Midas SNOTEL in the Lower Humboldt Basin on August 5, 2025.",
+     "location": "page body"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "An unheated tipping bucket rain gauge has been the mainstay of mesonets for decades. However, weighing rain gauges, using load cells or a vibrating wire’s frequency, are commonly used in high-quality networks (e.g., U.S. Climate Reference Network). … While weighing rain gauges are generally preferred to unheated tipping bucket rain gauges where frozen precipitation is an important consideration, it is recognized that weighing gauges are significantly more expensive. Thus, many networks have employed unheated tipping bucket rain gauges in areas frequently affected by frozen",
+     "location": "precipitation section (txt lines 770-782); wind shielding line 270"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "prolonged outage | prevent the station from meeting strict federal climate recording standards | typically do not meet the rigorous sensor, reporting, and maintenance criteria | supplemental data to NWS climate products",
+     "location": "page body"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Funding for the U.S. Regional Climate Reference Network (USRCRN) was terminated as part of the FY14 Omnibus budget law. As a result, preparations are underway to begin decommissioning the network. … Site data from USRCRN sites in Colorado, Utah, New Mexico and Arizona will cease to be ingested and recorded by NWS.",
+     "location": "notice body (txt lines 18-26)"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "This new dataset includes the observations taken at Reference Climate Stations | for 467 locations in Canada",
+     "location": "page body"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "accurate and are made using three Geonor T-200B cells mea-",
+     "location": "pp. 2391-2392, sections 1 and 2a (txt lines 54-88)"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "In the United States, the COOP network is widely used for such studies even though there are reported inconsistencies due to changes in instruments and location, inadequate maintenance, dissimilar observation time, and the fact that measurements are made by a group of dedicated volunteers. … The comparison, done at 12 LTAR sites located across the United States, shows underestimation and overestimation of daily precipitation totals at the COOP sites compared to the reference LTAR observations. … Precipitation indices that focus on extreme precipitation characteristics match closely between the two networks at most of the sites.",
+     "location": "Abstract, p. 1 (txt lines 20-31)"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "$3 million grant project | 127 sites around New York | at least one station located in each of New York's 62 counties | I urge you to reinstate the $3 million DHS EMPOWER grant.",
+     "location": "press release body and letter"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "several official and practitioner sources; no source rates each network against USCRN directly",
+   "applicability": null
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "Annual maintenance slipped in 2025: of 26 stations checked in NCEI's station-history log (ISIS), 21 had an annual visit logged in 2024 but only 10 in 2025-2026; 5 more had only a 2025 transmitter swap (GOES ID Change) and 1 (Denio NV) only a gauge service; 9 had nothing logged after 2024 (including Kingston RI, Deadhorse and Bethel AK, Fairbanks AK, St. Mary MT) and Hilo HI nothing after 2022. Only one 2026 visit is logged (Tucson, 2026-06-14), although the transmitter swap finished 2026-04-25 and Alaska stations came back in summer 2026, so the log lags and 2026 is under-recorded.",
+   "evidence": [
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "annual maintenance logged in 2025 or 2026: 10 (Monahans, Socorro, Arco, Sioux Falls, Goodridge, Joplin, Edinburg, Champaign, Tucson, Galena); only Tucson has a 2026 entry (2026-06-14)",
+     "location": "Tally"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "nothing logged after 2024: 9 (Kingston 1 W, Deadhorse, Asheville 8 SSW, Bethel, Elkins, St. Mary, Fairbanks, Durham 2 N, Moose)",
+     "location": "Tally"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "1186 HI Hilo 5 S | Sat Nov 12 02:00:00 UTC 2022\tMaintenance - Annual (Completed)",
+     "location": "station 1186"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "1532 NV Denio 52 WSW | Mon Sep 29 16:05:00 UTC 2025\tRaingauge (Geonor) - Emptied/Antifreeze Added | Sat Nov 05 01:00:00 UTC 2022\tMaintenance - Annual (Completed)",
+     "location": "station 1532"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "1011 AZ Tucson 11 W | Sun Jun 14 19:00:00 UTC 2026\tMaintenance - Annual (Completed)",
+     "location": "station 1011"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "Tue Jul 30 22:00:00 UTC 2024\tMaintenance - Annual (Completed)",
+     "location": "event list, newest entry"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "Thu Jun 27 22:00:00 UTC 2024\tMaintenance - Annual (Completed)",
+     "location": "event list, newest entry"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "Thu Jan 11 20:00:00 UTC 2024\tMaintenance - Annual (Completed)",
+     "location": "event list, newest entry"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "Mon Sep 02 02:00:00 UTC 2024\tMaintenance - Annual (Completed)",
+     "location": "event list, newest entry"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "AK_Deadhorse_3_S 2026 20260101-20260810 (222 d)",
+     "location": null
+    }
+   ],
+   "figure_status": "actual",
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own log for 26 of about 139 stations across all regions; the log lags (2026 is under-recorded), so gaps may be logging gaps",
+   "applicability": "26 of about 139 USCRN stations; stations not picked at random (mixed regions, plus stations with outages)"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Size of the ATDD field crew",
+   "source_ids": [
+    "s44",
+    "s46"
+   ],
+   "status": "unresolved",
+   "explanation": "ARL's undated page says eight technicians and engineers; four technicians installed Blue Hill in Sept 2024; Part 4 reported a crew of five for the 2026 transmitter swap. Different scopes (whole team vs one trip). Stated in the answer."
+  },
+  {
+   "claim": "Number of Alaska stations",
+   "source_ids": [
+    "s24",
+    "s19",
+    "s16"
+   ],
+   "status": "unresolved",
+   "explanation": "ARL (2023): total of 29 after two FY23 installs; NCEI overview: 25 with a plan for 29; daily01 files: 25 (2023), 24 (2024-26). ARL's 29 is probably the planned total; the answer relies on the files. Stated in the answer."
+  },
+  {
+   "claim": "Network size",
+   "source_ids": [
+    "s46",
+    "s19",
+    "s16"
+   ],
+   "status": "resolved",
+   "explanation": "ARL and NCEI give 141 stations; daily01 has 159 station files because they include the Alabama regional sites and the Egbert test site. Stated in the answer."
+  }
+ ],
+ "coverage_gaps": [
+  "No 2024-2026 source found on ATDD/SORD-ATD field-team staffing losses, travel freezes, delayed maintenance visits, or a backup maintenance provider (NCEI, NWS, other contractor). r10 (GAO/OIG) and r15 (press) found nothing USCRN-specific after 2 queries each. Earlier Part 4 run (answer.md) already reports: ATDD folded into SORD-ATD office; field team relabelled ORAU to Cooperative Institute (CISESS) mid-2025; CISESS umbrella NA19NES4320002 ended 2025-06-30; ORAU 2025 report says USCRN support continues via contract extension; field crew five people (Part 4 wording) vs ARL page 'eight technicians and engineers'. Not re-cited here; coordinator can cite Part 4 sources directly. (from sa3)",
+  "Calibration: only the 2003 X041 plan says ATDD calibrates in-house against NIST-traceable standards re-certified annually; which outside lab re-certifies those standards (and whether a NIST/vendor service is still used in 2024-2026) NOT FOUND. (from sa3)",
+  "Canada RCS: no ECCC page giving the Reference Climate Station count, siting standard or 2024-2026 status was read. Snippet-only leads: ECCC budget reductions ($43M 2024-25, $63M 2025-26, $91M from 2026-27), ECCC staff down 593 Mar 2025-Mar 2026, Alberta 180 climate stations data notice (comm.collab.science.gc.ca dd_info list), AHCCD technical documentation mentions RCS. (from sa3)",
+  "National Mesonet Program: FY2026 enacted $30 million is from a secondary summary (federalbudgetiq.com), not checked against the law/explanatory statement; FY2027 Senate/House committee $40 million per AGU (snippet). S.613 (authorization $50M FY2025 to $70M FY2029; S.Rept 119-83, 2025-10-21) not enacted per trackers. (from sa3)",
+  "Reference-quality statements: no source read states that ASOS, COOP, mesonets or SNOTEL are or are not climate-reference quality, except NWS Louisville (AWOS typically does not meet official climate-record criteria). Leeper et al. 2015 JTECH (DOI 10.1175/JTECH-D-14-00172.1) not read; its COOP +1.5% overall and winter -10.7% figures are search snippets only. WKU thesis (Kentucky Mesonet weighing gauges vs COOP/ASOS, 2011-2020) not read. (from sa3)",
+  "USRCRN context from search summary only (not saved): NWS SCN14-25 says funding terminated in the FY14 Omnibus; NCEI usrcrn page says data from 72 Southwest stations stopped 2014-06-01. Pages not read. (from sa3)",
+  "ASOS 2024-2026 maintenance/outage status nationally not found (query returned off-topic results); one-site example only (Frankfort KY). Kentucky Mesonet 2025 funding: no cut found (2018 state threat of $750,000 was restored). (from sa3)",
+  "Why Ivotuk (AK) stopped after April 2023 (site agreement, damage, or removal) and why stations.tsv still lists it Operational: no notice found after 2 searches. (from sa1)",
+  "Alaska build-out 2024-2026: ARL planned 2 installs/year 2023-25 and completion Sept 2026 (funding dependent), but daily01 shows no AK station added 2024-2026. No source found stating a pause or its reason. (from sa1)",
+  "GOES DCS program 2025-2026: CS1->CS2 deadline (May 31, 2026 per search summary of Spring 2024 TWG minutes) and DADDS 4.0 cutover (no later than Nov 20, 2026 per 2026 TWG overview) are search-summary only; decks on noaasis.noaa.gov unreadable (proxy 502 / DNS). No USCRN backup path (Iridium, cellular, FTP gap-fill) found. (from sa1)",
+  "No NOAA/ATDD/NCEI statement found (2024-2026) on USCRN datalogger replacement plan for the retired CR3000 (free support ends 2027-12-31), on spares/stock, or on which model USCRN would migrate to (CR1000X itself retired 2024-12-31, replaced by CR1000Xe). Earlier run: x041 maintenance plan (2003) mentions two datalogger replacements (Kingston, Fairbanks) only. (from sa2)",
+  "Vaisala official obsolete-product list not found; DRD11A lifecycle status beyond 'product page live, no notice' unknown. (from sa2)",
+  "No 2024-2026 NOAA/ATDD test of alternative weighing gauges (Pluvio2, Lambrecht, MPS TRwS, Belfort) found; only 2003-2005 TN05002, 2013 Diamond policy statement, Kochendorfer 2023 AMT wind shield paper (snippet), and Iceland IMO 2024 study. EGU25-19080 presentation (Geonor DFAR reference) snippet not read. (from sa2)",
+  "Geonor AS (Norway) product list page not opened; Geonor company news undated; no corporate status check (Brønnøysund register) done. 'T-200B3' as a model name not found anywhere (USCRN uses T-200B with three vibrating-wire sensors). (from sa2)",
+  "TB-3 supplier history from snippets only: Hydrological Services Ltd (Sydney) joined KISTERS effective 2015; HyQuest Solutions Pty Ltd renamed KISTERS Instruments Pty Ltd June 2023. Not read. (from sa2)",
+  "Lead for q1: Blue Hill Observatory (MA) CRN instruments operational 18 September 2024 (search snippet, not read). (from sa2)",
+  "Causes of the 2025-2026 whole-station outages at eight Alaska stations, of Ivotuk's end in April 2023, and of the 2024-2026 pause in Alaska installs: no source found.",
+  "Annual maintenance 2025-2026: ISIS checked for 26 of about 139 stations (follow-up pass); the other 113 not checked, and ISIS under-records 2026.",
+  "GOES DCS 2026 overview deck (DADDS cutover date) unread: noaasis.noaa.gov unreachable, no Wayback copy.",
+  "Canada Reference Climate Stations: count, siting and 2024-2026 status not found."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "GAO NOAA observing systems maintenance 2025",
+   "tool": "WebSearch",
+   "notes": "standard; results: GAO-25-107210 Hurricane Hunters (aircraft maintenance), GAO-26-107739 GeoXO; nothing on surface stations or USCRN",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Commerce OIG NOAA weather stations 2025",
+   "tool": "WebSearch",
+   "notes": "standard; results: OIG NWS staffing audit (2025-523, July 2025), OIG-25-012-I NWS OT, FY2026 TMC (satellites); nothing on USCRN/ATDD. r10 not found for USCRN after 2 queries",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SNOTEL NRCS staff cuts 2025",
+   "tool": "WebSearch",
+   "notes": "standard; OPB/KUOW 2025-03-11, Mountaineers coalition letter 2025-04-17, Inside Climate News 2026-04-08",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Reference Climate Stations Environment Canada",
+   "tool": "WebSearch",
+   "notes": "standard; AHCCD tech doc mentions RCS; no RCS station count found",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ECCC Reference Climate Station network number of stations precipitation",
+   "tool": "WebSearch",
+   "notes": "standard; 397 automated stations hourly wind-bias-adjusted dataset; State of surface weather and climate monitoring in Canada (Mar 2023) PDF too large for WebFetch",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Mesonet Program funding 2025",
+   "tool": "WebSearch",
+   "notes": "standard; S.613 Improving Flood and Agricultural Forecasts Act of 2025 (authorization $50M FY2025 to $70M FY2029, S.Rept 119-83); NYS Mesonet DHS grant cut July 2025",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "COOP observer network decline 2025",
+   "tool": "WebSearch",
+   "notes": "standard; NWS COOP RFC (Federal Register 2026-09099, 2026-05-07)",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ASOS maintenance outages 2025",
+   "tool": "WebSearch",
+   "notes": "standard; results were off-topic (retailer ASOS, NASA ASDC); NWS Frankfort ASOS found via the Kentucky Mesonet search instead",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Oak Ridge ATDD staff cuts 2025",
+   "tool": "WebSearch",
+   "notes": "standard; no 2025 ATDD-specific cuts reported; Oak Ridge Today undated article (33 employees incl. NOAA and ORAU) in snippet only. r15 not found after 1 query (time)",
+   "from": "sa3",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Oklahoma Mesonet funding 2025",
+   "tool": "WebSearch",
+   "notes": "standard; OU 2025-08-26 30-year award; no 2025 budget figures",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USCRN versus COOP precipitation comparison",
+   "tool": "WebSearch",
+   "notes": "standard; Leeper et al. 2015 JTECH (COOP 1.5% more overall), Buban et al. 2020 JHM PRISM",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "SNOTEL sites maintenance 2026",
+   "tool": "WebSearch",
+   "notes": "standard; NRCS Nevada what's new for 2026 (over 90 visits each summer; >90% sensors replaced by Dec 2025); Oregon 2026 soil sensor upgrades; Synoptic SNOTEL web service incident 2026-03-27",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN calibration NIST traceable Geonor weights ATDD",
+   "tool": "WebSearch",
+   "notes": "standard; NIST generic mass calibration only; answer came from earlier-run X041 maintenance plan",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Kentucky Mesonet funding cut 2025",
+   "tool": "WebSearch",
+   "notes": "standard; 2018 state budget threat ($750,000) restored; no 2025 cut; NWS Louisville Frankfort ASOS page",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USRCRN regional climate reference network discontinued",
+   "tool": "WebSearch",
+   "notes": "standard; NWS SCN14-25 (funding terminated in FY14 Omnibus), NCEI usrcrn page (72 Southwest stations, data stopped 2014-06-01)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "climate reference network comparison mesonet precipitation",
+   "tool": "WebSearch",
+   "notes": "standard; WKU thesis Kentucky Mesonet vs COOP/ASOS (2011-2020); AASC mesonet best practices 2019 (stateclimate.org refused)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Mesonet Program FY2026 appropriations NOAA",
+   "tool": "WebSearch",
+   "notes": "standard; federalbudgetiq summary: $30 million NMP in FY26 CJS (secondary); AGU: FY2027 committee $40 million",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ATDD USCRN field technicians maintenance visits 2026",
+   "tool": "WebSearch",
+   "notes": "standard; ARL 'USCRN at ARL' page: team of eight technicians and engineers, annual visits",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Federal Register 2026-09099 COOP request for comment",
+   "tool": "lookup (Federal Register API document 2026-09099)",
+   "notes": "federalregister.gov API JSON; publication 2026-05-07, comments close 2026-06-08",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA Air Resources Laboratory Oak Ridge layoffs 2025",
+   "tool": "WebSearch",
+   "notes": "standard; NOAA-wide Feb-Apr 2025 layoffs (880 per CBS congressional source; about 10% workforce per AIP); none mention ARL or Oak Ridge. r15 not found after 2 queries",
+   "from": "sa3",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Environment Canada climate stations closures 2025",
+   "tool": "WebSearch",
+   "notes": "standard; snippets: ECCC budget reduction $43M 2024-25, $63M 2025-26, $91M from 2026-27; ECCC staff down 593 Mar 2025-Mar 2026; Alberta 180 climate stations data notice (dd_info list); CTV/CP 2025-09-11 article fetched, details NOT PRESENT in extract",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Leeper 2015 Impacts of network design USCRN COOP precipitation pdf",
+   "tool": "WebSearch",
+   "notes": "standard; allowed_domains repository.library.noaa.gov, ncei.noaa.gov, journals.ametsoc.org; citation found (JTECH 32, 703-721), no free PDF; later reevaluation snippet: USCRN 0.21% more precipitation than collocated COOP",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network station maintenance delayed 2025 NOAA",
+   "tool": "WebSearch",
+   "notes": "extended mode (key news search); no report of delayed USCRN maintenance; only ARL Boundary Matters Summer 2025 on GOES transmitter swaps (23 stations in first half of 2025; all 142 by 2026-05-31), which the brief already covers",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN station decommissioned 2025",
+   "tool": "WebSearch",
+   "notes": "No USCRN closure found; returned ARL transmitter article (already known) and unrelated ocean/USGS items.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Climate Reference Network station relocation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov. Only 2007-2008 relocation mentions; nothing 2024-2026.",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN Alaska stations installed 2024",
+   "tool": "WebSearch",
+   "notes": "No 2024 AK install found; NCEI pages say 22 of 29 / 25 of 29 (undated). daily01 shows Galena and Huslia added 2023, none 2024-2026.",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES DCS outage 2025",
+   "tool": "WebSearch",
+   "notes": "Found OSPO DCS outage 2025-02-12 (1h16m) and GOES-19 safehold July 2026 with DCS return.",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "DCS transmitter certification 2026 GOES",
+   "tool": "WebSearch",
+   "notes": "No 2026 certification change found; CS2 current; TWG2025/TWG2026 decks on noaasis.noaa.gov (host refused by proxy and WebFetch DNS).",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Climate Reference Network station 2025 news",
+   "tool": "WebSearch (extended)",
+   "notes": "extended mode. No 2025 news; only old NCDC/NCEI stories and NCEI cloud-migration banner.",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Ivotuk USCRN station 2024",
+   "tool": "WebSearch",
+   "notes": "Follow-up after daily01 count showed Ivotuk dropped 2024. Element listing period of record ends Apr 07 2023. No closure notice found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Climate Reference Network Alaska expansion 29 stations",
+   "tool": "WebSearch",
+   "notes": "Program overview 25 of 29 (undated); older targets 2018 / 2022 slipped. No pause notice found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES DCS DADDS outage 2026",
+   "tool": "WebSearch",
+   "notes": "Search summary cites a NOAA 2026 TWG DCS Overview deck: DADDS 4.0 in parallel operations, cutover no later than November 20, 2026 (deck unreadable: noaasis.noaa.gov refused).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Blue Hill USCRN station 2024",
+   "tool": "WebSearch",
+   "notes": "ARL story: Blue Hill MA installed Sept 15-18 2024, first MA station, 46 states (ARL page 403 to fetch_page).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "DADDS 4.0 cutover November 2026 DCS",
+   "tool": "WebSearch",
+   "notes": "Nothing relevant (unrelated DCS systems).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN site host agreement",
+   "tool": "WebSearch",
+   "notes": "Nothing relevant (clinical research agreements).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN data delay 2025",
+   "tool": "WebSearch",
+   "notes": "Nothing about USCRN (CDC data items).",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (daily01 snapshot zip CRND0103-202611160850 and stations.tsv)",
+   "tool": "lookup (NCEI daily01 files)",
+   "notes": "Downloaded snapshot (43.6 MB) and stations.tsv; counted with work/raw/sa1/count_daily01.py.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GOES DCS Wallops command data acquisition 2026",
+   "tool": "WebSearch",
+   "notes": "Search summary: Wallops prime, NSOF backup; CS1-to-CS2 certification deadline May 31, 2026 no waivers (Spring 2024 TWG minutes); DCS docs to new DADDS site June 2026. Source decks unreadable (noaasis.noaa.gov).",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN Iridium backup transmission station",
+   "tool": "WebSearch",
+   "notes": "No USCRN backup path (Iridium/cellular) found; only ARL transmitter article and vendor Iridium pages.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ARL ATDD Alaska USCRN new station 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov. Found ARL review response (AK plan 6-7 by 2026, funding dependent); no 2025 install found.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Ivotuk climate station removed Arctic Slope",
+   "tool": "WebSearch",
+   "notes": "Only UAF research Ivotuk sites (inactive); no USCRN Ivotuk closure notice.",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (Wayback copy of ARL review response PDF)",
+   "tool": "lookup (web.archive.org)",
+   "notes": "Direct URL 403; Wayback 20250819 copy fetched.",
+   "from": "sa1",
+   "copy_of": "https://www.arl.noaa.gov/wp_arl/wp-content/uploads/2025/02/ARL-Review-Response-Sept-30-2023-edited.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (Wayback copies of TWG 2026 DCS Overview and Spring 2024 TWG minutes)",
+   "tool": "lookup (web.archive.org)",
+   "notes": "2024 minutes found (20241127 capture); 2026 overview: Wayback 404.",
+   "from": "sa1",
+   "copy_of": "https://noaasis.noaa.gov/pdf/docs/TWG2024/Spring2024TWGMinutes.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup (Wayback copies of TWG 2025 Dronen DCS Update and Sullivan Wallops Update)",
+   "tool": "lookup (web.archive.org)",
+   "notes": "Both found (20251014 captures); supersede the unreadable entries for these decks and for the Spring 2024 minutes. TWG 2026 DCS Overview: Wayback 404 (still unreadable).",
+   "from": "sa1",
+   "copy_of": "https://www.noaasis.noaa.gov/pdf/docs/TWG2025/1025%20DCS%20Update%20Dronen.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"2026 DCS Overview\" GOES DCS TWG DADDS cutover",
+   "tool": "WebSearch",
+   "notes": "Title search for another copy: only the noaasis original (unreadable). Snippet: operational cutover TBD but no later than November 20, 2026 (system not named in snippet); 2025 TWG: Replacement DADDS final delivery end of 2026.",
+   "from": "sa1",
+   "copy_of": "https://noaasis.noaa.gov/pdf/docs/TWG2026/2026%20DCS%20DCS%20Overview.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Geonor T-200B discontinued",
+   "tool": "WebSearch",
+   "notes": "standard; no Geonor result in 18 hits",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Geonor AS weighing gauge",
+   "tool": "WebSearch",
+   "notes": "standard; only a T-200B manual hit; then fetched geonor.com, geonor.com T-200B page, geonor.no (extracts saved)",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Geonor T-200B3 USCRN three wire",
+   "tool": "WebSearch",
+   "notes": "standard; NCEI tech notes (TN04001, TN04002, TN04005), Campbell T-200B page; no 'T-200B3' model name found; no discontinuation",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Vaisala DRD11A obsolete replacement",
+   "tool": "WebSearch",
+   "notes": "standard; product page live; no obsolete notice; FS11/WMT52/WXT520 replacements only",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Vaisala DRD11A end of life",
+   "tool": "WebSearch",
+   "notes": "standard; no EOL notice",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Vaisala discontinued products list DRD11A",
+   "tool": "WebSearch",
+   "notes": "standard; no official Vaisala obsolete list found; DRD11A not on third-party discontinued lists in results; not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Hydrological Services TB3 rain gauge",
+   "tool": "WebSearch",
+   "notes": "standard; TB3 now KISTERS/HyQuest branded; product pages live",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Kisters HyQuest TB3 discontinued 2025",
+   "tool": "WebSearch",
+   "notes": "standard; no discontinuation notice; KISTERS HyQuant Edge launch May 2026 (not tied to TB3)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Hydrological Services Pty acquired KISTERS HyQuest",
+   "tool": "WebSearch",
+   "notes": "standard; KISTERS took over Hydrological Services Ltd 2015; HSA joined KISTERS 2020; HyQuest renamed KISTERS Instruments Pty Ltd June 2023 (snippets)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Campbell Scientific CR3000 retired",
+   "tool": "WebSearch",
+   "notes": "standard; discontinuation notice 2021-09-23 and product page read",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CR3000 discontinued replacement CR6",
+   "tool": "WebSearch",
+   "notes": "standard; vendor names CR1000X + VOLT116, not CR6",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "SPICE weighing gauge intercomparison Geonor Pluvio",
+   "tool": "WebSearch",
+   "notes": "standard; Pluvio2 and Geonor T-200B 3-wire were SPICE field references; ISSW2024 Iceland Pluvio vs Geonor (snippet, not read)",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN alternative precipitation gauge test Pluvio",
+   "tool": "WebSearch",
+   "notes": "standard; only USGS NADP Pluvio vs Belfort evaluations; no USCRN-specific 2024-2026 test",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ATDD precipitation gauge evaluation 2024 Kochendorfer",
+   "tool": "WebSearch",
+   "notes": "standard; Kochendorfer 2023 AMT wind shield, 2015 evaporation; no 2024 ATDD gauge evaluation found; not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN datalogger replacement CR1000X",
+   "tool": "WebSearch",
+   "notes": "standard; no USCRN-specific datalogger replacement found; CR1000 retired, support to Dec 2029 (snippet)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OTT Pluvio2 L product 2025",
+   "tool": "WebSearch",
+   "notes": "standard; Pluvio2 L datasheets revised May 2025 / Oct 2025; no discontinuation",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Climate Reference Network instruments replaced 2025",
+   "tool": "WebSearch",
+   "notes": "extended; ARL transmitter-upgrade story (already known); Blue Hill Observatory CRN instruments operational 18 September 2024 (snippet; q1 lead); no 2025 sensor-swap news",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Geonor precipitation gauge new 2025",
+   "tool": "WebSearch",
+   "notes": "standard; no new Geonor model or discontinuation; EGU25 presentation treats Geonor DFAR as reference (snippet). Also lookup of campbellsci.com/products/cr1000x and cr1000xe pages (vendor product life events).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA ATDD USCRN data logger upgrade 2025",
+   "tool": "WebSearch",
+   "notes": "standard; only ARL transmitter-upgrade story (already known, dated 2026-07-23 per snippet) and NCEI datalogger dataset metadata; ARL USCRN page snippet: teams \"update the data logger as required each year during site visits\" (not read); no USCRN datalogger hardware replacement found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "DRD11A user guide Vaisala 2024",
+   "tool": "WebSearch",
+   "notes": "standard, domain filter vaisala.com; DRD11A still documented in current RWS200 manuals (M211803FR-AA, M211607EN-AA, M213114EN-B) and datasheet B010018EN-C; no lifecycle notice",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Kochendorfer 2025 weighing gauge USCRN",
+   "tool": "WebSearch",
+   "notes": "standard; no 2025 ATDD gauge paper; only TN04002 fall prevention device note (2004) and unrelated NIST scale documents",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Geonor AS Østerås 2025",
+   "tool": "WebSearch",
+   "notes": "standard; aggregator snippets (purehelp.no, 21st.ai, not read): Geonor AS active, org no. 911954567, registered 1995; 2025 operating income about NOK 27.8 million, result about NOK 1.32 million, equity about NOK 5.44 million (21st.ai, updated 2026-01-14). Not verified in Brønnøysund register.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Climate Reference Network Alaska station outage 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass: found only a 2026-07-28 outage of Alaska aviation (FAA/NWS) weather stations (KNBA/KTOO), not USCRN; no USCRN outage notice"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kingston Rhode Island climate reference station decommissioned",
+   "tool": "duckduckgo (browser)",
+   "notes": "gap pass: no decommissioning notice; found NCEI ISIS station-history pages (public), read for Kingston 1 W and Deadhorse 3 S (s48, s49)"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ISIS station history Bethel 87 WNW (stationid 1800, from stations.tsv)",
+   "tool": "lookup (NCEI ISIS station page, browser)",
+   "notes": "gap pass, queue item: ISIS index needs login, station pages are public; Bethel last annual maintenance 2024-09-02 (s51)",
+   "copy_of": "https://www.ncei.noaa.gov/access/isis/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Leeper Rennie Palecki 2015 USCRN COOP precipitation comparison pdf",
+   "tool": "WebSearch",
+   "notes": "gap pass, queue item: no open full-text copy; abstract-level snippets only",
+   "copy_of": "https://journals.ametsoc.org/view/journals/atot/32/4/jtech-d-14-00172_1.xml"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "State of Surface Weather and Climate Monitoring in Canada 2023 report",
+   "tool": "WebSearch",
+   "notes": "gap pass, queue item: only the sandbox-refused NWT host; no other copy",
+   "copy_of": "https://climatelibrary.ecc.gov.nt.ca/dataset/16d2d015-fdef-4b6c-a0d7-f13fa2ccf460/resource/18c3bd85-022e-4fc0-9bee-664b31d5a6df/download/en_state-of-surface-weather-and-climate-monitoring-in-canada_report_mar-2023-v1.0.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "EGU25-19080 Geonor precipitation reference",
+   "tool": "WebSearch",
+   "notes": "gap pass, queue item: only the same 404 URL",
+   "copy_of": "https://presentations.copernicus.org/EGU25/EGU25-19080_presentation.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "KISTERS acquires Hydrological Services Sydney 2015",
+   "tool": "WebSearch",
+   "notes": "gap pass, queue item: only the same 403 page; search summary: effective 2015-01-01",
+   "copy_of": "https://www.environmental-expert.com/news/kisters-acquires-hydrological-services-ltd-sydney-480063"
+  }
+ ],
+ "entities": [],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 25.7,
+  "shift_min": 2,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 242649,
+  "subagent_minutes_planned": 47,
+  "subagent_minutes": 45.9,
+  "follow_ups": 0,
+  "continuations": 8,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

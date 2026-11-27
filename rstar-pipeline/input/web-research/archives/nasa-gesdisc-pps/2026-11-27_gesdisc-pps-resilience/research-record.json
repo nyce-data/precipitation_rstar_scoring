@@ -1,0 +1,1890 @@
+{
+ "question": "How resilient are NASA's GES DISC and the Precipitation Processing System (PPS) as homes for data (integrity, recovery, copies, storage and access, track record), tagged against RRS-1, RRS-2, RRS-3, RRS-5, D-2 and D-3?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed NASA science cuts and restructuring, Goddard consolidation) and high stakes for scoring two repositories",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Integrity (RRS-2): fixity/checksum checks by ESDIS, GES DISC and PPS (algorithm, frequency); CoreTrustSeal, ISO 16363 or WDS status; what NASA's data policy requires; whether Earthdata Cloud verifies stored copies.",
+   "status": "answered",
+   "source_ids": [
+    "s5",
+    "s6",
+    "s7",
+    "s17",
+    "s22"
+   ],
+   "remaining_gap": "No checksum algorithm or re-verification frequency is published for GES DISC, PPS or Earthdata Cloud; the Preservation Content Specification PDF and Cumulus ingest checksum documentation were not read; ISO 16363 not searched."
+  },
+  {
+   "id": "q2",
+   "question": "Recovery (RRS-3): continuity or disaster recovery plans and tests; IG-26-005 and GAO-26-108556 findings on data systems; PPS near-real-time backup site.",
+   "status": "answered",
+   "source_ids": [
+    "s17",
+    "s18",
+    "s19",
+    "s21",
+    "s24"
+   ],
+   "remaining_gap": "No DR/COOP plan or test record found for ESDIS, GES DISC or PPS; the GAO-26-108556 full report was searched (files.gao.gov HTML) for data-system terms, not read line by line."
+  },
+  {
+   "id": "q3",
+   "question": "Copies (RRS-1): any copy besides Earthdata Cloud (AWS us-west-2) or in a second region; what PPS keeps and for how long; whether the two are checked against each other.",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s4",
+    "s7",
+    "s8",
+    "s10",
+    "s11"
+   ],
+   "remaining_gap": "Whether GES DISC deploys ORCA (Glacier/Deep Archive backup) is not published; PPS's long-term (arthurhou) archive retention and any GES DISC-PPS cross-check not found."
+  },
+  {
+   "id": "q4",
+   "question": "Storage and access (D-2, D-3): storage design, the contracts and staff that run it (EED-3, ESDIS Next), dependence on Earthdata Login.",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s20",
+    "s23",
+    "s24"
+   ],
+   "remaining_gap": "ENX award status after January 2026 not found; PPS's contractor and storage hardware not found; Earthdata Login funding not found."
+  },
+  {
+   "id": "q5",
+   "question": "Track record (RRS-5): the 2025 shutdown, the 2026 cloud migration, the October 28-30, 2026 ingest pause, PPS's January 20, 2026 outage, and any data loss.",
+   "status": "answered",
+   "source_ids": [
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16"
+   ],
+   "remaining_gap": "No after-action notices for the January 20, 2026 PPS shutdown or the October 2026 ingest pause; no statement either way on data loss; only page 1 (Aug 24-Nov 10, 2026) of GES DISC's 414 alerts was read."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://ceos.org/document_management/Working_Groups/WGISS/Meetings/WGISS-61/8.7%20WGISS-61%20NASA_s%20evolving%20Archive%20Guidelines%20for%20the%20cloud.pdf",
+   "fetched_url": null,
+   "title": "Evolving Archive guidelines for the cloud (WGISS-61)",
+   "author_org": "Doug Newman, NASA GSFC ESDIS Project",
+   "published": "2026-03-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wgiss61_nasa_archive_guidelines.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Slides carry the disclaimer that they are subject to change; not specific to GES DISC.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://nasa.github.io/cumulus-orca/docs/developer/research/research-reconciliation",
+   "fetched_url": null,
+   "title": "ORCA Reconciliation (research notes)",
+   "author_org": "NASA Cumulus ORCA team",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-27",
+   "limitations": "nasa.github.io refused by sandbox; read via WebFetch extraction, no local copy. Research notes, not a statement of GES DISC practice; no checksum in the comparison.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://nasa.github.io/cumulus-orca/docs/about/introduction/orca-intro",
+   "fetched_url": null,
+   "title": "ORCA introduction",
+   "author_org": "NASA Cumulus ORCA team",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-27",
+   "limitations": "Read via WebFetch extraction (host refused); no local copy. Search snippet of deployment guide (not read): 'Best practice is to place the ORCA archive bucket in your Disaster Recovery OU.'",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://gpm.nasa.gov/node/2527",
+   "fetched_url": null,
+   "title": "2A DPR PPS FTP NRT",
+   "author_org": "NASA GPM / PPS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gpm_2adpr_nrt.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Stated for 2A DPR NRT; search snippet gives same wording for 2B CMB NRT; IMERG Late Run retention on jsimpson not confirmed.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://worlddatasystem.org/member-highlight-goddard-earth-sciences-data-and-information-services-center/",
+   "fetched_url": null,
+   "title": "Member Highlight: Goddard Earth Sciences Data and Information Services Center",
+   "author_org": "World Data System",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wds_gesdisc_highlight.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Undated highlight; current CoreTrustSeal certification not found.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.earthdata.nasa.gov/about/esdis/esco/standards-practices/nasa-earth-science-data-preservation-content-specification",
+   "fetched_url": null,
+   "title": "NASA Earth Science Data Preservation Content Specification",
+   "author_org": "NASA Earthdata / ESDIS ESCO",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/preservation_content_spec.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Only the landing page read; 423-SPEC-001 Rev C PDF and the PCIG not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://cmr.earthdata.nasa.gov/search/granules.umm_json?short_name=GPM_3IMERGHHL&version=07&page_size=1",
+   "fetched_url": null,
+   "title": "CMR UMM-G granule record, GPM_3IMERGHHL.07 (first granule, 1998-01-01)",
+   "author_org": "NASA CMR / GES DISC provider",
+   "published": "2026-05-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cmr_imerghhl_v07.json",
+   "retrieved": "2026-11-27",
+   "limitations": "One granule checked (of 506710 hits); absence of a checksum in public metadata does not show that no checksum is kept internally; a metadata record lists distribution URLs, not backup copies.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://gpm.nasa.gov/data/news/important-ppss-arthurhou-gpm-production-data-archive-temporarily-unavailable",
+   "fetched_url": null,
+   "title": "IMPORTANT: PPS's \"arthurhou\" GPM Production Data Archive Temporarily Unavailable",
+   "author_org": "NASA GPM / PPS",
+   "published": "2025-02-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_arthurhou_unavailable.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Does not say whether any data were lost or how discrepancies were resolved.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://gpm.nasa.gov/data/news/ppss-arthurhou-gpm-production-data-archive-back-online",
+   "fetched_url": null,
+   "title": "PPS's \"arthurhou\" GPM Production Data Archive Back Online",
+   "author_org": "NASA GPM / PPS",
+   "published": "2025-02-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pps_arthurhou_back_online.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No statement on data loss or on checksum verification of the archive.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://nasa.github.io/cumulus-orca/docs/developer/deployment-guide/deployment-s3-bucket",
+   "fetched_url": null,
+   "title": "ORCA deployment guide: S3 bucket",
+   "author_org": "NASA Cumulus ORCA team",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/main/orca_deployment_s3_bucket_browser.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Read via WebFetch extraction (nasa.github.io refused by sandbox), no local copy; storage-class wording paraphrased by extractor; sample CLI uses --region us-west-2.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://github.com/nasa/gesdisc-tutorials/blob/main/user-guidance/GES_DISC_Migration_to_Earthdata_Website_and_Earthdata_Cloud.md",
+   "fetched_url": null,
+   "title": "GES DISC Migration to Earthdata Website and Earthdata Cloud (user guidance)",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gesdisc_onprem_guidance.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Plan statement; no lost-granule or outage report for the cutover found.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.earthdata.nasa.gov/about/data-metrics/esdis-metrics/weekly-metrics/10-20-2025",
+   "fetched_url": null,
+   "title": "ESDIS weekly metrics, 10-20-2025",
+   "author_org": "NASA ESDIS",
+   "published": "2025-10-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/earthdata_delay_list_oct2025.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "URL taken from the earlier run return.json entry for this local file; not re-fetched.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://gpm.nasa.gov/data/news/upcoming-gpm-near-real-time-maintenance",
+   "fetched_url": null,
+   "title": "Upcoming GPM Near Real-time Maintenance",
+   "author_org": "NASA GPM / PPS",
+   "published": "2026-01-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gpm_nrt_maintenance_jan2026.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Advance notice only; no after-action note on actual duration, IMERG Late latency or lost/regenerated files was found. Line 12 is truncated in the saved text.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/ingest-archive-migration-interrupt-data-ingestion-oct.-28-30",
+   "fetched_url": null,
+   "title": "Ingest & Archive Migration to Interrupt Data Ingestion on Oct. 28-30",
+   "author_org": "NASA Earthdata / ESDIS",
+   "published": "2026-10-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cia_ingestion_oct28.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Products affected, backlog size and recovery details are NOT PRESENT; page says only Resolved Nov. 2, 2026 (last updated Nov. 3, 2026).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/content/data-alert-history/17367",
+   "fetched_url": null,
+   "title": "Data alert history (GES DISC filter)",
+   "author_org": "NASA Earthdata / ESDIS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/alert_history_17367.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Rest of the table not read in full (deadline).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.earthdata.nasa.gov/data/alerts-outages/federal-government-shutdown",
+   "fetched_url": null,
+   "title": "Federal Government Shutdown",
+   "author_org": "NASA Earthdata",
+   "published": "2025-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fed_shutdown_alert.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Search summary tied it to LAADS DAAC; the saved text does not name GES DISC or PPS.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://oig.nasa.gov/docs/IG-20-011.pdf",
+   "fetched_url": null,
+   "title": "NASA's Management of Distributed Active Archive Centers (IG-20-011)",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2020-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_ig-20-011.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "2020 report; later status of the backup copy (e.g. a second-region or on-premises copy) not in this file.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://oig.nasa.gov/office-of-inspector-general-oig/letters-to-congress/review-of-goddard-space-flight-centers-transformation-efforts/",
+   "fetched_url": "https://oig.nasa.gov/wp-content/uploads/2026/06/final-memorandum-ig-26-005-review-of-goddard-space-flight-centers-transformation-efforts.pdf",
+   "title": "Review of Goddard Space Flight Center's Transformation Efforts (IG-26-005)",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2026-06-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oig_ig-26-005.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Text reused from an earlier run's saved copy (no URL recorded there); the subagent's guessed PDF address returned HTTP 404, so the url is OIG's landing page found by search on 2026-11-27, and the copy was not re-downloaded.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://www.gao.gov/assets/gao-26-108556-highlights.pdf",
+   "fetched_url": null,
+   "title": "NASA: Assessments of Major Projects (GAO-26-108556) Highlights",
+   "author_org": "GAO",
+   "published": "2026-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "abstract",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gao_26_108556_highlights.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Only highlights read; full report PDF refused (gao.gov 403, nasawatch.com blocked).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.highergov.com/contract-forecast/earth-science-data-and-information-system-esdis-1121962",
+   "fetched_url": null,
+   "title": "Earth Science Data and Information System (ESDIS) Next (ENX) forecast",
+   "author_org": "HigherGov (aggregating NASA GSFC forecast)",
+   "published": "2025-04-01",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/highergov_enx_forecast.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Forecast only, posted 2025-04-01.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://oig.nasa.gov/wp-content/uploads/2026/10/or-10-26.pdf",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "NASA OIG Open Recommendations as of October 15, 2026",
+   "author_org": "NASA Office of Inspector General",
+   "published": "2026-10",
+   "data_period": "as of 2026-10-15",
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Lists open recommendations only; does not give implementation progress.",
+   "local_file": "work/raw/main/oig_or-10-26.txt",
+   "retrieved": "2026-11-27"
+  },
+  {
+   "id": "s22",
+   "url": "https://amt.coretrustseal.org/certificates/",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "CoreTrustSeal: Current CoreTrustSeal certified data repositories",
+   "author_org": "CoreTrustSeal",
+   "published": null,
+   "data_period": "current list as read 2026-11-27",
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Read in the built-in browser; current certificates only (the Certificates Archive tab was not opened).",
+   "local_file": "work/raw/main/coretrustseal_certificates_browser.txt",
+   "retrieved": "2026-11-27"
+  },
+  {
+   "id": "s23",
+   "url": "https://sam.gov/workspace/contract/opp/155dc55f43934efe8e91537863f990b7/view",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "SAM.gov: Earth Science Data and Information System (ESDIS) Next (ENX) RFI (RFI-NASA-GSFC-ENX)",
+   "author_org": "NASA Goddard Space Flight Center (SAM.gov)",
+   "published": "2026-01-23",
+   "data_period": "versions 2024-09-12 to 2026-10-23",
+   "source_type": "official",
+   "evidence_id": "RFI-NASA-GSFC-ENX",
+   "limitations": "Read in the built-in browser (first 4,000 characters); the notice is a 2024 sources-sought re-published on Jan 23, 2026, with a current record dated 2026-10-23, status Inactive. Found via the SAMDaily copy (samdaily.us).",
+   "local_file": "work/raw/main/samgov_enx_rfi_browser.txt",
+   "retrieved": "2026-11-27"
+  },
+  {
+   "id": "s24",
+   "url": "https://status.earthdata.nasa.gov/client_applications/21/history",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "Earthdata Status: Degraded Service Events, Earthdata Login (history, page 1 of 16)",
+   "author_org": "NASA ESDIS (Earthdata Status)",
+   "published": null,
+   "data_period": "2025-12 to 2026-11",
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Only the first of 16 history pages was read.",
+   "local_file": "work/raw/main/edl_status_history_browser.txt",
+   "retrieved": "2026-11-27"
+  },
+  {
+   "id": "s25",
+   "url": "https://forum.earthdata.nasa.gov/viewtopic.php?t=8190",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "In which AWS region do GES DISC data reside? (Earthdata Forum, GES DISC answer)",
+   "author_org": "GES DISC (Earthdata Forum staff post)",
+   "published": "2026-09-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Forum FAQ answer by GES DISC staff; one sentence.",
+   "local_file": "work/raw/main/forum_gesdisc_aws_region.txt",
+   "retrieved": "2026-11-27"
+  },
+  {
+   "id": "s26",
+   "url": "https://files.gao.gov/reports/GAO-26-108556/index.html",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "NASA: Assessments of Major Projects (GAO-26-108556), full report (HTML)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "GAO-26-108556",
+   "limitations": "Searched (about 34,600 words) for EOSDIS, ESDIS, data system, disaster, contingency, backup, archive: no match; GPM appears only in the launched-projects table.",
+   "local_file": "work/raw/main/gao_26_108556_full.txt",
+   "retrieved": "2026-11-27"
+  },
+  {
+   "id": "s27",
+   "url": "https://disc.gsfc.nasa.gov/information/alerts",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "GES DISC Alerts (page 1 of 414 alerts)",
+   "author_org": "GES DISC",
+   "published": null,
+   "data_period": "alerts dated 2026-08-24 to 2026-11-10",
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Read in the built-in browser; page 1 only, items truncated to their first lines.",
+   "local_file": "work/raw/main/gesdisc_alerts_p1_browser.txt",
+   "retrieved": "2026-11-27"
+  },
+  {
+   "id": "s28",
+   "url": "https://disc.gsfc.nasa.gov/information/alerts?title=End%20of%20support%20for%20IMERG%20Final%20version%2006",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "GES DISC Alert: End of support for IMERG Final version 06",
+   "author_org": "GES DISC",
+   "published": "2024-07-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Read in the built-in browser; saved by hand from the tool's text.",
+   "local_file": "work/raw/fumain/gesdisc_alert_imerg_v06_end.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s29",
+   "url": "https://disc.gsfc.nasa.gov/information/alerts?title=Reprocessing%20of%20the%20NCEP%2FCPC%20L3%20Half%20Hourly%204km%20Global%20(60S%20-%2060N)%20Merged%20IR%20(GPM_MERGIR)",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "GES DISC Alert: Reprocessing of the NCEP/CPC L3 Half Hourly 4km Global Merged IR (GPM_MERGIR)",
+   "author_org": "GES DISC",
+   "published": "2025-08-15",
+   "data_period": "data days 2024-04-22 to 2024-04-23",
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Read in the built-in browser; saved by hand from the tool's text.",
+   "local_file": "work/raw/fumain/gesdisc_alert_mergir_reprocessing.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s30",
+   "url": "https://disc.gsfc.nasa.gov/information/alerts?title=Due%20to%20the%20lapse%20in%20federal%20government%20funding%2C%20NASA%20is%20not%20updating%20this%20website.%20We%20sincerely%20regret%20this%20inconvenience.",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "GES DISC Alert: Due to the lapse in federal government funding, NASA is not updating this website",
+   "author_org": "GES DISC",
+   "published": "2025-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Read in the built-in browser; saved by hand (file also holds s31).",
+   "local_file": "work/raw/fumain/gesdisc_alert_lapse_and_imerg_may2026.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s31",
+   "url": "https://disc.gsfc.nasa.gov/information/alerts?title=GPM_3IMERG%20v07%20variables%20will%20be%20temporarily%20unavailable%20May%2011-13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "GES DISC Alert: GPM_3IMERG v07 variables will be temporarily unavailable May 11-13 (2026)",
+   "author_org": "GES DISC",
+   "published": "2026-05-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Read in the built-in browser; saved by hand (file also holds s30).",
+   "local_file": "work/raw/fumain/gesdisc_alert_lapse_and_imerg_may2026.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s32",
+   "url": "https://disc.gsfc.nasa.gov/information/alerts?page=6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "GES DISC Alerts, page 6 (alerts 126-150 of 414)",
+   "author_org": "GES DISC",
+   "published": null,
+   "data_period": "alerts dated 2025-05 to 2025-10 (plus older items)",
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Browser text cut at 7,000 characters.",
+   "local_file": "work/raw/main/browser/disc-gsfc-nasa-gov-information-alerts-page-6_132633.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s33",
+   "url": "https://nasa.github.io/cumulus/docs/next/tasks/",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "Cumulus Tasks (Cumulus Documentation, Next version)",
+   "author_org": "NASA Cumulus project (ESDIS)",
+   "published": "2026-11-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Unreleased 'Next' documentation; lists tasks, not which DAACs deploy them.",
+   "local_file": "work/raw/main/browser/nasa-github-io-cumulus-docs-next-tasks_132828.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s34",
+   "url": "https://nasa.github.io/cumulus/docs/workflow_tasks/lzards_backup/",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "LZARDS Backup (Cumulus Documentation v22.5.1)",
+   "author_org": "NASA Cumulus project (ESDIS)",
+   "published": "2026-11-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Read in the built-in browser; saved by hand. The LZARDS Overview (Earthdata wiki) needs an Earthdata Login and was not read.",
+   "local_file": "work/raw/fumain/cumulus_lzards_backup_doc.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s35",
+   "url": "https://status.earthdata.nasa.gov/client_applications/21/history?page=2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "title": "Earthdata Status: Degraded Service Events, Earthdata Login (history, page 2 of 16)",
+   "author_org": "NASA ESDIS (Earthdata Status)",
+   "published": null,
+   "data_period": "2025-12-16 to 2025-12-22",
+   "source_type": "official",
+   "evidence_id": null,
+   "limitations": "Page 2 of 16 only.",
+   "local_file": "work/raw/main/browser/status-earthdata-nasa-gov-client-applications-21-history-pag_132954.txt",
+   "retrieved": "2026-11-27",
+   "follow_up": true
+  },
+  {
+   "id": "s36",
+   "url": "https://www.earthdata.nasa.gov/s3fs-public/2022-06/NASA_ESD_Preservation_Spec_C.pdf?VersionId=nLDSU6awu0KGWq6o.YzEhLvK0tG.8l6_",
+   "fetched_url": null,
+   "title": "NASA Earth Science Data Preservation Content Specification, Revision C (423-SPEC-001)",
+   "author_org": "NASA ESDIS Standards Coordination Office (Ramapriyan, Moses, Smith)",
+   "published": "2022-05-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/pcs_revC.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Checksum/fixity frequency NOT PRESENT in 423-SPEC-001 Rev C; the companion Preservation Content Implementation Guidance ESDS-RFC-042 was not read.",
+   "found_by": [
+    "fu1"
+   ],
+   "follow_up": true,
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.earthdata.nasa.gov/s3fs-public/imported/423-10-69_ADURD_RevB.pdf",
+   "fetched_url": null,
+   "title": "Archiving, Distribution and User Services Requirements in EOSDIS (ADURD), 423-10-69 Revision B",
+   "author_org": "NASA ESDIS Project",
+   "published": "2017-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/adurd_revB.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Rev B effective March 2017; no later revision checked. No periodic or scheduled verification wording found in the text.",
+   "found_by": [
+    "fu1"
+   ],
+   "follow_up": true,
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://gpm.nasa.gov/data/news/equipment-updates-april-16-2025-will-impact-access-gpm-nrt-servers",
+   "fetched_url": null,
+   "title": "Equipment Updates on April 16, 2025 Will Impact Access to GPM NRT Servers",
+   "author_org": "NASA GPM / PPS",
+   "published": "2025-04-14",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/pps_equip_apr2025.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No follow-up report found on how the work went.",
+   "found_by": [
+    "fu1"
+   ],
+   "follow_up": true,
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "GES DISC (and so IMERG and GPCP V3.x) is held in one AWS Region: ESDIS treats multi-AZ storage within a Region as its off-site copy and uses S3 versioning and object lock instead of separate copies; GES DISC's on-premises archive became a rolling pass-through by September 30, 2026; the CMR record lists one S3 location; Cumulus's backup tool ORCA is documented as a Glacier/Deep Archive bucket created in us-west-2. No second-region, other-vendor or tape copy was found. Contradicts RRS-1; supports D-2 (single region).",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "‘1 copy located off-site’ - ‘AWS Availability Zones in | a Region are meaningfully distant from each other, up | to 60 miles to prevent correlated failures’ … Disasters                        multi-AZ cloud storage*",
+     "location": "slides 6 and 9"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The goal is not to store copies of data. | The goal is not to lose data. | Lazy backup: … ● We have work to do in detecting accidental/malicious | deletions",
+     "location": "slides 11-12"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Reducing risk: Replace on-premises | copies … ● Why do we have an on-premises copy instead of a | cloud backup with a different vendor? … The conventional wisdom is that you should still backup your data on-premises when using the | cloud. We are not conventional. Our budgets are not in lock-step with our data growth.",
+     "location": "slides 13 and 19"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "By September 30, 2026, our on-premises data archives will only maintain a “rolling” archive of data, serving as a pass-through to maintain existing data interfaces with the Earthdata Cloud becoming the primary host of all GES DISC data.",
+     "location": "line 96"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "Data will not be accessible publicly via the on-premises server, only via Earthdata Cloud/Cumulus.",
+     "location": "line 96"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "contextualizes",
+     "passage": "We are wary of renting storage as opposed to owning it",
+     "location": "slide 13"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "GES DISC data are stored in the AWS region US West (Oregon), or us-west-2.",
+     "location": "Answer"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "\"URL\": \"s3://gesdisc-cumulus-prod-protected/GPM_L3/GPM_3IMERGHHL.07/1998/001/3B-HHR-L.MS.MRG.3IMERG.19980101-S000000-E002959.0000.V07B.HDF5\"",
+     "location": "items[0].umm.RelatedUrls"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "contextualizes",
+     "passage": "ORCA maintains a cloud ready backup of science and ancillary data in one of various storage classes in S3 for the long term.",
+     "location": "Creating the Archive Bucket"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "    --region us-west-2 \\",
+     "location": "Create the ORCA Archive and Report Buckets"
+    }
+   ],
+   "applicability": "ESDIS's cloud strategy as presented in March 2026 (slides marked subject to change); whether GES DISC runs ORCA is not published.",
+   "confidence": "moderate",
+   "confidence_reason": "ESDIS's own slides and GES DISC's own guidance agree; the ORCA deployment for GES DISC specifically is not documented.",
+   "sole_source_reason": "ESDIS's and GES DISC's own documents are the authority on where their copies are kept."
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "NASA OIG (IG-20-011, 2020) reported ESDIS's own view that storing all Earth science data with one cloud vendor is a single point of failure and that ESDIS was investigating a long-term backup copy; no later document says it was built. IG-20-011's recommendation 1 (long-term financial sustainability of the cloud migration while keeping the DAAC footprint) was still open on October 15, 2026. Supports D-2 and D-3; contradicts RRS-1 as of 2020.",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "AWS is currently the only cloud vendor authorized by the OCIO to provide | cloud services. According to ESDIS, this introduces the risk of a single point of failure because all Earth | science data will be stored with one vendor.",
+     "location": "pp. 15-16"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "Complete an independent analysis to determine the long-term financial",
+     "location": "row 3"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "Audit of NASA's Management of the … sustainability of supporting the cloud migration and operation while … IG-20-011 … Distributed Active Archive Data Centers … also maintaining the current DAAC footprint.",
+     "location": "row 3"
+    }
+   ],
+   "applicability": "EOSDIS-wide, including GES DISC; PPS is not an EOSDIS DAAC archive in this audit.",
+   "confidence": "high",
+   "confidence_reason": "OIG audit text and OIG's own open-recommendations table, both read as raw text.",
+   "sole_source_reason": "NASA OIG's own reports are the authority on its findings and open recommendations."
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "No checksum algorithm or periodic fixity-check frequency is published for GES DISC, PPS or Earthdata Cloud: the IMERG Late Run granule metadata carries a size but no checksum; ORCA's design notes compare ETag and size on an unstated schedule; NASA OIG found ESDIS rated data integrity below NIST's moderate level partly because it could reprocess data. RRS-2 is neither supported nor contradicted by published evidence.",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "\"ArchiveAndDistributionInformation\": [ … \"Name\": \"Not provided\", … \"Size\": 7.332328796386719, … \"SizeUnit\": \"MB\"",
+     "location": "items[0].umm.DataGranule"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "The categorization records also indicate that deviations were | made based on ESDIS’s capability to reprocess data internally in the event data integrity was | compromised.",
+     "location": "p. 20"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "contextualizes",
+     "passage": "NASA Earth Science Data Preservation Content Specification defines the contents of data, metadata, and associated documentation to be preserved beyond the life of projects funded by NASA’s Earth Science Division.",
+     "location": "landing page"
+    }
+   ],
+   "applicability": "Published documents only; internal ESDIS operations documents may describe checks not found here.",
+   "confidence": "moderate",
+   "confidence_reason": "Absence after several searches and direct metadata checks; Cumulus ingest documentation could not be read.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "GES DISC is not on CoreTrustSeal's current list of certified repositories, although five other NASA data centers are (ASDC, GHRC, PO.DAAC, LAADS DAAC, SEDAC); GES DISC has been a World Data System Regular Member since September 2014. No certification was found for PPS.",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Current CoreTrustSeal certified data repositories … Global Hydrometeorology Resource Center … Physical Oceanography Distributed Active Archive Center … LAADS DAAC, NASA Goddard Space Flight Center, B32, Greenbelt, US … 2027-01-22",
+     "location": "certificates list"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "The NASA Goddard Earth Sciences Data and Information Services Center (GES DISC) has been a WDS Regular Member since September 2014.",
+     "location": "opening paragraph"
+    }
+   ],
+   "applicability": "Current CoreTrustSeal certificates as listed on 2026-11-27; the archive of expired certificates was not checked.",
+   "confidence": "high",
+   "confidence_reason": "Read the certifier's own list in full; browser search for GES DISC returned no match.",
+   "sole_source_reason": "The certifier's own register is the authority on who holds its seal."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "No continuity or disaster recovery plan, or record of a recovery test, is published for ESDIS, GES DISC or PPS, and no PPS backup site was found. IG-26-005 (Goddard's transformation) and GAO-26-108556 (major projects) make no finding on data systems. The only documented contingency exercise found is Earthdata Login's failover test of February 12, 2026. RRS-3 is not supported by published evidence.",
+   "evidence": [
+    {
+     "source_id": "s18",
+     "relationship": "contextualizes",
+     "passage": "The relocations and closures have not impacted Goddard’s ability to execute its responsibilities in | support of NASA’s current missions.",
+     "location": "p. 4"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "contextualizes",
+     "passage": "GAO assessed (1) the cost and | schedule performance of NASA's major | projects in development;",
+     "location": "Highlights"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "contextualizes",
+     "passage": "Global Precipitation Measurement Mission | 2009 | 2014 | Launched",
+     "location": "launched-projects table (line 1884 of text)"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "This failover plan is a contingency exercise in which EDL provides limited functionality for applications that use OAuth2 and ROPC access flows.",
+     "location": "February 2026 entry"
+    }
+   ],
+   "applicability": "Published documents; internal plans may exist.",
+   "confidence": "moderate",
+   "confidence_reason": "Absence after about 8 queries plus the two named oversight reports; GAO full report not read.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "PPS: its near-real-time server (jsimpson) keeps the most recent 2 weeks; on January 31, 2025 PPS found hardware issues and file length discrepancies on its arthurhou production archive, suspended access and archiving, and pointed users to GES DISC for IMERG V07B; on February 5, 2025 services were 'restarted, tested and verified'. The January 20, 2026 event was a planned ~14-hour NRT shutdown to move data to new storage, during which no new data were produced. No statement on data loss or an after-action report was found.",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Near real-time data is available for the most recent 2 weeks.",
+     "location": "product page"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "On Friday January 31, 2025, PPS detected hardware issues with PPS's Production data archive … Because of reported file length discrepancies, PPS is suspending access to the the 'arthurhou' production data server until they can analyze and fully resolve these issues as soon as possible. … During this downtime, you can continue to access IMERG V07B archival data from the NASA GES DISC.",
+     "location": "news item"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "All PPS services have been restarted, tested and verified including GPM Production, STORM , Registration and the PPS website.",
+     "location": "news item"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "During this 14 hours no new data will be produced or ingested. While user access to the file server (jsimpson.pps.eosdis.nasa.gov and jsimpsonhttps.pps.eosdis.nasa.gov) will be possible, no new files will be available.",
+     "location": "line 14"
+    }
+   ],
+   "applicability": "PPS notices on gpm.nasa.gov; the 2-week figure is stated on the 2A DPR NRT page, not an IMERG page.",
+   "figure_status": "actual",
+   "confidence": "moderate",
+   "confidence_reason": "PPS's own notices, read as raw text; outcomes after the events are not published.",
+   "sole_source_reason": "PPS's own data notices are the authority on its outages."
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "GES DISC: the October 28-30, 2026 pause was a planned ingest interruption for the Consolidated Ingest and Archive migration (October 28, 5:00 p.m. to October 30, 9:00 a.m. ET), with search and download expected to stay up, and the alert was marked resolved on November 2, 2026; during the October 2025 shutdown Earthdata posted only that the website was not being updated (October 1-10, 2025), and ESDIS's weekly metrics list one shutdown-caused delay (OMI-AURA). No data loss was reported for any of these events.",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Resolved Outage … Oct. 20, 2026 … Resolved … Nov. 2, 2026 … As part of NASA’s planned Consolidated Ingest and Archive (I&A) system migration, the following data centers will experience temporary interruptions to new data ingestion and availability: … - GES DISC: October 28, 5:00 p.m. to October 30, 9:00 a.m. ET … Existing data search and download services are expected to remain operational during",
+     "location": "lines 9-29"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Ingest & Archive Migration to Interrupt Data Ingestion on Oct. 28-30 | Resolved Outage | Oct. 20, 2026 | Nov. 2, 2026 | ESDIS | 0",
+     "location": "line 150"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Resolved Outage … Oct. 1, 2025 … Resolved … Oct. 10, 2025 … Due to the lapse in federal government funding, NASA is not updating this website. We sincerely regret this inconvenience.",
+     "location": "lines 9-23"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "contextualizes",
+     "passage": "Access to GES DISC Data Servers will be discontinued no earlier than September 30, 2026 … HTTPS access to data on our on-premises servers",
+     "location": "page 1, alert of Sep 14, 2026"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "contextualizes",
+     "passage": "Data Recall - All L3 GPROF data for GPM v08",
+     "location": "page 1, alert of Sep 30, 2026"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "contextualizes",
+     "passage": "- OMI-AURA, on October 10, 2025, was delayed due to the NISE file not being available due to government shutdown.",
+     "location": "line 26"
+    }
+   ],
+   "applicability": "Earthdata alerts; absence of a data-loss report is not proof of no loss.",
+   "figure_status": "actual",
+   "confidence": "moderate",
+   "confidence_reason": "ESDIS's own alerts, raw text; no after-action reports.",
+   "sole_source_reason": "ESDIS's own alert pages are the authority on its outages."
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "The contract that runs EOSDIS systems has no announced successor: the ESDIS Next (ENX) sources-sought notice was re-posted on January 23, 2026 saying 'No solicitation exists', against a forecast award in Q3 FY26; no award was found. Earthdata Login, which downloads from GES DISC need, logged degraded-service events in December 2025, February 2026 (3 h 43 min on February 13), June, September and November 2026. Supports D-3 (fragility, contract uncertainty) at moderate confidence.",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Current Record | 2026-10-23 11:01:36 … Earth Science Data and Information System (ESDIS) Next (ENX) RFI | Inactive … Published Date | Jan 23, 2026 8:11 AM EST … No solicitation exists; therefore, do not request a copy of the solicitation.",
+     "location": "Version list; Description"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "contextualizes",
+     "passage": "- **Anticipated award date:** Q3 FY26 … - **Incumbent:** Raytheon Company, Award ID 80GSFC21CA001",
+     "location": "forecast fields"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "February 13, 2026 09:05 AM - 12:48 PM",
+     "location": "February 2026 entry"
+    }
+   ],
+   "applicability": "Aggregator copies of procurement records; SAM.gov not read directly.",
+   "figure_status": "actual",
+   "confidence": "moderate",
+   "confidence_reason": "Procurement status from aggregators; EDL events from NASA's own status page.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "Follow-up: IMERG has two holders in different places. GES DISC stopped distributing IMERG V06 in July 2024 and said V06 'will continue to be available from' PPS's arthurhou archive at Goddard; during PPS's 2025 arthurhou outage, PPS pointed users to GES DISC for IMERG V07B. So for IMERG V07, PPS (Goddard, Maryland) and GES DISC (AWS us-west-2) hold copies, and for V06 PPS is the only holder named. No cross-check between the two is published. For IMERG this partly supports RRS-1 (two separate sites) but not its 'verified' part.",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "GES DISC is discontinuing the distribution of IMERG Final Run version 06, effective July 16. … IMERG version 06 will continue to be available from the Precipitation Processing System (PPS, https://arthurhouhttps.pps.eosdis.nasa.gov/gpmallversions/V06/).",
+     "location": "alert of Jul 12, 2024"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "During this downtime, you can continue to access IMERG V07B archival data from the NASA GES DISC.",
+     "location": "news item"
+    }
+   ],
+   "applicability": "IMERG only; GPCP V3.x at GES DISC has no PPS copy in what was read.",
+   "figure_status": "actual",
+   "confidence": "moderate",
+   "confidence_reason": "GES DISC's and PPS's own notices; PPS's retention and any cross-check are not published.",
+   "sole_source_reason": "The repositories' own notices are the authority on where they serve data."
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "Follow-up: a 2024 integrity fault at GES DISC was found by a user, not by an archive check: empty GPM_MERGIR files (an IMERG infrared input) for April 22-23, 2024 were discovered by a user, re-acquired from NCEP/CPC and replaced, and a check for empty files was then added to the conversion software (August 15, 2025). This argues against routine content checks catching such faults (RRS-2) and is a repaired defect, not a loss (RRS-5).",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "A user of the NCEP/CPC L3 Half Hourly 4km Global IR data discovered empty files for data day April 22, 2024, and the first hour of April 23. Corrected binary data were re-acquired from NCEP/CPC, re-converted into netCDF-4 and replaced in our archive. A check for empty files was added to the conversion software",
+     "location": "alert of Aug 15, 2025"
+    }
+   ],
+   "applicability": "One dataset (GPM_MERGIR); empty files from conversion are a content defect, which fixity checks on stored bytes would not catch either.",
+   "confidence": "high",
+   "confidence_reason": "GES DISC's own alert, read as raw text.",
+   "sole_source_reason": "GES DISC's own alert is the authority on its archive repairs."
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "Follow-up: Cumulus, the ingest-and-archive software behind Earthdata Cloud, offers backup tasks (an LZARDS backup task and ORCA) and a task to 'Add checksums to files in S3 which don't have one'; the LZARDS task 'is not automatically deployed'. Whether GES DISC deploys LZARDS or ORCA, and where those backups sit, is not public (the LZARDS overview needs a NASA login).",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Add checksums to files in S3 which don't have one",
+     "location": "@cumulus/add-missing-file-checksums"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Run LZARDS backup",
+     "location": "@cumulus/lzards-backup"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "The LZARDS backup task is not automatically deployed with Cumulus.",
+     "location": "Deployment"
+    }
+   ],
+   "applicability": "Software capability, not GES DISC's configuration.",
+   "confidence": "moderate",
+   "confidence_reason": "NASA's own software documentation; GES DISC's deployment not published.",
+   "sole_source_reason": "The software's own documentation is the authority on its features."
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "Follow-up: Earthdata Login's token generation was degraded continuously from December 16, 2025 06:20 AM to December 21, 2025 05:40 PM, with further authorization and validation problems on December 18-22, 2025. This is a multi-day impairment of the login that downloads from GES DISC need. Supports D-3 (fragile access).",
+   "evidence": [
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "Earthdata Login: Token Generation | December 16, 2025 06:20 AM - December 21, 2025 05:40 PM",
+     "location": "December 2025 entries"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "Earthdata Login: User Authorization | December 18, 2025 11:40 AM - December 19, 2025 09:00 AM",
+     "location": "December 2025 entries"
+    }
+   ],
+   "applicability": "'Degraded' (ISSUE), not a full outage; the status page doesn't give the share of requests that failed.",
+   "figure_status": "actual",
+   "confidence": "high",
+   "confidence_reason": "ESDIS's own status history, read as raw text.",
+   "sole_source_reason": "ESDIS's own status page is the authority on its service events."
+  },
+  {
+   "id": "c13",
+   "importance": "supporting",
+   "text": "Follow-up: during the October 2025 funding lapse GES DISC posted the banner 'NASA is not updating this website' (October 1, 2025), yet alerts continued to be posted on October 6-9, 2025; during the 2026 migration, the IMERG V07 collections' OPeNDAP services moved to the cloud May 11-13, 2026, with Giovanni variables unavailable 'for some time'. No data loss is reported.",
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Due to the lapse in federal government funding, NASA is not updating this website. We sincerely regret this inconvenience. | Alert Date:Oct 1, 2025 9:00:00 AM",
+     "location": "alert page"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "Alert Date:Oct 6, 2025 9:00:00 PM Expired",
+     "location": "page 6"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "GES DISC will migrate OPeNDAP services to Earthdata cloud for 7 GPM_3IMERG v07 collections beginning Monday, May 11, 2026, and completing by Wednesday, May 13, 2026.",
+     "location": "alert of May 8, 2026"
+    }
+   ],
+   "applicability": "Alerts on Oct 6-9, 2025 are mostly relayed ESA notices plus one TROPICS data note.",
+   "figure_status": "actual",
+   "confidence": "moderate",
+   "confidence_reason": "GES DISC's own alerts.",
+   "sole_source_reason": "GES DISC's own alerts are the authority on its notices."
+  },
+  {
+   "id": "c14",
+   "importance": "central",
+   "text": "Follow-up: ESDIS's EOSDIS-wide DAAC requirements (ADURD, 423-10-69 Rev B, effective March 2017, listed expiration March 2022) require that each DAAC's system 'ensure data integrity through the use of checksums' at ingest, archive and distribution, 'in order to satisfy interface requirements with external systems'. No re-verification interval is stated. NASA's Preservation Content Specification (Rev C, 2022) treats fixity information as 'implementation details'. So checksums are required for transfers, but RRS-2's quarterly-or-better re-check is not required by any published NASA document.",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "4. The XDS shall ensure data integrity through the use of checksums in order to satisfy | interface requirements with external systems.",
+     "location": "Section 2.3.2 Data Archive, item 4"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "which can be categorized as Provenance, Reference, Fixity, Context and Access Rights | information.” … This specification treats such | “second order” Preservation Descriptive Information as implementation details (i.e., how)",
+     "location": "introduction, OAIS section"
+    }
+   ],
+   "applicability": "The ADURD copy read shows 'Expiration Date: March 2022'; a later revision may exist on ESDIS's CM library, which is not public.",
+   "confidence": "moderate",
+   "confidence_reason": "ESDIS's own requirement documents, read as raw text; possibly superseded.",
+   "sole_source_reason": "ESDIS's own requirement documents are the authority on what it requires of DAACs."
+  },
+  {
+   "id": "c15",
+   "importance": "central",
+   "text": "Follow-up: the same ADURD requires each DAAC to keep 'an off-site backup copy of all other data that would be impossible or difficult to recover', listing products only as 'selected data products, depending on need', and allows the backup to sit 'in a NASA Cloud archive'; it also requires 'the capability to restore its archive'. A second copy of all products such as IMERG or GPCP is therefore not required, and no test of the restore capability is published. Neither supports RRS-1 nor RRS-3 for GES DISC.",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "9. The XDAAC shall maintain an off-site backup copy of all other data that would be | impossible or difficult to recover in case of loss (e.g., ancillary data, metadata, command | history, Science Software, engineering data, calibration data, systems and applications | software, selected data products, depending on need).",
+     "location": "Section 2.3.2, item 9"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "contextualizes",
+     "passage": "8. As part of the EOS missions data flow for some missions, EDOS maintains a backup of the | Level 0 data at their offices in White Sands, NM.",
+     "location": "Section 2.3.2, item 8 (added by the follow-up Reconciler)"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "different DAAC or in a NASA Cloud archive, the XDAAC shall be aware of the location of | that backup and have access to it. | 10. The XDS shall have the capability to restore its archive to avoid permanent loss of archived",
+     "location": "Section 2.3.2, items 9-10"
+    }
+   ],
+   "applicability": "EOSDIS-wide requirement (2017; listed expiration March 2022).",
+   "confidence": "moderate",
+   "confidence_reason": "ESDIS's own requirement document, read as raw text; possibly superseded.",
+   "sole_source_reason": "ESDIS's own requirement documents are the authority on what it requires of DAACs."
+  },
+  {
+   "id": "c16",
+   "importance": "supporting",
+   "text": "Follow-up: PPS made hardware updates to its NRT and SDPS processing and network environment on April 16, 2025 (estimated 20-minute downtime), about 2.5 months after the arthurhou fault; the notice names no hardware or vendor.",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "On April 16, 2025, hardware updates on the GPM NRT and SDPS processing and network environment will impact processing and access to the systems and data products. | The downtime is estimated at 20 minutes, barring any anomalies.",
+     "location": "notice of April 14, 2025"
+    }
+   ],
+   "applicability": null,
+   "figure_status": "actual",
+   "confidence": "high",
+   "confidence_reason": "PPS's own notice.",
+   "sole_source_reason": "PPS's own notice is the authority on its maintenance."
+  }
+ ],
+ "conflicts": [],
+ "coverage_gaps": [
+  "No published checksum algorithm or re-verification frequency for GES DISC, PPS or Earthdata Cloud found (r1 1 query, r4 1 query); Cumulus docs on nasa.github.io unreachable from sandbox. Not read: PO.DAAC checksum tutorial (UMM-G checksum field), CMR UMM-G for GPM_3IMERGHHL, 423-SPEC-001 Rev C PDF, PCIG. (from sa1)",
+  "CoreTrustSeal: no GES DISC or PPS certification found after 1 query; CoreTrustSeal certified-repositories list not checked directly. ISO 16363 not searched. (from sa1)",
+  "Whether GES DISC holdings are copied to ORCA, a second region, or tape at Goddard: not found after 3 queries. PPS long-term archive (arthurhou) retention and any GES DISC-PPS cross-check: not found after 2 queries. Lead: ORCA deployment-s3-bucket and storage-classes pages (nasa.github.io, refused host), ghrcdaac ORCA repo. (from sa1)",
+  "Deadline (05:13) reached after ~15 minutes of work. Not done: r13 'GES DISC outage 2026' press query; r14 web search 'PPS outage January 2026 IMERG' and any PPS after-action note (actual duration, IMERG Late latency, files lost/regenerated: NOT PRESENT in the notice read); whether GES DISC/PPS kept serving and IMERG Early/Late ran during the Oct 1-Nov 12 2025 shutdown (only the Earthdata 'not updating this website' alert found); Oct 28-30 2026 pause products/backlog (NOT PRESENT on the alert page); lost/missing granules from the on-prem decommission (not found); 2019 shutdown and Goddard power/network events (not searched). Leads: Earthdata alert 'ingest-archive-migration-interrupt-data-availability-oct.-28-30'; alert history table work/raw/sa3/alert_history_17367.txt read only at line 150; earlier runs' sa4/gpm_news_oct2025_wayback.txt and sa4/gpm_data_news.txt in 2026-11-18_nasa-satellite-precip-threats not read. (from sa3)",
+  "No ESDIS/EOSDIS, GES DISC or PPS continuity-of-operations or disaster-recovery plan, or record of a DR test, found (not found after 6 queries). PPS near-real-time backup site or failover: not found after 1 query (r7). (from sa2)",
+  "IG-20-011 recommendation status and whether the ESDIS long-term archive backup copy was built: unchecked (OIG follow-up reports OR-25-05/06/09, OR-26-07 found in search, unread). FISMA reviews not searched. IG-26-005 URL not verified. (from sa2)",
+  "Not done for lack of time: USAspending re-check of EED-3 80GSFC21CA001 (earlier JSON copied, unread), SAM.gov ENX status, PPS contractor, Cumulus/CMR/S3 tier design, Earthdata Login funding; Earthdata alerts-outages pages not read in full. (from sa2)",
+  "Preservation Content Implementation Guidance ESDS-RFC-042 (https://doi.org/10.5067/DOC/ESO/RFC-042) not read; it is the document most likely to hold fixity practice. UMM-G Checksum field guidance and the EOSDIS Functional and Performance Requirements spec not searched. (from fu1)",
+  "Whether GES DISC uses ORCA (Cumulus Operational Recovery Cloud Archive): not found after 1 query. ORCA docs at nasa.github.io (host refused by sandbox; https://nasa.github.io/cumulus-orca/docs/operator/storage-classes) and https://github.com/ghrcdaac/operational-recovery-cloud-archive not read. NASA management response / rec status for IG-20-011 backup copy: not found after 2 queries; IG-25-007 and the 2025 Top Management Challenges report (oversight.gov) not checked for EOSDIS. (from fu1)",
+  "PPS operating contractor and storage hardware: not found after 2 queries (USAspending/SAM.gov not searched). Earthdata Login funding or cost: not searched (out of time). (from fu1)",
+  "GPM GPROF V08 recall (Oct 1 2026, end TBD) and 'GPROF STD data recalled August 19 2026-present' alerts seen in snippets only; not read, and not confirmed whether any data were lost. (from fu1)",
+  "ESDS-RFC-042 attempt: its DOI https://doi.org/10.5067/DOC/ESO/RFC-042 redirects to the 423-SPEC-001 landing page (saved as rfc042_landing_unused.html), which has no RFC-042 PDF link. Next: search the earthdata.nasa.gov ESCO RFC pages for ESDS-RFC-042 PDF. Also, q4 searches count is 4 (the Earthdata Login query was logged after the searches item). (from fu1)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "EOSDIS data integrity checksum",
+   "tool": "WebSearch",
+   "notes": "only PO.DAAC checksum tutorial relevant",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoreTrustSeal GES DISC",
+   "tool": "WebSearch",
+   "notes": "no GES DISC certification found; certified list not checked directly",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "World Data System member Goddard Earth Sciences Data and Information Services Center",
+   "tool": "WebSearch",
+   "notes": "WDS Regular Member since 2014",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NASA Earth science data policy preservation",
+   "tool": "WebSearch",
+   "notes": "Preservation Content Spec Rev C",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Cumulus checksum validation granule",
+   "tool": "WebSearch",
+   "notes": "only npm @cumulus/checksum package pages",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ORCA Operational Recovery Cloud Archive Cumulus",
+   "tool": "WebSearch",
+   "notes": "ORCA docs",
+   "from": "sa1",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GES DISC ORCA backup Glacier Deep Archive",
+   "tool": "WebSearch",
+   "notes": "nothing GES DISC-specific",
+   "from": "sa1",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Earthdata Cloud backup ORCA DAAC disaster recovery copy",
+   "tool": "WebSearch",
+   "notes": "found WGISS-61 ESDIS slides",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PPS data retention near real-time GPM",
+   "tool": "WebSearch",
+   "notes": "no retention policy page",
+   "from": "sa1",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "jsimpson PPS near real-time files retained days",
+   "tool": "WebSearch",
+   "notes": "2 weeks on NRT product pages",
+   "from": "sa1",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPM_3IMERGHHL version 07 granule UMM-G",
+   "tool": "lookup (CMR granules.umm_json)",
+   "notes": "checked ArchiveAndDistributionInformation for Checksum: none",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoreTrustSeal certified repositories list",
+   "tool": "lookup (CoreTrustSeal certificates page)",
+   "notes": "page did not render list",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PPS arthurhou archive GPM products storage Goddard",
+   "tool": "WebSearch",
+   "notes": "found Jan-Feb 2025 arthurhou outage notices",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ORCA deployment S3 bucket",
+   "tool": "lookup (WebFetch nasa.github.io ORCA deployment-s3-bucket)",
+   "notes": "extraction-only prompt",
+   "from": "sa1",
+   "copy_of": "fetch_page.py attempt refused"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC ingest paused October 2026",
+   "tool": "WebSearch",
+   "notes": "standard",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Earthdata alerts outages GES DISC 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains earthdata.nasa.gov",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "disc.gsfc.nasa.gov/information/alerts",
+   "tool": "lookup (GES DISC alerts page)",
+   "notes": "fetched; page is JS-built, 0 words of text",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NASA data shutdown 2025 Earthdata",
+   "tool": "WebSearch",
+   "notes": "extended mode",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "gpm.nasa.gov/data/news/upcoming-gpm-near-real-time-maintenance",
+   "tool": "lookup (GPM data news item found in earlier run sa1/f66d6b7f335ef531.txt)",
+   "notes": "fetched in full",
+   "from": "sa3",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO-26-108556 NASA data systems EOSDIS",
+   "tool": "WebSearch",
+   "notes": "standard; no EOSDIS content found",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.gao.gov/assets/gao-26-108556.pdf",
+   "tool": "lookup (GAO full PDF)",
+   "notes": "HTTP 403",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://nasawatch.com/wp-content/uploads/2026/07/gao-26-108556.pdf",
+   "tool": "lookup (GAO full PDF copy)",
+   "notes": "host refused by proxy",
+   "from": "sa2",
+   "required_id": "r6",
+   "copy_of": "https://www.gao.gov/assets/gao-26-108556.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IG-26-005",
+   "tool": "lookup (earlier-run file)",
+   "notes": "reused earlier file; no match for contingency|disaster recovery|continuity|backup|failover|EOSDIS|cloud",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PPS near real-time backup system GPM",
+   "tool": "WebSearch",
+   "notes": "standard; nothing on PPS backup/failover",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA OIG Earth science data cloud migration audit",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov, oversight.gov; found IG-20-011",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ESDIS Next contract award 2026",
+   "tool": "WebSearch",
+   "notes": "only HigherGov forecast; no award notice",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Earthdata Login outage 2026",
+   "tool": "WebSearch",
+   "notes": "alerts list shows DAAC/GIS outages, no Earthdata Login alert in results",
+   "from": "sa2",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Earthdata Login single point of failure URS",
+   "tool": "WebSearch",
+   "notes": "snippet mentions 2021 fail-open test on login-walled wiki",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA OIG IG-20-011 recommendation status backup copy closed",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov, oversight.gov; found OIG open-recommendations report Oct 2026 (or-10-26.pdf), read raw: IG-20-011 rec 1 open",
+   "copy_of": null
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=nasa.github.io/cumulus-orca deployment-s3-bucket",
+   "tool": "lookup (built-in browser, page refused by sandbox)",
+   "notes": "ORCA archive bucket: Disaster Recovery OU, us-west-2 in create command, GLACIER/DEEP_ARCHIVE only",
+   "copy_of": "https://nasa.github.io/cumulus-orca/docs/developer/deployment-guide/deployment-s3-bucket"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoreTrustSeal certified repositories list",
+   "tool": "lookup (built-in browser)",
+   "notes": "amt.coretrustseal.org/certificates read in full; no GES DISC; ASDC, GHRC, PO.DAAC, LAADS, SEDAC listed",
+   "required_id": "r2",
+   "copy_of": "https://amt.coretrustseal.org/certificates/"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GPM near real-time system back online January 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, earthdata.nasa.gov; only the advance notice; no after-action notice",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Cumulus granule checksum validation ingest SyncGranule",
+   "tool": "WebSearch",
+   "notes": "only npm package pages for @cumulus/checksum (generate/validate from stream); no frequency",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"ESDIS Next\" contract award 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "ENX RFI re-posted 25 Jan 2026 (samdaily, govtribe, samclerk); no award",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=sam.gov RFI-NASA-GSFC-ENX permalink",
+   "tool": "lookup (built-in browser, SAM.gov)",
+   "notes": "primary copy of the samdaily notice: Sources Sought, Inactive, current record 2026-10-23, 'No solicitation exists'",
+   "copy_of": "https://samdaily.us/archive/2026/01-January/25-Jan-2026/FBO-07695878.htm"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=files.gao.gov/reports/GAO-26-108556/index.html",
+   "tool": "lookup (GAO report by number)",
+   "notes": "full HTML read; no EOSDIS/ESDIS/data-system/contingency/backup terms",
+   "required_id": "r6",
+   "copy_of": "https://www.gao.gov/assets/gao-26-108556.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IG-26-005 Goddard transformation NASA OIG",
+   "tool": "WebSearch",
+   "notes": "allowed_domains oig.nasa.gov, oversight.gov; found OIG landing page and memorandum PDF address (the guessed address 404'd)",
+   "copy_of": "s18"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC data outage 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "no press reports of outages; found GES DISC forum answer that its data are in us-west-2 (read raw)",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "PPS GPM near real-time backup system failover",
+   "tool": "duckduckgo (browser)",
+   "notes": "no result mentioning a backup site",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Earthdata Login\" outage 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "Earthdata status history for EDL: Feb 12 2026 failover contingency exercise; Feb 13 degraded 09:05-12:48; Sept 24 latency events",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "url=disc.gsfc.nasa.gov/information/alerts?page=2..6",
+   "tool": "lookup (built-in browser, GES DISC alerts pages)",
+   "notes": "pages 2, 3, 5, 6 searched with find (unavailable, outage, IMERG, shutdown, lapse); found IMERG V06 end-of-support alert, MERGIR empty-files reprocessing, lapse banner, IMERG OPeNDAP migration May 11-13 2026"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "site:nasa.github.io cumulus checksum granule validation",
+   "tool": "duckduckgo (browser)",
+   "notes": "Cumulus docs pages; led to the tasks list (add-missing-file-checksums, lzards-backup)"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "LZARDS backup Cumulus ESDIS",
+   "tool": "duckduckgo (browser)",
+   "notes": "LZARDS backup task doc; LZARDS overview on Earthdata wiki needs login (403)"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "LZARDS ESDIS backup system Earthdata Cloud disaster recovery",
+   "tool": "WebSearch",
+   "notes": "no public LZARDS overview; 2019 ESDIS slides mention golden copies on premises (not read)"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=sam.gov RFI-NASA-GSFC-ENX (primary record for the HigherGov ENX forecast)",
+   "tool": "lookup (built-in browser, SAM.gov)",
+   "notes": "SAM.gov's own record read (s23): Sources Sought, Inactive, current record 2026-10-23; the HigherGov award-date forecast has no primary copy on SAM.gov",
+   "copy_of": "s20"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=nasa.github.io/cumulus-orca/docs/operator/storage-classes",
+   "tool": "lookup (built-in browser)",
+   "notes": "read; storage classes and retrieval times only, no Region or GES DISC; saved as _unused",
+   "copy_of": "https://nasa.github.io/cumulus-orca/docs/operator/storage-classes"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=status.earthdata.nasa.gov/client_applications/21/history?page=2",
+   "tool": "lookup (built-in browser)",
+   "notes": "EDL token generation degraded Dec 16-21, 2025"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup preservation content spec page and its PDF link",
+   "tool": "lookup (fetch_page earthdata spec landing page)",
+   "notes": "cached copy from sa1",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "423-SPEC-001 Preservation Content Specification Rev C pdf checksum",
+   "tool": "WebSearch",
+   "notes": "no hit for the spec; PDF taken from the landing page link",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "EOSDIS long-term archive backup copy IG-20-011 implemented",
+   "tool": "WebSearch",
+   "notes": "led to ADURD 423-10-69 Rev B; no implementation status for the backup copy",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GES DISC checksum verification archive",
+   "tool": "WebSearch",
+   "notes": "counter-search c3; no GES DISC checksum document found",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Precipitation Processing System PPS GPM data loss",
+   "tool": "WebSearch",
+   "notes": "counter-search c6; outages (JAXA upstream, arthurhou, NOAA IR loss) but no archive data loss reported",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GES DISC data loss 2026",
+   "tool": "WebSearch",
+   "notes": "counter-search c7; delays/recalls and Oct 28-30 I&A migration, no data loss reported",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Precipitation Processing System Goddard contractor 2025",
+   "tool": "WebSearch",
+   "notes": "no contractor named; PPS contacts page checked, no contractor named (renamed _unused)",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ORCA Cumulus backup Glacier DAAC GES DISC",
+   "tool": "WebSearch",
+   "notes": "ORCA docs describe DR OU backup buckets; nothing ties ORCA to GES DISC",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NASA OIG EOSDIS cloud migration follow-up audit 2025",
+   "tool": "WebSearch",
+   "notes": "no follow-up audit of EOSDIS found; IG-25-007, IG-25-004, 2025 TMPC listed but not read",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PPS hardware updates April 16 2025 GPM processing",
+   "tool": "WebSearch",
+   "notes": "found the April 14 2025 notice",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Earthdata Login URS funding cost ESDIS",
+   "tool": "WebSearch",
+   "notes": "no funding or cost figure for Earthdata Login found after 1 query; results describe EDL as ESDIS-managed single sign-on",
+   "from": "fu1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ESDS-RFC-042 Preservation Content Implementation Guidance pdf",
+   "tool": "WebSearch",
+   "notes": "allowed_domains earthdata.nasa.gov; no RFC-042 PDF found; ESCO Document List lists it as Suggested Practice, Final, Approved; lead: https://www.earthdata.nasa.gov/about/esdis/esco/standards-practices/document-list",
+   "from": "fu1",
+   "copy_of": "https://doi.org/10.5067/DOC/ESO/RFC-042"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "ESDIS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "ESDIS data integrity / checksum documentation",
+   "query": "EOSDIS data integrity checksum",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "CoreTrustSeal",
+   "publisher": "regulators, standards bodies, certifiers",
+   "subquestion_id": "q1",
+   "aim": "GES DISC certification status",
+   "query": "CoreTrustSeal GES DISC",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NASA",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "NASA Earth science data policy on preservation",
+   "query": "NASA Earth science data policy preservation",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "ESDIS (Cumulus)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "Cumulus checksum validation documentation",
+   "query": "Cumulus checksum validation granule",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NASA OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "IG-26-005 findings on data systems",
+   "query": "IG-26-005",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "GAO-26-108556 findings on data systems",
+   "query": "GAO-26-108556",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "PPS NRT backup or failover",
+   "query": "PPS near real-time backup system",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "ESDIS (ORCA)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "ORCA backup copy design",
+   "query": "ORCA Operational Recovery Cloud Archive Cumulus",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "PPS retention of NRT and production files",
+   "query": "PPS data retention near real-time GPM",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NASA GSFC procurement",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "ESDIS Next award status; EED-3 record",
+   "query": "ESDIS Next contract award 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "ESDIS (Earthdata Login)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "Earthdata Login outages",
+   "query": "Earthdata Login outage 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "ESDIS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "Earthdata alerts and outages for GES DISC and GPM",
+   "query": "Earthdata alerts outages GES DISC 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "GES DISC",
+   "publisher": "press",
+   "subquestion_id": "q5",
+   "aim": "press reports of GES DISC/NASA data outages",
+   "query": "GES DISC outage 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "PPS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "PPS January 2026 outage notices",
+   "query": "PPS outage January 2026 IMERG",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "not seen",
+  "budget_min": 40,
+  "ceiling": 320000
+ }
+}

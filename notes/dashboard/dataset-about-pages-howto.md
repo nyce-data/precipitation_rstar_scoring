@@ -11,7 +11,7 @@ spec was in that project's `my_docs/` (archived outside this project).
 
 | File | What it does |
 |---|---|
-| `app/data/dataset_pages.json` | **The list to edit.** One entry per dataset: `id` (as in `datasets.json`), `research_folder` (folder under the research root), `parts` (`part` number + short `topic`), in part order. |
+| `app/data/dataset_pages.json` | **The list to edit.** One entry per dataset: `id` (as in `datasets.json`), `research_folder` (folder under the research root), `parts` (`part` number + short `topic`, and optionally `folder`), in part order. `folder` names the run folder when the `-pt<N>` ending doesn't pick one: when one query file held two runs, Run 2 gets the next part number and its own folder (for example `{ "part": 8, "topic": "…", "folder": "2026-11-24_gpcp-daily-calibration-copies-pt7" }`, and part 7 names `…-people-production-pt7`). |
 | `scripts/import_dataset_pages.py` | Reads that list and copies each part's answer and questions into `app/content/datasets/<id>/`. Since 2026-11-25 `build_datasets.py` (run after it) sets `about_url` on the cards from the same list. |
 | `scripts/research_text.py` | `strip_tool_notes()` (removes "(read via WebFetch)" etc.) and `tool_mentions()` (finds lines still naming a tool). Also used by `import_archive_page.py`. |
 | `scripts/import_archive_page.py` | Its `clean()` (drops "Saved in …" and everything after, "Pages to check by hand"/"Sandbox" bullets, sentences naming research files such as `check-by-hand.md`, and tool notes) is reused by the dataset script. |
@@ -23,9 +23,10 @@ spec was in that project's `my_docs/` (archived outside this project).
 | `app/app.js` (`aboutHref`) | The panel's "Dataset web research" link adds the search/filters and `open=<id>` to a `dataset.html?…` about_url. |
 | `app/styles.css` section 13c | Dataset page styles (reuses the archive page's `.prose`, `.research-scope`, `.searched-on`). |
 
-Research root: `rstar-pipeline/input/web-research/about-datasets/` (was the old project's `my_docs/` copy). Note:
-the newer runs there don't all have a `query_questions.txt` (GHCN-Daily's pt1 doesn't), so the script needs updating
-before it is re-run.
+Research root: `rstar-pipeline/input/web-research/about-datasets/` (was the old project's `my_docs/` copy). Since
+2026-11-27 every run folder there has a reworded `query_questions.txt`; `notes/dashboard/web-research-prep-howto.md`
+covers copying new runs in and preparing their question files, and lists what still blocks a re-run (two pt7
+folders in GPCP and IMERG; GHCN-Daily's `about-pt3_combined`).
 Each part folder is `<research_folder>/<date>_<anything>-pt<N>/` and holds one
 `answer*.md` and a `query_questions.txt`:
 
@@ -89,8 +90,12 @@ Second one?
 3. Add `{ "part": N, "topic": "<short topic>" }` to that dataset's `parts`
    in `app/data/dataset_pages.json`, in part-number order. Reuse topic names
    already in use where they fit (Overview; Quality control and formats;
-   People; Funding; News; Funding and news; Funding and threats; Threats to
-   inputs; Satellites) and ask the user for new ones.
+   Processing and quality control; Formats and people; People; Funding;
+   News; Funding and news; Threats and news; Threats to inputs; Satellites;
+   People and production; Calibration and copies; Repository;
+   Infrastructure; Repository resilience) and ask the user for new ones.
+   ("Funding and threats" was GHCN-Daily's old pt3, the combined run, retired
+   2026-11-27.)
 4. From the project folder: `python3 scripts/import_dataset_pages.py`
    (`PYTHONPYCACHEPREFIX=$PWD/.work/pyc` keeps `__pycache__` out of `scripts/`).
 5. Read the `check:` lines it prints. Lines that still mention WebFetch or a
@@ -118,7 +123,10 @@ after the user edits an answer or a question file. It no longer writes
 ## Things to watch for
 
 - Folder dates don't follow part order (queries were run out of order):
-  only the `-pt<N>` ending matters.
+  only the `-pt<N>` ending matters, unless the part names its `folder`.
+- GPCP and IMERG each have two `-pt7` folders (Run 1 and Run 2 of one query
+  file). The script stops on those unless both parts name their `folder`;
+  Run 2 is shown as part 8 (user's choice, 2026-11-27).
 - Answer files may be named differently (`answer.md` vs `answer_*.md`);
   the script takes the one `answer*.md` in the folder and stops if there
   are zero or several.
@@ -130,6 +138,16 @@ after the user edits an answer or a question file. It no longer writes
 - At the user's request (2026-11-20), "**The token budget ended the
   research**…" bullets (GPCP pt6, GHCN-D pt3) are dropped by a
   `DROP_ITEM_PREFIXES` entry.
+- Research-file and sandbox notes (2026-11-27, `import_archive_page.py`):
+  bullets that start with `` `check-by-hand.md` ``, `` `sites-to-trust.md` ``
+  or a link to either are dropped, and so is any bullet telling the reader to
+  check "your (sandbox's) allowed domains". When a sentence naming a research
+  file is removed, a bullet's `**Label:**` is kept if other text remains.
+  After an import, grep `app/content/datasets` for `check-by-hand`,
+  `sites-to-trust`, `allowed domains` and lines starting `- md\``.
+- Notes on how a run stopped (time or token budget, "research stop") are
+  kept, except "**The token budget ended the research**" bullets; GHCN-Daily
+  pt2/pt4/pt5, GPCP pt2 and IMERG pt3 have some.
 - Links to `./` or `web_search_results/` (research-project files) are
   reported as `check:` lines; fix by hand or with a `--replace`-style edit.
 - Tool notes left in prose on purpose (2026-11-20): GPCP pt3 "Gaps"

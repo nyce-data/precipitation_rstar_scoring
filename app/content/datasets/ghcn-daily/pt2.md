@@ -107,6 +107,7 @@ The [AWS registry](https://registry.opendata.aws/noaa-ghcn/) and [data.gov](http
   - the netCDF output and CF names from the Access Data Service (one empty response);
   - the AWS parquet and BigQuery schemas;
   - the `access/` and `archive/` folders of NCEI's direct-download tree.
+- The research stopped at the run's planned research stop (time), not at saturation.
 
 ## Sources
 

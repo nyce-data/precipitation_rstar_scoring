@@ -65,6 +65,10 @@ DROP_ITEM_PREFIXES = (
     "- **Sandbox:**",
     "- **Hosts refused.**",
     "- **The token budget ended the research**",  # GPCP pt6, GHCN-D pt3 (user asked 2026-11-20)
+    "- [check-by-hand.md](",  # GPCP pt7 (2026-11-27): a link to the research file starts the bullet
+    "- [sites-to-trust.md](",
+    "- `check-by-hand.md`",  # 2026-11-27: bullets about the research files left "- md` lists …" fragments
+    "- `sites-to-trust.md`",
 )
 
 # Files that exist only in the research project. A sentence that names
@@ -75,9 +79,31 @@ _FILE_SENTENCE = re.compile(
 )
 
 
+# A list item's leading "- " and bold label, e.g. "- **Pages not read:** ".
+_ITEM_LABEL = re.compile(r"^(\s*(?:[-*]\s+)?(?:\*\*[^*]+\*\*\s*)?)")
+
+
 def drop_file_sentences(line: str) -> str:
-    """Remove the sentences in one line that name a research-project file."""
-    return _FILE_SENTENCE.sub("", line)
+    """Remove the sentences in one line that name a research-project file.
+
+    A list item's "- **Label:**" start is kept when other text remains
+    (GHCN-Daily pt1, 2026-11-27: "- **Pages not read:** 3 are listed in
+    `check-by-hand.md`. The AMS journal page …" lost its label). If
+    nothing but the label is left, the line is emptied as before.
+    """
+    head = _ITEM_LABEL.match(line).group(1)
+    body = line[len(head):]
+    cleaned = _FILE_SENTENCE.sub("", body)
+    if cleaned == body:
+        return line
+    cleaned = cleaned.strip()
+    return head + cleaned if cleaned else ""
+
+
+# A list item telling the researcher to check refused hosts against the
+# sandbox's allowed domains (2026-11-27: GPCP pt3, IMERG pt3 and pt7,
+# PERSIANN pt2). The whole item is about the research setup, so it goes.
+_SANDBOX_ITEM = re.compile(r"^\s*[-*]\s.*\byour (?:sandbox's )?allowed domains\b", re.I)
 
 
 def clean(text: str) -> str:
@@ -85,7 +111,7 @@ def clean(text: str) -> str:
     for line in text.splitlines():
         if line.startswith(STOP_PREFIX):
             break
-        if line.lstrip().startswith(DROP_ITEM_PREFIXES):
+        if line.lstrip().startswith(DROP_ITEM_PREFIXES) or _SANDBOX_ITEM.match(line):
             continue
         kept.append(drop_file_sentences(line))
     return strip_tool_notes("\n".join(kept).rstrip() + "\n")

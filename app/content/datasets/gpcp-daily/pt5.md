@@ -76,7 +76,7 @@ The stage ratings and effects are our reading of these sources against the algor
 - **Aqua's actual end-of-science date:** NASA's Aqua project (aqua.nasa.gov status deck) would publish it.
 - **How V3.3 covered October–December 2025** after IMERG V07 Final ended: ask GES DISC.
 - **Meteosat-9 Indian Ocean end date, and plans by CPC or GridSat to ingest MTG:** not found. EUMETSAT and NCEI hold these.
- Three hosts were refused by the sandbox (airandspaceforces.com, opendata.dwd.de, www.data.jma.go.jp).
+- **Pages not read:** Three hosts were refused by the sandbox (airandspaceforces.com, opendata.dwd.de, www.data.jma.go.jp).
 
 ## Sources
 

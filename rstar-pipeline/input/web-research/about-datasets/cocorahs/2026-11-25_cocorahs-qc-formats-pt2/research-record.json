@@ -1,0 +1,1671 @@
+{
+ "question": "How are CoCoRaHS daily precipitation reports quality-controlled, what does the network's calibration rest on, what software produces and serves the data, and how open are its formats and access routes (Part 2)?",
+ "tier": "standard",
+ "tier_reason": "standard: five dimensions of one network; no set of 15+, no multi-year figures, no active dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "How are CoCoRaHS daily reports quality-controlled (entry checks, manual review, NCEI checks), and is there a newer QA/QC document than April 2019?",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s8",
+    "s10",
+    "s36"
+   ],
+   "remaining_gap": "Wayback listing of media.cocorahs.org/docs not run; QC criteria for manual review not written down"
+  },
+  {
+   "id": "q2",
+   "question": "What does CoCoRaHS calibration rest on (approved gauge, standard-setter, training, comparisons)?",
+   "status": "answered",
+   "source_ids": [
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23"
+   ],
+   "remaining_gap": "No written NWS gauge specification found; Goble/Doesken 2013 AMS talk not read"
+  },
+  {
+   "id": "q3",
+   "question": "What software and facilities produce and serve the data, who runs them, and is the code published?",
+   "status": "answered",
+   "source_ids": [
+    "s25",
+    "s29",
+    "s32",
+    "s34",
+    "s36"
+   ],
+   "remaining_gap": "Who holds the Azure subscription (CSU IT or CoCoRaHS) not found; app store listing read only via snippet"
+  },
+  {
+   "id": "q4",
+   "question": "Is the documentation detailed enough for a newcomer to keep the data going?",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s5",
+    "s7",
+    "s9",
+    "s25",
+    "s36"
+   ],
+   "remaining_gap": null
+  },
+  {
+   "id": "q5",
+   "question": "How FAIR is each route (ViewData, Export Manager CSV, API, GHCN-Daily)?",
+   "status": "answered",
+   "source_ids": [
+    "s26",
+    "s27",
+    "s28",
+    "s30",
+    "s31",
+    "s33",
+    "s35",
+    "s37"
+   ],
+   "remaining_gap": "re3data lookup failed (sandbox 502); ViewData column docs not read; GHCN-Daily licence not stated in the lines read"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://media.cocorahs.org/docs/CoCoRaHS_QA_QC_April_2019.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data Quality Assurance and Quality Control",
+   "author_org": "CoCoRaHS (Colorado Climate Center, CSU)",
+   "published": "April 2019",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-qaqc-auto",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_qaqc_2019.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "4-page (by footer count: 5 page footers 'April 2019') document dated April 2019; checks described only for web forms, mobile-app checks NOT PRESENT; no version number; no newer version found on this document.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_11_QAQC_update_Hilberg.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS QA/QC Update 2024 (WERA 1012 Annual Meeting, June 10-11, 2024)",
+   "author_org": "Steve Hilberg (CoCoRaHS Project Manager), Dani Talmadge (CoCoRaHS QC)",
+   "published": "2024-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-wera24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera_2024_qaqc.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slide deck, not a procedure. Annual ticket chart values printed without clear year alignment (bars: 1727, 4775, 6368, 6537, 3744, 5320, 8540, 9326, 9202, 5365; years 2015-2024; 2024 partial 'as of 4/30/2024'). The 2024 deck still cites the 2019 document; no newer QA/QC document named. Where the CECA server is hosted: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://media.cocorahs.org/docs/WERA_QA-QC-2023Update.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS QA/QC Update 2023 (WERA 1012 Annual Meeting, May 16-18, 2023)",
+   "author_org": "Steve Hilberg (CoCoRaHS Project Manager), Dani Talmadge (CoCoRaHS QC)",
+   "published": "2023-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-wera23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera_2023_qaqc.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slide deck. Same chart caveat as 2024 deck.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://media.cocorahs.org/docs/WERA1012_2022_NCEI.pdf",
+   "fetched_url": null,
+   "title": "NCEI and CoCoRaHS Data (WERA 1012, May 2022)",
+   "author_org": "Bryant Korzeniewski, Riverside Technology, Inc., on behalf of NOAA NCEI",
+   "published": "2022-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-wera22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera_2022_ncei.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slide deck; 'Data‐Source of ‘N’ is CoCoRaHS' appears on multi-day slides (lines 107-129). Whether NCEI QC flags are sent back to CoCoRaHS: NOT PRESENT. Flag-file URL on retired www1.ncdc.noaa.gov host (not checked).",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://media.cocorahs.org/docs/CoCoTrainingSlideshow_v9.2B.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Training Slide Show v9.2B",
+   "author_org": "CoCoRaHS (PDF author metadata: Henry Reges)",
+   "published": "2016-05-10 (PDF CreationDate)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-train",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/training_v9_2B.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Pages from pdfinfo (73). Mobile app, QC, database, export or coordinator procedures: NOT PRESENT. The 'My data' menu wording may predate the current site. Whether v9.2B is the current version: not confirmed (CoCoRaHS_Training_8.1 and regional variants also exist).",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://media.cocorahs.org/docs/HilbergWERA20.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS QC Team (WERA 1012 slides, 2020)",
+   "author_org": "Steve Hilberg, CoCoRaHS Project Manager",
+   "published": "2020 (covers May 2019 - May 2020)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-wera20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/hilberg_wera20.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "MRCC not expanded in the slides (presumably Midwestern Regional Climate Center, not stated). Where the 'CoCoRaHS server' sits (CSU or elsewhere): NOT PRESENT. Date of meeting not printed in the text layer.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s7",
+   "url": "https://media.cocorahs.org/docs/CoCoRaHs_LocalCoordinatorDescription2006.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Local Coordinator – Volunteer Position Responsibilities",
+   "author_org": "CoCoRaHS",
+   "published": "2006 (from file name)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-lc06",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/local_coord_2006.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Dated 2006; 1 page. A coordinator handbook or written QC procedure for coordinators: NOT PRESENT (search 'CoCoRaHS coordinator handbook' found none). 'Admin' functions not documented here.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://media.cocorahs.org/docs/WERA_QA-QC_2021Update.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS QA/QC Update (WERA 1012 Meeting, May 18-19, 2021)",
+   "author_org": "Steve Hilberg (CoCoRaHS Project Manager), Dani Talmadge (CoCoRaHS QC)",
+   "published": "2021-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-wera21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera_2021_qaqc.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "SNOWPR/RATIO counts (335, 190) split across lines in the text layer; codes not defined in the slides. Whether the original erroneous value is retained after being set to NA: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.cocorahs.org/Content.aspx?page=faqdataentry",
+   "fetched_url": null,
+   "title": "Frequently Asked Questions : Data Entry",
+   "author_org": "CoCoRaHS (Colorado Climate Center)",
+   "published": "undated (footer Copyright © 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-faq",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/faq_dataentry.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Observer-facing; no date of last revision. Content under CC BY 4.0 per footer.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://nimss.org/storage/3841/WERA1012_Summary_of_Meeting_Minutes_2020-2022.pdf",
+   "fetched_url": null,
+   "title": "WERA1012 Summary of Meeting Minutes 2020-2022",
+   "author_org": "WERA 1012 Committee (NIMSS multistate project)",
+   "published": "2020-2022 (2021 meeting May 18-19, 2021)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-minutes",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera1012_minutes_2020_2022.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Meeting minutes (secondhand summary of talks). Page numbers not checked; line numbers in the .txt given. Relevant also to q3 (Azure cloud hosting). nimss.org was refused by the sandbox on first try and allowed on re-run with allowed_domains.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://ams.confex.com/ams/pdfpapers/91615.pdf",
+   "fetched_url": null,
+   "title": "Ten-year comparison of daily precipitation from the 4 inch diameter clear plastic rain gauge versus the 8 inch diameter metal standard rain gauge",
+   "author_org": "Nolan J. Doesken, Colorado State University",
+   "published": "approx. 2005 (AMS conference paper 2.2; cites data 1995-2004; year not printed on extracted pages)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ams_91615.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Single site, author is CoCoRaHS founder (not independent); conference paper, not peer-reviewed journal; year not printed in text; Table 1 note says header reads Average Difference with sign convention as printed (8 minus 4 except Annual row).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://media.cocorahs.org/docs/WhyManualGauge.pdf",
+   "fetched_url": null,
+   "title": "Why CoCoRaHS Requires Manual Measurements",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "Rev. 2/2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/whymanualgauge.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "CoCoRaHS self-description; the NWS/NOAA acceptance claim is not backed by a cited NWS document; no gauge specification (dimensions/tolerances) or supplier named.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.cocorahs.org/Content.aspx?page=Store",
+   "fetched_url": null,
+   "title": "Rain Gauge Suppliers",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_store.html.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Gauge manufacturer for WeatherYourWay gauge NOT PRESENT; approved-gauges page not read; Stratus NOT PRESENT on this page.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://www.cocorahs.org/Content.aspx?page=rain",
+   "fetched_url": null,
+   "title": "Things to know about rain",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_rain.html.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Text matches Cifelli et al. 2005 footnote, so may be dated; conflicts in naming with Store page (WeatherYourWay as official supplier) - the two may be maker vs seller, not stated.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://pubs.usgs.gov/of/2018/1061/ofr20181061.pdf",
+   "fetched_url": null,
+   "title": "USGS Open-File Report 2018-1061 (comparison of NEXRAD-MPE, USGS and CoCoRaHS precipitation, DuPage County, Illinois)",
+   "author_org": "U.S. Geological Survey",
+   "published": "2018",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usgs_ofr20181061.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "CoCoRaHS treated as reference, so this is not an independent accuracy test of CoCoRaHS; one county; author names not extracted; no comparison with COOP/ASOS/USCRN.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s16",
+   "url": "https://ams.confex.com/ams/19Applied/webprogram/Paper190535.html",
+   "fetched_url": null,
+   "title": "Comparison of precipitation frequency distributions from National Weather Service Cooperative stations with surrounding CoCoRaHS stations (paper 3a.6)",
+   "author_org": "Zach Schwalbe, Colorado State University; N. J. Doesken, H. Reges, N. Newman, J. Turner",
+   "published": "2011-07-18 (19th Conference on Applied Climatology)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e7",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch summary only (abstract not quoted verbatim by tool); no local file saved; no results figures; not peer-reviewed; CoCoRaHS staff authors.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://doi.org/10.1175/BAMS-86-8-1069",
+   "fetched_url": null,
+   "title": "Cifelli et al. 2005, The Community Collaborative Rain, Hail, and Snow Network (BAMS)",
+   "author_org": "R. Cifelli, N. Doesken et al.",
+   "published": "2005",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cifelli_2005.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Only .txt copied (original in Part 1 folder); 2005, may be dated; URL of original as recorded in Part 1 record not re-checked.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://distantreader.org/stacks/journals/twj/twj-7071.pdf",
+   "fetched_url": null,
+   "title": "WGRFC and CoCoRaHS (Texas Water Journal)",
+   "author_org": "NWS West Gulf River Forecast Center authors",
+   "published": "approx. 2018 (references accessed August 21, 2018)",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/twj_wgrfc_cocorahs.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Figure 1 correlation (R = 0.927, biased low by 6.2%) is for gauge data generally vs MPE, not CoCoRaHS-specific as printed; URL taken from Part 1 record not re-checked.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.cocorahs.org/Content.aspx?page=approved_rain_gauges",
+   "fetched_url": null,
+   "title": "Approved Rain Gauges",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_approved_gauges.html.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "The NWS +/- 4% requirement is asserted without citing the NWS document; TROPO field-test results NOT PRESENT; who did the testing NOT PRESENT; date NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://media.cocorahs.org/docs/CoCoTrainingSlideshow_v10.1A.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Training Slide Show V10.1 (current version linked from Training Slide Shows page)",
+   "author_org": "CoCoRaHS",
+   "published": "undated (V10.1)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/training_slideshow_v10.1A.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Only keyword lines checked, not read in full; mandatory-training statement NOT PRESENT in lines checked; author/date NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.cocorahs.org/Content.aspx?page=training_slideshows",
+   "fetched_url": null,
+   "title": "Training Slide Shows",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_training_slideshows.html.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Whether training is required NOT PRESENT; producer of materials NOT PRESENT beyond CoCoRaHS site; Videos page not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.cocorahs.org/Content.aspx?page=Snow",
+   "fetched_url": null,
+   "title": "CoCoRaHS snow measurement page",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_snow.html.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Only the first passage verified verbatim in the saved .txt (find_text truncates long lines); tenths-of-an-inch, 0.01 inch, DVD and YouTube statements come from a WebFetch extraction of the same page and were not re-checked in the .txt.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://ams.confex.com/ams/90annual/webprogram/Paper162256.html",
+   "fetched_url": null,
+   "title": "Frequency distributions of daily precipitation from a high density volunteer network (paper 6.3)",
+   "author_org": "Zach Schwalbe, Colorado State University; N. J. Doesken, J. Turner, R. Cifelli, H. Reges",
+   "published": "2010-01-19 (90th AMS Annual Meeting, Atlanta)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e14",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extraction only, no local file; abstract only, no results; not peer-reviewed; CoCoRaHS staff authors.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://www.weather.gov/media/aly/COCORAHS/SettingUpYourGauge.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS: An observer guide to measuring and reporting precipitation data (hosted by NWS Albany)",
+   "author_org": "CoCoRaHS New York (ny.cocorahs.org), hosted on weather.gov/aly",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nws_aly_settingup.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Undated; author not named beyond ny.cocorahs.org header; NWS office hosting only, no NWS specification for the gauge stated (NOT PRESENT).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_10_IT_Update_Turner.pdf",
+   "fetched_url": null,
+   "title": "2024 CoCoRaHS IT Update (WERA 1012 slides)",
+   "author_org": "Colorado Climate Center (CoCoRaHS IT; file name names Turner)",
+   "published": "2024-10 (per file name)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wera2024_it_update_turner.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slide deck; terse; no author name inside text extracted (file name only).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://www.cocorahs.org/Content.aspx?page=datausagepolicy",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data Usage Policy",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "NOT PRESENT (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_datausagepolicy.txt",
+   "retrieved": "2026-11-25 (Part 1)",
+   "limitations": "Copied from Part 1.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://paleo.ltrr.arizona.edu/dc/noaa-other-1002736.xml",
+   "fetched_url": null,
+   "title": "CoCoRaHS (NOAA DIF record noaa-other-1002736)",
+   "author_org": "DOC/NOAA/NESDIS/NCEI",
+   "published": "Dataset_Release_Date 2014-09-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_dif_cocorahs.txt",
+   "retrieved": "2026-11-25 (Part 1)",
+   "limitations": "Copied from Part 1; source URL in Part 1 record.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://api.datacite.org/dois?query=CoCoRaHS",
+   "fetched_url": null,
+   "title": "DataCite DOI search: CoCoRaHS",
+   "author_org": "DataCite",
+   "published": "2026-11-25 (query)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/datacite_cocorahs.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Only first page (25 of 33) titles checked via find_text; no CoCoRaHS-network publisher seen.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://api.github.com/search/repositories?q=cocorahs",
+   "fetched_url": null,
+   "title": "GitHub repository search: cocorahs",
+   "author_org": "GitHub",
+   "published": "2026-11-25 (query)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "api.github.com refused by sandbox in Bash (not .org, no approval asked); read only via WebFetch extraction, no local file; items 20-28 unread.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://hiscentral.cuahsi.org/pub_network.aspx?n=5632",
+   "fetched_url": null,
+   "title": "CUAHSI HIS Central: CocoRaHs network",
+   "author_org": "CUAHSI",
+   "published": "Last harvested 11/1/2026",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "Extraction via WebFetch, no local copy; counts 53,167 / 5 / 448,709,000 not paired with labels; a third-party (CUAHSI) route, not CoCoRaHS's own.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://data.cocorahs.org/cocorahs/export/exportmanager.aspx",
+   "fetched_url": null,
+   "title": "CoCoRaHS: Data Export (Export Manager)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/data-cocorahs-org-cocorahs-export-exportmanager-aspx_024036.txt",
+   "retrieved": "2026-11-26T02:40:36+00:00 (Part 1 browser read)",
+   "limitations": "Copied from Part 1 browser text; column definitions, units, flags and licence NOT PRESENT in saved text; login, help and documentation words not found by text search.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://apps.apple.com/us/app/cocorahs/id6475901195",
+   "fetched_url": null,
+   "title": "CoCoRaHS (App Store listing)",
+   "author_org": "Apple App Store",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extraction, no local copy (apps.apple.com not .org); version and date NOT PRESENT; the WERA 2024 IT Update file name names Turner, which may link him to CoCoRaHS IT staff, but the slides text read does not say so.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.drought.gov/data-maps-tools/community-collaborative-rain-hail-and-snow-network-cocorahs-data",
+   "fetched_url": null,
+   "title": "Community Collaborative Rain, Hail, and Snow Network (CoCoRaHS) Data (Drought.gov catalog entry)",
+   "author_org": "NIDIS / Drought.gov",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extraction, no local copy.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://github.com/sjwoodr/CoCoRaHS",
+   "fetched_url": null,
+   "title": "sjwoodr/CoCoRaHS (GitHub)",
+   "author_org": "sjwoodr (individual GitHub user)",
+   "published": "updated_at 2022-10-12 (GitHub API)",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extraction, no local copy; licence text NOT PRESENT; this is the third-party legacy app, not CoCoRaHS core code.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://hydroportal.cuahsi.org/CocoRaHs/cuahsi_1_1.asmx",
+   "fetched_url": null,
+   "title": "WaterOneFlow Web Service (CUAHSI HydroPortal, CocoRaHs)",
+   "author_org": "CUAHSI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extraction, no local copy; quote marks inside the passage dropped for shell quoting; protocol and access notes NOT PRESENT; third-party route; data currency and update frequency NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://media.cocorahs.org/docs/WCC_2026_Day2_Hilberg_QAQC.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS QA/QC Update 2026 (WCC 1012 Annual Meeting, May 19-21, 2026)",
+   "author_org": "CoCoRaHS (Hilberg, Talmadge)",
+   "published": "2026-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/wcc2026_qaqc.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slides, not a procedure document",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network - Daily (GHCN-Daily), Version 3 (NCEI catalog record C00861)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "doi:10.7289/V5D21VHZ",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ncei_c00861.txt",
+   "retrieved": "2026-11-25",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "Automated QC on entry is a set of web-form format and consistency checks (date not in the future, daily precipitation to the hundredth, T or NA, any value up to 30.00 in allowed, SWE no more than 90% of snow depth, one daily report per station per date, multi-day reports up to 60 days and not overlapping daily reports).",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Any value up to and including 30.00 is allowed.",
+     "location": "p. 1, Daily Precip Amount"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Cannot submit two daily report forms for the same station on the same date.",
+     "location": "p. 2, Overall"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Cannot submit a multi-day accumulation for a period more than 60 days.",
+     "location": "p. 2, Multi-day Accumulation Report form"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own QA/QC document, read as raw text; still cited in the 2026 update",
+   "applicability": "As documented in April 2019; later form changes (e.g. multi-day/daily conflicts blocked) are in the 2026 slides",
+   "sole_source_reason": "The network's own procedure document is the authority for its own form checks",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "Manual QC is done daily by CoCoRaHS headquarters staff and some volunteer coordinators, using the national map, a neighbour-comparison web tool, MPE and radar; questionable reports may be set to NA, a comment added and a QC ticket sent to the regional and state coordinators, who follow up with the observer. NCEI and the NWS are not named as reviewers in this step.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "CoCoRaHS headquarters staff and a number of our volunteer coordinators review the data each",
+     "location": "p. 3, CoCoRaHS QC Manual Process"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "determine the potential validity of an observation as well as radar maps. Questionable reports",
+     "location": "p. 3"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "error or verification to the regional coordinator and state coordinator for that station. The",
+     "location": "p. 3"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "A major accomplishment this past year | was moving the database from the MRCC | to a CoCoRaHS server | All major functions retained | Still operates as a system separate from | the CoCoRaHS observation database | Future plans are to upgrade the database, | user interface, and to integrate it with the | primary CoCoRaHS database … Dani Talmadge performs the majority of | the QC on CoCoRaHS data | 4541 QC tickets were submitted for the | period May 16, 2019 to May 15, 2020. | In 2017-2018 5900 tickets were submitted | for the same period",
+     "location": "slides 1-3"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Enlisting coordinators to consistently help with QC … More webinars for coordinators on QC | Specifically, how we determine if an observation is an error – the process",
+     "location": "slide \"QA/QC Challenges\""
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "Own procedure document plus 2020 and 2026 QC slides",
+   "applicability": null,
+   "sole_source_reason": "CoCoRaHS's own documents are the authority for its own QC and documentation; c3's NCEI checks are as CoCoRaHS reproduces them, with NCEI's 2022 slides as context"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "Data stream to NCEI; stations with at least 100 values for one element enter GHCN-Daily, where CoCoRaHS values go through GHCN-Daily's fully automated QA (24 checks listed: trace-flag, duplicate, bounds, streak, frequent-value, gap, ratio, spatial and climatological-outlier checks), and failing values get a quality flag rather than being removed.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "All data submitted into CoCoRaHS since 1998 are continually streamed to NCDC and stations | where at least 100 individual data values are present for at least one data element are included | in the CoCoRaHS data source for GHCN-Daily. New data values received from CoCoRaHS are | retrieved by GHCN-Daily on a daily basis … CoCoRaHS raw data values are put through a carefully evaluated set of fully automated | Quality Assurance (QA) procedures … The QA system consists of | checks which detect instances of duplicate data, climatological outliers and various | inconsistencies (internal, temporal and spatial). … When a value fails a particular check, it is assigned an associated data quality | flag. … d. Streak check – Checks for sequences of 10 or more consecutive identical values … f. Gap check – Identifies values that are at least 300 mm (or 11.81 in.) larger than all | other precipitation totals for a given station and calendar month. … i. Spatial consistency check – Checks for precipitation totals that differ significantly | from totals reported at neighboring stations on the preceding, current, and | following days.",
+     "location": "pp. 4-5, Quality Controls Checks by NCEI for GHCN-D Precipitation Data"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "CoCoRaHS raw data values are put through a carefully evaluated set of fully automated",
+     "location": "p. 4"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "earlier checks. When a value fails a particular check, it is assigned an associated data quality",
+     "location": "p. 4"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "contextualizes",
+     "passage": "Bryant Korzeniewski is a FEDERAL CONTRACTOR with | Riverside Technology, Inc. (a.k.a. Riverside) as part of | the Science and Data Stewardship (SDS) Contract at | NCEI in Asheville, NC … Address Data Matches Detected by GHCN‐Daily | Between CoCoRaHS Data and NWS‐Submitted Data | (e.g. COOP Station) ONGOING! … Ensuring that CoCoRaHS Data Values that are Extreme | are reflected as valid in GHCN‐Daily ONGOING! … NCEI GHCN-Daily Quality Flag Files | To Review CoCoRaHS Data | To review CoCoRaHS Stations within any | NWS Weather Forecast Office (WFO), go | to | https://www1.ncdc.noaa.gov/pub/data/ | ghcn/daily/nws/ … When CoCoRaHS values are known to be related to an extreme | event, please coordinate with the following NCEI Staff: … Improves Spatial Checks by the GHCN‐Daily Quality Control (QC) when | comparing Precipitation Data within neighboring observing sites",
+     "location": "slides 2-3, 18-20, 26"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "Own document quoting NCEI's checks; NCEI's 2022 slides corroborate the flag files",
+   "applicability": null,
+   "sole_source_reason": "CoCoRaHS's own documents are the authority for its own QC and documentation; c3's NCEI checks are as CoCoRaHS reproduces them, with NCEI's 2022 slides as context"
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "No newer QA/QC document than April 2019 was found; the 2023, 2024 and May 2026 QA/QC updates still point to it.",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "The document “CoCoRaHS Data Quality Assurance and Quality Control” | describes the automated and manual processes for QA/QC. This can be found in | the FAQ/Help section of the web site. It also describes the quality controls checks | by NCEI for GHCN-D precipitation data.",
+     "location": "slide \"Overview of CoCoRaHS QA/QC\""
+    },
+    {
+     "source_id": "s2",
+     "relationship": "contextualizes",
+     "passage": "Implemented “frequent offender” report to provide a “heads up” to | state and regional coordinators | Any station with five or more QC tickets in a three-month period is | listed | Report is generated each month … The Data Correction Form | Implemented with the Data Explorer to provide observers with a | means to request corrections to data … About 300 correction requests have been submitted since | September 2023 | Overview of CoCoRaHS QA/QC | The document “CoCoRaHS Data Quality Assurance and Quality Control” | describes the automated and manual processes for QA/QC. This can be found in | the FAQ/Help section of the web site. … Enlisting coordinators to consistently help with QC … Re-design the QCTS so it is easier to use and integrated with the CoCoRaHS | database (in the planning stages) | More webinars for coordinators on QC | Specifically, how we determine if an observation is an error – the process … A New Version of CECA | CoCoRaHS Error Checking Assistant … Developed by Tony Bergantino, Wyoming State Coordinator | New version, currently in “pre-alpha” is map based | New, faster server in place and files are being migrated | A PRISM precip layer will be available for past data",
+     "location": "slides 4-6, 15-17 (no printed slide numbers)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Absence finding; the 2026 deck names the 2019 document as current, but the docs folder was not listed in Wayback",
+   "applicability": null,
+   "sole_source_reason": "CoCoRaHS's own documents are the authority for its own QC and documentation; c3's NCEI checks are as CoCoRaHS reproduces them, with NCEI's 2022 slides as context"
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "The approved-gauge standard is set by CoCoRaHS headquarters: three manual gauges (the Stratus 4-inch by Productive Alternatives, said to meet the NWS minimum of +/- 4% of the Standard Rain Gauge; the TROPO 4-inch by Climalytic, designated by HQ; and the NWS 8-inch SRG); digital gauges are not approved. WeatherYourWay.com is the official supplier.",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Stratus - by Productive Alternatives This is the most common gauge in the network and meets the minimum requirements set by the National Weather Service to be within +/- 4% of the Standard Rain Gauge (SRG) in all types of weather. This is the most affordable gauge.",
+     "location": "Approved Rain Gauges page"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Digital/electronic rain gauges are not approved for CoCoRaHS use.",
+     "location": "Approved Rain Gauges page"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "The 4\" manual plastic rain gauge is available from the following retailers. Prices may vary. Click here to read more about approved gauges for CoCoRaHS. WeatherYourWay.com (the official CoCoRaHS gauge supplier) Climalytic Instruments (manufacturer of the premium CoCoRaHS TROPO gauge) Additional Suppliers Ambient Weather Best Buy FLI Products Forestry Suppliers Scientific Sales Tractor Supply Company",
+     "location": "page body"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own pages, read as raw text",
+   "applicability": "No written NWS specification document was found to confirm the +/- 4% requirement",
+   "sole_source_reason": "The network's own pages are the authority for which gauges it approves",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "The only published gauge comparison found is CoCoRaHS's own single-site test at the CSU campus station, Fort Collins (1995-2004): the 4-inch gauge averaged 16.42 in/yr against 15.95 in/yr for the NWS 8-inch SRG (3%). No peer-reviewed paired comparison of CoCoRaHS reports with NWS COOP, ASOS or USCRN gauges was found; two AMS abstracts compare frequency distributions without published figures, and a USGS report uses CoCoRaHS as the reference.",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "difference of 0.47\" per year is 3%, with the 4\"",
+     "location": "p. 3"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "compared to 16.42\" with the 4\" gauge. This             1999.",
+     "location": "p. 3"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Tests conducted in Colorado over three decades indicate that the CoCoRaHS gauge has a collection efficiency of 101-105% compared to the standard NWS gauge in side by side measurements. Nearly all daily differences were small – usually 0.02” or less with much of the difference attributed to greater wetting required by NWS gauges before registering the first 0.01”. | Because of the performance and accuracy of the 4” diameter high capacity manual precipitation gauge, the National Weather Service and its parent agency, NOAA, accept data from CoCoRaHS as comparable to their official instrumentation. … Therefore, we ask all our observers to please set up a CoCoRaHS 4\" diameter manual gauge and use that for your daily reports. … If you do use an automated gauge for a measurement on a particular day, we request that they mention that in the \"observation notes” for that day.",
+     "location": "pp. 1-2"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "contextualizes",
+     "passage": "Comparison of precipitation frequency distributions from National Weather Service Cooperative stations with surrounding CoCoRaHS stations.",
+     "location": "AMS 19th Applied Climatology, Session Climate Extremes, paper 3a.6"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "contextualizes",
+     "passage": "51 rain gages from the volunteer-operated Community Collaborative Rain, Hail, and Snow (CoCoRaHS) network—in and near DuPage County, Illinois … these gages indicate substantial mean undercatch of 50 and 61 percent compared to the NEXRAD–MPE and the CoCoRaHS gages, respectively. … Daily measurements were made by trained volunteer observers using an unshielded, 4-in. diameter, 11.3-in. capacity gage that provides measurements of rain and liquid-water equivalent of frozen precipitation. | CoCoRaHS network equipment and measurement procedures are similar to NWS cooperative observer network gages … Because of the high density of CoCoRaHS gages in the study area and their relative accuracy for both liquid and frozen precipitation, CoCoRaHS data are taken as the basis for evaluation … On nonfreezing days, unadjusted NEXRAD–MPE underestimates CoCoRaHS by about 16 percent on average; … On freezing days, unadjusted NEXRAD–MPE underestimates CoCoRaHS by about 6 percent on average (panel B) but overestimates CoCoRaHS by about 7 percent after adjustment (panel D).",
+     "location": "Abstract; Data section (text lines 324-337); Figures 5 and 7 discussion"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Absence of a paired comparison rests on searches by two engines; the CSU figures read as raw text",
+   "applicability": "Single site, rain season; snow catch lower",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c7",
+   "importance": "supporting",
+   "text": "Observer training rests on CoCoRaHS's own slide shows (current V10.1), snow and siting pages, and webinars; no source says training is required.",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "V10.1 … Training is important to assure … approx. 2 feet off the ground … approx. 5 feet off the ground … capacity to hold eleven inches. … - from a core sample … to compare measurements, but report what falls in the 4-inch gauge.",
+     "location": "text lines 9, 39, 241, 247, 396, 446, 596 of the .txt"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "Click on one of the CoCoRaHS Training Slide Shows below to view as HTML or download as PDF. | PDF French | PDF French (v2.1) | 2022 Winter Weather Measurements Webinar",
+     "location": "page body; link to CoCoTrainingSlideshow_v10.1A.pdf in HTML line 186"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "A snowboard (plywood or water board ½ to ¾\" thick cut into a 16\" by 16\" square and painted white) is helpful to have. For measuring the water content of snow, the 4\" diameter CoCoRaHS precipitation gauge can be used. But it does require care. The inner tube and funnel should be removed and brought inside when temperatures go below freezing. The gauge works well for moderate snowfall amounts up to about 6 to 8 inches, especially if winds are li…",
+     "location": "page body (text line 7)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Own pages read by a subagent",
+   "applicability": null
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "The whole system runs in Microsoft Azure (Front Door with WAF), on a SQL Server primary database with a PostgreSQL copy; maps.cocorahs.org runs on the vendor Carto's platform and a shared Carto database; the QC ticket system was inherited and runs isolated (MySQL, JSP, Docker); the original apps were built by a volunteer observer, and the new app wraps the mobile web app.",
+   "evidence": [
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Implement an Azure Front Door service with Web Application Firewall across all public facing | applications … Maintained the CoCoRaHS cyberinfrastructure. … Prototyped multiple methods of creating a near real-time data sync between the primary SQL | Server database and a PostgreSQL database that will be used for mapping and data analytics.",
+     "location": "slide 'Behind the scenes' (txt lines 115-127); Databricks at line 42"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Rebuild our current Angular maps.cocorahs.org web application to migrate from the Carto raster mapping platform to | their new vector mapping platform … The new application would be built with Remix React to align with DEx and the mobile web application … The PostgreSQL database would go from a shared Carto database to one that CoCoRaHS manages in Azure",
+     "location": "slide 'Mapping – What' (txt lines 575-582)"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Background: The current QCTS was inherited years ago. It runs in Azure like the rest of | the CoCoRaHS cyberinfrastructure, but it is completely isolated from it. It uses a | separate database (MySQL), a separate web application scripting language (JSP), and | a separate deployment model (Docker).",
+     "location": "slide 'QC Ticketing System' (txt lines 673-677)"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "The CoCoRaHS mobile apps were | created by an observer years ago. | He no longer wants to maintain them … A React Native “shell” app will serve as | a wrapper for the PWA.",
+     "location": "slides 'Mobile Apps: The Elephant in the Room' and 'A different approach to mobile applications' (txt lines 63-87)"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "QCTS moved to CoCoRaHS | web site as of 10/1/2024",
+     "location": "slide \"Annual QC Tickets 2015-2026\""
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS IT lead's own 2024 slides, read as raw text",
+   "applicability": "Status as of June 2024 slides; QCTS moved to the web site 1 Oct 2024",
+   "sole_source_reason": "The network's own IT update is the authority for its own systems"
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "No CoCoRaHS production code is published: no CoCoRaHS or Colorado Climate Center organisation was found on GitHub; the only public code is the retired volunteer-built Android app (licence file not read), and moving DevOps to GitHub is a planned project.",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "total_count: 28 … sjwoodr/CoCoRaHS … CoCoRaHS Observer for Android … license name: Other … heigeo/climata … (from ACIS/NOAA RCCs, CoCoRaHS, … ) … MIT License",
+     "location": "API JSON items 1-19 (WebFetch extraction; last 9 not read)"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Repository description: \"CoCoRaHS Observer for Android\" | \"This is an Android application that will let CoCoRaHS Observers submit their daily readings via their mobile device.\" | Licence file name: LICENSE.txt",
+     "location": "repository front page (WebFetch extraction)"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "infrastructure      Migrate all | DevOps to",
+     "location": "slide: candidate projects"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "GitHub API search read via WebFetch by a subagent; absence finding",
+   "applicability": null
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "Documentation is observer-facing: a 73-page training slide show, a data-entry FAQ and the 5-page QA/QC document (manual QC in one paragraph, no criteria); the coordinator role is a one-page 2006 list; system and database documentation are listed as future projects, and coordinators still need webinars on how an error is judged.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "When questionable values are identified, the person performing QC will examine the | observation in context of surrounding observations. … Most errors we find in CoCoRaHS data are reporting errors, not measurement errors.",
+     "location": "p. 3"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Become familiar with the CoCoRaHS Web site and learn how to use the “Admin” functions | to access observer information. … And if you’re really, really willing: … • Check data routinely. Spot errors. Contact observers verifying questionable data.",
+     "location": "p. 1"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "New API and       System Admin",
+     "location": "slide: candidate projects"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Enlisting coordinators to consistently help with QC … More webinars for coordinators on QC | Specifically, how we determine if an observation is an error – the process",
+     "location": "slide \"QA/QC Challenges\""
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Own documents; absence of a handbook rests on searches",
+   "applicability": null,
+   "sole_source_reason": "CoCoRaHS's own documents are the authority for its own QC and documentation; c3's NCEI checks are as CoCoRaHS reproduces them, with NCEI's 2022 slides as context"
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "Licence and identifiers: CoCoRaHS data are CC BY 4.0, but there is no CoCoRaHS DOI (NOAA's catalog record gives DOI N/A; none in DataCite); GHCN-Daily, which carries CoCoRaHS stations, has DOI 10.7289/V5D21VHZ and an NCEI catalog record.",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Unless otherwise noted, all CoCoRaHS content and data are released under a Creative Commons Attribution 4.0 License.",
+     "location": "page body (txt line 7)"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "<Entry_ID>noaa-other-1002736</Entry_ID> | <Entry_Title>CoCoRaHS</Entry_Title> … <Dataset_Release_Date>2014-09-03</Dataset_Release_Date> | <Dataset_Publisher>NCDC-Paleoclimatology</Dataset_Publisher> … <Dataset_DOI>N/A</Dataset_DOI> | <Online_Resource>http://www.cocorahs.org/</Online_Resource> … <Access_Constraints>None</Access_Constraints>",
+     "location": "DIF XML lines 2-20"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "\"title\": \"Proof of concept of an automated CoCoRaHS rain gauge\" | \"publisher\": \"Colorado State University. Libraries\", … \"title\": \"CoCoRaHS_Data.csv\" | \"publisher\": \"figshare\", … \"total\": 33,",
+     "location": "JSON lines 3703-3706, 3994-3997, 4318"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "- doi:10.7289/V5D21VHZ",
+     "location": "Dataset Overview, identifiers"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "The dataset includes observations from World Meteorological Organization, Cooperative, and CoCoRaHS networks.",
+     "location": "Description"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "Own policy page, NOAA and NCEI records, DataCite API",
+   "applicability": null
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "The Export Manager is an ASP.NET form offering XML, XML Compact, CSV, SHEF and SHEF Snow, with no column documentation found; CoCoRaHS's existing API is unpublicised, and a new keyed Web API is planned; CUAHSI separately serves a WaterOneFlow SOAP copy.",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Output Format:",
+     "location": "Export Manager form"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "SHEF Snow",
+     "location": "Export Manager form"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Consolidate the existing API web application and the data.cocorahs.org export web application into a single | new Web API | Provide all the reports available under the ‘View Data’ section of the website as API endpoints | This would make reports available in JSON, CSV, XML for the mobile app as well as data users | Create an API key management system so that we can track individual data users … The current data export is having a harder time keeping up with the export | demands of data users",
+     "location": "slides 'Develop a new CoCoRaHS API and replace data.cocorahs.org' What/Why (txt lines 476-505)"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "contextualizes",
+     "passage": "WaterOneFlow Web Service | The following operations are supported. For a formal definition, please review the Service Description. … GetValues: Given a site number, a variable, a start date, and an end date, this method returns a time series. Pass in the sitecode and variable in this format: NetworkName:SiteCode and NetworkName:Variable",
+     "location": "service help page operations list"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Form page read in the browser in Part 1; API plans from own slides",
+   "applicability": null
+  },
+  {
+   "id": "c13",
+   "importance": "supporting",
+   "text": "Reconciled detail: 4,541 QC tickets May 2019-May 2020 (5,900 in 2017-18); NCEI's GHCN-Daily checks for CoCoRaHS data duplicating NWS/COOP submissions (215 stations affected in 2014, 345 in 2022); the 4-inch gauge read 0.8%-5.8% above the 8-inch by year; in freezing weather heated USGS gauges caught 61% less than CoCoRaHS gauges.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "A major accomplishment this past year | was moving the database from the MRCC | to a CoCoRaHS server | All major functions retained | Still operates as a system separate from | the CoCoRaHS observation database | Future plans are to upgrade the database, | user interface, and to integrate it with the | primary CoCoRaHS database … Dani Talmadge performs the majority of | the QC on CoCoRaHS data | 4541 QC tickets were submitted for the | period May 16, 2019 to May 15, 2020. | In 2017-2018 5900 tickets were submitted | for the same period",
+     "location": "slides 1-3"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "• Address Data Matches Detected by GHCN‐Daily | Between CoCoRaHS Data and NWS‐Submitted Data | (e.g. COOP Station) ONGOING! … Data Matches Between CoCoRaHS | and NWS-Submitted Data | 2014 2016 2017 2019 2022 | GHCN‐Daily Stations Affected 215 240 221 190 345 | Stations with at least 90% Data‐Match 114 113 110 134 172 | of Non‐Zero Values for | PRCP/SNOW/SNWD",
+     "location": "Slides 2-3 (text lines 27-44)"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "(0.8%) in 2000 to a maximum of 0.96\" (5.8%) in",
+     "location": "p. 3"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "51 rain gages from the volunteer-operated Community Collaborative Rain, Hail, and Snow (CoCoRaHS) network—in and near DuPage County, Illinois … these gages indicate substantial mean undercatch of 50 and 61 percent compared to the NEXRAD–MPE and the CoCoRaHS gages, respectively. … Daily measurements were made by trained volunteer observers using an unshielded, 4-in. diameter, 11.3-in. capacity gage that provides measurements of rain and liquid-water equivalent of frozen precipitation. | CoCoRaHS network equipment and measurement procedures are similar to NWS cooperative observer network gages … Because of the high density of CoCoRaHS gages in the study area and their relative accuracy for both liquid and frozen precipitation, CoCoRaHS data are taken as the basis for evaluation … On nonfreezing days, unadjusted NEXRAD–MPE underestimates CoCoRaHS by about 16 percent on average; … On freezing days, unadjusted NEXRAD–MPE underestimates CoCoRaHS by about 6 percent on average (panel B) but overestimates CoCoRaHS by about 7 percent after adjustment (panel D).",
+     "location": "Abstract; Data section (text lines 324-337); Figures 5 and 7 discussion"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Added by the Reconciler from saved files; passages checked by merge",
+   "applicability": null,
+   "figure_status": "actual"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Whether the QC ticket system was integrated into the main database",
+   "source_ids": [
+    "s10",
+    "s2",
+    "s25",
+    "s36"
+   ],
+   "status": "resolved",
+   "explanation": "2021 minutes say ticketing was integrated after the Azure move; the 2023-2024 decks say integration was in planning and the June 2024 IT slides call QCTS isolated; the May 2026 deck says QCTS moved to the CoCoRaHS web site on 1 Oct 2024. Read as: hosted on CoCoRaHS servers by 2021, integrated into the web site only in Oct 2024."
+  },
+  {
+   "claim": "Who makes the approved 4-inch gauge",
+   "source_ids": [
+    "s14",
+    "s17",
+    "s19",
+    "s13"
+   ],
+   "status": "resolved",
+   "explanation": "Productive Alternatives makes the Stratus (most common); Climalytic makes the TROPO (approved later); WeatherYourWay.com is a supplier, not the maker. Not a contradiction, different roles."
+  }
+ ],
+ "coverage_gaps": [
+  "No QA/QC document newer than April 2019 found; the 2023 and 2024 WERA decks still point to it. Wayback CDX listing of media.cocorahs.org/docs/ was not run (time); FAQ/Help page listing not read. (from sa1)",
+  "Durre et al. 2010 and GHCN-Daily readme not re-read in this run (earlier GHCN folder 2026-11-19_ghcn-daily-about-pt2 has 4a1012a4cad44a36.txt = a copy of the CoCoRaHS QA/QC doc, and 2ca8a48dd9970116.txt = Menne et al. 2012 with CoCoRaHS source flag N); not copied. (from sa1)",
+  "Unread leads: WERA1012 Summary of Meeting Minutes 2020-2022 (https://nimss.org/storage/3841/WERA1012_Summary_of_Meeting_Minutes_2020-2022.pdf; snippet says QC faltered mid-year after the QC hire left), CEC 2020 slides (https://www.cec.org/wp-content/uploads/2020/02/henry_reges_steve_hilberg_matt_spies-session_3.pdf), NCEI GHCN-Daily nws flag-file readme, Reviewing_WaterYear_Data_v3.pdf, AMS 2013 paper 'Balancing the desire for a friendly citizen science program with the need for accurate precipitation data'. (from sa1)",
+  "Unread: CoCoRaHS_Training_8.1.pdf, training_slideshows page, Printable Forms page, SnowInstructions12-11.pdf, CoCoRaHS Winter Observations Guide Oct 2024 (weather.gov), Schools_Basic_Training.pdf. No coordinator handbook and no written manual-QC procedure (thresholds, QCTS/CECA how-to) found; 2024 deck lists coordinator QC webinars on 'how we determine if an observation is an error' as a future need. (from sa1)",
+  "No peer-reviewed or NWS technical paper found comparing CoCoRaHS daily reports with NWS COOP, ASOS or USCRN gauges at paired sites. Found only: Doesken 4-in vs 8-in SRG single-site conference paper (CSU, 1995-2004), Schwalbe et al. 2011 AMS abstract (COOP vs CoCoRaHS frequency distributions, no figures), USGS OFR 2018-1061 (uses CoCoRaHS as reference vs USGS gauges and NEXRAD-MPE). Searches: r3 and r4 queries plus the paired-station query. Leads not read: Goble/Doesken AMS 2013 talk https://ams.confex.com/ams/93Annual/recordingredirect.cgi/id/23617 ; Doesken 2004 abstract https://gml.noaa.gov/publications/annual_meetings/2004/abstracts/doesken.pdf ; Goble et al. 2019 BAMS (extremes using both networks). (from sa2)",
+  "Gauge manufacturer conflict not resolved: cocorahs.org rain page and Cifelli 2005 say Productive Alternatives (Minnesota) manufactures; Store page names WeatherYourWay.com as official supplier and Climalytic (TROPO) as premium maker. Stratus not found in pages read. CoCoRaHS approved-gauges page (linked from Store page) and WeatherYourWay page not read. Who sets a written gauge specification (dimensions, tolerances): NOT PRESENT in pages read; no NWS spec document found. (from sa2)",
+  "Training videos (CoCoRaHS YouTube/Videos page), online training, and who produces them not read; whether training is required NOT PRESENT (TWJ says attend a session or view the slide show). Snow measurement guide (CoCoRaHS snow measuring PDF/videos) not read; NWS ALY SettingUpYourGauge.pdf not read. (from sa2)",
+  "Doesken/Cifelli 2004 NOAA GML abstract (https://gml.noaa.gov/publications/annual_meetings/2004/abstracts/doesken.pdf) read: no gauge comparison figures (NOT PRESENT); saved as _unused. Current training slide show is V10.1A (v9.2B cited as well; same siting text in keyword check). (from sa2)",
+  "Buban et al. 2020 JHM (doi 10.1175/JHM-D-19-0232.1, NOAA repository noaa/29193) compares USCRN with PRISM; CoCoRaHS appears only as one PRISM input; no CoCoRaHS-USCRN comparison (saved _unused). It cites Leeper et al. 2015: COOP recorded less precipitation than USCRN, owing to unshielded gauges (COOP, not CoCoRaHS). No CoCoRaHS-vs-ASOS or CoCoRaHS-vs-USCRN study found after the searches logged. (from sa2)",
+  "App Store / Google Play developer names seen only in search snippets (App Store id6475901195 'seller Julian Turner'; old CoCoRaHS Observer: appcay / Steve Woodruff, com.appcay.cocorahs; new Android org.cocorahs.mobile). Listings not read (apps.apple.com, play.google.com are not .org). (from sa3)",
+  "Who administers the Azure subscription (CSU IT or CoCoRaHS) NOT PRESENT; whether media.cocorahs.org is on an Azure CDN not checked. (from sa3)",
+  "Not read: Export Manager page itself in this run (Part 1 browser text exists: data-cocorahs-org-cocorahs-export-exportmanager-aspx_024036.txt), ViewData column/flag docs ('T' trace), GHCN-Daily by_station CSV docs, 2014 NSF PI meeting PDF (archive.informalscience.org/sites/default/files/CoCoRaHS_NSF_PI_Meeting_2014.pdf) mentioning a Web API, data.gov entry 66kc-bndm (UNT web archive), drought.gov CoCoRaHS page, mobile.cocorahs.org/more. (from sa3)",
+  "A search snippet quoted a 'Creative Commons Attribution 3.0 License' for CoCoRaHS data (source page unclear, possibly older/tosdr copy) versus CC BY 4.0 on the current Data Usage Policy; not checked. (from sa3)",
+  "GitHub search items 20-28 not read; dschep/pycocorahs licence (GPL-3.0) from snippet only. (from sa3)",
+  "re3data lookup failed twice (curl CONNECT 502; WebFetch ECONNREFUSED 129.13.130.200:443): whether CoCoRaHS has a re3data entry is unknown. mobile.cocorahs.org/more read via WebFetch: only a navigation menu, app version/developer/licence NOT PRESENT. (from sa3)",
+  "Reconciler ran out of time (9 min window). Not checked for earlier dates/other sources: draft figures 3%, 30.00 in, 60 days, 100 values, 24 checks, +/- 4%, 101-105%, 73 pages, 33 DataCite records. QC ticket totals by year in work/raw/main/wcc2026_qaqc.txt (chart text line 90: 9326 9202 8540 6537 6808 6368 5320 4775 3744 1727, years 2015-2026) could not be mapped to years from the jumbled chart text, so not compared with Hilberg 2020 (4541 tickets May 2019-May 2020; 5900 in 2017-2018). Unread pages from coverage: re3data API and search for CoCoRaHS, CoCoRaHS_NSF_PI_Meeting_2014.pdf (informalscience.org), Google Play mobile app page. Record problems: s16, s29, s34, s35 have no local_file. (from reconciler)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS quality control data review",
+   "tool": "WebSearch",
+   "notes": "found WERA 2023/2024 QA/QC updates, HilbergWERA20, Reviewing_WaterYear_Data_v3",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS QA/QC coordinator review reports",
+   "tool": "WebSearch",
+   "notes": "alt; found WERA_QA-QC_2021Update, WERA1012 minutes 2020-2022 (nimss.org), CEC 2020 slides; not read",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN-Daily quality control CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": "found WERA1012_2022_NCEI (read), durre-menne-etal2010 at ncei.noaa.gov (not re-read; earlier GHCN run folder has it), NCEI C00861 metadata",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "media.cocorahs.org/docs/ url=media.cocorahs.org/docs/ --word qa",
+   "tool": "lookup (wayback_paths.py listing helper)",
+   "notes": "printed CDX commands only; CDX listing not run for lack of time",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS observer training slide show",
+   "tool": "WebSearch",
+   "notes": "found v9.2B (read), Training_8.1, regional versions",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS coordinator handbook",
+   "tool": "WebSearch",
+   "notes": "no handbook found; 2006 Local Coordinator Description; training_slideshows and coord pages on cocorahs.org",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS how to measure precipitation guide",
+   "tool": "WebSearch",
+   "notes": "NWS-hosted guides (weather.gov), MA/SNE winter guide, Schools Basic Training; not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS daily report form help",
+   "tool": "WebSearch",
+   "notes": "allowed_domains=cocorahs.org; found faqdataentry (read), PrintableForms, SnowInstructions12-11.pdf",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS gauge comparison COOP precipitation",
+   "tool": "WebSearch",
+   "notes": "Led to WhyManualGauge.pdf; no CoCoRaHS-vs-COOP paired study in results",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS CoCoRaHS 4-inch gauge standard",
+   "tool": "WebSearch",
+   "notes": "Led to Doesken AMS paper 91615 and NWS office pages (weather.gov/afc, /pdt, /aly SettingUpYourGauge.pdf - not read). No NWS directive or spec for the CoCoRaHS gauge found; NWS pages seen in results are local-office outreach.",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS precipitation accuracy study",
+   "tool": "WebSearch",
+   "notes": "Found USGS OFR 2018-1061; Goble/Doesken AMS 2013 talk (not read); gml.noaa.gov Doesken 2004 abstract (not read)",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS training slide show required new observers",
+   "tool": "WebSearch",
+   "notes": "Training slide show v9.2B; no source states training is mandatory",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS official rain gauge 4-inch purchase approved",
+   "tool": "WebSearch",
+   "notes": "CoCoRaHS Store page: WeatherYourWay official supplier; TROPO by Climalytic",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS COOP precipitation comparison journal study paired stations",
+   "tool": "WebSearch",
+   "notes": "Schwalbe et al. 2011 AMS abstract; no peer-reviewed CoCoRaHS-COOP paired-gauge journal article found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Schwalbe 2011 AMS paper 190535",
+   "tool": "lookup (AMS abstract page)",
+   "notes": "WebFetch via studio.m-anage.com redirect",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS observer training videos YouTube snow measurement",
+   "tool": "WebSearch",
+   "notes": "Led to cocorahs.org snow page; NWS office snow handouts (OTX, MPX, BIS) not read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS versus ASOS daily precipitation comparison study",
+   "tool": "WebSearch",
+   "notes": "No CoCoRaHS-ASOS comparison found; led to Schwalbe 2010 AMS abstract; NOAA repository noaa/29193 and noaa/46580 PDFs not read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS Export Manager help",
+   "tool": "WebSearch",
+   "notes": "No CoCoRaHS Export Manager help page found; results: NWS ALY 'How to Edit CoCoRaHS Data', Reviewing_WaterYear_Data_v3.pdf, MobileApp User Guide, Content.aspx?page=Help.",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS web services data feed XML",
+   "tool": "WebSearch",
+   "notes": "Found CUAHSI HIS Central CocoRaHs WSDL; NOAA DIF XML at paleo.ltrr.arizona.edu; 2014 NSF PI meeting PDF mentions a Web API (unread); no official XML/API docs.",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://api.datacite.org/dois?query=CoCoRaHS",
+   "tool": "lookup (DataCite API)",
+   "notes": "total 33; no CoCoRaHS-published dataset DOI.",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "https://www.re3data.org/api/v1/repositories?query=CoCoRaHS",
+   "tool": "lookup (re3data API)",
+   "notes": "curl CONNECT tunnel failed 502; not retried (time).",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS github",
+   "tool": "WebSearch",
+   "notes": "No official CoCoRaHS GitHub org; dschep/pycocorahs (GPL-3.0 per snippet), rywhale/cocorahsR.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.github.com/search/repositories?q=cocorahs",
+   "tool": "lookup (GitHub search API)",
+   "notes": "Bash refused (api.github.com not allowed, not .org); read via WebFetch: total_count 28.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS app developer iOS Android",
+   "tool": "WebSearch",
+   "notes": "Snippets: App Store id6475901195 seller Julian Turner; old CoCoRaHS Observer by appcay / Steve Woodruff; Google Play org.cocorahs.mobile; found WERA_2024_10_IT_Update_Turner.pdf.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "re3data API repositories?query=CoCoRaHS (retry) and re3data.org/search in browser",
+   "tool": "lookup (re3data)",
+   "notes": "fetch_json: Tunnel connection failed 502; browser navigation denied. No route left.",
+   "from": "main",
+   "copy_of": "https://www.re3data.org/api/v1/repositories?query=CoCoRaHS"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "url=https://web.archive.org/web/2024/https://archive.informalscience.org/sites/default/files/CoCoRaHS_NSF_PI_Meeting_2014.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404: no saved copy. No route left.",
+   "from": "main",
+   "copy_of": "https://archive.informalscience.org/sites/default/files/CoCoRaHS_NSF_PI_Meeting_2014.pdf"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "DataCite API record is the primary registry record",
+   "tool": "lookup (DataCite)",
+   "notes": "Primary API record, not a republished document; no other copy applies.",
+   "from": "main",
+   "copy_of": "https://api.datacite.org/dois?query=CoCoRaHS"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GitHub search API record is the primary record",
+   "tool": "lookup (GitHub)",
+   "notes": "Primary API record; api.github.com refused by sandbox for sa3, read via WebFetch. No other copy applies.",
+   "from": "main",
+   "copy_of": "https://api.github.com/search/repositories?q=cocorahs"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CUAHSI HIS Central entry is CUAHSI own catalog record",
+   "tool": "lookup (CUAHSI HIS Central)",
+   "notes": "CUAHSI is the operator of the copy it lists; its own page is primary for that service. No other copy.",
+   "from": "main",
+   "copy_of": "https://hiscentral.cuahsi.org/pub_network.aspx?n=5632"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Drought.gov catalog entry is NIDIS own catalog record",
+   "tool": "lookup (drought.gov)",
+   "notes": "Catalog entry is primary for what the catalog says; no other copy.",
+   "from": "main",
+   "copy_of": "https://www.drought.gov/data-maps-tools/community-collaborative-rain-hail-and-snow-network-cocorahs-data"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS precipitation comparison COOP stations paired",
+   "tool": "duckduckgo (browser)",
+   "notes": "No comparison study in results: station lists, DEx, NWS office pages, drought.gov. Saw maphub.cocorahs.org (new MapHub).",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS quality control document 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "Found WCC_2026_Day2_Hilberg_QAQC.pdf (May 2026): still points to the April 2019 document; no newer QA/QC document.",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "GHCN-Daily 10.7289/V5D21VHZ NCEI",
+   "tool": "duckduckgo (browser)",
+   "notes": "Found NCEI geoportal record C00861 (read, raw).",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://play.google.com/store/apps/details?id=org.cocorahs.mobile (browser read)",
+   "tool": "lookup (Google Play listing)",
+   "notes": "Read in the built-in browser; developer name NOT PRESENT in page text even after expanding App support (support email info@cocorahs.org only). Updated Aug 31, 2026; 5K+ downloads.",
+   "from": "main"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "own QC documents",
+   "query": "CoCoRaHS quality control data review",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI",
+   "publisher": "its operator / downstream archive",
+   "subquestion_id": "q1",
+   "aim": "GHCN-Daily QC of CoCoRaHS",
+   "query": "GHCN-Daily quality control CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NWS",
+   "publisher": "standards bodies",
+   "subquestion_id": "q2",
+   "aim": "gauge standard",
+   "query": "NWS CoCoRaHS 4-inch gauge standard",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "gauge comparisons",
+   "query": "CoCoRaHS gauge comparison COOP precipitation",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "export and web services docs",
+   "query": "CoCoRaHS Export Manager help",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": null,
+   "publisher": "registries",
+   "subquestion_id": "q5",
+   "aim": "DOI and catalog entries",
+   "query": "DataCite / re3data lookup CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "CoCoRaHS",
+   "publisher": "registries (code hosts)",
+   "subquestion_id": "q3",
+   "aim": "published code",
+   "query": "CoCoRaHS github",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 20.8,
+  "shift_min": 1,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 163352,
+  "subagent_minutes_planned": 31,
+  "subagent_minutes": 27.7,
+  "follow_ups": 0,
+  "continuations": 4,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

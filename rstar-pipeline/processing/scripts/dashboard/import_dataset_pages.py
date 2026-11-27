@@ -7,8 +7,13 @@ Reads app/data/dataset_pages.json, which lists, for each dataset:
     "parts": [ { "part": 1, "topic": "Overview" }, ... ] }
 
 For each part it finds RESEARCH_ROOT/<research_folder>/*-pt<N>/ (the
-folder name must end in -pt<N>; the date in front doesn't matter) and
-writes:
+folder name must end in -pt<N>; the date in front doesn't matter). A part
+can instead name its run folder with "folder", for when one query file
+held several runs and their folders share a -pt<N> ending, e.g.
+
+  { "part": 8, "topic": "...", "folder": "2026-11-24_gpcp-daily-calibration-copies-pt7" }
+
+It writes:
 
   app/content/datasets/<id>/pt<N>.md    the answer_*.md, cleaned: its
                                         first "# " heading, the "Saved in"
@@ -69,16 +74,24 @@ def drop_title(text: str) -> str:
     return "\n".join(lines).lstrip("\n").rstrip() + "\n"
 
 
-def part_folder(dataset: dict, part: int) -> Path:
+def part_folder(dataset: dict, part: dict) -> Path:
     base = RESEARCH_ROOT / dataset["research_folder"]
-    found = sorted(p for p in base.glob(f"*-pt{part}") if p.is_dir())
+    if "folder" in part:
+        folder = base / part["folder"]
+        if not folder.is_dir():
+            raise SystemExit(f"No folder {folder} (part {part['part']}'s \"folder\")")
+        return folder
+    n = part["part"]
+    found = sorted(p for p in base.glob(f"*-pt{n}") if p.is_dir())
     if len(found) != 1:
-        raise SystemExit(f"Expected one folder {base}/*-pt{part}, found {len(found)}")
+        names = ", ".join(p.name for p in found)
+        raise SystemExit(f"Expected one folder {base}/*-pt{n}, found {len(found)}"
+                         + (f" ({names}); name one with \"folder\"" if found else ""))
     return found[0]
 
 
 def import_part(dataset: dict, part: dict) -> None:
-    folder = part_folder(dataset, part["part"])
+    folder = part_folder(dataset, part)
     answers = sorted(folder.glob("answer*.md"))
     if len(answers) != 1:
         raise SystemExit(f"Expected one answer*.md in {folder}, found {len(answers)}")

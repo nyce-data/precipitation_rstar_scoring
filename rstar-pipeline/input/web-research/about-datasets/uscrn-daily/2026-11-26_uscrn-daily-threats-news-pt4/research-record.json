@@ -1,0 +1,3823 @@
+{
+ "question": "What has happened between January 1, 2025 and November 2026 to the funding, staff and access of USCRN Daily (daily01), ARL and its ATDD, and the NCEI systems that process and serve it? Rate each development (imminent, emerging, no current threat found) and map findings to D-1, D-3, D-5, RRS-4, P-2 and P-4.",
+ "tier": "deep",
+ "tier_reason": "deep: proposed closures and restructuring (ARL closure in the FY2026 and FY2027 requests), an active appropriations dispute; the user set 50 minutes and 400,000 tokens",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Funding: FY2027 outcome after the CR to Dec 11 2026; NOAA's FY2026 spend plan for ARL; any proposal to downsize USCRN or its sensors.",
+   "status": "answered",
+   "source_ids": [
+    "s29",
+    "s30",
+    "s34",
+    "s35",
+    "s36",
+    "s31",
+    "s45"
+   ],
+   "remaining_gap": "No public FY2026 NOAA spend plan; FY2027 outcome after Dec 11, 2026 not yet known."
+  },
+  {
+   "id": "q2",
+   "question": "Staff: layoffs, buyouts, hiring freezes, reorganizations, contract changes affecting ATDD's field team and the people who produce USCRN data (ARL, NCEI, CISESS), with numbers.",
+   "status": "uncertain",
+   "source_ids": [
+    "s70",
+    "s71",
+    "s72",
+    "s84",
+    "s81",
+    "s77",
+    "s68"
+   ],
+   "remaining_gap": "No ARL/ATDD staff-loss numbers; reorganization date and the field team's exact contract chain not published."
+  },
+  {
+   "id": "q3",
+   "question": "Access: did daily01 directories and the USCRN portal stay current through NCEI's 2025-2026 changes; outages, access limits, removals, alterations, station closures, political pressure.",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s23",
+    "s25",
+    "s28",
+    "s4",
+    "s11",
+    "s10",
+    "s13"
+   ],
+   "remaining_gap": "No date for moving /pub/data/uscrn to S3; cause of two lagging stations unknown."
+  },
+  {
+   "id": "q4",
+   "question": "News 2024-Nov 2026 naming USCRN, ATDD, ARL or its people: outlet, date, headline, direct or NOAA/OAR-only.",
+   "status": "answered",
+   "source_ids": [
+    "s69",
+    "s54",
+    "s14",
+    "s15",
+    "s56",
+    "s55",
+    "s62"
+   ],
+   "remaining_gap": "Knoxville News Sentinel and Oak Ridger could not be searched; Science articles behind a bot check."
+  },
+  {
+   "id": "q5",
+   "question": "Check news claims against NOAA, Congress and GAO documents.",
+   "status": "answered",
+   "source_ids": [
+    "s52",
+    "s59",
+    "s63",
+    "s29"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2026/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/2026/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/20278105817efbe6.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Listing shows modification time, not data end date; file count is a count of listed rows. Joplin and St. Mary lag (stations.tsv still lists both as Commissioned/Operational) is NOT explained on the page.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/0b26e788fa3e9247.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Folder modification dates reflect directory entry changes, not file updates.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2025/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/2025/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/42b9c76e0fd1706b.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Reason for 2026 rewrites (QC reprocessing) NOT PRESENT on the page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/stations.tsv",
+   "fetched_url": null,
+   "title": "USCRN stations.tsv",
+   "author_org": "NOAA NCEI",
+   "published": "live file, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/0d4bda80236b5def.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "File has no version date; a closure not yet entered would not show. Count is from a regex over rows.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://web.archive.org/cdx/search/cdx?url=www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2025/&from=2025&to=2026&output=json&fl=timestamp,statuscode,digest",
+   "fetched_url": null,
+   "title": "Wayback CDX: daily01/2025/ captures 2025-2026",
+   "author_org": "Internet Archive",
+   "published": "queried 2026-11-26",
+   "data_period": null,
+   "source_type": "archive",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/154b3f0909a966b0.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Sparse captures; cannot show whether files updated day by day during the shutdown.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://web.archive.org/web/20251113170129/https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2025/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/2025/ (Wayback 2025-11-13)",
+   "author_org": "NOAA NCEI (Internet Archive capture)",
+   "published": "captured 2025-11-13",
+   "data_period": null,
+   "source_type": "archive",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/673e784025fef29d.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "One capture only; whether updates ran during Oct 1-Nov 11 cannot be read from it (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://web.archive.org/cdx/search/cdx?url=www.ncei.noaa.gov/access/crn/&from=2025&to=2026&output=json&fl=timestamp,statuscode,digest&collapse=digest",
+   "fetched_url": null,
+   "title": "Wayback CDX: www.ncei.noaa.gov/access/crn/ captures 2025-2026",
+   "author_org": "Internet Archive",
+   "published": "queried 2026-11-26",
+   "data_period": null,
+   "source_type": "archive",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/1a038a71b268bc88.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Collapse by digest; a 200 shows the page served, not that data behind it updated.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://web.archive.org/web/20251020093747/https://www.ncei.noaa.gov/access/crn/",
+   "fetched_url": null,
+   "title": "U.S. Climate Reference Network portal (Wayback 2025-10-20)",
+   "author_org": "NOAA NCEI (Internet Archive capture)",
+   "published": "captured 2025-10-20",
+   "data_period": null,
+   "source_type": "archive",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/7456d2de9d379d4e.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Banner text could be in hidden elements the converter skipped (2 hidden items skipped).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/access/crn/",
+   "fetched_url": null,
+   "title": "U.S. Surface Climate Observing Reference Networks (live)",
+   "author_org": "NOAA NCEI",
+   "published": "live, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/5f1d7236ae2bd29c.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Static page text; does not reflect the 'SORD-ATD' reorganization found in Part 3.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "live, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/341156a8c8fb1ea9.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not name USCRN; the daily01 folder was current on the same day (sa3-e1).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration-FAQ",
+   "fetched_url": null,
+   "title": "NCEI Cloud Migration Frequently Asked Questions",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-14)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/61f3cbaf63c4ca5b.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not name USCRN or /pub/data/uscrn; no date for the WAF-to-S3 move (NOT PRESENT).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: NCEI",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://portal.datarescueproject.org/datasets/us-climate-reference-network-uscrn/",
+   "fetched_url": null,
+   "title": "U.S. Climate Reference Network (USCRN) - Data Rescue Project Portal",
+   "author_org": "Data Rescue Project",
+   "published": "last updated 2025-03-25",
+   "data_period": null,
+   "source_type": "watchdog/data rescue",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/b862e23d572fb326.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only 54 words of visible text (page may build more with JavaScript). Preemptive archive; no claim of loss.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes",
+   "fetched_url": null,
+   "title": "2025 Notice of Changes | NESDIS",
+   "author_org": "NOAA NESDIS",
+   "published": "2025 (page as saved by the 2026-11-17 run)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noc2025_reused.txt",
+   "retrieved": "2026-11-17 (earlier run)",
+   "limitations": "USCRN NOT PRESENT; copied only page 1 text; absence of a notice is not proof of no change.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://eos.org/features/the-looming-data-loss-that-threatens-public-safety-and-prosperity",
+   "fetched_url": null,
+   "title": "The Looming Data Loss That Threatens Public Safety and Prosperity",
+   "author_org": "Karl, T. R., S. C. Diggs, F. Nutter, K. Reed, T. Thompson (Eos/AGU)",
+   "published": "2026-01-09",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/a1f37ce68f5dc738.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Also fetched by sa4 (cached copy); 137 differs from the 159 files in daily01/2026 and about 150 commissioned rows in stations.tsv.",
+   "found_by": [
+    "sa3",
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://mronline.org/2026/07/11/no-place-for-science-with-trumps-mad-growth-obsession/",
+   "fetched_url": null,
+   "title": "No place for science, with Trump’s mad growth obsession",
+   "author_org": "MR Online (commentary; author NOT PRESENT in converted text)",
+   "published": "2026-07-11",
+   "data_period": null,
+   "source_type": "commentary",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/58e075aa4d50f314.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Opinion piece, restates budget-request threat already known; no access or data change for USCRN.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: OAR"
+  },
+  {
+   "id": "s16",
+   "url": "https://www.eenews.net/articles/all-the-climate-info-that-disappeared-under-trump-and-how-its-being-saved/",
+   "fetched_url": null,
+   "title": "All the climate info that disappeared under Trump. And how it's being saved.",
+   "author_org": "Chelsea Harvey, E&E News by POLITICO",
+   "published": "2026-01-07",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/eenews_all_climate_info_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extract, not raw page; USCRN NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://www.eenews.net/articles/heres-where-the-trump-team-is-scrubbing-climate-data/",
+   "fetched_url": null,
+   "title": "Here's where the Trump team is scrubbing climate data",
+   "author_org": "Robin Bravender, E&E News by POLITICO",
+   "published": "2025-08-07",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/eenews_scrubbing_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extract, not raw page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2025-12/SOS_FY2025_Executive_Summary.pdf",
+   "fetched_url": null,
+   "title": "SOS FY2025 Executive Summary",
+   "author_org": "NOAA NCEI",
+   "published": "2025-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/a7fa7d277a4d6a8e.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Negative result only; content of the report not otherwise extracted.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://web.archive.org/web/20251014234200/https://www.ncei.noaa.gov/",
+   "fetched_url": null,
+   "title": "NCEI home page (Wayback 2025-10-14)",
+   "author_org": "NOAA NCEI (Internet Archive capture)",
+   "published": "captured 2025-10-14",
+   "data_period": null,
+   "source_type": "archive",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/077113c095aec349.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Banner refers to the website, not data feeds; does not name USCRN.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes",
+   "fetched_url": null,
+   "title": "Notice of Changes | NESDIS (current, 2026 items)",
+   "author_org": "NOAA NESDIS",
+   "published": "live, latest item 2026-11-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/65eba0d8e689785e.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only first page of the listing; a 2026 year page returned HTTP 404; earlier 2026 notices (e.g., ISD July 31, 2026, Storm Events Aug 25, 2026 per search snippets) are not on this page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://web.archive.org/cdx/search/cdx?url=www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2025/&matchType=prefix&from=20250901&to=20251130&output=json&fl=timestamp,original,statuscode,length&limit=200",
+   "fetched_url": null,
+   "title": "Wayback CDX: daily01/2025/ prefix captures Sep-Nov 2025",
+   "author_org": "Internet Archive",
+   "published": "queried 2026-11-26",
+   "data_period": null,
+   "source_type": "archive",
+   "evidence_id": "sa3-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/26aeb90a50a8d1ff.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Absence of captures, not evidence of an outage.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/DATASET-STATUS.txt",
+   "fetched_url": null,
+   "title": "Status and Version Information for U.S. Climate Reference Network Data (Dataset Change Log)",
+   "author_org": "NOAA NCEI",
+   "published": "live file, retrieved 2026-11-26 (latest entry 2017)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/dc2cce5063a80e71.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "A log that is not kept current would also show no recent entries.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/updates/2025/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/updates/2025/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/d849ab19eaa1f3f5.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Modification times are as now listed; files could have been rewritten later, but the per-day pattern (00:43-00:45, two-day lag) matches normal operation. Row continuity inferred from consecutive line numbers in the listing.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/updates/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/updates/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/f51dbc3ebf39f608.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Folder date only; 2026/ contents not listed.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/updates/2026/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/updates/2026/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e25",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/145afef893b6ef2d.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Gap check by row count (329 rows = 329 days), not by reading each row.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2023/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/2023/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/551581cab35694bf.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Rewrites may be routine QC reprocessing; whether values changed is NOT PRESENT (listing gives dates and sizes only).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration",
+   "fetched_url": null,
+   "title": "Cloud Migration Offers Bright Future for NOAA’s Data",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-03)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ca6844f9cc2b8913.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Internal inconsistency (Spring 2027 vs 10-month process); no USCRN-specific schedule (NOT PRESENT).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/snapshots/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/products/daily01/snapshots/",
+   "author_org": "NOAA NCEI",
+   "published": "live listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/e96252f5605bf3db.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Weekly completeness inferred from 98 consecutive rows (Jan 6, 2025 - Nov 16, 2026 is 98 Mondays); zip contents not opened.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt652/html/CRPT-119hrpt652.htm",
+   "fetched_url": null,
+   "title": "House Report 119-652 - Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2027",
+   "author_org": "House Committee on Appropriations",
+   "published": "2026-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/e3a97e9e2f5b5338.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Committee report, not enacted. No mention of Air Resources Laboratory, ATDD, USCRN, Climate Reference Network or soil moisture sensors (find_text searched).",
+   "found_by": [
+    "sa1",
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "context: OAR"
+  },
+  {
+   "id": "s30",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/cjs_explanatory_stmt.pdf",
+   "fetched_url": null,
+   "title": "Explanatory Statement for Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2027 (Senate committee draft)",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/8238562af6a0dafd.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Draft committee statement released by the majority; not marked up/enacted as of the AIP article (Nov 13 2026). Soil moisture mentions in the statement (lines 3940, 3994) concern Missouri River Basin soil moisture and snowpack monitoring and other observations, not the ARL network (not read in full).",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: OAR",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://www.aip.org/fyi/senate-science-funding-proposals-revealed",
+   "fetched_url": null,
+   "title": "Senate Science Funding Proposals Revealed",
+   "author_org": "AIP FYI",
+   "published": "2026-11-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/9718c3b1319e0d6a.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Paywalled teaser text in parts (truncated with ellipses in saved copy). Dated Nov 13, 2026.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NOAA-wide"
+  },
+  {
+   "id": "s32",
+   "url": "https://www.everycrsreport.com/files/2026-07-28_IF13275_f48bb12a25db1d3445b31a62ef4a7b6069697bf3.html",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA) FY2027 Budget Request and Appropriations (IF13275)",
+   "author_org": "Congressional Research Service",
+   "published": "2026-07-28",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/94b68fa4cb0b01b5.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Predates the Senate draft (Nov 12 2026). Does not name ARL or USCRN. Staffing figures are context: NOAA-wide.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://www.everycrsreport.com/files/2026-03-12_IF13024_eb7ce330a93e719e4ae88b7880d3a76d47b0721b.html",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA) FY2026 Budget Request and Appropriations (IF13024, Mar 12 2026 version)",
+   "author_org": "Congressional Research Service",
+   "published": "2026-03-12",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/65cbfb847ccb7bde.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "The 'spending plan ... unclear if NOAA has submitted' line quoted by the search tool may come from another version of IF13024 (e.g., Sept 2025 or PDF); not verified.",
+   "found_by": [
+    "sa1",
+    "checker"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates, Fiscal Year 2027, Congressional Justification",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/d64ddfa6371f8c0b.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2027 Base for Climate Labs is $104,964K (differs from enacted $104,102K). The CJ's Exhibit 14 lists positions by title only, not by lab. commerce.gov copy refused (HTTP 403); noaa.gov copy read.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-01-08/html/CREC-2026-01-08-pt1-PgH255.htm",
+   "fetched_url": null,
+   "title": "Explanatory Statement submitted by Mr. Cole regarding H.R. 6938 (CJS; Energy and Water; Interior Appropriations Act, 2026), Congressional Record Jan 8 2026, H255",
+   "author_org": "House Committee on Appropriations (Congressional Record)",
+   "published": "2026-01-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/crec_2026-01-08_H255.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "URL given is the expected govinfo address for page H255 (copied file from earlier run; earlier run's record holds the exact URL). Air Resources Laboratory: NOT PRESENT in OAR section.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://www.everycrsreport.com/files/2026-09-17_R49353_98ddd8e7b1852b47b24e394ed7ddf6d6d53b4632.html",
+   "fetched_url": null,
+   "title": "Overview of Continuing Appropriations for FY2027 (Division A of P.L. 119-103) (R49353)",
+   "author_org": "Congressional Research Service",
+   "published": "2026-09-17",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/c0ab1ee832e6ae55.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "CRS summary, not the law text itself. OAR/ARL: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.commerce.senate.gov/press/rep/release/on-behalf-of-texas-ag-sen-cruz-secures-extension-of-drought-warning-sensors-2024-2/",
+   "fetched_url": null,
+   "title": "On Behalf of Texas Ag, Sen. Cruz Secures Extension of Drought Warning Sensors",
+   "author_org": "U.S. Senate Committee on Commerce, Science, & Transportation (Republican/ranking member office)",
+   "published": "2024-02-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/1b0d2fa4c9352195.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Predates the 2025-2026 scope window (Feb 2024). Does not name USCRN or ARL explicitly, but 113 sensors matches the USCRN soil moisture station count. Newer status (2025-2026) not given here.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s38",
+   "url": "https://boulderreportinglab.org/2026/04/02/half-of-staff-at-boulders-noaa-global-monitoring-lab-face-furloughs-as-funding-freeze-drags-on/",
+   "fetched_url": null,
+   "title": "Half of staff at Boulder's NOAA Global Monitoring Lab face furloughs as funding freeze drags on",
+   "author_org": "Boulder Reporting Lab (Brooke Stephenson)",
+   "published": "2026-04-02",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/06879b5705a3349f.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "About GML/CIRES, not ARL. Relevant to USCRN only indirectly (Part 3 found the USCRN field team moved to an unnamed Cooperative Institute in mid-2025); no source here ties the pause to that CI.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://blog.ucs.org/carlos-martinez/the-trump-administration-threatens-noaa-again-as-extreme-weather-looms/",
+   "fetched_url": null,
+   "title": "The Trump Administration Threatens NOAA—Again—as Extreme Weather Looms",
+   "author_org": "Union of Concerned Scientists (Carlos Javier Martinez)",
+   "published": "2026 (date not shown in saved copy; mentions April heatwave and May 15 furlough date, so about May 2026)",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/00ec6fd33f4bd414.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Advocacy source; exact date not captured. ARL/ATDD/USCRN: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://www.everycrsreport.com/files/2025-09-05_IF13024_2e4139fcbbcdb23dc27b289f212279349c31f62e.html",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration (NOAA) FY2026 Budget Request and Appropriations (IF13024, Sept 5 2025 version)",
+   "author_org": "Congressional Research Service",
+   "published": "2025-09-05",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/f2452646842e0cd2.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "FY2025, not FY2026. Corrects the WebSearch summary that implied FY2026.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/cjsfy2027.pdf",
+   "fetched_url": null,
+   "title": "Commerce, Justice, Science, and Related Agencies Appropriations Act, 2027 (Senate committee print, bill text)",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/f4688c1608c201f1.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Committee draft, not enacted. Line numbers in quote come from the printed bill and are omitted.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://www.aip.org/fyi/democrats-accuse-administration-of-cutting-spending-at-nasa-and-noaa",
+   "fetched_url": null,
+   "title": "Democrats Accuse Administration of Cutting Spending at NASA and NOAA",
+   "author_org": "AIP FYI",
+   "published": "2025-10-03",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/2ed503e16d3aa75a.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "About the FY2025 spend plan, not FY2026. Does not name ARL.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s43",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy27_cjs_bill_summary.pdf",
+   "fetched_url": null,
+   "title": "FY27 CJS bill summary (Senate Appropriations Committee)",
+   "author_org": "Senate Committee on Appropriations",
+   "published": "2026-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/05a2254696577596.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Summary only; date assumed from the Nov 12 2026 release of the five bills.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://www.appropriations.senate.gov/news/majority/senate-appropriations-committee-releases-five-fy-2027-funding-bills",
+   "fetched_url": null,
+   "title": "Senate Appropriations Committee Releases Five FY 2027 Funding Bills",
+   "author_org": "Senate Committee on Appropriations (majority)",
+   "published": "2026-11-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/7d90d8ee1bde045d.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Release only; does not describe content or committee approval.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s45",
+   "url": "https://thebridge.agu.org/2026/05/26/fy2027-appropriations-update-nasa-noaa-and-nsf/",
+   "fetched_url": null,
+   "title": "FY2027 Appropriations Update: NASA, NOAA and NSF",
+   "author_org": "AGU The Bridge (science policy blog)",
+   "published": "2026-05-26",
+   "data_period": null,
+   "source_type": "analysis",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/9f1c3f1b6faca55a.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Secondary summary; $620M OAR total appears to include PAC (House report ORF table is $580,163K). AGU wording program cuts differs from the House report text (closures, consolidations, or eliminations). ARL/USCRN: NOT PRESENT.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "context: NOAA-wide"
+  },
+  {
+   "id": "s46",
+   "url": "https://insideclimatenews.org/news/29042026/noaa-defends-trump-cuts/",
+   "fetched_url": null,
+   "title": "NOAA Defends Cuts to Research and Climate Monitoring at Budget Hearing",
+   "author_org": "Inside Climate News (Gabriel Matias Castilho)",
+   "published": "2026-04-29",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/icn_2026-04-29_fetch_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction (curl refused 403), not raw text; quotes as returned by the extraction. Release date April 16 from extraction only.",
+   "found_by": [
+    "sa1",
+    "sa4"
+   ]
+  },
+  {
+   "id": "s47",
+   "url": "https://www.gao.gov/assets/900/890468.pdf",
+   "fetched_url": null,
+   "title": "GAO 2026 Appropriations Law Forum (materials incl. Recent Decisions on the Impoundment Control Act)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gao_890468.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "curl refused (403); PDF bytes obtained via WebFetch and converted with pdftotext. Covers decisions through about April 2026 per search snippet; later decisions (Sept-Oct 2026: B-338788, B-337872, B-337485, B-337813) concern other agencies per gao.gov search results.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s48",
+   "url": "https://web.archive.org/web/20251206192457/https://oakridgetoday.com/tag/atdd/",
+   "fetched_url": null,
+   "title": "ATDD Archives - Oak Ridge Today (Wayback 2025-12-06)",
+   "author_org": "Oak Ridge Today (John Huotari)",
+   "published": "2017-2019 articles; snapshot 2025-12-06",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/oakridgetoday_tag_atdd_wayback_20251206.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2017 news (FY2018 cycle), outside the 2024-2026 window; absence of 2025 items is from one tag page snapshot. Names ATDD/ARL/CRN directly.",
+   "found_by": [
+    "sa4",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s49",
+   "url": "https://oakridgetoday.com/tag/climate-reference-network/",
+   "fetched_url": null,
+   "title": "climate reference network tag - Oak Ridge Today",
+   "author_org": "Oak Ridge Today",
+   "published": "articles 2017-2019; page live 2026-11-26",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch (oakridgetoday.com refused by sandbox proxy for script fetch); no local text copy; first paragraphs paraphrased by the fetch tool.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s50",
+   "url": "https://www.eastidahonews.com/?p=733157",
+   "fetched_url": null,
+   "title": "Is DOGE terminating three Idaho Falls government office leases? It's unclear",
+   "author_org": "East Idaho News (Kaitlyn Hart)",
+   "published": "2025-03-06",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names only NOAA; ARL tie (1750 Foote Drive = ARL Field Research Division) is not stated on the page. Read via WebFetch; eastidahonews.com not fetched by script.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s51",
+   "url": "https://neguse.house.gov/sites/evo-subsites/neguse.house.gov/files/evo-media-document/7.925_fy26-pbr-noaa_approps.pdf",
+   "fetched_url": null,
+   "title": "Letter to House CJS Appropriations Chairman Rogers and Ranking Member Meng on FY26 NOAA budget",
+   "author_org": "Rep. Joe Neguse and colleagues (Amo, Watson Coleman, Elfreth, Smith, Menendez, others)",
+   "published": "2025-07-08",
+   "data_period": null,
+   "source_type": "official (congressional letter)",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/neguse_fy26_noaa_approps_letter.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Names ARL directly. Signature page read only partially (first signatories); '216 employees' is the letter's reading of the CJ, not checked here against the CJ FTE table.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s52",
+   "url": "https://www.noaa.gov/sites/default/files/2025-06/NOAA%20FY26%20Congressional%20Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2026, Congressional Submission",
+   "author_org": "NOAA",
+   "published": "2025-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "A request, not an enacted action; already known per brief. Used here as the official check for news claim 'NOAA will close the Oak Ridge lab'.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s53",
+   "url": "https://www.cantwell.senate.gov/imo/media/doc/07092025_oar_program_examples_--_cuts.pdf",
+   "fetched_url": null,
+   "title": "OAR program examples -- cuts (Senate Commerce Democrats)",
+   "author_org": "Sen. Maria Cantwell (Senate Commerce Committee minority)",
+   "published": "2025-07-09",
+   "data_period": null,
+   "source_type": "official (congressional minority document)",
+   "evidence_id": "sa4-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cantwell_oar_cuts.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Partisan summary repeating the CJ; names ARL directly.",
+   "found_by": [
+    "sa4",
+    "sa2"
+   ]
+  },
+  {
+   "id": "s54",
+   "url": "https://www.eurekalert.org/news-releases/1080955",
+   "fetched_url": null,
+   "title": "Stand up for NOAA research — the time to act is now",
+   "author_org": "American Meteorological Society with National Weather Association",
+   "published": "2025-04-17",
+   "data_period": null,
+   "source_type": "advocacy statement",
+   "evidence_id": "sa4-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Fetch tool truncated quotes at 125 chars; eurekalert.org refused by sandbox proxy, no local copy. Names USCRN directly, ARL NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s55",
+   "url": "https://www.eenews.net/articles/house-panel-protects-noaa-labs-research-from-trump-cuts/",
+   "fetched_url": null,
+   "title": "House panel protects NOAA labs, research from Trump cuts",
+   "author_org": "E&E News by POLITICO (Daniel Cusick)",
+   "published": "2025-09-11",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names only NOAA/OAR. Read via WebFetch; may be partially paywalled.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://www.labdesignnews.com/content/proposed-noaa-lab-closures-raise-critical-questions",
+   "fetched_url": null,
+   "title": "Proposed NOAA Lab Closures Raise Critical Questions about Research Facilities",
+   "author_org": "Lab Design News",
+   "published": "2025 (date NOT PRESENT in fetch)",
+   "data_period": null,
+   "source_type": "news (trade)",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/labdesignnews-com-content-proposed-noaa-lab-closures-raise-c_202249.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Body not readable by fetch; '12,000 positions' (search snippet) conflicts with the Neguse letter's reading of the CJ ('decrease in 216 employees') and with NOAA's total staff size; treat as unverified.",
+   "found_by": [
+    "sa4",
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s57",
+   "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-statement-on-trump-administrations-proposed-cuts-at-noaa",
+   "fetched_url": null,
+   "title": "Van Hollen Statement on Trump Administration's Proposed Cuts At NOAA",
+   "author_org": "Sen. Chris Van Hollen",
+   "published": "2025-04-11",
+   "data_period": null,
+   "source_type": "official (member statement)",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names NOAA only. Other Van Hollen releases (layoffs; letter to Lutnick on firings and lease terminations) seen in search results only, unread.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://insideclimatenews.org/news/06042026/trump-budget-proposes-epa-noaa-fema-cuts/",
+   "fetched_url": null,
+   "title": "Trump's Budget Proposes Massive Cuts for Climate and Environmental Programs",
+   "author_org": "Inside Climate News (Dylan Baddour)",
+   "published": "2026-04-06",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names NOAA only; quote as rendered by fetch tool.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://www.govinfo.gov/content/pkg/CRPT-119hrpt272/html/CRPT-119hrpt272.htm",
+   "fetched_url": null,
+   "title": "House Report 119-272, Commerce, Justice, Science, and Related Agencies Appropriations Bill, 2026",
+   "author_org": "House Appropriations Committee",
+   "published": "2025-09",
+   "data_period": null,
+   "source_type": "official (committee report)",
+   "evidence_id": "sa4-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/hrpt119-272.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Report language, not statute; E&E describes a Wasserman Schultz amendment 'prohibiting' closures, whereas the report text reads 'directs ... to avoid'. URL is the govinfo address pattern for the report (copy from earlier run).",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "context: OAR"
+  },
+  {
+   "id": "s60",
+   "url": "https://www.yahoo.com/news/articles/map-shows-trump-proposed-noaa-100139168.html",
+   "fetched_url": null,
+   "title": "Map shows how Trump's proposed NOAA budget cuts could affect Tennessee",
+   "author_org": "Tennessee Lookout (Cassandra Stephenson), via Yahoo News",
+   "published": "2025-09-30",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names USCRN directly but not ARL/ATDD; quotes as rendered by WebFetch; original outlet byline per fetch tool. Also reports House/Senate bills avoid lab closures (citing Inside Climate News, September).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s61",
+   "url": "https://www.aip.org/fyi/lawmakers-warn-proposed-noaa-budget-cuts-would-gut-research-undermine-forecasting",
+   "fetched_url": null,
+   "title": "Lawmakers Warn Proposed NOAA Budget Cuts Would Gut Research, Undermine Forecasting",
+   "author_org": "AIP FYI",
+   "published": "2026-04-29",
+   "data_period": null,
+   "source_type": "news (science policy trade)",
+   "evidence_id": "sa4-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/65f2d2190d786f3b.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Names NOAA/OAR only; context: NOAA-wide.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://insideclimatenews.org/news/13092025/congress-advances-bills-to-save-noaa/",
+   "fetched_url": null,
+   "title": "Can Bipartisan Support in Congress Save NOAA From White House Cuts?",
+   "author_org": "Inside Climate News (Marianne Lavelle)",
+   "published": "2025-09-13",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Fetch tool rendered figures as a list; exact sentence wording not captured. Names NOAA/OAR only; context: NOAA-wide. Lab-closure directive confirmed by House Report 119-272 (sa4-e14).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://wassermanschultz.house.gov/UploadedFiles/FILE_8593.pdf",
+   "fetched_url": null,
+   "title": "Amendment #2 REVISED to FY26 CJS Appropriations Bill (Wasserman Schultz, Alford, Frankel, Diaz-Balart)",
+   "author_org": "Rep. Debbie Wasserman Schultz (with Reps. Alford, Frankel, Diaz-Balart)",
+   "published": "2025-09-10 (markup; date NOT PRESENT on document)",
+   "data_period": null,
+   "source_type": "official (amendment text)",
+   "evidence_id": "sa4-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/wasserman_schultz_noaa_labs_amendment.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Contradicts only the word \"prohibiting\" in news coverage; the language appears verbatim in House Report 119-272 (sa4-e14). Date of markup from E&E/ICN, not from the PDF.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://localnews8.com/?p=1505225",
+   "fetched_url": null,
+   "title": "DOGE cuts could pull the plug on several Eastern Idaho federal office leases",
+   "author_org": "LocalNews8.com / KIFI (Seth Ratliff)",
+   "published": "2025-03-04",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names NOAA only; 1750 Foote Drive is ARL Idaho Falls per an older NOAA directory seen only in search snippets. Outcome of lease NOT PRESENT; a Crexi listing (search snippet, undated) says the building is currently leased to NOAA through GSA.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s65",
+   "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-presses-lutnick-for-answers-on-commerce-noaa-illegal-firings-and-possible-lease-terminations",
+   "fetched_url": null,
+   "title": "Van Hollen Presses Lutnick for Answers on Commerce, NOAA Illegal Firings & Possible Lease Terminations",
+   "author_org": "Sen. Chris Van Hollen",
+   "published": "2025-03-10",
+   "data_period": null,
+   "source_type": "official (member letter/press release)",
+   "evidence_id": "sa4-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names NOAA only; context: NOAA-wide. Read via WebFetch, no local copy.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s66",
+   "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/uscrn-at-blue-hill-observatory/",
+   "fetched_url": null,
+   "title": "USCRN at Blue Hill Observatory (Wayback 2025-12-05)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "2024-09-26",
+   "data_period": null,
+   "source_type": "official (agency news story)",
+   "evidence_id": "sa4-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/5010e461706f7c3f.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Agency story, not press; live page 403 to script and WebFetch, read from Wayback snapshot 20251205090422. Names USCRN/ARL directly. Whether the RI decommissioning happened is NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s67",
+   "url": "https://www.dailyclimate.org/trumps-push-to-privatize-nasa-and-noaa-climate-research-sparks-backlash-from-maryland-lawmakers-2671781456.html",
+   "fetched_url": null,
+   "title": "Push to privatize NASA and NOAA climate research sparks backlash from Maryland lawmakers",
+   "author_org": "Inside Climate News (Marianne Lavelle), reposted by EHN/Daily Climate",
+   "published": "2025-04-16",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Names NOAA only; Hoyer statement paraphrased by fetch tool; Van Hollen quote truncated by tool.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s68",
+   "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/upgrading-arls-largest-meteorological-network/",
+   "fetched_url": null,
+   "title": "The marathon effort to upgrade ARL's largest meteorological network",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "2026-07-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/arl-noaa-gov-news-pubs-arl-news-stories-upgrading-arls-large_202149.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not name the crew's employer.",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s69",
+   "url": "https://tennesseelookout.com/2025/09/30/map-shows-how-trumps-proposed-noaa-budget-cuts-could-affect-tennessee/",
+   "fetched_url": null,
+   "title": "Map shows how Trump's proposed NOAA budget cuts could affect Tennessee",
+   "author_org": "Tennessee Lookout (Cassandra Stephenson)",
+   "published": "2025-09-30",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/tennesseelookout-com-2025-09-30-map-shows-how-trumps-propose_202211.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Based on an EDF map of NOAA sites.",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "context: NOAA-wide",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s70",
+   "url": "https://www.arl.noaa.gov/about/staff-directory-2/",
+   "fetched_url": null,
+   "title": "Air Resources Laboratory Staff Directory (live, Nov 2026)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "undated (read 2026-11-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/arl_staff_directory_2026-11-26.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Page undated; saved by the coordinator from the built-in browser in the Part 3 run (direct fetch HTTP 403 again today for sa2). No date of the reorganization, no named cooperative institute, no announcement. The SORD name is given here as 'Special Research and Operations Division', while the Oct 2025 snapshot says 'Special Operations & Research Division'.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s71",
+   "url": "https://web.archive.org/web/20251001031801/https://www.arl.noaa.gov/about/staff-directory/",
+   "fetched_url": null,
+   "title": "Staff Directory - Air Resources Laboratory (Wayback, 2025-10-01)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "captured 2025-10-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/arl_staffdir_wb20251001031801.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Archive snapshot; dates the SORD merger as after 2025-10-01 only (Part 3 narrowed it to after 2026-09-13 with a later capture not copied here).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s72",
+   "url": "https://web.archive.org/web/20241213/https://www.arl.noaa.gov/about/staff-directory/",
+   "fetched_url": null,
+   "title": "Staff Directory - Air Resources Laboratory (Wayback, 2024-12-13)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "captured 2024-12-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/arl_staffdir_wb20241213.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Archive snapshot; baseline only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s73",
+   "url": "https://www.arl.noaa.gov/wp_arl/wp-content/uploads/2025/08/2025-Boundary-Matters.pdf",
+   "fetched_url": null,
+   "title": "Boundary Matters: Linking Earth and Sky, Summer 2025 (ARL newsletter)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "Summer 2025 (file path 2025/08)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/4fac1508fbb0f3b2.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Read via Wayback id_ copy captured 2025-11-15 (arl.noaa.gov direct gave HTTP 403). Staff departures, ORAU contract end, Cooperative Institute, SORD: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s74",
+   "url": "https://orau.org/news/releases/2026/orau-story-2025-spotlights-oraus-successes-during-a-year-of-challenges-and-change.html",
+   "fetched_url": null,
+   "title": "ORAU Story, 2025, spotlights ORAU's successes during a year of challenges and change",
+   "author_org": "ORAU",
+   "published": "2026-03-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/0e128b352b607d36.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "NOAA, ATDD, USCRN, the end of the ATDD staffing arrangement: NOT PRESENT on this page. The linked full ORAU Story 2025 PDF was not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s75",
+   "url": "https://www.longmontleader.com/local-news/noaa-proposes-large-budget-and-employee-cuts-in-2026-with-significant-impacts-to-boulder-laboratories-10887727",
+   "fetched_url": null,
+   "title": "NOAA proposes large budget and employee cuts in 2026 with significant impacts to Boulder laboratories",
+   "author_org": "Longmont Leader (Steven Middendorp)",
+   "published": "2025-07-01",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Host refused scripted download (non-.org, not approved); read via WebFetch extract, no local copy. ARL, Oak Ridge, Idaho Falls, ATDD figures: NOT PRESENT. Proposed cuts, not realized losses. Figures appear to come from the NOAA FY26 Congressional Justification (linked).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s76",
+   "url": "https://www.wunc.org/2025-02-06/federal-buyouts-affect-ashevilles-noaa-office-and-the-future-of-climate-data",
+   "fetched_url": null,
+   "title": "Federal buyouts affect Asheville's NOAA office and the future of climate data",
+   "author_org": "BPR News / WUNC (Katie Myers, Helen Chickering)",
+   "published": "2025-02-06",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/fb7c914f74dc537f.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "175 is NOAA headcount in Asheville, not buyout takers. USCRN, Palecki: NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: NCEI"
+  },
+  {
+   "id": "s77",
+   "url": "https://avlwatchdog.org/top-climate-scientists-departure-is-sign-of-brain-drain-at-noaa-hub-in-asheville-and-of-deep-cuts-to-research-across-the-country/",
+   "fetched_url": null,
+   "title": "Top climate scientist's departure is sign of 'brain drain' at NOAA hub in Asheville",
+   "author_org": "Asheville Watchdog",
+   "published": "2025-08 (per earlier run)",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/avlwatchdog_brain_drain.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Count from a former employee, not official; does not name USCRN staff or Palecki (NOT PRESENT in the saved text searched). URL as recorded in the earlier run's answer (truncated there); title from saved page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s78",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending API award search: NOAA grants/coop agreements, keywords Air Resources Laboratory / ATDD / Oak Ridge, FY2025-FY2026",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "queried 2026-11-26",
+   "data_period": null,
+   "source_type": "official database",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_noaa_arl_keyword.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Keyword search covers award descriptions only; a CI award (e.g. a CI umbrella award) need not mention ATDD or USCRN. Absence is not proof none exists.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s79",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending API: NOAA assistance awards with place of performance Tennessee, FY2025-FY2026",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "queried 2026-11-26",
+   "data_period": null,
+   "source_type": "official database",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_noaa_tn_grants.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Only grant/cooperative agreement types 02-05; contracts not searched. A CI award would likely list the CI host state as place of performance.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s80",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending API: keyword Climate Reference Network, assistance awards FY2025-FY2026",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "queried 2026-11-26",
+   "data_period": null,
+   "source_type": "official database",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_crn_grants.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Description keyword search only.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s81",
+   "url": "https://www.aip.org/fyi/federal-science-workforce-declines-sharply-under-trump",
+   "fetched_url": null,
+   "title": "Federal Science Workforce Declines Sharply Under Trump",
+   "author_org": "AIP FYI (Clare Zhang)",
+   "published": "2026-02-26 (updated March 26)",
+   "data_period": null,
+   "source_type": "analysis (of OPM data)",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/950a5aafd45fe0b4.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Context: NOAA-wide. No OAR, ARL, ATDD or NCEI breakdown (NOT PRESENT). OPM data cover federal employees only, not ORAU or cooperative-institute staff such as the USCRN field team.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s82",
+   "url": "https://www.gao.gov/assets/gao-26-108583.pdf",
+   "fetched_url": null,
+   "title": "Federal Agency Workforce Changes: Update for July 2025 to January 2026 (GAO-26-108583)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-06-17",
+   "data_period": null,
+   "source_type": "official (oversight)",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gao-26-108583.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Context: Commerce-wide, not NOAA, OAR, ARL or NCEI (NOT PRESENT). Read from the WebFetch-saved PDF (direct script download HTTP 403). Department-reported pay-status counts after Dec 2024.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s83",
+   "url": "https://www.npr.org/2025/04/09/nx-s1-5356166/noaa-contracts-reviewed-one-by-one",
+   "fetched_url": null,
+   "title": "NOAA contracts are being reviewed one by one. It's throwing the agency into chaos",
+   "author_org": "NPR",
+   "published": "2025-04-09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/b5aca6f5477dd20a.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Context: NOAA-wide. ORAU, ATDD, Climate Reference Network: NOT PRESENT. The 'early termination' of a contract for services across NOAA Research quoted in a search snippet is from a different article (Bloomberg, 2025-04-04), not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s84",
+   "url": "https://orau.org/news/resources/2025-orau-story.pdf",
+   "fetched_url": null,
+   "title": "ORAU Story, 2025 (annual report)",
+   "author_org": "ORAU",
+   "published": "2026-03 (release dated 2026-03-17)",
+   "data_period": null,
+   "source_type": "official (contractor annual report)",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/b0b1e015b266d6e4.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Three-column PDF layout; the sentence was rejoined from one column of pdftotext output. No award number, dollar value, dates or headcount. Does not say whether field staff are employed by ORAU or by CISESS/NC State; ARL directory lists them as Cooperative Institute from Oct 2025. Contradicts only the reading that the ORAU role ended mid-2025; ARL misnamed as Atmospheric Research Laboratories in the source.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s85",
+   "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+   "fetched_url": null,
+   "title": "USAspending API: NOAA assistance awards with keyword Satellite Earth System Studies, FY2020-FY2026",
+   "author_org": "USAspending.gov (Treasury)",
+   "published": "queried 2026-11-26",
+   "data_period": null,
+   "source_type": "official database",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/usaspending_cisess.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Keyword search of descriptions; the successor CISESS agreement (UMD release cites a five-year $388M agreement) did not appear and may be described differently. No award names ATDD or USCRN; the timing match with the mid-2025 affiliation change is coincidence until a source ties them.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s86",
+   "url": "https://ncics.org/cics-news/nc-state-to-receive-95-million-as-part-of-noaa-cooperative-agreement-for-earth-system-studies/",
+   "fetched_url": null,
+   "title": "NC State to Receive $95 Million as Part of NOAA Cooperative Agreement for Earth System Studies",
+   "author_org": "NC State NCICS",
+   "published": "undated on page",
+   "data_period": null,
+   "source_type": "official (cooperative institute)",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/b984fae579f0d7b7.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No date, no award number, no dollar figure in the saved text (title says $95 million; search snippet says $388 million total), ATDD, Oak Ridge, USCRN: NOT PRESENT. Likely the successor to NA19NES4320002 (ended 2025-06-30) but the page does not say so.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s87",
+   "url": "https://today.umd.edu/umd-awarded-388m-noaa-cooperative-agreement-for-earth-system-studies",
+   "fetched_url": null,
+   "title": "UMD Awarded $388M NOAA Cooperative Agreement for Earth System Studies",
+   "author_org": "University of Maryland (Maryland Today)",
+   "published": "2024-07-15 (per WebFetch extract)",
+   "data_period": null,
+   "source_type": "official (university)",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extract only (today.umd.edu not .org, no local copy); passage is the extractor output, not a verbatim page quote except figures. Date reported by the extractor as July 15, 2024, so the renewal predates the mid-2025 ATDD affiliation change; relation to USCRN field staff not stated.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s88",
+   "url": "https://www.arl.noaa.gov/?p=19606",
+   "fetched_url": null,
+   "title": "The marathon effort to upgrade ARL’s largest meteorological network",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "2026-07-23 (per search summary)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e22",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Snippet/summary only: page returns HTTP 403 to scripts and WebFetch, no Wayback snapshot (availability API empty). The five-person crew, dates and place are from the search tool paraphrase, not a verbatim quote; check in a browser. Staff employer not given in the snippet.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s89",
+   "url": "https://www.arl.noaa.gov/research/boundary-layer-characterization/blc-projects-climate-reference-network/",
+   "fetched_url": null,
+   "title": "Boundary Layer Characterization Using the Climate Reference Network – Air Resources Laboratory (Wayback 2026-08-08)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": "undated (captured 2026-08-08)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/280843251542e04d.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Wayback copy (direct arl.noaa.gov 403); page undated and may predate the SORD merger; division called Atmospheric Transport and Diffusion Division on this page. ORAU, Cooperative Institute, SORD, staff counts: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s90",
+   "url": "https://www.orau.org/environment/air-quality-climate-research.html",
+   "fetched_url": null,
+   "title": "Air Quality, Weather, & Climate Research | ORAU (live page, Nov 2026)",
+   "author_org": "ORAU",
+   "published": "undated (read 2026-11-26)",
+   "data_period": null,
+   "source_type": "official (contractor)",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/35300c8ab49b3f62.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated marketing page; may not be current. CISESS, contract dates, headcount: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s91",
+   "url": "https://ncics.org/wp-content/uploads/2023/06/CISESS%20NC%20Annual%20Report%202022%E2%80%932023.pdf",
+   "fetched_url": null,
+   "title": "CISESS NC Annual Report 2022–2023",
+   "author_org": "NC State NCICS / CISESS",
+   "published": "2023-06",
+   "data_period": null,
+   "source_type": "official (cooperative institute report)",
+   "evidence_id": "sa2-e25",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ff8d1b7a79133ca6.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2022-23 report, before the 2025 change; no award number in this passage (search snippet cites CISESS NC subaward 80848-Z7553201 under NA19NES4320002, not verified) and no headcount. Contradicts the premise that a different CI took the team from ORAU; the Oct 2025 directory relabel may reflect the new CISESS agreement rather than a new employer.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "No FY2027 CJS appropriation has been enacted as of 2026-11-26. NOAA runs on the CR in Division A of P.L. 119-103 (Oct 1 - Dec 11, 2026) at the FY2026 rate (P.L. 119-74); its only NOAA anomaly (Sec. 121) is for GeoXO, with none for OAR, ARL or the soil-moisture network. The Senate committee only released bill text on 2026-11-12.",
+   "importance": "central",
+   "confidence": "high",
+   "confidence_reason": "CRS overview of the CR law plus the Senate committee's own release; consistent with AIP.",
+   "applicability": null,
+   "figure_status": "enacted",
+   "sole_source_reason": "CRS's description of the enacted CR, with the Senate committee's own release for the bill's status",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Division A of the act—the Continuing Appropriations Act, 2027—provides continuing appropriations for FY2027 through December 11, 2026. … Section 121 authorizes NOAA to apportion funding under its Procurement, Acquisition, and Construction account at a rate necessary to",
+     "location": "Summary; CJS section; Section 121"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "11.12.26 | Senate Appropriations Committee Releases Five FY 2027 Funding Bills | Washington, D.C. – The Senate Committee on Appropriations today released the text of five additional FY 2027 funding bills: Commerce, Justice, Science, and Related Agencies; Energy and Water Development and Related Agencies; Homeland Security; Department of the Interior, Environment, and Related Agencies; and Legislative Branch.",
+     "location": "news release, lines 48-53"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "text": "FY2027 bills would keep the labs: the House report (H.Rept. 119-652) gives Climate Laboratories and Cooperative Institutes $92,500K (FY2026 enacted 103,877) and directs NOAA to avoid closures, consolidations or eliminations of labs and CIs; the Senate draft explanatory statement gives $104,602K and rejects the proposed terminations. Neither names ARL, ATDD or USCRN.",
+   "importance": "central",
+   "confidence": "high",
+   "confidence_reason": "Committee documents read as text; AGU cross-check of the House OAR total.",
+   "applicability": "Proposed, not enacted.",
+   "figure_status": [
+    "proposed",
+    "enacted"
+   ],
+   "sole_source_reason": "the committees' own reports are the authority for their recommendations",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "The recommendation includes $580,163,000 for Office of Oceanic and Atmospheric Research (OAR) Operations, Research, and Facilities. | Climate Laboratories and Cooperative Institutes..... 92,500 | Laboratories and Cooperative Institutes.--The Committee recognizes the critical mission of NOAA and the important contributions of its laboratories and cooperative institutes. The Committee directs NOAA to maintain these capabilities and to avoid closures, consolidations, or eliminations, given their essential role in advancing weather forecasting, atmospheric science, and oceanographic research.",
+     "location": "OAR section, text lines 1936-1983 of the saved copy"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "the bill cuts funding for the National Oceanic and Atmospheric Administration (NOAA)'s Climate Laboratories and Cooperative Institutes by 11 percent and cuts NOAA's Competitive Climate Research program by 23 percent. | Climate Laboratories and Cooperative 1993 103,877 .............. (92,500)",
+     "location": "minority views, text line 7889-7893; comparative/authorization table line 9831"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "The Committee’s recommendation provides $595,381,000 for the | Office of Oceanic and Atmospheric Research. … to operations. However, the Committee rejects the proposed termi- | nations and broader, undefined transfers included in the request.",
+     "location": "NOAA Oceanic and Atmospheric Research section, PDF p. 65-66 (text lines 3514-3577)"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "NOAA (Topline) | $6,170.94 | $4,540.82 | -26.4% | $5,851.12 | -5.2% | Oceanic & Atmospheric Research | $633.88 | $0 | -100% | $620.16 | -2.2% | The Committee recommends $620 million for OAR—fully restoring the laboratories, cooperative institutes, and research programs the President's budget proposed to eliminate—and directs NOAA to avoid any closures, consolidations, or program cuts.",
+     "location": "NOAA section table (columns: FY26 Final | FY27 PBR | % Change FY26 to FY27 PBR | FY27 House | % Change FY26 to FY27 House; funding in millions) and Highlights"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "Laboratories and Cooperative Institutes.--The Committee | recognizes the critical mission of NOAA and the important | contributions of its laboratories and cooperative institutes. | The Committee directs NOAA to maintain these capabilities and | to avoid closures, consolidations, or eliminations",
+     "location": "lines 1977-1981"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "text": "The FY2027 request (NOAA CJ, Apr 2026) again terminates Climate Laboratories and Cooperative Institutes (-$104,964K, -180 FTE, -211 positions) and says NOAA will close ARL in College Park, Idaho Falls and Oak Ridge 'as well as a nation-wide network of soil moisture sensors'; it gives no separate amount and does not name USCRN.",
+   "importance": "central",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own budget document, read as text.",
+   "applicability": "Request, not law.",
+   "figure_status": "request",
+   "sole_source_reason": "the agency's own budget justification is the authority for its request",
+   "evidence": [
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "(AOML) in Miami, FL; the Air Resources Laboratory (ARL) in College Park, MD, Idaho Falls, ID, and Oak Ridge, TN, as well as a | nation-wide network of soil moisture sensors",
+     "location": "OAR-10/OAR-11, Exhibit 13 Program Decrease for 2027 (text lines 15601-15627); same closure sentence repeated in Weather Labs decrease (lines 16173-16179: -$95,095K, -277 FTE, -283 positions)"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "text": "FY2026 was enacted in January 2026 (P.L. 119-74): the explanatory statement gives OAR ORF $588,881,000 with Climate Laboratories and Cooperative Institutes at $104,102K, and directs NOAA to follow the table and narrative levels; Sec. 528 requires spending plans. No public FY2026 NOAA spend plan, and no report of what it does to ARL, was found.",
+   "importance": "central",
+   "confidence": "moderate",
+   "confidence_reason": "The law and statement are read as text; the absence of a spend plan rests on searches only.",
+   "applicability": null,
+   "figure_status": "enacted",
+   "sole_source_reason": "the enacted statement is the authority for enacted levels",
+   "evidence": [
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The agreement directs the National Oceanic and Atmospheric Administration (NOAA) to incorporate the funding levels established in both the table and the narrative direction when executing its budget for fiscal year 2026. | Infrastructure Investment and Jobs Act (IIJA) Funding.--The agreement does not include a requirement for the submission of a fiscal year 2026 spend plan for funds provided under the IIJA. | Office of Oceanic and Atmospheric Research (OAR).-- $588,881,000 is for OAR Operations, Research, and Facilities. | Climate Laboratories and Cooperative Institutes.......... $104,102",
+     "location": "NOAA section, text lines 516-531 and 684-699 of the saved copy"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "contextualizes",
+     "passage": "Section 528 requires the departments and agencies funded in this act to submit spending plans.",
+     "location": "Title V general provisions, text line 2945-2946"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "text": "Context (NOAA-wide, not tied to USCRN by any source): NOAA's FY2025 spend plan was $246M below what Congress directed, affecting labs and cooperative institutes (Van Hollen-Schiff letter, Oct 2025); in FY2026 OMB paused NOAA grants, including cooperative-institute grants, from Feb 27 until April 2026, and GML's CIRES staff faced furlough.",
+   "importance": "supporting",
+   "confidence": "moderate",
+   "confidence_reason": "Press and advocacy reports of letters and grant pauses; no official NOAA document read.",
+   "applicability": "Agency-wide; whether the CI that employs the USCRN field team was paused is unknown.",
+   "evidence": [
+    {
+     "source_id": "s42",
+     "relationship": "contextualizes",
+     "passage": "The senators asked why NOAA's fiscal year 2025 spending plan, reportedly approved by OMB in August, was $246 million less than what Congress directed. Much like at NASA, these cuts put spending at NOAA roughly in line with the funding cuts President Donald Trump proposed in his fiscal year 2026 budget request for the agency. | Van Hollen and Schiff's letter suggests budget cuts at NOAA have affected research labs, competitive research grants, cooperative institutes, and fisheries management programs",
+     "location": "article paragraphs, lines 46-50 of saved copy"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "contextualizes",
+     "passage": "Their work and salaries are funded through federal grants that were paused Feb. 27, according to CIRES Director Waleed Abdalati. | The grants would likely not move forward until the Trump administration outlines how it intends to spend money Congress appropriated for NOAA. | \"Congress has appropriated the funds, the Secretary of Commerce has approved the movement of the funds. It's just that they're not being released by the Office of Management and Budget,\" he said. | In the past, U.S. agencies received permission from OMB to spend portions of their funding in 30-day increments until a final spending plan was approved. But OMB has changed that process this year, allowing it to limit the release of funds during those 30-day periods, Nature reports. | All of NOAA's cooperative institutes are funded through federal grants like the one that supports Global Monitoring Lab employees.",
+     "location": "article body paragraphs 2-12"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "contextualizes",
+     "passage": "the White House Office of Management and Budget's (OMB) have been withholding funds that Congress already appropriated, with a strategy of trickle-down disbursement of funding | Just recently, half of the employees at NOAA's Global Monitoring Lab (GML) … would have been laid off by May 15 because the OMB allowed the grant that pays them to lapse on March 24. | The OMB finally approved the disbursement of the funds, one-month post-lapse.",
+     "location": "body paragraphs, lines 15-43 of saved copy"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "contextualizes",
+     "passage": "In March 2025, Congress provided the agency a total of $6.1 billion in appropriations as part of P.L. 119-4 (Congress did not specify a direct obligations amount). The law required NOAA to submit a spending plan to the House and Senate Committees on Appropriations. NESDIS, NMFS, NOS, and OAR reportedly will spend less than what Congress approved for FY2025 (the FY2025 spending plan was not publicly available).",
+     "location": "section on FY2025 enacted funding, line 33 of saved copy"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "text": "The only documented attempt to downsize USCRN sensors predates 2025: in Nov 2023 NOAA told users it would retire 113 soil-moisture sensors (network cost about $904,000 a year) and then delayed it after Sen. Cruz's inquiry. Nothing newer than the 2025 NOAA report was found.",
+   "importance": "supporting",
+   "confidence": "moderate",
+   "confidence_reason": "A senator's release; NOAA's notice itself was not read.",
+   "applicability": null,
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "contextualizes",
+     "passage": "In November 2023, NOAA notified soil data users that it would begin in 2023 to retire 113 sensors across the country. NOAA claimed the program was being phased out due to a funding shortfall despite the network's menial cost of about $904,000 per year to maintain | It is my understanding that after my office contacted NOAA expressing concern about this decommissioning, NOAA delayed taking action through this fiscal year. However, since the decommissioning is still under consideration, I strongly encourage to commit to keeping these soil moisture sensors in service.",
+     "location": "press release body, lines 21-27 of saved copy"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "text": "daily01 has stayed current: on 2026-11-26, 157 of 159 station files for 2026 were last modified 2026-11-25; one all-station update file was written for every data day from 2026-01-01 to 2026-11-25 (329 files); update files kept being written every day of the Oct 1 - Nov 12, 2025 shutdown, about two days after each data day; weekly snapshot zips run every Monday from 2025-01-06 to 2026-11-16 with no week missing.",
+   "importance": "central",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own live directory listings read as text; shutdown-period dates are the files' own last-modified stamps.",
+   "applicability": "Last-modified dates show writing, not content checks; two stations lag (Joplin 24 N since 2026-09-25, St. Mary 1 SSW since 2026-11-10).",
+   "sole_source_reason": "the archive's own directory listings are the record of its updates",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "CRND0103-2026-AK_Aleknagik_1_NNE.txt | 2026-11-25 10:44 | 71393 | CRND0103-2026-MO_Joplin_24_N.txt | 2026-09-25 11:43 | 58156 | CRND0103-2026-MT_St._Mary_1_SSW.txt | 2026-11-10 10:49 | 61845",
+     "location": "table rows 1, 91, 97 (txt lines 7, 97, 103); 159 rows matching ^CRND0103-2026 counted with find_text.py"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "CRND0103-202509302359.txt | 2025-10-02 00:43 | 34122 | CRND0103-202510012359.txt | 2025-10-03 00:43 | 34122 | CRND0103-202510312359.txt | 2025-11-02 00:45 | 33905 | CRND0103-202511112359.txt | 2025-11-13 00:45 | 33905",
+     "location": "txt lines 279, 280, 310, 321 (contiguous daily rows 278-340); updates/ parent listing work/raw/sa3/f51dbc3ebf39f608.txt line 13"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "CRND0103-202601012359.txt | 2026-01-03 00:45 | 32820 | CRND0103-202611242359.txt | 2026-11-26 00:45 | 34122 | CRND0103-202611252359.txt | 2026-11-26 12:45 | 34122",
+     "location": "txt lines 7, 334, 335"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "CRND0103-202501060850.zip | 2025-01-06 03:50 | 39308023 | CRND0103-202510060750.zip | 2025-10-06 03:48 | 41036767 | CRND0103-202511100850.zip | 2025-11-10 03:50 | 41258525 | CRND0103-202611160850.zip | 2026-11-16 03:50 | 43567455",
+     "location": "txt lines 144, 183, 188, 241"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "2025/ | 2026-01-01 00:45 | - | 2026/ | 2026-11-26 00:45 | -",
+     "location": "txt lines 12-13"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "CRND0103-2025-AK_Aleknagik_1_NNE.txt | 2025-11-12 10:41 | 68572 | CRND0103-2025-AK_Bethel_87_WNW.txt | 2025-11-12 10:41 | 68572 | CRND0103-2025-AK_Cordova_14_ESE.txt | 2025-08-04 10:40 | 46655 | CRND0103-2025-AK_Deadhorse_3_S.txt | 2025-04-09 10:41 | 21266",
+     "location": "table rows 1-4 (txt lines 7-10)"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "text": "No USCRN station was closed in 2025-2026 according to the station list: stations.tsv's latest USCRN closing is Coshocton OH (2016). One Rhode Island station was scheduled (in a 2024 ARL story) for decommissioning in summer 2026 because of a new parking lot, with a Blue Hill MA replacement installed in Sept 2024.",
+   "importance": "supporting",
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's station file and an ARL story; whether the Rhode Island closure happened was not checked.",
+   "applicability": null,
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "WBAN\tCOUNTRY\tSTATE\tLOCATION\tVECTOR\tNAME\tLATITUDE\tLONGITUDE\tELEVATION\tSTATUS\tCOMMISSIONING\tCLOSING\tOPERATION\tPAIRING\tNETWORK\tSTATION_ID | 54851\tUS\tOH\tCoshocton\t8 NNE\tNorth Appalachian Experimental Watershed (CRN site)\t40.36\t-81.78\t1120\tCommissioned\t2007-01-26 00:00:00.0\t2016-09-19 00:00:00.0\tClosed\t\tUSCRN\t1125 | 37201\tRS\tSA\tTiksi\t4 SSE\tRoshydromet Observatory at Tiksi\t71.58\t128.91\t30\tNon-comissioned\t\t2018-11-06 00:00:00.0\tClosed\t\tUSCRN\t1789",
+     "location": "header line 1; lines 166 and 94; 150 lines matching Commissioned...Operational...USCRN"
+    },
+    {
+     "source_id": "s66",
+     "relationship": "contextualizes",
+     "passage": "USCRN technicians Mike Rutherford, Blake Randolph, Brandon McCloy and Tony Hamby from NOAA’s Air Resources Laboratory (ARL) and Oak Ridge Associated University (ORAU) spent September 15-18 installing | USCRN is a network of 141 stations across the U.S., including Alaska and Hawaii | The parking lot will affect the accuracy of the climate measurements from that site so is scheduled to be decommissioned the summer of 2026.",
+     "location": "lines 5, 7, 9"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "text": "No NCEI or NESDIS notice of 2025-2026 names USCRN: the 2025 Notice of Changes and the Aug-Nov 2026 notices list other products; NCEI's cloud-migration FAQ says no datasets will be retired but bulk data folders will move from web folders to Amazon S3, with the migration running through Spring 2027; a high-severity alert for Nov 16 - Dec 31, 2026 warns of delays and unavailable folders without naming USCRN.",
+   "importance": "central",
+   "confidence": "moderate",
+   "confidence_reason": "Official notices read as text; absence of USCRN rests on searches of those pages.",
+   "applicability": "The S3 move could change the daily01 paths' host; no date for /pub/data/uscrn was found.",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Billion Dollar Weather and Climate Disasters | The NOAA Billion Dollar Weather and Climate Disasters product will be retired, with no updates…",
+     "location": "txt lines 113-115 (page 1 of the listing; pages 2-3 in the earlier run's noc2025_p2/p3 also have no USCRN match)"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Retirement of GOES-R Rainfall Rate/Quantitative Precipitation Estimation (GRR/QPE) | September 1, 2026 | High Definition Geomagnetic Model (HDGM) and High Definition Geomagnetic Model-Real Time (HDGM-RT) Will No Longer Be Produced By NESDIS | August 25, 2026 | Cessation of Suomi National Polar-orbiting Partnership (S-NPP) data to users on/after November 2, 2026 | August 3, 2026",
+     "location": "notice list, txt lines 11-65"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "No datasets will be retired as part of the cloud migration. Please note that several NCEI datasets were retired over the last 18 months. … Links and URLs for data, websites/applications, and services on ncei.noaa.gov will remain the same. … Bulk data folders will move from web accessible folders (WAFs) to Amazon Simple Storage Service (S3).",
+     "location": "FAQ sections 'Will any datasets be retired' and 'Will the way I access data change?'"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "Data Access Delays | Mon, 11/16/2026 - 15:21 | Thu, 12/31/2026 - 17:00 | Please Note: NCEI is currently moving its data and applications to the cloud. … Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. | severity-high",
+     "location": "alerts table row 4"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "NESDIS is migrating all of its data, products, and services to the cloud through Spring 2027. Data and applications housed in servers at locations in Asheville, North Carolina and Boulder, Colorado, are being migrated (moved) in waves to the Amazon Web Services (AWS) Cloud. During the migration, data is still accessible via normal access locations and methods. … Occasional and temporary data delays may occur throughout the 10-month process",
+     "location": "txt lines 23 and 45"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "text": "Past years of daily01 are rewritten without a logged change: 146 of 159 data-year-2023 files were rewritten on 2026-05-14 and 2025 files through 2026-09-30, while the USCRN change log's newest entry is from 2017. No source ties this to political alteration.",
+   "importance": "supporting",
+   "confidence": "moderate",
+   "confidence_reason": "Directory dates read as text; the reason for the rewrites is unknown.",
+   "applicability": "Rewrites may be routine reprocessing.",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "CRND0103-2023-AK_Aleknagik_1_NNE.txt | 2026-05-14 11:41 | 79205 | CRND0103-2023-UT_Torrey_7_E.txt | 2025-06-28 10:43 | 79205 | CRND0103-2023-OK_Stillwater_5_WNW.txt | 2026-11-17 10:43 | 79205",
+     "location": "txt lines 7, 155, 130; 13 rows not dated 2026-05-14 found by regex"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Version change:     2.1 to 2.1.1 | Commencement Date:  2017-06-20 | Completion Date:    2017-06-30 | Variables impacted: Precipitation",
+     "location": "first (newest) entry, lines 5-8"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "CRND0103-2025-AK_Aleknagik_1_NNE.txt | 2026-01-01 10:56 | 79205 | CRND0103-2025-AK_Bethel_87_WNW.txt | 2026-09-30 11:45 | 79205 | CRND0103-2025-AK_Cordova_14_ESE.txt | 2026-06-13 11:45 | 79205",
+     "location": "table rows 1-3 (txt lines 7-9)"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "text": "Access held through the shutdown and outside copies exist: the USCRN portal was captured with HTTP 200 throughout Oct-Nov 2025 without a shutdown banner, while NCEI's home page said it would not be updated; the Data Rescue Project archived 52.0 GB of USCRN on 2025-03-24.",
+   "importance": "supporting",
+   "confidence": "high",
+   "confidence_reason": "Wayback captures and the rescue portal's own record.",
+   "applicability": null,
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "\"20250218045705\", \"503\" | \"20251013073337\", \"200\" | \"20251020093747\", \"200\" | \"20251104210503\", \"200\" | \"20251109173949\", \"301\"",
+     "location": "CDX rows (json lines 108-109, 313-390)"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "USCRN stations are managed and maintained by the Atmospheric Turbulence and Diffusion Division of the Air Resources Laboratory, NOAA Office of Oceanic and Atmospheric Research. The National Centers for Environmental Information maintains and distributes the USCRN observations and derived products.",
+     "location": "txt line 16"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "contextualizes",
+     "passage": "The U.S. government is closed. This site will not be updated; however, NOAA websites and social media channels necessary to protect lives and property will be maintained.",
+     "location": "alert banner (raw html line 289)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "contextualizes",
+     "passage": "Last updatedMarch 25, 2025 … Source URLwww.ncei.noaa.gov/data/us-climate-reference-network/ … CSV, TXT Archived Mar 24, 2025 by DRP, SRC … Archive size: 52.0 GB",
+     "location": "Dataset Info and Archived Resources sections"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "USCRN stations are managed and maintained by the Atmospheric Turbulence and Diffusion Division of the Air Resources Laboratory, NOAA Office of Oceanic and Atmospheric Research. The National Centers for Environmental Information maintains and distributes the USCRN observations and derived products. Please direct any USCRN-related comments or questions to the USCRN Program Manager: Howard Diamond",
+     "location": "txt line 16"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "text": "Field work continued in 2025-2026: ARL reports a crew of five technicians and engineers replaced GOES transmitters at 139 USCRN towers in 45 states, the last on 2026-04-25 (94 old transmitters remained in Jan 2025).",
+   "importance": "central",
+   "confidence": "high",
+   "confidence_reason": "ARL's own news story, read in the browser.",
+   "applicability": "Does not name the crew's employer.",
+   "sole_source_reason": "ARL's own account of its own field work",
+   "evidence": [
+    {
+     "source_id": "s68",
+     "relationship": "supports",
+     "passage": "In January 2025 there were still 94 old transmitters in the field. Over the last year and a half, a crew of five technicians and engineers traveled the country to complete the replacements. After a marathon effort the final transmitter was installed in Newton, Mississippi on April 25, 2026.",
+     "location": "body"
+    },
+    {
+     "source_id": "s68",
+     "relationship": "contradicts",
+     "passage": "This project required replacing transmitters at 139 towers across 45 states, most located in highly remote areas of the contiguous U.S., Hawaii and Alaska.",
+     "location": "body"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "text": "News that names USCRN directly is rare: Tennessee Lookout (2025-09-30, the Crossville station), the AMS/NWA statement (2025-04-17), an Eos feature by Karl et al. (2026-01-09, '137' stations, funding and staffing being cut) and an MR Online commentary (2026-07-11). Lab Design News (2025-07-10) names ARL's three sites; most coverage (E&E News, Inside Climate News, AIP, Van Hollen, East Idaho News, KIFI) names only NOAA or OAR. No news item names Diamond, Kochendorfer, Palecki, French, Leeper or Stein.",
+   "importance": "central",
+   "confidence": "moderate",
+   "confidence_reason": "Several outlets read; local papers knoxnews.com and oakridger.com could not be searched.",
+   "applicability": "2024-Nov 2026.",
+   "evidence": [
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "A NOAA research location in Crossville is one of more than 138 stations nationwide that feeds climate monitoring data to the U.S. Climate Reference Network.",
+     "location": "body"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "contextualizes",
+     "passage": "A cut of this magnitude would eliminate the Office of Oceanic and Atmospheric Research (OAR), the agency’s research arm. OAR’s 10 research laboratories and 16 affiliated Cooperative Institutes would close … It includes an El Niño information system, and the U.S. Climate Reference Network of long-term climate monitoring stations.",
+     "location": "section 'Agencies Starved to Sabotage Science', paragraphs 2-3"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "Air Resources Laboratory (ARL) in College Park, MD, Idaho Falls, ID, and Oak Ridge, TN, as well as a nationwide network of soil moisture sensors",
+     "location": "body (page shows 'Jul 10' with no year; context is the FY2026 request, so 2025)"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "text": "Checks of news claims: E&E News's House 'prohibiting' lab closures was report language that 'directs NOAA ... to avoid closures' (repeated in the FY2027 House report); the Neguse letter's '216 employees' matches the FY2026 CJ's -216 positions; Lab Design News's '12,000 positions' is contradicted by the CJ's NOAA-wide change of -2,327 positions (about 12,000 is NOAA's total staff).",
+   "importance": "central",
+   "confidence": "high",
+   "confidence_reason": "Each check against the CJ or the House report, read as text.",
+   "applicability": null,
+   "evidence": [
+    {
+     "source_id": "s63",
+     "relationship": "contradicts",
+     "passage": "In the Report: At the appropriate place insert the following: | The Committee directs NOAA to maintain | these capabilities and to avoid closures, consolidations, or eliminations",
+     "location": "lines 1-18"
+    },
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "The Committee directs NOAA to maintain these | capabilities and to avoid closures, consolidations, or | eliminations, given their essential role in advancing weather | forecasting, climate science, and oceanographic research.",
+     "location": "lines 1670-1676"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "Laboratories and Cooperative Institutes.--The Committee | recognizes the critical mission of NOAA and the important | contributions of its laboratories and cooperative institutes. | The Committee directs NOAA to maintain these capabilities and | to avoid closures, consolidations, or eliminations",
+     "location": "lines 1977-1981"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "contradicts",
+     "passage": "Termination of OAR’s Climate Laboratories and Cooperative Institutes (-$102,292, -204 FTE/ -216 Positions)",
+     "location": "lines 5801, 1457"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "In coordination with the requested terminations for Climate Laboratories and Cooperative Institutes (see OAR-5) and Ocean | Laboratories and Cooperative Institutes (see OAR-19), NOAA will close the Atlantic Oceanographic & Meteorological Laboratory | (AOML) in Miami, FL; the Air Resources Laboratory (ARL) in College Park, MD, Idaho Falls, ID, and Oak Ridge, TN, as well as a | nation-wide network of soil moisture sensors",
+     "location": "lines 5950-5953 (also 5804-5807 under Weather Labs)"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "text": "ARL reorganized ATDD between 2025-10-01 and 2026-11-26: the live directory lists a 'SORD-Atmospheric Turbulence and Diffusion (SORD-ATD) office' in Oak Ridge inside the Special Research and Operations Division (director Walter Schalk), with Kochendorfer as Division Deputy; on 2025-10-01 ATDD was still its own division with Kochendorfer as Division Director. No announcement or date was found.",
+   "importance": "central",
+   "confidence": "moderate",
+   "confidence_reason": "ARL's own directory, live and in Wayback snapshots; no announcement.",
+   "applicability": null,
+   "sole_source_reason": "ARL's own staff directory is the record of its organization",
+   "evidence": [
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "Atmospheric Sciences Modeling Division (ASMD), College Park, MD | Division Director: Dr. Howard Diamond … Special Research and Operations Division (SORD) | Division Director: Walter Schalk | SORD-Atmospheric Turbulence and Diffusion (SORD-ATD) office, Oak Ridge, TN | Division Deputy: Dr. John Kochendorfer … French, Brent\tBrent.French@NOAA.gov\tCooperative Institute … Kochendorfer, John (Division Deputy)\tJohn.Kochendorfer@NOAA.gov\tFederal … SORD-Idaho (SORD-ID) office, Idaho Falls, ID | Division Deputy: Matthew Brewer | SORD-Nevada (SORD-NV) office, Las Vegas, NV | Division Director: Walter Schalk",
+     "location": "lines 11-12, 42-45, 50, 53, 68-71"
+    },
+    {
+     "source_id": "s71",
+     "relationship": "supports",
+     "passage": "## Atmospheric Turbulence & Diffusion Division (ATDD), Oak Ridge, TN … Division Director: Dr. John Kochendorfer … French, Brent | Brent.French@NOAA.gov | Cooperative Institute … ## Special Operations & Research Division (SORD), Las Vegas, NV & Idaho Falls, ID … Division Director: Walt Schalk",
+     "location": "lines 48, 50, 56, 76, 78"
+    },
+    {
+     "source_id": "s72",
+     "relationship": "supports",
+     "passage": "- Atmospheric Sciences Modeling Division | - Atmospheric Turbulence and Diffusion Division | - Special Operations and Research Division … ## Atmospheric Turbulence & Diffusion Division (ATDD), Oak Ridge, TN … Division Director: Dr. John Kochendorfer … French, Brent | Brent.French@NOAA.gov | ORAU",
+     "location": "lines 7-9, 88, 90, 98"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "text": "The USCRN field team works through the CISESS cooperative institute, with ORAU still involved: ARL's directory lists Brent French and the field staff as ORAU in Dec 2024 and as 'Cooperative Institute' by Oct 2025; CISESS's 2022-23 annual report already lists ORAU's ATDD/USCRN support as CISESS task NC-SAS-06-ORAU; ORAU's 2025 report says it 'will continue to maintain and expand' USCRN 'through a contract extension' with ATDD and CISESS at NC State. CISESS's umbrella agreement NA19NES4320002 ended 2025-06-30 and a five-year, $388 million renewal was announced (UMD) without an award number. So the 2025 label change may reflect the CISESS renewal rather than a new employer.",
+   "importance": "central",
+   "confidence": "moderate",
+   "confidence_reason": "ARL directory, CISESS report and ORAU's own report agree on the CISESS route; the post-June-2025 contract chain and headcount are not published.",
+   "applicability": "Whether the field staff are paid by ORAU or NC State under CISESS after June 2025 is not stated.",
+   "evidence": [
+    {
+     "source_id": "s72",
+     "relationship": "supports",
+     "passage": "- Atmospheric Sciences Modeling Division | - Atmospheric Turbulence and Diffusion Division | - Special Operations and Research Division … ## Atmospheric Turbulence & Diffusion Division (ATDD), Oak Ridge, TN … Division Director: Dr. John Kochendorfer … French, Brent | Brent.French@NOAA.gov | ORAU",
+     "location": "lines 7-9, 88, 90, 98"
+    },
+    {
+     "source_id": "s71",
+     "relationship": "supports",
+     "passage": "## Atmospheric Turbulence & Diffusion Division (ATDD), Oak Ridge, TN … Division Director: Dr. John Kochendorfer … French, Brent | Brent.French@NOAA.gov | Cooperative Institute … ## Special Operations & Research Division (SORD), Las Vegas, NV & Idaho Falls, ID … Division Director: Walt Schalk",
+     "location": "lines 48, 50, 56, 76, 78"
+    },
+    {
+     "source_id": "s91",
+     "relationship": "supports",
+     "passage": "Weather and Climate Change Monitoring and Research Support of the Atmospheric Turbulence and Diffusion Division of National Oceanic and Atmospheric Administration’s Air Resources Laboratory | Task Leader Mark Hall | Task Code NC-SAS-06-ORAU | Highlight: Oak Ridge Associated Universities (ORAU) works with the NOAA Air Resources Laboratory (ARL) to expand and sustain the U.S. Climate Reference Network’s observational capability … Some of this work was completed by ORAU through the NOAA Cooperative Institute for Climate and Satellites (CICS). ORAU engineers and technicians are now maintaining and expanding the USCRN to ensure the climate observing systems continue to deliver high quality environmental data through CISESS.",
+     "location": "pages 68-69 (txt lines 2735-2768)"
+    },
+    {
+     "source_id": "s84",
+     "relationship": "supports",
+     "passage": "maintain and expand the | U.S. Climate Reference | Network (USCRN) … Cooperative Institute for | Satellite Earth System | Studies at North Carolina",
+     "location": "page 9, ORAU Select Business Wins 2025, right column (txt lines 529-588)"
+    },
+    {
+     "source_id": "s86",
+     "relationship": "contextualizes",
+     "passage": "A new five-year cooperative agreement with the National Oceanic and Atmospheric Administration renews funding for the Cooperative Institute for Satellite Earth System Studies (CISESS), a national research consortium led by the University of Maryland (UMD) and NC State. … NC State’s North Carolina Institute for Climate Studies (NCICS) will continue hosting the North Carolina anchor of CISESS in Asheville, N.C., under the leadership of NCICS Director Dr. Otis Brown.",
+     "location": "paragraphs 1-2"
+    },
+    {
+     "source_id": "s73",
+     "relationship": "contextualizes",
+     "passage": "All 142 stations must be upgraded before the deadline",
+     "location": "page 2 (txt lines 43-88)"
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "text": "No published figure gives ARL, ATDD or USCRN staff losses. Context only: OPM data show about 20% job loss at NOAA since January 2025, with no RIF separations recorded at NOAA; NCEI lost 58 employees, about one third, to retirements and resignations by spring 2025 (Easterling); the Department of Commerce workforce fell from 48,804 (Dec 2024) to 41,606 (Jan 2026, GAO).",
+   "importance": "central",
+   "confidence": "moderate",
+   "confidence_reason": "OPM-based analysis and GAO table read as text; the NCEI figure is one retiree's account to a local outlet.",
+   "applicability": "Agency-wide; no source ties these losses to USCRN production.",
+   "figure_status": "actual",
+   "evidence": [
+    {
+     "source_id": "s81",
+     "relationship": "supports",
+     "passage": "Agencies overseeing science have seen significant job losses since Trump took office, including over 30% at the National Science Foundation and around 20% at the U.S. Geological Survey, the National Oceanic and Atmospheric Administration, and the National Institutes of Health. … At NOAA, NIST, and NIH, the DRP accounted for less than 20% of separations last year. … NOAA saw many non-DRP voluntary retirements … The OPM data shows no separations due to RIFs at DOE, NOAA, NIST, or USGS. … The administration froze federal hiring beginning in January last year",
+     "location": "paragraphs at txt lines 40, 52, 68, 74"
+    },
+    {
+     "source_id": "s77",
+     "relationship": "supports",
+     "passage": "Easterling, the centers’ chief of scientific services … first set his departure date for November. | He moved it up to April 30 after he was offered a small retirement bonus and learned he was on a list of centers’ staffers eligible for reclassification as political employees. … Easterling, 69, said he is one of 58 employees who have retired or resigned under similar circumstances from the NCEI – about one third of the workforce at the Asheville headquarters and smaller installations in Maryland, Colorado and Mississippi.",
+     "location": "paragraphs 3-6"
+    },
+    {
+     "source_id": "s82",
+     "relationship": "supports",
+     "passage": "Total Agency Workforce                                                  48,804                      47,450                      42,959                      42,184                      41,606",
+     "location": "Enclosure 2: Department of Commerce, Table 10, page 18"
+    },
+    {
+     "source_id": "s76",
+     "relationship": "contextualizes",
+     "passage": "The ruling impacts North Carolina’s 23,000 federal employees, including about 4,000 in Asheville. Among them, 175 work for the National Oceanic and Atmospheric Administration (NOAA), with most based at the National Centers for Environmental Information (NCEI)",
+     "location": "paragraph 3"
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "text": "Context: in April 2025 OAR staff were told web-hosting contracts were under review and likely to be cancelled under the Commerce Secretary's contract review; a reprieve required renegotiating the AWS contract by end of July 2025. No source names an ATDD or USCRN contract.",
+   "importance": "supporting",
+   "confidence": "low",
+   "confidence_reason": "One press report; not tied to USCRN.",
+   "applicability": "OAR-wide.",
+   "evidence": [
+    {
+     "source_id": "s83",
+     "relationship": "contextualizes",
+     "passage": "There are hundreds of such contracts across the agency that need to be reviewed each year and several that have been paused or otherwise impacted by the secretary's review … Staff members at OAR were informed that the contracts were under review and likely to be canceled on April 3 … Last-minute negotiations led to a reprieve — the AWS contract must be renegotiated by the end of July.",
+     "location": "txt lines 28, 56, 58"
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "text": "As of Aug-Nov 2026, ARL's USCRN page and NCEI's portal still name Howard Diamond as USCRN Program Manager and ARL's Oak Ridge division as the team that installs and maintains the stations.",
+   "importance": "supporting",
+   "confidence": "high",
+   "confidence_reason": "Both agencies' own pages.",
+   "applicability": null,
+   "evidence": [
+    {
+     "source_id": "s89",
+     "relationship": "contextualizes",
+     "passage": "Researchers at ARL’s Atmospheric Transport and Diffusion Division install and provide extensive evaluations and maintenance of the instruments and infrastructure for the USCRN. … Contact | Howard J. Diamond, PhD – USCRN Program Manager",
+     "location": "txt lines 20, 54-56"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "USCRN stations are managed and maintained by the Atmospheric Turbulence and Diffusion Division of the Air Resources Laboratory, NOAA Office of Oceanic and Atmospheric Research. The National Centers for Environmental Information maintains and distributes the USCRN observations and derived products. Please direct any USCRN-related comments or questions to the USCRN Program Manager: Howard Diamond",
+     "location": "txt line 16"
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "USCRN station count",
+   "source_ids": [
+    "s14",
+    "s68",
+    "s66",
+    "s73",
+    "s69",
+    "s1"
+   ],
+   "status": "unresolved",
+   "explanation": "Eos (Jan 2026) says 137 stations; ARL (Jul 2026) replaced transmitters at 139 towers; ARL (Sep 2024) says 141 stations; ARL Summer 2025 newsletter says all 142 stations; Tennessee Lookout says more than 138; daily01/2026 holds 159 station files. Likely scope differences (contiguous-US core vs Alaska/Hawaii and regional or paired sites); no source reconciles them."
+  },
+  {
+   "claim": "Positions eliminated by the FY2026 request",
+   "source_ids": [
+    "s56",
+    "s52"
+   ],
+   "status": "resolved",
+   "explanation": "Lab Design News says the plan would eliminate over 12,000 positions; NOAA's FY2026 CJ shows a NOAA-wide change of -2,327 positions (13,620 to 11,293), and CRS IF13024 (s33) says 2,456 positions. About 12,000 is NOAA's whole workforce, so the outlet's figure is wrong. The CJ/CRS gap (2,327 vs 2,456) is unexplained by the sources, likely a different table."
+  },
+  {
+   "claim": "FY2026 enacted Climate Laboratories and Cooperative Institutes",
+   "source_ids": [
+    "s35",
+    "s29"
+   ],
+   "status": "unresolved",
+   "explanation": "The FY2026 explanatory statement gives $104,102K; H.Rept. 119-652's FY2026 enacted column gives 103,877. The sources don't explain the gap; the answer uses the enacted statement's figure and states both."
+  },
+  {
+   "claim": "House FY2026 action on lab closures",
+   "source_ids": [
+    "s55",
+    "s63",
+    "s59"
+   ],
+   "status": "resolved",
+   "explanation": "E&E News calls the Wasserman Schultz amendment 'prohibiting' closures; the amendment and H.Rept. 119-272 are report language directing NOAA to avoid closures, not a statutory bar."
+  }
+ ],
+ "coverage_gaps": [
+  "NOAA's FY2026 spend plan (required by Sec. 528 of P.L. 119-74): no public copy; the House and Senate Appropriations Committees hold it.",
+  "ARL/ATDD staff numbers lost 2025-2026: not published; NOAA's FY2027 CJ gives OAR FTE totals only.",
+  "Date of ARL's SORD reorganization: no announcement found; ARL's directory only.",
+  "Science (science.org) articles of 2025-04-11 and later: Cloudflare bot check, not read.",
+  "Knoxville News Sentinel and Oak Ridger: the search tool could not search these domains.",
+  "ARL article https://www.arl.noaa.gov/?p=19606 (July 2026, transmitter upgrade across about 139 towers; Alaska towers after Oct 2025 typhoon) blocked (403); needs a browser read. Joplin 24 N (last 2026 file 2026-09-25) and St. Mary 1 SSW (2026-11-10) lag the other 157 stations; cause not found. Whether USCRN /pub/data folders are scheduled for the WAF-to-S3 move (cloud FAQ) is not stated. EDGI/PEDP trackers: no item naming USCRN found; EDGI report itself not read. Discrepancy in station counts: Eos says 137 stations, stations.tsv has about 150 commissioned operational USCRN rows, daily01/2026 has 159 files. (from sa3)",
+  "FY2026 NOAA spend plan / operating plan (required by Sec. 528 of the FY2026 CJS act): no public copy, no report of what it does to OAR or ARL, and no congressional letter about the FY2026 plan found after 3 required queries plus follow-ups. Only the FY2025 plan is documented ($246M below Congress per Van Hollen/Schiff, AIP Oct 2025). (from sa1)",
+  "No source found saying ARL/ATDD was closed or cut in FY2026 despite the appropriation, and no source ties the Feb-Apr 2026 OMB grant pause for cooperative institutes to the unnamed Cooperative Institute that employs the USCRN field team. (from sa1)",
+  "No GAO Impoundment Control Act decision on NOAA found (gao.gov search). GAO's 2026 Appropriations Law Forum decision list (gao.gov/assets/900/890468.pdf) not read. (from sa1)",
+  "No enacted FY2027 CJS law as of 2026-11-26; Senate bill only released as text on 11.12.26 (no markup found). The CR (P.L. 119-103) runs to Dec 11 2026 with only a GeoXO NOAA anomaly per CRS; the CR law text itself not read. (from sa1)",
+  "FY2027 CJ names the 'nation-wide network of soil moisture sensors' only within the Climate Labs termination (-$104,964K, -180 FTE, -211 positions) with no separate amount; USCRN not named. Nothing newer than the 2025 NOAA report on USCRN soil-moisture downsizing found. Tennessee Lookout article on Tennessee impacts (USCRN stations) refused (403). (from sa1)",
+  "Not read: House Democratic FY27 CJS summary PDF, House Republican FY27 CJS full-committee summary, CRS R48929 (FY2027 CJS overview), AGU Bridge May 26 2026 update, Inside Climate News Apr 29 2026 (NOAA defends cuts at budget hearing), House Science FY27 NOAA budget hearing charter. (from sa1)",
+  "No 2024-2026 local news article (Oak Ridge Today, Knoxville News Sentinel, WBIR, Post Register, East Idaho News) naming ARL or ATDD closure was found; Oak Ridge Today tag pages (ATDD, climate reference network) list only 2017-2019 items. Knoxville News Sentinel and Oak Ridger not searchable (domains refused by search API). (from sa4)",
+  "No statement by Fleischmann, Burchett, Simpson or Hoyer naming ARL/ATDD/Idaho Falls lab found; Van Hollen statements name NOAA only. Maryland's Sarah Elfreth signed the 2025-07-08 Neguse letter naming ARL. (from sa4)",
+  "No news item naming Howard Diamond, John Kochendorfer, Michael Palecki, Brent French, Ronald Leeper or Ariel Stein in 2024-2026 found (only conference listings and ARL's own pages). (from sa4)",
+  "Outcome of the March 2025 DOGE lease-termination listing for NOAA 1750 Foote Drive, Idaho Falls (ARL) not confirmed; Bisnow (snippet) says most DOGE lease terminations were rescinded; Crexi listing (snippet, undated) says building leased to NOAA via GSA. (from sa4)",
+  "Lab Design News claim 'eliminate over 12,000 positions' unverified (body unreadable); NOAA FY26 CJ shows NOAA-wide change of -2,327 positions and AIP gives NOAA at about 12,000 total employees, suggesting the article misstated total staff as cuts. (from sa4)",
+  "Which Cooperative Institute took over the ATDD/USCRN field team (French and others) between Jun and Oct 2025, and its award number: not found. USAspending keyword and place-of-performance searches found nothing; a CI umbrella award (e.g. CISESS at UMD, which already employs ARL College Park CI staff, or another CI) may cover it without naming ATDD. Next: ask ARL/ORAU, or USAspending subaward/description search for 'Air Resources Laboratory' in UMD/CISESS or other CI awards, NOAA CI program page. (from sa2)",
+  "Date and announcement of ARL's reorganization merging ATDD into SORD (SORD-ATD office): not found on the web; directory snapshots only (ATDD separate on 2025-10-01; merged by 2026-11-26; Part 3 dated it after 2026-09-13). ARL pages (arl.noaa.gov) return 403 to scripts; coordinator could check arl.noaa.gov news and the ARL 'About/Organization' page in the browser. (from sa2)",
+  "ORAU contract end: no source says when or why ORAU's ATDD staffing arrangement ended. ORAU Story 2025 full PDF (linked from the 2026-03-17 release) not read; Bloomberg 2025-04-04 ('contract for services across NOAA Research' targeted for 'early termination') not read (non-.org). (from sa2)",
+  "Numbers for ARL, ATDD or OAR staff lost 2025-2026: none published found. Only NOAA-wide (about 20%, AIP/OPM), Commerce-wide (48,804 to 41,606, GAO-26-108583), NCEI (58 departures, about one third, per Easterling), GLERL (35% of 52). FY2027 CJ or OAR spend plan may give OAR FTE. (from sa2)",
+  "Palecki (NCEI USCRN science lead) and Leeper (CISESS/NC State) status: no 2025-2026 departure or role change found; Palecki appears as co-author on AMS 2026 talks (NCICS page, not read). ARL July 2026 article 'The marathon effort to upgrade ARL's largest meteorological network' (arl.noaa.gov/?p=19606) may name the current field team and employer: needs a browser. (from sa2)",
+  "Commerce OIG: no OIG product on OAR/ARL/NCEI staffing found; OIG NWS staffing evaluation (OIG-27-004-I, listed 11.04.2026) covers NWS only and was not read. (from sa2)",
+  "Update to the first gap: ORAU Story 2025 (sa2-e18) names the Cooperative Institute for Satellite Earth System Studies at NC State as party to the USCRN maintenance arrangement with ATDD via a 2025 contract extension; still missing: the successor CISESS award number and start date (UMD Maryland Today release umd-awarded-388m-noaa-cooperative-agreement-for-earth-system-studies not read), and whether the field staff are ORAU employees under CISESS or NC State employees. (from sa2)",
+  "CHECK c1: confirmed — CRS R49353 text (c0ab1ee832e6ae55.txt lines 84, 143, 147) matches word for word: Division A of P.L. 119-103 runs through December 11, 2026; Sec. 101(2) CJS rate is the FY2026 act (Division A of P.L. 119-74); Sec. 121 is the GeoXO PAC apportionment. Counter-search found only the Sept 2026 CR (House 370-48, Senate 90-6, signed Sept 2) and law-firm commentary (Akin Gump) on lame-duck options; no FY2027 CJS law or new CR found. s44/s31 passages not re-checked (read via subagent, no time). (from checker)",
+  "CHECK c2: confirmed — House report H.Rept. 119-652 (e3a97e9e2f5b5338.txt): line 1946 Climate Laboratories and Cooperative Institutes..... 92,500; line 1981 to avoid closures, consolidations, or eliminations; line 7891 minority view 11 percent cut; line 9831 comparative table 1993 103,877 .............. (92,500). Senate draft explanatory statement (8238562af6a0dafd.txt): line 3516 $595,381,000 for OAR; lines 3528-3529 rejects the proposed terminations; table row line 3541 Climate Laboratories and Cooperative Institutes ... 104,602 under column header Committee recommendation [In thousands of dollars]; printed page number 66 (footer at line 3565). Search of all sa1 texts for Air Resources / Climate Reference / Atmospheric Turbulence finds matches only in the FY2027 CJ, none in either bill report. Counter-search found nothing disagreeing. AGU s45 figures not re-checked. (from checker)",
+  "CHECK c3: confirmed — FY2027 CJ (d64ddfa6371f8c0b.txt) lines 15601-15627, printed page OAR-10, Exhibit 13 PROGRAM DECREASE FOR 2027 (Dollar amounts in thousands), columns 2027 Base | 2027 Estimate | Decrease from 2027 Base: row Climate Laboratories and Cooperative Institutes Pos./BA 211 104,964 | 0 0 | (211) (104,964); FTE/OBL 180 104,964 | 0 0 | (180) (104,964); closure sentence names ARL in College Park, MD, Idaho Falls, ID, and Oak Ridge, TN, as well as a nation-wide network of soil moisture sensors; repeated at line 16178. Also line 789 (summary list OAR-11, (211) ($104,964)) and line 1071 (2026 enacted 104,102). No USCRN match in the CJ text. Counter-search found no revised request. (from checker)",
+  "CHECK c4: confirmed — crec_2026-01-08_H255.txt line 517 incorporate the funding levels; line 685 $588,881,000 is for OAR Operations, Research, and Facilities.; line 699 Climate Laboratories and Cooperative Institutes.......... $104,102; line 2945 Section 528 requires the departments and agencies funded in. No counter-search run (time). (from checker)",
+  "CHECK c7: confirmed — daily01/2026 listing (20278105817efbe6.txt): 157 rows match CRND0103-2026-... | 2026-11-25; line 97 MO_Joplin_24_N 2026-09-25 11:43 58156. updates/2025 (d849ab19eaa1f3f5.txt) lines 279, 280, 321 match (2025-10-02 00:43, 2025-10-03 00:43, 2025-11-13 00:45). updates/2026 (145afef893b6ef2d.txt) line 7 CRND0103-202601012359.txt 2026-01-03 00:45 and line 335 CRND0103-202611252359.txt 2026-11-26 12:45 (lines 7-335 = 329 rows). snapshots (e96252f5605bf3db.txt) lines 144 and 241 match. Weekly no-gap count not recounted. Counter-search (USCRN data outage 2026) found no outage report; a MesoWest status page listed CRN normal (2026-08-24, not read). (from checker)",
+  "CHECK c9: confirmed for s11 and s10 — 61f3cbaf63c4ca5b.txt line 23 No datasets will be retired as part of the cloud migration.; 341156a8c8fb1ea9.txt line 16 Data Access Delays | Mon, 11/16/2026 - 15:21 | Thu, 12/31/2026 - 17:00. Other passages and counter-search not done (time). (from checker)",
+  "CHECK c12: confirmed — ARL news text lines 18 and 26: replacing transmitters at 139 towers across 45 states; In January 2025 there were still 94 old transmitters in the field; a crew of five technicians and engineers. No counter-search run. Boundary Matters (s73) gives All 142 stations must be upgraded (already in checklist). (from checker)",
+  "CHECK c13: partly confirmed — Tennessee Lookout text line 33 more than 138 stations; Eos text line 82 (now numbering 137). Other passages and counter-search not done (time). (from checker)",
+  "CHECK c15: confirmed — live directory arl_staff_directory_2026-11-26.txt lines 43-45 Division Director: Walter Schalk | SORD-Atmospheric Turbulence and Diffusion (SORD-ATD) office, Oak Ridge, TN | Division Deputy: Dr. John Kochendorfer; line 53 Kochendorfer, John (Division Deputy). Wayback 2025-10-01 line 50 and 2024-12-13 line 90 Division Director: Dr. John Kochendorfer. Counter-search (ARL reorganization 2026) found no announcement or date; only an ARL Feb 2026 Idaho lease story (not read) and an unrelated AFRL reorganization. (from checker)",
+  "CHECK c16: confirmed — 2024-12-13 directory line 98 French, Brent | Brent.French@NOAA.gov | ORAU; 2025-10-01 line 56 and live line 50 Cooperative Institute. CISESS 2022-23 report ff8d1b7a79133ca6.txt line 2738 Task Code NC-SAS-06-ORAU and line 2767 ORAU engineers and technicians are now maintaining and expanding the USCRN. ORAU 2025 report b0b1e015b266d6e4.txt lines 547-587 (right column, split across layout lines) reads Maintaining the U.S. Climate Reference Network | ORAU will continue to maintain and expand the U.S. Climate Reference Network (USCRN) through a contract extension with National Oceanic and Atmospheric ... (ATDD) and the Cooperative Institute for Satellite Earth System Studies at North Carolina State University ... 144 climate monitoring stations. Counter-search found no different employer; ORAU pages say the network is managed by ORAU team in the ATDD office (undated, not read). USAspending/UMD items not re-checked. (from checker)",
+  "CHECK c17: partly confirmed — avlwatchdog text line 20 one of 58 employees ... about one third; GAO text line 925 Total Agency Workforce 48,804 47,450 42,959 42,184 41,606. AIP s81 and counter-search not done (time). (from checker)",
+  "CHECK c14: not checked (time). (from checker)",
+  "CHECK c14: confirmed — sa4 texts: noaa_fy26_cj.txt line 5801 Termination of OAR’s Climate Laboratories and Cooperative Institutes (-$102,292, -204 FTE/ -216 Positions); line 1457 OBLIGATIONS (Direct & Reimbursable) 13,620 12,702 7,553,632 (2,327) (2,087) (2,216,088) 11,293 10,615 5,337,544; hrpt119-272.txt line 1674 and wasserman_schultz_noaa_labs_amendment.txt line 16 to avoid closures, consolidations. No counter-search run. (from checker)",
+  "CHECK c17: counter-search (NOAA Air Resources Laboratory staff layoffs 2026) found no report naming ARL, ATDD or USCRN staff losses; results are NOAA-wide 2025 layoff coverage (AP, PBS, Fortune). Claim of no published ARL/ATDD/USCRN staff-loss figure not contradicted. (from checker)",
+  "CHECK c9: counter-search found no NCEI notice naming USCRN; no counterevidence. (from checker)",
+  "CHECK c4: counter-search found no public FY2026 NOAA spend plan or ARL allocation; no counterevidence. (from checker)",
+  "CHECK c13: counter-search found no counterevidence, but unread leads may name USCRN: https://www.ehn.org/trumps-cuts-to-climate-research-are-derailing-science-and-endangering-long-term-monitoring (also dailyclimate.org), https://tribune.com.pk/story/2623625/us-climate-research-under-siege (Aug 2026), https://www.nhpr.org/2026-03-05/proposed-funding-cuts-threaten-climate-hubs-across-the-country, and a PreventionWeb copy of the Eos feature. Not read. (from checker)",
+  "CHECK c13 (follow-up): EHN page (https://www.ehn.org/trumps-cuts-to-climate-research-are-derailing-science-and-endangering-long-term-monitoring, Jul 08, 2025, EHN Curators summarizing Scott Dance, Washington Post) read via WebFetch extraction: Climate Reference Network / USCRN NOT PRESENT; ARL/ATDD/Oak Ridge NOT PRESENT; Diamond, Kochendorfer, Palecki, French, Leeper, Stein NOT PRESENT. Consistent with c13. Tribune and NHPR leads not read. (from checker)",
+  "CHECK c13 (follow-up 2): NHPR/NPR page (https://www.nhpr.org/2026-03-05/proposed-funding-cuts-threaten-climate-hubs-across-the-country, March 5, 2026, Rachel Cramer) is about USDA climate hubs; Climate Reference Network/USCRN NOT PRESENT; ARL/ATDD/Oak Ridge NOT PRESENT. Not counterevidence. Tribune (Aug 2026) lead not read. (from checker)",
+  "CHECK c12 (counter-search): no counterevidence; completion rests on the single ARL story (dated 2026-07-23 in search results); no independent corroboration found. (from checker)",
+  "CHECK c13 (follow-up 3): Express Tribune AFP piece (https://tribune.com.pk/story/2623625/us-climate-research-under-siege, August 13, 2026) via WebFetch extraction: Climate Reference Network/USCRN NOT PRESENT; ARL/ATDD/Oak Ridge NOT PRESENT; OAR or lab closures NOT PRESENT. Not counterevidence. (from checker)",
+  "CHECK c14: counterevidence (minor) — the -2,327 positions figure differs from CRS IF13024 (Mar 2026, saved work/raw/sa1/65cbfb847ccb7bde.txt line 44): The Administration proposed to eliminate 2,456 positions in FY2026. Japan Times snippet: At least 2,256 positions, out of 12,596. Lincoln Chronicle snippet: more than 12,000 full-time employees down to about 10,000. The 12,000 point (total staff, not cut) is consistent with these; the exact NOAA-wide cut figure depends on counting basis. The 216 positions and avoid closures checks are unaffected. (from checker)",
+  "TALLY: added 16, not relevant 134, unchecked 3 (from reconciler)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI product retirement 2025 USCRN",
+   "tool": "WebSearch standard",
+   "notes": "no USCRN retirement notice; other 2025 NCEI retirements (Billion Dollar, nClimGrid-Daily access point, Coastal Ecosystem Maps, buoy database)",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN station decommissioned 2025",
+   "tool": "WebSearch standard",
+   "notes": "no USCRN station decommissioning found; ARL article p=19606 (transmitter upgrade, 139 towers) refused 403; stations.tsv read directly (no 2025/2026 closing dates)",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NESDIS Notice of Changes index (direct fetch) + 2026-notice-of-changes URL",
+   "tool": "fetch_page.py",
+   "notes": "index read; 2026 year page HTTP 404; USCRN NOT PRESENT",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CDX url=www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2025/ from=2025 to=2026",
+   "tool": "fetch_json.py --timeout 45 --retries 1",
+   "notes": "3 captures (2025-06-16, 2025-11-13, 2026-01-10); none during shutdown",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CDX url=www.ncei.noaa.gov/access/crn/ from=2025 to=2026 collapse=digest",
+   "tool": "fetch_json.py --timeout 45 --retries 1",
+   "notes": "140 rows; captures every few days through shutdown, all 200/301; one 503 on 2025-02-18",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CDX url=.../daily01/2025/ matchType=prefix from=20250901 to=20251130",
+   "tool": "fetch_json.py --timeout 45 --retries 1",
+   "notes": "only the folder itself (2025-11-13); no individual station-file captures",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI shutdown data updates October 2025",
+   "tool": "WebSearch standard",
+   "notes": "nothing USCRN-specific; led to Wayback NCEI homepage banner check",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA climate data removed 2025",
+   "tool": "WebSearch extended",
+   "notes": "NOAA-wide items (climate.gov, NCA, billion-dollar database); no USCRN",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI data outage 2025",
+   "tool": "WebSearch standard",
+   "notes": "Feb 26 CIS maintenance, Jul 15-16 maintenance, Aug-Sep OS upgrade outage; no USCRN",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network data rescue 2025",
+   "tool": "WebSearch standard",
+   "notes": "Data Rescue Project USCRN entry (52.0 GB archive, Mar 24, 2025)",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "EDGI NOAA data removal 2025 NCEI",
+   "tool": "WebSearch standard",
+   "notes": "EDGI's own NCEI report not found; E&E articles read; no USCRN",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PEER NOAA climate data deleted 2026",
+   "tool": "WebSearch standard",
+   "notes": "PEDP/E&E Jan 2026 roundup; no USCRN. not found after 3 queries (watchdog item naming USCRN)",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI cloud migration 2026 Climate Data Online access",
+   "tool": "WebSearch standard",
+   "notes": "cloud migration FAQ read (WAFs to S3; no retirements)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Climate Reference Network\" NOAA cuts 2026",
+   "tool": "WebSearch extended",
+   "notes": "MR Online commentary and Eos feature mention USCRN in budget context",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN data shutdown October 2025 update",
+   "tool": "WebSearch standard",
+   "notes": "no USCRN-specific results",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI Climate Data Online retirement 2026",
+   "tool": "WebSearch standard",
+   "notes": "no CDO retirement; ISD FTP/HTTPS retirement Jul 31, 2026 and Storm Events location change Aug 25, 2026 (snippets only)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI pub/data web accessible folders move S3 2026",
+   "tool": "WebSearch standard",
+   "notes": "no pub/data-specific date; read NCEI cloud-migration news page",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Commerce Justice Science FY2027 report NOAA",
+   "tool": "WebSearch standard",
+   "notes": "found CRS IF13275 (Jul 28 2026), H.Rept. 119-652, Senate FY27 CJS summary",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Senate FY2027 Commerce Justice Science bill NOAA Climate Laboratories",
+   "tool": "WebSearch standard",
+   "notes": "found AIP Nov 13 2026 article, Senate cjsfy2027.pdf bill text",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Senate FY2027 CJS explanatory statement NOAA Oceanic and Atmospheric Research laboratories",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains filter appropriations.senate.gov; found cjs_explanatory_stmt.pdf",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA FY2026 spend plan Congress OAR laboratories",
+   "tool": "WebSearch standard",
+   "notes": "no FY2026 spend plan found; CRS IF13024 versions",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA spend plan 2026 OAR labs letter appropriators",
+   "tool": "WebSearch extended",
+   "notes": "no FY2026 spend plan; FY2026 letters on request only",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA operating plan fiscal 2026 research laboratories withheld funds",
+   "tool": "WebSearch standard",
+   "notes": "third r2 query; FY2026 spend plan not found after 3 queries; leads on OMB grant withholding 2026",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO NOAA impoundment 2026 appropriations",
+   "tool": "WebSearch standard",
+   "notes": "no NOAA GAO decision; other 2026 ICA decisions",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GAO Impoundment Control Act NOAA decision 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains gao.gov; no NOAA decision found",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FY2027 NOAA congressional justification Air Resources Laboratory soil moisture sensors",
+   "tool": "WebSearch standard",
+   "notes": "CJ located via CRS links; read noaa.gov copy (commerce.gov 403)",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "continuing appropriations December 11 2026 NOAA anomaly",
+   "tool": "WebSearch standard",
+   "notes": "found CRS R49353 on P.L. 119-103",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Air Resources Laboratory closure 2026 NOAA",
+   "tool": "WebSearch extended",
+   "notes": "only FY2026 proposal coverage and 2017 history; no closure carried out found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Climate Reference Network soil moisture sensors cut 2026",
+   "tool": "WebSearch standard",
+   "notes": "found Cruz Feb 2024 release (113 sensors), 2025 NOAA report already known",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA soil moisture network decommission 2025 USCRN",
+   "tool": "WebSearch standard",
+   "notes": "nothing newer than the 2025 NOAA report; 2025 NSMW pre-workshop on O&M funding (not read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OMB apportionment NOAA labs cooperative institutes funds delayed 2026",
+   "tool": "WebSearch extended",
+   "notes": "Boulder Reporting Lab Apr 2026, UCS blog",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Atmospheric Turbulence and Diffusion Division Oak Ridge funding 2026",
+   "tool": "WebSearch standard",
+   "notes": "no 2026 ATDD funding item; ORAU 2025 release, OU/ORAU $8.4M award (undated, not read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"spend plan\" NOAA 2026 Office of Oceanic and Atmospheric Research",
+   "tool": "WebSearch standard",
+   "notes": "follow-up; only FY2025 spend plan items",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA spending plan 2026 Congress research cuts E&E News",
+   "tool": "WebSearch standard",
+   "notes": "no E&E hits; nothing on FY2026 spend plan",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FY2027 appropriations December 2026 omnibus CJS NOAA status",
+   "tool": "WebSearch standard",
+   "notes": "no enacted FY2027 CJS found; latest is Senate draft Nov 12 2026",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "U.S. Climate Reference Network 2026 budget cuts stations",
+   "tool": "WebSearch extended",
+   "notes": "no 2026 USCRN station cut found; Tennessee Lookout map article refused (403)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Cantwell letter NOAA 2026 spend plan research labs Congress appropriated",
+   "tool": "WebSearch standard",
+   "notes": "found AIP Oct 2025 (FY2025 spend plan $246M below); no FY2026 letter",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Senate CJS appropriations markup November 2026 NOAA minibus",
+   "tool": "WebSearch standard",
+   "notes": "no FY2027 markup found; results on FY2026 (Senate committee July 17 2025; final minibus signed Jan 23 2026, $6.171B NOAA per snippets, not read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Oak Ridge NOAA lab closure 2025",
+   "tool": "WebSearch standard",
+   "notes": "Found Oak Ridge Today tag pages (2017 coverage only), Cantwell PDF, Lab Design News",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Idaho Falls NOAA lab closure budget",
+   "tool": "WebSearch standard",
+   "notes": "Found East Idaho News 2025-03-06 DOGE lease item; Neguse letter PDFs",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Atmospheric Turbulence and Diffusion Division Oak Ridge 2026",
+   "tool": "WebSearch standard",
+   "notes": "No 2025-2026 news; only profiles. r14 local press on ATDD 2025-26 not found after 3 queries",
+   "from": "sa4",
+   "required_id": "r14"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Air Resources Laboratory closure budget 2025",
+   "tool": "WebSearch extended",
+   "notes": "Lab Design News, Neguse press release, Sequoyah County Times (paywalled)",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Reference Network budget cut 2025",
+   "tool": "WebSearch standard",
+   "notes": "No article naming USCRN in results",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA climate labs closure 2026",
+   "tool": "WebSearch extended",
+   "notes": "E&E News 2025-09-11 House panel; NOAA FY26 CJ; no ARL-specific news",
+   "from": "sa4",
+   "required_id": "r15"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Fleischmann NOAA Oak Ridge lab",
+   "tool": "WebSearch standard",
+   "notes": "Nothing linking Fleischmann to NOAA/ARL",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Simpson NOAA Idaho Falls lab 2025",
+   "tool": "WebSearch standard",
+   "notes": "Nothing linking Simpson to NOAA ARL; INL meteorological reports",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Fleischmann press release NOAA Air Resources Laboratory",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains fleischmann.house.gov, burchett.house.gov, simpson.house.gov, vanhollen.senate.gov, hoyer.house.gov; no NOAA/ARL release found. r16 not found after 3 queries",
+   "from": "sa4",
+   "required_id": "r16"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "AMS statement Climate Reference Network 2025",
+   "tool": "WebSearch standard",
+   "notes": "AMS/NWA 2025-04-17 statement names USCRN",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USCRN climate scientists warn",
+   "tool": "WebSearch standard",
+   "notes": "No scientist warning naming USCRN",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Union of Concerned Scientists NOAA Air Resources Laboratory",
+   "tool": "WebSearch standard",
+   "notes": "No UCS item naming ARL. r17 UCS/AGU naming USCRN/ARL not found after 3 queries",
+   "from": "sa4",
+   "required_id": "r17"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" Trump cuts 2025",
+   "tool": "WebSearch extended",
+   "notes": "No result names USCRN; ICN 2026-04-06 FY27 budget article",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Knoxville NOAA Oak Ridge lab cuts 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains knoxnews.com etc.; refused: knoxnews.com and oakridger.com not accessible to search user agent",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA Oak Ridge lab Trump budget",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains wbir.com, wate.com, wvlt.tv, oakridgetoday.com, postregister.com, eastidahonews.com, localnews8.com; only 2017 Oak Ridge Today and WBIR ORNL (DOE) items",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Van Hollen NOAA College Park lab closure",
+   "tool": "WebSearch standard",
+   "notes": "Van Hollen releases on NOAA layoffs/leases/cuts; Axios College Park lease item (NCWCP building)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "\"Air Resources Laboratory\" 2026 budget closure",
+   "tool": "WebSearch standard",
+   "notes": "Cantwell PDF; no outcome document",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Mike Simpson NOAA laboratory Idaho Falls budget",
+   "tool": "WebSearch standard",
+   "notes": "No Simpson statement on ARL",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" NOAA 2025 news",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains incl nytimes.com refused by search API (nytimes.com not accessible)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Howard Diamond NOAA Climate Reference Network 2025",
+   "tool": "WebSearch standard",
+   "notes": "No news naming Diamond; State of the Climate editor roles",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" NOAA cuts",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains washingtonpost.com, science.org, eos.org, physicstoday.aip.org, insideclimatenews.org, eenews.net, ametsoc.org, agu.org; found Eos 2026-01-09 feature naming USCRN, Science 2025 (403)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Burchett NOAA Oak Ridge Air Resources Laboratory",
+   "tool": "WebSearch standard",
+   "notes": "Nothing naming Burchett",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Post Register NOAA Idaho Falls Field Research Division 2025",
+   "tool": "WebSearch standard",
+   "notes": "No Post Register article; INL met reports; division renamed SORD in 2022",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA laboratories closure prohibited explanatory statement fiscal 2026 Commerce Justice Science",
+   "tool": "WebSearch standard",
+   "notes": "Wasserman Schultz amendment PDF, PL 119-74, CR 2026-01-08 explanatory statement (not re-read; earlier runs hold it)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Oak Ridge Today NOAA 2026 budget Air Resources Laboratory",
+   "tool": "WebSearch extended",
+   "notes": "Found Tennessee Lookout 2025-09-30 via Yahoo naming USCRN; no Oak Ridge Today 2025-26 article",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Elfreth Hoyer NOAA Air Resources Laboratory College Park",
+   "tool": "WebSearch standard",
+   "notes": "No Hoyer/Elfreth statement on ARL found",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "AIP FYI NOAA Air Resources Laboratory 2025",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains aip.org, ucs.org, agu.org, ametsoc.org, eos.org; AIP FYI NOAA items, none naming ARL",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Michael Palecki OR John Kochendorfer OR Ronald Leeper NOAA 2025",
+   "tool": "WebSearch standard",
+   "notes": "Only conference/program listings; no news naming them",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Ariel Stein Air Resources Laboratory director 2025",
+   "tool": "WebSearch standard",
+   "notes": "Only ARL's own pages (May 2025 post); no news",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA Oak Ridge employees layoffs 2025 Tennessee",
+   "tool": "WebSearch standard",
+   "notes": "NOAA-wide layoff coverage only; none tied to Oak Ridge ATDD",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" Washington Post 2025 NOAA stations",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains washingtonpost.com; no WaPo article naming USCRN in results",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Inside Climate News September 2025 NOAA House Senate bills avoid lab closures",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains insideclimatenews.org; ICN 2025-09-13 and 2026-04-29",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "DOGE lease termination NOAA Oak Ridge Illinois Avenue",
+   "tool": "WebSearch standard",
+   "notes": "No NOAA Oak Ridge lease on DOGE list in results; Oak Ridge item is DOL workers comp office; Bisnow: most lease terminations rescinded",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Idaho Falls NOAA office lease 1750 Foote Drive",
+   "tool": "WebSearch standard",
+   "notes": "KIFI 2025-03-04; Crexi listing says leased to NOAA via GSA (snippet); GSA lease PDF 404",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" Oak Ridge news 2026",
+   "tool": "WebSearch extended",
+   "notes": "No 2026 news; found ARL Blue Hill story (RI station decommission summer 2026 for siting)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Hoyer NOAA College Park climate lab cuts statement 2025",
+   "tool": "WebSearch standard",
+   "notes": "ICN/EHN 2025-04-16 Maryland lawmakers (Van Hollen, Hoyer) on privatizing NOAA/NASA research, no ARL; Fletcher et al. 2025-05-16 letter (no ARL named, renamed _unused)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA Oak Ridge climate research lab Tennessee 2026",
+   "tool": "WebSearch standard",
+   "notes": "allowed_domains wbir.com, wate.com, tennesseelookout.com, wpln.org (tennessean.com refused by search API); original Tennessee Lookout URL https://tennesseelookout.com/briefs/map-shows-how-trumps-proposed-noaa-budget-cuts-could-affect-tennessee/ ; snippet: NOAA OAR received $656 million in FY2024, FY2026 proposal cuts to zero; no 2026 local item on ATDD",
+   "from": "sa4",
+   "copy_of": "https://www.yahoo.com/news/articles/map-shows-trump-proposed-noaa-100139168.html"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read https://www.arl.noaa.gov/?p=19606",
+   "tool": "lookup (built-in browser)",
+   "notes": "read in full; crew of five; 139 towers; last transmitter 2026-04-25",
+   "from": "main",
+   "copy_of": "https://www.arl.noaa.gov/?p=19606"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read science.org Trump administration pushes ahead NOAA cuts",
+   "tool": "lookup (built-in browser)",
+   "notes": "Cloudflare bot check (HTTP 403); stopped, not bypassed",
+   "from": "main",
+   "copy_of": "https://www.science.org/content/article/trump-administration-pushes-ahead-noaa-climate-and-weather-cuts"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read tennesseelookout.com NOAA budget cuts Tennessee map",
+   "tool": "lookup (built-in browser)",
+   "notes": "read; names USCRN (Crossville) directly; 2025-09-30",
+   "from": "main",
+   "copy_of": "https://tennesseelookout.com/briefs/map-shows-how-trumps-proposed-noaa-budget-cuts-could-affect-tennessee/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser read labdesignnews proposed NOAA lab closures",
+   "tool": "lookup (built-in browser)",
+   "notes": "read; names ARL sites directly",
+   "from": "main",
+   "copy_of": "https://www.labdesignnews.com/content/proposed-noaa-lab-closures-raise-critical-questions"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "download OIG-26-003 FY2026 Top Management Challenges PDF",
+   "tool": "lookup (fetch_page)",
+   "notes": "read; NOAA workforce named only for the ship fleet; no OAR, ARL, NCEI or USCRN staffing item",
+   "from": "main",
+   "copy_of": "https://www.oig.doc.gov/wp-content/OIGPublications/OIG-26-003_TMC_FY_2026_SECURED-1.pdf"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Trump administration wants to close down key weather labs nationwide\"",
+   "tool": "WebSearch",
+   "notes": "original is NOTUS (now washingtonsun.com), 2025-07; copies on SEJ, Raw Story, Sequoyah County Times",
+   "from": "main",
+   "required_id": "r15",
+   "copy_of": "https://www.sequoyahcountytimes.com/2025/07/08/trump-administration-wants-close-key-weather-labs-nationwide/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "browser find on NOTUS/Washington Sun article for Air Resources and Oak Ridge",
+   "tool": "lookup (built-in browser)",
+   "notes": "no match for Air Resources or Oak Ridge: names NOAA labs generally, not ARL (page find only, not cited)",
+   "from": "main",
+   "copy_of": "https://www.sequoyahcountytimes.com/2025/07/08/trump-administration-wants-close-key-weather-labs-nationwide/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://web.archive.org/web/2025/https://www.science.org/content/article/trump-seeks-end-climate-research-premier-u-s-climate-agency",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 403 (Wayback refuses Science copies); no route left",
+   "from": "main",
+   "copy_of": "https://www.science.org/content/article/trump-seeks-end-climate-research-premier-u-s-climate-agency"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "knoxnews.com and oakridger.com site search",
+   "tool": "WebSearch",
+   "notes": "no route left: the search tool cannot search these domains and they have no site-search page the browser can read without a form; listed in coverage_gaps",
+   "from": "main",
+   "copy_of": "https://www.knoxnews.com/"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Air Resources Laboratory\" Oak Ridge 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "no 2025-2026 news; ARL strategic plan updated 2025 (ORAU, CISESS collaboration), old ATDD pages",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" NOAA cuts 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "only NCEI/ARL pages and the ARL July 2026 story; no news naming cuts to USCRN",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA Oak Ridge lab closure 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "ORNL demolition items (unrelated), factually.co fact-check, legis1 on the House FY2027 report; nothing new on ARL",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA ARL \"Special Research and Operations Division\" Oak Ridge",
+   "tool": "duckduckgo (browser)",
+   "notes": "no results: no public announcement of the SORD merger",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI cloud migration USCRN data 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "NCEI cloud pages (May/Sep 2026), NCEI X post (10-month move), Nextgov 2026-10-23 on WCOSS model data deletion (read; about forecast model output, not USCRN; unused)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "find RI_Kingston and MA_Blue_Hill in saved daily01/2026 listing",
+   "tool": "lookup (saved listing)",
+   "notes": "both RI Kingston files and MA Blue Hill last modified 2026-11-25: the planned RI decommissioning has not removed the station from daily01",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NOAA spend plan fiscal 2026 OAR laboratories",
+   "tool": "duckduckgo (browser)",
+   "notes": "no FY2026 spend plan item; budget pages, CJ, CRS IF13024, AIP FY2026 tracker",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "browser find spend plan / spending plan on AIP FY2026 NOAA tracker",
+   "tool": "lookup (built-in browser)",
+   "notes": "no match for spend plan or spending plan",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "EMS25 attendee profile Walt Schalk (energy.gov portal)",
+   "tool": "lookup (route check)",
+   "notes": "no route left: the page redirects to a DOE login portal; not followed (sign-in); background only",
+   "from": "main",
+   "copy_of": "https://edms3.energy.gov/ems25/mobile/attendee/detail/120"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "oakridger.com site search",
+   "tool": "WebSearch",
+   "notes": "no route left: the search tool refuses the domain; listed in check-by-hand.md",
+   "from": "main",
+   "copy_of": "https://www.oakridger.com/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Air Resources Laboratory reorganization SORD 2026",
+   "tool": "WebSearch",
+   "notes": "only hit: ARL staff directory (403); SORD described as Las Vegas/Idaho Falls division",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA ARL \"Special Research and Operations Division\" Oak Ridge",
+   "tool": "WebSearch",
+   "notes": "no page with that name; SORD historically Las Vegas, dispersion/emergency response, DOE/NNSA support",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OAR laboratories realignment 2025 NOAA research reorganization consolidate labs",
+   "tool": "WebSearch",
+   "notes": "budget-proposal coverage only; no ARL/OAR reorganization announcement; not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA OAR laboratories layoffs 2025 Air Resources Laboratory",
+   "tool": "WebSearch",
+   "notes": "Cantwell OAR cuts PDF; Longmont Leader 216 cuts/204 FTE proposed",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Oak Ridge ATDD staff cuts 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode; NOAA-wide only, nothing on ATDD",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Air Resources Laboratory layoffs 2025",
+   "tool": "WebSearch",
+   "notes": "extended mode; closure proposal only (Oklahoma Watch, Assembly NC); no ARL layoffs reported; not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO NOAA workforce reductions 2025",
+   "tool": "WebSearch",
+   "notes": "GAO hurricane hunter report only; news",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Commerce OIG NOAA staffing 2026",
+   "tool": "WebSearch",
+   "notes": "OIG NWS staffing evaluation (OIG-27-004-I listed 11.04.2026); TMC FY2026; nothing on OAR/ARL/NCEI staffing",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GAO NOAA staffing report 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov; GAO-26-108583 workforce changes (Commerce-level only)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "cooperative institute Oak Ridge NOAA ATDD 2025",
+   "tool": "WebSearch",
+   "notes": "2016 OU/ORAU CIMMS award only; no 2025 CI named",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USAspending spending_by_award keywords Climate Reference Network, grants 02-05, 2024-10-01 to 2026-11-26",
+   "tool": "api.usaspending.gov",
+   "notes": "0 results; also keyword Atmospheric Turbulence and Diffusion (0), NOAA + place of performance TN (5 UT grants), NOAA + keywords ARL/ATDD/Oak Ridge (3 unrelated)",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ORAU NOAA ATDD contract ends 2025",
+   "tool": "WebSearch",
+   "notes": "ORAU 2025 story (contractual adjustments, not ATDD-specific); NPR: contract for services across NOAA Research targeted for early termination (snippet); not found after 3 queries",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA scientists fired 2025 OAR laboratory Oak Ridge Idaho Falls",
+   "tool": "WebSearch",
+   "notes": "NOAA-wide firing coverage; nothing on Oak Ridge/Idaho Falls",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWSEO NOAA research labs cuts 2025",
+   "tool": "WebSearch",
+   "notes": "no NWSEO statement on OAR labs",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Atmospheric Turbulence and Diffusion\" cooperative institute 2025 award",
+   "tool": "WebSearch",
+   "notes": "found ARL Summer 2025 Boundary Matters newsletter",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI staff lost 2025 layoffs Asheville",
+   "tool": "WebSearch",
+   "notes": "WUNC 175 NOAA in Asheville; Space.com 20 NCEI",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Michael Palecki NCEI retired 2025",
+   "tool": "WebSearch",
+   "notes": "nothing on Palecki status",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA OAR staff lost 2025 percent research laboratories deferred resignation",
+   "tool": "WebSearch",
+   "notes": "GLERL 35% of 52; no OAR-wide or ARL figure",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS Oak Ridge Tennessee ATDD Climate Reference Network technician",
+   "tool": "WebSearch",
+   "notes": "2022 ORAU Engineering Technician 4 posting for ATDD only",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Climate Reference Network\" field technician job Oak Ridge 2025 cooperative institute",
+   "tool": "WebSearch",
+   "notes": "no 2025 posting found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Palecki \"Climate Reference Network\" NCEI 2026",
+   "tool": "WebSearch",
+   "notes": "Palecki co-author on AMS 2026 talks (NCICS page); ARL July 2026 USCRN transmitter upgrade article (403)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Office of Oceanic and Atmospheric Research\" employees lost 2025 staffing decline percent",
+   "tool": "WebSearch",
+   "notes": "AIP FYI OPM analysis; no OAR figure",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS NC State NCICS layoffs 2025 NOAA cooperative institute funding",
+   "tool": "WebSearch",
+   "notes": "AOL headline 'Climate center in NC shuts down after lapse in funding' not read; no Leeper/CISESS layoffs confirmed",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Wayback id_ copy of 2025-Boundary-Matters.pdf",
+   "tool": "fetch_page.py",
+   "notes": "read via web.archive.org 20251115181450",
+   "from": "sa2",
+   "copy_of": "https://www.arl.noaa.gov/wp_arl/wp-content/uploads/2025/08/2025-Boundary-Matters.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "climate center NC shuts down lapse in funding NCICS Asheville",
+   "tool": "WebSearch",
+   "notes": "AOL headline is the Southeast Regional Climate Center (UNC), April 2025, not NCICS/CISESS; not USCRN",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS University of Maryland Air Resources Laboratory Oak Ridge employees 2025",
+   "tool": "WebSearch",
+   "notes": "CISESS $388M agreement (UMD release); CISESS scientists at ARL College Park; nothing tying CISESS to Oak Ridge",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Brent French\" NOAA 2026 Climate Reference Network",
+   "tool": "WebSearch",
+   "notes": "only the ARL 2026-07-23 USCRN upgrade article (403); no staff named in snippet",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS new cooperative agreement 2025 NOAA award North Carolina State University renewal",
+   "tool": "WebSearch",
+   "notes": "NCICS and UMD renewal releases (five-year, $388M, NC State $95M), undated in results; also USAspending keyword Satellite Earth System Studies (NA19NES4320002 ended 2025-06-30)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Walter Schalk ARL division 2026 Oak Ridge Idaho Falls Las Vegas merged",
+   "tool": "WebSearch",
+   "notes": "DOE EMS25 attendee profile: Schalk Director of SORD since 2007, by 2019 also Director of ARL Idaho Falls division (snippet only, not read); no merger announcement",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"marathon effort to upgrade ARL's largest meteorological network\"",
+   "tool": "WebSearch",
+   "notes": "no other copy; Wayback availability API returned no snapshot; summary gives five-person crew, last unit Newton MS 2026-04-25",
+   "from": "sa2",
+   "copy_of": "https://www.arl.noaa.gov/?p=19606"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ORAU CISESS NC State subaward Climate Reference Network 2025",
+   "tool": "WebSearch",
+   "notes": "CISESS NC annual reports list subaward 80848-Z7553201 under NA19NES4320002 (USCRN QA work at NCICS); no ORAU-CISESS subaward found; next: CISESS NC annual report 2024-25 or 2025-26 on ncics.org",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CISESS NC Annual Report 2024-2025 pdf",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncics.org; latest listed CISESS NC annual report is 2022-2023; CISESS program page read, no award number or ATDD mention (marked unused)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "FY2027 continuing resolution December 11 Congress vote",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c1; counter-search c1; results only describe the Sept 2026 CR to Dec 11 (signed Sept 2) and lame-duck options; no FY2027 CJS law or new CR found",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Air Resources Laboratory reorganization 2026 Special Research Operations Division",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c15; counter-search c15; no reorganization announcement found; results list ARL Feb 2026 lease story and unrelated AFRL reorg",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "U.S. Climate Reference Network data outage 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c7; counter-search c7; no USCRN or daily01 outage report found",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "ORAU Climate Reference Network technicians 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c16; counter-search c16; no source naming a different employer for the field team; ORAU pages describe ORAU team in ATDD office (undated)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Senate CJS 2027 explanatory statement NOAA laboratories Air Resources Laboratory",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c2; counter-search c2; no source giving a different Senate or House Climate Labs figure or ARL-specific language; CRS IF13275 (2026-07-28) and AGU match the House direction",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA FY2027 budget request Air Resources Laboratory closure",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c3; counter-search c3; no source disputing the CJ closure sentence; no revised FY2027 request found",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA Air Resources Laboratory staff layoffs 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c17; counter-search c17; only NOAA-wide layoff coverage, none naming ARL",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEI cloud migration USCRN data unavailable 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c9; counter-search c9; no USCRN-specific NCEI notice found; results only the general alerts and FAQ already in checklist",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA FY2026 spend plan Air Resources Laboratory",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c4; counter-search c4; no public FY2026 spend plan found; CRS IF13024 says it is unclear if NOAA has submitted such a plan (wording may be from the June 2025 version)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "\"Climate Reference Network\" cuts news 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c13; counter-search c13; unread leads that may or may not name USCRN: EHN/DailyClimate Trump cuts to climate research ... endangering long-term monitoring; tribune.com.pk US climate research under siege (Aug 2026, AFP); NHPR 2026-03-05; PreventionWeb republication of the Eos feature",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "USCRN GOES transmitter replacement completed 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c12; counter-search c12; only the ARL story (2026-07-23) reports completion; no source dating or counting it differently; other results are GOES satellite operations",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NOAA FY2026 budget request position cuts 2,327 positions",
+   "tool": "WebSearch",
+   "notes": "checker counter-search for claim c14; counter-search c14; other figures found: CRS IF13024 2,456 positions; Japan Times at least 2,256 of 12,596 (snippet); Lincoln Chronicle more than 12,000 FTE down to about 10,000 (snippet); Oceana 1,450 (snippet)",
+   "from": "checker"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "U.S. Congress (appropriators)",
+   "publisher": "funders",
+   "subquestion_id": "q1",
+   "aim": "FY2027 CJS report language on NOAA OAR / ARL",
+   "query": "Commerce Justice Science FY2027 report NOAA",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NOAA FY2026 spend plan / operating plan",
+   "query": "NOAA FY2026 spend plan",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "CRS / GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q1",
+   "aim": "CRS or GAO on NOAA FY2026-27 appropriations, impoundment",
+   "query": "CRS NOAA appropriations FY2027",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA",
+   "publisher": "funders (budget documents)",
+   "subquestion_id": "q1",
+   "aim": "FY2027 CJ text on ARL closure and soil moisture network",
+   "query": "NOAA FY2027 congressional justification OAR",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "ARL / OAR",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "ARL reorganization (SORD), OAR realignment",
+   "query": "Air Resources Laboratory reorganization 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "ARL / ATDD",
+   "publisher": "press",
+   "subquestion_id": "q2",
+   "aim": "layoffs and staff cuts at ARL/ATDD",
+   "query": "Air Resources Laboratory layoffs 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "Commerce OIG / GAO",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q2",
+   "aim": "NOAA staffing reports 2025-2026",
+   "query": "GAO NOAA workforce reductions 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA contractors / cooperative institutes",
+   "publisher": "mandatory filings and awards",
+   "subquestion_id": "q2",
+   "aim": "the award that took over the USCRN field team from ORAU",
+   "query": "cooperative institute Oak Ridge NOAA ATDD 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA staff / unions",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q2",
+   "aim": "staff and union accounts of lab cuts",
+   "query": "NOAA scientists fired 2025 OAR laboratory",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "NCEI product retirement notices; USCRN station closures",
+   "query": "NCEI product retirement 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NCEI",
+   "publisher": "the organization itself (past versions)",
+   "subquestion_id": "q3",
+   "aim": "Wayback captures of daily01 and the CRN portal",
+   "query": "url=www.ncei.noaa.gov/pub/data/uscrn/products/daily01/2025/",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NCEI",
+   "publisher": "press",
+   "subquestion_id": "q3",
+   "aim": "outages, removals, shutdown effects on NCEI data",
+   "query": "NCEI data outage 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "data-rescue groups",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q3",
+   "aim": "trackers of NOAA data removal naming NCEI/USCRN",
+   "query": "EDGI NOAA data removal 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r14",
+   "organization": "ATDD / ARL",
+   "publisher": "press (local)",
+   "subquestion_id": "q4",
+   "aim": "Oak Ridge and Idaho Falls coverage of lab closure",
+   "query": "Oak Ridge NOAA lab closure 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r15",
+   "organization": "ARL / USCRN",
+   "publisher": "press (trade, national)",
+   "subquestion_id": "q4",
+   "aim": "trade and national coverage naming ARL or USCRN",
+   "query": "Air Resources Laboratory closure budget 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r16",
+   "organization": "Members of Congress",
+   "publisher": "funders (members' statements)",
+   "subquestion_id": "q4",
+   "aim": "members' statements about ARL closures",
+   "query": "Fleischmann NOAA Oak Ridge lab",
+   "skip_reason": null
+  },
+  {
+   "id": "r17",
+   "organization": "AMS / UCS / AGU",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q4",
+   "aim": "scientific society statements naming USCRN or ARL",
+   "query": "AMS statement Climate Reference Network 2025",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 50.0,
+  "ceiling": 400000,
+  "research_stop_tokens": 355000,
+  "subagent_stop_tokens": 284000,
+  "tokens": 367000,
+  "subagent_minutes_planned": 63,
+  "subagent_minutes": 65.6,
+  "follow_ups": 0,
+  "research_stop": "tokens",
+  "subagent_stop": true,
+  "shift_min": 3
+ }
+}

@@ -1,0 +1,1376 @@
+{
+ "question": "How resilient is UC Irvine CHRS's own data site (the CHRS Data Portal at chrsdata.eng.uci.edu, and persiann.eng.uci.edu over HTTPS and FTP) as a home for data: who runs it (D-3), storage and copies (D-2, RRS-1), integrity and recovery (RRS-2, RRS-3), institutional support (RRS-4) and track record (RRS-5)? Builds on the 2026-11-19 PERSIANN-CDR Daily runs and the 2026-11-23 GHCN-Daily repository resilience run.",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (NSF 2332263 terminated then reinstated; federal grant cuts); user budget 30 min / 240k",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Who built and maintains the CHRS Data Portal and the persiann.eng.uci.edu servers, how many people, whether it depends on one developer, and how it is paid for (D-3)",
+   "status": "answered",
+   "source_ids": [
+    "s13",
+    "s14",
+    "m2"
+   ],
+   "remaining_gap": "Who maintains the servers today, the team's size beyond one listed administrator, and how that post is paid are not published."
+  },
+  {
+   "id": "q2",
+   "question": "Which servers hold the data and where; whether they are backed up and where; whether the CHRS copy is checked against NCEI's (D-2, RRS-1)",
+   "status": "uncertain",
+   "source_ids": [
+    "s22",
+    "s14"
+   ],
+   "remaining_gap": "Server location, backups and any second site are not published; no check of the CHRS copy against NCEI's was found."
+  },
+  {
+   "id": "q3",
+   "question": "Checksum or fixity checks and published checksums; UC Irvine backup and disaster recovery policy for research servers; whether CHRS has its own plan and has tested it (RRS-2, RRS-3)",
+   "status": "uncertain",
+   "source_ids": [
+    "s27",
+    "m1",
+    "s24",
+    "s26",
+    "s25"
+   ],
+   "remaining_gap": "No CHRS checksum, fixity or DR plan published; UCI's backup service is opt-in and not tied to CHRS by any source; current UC IS-12 (2021) text not read."
+  },
+  {
+   "id": "q4",
+   "question": "Whether UC Irvine gives CHRS space, IT or staff beyond grants (RRS-4)",
+   "status": "answered",
+   "source_ids": [
+    "s15",
+    "s16",
+    "s17",
+    "s21",
+    "s19"
+   ],
+   "remaining_gap": "No campus funding, space or staff commitment to CHRS is published; NOAA and NASA awards not updated since the 2026-11-19 Part 3 run."
+  },
+  {
+   "id": "q5",
+   "question": "Track record: download links down until 2024-10-11; 2024 files posted October 2025; information tab dated 2020; how the site fared between grants (NSF 2332263 terminated then reinstated); any data lost (RRS-5)",
+   "status": "answered",
+   "source_ids": [
+    "m3",
+    "m1",
+    "s2",
+    "s7",
+    "s4",
+    "s5",
+    "s10"
+   ],
+   "remaining_gap": "The reason for the 2024 download-link outage, the late 2024 CDR posting and the 2020 info-tab date are not published."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://chrsdata.eng.uci.edu/",
+   "fetched_url": null,
+   "title": "CHRS Data Portal (PERSIANN info panel)",
+   "author_org": "UC Irvine CHRS",
+   "published": "NOT PRESENT (page undated; notice dated 2024-10-11)",
+   "data_period": null,
+   "source_type": "official_site",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrsdata-eng-uci-edu_231133.txt",
+   "retrieved": "2026-11-19T23:11:33+00:00",
+   "limitations": "Reason for the outage, its start date and any data loss: NOT PRESENT. Browser read from an earlier run; not re-read today.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s2",
+   "url": "https://web.archive.org/cdx/search/cdx?url=chrsdata.eng.uci.edu/&collapse=digest",
+   "fetched_url": null,
+   "title": "Wayback CDX listing, chrsdata.eng.uci.edu home page (unique captures)",
+   "author_org": "Internet Archive",
+   "published": "captures 2017-01-20 to 2026-11-13",
+   "data_period": null,
+   "source_type": "archive_index",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cdx_chrsdata_home.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Capture dates are not content dates. The portal is an AngularJS shell, so snapshots hold no panel text (see unreadable).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://web.archive.org/cdx/search/cdx?url=persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/&matchType=prefix",
+   "fetched_url": null,
+   "title": "Wayback CDX listing, persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/",
+   "author_org": "Internet Archive",
+   "published": "captures 2024-03-30 to 2025-05-26",
+   "data_period": null,
+   "source_type": "archive_index",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cdx_persiann_cdr.json",
+   "retrieved": "2026-11-27",
+   "limitations": "No daily-directory captures after April 2024.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://api.nsf.gov/services/v1/awards/2332263.json",
+   "fetched_url": null,
+   "title": "NSF Award 2332263 record (CLIMA/Collaborative Research: Equitable Adaptive Strategies for Flood Protection Infrastructure...)",
+   "author_org": "National Science Foundation",
+   "published": "latestAmendmentDate 04/29/2025",
+   "data_period": null,
+   "source_type": "government_record",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa3/nsf_2332263.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Termination and reinstatement dates: NOT PRESENT in the API record. expDate differs from the court spreadsheet's 10/31/2026, which suggests an extension after reinstatement (not stated).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.450653/gov.uscourts.cand.450653.211.5.pdf",
+   "fetched_url": null,
+   "title": "Thakur v. Trump (N.D. Cal.), Dkt. 211-5, NSF grants spreadsheet",
+   "author_org": "U.S. District Court N.D. Cal. (filing)",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "court_record",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa3/thakur_cand450653_211_5.txt",
+   "retrieved": "2026-11-19 (earlier run)",
+   "limitations": "Column headers were not re-read here. This grant is not a PERSIANN or portal grant, and no service effect is stated.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: UCI NSF award 2332263 (AghaKouchak)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://research.uci.edu/wp-content/uploads/or-update-march-2026.pdf",
+   "fetched_url": null,
+   "title": "Office of Research Overview (UCI Office of Research update, March 2026)",
+   "author_org": "UC Irvine Office of Research",
+   "published": "2026-03 (per file name)",
+   "data_period": null,
+   "source_type": "official_report",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/uci_or_update_march2026.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Layout is columnar, so the pairing of labels is read from the column positions. Downloaded via WebFetch's saved binary because the site returned 403 to curl. CHRS/PERSIANN/NOAA: NOT PRESENT.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "context: UC Irvine campus-wide federal funding"
+  },
+  {
+   "id": "s7",
+   "url": "https://web.archive.org/web/20240613193947/http://persiann.eng.uci.edu/CHRSdata/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata (Wayback snapshot 2024-06-13)",
+   "author_org": "UC Irvine CHRS (archived by Internet Archive)",
+   "published": "capture 2024-06-13; directory dates 2020-11-25 to 2024-06-13",
+   "data_period": null,
+   "source_type": "archive_snapshot",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wb_chrsdata_dir_20240613.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "A folder date reflects changes to the folder entry, not to the files inside. It does not show whether portal download links were down at that time.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://web.archive.org/cdx/search/cdx?url=persiann.eng.uci.edu/CHRSdata/&collapse=digest",
+   "fetched_url": null,
+   "title": "Wayback CDX listing, persiann.eng.uci.edu/CHRSdata/",
+   "author_org": "Internet Archive",
+   "published": "captures 2019-06-03 to 2024-06-13",
+   "data_period": null,
+   "source_type": "archive_index",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cdx_chrsdata_dir.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Sparse captures; a 2019 404 may reflect an earlier path layout (not stated).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/?C=M;O=D",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CDR (live)",
+   "author_org": "UC Irvine CHRS",
+   "published": "folder dates 2021-03-15 to 2026-10-14",
+   "data_period": null,
+   "source_type": "official_site",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_persiann_cdr_index.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Folder dates only; no notice or explanation of update timing on the page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://web.archive.org/cdx/search/cdx?url=chrs.web.uci.edu/&collapse=digest",
+   "fetched_url": null,
+   "title": "Wayback CDX listing, chrs.web.uci.edu home page",
+   "author_org": "Internet Archive",
+   "published": "captures through 2026-10-09",
+   "data_period": null,
+   "source_type": "archive_index",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cdx_chrs_web_home.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Only the last part of the 50-row listing was read, and no snapshots were fetched, so no notice text was checked. A 200 status does not show that downloads worked.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://web.archive.org/web/20250503060756/https://chrs.web.uci.edu/",
+   "fetched_url": null,
+   "title": "CHRS - The Center for Hydrometeorology and Remote Sensing at UCI (Wayback snapshot 2025-05-03)",
+   "author_org": "UC Irvine CHRS (archived by Internet Archive)",
+   "published": "capture 2025-05-03; page undated",
+   "data_period": null,
+   "source_type": "archive_snapshot",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wb_chrs_web_20250503.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Searched with keywords rather than read line by line. Outage or funding notice: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s12",
+   "url": "https://web.archive.org/cdx/search/cdx?url=fire.eng.uci.edu/&collapse=digest",
+   "fetched_url": null,
+   "title": "Wayback CDX listing, fire.eng.uci.edu home page",
+   "author_org": "Internet Archive",
+   "published": "single capture 2013-04-22",
+   "data_period": null,
+   "source_type": "archive_index",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cdx_fire_home.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Captures are sparse, and the gap in chrs.web.uci.edu captures is an archive gap, not evidence of an outage. No migration or data-loss notice is in either listing.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://chrs.web.uci.edu/chrs_directory.php",
+   "fetched_url": null,
+   "title": "CHRS Directory",
+   "author_org": "UC Irvine CHRS",
+   "published": "undated (footer '© 2017 Center for Hydrometeorology and Remote Sensing'; alumni list includes Ph.D. (2025) entries)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa1/chrs_directory.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Directory does not say who builds or runs the Data Portal or servers, nor how the administrator post is funded. One person listed under system administration; whether others (students/postdocs) maintain the portal is NOT PRESENT. Footer copyright 2017 so currency of the page is uncertain, though it lists 2025 alumni.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6326112/",
+   "fetched_url": null,
+   "title": "The CHRS Data Portal, an easily accessible public repository for PERSIANN global satellite precipitation data (Nguyen et al. 2019, Sci. Data 6:180296)",
+   "author_org": "Nguyen, P. et al. (CHRS, UC Irvine)",
+   "published": "2019-01-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa1/nguyen2019_chrs_portal_pmc.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "2019; does not name author roles (who coded the portal) or any UCI IT unit; acknowledgments support the research, not explicitly portal operations. Of the CHRS authors, Shearer (2022), Tran (2018), Ombadi (2021), Hayatbini (2020) appear in the 2026 directory's alumni list; Braithwaite, Updegraff, Palacios, Huynh do not appear in the current directory.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://research.uci.edu/center/center-for-hydrometeorology-and-remote-sensing-chrs/",
+   "fetched_url": null,
+   "title": "Center for Hydrometeorology and Remote Sensing (CHRS) - UCI Office of Research",
+   "author_org": "UC Irvine Office of Research",
+   "published": "undated (footer © 2026 UC Regents)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa1/uci_or_chrs_center_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extraction, not raw (earlier run got HTTP 403 from fetch_page.py); director listing is out of date vs. the CHRS directory (AghaKouchak). Space, campus funding: NOT PRESENT. Earlier run pt3 also cited this page (no local copy saved).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://research.uci.edu/centers-institutes/",
+   "fetched_url": null,
+   "title": "Centers & Institutes - UCI Office of Research",
+   "author_org": "UC Irvine Office of Research",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa1/uci_or_centers_institutes_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extraction (wording reported by extractor, not raw text). Support given to School Centers NOT PRESENT. Does not name CHRS.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://engineering.uci.edu/news/2023/8/two-new-samueli-chairs-engineering-announced",
+   "fetched_url": null,
+   "title": "Two New Samueli Chairs in Engineering Announced (Wayback copy 2025-01-05)",
+   "author_org": "UC Irvine Samueli School of Engineering",
+   "published": "2023-08-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/samueli_chairs_2023_wayback.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Chair amount and use of funds for CHRS NOT PRESENT; endowment is a personal faculty chair, not a CHRS line. Live URL returns 404; read from Wayback (fetched_url https://web.archive.org/web/20250105122701/...).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Phu+Nguyen&printFields=id,title,awardeeName,startDate,expDate,fundsObligatedAmt",
+   "fetched_url": null,
+   "title": "NSF Awards API: awards with PI name Phu Nguyen",
+   "author_org": "National Science Foundation",
+   "published": "live query",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nsf_pi_phu_nguyen.json.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Name match only; Nguyen may be co-PI on others (coPDPI not searched); AghaKouchak, Hsu, Sorooshian PI queries not run for lack of time.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Amir+AghaKouchak&printFields=id,title,awardeeName,startDate,expDate,fundsObligatedAmt",
+   "fetched_url": null,
+   "title": "NSF Awards API: awards with PI Amir AghaKouchak",
+   "author_org": "National Science Foundation",
+   "published": "live query",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nsf_pi_aghakouchak.json.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Only first 561 of 1260 lines read (older awards after line 561 unread). Hsu and Sorooshian PI queries not run. NSF only; NOAA/NASA from pt3 run.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Kuolin+Hsu&printFields=id,title,awardeeName,startDate,expDate,fundsObligatedAmt,activeAwd",
+   "fetched_url": null,
+   "title": "NSF Awards API: awards with PI name Kuolin Hsu",
+   "author_org": "National Science Foundation",
+   "published": "live query",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nsf_pi_hsu.json.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Name match only (spelling Kuolin; Kuo-lin not tried); co-PI roles not searched.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Soroosh+Sorooshian&printFields=id,title,startDate,expDate,fundsObligatedAmt,activeAwd",
+   "fetched_url": null,
+   "title": "NSF Awards API: awards with PI Soroosh Sorooshian",
+   "author_org": "National Science Foundation",
+   "published": "live query",
+   "data_period": null,
+   "source_type": "dataset",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nsf_pi_sorooshian.json.json",
+   "retrieved": "2026-11-27",
+   "limitations": "NSF only; name match on PI field; co-PI roles not searched.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6335616/",
+   "fetched_url": null,
+   "title": "The CHRS Data Portal, an easily accessible public repository for PERSIANN global satellite precipitation data (Nguyen et al. 2019, Scientific Data)",
+   "author_org": "UC Irvine CHRS",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "peer_reviewed_paper",
+   "evidence_id": "sa2-E1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa2/nguyen2019_chrs_portal_pmc.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Backup, mirror, second site, checksum, disaster recovery: NOT PRESENT (find_text search of saved text for server|backup|mirror|storage|cloud|checksum|md5|redundan). 2019 paper; the infrastructure may have changed. The PMC URL was carried over from the earlier run; check it against that run's record.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CDR",
+   "author_org": "UC Irvine CHRS",
+   "published": "directory dates 2021-03-15 to 2026-10-14",
+   "data_period": null,
+   "source_type": "data_listing",
+   "evidence_id": "sa2-E2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/persiann_cdr_dirlist.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Only the top level was read; daily/ timed out (45 s). md5/checksum files at top level: NOT PRESENT; subfolders unchecked.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://www.oit.uci.edu/services/infrastructure/data-backups/",
+   "fetched_url": null,
+   "title": "Data Backup and Recovery Service - UCI OIT",
+   "author_org": "UC Irvine Office of Information Technology",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official_institutional_page",
+   "evidence_id": "sa2-E3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa2/oit_data_backups_extract.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "An opt-in, paid campus service; nothing shows CHRS servers use it. Backup storage location and restore testing: NOT PRESENT. Read via a WebFetch extract.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://security.ucop.edu/files/documents/policies/uc-is-12-archived.pdf",
+   "fetched_url": null,
+   "title": "Continuity Planning and Disaster Recovery, University of California Policy BFB-IS-12 (2007, archived)",
+   "author_org": "University of California Office of the President",
+   "published": "2007 (archived)",
+   "data_period": null,
+   "source_type": "policy",
+   "evidence_id": "sa2-E4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/uc_is12_2007_archived.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Archived version, replaced by IS-12 IT Recovery (effective 2021-07-01 per a search snippet); the current text (policy.ucop.edu/doc/7020451/BFB-IS-12) was not read. Whether CHRS servers fall under it: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.oit.uci.edu/files/2021/07/Data-Backup-and-Recovery-SLA.pdf",
+   "fetched_url": null,
+   "title": "Office of Information Technology Data Center Infrastructure: Data Backup and Recovery Service SLA",
+   "author_org": "UC Irvine Office of Information Technology",
+   "published": "2021-07 (file path)",
+   "data_period": null,
+   "source_type": "official_institutional_page",
+   "evidence_id": "sa2-E5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa2/oit_backup_sla.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "An opt-in campus service; no source shows CHRS servers subscribe. Restore testing: NOT PRESENT in the searched lines. Downloaded via the WebFetch binary save from the bpb-us-e2.wpmucdn.com redirect, so the unreadable entry for this URL is now superseded.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: UC Irvine OIT campus backup service",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/yearly/",
+   "fetched_url": null,
+   "title": "Index of /CHRSdata/PERSIANN-CDR/yearly",
+   "author_org": "UC Irvine CHRS",
+   "published": "file dates 2017-02-21 to 2026-03-24",
+   "data_period": null,
+   "source_type": "data_listing",
+   "evidence_id": "sa2-E6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "subagent",
+   "local_file": "work/raw/sa2/persiann_cdr_yearly_dirlist.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "One subfolder only. A find_text search for md5|sha|checksum|readme matched only data-file names, so a checksum file is NOT PRESENT here. The daily/ folder was not read (timed out).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "m1",
+   "url": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/daily/",
+   "title": "Index of /CHRSdata/PERSIANN-CDR/daily (live directory listing)",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "data_period": "file last-modified dates 2014-02 to 2026-10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/chrs_cdr_daily_index.txt",
+   "evidence_id": null,
+   "limitations": "Last-modified dates show when each file was last written on this server, not necessarily its first posting (a file rewritten later shows the later date)."
+  },
+  {
+   "id": "m2",
+   "url": "https://chrsdata.eng.uci.edu/",
+   "title": "CHRS Data Portal, Info tab (Welcome to CHRS Data Portal; Acknowledgements)",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/chrsdata-eng-uci-edu_134209.txt",
+   "evidence_id": null,
+   "limitations": "Undated text; the browser read shows no date on the Info tab."
+  },
+  {
+   "id": "m4",
+   "url": "https://www.ncei.noaa.gov/node/8306",
+   "title": "Precipitation - PERSIANN CDR processing delay (NCEI notice)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "data_period": "undated notice; first Wayback capture 2025-09-13, still live 2026-11-27",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/ncei_persiann_cdr_delay.txt",
+   "evidence_id": null,
+   "limitations": "Undated; gives no cause or start date."
+  },
+  {
+   "id": "m5",
+   "url": "https://web.archive.org/cdx/search/cdx?url=www.ncei.noaa.gov/node/8306&output=json&collapse=digest",
+   "title": "Wayback CDX listing, NCEI PERSIANN CDR processing delay notice",
+   "author_org": "Internet Archive",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "data_period": "captures 2025-09-13 to 2026-06-10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/cdx_ncei_node8306.json",
+   "evidence_id": null,
+   "limitations": "Capture dates bound when the notice existed, not when it was posted."
+  },
+  {
+   "id": "m3",
+   "url": "https://chrsdata.eng.uci.edu/",
+   "title": "CHRS Data Portal, home page (PERSIANN panel and What's New)",
+   "author_org": "CHRS, UC Irvine",
+   "published": null,
+   "retrieved": "2026-11-27",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/chrsdata-eng-uci-edu_134158.txt",
+   "evidence_id": null,
+   "limitations": null
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "CHRS's directory lists one 'Program & System Administrator' (an Assistant Specialist); the portal was built in 2016 by a CHRS team of scientists and programmers, and its development was paid 'mostly from discretionary sources'. No page names Samueli School IT or campus OIT as host or maintainer. Supports D-3.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Tu Thanh Ung | Assistant Specialist | ungtt@uci.edu",
+     "location": "Program & System Administrator section"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "is a free-to-access data repository built in 2016 by a team of scientists and computer programmers at CHRS",
+     "location": "Background & Summary"
+    },
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "Financial resources for development of CHRS Data Portal came mostly from discretionary sources.",
+     "location": "Info tab, Acknowledgements"
+    },
+    {
+     "source_id": "m2",
+     "relationship": "contextualizes",
+     "passage": "ICIWaRM of the US Army corps of Engineering has provided a major part of support for Mr. Dan Braithwaite, Programmer Analyst III at CHRS.",
+     "location": "Info tab, Acknowledgements"
+    }
+   ],
+   "applicability": "Staff counts are entries on CHRS's own directory page, not an official headcount.",
+   "confidence": "moderate",
+   "confidence_reason": "CHRS's own pages and paper, read raw; who maintains the servers today is not stated anywhere.",
+   "sole_source_reason": "CHRS's own directory and portal pages are the authority for its own staff and funding acknowledgements."
+  },
+  {
+   "id": "c2",
+   "text": "PERSIANN and PERSIANN-CDR are produced on CHRS's own servers (PERSIANN-CCS on a NOAA NESDIS server); no source says where the CHRS servers sit, whether they are backed up, or that a second CHRS site exists. For RRS-1, only PERSIANN-CDR has an independent copy (NCEI, per the earlier runs); no check of the CHRS copy against NCEI's was found. Supports D-2 (single point of failure for PERSIANN, PDIR-Now and CCS-CDR); contradicts RRS-1 for the CHRS-only products.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "While CHRS’s servers produce PERSIANN and PERSIANN-CDR by implementing the algorithms locally, NOAA NESDIS’s server generates PERSIANN-CCS data",
+     "location": "Methods"
+    }
+   ],
+   "applicability": "Absence of evidence: nothing is published on CHRS backups or mirrors.",
+   "confidence": "low",
+   "confidence_reason": "Rests on silence plus one 2019 paper; a backup could exist unpublished.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c3",
+   "text": "No checksums are published: the CHRS PERSIANN-CDR yearly and daily HTTPS listings hold only .bin.gz data files (15,900 daily files) and no md5, sha or manifest file, and no fixity practice is described anywhere. Contradicts RRS-2 (no evidence of checks).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "aB1_y24.bin.gz | 2025-12-15 13:52 | 2.3M | aB1_y25.bin.gz | 2026-03-24 10:08 | 2.3M",
+     "location": "yearly/ listing"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "Name | Last modified | Size | Description | Parent Directory |  | - | aB1_d00001.bin.gz | 2014-02-24 19:30 | 1.0M",
+     "location": "daily/ listing, top"
+    }
+   ],
+   "applicability": "Checked the CDR yearly and daily folders and the top level; other product folders not listed file by file.",
+   "confidence": "moderate",
+   "confidence_reason": "Direct reads of the listings; internal checks could exist unpublished.",
+   "sole_source_reason": "The server's own directory listing is the authority for which files it publishes."
+  },
+  {
+   "id": "c4",
+   "text": "UC Irvine OIT sells an opt-in, recharge-billed server backup service for on-campus data centers, with off-site clone copies and equipment in the Science Library Data Center, and says it is not archival storage; UC's 2007 IS-12 calls for periodically tested plans. No source shows CHRS servers use the OIT service or that CHRS has a DR plan or test. Neither supports RRS-3.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Please note that the OIT Data Backup and Recovery Service is not an archival storage service.",
+     "location": "Archival"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "OIT makes secure offsite copies (also known as backup saveset clones) of backup data to a remote location.",
+     "location": "SLA, offsite copies"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "contextualizes",
+     "passage": "Plans should be tested on a periodic basis by various means, such as disaster",
+     "location": "IS-12 (2007, archived)"
+    }
+   ],
+   "applicability": "Campus-wide services and UC-wide policy; not tied to CHRS by any source.",
+   "confidence": "moderate",
+   "confidence_reason": "OIT's own pages read; the link to CHRS is absent, not contradicted.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c5",
+   "text": "UC Irvine's Office of Research lists CHRS as a School Center ('an informal interdisciplinary group'), not an organized research unit, and says most of its research is funded by NASA, NOAA and NSF; School Centers are set up by deans for a defined period. No campus funding, space or staff commitment is published. Sorooshian holds an endowed Samueli chair (2023), not tied to the data site by any source. Contradicts RRS-4 (no protection beyond grants).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "The majority of CHRS research activities are funded by NASA, NOAA, and NSF.",
+     "location": "Funding/support (extract)"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "They are established by Deans for a defined period of time.",
+     "location": "School Centers (extract)"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contextualizes",
+     "passage": "Two New Samueli Chairs in Engineering Announced",
+     "location": "headline"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "UCI's own pages, read by extraction; the CHRS page is out of date (names Sorooshian as director).",
+   "sole_source_reason": "UCI's Office of Research is the authority for its center categories."
+  },
+  {
+   "id": "c6",
+   "text": "NSF award 2332263 (PI AghaKouchak, CHRS director) is a flood-protection infrastructure grant that does not mention PERSIANN or the portal; it was terminated on 4/18/2025 and reinstated on 6/30/2025, and NSF now lists it active to 10/31/2027. No service effect on the data site was recorded. Sorooshian's 13 NSF awards are all inactive, the last (1331915, CyberSEES precipitation, the portal-era award) ending 08/31/2018.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Amir AghaKouchak                9/8/2023    11/1/2023     10/31/2026   4/18/2025     6/30/2025",
+     "location": "Dkt. 211-5, NSF row"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "\"expDate\": \"10/31/2027\"",
+     "location": "expDate"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "\"activeAwd\": \"false\", … \"expDate\": \"08/31/2018\", … \"fundsObligatedAmt\": \"1060000\", … \"id\": \"1331915\"",
+     "location": "award 1331915"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NSF's own API record and a court filing agree on the award; termination dates come from the court spreadsheet.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c7",
+   "text": "The portal's only outage record is the line 'NOTICE: Download links available again 2024-10-11', with no start date, cause or statement on data; the HTTP data directory answered normally on 2024-06-13, and the Wayback Machine has no portal captures between 2024-02-29 and 2025-08-21. The site came back with its files, so the outage partly supports RRS-5, but no disruption is documented well enough to show it.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "m3",
+     "relationship": "supports",
+     "passage": "NOTICE: Download links available again 2024-10-11",
+     "location": "PERSIANN panel"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "contextualizes",
+     "passage": "Index of /CHRSdata",
+     "location": "Wayback 2024-06-13"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "contextualizes",
+     "passage": "\"https://chrsdata.eng.uci.edu/\", \"20240229202723\", \"200\"",
+     "location": "CDX rows"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CHRS's own notice read raw; the cause is unpublished.",
+   "sole_source_reason": "The portal's own notice is the authority for its own outage."
+  },
+  {
+   "id": "c8",
+   "text": "CHRS's PERSIANN-CDR daily files show long posting lags: the last 2023 file was written 2024-04-15, then nothing until 2025-10-21 (2024 days 1–274), with the rest of 2024 on 2025-12-12, 2025 between 2025-12-13 and 2026-03-23, and January–July 2026 on 2026-10-13. Supports D-3 (production depends on a small team; delays unexplained).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "aB1_d23365.bin.gz | 2024-04-15 17:06 | 1.2M | aB1_d24001.bin.gz | 2025-10-21 00:55 | 1.3M",
+     "location": "daily/ lines 8772–8773"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "aB1_d24274.bin.gz | 2025-10-21 00:56 | 1.1M | aB1_d24275.bin.gz | 2025-12-12 15:29 | 1.1M",
+     "location": "daily/ lines 9046–9047"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "aB1_d25365.bin.gz | 2026-03-23 19:06 | 1.2M | aB1_d26000.bin.gz | 2026-10-13 16:55 | 2.7K | aB1_d26001.bin.gz | 2026-10-13 16:55 | 1.2M",
+     "location": "daily/ lines 9503–9505"
+    }
+   ],
+   "applicability": "Last-modified dates; a rewrite would show a later date.",
+   "confidence": "moderate",
+   "confidence_reason": "Direct read of the server listing; the reason is unpublished.",
+   "sole_source_reason": "The server's own listing is the authority for its file dates."
+  },
+  {
+   "id": "c11",
+   "text": "NCEI posts an undated notice that PERSIANN-CDR 'is experiencing a pause in operations due to processing delays'; the Wayback Machine first captured it on 2025-09-13 and it is still live on 2026-11-27, though NCEI also notes a general cloud migration. It names no cause at CHRS. Corroborates the 2024–2025 posting gap (c8); supports D-3.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "Please note: The Precipitation - PERSIANN CDR is experiencing a pause in operations due to processing delays. This message will be updated when processing resumes.",
+     "location": "notice text"
+    },
+    {
+     "source_id": "m5",
+     "relationship": "supports",
+     "passage": "\"20250913132027\",",
+     "location": "first CDX row, timestamp"
+    }
+   ],
+   "applicability": "Undated notice; the cause may be at CHRS, at NCEI, or in the inputs.",
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own notice read raw; cause and start date unpublished.",
+   "sole_source_reason": "NCEI's own notice is the authority for its own processing status."
+  },
+  {
+   "id": "c12",
+   "text": "Baseline for the 2024 lag: CHRS's yearly PERSIANN-CDR files for 2020-2023 were written about 3-4 months after each year ended (2021-04-06, 2022-04-21, 2023-04-05, 2024-04-15); the 2024 file was written 2025-12-15, about 11.5 months after year end, the longest since at least 2016 (from the Reconciler). The 2024 delay was out of pattern. Supports D-3.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "aB1_y20.bin.gz | 2021-04-06 14:01 | 2.3M | aB1_y21.bin.gz | 2022-04-21 16:29 | 2.3M | aB1_y22.bin.gz | 2023-04-05 18:35 | 2.3M | aB1_y23.bin.gz | 2024-04-15 17:36 | 2.3M | aB1_y24.bin.gz | 2025-12-15 13:52 | 2.3M",
+     "location": "yearly/ listing, lines 27-31"
+    }
+   ],
+   "applicability": "Last-modified dates; lags computed by the coordinator.",
+   "confidence": "moderate",
+   "confidence_reason": "Direct read of the server listing; cause unpublished.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c9",
+   "text": "CHRS's main website stayed up through the 2025 NSF termination period (Wayback captures with status 200 in 2025-03, 2025-05 and 2025-07), with no outage or funding notice on the 2025-05-03 capture. Context for RRS-5.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "\"https://chrs.web.uci.edu/\", \"20250503060756\", \"200\"",
+     "location": "CDX rows"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Archive captures only.",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c10",
+   "text": "Campus-wide, UC Irvine's Office of Research reported 85 awards terminated and 14 suspended, with 56 reinstated and 11 suspensions lifted (March 2026); CHRS is not named. Context for RRS-4.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "contextualizes",
+     "passage": "Current landscape: UCI award terminations/suspensions",
+     "location": "slide"
+    }
+   ],
+   "applicability": "UC Irvine as a whole, not CHRS.",
+   "confidence": "moderate",
+   "confidence_reason": "Read by a subagent; campus-level figures.",
+   "sole_source_reason": null
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "NSF 2332263 end date",
+   "source_ids": [
+    "s4",
+    "s5"
+   ],
+   "status": "unresolved",
+   "explanation": "The court spreadsheet gives an end date of 10/31/2026; NSF's API record now gives 10/31/2027 (latest amendment 04/29/2025). The later date likely reflects an extension, but no source says so."
+  }
+ ],
+ "coverage_gaps": [
+  "Reason for portal download links being down before 2024-10-11, its start date and any data loss: no CHRS notice, news or paper found. A small-site gap: no outage or status page was found. (from sa3)",
+  "Why the PERSIANN-CDR 2024 files were posted only in October 2025, and why the info tab is dated 2020: not explained anywhere searched. Wayback has no daily-directory capture after 2024-04-21. (from sa3)",
+  "Not done for lack of time: CDX for persiann.eng.uci.edu/CHRSdata/ and older hosts (chrs.web.uci.edu, fire.eng.uci.edu); Grant Watch lists; UCI news on CHRS grants (the 2025-10-10 news.uci.edu piece Research realities in the face of funding restrictions is unread). No server move, migration or data-loss notice found in what was read. (from sa3)",
+  "UCI News 2025-10-10 Research realities in the face of funding restrictions was read in full (saved as _unused): no mention of CHRS, PERSIANN, AghaKouchak, Sorooshian, NSF or reinstatement. No UCI or press item ties any 2025 grant action to the CHRS data site. (from sa3)",
+  "No page says who built or currently maintains the CHRS Data Portal or the persiann.eng.uci.edu HTTPS/FTP servers, or whether Samueli School IT or campus OIT hosts them. CHRS directory lists one Program & System Administrator (Tu Thanh Ung, Assistant Specialist); funding of that post not published. Searches: CHRS UC Irvine people staff (uci.edu); CHRS Data Portal chrsdata.eng.uci.edu developer server; Henry Samueli School of Engineering IT services research computing servers (uci.edu); Tu Ung UC Irvine CHRS; pt1 saved chrsdata pages searched for team/maintain/administrator/server. (from sa1)",
+  "Lead not read: author contributions of Nguyen et al. 2019 on nature.com (https://www.nature.com/articles/sdata2018296) may say who developed the portal. (from sa1)",
+  "No UCI campus or school funding, space or staff commitment to CHRS found. Sorooshian named a Henry Samueli Chair in Engineering (2023, search snippet only); engineering.uci.edu/news/2023/8/two-new-samueli-chairs-engineering-announced and engineering.uci.edu/node/14086 returned HTTP 404 to WebFetch, chair terms unread. Searches: Sorooshian CHRS endowment gift Samueli; Center for Hydrometeorology and Remote Sensing UCI Office of Research center (research.uci.edu). (from sa1)",
+  "r5 funders not updated beyond 2026-11-19_persiann-cdr-daily-about-pt3/answer.md. NSF API query ignored the awardeeName filter (unrelated results, saved _unused); pdPIName queries (AghaKouchak, Nguyen, Hsu, Sorooshian) and a USAspending recipient search were not run for lack of time. (from sa1)",
+  "No source found on where the CHRS servers are located (campus data center or engineering building), where they are backed up, or whether a second site exists. No source found on whether the CHRS copy of PERSIANN-CDR is checked against NCEI's copy. re3data has no CHRS Data Portal entry (the full API listing was searched); CoreTrustSeal was not checked. The Earth Engine/AWS/Azure copies of PERSIANN-CDR are listed by NCEI (earlier run file ncei_iso_c00854_wb20261031.txt, line 48) as NCEI's distribution, not CHRS's. Tried: Nguyen 2019 saved text (find_text), re3data API, directory listing. Not done: r6 later portal papers (iRain/RainSphere), Samueli ENGRIT, CRSP/HPC3, CoreTrustSeal search. (from sa2)",
+  "No published checksum or fixity practice for CHRS data found: the top-level PERSIANN-CDR listing has no checksum files, the daily/ listing timed out, and the md5 search found none. No CHRS disaster recovery plan or test found. UCI OIT backup (Networker, 2-month retention, not archival) and UC IS-12 are campus-wide services or policies, opt-in or policy-level; no source ties them to CHRS servers. The current 2021 IS-12 text was not read (snippet: RL4 and above require backup testing at least once a year). (from sa2)",
+  "OIT SLA (sa2-E5) read in part with find_text: standard retention once-a-day backup with 6-8 weeks retention (line 113); off-site clone copies on by default. Restore or recovery testing: no match for verif|restore test in the saved text. The SLA in the unreadable list was read later via WebFetch binary (see sa2-E5). The r6 later-paper search returned only snippets (RainSphere BAMS 2017) with no infrastructure details; the full papers were not read. (from sa2)",
+  "Why the portal's information tab is dated 2020: the coordinator's browser read of the Info tab shows no date; not found.",
+  "CoreTrustSeal, Samueli ENGRIT, CRSP/HPC3 and the current (2021) UC IS-12 text were not read.",
+  "Checker counter-search leads seen only as snippets (not opened): NCAR EOL dataset 94.041 linking to the CHRS PERSIANN archive; Dryad PERSIANN-CCS-CDR sample (doi:10.5061/dryad.n8pk0p38q); Google Earth Engine PERSIANN-CDR catalog (coverage to 2024-09-30); a 2022 OIT Backup_Recovery_SLA.pdf; a UCI IT Recovery page mapping IS-12 levels to tiers (alternate data center); NTRS 20260002308 (PERSIANN-Unet, NASA/NOAA grant numbers)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q5",
+   "query": "url=chrsdata.eng.uci.edu/ (exact, collapse=digest); url=persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/ (prefix)",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "35 unique home-page captures 2017-2026; 6 PERSIANN-CDR rows. Snapshot 20240229 fetched; JS shell.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "api.nsf.gov awards 2332263",
+   "tool": "lookup (NSF award API)",
+   "notes": "active, exp 10/31/2027; court spreadsheet reused for termination/reinstatement dates; Grant Watch not checked",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "UC Irvine NSF grants reinstated 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains news.uci.edu, research.uci.edu, newuniversity.org",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CHRS Data Portal \"Download links available again\"",
+   "tool": "WebSearch",
+   "notes": "no notice page found; only the Sci Data 2019 portal paper",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PERSIANN-CDR 2024 data update CHRS delayed",
+   "tool": "WebSearch",
+   "notes": "no CHRS delay notice; results NCEI pause notice and mirrors (covered by other runs); led to live CHRS directory index",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CHRS UC Irvine people staff",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: uci.edu; found chrs.web.uci.edu/chrs_directory.php (read raw)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Center for Hydrometeorology and Remote Sensing UCI Office of Research center",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: research.uci.edu; center page read via WebFetch extraction",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CHRS Data Portal chrsdata.eng.uci.edu developer server",
+   "tool": "WebSearch",
+   "notes": "no page on who develops or runs the portal servers; only the 2019 Sci. Data paper and copies",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Henry Samueli School of Engineering IT services research computing servers",
+   "tool": "WebSearch",
+   "notes": "allowed_domains filter: uci.edu; no school IT page tied to CHRS; Computing Lab FAQ only (not read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Sorooshian CHRS endowment gift Samueli",
+   "tool": "WebSearch",
+   "notes": "result snippets: Sorooshian named a Henry Samueli Chair in Engineering (2023 engineering.uci.edu news); page 404 to WebFetch at two URLs; no gift to CHRS found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Tu Ung\" UC Irvine CHRS",
+   "tool": "WebSearch",
+   "notes": "nothing on the CHRS system administrator beyond the directory",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "api.nsf.gov awards awardeeName=University of California-Irvine keyword=precipitation satellite startDateStart=01/01/2025",
+   "tool": "lookup (NSF awards API)",
+   "notes": "awardee filter ignored by API; results unrelated (other institutions); saved as nsf_uci_precip_2025_unused.json. Award list otherwise reused from 2026-11-19_persiann-cdr-daily-about-pt3 answer.md (NOAA NA23OAR4310443 ended 2026-08-31, NASA 80NSSC23K0136 ended 2025-10-12, CISESS NA24NESX432C0001 to 2029-06-30, CHRS share unpublished); not updated",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "api.nsf.gov awards pdPIName=Phu Nguyen",
+   "tool": "lookup (NSF awards API)",
+   "notes": "totalCount 0",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "web.archive.org/web/2024/ engineering.uci.edu two-new-samueli-chairs-engineering-announced",
+   "tool": "fetch_page.py (Wayback)",
+   "notes": "read; live page 404",
+   "from": "sa1",
+   "copy_of": "https://engineering.uci.edu/news/2023/8/two-new-samueli-chairs-engineering-announced"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "nature.com/articles/sdata2018296 author contributions",
+   "tool": "WebFetch",
+   "notes": "redirected to idp.nature.com login; not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "api.nsf.gov awards pdPIName=Amir AghaKouchak",
+   "tool": "lookup (NSF awards API)",
+   "notes": "returned awards incl. 2332263 (active to 2027-10-31) and 1931335 (ended 2025-09-30); lines 562-1260 unread",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "api.nsf.gov awards pdPIName=Kuolin Hsu",
+   "tool": "lookup (NSF awards API)",
+   "notes": "totalCount 0",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "api.nsf.gov awards pdPIName=Soroosh Sorooshian",
+   "tool": "lookup (NSF awards API)",
+   "notes": "13 awards, all inactive, latest expired 2018-08-31",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UCI OIT research data backup disaster recovery",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UC IS-12 Continuity Planning and Disaster Recovery policy",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ucop.edu",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN md5 checksum CHRS data",
+   "tool": "WebSearch",
+   "notes": "no filter; no md5 for data files found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "re3data repositories query=CHRS",
+   "tool": "lookup (re3data API v1 repositories)",
+   "notes": "API returned the full repository list (not JSON); no CHRS/PERSIANN/Hydrometeorology match in it. File renamed re3data_full_list_unused.txt",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/ directory listing",
+   "tool": "lookup (HTTPS directory listing)",
+   "notes": "top level read; daily/ timed out at 45 s",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "RainSphere CHRS PERSIANN web system paper",
+   "tool": "WebSearch",
+   "notes": "no filter; snippets only: RainSphere BAMS 2017 (doi 10.1175/BAMS-D-16-0036.1) and the 2019 portal paper; no infrastructure details in snippets",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Data-Backup-and-Recovery-SLA.pdf via wpmucdn redirect",
+   "tool": "WebFetch",
+   "notes": "binary saved and converted with pdftotext; copy_of the OIT SLA URL",
+   "from": "sa2",
+   "copy_of": "https://www.oit.uci.edu/files/2021/07/Data-Backup-and-Recovery-SLA.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CHRS UC Irvine computing cluster storage PERSIANN servers",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu; results were only portal pages, directory listings (PERSIANN-CDR/mthly, PERSIANN/6hrly, PERSIANN-CCS) and papers; none describe the servers or storage",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/daily/",
+   "tool": "lookup (fetch_page.py directory listing)",
+   "notes": "Coordinator downloaded the full daily index (3.6 MB HTML, 15,900 file rows) after sa2's curl timed out and the browser text was too long; saved as work/raw/main/chrs_cdr_daily_index.txt (source m1). No md5/sha/manifest files.",
+   "copy_of": "https://persiann.eng.uci.edu/CHRSdata/PERSIANN-CDR/daily/"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "url=https://web.archive.org/web/20250821/https://chrsdata.eng.uci.edu/",
+   "tool": "browser (Wayback snapshot)",
+   "notes": "Archived portal snapshot renders empty in the built-in browser (AngularJS content not archived); listed as not archived.",
+   "copy_of": "https://chrsdata.eng.uci.edu/"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CHRS UC Irvine PERSIANN server backup mirror",
+   "tool": "duckduckgo (browser)",
+   "notes": "Gap pass. Only CHRS's own hosts (chrsdata, chrs.web, persiann, rainsphere, irain, hydis .eng.uci.edu, a statistics page) and an aggregator listing; nothing on backups or mirrors."
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PERSIANN-CDR 2024 update delayed CHRS",
+   "tool": "duckduckgo (browser)",
+   "notes": "Gap pass. Found NCEI notice node/8306 'PERSIANN CDR processing delay' (read raw, source m4); CDX listing dates it from 2025-09-13 (m5)."
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UCI Samueli engineering IT server hosting eng.uci.edu",
+   "tool": "duckduckgo (browser)",
+   "notes": "Gap pass. Only OIT service pages (virtual hosting, server registration, OIT Data Center snippet: houses 'co-located' systems owned by campus units and research groups); nothing ties CHRS's servers to OIT or Samueli IT."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "CHRS people/staff/about pages naming portal developers and system administrators",
+   "query": "Center for Hydrometeorology Remote Sensing staff",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "UC Irvine (OIT, Samueli School of Engineering)",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "UCI OIT and engineering IT backup and disaster recovery services for research servers",
+   "query": "UCI OIT research data backup",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "UC Irvine Office of Research",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q4",
+   "aim": "UCI Office of Research center listing for CHRS (ORU status, campus support)",
+   "query": "UCI organized research unit CHRS",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NSF",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q5",
+   "aim": "NSF award 2332263 record and termination/reinstatement",
+   "query": "api.nsf.gov award 2332263",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA, NASA, NSF",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "awards to CHRS that pay for the portal and servers",
+   "query": "CHRS UC Irvine award USAspending",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "papers describing the portal's infrastructure (Nguyen et al. 2019 Scientific Data and later)",
+   "query": "CHRS Data Portal Scientific Data 2019",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "CHRS",
+   "publisher": "the organization itself (past versions of its pages)",
+   "subquestion_id": "q5",
+   "aim": "Wayback Machine captures of chrsdata.eng.uci.edu and persiann.eng.uci.edu/CHRSdata",
+   "query": "url=chrsdata.eng.uci.edu",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "UC Irvine, CHRS",
+   "publisher": "press",
+   "subquestion_id": "q5",
+   "aim": "news on CHRS grant terminations or reinstatement, 2025",
+   "query": "UC Irvine NSF grant terminations reinstated 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "re3data, CoreTrustSeal",
+   "publisher": "regulators, standards bodies, certifiers",
+   "subquestion_id": "q3",
+   "aim": "registry or certification entry for the CHRS Data Portal",
+   "query": "re3data CHRS Data Portal",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "University of California Office of the President",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "UC policy IS-12 continuity planning and disaster recovery",
+   "query": "UC IS-12 disaster recovery policy",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 18.5,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 180354,
+  "subagent_minutes_planned": 30,
+  "subagent_minutes": 26.6,
+  "follow_ups": 0,
+  "continuations": 7,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

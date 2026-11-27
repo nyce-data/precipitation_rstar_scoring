@@ -1,0 +1,2696 @@
+{
+ "question": "Which of CoCoRaHS's inputs (observers, approved gauge and its makers, website/app/hosting, NWS offices and coordinators) faced decline, disruption, end of supply or news about these between January 2024 and November 2026, and what could replace them or CoCoRaHS's data (COOP, mesonets, radar-gauge products)? Rate each input imminent, emerging or no current threat, and say whether each finding supports or contradicts DIRS-1, DIRS-2, DIRS-3 and DIRS-5.",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (2025-2026 NWS staffing cuts, proposed COOP right-sizing, mesonet grant cancellations) plus counts over several years by state",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Observer and station counts by year and state; recruitment and retention; agreement with GHCN-Daily's turnover",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s21",
+    "s3",
+    "s4",
+    "s5",
+    "s14",
+    "s2",
+    "s13",
+    "s15"
+   ],
+   "remaining_gap": "No CoCoRaHS count of stations whose last report was in 2025, so the GHCN-Daily 2,139 figure can be compared only with turnover in other years; no full by-state series."
+  },
+  {
+   "id": "q2",
+   "question": "Approved gauge(s), maker(s) and supply 2024-2026",
+   "status": "answered",
+   "source_ids": [
+    "s57",
+    "s58",
+    "s59",
+    "s61",
+    "s62",
+    "s56",
+    "s42",
+    "s43",
+    "s54",
+    "s46",
+    "s45"
+   ],
+   "remaining_gap": "Exact closure date of Productive Alternatives' production area and whether the mold or tooling moved to Darter Plastics are not published; CoCoRaHS's own pages still name Productive Alternatives."
+  },
+  {
+   "id": "q3",
+   "question": "Website, data entry, mobile apps and hosting",
+   "status": "answered",
+   "source_ids": [
+    "s51",
+    "s47",
+    "s48",
+    "s52",
+    "s60",
+    "s49",
+    "s2",
+    "s50",
+    "s53"
+   ],
+   "remaining_gap": "No outage history for 2024-2026 is published; who holds the Azure subscription and the IT budget are not public."
+  },
+  {
+   "id": "q4",
+   "question": "NWS offices and state/county coordinators who recruit and train",
+   "status": "answered",
+   "source_ids": [
+    "s7",
+    "s9",
+    "s18",
+    "s6",
+    "s17",
+    "s10",
+    "s13",
+    "s12",
+    "s20",
+    "s2",
+    "s16",
+    "s11"
+   ],
+   "remaining_gap": "No source measures an effect of NWS staffing losses on CoCoRaHS recruiting; OIG audit 2025-523 final report not found; no earlier coordinator-vacancy baseline."
+  },
+  {
+   "id": "q5",
+   "question": "Substitutes for CoCoRaHS as dense daily precipitation: COOP, mesonets, radar-gauge products",
+   "status": "answered",
+   "source_ids": [
+    "s8",
+    "s40",
+    "s41",
+    "s29",
+    "s30",
+    "s39",
+    "s26",
+    "s27",
+    "s28",
+    "s38",
+    "s23",
+    "s22",
+    "s24",
+    "s25",
+    "s34",
+    "s31",
+    "s33",
+    "s32"
+   ],
+   "remaining_gap": "No COOP station series by year; Stage IV gauge inputs unread; whether current MRMS receives CoCoRaHS via MADIS not settled; NMP station total not found."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://media.cocorahs.org/docs/WCC_2026_Day2_Spies_Recruiting_Retention.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Recruiting and Retention Update (WCC 2026, Day 2; M. Spies, CT State Coordinator)",
+   "author_org": "CoCoRaHS (state coordinator presentation)",
+   "published": "2026-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wcc2026_spies.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slides built from CoCoRaHS station history report downloaded May 1, 2026; 'active' = reported in prior 12 months. Two slides give USA created as 4,553 and 4,578 (inconsistent within the deck). No 2023 or 2024 active totals in this deck's text (earlier-year slides are maps only in the text).",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://nimss.org/seas/52786",
+   "fetched_url": null,
+   "title": "Annual Report for Multistate Research Activity: WCC1012 Managing and Utilizing Precipitation Observations from Volunteer Networks (period 10/01/2024 to 05/20/2025)",
+   "author_org": "NIMSS / WCC1012 coordinating committee (Colorado State University)",
+   "published": "2025-07-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nimss_seas_52786.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No absolute station or observer counts; no state breakdown; 'constraints and uncertainty' not explained (no mention of NWS or federal travel limits). Also reports 'Migrated entire cyberinfrastructure to Azure' and '99+ percent uptime' (q3 context).",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://www.cocorahs.org/marchmadness.aspx",
+   "fetched_url": null,
+   "title": "CoCoRaHS Rain Gauge Rally 2026 (final results)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "2026-05 (results after April 2026 contest)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/rally2026.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Contest month changed from March to April in 2026, so not strictly comparable with 2024/2025. Two totals on page (1,544 observers vs 1,542 station count). New sign-ups only; says nothing of how many later reported. Per-state table available in file for all states.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s4",
+   "url": "https://web.archive.org/web/20250416142125/https://www.cocorahs.org/marchmadness.aspx",
+   "fetched_url": null,
+   "title": "CoCoRaHS Rain Gauge Rally 2025 (Wayback snapshot 2025-04-16)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "2025-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/rally2025_wayback.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Archived copy; new sign-ups only during March 2025.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://web.archive.org/web/20240408164131/https://www.cocorahs.org/marchmadness.aspx",
+   "fetched_url": null,
+   "title": "CoCoRaHS Precipitation Absurdity 2024 (Wayback snapshot 2024-04-08)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "2024-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/rally2024_wayback.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Archived copy; banner text cut in the find output after 'NETWORK NA' (likely 'NATIONWIDE'); full table in file.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s6",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/2025-07-17-NWS-Staffing-Announcement-SECURED.pdf",
+   "fetched_url": null,
+   "title": "Audit of National Weather Service Staffing, Project No. 2025-523 (announcement memo)",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2025-07-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oig_nws_staffing_announce_2025.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Announcement only; no findings. Scope names forecasts/warnings/IDSS; volunteer observer programs (COOP, CoCoRaHS) NOT PRESENT. No final audit report found in this run's searches.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NWS staffing",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.pbs.org/newshour/politics/nearly-half-of-national-weather-service-offices-are-critically-understaffed-experts-warn",
+   "fetched_url": null,
+   "title": "Nearly half of National Weather Service offices are critically understaffed, experts warn",
+   "author_org": "PBS NewsHour (Associated Press)",
+   "published": "2025-04-04",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pbs_nws_understaffed_2025.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Data crowd-sourced by NWS employees, verified by AP; no mention of CoCoRaHS, COOP, observing program leaders or volunteer recruiting/training (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NWS staffing",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://public-inspection.federalregister.gov/2026-09099.pdf",
+   "fetched_url": null,
+   "title": "Request for Comments on the National Weather Service Cooperative Observing Program (COOP), FR Doc. 2026-09099",
+   "author_org": "NOAA National Weather Service (Federal Register notice)",
+   "published": "2026-05-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fr_2026-09099_coop.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Public-inspection copy (obtained via WebFetch binary save, converted with pdftotext). CoCoRaHS NOT PRESENT by name; asks whether 'external networks be suitable alternatives to federally managed COOP stations' (line 259). Relevant to q5 and to NWS observing-program workload.",
+   "found_by": [
+    "sa1",
+    "sa3"
+   ],
+   "scope": "context: NWS COOP",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.eenews.net/articles/nws-offices-face-vacancy-crisis-as-more-cuts-loom-union-says/",
+   "fetched_url": null,
+   "title": "NWS offices face vacancy crisis as more cuts loom, union says",
+   "author_org": "E&E News (Daniel Cusick)",
+   "published": "2025-03-12",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction, no local copy. Volunteer observers, CoCoRaHS, COOP, observer training: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NWS staffing"
+  },
+  {
+   "id": "s10",
+   "url": "https://www.yahoo.com/news/national-weather-needs-volunteers-including-171535171.html",
+   "fetched_url": null,
+   "title": "National Weather Service needs volunteers, including kids, to measure rain and snow (Detroit Free Press, syndicated)",
+   "author_org": "Detroit Free Press (Frank Witsil), via Yahoo News",
+   "published": "2025-03-10",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction, no local copy; number of observers NOT PRESENT; official statement linking cuts to CoCoRaHS NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s11",
+   "url": "https://www.mprnews.org/story/2026/11/21/precipitation-collection-network-pioneer-nolan-doesken-remembered-by-weather-community",
+   "fetched_url": null,
+   "title": "Precipitation collection network pioneer Nolan Doesken remembered by weather community",
+   "author_org": "MPR News",
+   "published": "2026-11-21",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/970a08db9e859bad.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Doesken was retired (2025 WCC1012 report lists him as 'Colorado State University (retired)'); nothing on succession or coordinator roles.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s12",
+   "url": "https://media.cocorahs.org/docs/NY_CoCo_Newsletter_Jan2025.pdf",
+   "fetched_url": null,
+   "title": "NY CoCoRaHS Newsletter, January 2025",
+   "author_org": "New York CoCoRaHS (Samantha Borisoff, NYS Coordinator)",
+   "published": "2025-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ny_newsletter_jan2025.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Volunteer county coordinators, not NWS staff; 26 counties vs 13 coordinators (one coordinator may cover several counties - not stated). Single state; no earlier-year comparison, so not evidence of a change.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s13",
+   "url": "https://www.weather.gov/ind/incocorahs",
+   "fetched_url": null,
+   "title": "Indiana CoCoRaHS Information",
+   "author_org": "NWS Indianapolis",
+   "published": "2026 (states 'As of March 17, 2026')",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nws_ind_cocorahs.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "County list (in a table/image) not captured in text; no year-on-year counts. Shows NWS office still doing CoCoRaHS outreach in 2026 (q4).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s14",
+   "url": "https://nimss.org/storage/3841/WERA1012_Summary_of_Meeting_Minutes_2020-2022.pdf",
+   "fetched_url": null,
+   "title": "WERA1012 Summary of Meeting Minutes 2020-2022",
+   "author_org": "WERA1012 multistate committee (USDA NIMSS)",
+   "published": "2020-2022",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera1012_minutes_2020_2022.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Pre-2023 baseline; exact meeting year of this paragraph not checked in this pass. 'About 3000' is CoCoRaHS's all-station dropout; GHCN-Daily's 1,785-2,078 per year counts only IDs with 100+ obs, so the two are not the same measure.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s15",
+   "url": "https://www.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS home page (live)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_home.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Rounded promotional figure, undated; differs from the 27,623 active stations (May 1, 2026) in the WCC 2026 slides and from 'over 26,000' in a search snippet of an earlier copy (not read).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s16",
+   "url": "https://www.cocorahs.org/Content.aspx?page=wera1012",
+   "fetched_url": null,
+   "title": "CoCoRaHS WCC 1012 (formerly WERA 1012) committee page",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_wera1012_page.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Reason for postponement NOT PRESENT; the NIMSS 2025 report says an internal CoCoRaHS meeting was held May 20-22, 2025 because many participants could not attend 'due to constraints and uncertainty'. 'Postponed' text quoted from the saved .html, not the .txt.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s17",
+   "url": "https://www.weather.gov/mob/CoCoRaHSRecruitingBlitz2026",
+   "fetched_url": null,
+   "title": "CoCoRaHS April 2026 Recruiting Blitz - Become a Volunteer Rainfall Observer",
+   "author_org": "NWS Mobile/Pensacola",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nws_mob_blitz2026.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "One office; no observer numbers or staffing information on the page (NOT PRESENT). relationship is against the hypothesis that NWS cuts stopped office recruiting.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://www.eenews.net/articles/national-weather-service-in-transition-as-hurricane-season-begins/",
+   "fetched_url": null,
+   "title": "National Weather Service in transition as hurricane season begins",
+   "author_org": "E&E News (Chelsea Harvey)",
+   "published": "2026-06-09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction; fragments only, no local copy (eenews.net not .org). Volunteer observers, CoCoRaHS, COOP: NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: NWS staffing"
+  },
+  {
+   "id": "s19",
+   "url": "https://climate.uw.edu/2025/12/06/climate-matters-the-cocorahs-rain-gauge-network-and-a-tale-of-two-hydrologic-extremes",
+   "fetched_url": null,
+   "title": "Climate Matters: The CoCoRaHS Rain Gauge Network and a Tale of Two Hydrologic Extremes",
+   "author_org": "Office of the Washington State Climatologist (Jacob Genuise, Katie Boyd)",
+   "published": "2025-12-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction, no local copy; trend NOT PRESENT; station counts NOT PRESENT. Same text was seen in earlier run pt4 (sa4/03cde002c345b9de.txt).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s20",
+   "url": "https://www.cocorahs.org/Content.aspx?page=coord_tx",
+   "fetched_url": null,
+   "title": "Texas State Coordinator / regional and county coordinators page",
+   "author_org": "CoCoRaHS Texas",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_coord_tx.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated page; only one county explicitly marked vacant in the text found (search snippet also named Edwards, Kendall, Uvalde, not checked). No earlier copy compared, so not evidence of change 2024-2026.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s21",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_15_RecruitingRetention_Spies.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Recruiting and Retention Update (WERA 1012 2024 meeting, item 15; M. Spies, CT State Coordinator)",
+   "author_org": "CoCoRaHS (state coordinator presentation)",
+   "published": "2024-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e22",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/wera2024_spies.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Same method as the WCC 2026 deck (station history report, active = reported in prior 12 months). Found via cocorahs.org WERA1012-2024-Recordings-Presentations page (read by WebFetch). Together with WCC 2026 deck: 25,987 (2023), 27,118 (2024), 27,676 (2025), 27,623 (2026). Stations whose last report year = 2023 not checked in this pass.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://www.highergov.com/idv/1305M226D0019/",
+   "fetched_url": null,
+   "title": "IDV 1305M226D0019 (KBR Wyle Services, NWS Commercial Data Program / National Mesonet Program)",
+   "author_org": "HigherGov (aggregator of FPDS/SAM data)",
+   "published": "2026-08",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Read only through WebFetch extraction (no local copy); page layout made date labels ambiguous (8/31/26 and 8/31/31 shown). Aggregator, not SAM.gov itself. Station counts NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: National Mesonet Program contract"
+  },
+  {
+   "id": "s23",
+   "url": "https://synopticdata.com/wp-content/uploads/2025/10/National-Mesonet-Program-Overview.pdf",
+   "fetched_url": null,
+   "title": "National Mesonet Program Overview",
+   "author_org": "Synoptic Data",
+   "published": "2024-12 (PDF last modified 2024-12-19; posted in 2025/10 upload folder)",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nmp_overview.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Synoptic was the program manager before the 2026 KBR award; station count and daily precipitation availability NOT PRESENT. Host synopticdata.com refused by sandbox; PDF obtained via WebFetch binary save.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: National Mesonet Program partners"
+  },
+  {
+   "id": "s24",
+   "url": "https://www.schumer.senate.gov/newsroom/press-releases/schumer-demands-trump-admin-immediately-reverse-ripping-away-funding-for-ualbanys-mesonet-new-yorks-state-of-the-art-weather-tracking-system-that-helps-keep-upstate-ny-communities-prepared-and-safe-during-storms",
+   "fetched_url": null,
+   "title": "Schumer demands Trump admin immediately reverse ripping away funding for UAlbany's Mesonet",
+   "author_org": "Office of Sen. Chuck Schumer",
+   "published": "2025-07-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/schumer_ny_mesonet.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Grant funded the EMPOWER research project, not station operations per se; partisan press release.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NYS Mesonet funding"
+  },
+  {
+   "id": "s25",
+   "url": "https://www.albany.edu/news-center/news/2026-landmark-state-funding-boosts-new-york-state-mesonet",
+   "fetched_url": null,
+   "title": "Landmark State Funding Boosts New York State Mesonet",
+   "author_org": "University at Albany",
+   "published": "2026-05-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction only, no local copy. National Mesonet Program and the canceled DHS grant NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NYS Mesonet funding"
+  },
+  {
+   "id": "s26",
+   "url": "https://vlab.noaa.gov/web/wdtd/-/qpe-w-gauge-bias-correcti-1",
+   "fetched_url": null,
+   "title": "QPE w/ Gauge Bias Correction (MRMS product guide)",
+   "author_org": "NWS Warning Decision Training Division",
+   "published": "undated (MRMS v12.2)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wdtd_mrms_gauge_bias.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "CoCoRaHS NOT PRESENT. Whether CoCoRaHS reaches MRMS through MADIS is NOT PRESENT on this page.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: MRMS inputs",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://vlab.noaa.gov/web/wdtd/-/multi-sensor-qpe",
+   "fetched_url": null,
+   "title": "Multi-Sensor QPE (MRMS product guide)",
+   "author_org": "NWS Warning Decision Training Division",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wdtd_mrms_multisensor.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Page gives two different latency figures. CoCoRaHS NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: MRMS inputs",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://ams.confex.com/ams/95Annual/webprogram/Manuscript/Paper268098/ExtendedAbstract_Cocks_etal_ConfHydro_2.5.pdf",
+   "fetched_url": null,
+   "title": "MRMS QPE performance during the 2013-14 cool season",
+   "author_org": "Cocks, Martinaitis, Zhang, Howard (OU/CIMMS, NOAA/NSSL)",
+   "published": "2015-01",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocks_2015_mrms.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2015 study; current MRMS v12 inputs may differ. Host ams.confex.com refused by sandbox; PDF obtained via WebFetch binary save (redirect to studio.m-anage.com).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: MRMS inputs"
+  },
+  {
+   "id": "s29",
+   "url": "https://prism.oregonstate.edu/participate",
+   "fetched_url": null,
+   "title": "Participate in Citizen Science",
+   "author_org": "PRISM Group, Oregon State University",
+   "published": "undated (page footer 2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/prism_participate.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Number of CoCoRaHS stations used per day NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: PRISM inputs",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_7_NOAA_NCEI_Durre.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data at NCEI",
+   "author_org": "Imke Durre, Jessica Matthews (NOAA NCEI)",
+   "published": "2024-06-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wera2024_durre_ncei.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Slide 3 'CONUS Precipitation in GHCNd' shows values 13,192; 10,858; 8,520; 1,401; 101 without legible labels in the text copy. Also slide 4: Normals include 760 precipitation and 52 snowfall stations from CoCoRaHS; estimated normals include 4680 CoCoRaHS sites.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NCEI nClimGrid-Daily inputs",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://repository.library.noaa.gov/view/noaa/46580/noaa_46580_DS1.pdf",
+   "fetched_url": null,
+   "title": "Who Received the Most Rain Today? An Analysis of Daily Precipitation Extremes in the Contiguous United States Using CoCoRaHS and COOP Reports",
+   "author_org": "Goble, Doesken, Durre, Schumacher, Stewart, Turner (BAMS)",
+   "published": "2020-06",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_46580_cocorahs_coop.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Pre-2024; separate per-network counts or per-county density NOT PRESENT in passage read.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: CoCoRaHS plus COOP combined figure"
+  },
+  {
+   "id": "s32",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_2_PRISM_Daly.pdf",
+   "fetched_url": null,
+   "title": "PRISM Update (WERA-1012)",
+   "author_org": "Chris Daly, PRISM Climate Group, Oregon State University",
+   "published": "2024-06-10",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wera2024_prism_daly.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Hawaii only; text extracted from a chart, so layout is approximate. CONUS station counts NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: PRISM Hawaii inputs"
+  },
+  {
+   "id": "s33",
+   "url": "https://media.cocorahs.org/docs/PRISMWERA20.pdf",
+   "fetched_url": null,
+   "title": "PRISM Update (WERA-1012, 19 May 2020)",
+   "author_org": "Chris Daly, PRISM Climate Group, Oregon State University",
+   "published": "2020-05-19",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/prism_wera2020.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2020 slides with 2016-2017 data; outside the 2024-2026 window. Per-network station counts NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: PRISM network densities"
+  },
+  {
+   "id": "s34",
+   "url": "https://civilbeat.org/2025/05/hawaii-readies-weather-stations-against-trump-assault-on-climate-research/",
+   "fetched_url": null,
+   "title": "Hawaii Readies Weather Stations Against Trump Assault On Climate Research",
+   "author_org": "Honolulu Civil Beat (Marcel Honoré, Caitlin Thompson)",
+   "published": "2025-05-09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction only, no local copy. CoCoRaHS and COOP NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: Hawaii Mesonet funding"
+  },
+  {
+   "id": "s35",
+   "url": "https://ams.confex.com/ams/19Applied/webprogram/Paper190535.html",
+   "fetched_url": null,
+   "title": "A comparison of precipitation frequency distributions from National Weather Service Cooperative (COOP) stations and nearby Community Collaborative Rain, Hail and Snow Network (CoCoRaHS) stations",
+   "author_org": "Schwalbe, Doesken, Reges, Newman, Turner (Colorado State University), 19th Conference on Applied Climatology",
+   "published": "2011-07-18",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e15",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch returned a paraphrase (only a short phrase quoted verbatim); no local copy (ams.confex.com refused by sandbox, read via studio.m-anage.com redirect). 2011, outside window. Station counts NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: CoCoRaHS vs COOP density study"
+  },
+  {
+   "id": "s36",
+   "url": "https://www.weather.gov/media/notification/pdf_2026/scn26-34_Updated_WR_RTP_Discontinuation.aaa.pdf",
+   "fetched_url": null,
+   "title": "Service Change Notice 26-34 Updated: Discontinuation of the Max/Min Temperature and Precipitation Table Product (RTP)",
+   "author_org": "NWS Headquarters, Office of Chief Operating Officer",
+   "published": "2026-05-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/scn26-34_rtp.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "About a text product only; no COOP station closures stated. CoCoRaHS NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NWS products built from COOP/ASOS"
+  },
+  {
+   "id": "s37",
+   "url": "https://www.weather.gov/idp/MRMS_v12.2_Supplemental",
+   "fetched_url": null,
+   "title": "MRMS v12.2 Supplemental",
+   "author_org": "NWS",
+   "published": "undated (v12.2)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/mrms_v12_2_supplemental.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "CoCoRaHS, HADS, MADIS NOT PRESENT on page; implementation date NOT PRESENT in passage.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: MRMS inputs"
+  },
+  {
+   "id": "s38",
+   "url": "https://vlab.noaa.gov/web/wdtd/-/gauge-quality-control",
+   "fetched_url": null,
+   "title": "Gauge Quality Control (MRMS product guide)",
+   "author_org": "NWS Warning Decision Training Division",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/wdtd_gauge_qc.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "CoCoRaHS NOT PRESENT; whether MADIS includes CoCoRaHS NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: MRMS gauge QC inputs"
+  },
+  {
+   "id": "s39",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/nclimgrid-daily",
+   "fetched_url": null,
+   "title": "nClimGrid-Daily",
+   "author_org": "NOAA NCEI",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_nclimgrid_daily.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "CoCoRaHS NOT PRESENT; network selection NOT PRESENT. Read with sa3-e10 (Durre slides: No CoCoRaHS).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: nClimGrid-Daily inputs"
+  },
+  {
+   "id": "s40",
+   "url": "https://www.ncei.noaa.gov/access/homr/reports",
+   "fetched_url": null,
+   "title": "Historical Observing Metadata Repository (HOMR) reports",
+   "author_org": "NOAA NCEI",
+   "published": "undated (coop-stations.txt last updated 7 weeks before retrieval)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/homr_reports.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Roughly 9,000 is undated and counts published sites incl. HPD; differs from FR 2026 figure of about 6,700. coop-stations.txt itself not downloaded or counted (time).",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NCEI COOP site count"
+  },
+  {
+   "id": "s41",
+   "url": "https://www.ncei.noaa.gov/access/homr/file/coop-stations.txt",
+   "fetched_url": null,
+   "title": "HOMR coop-stations.txt (current U.S. NWS Cooperative Network station list)",
+   "author_org": "NOAA NCEI",
+   "published": "2026 (page said last updated 7 weeks before 2026-11-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/homr_coop_stations.txt.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Not counted before the deadline (no line-count tool allowed on saved files); the coordinator can count lines and the COOP/SOD flag column. Single snapshot, not a yearly series.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NCEI COOP station list"
+  },
+  {
+   "id": "s42",
+   "url": "https://www.cocorahs.org/Content.aspx?page=store",
+   "fetched_url": null,
+   "title": "Rain Gauge Suppliers (CoCoRaHS Store page), current",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_store_2026.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Out-of-stock / price notices: NOT PRESENT. Page is a link list; it does not name Productive Alternatives or say who makes the Stratus.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s43",
+   "url": "https://web.archive.org/web/20240108103045/https://cocorahs.org/Content.aspx?page=store",
+   "fetched_url": null,
+   "title": "Rain Gauge Suppliers (Wayback snapshot 2024-01-08)",
+   "author_org": "CoCoRaHS / Colorado Climate Center (via Internet Archive)",
+   "published": "snapshot 2024-01-08 (footer Copyright 1998-2023)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_store_2024.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only two snapshots compared (2024-01-08 and live 2026-11-26); the Wayback CDX (work/raw/sa2/cdx_store.json) lists 179 captures since 2023 that were not each read. Reasons for retailer changes NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s44",
+   "url": "https://www.cocorahs.org/Content.aspx?page=approvedgauges",
+   "fetched_url": null,
+   "title": "CoCoRaHS Approved Gauges page",
+   "author_org": "CoCoRaHS",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_approved_gauges.html.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "A fresh fetch on 2026-11-26 of page=approvedgauges and page=ApprovedGauges returned a page with no body text (saved as _unused), so the current version was not confirmed. The RG202 model number is NOT PRESENT on this page.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s45",
+   "url": "https://climateapps.dnr.state.mn.us/HIDENsityEdit/HIDENraingages.htm",
+   "fetched_url": null,
+   "title": "rain gage details (Minnesota DNR HIDEN)",
+   "author_org": "Minnesota DNR State Climatology Office",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Undated page, read via WebFetch extraction; prices NOT PRESENT; no 2024-2026 news about the company.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s46",
+   "url": "https://www.dayweather.com/rain-gauge",
+   "fetched_url": null,
+   "title": "Tropo Rain Gauge",
+   "author_org": "Climalytic (dayweather.com)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "vendor",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Stock status NOT PRESENT; date NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s47",
+   "url": "https://cocorahs.blogspot.com/2024",
+   "fetched_url": null,
+   "title": "New Mobile App Opens Up the World of CoCoRaHS (blog post, 2024-11-06)",
+   "author_org": "CoCoRaHS Blog",
+   "published": "2024-11-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction; the quotes are fragments returned by the extractor, not full sentences; mobile.cocorahs.org NOT PRESENT in the post.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s48",
+   "url": "https://chrome-stats.com/d/com.appcay.cocorahs",
+   "fetched_url": null,
+   "title": "CoCoRaHS Observer Android (Chrome-Stats)",
+   "author_org": "Chrome-Stats",
+   "published": "data as of 2025-02-05",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Third-party tracker; reason for removal NOT PRESENT; iOS status of the old app (id 827714558) not checked (appadvice.com did not resolve).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s49",
+   "url": "https://apps.apple.com/us/app/cocorahs/id6475901195",
+   "fetched_url": null,
+   "title": "CoCoRaHS (Apple App Store)",
+   "author_org": "Apple App Store",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Version number, version history and dates NOT PRESENT in the extract. Google Play listing (org.cocorahs.mobile) did not render; a search snippet from apkcombo gave a Mar 21, 2026 update date, unverified.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s50",
+   "url": "https://cocorahs.blogspot.com/2026/11/the-latest-cocorahs-innovation-maphub.html",
+   "fetched_url": null,
+   "title": "The Latest CoCoRaHS Innovation – MapHub!",
+   "author_org": "CoCoRaHS Blog (Steve Hilberg)",
+   "published": "2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction; Carto, Azure and funding NOT PRESENT in the post.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s51",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_10_IT_Update_Turner.pdf",
+   "fetched_url": null,
+   "title": "WERA 2024 IT Update (Turner)",
+   "author_org": "Colorado Climate Center / CoCoRaHS (Julian Turner)",
+   "published": "2024-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wera2024_it_update_turner.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slide text; outages NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s52",
+   "url": "https://media.cocorahs.org/docs/CoCoRaHS_MobileApp_User_Guide.pdf",
+   "fetched_url": null,
+   "title": "New CoCoRaHS Mobile App User Guide",
+   "author_org": "CoCoRaHS",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/mobileapp_user_guide.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated; a phone/email/NWS backup data-entry route is NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s53",
+   "url": "https://cocorahs.blogspot.com/2025",
+   "fetched_url": null,
+   "title": "CoCoRaHS Blog 2025 archive (What Do CoCoRaHS Observers and Kenny Rogers Have in Common?, 2025-04-28)",
+   "author_org": "CoCoRaHS Blog",
+   "published": "2025-04-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Only two 2025 posts visible on the archive page; outages NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s54",
+   "url": "https://web.archive.org/web/20250726103858/https://www.cocorahs.org/Content.aspx?page=store",
+   "fetched_url": null,
+   "title": "Rain Gauge Suppliers (Wayback snapshot 2025-07-26)",
+   "author_org": "CoCoRaHS / Colorado Climate Center (via Internet Archive)",
+   "published": "snapshot 2025-07-26 (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_store_2025.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Reasons for retailer changes NOT PRESENT; exact date of change not narrowed (CDX in work/raw/sa2/cdx_store.json lists captures).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s55",
+   "url": "https://web.archive.org/cdx/search/cdx?url=cocorahs.org/Content.aspx?page=store&from=2023",
+   "fetched_url": null,
+   "title": "Wayback CDX listing of the CoCoRaHS store page since 2023",
+   "author_org": "Internet Archive",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cdx_store.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Listing only; individual captures beyond two not read.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s56",
+   "url": "https://www.cocorahs.org/Content.aspx?page=approved_rain_gauges",
+   "fetched_url": null,
+   "title": "Approved Rain Gauges (CoCoRaHS), live 2026-11-26",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_approved_rain_gauges_2026.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated; RG202 model number NOT PRESENT; stock/price NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s57",
+   "url": "https://productivemn.org/",
+   "fetched_url": null,
+   "title": "Home - Productive Alternatives",
+   "author_org": "Productive Alternatives, Inc.",
+   "published": "undated (live 2026-11-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/productivemn_home.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Date of closure NOT PRESENT; whether Darter Plastics now manufactures the gauge or sells remaining stock NOT PRESENT; CoCoRaHS approved-gauges page still says Stratus by Productive Alternatives.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s58",
+   "url": "https://web.archive.org/web/20241222022701/https://productivemn.org/",
+   "fetched_url": null,
+   "title": "Home - Productive Alternatives (Wayback snapshot 2024-12-22)",
+   "author_org": "Productive Alternatives, Inc. (via Internet Archive)",
+   "published": "snapshot 2024-12-22",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_productivemn_2025.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Closure date not narrowed beyond after 2024-12-22 and by 2026-11-26.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s59",
+   "url": "https://web.archive.org/web/20260125085932/https://productivemn.org/",
+   "fetched_url": null,
+   "title": "Home - Productive Alternatives (Wayback snapshot 2026-01-25)",
+   "author_org": "Productive Alternatives, Inc. (via Internet Archive)",
+   "published": "snapshot 2026-01-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_productivemn_202601.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Exact closure date NOT PRESENT; Darter Plastics role (manufacturer vs reseller) NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s60",
+   "url": "https://play.google.com/store/apps/details?id=org.cocorahs.mobile",
+   "title": "CoCoRaHS - Apps on Google Play",
+   "author_org": "Google Play (CoCoRaHS listing)",
+   "published": "2026-08-31",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/browser/play-google-com-store-apps-details-id-org-cocorahs-mobile_121159.txt",
+   "retrieved": "2026-11-26",
+   "evidence_id": null,
+   "data_period": "as of 2026-11-26",
+   "limitations": "store listing; download count is a band (5K+)"
+  },
+  {
+   "id": "s61",
+   "url": "https://darterproducts.com/products/rain-gauge",
+   "title": "Stratus Rain Gauge - DPI Products",
+   "author_org": "Darter Plastics (DPI Products)",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "vendor",
+   "local_file": "work/raw/main/browser/darterproducts-com-products-rain-gauge_121310.txt",
+   "retrieved": "2026-11-26",
+   "evidence_id": null,
+   "data_period": "as of 2026-11-26",
+   "limitations": "seller's own product page; claims to have distributed it since the 1970s"
+  },
+  {
+   "id": "s62",
+   "url": "https://www.fliproducts.com/blogs/america250-made-in-usa/america250-stratus-rain-gauge-made-in-usa-darter-plastics",
+   "title": "Stratus Rain Gauge: The American-Made Precision Rain Gauge (America250 series)",
+   "author_org": "FLI Products",
+   "published": "2026-09-28",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "vendor",
+   "local_file": "work/raw/main/browser/fliproducts-com-blogs-america250-made-in-usa-america250-stra_121317.txt",
+   "retrieved": "2026-11-26",
+   "evidence_id": null,
+   "data_period": null,
+   "limitations": "marketing post by a reseller/brand partner; its CoCoRaHS volunteer figure (20,000+) is out of date"
+  },
+  {
+   "id": "s63",
+   "url": "https://media.cocorahs.org/docs/WCC_2026_Day1_Fritz_COOP_update.pdf",
+   "title": "Cooperative Observer Program Updates (WCC 2026, Day 1)",
+   "author_org": "NWS (Amy Fritz, National COOP Program Manager)",
+   "published": "2026-05-19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/wcc2026_fritz_coop.txt",
+   "retrieved": "2026-11-26",
+   "evidence_id": null,
+   "data_period": "2014-2024 station chart; FY16-FY26 budget chart",
+   "limitations": "station-count and budget charts are images; values not in the text"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "CoCoRaHS's own active-station count was flat from 2024 to 2026: 27,118 (May 1, 2024), 27,676 (May 1, 2025) and 27,623 (May 1, 2026), a net change of -53 (-0.2%) in the last year; no decline in observers is reported.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "On May 1, 2025, we had 27,676 Active Stations. | On May 1, 2026, we had   27,623 Active Stations. | A Net Change of -53 Stations | USA -54 Stations | Canada 10 Stations | Bahamas -9 Stations | A change of -0.2% … Between May 1, 2025 and May 1, 2026. | Created 4,787 Stations | USA – 4,578 Stations … FirstReports from 2,604 Stations (54%) … Active Station is one where Last Report Date >= May 1, 2025. | 27,623 Active Stations | USA – 26,758 Active Stations | Canada – 833 Active Stations | Bahamas – 32 Active Stations",
+     "location": "slides 'Where did we create new stations?', 'A look at the past 12 months', 'Active Stations' (txt lines 56-88)"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "34,667 stations displayed. Never returning? Or just standing on the sidelines? | 3,170 Stations where | LastReportDate = Year 2022 … Daily Precip Reports grew 4.8% in Year 2023. 96% growth in 14 years. | End of Year 2023, 70.6M Daily Precip Reports. +2.4M in Year 2024 so far. … On May 1, 2023, we had 25,987 Active Stations. | On May 1, 2024, we had   27,118 Active Stations. | A Net Change of 1,131 Stations … Created 5,722 Stations … FirstReports from 3,430 Stations (60%) … A Net Change of 1,131 Stations (4.3%) … 27,118 Active Stations | USA – 26,278 Active Stations | Canada – 793 Active Stations | Bahamas – 47 Active Stations",
+     "location": "txt lines 36-107"
+    }
+   ],
+   "applicability": "Active = reported in the past 12 months; includes Canada and the Bahamas",
+   "confidence": "high",
+   "confidence_reason": "the network's own counts by one method in two decks",
+   "figure_status": "actual",
+   "sole_source_reason": "CoCoRaHS's own station database is the authority for its station count"
+  },
+  {
+   "id": "c2",
+   "text": "Recruiting softened after 2024: the spring contest drew 1,884 new observers in 2024, 1,196 in 2025 and 1,544 in 2026; stations created fell from 5,722 (May 2023-May 2024) to 4,787 (May 2025-May 2026), and the share sending a first report from 60% to 54%; daily reports fell 0.5% in 2025.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "COCORAHS PRECIPITATION ABSURDITY 2024 FINAL RESULTS - MINNESOTA (573) WINS THE TRADITIONAL CATEGORY FOR THE FIFTH YEAR IN A ROW . . . AND THE PER CAPITA FOR THE SECOND TIME OVERALL! 1,884 NEW VOLUNTEER OBSERVERS HAVE JOINED THE NETWORK NATIONWIDE!",
+     "location": "page heading"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "1196 NEW VOLUNTEER OBSERVERS HAVE JOINED THE NETWORK DURING MARCH! FINAL STANDINGS Total Station Count: 1,194",
+     "location": "page heading"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "THE ANNUAL COCORAHS RAIN GAUGE RALLY 2026 FINAL RESULTS!! MINNESOTA (377) WINS THE TRADITIONAL CATEGORY FOR THE SEVENTH YEAR IN A ROW WYOMING (70) WINS THE PER CAPITA CATEGORY FOR THE SECOND YEAR IN A ROW! 1,544 NEW OBSERVERS HAVE JOINED THE NETWORK DURING APRIL! Total Station Count: 1,542 … This year, the contest moves to April for the first time.",
+     "location": "results banner and table (txt lines 7-65)"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "40,287 stations displayed. Never returning? Or just standing on the sidelines? | 3,245 Stations where | LastReportDate = Year 2024 … End of Year 2025, 82.7M Daily Precip Reports. +2.1M in Year 2026 so far. | Daily Precip Reports shrank 0.5% in Year 2025. 106% growth in 16 years. | Reporting Observers grew 1.2% in Year 2025. 86% growth in 16 years. … In the past 6 years: Reporting Observers up 24%. Daily Reports up 28%.",
+     "location": "opening slides (txt lines 14-37)"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "34,667 stations displayed. Never returning? Or just standing on the sidelines? | 3,170 Stations where | LastReportDate = Year 2022 … Daily Precip Reports grew 4.8% in Year 2023. 96% growth in 14 years. | End of Year 2023, 70.6M Daily Precip Reports. +2.4M in Year 2024 so far. … On May 1, 2023, we had 25,987 Active Stations. | On May 1, 2024, we had   27,118 Active Stations. | A Net Change of 1,131 Stations … Created 5,722 Stations … FirstReports from 3,430 Stations (60%) … A Net Change of 1,131 Stations (4.3%) … 27,118 Active Stations | USA – 26,278 Active Stations | Canada – 793 Active Stations | Bahamas – 47 Active Stations",
+     "location": "txt lines 36-107"
+    }
+   ],
+   "applicability": "The 2026 contest moved from March to April",
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own contest pages (live and Wayback) and coordinator decks",
+   "figure_status": "actual",
+   "sole_source_reason": "CoCoRaHS's own contest results and station database"
+  },
+  {
+   "id": "c3",
+   "text": "CoCoRaHS's own turnover figures agree in size with GHCN-Daily's: about 3,000 observers stop reporting each year (WERA 2020-22), 3,170 stations last reported in 2022 and 3,245 in 2024; CoCoRaHS publishes no count for stations whose last report was 2025.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "Matt | Spies, Connecticut State Coordinator reported on recruiting and retention. The number of daily reports | have grown with Covid. Now 24,249 active stations. Maricopa County AZ has 182 active observers, | second only to Larimer County, CO . About 3000 observers stop reporting each year, so we need well | over 3000 new recruits each year to grow.",
+     "location": "txt lines 163-167 (2020 or 2021 meeting summary)"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "34,667 stations displayed. Never returning? Or just standing on the sidelines? | 3,170 Stations where | LastReportDate = Year 2022 … Daily Precip Reports grew 4.8% in Year 2023. 96% growth in 14 years. | End of Year 2023, 70.6M Daily Precip Reports. +2.4M in Year 2024 so far. … On May 1, 2023, we had 25,987 Active Stations. | On May 1, 2024, we had   27,118 Active Stations. | A Net Change of 1,131 Stations … Created 5,722 Stations … FirstReports from 3,430 Stations (60%) … A Net Change of 1,131 Stations (4.3%) … 27,118 Active Stations | USA – 26,278 Active Stations | Canada – 793 Active Stations | Bahamas – 47 Active Stations",
+     "location": "txt lines 36-107"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "40,287 stations displayed. Never returning? Or just standing on the sidelines? | 3,245 Stations where | LastReportDate = Year 2024 … End of Year 2025, 82.7M Daily Precip Reports. +2.1M in Year 2026 so far. | Daily Precip Reports shrank 0.5% in Year 2025. 106% growth in 16 years. | Reporting Observers grew 1.2% in Year 2025. 86% growth in 16 years. … In the past 6 years: Reporting Observers up 24%. Daily Reports up 28%.",
+     "location": "opening slides (txt lines 14-37)"
+    }
+   ],
+   "applicability": "CoCoRaHS counts all stations; GHCN-Daily holds only stations with 100+ values, so its yearly figure (about 1,785-2,078, and 2,139 for 2025, from run 2026-11-21_ghcn-daily-sources-pt5) is expected to be lower",
+   "confidence": "moderate",
+   "confidence_reason": "different definitions; no 2025 CoCoRaHS figure",
+   "figure_status": "actual",
+   "sole_source_reason": "CoCoRaHS's own station database"
+  },
+  {
+   "id": "c4",
+   "text": "The maker of the Stratus gauge, Productive Alternatives (Fergus Falls, MN), closed its production area between 22 Dec 2024 and 25 Jan 2026; the Stratus is now sold, and per a Sep 2026 partner post made in Minnesota, by Darter Plastics. CoCoRaHS's approved-gauge page still names Productive Alternatives.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s58",
+     "relationship": "contextualizes",
+     "passage": "Productive Alternatives’ most popular product is our Stratus Rain Gauge. It is the official rain gauge used by National Oceanic and Atmospheric Administration (NOAA) and the National Weather Service, and can be found in use at weather stations everywhere.",
+     "location": "home page, line 39"
+    },
+    {
+     "source_id": "s59",
+     "relationship": "supports",
+     "passage": "Productive Alternatives has officially closed its production area. If you are interested in purchasing Bait Up containers, Stratus Rain Gauges, or related parts, please contact Darter Plastics directly at 763-261-5000 ext. 1 for assistance.",
+     "location": "home page, line 25"
+    },
+    {
+     "source_id": "s57",
+     "relationship": "supports",
+     "passage": "Productive Alternatives has officially closed its production area. | Bait Up containers, Stratus Rain Gauges, and related parts are still available for purchase through Darter Plastics. | Thank you for your continued support! | Shop Darter Plastics",
+     "location": "home page, lines 25-30"
+    },
+    {
+     "source_id": "s61",
+     "relationship": "supports",
+     "passage": "Darter Plastics’ most popular product is our Stratus Rain Gauge, and we have been distributing it around the world since the 1970’s.",
+     "location": "product description"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "made in the USA by Darter Plastics — it's the gold standard in residential and citizen science rainfall measurement.",
+     "location": "introduction"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "supports",
+     "passage": "Stratus Rain Gauge is manufactured in Minnesota by one of FLI Products' most trusted American manufacturing partners.",
+     "location": "section 'Built in Minnesota'"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "contextualizes",
+     "passage": "Stratus - by Productive Alternatives This is the most common gauge in the network … This is the most affordable gauge. | TROPO - by Climalytic Instruments, LLC … as another approved manual 4-inch rain gauge for CoCoRaHS. … This gauge is considered premium and is therefore more expensive than the Stratus. | Standard Rain Gauge (SRG) - by the National Weather Service … This gauge is the most expensive and is not commonly used other than for co-located COOP stations associated with the National Weather Service.",
+     "location": "lines 7, 9, 11"
+    }
+   ],
+   "applicability": "No shortage, price spike or gap in supply was found; closure month not published",
+   "confidence": "moderate",
+   "confidence_reason": "maker's own notice dated only by Wayback captures; continued manufacture rests on a reseller's marketing post",
+   "figure_status": null
+  },
+  {
+   "id": "c5",
+   "text": "More than one maker supplies an approved gauge: CoCoRaHS approves the Stratus, the TROPO by Climalytic Instruments (premium, about $89.99) and the NWS 8-inch standard gauge; the store page's retailer list changed between 2024 and 2026 without any stock notice.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "Stratus - by Productive Alternatives This is the most common gauge in the network … This is the most affordable gauge. | TROPO - by Climalytic Instruments, LLC … as another approved manual 4-inch rain gauge for CoCoRaHS. … This gauge is considered premium and is therefore more expensive than the Stratus. | Standard Rain Gauge (SRG) - by the National Weather Service … This gauge is the most expensive and is not commonly used other than for co-located COOP stations associated with the National Weather Service.",
+     "location": "lines 7, 9, 11"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "Stratus - by Productive Alternatives This is the most common gauge in the network and meets the minimum requirements set by the National Weather Service to be within +/- 4% of the Standard Rain Gauge (SRG) in all types of weather. This is the most affordable gauge. | TROPO - by Climalytic Instruments, LLC CoCoRaHS Headquarters is pleased to designate the TROPO rain gauge, manufactured by Climalytic Instruments, LLC, as another approved manual 4-inch rain gauge for CoCoRaHS.",
+     "location": "lines 7 and 9"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "contextualizes",
+     "passage": "WeatherYourWay.com (the official CoCoRaHS gauge supplier) Climalytic Instruments (manufacturer of the premium CoCoRaHS TROPO gauge) Forestry Suppliers Weather Shack.com Rainman Weather Scientific Sales Ambient Weather",
+     "location": "page body, line 7"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "contextualizes",
+     "passage": "WeatherYourWay.com (the official CoCoRaHS gauge supplier) Climalytic Instruments (manufacturer of the premium CoCoRaHS TROPO gauge) Forestry Suppliers Weather Shack.com Scientific Sales Ambient Weather",
+     "location": "page body, line 7"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "contextualizes",
+     "passage": "The 4\" manual plastic rain gauge is available from the following retailers. Prices may vary. Click here to read more about approved gauges for CoCoRaHS. WeatherYourWay.com (the official CoCoRaHS gauge supplier) Climalytic Instruments (manufacturer of the premium CoCoRaHS TROPO gauge) Additional Suppliers Ambient Weather Best Buy FLI Products Forestry Suppliers Scientific Sales Tractor Supply Company",
+     "location": "page body, line 7"
+    }
+   ],
+   "applicability": "TROPO and SRG cost more; Stratus is the network's most common gauge",
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own pages, live and archived",
+   "figure_status": null,
+   "sole_source_reason": "CoCoRaHS's own approved list is the authority for which gauges it approves"
+  },
+  {
+   "id": "c6",
+   "text": "The volunteer-built observer apps were replaced: the developer stopped maintaining them, CoCoRaHS released its own app (a web app at mobile.cocorahs.org in a store wrapper) to everyone in Nov 2024, the old Android app left Google Play on 2025-02-05, and the new app was last updated 31 Aug 2026; the website gives the same entry route.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "The CoCoRaHS mobile apps were | created by an observer years ago. | He no longer wants to maintain them … Over 460 people have submitted at least one observation using the new mobile app … We know that 35% of daily precipitation observations submitted | this YTD have been via the mobile apps … In 2022, it was 31% … Rebuild our current Angular maps.cocorahs.org web application to migrate from the Carto raster mapping platform to … The PostgreSQL database would go from a shared Carto database to one that CoCoRaHS manages in Azure",
+     "location": "slides; text lines 67-69, 97, 448-451, 577, 582"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "now available for everyone to use … So far, over 600 CoCoRaHS observers have tested this new mobile app. … as long as they work … will be removed from the Google Play and Apple stores … would be dead in the water",
+     "location": "post of Wednesday, November 6, 2024"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "This app was removed from Google Play Store on 2025-02-05 … Last updated: 2023-03-15 … Version: 2.4.0 … 17,849 … 4.29 (234 ratings)",
+     "location": "app page"
+    },
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "Updated on | Aug 31, 2026",
+     "location": "About this app"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "Three options: (All three have the same user experience) | Use the website - https://mobile.cocorahs.org | Save the site to your home screen (recommended) | Install from the Apple App Store or Google Marketplace (free)",
+     "location": "page 2, lines 25-31"
+    }
+   ],
+   "applicability": "35% of daily observations came via apps in 2024 (WERA 2024)",
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own slides and guide, store listing read directly",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c7",
+   "text": "No 2024-2026 outage of the website or data entry was found; CoCoRaHS migrated its systems to Azure and in Nov 2026 began replacing its interactive map with MapHub, partly to cut the computing costs it pays itself.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Created a data sync application and processes to sync data with Carto mapping system (maps.cocorahs.org) | Created and released Mobile App with support for daily, multi-day, hail, significant weather, and condition monitoring observations | Made addtional Web API improvements to support mobile app | Photo upload support added to website and app for hail and condition monitoring observations (NSF) | New QC Ticketing System integrated into the website … Migrated entire cyberinfrastructure to Azure",
+     "location": "lines 35-39, 54"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "The interactive map was launched 2020 … a need to reduce our costs (we pay for the computing infrastructure to process our data and produce the maps) … https://MapHub.cocorahs.org … MapHub will eventually replace the current interactive map on the web and in the mobile app … most likely within the next few weeks",
+     "location": "post of Thursday, November 19, 2026"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "absence of outage reports is not proof of none",
+   "figure_status": null
+  },
+  {
+   "id": "c8",
+   "text": "NWS, whose offices recruit and train CoCoRaHS observers, lost more than 600 staff in 2025 and in April 2025 nearly half its 122 forecast offices had vacancy rates of 20% or more; Commerce OIG opened a staffing audit in July 2025. No source ties this to CoCoRaHS recruiting, and NWS offices ran CoCoRaHS recruiting drives in 2025 and 2026.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "After Trump administration job cuts, nearly half of National Weather Service forecast offices have 20 percent vacancy rates — twice that of just a decade ago … Detailed vacancy data for all 122 weather field offices show eight offices are missing more than 35 percent of their staff … The employees' data, which goes back to 2015, showed that in March 2015 the overall vacancy rate was 9.3 percent. Ten years later, as of March 21, it was 19 percent. … Twenty-three offices are without the meteorologist-in-charge who oversees the office. Sixteen have vacancies in the crucial warning coordination meteorologist job",
+     "location": "paragraphs 1-2, 9, 12 (txt lines 41-73)"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "It has hired about 274 so far … aims to bring aboard around another 150 by the end of September … eliminated more than 600 employees … more than 300 employees short",
+     "location": "article body (WebFetch extraction, fragments)"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "We are initiating an audit of the National Oceanic and Atmospheric Administration's | National Weather Service (NWS) staffing. Our objective is to determine whether staffing | levels, hiring limitations, and operational practices at NWS field offices have impacted the | agency's ability to effectively respond to high-impact weather events through timely | forecasts, warnings, and impact-based decision support services.",
+     "location": "memo p.1"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "contradicts",
+     "passage": "CoCoRaHS 2026 Rainfall Observer Recruiting Blitz | A Call for Volunteers To Measure Precipitation | April 2026 … National Weather Service Mobile/Pensacola uses CoCoRaHS data to document high-impact rainfall events over the central Gulf Coast.",
+     "location": "page body (txt lines 168-180)"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "contradicts",
+     "passage": "Observers are needed in many counties throughout Indiana. Ideally, in order to get the spatial resolution desired we need at least 10 observers per county. The majority of counties have less than this. As of March 17, 2026 there were 5 or fewer active observers over the past 6 months in the following counties",
+     "location": "'Weather/Precipitation Observers Needed!' section (txt line 183)"
+    }
+   ],
+   "applicability": "agency-wide staffing; no CoCoRaHS-specific measure",
+   "confidence": "moderate",
+   "confidence_reason": "staffing figures from AP and E&E (union and agency data); effect on CoCoRaHS not measured",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c9",
+   "text": "Volunteer coordinator coverage is thin in places: New York had county coordinators in 26 of 62 counties (Jan 2025), Texas lists vacant county posts, and the 2025 WCC-1012 meeting was postponed because many participants could not attend 'due to constraints and uncertainty'.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "NEEDED: County Coordinators | by Samantha Borisoff, NYS Coordinator | County coordinators are an important part of CoCoRaHS, becoming the primary contact for | many volunteers. New York has 62 counties but only 26 of them have county coordinators! A | special thank you to each of our 13 county coordinators … If your county is NOT on the list, the county coordinator role is vacant,",
+     "location": "'NEEDED: County Coordinators' article (txt lines 128-163)"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Menard County Nolan County Runnels County (Coordinator:Vacant, if interested please contact texas.cocorahs@austin.rr.com) San Saba County (Coordinator: Rick Kirchhof, ng5v@sbcglobal.net ) Schleicher County Shackelford County Sterling County Sutton County",
+     "location": "txt line 8 (county list)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "*Note* Many of our participants were not able to attend the meeting this year due to constraints and uncertainty and therefore CoCoRaHS held an internal meeting that was still relevant to the coordinating committee's objectives. … Milestones: (focusing on recruitment and retention): | In the past 15 years: Reporting Observers up 84%. Daily Reports up 107%. | In the past 10 years: Reporting Observers up 37%. Daily Reports up 48%. | In the past 5 years: Reporting Observers up 23%. Daily Reports up 28%.",
+     "location": "Participants; Milestones sections"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "2026 | 2025 - Postponed | 2024 … In 2025, the name was changed from WERA 1012 to WCC 1012.",
+     "location": "'Meetings' list (raw .html line 186; the .txt conversion dropped this list) and intro paragraph (txt line 7)"
+    }
+   ],
+   "applicability": "no earlier baseline to show a change",
+   "confidence": "moderate",
+   "confidence_reason": "own pages; no time series",
+   "figure_status": null
+  },
+  {
+   "id": "c10",
+   "text": "COOP, the main volunteer substitute, is itself under review: a May 2026 NWS request for comments proposes automating it, integrating mesonets and 'right-sizing' the about 6,700-site network; published counts of COOP sites differ (about 6,700 in the notice, roughly 9,000 published sites in HOMR).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "● Integrating other high-quality environmental data (e.g., state and private | mesonets) sets to augment federally-provided COOP data where appropriate; | ● Right-sizing and optimizing the scope and coverage of the existing ~6,700-site | COOP network. … Given that most commercial all-in-one automated weather systems lack sensors | for measuring snowfall and snow depth … would data from | external networks be suitable alternatives to federally managed COOP stations?",
+     "location": "Summary objectives and Questions II.5, III.4 (txt lines 137-143, 229-259)"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "To transition this historic network into a real-time observing program, the NWS | aims to deploy commercial sensor technology, automate data collection to reduce | volunteer burden, optimize the national footprint to address geographic data gaps, and | leverage mesonet data as a key network augmentation tool. … Right-sizing and optimizing the scope and coverage of the existing ~6,700-site | COOP network. … the NWS | seeks strategies for maintaining snowfall and snow depth data continuity during | automation and understanding how the volunteer role might evolve from manual | observation to site stewardship.",
+     "location": "SUMMARY; SUPPLEMENTARY INFORMATION (txt lines 23-174)"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "contextualizes",
+     "passage": "This report pertains to the roughly 9,000 NWS Cooperative Network sites whose observations are published in NCEI's Climatological Data or Hourly Precipitation Data publications. … - coop-stations.txt / Layout … Last updated 7 weeks ago. A fixed-length text summary listing of current U.S. NWS Cooperative Network stations, including identifiers, flags for whether they participate in the Cooperative Observation/Summary of Day (COOP/SOD) or Hourly Precipitation (HPD) programs",
+     "location": "Report descriptions (txt lines 50, 87-92)"
+    }
+   ],
+   "applicability": "proposal stage; no decision found",
+   "confidence": "high",
+   "confidence_reason": "Federal Register notice and NCEI's own metadata page",
+   "figure_status": "proposed",
+   "sole_source_reason": "the agency's own Federal Register notice is the authority for its proposal"
+  },
+  {
+   "id": "c11",
+   "text": "Gridded products are not independent substitutes in density: PRISM ingests CoCoRaHS daily; nClimGrid-Daily excludes CoCoRaHS, and including it 'triples the number of input observations' (grid points with fewer than 3 stations within 30 miles: 47% without, 18% with, on 29 Sep 2022); MRMS's current guides list HADS, MADIS and RR5HFO hourly gauges.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "PRISM ingests CoCoRaHS precipitation observations on a daily basis and uses the observation data to help model daily and monthly precipitation across the conterminous United States. PRISM also uses CoCoRaHS observation data to help model the 30-year precipitation normals.",
+     "location": "CoCoRaHS section"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "• For long-term historical context, nClimGrid-Daily: | – Gridded fields for Contiguous U.S., 1951-present | – Daily Tmax, Tmin, and Tavg and daily precipitation | – Precip data from NWS and SNOTEL | – No CoCoRaHS, to maintain greater temporal network consistency … – Including CoCoRaHS triples the number of input observations, but limits | comparable period to the last 10-15 years. | – Areas with sparse COOP observations particularly benefit. | – Sept. 29, 2022, example: Including CoCoRaHS decreases the proportion of | grid points with <3 stations within 30 miles from 47% to 18%.",
+     "location": "Slide 7 'Mapping Events'"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "## Input Sources | 1-hr QPE – Radar Only, HADS and MADIS gauge data … The bias correction is only conducted on the one-hour radar accumulation estimate, since all the other accumulations are aggregates of the one-hour field.",
+     "location": "Input Sources; Product Creation (txt lines 119-135)"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "HADS, MADIS, RR5HFO gauge networks … - Multi-Sensor QPE Pass 1 -- 20-min latency,10% of gauges included | - Multi-Sensor QPE Pass 2 -- 60-min latency, 60% of gauges included … The Multi-Sensor QPE is most hampered by its latencies, for both Pass 1 (60 min) and Pass 2 (120 min).",
+     "location": "Input sources and limitations (txt lines 128-179)"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "contextualizes",
+     "passage": "Approximately 12,000 rain gauges from a | variety of national and regional networks are | ingested by the MRMS system, including 24-hr | precipitation data from the Community | Collaborative Rain, Hail & Snow (CoCoRaHS) | network and hourly data from Hydro- | meteorological Automated Data System (HADS). … with Q3GC adjusted based on hourly | automatic gauge data.",
+     "location": "Section 2, p.1 (txt lines 49-70)"
+    }
+   ],
+   "applicability": "CONUS",
+   "confidence": "high",
+   "confidence_reason": "product owners' own pages and slides",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c12",
+   "text": "Mesonets add automated, mostly hourly stations but rest on fragile funding: the National Mesonet Program has 55+ partners and was recompeted to KBR in 2026; DHS cancelled a $3 million NYS Mesonet grant in July 2025, New York's 2026-27 budget gives $2 million for operations, and Hawaii's mesonet gets nearly half its about $600,000 a year from the NMP.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "providing the National Weather Service | (NWS) with real-time observations from 55+ | partners nationwide from the public, private, and | academic sectors. … Synoptic Data is an experienced technology | leader, handling the day-to-day program | management, data ingest, aggregation, | quality control, and delivery of partner data",
+     "location": "p.1 'Public-Private-Academic Partnership' and 'Program Leadership'"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "contextualizes",
+     "passage": "Awardee: KBR Wyle Services | Vehicle Ceiling: $1,126,239,540 (2% Used) | Total Obligated: $27.6M … To date, $27,580,784 has been obligated through this vehicle. | Number of Bidders 2 | Commercial Data Program. Provides meteorological, hydrological, and environmental observing data from non-federal networks … to support the National Weather Service (NWS) Commercial Data Program (National Mesonet Program).",
+     "location": "Award summary and analysis notes"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "After Trump abruptly canceled a $3 million grant project for New York State's advanced regional weather early warning systems program … Schumer explained University at Albany's Mesonet program was awarded a $3 million grant program in 2023 to support its Exploitation of Mesonets for Emergency Preparedness and Response in Weather Extremes (EMPOWER) program. … at 127 sites around New York, with at least one station located in each of New York's 62 counties",
+     "location": "Press release body, lines 17-23"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "The 2026-27 state budget includes $2 million to support NYS Mesonet operations at UAlbany. … 127 standard sites from Long Island to Buffalo",
+     "location": "News release body"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "about $600,000 a year … nearly half of which comes from NOAA's National Mesonet program … the program still doesn't have a dedicated, sustainable funding source",
+     "location": "Article body"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "several read by WebFetch extraction; contract figures from an aggregator",
+   "figure_status": [
+    "actual",
+    "enacted"
+   ]
+  },
+  {
+   "id": "c14",
+   "text": "NWS COOP also lists the plastic 4-inch rain gauge among its precipitation equipment, alongside the 8-inch SRG and Fisher-Porter gauges, so a change in the 4-inch gauge's supply touches COOP as well as CoCoRaHS; NWS's May 2026 COOP update gives about 1,800 Fisher-Porter hourly sites.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s63",
+     "relationship": "supports",
+     "passage": "Equipment used to measure precipitation | 3) Standard 8” Rain Gauge (SRG) | 4 ) Plastic 4” Rain Gauge",
+     "location": "slide 2, COOP Overview"
+    },
+    {
+     "source_id": "s63",
+     "relationship": "contextualizes",
+     "passage": "This does not include hourly precipitation data from Fischer Porter Rain gauges (total ~1800 sites receiving regular monthly reports from ~1100)",
+     "location": "slide 4"
+    }
+   ],
+   "applicability": "the slide does not name the 4-inch gauge's maker",
+   "confidence": "moderate",
+   "confidence_reason": "NWS's own slide; the link to the Stratus maker is an inference",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c13",
+   "text": "CoCoRaHS and COOP together averaged over 14,000 daily reports (2010-2017); PRISM rates CoCoRaHS 'very high density (in clusters)' against COOP's 'moderate density', but COOP's 2016 completeness was 84% against CoCoRaHS's 49%.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "While each network's density of observations varies in time | and space, CoCoRaHS and COOP together provide improved coverage of 24-h precipitation | measurements over CONUS (Fig. 1). These two networks combined averaged over 14,000 daily | precipitation reports with observation times between 0500 and 0900 local time (LT) between | 2010 and 2017.",
+     "location": "Introduction, p.E710-E711 (txt lines 76-80)"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "COOP Volunteer Network | 1 June 2017 | moderate density, wide extent | CoCoRaHS Volunteer Network | 1 June 2017 | very high density (in clusters), wide extent | All PRISM Networks | 1 June 2017 | (~17,600 stations) | COOP Precipitation Data Availability, 2016 | COOP Precipitation Data Completeness, 2016 – 84% | CoCoRaHS Precipitation Data Availability, 2016 | CoCoRaHS Precipitation Data Completeness, 2016 – 49%",
+     "location": "Slides on volunteer networks (txt lines 59-78)"
+    }
+   ],
+   "applicability": "pre-2024 context",
+   "confidence": "moderate",
+   "confidence_reason": "peer-reviewed study and PRISM slides; dated",
+   "figure_status": "actual"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Number of NWS COOP sites",
+   "source_ids": [
+    "s8",
+    "s40"
+   ],
+   "status": "unresolved",
+   "explanation": "The May 2026 Federal Register notice gives about 6,700 sites; NCEI's HOMR page says roughly 9,000 published sites (CD or HPD, undated); HOMR's current list has 7,786 lines including territories and HPD-only sites. Different definitions (active COOP vs published sites); the notice is the latest."
+  },
+  {
+   "claim": "Rain Gauge Rally new observers vs Total Station Count (2025: 1,196 vs 1,194; 2026: 1,544 vs 1,542)",
+   "source_ids": [
+    "s4",
+    "s3"
+   ],
+   "status": "resolved",
+   "explanation": "Same pages give both; difference of 2 is likely stations vs observers. The answer uses the new-observer figure and states both."
+  },
+  {
+   "claim": "Stations created May 2025-May 2026 by country (USA 4,553 / Canada 232 / Bahamas 2 vs USA 4,578 / Canada 139 / Bahamas 3)",
+   "source_ids": [
+    "s1",
+    "s21"
+   ],
+   "status": "unresolved",
+   "explanation": "Two slides of the WCC 2026 deck (s1) disagree; s21 (WERA 2024) uses the same method for the earlier year. The answer gives only the 4,787 total and states both splits."
+  },
+  {
+   "claim": "Number of CoCoRaHS active observers",
+   "source_ids": [
+    "s1",
+    "s15"
+   ],
+   "status": "resolved",
+   "explanation": "Home page says more than 28,000 active observers (undated, rounded); WCC 2026 deck counts 27,623 active stations on May 1, 2026. The deck is dated and counts stations; we rely on it."
+  }
+ ],
+ "coverage_gaps": [
+  "No CoCoRaHS absolute yearly active-station totals for May 2023 and May 2024 found as text (WCC 2026 deck shows earlier years only as maps); WCC/WERA 2024 or 2025 Spies recruiting slides (media.cocorahs.org/docs/WERA_2024_... or WCC_2025_...) would give them - not searched for by file name. (from sa1)",
+  "No CoCoRaHS figure for stations whose last report was in 2025 (the GHCN comparison year); deck gives 3,245 with LastReportDate = 2024. Station History Report not public in this pass. (from sa1)",
+  "Search snippet only: Connecticut state page '151 observers who reported daily precipitation during April 2025'; Washington 'almost 650' observers (climate.uw.edu Dec 2025); CSU give page 'nearly 28,000' - not read. (from sa1)",
+  "Commerce OIG audit 2025-523 final report not found; OIG-26-017-I (Kerr County, April 2026) not read. GAO-25-108597 (aviation meteorologists) not read - not about observer programs. (from sa1)",
+  "No source found linking 2025 NWS staffing cuts to CoCoRaHS recruiting/training or to Observing Program Leader / HMT positions. Aug 2025 approval to hire up to 450 (news snippets) not read. Texas county coordinator vacancies seen only in snippets (cocorahs.org/Content.aspx?page=coord_tx). (from sa1)",
+  "COOP station counts by year 2023-2026: no dated inventory found; figures conflict (FR 2026: ~6,700 sites; NCEI page: more than 8,500 volunteers; weather.gov/coop: more than 11,000 stations, search snippets). HOMR station-count reports not queried. (from sa3)",
+  "COOP program manager / Observing Program Leader staffing 2025-2026: only agency-wide NWS vacancy news found (snippets: 155 critical vacancies, 126 hires, 35 MIC vacancies); nothing COOP-specific. No COOP award or decision after the July 13, 2026 sources-sought deadline found. (from sa3)",
+  "Whether CoCoRaHS reaches current MRMS (v12+): WDTD pages list HADS, MADIS, RR5HFO only; Cocks et al. 2015 says CoCoRaHS 24-hr data are ingested and used for evaluation while Q3GC used hourly automatic gauges. Whether MADIS carries CoCoRaHS not determined here. (from sa3)",
+  "Stage IV gauge inputs (whether RFCs use CoCoRaHS) and 2024-2026 status not confirmed; EMC (403) and EOL (JS) pages unreadable; only a snippet on Dec 9-30, 2024 Northwestern Region station exclusion. (from sa3)",
+  "National Mesonet Program total station count and daily precipitation availability not found (only 55+ partners, Synoptic overview about Dec 2024). MTI article on 2026 contract returned 403. Earlier run 2026-11-18 holds FY2026 enacted $30.0M and the rejected cut of about 1,200 platforms. (from sa3)",
+  "No study found giving CoCoRaHS station density per county vs COOP/ASOS for 2024-2026; best quantitative item is NCEI's Sept 29, 2022 example (grid points with fewer than 3 stations within 30 miles: 47% without CoCoRaHS, 18% with). (from sa3)",
+  "No 2024-2026 news found on Productive Alternatives (Fergus Falls, MN): no closure, sale, tariff or price notice. The company's own site was not found in search results. Lead: search 'Productive Alternatives Fergus Falls 2025' in local news (Fergus Falls Daily Journal). (from sa2)",
+  "Lee Valley (Canada) marks the Stratus Precision Rain Gauge 'Discontinued' with limited stock ($43.50) per search snippets; page returned 429, not read. Whether this is a retailer-only discontinuation or a product change is unknown; other US retailers (Best Buy, Wayfair, Newegg, Tractor Supply) still list it per snippets. (from sa2)",
+  "Price history: only undated snippets (WeatherYourWay listing $42.00; reach.dog FLI Products listing climbing $59.97 to $69.99 to $79.99; TROPO $89.99). No dated 2024-2026 price series read. Lead: Wayback snapshots of weatheryourway.com product page. (from sa2)",
+  "Gauge donation programs: only local, limited ones in snippets (Nevada State Climate Office limited free gauges, 2025 UNR story; RPBCWD (MN) free gauges to residents; Koochiching County SWCD; Community Science Institute (NY) grant program closed). No national program found; none read in full. (from sa2)",
+  "The current approved-gauges page (Content.aspx?page=approvedgauges / ApprovedGauges) returned no body text on 2026-11-26; the cited version is the 2026-11-25 copy from run pt2. The 'RG202' model number appears only in a review-roundup snippet, not on CoCoRaHS or maker pages. (from sa2)",
+  "No outage of cocorahs.org, data.cocorahs.org or the app in 2024-2026 found in searches; only older outages (The Catch 2010-04-22 firewall, 2013-04-09 hosting power issue) surfaced, not read (PDF not extractable via WebFetch). No phone/email/NWS backup data-entry route found; the new app is the mobile.cocorahs.org website itself (three access routes). (from sa2)",
+  "Old iOS CoCoRaHS Observer app (id 827714558, developer Steve Woodruff per search summary, last updated Aug 11, 2021 per snippet): current store status not read (appadvice ENOTFOUND, appfollow timed out). New app version history and Google Play update date not read (JS pages). (from sa2)",
+  "IT funding: MapHub post (2026-11-19) says CoCoRaHS pays for its computing infrastructure and redesigned maps partly to reduce costs; no dollar figures or funding source found. Whether MapHub drops Carto is NOT PRESENT in the post. (from sa2)",
+  "Date of Productive Alternatives production closure and the role of Darter Plastics (new maker or reseller of remaining stock) not found. Lead: read Wayback snapshots of productivemn.org between 2025-01 and 2026-08 (CDX in work/raw/sa2/cdx_productivemn.json) and the Darter Plastics shop page; ask whether CoCoRaHS approved-gauges page will update the maker name. (from sa2)",
+  "No stations-created or first-report count for May 1, 2024 to May 1, 2025 in the saved WCC 2026 deck text (NOT PRESENT); only 27,676 active stations on May 1, 2025. Would need the WCC/WERA 2025 Spies deck. Unread pages from coverage.py (app stores, Lee Valley, reach.dog, EOL, EMC pcpanl, NSSL MRMS) not read by the reconciler (no fetches). (from reconciler)",
+  "Lee Valley 'Discontinued' Stratus listing: product URL now redirects to the category page; not quotable (browser, 2026-11-26).",
+  "Stage IV gauge inputs: NCAR EOL page did not render in the browser; EMC page 403."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS March Madness recruiting 2025 results",
+   "tool": "WebSearch",
+   "notes": "only sports results",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS Rain Gauge Rally 2025 new observers",
+   "tool": "WebSearch",
+   "notes": "found marchmadness.aspx (2026 results); 2025 and 2024 final results read via Wayback snapshots",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS active observers 2025",
+   "tool": "WebSearch",
+   "notes": "snippets: home page 'over 26,000 active observers', CSU give page 'nearly 28,000'; not read",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WCC1012 annual report CoCoRaHS 2025",
+   "tool": "WebSearch",
+   "notes": "found nimss.org/seas/52786 (2025 annual report, read in full)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS Rain Gauge Rally 2024 final results new observers",
+   "tool": "WebSearch",
+   "notes": "2024 contest named Precipitation Absurdity",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://www.cocorahs.org/marchmadness.aspx (snapshots 2025-04-16, 2024-04-08)",
+   "tool": "lookup (Wayback snapshot)",
+   "notes": "web.archive.org/web/2025041500000/ and 20240415000000/",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NWS staffing cuts CoCoRaHS volunteers",
+   "tool": "WebSearch",
+   "notes": "no result names CoCoRaHS with cuts",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS coordinator National Weather Service office 2025 vacancy",
+   "tool": "WebSearch",
+   "notes": "Detroit Free Press March 2025 recruiting story; no coordinator vacancy notice",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Weather Service layoffs 2025 volunteer observers",
+   "tool": "WebSearch",
+   "notes": "general NWS cuts only; no volunteer-observer effect",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GAO National Weather Service staffing 2025",
+   "tool": "WebSearch",
+   "notes": "GAO-25-108597 (aviation meteorologists) only; not read",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Commerce OIG National Weather Service staffing report 2026",
+   "tool": "WebSearch",
+   "notes": "OIG audit announcement 2025-523 read; OIG-26-017-I (Kerr County, April 2026) not read",
+   "from": "sa1",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"CoCoRaHS\" National Weather Service cuts training observers 2025",
+   "tool": "WebSearch",
+   "notes": "none link cuts to CoCoRaHS training",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Weather Service restore jobs hiring 450 2025 vacancy offices",
+   "tool": "WebSearch",
+   "notes": "snippets: up to 450 hires approved Aug 2025, by Sept 2026; more than 550 positions lost; not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NWS observing program leader vacancies 2025 cooperative observers",
+   "tool": "WebSearch",
+   "notes": "led to FR 2026-09099 COOP RFC (read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS state coordinator needed 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; NY Jan 2025 newsletter read; TX county vacancies in snippets",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS 2024 active stations reporting observers WERA",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; no national 2024 count",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WCC 2025 CoCoRaHS recruiting retention update Spies",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; only 2022/2023 agendas; led to wera1012 page showing 2025 postponed",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://media.cocorahs.org/docs/WCC_2025_Day2_Spies_Recruiting_Retention.pdf",
+   "tool": "lookup (guessed file name)",
+   "notes": "HTTP 404",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CoCoRaHS volunteers NWS office closed overnight training 2026",
+   "tool": "WebSearch",
+   "notes": "2026 NWS office trainings (Cleveland April 8 2026, Indianapolis, Mobile blitz) found; no closures affecting training",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Weather Service staffing 2026 vacancies hired",
+   "tool": "WebSearch",
+   "notes": "E&E June 2026 read via WebFetch; Star Tribune and E&E Jan 2026 not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WERA 2024 Spies recruiting retention CoCoRaHS active stations",
+   "tool": "WebSearch",
+   "notes": "allowed_domains media.cocorahs.org; found WERA_2024_N_* naming but no Spies deck; media.cocorahs.org/wera/2024/ is an agenda page with no slide links (renamed _unused)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://www.cocorahs.org/Content.aspx?page=WERA1012-2024-Recordings-Presentations",
+   "tool": "lookup (WERA 2024 presentation list)",
+   "notes": "WebFetch link list; led to WERA_2024_15_RecruitingRetention_Spies.pdf (read raw). Also lists WERA_2024_1_NWS_COOP_Update_McGuire_.pdf and WERA_2024_10_IT_Update_Turner.pdf (not read)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "find_text COOP|mesonet|MRMS|Stage IV|PRISM|nClimGrid in 2026-11-18_noaa-rain-gauge-threats answer.md and work/raw",
+   "tool": "lookup (earlier run files)",
+   "notes": "Reused FR 2026-09099 (COOP RFC) and WDTD MRMS gauge bias guide; earlier answer: ~6,700-site COOP, NMP FY2026 cut of about 1,200 platforms rejected, KBR $1.1B.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NWS Cooperative Observer Program stations 2025",
+   "tool": "WebSearch",
+   "notes": "Found NWSI 10-1307 (Feb 10, 2025), FR 2026-09099, NCEI COOP page (more than 8,500 volunteers), weather.gov/coop overview (11,000+). No dated 2025 inventory.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "COOP observer network decline 2025",
+   "tool": "WebSearch",
+   "notes": "Only ocean-observing results and MPX RFC page; no documented 2025 COOP decline found.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "COOP modernization NWS 2026",
+   "tool": "WebSearch",
+   "notes": "FR 2026-09099 (May 7, 2026, comments due June 8, 2026); SAM 1305M2-COOP sources sought June 12, 2026 (responses due July 13, 2026), up to 3,000 all-in-one units (aggregator snippets). No award or decision found.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "National Mesonet Program 2026 contract",
+   "tool": "WebSearch",
+   "notes": "HigherGov IDV 1305M226D0019 KBR Wyle Services (read via WebFetch); MTI article; GovConWire.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "National Mesonet Program funding 2025",
+   "tool": "WebSearch",
+   "notes": "S. 613 (authorization $50M FY2025 rising to $70M FY2029, not enacted per snippets); Civil Beat Hawaii May 2025 (NMP about half of Hawaii Mesonet $600,000/yr cost); Schumer NY Mesonet DHS grant cut.",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "state mesonet funding cut 2025",
+   "tool": "WebSearch",
+   "notes": "Schumer July 10, 2025 (read); UAlbany May 28, 2026 state $2M (read via WebFetch); Nebraska closures article is 2022 (read via WebFetch, outside window).",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CoCoRaHS COOP station density comparison",
+   "tool": "WebSearch",
+   "notes": "Goble et al. 2020 BAMS (read, NOAA repository copy); AMS 2011 neighborhood paper (snippet only).",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "MRMS gauge correction CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": "Cocks et al. 2015 AMS extended abstract (read via WebFetch-saved PDF).",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "PRISM daily precipitation CoCoRaHS stations",
+   "tool": "WebSearch",
+   "notes": "PRISM participate page (read); WERA 2024 Daly slides (read; Hawaii focus); PRISMWERA20 slides (snippet: 2016 completeness COOP 84% vs CoCoRaHS 49%, not read).",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "nClimGrid-Daily GHCN-Daily stations CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": "WERA 2024 NCEI Durre slides (read): nClimGrid-Daily excludes CoCoRaHS.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "National Mesonet Program stations number networks 2026",
+   "tool": "WebSearch",
+   "notes": "Synoptic NMP overview PDF (read via WebFetch-saved PDF; 55+ partners; last modified Dec 2024); Nebraska Mesonet 100 stations 2026 (snippet).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Stage IV precipitation analysis RFC gauges CoCoRaHS 2025",
+   "tool": "WebSearch",
+   "notes": "EOL Stage IV dataset page (JS-only, unreadable); snippet: Dec 9-30, 2024 Northwestern Region station data excluded. No CoCoRaHS-in-Stage-IV evidence found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Oklahoma Mesonet budget cut 2025",
+   "tool": "WebSearch",
+   "notes": "No Oklahoma Mesonet cut found; OU Aug 2025 release (120 stations, snippet); state budget $571M less in 2026 (snippet).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NWS observing program leader vacancies COOP 2025",
+   "tool": "WebSearch",
+   "notes": "General NWS vacancies (155 critical, 126 hires, 576 pledge, 35 MIC vacancies) from news snippets; nothing COOP/OPL-specific found.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "MRMS multi-sensor QPE gauges HADS MADIS CoCoRaHS 24-hour",
+   "tool": "WebSearch",
+   "notes": "WDTD Multi-Sensor QPE page (read): HADS, MADIS, RR5HFO gauge networks; CoCoRaHS not listed.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "cooperative observer stations closed NWS 2026",
+   "tool": "WebSearch",
+   "notes": "No COOP station closures found; SCN 26-34 RTP product discontinuation (read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "MRMS version 12 gauge quality control CoCoRaHS MADIS ingest",
+   "tool": "WebSearch",
+   "notes": "Snippets: v12.2.6 (Nov 2023) added MADIS with HADS; v12.3 operational July 22, 2025; NSSL update calls daily CoCoRaHS independent gauges for validation (snippet, not read). Read MRMS v12.2 Supplemental.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Stratus Precision rain gauge RG202",
+   "tool": "WebSearch",
+   "notes": "no source names RG202 except a review roundup snippet",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Stratus rain gauge manufacturer",
+   "tool": "WebSearch",
+   "notes": "Hummert listing names Productive Alternatives",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS approved rain gauge 2025",
+   "tool": "WebSearch",
+   "notes": "no 2025 change to approved list found",
+   "from": "sa2",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "rain gauge shortage 2025",
+   "tool": "WebSearch",
+   "notes": "no physical supply shortage found",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Stratus rain gauge tariff price 2025",
+   "tool": "WebSearch",
+   "notes": "no Stratus tariff found; Lee Valley snippet 'discontinued. Limited stock.' $43.50; reach.dog price history snippet $59.97 to $69.99 to $79.99 (undated)",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS gauge out of stock",
+   "tool": "WebSearch",
+   "notes": "no out-of-stock notice for approved gauges; WeatherYourWay listing snippet $42.00",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS app update 2025",
+   "tool": "WebSearch",
+   "notes": "found NIMSS report, user guide, App Store",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS website outage 2025",
+   "tool": "WebSearch",
+   "notes": "no 2025 outage found",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS data entry down",
+   "tool": "WebSearch",
+   "notes": "no current outage found; older Catch issues (2010, 2013) describe outages",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Productive Alternatives Fergus Falls rain gauge",
+   "tool": "WebSearch",
+   "notes": "MN DNR HIDEN page",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "WeatherYourWay official CoCoRaHS gauge price",
+   "tool": "WebSearch",
+   "notes": "snippets only: $42.00",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Climalytic TROPO rain gauge 2025",
+   "tool": "WebSearch",
+   "notes": "$89.99; no 2025 revision found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS rain gauge donation program free gauges 2025",
+   "tool": "WebSearch",
+   "notes": "only local programs (Nevada State Climate Office limited free gauges; RPBCWD; Koochiching SWCD; CSI Cayuga closed)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Productive Alternatives\" Stratus gauge 2025",
+   "tool": "WebSearch",
+   "notes": "no results about the company",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Stratus precision rain gauge discontinued",
+   "tool": "WebSearch",
+   "notes": "only Lee Valley (Canada) marks it Discontinued; other retailers still list it",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=cocorahs.org/Content.aspx?page=store from=2023",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "179 captures since 2023; 2024-01-08 snapshot read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS app Julian Turner new version 2026",
+   "tool": "WebSearch",
+   "notes": "apkcombo snippet Mar 21, 2026 update (unverified)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS maps.cocorahs.org new map Carto 2025",
+   "tool": "WebSearch",
+   "notes": "maps.cocorahs.org Leaflet with CARTO attribution",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS old app retired new mobile app observers",
+   "tool": "WebSearch",
+   "notes": "blog 2024-11-06",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS Observer app removed Google Play 2025",
+   "tool": "WebSearch",
+   "notes": "Chrome-Stats: removed 2025-02-05",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS website down cannot submit report",
+   "tool": "WebSearch",
+   "notes": "only old outages: Catch 2010-04-22 (firewall), 2013-04-09 (host power issue)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS NWS \"Observer\" iOS app no longer works 2025",
+   "tool": "WebSearch",
+   "notes": "old iOS app by Steve Woodruff last updated Aug 11, 2021 per summary; not read",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FLI Products Stratus rain gauge CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": "model DPRG0001 sold by FLI Products at Best Buy, Pyramyd Air, Seedtime in stock about $59.99-$79.99 per snippets; Lee Valley discontinued",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Productive Alternatives Fergus Falls 2025",
+   "tool": "WebSearch",
+   "notes": "led to productivemn.org: production area closed; Stratus sold through Darter Plastics",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Darter Plastics Stratus rain gauge",
+   "tool": "WebSearch",
+   "notes": "no result names Darter Plastics",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=productivemn.org/ from=2024",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "to date the production closure notice",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "browser read of Lee Valley Stratus product page",
+   "tool": "lookup (built-in browser)",
+   "copy_of": "https://leevalley.com/en-ca/shop/garden/water-and-irrigation/rain-gauges/73032-stratus-precision-rain-gauge",
+   "notes": "Product URL now redirects to the Rain Gauges category page (6 items); find 'Stratus' and 'Discontinued' gave no match. Consistent with removal but the grid may not have rendered; not quotable as discontinued."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "browser read of Google Play listing org.cocorahs.mobile",
+   "tool": "lookup (built-in browser)",
+   "copy_of": "https://play.google.com/store/apps/details?id=org.cocorahs.mobile",
+   "notes": "Read: Updated on Aug 31, 2026; 5K+ downloads; 4.5 stars, 51 reviews. Saved in work/raw/main/browser/."
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "browser read of NCAR EOL Stage IV dataset 21.093",
+   "tool": "lookup (built-in browser)",
+   "copy_of": "https://data.eol.ucar.edu/dataset/21.093",
+   "notes": "Page opened; find for 'gauge' and 'excluded' found nothing (content not rendered or not on landing page). No route left in time."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "reach.dog FLI Products Stratus listing",
+   "tool": "lookup (none)",
+   "copy_of": "https://reach.dog/shop/fliproducts/products/stratus-precision-rain-gauge-14-inch-noaa-endorsed-accurate-to-1-100th",
+   "notes": "Not tried again: HTTP 410 Gone for sa2; non-.org reseller, undated price snippet only; left as gap."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "old app aggregators (apkcombo, appadvice, marlvel, Apple id827714558, chrome-stats)",
+   "tool": "lookup (none)",
+   "copy_of": "https://apps.apple.com/us/app/cocorahs-observer/id827714558",
+   "notes": "No route left within the gap pass: Apple returned 404 (consistent with removal), appadvice ENOTFOUND, apkcombo 404, marlvel 403. The Google Play listing of the new app (read) supersedes them for q3."
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NCEP EMC Stage IV page and NSSL MRMS post",
+   "tool": "lookup (none)",
+   "copy_of": "https://www.emc.ncep.noaa.gov/mmb/SREF/pcpanl/",
+   "notes": "403 and 410 for sa3; no route left in time; Stage IV gauge inputs left as a gap."
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "HigherGov IDV 1305M226D0019 primary copy",
+   "tool": "lookup (none)",
+   "copy_of": "https://www.highergov.com/idv/1305M226D0019/",
+   "notes": "Primary (SAM.gov/USAspending) copy not tried in time; the earlier pt4 run holds the NMP recompete to KBR. Figure kept as aggregator, context only."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "apkcombo listing",
+   "tool": "lookup (none)",
+   "copy_of": "https://apkcombo.com/cocorahs/org.cocorahs.mobile/",
+   "notes": "no route left; superseded by the Google Play listing read in the browser"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "appadvice old iOS app",
+   "tool": "lookup (none)",
+   "copy_of": "https://appadvice.com/app/cocorahs-observer/827714558",
+   "notes": "no route left (ENOTFOUND)"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "marlvel aggregator",
+   "tool": "lookup (none)",
+   "copy_of": "https://marlvel.ai/apps/cocorahs",
+   "notes": "no route left (403); review summary superseded by Google Play reviews read"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "NSSL MRMS post",
+   "tool": "lookup (none)",
+   "copy_of": "https://inside.nssl.noaa.gov/mrms/?p=482",
+   "notes": "no route left (410)"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "chrome-stats old Android app",
+   "tool": "lookup (none)",
+   "copy_of": "https://chrome-stats.com/d/com.appcay.cocorahs",
+   "notes": "no primary copy: Google Play does not list removed apps; kept as aggregator"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Wayback CDX store page",
+   "tool": "lookup (none)",
+   "copy_of": "https://web.archive.org/cdx/search/cdx?url=cocorahs.org/Content.aspx?page=store&from=2023",
+   "notes": "the CDX listing is itself the primary record; snapshots 2024-01-08 and 2025-07-26 read"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Productive Alternatives Fergus Falls production closing",
+   "tool": "duckduckgo (browser)",
+   "notes": "Top hit: productivemn.org closure notice (already saved); no news article on the closure."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Darter Plastics Stratus rain gauge",
+   "tool": "duckduckgo (browser)",
+   "notes": "Found darterproducts.com product page ($41.99) and FLI Products post (Sep 28, 2026) saying Stratus is made in Minnesota by Darter Plastics; both read in the browser."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS rain gauge shortage 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "No shortage or stock notice; results were 2026 recruiting pages (Rain Gauge Rally moved to April)."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "own yearly active-station and recruiting counts",
+   "query": "CoCoRaHS active observers 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "WCC-1012 / NIMSS",
+   "publisher": "mandatory filings and meeting records",
+   "subquestion_id": "q1",
+   "aim": "annual meeting report with counts",
+   "query": "WCC1012 annual report CoCoRaHS 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "Productive Alternatives (Stratus)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "the gauge maker's own pages",
+   "query": "Stratus Precision rain gauge RG202",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": null,
+   "publisher": "press",
+   "subquestion_id": "q2",
+   "aim": "gauge shortage, tariff or price news",
+   "query": "rain gauge shortage 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "app and website notices",
+   "query": "CoCoRaHS app update 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NWS",
+   "publisher": "press",
+   "subquestion_id": "q4",
+   "aim": "NWS staffing cuts and volunteer programs",
+   "query": "NWS staffing cuts CoCoRaHS volunteers",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NWS",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q4",
+   "aim": "GAO or Commerce OIG NWS staffing reports",
+   "query": "GAO National Weather Service staffing 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NWS COOP",
+   "publisher": "the organization itself",
+   "subquestion_id": "q5",
+   "aim": "COOP counts and modernization",
+   "query": "NWS Cooperative Observer Program stations 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "National Mesonet Program",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q5",
+   "aim": "NMP contract and funding",
+   "query": "National Mesonet Program 2026 contract",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q5",
+   "aim": "density comparisons and product inputs",
+   "query": "CoCoRaHS COOP station density comparison",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 27.6,
+  "shift_min": 0,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 237711,
+  "subagent_minutes_planned": 47,
+  "subagent_minutes": 49.2,
+  "follow_ups": 0,
+  "continuations": 6,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

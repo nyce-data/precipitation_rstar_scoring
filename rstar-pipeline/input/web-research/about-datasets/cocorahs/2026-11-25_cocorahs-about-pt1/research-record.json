@@ -1,0 +1,1992 @@
+{
+ "question": "What are CoCoRaHS's daily precipitation observations as a dataset: where stored and served, what goes into them, which organizations make them; mapped to RRS-1, D-2, DIRS-3, DIRS-4.",
+ "tier": "standard",
+ "tier_reason": "standard: one dataset, three subquestions, user limits 30 min / 240k; no set of 15+, no dispute",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Hosts: every place that holds or serves a copy; archive of record; export documentation; DOI/version",
+   "status": "answered",
+   "source_ids": [
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s19",
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s43",
+    "s45",
+    "s46",
+    "s47"
+   ],
+   "remaining_gap": "Server location and backups unpublished; exportstations.aspx, HADS and re3data not checked."
+  },
+  {
+   "id": "q2",
+   "question": "Inputs: observer/station counts by country and over time; gauge; entry; update frequency; measured vs derived",
+   "status": "uncertain",
+   "source_ids": [
+    "s31",
+    "s32",
+    "s33",
+    "s34",
+    "s35",
+    "s37",
+    "s39",
+    "s42",
+    "s43",
+    "s44",
+    "s49",
+    "s50"
+   ],
+   "remaining_gap": "Active stations by country found (May 2026); observer counts by country only for Canada (2023); PR/USVI/Guam not split from USA; snow and multi-day rules not read."
+  },
+  {
+   "id": "q3",
+   "question": "Organizations: Colorado Climate Center, sponsors, coordinators, users (NWS RFCs, METplus)",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s48",
+    "s49"
+   ],
+   "remaining_gap": "Coordinator employers not read (JavaScript page)."
+  },
+  {
+   "id": "q4",
+   "question": "Map findings to RRS-1, D-2, DIRS-3, DIRS-4",
+   "status": "answered",
+   "source_ids": [
+    "s10",
+    "s11",
+    "s20",
+    "s19",
+    "s46",
+    "s15"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.cocorahs.org/Content.aspx?page=sponsors",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Our Sponsors",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "NOT PRESENT (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_sponsors.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Copy saved 2026-11-18 by an earlier run; page gives no dollar amounts or which NOAA office; footer copyright 1998-2025.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.cocorahs.org/Content.aspx?page=aboutus",
+   "fetched_url": null,
+   "title": "CoCoRaHS - About Us",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "NOT PRESENT (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_aboutus.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No server/hosting location stated; footer says Copyright © 1998-2025, Colorado Climate Center.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.cocorahs.org/Content.aspx?page=coord_in_counties",
+   "fetched_url": null,
+   "title": "Your role as a volunteer county coordinator",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT (mentions April 2025 and an April 20, 2024 training)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_coord_counties.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "County coordinator page; no formal state/regional coordinator description; page appears Indiana-flavoured (mentions CoCoRaHS Indiana Facebook page).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.weather.gov/abrfc/cocorahs",
+   "fetched_url": null,
+   "title": "Community Collaborative Rain, Hail & Snow Network (ABRFC page)",
+   "author_org": "NOAA NWS Arkansas-Red Basin River Forecast Center, Tulsa OK",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/abrfc_cocorahs.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Undated, older-style page ('CoCoRaHS Is Here!'); the search summary's quote about CoCoRaHS reporting the largest totals and 12z analysis was NOT on this page (it came from other ABRFC material not read).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://metplus.readthedocs.io/en/main_v6.0/generated/model_applications/precipitation/PointStat_fcstURMA_obsCOCORAHS_ASCIIprecip.html",
+   "fetched_url": null,
+   "title": "PointStat: Compare community observed precipitation to model forecasts",
+   "author_org": "DTC METplus (NCAR/DTC documentation)",
+   "published": "NOT PRESENT (main_v6.0 docs; sample date 2022-09-14)",
+   "data_period": null,
+   "source_type": "documentation",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/metplus_cocorahs_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Read via WebFetch (metplus.readthedocs.io refused by sandbox, CONNECT 403); extract by small model, quotes not checked against raw HTML.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.drought.gov/sites/default/files/2020-06/CoCoRaHsConditionMonitoring_Nov2019_508.pdf",
+   "fetched_url": null,
+   "title": "Citizen Science Condition Monitoring: Enabling the CoCoRaHS network to ...",
+   "author_org": "NIDIS / drought.gov",
+   "published": "November 2019",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/droughtgov_condmon_2019.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "About condition-monitoring reports, not daily precipitation; 2019.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://media.cocorahs.org/docs/WERA1012_2022_NCEI.pdf",
+   "fetched_url": null,
+   "title": "NCEI and CoCoRaHS Data (WERA-1012 2022 presentation)",
+   "author_org": "Bryant Korzeniewski, Riverside Technology Inc., on behalf of NOAA NCEI",
+   "published": "May 2022",
+   "data_period": null,
+   "source_type": "presentation",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_wera2022_ncei.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Flow-diagram text from pdftotext layout; arrows/order not recoverable from text; coordinator may want to view slide 35 image.",
+   "found_by": [
+    "sa3",
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://newsmediarelations.colostate.edu/2010/11/22/colorado-state-university-gets-funding-to-improve-national-precipitation-monitoring-network/",
+   "fetched_url": null,
+   "title": "Colorado State University Gets Funding to Improve National Precipitation Monitoring Network",
+   "author_org": "Colorado State University media relations",
+   "published": "2010-11-22",
+   "data_period": null,
+   "source_type": "news release",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/csu_cocorahs_2010.txt",
+   "retrieved": "2026-11-21",
+   "limitations": "2010; names the NOAA office (Office of Education) as payer; amounts are out of scope for this run.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.weather.gov/rah/cocorahs",
+   "fetched_url": null,
+   "title": "CoCoRaHS (NWS Raleigh)",
+   "author_org": "NOAA NWS Weather Forecast Office Raleigh NC",
+   "published": "NOT PRESENT (examples dated 2008)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nws_rah_cocorahs.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Examples from 2008; page undated.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://distantreader.org/stacks/journals/twj/twj-7071.pdf",
+   "fetched_url": null,
+   "title": "Integration of the CoCoRaHS observations into the West Gulf River Forecast Center",
+   "author_org": "NWS West Gulf River Forecast Center authors (names not extracted); Texas Water Journal",
+   "published": "Texas Water Journal, Volume 9, Number 1 (cites 2018 sources)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/twj_wgrfc_cocorahs.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Two-column pdftotext layout: fragments quoted from single columns; sentence continuations across columns not verified; PDF obtained via WebFetch binary save (distantreader.org refused by sandbox CONNECT 403) then pdftotext.",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://www.cocorahs.org/Content.aspx?page=contactus",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Contact Us",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "NOT PRESENT (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_contactus.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Offices, not servers; says nothing about where the database or website is hosted.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.cocorahs.org/Content.aspx?page=coord",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Volunteer Observer Coordinators",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "NOT PRESENT (footer Copyright 1998-2025; staff list looks older)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cocorahs_coord.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "The staff list seems out of date (Doesken is called the Founder on Contact Us; the ZIP is printed as 30523); a web developer on a colostate.edu host suggests CSU staff run the site, but the page does not say where it is hosted.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://data.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS: Data Export",
+   "author_org": "CoCoRaHS (Colorado Climate Center)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "snippet",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/data_cocorahs_home.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "JavaScript-built page; the coordinator should view it in the browser for the export form fields (date range, state, station, units) and any help link. Documentation page NOT PRESENT in what was saved.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://data.cocorahs.org/cocorahs/export/exportmanager.aspx",
+   "fetched_url": null,
+   "title": "CoCoRaHS: Data Export (older Export Manager)",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/old_exportmanager.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Form only; no documentation, terms of use, or statement that it is public/stable on the page. Not tested by submitting a request.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://www.cocorahs.org/Content.aspx?page=Resources_viewingdata",
+   "fetched_url": null,
+   "title": "Other Ways to View Your Data",
+   "author_org": "CoCoRaHS (Colorado Climate Center)",
+   "published": "NOT PRESENT (footer Copyright 1998-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_viewingdata.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Also says: 'the underlying database for the NOWData tool does not assimilate the multi-day amounts, so days included in a multi-day period are set to \"M\".' Footer: 'Copyright © 1998-2025, Colorado Climate Center'.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.cocorahs.org/content.aspx?page=datausagepolicy",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data Usage Policy",
+   "author_org": "CoCoRaHS (Colorado Climate Center)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_datausagepolicy.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No statement on API/export stability, rate limits, DOI or versioning: NOT PRESENT. A search snippet elsewhere said CC BY 3.0; the saved page says 4.0.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://dex.cocorahs.org/about",
+   "fetched_url": null,
+   "title": "About DEx the CoCoRaHS Data Explorer",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/dex_about.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No hosting, download or API statement: NOT PRESENT. A search result for dex.cocorahs.org/roadmap listed 'data export capabilities' as a planned feature improvement (not read).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://www.cocorahs.org/WaterYearSummary/",
+   "fetched_url": null,
+   "title": "CoCoRaHS Water Year Summary Reports",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_wys.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "These are derived summaries, not a raw data copy. wys.cocorahs.org: NOT PRESENT in searches.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+   "fetched_url": null,
+   "title": "README FILE FOR DAILY GLOBAL HISTORICAL CLIMATOLOGY NETWORK (GHCN-DAILY)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT in excerpt",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/8b8dc3572e0d91be.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Copied file from earlier run; URL assumed to be the readme as in that run (file name is a hash).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data Quality Assurance and Quality Control",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/4a1012a4cad44a36.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Exact document URL not recovered: the url given is the CoCoRaHS home page; a 2023 WERA QA/QC deck says the document is in the FAQ/Help section of cocorahs.org. QA itself is out of scope.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://madis.ncep.noaa.gov/hydro_providers.shtml",
+   "fetched_url": null,
+   "title": "MADIS Hydrological Surface Data Providers",
+   "author_org": "NOAA NCEP MADIS",
+   "published": "live table, snapshot Nov 26 02:10 UTC",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/madis_hydro_providers.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Meaning of restriction level 3 not extracted (see MADIS restriction docs). MADIS snow providers page also lists CoCoRaHS per search (not read).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://mesonet.agron.iastate.edu/cocorahs/",
+   "fetched_url": null,
+   "title": "IEM :: CoCoRaHS",
+   "author_org": "Iowa Environmental Mesonet, Iowa State University",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/iem_cocorahs.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Collection method (from CoCoRaHS directly or via MADIS) NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://dnr.state.mn.us/climate/historical/acis_stn_meta_coco.html",
+   "fetched_url": null,
+   "title": "Retrieve Precipitation Data from CoCoRaHS Stations",
+   "author_org": "Minnesota DNR (State Climatology Office)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/mn_dnr_cocorahs_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Read via WebFetch (sandbox refused curl); quotes are as returned by the extraction model.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://paleo.ltrr.arizona.edu/dif/noaa-other-1002736.xml",
+   "fetched_url": null,
+   "title": "CoCoRaHS (NOAA DIF metadata record noaa-other-1002736)",
+   "author_org": "NOAA NCEI (mirror at paleo.ltrr.arizona.edu)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/noaa_dif_cocorahs.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Paleo catalog's 'other collections' record; not the GHCN-D record.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://api.datacite.org/dois?query=CoCoRaHS&page[size]=25",
+   "fetched_url": null,
+   "title": "DataCite API search: CoCoRaHS",
+   "author_org": "DataCite",
+   "published": "query 2026-11-25",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/datacite_cocorahs.json",
+   "retrieved": "2026-11-25",
+   "limitations": "Only first page of 25 checked; total count not extracted. re3data not checked directly.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://dex.cocorahs.org/roadmap",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data Explorer Roadmap",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/dex_roadmap.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Undated page; hosting NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.cocorahs.org/ViewData/",
+   "fetched_url": null,
+   "title": "CoCoRaHS View Data",
+   "author_org": "CoCoRaHS (Colorado Climate Center)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cocorahs_viewdata.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "No bulk download, export or API link on the page in matched lines; hosting NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.nsta.org/science-teacher/science-teacher-february-2020/gauging-rainfall-cocorahs",
+   "fetched_url": null,
+   "title": "Gauging Rainfall with CoCoRaHS (The Science Teacher, February 2020)",
+   "author_org": "NSTA",
+   "published": "2020-02",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/nsta_cocorahs_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Organizational hosting, not necessarily server hosting; data storage/archiving NOT PRESENT. Quote rejoined from two extract pieces.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://madis.ncep.noaa.gov/snow_providers.shtml",
+   "fetched_url": null,
+   "title": "MADIS Snow Data Providers",
+   "author_org": "NOAA NCEP MADIS",
+   "published": "live table, snapshot Nov 26 02:10 UTC",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/madis_snow_providers.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Snow is context only per brief; restriction level meaning not extracted.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.drought.gov/data-maps-tools/community-collaborative-rain-hail-and-snow-network-cocorahs-data",
+   "fetched_url": null,
+   "title": "Community Collaborative Rain, Hail, and Snow Network (CoCoRaHS) Data | Drought.gov",
+   "author_org": "NOAA NIDIS (Drought.gov)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/droughtgov_cocorahs.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Link-only catalog entry; no DOI, version or hosting statement (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://www.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS home page",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "page as of 2026-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_home.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "'active observers' not defined; page undated apart from the counter; counts by country NOT PRESENT. The six report-type counters suggest separate report types; whether separate tables NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://media.cocorahs.org/docs/Why%20CoCoRaHS%20requires%20manual%20measurements.pdf",
+   "fetched_url": null,
+   "title": "Why CoCoRaHS Requires Manual Measurements (Rev. 11/2024)",
+   "author_org": "CoCoRaHS",
+   "published": "2024-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_manual_measurements.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Gauge maker and capacity NOT PRESENT in this doc.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://www.cocorahs.org/Content.aspx?page=welcomebh",
+   "fetched_url": null,
+   "title": "Welcome to CoCoRaHS Bahamas",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/cocorahs_welcomebh_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Contradicts the brief's 'Bahamas 2013'; Bahamas observer count NOT PRESENT; WebFetch extract.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://www.cocorahs.org/Canada-About.aspx",
+   "fetched_url": null,
+   "title": "About CoCoRaHS Canada",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/cocorahs_canada_about_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "December 2011 start is WebFetch paraphrase, not quoted; observer count NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://www.ourcommons.ca/DocumentViewer/en/44-1/SRSR/meeting-28/evidence",
+   "fetched_url": null,
+   "title": "House of Commons of Canada, Standing Committee on Science and Research, meeting 28, evidence",
+   "author_org": "House of Commons of Canada (testimony of Juliet Hull, CoCoRaHS National Volunteer Coordinator)",
+   "published": "NOT PRESENT (early Feb 2023; next meeting Thursday, February 9)",
+   "data_period": null,
+   "source_type": "government testimony",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/ourcommons_srsr28_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extract; meeting date not captured.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_7_NOAA_NCEI_Durre.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data at NCEI (WERA presentation)",
+   "author_org": "Imke Durre, Jessica Matthews (NOAA NCEI)",
+   "published": "2024-06-10",
+   "data_period": null,
+   "source_type": "presentation",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/cocorahs_wera2024_durre.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Slide text via pdftotext; CoCoRaHS station count in GHCNd NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.nrcc.cornell.edu/workshops/webinars/2025/04/present_1.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS (NRCC webinar slides, April 2025)",
+   "author_org": "CoCoRaHS presenter at Northeast Regional Climate Center webinar (author name NOT PRESENT in text layer)",
+   "published": "2025-04",
+   "data_period": null,
+   "source_type": "presentation",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/webfetch-1795660846993-gjm2kr.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Slide deck; Guam listed in addition to the five places in the question.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://www.cocorahs.org/Content.aspx?page=aboutus",
+   "fetched_url": null,
+   "title": "CoCoRaHS About Us",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/cocorahs_aboutus_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extract; exact counts and joining years NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://www.cocorahs.org/Content.aspx?page=20years",
+   "fetched_url": null,
+   "title": "CoCoRaHS 20 years (series of messages, May-June 2018)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": "2018-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/cocorahs_20years_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "WebFetch extract; 12,000 (2009), 20,000, app 2014 and Bahamas pilot are paraphrases, not quoted; verify against page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://www.cocorahs.org/Content.aspx?page=publications_about_cocorahs",
+   "fetched_url": null,
+   "title": "CoCoRaHS Publications about CoCoRaHS",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/cocorahs_publications_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Bibliographic only; papers themselves not read (AMS and ResearchGate 403).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://www.cocorahs.org/wateryearsummary/",
+   "fetched_url": null,
+   "title": "CoCoRaHS Water Year Summary Reports",
+   "author_org": "CoCoRaHS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/cocorahs_wateryearsummary_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Year listings are WebFetch paraphrase; whether built from daily plus multi-day reports NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://www.weather.gov/dtx/CoCoRaHS",
+   "fetched_url": null,
+   "title": "Volunteer Precipitation Observers Needed! (NWS Detroit/Pontiac CoCoRaHS page)",
+   "author_org": "NOAA National Weather Service, Detroit/Pontiac office",
+   "published": "NOT PRESENT (mentions summer 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/nws_dtx_cocorahs_extract.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Secondary (NWS office) page; report-type list and app/website split are WebFetch paraphrase; 25,000 differs from CoCoRaHS home page more than 28,000.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://dex.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS Data Explorer: Station History Search (default view)",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/dex-cocorahs-org_024055.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Count of stations with any observation in the last ~90 days, all countries; not observers; not split by country (filtering the form was not done).",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://www.cocorahs.org/Content.aspx?page=countries",
+   "fetched_url": null,
+   "title": "CoCoRaHS - Countries",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/cocorahs-org-Content-aspx-page-countries_025001.txt",
+   "retrieved": "2026-11-25",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s45",
+   "url": "https://data.cocorahs.org/cocorahs/export/exportmanager.aspx",
+   "fetched_url": null,
+   "title": "CoCoRaHS: Data Export (Export Manager), browser read",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/data-cocorahs-org-cocorahs-export-exportmanager-aspx_024036.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Form not submitted; no documentation, terms or stability statement on the page.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s46",
+   "url": "https://maps.cocorahs.org/",
+   "fetched_url": null,
+   "title": "CoCoRaHS Maps",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/maps-cocorahs-org_024136.txt",
+   "retrieved": "2026-11-25",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s47",
+   "url": "https://wys.cocorahs.org/about",
+   "fetched_url": null,
+   "title": "CoCoRaHS Water Year Summary Reports: About",
+   "author_org": "CoCoRaHS / Colorado Climate Center",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/wys-cocorahs-org-about_024132.txt",
+   "retrieved": "2026-11-25",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://climate.colostate.edu/resources.html",
+   "fetched_url": null,
+   "title": "Colorado Climate Center - Resources and Links",
+   "author_org": "Colorado Climate Center, Colorado State University",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/ccc_resources.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Says 'housed', not where servers physically sit.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://doi.org/10.1175/BAMS-86-8-1069",
+   "fetched_url": "https://climate.colostate.edu/pdfs/Cifelli_CoCo_BAMS2005.pdf",
+   "title": "The Community Collaborative Rain, Hail, and Snow Network: Informal Education for Scientists and Citizens (Cifelli et al. 2005, BAMS 86(8))",
+   "author_org": "Cifelli, Doesken, Kennedy, Carey, Rutledge, Gimmestad, Depue (CSU)",
+   "published": "2005-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "10.1175/BAMS-86-8-1069",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/cifelli_2005.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "2005 description; read from the Colorado Climate Center's copy (climate.colostate.edu/pdfs/Cifelli_CoCo_BAMS2005.pdf), same title/pages.",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://media.cocorahs.org/docs/WCC_2026_Day2_Spies_Recruiting_Retention.pdf",
+   "fetched_url": null,
+   "title": "CoCoRaHS Recruiting and Retention Update (WCC 2026, Day 2; M. Spies, CT State Coordinator)",
+   "author_org": "CoCoRaHS (state coordinator presentation)",
+   "published": "2026-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/wcc2026_spies.txt",
+   "retrieved": "2026-11-25",
+   "limitations": "Coordinator presentation built from CoCoRaHS's station history report; 'active' = reported in the prior 12 months; USA includes PR, USVI, Guam.",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "The archive of record is CoCoRaHS's own database, run by CoCoRaHS headquarters at the Colorado Climate Center, Colorado State University (Fort Collins); reports are recorded in a central archive there and published on cocorahs.org. No page states where its servers physically sit or whether a second copy is kept. Bears on RRS-1 and D-2 (one primary store; independence of copies not documented).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "WGRFC receives around 1,000 CoCoRaHS observervations … then recorded in a central archive at CoCoRaHS headquar- … National Science Foundation (NSF) are primary sponsors of … CoCoRaHS. … against the associated Multisensor Precipitation Estimate (MPE) best estimate of precipitation (y-axis) at the location of that gauge. … The MPE radar data are linearly adjusted to best match gauge data. … (Right) MPE final precipitation analysis with CoCoRaHS data overlaid after an adjustment was made to the 24-hour field.",
+     "location": "pp. 97-101 (lines 141, 152, 187, 206-209, 255 of saved text)"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "CoCoRaHS Headquarters offices are located at the Colorado Climate Center on the first floor of the Atmospheric Science Annex Building (just south of the tall Atmospheric Science Building), on the Foothills Campus of Colorado State University in Fort Collins, Colorado. … To report suspected observation errors, email: qc@cocorahs.org For questions about the Data Explorer, interactive mapping, the mobile app, or CoCoRaHS data, email: Noah Newman (noah.newman@colostate.edu) or Steve Hilberg (hberg@cocorahs.org) … For State/Regional Coordinator changes, contact our National Coordinator, Henry Reges at: henry.reges@colostate.edu … Mail us: | CoCoRaHS Colorado State University 1371 Campus Delivery Fort Collins, CO 80523-1371",
+     "location": "Call or visit us / email us / Mail us"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "Currently housed at the Colorado Climate Center, CoCoRaHS provides daily precipitation observations across all 50 states, Puerto Rico, the US Virgin Islands, and Guam, and internationally including Canada and The Bahamas.",
+     "location": "Colorado Climate Center Maintained Data"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "CoCoRaHS data are made available to the public via the web site (www.cocorahs.org). In addition, we ask that everyone who uses CoCoRaHS data to please acknowledge its source when displaying it. Unless otherwise noted, all CoCoRaHS content and data are released under a Creative Commons Attribution 4.0 License. … Disclaimer: The data are provided \"as is\", and in no event shall the providers be liable for any damage or loss due to missing data or misinterpretation of its content.",
+     "location": "main body"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CoCoRaHS's own pages and CSU agree on where the archive is run; server location and backups are not published.",
+   "sole_source_reason": "CoCoRaHS's and CSU's own pages are the authority on where CoCoRaHS keeps its data."
+  },
+  {
+   "id": "c2",
+   "text": "CoCoRaHS's own data sites: cocorahs.org ViewData (searchable daily reports), the data.cocorahs.org Export Manager (Daily, Multi-Day, Hail, SigWx reports in XML, CSV, SHEF by U.S. state/territory and date), the Data Explorer dex.cocorahs.org (v1.0, 25,106 stations reporting in the last 90 days; export only planned), Water Year Summaries (wys.cocorahs.org and www.cocorahs.org/WaterYearSummary), and maps.cocorahs.org (Leaflet with OpenStreetMap/CARTO tiles).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Station Data Explorer | Searchable list of station history reports with a dashboard for each station. | Daily Precipitation Reports | Searchable list of all daily precipitation reports. | Daily Comments Reports | List of all daily reports with comments for a given day.",
+     "location": "lines 9-11"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "Export Reports | Report Type:",
+     "location": "form"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Version 1.0 | Development of the CoCoRaHS Data Explorer was made possible by a grant from the NOAA's Office of Education, and donations from CoCoRaHS observers and supporters. The goal of the Data Explorer is to provide observers and other users easy access to their data using innovative data visualization products.",
+     "location": "about page"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Feature Improvements | - Condition monitoring analysis | - Extreme precipitation analysis | - Data export capabilities | Long-term Enhancements | - Station data comparisons | - Migrate reports from www.cocorahs.org/viewdata to the Data Explorer",
+     "location": "roadmap page"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "Last Obs Date: 08/27/2026 to 11/25/2026 | Viewing 1 - 50 of 25,106 Stations",
+     "location": "station search results header"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "CoCoRaHS recommends this Water Year calendar for tabulating precipitation amounts. If you are a CoCoRaHS observer, you can access your Water Year Summary reports for your station(s) from here or the \"My Account\" page of the main website.",
+     "location": "About page"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "Leaflet | © OpenStreetMap contributors, © CARTO",
+     "location": "map footer and legend"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Each site was opened and read directly (browser or raw HTML).",
+   "sole_source_reason": "The data provider's own sites are the authority on what they serve."
+  },
+  {
+   "id": "c3",
+   "text": "The dataset has no DOI or data version: NOAA's catalog record gives Dataset_DOI N/A and DataCite's top hits are third-party works. Data are CC BY 4.0, 'as is'; the export route has no published documentation, stability statement or API; the portal says only to email info@cocorahs.org.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "<Entry_Title>CoCoRaHS</Entry_Title> … <Dataset_DOI>N/A</Dataset_DOI> … <Short_Name>DOC/NOAA/NESDIS/NCEI</Short_Name> … <URL>http://www.cocorahs.org/</URL>",
+     "location": "lines 3, 9, 25, 64"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "\"title\": \"OpenMesh: A Continuously Updated Wireless Signal Dataset for Opportunistic Weather Sensing in New York City\" … \"title\": \"MADIS Snow Data. Version 1.0\" | \"publisher\": \"NSF NCAR Earth Observing Laboratory\"",
+     "location": "JSON lines 139, 3009-3012"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "CoCoRaHS data are made available to the public via the web site (www.cocorahs.org). In addition, we ask that everyone who uses CoCoRaHS data to please acknowledge its source when displaying it. Unless otherwise noted, all CoCoRaHS content and data are released under a Creative Commons Attribution 4.0 License. … Disclaimer: The data are provided \"as is\", and in no event shall the providers be liable for any damage or loss due to missing data or misinterpretation of its content.",
+     "location": "main body"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "If you have any questions about how to access CoCoRaHS data or need help with the data export, please contact us as info@cocorahs.org.",
+     "location": "page body (only visible text, 25 words)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Absence of a DOI shown by catalog record and DataCite; re3data not queried directly."
+  },
+  {
+   "id": "c4",
+   "text": "NCEI's GHCN-Daily holds a copy: all CoCoRaHS data since 1998 are streamed to NCDC/NCEI, retrieved daily for existing stations; stations need 100+ values to be included; IDs start US1, CA1 or BF1; source flag N; 133 million CoCoRaHS observations (all elements) 1998-present. NCEI's own archive also receives CoCoRaHS via CoCoRaHS Web Services. Supports RRS-1 (an independent federal copy at NCEI) and DIRS-3 for downstream users.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "All data submitted into CoCoRaHS since 1998 are continually streamed to NCDC and stations | where at least 100 individual data values are present for at least one data element are included | in the CoCoRaHS data source for GHCN-Daily. New data values received from CoCoRaHS are | retrieved by GHCN-Daily on a daily basis for existing stations and updated periodically to | include any newly commissioned CoCoRaHS stations.",
+     "location": "lines 178-182, section 'Quality Controls Checks by NCEI for GHCN-D Precipitation Data'"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "1 = Community Collaborative Rain, Hail,and Snow (CoCoRaHS) | based identification number.  To ensure consistency with | with GHCN Daily, all numbers in the original CoCoRaHS IDs | have been left-filled to make them all four digits long. … For example, the CoCoRaHS ID | \"AZ-MR-156\" becomes \"US1AZMR0156\" in GHCN-Daily",
+     "location": "lines 474-481; source flag line 394: 'N     = Community Collaborative Rain, Hail,and Snow (CoCoRaHS)'"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "CoCoRaHS Stations in GHCN‐Daily have GHCN IDs beginning with US1, | CA1, or BF1 (e.g. US1NCBC0087, CA1QC000042, BF1EX000005) … New station history feed from CoCoRaHS is now | ingested into NCEI’s Historical Observing Metadata | Repository System … CoCoRaHS Data Flow To NCEI | CoCoRaHS | Website … RCC/RFC CoCoRaHS | Web Services GHCN‐Daily QC",
+     "location": "slides 21-22, 34-35"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "Includes 133 million CoCoRaHS observations (over all elements) for 1998- | present",
+     "location": "slide 2, lines 11-14"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's QA/QC document and NCEI's readme and presentations agree.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c5",
+   "text": "Other copies are derivative: ACIS (Regional Climate Centers) gets CoCoRaHS via GHCN-Daily, and state climatologists such as Minnesota DNR serve it through ACIS; MADIS lists CoCoRaHS as a hydrological and snow provider (restriction level 3); the Iowa Environmental Mesonet collects the daily reports; NWS offices and river forecast centers ingest reports (hail/intense-rain reports went from the CoCoRaHS server to NWS LDAD servers in 2005).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Many of them obtain their data from the Applied Climate Information System (ACIS) developed and maintained by the Regional Climate Centers (RCCs). The daily data from CoCoRaHS are fed into ACIS by the Global Historical Climate Network (GHCN) Daily database which is collected, compiled, and distributed by the National Centers for Environmental Information in Asheville, NC. The GHCN database only contains the data for CoCoRaHS stations that have submitted at least 100 observations. New active stations are added to the GHCN database once a month, so depending on timing it could be four months before a new station appears in GHCN, and thus in the products listed below.",
+     "location": "main body"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Powered by ACIS (Regional Climate Centers) … climate data for the station's full period of record",
+     "location": "WebFetch extract (model-extracted; quotes as returned)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "The IEM collects the daily reports from this network and offers a few tools for the dataset.",
+     "location": "page body"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "The standard daily observation of total liquid | precipitation (rain or melted snow) is performed at | 0700 LT.",
+     "location": "p. 1070 (PDF p. 2)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Mostly the hosts' own pages; MN DNR read through WebFetch only."
+  },
+  {
+   "id": "c6",
+   "text": "Observer counts: more than 28,000 active observers (CoCoRaHS home page, captured 2026-11-18; US, Canada, PR, USVI, Guam, Bahamas); 27,400+ volunteers (NRCC slides, Apr 2025); over 25,000 (NWS Detroit page, 2025). Canada: 80 in the first year (2011-12), 843 active as of 2023-01-31. 25,106 stations reported in the last 90 days (DEx, 2026-11-25). No per-country counts for the US, PR, USVI or Bahamas were found. Growth: a few hundred active volunteers in 2003 to over 2,000 by summer 2004.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Reports received today 11/18/2026 as of 9:10 AM EST | Daily | Multi-day | SigWx | Hail | Condition | ET | 6,379 | 46 | 0 | 0 | 6 | 7 … utilizing an interactive Website and Mobile App … It is composed of more than 28,000 active observers in the United States, Canada, Puerto Rico, the U.S. Virgin Islands, Guam, and the Bahamas. Our website lets observers see their observations mapped in \"real time\"",
+     "location": "home page lines 7-12"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "1998                                Today | 27,400+ volunteers in all | A few dozen volunteers           50 states, Canada, Puerto Rico, | in Northern Colorado     the U.S. Virgin Islands, the Bahamas and Guam",
+     "location": "lines 16-25 of txt"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "During the summer of 2025, over 400 observers were active across Michigan. … There are over 25,000 observers across the United States, Bahamas, and Canada. … Digital/electronic rain gauges are not approved for CoCoRaHS use. … Volunteers report rain and snow observations once per day in the morning (even if there was no accumulation).",
+     "location": "NWS DTX CoCoRaHS page"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "expanded into Canada in 2011 following a massive flood in Manitoba. … In the first year, the network gained 80 active volunteer observers. … As of January 31, 2023, there are 843 active volunteer observers in Canada. … ECCC actually uses the CoCoRaHS network to do QA/QC and to bulk out the precipitation data that they get.",
+     "location": "text after character 100000 of transcript"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "Last Obs Date: 08/27/2026 to 11/25/2026 | Viewing 1 - 50 of 25,106 Stations",
+     "location": "station search results header"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "Then on the afternoon of July 27, 1997, it began to rain along the west side of Fort Collins, Colorado. … The Community Collaborative Rain, Hail and Snow Network (CoCoRaHS) began on June 17, 1998. … The number of active volunteers quickly grew from a few hundred in 2003 to over 2,000 by the summer of 2004. … The last state to join was Minnesota in 2009. … With the help of NOAA, Puerto Rico (2014) and the U.S. Virgin Islands (2015) joined the network next.",
+     "location": "20 years page"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Counts are CoCoRaHS's own or quoted from it, but dated differently; per-country split not published.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c11",
+   "text": "Active stations by country (CoCoRaHS station history report, May 1, 2026; active = reported since May 1, 2025): 27,623 in all, USA 26,758, Canada 833, Bahamas 32; 27,676 a year earlier. By end of 2025 the network held 82.7M daily precipitation reports; reporting observers grew 1.2% in 2025 and 86% over 16 years.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "•27,623 Active Stations | • USA – 26,758 Active Stations | • Canada – 833 Active Stations | • Bahamas – 32 Active Stations",
+     "location": "slide 'Active Stations' (text lines 85-88)"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "End of Year 2025, 82.7M Daily Precip Reports. +2.1M in Year 2026 so far. | Daily Precip Reports shrank 0.5% in Year 2025. 106% growth in 16 years. | Reporting Observers grew 1.2% in Year 2025. 86% growth in 16 years.",
+     "location": "text lines 26-28"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "CoCoRaHS's own station-history figures, in a coordinator's slides; one source.",
+   "figure_status": "actual",
+   "sole_source_reason": "CoCoRaHS's own station history report is the authority on its station counts."
+  },
+  {
+   "id": "c7",
+   "text": "Inputs: every observer uses the same 4-inch-diameter high-capacity manual plastic gauge (automated gauges not accepted; 101-105% collection efficiency vs the NWS 8-inch gauge); the daily 24-hour reading is taken about 7 a.m. and entered on the website or the CoCoRaHS app; observations are immediately public and maps update through the day; multi-day accumulations are a separate report type.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "The standard daily observation of total liquid | precipitation (rain or melted snow) is performed at | 0700 LT.",
+     "location": "p. 1070 (PDF p. 2)"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "O B S E RV E R S R E P O R T 2 4 - H O U R | P R E C I P I TAT I O N E AC H M O R N I N G ~ 7 A M | The CoCoRaHS App | On-line form | Volunteers' observations are immediately | available for the public to view and use.",
+     "location": "lines 74-85 of txt"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "In May 2016, the Bahamas joined the network. … All volunteers need to use the same type of gauge (4\" diameter, high capacity) so that our data are consistent and compatible. … We have selected 7:00 a.m. as the preferred time for daily observations … Observations made before 4:30 a.m. or after 9:30 a.m. are still appreciated, but will not appear on the daily maps.",
+     "location": "Bahamas welcome page"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's own documents and the founding paper agree.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c8",
+   "text": "Report types are kept and exported separately: Daily, Multi-day, SigWx, Hail, Condition and ET counters on the home page; Export Manager offers Daily, Multi-Day, Hail and SigWx. Condition monitoring (supported by NIDIS) feeds drought users, not the daily precipitation series.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Reports received today 11/18/2026 as of 9:10 AM EST | Daily | Multi-day | SigWx | Hail | Condition | ET | 6,379 | 46 | 0 | 0 | 6 | 7 … utilizing an interactive Website and Mobile App … It is composed of more than 28,000 active observers in the United States, Canada, Puerto Rico, the U.S. Virgin Islands, Guam, and the Bahamas. Our website lets observers see their observations mapped in \"real time\"",
+     "location": "home page lines 7-12"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "Export Reports | Report Type:",
+     "location": "form"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "This includes | CoCoRaHS, State Climate Offices, National Weather Service offices, U.S. Drought Monitor authors, the | National Drought Mitigation Center (NDMC), the National Integrated Drought Information System (NIDIS) | and U.S. Drought Portal (drought.gov), and NOAA’s Regional Integrated Sciences and Assessments (RISA) | programs. … In collaboration with NIDIS, NDMC and the CoCoRaHS network, the Carolinas Integrated Sciences and | Assessments (CISA; a RISA team) developed the Condition Monitoring approach as a pilot … This successful regional effort was expanded to a | national scale in 2016. As of November 2019, over 48,000 reports have been submitted by more nearly 4,500 | observers. This project is supported by NIDIS.",
+     "location": "Who uses Condition Reports? / Background, p.1-2"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Own pages; whether derived summaries combine daily and multi-day reports is not stated."
+  },
+  {
+   "id": "c9",
+   "text": "Organizations: the network began at the Colorado Climate Center, CSU, in 1998 and is housed there; NOAA and NSF are major sponsors (NSF ISE grant 0229723 and UCAR COMET in 2005; NOAA Office of Education Environmental Literacy Grants from Dec 2006; DEx built with a NOAA Office of Education grant); the sponsors page also lists NWS, CSU units, utilities and others. County, regional and state volunteer coordinators recruit, train and check data.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "The network originated with the Colorado Climate Center at Colorado State University in 1998, thanks in part to the Fort Collins flood a year prior. … The National Weather Service, other meteorologists, hydrologists, emergency managers, city utilities (water supply, water conservation, stormwater), insurance adjusters, USDA, engineers, mosquito control, ranchers and farmers, outdoor & recreation interests, teachers, students, and neighbors in the community are just some examples of those who visit our website and use our data. … The National Oceanic and Atmospheric Administration (NOAA) and the National Science Foundation (NSF) have been major sponsors of CoCoRaHS. Other organizations have contributed either financially and/or with supplies and equipment.",
+     "location": "Where did the CoCoRaHS Network originate? / Who uses CoCoRaHS? / Who is sponsoring this network?"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "CIRA - CSU Cooperative Institute for Research in the Atmosphere 1997, 1999-2001, 2004-present The Colorado Agricultural Experiment Station at Colorado State University 1998-present Colorado State University—Department of Atmospheric Science 1998-present Colorado State University CHILL Radar Laboratory 1998-present … National Oceanic and Atmospheric Administration 2006-present National Science Foundation 1999-2006, 2010 - present National Weather Service 1999-present … U.S. Department of Interior, Bureau of Land Management 2005-present … PRISM 2008 - present … Climalytic Instruments, LLC. - 2023 - present",
+     "location": "Our current CoCoRaHS Sponsors list"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "In collaboration with Oregon State University and several NOAA institutions, Nolan Doesken, state climatologist and founder of CoCoRaHS, will lead the $1.2 million, three-year grant from NOAA as part of its Environmental Literacy Grants program. … NOAA’s Office of Education awarded CoCoRaHS an Environmental Literacy grant in December 2006 to make its first formal push to expand nationally.",
+     "location": "paragraphs 1 and 5"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Version 1.0 | Development of the CoCoRaHS Data Explorer was made possible by a grant from the NOAA's Office of Education, and donations from CoCoRaHS observers and supporters. The goal of the Data Explorer is to provide observers and other users easy access to their data using innovative data visualization products.",
+     "location": "about page"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Quality control data routinely and often. Spot errors and let the regional coordinators know about them. Probably the easiest way to spot errors is by comparing observations against one another using the interactive CoCoRaHS Maps or the Daily Precipitation Reports text listing. … Recruit/encourage folks to join and stay with CoCoRaHS. … Lead it yourself or contact one of the state coordinators to invite a trainer. … Represent the needs of your volunteers to CoCoRaHS regional and state coordinators, and Headquarters.",
+     "location": "County Coordinator Description and Duties"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "CoCoRaHS's and CSU's own pages agree."
+  },
+  {
+   "id": "c10",
+   "text": "Documented users: NWS river forecast centers (ABRFC as radar ground truth; WGRFC receives about 1,000 CoCoRaHS reports per day and uses them to adjust its MPE), forecast offices (NWS Raleigh), NCEI/GHCN-Daily, and METplus (a PointStat use case reading a CoCoRaHS CSV via a Python-embedding reader). Supports DIRS-3 from the users' side: they depend on CoCoRaHS's feed.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "How does ABRFC use CoCoRaHS data? | For precipitation estimation, ABRFC uses a combination of basin-wide NEXRAD radar estimates and rainfall gages for ground truth. Rainfall gages help us determine how closely the radar is estimating rainfall. This precipitation estimation is then used in our hydrologic models for river forecasting.",
+     "location": "section 'How does ABRFC use CoCoRaHS data?'"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "WGRFC receives around 1,000 CoCoRaHS observervations … then recorded in a central archive at CoCoRaHS headquar- … National Science Foundation (NSF) are primary sponsors of … CoCoRaHS. … against the associated Multisensor Precipitation Estimate (MPE) best estimate of precipitation (y-axis) at the location of that gauge. … The MPE radar data are linearly adjusted to best match gauge data. … (Right) MPE final precipitation analysis with CoCoRaHS data overlaid after an adjustment was made to the 24-hour field.",
+     "location": "pp. 97-101 (lines 141, 152, 187, 206-209, 255 of saved text)"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "The NWS Raleigh has been actively utilizing CoCoRaHS data for a variety of uses including real time precipitation and data analysis, severe weather operations, and post storm reviews. … CoCoRaHS daily precipitation reports are used extensively in the NWS Raleigh Daily 24 Hour Liquid Precipitation Maps | CoCoRaHS daily precipitation and snow reports are used heavily in the NWS Raleigh Daily Hydrologic Observations Summary | CoCoRaHS Intense Rain Reports have been used to allow forecasters to issue Flash Flood Warnings earlier and with greater confidence.",
+     "location": "main text, lines 177-181 of saved text"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NWS pages and a journal paper; METplus page read through WebFetch only."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Size of the volunteer network",
+   "source_ids": [
+    "s31",
+    "s37",
+    "s42"
+   ],
+   "status": "resolved",
+   "explanation": "Different dates and wording: 'more than 28,000 active observers' (home page, 2026-11-18), '27,400+ volunteers' (Apr 2025 slides), 'over 25,000 observers' (NWS page, 2025). Read as growth plus rounding; the home page is relied on."
+  },
+  {
+   "claim": "Countries covered",
+   "source_ids": [
+    "s44",
+    "s48",
+    "s31"
+   ],
+   "status": "resolved",
+   "explanation": "CoCoRaHS lists three countries (US, Canada, Bahamas); PR, USVI and Guam are U.S. territories counted with the US. The brief's list omits Guam, which the home page and CSU include."
+  }
+ ],
+ "coverage_gaps": [
+  "Who runs the CoCoRaHS servers/database and where they are physically hosted (CSU campus or elsewhere): NOT PRESENT on About Us, Sponsors, county coordinator pages; footer only says 'Copyright © 1998-2025, Colorado Climate Center'. Lead: cocorahs.org Contact Us / staff page, Data Usage Policy, WERA-1012 meeting slides on media.cocorahs.org. (from sa3)",
+  "State/regional coordinator employers (NWS office, state climate office, extension): Volunteer Coordinators page is JavaScript-loaded (in unreadable). Coordinator should open https://www.cocorahs.org/Content.aspx?page=coordinators or a state page such as https://www.cocorahs.org/State.aspx?state=FL in the browser. (from sa3)",
+  "Sponsors named in the brief (Weather Modification Inc., La Crosse Technology, 'Founding partner') and NOAA Climate Program Office: NOT PRESENT on the sponsors page copy saved 2026-11-18; NIDIS appears only as supporter of Condition Monitoring (drought.gov 2019 PDF). Not re-checked on the live sponsors page this run. (from sa3)",
+  "NSF Informal Science Education award records not read: informalscience.org project pages and https://newsmediarelations.colostate.edu/2003/07/31/weather-watchers-needed-nsf-and-ucar-grants-promote-expansion-of-colorado-states-coco-rahs-program-across-great-plains-states/ (NSF and UCAR grants) and https://www.nsf.gov/news/crowdsourcing-yields-more-accurate-picture. (from sa3)",
+  "RFC use in QPE/MPE: not read: Texas Water Journal WGRFC paper https://distantreader.org/stacks/journals/twj/twj-7071.pdf (search summary: about 1,000 CoCoRaHS observations received), CNRFC spring 2012 newsletter https://www.cnrfc.noaa.gov/newsletters/cnrfc_news_spring_2012.pdf, NWS MRMS Deeper Dive (QPE evaluated against CoCoRaHS), https://media.cocorahs.org/docs/LawrenceWERA20.pdf. (from sa3)",
+  "U.S. Drought Monitor use of daily precipitation (as opposed to condition-monitoring reports): no USDM/NDMC page read this run stating USDM authors use CoCoRaHS daily precipitation. (from sa3)",
+  "Physical hosting of cocorahs.org / data.cocorahs.org / dex.cocorahs.org (CSU servers vs cloud) NOT PRESENT in any page read; an NSTA article snippet says the network 'is hosted by Colorado State University' (not read). Lead: DNS/IP owner lookup or CoCoRaHS 'About Us'. (from sa1)",
+  "Not read: dex.cocorahs.org/roadmap (search snippet: 'data export capabilities' listed as a feature improvement); data.cocorahs.org/cocorahs/export/exportstations.aspx (station list export); mobile.cocorahs.org/viewdata; www.cocorahs.org/ViewData/ main page; MADIS snow_providers page; drought.gov CoCoRaHS data page; NWS weather.gov/pdt/cocorahs; NCEI GHCN-D landing page C00861. (from sa1)",
+  "re3data not queried directly (only via web search); DataCite only first 25 hits checked. (from sa1)",
+  "Whether the data.cocorahs.org export is documented as stable/public API, and any rate limits: NOT PRESENT in pages read. HADS ingest of CoCoRaHS not checked. (from sa1)",
+  "Original URL of earlier-run file 4a1012a4cad44a36.txt (CoCoRaHS QA/QC document) not recovered. (from sa1)",
+  "r4 CoCoRaHS own counts by state / annual report: not searched (time). Year-by-year observer counts NOT found; per-country counts for US, Puerto Rico, USVI, Bahamas NOT found (Canada only: 80 first year, 843 on 2023-01-31). Lead: CoCoRaHS 'order of states/countries that have joined' page linked from About Us; Wikipedia 'Order of addition' table. (from sa2)",
+  "Search snippets (not read): Wyoming 2nd state 2003; Minnesota Dec 2009 completed 50 states (Reges 2016); Florida conflict Dec 2006 14th vs Oct 2007 23rd; NWS DTX 'over 25,000 active observers'; CBC about 650 and other 750+ Canadian volunteers. Need verification. (from sa2)",
+  "Cifelli et al. 2005 BAMS founding paper (r8) not searched; Reges 2016 BAMS full text blocked (403); ResearchGate copy not tried. (from sa2)",
+  "Multi-day accumulation report rules, significant weather report, snow measurement definitions (new snow, total depth, SWE core vs new-snow core) and whether hail/condition/ET/soil moisture are separate tables: cocorahs.org multidayaccum and FAQ pages returned only navigation via WebFetch (JavaScript or wrong page names). Leads: CoCoRaHS Training Slide-Shows, 'Daily Report Form' help, Observer Handbook PDFs on media.cocorahs.org. (from sa2)",
+  "Data update frequency: only 'immediately available' (NRCC slides) and 'mapped in real time' (home page); daily maps exclude observations before 4:30 or after 9:30 a.m. (Bahamas page). No statement on derived products (monthly/water-year summaries) read. (from sa2)",
+  "Server and backup location of the CoCoRaHS database: not published (ask info@cocorahs.org).",
+  "Per-country observer counts for the US, Puerto Rico, USVI and Bahamas: not found; Data Explorer country filter not used (form).",
+  "Reges et al. 2016 BAMS (403) and the WERA 2024 DEx slides (image-only) not read."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "METplus CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": "found METplus PointStat_fcstURMA_obsCOCORAHS_ASCIIprecip use case (v5.0 data, v5.1 and v6.0 docs)",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "river forecast center CoCoRaHS",
+   "tool": "WebSearch",
+   "notes": "found ABRFC CoCoRaHS page, Texas Water Journal WGRFC paper (not read), CNRFC newsletter 2012 (not read)",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS sponsors NOAA NSF award",
+   "tool": "WebSearch",
+   "notes": "found CSU 2010 release, NSF story, informalscience.org NSF project pages (not read), CSU 2003 NSF/UCAR Great Plains grant release (not read); sponsors page reused from 2026-11-18 run",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS state coordinator role recruit training",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Drought Monitor CoCoRaHS condition monitoring reports",
+   "tool": "WebSearch",
+   "notes": "allowed_domains drought.gov, droughtmonitor.unl.edu, cocorahs.org, unl.edu",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Colorado Climate Center CoCoRaHS database website",
+   "tool": "WebSearch",
+   "notes": "no page found stating where CoCoRaHS servers are hosted",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS GHCN-Daily NCEI US1 stations",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov, ncei.noaa.gov, cocorahs.org; found WERA1012_2022_NCEI.pdf",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWS CoCoRaHS multisensor precipitation estimate",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov, noaa.gov, cocorahs.org; found NWS Raleigh page and MRMS material (not read) that verifies QPE against CoCoRaHS",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS data export help",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org; found data.cocorahs.org, Resources_viewingdata, exportstations.aspx, dex roadmap",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCN-Daily CoCoRaHS US1 readme",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; readme already saved in earlier run (copied)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "api.datacite.org/dois?query=CoCoRaHS",
+   "tool": "lookup (DataCite API)",
+   "notes": "first 25 hits, none a CoCoRaHS-published dataset",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS DOI dataset re3data",
+   "tool": "WebSearch",
+   "notes": "no re3data entry or DOI found in results; NOAA DIF record Dataset_DOI N/A",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "data.cocorahs.org/cocorahs/export/exportmanager.aspx",
+   "tool": "lookup (direct fetch)",
+   "notes": "older export manager responds with form",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS Data Explorer dex.cocorahs.org",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "MADIS CoCoRaHS data provider",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS data usage policy web services",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cocorahs.org",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS Water Year Summary wys.cocorahs.org",
+   "tool": "WebSearch",
+   "notes": "wys.cocorahs.org not in results; www.cocorahs.org/WaterYearSummary/ and media.cocorahs.org/wys/ found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CoCoRaHS website hosted Colorado State University servers",
+   "tool": "WebSearch",
+   "notes": "no physical hosting/server/cloud statement found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"CoCoRaHS Data Quality Assurance and Quality Control\" pdf",
+   "tool": "WebSearch",
+   "notes": "to recover URL of earlier-run file; not found",
+   "from": "sa1",
+   "copy_of": "https://www.cocorahs.org/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"NCEI and CoCoRaHS Data\" Korzeniewski WERA 2022",
+   "tool": "WebSearch",
+   "notes": "to recover URL of earlier-run file: media.cocorahs.org/docs/WERA1012_2022_NCEI.pdf",
+   "from": "sa1",
+   "copy_of": "https://media.cocorahs.org/docs/WERA1012_2022_NCEI.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS volunteers 2025 Canada Bahamas observers",
+   "tool": "WebSearch",
+   "notes": "found NRCC April 2025 slides (27,400+), NWS DTX page (over 25,000 per search summary), Bahamas page",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS order states joined network year",
+   "tool": "WebSearch",
+   "notes": "snippets: Wyoming 2nd state 2003; Minnesota Dec 2009 completed 50 states (Reges 2016 BAMS); Florida conflict (Dec 2006 14th vs Oct 2007 23rd); Tucson.com 50 states + DC March 2013",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS Reges 2016 BAMS evolution accomplishments pdf",
+   "tool": "WebSearch",
+   "notes": "citation: Reges, Doesken, Turner, Newman, Bergantino, Schwalbe, BAMS 97, 1831-1846, doi 10.1175/BAMS-D-14-00213.1; AMS page 403",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.cocorahs.org/Content.aspx?page=aboutus",
+   "tool": "WebFetch",
+   "notes": "About Us",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.cocorahs.org/Content.aspx?page=welcomebh",
+   "tool": "WebFetch",
+   "notes": "Bahamas welcome page",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.cocorahs.org/Content.aspx?page=faq",
+   "tool": "WebFetch",
+   "notes": "FAQ page returned only navigation; all items NOT PRESENT; not saved",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS Canada Manitoba joined 2011 observers",
+   "tool": "WebSearch",
+   "notes": "found Canada-About page, House of Commons SRSR meeting 28 testimony (843 Canadian observers 2023-01-31), CBC, Country Guide, CMOS",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.cocorahs.org/Canada-About.aspx",
+   "tool": "WebFetch",
+   "notes": "Canada About",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.ourcommons.ca/DocumentViewer/en/44-1/SRSR/meeting-28/evidence",
+   "tool": "WebFetch",
+   "notes": "read two parts (offset 0 and 100000)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.cocorahs.org/Content.aspx?page=multidayaccum",
+   "tool": "WebFetch",
+   "notes": "returned navigation only; guessed page name; not saved",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://journals.ametsoc.org/view/journals/bams/97/10/bams-d-14-00213.1.xml",
+   "tool": "WebFetch",
+   "notes": "403 (also via fetch_page.py)",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.nrcc.cornell.edu/workshops/webinars/2025/04/present_1.pdf",
+   "tool": "WebFetch",
+   "notes": "PDF bytes saved, converted with pdftotext",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "lookup (earlier runs: cocorahs_home, manual measurements, WERA 2024 Durre)",
+   "tool": "lookup (earlier run files)",
+   "notes": "copied into sa2; >28,000 figure is on cocorahs.org home page captured 2026-11-18. r4 (counts by state / annual report): not searched, logged as gap",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS annual report observers by state",
+   "tool": "WebSearch",
+   "notes": "no per-state counts; found 20years page, wateryearsummary page (water year summaries by station), NWS RLX c.2008 6,500 observers in 27 states (snippet). 1 of 3 queries used",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.researchgate.net/publication/293012484_CoCoRaHS_The_Evolution_and_Accomplishments_of_a_Volunteer_Rain_Gauge_Network",
+   "tool": "WebFetch",
+   "notes": "403; then CoCoRaHS publications page fetched for citations. Cifelli 2005 PDF link http://journals.ametsoc.org/doi/pdf/10.1175/BAMS-86-8-1069 not tried (AMS host blocks automated fetch)",
+   "from": "sa2",
+   "required_id": "r8",
+   "copy_of": "https://journals.ametsoc.org/view/journals/bams/97/10/bams-d-14-00213.1.xml"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.cocorahs.org/wateryearsummary/",
+   "tool": "WebFetch",
+   "notes": "water year summaries by station and state/province",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.weather.gov/dtx/CoCoRaHS",
+   "tool": "WebFetch",
+   "notes": "NWS DTX page from first search; also tried Cifelli 2005 PDF (403)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Cifelli 2005 Community Collaborative Rain Hail Snow Network pdf",
+   "tool": "WebSearch",
+   "notes": "title searched as a PDF; no free copy of the BAMS paper; ams.confex.com conference papers found (host refused by sandbox)",
+   "from": "main",
+   "copy_of": "https://journals.ametsoc.org/doi/pdf/10.1175/BAMS-86-8-1069"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=mesonet.agron.iastate.edu/cocorahs/ (availability)",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "no snapshot returned; page itself already read raw (IEM's own page)",
+   "from": "main",
+   "copy_of": "https://mesonet.agron.iastate.edu/cocorahs/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=www.drought.gov/data-maps-tools/community-collaborative-rain-hail-and-snow-network-cocorahs-data (availability)",
+   "tool": "fetch_json (Wayback availability)",
+   "notes": "no snapshot returned; page itself already read raw",
+   "from": "main",
+   "copy_of": "https://www.drought.gov/data-maps-tools/community-collaborative-rain-hail-and-snow-network-cocorahs-data"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "WERA 2024 DEx Newman slides (image-only PDF)",
+   "tool": "lookup (pdftotext check)",
+   "notes": "no text layer; no other copy route; browser may not open PDFs; left as gap",
+   "from": "main",
+   "copy_of": "https://media.cocorahs.org/docs/WERA_2024_9_DEx_Newman.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CoCoRaHS servers hosted Colorado State University database",
+   "tool": "duckduckgo (browser)",
+   "notes": "found climate.colostate.edu/resources.html ('Currently housed at the Colorado Climate Center') and a CSU copy of Cifelli 2005 (climate.colostate.edu/pdfs/Cifelli_CoCo_BAMS2005.pdf), plus data.cocorahs.org/cocorahs/maps/; no server location",
+   "from": "main",
+   "copy_of": "https://journals.ametsoc.org/doi/pdf/10.1175/BAMS-86-8-1069"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CoCoRaHS active observers by state 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "found CoCoRaHS WCC 2026 recruiting slides (media.cocorahs.org) with active stations by country on May 1, 2026; also maphub.cocorahs.org (another CoCoRaHS map site) and ListDailyPrecipReports (11354 records for 11/25/2026, snippet only)",
+   "from": "main",
+   "required_id": "r4"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "data export help / documentation",
+   "query": "CoCoRaHS data export help",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI",
+   "publisher": "copy holder documentation",
+   "subquestion_id": "q1",
+   "aim": "GHCN-Daily readme naming CoCoRaHS",
+   "query": "GHCN-Daily CoCoRaHS US1",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": null,
+   "publisher": "registries",
+   "subquestion_id": "q1",
+   "aim": "DOI for CoCoRaHS data",
+   "query": "CoCoRaHS DOI dataset",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "CoCoRaHS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "observer counts by state / annual report",
+   "query": "CoCoRaHS observers by state",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA, NSF",
+   "publisher": "funders",
+   "subquestion_id": "q3",
+   "aim": "sponsors page and award records",
+   "query": "CoCoRaHS sponsors NOAA NSF",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NWS",
+   "publisher": "users",
+   "subquestion_id": "q3",
+   "aim": "RFC use of CoCoRaHS",
+   "query": "river forecast center CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "DTC METplus",
+   "publisher": "users",
+   "subquestion_id": "q3",
+   "aim": "METplus docs naming CoCoRaHS",
+   "query": "METplus CoCoRaHS",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "founding and review papers (Cifelli 2005, Reges 2016)",
+   "query": "CoCoRaHS BAMS Reges 2016",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 19.6,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 189135,
+  "subagent_minutes_planned": 31,
+  "subagent_minutes": 30.4,
+  "follow_ups": 0,
+  "continuations": 3,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

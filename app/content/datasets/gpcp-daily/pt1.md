@@ -106,7 +106,6 @@ Every step is algorithmic. Gauges, the only direct measurements, reach the daily
   - Which CPC IR product V1.3 uses: not stated.
 - **Hosts not checked:** obs4MIPs/ESGF, Google Earth Engine, gpcp.umd.edu, and the Google and AWS bucket listings.
 
-
 ## Sources
 
 - [NOAA NCEI, Precipitation - GPCP Daily C-ATBD (CDRP-ATBD-0913, 01B-35), 2017](https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/AlgorithmDescription_01B-35.pdf)

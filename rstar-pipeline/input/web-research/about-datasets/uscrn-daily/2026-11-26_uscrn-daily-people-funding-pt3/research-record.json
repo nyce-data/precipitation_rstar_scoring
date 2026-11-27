@@ -1,0 +1,2922 @@
+{
+ "question": "Who is critical to producing, QC-ing and maintaining USCRN Daily (daily01) now, how big is the team, and how is the work paid for (baseline before 2025)?",
+ "tier": "standard",
+ "tier_reason": "standard: about 10 people and 3-4 funding routes; the user put developments since Jan 2025 (proposed ARL closure) out of scope, so the dispute criterion does not apply; a 15-min follow-up pass (2026-11-26 11:48-12:03) used the time lost to approval waits",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "People and roles now",
+   "status": "answered",
+   "source_ids": [
+    "s41",
+    "s47",
+    "s101",
+    "s102",
+    "s103",
+    "s49",
+    "s50",
+    "s51"
+   ],
+   "remaining_gap": "Federal/ORAU split of the eight-person field team and the date of the SORD reorganization are not published."
+  },
+  {
+   "id": "q2",
+   "question": "ORCID, earliest publication year, age and retirement estimates",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s5",
+    "s6",
+    "s7",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s15",
+    "s104",
+    "s105",
+    "s59",
+    "s60",
+    "s61",
+    "s62",
+    "s64",
+    "s65"
+   ],
+   "remaining_gap": "Crossref checked (top 10 rows); NOAA repository not checked; Baker's early works not confirmed; no ORCID for Baker, Dumas, Hall, French."
+  },
+  {
+   "id": "q3",
+   "question": "Team size, history, succession",
+   "status": "uncertain",
+   "source_ids": [
+    "s42",
+    "s44",
+    "s47",
+    "s48",
+    "s52",
+    "s101",
+    "s102"
+   ],
+   "remaining_gap": "ARL review PDFs (succession discussion) unreadable; no NCEI or CISESS USCRN headcount."
+  },
+  {
+   "id": "q4",
+   "question": "Funding routes before 2025",
+   "status": "uncertain",
+   "source_ids": [
+    "s30",
+    "s31",
+    "s32",
+    "s39",
+    "s34",
+    "s35",
+    "s36",
+    "s37",
+    "s38",
+    "s40",
+    "s54",
+    "s58",
+    "s63",
+    "s66",
+    "s67",
+    "s68",
+    "s69",
+    "s70",
+    "s110"
+   ],
+   "remaining_gap": "No USCRN amount in any CJ read (FY2005, 07, 09, 10, 15, 19-24); FY2011-14 and FY2016-18 not read; the cooperative institute that replaced ORAU and its award not found."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://api.openalex.org/authors?search=Howard%20J.%20Diamond&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record: Howard J. Diamond",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_diamond.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s2",
+   "url": "https://api.openalex.org/works?filter=author.id:A5040192511&sort=publication_year:asc&per_page=5&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5040192511 (Diamond), oldest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_early_diamond.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. 1966 item has no institution and an unrelated topic; treat as a possible merge.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-5026-0167/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: Howard J. Diamond",
+   "author_org": "ORCID (self-asserted by Howard J. Diamond)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_emp_diamond.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Self-asserted by the researcher (source-name Howard J. Diamond); XML response saved as .notjson.txt.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://api.openalex.org/works?filter=author.id:A5040192511&sort=publication_year:desc&per_page=3&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5040192511 (Diamond), newest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_late_diamond.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Activity check only.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s5",
+   "url": "https://api.openalex.org/authors?search=Michael%20A.%20Palecki&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record: Michael A. Palecki",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_palecki.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s6",
+   "url": "https://api.openalex.org/works?filter=author.id:A5014486435&sort=publication_year:asc&per_page=5&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5014486435 (Palecki), oldest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_early_palecki.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s7",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-1557-9866/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: Michael A. Palecki",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_emp_palecki.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only this entry read; earlier employment entries in the file not checked.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://api.openalex.org/works?filter=author.id:A5014486435&sort=publication_year:desc&per_page=3&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5014486435 (Palecki), newest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_late_palecki.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Activity check only; Palecki's position in the 2026 author list not checked.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s9",
+   "url": "https://api.openalex.org/authors?search=Ronald%20D.%20Leeper&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record: Ronald D. Leeper",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_leeper.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s10",
+   "url": "https://api.openalex.org/works?filter=author.id:A5072245771&sort=publication_year:asc&per_page=5&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5072245771 (Leeper), oldest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_early_leeper.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s11",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-6821-8151/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: Ronald D. Leeper",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_emp_leeper.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Org name truncated in my extraction view ('Cooperative Institute for Satellite Earth System Studies (CISE...'); read the full line 136 in the file.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://api.openalex.org/authors?search=C.%20Bruce%20Baker&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author search: C. Bruce Baker",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_baker.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. No ORCID on any Baker record, so no self-asserted employment dates.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s13",
+   "url": "https://api.openalex.org/works?filter=author.id:A5110457763&sort=publication_year:asc&per_page=5&select=id,publication_year,title,doi",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5110457763 (Baker), oldest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_early_baker.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. Authorships not saved (fetched without authorships after two IncompleteRead failures).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s14",
+   "url": "https://api.openalex.org/works?filter=author.id:A5110457763&sort=publication_year:desc&per_page=3&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5110457763 (Baker), newest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_late_baker.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Absence of 2025-2026 works is weak evidence on activity.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s15",
+   "url": "https://api.openalex.org/works?filter=author.id:A5110264676&sort=publication_year:asc&per_page=5&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5110264676 (Tilden P. Meyers), oldest first",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_early_meyers.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s16",
+   "url": "https://api.openalex.org/authors?filter=id:A5050372230",
+   "fetched_url": null,
+   "title": "OpenAlex author record and oldest works: John Kochendorfer",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_kochendorfer.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. ORCID employments not fetched for this person (time).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s17",
+   "url": "https://api.openalex.org/authors?search=Jared%20Rennie&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record and oldest works: Jared Rennie",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_rennie.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. ORCID employments not fetched for this person (time).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://api.openalex.org/authors?search=Temple%20R.%20Lee&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record and oldest works: Temple R. Lee",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_tlee.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. ORCID employments not fetched for this person (time).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s19",
+   "url": "https://api.openalex.org/authors?search=LaToya%20Myles&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record and oldest works: LaToya Myles",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_myles.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. ORCID employments not fetched for this person (time).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s20",
+   "url": "https://api.openalex.org/authors?search=Edward%20J.%20Dumas&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record and oldest works: Edward J. Dumas",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_dumas.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. ORCID employments not fetched for this person (time).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s21",
+   "url": "https://api.openalex.org/authors?search=Jesse%20E.%20Bell&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author record: Jesse E. Bell",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e21",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_bell.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. Earliest works list not fetched.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s22",
+   "url": "https://api.openalex.org/authors?search=Timothy%20B.%20Wilson&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Timothy B. Wilson",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e22",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_twilson.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex author disambiguation can merge or split people; counts_by_year and works list can differ. Only 9 works: record probably incomplete or split.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s23",
+   "url": "https://api.openalex.org/authors?search=Mark%20E.%20Hall&per_page=5&select=id,display_name,orcid,works_count,last_known_institutions,counts_by_year",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Mark E. Hall",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e23",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_auth_hall.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Not the ATDD person; ATDD Mark Hall ID not resolved.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s24",
+   "url": "https://api.openalex.org/works?search=%22Climate%20Reference%20Network%22&filter=publication_year:2020-2026&per_page=40&select=id,publication_year,title,doi,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works search 'Climate Reference Network' 2020-2026",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e24",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_uscrn_works_2020_2026.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Counts are from my tally of titled works in the top 40 only; not the full 616.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s25",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-6589-3004/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: LaToya Myles",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e25",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_emp_myles.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Self-asserted; lines between quoted ones skipped (month/day, org address).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-3316-9668/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: Jared Rennie",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e26",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_emp_rennie.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "ORCID may be out of date (CICS-NC became CISESS); does not show a move to NCEI.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s27",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-5388-6325/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: Temple R. Lee",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e27",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_emp_tlee.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No dates given.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s28",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-8436-2460/employments",
+   "fetched_url": null,
+   "title": "ORCID employments: John Kochendorfer",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e28",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/orcid_emp_kochendorfer.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No role or dates.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s29",
+   "url": "https://api.openalex.org/works?filter=author.id:A5110457763&sort=publication_year:asc&per_page=8&select=id,publication_year,title,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works by A5110457763 (C. Bruce Baker), oldest first, with authorships",
+   "author_org": "OpenAlex (OurResearch)",
+   "published": "NOT PRESENT (live API record)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e29",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_early_baker_auth.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex disambiguation; no ORCID for Baker; early items lack NOAA affiliation.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s30",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2019/Nov/NOAA_FY15_CJ_508%20compliant.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration Budget Estimates Fiscal Year 2015 Congressional Submission",
+   "author_org": "NOAA",
+   "published": "2014",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy15_cj.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Names the funding line only; no USCRN amount; the line also funds NIDIS, Drought Portal, Assessments, Climate.gov etc., so its total is not USCRN figure.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s31",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA19NES4320002_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA19NES4320002 (Cooperative Institute for Satellite Earth System Studies)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "last_modified 2025-08-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_NA19NES4320002.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Whole-institute total across all CISESS tasks; not USCRN figure. NC State (CISESS-NC) work would flow via subaward; subaward detail not retrieved.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: CISESS whole cooperative agreement"
+  },
+  {
+   "id": "s32",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA14NES4320003_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA14NES4320003 (CICS: Cooperative Agreement Proposal 2014 - 2019)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "last_modified 2019-03-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_NA14NES4320003.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Whole-institute total; not USCRN figure. The brief guessed NA14NES432003; the FAIN that resolves is NA14NES4320003. CICS-NC (NC State) share not shown.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: CICS whole cooperative agreement"
+  },
+  {
+   "id": "s33",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/publications/annual_reports/FY08_USCRN_Annual_Report.pdf",
+   "fetched_url": null,
+   "title": "FY08 USCRN Annual Report",
+   "author_org": "NOAA NCDC",
+   "published": "2008-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fy08_uscrn_annual_report.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No amounts; two-column layout, passages joined from separate columns.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s34",
+   "url": "https://www.govinfo.gov/content/pkg/CHRG-111shrg54495/pdf/CHRG-111shrg54495.pdf",
+   "fetched_url": null,
+   "title": "The Fiscal Year 2010 Budget for the National Oceanic and Atmospheric Administration (Senate hearing, S. Hrg. 111-)",
+   "author_org": "U.S. Senate (hearing record, NOAA answers to questions for the record)",
+   "published": "2009",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrg111_shrg54495.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Request (not enacted) amount, Alaska expansion increment only, not total USCRN operations funding; budget line (PPA) not named in this passage.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://www.route-fifty.com/digital-government/2003/11/satellite-ground-stations-will-form-climate-network/295983/",
+   "fetched_url": null,
+   "title": "Satellite ground stations will form climate network",
+   "author_org": "GCN (Susan M. Menke), now Route Fifty",
+   "published": "2003-11-26",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/routefifty_2003_crn_webfetch.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Press paraphrase, not a budget document; fetch_page refused (CONNECT 403) so read via WebFetch extraction; whether request or enacted is not stated.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s36",
+   "url": "https://webharvest.gov/peth04/20041014231409/http://www.nesdis.noaa.gov/About/onepagers/budgetpdfs/NCDC.pdf",
+   "fetched_url": null,
+   "title": "NCDC budget one-pager (NESDIS FY2005 budget materials, archived 2004)",
+   "author_org": "NOAA NESDIS / NCDC",
+   "published": "2004",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncdc_budget_onepager_2004.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "$32.521M is the parent NESDIS Archive, Access & Assessment line (three data centers), NOT USCRN figure.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: NESDIS Archive, Access and Assessment line (parent)"
+  },
+  {
+   "id": "s37",
+   "url": "https://cisess.umd.edu/",
+   "fetched_url": null,
+   "title": "CISESS Annual Report 2020-2021 (NOAA Grant NA19NES4320002)",
+   "author_org": "Cooperative Institute for Satellite Earth System Studies",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cisess_ar_2020-21.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "URL is the CISESS site as recorded in E3, not the PDF address; no task funding amounts.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s38",
+   "url": "https://www.orau.org/blog/programs/how-orau-is-connected-to-the-atmospheric-science-work-of-noaa.html",
+   "fetched_url": null,
+   "title": "How ORAU is connected to the atmospheric science work of NOAA",
+   "author_org": "ORAU",
+   "published": "undated (mentions 2023 events)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/orau_connected_noaa.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No contract identifiers or amounts; vehicle (contract vs. other agreement) not named.",
+   "found_by": [
+    "sa3",
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s39",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2019/Nov/NOAA_FY2010_President's_Budget%20(1).pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration Budget Estimates Fiscal Year 2010 Congressional Submission",
+   "author_org": "NOAA",
+   "published": "2009",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_fy10_cj.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "+$1.3M is a requested increase for Alaska only, not the USCRN total; enacted level not confirmed here. The Climate Data and Information line also funds NIDIS, GOOS-related etc., so its total is not USCRN figure.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA09NES4400006_1330/",
+   "fetched_url": null,
+   "title": "USAspending award record NA09NES4400006 (Cooperative Institute for Climate and Satellites)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "n.d.",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_NA09NES4400006.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Whole-institute total (CICS-MD lead with CICS-NC consortium member); not USCRN figure.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: CICS 2009-2014 whole cooperative agreement"
+  },
+  {
+   "id": "s41",
+   "url": "https://www.ncei.noaa.gov/access/crn/contacts.html",
+   "fetched_url": null,
+   "title": "Contacts (USCRN)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ce5089d354d062c9.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Page undated; a live contact listing does not prove current employment; no location (College Park) given.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/uscrn-at-arl/",
+   "fetched_url": null,
+   "title": "US Climate Reference Network at NOAA’s Air Resources Laboratory",
+   "author_org": "NOAA ARL",
+   "published": "NOT PRESENT (ARL 75th anniversary open house story)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/arl-noaa-gov-news-pubs-arl-news-stories-uscrn-at-arl_121758.txt",
+   "retrieved": "2026-11-23T12:17:58+00:00",
+   "limitations": "Story undated (ARL 75th anniversary implies about 2023); team size may have changed; read via browser in earlier run.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://ncics.org/about/annual-reports/",
+   "fetched_url": null,
+   "title": "CISESS NC Annual Report 2020-2021",
+   "author_org": "NC State / NCICS (CISESS NC)",
+   "published": "2021",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/cisess_ar_2020-21.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Evidence date 2020-21. URL is the NCICS annual reports index page (the earlier run recorded only the institute site, not the report file URL).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s44",
+   "url": "https://orau.org/blog/programs/video-behind-the-scenes-maintaining-the-u.s.-climate-reference-network.html",
+   "fetched_url": null,
+   "title": "VIDEO: Behind the scenes maintaining the U.S. Climate Reference Network",
+   "author_org": "ORAU",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "contractor blog",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orau_uscrn_blog.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Contractor self-description; does not give how many of the eight are ORAU vs federal; contract vehicle NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s45",
+   "url": "https://studio.m-anage.com/ams/104ANNUAL/webprogram/Paper432858.html",
+   "fetched_url": null,
+   "title": "12A.3 U.S. Climate Reference Network: An Engine for Climate Science",
+   "author_org": "AMS 104th Annual Meeting (abstract)",
+   "published": "2024-01-31",
+   "data_period": null,
+   "source_type": "conference abstract",
+   "evidence_id": "sa1-e6",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (WebFetch only; ams.confex.com blocked for curl)",
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction (passage from extractor, not raw); co-author list not confirmed.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s46",
+   "url": "https://www.arl.noaa.gov/?p=6990",
+   "fetched_url": null,
+   "title": "Air Resources Laboratory Staff Directory",
+   "author_org": "NOAA ARL",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": "NOT PRESENT (HTTP 403 to curl and WebFetch)",
+   "retrieved": "2026-11-26",
+   "limitations": "Snippet only, via search summarizer; page 403; undated. Contradicts Bruce Baker as current director (Baker named director in 2017 Oak Ridge Today). Coordinator should read the page in a browser.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s47",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/publications/annual_reports/FY19_USCRN_Annual_Report.pdf",
+   "fetched_url": null,
+   "title": "USCRN Annual Report for Fiscal Year 2019",
+   "author_org": "NOAA ARL and NCEI",
+   "published": "2020-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy19_uscrn_annual_report.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Evidence date FY2019 (June 2020); team list does not say federal vs contractor per name nor which are ATDD field staff.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/publications/annual_reports/FY10_USCRN_Annual_Report.pdf",
+   "fetched_url": null,
+   "title": "USCRN Annual Report FY2010",
+   "author_org": "NOAA NCDC",
+   "published": "2010/2011",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fy10_uscrn_annual_report.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Acknowledgement list, not a staffing count; no FTE figures.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://api.openalex.org/works?filter=raw_author_name.search:palecki,from_publication_date:2024-01-01&select=doi,title,publication_date,authorships&sort=publication_date:desc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex: Coates et al. 2026, Evaluation of IMERG and CMORPH ... Against In Situ Reference Network (doi 10.1175/jhm-d-25-0181.1)",
+   "author_org": "OpenAlex (record of AMS J. Hydrometeorology paper)",
+   "published": "2026-08-11",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e10",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_palecki.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Affiliation on a paper submitted in 2025 may lag actual employment status; topic is satellite precipitation vs USCRN reference network, not USCRN ops role.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s50",
+   "url": "https://api.openalex.org/works?filter=raw_author_name.search:ronald%20leeper|ronald%20d.%20leeper|r.%20d.%20leeper,from_publication_date:2023-01-01&select=doi,title,publication_date,authorships&sort=publication_date:desc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex: Data quality and metadata guidelines for the soil moisture monitoring community (doi 10.1002/vzj2.70141)",
+   "author_org": "OpenAlex (record of Vadose Zone Journal paper)",
+   "published": "2026-09-01",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e11",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_rleeper.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Paper is community guidelines, not USCRN-specific; affiliation may lag employment.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s51",
+   "url": "https://api.openalex.org/works?filter=raw_author_name.search:kochendorfer,from_publication_date:2024-01-01&select=doi,title,publication_date,authorships&sort=publication_date:desc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex: An evaluation of the Low Porosity Double Fence wind shield for measuring solid precipitation in Canada (doi 10.5194/egusphere-2026-6470)",
+   "author_org": "OpenAlex (record of EGUsphere preprint)",
+   "published": "2026-11-24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e12",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_kochendorfer.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Shows active at ATDD as of Nov 2026; does not state his title (director role only from ARL directory snippet sa1-e7).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s52",
+   "url": "https://www.arl.noaa.gov/wp_arl/wp-content/uploads/2025/02/ARL-Review-Response-Sept-30-2023-edited.pdf",
+   "fetched_url": null,
+   "title": "NOAA Air Resources Laboratory Science Review March 22-24, 2022 (review report and ARL response, plus 2016 review response and 2021-2026 strategic plan)",
+   "author_org": "NOAA ARL / external review panel",
+   "published": "2022-2023 (response dated Sept 30 2023)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": "NOT PRESENT (all arl.noaa.gov PDFs return HTTP 403 to curl and WebFetch)",
+   "retrieved": "2026-11-26",
+   "limitations": "Snippet-level only, from search summarizer; phrases not verified against PDFs; ARL-wide, not USCRN-specific. Coordinator should read the PDFs in a browser.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "context: ARL-wide workforce"
+  },
+  {
+   "id": "s53",
+   "url": "https://api.openalex.org/works?filter=raw_author_name.search:jared%20rennie,from_publication_date:2025-01-01&select=doi,title,publication_date,authorships&sort=publication_date:desc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex: BAMS State of the Climate in 2025, chapter 7 (doi 10.1175/2026bamsstateoftheclimate_chapter7.1)",
+   "author_org": "OpenAlex (record of BAMS State of the Climate)",
+   "published": "2026-08-01",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-e14",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_rennie.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Not verified that the NCEI affiliation at line 4201 belongs to the Rennie authorship in the BAMS record (quick lookup at deadline); not USCRN-specific.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s54",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2019/Nov/FY07FinalBlueBook_FINAL.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY 2007 Budget Summary (Blue Book), February 6, 2006",
+   "author_org": "NOAA",
+   "published": "2006-02-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/fy07_blue_book.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Request (President's budget) increase only, not enacted; not a USCRN base or total. $6,266,000 is the parent Climate Data & Information line total and must not be read as USCRN's figure.",
+   "found_by": [
+    "sa4",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s55",
+   "url": "https://www.govinfo.gov/content/pkg/CHRG-109hhrg27256/html/CHRG-109hhrg27256.htm",
+   "fetched_url": null,
+   "title": "Improving Drought Monitoring and Forecasting: H.R. 5136, the National Integrated Drought Information System Act of 2006 (House hearing, May 4, 2006)",
+   "author_org": "U.S. House of Representatives (GPO)",
+   "published": "2006-05-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/29aa774f98608a98.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Request increase, not enacted; the $3.8 million figure combines CRN with regional observation systems and is not USCRN's own figure; witness name not checked.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s56",
+   "url": "https://www.congress.gov/109/chrg/CHRG-109hhrg99903/CHRG-109hhrg99903.pdf",
+   "fetched_url": null,
+   "title": "House hearing CHRG-109hhrg99903 (GPO 99-903), March 9, 2005, testimony of Vice Adm. Lautenbacher (NOAA)",
+   "author_org": "U.S. House of Representatives (GPO)",
+   "published": "2005-03-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/60682d3f9a0cea8b.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Oral exchange, not a budget document; which $24 million request is meant is unclear (could be a broader climate observing request), so it should not be used as USCRN's own figure without a budget document confirming it. Committee name not checked (header code HCOM1).",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s57",
+   "url": "https://www.govinfo.gov/content/pkg/CHRG-109shrg62359/pdf/CHRG-109shrg62359.pdf",
+   "fetched_url": null,
+   "title": "S. Hrg. 109-1094, Senate hearing, July 20, 2005 (NOAA climate program testimony)",
+   "author_org": "U.S. Senate (GPO)",
+   "published": "2005-07-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/799fbeb9119bd84c.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Parent figures ($239.9M Climate Program, $7.4M COS reactivation) are not USCRN's; request, not enacted; witness and committee not checked.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NOAA Climate Program / COS"
+  },
+  {
+   "id": "s58",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2019/Nov/NOAA_FY09_Final_CJ.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates, Fiscal Year 2009 Congressional Submission",
+   "author_org": "NOAA",
+   "published": "2008-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/fy09_cj.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No USCRN-only dollar amount; 3,853 (thousands) is a combined Climate Sensors (IOOS) line for carbon, GOOS and USCRN and must not be given as USCRN's figure. The Climate Data and Information PPA table amounts were not read in the time available.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: OAR Climate Data and Information / Climate Sensors (IOOS)"
+  },
+  {
+   "id": "s59",
+   "url": "https://api.crossref.org/works?query.author=Tilden+P.+Meyers&filter=until-pub-date:1990&rows=10&select=DOI,title,published,author",
+   "fetched_url": null,
+   "title": "Crossref works, query.author=Tilden P. Meyers, published until 1990 (relevance order, 10 rows)",
+   "author_org": "Crossref",
+   "published": "n/a (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "fu2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu2/crossref_meyers_pre1990.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Only the top 10 relevance-ranked pre-1990 records were saved, so an earlier record may exist beyond row 10; affiliation fields are empty. OpenAlex earlier gave 1985; Crossref here shows 1986 as earliest plausible, not checked beyond these rows.",
+   "found_by": [
+    "fu2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s60",
+   "url": "https://api.crossref.org/works?query.author=Michael+A.+Palecki&filter=until-pub-date:1992&rows=10&select=DOI,title,published,author",
+   "fetched_url": null,
+   "title": "Crossref works, query.author=Michael A. Palecki, published until 1992 (relevance order, 10 rows)",
+   "author_org": "Crossref",
+   "published": "n/a (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "fu2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu2/crossref_palecki_pre1992.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Top 10 relevance-ranked rows only; affiliation empty, identity inferred from topic. Matches the OpenAlex year 1986.",
+   "found_by": [
+    "fu2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s61",
+   "url": "https://api.crossref.org/works?query.author=John+Kochendorfer&filter=until-pub-date:2006&rows=10&select=DOI,title,published,author",
+   "fetched_url": null,
+   "title": "Crossref works, query.author=John Kochendorfer, published until 2006 (relevance order, 10 rows)",
+   "author_org": "Crossref",
+   "published": "n/a (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "fu2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu2/crossref_kochendorfer_pre2006.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Top 10 relevance-ranked rows only; OpenAlex gave 2003, which may be a non-DOI or conference item not in these rows.",
+   "found_by": [
+    "fu2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s62",
+   "url": "https://api.crossref.org/works?query.author=Ronald+D.+Leeper&filter=until-pub-date:2009&rows=10&select=DOI,title,published,author",
+   "fetched_url": null,
+   "title": "Crossref works, query.author=Ronald D. Leeper, published until 2009 (relevance order, 10 rows)",
+   "author_org": "Crossref",
+   "published": "n/a (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "fu2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu2/crossref_leeper_pre2009.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Top 10 relevance rows only; a 2006-2009 Ronald Leeper record may exist beyond them.",
+   "found_by": [
+    "fu2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s63",
+   "url": "https://oakridgetoday.com/tag/university-of-oklahoma",
+   "fetched_url": null,
+   "title": "Oak Ridge Today tag page: university of oklahoma (article ORAU, University of Oklahoma win $8.4 million NOAA award for weather, climate change research)",
+   "author_org": "Oak Ridge Today",
+   "published": "2016-08-31",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "fu2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction (sandbox refused oakridgetoday.com, non-.org, no local copy); passage pieces as relayed by the extraction model; 2016, not the 2025 vehicle.",
+   "found_by": [
+    "fu2"
+   ],
+   "scope": "context: 2016 OU/ORAU NOAA award, not USCRN-specific"
+  },
+  {
+   "id": "s64",
+   "url": "https://api.crossref.org/works?query.author=C.+Bruce+Baker&filter=until-pub-date:1990&rows=10&select=DOI,title,published,author",
+   "fetched_url": null,
+   "title": "Crossref works, query.author=C. Bruce Baker, published until 1990 (relevance order, 10 rows)",
+   "author_org": "Crossref",
+   "published": "n/a (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "fu2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu2/crossref_baker_pre1990.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Top 10 relevance rows only; common name.",
+   "found_by": [
+    "fu2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s65",
+   "url": "https://api.crossref.org/works?query.author=Howard+J.+Diamond&filter=until-pub-date:2002&rows=10&select=DOI,title,published,author",
+   "fetched_url": null,
+   "title": "Crossref works, query.author=Howard J. Diamond, published until 2002 (relevance order, 10 rows)",
+   "author_org": "Crossref",
+   "published": "n/a (API)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "fu2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu2/crossref_diamond_pre2002.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Titles and years of these rows not read (deadline); coordinator can read the saved JSON.",
+   "found_by": [
+    "fu2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s66",
+   "url": "https://www.noaa.gov/sites/default/files/2023-04/NOAA_FY24_CJ.pdf",
+   "fetched_url": null,
+   "title": "NOAA FY 2024 Congressional Justification (Budget Estimates)",
+   "author_org": "NOAA / U.S. Department of Commerce",
+   "published": "2023-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "fu1-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/f741daa4c923eed6.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Parent line total (Regional Climate Data & Information, dollars in thousands) is not USCRN's figure; USCRN not named in this CJ.",
+   "found_by": [
+    "fu1"
+   ],
+   "scope": "context: OAR Regional Climate Data & Information (parent line)"
+  },
+  {
+   "id": "s67",
+   "url": "https://www.noaa.gov/sites/default/files/2022-04/NOAAFY23CJ.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration Budget Estimates, Fiscal Year 2023 (Congressional Justification)",
+   "author_org": "NOAA / U.S. Department of Commerce",
+   "published": "2022-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "fu1-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/cd8544d033153b22.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "The +$3,000K increase is for the NIDIS Tribal Drought Resilience Initiative, not USCRN; no USCRN amount given.",
+   "found_by": [
+    "fu1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s68",
+   "url": "https://www.noaa.gov/sites/default/files/2021-06/NOAA%20FY22%20CJ.pdf",
+   "fetched_url": null,
+   "title": "National Oceanic and Atmospheric Administration Budget Estimates, Fiscal Year 2022 (Congressional Justification)",
+   "author_org": "NOAA / U.S. Department of Commerce",
+   "published": "2021-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "fu1-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/3333848ed4d77cc8.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No USCRN amount; printed page numbers not checked (deadline).",
+   "found_by": [
+    "fu1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s69",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2020/Mar/508%20Compliant_FY21%20NOAA%20CJ.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates, Fiscal Year 2021 (Congressional Justification)",
+   "author_org": "NOAA / U.S. Department of Commerce",
+   "published": "2020-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "fu1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/6ee5ebcc71261e73.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "The -$4,979K is ARL's figure (a proposed closure), not USCRN's; no USCRN amount.",
+   "found_by": [
+    "fu1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s70",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2019/Nov/FY19-NOAA-CJ.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates, Fiscal Year 2019 (Congressional Justification)",
+   "author_org": "NOAA / U.S. Department of Commerce",
+   "published": "2018-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "fu1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/fu1/2cb5419de595e38d.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "The ARL closure amount was not checked in this CJ (deadline); printed pages not checked; no USCRN amount.",
+   "found_by": [
+    "fu1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s101",
+   "url": "https://www.arl.noaa.gov/about/staff-directory-2/",
+   "fetched_url": null,
+   "title": "Air Resources Laboratory Staff Directory (live)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/arl_staff_directory_2026-11-26.txt",
+   "evidence_id": null,
+   "limitations": "Undated live page read 2026-11-26 in the browser; lists names and affiliation class only."
+  },
+  {
+   "id": "s102",
+   "url": "https://web.archive.org/web/20241213113100/https://www.arl.noaa.gov/about/staff-directory-2/",
+   "fetched_url": null,
+   "title": "Air Resources Laboratory Staff Directory (Wayback capture 2024-12-13)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": "as of 2024-12-13 capture",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/arl_staffdir_wb20241213.txt",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s103",
+   "url": "https://www.arl.noaa.gov/about/staff-directory-2/howard-diamond/",
+   "fetched_url": null,
+   "title": "Howard Diamond (ARL staff page)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/arl_diamond_bio.txt",
+   "evidence_id": null,
+   "limitations": "Undated page."
+  },
+  {
+   "id": "s104",
+   "url": "https://www.opm.gov/retirement-center/fers-information/eligibility/",
+   "fetched_url": null,
+   "title": "FERS Eligibility",
+   "author_org": "U.S. Office of Personnel Management",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/opm_fers_eligibility.txt",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s105",
+   "url": "https://hr.ncsu.edu/benefits-and-wellness/retirement/tsers/",
+   "fetched_url": null,
+   "title": "Teachers' and State Employees' Retirement System (TSERS)",
+   "author_org": "NC State University Human Resources",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/ncsu_tsers.txt",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s106",
+   "url": "https://web.archive.org/cdx/search/cdx?url=arl.noaa.gov/about/staff-directory-2/&output=json&from=2022&filter=statuscode:200&collapse=timestamp:6",
+   "fetched_url": null,
+   "title": "Wayback CDX listing of ARL staff directory captures 2022-2026",
+   "author_org": "Internet Archive",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "aggregator",
+   "local_file": "work/raw/main/cdx_arl_staffdir.json",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s107",
+   "url": "https://web.archive.org/web/20250603140826/https://www.arl.noaa.gov/about/staff-directory-2/",
+   "fetched_url": null,
+   "title": "Air Resources Laboratory Staff Directory (Wayback capture 2025-06-03)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": "as of 20250603 capture",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/arl_staffdir_wb20250603140826.txt",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s108",
+   "url": "https://web.archive.org/web/20251001031801/https://www.arl.noaa.gov/about/staff-directory-2/",
+   "fetched_url": null,
+   "title": "Air Resources Laboratory Staff Directory (Wayback capture 2025-10-01)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": "as of 20251001 capture",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/arl_staffdir_wb20251001031801.txt",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s109",
+   "url": "https://web.archive.org/web/20260913153418/https://www.arl.noaa.gov/about/staff-directory-2/",
+   "fetched_url": null,
+   "title": "Air Resources Laboratory Staff Directory (Wayback capture 2026-09-13)",
+   "author_org": "NOAA Air Resources Laboratory",
+   "published": null,
+   "retrieved": "2026-11-26",
+   "data_period": "as of 20260913 capture",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/arl_staffdir_wb20260913153418.txt",
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s110",
+   "url": "https://www.noaa.gov/sites/default/files/legacy/document/2019/Nov/NOAA-FY20-Congressional-Justification.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates, Fiscal Year 2020 (Congressional Justification)",
+   "author_org": "NOAA",
+   "published": "2019-03",
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/noaa_fy20_cj.txt",
+   "evidence_id": null,
+   "limitations": "pdftotext without -layout (the -layout extraction came back empty for a subagent)."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "Howard Diamond is still named USCRN Program Manager on NCEI's live contacts page and in the FY19 annual report; his current ARL title is Atmospheric Sciences and Modeling Division Director (since 2017).",
+   "evidence": [
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "Please direct any USCRN-related comments or questions to the USCRN Program Manager; Howard Diamond, PhD | - email: Howard.Diamond@noaa.gov",
+     "location": "Contacts heading, lines 12-14"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Howard J. Diamond, USCRN Program Manager at ARL;",
+     "location": "p. i"
+    },
+    {
+     "source_id": "s101",
+     "relationship": "supports",
+     "passage": "Atmospheric Sciences Modeling Division (ASMD), College Park, MD | Division Director: Dr. Howard Diamond",
+     "location": null
+    },
+    {
+     "source_id": "s103",
+     "relationship": "supports",
+     "passage": "2017 – present: Division Director, NOAA Air Resources Laboratory Atmospheric Sciences and Modeling Division, College Park, MD, USA",
+     "location": null
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NOAA's own live pages agree; contacts page is undated."
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "Diamond's federal service began in 1981 (National Ocean Service), with NWS 1986/87-1999 and NESDIS 1997/99-2017, so he has about 45 years of service; the publication-year rule (earliest plausible work 2000) understates his age.",
+   "evidence": [
+    {
+     "source_id": "s103",
+     "relationship": "supports",
+     "passage": "1981 – 1986: Cartographer, National Ocean Service",
+     "location": null
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "<common:department-name>ASMD</common:department-name> | <common:role-title>Director, Atmospheric Sciences and Modeling Division at ARL</common:role-title> | <common:start-date> | <common:year>2017</common:year> | <common:month>04</common:month> | <common:day>16</common:day> | </common:start-date> | <common:organization> | <common:name>National Oceanic and Atmospheric Administration Air Resources Laboratory</common:name> … <common:start-date> | <common:year>1981</common:year> | <common:month>11</common:month> | <common:day>30</common:day> | </common:start-date> | <common:end-date> | <common:year>1987</common:year> | <common:month>06</common:month> | <common:day>06</common:day> | </common:end-date> | <common:organization> | <common:name>National Ocean Service</common:name>",
+     "location": "employment-summary entries 1 and 5"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "\"publication_year\": 1966, | \"title\": \"The development of an automatically controlled highway system\", … \"publication_year\": 2000, | \"title\": \"Year 2000 (Y2K) Data Analysis and Contingency Planning to Ensure Continued International Weather Data Receipt at the National Weather Service into the New Millennium\",",
+     "location": "results[0..1]"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "Self-reported on ORCID and ARL's own bio; dates differ slightly between them (NWS end 1999 vs NESDIS start 1997).",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "Michael Palecki (NCEI, ORCID 0000-0002-1557-9866) is the USCRN Science Project Manager / federal science lead, active in 2026; earliest publication 1986; ORCID gives NCEI USCRN Physical Scientist from 2008.",
+   "evidence": [
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Michael A. Palecki, USCRN Science Project Manager at NCEI",
+     "location": "p. i"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "<common:department-name>U.S. Climate Reference Network</common:department-name> | <common:role-title>Physical Scientist</common:role-title> | <common:start-date> | <common:year>2008</common:year> … <common:name>National Centers for Environmental Information</common:name>",
+     "location": "employment-summary entry 1"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "\"publication_year\": 1986, | \"title\": \"Freeze-up and Break-up of Lakes as an Index of Temperature Changes during the Transition Seasons: A Case Study for Finland\",",
+     "location": "results[0]"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "\"doi\": \"https://doi.org/10.1175/jhm-d-25-0181.1\", | \"publication_date\": \"2026-08-11\", … \"display_name\": \"Michael A. Palecki\", | \"orcid\": \"https://orcid.org/0000-0002-1557-9866\", … \"raw_affiliation_strings\": [ | \"Center for Weather and Climate, NOAA/NESDIS/NCEI, Asheville, North Carolina\"",
+     "location": "oa_palecki.json lines 1405-1664"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "ORCID, OpenAlex and NOAA report agree."
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "Ronald Leeper (CISESS, NC State; ORCID 0000-0001-6821-8151) leads the CISESS USCRN QA and soil-moisture tasks; active in 2026; earliest publication 2006; at the cooperative institute since 2010.",
+   "evidence": [
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "U.S. Climate Reference Network (USCRN) Applications and Quality Assurance | Task Leader                              Ronald D. Leeper | Task Code                                NC-SAS-07-NCICS-RL … Standardization of U.S. Climate Reference Network (USCRN) Soil Moisture Observations | Task Leader                             Ronald D. Leeper",
+     "location": "lines 2949-2951 and 3019-3020"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "<common:role-title>Research Scholar</common:role-title> | <common:start-date> | <common:year>2025</common:year> … <common:name>Cooperative Institute for Satellite Earth System Studies (CISE … <common:role-title>Research Associate</common:role-title> | <common:start-date> | <common:year>2010</common:year> … <common:end-date> | <common:year>2025</common:year> … <common:department-name>Kentucky Mesonet</common:department-name> | <common:role-title>Site Surveyor</common:role-title> | <common:start-date> | <common:year>2007</common:year>",
+     "location": "employment-summary entries"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "\"publication_year\": 2006, | \"title\": \"Impacts of irrigation on 20th century temperature in the northern Great Plains\",",
+     "location": "results[0]"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "\"doi\": \"https://doi.org/10.1002/vzj2.70141\", | \"title\": \"Data quality and metadata guidelines for the soil moisture monitoring community\", | \"publication_date\": \"2026-09-01\", … \"raw_author_name\": \"Ronald D. Leeper\", | \"raw_affiliation_strings\": [ | \"Cooperative Institute For Satellite Earth System Studies (CISESS) North Carolina State University (NCSU)  Asheville North Carolina USA\"",
+     "location": "oa_rleeper.json lines 1097-1099, 1979-1981"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "CISESS report, ORCID and 2026 paper agree."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "ATDD is no longer a separate division on ARL's live directory: it is the SORD-ATD office (Oak Ridge) of the Special Research and Operations Division (director Walter Schalk), with John Kochendorfer as Division Deputy. In the Dec 2024 capture ATDD was a division with Kochendorfer as Division Director; Bruce Baker (ATDD director in FY19) is in neither list.",
+   "evidence": [
+    {
+     "source_id": "s101",
+     "relationship": "supports",
+     "passage": "Special Research and Operations Division (SORD) | Division Director: Walter Schalk | SORD-Atmospheric Turbulence and Diffusion (SORD-ATD) office, Oak Ridge, TN | Division Deputy: Dr. John Kochendorfer",
+     "location": null
+    },
+    {
+     "source_id": "s102",
+     "relationship": "supports",
+     "passage": "## Atmospheric Turbulence & Diffusion Division (ATDD), Oak Ridge, TN | Division Director: Dr. John Kochendorfer",
+     "location": null
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "C. Bruce Baker, Director, ATDD",
+     "location": "p. i"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "\"publication_year\": 2024, | \"title\": \"Synergizing Soil Moisture Monitoring: Building a Coordinated National Network of Networks\",",
+     "location": "results[0]"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "\"doi\": \"https://doi.org/10.5194/egusphere-2026-6470\", | \"title\": \"An evaluation of the Low Porosity Double Fence wind shield for measuring solid precipitation in Canada\", | \"publication_date\": \"2026-11-24\", … \"raw_author_name\": \"John Kochendorfer\", | \"raw_affiliation_strings\": [ | \"Atmospheric Turbulence and Diffusion Division of the Air Resources Laboratory, National Oceanic and Atmospheric Administration, Oak Ridge, TN 37838, USA\"",
+     "location": "oa_kochendorfer.json lines 537-539, 670-672"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "ARL's own directory; live page undated, so the reorganization date is not known (after 2024-12-13)."
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "The ATDD field team is eight technicians and engineers, most with ARL 15+ years, led by Brent French (Climate Reference Network Lead); French, Hamby and Blackwell are listed as ORAU staff in Dec 2024 and as Cooperative Institute staff now, not federal.",
+   "evidence": [
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "ATDD has a small team of eight technicians and engineers responsible for annual maintenance visits to each station.",
+     "location": null
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "here we see Climate Reference Network Lead Brent French",
+     "location": null
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "with the majority of team members being with ARL for 15 years or more.",
+     "location": null
+    },
+    {
+     "source_id": "s102",
+     "relationship": "supports",
+     "passage": "French, Brent | Brent.French@NOAA.gov | ORAU",
+     "location": null
+    },
+    {
+     "source_id": "s101",
+     "relationship": "supports",
+     "passage": "French, Brent\tBrent.French@NOAA.gov\tCooperative Institute",
+     "location": null
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "This network of measurement stations is managed by ORAU’s team in the Atmospheric Turbulence and Diffusion Division (ATDD) office. … ORAU is a 501(c)(3) nonprofit corporation and government contractor.",
+     "location": "paragraph 2; About ORAU"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "ARL story is undated (about 2023); team membership beyond three names not listed."
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "ATDD/SORD-ATD roster: 28 entries in Dec 2024 (8 federal, 16 ORAU, 4 contractor) and 21 now (7 federal, 12 cooperative institute, 2 contractor); entries listed on the page, not an official headcount, and not all work on USCRN.",
+   "evidence": [
+    {
+     "source_id": "s102",
+     "relationship": "supports",
+     "passage": "Kochendorfer, John (Division Director) | John.Kochendorfer@NOAA.gov | Federal",
+     "location": null
+    },
+    {
+     "source_id": "s101",
+     "relationship": "supports",
+     "passage": "Kochendorfer, John (Division Deputy)\tJohn.Kochendorfer@NOAA.gov\tFederal",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Counted by script from the two saved directory pages (work/code/count_roster.py).",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c8",
+   "importance": "supporting",
+   "text": "No USCRN succession, workforce or knowledge-transfer plan was found; ARL's review documents (read only as a search summary) record that a succession plan was recommended and that ARL said civil-service rules bar naming successors in advance.",
+   "evidence": [
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "cadre of about seventy talented and dedicated scientists, engineers, technicians, as well as information technology and administrative professionals … some ARL programs are led by a single PI … succession plan to identify key skills/knowledge that are in danger of being lost if staff leave … civil service regulations explicitly prohibit the appointment of successors to positions that are expected to become vacant … the extended use of \"acting\" roles within the ARL ranks, especially leadership roles, is troubling … the precarity of non-federal positions and declining federal workforce present medium to long-term risks",
+     "location": "WebSearch summary for query Air Resources Laboratory strategic plan workforce (allowed_domains noaa.gov); which phrase is in which PDF NOT PRESENT"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "Absence of evidence; the ARL review PDFs were not readable (HTTP 403)."
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "No USCRN-specific base or enacted amount is published in any budget document read; only requested increases: +$1,161,000 (FY2007, OAR Climate Data & Information) and +$1,300,000 (FY2010, Alaska stations); a 2003 press report gives $3.4 million budgeted for FY2004.",
+   "evidence": [
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "Climate Data & Information: $3,904,000 and 0 FTE in net increases above the | base, for a total of $6,266,000 and 4 FTE, are requested under the Climate Data & | Information line item of the Climate Research subactivity. | NOAA requests an increase of | $1,161,000 and 0 FTE in support of | the Climate Reference Network | (CRN). … Specifically, | NOAA will install and commission the remainder of the full network of 114 | stations and provide adequate life-cycle operations and maintenance.",
+     "location": "page 4-39 (txt lines 2850-2870)"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "U.S. Climate Reference Network in Alaska        N/A     Non-GPRA         0          $0        0   +$1,300,000     381",
+     "location": null
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The network, budgeted at $3.4 million for fiscal 2004, should be completed by January, LeDuc said.",
+     "location": "article body"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "REGIONAL CLIMATE DATA AND INFORMATION | NOAA’s Regional Climate Data and Information Program, overseen by the Climate Program Office, … NOAA supports | the following under the Regional Climate Data and Information Program: | •   The U.S. Climate Reference Network (USCRN) provides baseline, high-quality surface | observations of air temperature and precipitation to detect long-term changes in climate through a | robust climate record.",
+     "location": "OAR - 21 (txt lines 20814-20827)"
+    },
+    {
+     "source_id": "s58",
+     "relationship": "contextualizes",
+     "passage": "The following | activities are funded under the Climate Data and Information line item: | • The U.S. Climate Reference Network (USCRN) provides baseline, high-quality surface observations of air temperature and precipitation to | detect long-term changes in climate through a robust climate record. … Climate Sensors (IOOS): … Specifically funding was for the procurement, set-up, deployment, and quality-control, of observing platforms for carbon, | the Global Ocean Observing System (GOOS) and the U.S. Climate Reference Network. … OUTYEAR FUNDING ESTIMATES | (BA in thousands) … Climate Sensors (IOOS) | Change from FY 2009 Base … Total Request 3,853 0 0 0 0 0 - 3,853",
+     "location": "OAR Climate Data and Information base description (txt lines 11333-11341); OAR Systems Acquisition, printed pages 634-635 (txt lines 20296-20315)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Agency's own justifications; not every year's CJ was read.",
+   "figure_status": [
+    "request",
+    "estimate"
+   ]
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "text": "USCRN moved from NESDIS/NCDC (FY2004-05) to OAR's Climate Research subactivity, Climate Data & Information line (FY2007 request on), later OAR Regional Climate Data and Information (FY2015), with field operations at ARL/ATDD.",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "contextualizes",
+     "passage": "NCDC recently commissioned the Climate Reference Network | (CRN), 44 sites in 28 states … Financing: The FY 2005 Budget includes $32.521 million for Archive, Access, and | Assessment and includes funds to support NCDC activities.",
+     "location": "lines 35-36, 47-48"
+    },
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "Climate Data & Information: $3,904,000 and 0 FTE in net increases above the | base, for a total of $6,266,000 and 4 FTE, are requested under the Climate Data & | Information line item of the Climate Research subactivity. | NOAA requests an increase of | $1,161,000 and 0 FTE in support of | the Climate Reference Network | (CRN). … Specifically, | NOAA will install and commission the remainder of the full network of 114 | stations and provide adequate life-cycle operations and maintenance.",
+     "location": "page 4-39 (txt lines 2850-2870)"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "U.S. Climate Reference Network (Climate Data & Information) (0 FTE and +$1,300,000): NOAA requests an increase of $1,300,000 to",
+     "location": null
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "REGIONAL CLIMATE DATA AND INFORMATION | NOAA’s Regional Climate Data and Information Program, overseen by the Climate Program Office, … NOAA supports | the following under the Regional Climate Data and Information Program: | •   The U.S. Climate Reference Network (USCRN) provides baseline, high-quality surface | observations of air temperature and precipitation to detect long-term changes in climate through a | robust climate record.",
+     "location": "OAR - 21 (txt lines 20814-20827)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Several CJs; FY2016-FY2024 not read."
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "text": "Cooperative agreements paying CICS-NC/CISESS-NC staff (Leeper and others) are whole-institute awards to the University of Maryland with no USCRN amount: NA09NES4400006 ($66.7M, 2009-14), NA14NES4320003 ($104.2M, 2014-20), NA19NES4320002 ($162.8M, 2019-25).",
+   "evidence": [
+    {
+     "source_id": "s40",
+     "relationship": "contextualizes",
+     "passage": "\"fain\": \"NA09NES4400006\", … \"description\": \"COOPERATIVE INSTITUTE FOR CLIMATE AND SATELLITES\", … \"total_obligation\": 66720558.0, | \"date_signed\": \"2009-05-18\", … \"start_date\": \"2009-07-01\", | \"end_date\": \"2014-06-30\", … \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\",",
+     "location": "JSON lines 4-15, 76-82"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "contextualizes",
+     "passage": "\"fain\": \"NA14NES4320003\", … \"description\": \"CICS:COOPERATIVE AGREEMENT PROPOSAL 2014 - 2019\", | \"subaward_count\": 238, … \"total_obligation\": 104207125.0, | \"date_signed\": \"2014-06-20\", … \"start_date\": \"2014-07-01\", | \"end_date\": \"2020-06-30\", … \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\",",
+     "location": "JSON lines 3-15, 85-93"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "contextualizes",
+     "passage": "\"fain\": \"NA19NES4320002\", … \"type_description\": \"COOPERATIVE AGREEMENT (B)\", | \"description\": \"COOPERATIVE INSTITUTE FOR SATELLITE EARTH SYSTEM STUDIES\", | \"subaward_count\": 45, | \"total_subaward_amount\": 69667397.98, … \"total_obligation\": 162772973.0, | \"date_signed\": \"2019-05-21\", … \"start_date\": \"2019-07-01\", | \"end_date\": \"2025-06-30\", … \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\",",
+     "location": "JSON lines 3-15, 104-108"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "NOAA Grant NA19NES4320002 … U.S. Climate Reference Network (USCRN) Applications and Quality Assurance | Task Leader                              Ronald D. Leeper | Task Code                                NC-SAS-07-NCICS-RL",
+     "location": "cover (line 19); p.73 (lines 2949-2951); task codes lines 3021-3205"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "USAspending records; amounts are parent totals (context).",
+   "figure_status": "obligation"
+  },
+  {
+   "id": "c12",
+   "importance": "supporting",
+   "text": "ORAU, a nonprofit government contractor, supplied much of ATDD's USCRN field staff; no contract or award number or value was found.",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "ORAU works in partnership with NOAA’s Atmospheric Turbulence & Diffusion Division (ATDD) to perform advanced weather and climate research. … 2023: In summer 2023, ORAU atmospheric scientists supporting ATDD traveled to Alaska to expand the Climate Reference Network. … ORAU is a 501(c)(3) nonprofit corporation and government contractor.",
+     "location": "lines 17, 35, 51"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "This network of measurement stations is managed by ORAU’s team in the Atmospheric Turbulence and Diffusion Division (ATDD) office. … ORAU is a 501(c)(3) nonprofit corporation and government contractor.",
+     "location": "paragraph 2; About ORAU"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "ORAU's own pages; no award record found."
+  },
+  {
+   "id": "c13",
+   "importance": "supporting",
+   "text": "Past funding shocks: an FY2006 budget hiatus stretched deployment, and in 2005 a member said $10 million had been removed from the request 'for climate reference'.",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "The FY 2006 budget hiatus is viewed as",
+     "location": "two-column text, p. (FY08 report)"
+    },
+    {
+     "source_id": "s56",
+     "relationship": "contextualizes",
+     "passage": "And there have been cuts in observing from the Hill, I | am sorry to say, but we continue to ask for those, like the climate | reference network that you have mentioned. … I come | back again for the fourth year asking for help with the climate ref- | erence network … Ms. DEGETTE. But see, like, in 2005, your agency’s budget re- | quest was $24 million and $10 million of it was removed in—or for | climate reference. That is right. For climate reference. | Vice Adm. LAUTENBACHER. Right. … we rearranged | money to cover the continuation of the climate reference network,",
+     "location": "printed page 20-21 (txt lines 1430-1458)"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "Annual report statement and hearing remark; no amounts in budget tables.",
+   "figure_status": "request"
+  },
+  {
+   "id": "c14",
+   "importance": "supporting",
+   "text": "FERS immediate retirement: 62 with 5 years, 60 with 20, MRA with 30; MRA is 56-57 by birth year. NC State TSERS unreduced retirement: 65 with 5 years, 60 with 25, or 30 years at any age.",
+   "evidence": [
+    {
+     "source_id": "s104",
+     "relationship": "supports",
+     "passage": "Age\tYears of Service | 62\t5 | 60\t20 | MRA\t30",
+     "location": null
+    },
+    {
+     "source_id": "s105",
+     "relationship": "supports",
+     "passage": "- you reach age 65 and complete five years of creditable service, | - you reach age 60 and complete 25 years of creditable service, or | - you complete 30 years of creditable service, at any age.",
+     "location": null
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "OPM and NC State HR pages."
+  },
+  {
+   "id": "c15",
+   "importance": "supporting",
+   "text": "Core USCRN people persisted FY10 to FY19 (Diamond, Palecki, Hall, Meyers, Baker, Embler); FY19 names 17 team members plus four leads.",
+   "evidence": [
+    {
+     "source_id": "s48",
+     "relationship": "contextualizes",
+     "passage": "Howard J. Diamond, USCRN Program Manager | e-mail: howard.diamond@noaa.gov | Michael A. Palecki, USCRN Science Project Manager … Bruce Baker | Debra Braun | David Easterling | Mark Hall | Jay Lawrimore | Tilden Meyers | Russell Vose | Steve Anthony, Rocky Bilotta, Bill Collins, Egg Davis, Scott Embler, Andrea Fey, Diana Kantor, | Michael Kruk, Cheri Ward, and Jon Wilkinson",
+     "location": "title page lines 16-47"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Michael Black, Michael Buban, Scott Embler, Brent French, Grant Goodge, Mark Hall,",
+     "location": "p. i"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "Two annual reports."
+  },
+  {
+   "id": "c16",
+   "importance": "central",
+   "text": "Dating from Wayback captures of ARL's directory: the field staff's listed affiliation changed from ORAU to Cooperative Institute between 2025-06-03 and 2025-10-01; ATDD was still a division with Kochendorfer as director on 2026-09-13 and appears as the SORD-ATD office on the live page (2026-11-26).",
+   "evidence": [
+    {
+     "source_id": "s107",
+     "relationship": "supports",
+     "passage": "French, Brent | Brent.French@NOAA.gov | ORAU",
+     "location": null
+    },
+    {
+     "source_id": "s108",
+     "relationship": "supports",
+     "passage": "French, Brent | Brent.French@NOAA.gov | Cooperative Institute",
+     "location": null
+    },
+    {
+     "source_id": "s109",
+     "relationship": "supports",
+     "passage": "## Atmospheric Turbulence & Diffusion Division (ATDD), Oak Ridge, TN",
+     "location": null
+    },
+    {
+     "source_id": "s109",
+     "relationship": "supports",
+     "passage": "Division Director: Dr. John Kochendorfer",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Monthly captures bound the dates; which cooperative institute is not named."
+  },
+  {
+   "id": "c17",
+   "importance": "central",
+   "text": "Before 2025, three consecutive NOAA budget requests proposed closing ARL (all ARL-wide figures): FY2019 -$4,377K, -34 FTE/-34 positions; FY2020 -$4,843K, -35 FTE/-34 positions, closing the College Park headquarters and the Oak Ridge, Idaho Falls, Las Vegas and Mercury campuses; FY2021 -$4,979K, -34 FTE/-35 positions. Each said USCRN and ARL's other observing networks under OAR Climate Research 'will be consolidated into other NOAA laboratories'. ARL was still operating with USCRN in Dec 2024, so none took effect.",
+   "evidence": [
+    {
+     "source_id": "s70",
+     "relationship": "contextualizes",
+     "passage": "ARL has historically been funded out of both the Weather and Air Chemistry Research Laboratories and Cooperative Institutes PPA | and the Climate Research Laboratories and Cooperative Institutes PPA. The U.S. Climate Reference Network (CRN) and other | observational networks managed by ARL under OAR’s Climate Research will be consolidated into other NOAA laboratories. … Archive a minimum of 98 percent of all U.S. Climate Reference Network (USCRN) data received, and provide subject matter | expertise in installation and monitoring of USCRN stations in Alaska",
+     "location": "OAR chapter, ARL closure decrease (txt line 12017); NESDIS chapter, NCEI milestones (txt lines 19160-19161)"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "contextualizes",
+     "passage": "The Air Resources Laboratory Closure (-$4,979, -34 FTE/ -35 Positions) – NOAA proposes a decrease of $4,979,000 to close | the Air Resources Laboratory … ARL has historically been funded out of both the Weather and Air Chemistry Research Laboratories and | Cooperative Institutes Subactivity and the Climate Research Laboratories and Cooperative Institutes Subactivity. The U.S. Climate | Reference Network (CRN) and other observational networks managed by ARL under OAR’s Climate Research will be consolidated | into other NOAA laboratories. … Archive a minimum of 83 percent of all ingested data, including the U.S. Climate Reference Network (USCRN) data, ocean",
+     "location": "OAR - 52 (txt lines 17146-17163); NESDIS chapter, NCEI Schedule and Milestones FY 2021 - FY 2025 (txt line 26574)"
+    },
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "OAR-33      ORF   OAR        Air Resources Laboratory Closure                                            (35)       (4,377)",
+     "location": null
+    },
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "The Air Resources Laboratory Closure (-34 FTE/ -34 Positions, -$4,377) – With this reduction, NOAA will close the Air Resources",
+     "location": null
+    },
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "observational networks managed by ARL under OAR’s Climate Research will be consolidated into other NOAA laboratories.",
+     "location": null
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "The Air Resources Laboratory Closure (-$4,979, -34 FTE/ -35 Positions) – NOAA proposes a decrease of $4,979,000 to close",
+     "location": null
+    },
+    {
+     "source_id": "s102",
+     "relationship": "contextualizes",
+     "passage": "## Atmospheric Turbulence & Diffusion Division (ATDD), Oak Ridge, TN | Division Director: Dr. John Kochendorfer",
+     "location": null
+    },
+    {
+     "source_id": "s110",
+     "relationship": "supports",
+     "passage": "The Air Resources Laboratory Closure (-$4,843, -35 FTE/ -34 Positions) – With this reduction, NOAA will close the Air Resources",
+     "location": null
+    },
+    {
+     "source_id": "s110",
+     "relationship": "supports",
+     "passage": "ARL’s headquarters in College Park, MD will be closed, as will satellite campuses in Oak",
+     "location": null
+    },
+    {
+     "source_id": "s110",
+     "relationship": "supports",
+     "passage": "Reference Network (CRN) and other observational networks managed by ARL under OAR’s Climate Research will be consolidated",
+     "location": null
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NOAA's own budget requests, read as raw text by the coordinator; the outcome is inferred from ARL still operating.",
+   "figure_status": "request",
+   "sole_source_reason": "The agency's own budget requests are the authority for what it proposed."
+  },
+  {
+   "id": "c18",
+   "importance": "central",
+   "text": "The FY2019 and FY2021-FY2024 justifications also give no USCRN amount: FY2022 and FY2023 name USCRN only in NCEI's archiving objective and an OAR drought milestone; FY2024 does not name it. FY2020 and FY2011-14, FY2016-18 were not read.",
+   "evidence": [
+    {
+     "source_id": "s66",
+     "relationship": "supports",
+     "passage": "Regional Climate Data &            Pos./BA         29 48,470                    30 51,976                      1    3,506",
+     "location": "OAR chapter, program change table (txt line 16598); a full-text search for Climate Reference Network/USCRN/CRN returned no match"
+    },
+    {
+     "source_id": "s67",
+     "relationship": "supports",
+     "passage": "Use pilot program finds to inform a robust plan for expanding and operating soil moisture and climate monitoring sites within | Tribal lands, leveraging USDA’s Tribal Soil Climate Analysis Network, NOAA’s Climate Reference Network, the National | Mesonet Program, and other monitoring networks … Archive a minimum of 83 percent of all ingested data, including the U.S. Climate Reference Network data, ocean observations | from NOAA vessels, and space weather data from NOAA geostationary satellites",
+     "location": "OAR-36/Exhibit 13, Program Increase for 2023, Schedule and Milestones FY 2024 - FY 2027 (txt line 16284); NESDIS chapter, NCEI Statement of Operating Objectives FY 2023 - FY 2027 (txt line 25044)"
+    },
+    {
+     "source_id": "s68",
+     "relationship": "supports",
+     "passage": "Use pilot program finds to inform a robust plan for expanding and operating soil moisture and climate monitoring sites within | Tribal lands, leveraging USDA’s Tribal Soil Climate Analysis Network, NOAA’s Climate Reference Network, the National | Mesonet Program, and other monitoring networks … Archive a minimum of 83 percent of all ingested data, including the U.S. Climate Reference Network data, ocean observations | from NOAA vessels, and space weather data from NOAA geostationary satellites",
+     "location": "OAR chapter, Tribal Drought Resilience program increase milestones (txt line 19100); NESDIS chapter, NCEI Schedule and Milestones FY 2022 - FY 2026 (txt line 32003)"
+    },
+    {
+     "source_id": "s69",
+     "relationship": "supports",
+     "passage": "The Air Resources Laboratory Closure (-$4,979, -34 FTE/ -35 Positions) – NOAA proposes a decrease of $4,979,000 to close | the Air Resources Laboratory … ARL has historically been funded out of both the Weather and Air Chemistry Research Laboratories and | Cooperative Institutes Subactivity and the Climate Research Laboratories and Cooperative Institutes Subactivity. The U.S. Climate | Reference Network (CRN) and other observational networks managed by ARL under OAR’s Climate Research will be consolidated | into other NOAA laboratories. … Archive a minimum of 83 percent of all ingested data, including the U.S. Climate Reference Network (USCRN) data, ocean",
+     "location": "OAR - 52 (txt lines 17146-17163); NESDIS chapter, NCEI Schedule and Milestones FY 2021 - FY 2025 (txt line 26574)"
+    },
+    {
+     "source_id": "s70",
+     "relationship": "supports",
+     "passage": "ARL has historically been funded out of both the Weather and Air Chemistry Research Laboratories and Cooperative Institutes PPA | and the Climate Research Laboratories and Cooperative Institutes PPA. The U.S. Climate Reference Network (CRN) and other | observational networks managed by ARL under OAR’s Climate Research will be consolidated into other NOAA laboratories. … Archive a minimum of 98 percent of all U.S. Climate Reference Network (USCRN) data received, and provide subject matter | expertise in installation and monitoring of USCRN stations in Alaska",
+     "location": "OAR chapter, ARL closure decrease (txt line 12017); NESDIS chapter, NCEI milestones (txt lines 19160-19161)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Five CJs read in full text by a subagent (FY2020 by the coordinator); absence of an amount, not of the network.",
+   "sole_source_reason": "NOAA's own budget justifications are the authority for whether they name a USCRN amount."
+  },
+  {
+   "id": "c19",
+   "importance": "supporting",
+   "text": "Crossref cross-check of earliest publication years: Palecki 1986 (agrees with OpenAlex); Meyers 1986 journal article (OpenAlex 1985 is a thesis); Kochendorfer 2005 journal article (OpenAlex 2003 is a thesis-era repository item); no early Crossref record found for Leeper, Baker or Diamond.",
+   "evidence": [
+    {
+     "source_id": "s60",
+     "relationship": "supports",
+     "passage": "\"DOI\": \"10.1175/1520-0450(1986)025<0893:fuabuo>2.0.co;2\", | \"title\": [ | \"Freeze-up and Break-up of Lakes as an Index of Temperature Changes during the Transition Seasons: A Case Study for Finland\" | \"published\": { | \"date-parts\": [ | [ | 1986, | 7 … \"given\": \"M. A.\", | \"family\": \"Palecki\", | \"sequence\": \"first\"",
+     "location": "crossref_palecki_pre1992.json lines 143-159"
+    },
+    {
+     "source_id": "s59",
+     "relationship": "contradicts",
+     "passage": "\"DOI\": \"10.1007/bf00122991\", | \"title\": [ | \"Testing of a higher-order closure model for modeling airflow within and above plant canopies\" | \"published\": { | \"date-parts\": [ | [ | 1986, … \"given\": \"Tilden\", | \"family\": \"Meyers\", | \"sequence\": \"first\"",
+     "location": "crossref_meyers_pre1990.json lines 118-134"
+    },
+    {
+     "source_id": "s61",
+     "relationship": "contradicts",
+     "passage": "\"DOI\": \"10.1175/jhm-401.1\", | \"title\": [ | \"The Impact of Land–Atmosphere Interactions on the Temporal Variability of Soil Moisture at the Regional Scale\" | \"published\": { | \"date-parts\": [ | [ | 2005, | 2, | 1 … \"given\": \"John P.\", | \"family\": \"Kochendorfer\", | \"sequence\": \"first\"",
+     "location": "crossref_kochendorfer_pre2006.json lines 38-56"
+    },
+    {
+     "source_id": "s62",
+     "relationship": "contextualizes",
+     "passage": "\"given\": \"Dennis B.\", | \"family\": \"Leeper\", … \"given\": \"Robert\", | \"family\": \"Leeper\", … \"given\": \"Roy V.\", | \"family\": \"Leeper\", … \"given\": \"Kathie A.\", | \"family\": \"Leeper\"",
+     "location": "crossref_leeper_pre2009.json lines 51-381"
+    },
+    {
+     "source_id": "s64",
+     "relationship": "contextualizes",
+     "passage": "\"title\": [ | \"Nebraska Regionalism in Selected Works of Willa Gather\" … \"given\": \"Bruce\", | \"family\": \"Baker\" … \"title\": [ | \"Larval Instar Determination of Malacosoma californicum fragile on Bitterbrush in Southern Utah1\" … \"given\": \"Bruce H.\", | \"family\": \"Baker\"",
+     "location": "crossref_baker_pre1990.json lines 10-272"
+    },
+    {
+     "source_id": "s65",
+     "relationship": "contextualizes",
+     "passage": "\"DOI\": \"10.1063/1.1736132\", … \"given\": \"Howard\", | \"family\": \"Diamond\", … \"DOI\": \"10.1016/s0039-6109(16)39379-3\", … \"given\": \"Howard P.\", | \"family\": \"Diamond\"",
+     "location": "crossref_diamond_pre2002.json lines 10-373"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Crossref author search is fuzzy; top-10 rows only."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "FY2007 requested CRN increase: $1,161,000 (FY07 Blue Book) vs $1.2 million (House hearing, 4 May 2006).",
+   "source_ids": [
+    "s54",
+    "s55"
+   ],
+   "status": "resolved",
+   "explanation": "Rounding of the same request; the answer relies on the Blue Book figure and states both."
+  },
+  {
+   "claim": "Diamond's age: publication-year rule (earliest plausible work 2000) gives 51-56 in 2026, but federal service since 1981 implies older (about 66-70).",
+   "source_ids": [
+    "s2",
+    "s103"
+   ],
+   "status": "resolved",
+   "explanation": "Publication rule fails for a career that began in operations; the service start is the stronger evidence. Both estimates shown."
+  },
+  {
+   "claim": "ATDD director: FY19 report names Baker; Dec 2024 and live ARL directory name Kochendorfer (director, then deputy under SORD).",
+   "source_ids": [
+    "s47",
+    "s102",
+    "s101"
+   ],
+   "status": "resolved",
+   "explanation": "Different dates: leadership changed between FY19 and Dec 2024, and ATDD was folded into SORD after Dec 2024."
+  },
+  {
+   "claim": "Earliest publication year: Meyers 1985 (OpenAlex, thesis) vs 1986 (Crossref journal article); Kochendorfer 2003 (OpenAlex) vs 2005 (Crossref).",
+   "source_ids": [
+    "s15",
+    "s59"
+   ],
+   "status": "resolved",
+   "explanation": "Different record types (theses vs journal articles); the earlier years are used, as the rule asks for the earliest publication. The 1-2 year difference does not change either verdict."
+  }
+ ],
+ "coverage_gaps": [
+  "Crossref and repository.library.noaa.gov cross-checks of earliest years not done (time). (from sa2)",
+  "ORCID employments not fetched for Kochendorfer, Myles, Rennie, Lee, Wilson, Bell; Palecki ORCID entries after the first not read. (from sa2)",
+  "C. Bruce Baker: no ORCID; 1982 earliest year in OpenAlex not confirmed as same person (authorships not saved); split records A5036153537 (Yale) and A5025550676 (NCEI 2001-2005) may be him. (from sa2)",
+  "ATDD Mark Hall: OpenAlex author ID for the ARL person not resolved (the Mark E. Hall found is BLM). (from sa2)",
+  "Diamond 1966 OpenAlex item is probably a merged different person; ORCID self-asserted employment starts 1981 (National Ocean Service). (from sa2)",
+  "Jared Rennie: counts_by_year has a 1997 entry but oldest works list starts 2011; unresolved. (from sa2)",
+  "Diamond ORCID lists current role as Director, Atmospheric Sciences and Modeling Division at ARL since 2017 (not 'USCRN program manager'); q1 should reconcile. (from sa2)",
+  "Crossref cross-check failed: query.author sorted by date returns unrelated historical items; a DOI-by-DOI check of the OpenAlex oldest works (e.g. Baker 1982 J. Appl. Meteor. comment 10.1175/1520-0450(1982)021<0883:corodt>2.0.co;2, Palecki 1986 10.1175/1520-0450(1986)025<0893:fuabuo>2.0.co;2) is the next step. (from sa2)",
+  "No USCRN total (base) operations amount found in any CJ read (FY2010, FY2015): NOT PRESENT. FY2004 $3.4M is press-reported only. Not read: NOAA CJs FY2002-FY2009 and FY2011-FY2014, FY2016-FY2024 (look for USCRN program-change tables), and the year USCRN moved from NESDIS/NCDC (FY2004-05 NCDC one-pager) to OAR Climate Data & Information (by FY2010; renamed Regional Climate Data and Information by FY2015). (from sa3)",
+  "USAspending keyword search (Climate Reference Network) not possible with GET-only access; no ORAU/ATDD contract number, Hydrological Services America/Geonor procurement, or NCEI support contract with USCRN task found. CISESS/CICS award totals found but USCRN task amounts NOT PRESENT; NC State subaward under NA19NES4320002 (subaward list) not retrieved; CICS-NC 2009 award NA09NES4400006 not looked up. (from sa3)",
+  "Appropriations committee reports naming USCRN amounts not found (S.Rpt 110-341 and H.Rpt 113-448 had no matching text); r10 used 2 queries. ARL annual reports with USCRN budget not found (ARL 2008 climate strategic plan HTTP 403). USCRN annual reports FY06/10/18/19 in E1 have no budget figures (only FY06 per-station calibration cost $3.6K/year in E1 fy06_annual_report.txt line 956, not re-read here). (from sa3)",
+  "Current ATDD director not confirmed from a readable page: ARL staff directory snippet says John Kochendorfer (page 403); Bruce Baker last shown as ATDD Director in FY19 report (June 2020); LaToya Myles shown as ATDD Deputy Director (about 2019). Read https://www.arl.noaa.gov/?p=6990 in a browser. (from sa1)",
+  "Howard Diamond: only evidence is the undated live NCEI contacts page and FY19 report (ARL College Park). No 2024-2026 paper or page found; OpenAlex returned no recent USCRN works for him. (from sa1)",
+  "Current ATDD field team lead: only Brent French as Climate Reference Network Lead in the undated (about 2023) ARL story; no 2025-2026 confirmation. Jared Rennie, Mark Hall, Tilden Meyers, Temple Lee, Jesse Bell, Edward Dumas not checked for current status (time). (from sa1)",
+  "No USCRN-specific succession, workforce, knowledge-transfer or COOP plan found; no OIG/GAO audit of USCRN (GAO-11-800 is USHCN). ARL-wide review statements are snippet-only (PDFs 403). Per-year staff counts not extracted from FY06-FY18 annual reports beyond FY10/FY19 acknowledgement lists; federal vs ORAU-contractor split of the eight-person field team NOT PRESENT. (from sa1)",
+  "No enacted or base USCRN-only amount found. Unread leads: FY09 CJ OAR Climate Data and Information program-change pages (fy09_cj.txt around line 11330+, may list a CRN increase); NOAA FY2005, FY2006, FY2008 Blue Books and CJs (noaa.gov budget archive, fetch_page returns empty; WebFetch saves the PDF); House/Senate CJS committee reports FY2004-FY2008 (H. Rept./S. Rept. 'Climate Reference Network' with $); FY05 USCRN annual report says funding limitations allowed only 10 stations in FY2005 (snippet, not read); CHRG-108shrg2910485 (Senate CJS FY2005 hearing) not read; Senate FY2005 NOAA hearing CHRG-108shrg20673 searched: no CRN mention. (from sa4)",
+  "Which cooperative institute (or other vehicle) employs ATDD Oak Ridge non-federal staff since 2025, with award number and amount: NOT found in 2 searches (ATDD Oak Ridge cooperative institute NOAA 2025; Air Resources Laboratory cooperative institute award 2025 Oak Ridge). Only context found: Oak Ridge Today (Aug 31 2016) says The University of Oklahoma and Oak Ridge Associated Universities were recently awarded $8.4 million over three years, for CIMMS research capabilities through partnership with NOAA ORAU-managed ATDD (award number NOT PRESENT); ARL 2024 highlights mention CIWRO (OU) CopterSonde work. Leads not tried: ORAU 2025 news on ending ATDD support, USAspending search for recipient University of Oklahoma CIWRO award with ATDD, NOAA OAR cooperative institute competition 2024-2025, CISESS and UT. oakridgetoday.com refused by sandbox (read via WebFetch). (from fu2)",
+  "Crossref not run for Howard J. Diamond or C. Bruce Baker (time). Crossref query.author with sort=published&order=asc is unusable: for Palecki it returned a 1493 record by unrelated authors out of 2891540 results (saved as crossref_palecki_unused.json); use filter=until-pub-date:<year> with relevance order instead, as done for Meyers, Palecki, Leeper, Kochendorfer. (from fu2)",
+  "Deadline reached (6 minutes given) after FY2024 and FY2023 CJs. Not read: NOAA CJs FY2022, FY2021, FY2020, FY2019, FY2018, FY2017, FY2016, FY2014, FY2013, FY2012, FY2011. FY2025 CJ URL found, not read: https://www.noaa.gov/sites/default/files/2024-03/NOAA_FY25_Congressional_Justification.pdf. CJ index: https://www.noaa.gov/organization/budget-finance-performance/budget-and-reports (from fu1)",
+  "Update: FY2022 CJ also read (USCRN named, no amount). Still unread: FY2021, FY2020, FY2019, FY2018, FY2017, FY2016, FY2014, FY2013, FY2012, FY2011 CJs. The CJs read so far have no ATDD/USCRN line in OAR; the OAR parent is Regional Climate Data & Information (FY2024 CJ: 29 Pos / 48,470 base, 51,976 request, in $K; FY2023 CJ: 28 / 43,403 base). These are parent totals, not USCRN figures. (from fu1)",
+  "Final: FY2024-FY2021 CJs read, none gives a USCRN amount. Unread CJ URLs from the noaa.gov budget-and-reports page: FY20 /sites/default/files/legacy/document/2019/Nov/NOAA-FY20-Congressional-Justification.pdf; FY19 /sites/default/files/legacy/document/2019/Nov/FY19-NOAA-CJ.pdf; FY18 /sites/default/files/legacy/document/2019/Nov/FY18-NOAA-CJ.pdf (all on www.noaa.gov). FY2017, FY2016 and FY2011-FY2014 are not linked on that page (try corporateservices.noaa.gov/nbo/). (from fu1)",
+  "ATDD field team federal/ORAU/CI split; ORAU's NOAA award number not found (USAspending recipient profile needs a POST search).",
+  "SORD reorganization date (between 2024-12-13 and 2026-11-26; Wayback captures could date it).",
+  "USCRN base funding amount in any year; CJs FY2002-06, FY2008, FY2011-14, FY2016-24 not read."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "Howard J. Diamond; Michael A. Palecki; Ronald D. Leeper; C. Bruce Baker",
+   "tool": "lookup (OpenAlex authors)",
+   "notes": "OpenAlex /authors?search for the four named candidates; all found (Baker split into several records, none with ORCID)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "oldest and newest works per author (filter author.id, sort publication_year)",
+   "tool": "lookup (OpenAlex works)",
+   "notes": "Diamond, Palecki, Leeper, Baker, Meyers, Rennie, Kochendorfer, Dumas, Lee, Myles; Baker and Meyers needed retries (IncompleteRead)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ORCID employments for Diamond, Palecki, Leeper, Meyers",
+   "tool": "lookup (ORCID employments)",
+   "notes": "pub.orcid.org v3.0 /employments returned XML (saved .notjson.txt); Meyers record empty",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Dumas; Mark E. Hall; Kochendorfer; Myles; Rennie; Jesse E. Bell; Temple R. Lee; Timothy B. Wilson",
+   "tool": "lookup (OpenAlex authors)",
+   "notes": "secondary people plus new name Wilson; Kochendorfer refetched by ID after IncompleteRead",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "\"Climate Reference Network\" 2020-2026",
+   "tool": "lookup (OpenAlex works)",
+   "notes": "OpenAlex works search, top 40 of 616 by relevance",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ORCID employments for Kochendorfer, Rennie, Temple Lee, Myles, Timothy B. Wilson",
+   "tool": "lookup (ORCID employments)",
+   "notes": "Wilson record has no employment entries",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Crossref query.author C. Bruce Baker / Howard J. Diamond sorted oldest first",
+   "tool": "lookup (Crossref works)",
+   "notes": "fuzzy author matching returned 1600s-1700s items by other people; unusable, files renamed _unused",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Reference Network congressional justification",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Reference Network appropriations report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov, govinfo.gov",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Air Resources Laboratory annual report Climate Reference Network",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GET api/v2/awards/ASST_NON_NA19NES4320002_1330 and ASST_NON_NA14NES4320003_1330",
+   "tool": "lookup (USAspending)",
+   "notes": "keyword POST search unavailable; looked up cooperative agreement FAINs directly",
+   "from": "sa3",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Reference Network million budget NOAA FY2008",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA budget Climate Reference Network NESDIS million request 2004",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ORAU Climate Reference Network contract ATDD",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Reference Network Senate committee report recommendation NOAA",
+   "tool": "WebSearch",
+   "notes": "allowed_domains congress.gov, govinfo.gov (2nd query for r10)",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Climate Reference Network transfer NESDIS to OAR Regional Climate Data and Information budget",
+   "tool": "WebSearch",
+   "notes": "no filter",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA FY 2012 congressional justification U.S. Climate Reference Network Alaska million",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov (2nd query for r4)",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA budget estimates U.S. Climate Reference Network Regional Climate Data and Information 2020",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ATDD staff Climate Reference Network",
+   "tool": "WebSearch",
+   "notes": "allowed_domains arl.noaa.gov, noaa.gov; snippet named Mark Hall (Senior Engineer USCRN, older item) and Diamond as PM (2016-era)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN contacts NCEI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov; contacts page fetched",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CISESS annual report Climate Reference Network",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cisess.umd.edu, ncics.org; CISESS NC AR 2019-20 and 2022-23 found",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network OIG audit",
+   "tool": "WebSearch",
+   "notes": "no filter; no USCRN OIG audit in results",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "OAR workforce plan succession",
+   "tool": "WebSearch",
+   "notes": "no filter; results Oregon/OPM generic; NOAA Workforce Succession Planning Toolkit on OPM wiki, generic not USCRN",
+   "from": "sa1",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ATDD director Oak Ridge NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; snippet: ARL staff directory names Kochendorfer ATDD Division Director",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Palecki NCEI Climate Reference Network 2024",
+   "tool": "WebSearch",
+   "notes": "no filter; AMS 2024 abstracts",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Climate Reference Network GAO",
+   "tool": "WebSearch",
+   "notes": "2 of 3; only GAO-11-800 (USHCN) mentions USCRN in passing; no USCRN audit found",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Leeper CISESS USCRN 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; nothing relevant",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kochendorfer ATDD division director",
+   "tool": "WebSearch",
+   "notes": "no filter; nothing relevant",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Climate Reference Network\" Kochendorfer Diamond Leeper 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; nothing new",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Air Resources Laboratory strategic plan workforce",
+   "tool": "WebSearch",
+   "notes": "2 of 3; allowed_domains noaa.gov; ARL reviews/strategic plan found (PDFs 403)",
+   "from": "sa1",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "LaToya Myles ATDD director",
+   "tool": "WebSearch",
+   "notes": "no filter; NOAA story says promoted to ATDD Deputy Director (about 2019); climate.gov title says she now leads a field division (page 403)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ARL science review 2022 Climate Reference Network single PI succession",
+   "tool": "WebSearch",
+   "notes": "no filter; agenda + Diamond talk PDF (403); nothing USCRN-specific on succession",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Brent French ATDD Climate Reference Network",
+   "tool": "WebSearch",
+   "notes": "no filter; only the ARL story caption",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Howard Diamond USCRN program manager 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; nothing relevant",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OpenAlex works by raw author name palecki/leeper/kochendorfer/howard diamond since 2023-2024",
+   "tool": "lookup (OpenAlex works by author)",
+   "notes": "api.openalex.org; Diamond: no USCRN-related works returned",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" appropriations report million",
+   "tool": "WebSearch",
+   "notes": "allowed_domains govinfo.gov, congress.gov; led to CHRG-109hhrg27256, CHRG-109hhrg99903",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA budget justification \"Climate Reference Network\" 2007",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; led to FY07 Blue Book, FY09 CJ",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Climate Reference Network\" fiscal year 2005 NOAA request million omnibus",
+   "tool": "WebSearch",
+   "notes": "allowed_domains govinfo.gov, congress.gov, noaa.gov; led to CHRG-108shrg20673, CHRG-109shrg62359",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA_FY09_Final_CJ.pdf and FY07FinalBlueBook_FINAL.pdf",
+   "tool": "lookup (WebFetch PDF save)",
+   "notes": "fetch_page.py returned empty; WebFetch saved PDFs, converted with pdftotext",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ATDD Oak Ridge cooperative institute NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no 2025 vehicle found; led to Oak Ridge Today 2016 OU/ORAU $8.4 million item",
+   "from": "fu2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Air Resources Laboratory cooperative institute award 2025 Oak Ridge",
+   "tool": "WebSearch",
+   "notes": "no domain filter; nothing on the 2025 vehicle; ARL 2025 Boundary Matters PDFs listed but not read",
+   "from": "fu2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA FY 2024 congressional justification Climate Reference Network",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; found NOAA_FY24_CJ.pdf and FY25 CJ URL",
+   "from": "fu1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA FY 2023 congressional justification pdf",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; found NOAAFY23CJ.pdf",
+   "from": "fu1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA FY 2022 congressional justification pdf",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; found NOAA FY22 CJ.pdf",
+   "from": "fu1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "NOAA FY 2021 congressional justification pdf",
+   "tool": "WebSearch",
+   "notes": "allowed_domains noaa.gov; CJ link then taken from the budget-and-reports page via WebFetch",
+   "from": "fu1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "TSERS unreduced retirement eligibility age 65 five years",
+   "tool": "WebSearch",
+   "notes": "allowed_domains myncretirement.com, ncsu.edu; found NC State HR TSERS page"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=arl.noaa.gov/about/staff-directory-2/",
+   "tool": "fetch_json (Wayback CDX)",
+   "notes": "49 monthly captures 2022-2026; read 2024-12-13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Oak Ridge ATDD cooperative institute ORAU 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "nothing on the ATDD vehicle"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Oak Ridge Associated Universities NOAA cooperative agreement Air Resources Laboratory usaspending",
+   "tool": "duckduckgo (browser)",
+   "notes": "USAspending recipient profile only; no NOAA award"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Howard Diamond NOAA Climate Reference Network 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "ARL bio page found and read"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA ARL/ATDD",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "ATDD staff pages",
+   "query": "ATDD staff Climate Reference Network",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "USCRN contacts",
+   "query": "USCRN contacts NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "CISESS",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q1",
+   "aim": "CISESS annual reports",
+   "query": "CISESS annual report Climate Reference Network",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "congressional justifications",
+   "query": "Climate Reference Network congressional justification",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q4",
+   "aim": "USAspending award records",
+   "query": "Climate Reference Network",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NOAA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "OIG/GAO audits",
+   "query": "Climate Reference Network OIG audit",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "OpenAlex author lookups",
+   "query": "OpenAlex authors",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA OAR",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q3",
+   "aim": "workforce plans",
+   "query": "OAR workforce plan",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA ARL",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "ARL annual reports",
+   "query": "Air Resources Laboratory annual report Climate Reference Network",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "Congress",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "appropriations reports",
+   "query": "Climate Reference Network appropriations report",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 15.0,
+  "elapsed_min": 9.4,
+  "shift_min": 0,
+  "ceiling": 120000,
+  "research_stop_tokens": 75000,
+  "subagent_stop_tokens": 60000,
+  "tokens": 67624,
+  "subagent_minutes_planned": 10,
+  "subagent_minutes": 8.3,
+  "follow_ups": 0,
+  "continuations": 1,
+  "refusals": 0,
+  "research_stop": null,
+  "subagent_stop": true
+ }
+}

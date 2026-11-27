@@ -81,7 +81,6 @@ The 2013 "centers" model is no longer described anywhere current ([Sapiano et al
 - **Missing figures:** no staff count exists in public sources. No NESDIS role in either daily product was found. GSFC's current part in routine V1.3 production isn't stated after 2017.
 - **Unread pages:** GPCC's IPWG12 talk is unread (the sandbox refused the host, WebFetch got a 404, and there is no Wayback copy). GEWEX pages were read only through WebFetch.
 - **Not run:** the checking subagent (standard tier).
- You can check whether to add any to your allowed domains.
 
 ## Sources
 

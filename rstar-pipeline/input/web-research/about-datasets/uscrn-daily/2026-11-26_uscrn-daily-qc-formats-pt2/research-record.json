@@ -1,0 +1,1741 @@
+{
+ "question": "How is USCRN Daily (the U.S. Climate Reference Network's daily01 product) processed, quality-controlled and calibrated, what software produces it, and how open are its formats and access routes (FAIR per route), with each finding weighed against D-4, P-3, DIRS-1 and DIRS-4? Builds on Part 1 (2026-11-26_uscrn-daily-about-pt1) and 2026-11-23_ghcn-daily-infrastructure-pt8.",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions (QC, calibration, software, docs, FAIR); no set of 15+, no year series, no active dispute; user limit 30 min / 240k",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Processing and QC: method combining the wires and wetness sensor into 5-minute and daily precipitation; checks, manual review, flags, who does each step",
+   "status": "answered",
+   "source_ids": [
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s1",
+    "s19",
+    "s20",
+    "s22",
+    "s37"
+   ],
+   "remaining_gap": "The daily summation/completeness rule and who runs manual exceptions today were not found."
+  },
+  {
+   "id": "q2",
+   "question": "Calibration of the weighing gauge: reference, traceability, who",
+   "status": "answered",
+   "source_ids": [
+    "s18",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s32"
+   ],
+   "remaining_gap": "No procedure document after 2003; who certifies the reference weight and how often; wetness-sensor calibration not found."
+  },
+  {
+   "id": "q3",
+   "question": "Software, algorithms, computing and outside facilities",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s5",
+    "s8",
+    "s9",
+    "s10",
+    "s21",
+    "s35"
+   ],
+   "remaining_gap": "Datalogger program publication and current hosting of the processing (NCEI on-premises vs cloud) not checked."
+  },
+  {
+   "id": "q4",
+   "question": "Whether the documentation would let a newcomer run the processing",
+   "status": "answered",
+   "source_ids": [
+    "s16",
+    "s17",
+    "s18",
+    "s8",
+    "s9",
+    "s21",
+    "s23"
+   ],
+   "remaining_gap": "X030–X039 plans and the Site Information Handbook not read."
+  },
+  {
+   "id": "q5",
+   "question": "FAIR rating per format and access route",
+   "status": "answered",
+   "source_ids": [
+    "s2",
+    "s3",
+    "s4",
+    "s7",
+    "s33",
+    "s34",
+    "s35",
+    "s36"
+   ],
+   "remaining_gap": "No NODD cloud copy or THREDDS endpoint found; re3data entry not opened."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/CRN_Ingest_Functional_Spec.pdf",
+   "fetched_url": null,
+   "title": "USCRN/USRCRN Data Ingest Functional Specification",
+   "author_org": "NOAA NCEI (author: Diana Kantor, Software Developer, ERT Inc.)",
+   "published": "undated (refers to 'As of 2011')",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crn_ingest_spec.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated; Java code referenced but where it is published (if anywhere) not stated in lines read; ERT Inc. is a contractor.",
+   "found_by": [
+    "sa3",
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://api.datacite.org/dois/10.7289/V5H13007",
+   "fetched_url": null,
+   "title": "DataCite record: United States Climate Reference Network (USCRN) Quality Controlled Datasets",
+   "author_org": "DataCite / NOAA NCEI",
+   "published": "created 2016-05-13",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "sa3-q5-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/datacite_V5H13007.json",
+   "retrieved": "2026-11-26",
+   "limitations": "DOI covers USCRN QC datasets collectively, not daily01 alone.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/insitu-observations-near-surface-temperature-us-climate-reference-network",
+   "fetched_url": null,
+   "title": "CDS catalogue (STAC) record: In situ observations ... US Climate Reference Network near the surface from 2006 to present",
+   "author_org": "ECMWF / Copernicus Climate Change Service",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cds_uscrn_stac.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Text of the USCRN data policy PDF not read. Passage joins JSON fragments.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://cds.climate.copernicus.eu/datasets/insitu-observations-near-surface-temperature-us-climate-reference-network?tab=overview",
+   "fetched_url": null,
+   "title": "In situ observations of meteorological and soil variables from the US Climate Reference Network near the surface from 2006 to present (CDS overview)",
+   "author_org": "Copernicus Climate Change Service",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cds-climate-copernicus-eu-datasets-insitu-observations-near-_155450.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Read 2026-11-26 in Part 1 via browser; whether variable names follow CF NOT PRESENT on overview; licence shown on Download tab not in this text.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ncei.noaa.gov/access/crn/instruments.html",
+   "fetched_url": null,
+   "title": "Instruments (USCRN)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/crn_instruments.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not name Wallops or NESDIS DCS.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://cds.climate.copernicus.eu/licences/uscrn-data-policy",
+   "fetched_url": null,
+   "title": "USCRN data policy (rev. 1) (CDS licence page)",
+   "author_org": "NOAA NCEI, hosted by Copernicus CDS",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Fetch-model summary, not verbatim except the one quoted sentence; full PDF not read.",
+   "found_by": [
+    "sa3"
+   ],
+   "local_file_note": "NOT SAVED (WebFetch summary; PDF host object-store.os-api.cci2.ecmwf.int refused by sandbox)"
+  },
+  {
+   "id": "s7",
+   "url": "https://confluence.ecmwf.int/spaces/CKB/pages/358884472/Near-surface+temperature+from+US+Climate+Reference+Network+since+2006+onward+Product+User+Guide+and+Specification+PUGS",
+   "fetched_url": null,
+   "title": "Near-surface temperature from US Climate Reference Network since 2006 onward: Product User Guide and Specification (PUGS)",
+   "author_org": "CNR-IMAA (Fabio Madonna) for ECMWF/C3S; contributors NPL, CNR-IMAA, NUIM",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q5-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Quotes via WebFetch extraction model, not a saved raw copy; verify against page.",
+   "found_by": [
+    "sa3"
+   ],
+   "local_file_note": "NOT SAVED (WebFetch extraction)"
+  },
+  {
+   "id": "s8",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/documentation/program/",
+   "author_org": "NOAA NCEI",
+   "published": "listing dates 2002-2017",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Fetch-model listing; subdirectories (NewPrecip/, technotes/) not checked for code. Data Communications Plan (likely GOES/Wallops route) not read.",
+   "found_by": [
+    "sa3",
+    "sa1"
+   ],
+   "local_file_note": "NOT SAVED (WebFetch extraction)"
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/NewPrecip/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/documentation/program/NewPrecip/",
+   "author_org": "NOAA NCEI",
+   "published": "2015-07-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "PDF itself not read (lead for q1/q3 precipitation algorithm description).",
+   "found_by": [
+    "sa3",
+    "sa1"
+   ],
+   "local_file_note": "NOT SAVED (WebFetch extraction)"
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/Data%20Communications%20Plan%2052506.pdf",
+   "fetched_url": null,
+   "title": "Data Communications Plan (Ocean Systems Test and Evaluation Program)",
+   "author_org": "NOAA NOS CO-OPS (filed in NCEI USCRN program documentation folder)",
+   "published": "May 2006",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-q3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/data_comms_plan.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "CO-OPS document from 2006, not USCRN; GOES DCS facts are as of 2006 and may be out of date (NOAASIS 2019-2025 decks not read).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/maintenance/2016-05/USCRN_OAP2.0+2.1_Weighted_Average_Precipitation_Calculation_System.pdf",
+   "fetched_url": null,
+   "title": "Current USCRN Weighted Average Precipitation Calculation System - May 17, 2016",
+   "author_org": "NOAA NCEI USCRN Program",
+   "published": "2016-05-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oap_weighted_avg_2016.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Summary only (2 pages); refers to the OAP 2.0 Description for full detail; no code, no pseudocode beyond steps; does not describe the daily aggregation step or who runs it.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/maintenance/2015-09/USCRN_OAP2.0.Description_PrecipChanges.pdf",
+   "fetched_url": null,
+   "title": "U.S. Climate Reference Network (USCRN) Program Official Algorithm for Precipitation Version 2.0 Description",
+   "author_org": "NOAA NCEI USCRN Program",
+   "published": "2015-07-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oap20_description.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Describes algorithm with flowchart (Figure 2) and verification tests; I read pp.1-4 and searched the rest; does not publish code. Database element numbers (318-330) refer to an internal USCRN database.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s13",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/technotes/TN05001GeonorAlgorithm.pdf",
+   "fetched_url": null,
+   "title": "Calculation of USCRN Precipitation from Geonor Weighing Precipitation Gauge (NOAA Technical Note NCDC No. USCRN-05-1)",
+   "author_org": "NOAA NCDC (Baker, Buckner, Collins, Phillips; SOURCECORP and Short and Associates contractors)",
+   "published": "2005-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/tn05001_geonor.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only title page read; superseded by OAP 2.0 in 2015 per daily01 README.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s14",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/daily01/README.txt",
+   "fetched_url": null,
+   "title": "USCRN/USRCRN DAILY FILES README (updated 2017-07-06)",
+   "author_org": "NOAA NCEI",
+   "published": "2017-07-06",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/daily01_README.txt.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "README describes outputs and history, not how to run the processing; no description of automated QC tests or manual review.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/ManualMonitoringHandbook.pdf",
+   "fetched_url": null,
+   "title": "US Climate Reference Network (USCRN) Handbook for Manual Quality Monitoring (DRAFT)",
+   "author_org": "NOAA NCDC USCRN",
+   "published": "2003-06-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/manual_monitoring_handbook.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "DRAFT dated June 2003, before 5-minute precipitation and OAP 2.0; current manual-review practice NOT PRESENT. Only intro and contents read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/X040_d0.pdf",
+   "fetched_url": null,
+   "title": "United States Climate Reference Network (USCRN) Functional Requirements Document, Revision 1 (NOAA-CRN/OSD-2003-0009R1UD0, X040 DCN 1)",
+   "author_org": "NOAA NESDIS",
+   "published": "2007-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/x040_functional_requirements.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "A requirement, not evidence the code was published; whether NCEI made the QC code available is NOT PRESENT in this document.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/access/crn/documentation.html",
+   "fetched_url": null,
+   "title": "USCRN Documentation (NCEI)",
+   "author_org": "NOAA NCEI",
+   "published": "undated (live page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/crn_documentation.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Software/code link NOT PRESENT; ATDD maintenance manual NOT PRESENT; latest dated entry 2022-10.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/X041_d0.pdf",
+   "fetched_url": null,
+   "title": "United States Climate Reference Network (USCRN) Field Site Maintenance Plan (NOAA-CRN/OSD-2003-0010R0UD0, X041 DCN 0)",
+   "author_org": "NOAA NESDIS",
+   "published": "2003-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/x041_field_site_maintenance_plan.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2003 plan (DCN 0); also relevant to q2. Whether current practice matches is NOT PRESENT here.",
+   "found_by": [
+    "sa1",
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/subhourly01/README.txt",
+   "fetched_url": null,
+   "title": "USCRN/USRCRN SUB-HOURLY (5-MINUTE) FILES README",
+   "author_org": "NOAA NCEI",
+   "published": "2017 (per change log)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/subhourly01_README.txt.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Precipitation flag column NOT PRESENT in the flag fields found (searched SR/ST/RH/WET/WIND); hourly02 README not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/maintenance/2017-06/USCRN_OAP2.1.Description_PrecipChanges.pdf",
+   "fetched_url": null,
+   "title": "USCRN Program Official Algorithm for Precipitation Version 2.1 Description of Minor Change, with Appendix A Version 2.1.1",
+   "author_org": "NOAA NCEI USCRN Program",
+   "published": "2016-03-08 (revised 2017-05-11)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oap211_description_2017.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Appendix A (v2.1.1) content not read in full; who performs manual exceptions (named office/staff) NOT PRESENT in passages read; no code published.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/USCRN_Data_Management_Plan-August_2017.pdf",
+   "fetched_url": null,
+   "title": "USCRN Data Management Plan - August 2017",
+   "author_org": "NOAA NCEI",
+   "published": "2017-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/uscrn_dmp_2017.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Says software is under configuration management, not whether it is published; text copied from Part 1 (original PDF not re-downloaded).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/hourly02/README.txt",
+   "fetched_url": null,
+   "title": "USCRN/USRCRN HOURLY FILES README (hourly02)",
+   "author_org": "NOAA NCEI",
+   "published": "2017 (change log through 2017-06-30)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/hourly02_README.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Daily aggregation rule (completeness, LST day summation of hours) NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/CCRs/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/uscrn/documentation/program/CCRs/",
+   "author_org": "NOAA NCEI",
+   "published": "files dated 2005-03-28 to 2008-07-28",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ccrs_dir.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Individual CCR PDFs not opened; CCR 37-46 NOT PRESENT in listing (may exist elsewhere).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://old.wmo.int/extranet/pages/prog/www/IMOP/intercomparisons/SPICE/Docs/SPICE%20GEONOR%20Calibration%20and%20Configuration%20Recommendations%20Dec%205,%202012.pdf.pdf",
+   "fetched_url": null,
+   "title": "SPICE Calibration and Configuration Recommendations for the GEONOR Precipitation Gauge",
+   "author_org": "WMO-SPICE (prepared by Jeffery Hoover)",
+   "published": "2012-12-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/spice_geonor_calib_2012.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WMO-SPICE recommendation for SPICE sites, not a USCRN procedure; PDF obtained via WebFetch binary save from old.wmo.int (.int host).",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: WMO-SPICE recommendation for Geonor gauges",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/research/Geonor-Lab-Test-Report.doc",
+   "fetched_url": null,
+   "title": "Results of Laboratory and Field Calibration-Verification Tests of Geonor Vibrating Wire Transducers from March 2000 to July 2002",
+   "author_org": "Claude E. Duchon, School of Meteorology, University of Oklahoma, for the U.S. Climate Reference Network Management Office",
+   "published": "2002-07-31",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/duchon_2002_geonor_lab_test.doc",
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction only (fragments as quoted by the extractor, not checked against raw text; .doc could not be converted locally: textutil write refused). 2002, pre-full-network.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/CommissioningPlan.doc",
+   "fetched_url": null,
+   "title": "United States Climate Reference Network Commissioning Plan",
+   "author_org": "NOAA NCDC (USCRN program)",
+   "published": "undated (references July 2003 report)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/commissioning_plan.doc",
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction (extractor quote limits); a plan/requirements document, not evidence the NIST conformance is met for the precipitation gauge; the 'USCRN Calibration Procedures' document itself not found.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s27",
+   "url": "https://arl.noaa.gov/uscrn-at-arl",
+   "fetched_url": null,
+   "title": "US Climate Reference Network at NOAA's Air Resources Laboratory",
+   "author_org": "NOAA ARL",
+   "published": "NOT PRESENT in saved text",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/arl_uscrn_at_arl.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "News story; no procedure detail.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/technotes/TN05002PrecipTesting.pdf",
+   "fetched_url": null,
+   "title": "NOAA Technical Note NCDC No. USCRN-05-02, Final Report: Operational Testing of Various Precipitation Sensors in Support of the USCRN",
+   "author_org": "C. Bruce Baker (NOAA/NESDIS/NCDC) et al., Short and Associates",
+   "published": "2005-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/tn05002_precip_testing.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only title/contents read in full; searched for calibrat|weight|NIST with no calibration hits.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/NOAA%20NCDC%20DOCUMENTATION%2007192002.doc",
+   "fetched_url": null,
+   "title": "NOAA/ATDD & NCDC Climate Reference Network Documentation Manual (GEONOR Rain Gauge Calibration Procedure and other sensor procedures)",
+   "author_org": "NOAA ATDD and NCDC",
+   "published": "2002-07-19 (date in file name; calibration sheet dated 24-Sep-01)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/atdd_ncdc_documentation_2002_excerpt.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2002 manual; text from textutil stdout (40.9 MB .doc, mostly images), saved as an excerpt; whether current practice still matches is not stated. Troemner weight certification body not stated (NOT PRESENT). Original .doc saved as atdd_ncdc_documentation_2002.doc.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/USCRN%20Installation%20Guide.pdf",
+   "fetched_url": null,
+   "title": "A Guide for the Installation of a United States Climate Reference Network Station",
+   "author_org": "NOAA NCDC / ATDD (USCRN)",
+   "published": "form date October 14, 2003",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/uscrn_installation_guide.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2003 guide; Geonor Calibration Sheet (line 2199 onward) not read in full.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://www.ncei.noaa.gov/access/isis/event.htm?display=ALLCHANGES&eventid=908",
+   "fetched_url": null,
+   "title": "TX Edinburg 17 NNE: Maintenance - Annual (Completed) Mon Jan 22 22:00:00 UTC 2007: Integrated Station Information System",
+   "author_org": "NOAA NCEI ISIS",
+   "published": "2007-01-22 (event date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction only, no local copy; one station, one 2007 event.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.ncei.noaa.gov/pub/data/uscrn/documentation/metadata/MetaDataMangt.pdf",
+   "fetched_url": null,
+   "title": "Metadata Management (DRAFT, June 2003)",
+   "author_org": "NOAA NCDC USCRN",
+   "published": "2003-06 (DRAFT)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/metadata_mgmt.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2003 draft; only keyword hits read; PDF obtained via WebFetch binary save.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://cds.climate.copernicus.eu/datasets/insitu-observations-near-surface-temperature-us-climate-reference-network?tab=download",
+   "fetched_url": null,
+   "title": "CDS download tab: In situ observations ... US Climate Reference Network (read 2026-11-26)",
+   "author_org": "Copernicus Climate Change Service (ECMWF)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "10.24381/cds.d1f4864d",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/cds-climate-copernicus-eu-datasets-insitu-observations-near-_162253.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Browser read of a JavaScript page; year list may reflect the form while closed",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://api.datacite.org/dois/10.24381/cds.d1f4864d",
+   "fetched_url": null,
+   "title": "DataCite record for the CDS USCRN dataset (10.24381/cds.d1f4864d)",
+   "author_org": "DataCite / ECMWF",
+   "published": "2020",
+   "data_period": null,
+   "source_type": "registry",
+   "evidence_id": "10.24381/cds.d1f4864d",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/datacite_cds_uscrn.json",
+   "retrieved": "2026-11-26",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00546",
+   "fetched_url": "https://web.archive.org/web/20251009214941/https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00546",
+   "title": "NCEI ISO metadata landing page, C00546 USCRN Quality Controlled Datasets (Wayback copy 2025-10-09)",
+   "author_org": "NOAA NCEI",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "C00546",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/c00546_landing_wayback.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Wayback capture of 2025-10-09; live page returned HTTP 503 to sa3",
+   "found_by": [
+    "main",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://object-store.os-api.cci2.ecmwf.int/cci2-prod-catalogue/licences/uscrn-data-policy/uscrn-data-policy_c37d84a0040855c6c0698de99889a39acd806cceb92273f5a3d9cf293171e960.pdf",
+   "fetched_url": "https://web.archive.org/web/20261027043002/https://object-store.os-api.cci2.ecmwf.int/cci2-prod-catalogue/licences/uscrn-data-policy/uscrn-data-policy_c37d84a0040855c6c0698de99889a39acd806cceb92273f5a3d9cf293171e960.pdf",
+   "title": "USCRN data policy (PDF linked as a CDS licence; Wayback copy 2026-10-27)",
+   "author_org": "NOAA NCEI (hosted by ECMWF)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/uscrn_data_policy_wayback.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Wayback copy",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://ncics.org/portfolio/observing-systems/uscrn-precipitation-data/",
+   "fetched_url": null,
+   "title": "Portfolio: Improving USCRN Precipitation Measurements",
+   "author_org": "North Carolina Institute for Climate Studies (NCICS)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/ncics-org-portfolio-observing-systems-uscrn-precipitation-da_163413.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated portfolio page; sandbox refused ncics.org, read in the browser",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "subquestion": "q1",
+   "text": "Since 17 Aug 2015 (OAP 2.0, revised as 2.1) USCRN computes 5-minute precipitation as a weighted average of the Geonor's three vibrating-wire depth changes, each wire weighted by its delta variance, with the wetness sensor deciding whether small changes count; no value is computed when the logger door is open, fewer than two wires are valid, or the gauge is over capacity.",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "a) Calculate wire weights as a function of the average delta variance",
+     "location": "Step 2a"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "Precipitation is not calculated during maintenance periods. … (less than -15 mm is flagged) … Precipitation is calculated only using wires that pass this check with a minimum of at least two healthy wires remaining. Third, the depth values over the stated capacity of the gauge (either 600 mm or 1000 mm, depending on location) are flagged, and precipitation is not calculated. … Positive depth change values over 25 mm in 5 minutes are flagged automatically … Values can be restored manually using the exception process if found to be real. … wire weights assigned inversely proportional to the delta variance such that noisier wires (more variance) are weighted less. … If the wetness state is yes, the delta for that 5 minutes is retained; if the wetness sensor state is no, the delta is set to zero. If the wetness sensor data are flagged, a more complex approach requiring all three wire deltas to be simultaneously positive and within agreement to 0.5 mm is used … the precipitation must be given in tenths of millimeters, and must exceed 0.2 mm for any 5-minute period.",
+     "location": "pp.5-6 (text lines 180-255)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The existing algorithm for calculating precipitation from the USCRN station configuration was developed by Baker et al. (2005) … The final set of requirements was approved by the USCRN Program Configuration Control Board (CCB) in Configuration Change Request (CCR) 46 on 21 April 2014. The new OAP was documented in a refereed journal publication which was accepted in final form during May 2015 (Leeper et al. 2015a; Appendix 1). … These events are being recorded as exceptions based on procedures adopted by the USCRN Program CCB CCR 42, and are being corrected or flagged as part of the OAP 2.0 project. … A subset of 61 variables is required for precipitation calculation each hour, consisting of values for two wetness sensor channels and three weighing bucket gauge depths for each 5-minute interval, a count of minutes that the data logger door was open during the hour, and the flags for these variables. … all raw inputs to the precipitation calculation have been and will be preserved permanently so that precipitation calculations can be revisited in the future. … the shorthand name for the method was wavgCalc, as the algorithm is based on a weighted average approach to combining the three wire depth change (delta) signals into a single value.",
+     "location": "pp.2-4; Appendix 1 = Leeper, Palecki and Davis 2015, J. Atmos. Oceanic Technol., June 2015, pp.1179ff"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "1) Recent revisions to the disdrometer (wetness sensor) range checks inadvertently were not incorporated, which allowed wetness observations that should have been flagged to be used in precipitation calculations; … These events are permanently removed by a manual exception procedure, but the software change limits the size of these events in real time precipitation calculations and prevents 5-minute precipitation values from exceeding established limits. The new version of the precipitation calculation software reflecting this upgrade is referred to as OAP 2.1. … These instances have been well documented and declared to be an exception pending approval by the USCRN configuration control board (CCB). … Port Alsworth, AK, observations were manually flagged using the exception process.",
+     "location": "p.2 Introduction; Results and 'Reprocessing Time & Exceptions' sections (text lines 222-301)"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The initial USCRN approach to calculating precipitation from redundant depth observations, pairwise calculation (pairCalc), was found to be sensitive to sensor noise and gauge evaporation. These findings led to … using a weighted average calculation (wavgCalc).",
+     "location": "Appendix 1 abstract, text file lines 662-665"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own algorithm documents and the peer-reviewed JTECH paper agree; checked in the saved text",
+   "sole_source_reason": "NCEI's own algorithm, product and system documents are the authority for how NCEI processes its own data"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "subquestion": "q1",
+   "text": "daily01 P_DAILY_CALC is a total over the station's local-standard-time day with no quality flag: values built from flagged raw data are reported missing. No public document found states the rule that sums 5-minute or hourly values into the daily total (completeness, missing hours).",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "There are no quality flags for these derived quantities.",
+     "location": "Important Notes, E"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "13 P_CALC [7 chars] cols 90 -- 96 Total amount of precipitation, in mm, recorded during the hour. | E. Calculated fields, such as T_CALC and P_CALC, do not have quality flags associated with them because these are derived quantities from raw data. When the raw data used in the calculation are flagged as erroneous, the derived values are not calculated, and are instead reported as missing. … G. Quality control flags indicate the following: 0 denotes good data and 3 denotes erroneous data.",
+     "location": "Section 5 field 13; Important Notes E and G"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "README text is direct; the absence of a daily rule rests on the documents found, not an exhaustive search",
+   "sole_source_reason": "NCEI's own algorithm, product and system documents are the authority for how NCEI processes its own data"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "subquestion": "q1",
+   "text": "QC is mainly automated at ingest (RANGE, DELTA, DOOR, FROZEN and SENSOR flags, limits held in internal parameter files and the ISIS metadata system); manual review exists as a CCB-approved exception procedure and, in a 2003 draft, a human analyst, but who does it now is not stated.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "This document should contain the information necessary to reproduce the data that are available in NCDC’s data archive and on the USCRN website. … 1. Read and decode (if applicable) the records from an incoming file | 2. Identify element values and apply scaling and rounding to values using stream definitions | 3. Apply flags to suspect values using QC algorithms | 4. Eliminate redundant observations by choosing the highest quality observation for a given station and datetime | 5. Perform calculations for temperature, precipitation, and soil | 6. Store observation data, including measured values, flags and calculated values … This document does not include all of the functionality present in our software, but only what is required to reproduce our data values. | Flags are associated with element values from a station’s datalogger (not calculated values) to indicate that a value is suspect. This also prevents a value from being used for calculations. A value may be flagged with any combination of the following flag types: RANGE DELTA DOOR FROZEN SENSOR … All measured values that have a range specified in the CRN_QC_Range_Params.csv file have the potential to have a range flag applied.",
+     "location": "pp.2-3 (intro, processing steps); p.13 Quality Control Flags"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The existing algorithm for calculating precipitation from the USCRN station configuration was developed by Baker et al. (2005) … The final set of requirements was approved by the USCRN Program Configuration Control Board (CCB) in Configuration Change Request (CCR) 46 on 21 April 2014. The new OAP was documented in a refereed journal publication which was accepted in final form during May 2015 (Leeper et al. 2015a; Appendix 1). … These events are being recorded as exceptions based on procedures adopted by the USCRN Program CCB CCR 42, and are being corrected or flagged as part of the OAP 2.0 project. … A subset of 61 variables is required for precipitation calculation each hour, consisting of values for two wetness sensor channels and three weighing bucket gauge depths for each 5-minute interval, a count of minutes that the data logger door was open during the hour, and the flags for these variables. … all raw inputs to the precipitation calculation have been and will be preserved permanently so that precipitation calculations can be revisited in the future. … the shorthand name for the method was wavgCalc, as the algorithm is based on a weighted average approach to combining the three wire depth change (delta) signals into a single value.",
+     "location": "pp.2-4; Appendix 1 = Leeper, Palecki and Davis 2015, J. Atmos. Oceanic Technol., June 2015, pp.1179ff"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "ingest spec (2013) and OAP docs are direct, the manual-review description is a 2003 draft",
+   "sole_source_reason": "NCEI's own algorithm, product and system documents are the authority for how NCEI processes its own data"
+  },
+  {
+   "id": "c4",
+   "importance": "supporting",
+   "subquestion": "q1",
+   "text": "The algorithms were written partly outside NCEI staff: the weighted-average method by NCICS (cooperative institute) scientist Leeper with NCEI colleagues; the 2005 pairwise note had contractor co-authors.",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "Thanks to a new mathematical algorithm developed by NCICS’ Ronnie Leeper and his colleagues Michael Palecki and Egg Davis at NCEI",
+     "location": "page body"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "contextualizes",
+     "passage": "NOAA Technical Note NCDC No. USCRN-05-1 | Calculation of USCRN Precipitation from Geonor Weighing Precipitation Gauge | C. Bruce Baker NOAA/National Climatic Data Center … Rodney Buckner NOAA/National Climatic Data Center SOURCECORP, Incorporated … William Collins Short and Associates, Inc. … Mark Phillips NOAA/National Climatic Data Center SOURCECORP, Incorporated | April 2005",
+     "location": "title page"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "two official pages; affiliations as printed"
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "subquestion": "q2",
+   "text": "ATDD calibrates each Geonor in the field on the annual visit by loading machined 1000.0 g brass weights and fitting each wire's frequency to depth; the weights were compared to a NIST-traceable standard (a Troemner certified 1000 g weight, A&D scale); monthly 1000 mL verification is listed; the coefficients go to NCEI's station metadata. All procedure documents found are 2002–2003.",
+   "evidence": [
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "Experience thus far has shown that factory calibrations of major components have been accurate | and reliable. Nevertheless, ATDD calibrates the temperature, wind speed, and solar radiation | sensors against National Institute of Standards and Technology (NIST) traceable standards that | are re-certified annually. The Geonor precipitation gauges are calibrated in the field using | calibration weights that were compared to a NIST traceable standard weight. … Annually: Re-calibration and refurbishment in accordance with the Scheduled | (Annual) Maintenance Checklist (see Appendix C).",
+     "location": "Section 2, Current Maintenance Operations (text lines 348-359); maintenance schedule (line 426)"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "Machined brass weights with and aluminum base/centering weight … Troemner certified calibration weight – 1000g | A & D EK-6000H precision scale … The machined weights weigh 1000.0g (0.1g and represent one liter of water.  The known weights are added to the gauge and the output is recorded. … Input values into special 'GEONOR Rain Gauge Calibration Program' to perform a second order linear regression analysis to determine the equation to relate frequency to rainfall depth (Depth (mm) vs. F-Fo).",
+     "location": "Section 'GEONOR Rain Gauge Calibration Procedure' (start of document text)"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "ATDD has initially adopted an annual maintenance requirement, | which involves an on-site visit for routine and preventive maintenance, field calibrations, major | component swap-out, etc. (Appendix C). … Monthly:     Instrument cleaning, inspect for physical damage, etc. 1000 ml | precipitation gauge calibration verification. … Calibrate rain gauge",
+     "location": "Section 2 text lines 417-427; Appendix C checklist line 1020"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Calibrate Geonor | Verify Geonor (use 1000 mL of H2O) … Geonor Test        (for AMV, do verification before and after calibration) … (1000 mL= 50 mm) … Form Date: October 14, 2003",
+     "location": "text lines 661-662, 1901-1908; checklist lines 534-542; Geonor Calibration Sheet p.56"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "contextualizes",
+     "passage": "During installation, ATDD collects the necessary metadata items, as described in The | Complete Guide to Installing a USCRN Station. Specific parameters include the serial | numbers of the instruments, the calibration coefficients, driving instructions, host contact | information.",
+     "location": "Section 2.4 (text lines 199-208)"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "During every visit, teams switch out one of three platinum resistance thermometers, calibrate and clean out rain gauges, swap out the solar radiation sensor, anemometer, replace failed soil sensors, update the data logger as required each year",
+     "location": "line 30; also line 24, 40"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "ATDD's and NCEI's own documents agree, but none is newer than 2003 except the undated ARL page"
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "subquestion": "q2",
+   "text": "No source ties USCRN gauge calibration to a WMO Regional Instrument Centre, to NIST services directly, or to WMO-SPICE; Geonor's view (in SPICE's 2012 recommendations) is that factory calibration is stable and faulty wires go back to Geonor, and USCRN's own 2002 test found 19 of 20 wires stable.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "SPICE Recommendation: The independent calibration of the individual GEONOR vibrating | wire transducers is not recommended for site managers. | GEONOR’s experience is that the factory calibration of the vibrating wire transducer does | not change significantly over time. This is supported by DiBiagio i, Rasmussen ii, and previous | studies within the CRN group. Vibrating wire transducers that are found to be out of | calibration should be returned to GEONOR for factory recalibration. … The field check is performed by | adding a 1.5 kg of water to the bucket, corresponding to 75 mm of precipitation. Each | observed transducer frequency must be within 0.5 % of the calibration frequency for | acceptance.",
+     "location": "p.1, sections 1-3"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "contextualizes",
+     "passage": "Final Report: Operational | Testing of Various | Precipitation Sensors in | Support of the United | States Climate Reference | Network (USCRN)",
+     "location": "title page, table of contents"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "absence of a RIC or NIST-service link rests on the searches run"
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "subquestion": "q3",
+   "text": "The processing software (ingest decoder, QC, precipitation and soil calculations, the USCRN database and product generation, on a Linux machine with USCRN and LRGS interpreter software) is NCEI's, under NCEI configuration management, and is described in documents but not published; the 2007 requirements say the QC code shall be made available to users.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Read and decode (if applicable) the records from an incoming file … Apply flags to suspect values using QC algorithms … Perform calculations for temperature, precipitation, and soil … Store observation data, including measured values, flags and calculated values | This document does not include all of the functionality present in our software, but only what is required to reproduce our data values. | Data come to us in one of three formats: LRGS, NOAAPort, or PDA. LRGS and NOAAPort both contain records as they were transmitted via satellite while PDA records are downloaded directly from a station’s datalogger. | See the Decoding section and the RecordDecoder.java code. | 4-character string KWAL to indicate the source was Wallops Island",
+     "location": "pp. 3-5 (text lines 80-192); SoilCalc.java at line 950; ISIS at line 300"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "it is processed on a linux box running USCRN and LRGS interpreter software. Data is then uploaded into a database.",
+     "location": "Lineage Statement"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "contextualizes",
+     "passage": "The detailed quality control software code shall be made",
+     "location": "7.3.1"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NCEI documents are direct; 'not published' rests on directory listings and a GitHub search",
+   "sole_source_reason": "NCEI's own algorithm, product and system documents are the authority for how NCEI processes its own data"
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "subquestion": "q3",
+   "text": "Routine data reach NCEI through NESDIS's GOES Data Collection System (TX320 transmitters, Wallops receive station, LRGS/NOAAPort feeds); records downloaded directly from the logger are a fallback that can later replace satellite values.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Read and decode (if applicable) the records from an incoming file … Apply flags to suspect values using QC algorithms … Perform calculations for temperature, precipitation, and soil … Store observation data, including measured values, flags and calculated values | This document does not include all of the functionality present in our software, but only what is required to reproduce our data values. | Data come to us in one of three formats: LRGS, NOAAPort, or PDA. LRGS and NOAAPort both contain records as they were transmitted via satellite while PDA records are downloaded directly from a station’s datalogger. | See the Decoding section and the RecordDecoder.java code. | 4-character string KWAL to indicate the source was Wallops Island",
+     "location": "pp. 3-5 (text lines 80-192); SoilCalc.java at line 950; ISIS at line 300"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "Every USCRN observing station is equipped with a standard set of sensors, a data logger, and a satellite communications transmitter. … Off-the-shelf commercial equipment and sensors are selected based on performance, durability, and cost. | A geostationary satellite transmitter sends the data to the National Centers for Environmental Information where the data undergo a quality control check and are placed on the Web continuously as the data arrive. | Campbell Scientific CR3000 Micrologger | Campbell Scientific TX320 High Data Rate GOES Transmitter",
+     "location": "text lines 19, 33, 82, 86"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "contextualizes",
+     "passage": "the data collection service available on NOAA’s GOES (geostationary operational environmental satellites) operated by the NOAA National Environmental Satellite Data and Information Service Data Collection System (NOAA/NESDIS/DCS) is used for most data transmittals. | delivers real-time one-way data transmissions from the field to receivers on the ground station at Wallops Island, Virginia. | The Wallops Island receiving station was recognized as a single point of failure to the GOES system. In 2000, a backup system receiving",
+     "location": "pp. -1- and section 2 (text lines 224-268, 399-406)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "ingest spec and NCEI instruments page agree",
+   "sole_source_reason": "NCEI's own algorithm, product and system documents are the authority for how NCEI processes its own data"
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "subquestion": "q5",
+   "text": "NCEI's route (C00546, DOI 10.7289/V5H13007) serves documented fixed-width ASCII text over open HTTPS/FTP with no login, but names no licence (only a citation request and liability text) and uses its own column names, not CF names.",
+   "evidence": [
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "Distribution Formats | ASCII Text",
+     "location": "Access section"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "Access Constraints | Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data",
+     "location": "Constraints"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "\"title\": \"United States Climate Reference Network (USCRN) Quality Controlled Datasets\" | \"publisher\": \"NOAA National Centers for Environmental Information\" | \"subjects\": [] | \"formats\": [] | \"version\": null | \"rightsList\": [] | \"url\": \"https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00546\" | \"created\": \"2016-05-13T19:18:41.000Z\"",
+     "location": "JSON lines 79-160"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "contextualizes",
+     "passage": "It is the general practice of USCRN to not calculate derived variables if the input data to these calculations are flagged due to quality concerns. These data records are versioned based on the processing methods and algorithms used for the derivations, and data may be updated when final, higher-quality records are delivered manually from the stations.",
+     "location": "JSON line 112 (descriptions)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI catalog record and DataCite record, read as raw text"
+  },
+  {
+   "id": "c10",
+   "importance": "central",
+   "subquestion": "q5",
+   "text": "The Copernicus CDS copy has its own DOI (10.24381/cds.d1f4864d), NetCDF4 and CSV in the C3S CDM-Obs-Core model with SI units and a CC-BY licence plus the USCRN data policy, but needs a login, and on 2026-11-26 its download form was closed with years offered only to 2022.",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "Download form temporarily closed. … 2021 | 2022 | Month … NetCDF4 (CDM-Obs-Core) | CSV (CDM-Obs-Core) | Terms of use | CC-BY licence … USCRN data policy … Login/register to accept licences",
+     "location": "Download tab"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "\"publisher\": \"ECMWF\" … \"publicationYear\": 2020 … \"formats\": [] … \"version\": null … \"rightsList\": []",
+     "location": "publisher; publicationYear; formats; version; rightsList"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Download form temporarily closed. | The dataset can be downloaded as NetCDF files (CDM-Obs-Core, see documentation) or as comma-separated values (CSV) files. | Versions | 1 at present | Update frequency | Every year | Air temperature | K | Latitude | degree_north",
+     "location": "Overview tab, lines 18-81, 126-130, 757-761"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "read the CDS page and STAC and DataCite records directly"
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "subquestion": "q5",
+   "text": "The USCRN data policy says the data are open and asks for citation of Diamond et al. 2013, with warranty and liability disclaimers; it names no licence.",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "USCRN data are open for the users.",
+     "location": "p. 1"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "USCRN data are open for the users.",
+     "location": "licence page body"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "full PDF read via its saved copy"
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "subquestion": "q4",
+   "text": "NCEI publishes a program library (requirements, plans, handbooks, ingest spec, OAP descriptions, READMEs) good enough to re-implement the precipitation algorithm, but not to run the processing: the code, the QC parameter files, the ISIS system, CCRs after 2008 and any current ATDD maintenance manual are not public, and most documents date from 2002–2007.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "contextualizes",
+     "passage": "CCRs/ | 2008-07-28 12:15 | NewPrecip/ | 2015-07-29 14:20 | … technotes/ | 2005-09-06 15:10 | CRNFRDFinal.doc | 2002-07-16 08:07 | 290816 | CRN_Ingest_Functional_Spec.pdf | 2013-11-18 08:38 | 1310626 | … Data Communications Plan 52506.pdf | 2013-01-04 15:09 | 11316301 | … ManualMonitoringHandbook.pdf | 2015-03-02 13:29 | 157502 | … USCRN Installation Guide.pdf | 2004-08-18 17:02 | 944801 | USCRN_Data_Management_Plan-August_2017.pdf | 2017-08-23 14:05 | 2198173 | … X040_d0.pdf | 2007-07-25 12:49 | 562558 | X041_d0.pdf | 2004-03-19 16:10 | 855203",
+     "location": "directory listing"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "contextualizes",
+     "passage": "CRN-CCR 04 - Geonor Vibrating Wire Algorithm.pdf | 2005-03-28 14:17 | 49876 | … CRN-CCR 14 - Geonor Post Processing.pdf | 2005-03-28 14:17 | 49223 | … CRN-CCR 18 - Precipitation Values at 5-min Intervals.pdf | 2005-03-28 14:17 | 51237 | … CRN-CCR 35-Geonor 1000mm Precip Gauge.pdf | 2008-07-28 12:15 | 34660 | … CRN-CCR22-Wetness Sensor.pdf | 2007-06-05 13:32 | 76676 | … CRN_CCR_Status.xls | 2005-04-12 12:38 | 43008",
+     "location": "directory listing"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Program Foundation Documents Functional Requirements Program Development Plan Configuration Management Plan Test and Evaluation Master Plan … Site Information Handbook Program Site Acquisition Plan Commissioning Plan Field Site Maintenance Plan USCRN/USRCRN Data Ingest Functional Specification … 2017-06 Official Algorithm for Precipitation V2.1.1 | 2016-05 Weighted Average Precipitation Calculation System V2.0 + 2.1 … USCRN Data Management Plan - August 2017 (supersedes September 2012 ) Instrument Monitoring Station Installation/Maintenance",
+     "location": "whole page"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "MIN_PRECIP                                           0.2 mm",
+     "location": "QA constants"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "This document should contain the information necessary to reproduce the data that are available in NCDC’s data archive and on the USCRN website. … 1. Read and decode (if applicable) the records from an incoming file | 2. Identify element values and apply scaling and rounding to values using stream definitions | 3. Apply flags to suspect values using QC algorithms | 4. Eliminate redundant observations by choosing the highest quality observation for a given station and datetime | 5. Perform calculations for temperature, precipitation, and soil | 6. Store observation data, including measured values, flags and calculated values … This document does not include all of the functionality present in our software, but only what is required to reproduce our data values. | Flags are associated with element values from a station’s datalogger (not calculated values) to indicate that a value is suspect. This also prevents a value from being used for calculations. A value may be flagged with any combination of the following flag types: RANGE DELTA DOOR FROZEN SENSOR … All measured values that have a range specified in the CRN_QC_Range_Params.csv file have the potential to have a range flag applied.",
+     "location": "pp.2-3 (intro, processing steps); p.13 Quality Control Flags"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "directory listings and documents read; absence claims rest on the folders listed",
+   "sole_source_reason": "NCEI's own algorithm, product and system documents are the authority for how NCEI processes its own data"
+  },
+  {
+   "id": "c13",
+   "importance": "supporting",
+   "subquestion": "q1",
+   "text": "OAP 2.0 was approved in CCR 46 on 21 April 2014; the ingest computes hourly (P_OFFICIAL), 5-minute and 15-minute Geonor totals; NCEI's catalog dates a new USCRN database version, which updated precipitation for all data and products, to 2015-10-15.",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The final set of requirements was approved by the USCRN Program Configuration Control Board (CCB) in Configuration Change Request (CCR) 46 on 21 April 2014. | Third, the depth values over the stated capacity of the gauge (either 600 mm or 1000 mm, depending on location) are flagged, and precipitation is not calculated.",
+     "location": "oap20_description.txt lines 46 and 190-192"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "contextualizes",
+     "passage": "Calculated precipitation elements are: | P_OFFICIAL: calculated Geonor precip total for hour | P5_1, P5_2,...P5_12: calculated Geonor precip for 5 minutes ending at :05, :10, …:60 (5-minute streams)",
+     "location": "crn_ingest_spec.txt lines 800-806"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "2013-06-19: USCRN Products were released to the public. | 2015-10-15: A new version of the USCRN database was released, resulting in updated precipitation values for all processed data and products.",
+     "location": "c00546_landing_wayback.txt line 76 (lineage)"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own documents, read as raw text"
+  },
+  {
+   "id": "c14",
+   "importance": "supporting",
+   "subquestion": "q4",
+   "text": "The 2007 requirements set precipitation accuracy at 0.25 mm or 2% (whichever is greater) and delivery within 30 days at 97% availability; X041 (2003) puts a Geonor wire failure at 3% a year.",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "contextualizes",
+     "passage": "Precipitation measurements shall meet the following requirements: + 0.25 mm or + 2% of the reported Accuracy value, whichever is greater. | Each CRN field site=s required air temperature and precipitation reports shall be delivered to NCDC within 30 days after the close of the month of observation with a minimum availability of 97%, and in accordance with the transmission schedule with a minimum availability of 95%.",
+     "location": "x040_functional_requirements.txt lines 478 and 755"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "contextualizes",
+     "passage": "The initial conclusion is that the likelihood of any Geonor gauge, in any given year, experiencing a wire failure is 3%, and experiencing a translator failure is 1.5 percent.",
+     "location": "x041_field_site_maintenance_plan.txt line 1465"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "program documents, raw text"
+  },
+  {
+   "id": "c15",
+   "importance": "supporting",
+   "subquestion": "q2",
+   "text": "WMO-SPICE (context, not USCRN) recommends an empty-bucket field check and a new coefficient if any wire's empty-bucket frequency differs by more than 10 Hz from Geonor's calibration.",
+   "evidence": [
+    {
+     "source_id": "s24",
+     "relationship": "contextualizes",
+     "passage": "SPICE Recommendation: Field calibration of the GEONOR gauge should be performed using an empty bucket as per section 5.4 in the GEONOR user manual | If any of the empty bucket transducer frequencies (f0) differ by more than 10 Hz",
+     "location": "spice_geonor_calib_2012.txt lines 33-38"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "WMO document, raw text"
+  },
+  {
+   "id": "c16",
+   "importance": "supporting",
+   "subquestion": "q1",
+   "text": "A 2003 draft handbook has a human analyst supplementing automated QC; subhourly flags are 0 good, 1 overflow, 3 erroneous.",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "USCRN’s data are automatically quality controlled but a human analyst is used to bridge the gap between the current automated process and what that process will become as knowledge and resources effect more sophisticated algorithms. … This document is a set of evolving guidelines - it will change over time as automation is increased, algorithms are added and updated, and new uses for the data are identified. | Appendix B: Ingest & Processing Branch’s “USCRN Limits and Ranges” | Appendix D: Anomaly Tracking System User’s Guide (draft)",
+     "location": "pp.1-3, Table of Contents and Introduction"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "I. Quality control flags indicate the following: 0 denotes good data, 1 denotes field-length overflow, and 3 denotes erroneous data. | 21 WET_FLAG [1 chars] cols 125 -- 125 QC flag for the wetness measurement. See Note I.",
+     "location": "Section 5 field list and Important Notes I"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "subagent-read passages; draft handbook"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "CDS update frequency",
+   "source_ids": [
+    "s4",
+    "s33"
+   ],
+   "status": "unresolved",
+   "explanation": "The overview says the copy is updated every year, but on 2026-11-26 the download form offered years 2006-2022 only and was closed. The form may show only what it had when closed; the CDS help desk would know."
+  },
+  {
+   "claim": "Gauge sensor type",
+   "source_ids": [
+    "s14",
+    "s12"
+   ],
+   "status": "resolved",
+   "explanation": "The daily01 README's Note F calls the gauge sensors 'load cell sensors'; NCEI's OAP documents describe vibrating-wire transducers. The README wording is loose; the algorithm documents are authoritative."
+  },
+  {
+   "claim": "When OAP 2.0 values entered the products",
+   "source_ids": [
+    "s14",
+    "s35"
+   ],
+   "status": "unresolved",
+   "explanation": "The daily01 README dates the switch to OAP 2.0 to 2015-08-17; NCEI's C00546 lineage dates the database release that updated precipitation values for all data and products to 2015-10-15. Possibly two steps (algorithm start, then reprocessing); not confirmed."
+  },
+  {
+   "claim": "Geonor calibration sheet weight unit",
+   "source_ids": [
+    "s30",
+    "s29"
+   ],
+   "status": "unresolved",
+   "explanation": "The 2003 calibration sheet labels the 0-12000 weight column '(mg)', while the 2002 manual uses 1000.0 g weights; likely a misprint for grams, not confirmed."
+  }
+ ],
+ "coverage_gaps": [
+  "No official NOAA/NCEI public code repository for USCRN ingest/QC/product software found (r7, one query). The ingest spec names Java classes RecordDecoder.java and SoilCalc.java; whether they are distributed (e.g. under ncei.noaa.gov/pub/data/uscrn/documentation/program/) not checked. (from sa3)",
+  "USCRN-specific GOES DCS/Wallops dependency only from ingest spec (KWAL source, LRGS/NOAAPort); NOAASIS DCS docs not read. (from sa3)",
+  "Datalogger (CRBasic) program publication not checked. (from sa3)",
+  "NODD cloud copy of USCRN not confirmed; THREDDS endpoint not confirmed; re3data entry not opened; NCEI C00546 ISO record not read (503). (from sa3)",
+  "Data Communications Plan 52506.pdf (11 MB, 2013-01-04) in the NCEI program documentation folder not read; likely describes the GOES/Wallops/LRGS data path. Subfolders NewPrecip/ and technotes/ not listed for code. (from sa3)",
+  "q1: How hourly/5-minute OAP output is summed into daily01 PRECIPITATION (completeness rule, missing-hour handling) NOT found; daily01 README only says flagged inputs give missing values. Leads: hourly02 README, ingest spec calculation sections (crn_ingest_spec.txt pp.14+ not fully read), USCRN Data Management Plan Aug 2017. (from sa1)",
+  "q1: Current manual QC/review practice after 2003 draft handbook not found; who runs the exception procedure (NCEI office or contractor) not stated in passages read. Leads: program/'quarterly station review/' and program/CCRs/ folders on ncei.noaa.gov (not opened); Data Management Plan 2017. (from sa1)",
+  "q1: OAP 2.0 Description Figure 2 flowchart and Leeper et al. 2015 body (in oap20_description.txt beyond line 150) not read in full; AMT 2015 Leeper and Kochendorfer evaporation paper (amt.copernicus.org/articles/8/2291/2015) not read. (from sa1)",
+  "q4: ATDD 'USCRN Maintenance Manual' mentioned in a search summary but no public copy found; X030-X039 plans (Program Development, Config Management, TEMP, Site Acquisition X032, Commissioning) not read; Site Information Handbook and Installation Guide 2004 not read. (from sa1)",
+  "q4: Ingest spec references parameter files (CRN_QC_Range_Params.csv, CRN_Elements.csv, CRN_Stations.csv, stream definition CSVs) and internal system ISIS; none seen in /pub/data/uscrn/documentation/program/ listing; other folders (documentation/maintenance/, documentation/metadata/, products/) not checked for them. (from sa1)",
+  "q4: Requirement 7.3.1 (FRD 2007) that QC code be made available to users; no NOAA-published OAP or ingest code found (one github.com search, third-party repos only). (from sa1)",
+  "q1/q4: The 2013 ingest spec (crn_ingest_spec.txt) contains no match for the word daily: the step that builds daily01 from hourly/5-minute values is NOT PRESENT in it; other flag types are documented there (DELTA for 3 temperature sensors, max delta 0.3, CRN_QC_Delta_Params.csv; FROZEN for soil below 0.5 C, CRN_QC_Frozen_Soil_Params.csv; SENSOR), lines 666-766. (from sa1)",
+  "q2: USCRN Installation Guide (https://www.ncei.noaa.gov/pub/data/uscrn/documentation/program/USCRN%20Installation%20Guide.pdf) not read; search snippet says it lists calibration weights and a Geonor calibration form (mm=A*(Hz-fo)+B*(Hz-fo)^2). (from sa2)",
+  "q2: No current (post-2010) USCRN document found on Geonor calibration practice; all procedure evidence is 2002-2003 (ATDD/NCDC manual, X041, Duchon 2002, Commissioning Plan). The referenced USCRN Calibration Procedures and Scheduled (Annual) Maintenance Checklist (X041 Appendix C, not read) are leads. (from sa2)",
+  "q2: Wetness sensor (Vaisala DRD11A) calibration: NOT FOUND in any source read. (from sa2)",
+  "q2: WMO Regional Instrument Centres: no source links USCRN to a RIC; WMO-SPICE link is via the Geonor recommendations document only (mentions CRN group studies). SPICE final report (IOM Report No. 131) not read. (from sa2)",
+  "q2: Who certifies the Troemner 1000 g weight / NIST-traceable standard weight and how often: NOT PRESENT. (from sa2)",
+  "q2: USCRN-05-02 (TN05002) read only for title/contents and keyword search; Duchon 2002 and Commissioning Plan read via WebFetch extraction only (.doc to text conversion refused: textutil could not write in folder). (from sa2)",
+  "q2: Correction: the Installation Guide was later read (sa2-e8, sa2-e9: checklist and Geonor Calibration Sheet); earlier gap about it is superseded. (from sa2)",
+  "q2: Lead for current practice: NCEI ISIS station event logs (e.g. https://www.ncei.noaa.gov/access/isis/event.htm?display=ALLCHANGES&eventid=908, Annual maintenance 2007) and MetaDataMangt.pdf (Annual Visit Form sent to NCDC); not read. (from sa2)",
+  "Unread page from coverage.py: CDS licence PDF uscrn-data-policy (object-store.os-api.cci2.ecmwf.int, found by sa3) never read; it bears on the CDS-copy licence (q5). Also not checked closely by reconciler: per-figure earlier-date check for every quoted draft figure (only the OAP 2.0 date checked). Problems from coverage.py: s6, s7, s8, s31 have no local_file; s25 is a .doc. (from reconciler)",
+  "Daily summation rule for P_DAILY_CALC not found in any public document (ask ncei.orders@noaa.gov or the USCRN team).",
+  "No NODD/AWS cloud copy of USCRN found (one DuckDuckGo query, sa3 searches).",
+  "Current (post-2003) ATDD Geonor calibration procedure and the certification interval of the reference weight not found."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN GitHub NOAA code",
+   "tool": "WebSearch",
+   "notes": "no filter; results: community zmoon/uscrn (MIT, data loader), NCAR rwrfhydro get_USCRN.R; no official NOAA USCRN repo found. 1 of 3 queries used.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GOES DCS USCRN transmission Wallops",
+   "tool": "WebSearch",
+   "notes": "no filter; results only NOAASIS Wallops CDA/GOES DCS slide decks, nothing USCRN-specific. Ingest spec (sa3-q3-e1) covers KWAL/Wallops source.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "USCRN datalogger program CR3000 Campbell",
+   "tool": "WebSearch",
+   "notes": "no filter; Campbell case study, NCEI instruments page; NCEI doc summarycurrentdatalogger.doc lead not read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "Copernicus CDS USCRN in situ observations licence",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cds.climate.copernicus.eu, confluence.ecmwf.int, climate.copernicus.eu; found STAC record and PUGS on confluence (not read)",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "USCRN data policy NOAA cloud NODD",
+   "tool": "WebSearch",
+   "notes": "no filter; found CDS licence page; no NODD USCRN listing found",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "re3data NCEI Climate Reference Network repository",
+   "tool": "WebSearch",
+   "notes": "no filter; only re3data NCEI record (annotated 'Offline: 2018' per search summary, DOI 10.17616/R3QG7S); not opened. DataCite fetched via fetch_json; NCEI C00546 landing page returned HTTP 503 (WebFetch) and fetch_page failed",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "USCRN netCDF THREDDS NCEI",
+   "tool": "WebSearch",
+   "notes": "no filter; data.gov lists 'Processed Data from the Version 2 USCRN Database' as netCDF exported from the database; no USCRN THREDDS endpoint confirmed",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN precipitation algorithm documentation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; found OAP 2.0 description, weighted-average system, TN05-001, ingest spec, documentation index",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Leeper USCRN precipitation quality control",
+   "tool": "WebSearch",
+   "notes": "no domain filter; pointed to OAP2 description PDF, AMT 2015 paper (Leeper and Kochendorfer evaporation), AMS 2012 abstract; Leeper et al. 2015 JTECH paper itself read as Appendix 1 of OAP 2.0 Description",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN Geonor precipitation algorithm weighted average",
+   "tool": "WebSearch",
+   "notes": "no domain filter; same NCEI PDFs plus OAP2.1 description and AMS confex papers (not read)",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USCRN site acquisition plan siting manual",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; X032 Site Acquisition Plan (2002), X030/X031/X033/X036, Installation Guide, site selection task; functional requirements X040 found via documentation index",
+   "from": "sa1",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USCRN field site maintenance plan ATDD manual",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; X041 Field Site Maintenance Plan read; an ATDD 'USCRN Maintenance Manual' is mentioned in search summary but not found as a public document",
+   "from": "sa1",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USCRN precipitation algorithm source code",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; only third-party repositories (Ranbw224/noaa-uscrn-5min-precipitation, NCAR rwrfhydro get_USCRN.R); no NOAA/NCEI OAP or ingest code found",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ATDD USCRN calibration maintenance annual visit",
+   "tool": "WebSearch",
+   "notes": "no filter; ARL page and NCEI docs",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN NIST traceable calibration precipitation",
+   "tool": "WebSearch",
+   "notes": "no filter; no source ties the Geonor to NIST; NIST appears for PRT/anemometer",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Geonor T-200B calibration vibrating wire factory",
+   "tool": "WebSearch",
+   "notes": "no filter; mostly Geokon results; Geonor factory recalibration found instead in SPICE doc",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN Geonor intercomparison WMO SPICE DFIR",
+   "tool": "WebSearch",
+   "notes": "no filter; found SPICE Geonor calibration recommendations and USCRN TN 05-02",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "WMO Regional Instrument Centre precipitation gauge calibration",
+   "tool": "WebSearch",
+   "notes": "no filter; RICs in general; nothing linking USCRN to a RIC",
+   "from": "sa2",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN Geonor calibration procedure weights field check",
+   "tool": "WebSearch",
+   "notes": "found ATDD/NCDC documentation manual and Duchon 2002",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ATDD calibration laboratory USCRN sensors",
+   "tool": "WebSearch",
+   "notes": null,
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN wetness sensor calibration",
+   "tool": "WebSearch",
+   "notes": "no wetness-sensor calibration procedure found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Climate Reference Network gauge calibration weights",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, arl.noaa.gov, repository.library.noaa.gov; found X041 2003 and USCRN Installation Guide",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN Geonor calibration annual maintenance visit ATDD 2020",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, arl.noaa.gov, repository.library.noaa.gov; nothing after 2010; lead: ISIS station event logs (ncei.noaa.gov/access/isis) e.g. event 908 Annual maintenance 2007",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "url=https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00546",
+   "tool": "fetch_page (Wayback)",
+   "notes": "saved copy 2025-10-09 read; live page 503 to sa3",
+   "from": "main",
+   "copy_of": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00546"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "url=https://object-store.os-api.cci2.ecmwf.int/cci2-prod-catalogue/licences/uscrn-data-policy/",
+   "tool": "fetch_page (Wayback)",
+   "notes": "saved copy 2026-10-27 read in full",
+   "from": "main",
+   "copy_of": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/licences/uscrn-data-policy/uscrn-data-policy_c37d84a0040855c6c0698de99889a39acd806cceb92273f5a3d9cf293171e960.pdf"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "lookup 10.24381/cds.d1f4864d",
+   "tool": "lookup (DataCite DOI)",
+   "notes": "CDS copy DOI record; rightsList empty",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "CDS USCRN dataset page overview, download, documentation tabs",
+   "tool": "lookup (browser, CDS page)",
+   "notes": "form closed; years 2006-2022; CC-BY + USCRN data policy; login to accept",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "USCRN precipitation exception procedure NCEI manual review",
+   "tool": "duckduckgo (browser)",
+   "notes": "found NCICS portfolio page (algorithm by NCICS Leeper); no exception-procedure document",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://ncics.org/portfolio/observing-systems/uscrn-precipitation-data/",
+   "tool": "fetch_page",
+   "notes": "sandbox refused ncics.org (CONNECT 403); read in browser",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "USCRN NOAA Open Data Dissemination AWS bucket",
+   "tool": "duckduckgo (browser)",
+   "notes": "no USCRN NODD/AWS bucket in results; one result mentions USCRN generically",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "USCRN Geonor calibration weights ATDD annual maintenance",
+   "tool": "duckduckgo (browser)",
+   "notes": "no post-2003 USCRN calibration procedure; hits: TN05-001, Geonor Inc. services page, Troemner handling guide (not USCRN)",
+   "from": "main"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NCEI precipitation algorithm documents",
+   "query": "USCRN precipitation algorithm documentation",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA ARL ATDD",
+   "publisher": "the organization itself (operator)",
+   "subquestion_id": "q2",
+   "aim": "ATDD calibration and maintenance practice",
+   "query": "ATDD USCRN calibration maintenance annual visit",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q1",
+   "aim": "peer-reviewed precipitation QC papers",
+   "query": "Leeper USCRN precipitation quality control",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "WMO",
+   "publisher": "standards bodies (intercomparisons)",
+   "subquestion_id": "q2",
+   "aim": "WMO-SPICE Geonor results and recommendations",
+   "query": "WMO SPICE Geonor T-200B DFIR",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NIST",
+   "publisher": "standards bodies and certifiers",
+   "subquestion_id": "q2",
+   "aim": "NIST traceability of the gauge calibration",
+   "query": "USCRN NIST traceable calibration precipitation",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "Geonor",
+   "publisher": "the maker (vendor documentation)",
+   "subquestion_id": "q2",
+   "aim": "factory calibration of vibrating-wire transducers",
+   "query": "Geonor T-200B calibration vibrating wire factory",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA NCEI",
+   "publisher": "registries (code repositories)",
+   "subquestion_id": "q3",
+   "aim": "published USCRN code",
+   "query": "USCRN GitHub NOAA code",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA NESDIS",
+   "publisher": "its parent or operator",
+   "subquestion_id": "q3",
+   "aim": "GOES DCS / Wallops dependence",
+   "query": "GOES DCS USCRN transmission Wallops",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA NCEI",
+   "publisher": "registries",
+   "subquestion_id": "q5",
+   "aim": "catalog and DOI records for C00546",
+   "query": "DataCite 10.7289/V5H13007; NCEI ISO C00546",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "Copernicus C3S",
+   "publisher": "registries (other copies)",
+   "subquestion_id": "q5",
+   "aim": "CDS copy, licence and format",
+   "query": "Copernicus CDS USCRN in situ observations",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "requirements and siting documents",
+   "query": "USCRN functional requirements document",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "WMO",
+   "publisher": "certifiers (Regional Instrument Centres)",
+   "subquestion_id": "q2",
+   "aim": "RIC precipitation gauge calibration",
+   "query": "WMO Regional Instrument Centre precipitation gauge calibration",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 30.0,
+  "elapsed_min": 19.0,
+  "shift_min": 0,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "tokens": 153783,
+  "subagent_minutes_planned": 30,
+  "subagent_minutes": 27.3,
+  "follow_ups": 0,
+  "continuations": 3,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": false
+ }
+}

@@ -75,7 +75,6 @@ Rule used: FAIR passes all four tests; partly FAIR fails one or two (named); non
 - **No missing-data threshold is published.** A user study counts 419 missing days over 32 years, 95% of them in 1983–1999 ([Pietroiusti et al. 2024](https://esd.copernicus.org/articles/15/225/2024/)).
 - **Not read:** the CHRS README and the portal's terms of use (format layout, any license); the NCEI THREDDS catalog (timed out).
 - **Not covered:** whether CHRS's current production code differs from the 2014 package is unpublished; ask CHRS or PERSIANN_contacts@noaa.gov. The GitHub API was refused.
-github.com; you can check whether to add it to your sandbox's allowed domains.
 
 ## Sources
 
