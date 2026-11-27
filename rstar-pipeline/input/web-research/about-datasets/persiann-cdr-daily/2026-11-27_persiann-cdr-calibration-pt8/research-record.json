@@ -1,0 +1,1450 @@
+{
+ "question": "What does PERSIANN-CDR Daily's calibration rest on today, what could replace it, and which of its copies are current? (adds to earlier PERSIANN-CDR runs and the NCEI A2 run)",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions (calibration, alternatives, copies); no set of 15+ members, no multi-year figures across members, no disputed cut",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Calibration and inputs: GridSat-B1 VGAC recalibration from 2024, who maintains it, GPCP version by year, GPCP v2.3 freeze and CHRS switch",
+   "status": "uncertain",
+   "source_ids": [
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s19",
+    "s21",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s32"
+   ],
+   "remaining_gap": "Whether PERSIANN-CDR months from Oct 2024 used VGAC-calibrated GridSat; the 2009-2013 file headers (THREDDS timed out); a GPCP v2.3 end date."
+  },
+  {
+   "id": "q2",
+   "question": "Alternatives: long daily satellite records with coverage, resolution, status",
+   "status": "answered",
+   "source_ids": [
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s21",
+    "s33"
+   ],
+   "remaining_gap": "GSMaP, TAMSAT, GPCP 1DD status not checked; IR source of CMORPH-CDR and CHIRP3 not checked."
+  },
+  {
+   "id": "q3",
+   "question": "Copies: last date and currency of IRI/LDEO, Data Rescue Project, NCEI notice, others",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6",
+    "s7",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26"
+   ],
+   "remaining_gap": "Google Cloud copy not checked; live IRI page behind sign-in."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://web.archive.org/web/20240426080555/https://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.CDR/.PERSIANN-CDR/.v01r01/",
+   "fetched_url": null,
+   "title": "dataset: NOAA NCDC CDR PERSIANN-CDR v01r01 (IRI/LDEO Data Library, Wayback 2024-04-26)",
+   "author_org": "IRI/LDEO Climate Data Library, Columbia University",
+   "published": "Last updated: Tue, 19 May 2020 19:09:48 GMT (captured 2024-04-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/iridl_v01r01_wb20240426.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Wayback copy from 2024-04-26; live page requires sign-in (qc-formats-pt2). Later CDX captures (2024-09-13 parent page) not read. Grid starts 1983, not 1982 as at NCEI.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2026/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/2026/",
+   "author_org": "NOAA NCEI",
+   "published": "listing as of 2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_access_2026.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Same newest date as news-pt4 found; no newer files added since 2026-10-13.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.ncei.noaa.gov/node/8306",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR processing delay",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (undated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_node8306.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No date on the page; uci-chrs-resilience found the Wayback first capture 2025-09-13. Banner is site-wide, not specific to PERSIANN.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://portal.datarescueproject.org/datasets/precipitation---persiann-climate-data-record-cdr/",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN Climate Data Record (CDR) - Data Rescue Project Portal",
+   "author_org": "Data Rescue Project",
+   "published": "Last updated April 24, 2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/drp_persiann.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Date range and file list NOT PRESENT; the primary archive host behind Download not identified; torrent page not read. 16.0 GB looks small against the full daily NetCDF set (files ~1.3 MB x ~16,000 days is ~21 GB), so it may be compressed or partial; not verified. Treated as the copy host's own catalog (the copy itself is the subject).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://noaa-cdr-precip-persiann-pds.s3.amazonaws.com/?list-type=2&prefix=data/2026",
+   "fetched_url": null,
+   "title": "AWS S3 bucket listing noaa-cdr-precip-persiann-pds, prefix data/2026",
+   "author_org": "NOAA Open Data Dissemination on AWS",
+   "published": "listing as of 2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (fetch_page.py refused by sandbox: CONNECT 403; read with WebFetch)",
+   "retrieved": "2026-11-27",
+   "limitations": "Read via WebFetch extraction, not saved raw. Bucket region not shown in the listing; registry.opendata.aws page not read (no time).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_PERSIANN-CDR",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR: Precipitation Estimation From Remotely Sensed Information Using Artificial Neural Networks-Climate Data Record (Earth Engine Data Catalog)",
+   "author_org": "Google Earth Engine",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (read with WebFetch)",
+   "retrieved": "2026-11-27",
+   "limitations": "Extract via WebFetch; no last-update date on the page; Google hosting location not stated.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s7",
+   "url": "https://academictorrents.com/details/448dd345e52d3a0b0953b7f2d86f75089ca61a24",
+   "fetched_url": null,
+   "title": "noaa-ncei-precipitation-persiann (Academic Torrents)",
+   "author_org": "Academic Torrents (torrent of the Data Rescue Project archive)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (read with WebFetch)",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extract; page showed 43 of 84 entries; no date added or seeder counts. Whether 2024.7z covers the full year not checked. Includes SHA512 checksums (fixity). Treated as the copy host's own catalog (the copy itself is the subject).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Geostationary_IR_Channel_Brightness_Temperature/AlgorithmDescription_01B-02.pdf",
+   "fetched_url": null,
+   "title": "Geostationary IR Channel Brightness Temperature - GridSat B1 C-ATBD (CDRP-ATBD-0571) Rev 2",
+   "author_org": "Ken Knapp, Knapp WeatherSat Services / NOAA CDR Program",
+   "published": "2026-03-02",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gridsat_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Affiliation shown only in the revision table; no successor NCEI contact named on this page. Whether Knapp WeatherSat Services is a NOAA contractor is NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Geostationary_IR_Channel_Brightness_Temperature/DataFlowDiagram_01B-02.pdf",
+   "fetched_url": null,
+   "title": "GridSat-B1 CDR (01B-02) Flow Chart, CDRP-DIA-0610 Rev 2",
+   "author_org": "Ken Knapp / NOAA CDR Program",
+   "published": "2025-10-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/gridsat_dataflow.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Diagram layout flattened by pdftotext; does not say which GridSat file version (v02r01) carries VGAC calibration or name PERSIANN-CDR.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://www.earthdata.nasa.gov/data/catalog/ges-disc-gpcpmon-3.3",
+   "fetched_url": null,
+   "title": "GPCP Precipitation Level 3 Monthly 0.5-Degree V3.3 (GPCPMON)",
+   "author_org": "NASA GES DISC (Huffman, George J.)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/main/gesdisc_gpcpmon33_browser.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Read via WebFetch extraction, not saved raw. Page age unknown (search snippet suggested ~650 days old). No statement on v2.3 freeze or end. Pause text vs 2025-12-31 extent unreconciled.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://doi.org/10.3390/rs11232755",
+   "fetched_url": null,
+   "title": "Evaluation of PERSIANN-CDR Constructed Using GPCP V2.2 and V2.3 and A Comparison with TRMM 3B42 V7 and CPC Unified Gauge-Based Analysis in Global Scale (Sadeghi et al. 2019, Remote Sensing 11, doi:10.3390/rs11232755)",
+   "author_org": "Sadeghi, ... Braithwaite, ... (CHRS UC Irvine)",
+   "published": "2019",
+   "data_period": null,
+   "source_type": "peer_reviewed",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/sadeghi2019_noaa_repo.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Paper does not say which GPCP version adjusts 2014-2015 or later months; no file-header names quoted. Earlier runs' PERSIANN.README, persiann_catbd and ncei_iso had no gpcp_m/gpcpv23 matches in my search.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/erddap/griddap/cdr_persiann_by_time_lon_lat.html",
+   "fetched_url": null,
+   "title": "NCEI ERDDAP cdr_persiann_by_time_lon_lat dataset attributes",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/erddap_info.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Header for one day only; no explicit calibration statement; the 'gpcp_m up to April 2015' headers were not re-checked in this pass.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00948",
+   "fetched_url": null,
+   "title": "NOAA Climate Data Record (CDR) of CPC Morphing Technique (CMORPH) High Resolution Global Precipitation Estimates, Version 1 (ISO metadata landing page)",
+   "author_org": "NOAA NCEI / NOAA CPC (Xie et al., NOAA CDR Program)",
+   "published": "NOT PRESENT (citation year 2019; embedded printed date 2015-06-08)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_iso_cmorph_c00948.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Whether CMORPH-CDR uses geostationary IR (GridSat or CPC IR) for morphing is NOT PRESENT in the lines read. No retirement notice on the page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.ncei.noaa.gov/data/cmorph-high-resolution-global-precipitation-estimates/access/daily/0.25deg/2026/",
+   "fetched_url": null,
+   "title": "Index of /data/cmorph-high-resolution-global-precipitation-estimates/access/daily/0.25deg/2026/",
+   "author_org": "NOAA NCEI",
+   "published": "directory listing, latest entry modified 2026-11-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_cmorph_daily_025_2026.html.html",
+   "retrieved": "2026-11-27",
+   "limitations": "Files inside 06/ not listed, so the last day inside June 2026 is not confirmed.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/README-CHIRPSv3.0.txt",
+   "fetched_url": null,
+   "title": "README-CHIRPSv3.0.txt",
+   "author_org": "Climate Hazards Center, UC Santa Barbara (with FEWS NET and USGS EROS)",
+   "published": "NOT PRESENT (Version 3.0 released 2025.01.01)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/chirps_v3_readme.txt.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Geostationary IR source for CHIRP3 NOT PRESENT; daily products not listed in this README (see chirps3 page).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://chc.ucsb.edu/data/chirps3",
+   "fetched_url": null,
+   "title": "CHIRPS: Rainfall Estimates from Rain Gauge and Satellite Observations (CHIRPS v3 page)",
+   "author_org": "Climate Hazards Center, UC Santa Barbara",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (WebFetch extract only)",
+   "retrieved": "2026-11-27",
+   "limitations": "Quotes via WebFetch extraction, not raw. Search snippet said 'Production of CHIRPS v2 will end after December 2026' (wording not verified on page). IR archive (GridSat vs CPC IR) NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s17",
+   "url": "https://www.gloh2o.org/mswep/",
+   "fetched_url": null,
+   "title": "MSWEP (GloH2O)",
+   "author_org": "GloH2O LLC",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/alt_extracts.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Reused 3-day-old extract; whether MSWEP ingests GridSat or GPCP NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-cmorph",
+   "fetched_url": null,
+   "title": "NCEI CDR product page: Precipitation - CMORPH",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/alt_extracts.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Reused extract; no retirement notice found on the page.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://ipwg12.imgw.pl/wp-content/uploads/2026/07/S3.4-BEHRANGI-IPWG2026.pdf",
+   "fetched_url": null,
+   "title": "S3.4 BEHRANGI IPWG2026 (GPCP update slides)",
+   "author_org": "A. Behrangi, IPWG-12",
+   "published": "2026-07",
+   "data_period": null,
+   "source_type": "conference",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/behrangi_ipwg2026.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "Slide bullet, no detail.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://gpm.nasa.gov/data/news/update-imerg-v08-transition-schedule-aug-2026",
+   "fetched_url": null,
+   "title": "Update to the IMERG V08 Transition Schedule, Aug. 2026",
+   "author_org": "NASA GPM",
+   "published": "2026-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "search_snippet",
+   "local_file": "NOT PRESENT (HTTP 504 on fetch)",
+   "retrieved": "2026-11-27",
+   "limitations": "Not read in full (504). Verify on page; no notice dated after August 2026 found.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.3_Daily.pdf",
+   "fetched_url": null,
+   "title": "ATBD for GPCP V3.3 Daily",
+   "author_org": "GPCP / NASA GSFC (MEaSUREs)",
+   "published": "2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/gpcp_v33_daily_atbd.txt",
+   "retrieved": "2026-11-24",
+   "limitations": "URL not recorded in the saved text; see earlier run record. Planned-change section context (which version) not reread.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://web.archive.org/web/20250913132027/https://www.ncei.noaa.gov/node/8306",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR processing delay",
+   "author_org": "NOAA NCEI",
+   "published": "2025-09-08 (article:published_time 2025-09-08T14:54:18-0400; modified 2025-09-08T14:55:58-0400)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3b-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3b/node8306_wb20250913.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Expected resumption: NOT PRESENT. Specific cause: NOT PRESENT beyond 'processing delays'. Other affected products: NOT PRESENT. Wayback CDX (statuscode 200, collapsed by month) lists only 3 captures: 20250913132027, 20251206185146, 20260610093438 (work/raw/sa3b/cdx_node8306.json).",
+   "found_by": [
+    "sa3b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://web.archive.org/web/20260610093438/https://www.ncei.noaa.gov/node/8306",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR processing delay",
+   "author_org": "NOAA NCEI",
+   "published": "2025-09-08 (per earlier capture meta)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3b-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3b/node8306_wb20260610.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Expected resumption: NOT PRESENT. Network-issue banner is site-wide and undated.",
+   "found_by": [
+    "sa3b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-persiann",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3b-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3b/ncei_persiann_product_page.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Processing-pause notice: NOT PRESENT on this page. Update schedule: NOT PRESENT. Latest data date: NOT PRESENT. IRI/LDEO and other non-NOAA copies: NOT PRESENT. Cloud-migration banner is site-wide.",
+   "found_by": [
+    "sa3b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://registry.opendata.aws/noaa-cdr-atmospheric/",
+   "fetched_url": null,
+   "title": "NOAA Atmospheric Climate Data Records - Registry of Open Data on AWS",
+   "author_org": "AWS Registry of Open Data / NOAA NODD",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3b-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3b/aws_registry_cdr_atmospheric.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "PERSIANN-specific update frequency: NOT PRESENT. Dedicated pages registry.opendata.aws/noaa-cdr-precip-persiann/ and /noaa-cdr-precipitation/ returned HTTP 404.",
+   "found_by": [
+    "sa3b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://www.ncei.noaa.gov/alerts",
+   "fetched_url": null,
+   "title": "NCEI Alerts",
+   "author_org": "NOAA NCEI",
+   "published": "alerts dated 11/02/2026-11/17/2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3b-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3b/ncei_alerts.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "PERSIANN CDR alert: NOT PRESENT. Other products with 'pause in operations due to processing delays': NOT PRESENT. Web search for other pause notices not run (deadline).",
+   "found_by": [
+    "sa3b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2010/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/2010",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1b-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1b/ncei_persiann_access_2010.html",
+   "retrieved": "2026-11-27",
+   "limitations": "File-name c-date and server timestamp only; the netCDF global attributes (source/history naming gpcp_m vs gpcpv23_m) were not read because the THREDDS DAS request timed out.",
+   "found_by": [
+    "sa1b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2013/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/2013",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1b-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1b/ncei_persiann_access_2013.html",
+   "retrieved": "2026-11-27",
+   "limitations": "File-name c-date and server timestamp only; global attributes not read (DAS timed out).",
+   "found_by": [
+    "sa1b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s29",
+   "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/2015/",
+   "fetched_url": null,
+   "title": "Index of /data/precipitation-persiann/access/2015",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1b-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1b/ncei_persiann_access_2015.html",
+   "retrieved": "2026-11-27",
+   "limitations": "c-dates only; which GPCP file each batch names was not read (DAS timed out). Exact day of the batch boundary in June/July 2015 not located.",
+   "found_by": [
+    "sa1b"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s30",
+   "url": "https://knappweathersat.com/gridsat-b1/",
+   "fetched_url": null,
+   "title": "GridSat-B1 (Knapp WeatherSat Services LLC)",
+   "author_org": "Knapp WeatherSat Services LLC",
+   "published": "Last updated: February 2026",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/knappweathersat_gridsat_browser.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "The calibration author's own company page; not an NCEI statement."
+  },
+  {
+   "id": "s31",
+   "url": "https://html.duckduckgo.com/html/?q=%22Knapp+WeatherSat+Services%22",
+   "fetched_url": null,
+   "title": "DuckDuckGo results: Knapp WeatherSat Services (Bizapedia, LinkedIn, RocketReach snippets)",
+   "author_org": "DuckDuckGo (snippets of Bizapedia, LinkedIn, RocketReach)",
+   "published": null,
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": null,
+   "access_level": "snippet",
+   "read_via": null,
+   "local_file": "work/raw/main/ddg_knapp_weathersat.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Search snippets only; LinkedIn and Bizapedia pages not opened (sign-in, .com hosts)."
+  },
+  {
+   "id": "s32",
+   "url": "https://github.com/vndao1193/PERSIANN-CDR-V3",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR-V3 (GitHub README)",
+   "author_org": "Vu Dao, CHRS, UC Irvine",
+   "published": null,
+   "data_period": "1980-2025",
+   "source_type": "practitioner",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/github_persiann_cdr_v3_browser.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "A CHRS researcher's personal repository, undated, no releases; paper 'accepted', not yet published."
+  },
+  {
+   "id": "s33",
+   "url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDF_07/summary",
+   "fetched_url": null,
+   "title": "GPM IMERG Final Precipitation L3 1 day 0.1 degree V07 (GPM_3IMERGDF)",
+   "author_org": "NASA GES DISC",
+   "published": null,
+   "data_period": "1998-01-01 to 2025-09-30",
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/gesdisc_imergdf07_browser.txt",
+   "retrieved": "2026-11-27",
+   "limitations": null
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "GridSat-B1's calibration reference changed: HIRS for 1980 to September 2024, VIIRS VGAC from October 2024 (data flow diagram Rev 2, Oct 2025; C-ATBD Rev 2, 03/02/26), with a fixed VGAC-to-HIRS adjustment for continuity.",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "1980-9/2024     10/2024 - present",
+     "location": "Data flow diagram, input boxes"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Revision to include new calibration",
+     "location": "Revision history, Rev 2"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "temporal continuity between the HIRS intercalibration record (1980-2024) and VGAC",
+     "location": "Sec. 2.3.3.2"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "updated calibration methodologies using VIIRS-based approaches",
+     "location": null
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own C-ATBD and data flow diagram, read as raw text.",
+   "applicability": "GridSat-B1 itself; not PERSIANN-CDR's own documents.",
+   "sole_source_reason": "The CDR's own algorithm documents are the authority for its calibration."
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "No PERSIANN-CDR document says whether its months from October 2024 on used the VGAC-recalibrated GridSat-B1; the newest file header (2026-07-30) names GridSat-B1 v02r01 files and gpcpv23_m2607.bin, so the version string does not show the calibration change.",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "GRIDSAT-B1.2026.07.30.00.v02r01.nc",
+     "location": "NC_GLOBAL source attribute"
+    },
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "gpcpv23_m2607.bin",
+     "location": "NC_GLOBAL source attribute"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Absence finding: header read raw; PERSIANN-CDR C-ATBD and user guide (earlier runs) still describe the HIRS-era inputs.",
+   "applicability": null,
+   "sole_source_reason": "The file header is the product's own record of its inputs."
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "GridSat-B1's calibration is now written by K. R. Knapp outside NCEI: Rev 1 (2015) lists 'Ken Knapp, NCDC', Rev 2 (2026) 'Ken Knapp, Knapp WeatherSat Services'; snippets say he was at NCEI 2003-2025 and the company (filed 22 May 2025) has one employee. No NCEI successor or contact was found.",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Ken Knapp, NCDC",
+     "location": "Revision history, Rev 1"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Ken Knapp, Knapp",
+     "location": "Revision history, Rev 2"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "I was at NOAA NCEI (originally NCDC) from 2003-2025.",
+     "location": null
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "The business was filed on May 22, 2025",
+     "location": null
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "Knapp WeatherSat Services LLC is a Climate Data and Analytics company with 1 employees.",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "C-ATBD revision table is raw and official; departure date and company size rest on search snippets.",
+   "applicability": null
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "On NCEI's copy, the 2010 and 2013 daily files still carry 2014 creation dates, and the production batch changes between 15 June 2015 (c20151028) and 15 July 2015 (c20160324); so the V2.3 replacement of 2009-2013 that Sadeghi et al. 2019 report is not visible in NCEI's files, and the header split at July 2015 matches a later production batch.",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20100115_c20140523.nc | 2014-08-25 13:42",
+     "location": null
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20130115_c20140908.nc | 2014-09-08 21:35",
+     "location": null
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20150615_c20151028.nc",
+     "location": null
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20150715_c20160324.nc",
+     "location": null
+    },
+    {
+     "source_id": "s11",
+     "relationship": "contradicts",
+     "passage": "has replaced V2.2 data for the 2009–2013 period on CHRS data portal and NOAA National Centers",
+     "location": null
+    }
+   ],
+   "sole_source_reason": "NCEI's own archive listing is the authority for what files it holds.",
+   "confidence": "low",
+   "confidence_reason": "File names and dates read raw, but the 2010/2013 headers themselves could not be read (THREDDS timed out).",
+   "applicability": "NCEI's /data/precipitation-persiann/access/ copy only; CHRS's portal not checked."
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "GPCP V3.3 is not independent of PERSIANN-CDR or GridSat: it calibrates PERSIANN-CDR IR precipitation with GPROF, and its GES DISC page says it was paused at September 2024 because the NCEI IR input needed a new calibration; the same page (dated 2025-02-12) lists data to 2025-12-31 and 516 monthly files.",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "The products are currently paused at September 2024 because the IR input dataset from NCEI requires a new calibration scheme to extend past that point.",
+     "location": null
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "used to calibrate the PERSIANN-CDR IR-based precipitation in the region 58°N-S",
+     "location": null
+    },
+    {
+     "source_id": "s10",
+     "relationship": "contradicts",
+     "passage": "1983-01-01 to 2025-12-31",
+     "location": null
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "data from the global collection of geosynchronous weather satellites are converted to | precipitation estimates using the PERSIANN Climate Data Record (PERSIANN-CDR; Ashouri et al. | 2015). … Sparse, high-quality GPROF precipitation estimates calibrate the more frequent, | near-global (60°N–60°S) PERSIANN-CDR estimates … the period January 1983 – December 1991 is based on PERSIANN-CDR … 2) GEO-IR precipitation from a revised algorithm instead of PERSIANN- | CDR",
+     "location": "lines 421-444 and 718-719 of saved text"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "V3.3 uses PERSIANN-RAW instead of PERSIANN calibrated by GPCP V2.3",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Official pages read raw, but the page's pause note and its temporal extent disagree.",
+   "applicability": null
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "No end or freeze date for GPCP monthly V2.3 was found, and no CHRS statement on switching PERSIANN-CDR to GPCP V3.x; CHRS is developing a separate PERSIANN-CDR V3 (0.04°, 3-hourly, 1980-2025) that uses GridSat-B1 only to 2000, CPC-4km IR after, and a GPCP 2.5° monthly bias correction of unnamed version.",
+   "evidence": [
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "It integrates GridSat-B1 (1980–2000; 3-hourly) and CPC-4km (2000–present; 30-minute), with MERRA-2 filling data gaps to ensure a continuous record.",
+     "location": null
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "a monthly bias correction using GPCP (2.5°) preserves temporal consistency.",
+     "location": null
+    },
+    {
+     "source_id": "s12",
+     "relationship": "contextualizes",
+     "passage": "gpcpv23_m2607.bin",
+     "location": "NC_GLOBAL source attribute"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "Absence of a freeze notice; V3 README is an undated personal repository.",
+   "applicability": null
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "CMORPH-CDR (NOAA NCEI/CPC) is the closest NOAA alternative: 0.25° daily, 60S-60N, from 1 January 1998, produced monthly at 3-4 months' latency, 'Ongoing'; NCEI's 2026 daily folder reaches June 2026. It is bias-corrected with CPC gauges and GPCP pentads, so it shares a GPCP dependence and starts 15 years later.",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Bias in these integrated satellite precipitation estimates is then removed through comparison against CPC daily gauge analysis over land and adjustment against the Global Precipitation Climatology Project (GPCP) merged analysis of pentad precipitation over ocean. The bias corrected CMORPH satellite precipitation estimates are created on an 8kmx8km grid over the global domain from 60deg S to 60deg N and in a 30-minute interval from January 1, 1998. Due to the delay of some input data sets, this formal version (Version 1) bias corrected CMORPH is produced manually once a month at a latency of 3-4 months. … c) Daily CMORPH | Output variable: daily precipitation in mm/day … spatial resolution: 0.25deg lat/lon | spatial coverage: global (60S-60N) … data period: January 1, 1998 to the present … Time Period | 1998-01-01 to Present (time interval: 1-hour) … Dataset Progress Status | Ongoing - data is continually being updated",
+     "location": "Abstract; Time Period and Dataset Progress Status rows"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Dataset Progress Status | Ongoing - data is continually being updated",
+     "location": null
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "01/ | 2026-06-10 23:54 | 02/ | 2026-07-14 02:58 | 03/ | 2026-08-11 03:54 | 04/ | 2026-09-10 18:30 | 05/ | 2026-10-08 20:04 | 06/ | 2026-11-13 19:12",
+     "location": "directory table"
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI's own metadata and folder listing, read raw.",
+   "applicability": null,
+   "sole_source_reason": "NCEI's own metadata is the authority for its product."
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "CHIRPS v3 (UCSB CHC, released 2025-01-01) covers land only, 60N-60S, at 0.05° from 1981; its daily values are disaggregated from pentads with ERA5 or IMERG Late, and CHIRPS v2 continues through 2026.",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Version 3.0 released 2025.01.01",
+     "location": null
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "quasi-global (60°N-60°S, 180°W-180°E), gridded high resolution 0.05 degree, 1981 to near-real time precipitation time series",
+     "location": null
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Two different daily products: A reanalysis 'rnl' and a satellite 'sat' product. … daily precipitation from the ECMWF ERA Reanalysis v5 (ERA5) data product … daily precipitation from the NASA IMERG Late V07 data product (IMERG) … the production of CHIRPS v2.0 will continue through 2026. … CHIRPS v3.0 replaces the widely used CHIRPS v2.0. … licensed under a Creative Commons Attribution 4.0 International License",
+     "location": "page text (WebFetch extract)"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "README raw; daily method from a fetch extract.",
+   "applicability": "Land only."
+  },
+  {
+   "id": "c9",
+   "importance": "supporting",
+   "text": "IMERG Final daily V07 (NASA) is 0.1° global from 1998-01-01 but its record ends 2025-09-30 pending V08.",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "1998-01-01 to  2025-09-30",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "GES DISC page raw; V08 timing only from a search summary.",
+   "applicability": null
+  },
+  {
+   "id": "c10",
+   "importance": "supporting",
+   "text": "MSWEP (GloH2O, private) gives hourly 0.1° from 1979 with 2-hour delay under CC BY-NC.",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "provides hourly 0.1° resolution precipitation data from1979 to the present with a 2‑hour delay. … released under the CC BY-NC 4.0 license … Currently, noncommercial users can download MSWEP exclusively via Rclone",
+     "location": "MSWEP page (earlier run WebFetch extract)"
+    }
+   ],
+   "confidence": "low",
+   "confidence_reason": "Reused fetch extract only.",
+   "applicability": null
+  },
+  {
+   "id": "c11",
+   "importance": "central",
+   "text": "The IRI/LDEO Data Library copy is frozen: its time grid runs 1 Jan 1983 to 30 Sep 2019, page last updated 19 May 2020 (Wayback, 26 April 2024); the live page needs sign-in.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "ordered (1 Jan 1983) to (30 Sep 2019) by 1.0 N= 13422 pts",
+     "location": null
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Last updated: Tue, 19 May 2020 19:09:48 GMT",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Host's own catalog, but a 2024 saved copy.",
+   "applicability": null,
+   "sole_source_reason": "The host's own catalog entry."
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "The Data Rescue Project copy is a one-time snapshot archived 24 April 2025 (16.0 GB) with an Academic Torrents copy of yearly archives 1983-2024; it holds no 2025-2026 data.",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "NC Archived Apr 24, 2025 by DRP, SRC",
+     "location": null
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Archive size: 16.0 GB",
+     "location": null
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "noaa-ncei-precipitation-persiann | Download 17.17GB | precipitation-persiann (84 files) | … | access/1983.7z, access/1984.7z, access/1985.7z | … | access/2022.7z, access/2023.7z, access/2024.7z, SHA512.sums",
+     "location": "title, download button, file list"
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "Portal raw; torrent file list from a fetch extract.",
+   "applicability": null,
+   "sole_source_reason": "The copy host's own catalog entry is the authority for what it holds."
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "NCEI's copy is current to 31 July 2026 (file created 2026-10-13); AWS (us-east-1, managed by NOAA NODD) holds the same file a day later and Earth Engine lists data to 2026-07-31, so the current copies are NOAA's own and NOAA-fed commercial cloud copies.",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "PERSIANN-CDR_v01r01_20260731_c20261013.nc | 2026-10-13 23:58 | 1193337",
+     "location": null
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "data/2026/PERSIANN-CDR_v01r01_20260730_c20261013.nc | LastModified: 2026-10-14T13:16:13.000Z | Size: 1216522 | data/2026/PERSIANN-CDR_v01r01_20260731_c20261013.nc | LastModified: 2026-10-14T13:16:14.000Z | Size: 1193337 | KeyCount: 212 | IsTruncated: false",
+     "location": "ListBucketResult, last keys"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Dataset Availability | 1983-01-01T00:00:00Z--2026-07-31T00:00:00Z | … | Dataset Producer | NOAA NCDC | Cadence | 1 Day | … | The data is produced quarterly, with a typical lag of three months.",
+     "location": "catalog page header and description"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "us-east-1",
+     "location": null
+    }
+   ],
+   "confidence": "high",
+   "confidence_reason": "NCEI listing raw; AWS and Earth Engine catalogs agree (read via fetch extract).",
+   "applicability": null
+  },
+  {
+   "id": "c14",
+   "importance": "central",
+   "text": "NCEI's notice (node/8306) was published 8 September 2025 and still reads unchanged that PERSIANN-CDR 'is experiencing a pause in operations due to processing delays'; no cause beyond that is given, the product page and Alerts page don't mention it, yet 2026 files were created from 9 July 2026, so the notice appears out of date.",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Please note: The Precipitation - PERSIANN CDR is experiencing a pause in operations due to processing delays.",
+     "location": null
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "Please note: The Precipitation - PERSIANN CDR is experiencing a pause in operations due to processing delays.",
+     "location": null
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Please note: The Precipitation - PERSIANN CDR is experiencing a pause in operations due to processing delays.",
+     "location": null
+    },
+    {
+     "source_id": "s2",
+     "relationship": "contradicts",
+     "passage": "PERSIANN-CDR_v01r01_20260101_c20260709.nc",
+     "location": null
+    },
+    {
+     "source_id": "s26",
+     "relationship": "contextualizes",
+     "passage": "Expect delayed data archival and slower update cycles for many products.",
+     "location": null
+    }
+   ],
+   "confidence": "moderate",
+   "confidence_reason": "NCEI's own pages read raw; cause unstated.",
+   "applicability": null,
+   "sole_source_reason": "NCEI's own notices."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Whether NCEI's 2009-2013 files were replaced with GPCP V2.3-adjusted data",
+   "source_ids": [
+    "s11",
+    "s27",
+    "s28"
+   ],
+   "status": "unresolved",
+   "explanation": "Sadeghi et al. 2019 say V2.3 replaced V2.2 for 2009-2013 at CHRS and NCEI; NCEI's listing shows those files still carry 2014 creation dates. Headers not read."
+  },
+  {
+   "claim": "Whether GPCP V3.3 is paused at September 2024",
+   "source_ids": [
+    "s10",
+    "s21"
+   ],
+   "status": "unresolved",
+   "explanation": "The same GES DISC page states the pause and lists a temporal extent to 2025-12-31 with 516 monthly granules (Jan 1983-Dec 2025 is 516 months); the pause note is likely older text."
+  }
+ ],
+ "coverage_gaps": [
+  "Not done by 09:35: (1) Wayback copies of node/8306 to date changes (only reused first capture 2025-09-13); (2) NCEI product page https://www.ncei.noaa.gov/products/climate-data-records/precipitation-persiann not re-read; (3) registry.opendata.aws page and bucket region (us-east-1 assumed by AWS NOAA ODP, not verified); (4) IRI 2024-09-13 parent capture and live sign-in-only page not re-checked; (5) DRP primary download host and whether 2024.7z covers all of 2024; (6) other mirrors (Google Cloud, Azure, CHRS own copy) not checked in this pass. (from sa3)",
+  "(a) No PERSIANN-CDR document or header states whether its 10/2024-onward months used VGAC-recalibrated GridSat-B1; GridSat file names stay v02r01. Next: read a GridSat-B1 2025/2026 .das header 'history'/'calibration' attributes (earlier run saved gridsat_das_2025*.txt in 2026-11-19_persiann-cdr-daily-inputs-pt5/work/raw/sa1/gridsat/) and check whether PERSIANN-CDR months from Oct 2024 were posted before or after the VGAC switch (Mar 2026 C-ATBD). (from sa1)",
+  "(a) Successor/NCEI-side contact for GridSat calibration not found; only the C-ATBD Rev 2 affiliation 'Knapp WeatherSat Services'. Next: NCEI ISO metadata for GridSat-B1 (gov.noaa.ncdc:C00829) contact fields. (from sa1)",
+  "(b) The gpcp_m (to Apr 2015) vs gpcpv23_m (from Jul 2015) header split vs the 2009-2013 v2.3 replacement claim (Sadeghi 2019) is unreconciled; no PERSIANN-CDR release/version notes found. Next: check source attributes of PERSIANN-CDR daily files for 2010-06, 2014-06, 2015-05, 2015-06 on NCEI THREDDS. (from sa1)",
+  "(c) No date or plan found for ending/freezing GPCP monthly v2.3; NCEI C00979 page timed out. GES DISC V3.3 page says V3.3 paused at Sep 2024 pending NCEI IR calibration, and V3.3 itself uses PERSIANN-CDR IR precipitation as input. No CHRS statement on switching PERSIANN-CDR to GPCP V3.x was searched (deadline). (from sa1)",
+  "Not searched (time): GSMaP (JAXA) start date, latency, status; TAMSAT (Africa only) status; PERSIANN-CCS-CDR (same CHRS producer, not independent); GPCP One-Degree Daily V1.3 status. (from sa2)",
+  "No NOAA CDR Program statement found on which precipitation CDRs it keeps or retires (CMORPH-CDR ISO record says 'Ongoing'; no retirement notice seen). (from sa2)",
+  "Whether CMORPH-CDR and CHIRP3 use GridSat-B1 or CPC merged IR for their IR component: NOT PRESENT in pages read. CMORPH-CDR does use GPCP pentad analysis over ocean (ISO abstract). (from sa2)",
+  "IMERG Final V07: V07 record end (Sep 2025) and V08 fall-2026 release only from a search summary; GPM notice returned 504; GES DISC GPM_3IMERGDF_07 page renders by JavaScript. Coordinator should read both with a browser. (from sa2)",
+  "Last day inside CMORPH-CDR daily/0.25deg/2026/06/ not checked (listing of that folder not fetched). (from sa2)",
+  "Web search for other NCEI products with the same pause in operations not run (deadline); NCEI Alerts page lists none. Live IRI/LDEO time grid not checked (login wall; needs browser). Middle Wayback capture 20251206185146 of node/8306 not read. Dedicated AWS registry pages for PERSIANN return 404; bucket listed under noaa-cdr-atmospheric. (from sa3b)",
+  "Item 1 only partly done: c-dates for 2010, 2013, 2015 sample days read from NCEI access listings, but no file header (DAS) was read, so whether 2009-2013 files name gpcp_m or gpcpv23_m is unsettled. Next: confirm the THREDDS dodsC path via https://www.ncei.noaa.gov/thredds/catalog/cdr/persiann/files/2010/catalog.html and retry the .das with a longer timeout, or download one small .nc (about 1-2 MB) and run ncdump -h. 2014 and 2016 listings not fetched. (from sa1b)",
+  "Items 2 (GridSat-B1 2025/2026 DAS attributes in the pt5 run sa1/gridsat folder) and 3 (search for CHRS plans to move PERSIANN-CDR adjustment to GPCP V3) not started: deadline reached (subagent started 09:28). (from sa1b)",
+  "PERSIANN-CDR 2009-2013 file headers (gpcp_m vs gpcpv23_m): NCEI THREDDS DAS timed out twice (sa1b, coordinator).",
+  "Google Cloud copy (noaa-cdr-precip-persiann bucket) named on NCEI's product page: not checked.",
+  "IMERG V08 transition notice (gpm.nasa.gov): HTTP 504 in browser and fetch.",
+  "GSMaP, TAMSAT, GPCP 1DD and PERSIANN-CCS-CDR status not checked (time)."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "IRI Data Library PERSIANN CDR (Wayback CDX of iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.CDR/.PERSIANN-CDR*)",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "10 captures 2018-07-30 to 2024-09-13; read 2024-04-26 v01r01 capture",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Data Rescue Project PERSIANN (direct fetch of DRP portal entry from news-pt4, then its Academic Torrents link)",
+   "tool": "lookup (DRP portal + Academic Torrents)",
+   "notes": "no web search run; URL reused from 2026-11-19_persiann-cdr-daily-news-pt4",
+   "from": "sa3",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NCEI PERSIANN-CDR pause in operations (direct fetch of node/8306 and access/2026/)",
+   "tool": "lookup (NCEI pages)",
+   "notes": "no web search run; Wayback dating of the notice reused from 2026-11-27_uci-chrs-resilience (first capture 2025-09-13)",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR Earth Engine catalog / AWS bucket listing noaa-cdr-precip-persiann-pds data/2026",
+   "tool": "lookup (GEE catalog page; S3 ListObjectsV2 via WebFetch)",
+   "notes": "S3 host refused by sandbox for fetch_page.py (CONNECT 403); read with WebFetch",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GridSat-B1 C-ATBD revision VIIRS VGAC",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; found GridSat DataFlowDiagram_01B-02 Rev 2 (VGAC 10/2024-present); revision history taken from reused C-ATBD Rev 2",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "PERSIANN-CDR C-ATBD GPCP version 2.3 adjustment",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, chrsdata.eng.uci.edu, chrs.web.uci.edu; only C-ATBD/UserGuide/DataFlowDiagram (v2.2 wording, already read in earlier runs); no version notes explaining gpcp_m vs gpcpv23_m years. 1 query used of 3 (deadline).",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GPCP version 2.3 monthly discontinued V3.3",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, nasa.gov, umd.edu; NCEI C00979 snippet: v2.3 'Version Superseded', advises not to use except rare cases; GES DISC V3.3 paused at Sep 2024. No end/freeze date for v2.3 found. 1 query used (deadline).",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Knapp GridSat NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter; only older papers/technote naming Knapp as NOAA/NCEI technical contact; current affiliation comes from C-ATBD Rev 2 revision table (Knapp WeatherSat Services). No successor contact found. 1 query used (deadline).",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup GES DISC GPCPMON V3.3 catalog page",
+   "tool": "lookup (WebFetch earthdata.nasa.gov ges-disc-gpcpmon-3.3)",
+   "notes": "extraction of pause sentence",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "lookup NCEI GPCP v2.3 ISO landing page C00979",
+   "tool": "lookup (WebFetch ncei.noaa.gov iso C00979)",
+   "notes": "timed out after 60 s",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CMORPH CDR NCEI daily precipitation latest",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov; led to ISO C00948 and daily/0.25deg listing",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CHIRPS v3 release Climate Hazards Center",
+   "tool": "WebSearch",
+   "notes": "allowed_domains chc.ucsb.edu; led to README-CHIRPSv3.0 and chirps3 page",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG Final V07 daily precipitation availability",
+   "tool": "WebSearch",
+   "notes": "allowed_domains disc.gsfc.nasa.gov; only GPM_3IMERGHH_07 page plus arXiv; GES DISC page needs JavaScript",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GPCP V3.3 daily inputs PERSIANN",
+   "tool": "WebSearch",
+   "notes": "no filter; Earthdata/data.gov GPCPDAY and GPCPMON records, Behrangi IPWG2026 slides; ATBD reused from earlier run",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "IMERG V08 transition Final Run 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gpm.nasa.gov, disc.gsfc.nasa.gov; follow-up",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://chc.ucsb.edu/data/chirps3",
+   "tool": "WebFetch",
+   "notes": "extraction prompt; follow-up",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://web.archive.org/cdx/search/cdx?url=www.ncei.noaa.gov/node/8306&output=json&filter=statuscode:200&collapse=timestamp:6",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "3 captures: 20250913132027, 20251206185146, 20260610093438",
+   "from": "sa3b"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NOAA NCEI (GridSat-B1)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GridSat-B1 C-ATBD revisions",
+   "query": "GridSat-B1 C-ATBD revision VIIRS VGAC",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NOAA NCEI / CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "PERSIANN-CDR documents on GPCP version",
+   "query": "PERSIANN-CDR C-ATBD GPCP version 2.3 adjustment",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA NCEI / NASA / UMD",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GPCP v2.3 end notices",
+   "query": "GPCP version 2.3 monthly discontinued V3.3",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GridSat staff contact",
+   "query": "Knapp GridSat NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NOAA NCEI/CPC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "CMORPH-CDR status",
+   "query": "CMORPH CDR NCEI daily precipitation latest",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "UCSB Climate Hazards Center",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "CHIRPS v3 release",
+   "query": "CHIRPS v3 release Climate Hazards Center",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NASA GES DISC",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "IMERG Final V07 availability",
+   "query": "IMERG Final V07 daily precipitation availability",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "GPCP (NASA/UMD)",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "GPCP V3.3 inputs",
+   "query": "GPCP V3.3 daily inputs PERSIANN",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "IRI/LDEO",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "IRI Data Library catalog entry",
+   "query": "IRI Data Library PERSIANN CDR",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "Data Rescue Project",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "DRP portal entry",
+   "query": "Data Rescue Project PERSIANN",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NOAA NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "pause notice",
+   "query": "NCEI PERSIANN-CDR pause in operations",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "AWS / Google",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "cloud catalogs",
+   "query": "PERSIANN-CDR Earth Engine catalog",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "not seen",
+  "budget_min": 30,
+  "ceiling": 240000,
+  "follow_ups": 2,
+  "subagent_minutes_planned": 33
+ }
+}

@@ -1,0 +1,3326 @@
+{
+ "question": "PERSIANN-CDR Daily Part 7: people critical to production at UCI CHRS, retirement proximity, and who runs and pays for the quarterly extension, on what computers.",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (an ended NOAA grant and a terminated NOAA subaward at UCI)",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Who are the people critical to PERSIANN-CDR Daily at CHRS: role, activity, ORCID, earliest publication, first PERSIANN year, estimated age?",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31",
+    "s32",
+    "s33",
+    "s34",
+    "s38",
+    "s39",
+    "s40",
+    "s41",
+    "s42",
+    "s43",
+    "s44",
+    "s45",
+    "s46",
+    "s47",
+    "s48",
+    "s49",
+    "s50",
+    "s51",
+    "s76",
+    "s77",
+    "s78",
+    "s79"
+   ],
+   "remaining_gap": "Braithwaite's current job and status; Sorooshian's emeritus date; OpenAlex profiles of Braithwaite and Sadeghi may merge other people."
+  },
+  {
+   "id": "q1b",
+   "question": "Does UC publish a retirement eligibility rule for its staff and faculty?",
+   "status": "answered",
+   "source_ids": [
+    "s35",
+    "s36",
+    "s37",
+    "s52",
+    "s53"
+   ],
+   "remaining_gap": "Which UCRP tier each person is in."
+  },
+  {
+   "id": "q2",
+   "question": "When and why did the directorship change; who runs the quarterly extension; how old is CHRS; is there a succession plan?",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s18",
+    "s19",
+    "s2",
+    "s20",
+    "s3",
+    "s4",
+    "s5",
+    "s71"
+   ],
+   "remaining_gap": "Reason and exact date of the director change; who actually runs the extension today."
+  },
+  {
+   "id": "q3",
+   "question": "Who pays for the quarterly extension since 2014; NA23OAR4310443 successor; terminated NOAA incoming subaward; Hsu CISESS LEO; ST133017CQ0058 order for CHRS?",
+   "status": "uncertain",
+   "source_ids": [
+    "s54",
+    "s55",
+    "s56",
+    "s57",
+    "s58",
+    "s59",
+    "s60",
+    "s61",
+    "s62",
+    "s63",
+    "s64",
+    "s65",
+    "s66",
+    "s67",
+    "s68",
+    "s69",
+    "s70",
+    "s72",
+    "s73",
+    "s74",
+    "s75"
+   ],
+   "remaining_gap": "No funder of the extension is published; the terminated incoming subaward is unidentified; no 2026 award search was possible (POST-only API)."
+  },
+  {
+   "id": "q4",
+   "question": "Does current code differ from the 2014/2017 package; is training code published; what computers produce it and who pays; MATLAB dependence?",
+   "status": "uncertain",
+   "source_ids": [
+    "s10",
+    "s11",
+    "s16",
+    "s6",
+    "s7",
+    "s8",
+    "s9"
+   ],
+   "remaining_gap": "The production computers and current code version are not published."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://faculty.uci.edu/profile/?facultyId=7336",
+   "fetched_url": null,
+   "title": "Amir Aghakouchak - UC Irvine Faculty Profile System",
+   "author_org": "UC Irvine",
+   "published": "last updated 11/25/2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/aghakouchak_profile.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No date of appointment as director, no reason for the change, nothing on succession planning (NOT PRESENT).",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ]
+  },
+  {
+   "id": "s2",
+   "url": "https://chrs.web.uci.edu/about.php",
+   "fetched_url": null,
+   "title": "About CHRS",
+   "author_org": "UC Irvine CHRS",
+   "published": "footer (c) 2017",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/chrs_about.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Founding year, history, director change and succession plan: NOT PRESENT on this page.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://engineering.uci.edu/directory/sorooshian_soroosh.php",
+   "fetched_url": null,
+   "title": "Soroosh Sorooshian - Faculty & Staff Profile",
+   "author_org": "UCI Samueli School of Engineering",
+   "published": "undated (lists 2025 honor)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sorooshian_eng_profile.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No date when he stepped down as director, no reason, no emeritus/retirement status stated (NOT PRESENT). CHRS founding year not stated directly; the page says only that he came from Arizona around 2003. Linked CV PDFs (ss_hssoe_cv_2025.pdf, soroosh_cv.pdf, ssorooshian_hssoe_cv_august_2020.pdf) all returned HTTP 404.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://news.uci.edu/2026/04/22/water-warming-and-a-world-at-risk/",
+   "fetched_url": null,
+   "title": "Water, warming and a world at risk",
+   "author_org": "UC Irvine News",
+   "published": "2026-04-22",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/uci_news_20260422_water_warming.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Date of handover, reason and any succession plan: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/xml",
+   "fetched_url": null,
+   "title": "NCEI ISO 19115-2 collection metadata, PERSIANN-CDR v01r01 (gov.noaa.ncdc:C00854)",
+   "author_org": "NOAA NCEI",
+   "published": "dateStamp 2026-07-16T16:56:10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_iso_C00854.xml.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "The metadata lists people from the 2014 citation; AghaKouchak and Nguyen do not appear. No individual operator, contributor_name or succession information (NOT PRESENT). Only other personal name is Peng, Ge (CICS-NC/NCEI), author of the maturity report.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/SourceCode_01B-16.tar.gz",
+   "fetched_url": null,
+   "title": "PERSIANN.README in SourceCode_01B-16.tar.gz (PERSIANN-CDR package V1)",
+   "author_org": "UC Irvine CHRS / NOAA NCEI",
+   "published": "tar.gz dated 2017-03-10 on NCEI server",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/PERSIANN.README.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "README refers to GPCP v2.2 and ftp URLs; whether CHRS's current production code differs: NOT PRESENT in package. ANN training code: not mentioned in README.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/AlgorithmDescription_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN-CDR Climate Algorithm Theoretical Basis Document (CDRP-ATBD-0286 Rev 2, March 21 2014)",
+   "author_org": "UC Irvine CHRS for NOAA CDR Program",
+   "published": "2014-03-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/persiann_catbd.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Written 2014; no newer C-ATBD revision is on the NCEI server (directory listing shows AlgorithmDescription_01B-16.pdf dated 2017-03-10). The servers are not named, and who owns or pays for them is NOT PRESENT.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/UserGuide_01B-16.pdf",
+   "fetched_url": null,
+   "title": "PERSIANN CDR User Guide (Rev 0)",
+   "author_org": "NOAA NCEI / UC Irvine CHRS",
+   "published": "Rev 0 12/31/2025 (revision table: Aug 14, 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/userguide.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "No named operator, no computers, no changes to the code since 2014 (NOT PRESENT).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/PERSIANN/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/sds/cdr/CDRs/PERSIANN/",
+   "author_org": "NOAA NCEI",
+   "published": "listing as of 2026-11-19",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_persiann_dir_listing.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "File dates show when files were posted, not when the code was written. OAD: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://rcic.uci.edu/software/software.html",
+   "fetched_url": null,
+   "title": "1. Software - RCIC 1.0.0 documentation",
+   "author_org": "UCI Research Cyberinfrastructure Center (RCIC)",
+   "published": "undated (lists MATLAB R2025b)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/rcic_software.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Does not mention CHRS or PERSIANN. Whether CHRS produces the CDR on HPC3: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://laptops.eng.uci.edu/engineering-software/matlab",
+   "fetched_url": null,
+   "title": "Engineering Labs & Laptops - Matlab",
+   "author_org": "UCI Samueli School of Engineering computing",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/uci_eng_matlab.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Licence terms, cost and renewal are NOT PRESENT; the page does not mention CHRS.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://web.archive.org/web/20250417234601/https://chrs.web.uci.edu/chrs_directory.php",
+   "fetched_url": null,
+   "title": "CHRS Directory (Wayback capture 2025-04-17)",
+   "author_org": "UC Irvine CHRS (via Internet Archive)",
+   "published": "captured 2025-04-17",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_chrs_directory_20250417.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "A Wayback capture shows the page only on that date; the exact day of the change is not given.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://web.archive.org/web/20250713224301/https://chrs.web.uci.edu/chrs_directory.php",
+   "fetched_url": null,
+   "title": "CHRS Directory (Wayback capture 2025-07-13)",
+   "author_org": "UC Irvine CHRS (via Internet Archive)",
+   "published": "captured 2025-07-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_chrs_directory_20250713.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Reason for the change and any announcement: NOT PRESENT. There are no Wayback captures between 2025-04-17 and 2025-07-13 (CDX, digest-collapsed, from 2023).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://web.archive.org/web/20251212205620/https://chrs.web.uci.edu/chrs_directory.php",
+   "fetched_url": null,
+   "title": "CHRS Directory (Wayback capture 2025-12-12)",
+   "author_org": "UC Irvine CHRS (via Internet Archive)",
+   "published": "captured 2025-12-12",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_chrs_directory_20251212.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Next capture is 2026-05-21 (not read). The current directory (2026-11-27_uci-chrs-resilience sa1/chrs_directory.html.txt) lists 'Phu Nguyen, Ph.D. | Associate Director of CHRS | Adjunct Professor'.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/erddap/info/cdr_persiann_by_time_lon_lat/index.html",
+   "fetched_url": null,
+   "title": "ERDDAP - Information about NOAA Climate Data Record of PERSIANN-CDR daily precipitation (cdr_persiann_by_time_lon_lat)",
+   "author_org": "NOAA NCEI ERDDAP",
+   "published": "attributes as of 2026-11-19 (date_created 2026-10-13T23:58:33Z)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/erddap_info.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "creator_name may be a fixed template value carried from file to file rather than proof of who ran the latest quarter. AghaKouchak and Nguyen are not named in the file attributes.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://rcic.uci.edu/_static/RCIC-description.pdf",
+   "fetched_url": null,
+   "title": "Facilities Managed by Research Cyberinfrastructure Center (RCIC) at UC Irvine",
+   "author_org": "UCI RCIC",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/rcic_description.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "CHRS, PERSIANN, Sorooshian and AghaKouchak are NOT PRESENT; whether CHRS uses HPC3 for the CDR is not shown.",
+   "found_by": [
+    "sa2",
+    "reconciler"
+   ],
+   "scope": "context: UCI campus HPC3 (RCIC), not CHRS"
+  },
+  {
+   "id": "s17",
+   "url": "https://web.archive.org/web/20260521191453/https://chrs.web.uci.edu/chrs_directory.php",
+   "fetched_url": null,
+   "title": "CHRS Directory (Wayback capture 2026-05-21)",
+   "author_org": "UC Irvine CHRS (via Internet Archive)",
+   "published": "captured 2026-05-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/wb_chrs_directory_20260521.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "A capture records the page on that date only. Nguyen title change date and reason: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-persiann",
+   "fetched_url": null,
+   "title": "Precipitation - PERSIANN CDR | NCEI",
+   "author_org": "NOAA NCEI",
+   "published": "undated (read 2026-11-19)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ncei_persiann_page.txt",
+   "retrieved": "2026-11-19",
+   "limitations": "Operator, change of director, OAD or code updates: NOT PRESENT on the page.",
+   "found_by": [
+    "sa2",
+    "checker"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://faculty.uci.edu/profile/?facultyId=5082",
+   "fetched_url": null,
+   "title": "Soroosh Sorooshian - UC Irvine Faculty Profile System",
+   "author_org": "UC Irvine",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e19",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sorooshian_faculty_profile.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "The page does not say whether CHRS existed under that name at Arizona before the July 2003 move, and gives no date or reason for stepping down as director (NOT PRESENT).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://water.uci.edu/soroosh-sorooshian/",
+   "fetched_url": null,
+   "title": "Soroosh Sorooshian - Water UCI",
+   "author_org": "Water UCI",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e20",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/water_uci_sorooshian.html.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Undated and likely out of date; conflicts with the CHRS directory captures and UCI News of April 2026.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s21",
+   "url": "https://api.openalex.org/authors?search=Kuolin%20Hsu",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Kuolin Hsu",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-hsu",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_author_hsu.json",
+   "retrieved": "2026-11-27",
+   "limitations": "OpenAlex author disambiguation is automatic; ORCID not yet checked against ORCID record itself.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://api.openalex.org/works?filter=author.id:A5073965947&sort=publication_year:asc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Kuolin Hsu",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-hsu-early",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_hsu_earliest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Earliest work year only; no degree year.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://api.openalex.org/authors?search=Dan%20Braithwaite",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Dan Braithwaite",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-braithwaite",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_author_braithwaite.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Profile may merge more than one person (see earliest works).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://api.openalex.org/works?filter=author.id:A5087953216&sort=publication_year:asc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Dan K. Braithwaite",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-braithwaite-early",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_braithwaite_earliest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "These biology papers may belong to a different D.K. Braithwaite merged into the profile; not confirmed as the CHRS programmer. Earliest PERSIANN-subject work in the profile NOT checked in this run.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://api.openalex.org/works?filter=author.id:A5087953216&sort=publication_year:desc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex latest works: Dan K. Braithwaite",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-braithwaite-late",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_braithwaite_latest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "OpenAlex coverage of 2022-2026 may be incomplete.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://api.openalex.org/authors?search=Soroosh%20Sorooshian",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Soroosh Sorooshian",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-sorooshian",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_author_sorooshian.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Automatic disambiguation.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://api.openalex.org/works?filter=author.id:A5071637554&sort=publication_year:asc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Soroosh Sorooshian",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-sorooshian-early",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_sorooshian_earliest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "No degree year.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://api.openalex.org/authors?search=Phu%20Nguyen&filter=last_known_institutions.id:I204250578",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Phu Nguyen (UC Irvine)",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-nguyen",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_author_nguyen.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Split profiles.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://api.openalex.org/works?filter=author.id:A5025610459&sort=publication_year:asc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Phu Nguyen",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-nguyen-early",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_nguyen_earliest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "2008 item may be a conference abstract; year may be misassigned.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://api.openalex.org/authors?search=Amir%20AghaKouchak",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Amir AghaKouchak",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-aghakouchak",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_author_aghakouchak.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Automatic disambiguation.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://api.openalex.org/works?filter=author.id:A5050684806&sort=publication_year:asc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Amir AghaKouchak",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-aghakouchak-early",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_aghakouchak_earliest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "No degree year.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://api.openalex.org/authors?search=Mojtaba%20Sadeghi&filter=last_known_institutions.id:I204250578",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Mojtaba Sadeghi (UC Irvine)",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-sadeghi",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_author_sadeghi.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Filtered to UCI last-known institution; current position not shown.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s33",
+   "url": "https://api.openalex.org/works?filter=author.id:A5004818942&sort=publication_year:asc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex earliest works: Mojtaba Sadeghi",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-oa-sadeghi-early",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_sadeghi_earliest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "2005 item may belong to a different M. Sadeghi.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://chrs.web.uci.edu/chrs_directory.php",
+   "fetched_url": null,
+   "title": "CHRS Directory",
+   "author_org": "CHRS, UC Irvine",
+   "published": "undated (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-chrs-dir",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/chrs_directory_now.html/e45ae50d0dac3348.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Braithwaite search on this page: NOT PRESENT. Page undated.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://ucnet.universityofcalifornia.edu/benefits/retirement/ucrp-2013-tier/",
+   "fetched_url": null,
+   "title": "UC Retirement Plan 2013 Tier | UCnet",
+   "author_org": "University of California (UCnet)",
+   "published": "undated (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-ucrp-2013",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ucrp_2013_tier.html/4b60e261118d64c1.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "2016 Tier page not fetched separately; WebSearch summary of the Retirement Handbook says 2013 and 2016 Tiers both age 55.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://ucnet.universityofcalifornia.edu/benefits/retirement/ucrp-1976-tier/",
+   "fetched_url": null,
+   "title": "UC Retirement Plan 1976 Tier | UCnet",
+   "author_org": "University of California (UCnet)",
+   "published": "undated (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-ucrp-1976",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ucrp_1976_tier.html/ef51400bcced9772.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Which tier each CHRS person is in is NOT PRESENT (depends on hire date; 1976 Tier covers hires before July 1, 2013).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.ucop.edu/academic-personnel-programs/_files/apm/apm-issuance-regents-standing-order-tech-rev/2022-04-20-apm-issue-cvr-ltr-regents-standing-order-tech-rev.pdf",
+   "fetched_url": null,
+   "title": "Issuance of Technical Revisions to Various APM Policies (Regents Standing Order 103.6)",
+   "author_org": "UC Office of the President, Academic Personnel and Programs",
+   "published": "2022-04-20",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-ucop-so1036",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ucop_so103_6.pdf/08c02a3e883e45d3.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Exact rescission year NOT PRESENT in this letter.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://api.openalex.org/works/W7126062831",
+   "fetched_url": null,
+   "title": "A Global High-Resolution Precipitation Climate Record: PERSIANN-CCS-CDR Version 2.0 (OpenAlex record, Scientific Data 2026)",
+   "author_org": "OpenAlex record of Bolboli Zadeh, Nguyen, Hsu, AghaKouchak, Ung, Sorooshian",
+   "published": "2026-01-29",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-ccscdr-v2-authors",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_work_ccscdr_v2_2026.json",
+   "retrieved": "2026-11-27",
+   "limitations": "PERSIANN-CCS-CDR, not PERSIANN-CDR Daily; OpenAlex display_name for first author mis-matched as 'Mehdi Rezaeian Zadeh' while raw_author_name is Mohammad Bolboli Zadeh.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://api.openalex.org/works?filter=author.id:A5073965947,title.search:PERSIANN&sort=publication_year:desc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex latest PERSIANN-titled works: Kuolin Hsu",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-hsu-persiann-latest",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_hsu_persiann_latest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Title search only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://api.openalex.org/works?filter=author.id:A5071637554,title.search:PERSIANN&sort=publication_year:desc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex latest PERSIANN-titled works: Soroosh Sorooshian",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-sorooshian-persiann-latest",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_sorooshian_persiann_latest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Title search only.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://api.openalex.org/works?filter=author.id:A5087953216,title.search:PERSIANN&sort=publication_year:asc&per-page=3",
+   "fetched_url": null,
+   "title": "OpenAlex earliest PERSIANN-titled works: Dan K. Braithwaite",
+   "author_org": "OpenAlex",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa1-braithwaite-persiann-early",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/oa_works_braithwaite_persiann_earliest.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Title search only; PERSIANN papers without PERSIANN in the title are missed.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s42",
+   "url": "https://pub.orcid.org/v3.0/0000-0003-1293-2588/person",
+   "fetched_url": null,
+   "title": "ORCID public record (person): 0000-0003-1293-2588",
+   "author_org": "ORCID",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-orcid-braithwaite-person",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_braithwaite_person.notjson.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "ORCID API returned XML, saved as .notjson.txt.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://pub.orcid.org/v3.0/0000-0003-1293-2588/employments",
+   "fetched_url": null,
+   "title": "ORCID public record (employments): 0000-0003-1293-2588",
+   "author_org": "ORCID",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-orcid-braithwaite-emp",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_braithwaite_employments.notjson.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Absence of public entries is not evidence of departure.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s44",
+   "url": "https://ap.uci.edu/titles-of-distinction/distinguished-professor/emeritus/",
+   "fetched_url": null,
+   "title": "Emeritus Faculty with Distinguished Professor title",
+   "author_org": "UC Irvine Academic Personnel",
+   "published": "undated (search snippet suggests about 933 days old)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-uci-dp-emeritus",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/uci_ap_dp_emeritus.html/bcb71c4fef792b86.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Page undated. Conflicts with CHRS directory and 2026 UCI news that call him Distinguished Professor (no Emeritus) and with his 2026 authorship; emeritus faculty can be recalled to active service, so emeritus status and continued activity can co-exist. Hsu, AghaKouchak: NOT PRESENT on this list.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s45",
+   "url": "https://engineering.uci.edu/users/soroosh-sorooshian",
+   "fetched_url": null,
+   "title": "Soroosh Sorooshian (UCI Samueli School faculty profile)",
+   "author_org": "UC Irvine Henry Samueli School of Engineering",
+   "published": "undated (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-eng-sorooshian",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/eng_sorooshian.html/2664de56cc83e5d4.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Redirected to engineering.uci.edu/directory/sorooshian_soroosh.php; no Emeritus wording on this page.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s46",
+   "url": "https://www.faculty.uci.edu/profile/?facultyId=5092",
+   "fetched_url": null,
+   "title": "Kuo-lin Hsu (UC Irvine Faculty Profile System)",
+   "author_org": "UC Irvine",
+   "published": "undated (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-uci-hsu",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/uci_faculty_hsu.html/4921bbb16a49b984.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No Emeritus wording on page; page undated. engineering.uci.edu/users/kuo-lin-hsu redirected to the generic directory (renamed _unused).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s47",
+   "url": "https://engineering.uci.edu/users/phu-nguyen",
+   "fetched_url": null,
+   "title": "Phu Nguyen (UCI Samueli School faculty profile)",
+   "author_org": "UC Irvine Henry Samueli School of Engineering",
+   "published": "undated (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-eng-nguyen",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/webfetch_eng_nguyen.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "WebFetch extract; ORCID and PERSIANN NOT PRESENT on page. CHRS directory says Adjunct Professor (title differs).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s48",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-3578-3565/person",
+   "fetched_url": null,
+   "title": "ORCID public record (person): 0000-0002-3578-3565",
+   "author_org": "ORCID",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-orcid-hsu-person",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_hsu_person.notjson.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Name match only; employment not checked.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-7774-5113/person",
+   "fetched_url": null,
+   "title": "ORCID public record (person): 0000-0001-7774-5113",
+   "author_org": "ORCID",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-orcid-sorooshian-person",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_sorooshian_person.notjson.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Name match only.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://pub.orcid.org/v3.0/0000-0002-9055-2583/person",
+   "fetched_url": null,
+   "title": "ORCID public record (person): 0000-0002-9055-2583",
+   "author_org": "ORCID",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-orcid-nguyen-person",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_nguyen_person.notjson.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Name match only; common name.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://pub.orcid.org/v3.0/0000-0003-3194-0110/person",
+   "fetched_url": null,
+   "title": "ORCID public record (person): 0000-0003-3194-0110",
+   "author_org": "ORCID",
+   "published": "2026-11-27",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-orcid-sadeghi-person",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/orcid_sadeghi_person.notjson.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Name match only.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s52",
+   "url": "https://ucnet.universityofcalifornia.edu/benefits/retirement/uc-retirement-choice-program/uc-retirement-choice-program-not-subject-to-pepra/",
+   "fetched_url": null,
+   "title": "UC Retirement Choice Program (not subject to PEPRA) | UCnet",
+   "author_org": "University of California (UCnet)",
+   "published": "undated (retrieved 2026-11-27)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-ucrp-2016",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ucrp_choice.html/857d9b0166e28b0d.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Age 55 for 2016 Tier rests only on a WebSearch summary of the Complete Guide (ucnet .../complete-retirement-benefits-guide-for-employees.pdf), not read.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s53",
+   "url": "https://ucnet.universityofcalifornia.edu/wp-content/uploads/forms/pdf/complete-retirement-benefits-guide-for-employees.pdf",
+   "fetched_url": null,
+   "title": "A Complete Guide to Your UC Retirement Benefits (2016 Tier members)",
+   "author_org": "University of California (UCnet)",
+   "published": "2026 edition (cites 2026 maximums)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-uc-complete-guide",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/uc_complete_guide.pdf/f3461ff45740494f.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Only searched, not read in full; two-column pdftotext layout interleaves text.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s54",
+   "url": "https://www.usaspending.gov/award/ASST_NON_NA23OAR4310443_013",
+   "fetched_url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA23OAR4310443_013/",
+   "title": "USAspending award record NA23OAR4310443 (UC Irvine, NOAA CPO cooperative agreement)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "last_modified_date 2024-08-20",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_NA23OAR4310443.json/2495d3a473800b49.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Description is truncated at 'ALGOR' by USAspending. The award does not name PERSIANN-CDR's quarterly extension. The meaning of the negative account obligation (-100800.23) is not explained in the record (could be a deobligation or a fiscal-year accounting entry). No successor award found in this record. Generated ID is ASST_NON_NA23OAR4310443_013 (agency code 013, not 1330 as in the brief's URL).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s55",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330/",
+   "fetched_url": null,
+   "title": "USAspending delivery order 1332KP20FNEED0029 under ST133017CQ0058 (Riverside Technology, RTMEE)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_rtmee_order.json/114332713fa247e2.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Subaward recipients are not in this GET record (the subaward list needs a POST endpoint the helpers do not support). PERSIANN, CHRS and UC Irvine: NOT PRESENT in this record. Same order pt3 found; re-read here for the description field.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s56",
+   "url": "https://www.nesdis.noaa.gov/s3/2026-02/NESDIS-PLN-1003-4.pdf",
+   "fetched_url": null,
+   "title": "NESDIS Five-Year Product Plan, NESDIS-PLN-1003.4 (effective June 25, 2025)",
+   "author_org": "NOAA NESDIS",
+   "published": "2025-06-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nesdis_5yr_plan_2025.pdf/545b7cfbf1972b93.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Funding, contract or grant for production: NOT PRESENT in the PERSIANN-CDR section. Does not name UC Irvine/CHRS.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s57",
+   "url": "https://cisess.umd.edu/updates-to-a-global-precipitation-product/",
+   "fetched_url": null,
+   "title": "Updates to a Global Precipitation Product (CISESS news, 2026-03-13)",
+   "author_org": "CISESS (UMD), Maureen Cribb & Debra Baker",
+   "published": "2026-03-13",
+   "data_period": null,
+   "source_type": "official (cooperative institute news)",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/cisess_updates_precip.html/94091bf1f8cb604a.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Same page (same hash) as pt3's work/raw/sa2/cisess_umd_precip_update.html; re-downloaded here. 'LEO' funding and PERSIANN-CDR extension: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s58",
+   "url": "https://api.nsf.gov/services/v1/awards.json?keyword=PERSIANN",
+   "fetched_url": null,
+   "title": "NSF Award Search API, keyword=PERSIANN",
+   "author_org": "NSF",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsf_persiann.json/43856216714f535d.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Keyword search covers title/abstract; an award could support PERSIANN without naming it.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s59",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Sorooshian",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName=Sorooshian",
+   "author_org": "NSF",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsf_sorooshian.json/300248e48f0583fa.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Research grant, not production support; ended 2018. No active NSF award to Soroosh Sorooshian at UCI is listed.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s60",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA19NES4320002_013/",
+   "fetched_url": null,
+   "title": "USAspending award record NA19NES4320002 (CISESS, University of Maryland)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_cisess_NA19NES4320002.json/de8b2f9378110f7c.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Subaward recipients not in the GET record; whether any subaward went to UC Irvine/CHRS: NOT PRESENT. HigherGov's page lists no disclosed subgrants (work/raw/sa3/highergov_NA19NES4320002.txt).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s61",
+   "url": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA24NESX432C0001_013/",
+   "fetched_url": null,
+   "title": "USAspending award record NA24NESX432C0001 (CISESS renewal, University of Maryland)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/usaspending_cisess_NA24NESX432C0001.json/2de8a56824d13701.json",
+   "retrieved": "2026-11-27",
+   "limitations": "Subaward recipients not in the GET record; a UC Irvine subaward and a 'LEO' task: NOT PRESENT. HigherGov lists no disclosed subgrants (work/raw/sa3/highergov_NA24NESX432C0001.txt).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s62",
+   "url": "https://www.highergov.com/grant/NA24NESX432C0001/",
+   "fetched_url": null,
+   "title": "HigherGov: Renewal Grant for Satellite Earth System Studies, NA24NESX432C0001",
+   "author_org": "HigherGov (aggregator of USAspending data)",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/highergov_NA24NESX432C0001.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Extract by WebFetch's small model; the page may load subgrants by script. USAspending says 29 subawards exist, so HigherGov's empty list may be a display gap.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s63",
+   "url": "https://www.highergov.com/grant/NA19NES4320002/",
+   "fetched_url": null,
+   "title": "HigherGov: Cooperative Institute for Satellite Earth System Studies, NA19NES4320002",
+   "author_org": "HigherGov (aggregator of USAspending data)",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/highergov_NA19NES4320002.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Extract by WebFetch's small model; USAspending says 45 subawards exist, so the empty list may be a display gap.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s64",
+   "url": "https://scholarconnect.uci.edu/ndphu",
+   "fetched_url": null,
+   "title": "Phu Nguyen, UCI Scholar Connect profile",
+   "author_org": "UC Irvine",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official (university profile)",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/scholarconnect_ndphu.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Extract by WebFetch's small model; sponsor list is the extract's rendering, not a verbatim sentence. How his post is funded: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s65",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=AghaKouchak",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName=AghaKouchak",
+   "author_org": "NSF",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsf_aghakouchak.json/4f78a3b030fd2109.json",
+   "retrieved": "2026-11-27",
+   "limitations": "The word PERSIANN does not appear in the saved response. NSF API lookup for PI 'Phu Nguyen' at Irvine returned totalCount 0 (work/raw/sa3/nsf_nguyen.json/0835d62a4b75587a.json), possibly a name-filter mismatch.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s66",
+   "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Phu%20Nguyen&awardeeName=Irvine",
+   "fetched_url": null,
+   "title": "NSF Award Search API, pdPIName=Phu Nguyen, awardeeName=Irvine",
+   "author_org": "NSF",
+   "published": "n/a",
+   "data_period": null,
+   "source_type": "official award database",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nsf_nguyen.json/0835d62a4b75587a.json",
+   "retrieved": "2026-11-27",
+   "limitations": "He is a co-PI on NSF 1931335 (see the AghaKouchak lookup), so a co-PI search would differ; the name filter may also be too strict.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s67",
+   "url": "https://files.simpler.grants.gov/opportunities/b00bdf4a-dceb-4714-b4ab-7139bef86dae/attachments/0b5e725f-a99f-4c03-aae2-b47c3789453f/Foa_Content_of_NOAA-OAR-CPO-2026-33326.pdf",
+   "fetched_url": null,
+   "title": "NOFO NOAA-OAR-CPO-2026-33326: CPO FY2026 Earth System Science and Services Partnership",
+   "author_org": "NOAA OAR Climate Program Office",
+   "published": "2026 (applications due 2026-10-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nofo_cpo_2026_33326.pdf/faf8cb84c9d9af21.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Only a lead found by WebSearch; nothing ties it to CHRS or a successor of NA23OAR4310443. PERSIANN, Climate Data Record and Irvine: NOT PRESENT (searched the saved text).",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s68",
+   "url": "https://www.highergov.com/grant/NA23OAR4310443/",
+   "fetched_url": null,
+   "title": "HigherGov: Cooperative Agreement NA23OAR4310443 (UC Irvine)",
+   "author_org": "HigherGov (aggregator of USAspending data)",
+   "published": "Last Modified 8/20/24",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/highergov_NA23OAR4310443.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Extract by WebFetch's small model; the modifications table was empty in the page text, so it does not explain USAspending's -100800.23 account obligation. 'Complete' may only reflect the end date.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s69",
+   "url": "https://chrs.web.uci.edu/projects_noaa.php",
+   "fetched_url": null,
+   "title": "CHRS NOAA Research Projects: PERSIANN-CDR",
+   "author_org": "UC Irvine CHRS",
+   "published": "© 2017",
+   "data_period": null,
+   "source_type": "official (CHRS own page)",
+   "evidence_id": "sa3-e16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_projects_noaa.html/3c72e3fd0e45b1a0.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Footer says © 2017; the page looks out of date (refers to NCDC). Sponsor logos are not in the saved text. Grant numbers and funding for the quarterly extension: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s70",
+   "url": "https://chrs.web.uci.edu/projects_nasa.php",
+   "fetched_url": null,
+   "title": "CHRS NASA Research Projects: PMM/IMERG and MEaSUREs",
+   "author_org": "UC Irvine CHRS",
+   "published": "not stated (site footer © 2017)",
+   "data_period": null,
+   "source_type": "official (CHRS own page)",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/chrs_projects_nasa.html/26f958594c866856.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Undated page; Sponsors heading has no text (likely logos). This is the PERSIANN input to GPCP V3, not PERSIANN-CDR; funding for the CDR extension: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s71",
+   "url": "https://engineering.uci.edu/files/ssorooshian_hssoe_cv_august_2020.pdf",
+   "fetched_url": "https://web.archive.org/web/20220104041701/https://engineering.uci.edu/files/ssorooshian_hssoe_cv_august_2020.pdf",
+   "title": "Soroosh Sorooshian curriculum vitae (August 2020), Wayback capture 2022-01-04",
+   "author_org": "UCI Samueli School of Engineering",
+   "published": "2020-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/sorooshian_cv_2020_wb.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Self-reported CV; 2020 version (the 2025 CV is not saved).",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s72",
+   "url": "https://www.usaspending.gov/award/ASST_NON_NA24NESX432C0001_013",
+   "fetched_url": null,
+   "title": "USAspending: CISESS renewal NA24NESX432C0001, sub-awards tab (page 3 of 3)",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NA24NESX432C0001",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/usaspending-gov-award-ASST-NON-NA24NESX432C0001-013_173431.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Descriptions truncated by the page; pages 1-2 read for UCI with find (no match).",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s73",
+   "url": "https://www.usaspending.gov/award/CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330",
+   "fetched_url": null,
+   "title": "USAspending: Riverside Technology delivery order 1332KP20FNEED0029 (RTMEE), sub-awards tab",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "1332KP20FNEED0029",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/usaspending-gov-award-CONT-AWD-1332KP20FNEED0029-1330-DOCST1_173445.txt",
+   "retrieved": "2026-11-27",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s74",
+   "url": "https://www.usaspending.gov/award/CONT_IDV_DOCST133017CQ0058_1330",
+   "fetched_url": null,
+   "title": "USAspending: IDIQ contract DOCST133017CQ0058 (Riverside Technology), orders made under this IDV",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "ST133017CQ0058",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/usaspending-gov-award-CONT-IDV-DOCST133017CQ0058-1330_173454.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Order descriptions only; sub-award lists of the other 8 orders not read.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s75",
+   "url": "https://www.usaspending.gov/award/ASST_NON_NA23OAR4310443_013",
+   "fetched_url": null,
+   "title": "USAspending: NA23OAR4310443 award page, transaction history",
+   "author_org": "USAspending.gov (U.S. Treasury)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "NA23OAR4310443",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/usaspending-gov-award-ASST-NON-NA23OAR4310443-013_173503.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "The federal-account figure -$100,800.23 is not explained on the page.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s76",
+   "url": "https://directory.uci.edu/query/braithwaite?filter=all",
+   "fetched_url": null,
+   "title": "UCI Directory search: braithwaite",
+   "author_org": "University of California, Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/directory-uci-edu-query-braithwaite-filter-all_173703.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "Gives no retirement date and does not say whether he still works on PERSIANN-CDR (UC retirees can be recalled).",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s77",
+   "url": "https://directory.uci.edu/query/sorooshian?filter=all",
+   "fetched_url": null,
+   "title": "UCI Directory search: sorooshian",
+   "author_org": "University of California, Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/directory-uci-edu-query-sorooshian-filter-all_173719.txt",
+   "retrieved": "2026-11-27",
+   "limitations": "No date of emeritus status.",
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s78",
+   "url": "https://directory.uci.edu/query/kuolin%20hsu?filter=all",
+   "fetched_url": null,
+   "title": "UCI Directory search: kuolin hsu",
+   "author_org": "University of California, Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/directory-uci-edu-query-kuolin-20hsu-filter-all_173727.txt",
+   "retrieved": "2026-11-27",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s79",
+   "url": "https://directory.uci.edu/query/ungtt?filter=all",
+   "fetched_url": null,
+   "title": "UCI Directory search: ungtt",
+   "author_org": "University of California, Irvine",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/main/browser/directory-uci-edu-query-ungtt-filter-all_173735.txt",
+   "retrieved": "2026-11-27",
+   "limitations": null,
+   "found_by": [
+    "main"
+   ],
+   "coordinator_checked": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "The CHRS directorship passed from Sorooshian to AghaKouchak between the 2025-04-17 and 2025-07-13 captures of the CHRS directory; no announcement, date or reason is published. Sorooshian keeps the title Founding Director.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "# CHRS Directory … Soroosh Sorooshian, Ph.D. | Director of CHRS | Distinguished Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Adjunct Professor, Civil & Environmental Engineering … Amir Aghakouchak, Ph.D. | Chancellor's Professor, Civil & Environmental Engineering",
+     "location": "directory lines 29-63"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "# CHRS Directory … Amir Aghakouchak, Ph.D. | Director of CHRS | Chancellor's Professor, Civil & Environmental Engineering … Soroosh Sorooshian, Ph.D. | Founding Director of CHRS | Distinguished Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Adjunct Professor, Civil & Environmental Engineering",
+     "location": "directory lines 29-64"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Amir Aghakouchak, Ph.D. | Director of CHRS | Chancellor's Professor, Civil & Environmental Engineering … Soroosh Sorooshian, Ph.D. | Founding Director of CHRS | Distinguished Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Adjunct Professor, Civil & Environmental Engineering",
+     "location": "directory lines 33-64"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Amir AghaKouchak, Chancellor’s Professor of civil and environmental engineering and director of the Center for Hydrometeorology and Remote Sensing … Over the years, AghaKouchak and his colleagues at the Center for Hydrometeorology and Remote Sensing – including its founder and former director, Soroosh Sorooshian, Distinguished Professor of civil and environmental engineering, as well as Henry Samueli Endowed Chair in Engineering; Kuo-Lin Hsu, professor of civil and environmental engineering; and Phu Nguyen, associate adjunct professor of civil and environmental engineering and CHRS associate director",
+     "location": "paragraphs at lines 11 and 45 of saved text"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Director, Center for Hydrometeorology and Remote Sensing (CHRS) | The Henry Samueli School of Engineering … Ph.D., University of Stuttgart, 2010, Civil and Environmental Engineering … ORCiD: 0000-0003-4689-8357 … 2023, UC Irvine Chancellor’s Professor … He also serves as director of UC Irvine’s Center for Hydrometeorology and Remote Sensing (CHRS), where his team develops innovative tools for monitoring and modeling hydrologic extremes. … Last updated | 11/25/2025",
+     "location": "profile header; Academic Distinctions; Short Biography; footer"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Four dated captures of CHRS's own directory plus UCI News agree; the reason is absent from every source read."
+  },
+  {
+   "id": "c2",
+   "text": "Sorooshian has retired: UCI's campus directory and Academic Personnel list him as Distinguished Professor Emeritus (CEE and CHRS), though CHRS's directory still says Distinguished Professor and Founding Director and he co-authored PERSIANN papers in 2026.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s77",
+     "relationship": "supports",
+     "passage": "Soroosh Sorooshian | soroosh@uci.edu | Distinguished Professor Emeritus | (949) 824-8825 | Civil & Environmental Engineering; Center for Hydrometeorology & Remote Sensing (CHRS)",
+     "location": "search result 2"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "Distinguished Professor Emeritus/a | Department/School … Soroosh Sorooshian | Department of Civil & Environmental Engineering Henry Samueli School of Engineering",
+     "location": "line 7 (table header), line 120"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "contextualizes",
+     "passage": "Amir Aghakouchak, Ph.D. | Director of CHRS | Chancellor's Professor, Civil & Environmental Engineering … Soroosh Sorooshian, Ph.D. | Founding Director of CHRS | Distinguished Professor, Civil & Environmental Engineering | Distinguished Professor, Earth System Science … Kuo-lin Hsu, Ph.D. | Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Director of CHRS | Adjunct Professor, Civil & Environmental Engineering … ## Program & System Administrator | Name | Title | Email | Tu Thanh Ung | Assistant Specialist | ungtt@uci.edu",
+     "location": "lines 33-84"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "contextualizes",
+     "passage": "\"title\": \"PERSIANN-U-Net: A Global Deep Learning Framework for Near-Real-Time Precipitation Estimation Using Infrared Data\", | \"publication_year\": 2026 | \"title\": \"A Global High-Resolution Precipitation Climate Record: PERSIANN-CCS-CDR Version 2.0\", | \"publication_year\": 2026 | \"title\": \"Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks-Cloud Classification System-Climate Data Record Version 2.0 (PERSIANN-CCS-CDR V2.0)\", | \"publication_year\": 2026",
+     "location": "results[0..2]"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "contextualizes",
+     "passage": "\"publication_date\": \"2026-01-29\", | \"doi\": \"https://doi.org/10.1038/s41597-026-06625-5\", | \"raw_author_name\": \"Mohammad Bolboli Zadeh\", | \"raw_author_name\": \"Phu Nguyen\", | \"raw_author_name\": \"Kuo-Lin Hsu\", | \"raw_author_name\": \"Amir AghaKouchak\", | \"display_name\": \"Tu Thanh Ung\", | \"display_name\": \"Methodology\" | \"display_name\": \"Software\" | \"author_position\": \"last\", | \"display_name\": \"Funding acquisition\" | \"raw_author_name\": \"Soroosh Sorooshian\",",
+     "location": "publication_date, doi, authorships[0..5].raw_author_name, author_position, roles display_name"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Two UCI records say emeritus; the CHRS page lags; no emeritus date is published."
+  },
+  {
+   "id": "c17",
+   "text": "Kuo-lin Hsu is an active Professor and is listed in UCI's campus directory as CHRS Associate Director; he is on 2026 PERSIANN papers.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s78",
+     "relationship": "supports",
+     "passage": "Kuo-Lin Hsu | kuolinh@uci.edu | Professor; Associate Director | (949) 824-8826 | Civil & Environmental Engineering; Center for Hydrometeorology & Remote Sensing (CHRS)",
+     "location": "search result 1"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "# Kuo-lin Hsu | Professor, Civil & Environmental Engineering | The Henry Samueli School of Engineering | Ph.D., The University of Arizona, 1996, Hydrology and Water Resources | M.S., National Taiwan University, Taiwan, 1986 | B.S., National Cheng Kung University, Taiwan, 1984",
+     "location": "lines 1-8"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "\"title\": \"PERSIANN-U-Net: A Global Deep Learning Framework for Near-Real-Time Precipitation Estimation Using Infrared Data\", | \"publication_year\": 2026 | \"title\": \"A Global High-Resolution Precipitation Climate Record: PERSIANN-CCS-CDR Version 2.0\", | \"publication_year\": 2026",
+     "location": "results[0], results[1]"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "UCI directory and profile plus 2026 papers."
+  },
+  {
+   "id": "c3",
+   "text": "ORCID iDs (via OpenAlex, checked against each ORCID record's name): Sorooshian 0000-0001-7774-5113 (earliest work 1979; Ph.D. 1978); Hsu 0000-0002-3578-3565 (earliest 1995; Ph.D. 1996); Nguyen 0000-0002-9055-2583 (earliest 2008; Ph.D. 2014); AghaKouchak 0000-0003-4689-8357 (earliest 2008; Ph.D. 2010); Braithwaite 0000-0003-1293-2588 (earliest PERSIANN 2000; 1990-91 items possibly another person); Sadeghi 0000-0003-3194-0110 (earliest PERSIANN 2018).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5071637554\", | \"display_name\": \"Soroosh Sorooshian\", | \"orcid\": \"https://orcid.org/0000-0001-7774-5113\", | \"works_count\": 677, | \"display_name\": \"University of California, Irvine\", | \"display_name\": \"Center for Hydrometeorology and Remote Sensing\",",
+     "location": "results[0]"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "\"title\": \"A Bayesian power transformation method for treatment of uncertainties in calibration of hydrologic models\", | \"publication_year\": 1979 | \"title\": \"Parameter estimation and sensitivity analysis-applications to hydrologic models\", | \"publication_year\": 1980",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "<personal-details:given-names>soroosh</personal-details:given-names> | <personal-details:family-name>sorooshian</personal-details:family-name>",
+     "location": "lines 7-8 (XML)"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "## Distinguished Professor … Soroosh Sorooshian is the founding director of the Center for Hydrometeorology and Remote Sensing (CHRS), Samueli Endowed Chair in Engineering, and Distinguished Professor of Civil and Environmental Engineering and Earth System Science Departments at UC Irvine. Prior to 2003 he was a faculty member at the University of Arizona for 20 years. … Ph.D., UCLA, Engineering, 1978 | Engineer Degree, Systems Engineering, UCLA, 1977 | M.S., UCLA, Operations Research, 1973 | B.S., Cal Poly, San Luis Obispo, Mechanical Engineering, 1971",
+     "location": "lines 9, 27, 35-38"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5073965947\", | \"display_name\": \"Kuolin Hsu\", | \"orcid\": \"https://orcid.org/0000-0002-3578-3565\", | \"works_count\": 314, | \"display_name\": \"University of California, Irvine\", | \"display_name\": \"Center for Hydrometeorology and Remote Sensing\",",
+     "location": "results[0]: id, display_name, orcid, works_count, last_known_institutions[].display_name"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "\"title\": \"Artificial Neural Network Modeling of the Rainfall‐Runoff Process\", | \"publication_year\": 1995 | \"title\": \"Rainfall estimation from satellite infrared imagery using artificial neural networks\", | \"publication_year\": 1996",
+     "location": "results[0], results[1]: title, publication_year"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "<personal-details:given-names>KUOLIN</personal-details:given-names> | <personal-details:family-name>HSU</personal-details:family-name>",
+     "location": "lines 7-8 (XML)"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "# Kuo-lin Hsu | Professor, Civil & Environmental Engineering | The Henry Samueli School of Engineering | Ph.D., The University of Arizona, 1996, Hydrology and Water Resources | M.S., National Taiwan University, Taiwan, 1986 | B.S., National Cheng Kung University, Taiwan, 1984",
+     "location": "lines 1-8"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5025610459\", | \"display_name\": \"Phu Nguyen\", | \"orcid\": \"https://orcid.org/0000-0002-9055-2583\", | \"works_count\": 131, | \"display_name\": \"Center for Hydrometeorology and Remote Sensing\", | \"id\": \"https://openalex.org/A5128929403\", | \"orcid\": \"https://orcid.org/0000-0002-9055-2583\", | \"works_count\": 4,",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "\"title\": \"A 35 Year Earth Science Data Record of Gridded IR Atmospheric Radiances\", | \"publication_year\": 2008 | \"title\": \"Improving flash flood forecasting through coupling of a distributed hydrologic rainfall-runoff model (HL-RDHM) with a hydraulic model (BreZo)\", | \"publication_year\": 2012",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "<personal-details:given-names>Phu</personal-details:given-names> | <personal-details:family-name>Nguyen</personal-details:family-name>",
+     "location": "lines 7-8 (XML)"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "\"Associate Adjunct Professor\" … \"associate director of the Center for Hydrometeorology & Remote Sensing (CHRS)\" … \"Ph.D., University of California, Irvine, 2014\" | \"M.S., University of Melbourne, 2008\" | \"B.Sc., Bach Khoa University, 2003\"",
+     "location": "title; bio; Education section"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5050684806\", | \"display_name\": \"Amir AghaKouchak\", | \"orcid\": \"https://orcid.org/0000-0003-4689-8357\", | \"works_count\": 691, | \"display_name\": \"University of California, Irvine\", | \"display_name\": \"United Nations University Institute for Water, Environment, and Health\", | \"display_name\": \"Center for Hydrometeorology and Remote Sensing\",",
+     "location": "results[0]"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "\"title\": \"A Copula Based Space-Time Rainfall Simulation Model\", | \"publication_year\": 2008 | \"title\": \"Simulation of radar rainfall errors and their propagation into rainfall-runoff processes\", | \"publication_year\": 2008",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "# Amir Aghakouchak | Director, Center for Hydrometeorology and Remote Sensing (CHRS) | The Henry Samueli School of Engineering | Chancellor's Professor, Civil & Environmental Engineering | The Henry Samueli School of Engineering | Ph.D., University of Stuttgart, 2010, Civil and Environmental Engineering | M.S., K.N.Toosi University of Technology, Tehran, Iran, 2005, Civil Engineering - Water Resources | B.S., K.N.Toosi University of Technology, Tehran, Iran, 2003, Civil Engineering | ORCiD: 0000-0003-4689-8357",
+     "location": "lines 1-13"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5087953216\", | \"display_name\": \"Dan K. Braithwaite\", | \"orcid\": \"https://orcid.org/0000-0003-1293-2588\", | \"works_count\": 67, | \"display_name\": \"University of California, Irvine\", | \"display_name\": \"Center for Hydrometeorology and Remote Sensing\",",
+     "location": "results[0]: id, display_name, orcid, works_count, last_known_institutions[].display_name"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "\"title\": \"Head fiber protein gene of bacteriophage Nf.\", | \"publication_year\": 1990 | \"title\": \"Yeast mitochondrial DNA polymerase is related to the family A DNA polymerases\", | \"publication_year\": 1990 | \"title\": \"Compilation and alignment of DNA polymerase sequences\", | \"publication_year\": 1991",
+     "location": "results[0..2]: title, publication_year"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "\"count\": 23, | \"title\": \"Evaluation of PERSIANN System Satellite–Based Estimates of Tropical Rainfall\", | \"publication_year\": 2000 | \"title\": \"Bias Adjustment of PERSIANN Rainfall for Hydrologic Applications\", | \"publication_year\": 2008",
+     "location": "meta.count; results[0], results[1]"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "<personal-details:given-names>Dan</personal-details:given-names> | <personal-details:family-name>Braithwaite</personal-details:family-name>",
+     "location": "lines 6-7 (XML)"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "\"id\": \"https://openalex.org/A5004818942\", | \"display_name\": \"Mojtaba Sadeghi\", | \"orcid\": \"https://orcid.org/0000-0003-3194-0110\", | \"works_count\": 22, | \"display_name\": \"University of California, Irvine\"",
+     "location": "results[0]"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "\"title\": \"Coupled Fluid-Structure Simulation for Turbomachinery Blade Rows\", | \"publication_year\": 2005 | \"title\": \"Assessment of the PERSIANN-CDR Products Bias-corrected with the GPCP Datasets Versions 2.2 & 2.3\", | \"publication_year\": 2018",
+     "location": "results[0], results[1]"
+    },
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "<personal-details:given-names>Mojtaba</personal-details:given-names> | <personal-details:family-name>Sadeghi</personal-details:family-name>",
+     "location": "lines 7-8 (XML)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "OpenAlex and ORCID agree on each iD; earliest-year figures depend on OpenAlex disambiguation (Braithwaite and Sadeghi profiles hold likely foreign items)."
+  },
+  {
+   "id": "c4",
+   "text": "UC publishes its retirement eligibility rule: UCRP 1976 Tier members may retire at age 50 and 2013/2016 Tier members at age 55, each with at least five years of service credit; UC has no mandatory retirement age (Standing Order 103.6 rescinded).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "As a UCRP 1976 Tier member, you can elect to retire and receive benefits at any time after you become eligible — that is, when you reach age 50 and leave UC employment with at least five years of service credit.",
+     "location": "line 12"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "As a member of the UC Retirement Plan (UCRP) 2013 Tier, you can elect to retire and receive benefits at any time after you become eligible — that is, when you reach age 55 and leave UC employment with at least five years of service credit. … You must earn five or more years of UCRP service credit to be “vested” — that means that you have a non-forfeitable right to receive UCRP retirement benefits upon leaving UC and reaching retirement age.",
+     "location": "lines 12, 32"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "If you die while eligible to retire (that is, age 55 with at least | five years of service credit) but have not yet elected to retire, a",
+     "location": "lines 865-866 (Death While Eligible to Retire section, two-column layout)"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "Professor Series, to remove references to Standing Order 103.6 – Retirement and | Reappointment Following Retirement, which was rescinded by the Regents’ several years | ago to eliminate the mandatory retirement age. The repeal of Standing Order 103.6 was not | intended to eliminate restrictions related to reappointments made after retirement.",
+     "location": "lines 80-83"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "UC's own benefit pages and a UCOP letter; which tier each person is in is not published.",
+   "sole_source_reason": "the body's own published documents are the authority for its own rules, plans and files",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c5",
+   "text": "NCEI's newest PERSIANN-CDR metadata names one creator, Dan Braithwaite (date_created 2026-10-13, coverage to 2026-07-31), while the ISO record still names Sorooshian as PI; Braithwaite is absent from the CHRS directory, whose staff list holds two people, and his ORCID shows no employment and his latest works are 2020-21.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "attribute | NC_GLOBAL | contributor_name | String | Soroosh Sorooshian, Kuolin Hsu, Hamed Ashouri, Dan Braithwaite | attribute | NC_GLOBAL | contributor_role | String | PrincipalInvestigator, Professor, Author, Author … attribute | NC_GLOBAL | creator_email | String | dbraithw at uci.edu | attribute | NC_GLOBAL | creator_name | String | Dan Braithwaite | attribute | NC_GLOBAL | creator_url | String | http://www.chrs.web.uci.edu/ | attribute | NC_GLOBAL | date_created | String | 2026-10-13T23:58:33Z … attribute | NC_GLOBAL | time_coverage_end | String | 2026-07-31T00:00:00Z",
+     "location": "NC_GLOBAL attributes contributor_name, contributor_role, creator_email, creator_name, creator_url, date_created, time_coverage_end"
+    },
+    {
+     "source_id": "s76",
+     "relationship": "supports",
+     "passage": "Dan Kent Braithwaite | dbraithw@uci.edu | UCI Retiree | Civil & Environmental Engineering",
+     "location": "search result 1"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "<gco:DateTime>2026-07-16T16:56:10</gco:DateTime> … <gco:CharacterString>Sorooshian, Soroosh</gco:CharacterString> … <gco:CharacterString>Director and Professor</gco:CharacterString> … codeListValue=\"principalInvestigator\" … <gco:CharacterString>Hsu, Kuolin</gco:CharacterString> … codeListValue=\"collaborator\" … <gco:CharacterString>Braithwaite, Dan</gco:CharacterString> … codeListValue=\"collaborator\" … <gco:CharacterString>Ashouri, Hamed</gco:CharacterString> … codeListValue=\"quarterly\" … The data were produced by the University of California at Irvine, and are archived at the NOAA National Centers for Environmental Information (NCEI). … <gco:CharacterString>University of California at Irvine</gco:CharacterString> … codeListValue=\"processor\"",
+     "location": "gmd:dateStamp line 52; citedResponsibleParty lines 213-361; resourceMaintenance line 536; lineage/processStep lines 2108-2122"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Amir Aghakouchak, Ph.D. | Director of CHRS | Chancellor's Professor, Civil & Environmental Engineering … Soroosh Sorooshian, Ph.D. | Founding Director of CHRS | Distinguished Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Adjunct Professor, Civil & Environmental Engineering",
+     "location": "directory lines 33-64"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Amir Aghakouchak, Ph.D. | Director of CHRS | Chancellor's Professor, Civil & Environmental Engineering … Soroosh Sorooshian, Ph.D. | Founding Director of CHRS | Distinguished Professor, Civil & Environmental Engineering | Distinguished Professor, Earth System Science … Kuo-lin Hsu, Ph.D. | Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Director of CHRS | Adjunct Professor, Civil & Environmental Engineering … ## Program & System Administrator | Name | Title | Email | Tu Thanh Ung | Assistant Specialist | ungtt@uci.edu",
+     "location": "lines 33-84"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "<activities:employments path=\"/0000-0003-1293-2588/employments\" … />",
+     "location": "line 2 (self-closing, no employment-summary children)"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "\"title\": \"PERSIANN-CCS-CDR, a 3-hourly 0.04° global precipitation climate data record for heavy precipitation studies\", | \"publication_year\": 2021 | \"title\": \"PERSIANN-CCS-CDR: A Global Precipitation Climate Data Record for Hydro-climate Studies\", | \"publication_year\": 2020",
+     "location": "results[0], results[1]: title, publication_year"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Metadata are direct but may be a fixed template value; UCI's directory lists the same dbraithw address as a UCI Retiree; who actually runs the extension is not stated anywhere.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c6",
+   "text": "CHRS lists one Program & System Administrator (Tu Thanh Ung, Assistant Specialist), who is credited with Methodology and Software on the January 2026 PERSIANN-CCS-CDR V2.0 paper.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Amir Aghakouchak, Ph.D. | Director of CHRS | Chancellor's Professor, Civil & Environmental Engineering … Soroosh Sorooshian, Ph.D. | Founding Director of CHRS | Distinguished Professor, Civil & Environmental Engineering | Distinguished Professor, Earth System Science … Kuo-lin Hsu, Ph.D. | Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Director of CHRS | Adjunct Professor, Civil & Environmental Engineering … ## Program & System Administrator | Name | Title | Email | Tu Thanh Ung | Assistant Specialist | ungtt@uci.edu",
+     "location": "lines 33-84"
+    },
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "\"publication_date\": \"2026-01-29\", | \"doi\": \"https://doi.org/10.1038/s41597-026-06625-5\", | \"raw_author_name\": \"Mohammad Bolboli Zadeh\", | \"raw_author_name\": \"Phu Nguyen\", | \"raw_author_name\": \"Kuo-Lin Hsu\", | \"raw_author_name\": \"Amir AghaKouchak\", | \"display_name\": \"Tu Thanh Ung\", | \"display_name\": \"Methodology\" | \"display_name\": \"Software\" | \"author_position\": \"last\", | \"display_name\": \"Funding acquisition\" | \"raw_author_name\": \"Soroosh Sorooshian\",",
+     "location": "publication_date, doi, authorships[0..5].raw_author_name, author_position, roles display_name"
+    },
+    {
+     "source_id": "s79",
+     "relationship": "supports",
+     "passage": "Tu Thanh Ung | ungtt@uci.edu | Assistant Specialist | (949) 824-8821 | Civil & Environmental Engineering",
+     "location": "search result 1"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Directory and paper author roles; Ung's role on PERSIANN-CDR itself is not stated."
+  },
+  {
+   "id": "c7",
+   "text": "No succession or knowledge-transfer plan for CHRS or PERSIANN-CDR is published on CHRS, UCI, Samueli or NCEI pages read.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "As an informal interdisciplinary group, the Center brings together faculty and researchers from the Civil and Environmental Engineering and Earth System Science in the University of California, Irvine. … The majority of CHRS research activities are funded by NASA, NOAA, and NSF. … © 2017 Center for Hydrometeorology and Remote Sensing",
+     "location": "About CHRS paragraph; footer"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Director, Center for Hydrometeorology and Remote Sensing (CHRS) | The Henry Samueli School of Engineering … Ph.D., University of Stuttgart, 2010, Civil and Environmental Engineering … ORCiD: 0000-0003-4689-8357 … 2023, UC Irvine Chancellor’s Professor … He also serves as director of UC Irvine’s Center for Hydrometeorology and Remote Sensing (CHRS), where his team develops innovative tools for monitoring and modeling hydrologic extremes. … Last updated | 11/25/2025",
+     "location": "profile header; Academic Distinctions; Short Biography; footer"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Founding Director, Center for Hydrometeorology & Remote Sensing (CHRS), Center for Hydrometeorology and Remote Sensing (CHRS) … Professor Sorooshian was the founding Director of both research centers. … CHRS is actively engaged in research and the publication of its findings. Papers published since the research group relocated to the University of California at Irvine (UCI) in July 2003:",
+     "location": "profile header line 12; biography line 227; publications intro line 274"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "An absence across the owners' own pages; unpublished internal plans can't be ruled out."
+  },
+  {
+   "id": "c8",
+   "text": "NA23OAR4310443 (NOAA CPO, PI Phu Nguyen) totalled $390,000 for 2023-09-01 to 2026-08-31 with no subawards; no successor NOAA award to UC Irvine was found, and the open CPO FY2026 ESSSP call does not name PERSIANN.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "\"subaward_count\": 0, … \"total_obligation\": 390000.0, … \"total_account_obligation\": -100800.23, … \"start_date\": \"2023-09-01\", … \"end_date\": \"2026-08-31\",",
+     "location": "subaward_count; total_obligation; total_account_obligation; period_of_performance"
+    },
+    {
+     "source_id": "s75",
+     "relationship": "supports",
+     "passage": "000 | 11.431 | 07/07/2023 | $130,000 | A1: New Award",
+     "location": "Transaction History tab"
+    },
+    {
+     "source_id": "s68",
+     "relationship": "supports",
+     "passage": "Start Date: 9/1/23 | End Date: 8/31/26 | Total Obligated: $390.0K | \"Amendment Since initial award the total obligations have increased 200% from $130,000 to $390,000.\" | \"The grant has a duration of 3 years and was awarded through assistance program 11.431 Climate and Atmospheric Research.\" | **Status:** \"(Complete)\"; \"100% Complete\"; Last Modified 8/20/24 | Successor award: NOT PRESENT | Subgrant awards: \"Subs 0\"",
+     "location": "Period of performance; Analysis notes; Status; Successor or related award"
+    },
+    {
+     "source_id": "s67",
+     "relationship": "contextualizes",
+     "passage": "Climate Program Office (CPO) FY2026 Earth System Science and Services Partnership | … NOAA-OAR-CPO-2026-33326 | … Full applications for all competitions must be received by 11:59 p.m. Pacific Time, on October 26, 2026. | … Multi-institution applications will | not be accepted. | … The total NOAA funding amount available for the ESSSP is anticipated to be approximately $10,000,000. … decisions will be made in November 2026. Funding is expected to begin in December 2026.",
+     "location": "Executive Summary p. 1; line 449 of saved text (selection timing)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "USAspending and HigherGov agree; USAspending's search is POST-only, so a successor search was incomplete.",
+   "figure_status": [
+    "obligation",
+    "actual"
+   ]
+  },
+  {
+   "id": "c9",
+   "text": "NESDIS's 2025-2029 product plan keeps PERSIANN-CDR and says it is produced by a non-NOAA entity and sent to NCEI; it names no funding for the extension.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s56",
+     "relationship": "supports",
+     "passage": "3.4.4.1 PERSIANN CDR | PERSIANN-CDR provides a high-quality CDR of Precipitation. … The algorithm uses IR imager data from GEO satellites. | The algorithm is produced by a non-NOAA entity and sent to NESDIS/NCEI for | ingestion and stewardship. … Effective Date: June 25, 2025 | Expiration Date: June 24, 2029",
+     "location": "Section 3.4.4.1, p. 236"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NESDIS's own plan.",
+   "sole_source_reason": "the body's own published documents are the authority for its own rules, plans and files"
+  },
+  {
+   "id": "c10",
+   "text": "UCI's CISESS money is a $300,000 sub-award (11/19/2024) for improving orographic precipitation, the MiRS project funded by JPSS PGRR that CISESS credits to Hsu, Nguyen and Sorooshian, not the PERSIANN-CDR extension; no 'LEO' task is named in any record read.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s72",
+     "relationship": "supports",
+     "passage": "Z2200712 | UNIVERSITY OF CALIFORNIA IRVINE | 11/19/2024 | $158,562 | FFATA: CISESS: UCI BIO_GO_SHIP A16S SECTION ANALYS... read more | Z2200111 | UNIVERSITY OF CALIFORNIA IRVINE | 11/19/2024 | $300,000 | FFATA: CISESS: IMPROVING OROGRAPHIC PRECIPITATION ... read more",
+     "location": "Sub-Awards tab, rows 21-22 of 29"
+    },
+    {
+     "source_id": "s57",
+     "relationship": "supports",
+     "passage": "CISESS Consortium Scientists Kuo-lin Hsu, Phu Nguyen , and Soroosh Sorooshian from the University of California Irvine (UCI) … Hsu, Nguyen and Sorooshian have been working on a CISESS project to improve predictions of orographic precipitation for the last two years. … They are collaborating with the CISESS Microwave Integrated Retrieval System (MiRS) team … They receive funding from JPSS PGRR for this work.",
+     "location": "News item body, paragraphs 1-2"
+    },
+    {
+     "source_id": "s61",
+     "relationship": "supports",
+     "passage": "\"fain\": \"NA24NESX432C0001\" | \"description\": \"THIS PROPOSAL IS FOR THE FIVE-YEAR RENEWAL OF THE COOPERATIVE INSTITUTE FOR SATELLITE EARTH SYSTEM STUDIES (CISESS). THE COOPERATIVE INSTITUTE IS FORMED THROUGH A NATIONAL CONSORTIUM OF ACADEMIC, NON-PROFIT AND COMMUNITY ORGANIZATIONS WITH LEADERSHIP FROM THE UNIVERSITY OF MARYLAND, COLLEGE PARK (UMCP) AND THE UNIVERSITY OF NORTH CAROLINA (UNC) SYSTEM. …\" | \"subaward_count\": 29 | \"total_subaward_amount\": 26102529.0 | \"total_obligation\": 77486317.0 | \"start_date\": \"2024-07-01\" | \"end_date\": \"2029-06-30\" | \"recipient_name\": \"UNIVERSITY OF MARYLAND, COLLEGE PARK\"",
+     "location": "JSON fields fain, description, subaward_count, total_subaward_amount, total_obligation, period_of_performance.start_date/end_date, recipient.recipient_name"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "USAspending sub-award list and CISESS news agree; the 2019 agreement's 45 sub-awards were not listed.",
+   "figure_status": "obligation"
+  },
+  {
+   "id": "c11",
+   "text": "NOAA contract ST133017CQ0058 (Riverside) has 9 orders, none for PERSIANN or CHRS; the RTMEE order's two sub-awards went to Carr Astronautics and AER.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s74",
+     "relationship": "supports",
+     "passage": "Ordering Period End Date | Jun 30, 2027",
+     "location": "Dates; Orders Made Under this IDV table"
+    },
+    {
+     "source_id": "s73",
+     "relationship": "supports",
+     "passage": "CARR ASTRONAUTICS CORP | 08/01/2020 | $1,112,519 | THE OVERALL OBJECTIVES ARE TO ENSURE THAT STAR IS ... read more | PROTECH-AER | ATMOSPHERIC & ENVIRONMENTAL RESEARCH INC",
+     "location": "Sub-Awards tab"
+    },
+    {
+     "source_id": "s55",
+     "relationship": "supports",
+     "passage": "\"type_description\": \"DELIVERY ORDER\" | \"description\": \"RESEARCH&TECHNOLOGY MATURATION FOR THE EXPLOITATION OF EMERGING TECHNOLOGIES (RTMEE) REQUIREMENT.\" | \"total_obligation\": 7173047.52 | \"subaward_count\": 2 | \"total_subaward_amount\": 2478740.0 | \"start_date\": \"2020-08-01\" | \"end_date\": \"2026-01-31\" | \"recipient_name\": \"RIVERSIDE TECHNOLOGY INC\"",
+     "location": "JSON fields type_description, description, total_obligation, subaward_count, total_subaward_amount, period_of_performance.start_date/end_date, recipient.recipient_name"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "USAspending order list and sub-award tab; sub-awards of the other 8 orders not read.",
+   "figure_status": "obligation"
+  },
+  {
+   "id": "c12",
+   "text": "NCEI holds one PERSIANN-CDR code package (SourceCode_01B-16.tar.gz, 2017-03-10) whose README requires MATLAB for the bias correction; the C-ATBD describes CentOS 5.5 Linux servers with C, C++, bash and MATLAB, and the 2025 User Guide still describes MATLAB; no newer code, operational description or training code is published.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "AlgorithmDescription_01B-16.pdf | 2017-03-10 08:21 | 1404046 | CDR_Flyer_01B-16.pdf | 2019-11-18 10:15 | 3912088 | DataFlowDiagram_01B-16.pdf | 2017-03-10 08:21 | 1226119 | MaturityMatrix_01B-16.pdf | 2017-03-10 08:21 | 62314 | SourceCode_01B-16.tar.gz | 2017-03-10 08:22 | 4604083 | UseAgreement_01B-16.pdf | 2017-03-10 08:21 | 40654 | UserGuide_01B-16.pdf | 2026-01-06 09:11 | 220921",
+     "location": "directory listing table"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "The PERSIANN-CDR package V1 … cd PERSIANN-CDR_v01r01 | or whatever the current version or installation directory used. | ./do_PERSIANN_init | will initialize the PERSIANN-CDR software setup. Requires gcc | and g++ | as well as netcdf-4 libraries. To do the bias corrections matlab | will | be required. … obtain monthly 2.5 deg GPCP files (currently v 2.2).",
+     "location": "PERSIANN.README lines 1-25"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "The PERSIANN-CDR data processing system is configured to run on LINUX servers on | generic (x86 for byte order) hardware. The operating system is currently CENTOS 5.5, but | the codes have also been run on much older Fedora Core 3 and other variations of Red Hat | LINUX. Programs are written in, C, C++, bash shell, and MATLAB. Compilers are Gnu | gcc/g++ with HDF5 libraries. … Due to the high volume of data to process we ran the PERSIANN model on 3 different | systems. A year of data on one system running 4-cores in parallel can take 5 days to finish. | Another system with faster Xeon 8-cores and better compiler optimized code can now | finish a year of data in 10-12 hrs.",
+     "location": "Section 5.6 Processing Environment and Resources"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Dataset name and version:           PERSIANN CDR, Version 1 Revision 1 | Digital Object Identifier (DOI):    https://doi.org/10.7289/V51V5BWQ | Email address:                      PERSIANN_contacts@noaa.gov … Revision     Date              Summary of changes … 0            Aug 14, 2025      First release of the User Guide, describing PERSIANN CDR v1r1. … The processing system utilizes a combination of shell scripts, C code, C++ code, and MATLAB | code.",
+     "location": "1.2 Dataset information; 2.1 Document revision history; section 4 end"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's own listing and the documents themselves.",
+   "sole_source_reason": "the body's own published documents are the authority for its own rules, plans and files",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c13",
+   "text": "No page names the computers that run the extension; UCI's HPC3 charges storage recharge and condo or core-hour fees, and MATLAB is available under a UCI-wide licence (OIT; RCIC contributes).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "● 253 Nodes Total, 11568 cores … Storage is funded by researchers | through a standard recharge system where a user purchases capacity for a 5-year period of time | (currently $100/TB/5-years). … Resources can be expanded via grant (or other funding) purchases. For computing, grants may either | purchase equipment (condo) and pay a one-time integration charge or purchase a prepaid time | allocation (cloud-like). RCIC does not post-bill for resources. … CPU                Cost to purchase a core-hour of                    Expires after 1 Year.         $0.01/ Core-hour",
+     "location": "HPC3 summary; DFS storage; Costs for Adding Storage, Processing, GPU Capability; Table 2"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "MATLAB/R2025b | LANGUAGES | MATLAB (R) is a programming and numeric computing platform … One exception to this is MATLAB. RCIC contributes to the UCI-wide license and MATLAB is available to all the HPC3 users. Users only need to load one of the available MATLAB modules in order to use this software. | RCIC does not purchase or provide licenses, we only enable an access to the licenses.",
+     "location": "module table; 1.3 Licensed Software"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "OIT provides the campus with Matlab - no cost to students and faculty",
+     "location": "page body"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "contextualizes",
+     "passage": "Faculty, upon request, are granted about 200,000 core | hours per calendar year. These hours are made possible by UCI-purchased hardware. … Configuration as of January 2026 is as follows: | ● 253 Nodes Total, 11568 cores",
+     "location": "lines 29-35"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "contextualizes",
+     "passage": "The data go through many stages of processing: 125 GB/year raw data compressed are | processed to provide inputs to the model scripts --> those inputs reduced the volume to 5 | GB/year compressed --> PERSIANN output from model generate 5.5 GB/year compressed -",
+     "location": "section 5.6 Processing Environment and Resources, lines 728-730"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "UCI's own pages; their link to PERSIANN production is not stated.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c14",
+   "text": "CHRS dates from 2003: Sorooshian's group relocated from Arizona to UC Irvine in July 2003, and his 2020 CV lists him as CHRS Director '2003-present'.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s71",
+     "relationship": "supports",
+     "passage": "2003-present      Director, Center for Hydrometeorology & Remote Sensing (CHRS), Dept. of Civil &",
+     "location": "p. 1, Professional experience"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "Founding Director, Center for Hydrometeorology & Remote Sensing (CHRS), Center for Hydrometeorology and Remote Sensing (CHRS) … Professor Sorooshian was the founding Director of both research centers. … CHRS is actively engaged in research and the publication of its findings. Papers published since the research group relocated to the University of California at Irvine (UCI) in July 2003:",
+     "location": "profile header line 12; biography line 227; publications intro line 274"
+    },
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "Soroosh Sorooshian is the founding director of the Center for Hydrometeorology and Remote Sensing (CHRS), Samueli Endowed Chair in Engineering, and Distinguished Professor of Civil and Environmental Engineering and Earth System Science Departments at UC Irvine. Prior to 2003 he was a faculty member at the University of Arizona for 20 years. … In 2007, UNESCO awarded the Great Man-made River Water Prize to the Center for Hydrometeorology and Remote Sensing (CHRS) and the University of Arizona’s Center for the Sustainability of semi-Arid Hydrologic and Riparian Areas (SAHRA). Professor Sorooshian was the founding director for both centers. … Ph.D., UCLA, Engineering, 1978",
+     "location": "Profile paragraphs 1 and 3; Education"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "CV and two UCI profiles."
+  },
+  {
+   "id": "c15",
+   "text": "NSF holds no award with the keyword PERSIANN; the UCI awards found to Sorooshian, AghaKouchak and Nguyen are not for the CDR extension.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s58",
+     "relationship": "supports",
+     "passage": "\"award\": [] | \"totalCount\": 0",
+     "location": "response.award, response.metadata.totalCount"
+    },
+    {
+     "source_id": "s66",
+     "relationship": "supports",
+     "passage": "\"award\": [] | \"totalCount\": 0",
+     "location": "response.award, response.metadata.totalCount"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NSF's own API."
+  },
+  {
+   "id": "c16",
+   "text": "Phu Nguyen, now CHRS associate director, holds an adjunct (Associate Adjunct Professor) title; Mojtaba Sadeghi left CHRS (Ph.D. 2021, now at Kettle Ltd.).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "\"Associate Adjunct Professor\" … \"associate director of the Center for Hydrometeorology & Remote Sensing (CHRS)\" … \"Ph.D., University of California, Irvine, 2014\" | \"M.S., University of Melbourne, 2008\" | \"B.Sc., Bach Khoa University, 2003\"",
+     "location": "title; bio; Education section"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "Amir AghaKouchak, Chancellor’s Professor of civil and environmental engineering and director of the Center for Hydrometeorology and Remote Sensing … Over the years, AghaKouchak and his colleagues at the Center for Hydrometeorology and Remote Sensing – including its founder and former director, Soroosh Sorooshian, Distinguished Professor of civil and environmental engineering, as well as Henry Samueli Endowed Chair in Engineering; Kuo-Lin Hsu, professor of civil and environmental engineering; and Phu Nguyen, associate adjunct professor of civil and environmental engineering and CHRS associate director",
+     "location": "paragraphs at lines 11 and 45 of saved text"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Amir Aghakouchak, Ph.D. | Director of CHRS | Chancellor's Professor, Civil & Environmental Engineering … Soroosh Sorooshian, Ph.D. | Founding Director of CHRS | Distinguished Professor, Civil & Environmental Engineering | Distinguished Professor, Earth System Science … Kuo-lin Hsu, Ph.D. | Professor, Civil & Environmental Engineering … Phu Nguyen, Ph.D. | Associate Director of CHRS | Adjunct Professor, Civil & Environmental Engineering … ## Program & System Administrator | Name | Title | Email | Tu Thanh Ung | Assistant Specialist | ungtt@uci.edu",
+     "location": "lines 33-84"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "UCI profile, UCI News and CHRS directory."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Sorooshian's status: Distinguished Professor (CHRS directory, engineering profile) vs Distinguished Professor Emeritus (UCI campus directory; UCI Academic Personnel list)",
+   "source_ids": [
+    "s34",
+    "s44",
+    "s77"
+   ],
+   "status": "resolved",
+   "explanation": "UCI's campus directory and Academic Personnel both say emeritus; the CHRS and engineering pages were not updated. Emeriti can keep researching, which fits his 2026 papers. No emeritus date found."
+  },
+  {
+   "claim": "Who leads PERSIANN-CDR: NCEI metadata still name Sorooshian 'Director and Professor' as PI, while CHRS has named AghaKouchak director since mid-2025",
+   "source_ids": [
+    "s5",
+    "s13"
+   ],
+   "status": "resolved",
+   "explanation": "NCEI metadata were not updated after the CHRS change; the PI of record and the centre's director differ."
+  }
+ ],
+ "coverage_gaps": [
+  "No announcement, UCI News or Samueli news item gives the date or the reason for the CHRS director change. Wayback places it between the 2025-04-17 and 2025-07-13 captures of chrs.web.uci.edu/chrs_directory.php. Searched: r2 (2 queries on uci.edu, engineering.uci.edu, news.uci.edu) and r7 (2 queries, unrelated results); not found. (from sa2)",
+  "Written succession or knowledge-transfer plan for CHRS or PERSIANN-CDR: NOT PRESENT in the CHRS about page, the faculty profiles, NCEI ISO metadata, the User Guide Rev 0 or the C-ATBD. (from sa2)",
+  "Sorooshian CV PDFs (engineering.uci.edu/files/ss_hssoe_cv_2025.pdf, soroosh_cv.pdf, ssorooshian_hssoe_cv_august_2020.pdf) all returned HTTP 404; a search snippet said his CV lists the CHRS directorship starting in 2003. Not tried: the Wayback copy of ss_hssoe_cv_2025.pdf. (from sa2)",
+  "CHRS founding year: the Sorooshian profile says only that he was at Arizona until 2003 and was founding director of CHRS; no CHRS page gives a founding date. The 2026-05-21 Wayback capture of the directory was not read. (from sa2)",
+  "Whether CHRS's current production code differs from SourceCode_01B-16.tar.gz (2017 posting of 2014 code): no newer code package, C-ATBD revision, OAD or maintenance manual is on the NCEI server. No official GitHub repository (r9), and the ANN training code is not published: NOT PRESENT. (from sa2)",
+  "Which computers produce the quarterly extension and who pays for them: the C-ATBD (2014) mentions only unnamed LINUX servers (CentOS 5.5, 3 systems). No RCIC or HPC3 page names CHRS (r11, 2 queries). The RCIC facilities PDF (rcic.uci.edu/_static/RCIC-description.pdf) was not read. (from sa2)",
+  "Correction to an earlier gap item: the RCIC facilities PDF and the 2026-05-21 directory capture were read later (sa2-e16, sa2-e17). Neither names CHRS as an HPC3 user. (from sa2)",
+  "Dan Braithwaite current status and job title (Programmer/Analyst or other) at UCI: NOT PRESENT. Not on current CHRS directory; ORCID employments empty; one WebSearch found nothing. Not tried: UCI campus directory (directory.uci.edu), Wayback copies of older CHRS directory pages listing staff, LinkedIn-type snippets. (from sa1)",
+  "Braithwaite's OpenAlex profile earliest works (1990-1991 molecular biology) may belong to a different D.K. Braithwaite; his first PERSIANN-titled work in OpenAlex is 2000. Need a check of his ORCID works list or an early PERSIANN paper author list (e.g., Hsu et al. 1997 JAM, Sorooshian et al. 2000 BAMS) to confirm first year. (from sa1)",
+  "Sorooshian emeritus status conflict: UCI Academic Personnel emeritus list includes him; CHRS directory and engineering profile say Distinguished Professor without Emeritus; he is last author (Funding acquisition) on Jan 2026 CCS-CDR V2.0 paper. Recall/emeritus date NOT PRESENT. (from sa1)",
+  "ORCID iDs for Hsu (0000-0002-3578-3565), Sorooshian (0000-0001-7774-5113), Nguyen (0000-0002-9055-2583), Sadeghi (0000-0003-3194-0110) are from OpenAlex only; not yet cross-checked against ORCID records or a paper page. AghaKouchak's iD is confirmed by the UCI faculty profile; Braithwaite's iD name confirmed by ORCID person record. (from sa1)",
+  "Latest PERSIANN paper year for Nguyen, AghaKouchak, Sadeghi not separately queried (Nguyen and AghaKouchak are co-authors on the Jan 2026 CCS-CDR V2.0 paper). Sadeghi PhD 2021, now industry (Kettle Ltd.). (from sa1)",
+  "2016 Tier page on UCnet not fetched directly (age 55 for 2016 Tier is from a WebSearch summary of the Retirement Handbook only). Exact year Regents rescinded Standing Order 103.6 NOT PRESENT in the 2022 UCOP letter. Which UCRP tier each CHRS person belongs to: NOT PRESENT. (from sa1)",
+  "Successor to NA23OAR4310443 (ended 2026-08-31): NOT FOUND. USAspending recipient/award search is POST-only and could not be run; no web hit for a 2026 NOAA award to UCI/Sorooshian/Nguyen. Lead: NOFO NOAA-OAR-CPO-2026-33326 (FY2026 CPO Earth System Science and Services Partnership, decisions expected Nov 2026, funding Dec 2026) at https://files.simpler.grants.gov/opportunities/b00bdf4a-dceb-4714-b4ab-7139bef86dae/attachments/0b5e725f-a99f-4c03-aae2-b47c3789453f/Foa_Content_of_NOAA-OAR-CPO-2026-33326.pdf (not read). Coordinator could run USAspending Advanced Search (browser) for recipient UC Irvine, NOAA, start date 2026. (from sa3)",
+  "NA23OAR4310443 shows total_account_obligation -100800.23 alongside $390,000 outlay; what this entry is (deobligation at closeout, termination, or FY accounting) is not explained in the GET record. Transaction history (POST /api/v2/transactions/) not read. (from sa3)",
+  "Terminated NOAA 'incoming subaward' at UCI (2025-05-21 town hall): prime award and PI still NOT IDENTIFIED. No Grant Witness page or UCI list naming it was found. (from sa3)",
+  "CISESS subawards to UC Irvine (NA19NES4320002: 45 subawards; NA24NESX432C0001: 29 subawards) and the 'LEO' funding task for Hsu: recipients not visible via GET API or HigherGov; USAspending award pages need a browser (https://www.usaspending.gov/award/ASST_NON_NA24NESX432C0001_013 sub-awards tab). (from sa3)",
+  "ST133017CQ0058 / order 1332KP20FNEED0029 (RTMEE, ended 2026-01-31): names of its 2 subawards ($2,478,740) still unread; needs the USAspending page's sub-awards tab in a browser. (from sa3)",
+  "NSF API PI lookups for AghaKouchak and Nguyen not run (time). NASA TechPort/NSPIRES not searched directly for 2025-2026 UCI PERSIANN awards. (from sa3)",
+  "Correction to the earlier NSF gap: the AghaKouchak and Nguyen NSF PI lookups were run later (sources sa3-e12, sa3-e13). Still open: NASA TechPort/NSPIRES not searched directly for 2025-2026 UCI PERSIANN awards. (from sa3)",
+  "c3 OpenAlex JSON fields (orcid, earliest publication_year) not re-verified: find_text.py does not search .json and no time to Read the results blocks. (from checker)",
+  "ERDDAP variant datasets cdr_persiann_by_lon_nv and by_lat_nv show date_created 2026-07-09 in a search snippet (not read); check whether c5 should name the dataset view. (from checker)",
+  "c8: saved USAspending JSON generated_unique_award_id is ASST_NON_NA23OAR4310443_013, checklist URL ends _1330; start/end dates not re-read. Unread leads: https://chrs.web.uci.edu/projects_noaa.php, https://cisess.umd.edu/assets/1/7/CISESS_Weekly_2026.05.08.pdf, https://ntrs.nasa.gov/citations/20260002308 (from checker)",
+  "Unread lead for c12: GitHub repo github.com/bolbolim/PERSIANN-CCS-CDR-V02 (code for PERSIANN-CCS-CDR V2.0, a different product), seen in snippet from https://xincalwei.github.io/landslide-detection/papers/persiann-ccs-cdr-v2 (from checker)",
+  "Passages for c2, c7, c9, c10, c11 and most of c13 not re-checked (time). (from checker)",
+  "c4 nuance (snippet, unread): UC Retirement Handbook https://ucnet.universityofcalifornia.edu/wp-content/uploads/forms/pdf/retirement-handbook.pdf says the 1976 Tier and Modified 2013 Tier allow retirement at 50; plan regulations give normal retirement age 65 for 2013/2016 Tier. (from checker)",
+  "c2 leads (snippets, unread): ASCE 2026-04-10 article calls Sorooshian UC Irvine Distinguished Professor; CV https://engineering.uci.edu/files/ss_hssoe_cv_2025.pdf may state status. (from checker)",
+  "A WebSearch summary says the NCEI PERSIANN CDR product page reports a pause in operations due to processing delays; not in the page fetched 2026-11-27 (neither text nor raw HTML). Check the NCEI Alerts page https://www.ncei.noaa.gov/alerts and a Wayback capture of the product page. (from checker)",
+  "Unread lead for c10: https://today.umd.edu/umd-awarded-388m-noaa-cooperative-agreement-for-earth-system-studies (CISESS renewal $388M, said to list UC Irvine among collaborating institutions) and CISESS Weekly 2026.05.08. (from checker)",
+  "Found but never read: https://engineering.uci.edu/files/soroosh_cv.pdf and https://engineering.uci.edu/files/ss_hssoe_cv_2025.pdf (Sorooshian CVs; may give emeritus date and career dates) (from reconciler)",
+  "Found but never read: https://www.highergov.com/contract/1332KP20FNEED0029/ and https://www.highergov.com/contract/ST133017CQ0058-1332KP20FNEED0029/ (RTMEE contract order pages) (from reconciler)",
+  "The terminated NOAA 'incoming subaward' at UCI (from pt3/pt4) was not identified in this run.",
+  "USAspending's award search is POST-only: no search for a 2026 NOAA award to UC Irvine was run; the first CISESS agreement's 45 sub-awards and the other 8 Riverside orders' sub-awards were not listed.",
+  "Braithwaite's retirement date and whether he was recalled to run the extension are not published."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "AghaKouchak director CHRS 2025",
+   "tool": "WebSearch",
+   "notes": "results were about Center for Human Rights in Iran; nothing relevant",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Center for Hydrometeorology Remote Sensing history 2003",
+   "tool": "WebSearch",
+   "notes": "CHRS pages found but no founding date; read about.php",
+   "from": "sa2",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN github repository code",
+   "tool": "WebSearch",
+   "notes": "allowed_domains github.com; only third-party repos (ho3nik, mojtabasadeghi77 PERSIANN-CCS-CDR, samashti, Martins6, jusethCS); no official PERSIANN-CDR production or ANN training repo",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "UCI HPC3 hydrometeorology remote sensing",
+   "tool": "WebSearch",
+   "notes": "only CHRS pages; nothing on HPC3",
+   "from": "sa2",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AghaKouchak named director Center for Hydrometeorology",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu; profile, provost and news items call him director; no appointment announcement",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Sorooshian CHRS founded University of Arizona moved UCI",
+   "tool": "WebSearch",
+   "notes": "Sorooshian profile and CVs (CV PDFs 404)",
+   "from": "sa2",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR operational algorithm description NCEI",
+   "tool": "WebSearch",
+   "notes": "only C-ATBD 01B-16 and Obs4MIPs note; no OAD",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "UCI MATLAB campus license OIT",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu; RCIC software page, engineering MATLAB page",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Sorooshian founding director CHRS AghaKouchak succeeds",
+   "tool": "WebSearch",
+   "notes": "allowed_domains engineering.uci.edu, news.uci.edu; no handover announcement",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "HPC3 RCIC Center for Hydrometeorology Remote Sensing nodes",
+   "tool": "WebSearch",
+   "notes": "allowed_domains rcic.uci.edu, uci.edu; no page names CHRS",
+   "from": "sa2",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AghaKouchak CHRS director appointed 2025 Sorooshian steps down",
+   "tool": "WebSearch",
+   "notes": "unrelated human-rights results; only 2016 UCI news on Sorooshian as director",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00854/xml",
+   "tool": "lookup (NCEI ISO collection metadata)",
+   "notes": "names, roles and processor read",
+   "from": "sa2",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "https://web.archive.org/cdx/search/cdx?url=chrs.web.uci.edu/chrs_directory.php&from=2023",
+   "tool": "lookup (Wayback CDX)",
+   "notes": "7 captures since 2023: 20230702, 20240222, 20250417, 20250713, 20251212, 20260521 (+ header); an earlier CDX call on chrs.web.uci.edu/directory.php returned none (file renamed _unused)",
+   "from": "sa2",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Sorooshian curriculum vitae 2026 CHRS director",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu; found faculty.uci.edu facultyId=5082 (read); Samueli ASCE April 2026 news page returned HTTP 404",
+   "from": "sa2",
+   "copy_of": "https://engineering.uci.edu/files/ss_hssoe_cv_2025.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AghaKouchak new director CHRS July 2025",
+   "tool": "WebSearch",
+   "notes": "allowed_domains engineering.uci.edu; Sept 2025 and Nov 2025 Samueli news call him director; no appointment item; June 2025 faculty-awards page returned HTTP 404 (not read)",
+   "from": "sa2",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OpenAlex authors search: Kuolin Hsu; Dan Braithwaite; Soroosh Sorooshian; Phu Nguyen (UCI filter); Amir AghaKouchak; Mojtaba Sadeghi (UCI filter)",
+   "tool": "lookup (OpenAlex authors API)",
+   "notes": "six requests, one at a time",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "OpenAlex works filter author.id sort publication_year:asc per-page=3 for each of six author IDs; plus desc for Braithwaite; title.search:PERSIANN asc for Braithwaite, desc for Hsu and Sorooshian; work W7126062831 authorships",
+   "tool": "lookup (OpenAlex works API)",
+   "notes": null,
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "pub.orcid.org/v3.0/0000-0003-1293-2588/employments and /person",
+   "tool": "lookup (ORCID public API)",
+   "notes": "returned XML; employments empty",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://chrs.web.uci.edu/chrs_directory.php",
+   "tool": "fetch_page.py",
+   "notes": "current CHRS directory",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1b",
+   "query": "UCRP minimum retirement age 55 2016 Tier",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ucnet.universityofcalifornia.edu",
+   "from": "sa1",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q1b",
+   "query": "University of California faculty no mandatory retirement age",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ucop.edu, ucnet.universityofcalifornia.edu",
+   "from": "sa1",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Dan Braithwaite CHRS UC Irvine programmer",
+   "tool": "WebSearch",
+   "notes": "no relevant result",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sorooshian Distinguished Professor emeritus UC Irvine",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kuolin Hsu UC Irvine professor Ph.D.",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Phu Nguyen UC Irvine Ph.D. CHRS associate director",
+   "tool": "WebSearch",
+   "notes": "allowed_domains uci.edu",
+   "from": "sa1",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "pub.orcid.org/v3.0/<id>/person for Hsu, Sorooshian, Nguyen",
+   "tool": "lookup (ORCID public API)",
+   "notes": "name cross-check of OpenAlex iDs; XML responses",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Braithwaite PERSIANN-CDR programmer analyst UCI",
+   "tool": "WebSearch",
+   "notes": "no job title found; results only show Braithwaite as creator in NCEI metadata and co-author of 2014 C-ATBD and 2015 BAMS (already in earlier runs)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://web.archive.org/web/2026/https://engineering.uci.edu/files/soroosh_cv.pdf",
+   "tool": "fetch_page.py",
+   "notes": "HTTP 404",
+   "from": "sa1",
+   "copy_of": "https://engineering.uci.edu/files/soroosh_cv.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA23OAR4310443_1330/",
+   "tool": "lookup (USAspending award GET)",
+   "notes": "Resolved to generated ID ASST_NON_NA23OAR4310443_013; $390,000, 2023-09-01 to 2026-08-31, 0 subawards, account obligation -100800.23",
+   "from": "sa3",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330/",
+   "tool": "lookup (USAspending award GET)",
+   "notes": "Riverside RTMEE order under ST133017CQ0058; 2 subawards, names not in GET record",
+   "from": "sa3",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.usaspending.gov/api/v2/awards/ASST_NON_NA19NES4320002_013/ and ASST_NON_NA24NESX432C0001_013/",
+   "tool": "lookup (USAspending award GET)",
+   "notes": "CISESS 2019 and 2024 agreements; 45 and 29 subawards, recipients not in GET record; subaward search needs POST (not supported)",
+   "from": "sa3",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.nsf.gov/services/v1/awards.json?keyword=PERSIANN",
+   "tool": "lookup (NSF Award Search API)",
+   "notes": "totalCount 0",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Sorooshian",
+   "tool": "lookup (NSF Award Search API)",
+   "notes": "Only UCI award: CyberSEES 1331915 (2013-2018). AghaKouchak and Nguyen PI lookups not run (time); AghaKouchak's NSF 2332263 already known from earlier runs",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CISESS Kuolin Hsu PERSIANN 2026",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cisess.umd.edu",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CISESS weekly report PERSIANN-CDR Hsu LEO",
+   "tool": "WebSearch",
+   "notes": "allowed_domains cisess.umd.edu, cisess.org; 2025-08-15 weekly read, no UCI/PERSIANN mention (renamed _unused)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR NOAA CDR Program transition operations funding",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, noaa.gov; led to NESDIS Five-Year Product Plan 2025",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AghaKouchak NASA award 2026 precipitation UC Irvine",
+   "tool": "WebSearch",
+   "notes": "allowed_domains usaspending.gov, nasa.gov, nspires.nasaprs.com; no 2025-2026 NASA award found",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Phu Nguyen UC Irvine NASA grant 80NSSC25 precipitation",
+   "tool": "WebSearch",
+   "notes": "no 2025-2026 NASA award number found; led to Scholar Connect profile",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NA23OAR4310443",
+   "tool": "WebSearch",
+   "notes": "no relevant hits",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Sorooshian NOAA cooperative agreement 2026 PERSIANN",
+   "tool": "WebSearch",
+   "notes": "allowed_domains usaspending.gov, grants.gov, noaa.gov; lead: NOAA-OAR-CPO-2026-33326 NOFO, decisions expected Nov 2026 (not read)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UC Irvine NOAA subaward terminated 2025 list",
+   "tool": "WebSearch",
+   "notes": "only the known 2025-05-21 town hall deck (counts only)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CISESS cooperative agreement 2025 successor NOAA University of Maryland",
+   "tool": "WebSearch",
+   "notes": "found successor NA24NESX432C0001",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NA24NESX432C0001 subaward University of California Irvine",
+   "tool": "WebSearch",
+   "notes": "no hits naming UCI",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NA19NES4320002 subaward University of California Irvine Hsu",
+   "tool": "WebSearch",
+   "notes": "no hits",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Grant Witness NOAA terminated grants University of California Irvine",
+   "tool": "WebSearch",
+   "notes": "no Grant Witness page found; no NOAA-UCI termination named",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.nsf.gov/services/v1/awards.json?pdPIName=AghaKouchak",
+   "tool": "lookup (NSF Award Search API)",
+   "notes": "no PERSIANN award; 2332263 active to 2027; 1931335 SUSTAIN ended 2025-09-30",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Phu Nguyen&awardeeName=Irvine",
+   "tool": "lookup (NSF Award Search API)",
+   "notes": "totalCount 0",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN UC Irvine NASA project 2025 80NSSC",
+   "tool": "WebSearch",
+   "notes": "allowed_domains techport.nasa.gov, science.nasa.gov, earthdata.nasa.gov, ntrs.nasa.gov; only older grant numbers (80NSSC23K0136, 80NSSC21K1668, 80NSSC19K0726, 80NSSC22K0597, 80NSSC19K0684); no 2025-2026 award found; not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "University of California Irvine NOAA grant 2026 NA26 precipitation",
+   "tool": "WebSearch",
+   "notes": "allowed_domains highergov.com, usaspending.gov, grantwitness.org, grant-witness.us; no NOAA 2026 award to UCI found; successor to NA23OAR4310443 not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Riverside Technology NCEI subcontract University of California Irvine CHRS",
+   "tool": "WebSearch",
+   "notes": "no Riverside-UCI link found; led to CHRS projects_noaa.php; ST133017CQ0058 subcontract for CHRS not found after 3 queries",
+   "from": "sa3",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "1332KP20FNEED0029 subcontract",
+   "tool": "WebSearch",
+   "notes": "no page names the order or its subcontractors",
+   "from": "sa3",
+   "copy_of": "https://www.usaspending.gov/award/CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://web.archive.org/web/2021/https://engineering.uci.edu/files/ssorooshian_hssoe_cv_august_2020.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "saved copy 20220104 opened: CV lists '2003-present Director, Center for Hydrometeorology & Remote Sensing (CHRS)'",
+   "from": "main",
+   "copy_of": "https://engineering.uci.edu/files/ssorooshian_hssoe_cv_august_2020.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=https://web.archive.org/web/2021/https://engineering.uci.edu/files/ssorooshian_hssoe_cv_august_2020.pdf (same CV, older file name)",
+   "tool": "fetch_page (Wayback)",
+   "notes": "the August 2020 CV stands in for the 404 soroosh_cv.pdf and ss_hssoe_cv_2025.pdf; the 2025 CV itself has no saved copy (sa2 tried Wayback)",
+   "from": "main",
+   "copy_of": "https://engineering.uci.edu/files/soroosh_cv.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ss_hssoe_cv_2025.pdf Wayback (tried by sa2: 404); 2020 CV read instead",
+   "tool": "fetch_page (Wayback)",
+   "notes": "no route left for the 2025 file",
+   "from": "main",
+   "copy_of": "https://engineering.uci.edu/files/ss_hssoe_cv_2025.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "usaspending.gov/award/CONT_AWD_1332KP20FNEED0029_1330_DOCST133017CQ0058_1330 sub-awards tab",
+   "tool": "lookup (USAspending award page, browser)",
+   "notes": "2 sub-awards: Carr Astronautics $1,112,519 and AER $1,366,221; no UCI",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/contract/1332KP20FNEED0029/"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "usaspending.gov/award/CONT_IDV_DOCST133017CQ0058_1330 orders table",
+   "tool": "lookup (USAspending IDV page, browser)",
+   "notes": "9 child orders; none names PERSIANN, CDR or CHRS",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/contract/ST133017CQ0058-1332KP20FNEED0029/"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "usaspending.gov/award/ASST_NON_NA23OAR4310443_013 transaction history",
+   "tool": "lookup (USAspending award page, browser)",
+   "notes": "2 transactions: $130,000 (07/07/2023) and $260,000 (08/02/2024); outlayed $390,000; sub-awards 0",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/grant/NA23OAR4310443/"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "usaspending.gov/award/ASST_NON_NA24NESX432C0001_013 sub-awards tab (3 pages)",
+   "tool": "lookup (USAspending award page, browser)",
+   "notes": "29 sub-awards; UCI: Z2200111 $300,000 11/19/2024 orographic precipitation; Z2200712 $158,562 BIO_GO_SHIP",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/grant/NA24NESX432C0001/"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NA19NES4320002 USAspending GET record (sa3, s60) is the primary copy of the HigherGov page",
+   "tool": "lookup (USAspending API)",
+   "notes": "primary record already saved by sa3; sub-award names on that award not read (time)",
+   "from": "main",
+   "copy_of": "https://www.highergov.com/grant/NA19NES4320002/"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ORCID person records for the OpenAlex iDs (sa1: s42, s48-s51)",
+   "tool": "lookup (ORCID API)",
+   "notes": "names match OpenAlex for Hsu, Sorooshian, Nguyen, Sadeghi, Braithwaite; AghaKouchak iD matches his UCI profile. ORCID works lists not fetched (pub.orcid.org errors for sa1)",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/authors?search=Kuolin%20Hsu"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ORCID record 0000-0003-1293-2588 (s42, s43)",
+   "tool": "lookup (ORCID API)",
+   "notes": "name matches; employments empty; works list not read",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/authors?search=Dan%20Braithwaite"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ORCID record 0000-0001-7774-5113 (s49); 2020 CV (Ph.D. year)",
+   "tool": "lookup (ORCID API)",
+   "notes": "name matches; CV read",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/authors?search=Soroosh%20Sorooshian"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ORCID record 0000-0002-9055-2583 (s50)",
+   "tool": "lookup (ORCID API)",
+   "notes": "name matches",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/authors?search=Phu%20Nguyen&filter=last_known_institutions.id:I204250578"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "UCI faculty profile ORCiD field (s1)",
+   "tool": "lookup (UCI profile)",
+   "notes": "0000-0003-4689-8357 matches",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/authors?search=Amir%20AghaKouchak"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ORCID record 0000-0003-3194-0110 (s51)",
+   "tool": "lookup (ORCID API)",
+   "notes": "name matches",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/authors?search=Mojtaba%20Sadeghi&filter=last_known_institutions.id:I204250578"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "degree years in UCI profiles (s45, s46, s47, s1) as a check on OpenAlex earliest-work years",
+   "tool": "lookup (UCI profiles)",
+   "notes": "Ph.D. 1978 / 1996 / 2014 / 2010 consistent with earliest works 1979 / 1995 / 2008 / 2008",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5073965947&sort=publication_year:asc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Braithwaite earliest works: no primary copy route (paper author lists not fetched)",
+   "tool": "lookup (OpenAlex)",
+   "notes": "no route left in time; 1990-91 items left as possibly another person",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5087953216&sort=publication_year:asc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Braithwaite latest works: ORCID works list not readable (pub.orcid.org errors)",
+   "tool": "lookup (OpenAlex)",
+   "notes": "no route left in time",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5087953216&sort=publication_year:desc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sorooshian earliest work: 2020 CV Ph.D. 1978 (read)",
+   "tool": "lookup (CV)",
+   "notes": "consistent with 1979",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5071637554&sort=publication_year:asc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Nguyen earliest work: UCI profile degree years (s47)",
+   "tool": "lookup (UCI profile)",
+   "notes": "M.S. 2008, Ph.D. 2014",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5025610459&sort=publication_year:asc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AghaKouchak earliest work: UCI profile degree years (s1)",
+   "tool": "lookup (UCI profile)",
+   "notes": "Ph.D. 2010",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5050684806&sort=publication_year:asc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sadeghi earliest work: CHRS alumni line Ph.D. (2021) (s34)",
+   "tool": "lookup (CHRS directory)",
+   "notes": "2005 item likely another person",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5004818942&sort=publication_year:asc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Hsu, Sorooshian latest PERSIANN works: Scientific Data 2026 CCS-CDR V2.0 record (s38)",
+   "tool": "lookup (OpenAlex work)",
+   "notes": "author list confirms 2026 co-authorship",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5073965947,title.search:PERSIANN&sort=publication_year:desc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sorooshian latest PERSIANN works: CCS-CDR V2.0 record (s38)",
+   "tool": "lookup (OpenAlex work)",
+   "notes": "last author",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5071637554,title.search:PERSIANN&sort=publication_year:desc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Braithwaite earliest PERSIANN work: no primary copy fetched",
+   "tool": "lookup (OpenAlex)",
+   "notes": "no route left in time",
+   "from": "main",
+   "copy_of": "https://api.openalex.org/works?filter=author.id:A5087953216,title.search:PERSIANN&sort=publication_year:asc&per-page=3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Dan Braithwaite\" UC Irvine PERSIANN",
+   "tool": "duckduckgo (browser)",
+   "notes": "3 results: slideserve PERSIANN slides, UCAR CDG citation, eScholarship Sadeghi 2019 paper; nothing on his current job",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AghaKouchak named director Center for Hydrometeorology Remote Sensing 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "profiles, CHRS home (AAAS 2026 Fellow item calls him director), Wikipedia; no appointment date or announcement",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "UC Irvine NOAA subaward terminated 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "UCI Office of Research terminated-awards update, Grant Witness NOAA tracker, UC class action site; none names the NOAA incoming subaward. uci.edu/federal-updates/research-impacts.php has no NOAA mention (browser find)",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "directory.uci.edu/query/braithwaite",
+   "tool": "lookup (UCI campus directory, browser)",
+   "notes": "Dan Kent Braithwaite, dbraithw@uci.edu, UCI Retiree, Civil & Environmental Engineering",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "directory.uci.edu/query/sorooshian",
+   "tool": "lookup (UCI campus directory, browser)",
+   "notes": "Distinguished Professor Emeritus, CEE and CHRS",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "directory.uci.edu/query/kuolin hsu",
+   "tool": "lookup (UCI campus directory, browser)",
+   "notes": "Professor; Associate Director, CHRS",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "directory.uci.edu/query/ungtt",
+   "tool": "lookup (UCI campus directory, browser)",
+   "notes": "Tu Thanh Ung, Assistant Specialist, CEE",
+   "from": "main"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AghaKouchak CHRS director appointed 2025",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c1/c2; results unrelated (human rights bodies)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR NOAA award UC Irvine 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c8/c9; no award found",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Dan Braithwaite UC Irvine PERSIANN 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c5; no counterevidence",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "PERSIANN-CDR source code version 2",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c12; only CCS-CDR V2 GitHub repo in snippet",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Sorooshian emeritus retired 2025 UC Irvine",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c2; no retirement announcement; ASCE 2026-04-10 snippet calls him UC Irvine Distinguished Professor",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q1b",
+   "query": "UCRP retirement age 2016 tier",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c4; allowed_domains ucnet.universityofcalifornia.edu, ucop.edu; handbook snippet: Modified 2013 Tier also age 50; normal retirement age 65",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PERSIANN-CDR NCEI discontinued 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c9/D-1; summary reported a pause-in-operations notice on the NCEI product page, not found in saved text",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "CISESS PERSIANN-CDR UC Irvine subaward 2025",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c10; no subaward found; UMD $388M CISESS renewal news said to list UC Irvine as collaborator (unread)",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Riverside Technology RTMEE NOAA subaward UC Irvine",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c11; Riverside team named AER and Carr Astronautics (snippet); no UCI link",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "CHRS UC Irvine computing cluster PERSIANN processing servers",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c13; no page names computers",
+   "from": "checker"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "CHRS UC Irvine succession plan PERSIANN 2026",
+   "tool": "WebSearch",
+   "notes": "checker counter-search c7; not found; only campus-wide UCI leadership notices",
+   "from": "checker"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "CHRS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "CHRS directory and about pages",
+   "query": "CHRS directory",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "UC Irvine",
+   "publisher": "its parent",
+   "subquestion_id": "q2",
+   "aim": "UCI and Samueli news on the CHRS director change",
+   "query": "AghaKouchak director CHRS",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NOAA",
+   "publisher": "funders",
+   "subquestion_id": "q3",
+   "aim": "USAspending records for NA23OAR4310443 and successors",
+   "query": "NA23OAR4310443",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NSF",
+   "publisher": "funders",
+   "subquestion_id": "q3",
+   "aim": "NSF awards for PERSIANN",
+   "query": "NSF award PERSIANN",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": null,
+   "publisher": "registries",
+   "subquestion_id": "q1",
+   "aim": "ORCID and OpenAlex author records",
+   "query": "OpenAlex authors search",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "UC Irvine",
+   "publisher": "its parent",
+   "subquestion_id": "q1",
+   "aim": "UCI faculty profiles",
+   "query": "UCI faculty profile Hsu",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "CHRS",
+   "publisher": "press",
+   "subquestion_id": "q2",
+   "aim": "news of the director change",
+   "query": "AghaKouchak named director CHRS",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NOAA NCEI / CISESS",
+   "publisher": "funders",
+   "subquestion_id": "q4",
+   "aim": "NCEI PERSIANN-CDR documentation and CISESS pages",
+   "query": "PERSIANN-CDR documentation NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q4",
+   "aim": "public code repositories for PERSIANN",
+   "query": "PERSIANN github",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "University of California",
+   "publisher": "its parent",
+   "subquestion_id": "q1b",
+   "aim": "UCRP retirement eligibility pages",
+   "query": "UCRP minimum retirement age",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "UC Irvine",
+   "publisher": "its parent",
+   "subquestion_id": "q4",
+   "aim": "UCI HPC3/RCIC pages naming CHRS",
+   "query": "UCI HPC3 hydrometeorology",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NOAA NESDIS",
+   "publisher": "funders",
+   "subquestion_id": "q3",
+   "aim": "NOAA CDR Program pages on PERSIANN-CDR sustainment",
+   "query": "PERSIANN-CDR sustainment NOAA",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NASA",
+   "publisher": "funders",
+   "subquestion_id": "q3",
+   "aim": "newer NASA awards to UCI for PERSIANN",
+   "query": "NASA award PERSIANN UC Irvine 2025",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "bound",
+  "budget_min": 40.0,
+  "elapsed_min": 26.7,
+  "shift_min": 0,
+  "ceiling": 320000,
+  "research_stop_tokens": 275000,
+  "subagent_stop_tokens": 220000,
+  "tokens": 265475,
+  "subagent_minutes_planned": 42,
+  "subagent_minutes": 42.8,
+  "follow_ups": 0,
+  "continuations": 7,
+  "refusals": 0,
+  "research_stop": "time",
+  "subagent_stop": true
+ }
+}

@@ -208,8 +208,8 @@ Archive and instrument runs don't go through `import_dataset_pages.py`. Archive 
 
 ## State on 2026-11-27 (open questions for the user)
 
-Steps 1 to 7 are done for every run copied so far: all 56 run folders have a reworded `query_questions.txt` (ASOS's
-six added 2026-11-27), and all seven datasets' parts are on the dashboard. Notes:
+Steps 1 to 7 are done for every run copied so far: all 58 run folders have a reworded `query_questions.txt` (ASOS's
+six added 2026-11-27; PERSIANN-CDR pt7 and pt8 added 2026-11-27), and all seven datasets' parts are on the dashboard. Notes:
 
 - **Two pt7 folders** each in GPCP and IMERG: `people-production-pt7` (Run 1) and `calibration-copies-pt7` (Run 2) of
   one query file. Their files were renamed `_run1`/`_run2` on 2026-11-27 in both projects. The import script now
@@ -218,7 +218,8 @@ six added 2026-11-27), and all seven datasets' parts are on the dashboard. Notes
   `{ "part": 8, "topic": …, "folder": "2026-11-24_<id>-calibration-copies-pt7" }`. Topics (user, 2026-11-27):
   "People and production" (part 7) and "Calibration and copies" (part 8).
 - **All four dashboard datasets were re-imported on 2026-11-27** with every part: GHCN-Daily 1–9, GPCP 1–8, IMERG
-  1–8 (its first pages; its card now links to them) and PERSIANN-CDR 1–6. All 31 pages were checked in the browser.
+  1–8 (its first pages; its card now links to them) and PERSIANN-CDR 1–6 (parts 7 "People and production" and 8 "Calibration and copies" added
+  later on 2026-11-27, each from its own `-pt7`/`-pt8` folder). All 31 pages were checked in the browser.
   GHCN-Daily pt1 and pt2 keep the user's earlier question wording (restored from the committed pages into their
   `query_questions.txt`).
 - The import also drops bullets that start with a link to `check-by-hand.md` or `sites-to-trust.md` (added to

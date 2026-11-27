@@ -39,7 +39,7 @@ If any subcategory is NA, its group and R* are NA too. Point values and the full
 | GHCN-Daily (Global Historical Climatology Network – Daily) | Categorized and on the site |
 | GPCP Daily (Global Precipitation Climatology Project, V3.3) | Categorized and on the site (second pass, with the NASA GES DISC repository research) |
 | IMERG Late Run (GPM IMERG Late, V07) | Categorized and on the site (third pass, with the people and NASA GES DISC + PPS repository research) |
-| PERSIANN-CDR Daily | Categorized and on the site (first pass, with the UC Irvine CHRS repository research; its people research is still to come) |
+| PERSIANN-CDR Daily | Categorized and on the site (second pass, with its people and calibration research and the UC Irvine CHRS repository research) |
 
 Most GHCN-Daily subcategories are still NA: the research found evidence on both sides, or none, so they need a
 person's call. That is what the site is for.
