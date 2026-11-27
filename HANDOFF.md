@@ -6,9 +6,9 @@ Last updated 2026-11-27. Update this file before compacting a session and at the
 
 ## Status at a glance (2026-11-27, thirteenth session)
 
-**Repo:** `main` and `origin/main` are at `ea8bb0a`; `develop` has the twelfth session's HANDOFF update (`455ac88`).
-**Thirteenth session (not committed yet):** PERSIANN-CDR Daily categorized (first pass), see below. In
-`Rstar_query_results`, `develop` has the ASOS `query_answers` copies (`cc94615`), not pushed.
+**Repo:** `develop` is at `a3f6141` ("Categorize PERSIANN-CDR Daily (first pass)") plus this HANDOFF update;
+`main` and `origin/main` are still at `ea8bb0a`, so the PERSIANN work is **not merged or pushed** (command in
+"Publishing"). In `Rstar_query_results`, `develop` has the ASOS `query_answers` copies (`cc94615`), not pushed.
 
 **On the website now:** the dashboard has cards for seven datasets. Every card has an overview page and its web
 research pages; four datasets are categorized (R* scores).
@@ -28,7 +28,7 @@ R* is NA for all four categorized datasets (expected: any NA subcategory makes R
 
 **All research runs are copied into `rstar-pipeline/input/web-research/`:** every dataset's Parts, plus the repository
 runs for NOAA NCEI (A1, A2), NASA GES DISC + PPS (A2), UC Irvine CHRS (A2) and CoCoRaHS's data site (A2). The only
-query still to run is PERSIANN-CDR's pt7 (people and production).
+query still to run is PERSIANN-CDR's pt7 (people and production); the user has not run it yet.
 
 ## Next session (start here)
 
@@ -39,15 +39,22 @@ dataset, Prompt 5 adds new research).
 
 **Next steps, in order:**
 
-1. **PERSIANN-CDR Daily: done (first pass, 2026-11-27), the user to review.** The user chose to categorize before pt7.
-   Script `rstar-pipeline/processing/scripts/categorize/build_persiann-cdr-daily.py`, gaps note
-   `rstar-pipeline/output/gaps-notes/persiann-cdr-daily_categorization-gaps.md` (its "Judgment calls to double-check":
-   P-1 = 0 resting on the handover package alone; P-4 NA because "algorithmic" was filed as context; D-3's pause
-   notice; `producer_is_repository` false although CHRS serves a copy). Scores: P-1 0, D-3 20, D-4 0, D-5 0,
-   DIRS-1 25, DIRS-2 25, DIRS-3 20, DIRS-4 0, RRS-2 0, RRS-3 0; the other 9 NA. **Still to do:** rewrite and run its
-   pt7 people-and-production query (`datasets-gap-queries/persiann-cdr-daily_gap-queries/`, run sheet
-   `supplemental-queries-run-sheet.md`; the user had not run it), then add it with Prompt 5. Shared names with IMERG
-   (Braithwaite, Hsu, Nguyen, Sorooshian) are noted in the script and gaps note.
+0. **Publish the PERSIANN commit if wanted:** the user merges `develop` into `main` and pushes (see "Publishing").
+1. **PERSIANN-CDR Daily's pt7 run, then its second pass.** Categorized 2026-11-27 (first pass, 100 items, 9 of 19 NA)
+   **before** its pt7 people-and-production query was run (the user's choice). Steps:
+   - The user rewrites the draft with `/my:rewrite-research-query` (prompt in
+     `datasets-gap-queries/supplemental-queries-run-sheet.md`; the draft is
+     `datasets-gap-queries/persiann-cdr-daily_gap-queries/persiann-cdr-daily-gaps_Rstar_query_pt7_people-production.md`,
+     with a copy in `Rstar_query_results/queries/dataset_queries/about_dataset_queries/persiann-cdr-daily/`), then runs
+     it with `/my:broad-web-research` in `Rstar_query_results` (or `Rstar_query_results_pt2`).
+   - Copy the run into `rstar-pipeline/input/web-research/about-datasets/persiann-cdr-daily/` following
+     `notes/dashboard/web-research-prep-howto.md` (question file, then the page import if it gets a web research page).
+   - Add it with Prompt 5 to `rstar-pipeline/processing/scripts/categorize/build_persiann-cdr-daily.py`: it should
+     fill P-1, P-2 and P-4 (people, ages, who runs the quarterly extension), D-1 (who pays for production), DIRS-1
+     (recalibrated GridSat-B1 from 2024), DIRS-3 (GPCP version), DIRS-4 (CHRS's computers), DIRS-5 (substitute
+     datasets) and RRS-1 (whether the cloud copies are current). Replace the "U" (not searched, pt7) gaps, and add a
+     "Changes from the first pass" section to `rstar-pipeline/output/gaps-notes/persiann-cdr-daily_categorization-gaps.md`.
+   - Note names shared with IMERG (Braithwaite, Hsu, Nguyen, Sorooshian are IMERG ATBD co-authors).
 2. **Categorize the three new station datasets** with Prompt 1, copying `build_ghcn-daily.py` (station data):
    - **CoCoRaHS** (`cocorahs`): Parts 1–5 and its data-site A2 (`archives/cocorahs/`). Its copy at NCEI is inside
      GHCN-Daily, so the NCEI A2 run applies to that copy.
@@ -67,6 +74,11 @@ dataset, Prompt 5 adds new research).
      Christine Smith (Schultz) as ASOS Program Manager).
    - **Judgment calls in the gaps notes:** GHCN-Daily's fourth-pass stance calls and GPCP's list are still unreviewed.
      IMERG's third-pass RRS-1 to RRS-3 calls were reviewed and kept (2026-11-27).
+   - **PERSIANN-CDR's first-pass calls** (gaps note, "Judgment calls to double-check"): P-1 = 0 rests on the 2014
+     handover package alone (Braithwaite's absence is low "for"; at moderate P-1 becomes NA); P-4 NA because
+     "every production step is algorithmic" was filed as context; P-3's two "for" items (QC procedure "not
+     documented", documents naming GPCP v2.2); D-3 counting NCEI's undated "pause in operations" notice;
+     `producer_is_repository` false (CHRS serves a copy, NCEI is the archive of record).
 4. **The DigitalOcean droplet:** the user is setting it up in another folder and session and will say how. Then plan
    this site's deployment there under the workshop password (see "Hosting"). Saved scores collected on the droplet:
    later, not yet.
@@ -135,7 +147,7 @@ A2 run, the NOAA satellite run, NODD/NCEI facts from GHCN-Daily pt7/pt9 and one 
 gaps note, rebuilt `rstar-data.js`, a PERSIANN check added to `test_dashboard.py`, the instructions' state table and
 precedents, the README table and the coverage note's pointer. `producer_is_repository` is false (CHRS serves a copy,
 but NCEI is the archive of record; true made the site say they are one organization). Pages checked in the built-in
-browser; all 152 e2e tests pass (Firefox and WebKit). Not committed yet.
+browser; all 152 e2e tests pass (Firefox and WebKit). Committed on `develop` as `a3f6141`; not merged or pushed.
 
 **Twelfth session (2026-11-27): ASOS on the dashboard; NASA repository run categorized.** All merged and pushed
 (`main` = `ea8bb0a`).
