@@ -1,5 +1,9 @@
 # PERSIANN-CDR Daily: what the research didn't search, by subcategory
 
+> **Categorized 2026-11-27 (first pass), before the pt7 run.** The categorization and what it still lacks are in
+> `rstar-pipeline/output/gaps-notes/persiann-cdr-daily_categorization-gaps.md`. The UC Irvine CHRS A2 run came back
+> on 2026-11-27 and is used there; pt7 (people and production) is still to rewrite and run, then add with Prompt 5.
+
 - **Dataset:** PERSIANN-CDR Daily, a NOAA CDR (DOI 10.7289/V51V5BWQ, NCEI record C00854), made by UC Irvine's Center
   for Hydrometeorology and Remote Sensing (CHRS).
 - **Checked:** 2026-11-23, by a coverage check of the six PERSIANN-CDR runs and the shared NCEI, GHCN-Daily pt7 and

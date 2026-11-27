@@ -75,8 +75,8 @@ As of 2026-11-27:
 | GHCN-Daily (`ghcn-daily`) | Fourth pass, 2026-11-23: 210 items, 17 of 19 NA, RRS-2 and RRS-3 at 0, R* NA | `build_ghcn-daily.py`, `ghcn-daily_categorization-gaps.md` | All gap runs (pt6–pt9) and the NCEI A2 run are in; what's left is mostly unpublished (by hand or FOIA). The user has yet to review the fourth pass's stance calls (see Precedents) |
 | GPCP Daily (`gpcp-daily`) | Second pass, 2026-11-27 (NASA GES DISC + PPS A2 run): 134 items, 11 of 19 NA, R* NA | `build_gpcp-daily.py`, `gpcp-daily_categorization-gaps.md` | All its runs are in; GDEX and CDS have no repository run (copies). Its judgment calls await the user's review |
 | IMERG Late Run (`imerg-late-run`) | Third pass, 2026-11-27 (NASA GES DISC + PPS A2 run): 149 items, 10 of 19 NA, R* NA | `build_imerg-late-run.py`, `imerg-late-run_categorization-gaps.md` | All its runs are in. What's left (people, fixity, DR tests) is mostly not public. Its third-pass calls (RRS-1, RRS-2, RRS-3) were confirmed by the user on 2026-11-27 |
-| PERSIANN-CDR Daily (`persiann-cdr-daily`) | Research pt1–pt6 in; not categorized. Its folder in `rstar-pipeline/output/categories/` exists but has no JSON, so the site shows "Not categorized yet" | Coverage note `persiann-cdr-daily_coverage-gaps.md`; gap queries in `persiann-cdr-daily_gap-queries/`; run sheet `supplemental-queries-run-sheet.md` | pt7 (people and production) and the UC Irvine CHRS A2 run, both to rewrite and run. Categorize once they are back |
-| CoCoRaHS (`cocorahs`) | Six queries written 2026-11-23 (Parts 1–5 and a data-site A2, in `Rstar_query_results/queries/dataset_queries/about_dataset_queries/cocorahs/` with `cocorahs-run-sheet.md`), none run | — | Needs a `rstar-pipeline/input/dataset-metadata/cocorahs_dataset-metadata.json` first. Part 3's names (Doesken, Reges, Schumacher) came from Claude's knowledge: confirm them from the research |
+| PERSIANN-CDR Daily (`persiann-cdr-daily`) | First pass, 2026-11-27 (pt1–pt6, both NCEI runs, the UC Irvine CHRS A2 run): 100 items, 9 of 19 NA, R* NA | `build_persiann-cdr-daily.py`, `persiann-cdr-daily_categorization-gaps.md` | pt7 (people and production; gap query in `datasets-gap-queries/persiann-cdr-daily_gap-queries/`, run sheet `supplemental-queries-run-sheet.md`) is still to rewrite and run; add it with Prompt 5. The user chose to categorize before it. Its judgment calls await the user's review |
+| CoCoRaHS (`cocorahs`), USCRN Daily (`uscrn-daily`), ASOS (`asos`) | Research Parts 1–5 in (CoCoRaHS also its data-site A2; ASOS a Part 4 follow-up); metadata JSON and dashboard cards exist; not categorized | — | Categorize with Prompt 1, copying `build_ghcn-daily.py` (station data) |
 
 The best script to copy: `build_gpcp-daily.py` or `build_imerg-late-run.py` for a satellite product,
 `build_ghcn-daily.py` for station data.
@@ -331,6 +331,14 @@ Follow these for consistency unless the rules doc changes them. The user has not
   search is "for" in P-1); two holders at separate sites (PPS at Goddard, GES DISC in AWS Oregon) are an RRS-1 "for"
   even though neither copy is shown verified, as GPCP's independent copies were. A repository's "no loss reported"
   with no after-action report stays a moderate RRS-5 "for". The user confirmed the RRS-1 to RRS-3 calls on 2026-11-27.
+- **PERSIANN-CDR Daily, first pass (2026-11-27, before its people run):** a public handover package (C-ATBD, data
+  flow diagram, user guide, full production code) is a high P-1 "against", as for GPCP's V1.3; a named person missing
+  from a directory, with no one checking who took over, is a low P-1 "for". "Every production step is algorithmic" is
+  P-4 context, not "against": it describes the algorithm, not who runs it. A producer that serves its own copy but is
+  not the archive of record keeps `producer_is_repository` false (otherwise the site says producer and repository are
+  one organization); its copy is a "producer site" repository. A producer's ended grant for a different product is
+  D-1 context but an RRS-4 "against" for the producer site. Satellites reached only through the bias-adjustment input
+  (GPCP's DMSP and AIRS) are moderate DIRS-2 "for", as in GPCP's precedent.
 
 ## Pitfalls seen
 
