@@ -4,6 +4,42 @@ Notes for the next session: what the project is for, where things stand, and wha
 Last updated 2026-11-27. Update this file before compacting a session and at the end of every session
 (see CLAUDE.md).
 
+## Status at a glance (2026-11-27)
+
+**On the website now.** The dashboard has cards for four datasets: GHCN-Daily, GPCP Daily, IMERG Late Run and
+PERSIANN-CDR. Each card's "Dataset web research" link opens every part of its research:
+
+| Dataset | Web research pages |
+|---|---|
+| GHCN-Daily | 9 parts (was 3) |
+| GPCP Daily | 8 parts (was 6) |
+| IMERG Late Run | 8 parts (none before) |
+| PERSIANN-CDR | 6 parts (unchanged) |
+
+**Not on the website yet: CoCoRaHS, ASOS and USCRN Daily.** They have no dashboard cards. A card is built from a
+dataset's metadata JSON in `rstar-pipeline/input/dataset-metadata/` (by `build_datasets.py`), and these three have
+only the Markdown version (`rstar-pipeline/input/dataset-metadata/markdown/`). None of them is categorized, so they
+have no R* scores either.
+- **CoCoRaHS:** all research runs are done and copied into `rstar-pipeline/input/web-research/`
+  (`about-datasets/cocorahs/` Parts 1–5, `archives/cocorahs/` its data-site run), with question files ready for pages.
+  It needs its metadata JSON (gives it a card), then its parts added to `app/data/dataset_pages.json` and imported.
+- **USCRN Daily:** the same. Parts 1–5 are done and copied in (`about-datasets/uscrn-daily/`); it needs its metadata
+  JSON and page-list entries.
+- **ASOS:** its runs (Parts 1–5 and a Part 4 follow-up, 2026-11-26) are done in `Rstar_query_results` but **not copied
+  into this project yet**, because they have no `query_answers` copies. That comes first, then the same steps as the
+  other two.
+
+**Next steps to get the three onto the site:**
+1. Make the ASOS `query_answers` copies in `Rstar_query_results` (ask the user; they are committed there), then copy
+   them in and prepare their question files, following `notes/dashboard/web-research-prep-howto.md`.
+2. Convert the three metadata Markdown files to JSON (`rstar-pipeline/input/dataset-metadata/README.md`; fix ASOS's
+   ISD links from its Part 1), then run `build_datasets.py` so the cards appear.
+3. Add their parts and topics to `app/data/dataset_pages.json`, run `import_dataset_pages.py` and `build_datasets.py`,
+   and check the pages in the browser (`notes/dashboard/dataset-about-pages-howto.md`). Ask the user for topic names.
+
+After that, categorizing them (and adding the GES DISC/PPS and UCI CHRS archive runs to GPCP's, IMERG's and
+PERSIANN-CDR's categorizations) is in "Next steps" below.
+
 ## Next session (start here)
 
 Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitation_rstar_scoring`), not the old
