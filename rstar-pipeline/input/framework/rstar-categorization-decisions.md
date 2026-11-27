@@ -37,12 +37,12 @@ statements describe resilience, so "for" raises RRS, and (100 − RRS) turns tha
 | Data risk (D) | D-5 | Political sensitivity | 10 |
 | People risk (P) | P-1 | No documented succession plan | 35 |
 | People risk (P) | P-2 | Key personnel retirement-eligible within 2 years | 25 |
-| People risk (P) | P-3 | Critical undocumented knowledge | 20 |
+| People risk (P) | P-3 | Critical undocumented knowledge | 25 |
 | People risk (P) | P-4 | Single person is point of failure | 15 |
 | Dependent infrastructure (DIRS) | DIRS-1 | Calibration facility dependency | 25 |
-| Dependent infrastructure (DIRS) | DIRS-2 | Observation network or sensor platform at risk | 20 |
+| Dependent infrastructure (DIRS) | DIRS-2 | Observation network or sensor platform at risk | 25 |
 | Dependent infrastructure (DIRS) | DIRS-3 | Upstream data supply chain at risk | 20 |
-| Dependent infrastructure (DIRS) | DIRS-4 | External processing infrastructure dependency | 20 |
+| Dependent infrastructure (DIRS) | DIRS-4 | External processing infrastructure dependency | 15 |
 | Dependent infrastructure (DIRS) | DIRS-5 | No alternative supplier | 15 |
 | Repository resilience (RRS) | RRS-1 | At least 2 geographically independent sites hold verified copies | 25 |
 | Repository resilience (RRS) | RRS-2 | Checksum checks quarterly or more often | 20 |

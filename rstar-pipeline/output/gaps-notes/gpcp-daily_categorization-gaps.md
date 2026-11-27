@@ -73,8 +73,8 @@ People, data and repository totals are NA, so R* is NA (11 of 19 subcategories N
   V3.x" into NA.
 - **GDEX and CDS as child repositories:** both serve the original netCDF with metadata, so they count.
 - **Two parents:** NCEI for V1.3 and GES DISC for V3.x.
-- **Point values:** the scorer reads `rstar-pipeline/input/framework/how_to_score_rstar.md`, which gives DIRS-2 25, P-3 25 and DIRS-4 15;
-  the decisions doc's table says 20, 20 and 20.
+- **Point values:** the scorer reads `rstar-pipeline/input/framework/how_to_score_rstar.md`, which gives DIRS-2 25, P-3 25 and DIRS-4 15.
+  The user confirmed these on 2026-11-27, and the decisions doc's table (which said 20, 20 and 20) was corrected to match.
 
 ## What pt7 Run 2 added (2026-11-24)
 

@@ -124,9 +124,8 @@ definitions). The rules doc wins if it says otherwise.
 - Whether there should be a data-quality subcategory (QC and processing evidence has no home now; it is context unless
   it shows a risk).
 - Missing evidence reads unevenly: no evidence reads as "no risk" for P, D and DIRS but "no resilience" for RRS.
-- **Point values:** `how_to_score_rstar.md` (what the scripts read) gives DIRS-2 25, P-3 25, DIRS-4 15, while the
-  decisions doc's table says 20, 20, 20. Ask the user which is right if it matters; don't change either file
-  unasked.
+- ~~**Point values**~~ **settled 2026-11-27:** the user confirmed `how_to_score_rstar.md`'s DIRS-2 25, P-3 25,
+  DIRS-4 15; the decisions doc's table (which said 20, 20, 20) now matches.
 
 ## 1. Gather the source runs
 
@@ -335,8 +334,8 @@ Follow these for consistency unless the rules doc changes them. The user has not
   Categorizing a dataset, PERSIANN-CDR included, no longer breaks them. Other tests still name real datasets
   (`grep -n '<id>' app/e2e/*.py`), so check them when a dataset's data changes. The "R* scores: NA" card branch (a
   dataset with no R* entry at all) has no test.
-- **Point values:** `rstar_common.py` reads `rstar-pipeline/input/framework/how_to_score_rstar.md`, not the decisions doc's table; the
-  two disagree (see "Still open").
+- **Point values:** `rstar_common.py` reads `rstar-pipeline/input/framework/how_to_score_rstar.md`, and the decisions doc's table now
+  matches it (fixed 2026-11-27).
 - Answer files cross-link to `../<run>/answer.md`, which doesn't exist here (the files are `answer_<query>.md`).
 - A run's answer may say "Run 2" when only one run was made (IMERG's first pt7): check which questions it actually
   covered, and list the rest as not searched.

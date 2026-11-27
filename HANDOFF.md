@@ -4,41 +4,46 @@ Notes for the next session: what the project is for, where things stand, and wha
 Last updated 2026-11-27. Update this file before compacting a session and at the end of every session
 (see CLAUDE.md).
 
-## Status at a glance (2026-11-27)
+## Status at a glance (2026-11-27, after `744041f`)
 
-**On the website now.** The dashboard has cards for four datasets: GHCN-Daily, GPCP Daily, IMERG Late Run and
-PERSIANN-CDR. Each card's "Dataset web research" link opens every part of its research:
+**On the website now.** The dashboard has cards for six datasets. Each card's "Dataset web research" link opens every
+part of its research:
 
-| Dataset | Web research pages |
-|---|---|
-| GHCN-Daily | 9 parts (was 3) |
-| GPCP Daily | 8 parts (was 6) |
-| IMERG Late Run | 8 parts (none before) |
-| PERSIANN-CDR | 6 parts (unchanged) |
+| Dataset | Web research pages | R* scores |
+|---|---|---|
+| GHCN-Daily | 9 parts | Categorized |
+| GPCP Daily | 8 parts | Categorized |
+| IMERG Late Run | 8 parts | Categorized |
+| PERSIANN-CDR | 6 parts | Not categorized yet |
+| CoCoRaHS | 5 parts and an overview (new, `744041f`) | Not categorized yet |
+| USCRN Daily | 5 parts and an overview (new, `744041f`) | Not categorized yet |
 
-**Not on the website yet: CoCoRaHS, ASOS and USCRN Daily.** They have no dashboard cards. A card is built from a
-dataset's metadata JSON in `rstar-pipeline/input/dataset-metadata/` (by `build_datasets.py`), and these three have
-only the Markdown version (`rstar-pipeline/input/dataset-metadata/markdown/`). None of them is categorized, so they
-have no R* scores either.
-- **CoCoRaHS:** all research runs are done and copied into `rstar-pipeline/input/web-research/`
-  (`about-datasets/cocorahs/` Parts 1–5, `archives/cocorahs/` its data-site run), with question files ready for pages.
-  It needs its metadata JSON (gives it a card), then its parts added to `app/data/dataset_pages.json` and imported.
-- **USCRN Daily:** the same. Parts 1–5 are done and copied in (`about-datasets/uscrn-daily/`); it needs its metadata
-  JSON and page-list entries.
-- **ASOS:** its runs (Parts 1–5 and a Part 4 follow-up, 2026-11-26) are done in `Rstar_query_results` but **not copied
-  into this project yet**, because they have no `query_answers` copies. That comes first, then the same steps as the
-  other two.
+**CoCoRaHS and USCRN Daily (done in `744041f`):** metadata JSON converted from their Markdown, so they have cards and
+overview pages; Parts 1–5 on the dashboard (topic names Overview, Quality control and formats, People and funding,
+Threats and news, Threats to inputs, from the folder names; the user can rename them); empty
+`rstar-pipeline/output/categories/<id>/` folders (`.gitkeep`) so their cards read "Not categorized yet"; the dashboard
+e2e tests expect six cards and open every new page. The commit doesn't record an e2e run, so run them once to confirm.
+- **To check (user):** each metadata JSON's `review_notes` lists the corrections taken from the web research. For
+  USCRN: its NCEI DOI and C00546 record, station counts, the Diamond et al. DOI. For CoCoRaHS: Russ Schumacher added as
+  a current lead (Part 3), the observer count (about 28,000, Part 1), Guam, and **Nolan Doesken's death on
+  15 November 2026 (from Part 4; check it)**.
+- **Not on the dashboard:** CoCoRaHS's data-site run (`web-research/archives/cocorahs/`) has no archive page, nor do
+  the GES DISC/PPS and UCI CHRS runs (`app/content/archives/` has only `noaa-ncei/`).
 
-**Next steps to get the three onto the site:**
+**Not on the website yet: ASOS.** Its runs (Parts 1–5 and a 1-minute-data follow-up, 2026-11-26) are in
+`Rstar_query_results/web_search_results/2026-11-26_asos-*` but **not copied into this project yet**, because they have
+no `query_answers` copies (checked 2026-11-27). Steps:
 1. Make the ASOS `query_answers` copies in `Rstar_query_results` (ask the user; they are committed there), then copy
    them in and prepare their question files, following `notes/dashboard/web-research-prep-howto.md`.
-2. Convert the three metadata Markdown files to JSON (`rstar-pipeline/input/dataset-metadata/README.md`; fix ASOS's
-   ISD links from its Part 1), then run `build_datasets.py` so the cards appear.
-3. Add their parts and topics to `app/data/dataset_pages.json`, run `import_dataset_pages.py` and `build_datasets.py`,
-   and check the pages in the browser (`notes/dashboard/dataset-about-pages-howto.md`). Ask the user for topic names.
+2. Convert its metadata Markdown to JSON (`rstar-pipeline/input/dataset-metadata/README.md`; fix its ISD links from its
+   Part 1, since ISD ended Aug 29, 2025), as was done for CoCoRaHS and USCRN, then run `build_datasets.py` so the card
+   appears.
+3. Add its parts and topics to `app/data/dataset_pages.json`, run `import_dataset_pages.py` and `build_datasets.py`,
+   add it to the dashboard e2e tests (seven cards), and check the pages in the browser
+   (`notes/dashboard/dataset-about-pages-howto.md`). Ask the user for topic names.
 
-After that, categorizing them (and adding the GES DISC/PPS and UCI CHRS archive runs to GPCP's, IMERG's and
-PERSIANN-CDR's categorizations) is in "Next steps" below.
+After that, categorizing the three new datasets (and adding the GES DISC/PPS and UCI CHRS archive runs to GPCP's,
+IMERG's and PERSIANN-CDR's categorizations) is in "Next steps" below.
 
 ## Next session (start here)
 
@@ -46,9 +51,10 @@ Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitatio
 `Rstar_precipitation-relationships`. Where things stood at the end of 2026-11-27 (eleventh session):
 - **Repo:** the user merged this session's work (`c5f42de`) into `main` and pushed it on 2026-11-27. This HANDOFF
   update is committed on `develop` after it.
-- **Dashboard web research pages are current** for the four carded datasets (see "Eleventh session" below). Next for
-  research: copy ASOS's runs in, give USCRN Daily, CoCoRaHS and ASOS metadata JSON (cards), and add the GES DISC/PPS
-  and UCI CHRS archive runs to the categorizations (see "Next steps").
+- **Dashboard web research pages are current** for all six carded datasets: CoCoRaHS and USCRN Daily got cards,
+  overviews and Parts 1–5 in `744041f`, after the eleventh-session HANDOFF update (see "Status at a glance"). `main`
+  and `origin/main` are at `744041f`. Next for research: copy ASOS's runs in and give it metadata JSON (a card), and
+  add the GES DISC/PPS and UCI CHRS archive runs to the categorizations (see "Next steps").
 - **`Rstar_query_results`:** its query templates and examples now name this project and its current paths, and its
   HANDOFF.md says finished runs are copied here (committed there on `develop` as `0c94550`, not pushed).
 - **Next, in order:**
@@ -60,13 +66,12 @@ Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitatio
      "Publishing"). See "Ninth session" below.
   3. The research and categorizing work in "Next steps" (IMERG and GPCP's NASA GES DISC + PPS A2 run, then
      PERSIANN-CDR Daily, then CoCoRaHS).
-  4. **Three new datasets:** all their runs are done. CoCoRaHS (Parts 1–5 and its data-site A2) and USCRN Daily
-     (Parts 1–5) are copied into `rstar-pipeline/input/web-research/`, with question files ready for pages. **ASOS's runs
-     (Parts 1–5 and a Part 4 follow-up, 2026-11-26) are not copied yet:** they have no `query_answers` copies in
-     `Rstar_query_results`, so make those first (ask the user), then follow
-     `notes/dashboard/web-research-prep-howto.md`. Then convert each metadata Markdown to JSON
-     (`rstar-pipeline/input/dataset-metadata/README.md`; fix ASOS's ISD links from its Part 1), which gives each a card,
-     add their parts to `app/data/dataset_pages.json`, and categorize with
+  4. **Three new datasets:** all their runs are done. CoCoRaHS and USCRN Daily are on the dashboard (`744041f`: cards,
+     overviews, Parts 1–5). **ASOS's runs (Parts 1–5 and a Part 4 follow-up, 2026-11-26) are not copied yet:** they have
+     no `query_answers` copies in `Rstar_query_results`, so make those first (ask the user), then follow
+     `notes/dashboard/web-research-prep-howto.md`, convert its metadata Markdown to JSON
+     (`rstar-pipeline/input/dataset-metadata/README.md`; fix its ISD links from its Part 1) and add its parts to
+     `app/data/dataset_pages.json`. Then categorize all three with
      `rstar-pipeline/processing/instructions/categorize-dataset-instructions.md`.
 - **Saved scores collected on the droplet:** later, not yet (see "Hosting").
 
@@ -114,7 +119,8 @@ with 19 subcategories in all.
 The weighted network graph of a dataset's R* scores is built (`app/graph.html`, 2026-11-24) and the user likes it;
 the knowledge graph of dataset relationships is not started. GHCN-Daily, GPCP Daily and IMERG Late Run are categorized;
 PERSIANN-CDR Daily is waiting on supplemental research. CoCoRaHS, USCRN Daily and ASOS are new datasets whose research
-runs are done (ASOS's not yet copied in) but which are not categorized and have no dashboard card yet.
+runs are done (ASOS's not yet copied in) but which are not categorized; CoCoRaHS and USCRN Daily have dashboard cards
+(`744041f`), ASOS doesn't yet.
 
 **Eleventh session (2026-11-27): research copied in; every web research part on the dashboard.**
 - **`Rstar_query_results`:** merged pt2's `uscrn-runs` (USCRN Daily Parts 1–5) into its `develop`, keeping both sets
@@ -260,14 +266,14 @@ GitHub Pages home page (https://lmerchant.github.io/). Committed on `develop` an
 | GPCP Daily categorization | Done (first pass, 2026-11-24, plus pt7 Run 2 the same day): 124 items, 11 of 19 NA, R* NA; Run 2 changed no score. Used its 8 runs, both NCEI runs, both satellite runs and GHCN-Daily pt7/pt9 for NODD facts. No GES DISC repository run yet (its RRS gaps say so) |
 | IMERG Late Run categorization | Done (second pass, 2026-11-24, with both pt7 runs): 130 items, 11 of 19 NA, R* NA. The NASA GES DISC + PPS A2 run is not yet run (RRS-2, RRS-3 empty); what's left for people is mostly not public (gaps note) |
 | PERSIANN-CDR Daily | Research exists; not categorized. Coverage notes and supplemental queries written 2026-11-23 (see Research queue) |
-| CoCoRaHS (new dataset, id `cocorahs`) | Parts 1–5 and its data-site A2 (pt6) ran 2026-11-25/26; copied into `web-research/` (`about-datasets/cocorahs/`, `archives/cocorahs/`). Not categorized. Metadata Markdown only (no JSON, so no card) |
+| CoCoRaHS (new dataset, id `cocorahs`) | Parts 1–5 and its data-site A2 (pt6) ran 2026-11-25/26; copied into `web-research/` (`about-datasets/cocorahs/`, `archives/cocorahs/`). Not categorized. Metadata JSON, card, overview and Parts 1–5 on the dashboard (`744041f`); its data-site run has no archive page |
 | ASOS (new dataset, id `asos`) | Parts 1–5 and a Part 4 follow-up ran 2026-11-26 in `Rstar_query_results`; **not copied yet** (no `query_answers` copies). Scored as the network as a whole. Metadata Markdown only |
-| USCRN Daily (new dataset, id `uscrn-daily`) | Parts 1–5 ran 2026-11-26/27 (in pt2); copied into `web-research/about-datasets/uscrn-daily/`. Not categorized. Metadata Markdown only |
-| Dashboard web research pages | Current (2026-11-27): GHCN-Daily 1–9, GPCP 1–8, IMERG 1–8, PERSIANN-CDR 1–6. Process in `notes/dashboard/web-research-prep-howto.md` |
+| USCRN Daily (new dataset, id `uscrn-daily`) | Parts 1–5 ran 2026-11-26/27 (in pt2); copied into `web-research/about-datasets/uscrn-daily/`. Not categorized. Metadata JSON, card, overview and Parts 1–5 on the dashboard (`744041f`) |
+| Dashboard web research pages | Current (2026-11-27): GHCN-Daily 1–9, GPCP 1–8, IMERG 1–8, PERSIANN-CDR 1–6, CoCoRaHS 1–5, USCRN Daily 1–5. ASOS not yet. Process in `notes/dashboard/web-research-prep-howto.md` |
 | Feedback on the first pass | `notes/claude_feedback/first_pass_to_categorize.md`. All answered (see Open questions) |
 | Categorization rules | `rstar-pipeline/input/framework/rstar-categorization-decisions.md`, the master copy the user edits (2026-11-23). All its changes are applied. No Word copies are kept in the repo (they went out of sync); the user makes one with pandoc when needed |
 | Categorization viewer | Done: static site in `app/` (landing page with R* scores and key, 4 category pages with card scores, "Your score" radios and a score panel with raw total and contribution, and the score graph page) |
-| e2e tests | 140 pass (Firefox and WebKit, 2026-11-27, run by Claude in the Terminal panel). Earlier: 116 pass (58 tests × Firefox and WebKit, 2026-11-24; score choices in `app/e2e/test_scores.py`, saving in `app/e2e/test_save.py`, the score graph in `app/e2e/test_graph.py`), Python Playwright. The empty-subcategory test now empties RRS-2 by intercepting `rstar-data.js`. Avoid `all_text_contents()`: it crashes this page in Playwright's Firefox |
+| e2e tests | 140 passed (Firefox and WebKit, 2026-11-27, run by Claude in the Terminal panel) before `744041f`, which changed `app/e2e/test_dashboard.py` to expect six cards and open the new pages; no run of that is recorded, so run them once. Earlier: 116 pass (58 tests × Firefox and WebKit, 2026-11-24; score choices in `app/e2e/test_scores.py`, saving in `app/e2e/test_save.py`, the score graph in `app/e2e/test_graph.py`), Python Playwright. The empty-subcategory test now empties RRS-2 by intercepting `rstar-data.js`. Avoid `all_text_contents()`: it crashes this page in Playwright's Firefox |
 | Score graph (weighted network graph) | Built 2026-11-24: `app/graph.html` + `app/assets/graph.js` (see "The score graph"), with evidence nodes behind an on/off switch. Knowledge graph not started |
 | Query plans and templates | `rstar-pipeline/processing/research-queries/dataset-query-5-part-plan.md` (five parts per dataset) and `rstar-pipeline/processing/research-queries/archive-query-plan.md` (three kinds of repository, and a register of repositories). Templates in `Rstar_query_results/queries/` (see Research queries) |
 | Guide for sharing | `rstar-pipeline/processing/research-queries/rstar-query-templates-guide.md` (2026-11-23): the query design, files, how to adapt it to other climate data, and starter prompts. Written for a friend of the user who will get the files in a new GitHub repo the user is making |
@@ -427,7 +433,7 @@ Other issues raised in the feedback:
   navy frame, light only; the header nav gained an "R* score" tab (current on `scores.html`).
 - **Next for the dashboard:** (2) an R* score badge on each card (needs `currentScores()` moved out of `assets/app.js` into a shared
   script); (3) ~~refresh the web research pages~~ **done 2026-11-27**: all parts of the four carded datasets (see
-  "Eleventh session"); add USCRN Daily, CoCoRaHS and ASOS once they have cards; (4) fill the blank archive websites in `data/archive_links.json`. The old project's open items are in its
+  "Eleventh session"); CoCoRaHS and USCRN Daily added in `744041f`; add ASOS once it has a card; (4) fill the blank archive websites in `data/archive_links.json`. The old project's open items are in its
   `HANDOFF.md` "Next steps".
 
 ## The viewer (`app/`)
@@ -651,19 +657,20 @@ metadata JSON's `dashboard` block, so a card is edited in one place. Step 4 done
 1. **Copy finished runs into `rstar-pipeline/input/web-research/`** as they come back, following
    `notes/dashboard/web-research-prep-howto.md` (dataset runs into `about-datasets/<id>/`, repository runs into
    `archives/<repository>/`, then the question files and the page import). Everything is copied except **ASOS**
-   (2026-11-26 runs, no `query_answers` copies yet). The GES DISC/PPS and UCI CHRS archive runs are in, so the
+   (2026-11-26 runs, no `query_answers` copies yet; checked again 2026-11-27). The GES DISC/PPS and UCI CHRS archive runs are in, so the
    categorizations that waited on them can go ahead: GPCP's and IMERG's RRS (GES DISC), and PERSIANN-CDR's (UCI CHRS).
 2. **Review GHCN-Daily's fourth-pass stance calls** (listed in the session that made them): 15 items became
    context, including P-2's NCEI-wide retirements (P-2 is now NA), D-1's rejected FY2026 request, five D-5 items with
    no GHCN-Daily tie, and the Data Rescue snapshot. Also P-2's retirement estimates and RRS-1's single-region items.
 3. **Review GPCP Daily's judgment calls** (list in its gaps note) and add the NASA GES DISC + PPS A2 run when it is back
-   (fills GPCP's GES DISC RRS gaps). Point values: `how_to_score_rstar.md` gives DIRS-2 25, P-3 25, DIRS-4 15, while the
-   decisions doc's table says 20, 20, 20; ask the user which is right.
+   (fills GPCP's GES DISC RRS gaps). **Point values settled (user, 2026-11-27):** `how_to_score_rstar.md`'s DIRS-2
+   25, P-3 25, DIRS-4 15 are right; the decisions doc's table (which said 20, 20, 20) was corrected to match. The site
+   already used these, so no score changed.
    **Categorize PERSIANN-CDR Daily and IMERG Late Run** once their pt7 and repository runs are back, using
    their coverage notes. Each needs a folder in `rstar-pipeline/output/categories/` (`imerg-late-run/` doesn't exist
    yet) and a `rstar-pipeline/processing/scripts/categorize/build_<id>.py`. Re-run `build_data.py` afterwards.
-4. **Research and categorize CoCoRaHS, ASOS and USCRN Daily** from their run sheets; convert each one's metadata
-   Markdown to JSON first (`rstar-pipeline/input/dataset-metadata/README.md`).
+4. **Categorize CoCoRaHS, USCRN Daily and ASOS.** CoCoRaHS's and USCRN's research and metadata JSON are in
+   (`744041f`); ASOS still needs its runs copied in and its metadata JSON (see "Status at a glance").
 5. **Keep the repository register in `rstar-pipeline/processing/research-queries/archive-query-plan.md` current** when a new dataset names a new host.
 6. **Saving scores is built (download to the scorer's computer).** Still to do when wanted: "Load a saved file" to
    carry on scoring, a server that collects files (the user wants to think about this later), and
