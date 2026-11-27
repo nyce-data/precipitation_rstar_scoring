@@ -134,8 +134,10 @@ def test_subcategory_with_no_evidence_says_so(page: Page):
     # Every GHCN-Daily subcategory has evidence now, so serve the data with RRS-2 emptied.
     def empty_rrs2(route):
         body = route.fetch().text()
-        body = re.sub(r'"RRS-2": "<div class=\\"rrs-2\\"[^>]*>.*?</div>"',
-                      r'"RRS-2": "<div class=\\"rrs-2\\"></div>"', body, count=1)
+        # Start at GHCN-Daily's entry: datasets are listed by id, and others (CoCoRaHS) come first.
+        start = body.index('"id": "ghcn-daily"')
+        body = body[:start] + re.sub(r'"RRS-2": "<div class=\\"rrs-2\\"[^>]*>.*?</div>"',
+                                     r'"RRS-2": "<div class=\\"rrs-2\\"></div>"', body[start:], count=1)
         route.fulfill(body=body, content_type="application/javascript")
 
     page.route("**/data/rstar-data.js", empty_rrs2)

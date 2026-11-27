@@ -76,7 +76,8 @@ As of 2026-11-27:
 | GPCP Daily (`gpcp-daily`) | Second pass, 2026-11-27 (NASA GES DISC + PPS A2 run): 134 items, 11 of 19 NA, R* NA | `build_gpcp-daily.py`, `gpcp-daily_categorization-gaps.md` | All its runs are in; GDEX and CDS have no repository run (copies). Its judgment calls await the user's review |
 | IMERG Late Run (`imerg-late-run`) | Third pass, 2026-11-27 (NASA GES DISC + PPS A2 run): 149 items, 10 of 19 NA, R* NA | `build_imerg-late-run.py`, `imerg-late-run_categorization-gaps.md` | All its runs are in. What's left (people, fixity, DR tests) is mostly not public. Its third-pass calls (RRS-1, RRS-2, RRS-3) were confirmed by the user on 2026-11-27 |
 | PERSIANN-CDR Daily (`persiann-cdr-daily`) | Second pass, 2026-11-27 (pt1–pt8, both NCEI runs, the UC Irvine CHRS A2 run): 122 items, 9 of 19 NA, R* NA | `build_persiann-cdr-daily.py`, `persiann-cdr-daily_categorization-gaps.md` | All its runs are in. What's left (who runs and pays for the extension, its computers, whether VGAC-calibrated GridSat is used) is not public: an inquiry to CHRS or NCEI. Its judgment calls (P-1, P-2, P-4, D-3, DIRS-3) await the user's review |
-| CoCoRaHS (`cocorahs`), USCRN Daily (`uscrn-daily`), ASOS (`asos`) | Research Parts 1–5 in (CoCoRaHS also its data-site A2; ASOS a Part 4 follow-up); metadata JSON and dashboard cards exist; not categorized | — | Categorize with Prompt 1, copying `build_ghcn-daily.py` (station data) |
+| CoCoRaHS (`cocorahs`) | First pass, 2026-11-27 (pt1–pt5, its data-site A2, both NCEI runs, the rain-gauge run): 112 items, 8 of 19 NA, R* NA | `build_cocorahs.py`, `cocorahs_categorization-gaps.md` | All its runs are in. What's left (Azure backups, DR, who pays for hosting, the NMP subcontract) is held by CoCoRaHS HQ: an inquiry to info@cocorahs.org. Its judgment calls (the "or" rule in P-4 and D-3, D-2's NCEI copy, P-2) await the user's review |
+| USCRN Daily (`uscrn-daily`), ASOS (`asos`) | Research Parts 1–5 in (ASOS also a Part 4 follow-up); metadata JSON and dashboard cards exist; not categorized | — | Categorize with Prompt 1, copying `build_cocorahs.py` or `build_ghcn-daily.py` (station data) |
 
 The best script to copy: `build_gpcp-daily.py` or `build_imerg-late-run.py` for a satellite product,
 `build_ghcn-daily.py` for station data.
@@ -345,6 +346,15 @@ Follow these for consistency unless the rules doc changes them. The user has not
   be a template). A production pause that has ended, with a stale notice, is D-3 context, not "for". A calibration
   written by one person outside the agency that runs the input (GridSat-B1's author, now a private contractor) is a
   moderate DIRS-1 "for". A product plan that keeps the dataset (NESDIS 2025–2029) is a moderate D-1 "against".
+- **CoCoRaHS, first pass (2026-11-27; not yet reviewed):** when a statement lists alternatives joined by "or" (P-4's
+  "production, QC, or distribution"; D-3's "grant-funded, maintained by a single developer, or at risk of going
+  dark") and one is shown true, evidence that another is false is context, not "against" (no outages, a shared QC
+  team). A producer that holds the archive of record in its own database is `producer_is_repository` true, with its
+  database as the parent. A reformatted, partial federal copy the reports are streamed to (NCEI's GHCN-Daily) is kept as
+  a child repository; its being partial is an RRS-1 "against" and, for the core series it holds, a D-2 "against".
+  "Nothing published" after targeted searches is a moderate "against" in RRS-2 as well as RRS-3. A host funding the
+  copy (NCEI's FY2027 request) counts in D-1. Volunteer observers are the observing network (DIRS-2); NWS staff losses
+  count there because NWS offices recruit and some NWS staff are state coordinators.
 
 ## Pitfalls seen
 
@@ -354,7 +364,9 @@ Follow these for consistency unless the rules doc changes them. The user has not
   (`UNCATEGORIZED = "gpcp-daily"`), and the five tests that need an uncategorized dataset take that fixture
   (in `test_dashboard.py`, `test_category.py`, `test_scores.py`, `test_scores_page.py` and `test_graph.py`).
   Categorizing a dataset, PERSIANN-CDR included, no longer breaks them. Other tests still name real datasets
-  (`grep -n '<id>' app/e2e/*.py`), so check them when a dataset's data changes. The "R* scores: NA" card branch (a
+  (`grep -n '<id>' app/e2e/*.py`), so check them when a dataset's data changes. Tests that rewrite `rstar-data.js`
+  must find their dataset by its `"id"` entry, not the first match in the file: datasets are listed by id, so a new one
+  can sort ahead (CoCoRaHS broke the RRS-2 emptying test this way, 2026-11-27). The "R* scores: NA" card branch (a
   dataset with no R* entry at all) has no test.
 - **Point values:** `rstar_common.py` reads `rstar-pipeline/input/framework/how_to_score_rstar.md`, and the decisions doc's table now
   matches it (fixed 2026-11-27).

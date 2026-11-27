@@ -139,7 +139,12 @@ def test_new_datasets_have_cards_and_five_web_research_parts(page: Page, console
     page.goto("/")
 
     expect(card(page, dataset_id).get_by_role("link", name="R* scores")).to_be_visible()
-    expect(card(page, dataset_id).get_by_text("Not categorized yet")).to_be_visible()
+    # CoCoRaHS was categorized on 2026-11-27; the other two are not yet.
+    note = card(page, dataset_id).get_by_text("Not categorized yet")
+    if dataset_id == "cocorahs":
+        expect(note).to_have_count(0)
+    else:
+        expect(note).to_be_visible()
     short = DATASETS[dataset_id].split(":")[0]
     topics = ["Overview", "Quality control and formats", "People and funding", "Threats and news",
               "Threats to inputs"]
