@@ -1,0 +1,2228 @@
+{
+ "question": "Which of ASOS's inputs (stations and sensors) faced funding cuts, end of life, end of manufacturer support, operational disruption or news about these between January 2024 and November 2026, and what could replace them or ASOS's precipitation data?",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (proposed cuts, end-of-life statements) and station counts by agency and year",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Station counts by agency and year, FAA AWOS-C transition, and whether the archive shows a drop",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s4",
+    "s10",
+    "s36",
+    "s37",
+    "s42",
+    "s43"
+   ],
+   "remaining_gap": "No AWOS-C site list; agency counts only for March 2025; GHCNh and W-flag counts not done."
+  },
+  {
+   "id": "q2",
+   "question": "HTB and AWPAG makers, support, replacement plans, second suppliers, outages",
+   "status": "answered",
+   "source_ids": [
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s41"
+   ],
+   "remaining_gap": "AWPAG model/generation and the new precipitation sensor date not found; SAM notices for HTB spares not read."
+  },
+  {
+   "id": "q3",
+   "question": "Processors, telecommunications, AOMC, SFSC, technicians",
+   "status": "answered",
+   "source_ids": [
+    "s3",
+    "s26",
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s32",
+    "s33",
+    "s34",
+    "s35"
+   ],
+   "remaining_gap": "No SFSC-specific source; no AOMC backup documented."
+  },
+  {
+   "id": "q4",
+   "question": "Substitutes for ASOS precipitation data",
+   "status": "answered",
+   "source_ids": [
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s22",
+    "s23",
+    "s25"
+   ],
+   "remaining_gap": "Whether NCEI archives AWOS-C or NMP precipitation not confirmed; Stage IV and West Texas Mesonet not searched."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg1/access/2024/01/",
+   "fetched_url": null,
+   "title": "Index of /data/automated-surface-observing-system-one-minute-pg1/access/2024/01/ (plus 2025/01, 2026/01, 2026/10, 2026/11 listings)",
+   "author_org": "NOAA NCEI",
+   "published": "directory listing, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ncei_1min_2024_01.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Counts filenames only; did not check file sizes, so a listed file may be empty or partial (Aug-Sep 2025 gap documented in 2026-11-26_asos-1min-gap-followup). A missing file can mean a processing/ingest gap rather than a closed station. Nov 2026 is incomplete. Script output printed to console, not saved as a file; re-run count_1min.py on the folder to reproduce.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/access/homr/file/asos-stations.txt",
+   "fetched_url": null,
+   "title": "HOMR asos-stations.txt (current ASOS station summary listing)",
+   "author_org": "NOAA NCEI HOMR",
+   "published": "undated file, retrieved 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/homr_asos_stations.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Single snapshot of current stations; no year-by-year history, no agency field, no closure dates. Rows include overseas DoD/territory sites (e.g. RJOI Iwakuni, Japan).",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s3",
+   "url": "https://www.weather.gov/asos/CurrentEvents.html",
+   "fetched_url": null,
+   "title": "ASOS Current Events",
+   "author_org": "NOAA National Weather Service ASOS Program",
+   "published": "newest item March 20, 2025 (retrieved 2026-11-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/asos_current_events_2026-11-26.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Absence of newer items does not show nothing happened.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s4",
+   "url": "https://www.weather.gov/asos/FAQ.html",
+   "fetched_url": null,
+   "title": "ASOS Frequently Asked Questions",
+   "author_org": "NOAA National Weather Service",
+   "published": "undated; saved 2026-11-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/asos_faq.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Already known in brief; 206 vs 207 inconsistency in the page itself; no site list.",
+   "found_by": [
+    "sa1",
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.faa.gov/sites/faa.gov/files/NAS-Infrastructure-Roadmaps-v20-Weather.pdf",
+   "fetched_url": null,
+   "title": "NAS Enterprise Architecture Infrastructure Roadmaps v19.1 BASELINE, Weather (file named v20)",
+   "author_org": "FAA",
+   "published": "May 2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/faa_roadmap_v20_weather.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Graphical roadmap; text extraction garbled; the URL says v20 but the document reads v19.1 BASELINE May 2025. ASOS drawdown bar dates (if any) not readable from text.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Implementation/awpagimplan.pdf",
+   "fetched_url": null,
+   "title": "ASOS All Weather Precipitation Accumulation Gauge Implementation Plan",
+   "author_org": "NOAA National Weather Service, Office of Operational Systems",
+   "published": "2003-08-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "q2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/awpagimplan.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2003 plan; predates 2024-2026; does not name the Pluvio model, a support status, or a current contract; HTB manufacturer NOT PRESENT in matched lines.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Implementation/relnoteawpag.pdf",
+   "fetched_url": null,
+   "title": "DRAFT ASOS Release Note, Software Version 2.7B, All Weather Precipitation Accumulation Gauge (AWPAG)",
+   "author_org": "NOAA National Weather Service",
+   "published": "NOT PRESENT (undated draft; software v2.7B era, mid-2000s)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "q2-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/relnoteawpag.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Draft, undated, historical; nothing on 2024-2026 support or replacement.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s8",
+   "url": "https://www.weather.gov/asos/TippingBucket.html",
+   "fetched_url": null,
+   "title": "ASOS Heated Tipping Bucket",
+   "author_org": "NOAA National Weather Service, ASOS program",
+   "published": "NOT PRESENT (undated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "q2-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_tipping_bucket.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated; whether Frise/Friez still makes or supports the 7405HA NOT PRESENT; no end-of-life statement; no date for HTB replacement.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.weather.gov/asos/PrecipitationAccumulation.html",
+   "fetched_url": null,
+   "title": "ASOS All Weather Precipitation Accumulation Gauge (AWPAG)",
+   "author_org": "NOAA National Weather Service, ASOS program",
+   "published": "NOT PRESENT (undated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "q2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_precip_accum.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Manufacturer, Pluvio model, site count, support status: NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx",
+   "fetched_url": null,
+   "title": "ASOS Sites by Equipment As Of 3_18_2025 (spreadsheet)",
+   "author_org": "NOAA National Weather Service, ASOS National Program",
+   "published": "2025-03-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "q2-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_sites_by_equipment_2025-03-18.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Already in the 2026-11-18 run; 323/575 are unlabeled header totals; owner split per gauge type not counted; snapshot March 18, 2025.",
+   "found_by": [
+    "sa2",
+    "sa5"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s11",
+   "url": "https://cdn.hach.com/1XMCM0ZF/at/jtcbggtwg2zmjqmb4f2xq/HY-OT-HM-bu-PluvioL_S_Firmware-releasenotes-EN-GL-250125.pdf",
+   "fetched_url": null,
+   "title": "OTT Pluvio\u00b2 L, OTT Pluvio\u00b2 S - Firmware release notes",
+   "author_org": "OTT HydroMet (hosted on cdn.hach.com)",
+   "published": "2025-01 (latest release listed V 1.06.2, 28.01.2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "q2-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ott_pluvio_LS_firmware_notes.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Says nothing about ASOS or which Pluvio model NWS AWPAGs use; no discontinuation or end-of-support date stated. Host cdn.hach.com refused by sandbox; PDF obtained via WebFetch's saved binary and converted locally. Search snippet mentioned a later V 1.07.0 (23.06.2026) in another copy; not in this file.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.governmentcontracts.us/government-contracts/opportunity-details/15205872702700159.htm",
+   "fetched_url": null,
+   "title": "Rain Gauges for the National Logistics Support Center in Grandview, MO (142082-25-0398)",
+   "author_org": "NOAA (DOC Eastern Acquisition Division), via governmentcontracts.us listing",
+   "published": "2025-08-08",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "q2-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/govcontracts_rain_gauges_nlsc_25_0398_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Aggregator copy of SAM.gov notice read via WebFetch extraction; not tied to ASOS; award NOT PRESENT. Copy of the samsearch.co listing logged unreadable.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s13",
+   "url": "https://www.weather.gov/media/directives/010_pdfs/pd01010003curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 10-1003, Climate Data Services",
+   "author_org": "NOAA National Weather Service",
+   "published": "2022-03-04 (administrative URL update later; effective date unchanged)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/nwsi_10_1003.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Directive dated 2022; does not say whether non-Federal AWOS data are archived at NCEI or included in GHCN-Daily; no station counts.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.weather.gov/media/lix/gcaws/Presentation1Murphy.pdf",
+   "fetched_url": null,
+   "title": "What's New with Non-Fed AWOS' (NWS Southern Region presentation)",
+   "author_org": "NOAA National Weather Service (Murphy)",
+   "published": "2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/murphy_2023.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2023 slide deck from one region; does not state archiving at NCEI or the gauge type (heated or not).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s15",
+   "url": "https://vlab.noaa.gov/web/wdtd/-/qpe-w-gauge-bias-correcti-1",
+   "fetched_url": null,
+   "title": "Radar QPE w/ Gauge Bias Correction (MRMS products guide)",
+   "author_org": "NOAA NWS Warning Decision Training Division (WDTD)",
+   "published": "NOT PRESENT (undated page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/mrms_gauge_bias_qpe.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Training page, undated, no version number; does not address climate-standard QC, record length, or NCEI archiving; the product depends on gauge inputs (HADS/MADIS), so it is not independent of gauges.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s16",
+   "url": "https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf",
+   "fetched_url": null,
+   "title": "Division A - Commerce, Justice, Science, and Related Agencies Appropriations Act, 2026 (joint explanatory statement)",
+   "author_org": "House and Senate Committees on Appropriations",
+   "published": "2026-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/fy26_cjs_jes.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "OCR text with broken words; says nothing about the 2025 contract or precipitation data quality or NCEI archiving.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://public-inspection.federalregister.gov/2026-09099.pdf",
+   "fetched_url": null,
+   "title": "Request for Comments on the National Weather Service Cooperative Observing Program (COOP)",
+   "author_org": "NOAA National Weather Service (Federal Register notice, RTID 0648-XV204)",
+   "published": "2026-05-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/fr_2026-09099_coop_rfc.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Proposal stage (request for comment), not an enacted change; gives no station or observer counts and no decline figures; 'optimize the national footprint' is not quantified.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://digitalcommons.wku.edu/theses/3849/",
+   "fetched_url": null,
+   "title": "A Quantitative Comparison of Precipitation and Air Temperature Observations as Measured by the COOP, ASOS, and Kentucky Mesonet Networks (MS thesis)",
+   "author_org": "Olufemi Ifetayo Aina, Western Kentucky University",
+   "published": "2025-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa4-e6",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/wku_thesis_3849_kymn_precip.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Abstract only (full PDF not read); one state; master's thesis, not peer reviewed; daily totals only, not hourly or sub-hourly.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s19",
+   "url": "https://www.weather.gov/media/wrh/online_publications/TAs/ta0106.pdf",
+   "fetched_url": null,
+   "title": "Comparison of AWOS and ASOS Data from Elko, Nevada, from September 1999 through August 2000 (Western Region Technical Attachment 01-06)",
+   "author_org": "Brian Fehrn, NWS WFO Elko, Nevada",
+   "published": "2001-05-29",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/nws_wr_ta0106_elko_awos_asos.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2001, one site, one year; official precipitation then came from a human FAA observer, so it compares AWOS/observer to ASOS rather than an AWOS gauge alone; old.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s20",
+   "url": "https://www.ncei.noaa.gov/access/crn/overview.html",
+   "fetched_url": null,
+   "title": "USCRN Program Overview",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/uscrn_overview.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "URL taken as the NCEI CRN overview page from the earlier run (check its record); no time resolution or budget stated here. Earlier run (2026-11-18 answer.md) found both budget requests proposed closing the ARL lab that maintains USCRN, rejected by Congress for FY2026; USCRN budget line not identified.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://www.noaa.gov/sites/default/files/2026-04/FY2027-NOAA-CJ-Submission.pdf",
+   "fetched_url": null,
+   "title": "NOAA Budget Estimates Fiscal Year 2027, Congressional Justification (NWS chapter)",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2026-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/noaa_fy27_cj.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Request (proposed). The NMP dollar amount for FY2027 was not extracted; precipitation is not named in the NMP description; no statement on NCEI archiving of NMP data.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://www.albany.edu/news-center/news/2024-schumer-touts-nys-mesonet-national-model-amid-federal-funding-push",
+   "fetched_url": null,
+   "title": "Schumer Touts NYS Mesonet as National Model Amid Federal Funding Push",
+   "author_org": "University at Albany News Center",
+   "published": "2024-07-30",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ualbany_nysm_nmp_2024.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "University press article (interested party), 2024; no time resolution, QC standard or NCEI archiving stated. The $30M sought matches the FY2026 enacted figure (sa4-e4).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://tonko.house.gov/news/documentsingle.aspx?DocumentID=4438",
+   "fetched_url": null,
+   "title": "Tonko Demands DHS Restore Funding for UAlbany Mesonet Weather Detection Program",
+   "author_org": "Office of U.S. Representative Paul Tonko",
+   "published": "2025-07-30",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/tonko_nysm_empower_2025-07-30.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Advocacy press release; does not say whether the grant was restored; affects an applications project, not the station network itself.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://civilbeat.org/2025/05/hawaii-readies-weather-stations-against-trump-assault-on-climate-research/",
+   "fetched_url": null,
+   "title": "Hawaii Readies Weather Stations Against Trump Assault On Climate Research",
+   "author_org": "Honolulu Civil Beat",
+   "published": "2025-05-08/09",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "NOT PRESENT (curl blocked by sandbox, CONNECT 403; read with WebFetch extraction-only prompt, no saved file)",
+   "retrieved": "2026-11-26",
+   "limitations": "Quotes come from a WebFetch extract, not a saved file; verify against the page. The NSF grant freeze is not NMP funding.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://media.cocorahs.org/docs/WERA_2024_1_NWS_COOP_Update_McGuire_.pdf",
+   "fetched_url": null,
+   "title": "NWS COOP Program Updates (WERA 2024 presentation)",
+   "author_org": "NOAA National Weather Service (McGuire), hosted by CoCoRaHS",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/wera_2024_nws_coop_update.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Chart values (station counts, budget by year) not extractable from text; trend direction must be read from the PDF figure (slides 4-5 of wera_2024_nws_coop_update.pdf).",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://files.gao.gov/reports/GAO-26-107992/index.html",
+   "fetched_url": null,
+   "title": "GAO-26-107992, AIR TRAFFIC CONTROL SYSTEMS: Ambitious New Modernization Effort Needs Cost and Schedule Planning",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2026-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-gao-telecom",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/gao_26_107992.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not name ASOS or say how many ASOS sites use FTI copper circuits; enacted program (funded July 2025), schedule is a plan.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.weather.gov/fsd/news_SiouxCityDown",
+   "fetched_url": null,
+   "title": "Weather Observations From Sioux City Iowa Not Available",
+   "author_org": "NWS Sioux Falls SD",
+   "published": "NOT PRESENT (undated page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-fsd-comms",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fsd_siouxcity_down.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Page is undated, so it may fall outside Jan 2024-Nov 2026; single station; cause of line failure not stated.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s28",
+   "url": "https://www.highergov.com/contract/1305M421ANAAA0032-1305M225F0288",
+   "fetched_url": null,
+   "title": "NWS/SUAD: ASOS Operations Maintenance Center (AOMC) IT and support services, BPA Call 1305M225F0288",
+   "author_org": "HigherGov (aggregator of federal award data)",
+   "published": "NOT PRESENT (award September 2025)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-aomc-contract",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/highergov_aomc_1305M225F0288_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Aggregator, read via WebFetch extraction (curl blocked); not checked against SAM.gov/USAspending. Covers AOMC IT support only, not the whole AOMC workforce; current end 12/31/26 means an option must be exercised.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://www.highergov.com/contract-opportunity/r-asos-slep-support-1305m225q0090-award-1305m423dneea0008-international-business-sales-and-services-corp-56397",
+   "fetched_url": null,
+   "title": "R--ASOS SLEP Support (1305M225Q0090), award under 1305M423DNEEA0008",
+   "author_org": "HigherGov (aggregator of SAM.gov notices)",
+   "published": "2025-08-27 (award)",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-slep-support",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/highergov_asos_slep_1305M225Q0090_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Aggregator, WebFetch extraction; period of performance NOT PRESENT; does not say which SLEP components remain.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.weather.gov/media/ilx/NWS%20Lincoln%20ET%20Flyer%20-%20July%202025.pdf",
+   "fetched_url": null,
+   "title": "The National Weather Service in Lincoln, IL is Hiring! (Electronics Technician flyer, July 2025)",
+   "author_org": "NWS Lincoln IL",
+   "published": "2025-07",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-ilx-et",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ilx_et_flyer_2025_07.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not state how many ET posts were vacant or link the vacancy to ASOS repairs; whether filled is NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s31",
+   "url": "https://aerocorner.com/news/faa-ground-stop-pass-union-risk-assessment/",
+   "fetched_url": null,
+   "title": "FAA Technicians' Union Says Its Members Were Left Out of the Router Work Behind the Nationwide Ground Stop",
+   "author_org": "AeroCorner News",
+   "published": "2026-11-16",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-pass-groundstop",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/aerocorner_pass_ground_stop_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Trade-press read via WebFetch extraction; network name (FTI) NOT PRESENT; no effect on ASOS reported; workforce figures second-hand from FAA plan, not ASOS-specific.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s32",
+   "url": "https://www.faa.gov/sites/faa.gov/files/Airway-Transportation-Systems-Specialist-Workforce-Plan-2026-2030.pdf",
+   "fetched_url": null,
+   "title": "The Airway Transportation Systems Specialist Workforce Plan 2026-2030",
+   "author_org": "Federal Aviation Administration",
+   "published": "2026-05-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-faa-atss",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/faa_atss_workforce_plan_2026_2030.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Covers FAA's whole ATSS workforce (~74,000 pieces of equipment), not ASOS specifically; ASOS share of workload NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://govexec.com/technology/2024/04/nws-says-partial-circuit-failure-caused-network-outage/395527",
+   "fetched_url": null,
+   "title": "National Weather Service says partial circuit failure caused network outage",
+   "author_org": "Government Executive / Nextgov-FCW (Adam Mazmanian)",
+   "published": "2024-04-05",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-nws-outage-2024-04",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/govexec_nws_outage_2024_04_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction (curl blocked); products affected not named, ASOS NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s34",
+   "url": "https://doggett.house.gov/media/in-the-news/ee-news-nws-experiences-outages-amid-deadly-floods-and-heat-waves",
+   "fetched_url": null,
+   "title": "E&E News: NWS experiences outages amid deadly floods and heat waves (reprint)",
+   "author_org": "E&E News (Nicole Norman), reprinted by Rep. Lloyd Doggett",
+   "published": "2024-06-25",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": "sa3-nws-outage-2024-06",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/doggett_eenews_nws_outages.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Congressional reprint; outage duration and whether ASOS data were lost NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s35",
+   "url": "https://s.campbellsci.com/documents/us/case-studies/united-states-asos-weather-network-a4.pdf",
+   "fetched_url": null,
+   "title": "United States ASOS Weather Network (case study)",
+   "author_org": "Campbell Scientific",
+   "published": "NOT PRESENT (states delivery completed by 2025)",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-campbell-acu",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/campbell_asos_case.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Vendor marketing; two-column layout interleaves words; no support-contract or failure info.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s36",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+   "fetched_url": null,
+   "title": "GHCN-Daily station inventory (ghcnd-inventory.txt)",
+   "author_org": "NOAA NCEI",
+   "published": "2026-11 (file as downloaded 2026-11-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa5-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa5/usw_prcp_counts.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Inventory lastyear only says a PRCP value exists in that year, not completeness. The 70 stations ending in 2025 may include stations whose 2026 data are lagged or that stopped reporting; not checked station by station. USW includes non-ASOS WBAN stations (e.g. some USCRN-era or historical first-order); not an ASOS count.",
+   "found_by": [
+    "sa5"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_697DCK26C00065_6920_-NONE-_-NONE-/",
+   "fetched_url": null,
+   "title": "USAspending award record 697DCK26C00065: CROOKED CREEK AWOS-C REPLACEMENT",
+   "author_org": "USAspending.gov (U.S. Treasury), data from FAA",
+   "published": "2026-02-20 (signed); last modified 2026-06-16",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa5-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa5/usaspending_697DCK26C00065.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Construction contract only; one site; does not name the system replaced (ASOS vs older AWOS) or the number of ASOS sites moving to AWOS-C. Account outlays coded DEFC Q (non-emergency).",
+   "found_by": [
+    "sa5"
+   ]
+  },
+  {
+   "id": "s38",
+   "url": "https://www.faa.gov/data_research/research/nas-ea/roadmaps/nasInfrastructureRoadmapsv19.2-Weather.pdf",
+   "fetched_url": null,
+   "title": "NAS Enterprise Architecture Infrastructure Roadmaps v19.3 Baseline, November 2025 (Weather domain)",
+   "author_org": "FAA",
+   "published": "2025-11",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa5-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa5/faa_nas_roadmap_v19.2_weather.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "URL says v19.2 but the file served (after redirect) is the v19.3 November 2025 baseline. Roadmap is a chart; text layer gives only labels and project dates, not when ASOS bars end or what SWS is.",
+   "found_by": [
+    "sa5"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://www.weather.gov/asos/asosequip.html",
+   "fetched_url": null,
+   "title": "ASOS Equipment FAQ (ASOS Equip page; target of the NWS FAQ AWOS-C \"See a complete list here\" link)",
+   "author_org": "NOAA NWS ASOS program",
+   "published": "NOT PRESENT (spreadsheet As Of 3_18_2025; T/Td updated 13 August 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa5-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa5/asosequip_2026-11-26.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "The FAQ link target came from a WebFetch extraction (not saved). The spreadsheet itself was not re-opened this run; earlier copy is in 2026-11-18_noaa-rain-gauge-threats/work/raw/sa2/asos_sites_by_equipment_2025-03-18.txt (no AWOS match found there by find_text). The ASOS 2.0 tab might indirectly show which sites are not getting ASOS 2.0; not checked.",
+   "found_by": [
+    "sa5"
+   ]
+  },
+  {
+   "id": "s40",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+   "fetched_url": null,
+   "title": "GHCN-Daily station list joined to inventory: USW PRCP stations whose last year is 2024 or 2025",
+   "author_org": "NOAA NCEI (join by script list_usw_prcp_2024_2025.py)",
+   "published": "2026-11 (files as downloaded 2026-11-26)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa5-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa5/usw_prcp_last2024_2025.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Script output, not an NCEI statement. lastyear 2025 in late November 2026 may reflect processing lag, a station change of ID, or a closure; not checked. Military-name grouping is by station name only.",
+   "found_by": [
+    "sa5"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s41",
+   "url": "https://samsearch.co/gov-explore/federal/sole-source-high-sierra-rain-gauges-for-noaa-nws/142082-25-0381",
+   "fetched_url": null,
+   "title": "SOLE SOURCE: HIGH SIERRA RAIN GAUGES FOR NOAA/NWS (Sol. 142082-25-0381)",
+   "author_org": "NOAA (via SamSearch)",
+   "published": "2025-08-15",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "142082-25-0381",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/samsearch_high_sierra_142082-25-0381.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Aggregator copy of a SAM.gov special notice; SAM.gov itself not read (JavaScript). Gauge is a COOP-type 8-inch non-recording gauge, not an ASOS sensor."
+  },
+  {
+   "id": "s42",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx",
+   "fetched_url": null,
+   "title": "Rows by EQ_OWNER per sheet in ASOS Sites by Equipment As Of 3/18/2025 (coordinator count)",
+   "author_org": "NWS (count by this run)",
+   "published": "2025-03-18",
+   "data_period": "as of 2025-03-18",
+   "source_type": "official",
+   "evidence_id": "asos-equip-2025-03-18",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/owner_counts_2025-03-18.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Counts of listed rows by script work/code/count_owner.py on sa2's text conversion; not official totals."
+  },
+  {
+   "id": "s43",
+   "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+   "fetched_url": null,
+   "title": "USW PRCP stations with last year 2025, by region (coordinator count)",
+   "author_org": "NOAA NCEI (count by this run)",
+   "published": null,
+   "data_period": "inventory as of 2026-11-26",
+   "source_type": "official",
+   "evidence_id": "ghcnd-inventory-2026-11-26",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/usw_prcp_2025_enders.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Script work/code/usw_2025_enders.py; lat/lon region boxes are rough; a 2025 last year may be a data lag."
+  },
+  {
+   "id": "s44",
+   "url": "https://scholarworks.alaska.edu/uaa_iser_reports/1854/",
+   "fetched_url": null,
+   "title": "Alaska AWOS/ASOS METAR Data Availability Q1 of CY2026",
+   "author_org": "Michael S. Jones, UAA Institute of Social and Economic Research",
+   "published": "2026-04-18",
+   "data_period": "2026-01-01 to 2026-03-31",
+   "source_type": "study",
+   "evidence_id": "ISER-1854",
+   "access_level": "abstract",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/iser_1854_landing.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Landing-page description only; the PDF refused download (HTTP 403)."
+  },
+  {
+   "id": "s45",
+   "url": "https://engineering.uiowa.edu/sites/engineering.uiowa.edu/files/2026-03/HeartlandConferenceBrief.pdf",
+   "fetched_url": null,
+   "title": "ASOS 2.0 - An Update (NWS Nebraska, Heartland conference brief)",
+   "author_org": "NOAA NWS Nebraska",
+   "published": "2026-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "heartland-brief-2026-03",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/heartland_brief_2026-03.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Slide deck hosted by the University of Iowa; posting folder dated 2026-03; slides undated."
+  },
+  {
+   "id": "s46",
+   "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg1/access/",
+   "fetched_url": null,
+   "title": "Station files per month in NCEI 1-minute page-1 listings (coordinator rerun of count_1min.py)",
+   "author_org": "NOAA NCEI (count by this run)",
+   "published": null,
+   "data_period": "Jan 2024, Jan 2025, Jan 2026, Oct 2026, Nov 2026",
+   "source_type": "official",
+   "evidence_id": "ncei-1min-listings",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/count_1min_output.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Filenames only; empty files possible."
+  },
+  {
+   "id": "s47",
+   "url": "https://www.meteorologicaltechnologyinternational.com/news/data/noaa-expands-mesonet-contract-to-improve-forecasting-capabilities.html",
+   "fetched_url": null,
+   "title": "NOAA expands Mesonet contract to improve forecasting capabilities",
+   "author_org": "Meteorological Technology International (Hazel King)",
+   "published": "2026-09-07",
+   "data_period": null,
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/mti_nmp_contract_2026-09.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Trade press based on a NOAA release."
+  },
+  {
+   "id": "s48",
+   "url": "https://www.startribune.com/winter-is-coming-not-all-weather-offices-are-ready/601541022",
+   "fetched_url": null,
+   "title": "Winter is coming. Not all weather offices are ready.",
+   "author_org": "The Washington Post (via Star Tribune)",
+   "published": "2025-12-06",
+   "data_period": "vacancies as of 2025-10-01",
+   "source_type": "news",
+   "evidence_id": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "local_file": "work/raw/main/startribune_wapo_nws_vacancies_2025-12.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Excerpt saved; NWSEO vacancy figures."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "NCEI 1-minute (page 1) listings held 881 station files in Jan 2024, 834 in Jan 2025, 830 in Jan 2026, 853 in Oct 2026 and 848 in Nov 2026 (partial): no sustained drop; the 2024-2025 dip is mostly churn.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "asos-1min-pg1-KJFK-202401.dat",
+     "location": "directory listing 2024/01"
+    },
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "ncei_1min_2024_01.html: 881 station files in the listing (K-prefixed 831, other 50)",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Coordinator reran the count on the saved listings; filenames only, empty files possible.",
+   "figure_status": "actual",
+   "sole_source_reason": "NCEI's own archive listing is the authority for what it holds."
+  },
+  {
+   "id": "c2",
+   "text": "FAA chose AWOS-C over ASOS 2.0 for 206-207 of its 570 ASOS sites because its funding was insufficient; NWS has no plan to move its ASOS to AWOS.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "There are no NWS plans to transition ASOS to AWOS.",
+     "location": null
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems.",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS's own FAQ, checked by the coordinator.",
+   "figure_status": "current_plan",
+   "sole_source_reason": "The program's own FAQ states its plan."
+  },
+  {
+   "id": "c3",
+   "text": "In the NWS equipment list of 18 Mar 2025, the heated tipping bucket sheet has 575 rows (FAA 552, NWS 14, DoD 8, Navy 1), the AWPAG sheet 323 (NWS 303, FAA 20) and the ACU sheet 849 (FAA 568, NWS 277, DoD 3, Navy 1).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "# Sheet: AWPAG | REGION | WFO | EQSID | EQUIP | LOCATION | STATE | EQ_OWNER | WINDSCREEN | 323",
+     "location": null
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "AWPAG: total rows 323; NWS 303, FAA 20",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Counted by script from the NWS spreadsheet; listed rows, not official totals.",
+   "figure_status": "actual",
+   "sole_source_reason": "The NWS equipment list is the authority for its own equipment."
+  },
+  {
+   "id": "c4",
+   "text": "The AWPAG is made by Ott Hydrometrie; OTT still issued Pluvio2 L/S firmware in Jan 2025 and calls the Pluvio2 200/400 the former generation; no source names the AWPAG's model.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "manufactured by Ott Hydrometrie of Germany",
+     "location": null
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "V 1.06.2 (28.01.2025)",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Manufacturer documents read raw; model inside the AWPAG not confirmed."
+  },
+  {
+   "id": "c5",
+   "text": "NWS names the Frise Model 7405HA as the ASOS heated tipping bucket and aims eventually to replace it with AWPAGs; no end-of-life statement found.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "ASOS uses a heated tipping bucket rain gauge, such as the Frise Model 7405HA",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NWS page; sole-source spares seen only in snippets."
+  },
+  {
+   "id": "c6",
+   "text": "FAA's FTI copper lines date from the 1960s and are no longer supported by providers; as of May 2026, 2,560 of 5,170 had been replaced with fiber.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "as of May 2026, FAA reported replacing 2,560 of 5,170 old and frail copper wires with high-speed fiber optic communications cables.",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "GAO report read raw; ASOS not named.",
+   "figure_status": "actual",
+   "sole_source_reason": "GAO's audit is the authority on FAA's reported progress."
+  },
+  {
+   "id": "c7",
+   "text": "FAA technician staffing shortfalls have lengthened restoration times and FAA cannot staff all shifts at 67 facilities.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "Staffing shortfalls have resulted in longer restoration times and increased reliance on second-",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "FAA's own workforce plan, read raw.",
+   "sole_source_reason": "FAA's own workforce plan is the authority on its staffing."
+  },
+  {
+   "id": "c8",
+   "text": "In March 2025 the NWS ASOS program said WFO pods were formed to mitigate critical staffing shortages and enhance ASOS maintenance.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s3",
+     "relationship": "supports",
+     "passage": "In an effort to mitigate critical staffing shortages and enhance the maintenance of Automated Surface Observing Systems (ASOS)",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS page read raw.",
+   "sole_source_reason": "The ASOS program's own notice."
+  },
+  {
+   "id": "c9",
+   "text": "Non-federal AWOS maintenance and calibration records may not be available, making them not suitable for NWS climate products.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "maintenance and calibration records may or may not be readily available which would make",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS directive read raw.",
+   "sole_source_reason": "An NWS directive is the authority on NWS climate-product rules."
+  },
+  {
+   "id": "c10",
+   "text": "USW stations with PRCP in GHCN-Daily: 1,326 with last year >= 2024, 1,316 >= 2025, 1,246 in 2026; 70 ended in 2025 against 10 in 2024 and 5 in 2023.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "USW PRCP lastyear == 2025: 70",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "Inventory counts are raw, but a 2025 last year may be a data lag; not ASOS-only.",
+   "figure_status": "actual",
+   "sole_source_reason": "NCEI's inventory is the authority for its holdings."
+  },
+  {
+   "id": "c11",
+   "text": "The FY2026 enacted agreement provides $30,000,000 for the National Mesonet Program.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "$30,000,000 for the National Mesonet Program to ex pand observations, including up to $ 1,500,000",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Explanatory statement read raw.",
+   "figure_status": "enacted",
+   "sole_source_reason": "The joint explanatory statement is the authority for the enacted level."
+  },
+  {
+   "id": "c12",
+   "text": "In May 2026 NWS requested comment on modernizing COOP into a real-time program with automated sensors (proposal only).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "SUMMARY: The NWS is seeking public and stakeholder input on the modernization of",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Federal Register notice read raw.",
+   "figure_status": "proposed",
+   "sole_source_reason": "The Federal Register notice is the agency's own statement."
+  },
+  {
+   "id": "c13",
+   "text": "USCRN has 114 commissioned stations in the contiguous US, 25 in Alaska and 2 in Hawaii.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "The network consists of 114 commiss",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI page.",
+   "figure_status": "actual",
+   "sole_source_reason": "NCEI's own program page."
+  },
+  {
+   "id": "c14",
+   "text": "MRMS gauge-corrected QPE is 1 km and hourly, built from HADS and MADIS gauge data.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Spatial resolution: 1km x 1km",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NOAA VLab training page, read via subagent.",
+   "sole_source_reason": "NOAA's own product documentation."
+  },
+  {
+   "id": "c15",
+   "text": "NOAA's Aug 2025 sole-source notice says the High Sierra 8-inch non-recording gauge has been on back order since 2023 and testing another unit would cause lengthy delays.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "has been on back order since 2023",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Aggregator copy of the SAM notice, read by browser."
+  },
+  {
+   "id": "c16",
+   "text": "ASOS 2.0 processors come from Campbell Scientific (700 ACUs, 799 DCPs, 50 single-cabinet units); an R-ASOS SLEP support award of $1,788,182 was made on 27 Aug 2025.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "to deliver 700",
+     "location": null
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "This requirement will provide both engineering and program support to the ASOS SLEP program,",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Vendor case study and aggregator contract page.",
+   "figure_status": [
+    "actual",
+    "obligation"
+   ]
+  },
+  {
+   "id": "c17",
+   "text": "AOMC IT and support services BPA call to Federal Working Group: 9/1/25 start, current end 12/31/26, potential end 8/31/30.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "NWS/suad: Automated Surface Observing System (ASOS) Operations Maintenance Center (AOMC) Information Technology (IT) and support services",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Aggregator contract record."
+  },
+  {
+   "id": "c18",
+   "text": "The Sioux City IA ASOS stopped transmitting over certain communications lines, with NWS waiting on FAA (undated); NWS had a six-hour data outage on 2 Apr 2024 and a major outage in June 2024.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "The Automated Surface Obervation System (ASOS) is not transmitting data over certain communications lines.",
+     "location": null
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "The National Weather Service is experiencing a major data outage",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NWS page and press."
+  },
+  {
+   "id": "c19",
+   "text": "FAA's only AWOS-C contract found, Crooked Creek AK ($2,206,600, 20 Feb 2026), is at a site not in the March 2025 ASOS list.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "CROOKED CREEK AWOS-C REPLACEMENT",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "USAspending API record.",
+   "figure_status": "obligation",
+   "sole_source_reason": "The federal spending record."
+  },
+  {
+   "id": "c20",
+   "text": "NWS's ASOS timeline sets CY2026 to replace all copper voice and data lines with IP and deploy a new precipitation weighing gauge, and CY2029 to deploy a new tipping bucket sensor.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "CY2026: Design, validate and deploy all ACU/DCP/SCA Replacements (aka ASOS 2.0), | Replace all copper voice and data lines with Internet Protocol communications, Deploy | new ceilometer, Deploy new precipitation weighing gauge, Deploy new barometer",
+     "location": "slide 2"
+    },
+    {
+     "source_id": "s45",
+     "relationship": "supports",
+     "passage": "CY2029: Deploy new tipping bucket sensor",
+     "location": "slide 2"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "contextualizes",
+     "passage": "Precipitation Accumulation Sensor: Planned for FY2024",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NWS slide read raw; a plan, and the FAQ's FY2024 date already slipped.",
+   "figure_status": "current_plan",
+   "sole_source_reason": "The program's own timeline."
+  },
+  {
+   "id": "c21",
+   "text": "In Q1 2026 Starlink was partially deployed at Alaska NWS and FAA AWOS/ASOS stations given serious deficits in telecom reliability in many locations.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "Starlink has been partially deployed to allow satellite telcommunications connectivity, given serious deficits in status quo reliability in many locations.",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Report description only; station-level figures unread."
+  },
+  {
+   "id": "c22",
+   "text": "A new National Mesonet Program contract began on 1 Sep 2026 with KBR as prime and about 70 partners.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "has expanded the National Mesonet Program through a new contract that began on September 1",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Trade press of a NOAA announcement."
+  },
+  {
+   "id": "c23",
+   "text": "After about 550 DOGE-era departures NOAA was allowed to post 450 critical roles; 184 had been advertised by Dec 2025, with the rest due by end of FY2026.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "The NWS successfully advertised 184 positions to date",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Washington Post reporting with NOAA statement.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c24",
+   "text": "Reconciler additions: T/Td replacement 63.8% complete as of 13 Aug 2025 of 882 sites; FAQ says about 950 active ASOS sites; FAA technicians averaged 115 overtime hours in FY2025 and about 20% were retirement-eligible.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "The T/Td sensor replacment as of 13 August 2025",
+     "location": null
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "There are approximately 950 active ASOS sites.",
+     "location": null
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "Approximately 20 percent of the ATSS workforce were eligible to retire at the end of FY 2025",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Saved files checked by the Reconciler.",
+   "figure_status": "actual"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "FAA ASOS sites moving to AWOS-C: 206 (FAQ heading) vs 207 (FAQ question)",
+   "source_ids": [
+    "s4",
+    "s39"
+   ],
+   "status": "unresolved",
+   "explanation": "Both in the NWS FAQ; FAA's ASWON snippet says 206. Answer gives 206-207."
+  },
+  {
+   "claim": "FAA ASOS total: 570 locations (FAQ, undated) vs 568 FAA ACU rows (equipment list 2025-03-18)",
+   "source_ids": [
+    "s4",
+    "s42"
+   ],
+   "status": "resolved",
+   "explanation": "Different bases and dates; stated in the answer."
+  },
+  {
+   "claim": "Active ASOS sites: about 950 (FAQ, undated) vs 849 ACU rows (equipment list 2025-03-18)",
+   "source_ids": [
+    "s4",
+    "s42"
+   ],
+   "status": "unresolved",
+   "explanation": "Program total vs processor rows (DoD sites largely absent from the ACU sheet); stated in the answer."
+  },
+  {
+   "claim": "T/Td sites: 882 (sheet header, 13 Aug 2025) vs 883 rows (run count)",
+   "source_ids": [
+    "s10",
+    "s42"
+   ],
+   "status": "resolved",
+   "explanation": "The run's row count likely includes a non-site row; answer uses 882."
+  }
+ ],
+ "coverage_gaps": [
+  "Station counts by agency (NWS/FAA/DoD) by year 2024-2026: no agency-split list found this run; HOMR file has no agency column. Not re-checked: asos_sites_by_equipment_2025-03-18.xlsx in 2026-11-18_noaa-rain-gauge-threats/work/raw/sa2 (may have an owner column) and whether a newer version exists on weather.gov/asos. (from sa1)",
+  "AWOS-C site list / schedule / which are climate stations: NOT found; FAA CIP FY2026-2030 not found after 3 queries. Leads not read: Federal Compass 'CROOKED CREEK AWOS-C REPLACEMENT' 697DCK26C00065 (2026-02-20), highergov 693KA726D00003, FAA NAS Infrastructure Roadmaps v19.2 Weather PDF, FY2025 DYAASI Annual Report (faa.gov 2026-09). (from sa1)",
+  "1-minute counts are filenames only; file sizes not checked (empty files possible). Churned station IDs (e.g. KDTW, KSFO, KORD, KSLC absent in one January listing and back later) not investigated per station. (from sa1)",
+  "GHCN-Daily USW PRCP last-year counts and GHCNh counts: not done (time). (from sa1)",
+  "Current maker/support of HTB: NWS names Frise 7405HA; a 2022 notice snippet says Friez Engineering; spares bought sole-source from ETI Instrument Systems. No end-of-life or current-manufacture statement found. SAM.gov notices unreadable without browser. (from sa2)",
+  "Which Pluvio model ASOS AWPAG uses, and OTT/Veralto support statement for it: NOT FOUND. No 2024-2026 AWPAG contract, MOD NOTE, or replacement plan found beyond stale FAQ (FY2024) and unread Heartland brief (CY2026 weighing gauge). (from sa2)",
+  "Second supplier/tested replacement 2024-2026: none found; only 2003-2008 SFSC/NCDC comparisons (Geonor vs Ott vs TB). Leads not read: ams.confex.com/ams/pdfpapers/130355.pdf, USCRN TN05002PrecipTesting.pdf. (from sa2)",
+  "No new gauge-specific outage 2024-2026 beyond Springfield IL, Augusta ME, Houston IAH; Bluefield WV (May 2026) was a whole-ASOS failure per bdtonline snippet (not read). (from sa2)",
+  "NMP contract 2025-2026: RFP 1305M225R0027 (Sep-Oct 2025) and a new contract starting Sep 1 2026 (MTI, unreadable) were seen only in snippets; contractor (KBR vs SGT items conflict), value, and whether any 2025 funding gap occurred are NOT confirmed. Next: SAM.gov award 1305M226D0019, Wayback of MTI article. (from sa4)",
+  "Not found: an explicit NCEI statement that non-federal AWOS data are not archived or not in GHCN-Daily; AWOS gauge type (heated or not); NMP data archiving at NCEI; MRMS/Stage IV archive at NCEI and record length; Stage IV not searched; West Texas Mesonet not searched; Oklahoma Mesonet only snippets (120 stations, 5-min, manual rain QA vs radar); USCRN time resolution and FY2027 budget line (earlier run: ARL closure proposed, rejected for FY2026); COOP station-count trend values (chart in wera_2024 PDF slides 4-5, not read as image). (from sa4)",
+  "No ASOS-specific copper/POTS retirement notice (NWS or FAA) found for 2024-2026; GAO-26-107992 gives FAA FTI copper-to-fiber figures but does not say how many ASOS circuits ride FTI copper. Next: NWS NPCs/SCNs on ASOS communications, FAA ADAS/WMSCR pages. (from sa3)",
+  "SFSC: no 2025 staffing/funding cut, relocation or disruption found; only 2025 ASOS maintenance course sessions marked postponed (training.weather.gov schedule, snippet only, not saved) and facility HVAC/snow-removal solicitations. (from sa3)",
+  "No NWSEO statement on electronics technicians found; no national NWS ET vacancy count. 2025 ET hiring posts seen only as USAJOBS snippets (Western Region 6 vacancies, Duluth 2, Honolulu 2), not saved. (from sa3)",
+  "AOMC hours, staffing and backup site NOT found; only the IT support BPA call (Silver Spring, current end 12/31/26). (from sa3)",
+  "ASOS 2.0 ACU support/sustainment contract, failure reports or spares NOT found. R-ASOS SLEP Support award (Aug 2025, $1.79M) is the only post-delivery SLEP contract seen. (from sa3)",
+  "No DOT OIG audit of FAA surface weather sensors/ASOS found (r3, 2 queries); GAO-26-107992 fn 27 says GAO has ongoing work on FAA weather reporting systems under FAA Reauthorization Act 2024 Sec. 316-317, not found as published. (from sa3)",
+  "Snippet-only 2025 NWS dissemination items not read: NOAAPort/SBN dissemination delay admin message 18 Jul 2025; NOAA OSPO note of 20 Oct 2025 AWS anomaly affecting NCCF distribution. Sioux City comms outage page is undated. (from sa3)",
+  "No FAA or NWS list marking which of the 206/207 ASOS sites move to AWOS-C was found; the NWS FAQ complete list link goes to the general ASOS equipment page/spreadsheet (no AWOS-C tab named). Not found after 3 queries. (from sa5)",
+  "No USAspending search was run for other FAA AWOS-C awards (e.g. keyword AWOS-C across 697DCK/697DCK regional offices) that might name ASOS sites; only 697DCK26C00065 was read. (from sa5)",
+  "GHCN-Daily: the 70 USW PRCP stations with lastyear 2025 were not listed or checked against ASOS IDs; whether they are lagged, closed or moved is unknown. Earlier-run inventory copies were not compared (fresh download used). (from sa5)",
+  "FAA NAS roadmap v19.3 bar end dates for ASOS, AWOS-C and SWS are graphical only; would need the PDF page image read (not done). (from sa5)",
+  "File note (not a research gap): ghcnd-inventory.txt and ghcnd-stations.txt are the raw inputs of sa5-e1 and sa5-e6; count_usw_prcp.py and list_usw_prcp_2024_2025.py are the scripts; asosequip_2026-11-26.html and faa_nas_roadmap_v19.2_weather.pdf are originals of cited .txt files; src*_unused.json were return_add inputs. Returned at about 12:20 with both tasks done; remaining leads above need more time. (from sa5)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "FAA AWOS-C deployment schedule 2026",
+   "tool": "WebSearch",
+   "notes": "standard; no site schedule found; led to NAS roadmap PDF and Cherokee Federal article (already in 2026-11-18 run)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AWOS-C ASOS replacement FAA 2025",
+   "tool": "WebSearch",
+   "notes": "standard; only known 206/207 figures and Cherokee June 2025 award",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FAA Capital Investment Plan FY2026-2030 AWOS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains faa.gov; FY2026-2030 CIP not found after 3 queries for r2",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS current events 2025 NWS",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov; Current Events page refetched (newest item 2025-03-20)",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI ASOS one minute data station list",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov; found HOMR asos-stations.txt; no dedicated 1-minute station inventory",
+   "from": "sa1",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS sites decommissioned 2025",
+   "tool": "WebSearch",
+   "notes": "standard; results all about ASOS plc retailer, irrelevant",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AWOS-C contract award FAA 2026",
+   "tool": "WebSearch",
+   "notes": "standard; snippets only: Crooked Creek AWOS-C replacement obligation 2026-02-20 (Federal Compass), Peraton Alaska AWOS/VWOS/WCAM order Jan 2026; not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NCEI 1-minute pg1 directory listings 2024/01, 2025/01, 2026/01, 2026/10, 2026/11 and 2026/",
+   "tool": "lookup (NCEI directory listings)",
+   "notes": "fetched with fetch_page.py; counted with count_1min.py",
+   "from": "sa1",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "HOMR asos-stations.txt",
+   "tool": "lookup (NCEI HOMR station file)",
+   "notes": "counted with count_homr.py",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OTT Pluvio2 discontinued successor",
+   "tool": "WebSearch",
+   "notes": "No discontinuation notice; OTT firmware notes call Pluvio2 200/400 former generation; L and S current.",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS precipitation sensor replacement 2025",
+   "tool": "WebSearch",
+   "notes": "Found awpagimplan.pdf, relnoteawpag.pdf, FAQ, Heartland brief (404).",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS AWPAG modification note",
+   "tool": "WebSearch",
+   "notes": "Only the draft v2.7B release note; no MOD NOTE for AWPAG 2024-2026 found.",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS precipitation gauge contract NOAA 2025",
+   "tool": "WebSearch",
+   "notes": "NLSC Grandview rain gauge notice 142082-25-0398 (Aug 2025); no AWPAG contract found.",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "tipping bucket ASOS spare parts solicitation",
+   "tool": "WebSearch",
+   "notes": "ETI Instrument Systems sole-source spares notices (2014, 2022, later undated); HyQuest TB3 RFQ 1305M324Q0426.",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS precipitation weighing gauge procurement 2026",
+   "tool": "WebSearch",
+   "notes": "No weighing-gauge solicitation; COOP sticks, High Sierra sole source, July 2026 sticks notice.",
+   "from": "sa2",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "rain gauges National Logistics Support Center Grandview 2025",
+   "tool": "WebSearch",
+   "notes": "Follow-up on 142082-25-0398: dates, NAICS; no model or award.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ETI Instrument Systems tipping buckets ASOS sole source NOAA",
+   "tool": "WebSearch",
+   "notes": "Same SAM.gov/FBO notices; HTB = Friez Engineering per 2022 notice snippet.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS rain gauge not working 2025",
+   "tool": "WebSearch",
+   "notes": "Only Houston IAH (already known).",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS rain gauge outage airport 2026",
+   "tool": "WebSearch",
+   "notes": "Extended mode. Augusta ME, Frankfort KY, Bluefield WV (whole-station failure May 2026, not gauge-specific), FAA dashboard; no new gauge outage.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS weighing precipitation gauge test Sterling Field Support Center",
+   "tool": "WebSearch",
+   "notes": "Only 2003-2008 AWPAG/Geonor/Ott tests (AMS papers, USCRN TN05002); no 2024-2026 second-supplier test found.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "HeartlandConferenceBrief.pdf Wayback",
+   "tool": "lookup (Wayback copy via fetch_page.py)",
+   "notes": "Direct Wayback /web/2025/ URL 404.",
+   "from": "sa2",
+   "copy_of": "https://engineering.uiowa.edu/sites/engineering.uiowa.edu/files/2024-09/HeartlandConferenceBrief.pdf"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "governmentcontracts.us listing 142082-25-0398",
+   "tool": "WebFetch",
+   "notes": "Readable copy; no model or ASOS mention.",
+   "from": "sa2",
+   "copy_of": "https://samsearch.co/gov-explore/federal/rain-gauges-for-the-national-logistics-support-center-in-grandview-mo/142082-25-0398"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "highergov 1305M226Q0159 ASOS blowers",
+   "tool": "WebFetch",
+   "notes": "June 25, 2026 notice: 28 Kooltronic KP701A blowers for ASOS enclosures; sensor not named; not gauge-specific, not saved as source.",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Pluvio2 National Weather Service ASOS AWPAG model",
+   "tool": "WebSearch",
+   "notes": "12th search. No source names the Pluvio model used as the ASOS AWPAG; only Ott Hydrometrie (NWS docs). Lead not read: AWPAG Altershield Final Report 08-09 (weather.gov .doc).",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Mesonet Program funding 2025 contract",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Found 2025 RFP 1305M225R0027, MTI articles (host blocked), KBR/SGT award items (unreconciled), Nebraska Mesonet.",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "USCRN budget 2026 proposed cut",
+   "tool": "WebSearch",
+   "notes": "No domain filter. No result names USCRN; only general NOAA FY2026/FY2027 cut coverage. Relied on earlier run 2026-11-18_noaa-rain-gauge-threats for USCRN status.",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Mesonet Program contract lapse 2025 mesonets data",
+   "tool": "WebSearch",
+   "notes": "No domain filter. No report of an NMP contract lapse found; NPR April 2025 contract-lapse story checked (no mesonet mention, saved as _unused); Civil Beat Hawaii Mesonet item read.",
+   "from": "sa4",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "MRMS QPE gauge correction resolution 1 km 2 minute",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Fetched vlab.noaa.gov WDTD gauge-bias QPE page.",
+   "from": "sa4",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "AWOS precipitation data quality climate comparison ASOS mesonet",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Found NWS WR TA 01-06 (Elko) and WKU 2025 thesis.",
+   "from": "sa4",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "mesonet precipitation comparison ASOS study gauge",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Same WKU thesis; also AMS 2019 NYSM vs ASOS abstract (6 pairs within 10 km, not opened).",
+   "from": "sa4",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "non-federal AWOS data not archived NCEI climate",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Led to NWSI 10-1003 (fetched) and Murphy 2023 deck (reused). No explicit NCEI statement that non-federal AWOS is excluded.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Cooperative Observer Program decline observers 2025",
+   "tool": "WebSearch",
+   "notes": "No domain filter. No decline figures; found Federal Register COOP RFC 2026-09099 (fetched) and WERA 2024 NWS COOP update PDF on media.cocorahs.org (not opened).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "New York State Mesonet funding cut 2025 National Mesonet",
+   "tool": "WebSearch",
+   "notes": "blocked_domains filter: meteorologicaltechnologyinternational.com. Found Tonko release and UAlbany 2024 article (both fetched); the $3M cut is the DHS EMPOWER grant, not NMP.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Oklahoma Mesonet rainfall 5-minute stations quality assurance",
+   "tool": "WebSearch",
+   "notes": "No domain filter. Snippets only (120 stations, 5-minute data, manual rain QA vs radar, dual gauges); no page saved for lack of time.",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "National Mesonet|non-federal AWOS|MRMS in earlier runs work/raw",
+   "tool": "lookup (find_text over web_search_results)",
+   "notes": "Reused fy26_cjs_jes.txt and noaa_fy27_cj.txt (2026-11-17_noaa-ncei-threats), murphy_2023.txt (2026-11-26_asos-people-funding-pt3), uscrn_overview.txt (2026-11-18_noaa-rain-gauge-threats).",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS copper phone line retirement NWS 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; only 2002-2008 ASOS AWIPS-to-ADAS transfer TINs and generic AT&T copper items; nothing ASOS-specific 2024-2026",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Sterling Field Support Center NWS 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; SFSC pages, 2025 ASOS maintenance course sessions (some postponed), HVAC and snow-removal solicitations; no 2025 cuts/relocation found",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "PASS FAA weather equipment maintenance 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; PASS 2025 House testimony on aging equipment/staffing, FAA orders; no PASS statement on ASOS",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS outage airport weather 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; Sioux City comms outage page, known KSPI/KAUG/KFFT pages, Alaska UAA outage reports",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWSEO electronics technicians shortage 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; no NWSEO results (generic labour-market pages)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWSEO statement technicians observing systems repair 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; NWSEO CBA and blog only; PASS ground-stop article (Nov 2026)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO FAA telecommunications infrastructure 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; GAO-26-107992 (Sept 2026) read in full",
+   "from": "sa3",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "FAA weather sensors audit 2025 inspector general",
+   "tool": "WebSearch",
+   "notes": "no filter; DOT OIG ITWS and cybersecurity audits, GAO-25-108597 (NWS meteorologists at FAA); no OIG audit of ASOS/surface weather sensors found",
+   "from": "sa3",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "OIG National Weather Service staffing 2026",
+   "tool": "WebSearch",
+   "notes": "no filter; OIG-27-004-I already in pt4; OIG-26-017-I (Kerr County) and staffing announcement; nothing new on ETs/ASOS",
+   "from": "sa3",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWS electronics technicians vacancies 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; USAJOBS ET postings 2025 (Western Region 6 vacancies, Duluth 2, Honolulu 2), NWS Lincoln ET flyers Jan/Jul 2025",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS Operations and Monitoring Center contract 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; HigherGov AOMC IT BPA call 1305M225F0288; R-ASOS SLEP Support award",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS ACU replacement processor vendor 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; only unrelated retail/parts results; vendor already known from pt3 Campbell case study",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Sterling Field Support Center layoffs DOGE 2025",
+   "tool": "WebSearch",
+   "notes": "no filter; nothing naming SFSC",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "FAA technician workforce plan 2026 restoration times",
+   "tool": "WebSearch",
+   "notes": "no filter; FAA ATSS Workforce Plan 2026-2030 read",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWS network outage observations data 2025 NOAAPort",
+   "tool": "WebSearch",
+   "notes": "no filter; Apr 2024 GovExec and Jun 2024 E&E outage items; Jul 2025 NOAAPort delay admin message and Oct 2025 AWS anomaly noted in snippets only",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "697DCK26C00065 AWOS-C Crooked Creek",
+   "tool": "WebSearch",
+   "notes": "no relevant hits; contract read via USAspending API instead",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_697DCK26C00065_6920_-NONE-_-NONE-/",
+   "tool": "lookup (USAspending award API)",
+   "notes": "saved usaspending_697DCK26C00065.json",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AWOS-C replace ASOS FAA airports list",
+   "tool": "WebSearch",
+   "notes": "no site list found; NWS FAQ and FAA ASWON only (206/207)",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://www.weather.gov/asos/FAQ.html",
+   "tool": "WebFetch",
+   "notes": "extraction: AWOS-C list link (See a complete list here) points to https://www.weather.gov/asos/asosequip.html",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://www.weather.gov/asos/asosequip.html",
+   "tool": "lookup (fetch_page)",
+   "notes": "page links only the ASOS Sites by Equipment As Of 3_18_2025.xlsx; no AWOS-C column or tab named on the page",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FAA AWOS-C ASOS transition 2026 airports",
+   "tool": "WebSearch",
+   "notes": "no 2026 site schedule; led to FAA NAS roadmap PDF",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FAA \"Surface Weather System\" SWS replace ASOS AWOS",
+   "tool": "WebSearch",
+   "notes": "snippets (FAA ASWON page, 2018 Strahan presentation) say SWS is a backup system replacing SAWS/DASI, not ASOS; not saved",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt",
+   "tool": "lookup (fetch_page)",
+   "notes": "no saved inventory copy checked in earlier runs (time); downloaded fresh 2026-11-26, 36.4 MB",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS replaced by AWOS-C airport 2026",
+   "tool": "WebSearch",
+   "notes": "extended mode; no 2026 national status; found noaa-mirror.org FAQ copy (unreadable)",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "https://noaa-mirror.org/www.weather.gov/asos/FAQ.html",
+   "tool": "WebFetch",
+   "notes": "certificate error; logged unreadable",
+   "from": "sa5",
+   "copy_of": "https://www.weather.gov/asos/FAQ.html"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "CROOKED| CJX in asos_sites_by_equipment_2025-03-18.txt",
+   "tool": "lookup (find_text on earlier-run spreadsheet copy)",
+   "notes": "no match",
+   "from": "sa5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "1305M324Q0426 HyQuest TB3 tipping bucket NOAA",
+   "tool": "WebSearch",
+   "notes": "TB3 spares are for existing HyQuest gauges; network not stated (HSOIS listing suggests hydrologic); not ASOS."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=samsearch.co 142082-25-0381",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "High Sierra 8-inch gauge sole source; back order since 2023.",
+   "copy_of": "https://sam.gov"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AWOS-C replaces ASOS Alaska 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "Found UAA ISER Alaska AWOS/ASOS METAR availability reports (Q4 2025, Q1 2026): Starlink deployed given telecom reliability deficits."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Alaska AWOS/ASOS METAR Data Availability Q1 2026 scholarworks",
+   "tool": "duckduckgo (browser)",
+   "notes": "Landing page 1854 read in browser; PDF HTTP 403 via fetch_page.py.",
+   "copy_of": "https://scholarworks.alaska.edu/cgi/viewcontent.cgi?article=3089&context=uaa_iser_reports"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NWS ASOS new weighing precipitation gauge 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "Found 2026-03 copy of the Heartland brief (sa2's 2024-09 copy was 404): CY2026 new weighing gauge and copper-to-IP; CY2029 new tipping bucket.",
+   "copy_of": "https://engineering.uiowa.edu/sites/engineering.uiowa.edu/files/2024-09/HeartlandConferenceBrief.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Sterling Field Support Center\" 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "Only facility procurements (HVAC replacement Aug 2025, paving, waste removal); no cuts or disruption."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=web.archive.org/web/2026/scholarworks.alaska.edu viewcontent article=3089",
+   "tool": "fetch_page (Wayback)",
+   "notes": "HTTP 404: no saved copy of the ISER PDF.",
+   "copy_of": "s44"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "\"Alaska AWOS/ASOS METAR Data Availability\" Starlink filetype:pdf",
+   "tool": "duckduckgo (browser)",
+   "notes": "No results: no other copy of the PDF found.",
+   "copy_of": "s44"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Friez Engineering heated tipping bucket 7405",
+   "tool": "duckduckgo (browser)",
+   "notes": "No results."
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=meteorologicaltechnologyinternational.com NMP contract",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "Follow-up queue item from sa4: new NMP contract 1 Sep 2026, KBR."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=startribune.com NWS vacancies winter",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "Follow-up queue item from sa3: 450 roles authorized, 184 advertised (Dec 2025)."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "url=bdtonline.com Bluefield ASOS fails",
+   "tool": "lookup (built-in browser page read)",
+   "notes": "Article body did not render (page text returned another story)."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NWS ASOS program pages: current events, station lists, modifications",
+   "query": "ASOS current events 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "FAA",
+   "publisher": "its parent, operator or members",
+   "subquestion_id": "q1",
+   "aim": "FAA AWOS-C transition documents and Capital Investment Plan",
+   "query": "AWOS-C ASOS replacement FAA 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "FAA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "DOT OIG / GAO audits of FAA weather systems or telecommunications",
+   "query": "FAA weather sensors audit 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NWS",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "DOC OIG reports on NWS staffing and observations",
+   "query": "OIG National Weather Service staffing 2026",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "OTT HydroMet",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q2",
+   "aim": "manufacturer support or discontinuation of the Pluvio2 gauge behind the AWPAG",
+   "query": "OTT Pluvio2 discontinued",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "NWS/SFSC modification notes and replacement plans for ASOS precipitation sensors",
+   "query": "ASOS precipitation sensor replacement 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NWS",
+   "publisher": "press",
+   "subquestion_id": "q3",
+   "aim": "news of ASOS outages and broken airport weather stations",
+   "query": "ASOS outage airport weather 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NWS",
+   "publisher": "affected people and critics",
+   "subquestion_id": "q3",
+   "aim": "NWSEO and PASS statements on technician shortages",
+   "query": "NWSEO electronics technicians shortage 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA",
+   "publisher": "mandatory filings and notices",
+   "subquestion_id": "q2",
+   "aim": "contract notices for ASOS precipitation gauges and spares",
+   "query": "ASOS precipitation gauge contract NOAA 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NCEI",
+   "publisher": "statistics agencies and surveys",
+   "subquestion_id": "q1",
+   "aim": "NCEI 1-minute ASOS documentation and station inventory",
+   "query": "NCEI ASOS one minute data station list",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NOAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "USCRN and National Mesonet Program funding and status",
+   "query": "National Mesonet Program funding 2025",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NOAA NSSL",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "MRMS QPE documentation: resolution, gauge correction",
+   "query": "MRMS QPE gauge correction resolution",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q4",
+   "aim": "studies comparing AWOS/ASOS/mesonet precipitation for climate use",
+   "query": "AWOS precipitation data quality climate",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "not seen",
+  "budget_min": 40
+ }
+}

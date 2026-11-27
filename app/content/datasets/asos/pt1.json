@@ -1,0 +1,10 @@
+{
+  "question": "What are the ASOS (Automated Surface Observing System) network's precipitation observations, taken as one dataset: which products carry them (1-minute DSI 3285 pages 1 and 2, 5-minute DSI 6401, hourly and special METAR/SPECI as NCEI archives them in ISD/Global Hourly, now GHCNh, and the CF6/F-6 and DSM daily and monthly summaries), where is each stored and served (NCEI, the AWS NODD buckets noaa-global-hourly-pds and noaa-isd-pds, IEM, NWS and FAA real-time feeds), what goes into them (station counts by agency, precipitation sensors, the station processor, the data path to NCEI, human augmentation, measured versus derived values), and which organizations make them (NWS, FAA, DoD, NCEI, contractors, outside groups)? How does AWOS differ? How does each finding bear on RRS-1 (two or more geographically independent copies), D-2 (storage is a single point of failure), DIRS-3 (depends on external data feeds) and DIRS-4 (needs outside processing infrastructure), leaving out quality control, people, funding amounts and recent developments?",
+  "searched_on": [
+    "Which products carry ASOS precipitation (1-minute, 5-minute, hourly METAR/SPECI, daily and monthly), and what are each one's period, update frequency and status?",
+    "Where is each product stored and served, which copies are current, and which is the archive of record?",
+    "How many stations does each agency run, which sensors and processor do they use, what path do the data take, how much human augmentation is there, and which values are measured and which derived?",
+    "Which organizations operate, maintain, process, host and pay for ASOS?",
+    "Do the findings support or contradict RRS-1, D-2, DIRS-3 and DIRS-4?"
+  ]
+}

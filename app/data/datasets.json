@@ -1,6 +1,45 @@
 {
   "datasets": [
     {
+      "id": "asos",
+      "name": "ASOS: Automated Surface Observing System",
+      "data_archive": "NOAA NCEI",
+      "precipitation_basis": "Gauge-based (heated tipping-bucket and AWPAG weighing gauges)",
+      "period_of_record": "June 1998 - Present (1-minute data; hourly reports go back further at some stations)",
+      "formal_cdr": "",
+      "update_status": "Ongoing; NCEI's 1-minute files and GHCNh are updated daily.",
+      "spatial_coverage": "United States: 50 states, Puerto Rico, U.S. Virgin Islands and some Pacific territories",
+      "resolution": "Station points (no fixed grid)",
+      "temporal_frequency": "1-minute, hourly (METAR/SPECI), daily and monthly products",
+      "curator": "NWS ASOS program office (Kenneth Boutin, National Program Manager in 2024); NOAA NCEI archives the data",
+      "doi": "",
+      "notes": "Network of about 950 automated weather stations, mostly at airports, run jointly by NWS, FAA and DoD, and scored here as one dataset across its products. Precipitation comes from a heated tipping-bucket gauge or the newer AWPAG weighing gauge, with freezing-rain and present-weather sensors. Amounts are in the 1-minute page 2 files (DSI 6406) and the hourly METAR/SPECI reports, now archived in GHCNh (ISD, which held them before, stopped updating in August 2025). NCEI is the archive of record; the Iowa Environmental Mesonet keeps an independent archive. No DOI for the network.",
+      "access_endpoints": [
+        {
+          "name": "NOAA NCEI ASOS/AWOS overview and access",
+          "url": "https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems",
+          "role": "primary"
+        },
+        {
+          "name": "ASOS 1-minute page 2 data, with precipitation (NCEI)",
+          "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg2/",
+          "role": "alternative"
+        },
+        {
+          "name": "GHCNh hourly data: Registry of Open Data on AWS",
+          "url": "https://registry.opendata.aws/noaa-ghcnh/",
+          "role": "alternative"
+        },
+        {
+          "name": "Iowa Environmental Mesonet ASOS data download",
+          "url": "https://mesonet.agron.iastate.edu/request/download.phtml",
+          "role": "alternative"
+        }
+      ],
+      "about_url": "dataset.html?id=asos",
+      "overview_url": "overview.html?id=asos"
+    },
+    {
       "id": "uscrn-daily",
       "name": "USCRN Daily: U.S. Climate Reference Network Daily Products",
       "data_archive": "NOAA NCEI",

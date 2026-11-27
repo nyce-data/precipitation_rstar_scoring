@@ -1,0 +1,115 @@
+# ASOS inputs (Part 5): which stations and sensors are under threat, and what could replace ASOS precipitation
+
+**Direct answer.** Overall rating: **imminent, for partial loss and slower repair, not for defunding** (moderate confidence). Two inputs are affected now. The first is the FAA's move of 206–207 of its 570 ASOS sites to AWOS-C. Those FAA sites hold nearly all of the network's heated tipping buckets (552 of 575 in the NWS's March 2025 equipment list). The second is a thin repair force: FAA technician shortfalls and NWS "critical staffing shortages". A third input is still being fixed: the telecom links. FAA's 1960s copper lines, which their providers no longer support, are being replaced through 2028. NWS plans to move ASOS from copper to IP in 2026, and Alaska stations are turning to Starlink because of "serious deficits" in reliability. Both precipitation gauges have planned replacements but no end-of-support notice: a new weighing gauge in CY2026 and a new tipping bucket in CY2029. The archive shows no sustained drop so far: NCEI's 1-minute listing held 881 station files in January 2024 and 853 in October 2026. One possible early sign is that 70 USW stations in GHCN-Daily last reported precipitation in 2025, against 10 that ended in 2024. The processors, the AOMC and the SFSC show no current threat. No source names a tested second supplier for either precipitation gauge. Of the substitutes, only USCRN (about 141 stations) meets climate standards at sub-hourly resolution. Non-federal AWOS is officially "not suitable" for NWS climate products.
+
+## Ratings by input
+
+| Input | What happened, when | Status | Scale | Rating | DIRS verdicts |
+|---|---|---|---|---|---|
+| Stations: FAA sites moving to AWOS-C | FAA chose AWOS-C over ASOS 2.0 because its "funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations" ([NWS ASOS FAQ](https://www.weather.gov/asos/FAQ.html)); runs 2025–2029. No site list or schedule was found ([FAA NAS roadmap, Weather](https://www.faa.gov/sites/faa.gov/files/NAS-Infrastructure-Roadmaps-v20-Weather.pdf) shows ASOS and AWOS-C both "In-Service", with ASWON Sustainment 2 running from 2023 Q4 to 2030 Q4). The only AWOS-C contract found was "CROOKED CREEK AWOS-C REPLACEMENT", $2,206,600, signed 20 Feb 2026 ([USAspending](https://api.usaspending.gov/api/v2/awards/CONT_AWD_697DCK26C00065_6920_-NONE-_-NONE-/)). Crooked Creek is not in the March 2025 ASOS list, so that contract is not an ASOS conversion | enacted, under way | 206–207 sites: about 36% of FAA's 570 and about 24% of the 849 ASOS processor sites in the March 2025 list | **imminent** | DIRS-2 supports |
+| Stations: NWS sites | "There are no NWS plans to transition ASOS to AWOS" (FAQ). The NWS has installed "ZERO new ASOS' in the past 10 years or so" ([Murphy, NWS 2023](https://www.weather.gov/media/lix/gcaws/Presentation1Murphy.pdf)) | none | 277 NWS processor sites | no current threat found | DIRS-2 contradicts for NWS sites |
+| Heated tipping bucket (HTB) | NWS names the Frise Model 7405HA and says the "eventual aim" is to replace it with AWPAGs ([NWS](https://www.weather.gov/asos/TippingBucket.html)). Spares are bought sole-source from ETI Instrument Systems (seen in snippets only). No end-of-life or end-of-manufacture statement was found. An NWS Nebraska brief (posted March 2026) puts it on the timeline: "CY2029: Deploy new tipping bucket sensor" ([NWS, ASOS 2.0 update](https://engineering.uiowa.edu/sites/engineering.uiowa.edu/files/2026-03/HeartlandConferenceBrief.pdf)). Its ASOS 2.0 items cover NWS sites, so whether FAA sites get the new bucket is not stated | aging; replacement planned for 2029 | 575 rows: FAA 552, NWS 14, DoD 8, Navy 1 | **emerging** | DIRS-5 supports (sole-source spares, snippet-level); DIRS-2 supports (FAA HTB sites are the ones leaving ASOS) |
+| All Weather Precipitation Accumulation Gauge (AWPAG) | Made by Ott Hydrometrie ([NWS AWPAG plan](https://www.weather.gov/media/asos/ASOS%20Implementation/awpagimplan.pdf)). OTT still released firmware for the Pluvio2 L and S in January 2025, and calls the Pluvio2 200 and 400 the "former generation of devices" ([OTT release notes, 2025](https://cdn.hach.com/1XMCM0ZF/at/jtcbggtwg2zmjqmb4f2xq/HY-OT-HM-bu-PluvioL_S_Firmware-releasenotes-EN-GL-250125.pdf)). No source names the model inside the AWPAG. The NWS FAQ still lists "Precipitation Accumulation Sensor: Planned for FY2024" (last updated 28 Apr 2023). The March 2026 NWS brief moves it to "CY2026: … Deploy new precipitation weighing gauge" (maker not named) | replacement planned, slipped from FY2024 to CY2026; current gauge's support status unknown | 323 rows: NWS 303, FAA 20 | no current threat found (uncertain) | DIRS-5 partly supports (one maker); partly contradicts (Geonor and OTT were compared in 2003–2008 tests) |
+| ASOS 2.0 processors | Campbell Scientific delivered 700 ACUs, 799 DCPs and 50 single-cabinet units ([Campbell case study](https://s.campbellsci.com/documents/us/case-studies/united-states-asos-weather-network-a4.pdf)). An "R-ASOS SLEP Support" engineering award of $1,788,182 was made on 27 Aug 2025 ([HigherGov](https://www.highergov.com/contract-opportunity/r-asos-slep-support-1305m225q0090-award-1305m423dneea0008-international-business-sales-and-services-corp-56397), aggregator) | new hardware | all NWS sites and the FAA sites that stay on ASOS | no current threat found | DIRS-2 contradicts |
+| FAA telecommunications | FTI "Copper cables are from the 1960s"; the technology "is no longer supported by the communications" providers. As of May 2026, "2,560 of 5,170" copper lines had been replaced with fiber ([GAO-26-107992, Sept 2026](https://files.gao.gov/reports/GAO-26-107992/index.html)). A later DOT statement of about 70% of connections moved was seen only in a search summary; it was not read. ASOS is not named. The Sioux City IA ASOS was "not transmitting data over certain communications lines", with NWS waiting on FAA (undated; [NWS Sioux Falls](https://www.weather.gov/fsd/news_SiouxCityDown)) | happening; replacement under way to 2028 | not stated for ASOS | **imminent** | DIRS-3 supports |
+| NWS telecommunications | A circuit failure on 2 Apr 2024 caused a "six-hour weather data outage"; failover was done by hand ([GovExec, 2024](https://govexec.com/technology/2024/04/nws-says-partial-circuit-failure-caused-network-outage/395527)). A "major data outage" followed in June 2024 ([E&E News via Doggett](https://doggett.house.gov/media/in-the-news/ee-news-nws-experiences-outages-amid-deadly-floods-and-heat-waves)). The ASOS plan for CY2026 is to "Replace all copper voice and data lines with Internet Protocol communications" (NWS brief, March 2026). In Alaska, a University of Alaska ISER report on 137 NWS and FAA AWOS/ASOS stations (Q1 2026) says "Starlink has been partially deployed … given serious deficits in status quo reliability in many locations" ([Jones, ISER, April 2026](https://scholarworks.alaska.edu/uaa_iser_reports/1854/); landing page only) | happening (Alaska); copper-to-IP move planned for 2026 | national dissemination for hours; Alaska stations repeatedly | **imminent** in Alaska, emerging elsewhere | DIRS-3 supports |
+| AOMC | An IT and support BPA call went to Federal Working Group from 9/1/25. Its current end is 12/31/26, with a potential end of 8/31/30, up to $3,924,085 ([HigherGov](https://www.highergov.com/contract/1305M421ANAAA0032-1305M225F0288), aggregator). No disruption or backup site was found | in force; option due 31 Dec 2026 | all ASOS | no current threat found | DIRS-3 neither |
+| SFSC | No 2024–2026 cut, move or disruption found. NOAA posted facility upkeep at SFSC in 2025: an HVAC replacement (posted 12 Aug 2025) and paving (search results only) | none | all ASOS (calibration, depot) | no current threat found | DIRS-1 not supported (SFSC is in-house NWS, not external, and nothing disrupted it) |
+| Field technicians | NWS ASOS program (20 Mar 2025): WFO "pods" formed "to mitigate critical staffing shortages and enhance the maintenance" of ASOS ([ASOS Current Events](https://www.weather.gov/asos/CurrentEvents.html)). FAA: "Staffing shortfalls have resulted in longer restoration times"; FAA "is currently unable to staff all shifts at 67 facilities". Its technicians averaged "115 hours of overtime" each in FY 2025 "fixing aging equipment", and "approximately 20 percent" were eligible to retire at the end of FY 2025 ([FAA ATSS plan 2026–2030](https://www.faa.gov/sites/faa.gov/files/Airway-Transportation-Systems-Specialist-Workforce-Plan-2026-2030.pdf); all FAA technicians, not ASOS only). NWS Lincoln IL, the office for Springfield, advertised ET posts in July 2025 ([flyer](https://www.weather.gov/media/ilx/NWS%20Lincoln%20ET%20Flyer%20-%20July%202025.pdf)). NOAA was allowed to post "450 critical roles" after "some 550" departures. By December 2025, "184 positions" had been advertised, with the rest due by the end of FY2026. Vacancies by office included technical staff (Des Moines: "one who manages the computer equipment") ([Washington Post via Star Tribune, 6 Dec 2025](https://www.startribune.com/winter-is-coming-not-all-weather-offices-are-ready/601541022)). No electronics-technician count was found | happening; cuts partly reversed by rehiring authority | network-wide; no count | **imminent** | DIRS-2 supports |
+
+Context for the temperature/dew-point sensors, which are already known to be under replacement: the equipment list's TTd sheet says the replacement was "63.8 % Complete" as of 13 August 2025, out of 882 sites.
+
+**Figures that differ.** The NWS FAQ gives both 206 and 207 for the FAA sites moving, and "approximately 950 active ASOS sites" (undated). The March 2025 list has 849 processor (ACU) rows, and 568 of them are FAA where the FAQ says 570. The TTd sheet's header says 882 sites while this run counted 883 rows. The answer uses the list's own rows for shares and the FAQ's 570 for the FAA total.
+
+Sources for the "Scale" column: counts of rows by `EQ_OWNER` in the NWS [ASOS Sites by Equipment As Of 3/18/2025](https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx) (ACU 849: FAA 568, NWS 277, DoD 3, Navy 1). These are computed by this run's script and are listed rows, not official totals. Percentages are computed from them.
+
+## Does the archive show it?
+
+| Archive measure | Jan 2024 | Jan 2025 | Jan 2026 | Latest |
+|---|---|---|---|---|
+| NCEI 1-minute (page 1) station files in the month's listing | 881 | 834 | 830 | 853 (Oct 2026); 848 (Nov 2026, partial month) |
+
+Source: [NCEI 1-minute ASOS listings](https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg1/access/2024/01/), counted by script. These are filenames only; empty files are possible (Aug–Sep 2025 is known to be empty, per the Part 4 follow-up).
+
+- **1-minute data: no sustained drop** (moderate confidence). The January 2024 to January 2025 dip of 47 is mostly churn: many of the stations that dropped out (KDTW, KSFO, KBOI) were back by January 2026. Between January and October 2026, 11 Alaska stations (PACV, PAEN, PAJN and others) left the listing and 9 other Alaska stations joined it. That is churn too, which fits the Alaska telecom outages below; it is not a net loss.
+- **GHCN-Daily USW stations with precipitation** (from [ghcnd-inventory.txt](https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt), downloaded 26 Nov 2026): 1,326 had a last year of 2024 or later, 1,316 of 2025 or later, and 1,246 report in 2026. **70 USW stations last reported in 2025**, against 10 in 2024 and 5 in 2023 (62 in the contiguous US, 7 in Alaska, 1 in Hawaii; 16 have records starting in the 1940s). This is a possible early drop, but late 2025 data may simply not be loaded yet. About 20 of the 70 are military fields (NAS, AFB, MCAS and others, by name in [ghcnd-stations.txt](https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt)). Several are small airports that may be AWOS sites (Nebraska and Colorado municipal airports and passes). Others are long ASOS records: St. Johnsbury VT ("ASOS" in its name), Niagara Falls, Winston-Salem (from 1899), Terre Haute, Plattsburgh, Tanana AK (from 1902), and Westhampton and Montauk in the New York region. Whether these closed, converted to AWOS-C or only lag was not checked (low confidence). USW covers all WBAN stations, not only ASOS. W-flag counts by year were not computed.
+- GHCNh station counts were not done.
+
+## Suppliers and backups
+
+- **HTB:** one maker (Frise or Friez, the model 7405HA) and one spares source (ETI). No tested substitute was found beyond the AWPAG itself.
+- **AWPAG:** one maker (OTT). Geonor was tested beside OTT and the tipping bucket in 2003–2008, but no current second-source qualification was found.
+- **Other NWS gauges** (context; not ASOS): NOAA's August 2025 sole-source notice says the 8-inch non-recording gauge (High Sierra P/N 2601-03) "has been on back order since 2023". It says testing another unit would cause "lengthy delays" ([SamSearch copy of SAM notice 142082-25-0381](https://samsearch.co/gov-explore/federal/sole-source-high-sierra-rain-gauges-for-noaa-nws/142082-25-0381), aggregator). This supports DIRS-5 for the COOP manual gauge.
+- **Processors:** about 50 more DCPs were delivered than ACUs. No spare-processor pool was documented.
+- **Communications:** FAA fiber replacement is due to finish by 31 Dec 2028 (GAO). NWS fails over to Boulder, but by hand in April 2024.
+- **AOMC:** no backup site was found.
+
+## Substitutes for ASOS precipitation (hourly and sub-hourly)
+
+| Network | Coverage | Time step | Climate-grade QC | Status 2024–2026 |
+|---|---|---|---|---|
+| AWOS (non-federal) | growing: TxDOT alone "installed over 100" (Murphy 2023) | 1–20 min | **No.** NWS says non-federal AWOS maintenance and calibration records "may or may not be readily available which would make them not suitable for use in NWS climate products" ([NWSI 10-1003](https://www.weather.gov/media/directives/010_pdfs/pd01010003curr.pdf)). Only AWOS III and higher has a rain gauge | growing |
+| AWOS-C (federal) | the 206–207 former ASOS sites | sub-hourly | federal maintenance; climate archiving and the gauge type at converted sites were not found | being installed |
+| USCRN | 114 contiguous-US stations, 25 in Alaska (29 planned), 2 in Hawaii ([NCEI](https://www.ncei.noaa.gov/access/crn/overview.html)) | 5 min | **Yes:** a reference network with triple-redundant weighing gauges | stable; an earlier run found the proposed closure of its lab rejected for FY2026 |
+| COOP | about 1,800 hourly Fischer-Porter sites, about 1,100 reporting monthly ([NWS COOP update, 2024](https://media.cocorahs.org/docs/WERA_2024_1_NWS_COOP_Update_McGuire_.pdf)) | hourly or 15 min (Fischer-Porter); daily (manual) | yes; the backbone of GHCN-Daily | a May 2026 request for comment proposes automating it into "a real-time observing program" ([Federal Register 2026-09099](https://public-inspection.federalregister.gov/2026-09099.pdf); proposal only); manual gauges back-ordered |
+| State mesonets / National Mesonet Program | 33 networks feed the NMP; the NYS Mesonet has 127 stations about 17 miles apart ([UAlbany, 2024](https://www.albany.edu/news-center/news/2024-schumer-touts-nys-mesonet-national-model-amid-federal-funding-push)) | 5 min typical | varies by network; NMP data are not in GHCN-Daily | NMP enacted at $30,000,000 for FY2026 ([FY26 CJS explanatory statement](https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf)). A new NMP contract began on 1 September 2026, with KBR as prime and "about 70" partners ([Meteorological Technology International, 7 Sep 2026](https://www.meteorologicaltechnologyinternational.com/news/data/noaa-expands-mesonet-contract-to-improve-forecasting-capabilities.html)); the $3M New York cut in July 2025 was a DHS research grant, not NMP ([Tonko, 2025](https://tonko.house.gov/news/documentsingle.aspx?DocumentID=4438)) |
+| MRMS gauge-corrected QPE | contiguous US, gridded | hourly, 1 km ([NOAA VLab](https://vlab.noaa.gov/web/wdtd/-/qpe-w-gauge-bias-correcti-1)) | no; an operational analysis built from HADS and MADIS gauges, not a station record | operational |
+
+**Where AWOS falls short for climate records.** NWS itself rules non-federal AWOS out of climate products. Owners maintain the stations, and the calibration records may not exist. Lower AWOS classes have no rain gauge. In a one-year Elko NV comparison, ASOS recorded more precipitation than the AWOS/FAA observer in most months ([NWS WR TA 01-06](https://www.weather.gov/media/wrh/online_publications/TAs/ta0106.pdf)). Whether NCEI archives federal AWOS-C precipitation for the converted sites, and with which gauge, was not found. That is the deciding gap for the 206–207 FAA sites.
+
+## DIRS verdicts overall
+
+- **DIRS-1 (external calibration service):** not supported. Calibration is in-house at the NWS (SFSC), and no 2024–2026 disruption was found.
+- **DIRS-2 (aging or losing funding):** supported, by the FAA's budget-driven exit from 206–207 sites, aging HTBs and technician shortfalls. It is contradicted for the processors.
+- **DIRS-3 (feeds vulnerable):** supported, by unsupported FAA copper, the Sioux City outage and the 2024 NWS network outages.
+- **DIRS-5 (no alternative supplier):** supported for HTB spares (sole source) and the COOP manual gauge. It is partly contradicted for the AWPAG, where alternatives were tested in 2003–2008.
+
+## Gaps
+
+- **AWOS-C site list:** FAA holds it and has not published one. FAA's ASWON program office could supply it, or a FOIA request to FAA. It would show which climate stations convert.
+- **The 70 USW stations that ended in 2025:** NCEI. Check each in HOMR, or wait for late-2025 loads to settle.
+- **The gauge inside the AWPAG** (model and generation), and the maker of the CY2026 weighing gauge: in NWS ASOS program documents (the 2024-09 copy of the brief returned 404; the 2026-03 copy was read).
+- **The Alaska ISER report's station-level outage figures:** the PDF refused the download (HTTP 403). It would show whether the Alaska stations that come and go in the 1-minute listing are telecom outages; it is listed in `check-by-hand.md`.
+- **SAM.gov notices** (HTB spares from ETI, ASOS blowers) need a browser login view; they are in `check-by-hand.md`.
+- The Bluefield WV ASOS failure (May 2026) article did not render.
+- Station counts by agency for each year 2024–2026: only the March 2025 list was found.
+- The run clock was held by another live run, so there is no token count from the hook.
+
+## Sources
+
+- [NWS, ASOS Frequently Asked Questions](https://www.weather.gov/asos/FAQ.html)
+- [NWS, ASOS Current Events](https://www.weather.gov/asos/CurrentEvents.html)
+- [NWS, ASOS Sites by Equipment As Of 3/18/2025](https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx)
+- [NWS, ASOS Tipping Bucket page](https://www.weather.gov/asos/TippingBucket.html)
+- [NWS, AWPAG implementation plan](https://www.weather.gov/media/asos/ASOS%20Implementation/awpagimplan.pdf)
+- [NWS, AWPAG release note](https://www.weather.gov/media/asos/ASOS%20Implementation/relnoteawpag.pdf)
+- [OTT HydroMet, Pluvio2 L/S firmware release notes, 2025](https://cdn.hach.com/1XMCM0ZF/at/jtcbggtwg2zmjqmb4f2xq/HY-OT-HM-bu-PluvioL_S_Firmware-releasenotes-EN-GL-250125.pdf)
+- [NCEI, 1-minute ASOS listing](https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg1/access/2024/01/)
+- [NCEI, GHCN-Daily inventory](https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-inventory.txt)
+- [FAA, NAS Infrastructure Roadmaps, Weather](https://www.faa.gov/sites/faa.gov/files/NAS-Infrastructure-Roadmaps-v20-Weather.pdf)
+- [FAA, ATSS Workforce Plan 2026–2030](https://www.faa.gov/sites/faa.gov/files/Airway-Transportation-Systems-Specialist-Workforce-Plan-2026-2030.pdf)
+- [GAO-26-107992, 2026](https://files.gao.gov/reports/GAO-26-107992/index.html)
+- [NWS Nebraska, ASOS 2.0 – An Update (Heartland conference brief, posted March 2026)](https://engineering.uiowa.edu/sites/engineering.uiowa.edu/files/2026-03/HeartlandConferenceBrief.pdf)
+- [Jones, ISER, Alaska AWOS/ASOS METAR Data Availability Q1 of CY2026](https://scholarworks.alaska.edu/uaa_iser_reports/1854/) (landing page only)
+- [USAspending, award 697DCK26C00065](https://api.usaspending.gov/api/v2/awards/CONT_AWD_697DCK26C00065_6920_-NONE-_-NONE-/)
+- [NCEI, ghcnd-stations.txt](https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt)
+- [NWS Sioux Falls, Sioux City ASOS down](https://www.weather.gov/fsd/news_SiouxCityDown)
+- [GovExec, NWS outage, 2024](https://govexec.com/technology/2024/04/nws-says-partial-circuit-failure-caused-network-outage/395527)
+- [E&E News via Rep. Doggett, NWS outages, 2024](https://doggett.house.gov/media/in-the-news/ee-news-nws-experiences-outages-amid-deadly-floods-and-heat-waves)
+- [HigherGov, AOMC support contract 1305M225F0288](https://www.highergov.com/contract/1305M421ANAAA0032-1305M225F0288) (aggregator)
+- [HigherGov, R-ASOS SLEP Support award](https://www.highergov.com/contract-opportunity/r-asos-slep-support-1305m225q0090-award-1305m423dneea0008-international-business-sales-and-services-corp-56397) (aggregator)
+- [Campbell Scientific, ASOS case study](https://s.campbellsci.com/documents/us/case-studies/united-states-asos-weather-network-a4.pdf)
+- [NWS Lincoln IL, ET flyer, July 2025](https://www.weather.gov/media/ilx/NWS%20Lincoln%20ET%20Flyer%20-%20July%202025.pdf)
+- [SamSearch, SAM notice 142082-25-0381](https://samsearch.co/gov-explore/federal/sole-source-high-sierra-rain-gauges-for-noaa-nws/142082-25-0381) (aggregator)
+- [NWS, NWSI 10-1003](https://www.weather.gov/media/directives/010_pdfs/pd01010003curr.pdf)
+- [Murphy, NWS Southern Region, 2023](https://www.weather.gov/media/lix/gcaws/Presentation1Murphy.pdf)
+- [NWS WR Technical Attachment 01-06 (Elko)](https://www.weather.gov/media/wrh/online_publications/TAs/ta0106.pdf)
+- [NCEI, USCRN overview](https://www.ncei.noaa.gov/access/crn/overview.html)
+- [NWS COOP update, WERA 2024](https://media.cocorahs.org/docs/WERA_2024_1_NWS_COOP_Update_McGuire_.pdf)
+- [Federal Register 2026-09099, COOP modernization RFC](https://public-inspection.federalregister.gov/2026-09099.pdf)
+- [Senate Appropriations, FY26 CJS joint explanatory statement](https://www.appropriations.senate.gov/imo/media/doc/fy26_cjs_jes.pdf)
+- [UAlbany, NYS Mesonet, 2024](https://www.albany.edu/news-center/news/2024-schumer-touts-nys-mesonet-national-model-amid-federal-funding-push)
+- [Rep. Tonko, EMPOWER grant, 2025](https://tonko.house.gov/news/documentsingle.aspx?DocumentID=4438)
+- [NOAA VLab, MRMS QPE with gauge bias correction](https://vlab.noaa.gov/web/wdtd/-/qpe-w-gauge-bias-correcti-1)
+
+Saved in `web_search_results/2026-11-26_asos-inputs-pt5/`: this answer, the research record, `results.csv`, `method.md`, `check-by-hand.md` (9 pages) and `sites-to-trust.md` (10 hosts the sandbox refused; you can check whether to add any to your allowed domains).

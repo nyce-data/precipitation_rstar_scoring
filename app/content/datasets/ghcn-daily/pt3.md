@@ -55,7 +55,7 @@ Sources by row: FY2020 [FY2021 CJ](https://www.noaa.gov/sites/default/files/lega
 - **Oversight:** no GAO or Commerce OIG report on NCEI or GHCN funding was found for 2018–2024 (2–3 queries on each site). Three related reports were found but not opened: OIG-24-034-A (NESDIS cloud), OIG-16-043-A (NESDIS cyber incident) and GAO-16-37 (climate information).
 - **Not found or not checked:** FY2022 enacted positions; the FY2020 law number; an NCEI org chart after 2023. The CR counts are government-wide (CRS), not a CJS-specific table.
 - **Alpha Omega call order 1332KP24F0001:** read through a fetch tool's extract of the USAspending record; the raw JSON download failed twice.
-- The first pass stopped at the token budget, and a 15-minute gap pass followed. It closed the FY2024 row, the CR periods, the Alpha Omega figures and the post-2019 COM evidence.md` lists hosts the sandbox refused, for you to decide on.
+- The first pass stopped at the token budget, and a 15-minute gap pass followed. It closed the FY2024 row, the CR periods, the Alpha Omega figures and the post-2019 COM evidence.
 
 ## Sources
 

@@ -1,0 +1,362 @@
+{
+  "schema_version": "0.1",
+  "id": "asos",
+  "source": {
+    "file": "markdown/asos_dataset-metadata.md",
+    "section": "ChatGPT answer",
+    "converted": "2026-11-27"
+  },
+  "dashboard": {
+    "id": "asos",
+    "name": "ASOS: Automated Surface Observing System",
+    "data_archive": "NOAA NCEI",
+    "precipitation_basis": "Gauge-based (heated tipping-bucket and AWPAG weighing gauges)",
+    "period_of_record": "June 1998 - Present (1-minute data; hourly reports go back further at some stations)",
+    "formal_cdr": "",
+    "update_status": "Ongoing; NCEI's 1-minute files and GHCNh are updated daily.",
+    "spatial_coverage": "United States: 50 states, Puerto Rico, U.S. Virgin Islands and some Pacific territories",
+    "resolution": "Station points (no fixed grid)",
+    "temporal_frequency": "1-minute, hourly (METAR/SPECI), daily and monthly products",
+    "curator": "NWS ASOS program office (Kenneth Boutin, National Program Manager in 2024); NOAA NCEI archives the data",
+    "doi": "",
+    "notes": "Network of about 950 automated weather stations, mostly at airports, run jointly by NWS, FAA and DoD, and scored here as one dataset across its products. Precipitation comes from a heated tipping-bucket gauge or the newer AWPAG weighing gauge, with freezing-rain and present-weather sensors. Amounts are in the 1-minute page 2 files (DSI 6406) and the hourly METAR/SPECI reports, now archived in GHCNh (ISD, which held them before, stopped updating in August 2025). NCEI is the archive of record; the Iowa Environmental Mesonet keeps an independent archive. No DOI for the network.",
+    "access_endpoints": [
+      {
+        "name": "NOAA NCEI ASOS/AWOS overview and access",
+        "url": "https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems",
+        "role": "primary"
+      },
+      {
+        "name": "ASOS 1-minute page 2 data, with precipitation (NCEI)",
+        "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg2/",
+        "role": "alternative"
+      },
+      {
+        "name": "GHCNh hourly data: Registry of Open Data on AWS",
+        "url": "https://registry.opendata.aws/noaa-ghcnh/",
+        "role": "alternative"
+      },
+      {
+        "name": "Iowa Environmental Mesonet ASOS data download",
+        "url": "https://mesonet.agron.iastate.edu/request/download.phtml",
+        "role": "alternative"
+      }
+    ]
+  },
+  "identification": {
+    "full_name": "Automated Surface Observing System (ASOS)",
+    "abbreviations": [
+      "ASOS"
+    ],
+    "version": "",
+    "doi": "",
+    "doi_note": "No DOI covers the ASOS network as a whole. NCEI catalogues its products separately: 1-minute page 1 (DSI 6405, record gov.noaa.ncdc:C00386), 1-minute page 2 with precipitation (DSI 6406, C00387), 5-minute (DSI 6401, C00418) and hourly reports in GHCNh (DSI 2074, C01688). These are NCEI identifiers, not DOIs. A DOI exists only for subsets, such as NCAR/EOL's ASOS 5-minute data for December 2013 to January 2014 (10.26023/RTF3-A0N3-E20P).",
+    "project": "Automated Surface Observing System (ASOS), a joint NWS, FAA and DoD program",
+    "data_provider": "NOAA National Centers for Environmental Information (NCEI)",
+    "dataset_type": "Station observations (point data, not gridded)",
+    "description": "A U.S. network of automated surface weather stations, mostly at airports, run jointly by the National Weather Service (NWS), the Federal Aviation Administration (FAA) and the Department of Defense (DoD). It observes precipitation, temperature, wind, pressure, visibility and clouds around the clock. ASOS is a network rather than one fixed-format dataset: its 1-minute, 5-minute, hourly and climatological products have different identifiers and periods of record. NOAA NCEI is the archive of record for all of them."
+  },
+  "archives": [
+    {
+      "name": "NOAA NCEI archive (1-minute and 5-minute directories, GHCNh)",
+      "role": "primary",
+      "description": "Archive of record for every ASOS product. The 1-minute (pages 1 and 2) and 5-minute files are in station-month files; hourly METAR/SPECI reports are in GHCNh, which replaced ISD/Global Hourly"
+    },
+    {
+      "name": "AWS Open Data (NODD): noaa-ghcnh-pds",
+      "role": "mirror",
+      "description": "Current cloud copy of GHCNh, including the ASOS hourly reports"
+    },
+    {
+      "name": "AWS Open Data (NODD): noaa-global-hourly-pds and noaa-isd-pds",
+      "role": "mirror",
+      "description": "Frozen cloud copies of ISD/Global Hourly: no updates after 24 August 2025"
+    },
+    {
+      "name": "Iowa Environmental Mesonet (Iowa State University)",
+      "role": "secondary",
+      "description": "Independent outside archive: its own METAR archive and reprocessed 1-minute data, updated continuously"
+    }
+  ],
+  "access_endpoints": [
+    {
+      "name": "NOAA NCEI ASOS/AWOS overview and access",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems",
+      "role": "primary",
+      "type": "landing-page"
+    },
+    {
+      "name": "ASOS 1-minute page 2 data (NCEI)",
+      "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg2/",
+      "role": "alternative",
+      "type": "download",
+      "purpose": "Precipitation type and amount, by station and month (DSI 6406)"
+    },
+    {
+      "name": "ASOS 1-minute page 1 data (NCEI)",
+      "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg1/",
+      "role": "alternative",
+      "type": "download",
+      "purpose": "Visibility, wind and runway visual range; no precipitation (DSI 6405)"
+    },
+    {
+      "name": "ASOS 5-minute data (NCEI)",
+      "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-five-minute/",
+      "role": "alternative",
+      "type": "download",
+      "purpose": "Present weather only; no precipitation amounts (DSI 6401)"
+    },
+    {
+      "name": "GHCNh hourly data: Registry of Open Data on AWS",
+      "url": "https://registry.opendata.aws/noaa-ghcnh/",
+      "role": "alternative",
+      "type": "cloud",
+      "purpose": "Hourly METAR/SPECI precipitation, the successor to ISD/Global Hourly"
+    },
+    {
+      "name": "NOAA Global Hourly (ISD) S3 archive",
+      "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/index.html",
+      "role": "alternative",
+      "type": "cloud",
+      "details": {
+        "bucket": "noaa-global-hourly-pds",
+        "region": "us-east-1",
+        "status": "Frozen: no updates after 24 August 2025 (ISD was replaced by GHCNh)"
+      }
+    },
+    {
+      "name": "NOAA ISD S3 archive",
+      "url": "https://noaa-isd-pds.s3.amazonaws.com/index.html",
+      "role": "alternative",
+      "type": "cloud",
+      "details": {
+        "bucket": "noaa-isd-pds",
+        "region": "us-east-1",
+        "status": "Frozen: no updates after 24 August 2025 (ISD was replaced by GHCNh)"
+      }
+    },
+    {
+      "name": "Iowa Environmental Mesonet ASOS data download",
+      "url": "https://mesonet.agron.iastate.edu/request/download.phtml",
+      "role": "alternative",
+      "type": "download"
+    },
+    {
+      "name": "Iowa Environmental Mesonet 1-minute data",
+      "url": "https://mesonet.agron.iastate.edu/request/asos/1min.phtml",
+      "role": "alternative",
+      "type": "download"
+    },
+    {
+      "name": "NCEI metadata: ASOS 1-minute page 2 (C00387)",
+      "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00387/html",
+      "role": "documentation",
+      "type": "metadata"
+    },
+    {
+      "name": "NCEI metadata: ASOS 5-minute (C00418)",
+      "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00418/html",
+      "role": "documentation",
+      "type": "metadata"
+    },
+    {
+      "name": "NCEI metadata: GHCNh (C01688)",
+      "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01688/html",
+      "role": "documentation",
+      "type": "metadata"
+    },
+    {
+      "name": "NWS ASOS equipment",
+      "url": "https://www.weather.gov/asos/asosequip.html",
+      "role": "documentation",
+      "type": "documentation"
+    }
+  ],
+  "access_note": "Precipitation amounts are in the 1-minute page 2 files and the hourly reports (GHCNh), not in the 1-minute page 1 or 5-minute files. ISD/Global Hourly stopped updating on 24 August 2025; use GHCNh for hourly data after that. NCEI's 1-minute files for August and September 2025 are empty; the Iowa Environmental Mesonet still serves those months.",
+  "people": {
+    "curator": {
+      "name": "NOAA National Centers for Environmental Information (NCEI)",
+      "organization": "NOAA NCEI",
+      "role": "Data archive, processing and distribution (contact: Customer Engagement Branch)"
+    },
+    "leads": [
+      {
+        "name": "Kenneth Boutin",
+        "organization": "NOAA National Weather Service (NWS), Office of Observations",
+        "role": "ASOS National Program Manager (named in 2024 documents)"
+      },
+      {
+        "name": "Thomas Day",
+        "organization": "NOAA National Weather Service (NWS), Office of Observations",
+        "role": "ASOS System Owner (January 2025 maintenance directive)"
+      },
+      {
+        "name": "Matthew J. Menne",
+        "organization": "NOAA NCEI",
+        "role": "Principal investigator of GHCNh, which holds the hourly ASOS reports"
+      }
+    ],
+    "contributors": [
+      "Federal Aviation Administration (FAA)",
+      "Department of Defense (Navy and Army sites)",
+      "NWS ASOS Operations and Monitoring Center (AOMC)",
+      "NWS electronics technicians (field maintenance)",
+      "Campbell Scientific (ASOS 2.0 processor hardware)",
+      "Vaisala (wind and temperature/humidity sensors)",
+      "OTT Hydrometrie (AWPAG gauge)"
+    ],
+    "note": "NWS, FAA and DoD run the network jointly; NWS technicians maintain both NWS- and FAA-owned units. NCEI archives and serves the data and names no single curator for the 1-minute and 5-minute products."
+  },
+  "instruments": {
+    "summary": "Automated accumulation gauges (a heated tipping bucket at most sites, or the newer AWPAG weighing gauge), with freezing-rain and present-weather sensors.",
+    "categories": [
+      {
+        "name": "Heated Tipping Bucket (HTB)",
+        "type": "in-situ gauge (tipping bucket)",
+        "role": "The original ASOS gauge, still at most sites (575 in NWS's March 2025 equipment list, 552 of them FAA): a heated funnel melts frozen precipitation, and each tip records 0.01 inch"
+      },
+      {
+        "name": "All Weather Precipitation Accumulation Gauge (AWPAG)",
+        "type": "in-situ gauge (weighing)",
+        "role": "Heated weighing gauge for liquid and frozen precipitation that replaced the tipping bucket at NWS-sponsored sites (323 in the March 2025 list); the NWS climate-standard gauge"
+      },
+      {
+        "name": "Freezing Rain Sensor (FRS)",
+        "type": "precipitation detector",
+        "role": "Detects freezing rain and icing; identifies precipitation rather than measuring amounts"
+      },
+      {
+        "name": "Present-weather sensor",
+        "type": "precipitation detector",
+        "role": "Identifies precipitation type and intensity"
+      }
+    ],
+    "processing_chain": [
+      "Sensor data collection packages feed the station's Acquisition Control Unit, which applies the algorithms and transmits the reports",
+      "Reports travel over NWS or FAA networks to the NWS Telecommunications Gateway and NCEP, then to NCEI",
+      "NCEI archives the 1-minute and 5-minute files and the hourly reports (in GHCNh)"
+    ],
+    "note": "Equipment differs from station to station. Snowfall and snow depth are measured by hand, not by ASOS."
+  },
+  "temporal": {
+    "start": "1998-06-01",
+    "start_note": "Start of NCEI's 1-minute record. The 5-minute record starts on 1996-07-01 but has no precipitation amounts, and the hourly reports go back further at some stations. Each station's period of record differs.",
+    "end": "present",
+    "frequency": "1-minute, hourly, daily and monthly",
+    "input_frequency": "1-minute gauge accumulations, summed into the hourly, 3-, 6- and 24-hour amounts",
+    "update_frequency": "Daily",
+    "note": "Hourly and 1-minute precipitation can cover different accumulation periods and should not be treated as interchangeable.",
+    "other_frequencies": [
+      {
+        "frequency": "5-minute",
+        "availability": "Separate NCEI product (DSI 6401); present weather only"
+      },
+      {
+        "frequency": "Special (SPECI)",
+        "availability": "Reports issued when conditions change significantly, archived with the hourly reports"
+      },
+      {
+        "frequency": "Daily and monthly",
+        "availability": "Daily Summary Message (DSM) and monthly CF6 summaries; no separate NCEI archive found"
+      }
+    ]
+  },
+  "spatial": {
+    "coverage": "United States: 50 states, Puerto Rico, U.S. Virgin Islands and some Pacific territories",
+    "extent": {
+      "lat_min": 15,
+      "lat_max": 72,
+      "lon_min": -170,
+      "lon_max": -60
+    },
+    "land_ocean": "Land only",
+    "resolution": "Station points; spacing varies geographically",
+    "grid": null,
+    "station_count": "About 950 active sites (NWS); more than 900 (NCEI)",
+    "note": "Stations are mostly at airports. The extent is the 5-minute product's catalog bounding box, not a claim that observations fill it. Use the station coordinates for spatial analysis rather than a grid resolution."
+  },
+  "data_format": {
+    "format": "Text (.dat) files by station and month (1-minute, 5-minute); GHCNh files by station and year (hourly)",
+    "units": ""
+  },
+  "status": {
+    "state": "Ongoing",
+    "label": "Ongoing / actively updated",
+    "evidence": [
+      "Stations observe continuously, 24 hours a day",
+      "NCEI's 1-minute and 5-minute folders and the GHCNh cloud copy were updated in November 2026",
+      "Equipment is being replaced under the ASOS Service Life Extension Program (ASOS 2.0)"
+    ]
+  },
+  "versions": [],
+  "related_products": [
+    {
+      "name": "AWOS (Automated Weather Observing System)",
+      "difference": "Similar airport stations, many of them non-federal; only some types measure precipitation. The FAA is replacing 206 of its ASOS with AWOS-C"
+    },
+    {
+      "name": "GHCN-Daily",
+      "difference": "Includes daily precipitation from ASOS stations (the USW station records)"
+    },
+    {
+      "name": "ISD / Global Hourly",
+      "difference": "Held the hourly ASOS reports until it stopped updating on 24 August 2025; replaced by GHCNh"
+    }
+  ],
+  "references": [
+    {
+      "title": "NOAA NCEI – Automated Surface/Weather Observing Systems (ASOS/AWOS)",
+      "url": "https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems",
+      "type": "data-access"
+    },
+    {
+      "title": "NOAA NCEI – ASOS 5-minute dataset metadata (C00418)",
+      "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00418/html",
+      "type": "metadata"
+    },
+    {
+      "title": "NOAA NCEI – ASOS 1-minute page 2 metadata (C00387)",
+      "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00387/html",
+      "type": "metadata"
+    },
+    {
+      "title": "NOAA NESDIS – Service location change for Integrated Surface Data (Global Hourly)",
+      "url": "https://www.nesdis.noaa.gov/news/service-location-change-integrated-surface-data-global-hourly",
+      "type": "notice"
+    },
+    {
+      "title": "NWS – ASOS Sensor Suite Design",
+      "url": "https://www.weather.gov/asos/TechnicalOverview.html",
+      "type": "documentation"
+    },
+    {
+      "title": "NWS – Heated Tipping Bucket",
+      "url": "https://www.weather.gov/asos/TippingBucket.html",
+      "type": "documentation"
+    },
+    {
+      "title": "NWS – ASOS Equipment",
+      "url": "https://www.weather.gov/asos/asosequip.html",
+      "type": "documentation"
+    },
+    {
+      "title": "NWS – ASOS Frequently Asked Questions",
+      "url": "https://www.weather.gov/asos/FAQ.html",
+      "type": "documentation"
+    },
+    {
+      "title": "Iowa Environmental Mesonet – ASOS precipitation data notes",
+      "url": "https://mesonet.agron.iastate.edu/ASOS/precipnote.phtml",
+      "type": "documentation"
+    }
+  ],
+  "review_notes": [
+    "ISD links (as planned in HANDOFF.md): Part 1 of the web research (asos-precip-about-pt1) found that ISD/Global Hourly had no update after 24 Aug 2025 and that NCEI's own Global Hourly service was set to retire on 31 Jul 2026. So the Markdown's 'Global Hourly – searchable observations' link (https://www.ncei.noaa.gov/access/search/data-search/global-hourly/) was dropped, its two AWS ISD buckets are kept but marked frozen, and GHCNh (the successor) was added from Part 1's sources (AWS registry and NCEI metadata C01688). The Markdown's 'Main archive database: GSH/ISD' is now GHCNh.",
+    "DSI numbers: the Markdown gives the 1-minute data as DSI 3285. Part 1 found no NCEI page using that number; NCEI names them DSI 6405 (page 1) and DSI 6406 (page 2), so those are used.",
+    "Part 1 found that precipitation amounts are only on 1-minute page 2 and in the hourly reports; the 5-minute data (DSI 6401) and 1-minute page 1 have none. The Markdown lists the 5-minute data as useful for precipitation research; the card leaves it out of the frequencies and the overview says what each holds.",
+    "URLs from the research, not the Markdown: the NCEI metadata pages C00387 and C01688, the GHCNh AWS registry page, the NESDIS ISD notice and the NWS ASOS FAQ (Part 1).",
+    "Station and gauge counts (about 950 sites; HTB 575, AWPAG 323) are from Part 1: the 950 is NWS's figure, the gauge counts are the research run's row counts of NWS's March 2025 equipment spreadsheet.",
+    "Leads are from Part 3 (asos-people-funding-pt3), not the Markdown, which names no individual. Part 3 rates whether they are still in post as low confidence: Boutin is named in 2024 documents, and an undated LinkedIn snippet names Christine Smith (Schultz) as ASOS Program Manager. Check before relying on the curator line.",
+    "The note on empty NCEI 1-minute files for Aug-Sep 2025 is from Part 4 and its follow-up (asos-1min-gap-followup)."
+  ]
+}

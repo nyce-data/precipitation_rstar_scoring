@@ -110,7 +110,7 @@ None matches USCRN's reference quality: triple-wire weighing gauges in a double-
 - **DADDS cutover.** The 2026 GOES DCS overview deck could not be read (NESDIS).
 - **Canada RCS.** Count and status were not found.
 - **Earlier findings.** The ARL budget status and the CISESS/ORAU field-crew arrangement come from Part 4 and were not re-checked here.
-- **Unread pages.** md` lists the hosts the sandbox refused, which you may want to allow.
+
 
 ## Sources
 

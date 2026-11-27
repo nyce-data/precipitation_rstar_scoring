@@ -216,6 +216,25 @@ window.RSTAR_DATA = {
  ],
  "datasets": [
   {
+   "id": "asos",
+   "name": "ASOS: Automated Surface Observing System",
+   "meta": {
+    "name": "ASOS: Automated Surface Observing System",
+    "data_archive": "NOAA NCEI",
+    "doi": "",
+    "curator": "NWS ASOS program office (Kenneth Boutin, National Program Manager in 2024); NOAA NCEI archives the data",
+    "update_status": "Ongoing; NCEI's 1-minute files and GHCNh are updated daily.",
+    "period_of_record": "June 1998 - Present (1-minute data; hourly reports go back further at some stations)",
+    "spatial_coverage": "United States: 50 states, Puerto Rico, U.S. Virgin Islands and some Pacific territories",
+    "temporal_frequency": "1-minute, hourly (METAR/SPECI), daily and monthly products",
+    "precipitation_basis": "Gauge-based (heated tipping-bucket and AWPAG weighing gauges)",
+    "identifier": "https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems"
+   },
+   "file": null,
+   "categorizations": null,
+   "scores": null
+  },
+  {
    "id": "cocorahs",
    "name": "CoCoRaHS: Community Collaborative Rain, Hail and Snow Network",
    "meta": {

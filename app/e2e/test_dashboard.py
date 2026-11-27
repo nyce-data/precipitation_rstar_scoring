@@ -11,6 +11,7 @@ DATASETS = {
     "persiann-cdr-daily": "PERSIANN-CDR v1r1 Daily",
     "cocorahs": "CoCoRaHS: Community Collaborative Rain, Hail and Snow Network",
     "uscrn-daily": "USCRN Daily: U.S. Climate Reference Network Daily Products",
+    "asos": "ASOS: Automated Surface Observing System",
 }
 
 
@@ -29,7 +30,7 @@ def test_dashboard_shows_a_card_per_dataset(page: Page, console_errors):
     expect(page.get_by_role("heading", level=1, name="Precipitation Datasets")).to_be_visible()
     for dataset_id in DATASETS:
         expect(toggle(page, dataset_id)).to_be_visible()
-    expect(page.locator("#datasetCount")).to_have_text("06 OF 6 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("07 OF 7 DATASETS")
     assert console_errors == []
 
 
@@ -37,10 +38,10 @@ def test_search_and_filter_narrow_the_cards_and_stay_in_the_url(page: Page):
     page.goto("/")
 
     page.get_by_role("button", name=re.compile(r"^Satellite")).click()
-    expect(page.locator("#datasetCount")).to_have_text("03 OF 6 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("03 OF 7 DATASETS")
     page.get_by_role("searchbox", name="Search datasets").fill("persiann")
 
-    expect(page.locator("#datasetCount")).to_have_text("01 OF 6 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("01 OF 7 DATASETS")
     expect(card(page, "persiann-cdr-daily")).to_be_visible()
     expect(card(page, "ghcn-daily")).to_be_hidden()
     expect(page).to_have_url(re.compile(r"\?q=persiann&category=satellite$"))
@@ -115,6 +116,7 @@ def test_back_to_dashboard_opens_the_dataset_picked_on_the_rstar_page(page: Page
          "PERSIANN-CDR v1r1 Daily: Quality control and formats"),
         ("/overview.html?id=cocorahs&open=cocorahs", "CoCoRaHS: Overview"),
         ("/overview.html?id=uscrn-daily&open=uscrn-daily", "USCRN Daily: Overview"),
+        ("/overview.html?id=asos&open=asos", "ASOS: Overview"),
         ("/archive.html?id=noaa-ncei", "NOAA NCEI"),
         ("/archive.html?id=noaa-satellites", "NOAA Satellites"),
     ],
@@ -125,11 +127,11 @@ def test_dataset_and_archive_pages_load_and_go_back(page: Page, console_errors, 
     expect(page.get_by_role("heading", level=1, name=heading)).to_be_visible()
     page.get_by_role("link", name="Back to dashboard").click()
     expect(page).to_have_url(re.compile(r"/index\.html"))
-    expect(page.locator("#datasetCount")).to_have_text("06 OF 6 DATASETS")
+    expect(page.locator("#datasetCount")).to_have_text("07 OF 7 DATASETS")
     assert console_errors == []
 
 
-@pytest.mark.parametrize("dataset_id", ["cocorahs", "uscrn-daily"])
+@pytest.mark.parametrize("dataset_id", ["cocorahs", "uscrn-daily", "asos"])
 def test_new_datasets_have_cards_and_five_web_research_parts(page: Page, console_errors, dataset_id):
     page.goto("/")
 

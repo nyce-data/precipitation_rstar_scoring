@@ -1,0 +1,2291 @@
+{
+ "question": "What are the ASOS (Automated Surface Observing System) network's precipitation observations, taken as one dataset: which products carry them (1-minute DSI 3285 pages 1 and 2, 5-minute DSI 6401, hourly and special METAR/SPECI as NCEI archives them (ISD/Global Hourly, now GHCNh), daily and monthly summaries CF6/F-6 and DSM), where is each stored and served (NCEI, AWS NODD noaa-global-hourly-pds and noaa-isd-pds, IEM, NWS and FAA real-time feeds), what goes into them (station counts by agency, precipitation sensors, station processor, data path to NCEI, human augmentation, measured vs derived values), and which organizations make them (NWS, FAA, DoD, NCEI, contractors, outside groups)? AWOS only to say how it differs. Each finding judged against RRS-1 \"two or more geographically independent copies\", D-2 \"storage is a single point of failure\", DIRS-3 \"depends on external data feeds\" and DIRS-4 \"needs outside processing infrastructure\". Out of scope: quality control, people, funding amounts, recent developments.",
+ "tier": "standard",
+ "tier_reason": "standard: several dimensions (products, hosts, inputs, organizations); not a set of 15+, no year series, no dispute in scope",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Which products carry ASOS precipitation (1-min, 5-min, hourly METAR/SPECI, daily/monthly), with period, update frequency and status?",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s16"
+   ],
+   "remaining_gap": "DSI 3285 not matched to any NCEI product; separate CF6/DSM archive not found."
+  },
+  {
+   "id": "q2",
+   "question": "Where is each product stored and served, which copies are current, which is the archive of record?",
+   "status": "answered",
+   "source_ids": [
+    "s5",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s17",
+    "s18",
+    "s19",
+    "s20",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26",
+    "s29",
+    "s30",
+    "s31",
+    "s32",
+    "s33",
+    "s34",
+    "s36",
+    "s38",
+    "s39",
+    "s40",
+    "s54"
+   ],
+   "remaining_gap": "GHCNh NCEI-side bulk folder dates (JavaScript explorer) and Azure copy update status unchecked."
+  },
+  {
+   "id": "q3",
+   "question": "Inputs: station counts by agency, sensors, processor, data path, human augmentation, measured vs derived",
+   "status": "answered",
+   "source_ids": [
+    "s41",
+    "s42",
+    "s45",
+    "s47",
+    "s48",
+    "s50",
+    "s52",
+    "s53"
+   ],
+   "remaining_gap": "No current end-to-end data path to NCEI; GAO unit counts unread (403)."
+  },
+  {
+   "id": "q4",
+   "question": "Organizations: who operates, maintains, processes, hosts, pays",
+   "status": "answered",
+   "source_ids": [
+    "s43",
+    "s44",
+    "s45",
+    "s49",
+    "s51"
+   ],
+   "remaining_gap": "Tri-agency agreement text not found."
+  },
+  {
+   "id": "q5",
+   "question": "Rubric: RRS-1, D-2, DIRS-3, DIRS-4",
+   "status": "answered",
+   "source_ids": [
+    "s18",
+    "s19",
+    "s22",
+    "s23",
+    "s29",
+    "s38",
+    "s54"
+   ],
+   "remaining_gap": null
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00387/html",
+   "fetched_url": null,
+   "title": "1-Minute Page 2 Surface Weather Observations from the ASOS Network (metadata)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/meta_c00387.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Metadata record; does not use the name DSI 3285 (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/local-climatological-data",
+   "fetched_url": null,
+   "title": "Local Climatological Data (LCD)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/lcd_prod.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "LCDv2 period of record and update frequency not stated in the lines read.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s3",
+   "url": "https://www.weather.gov/media/directives/010_pdfs/pd01010004curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 10-1004, Climate Services (June 5, 2025)",
+   "author_org": "NOAA NWS",
+   "published": "2025-06-05",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e11",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nwsd_10-1004.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not say whether NCEI keeps a CF6/DSM archive as its own product (DSI); not found.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s4",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00386/html",
+   "fetched_url": null,
+   "title": "1-Minute Page 1 Surface Weather Observations from the ASOS Network (metadata)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/meta_c00386.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Contradicts the brief's assumption that page 1 carries precipitation: precipitation is on page 2 (DSI 6406). No precipitation element found on page 1 (find_text: no match). DSI 3285 NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg2/access/",
+   "fetched_url": null,
+   "title": "Index of /data/automated-surface-observing-system-one-minute-pg2/access/",
+   "author_org": "NOAA NCEI",
+   "published": "listing",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pg2_access.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Folder date, not file date; times in server local time (not stated). The 2000 folder is absent from the listing.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s6",
+   "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg1/access/",
+   "fetched_url": null,
+   "title": "Index of /data/automated-surface-observing-system-one-minute-pg1/access/",
+   "author_org": "NOAA NCEI",
+   "published": "listing",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/pg1_access.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Folder date only.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.ncei.noaa.gov/pub/data/asos-onemin/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/asos-onemin/ and README.TXT",
+   "author_org": "NOAA NCEI",
+   "published": "listing; README 2007-04-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/onemin_dir.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Folder dates only; README is from 2007.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-five-minute/access/",
+   "fetched_url": null,
+   "title": "Index of /data/automated-surface-observing-system-five-minute/access/",
+   "author_org": "NOAA NCEI",
+   "published": "listing",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/five_access.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No metadata page for DSI 6401 read (period, update frequency stated by NCEI not confirmed); folder date only.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://www.ncei.noaa.gov/pub/data/asos-fivemin/",
+   "fetched_url": null,
+   "title": "Index of /pub/data/asos-fivemin/ and readme.txt",
+   "author_org": "NOAA NCEI",
+   "published": "listing; readme 2014-06-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/fivemin_dir.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Folder dates only.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s10",
+   "url": "https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network hourly (GHCNh)",
+   "author_org": "NOAA NCEI",
+   "published": "news item dated August 04, 2026",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/dir_ghcnhprod.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Bulk link points to a JavaScript page (index.html#hourly/); the plain /oa/.../hourly/ and /hourly/access/ paths returned HTTP 404, so the bulk directory's newest file date was not confirmed.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s11",
+   "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf",
+   "fetched_url": null,
+   "title": "GHCNh documentation (version 1.1.0)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated in excerpt",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ghcnh_doc.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Access paths in the document use index.html# (JavaScript browser) URLs.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s12",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00418/html",
+   "fetched_url": null,
+   "title": "5-Minute Surface Weather Observations from the ASOS Network (metadata)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/meta_c00418.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Abstract line truncated in saved text after 'network'. Precipitation amount NOT PRESENT in element list.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://www.nesdis.noaa.gov/news/service-location-change-integrated-surface-data-global-hourly",
+   "fetched_url": null,
+   "title": "Service Location Change for Integrated Surface Data (Global Hourly)",
+   "author_org": "NOAA NESDIS / NCEI Data Access Branch",
+   "published": "2026-06-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nesdis_isd_location.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Gives 08/24/2025 as last update, while the brief and NCEI's LCD page use 29 August 2025 (LCDv1 end). Confirmed by fetch: https://www.ncei.noaa.gov/data/global-hourly/ now returns 301 to https://noaa-global-hourly-pds.s3.amazonaws.com/index.html (WebFetch, not saved); /pub/data/noaa/ refused by sandbox (likely same redirect, not confirmed).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.ncei.noaa.gov/pub/data/asos-onemin/td6406.txt",
+   "fetched_url": null,
+   "title": "TD 6406 ASOS one-minute page 2 format documentation",
+   "author_org": "NOAA NCDC (now NCEI)",
+   "published": "file dated 2014-06-23",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/td6406.txt.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Old (2014) format doc; file is legacy-encoded and its column table is run together in text. Start date 1992 differs from metadata Time Period 1998-06-01.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01688/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network-hourly (GHCNh), Version 1 (metadata)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/meta_c01688.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Global dataset; ASOS-specific start dates not stated here.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01689/html",
+   "fetched_url": null,
+   "title": "Local Climatological Data (LCD), Version 2 (metadata)",
+   "author_org": "NOAA NCEI",
+   "published": "2023 (citation)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/meta_c01689.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Covers all LCD stations (ASOS, AWOS, some international); ASOS start dates not stated here.",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://www.ncei.noaa.gov/data/global-hourly/",
+   "fetched_url": null,
+   "title": "NCEI Global Hourly (ISD) data directory (redirect)",
+   "author_org": "NOAA NCEI",
+   "published": "server response",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e18",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/webfetch_global_hourly_redirect.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Bucket contents and newest object date not fetched (host outside allowlist).",
+   "found_by": [
+    "sa1"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s18",
+   "url": "https://www.ncei.noaa.gov/about-us",
+   "fetched_url": null,
+   "title": "About | National Centers for Environmental Information (NCEI)",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT (undated page)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_about_us.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Location of the backup copy NOT PRESENT; ASOS, GHCNh, ISD NOT PRESENT; storage medium NOT PRESENT. Statement covers 'The NCEI archive' as a whole, not one dataset.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NCEI archive as a whole",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://www.ncei.noaa.gov/news/ncei-archives-cosmic-2-data",
+   "fetched_url": null,
+   "title": "NCEI Archives Data from COSMIC-2 Satellites",
+   "author_org": "NOAA NCEI",
+   "published": "2020-06-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_cosmic2_news.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Dated June 2020, about the archive process described for COSMIC-2 data; offsite location NOT PRESENT; whether still true after the 2026 cloud migration NOT PRESENT; ASOS products NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NCEI archive process (example dataset COSMIC-2)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://web.archive.org/web/20201028083622/https://www1.ncdc.noaa.gov/pub/data/paleo/data_management/20160928-MSC_SOP_AppendixM-NCDC200-01-018_IT_Off-site_Backup_Procedures.pdf",
+   "fetched_url": null,
+   "title": "NCEI Administrative SOP 200-01-018: IT Off-Site Backup Procedures",
+   "author_org": "NCEI Mission Support Contract (ERT, Inc.), Asheville",
+   "published": "file dated 2016-09-28 (supersedes July 8, 2013 version)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_sop_offsite_backup_wb.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "2016 SOP read from a Wayback copy (original URL 404); arrangement may have changed with the 2026 cloud migration. Does not name ASOS or any dataset; applies to NCEI IT backups in Asheville.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NCEI archive as a whole (Asheville backup procedure)",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://www.coretrustseal.org/wp-content/uploads/2020/02/World-Data-Service-for-Paleoclimatology.pdf",
+   "fetched_url": null,
+   "title": "CoreTrustSeal Assessment: World Data Service for Paleoclimatology (Requirements 2017-2019)",
+   "author_org": "CoreTrustSeal / NOAA NCEI",
+   "published": "Certification Date 17 February 2020",
+   "data_period": null,
+   "source_type": "certification",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/cts_wds_paleo.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "About WDS-Paleo, an Asheville-hosted NCEI unit; it cites the NCEI-wide SOP but does not name ASOS, GHCNh or ISD. 2017-2019 requirements, certified 2020.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NCEI archive practice (WDS-Paleo example)"
+  },
+  {
+   "id": "s22",
+   "url": "https://www.ncei.noaa.gov/news/cloud-migration",
+   "fetched_url": null,
+   "title": "Cloud Migration Offers Bright Future for NOAA's Data",
+   "author_org": "NOAA NCEI",
+   "published": "2026-05-12 (updated 2026-09-03)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_cloud_migration.txt",
+   "retrieved": "2026-11-17",
+   "limitations": "Says 'all of its data', so covers ASOS products NCEI holds by implication, but ASOS, GHCNh and ISD are NOT PRESENT. Whether on-premise or tape copies are kept after migration NOT PRESENT; AWS regions NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NESDIS/NCEI archive as a whole",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://www.noaa.gov/big-data-project-frequently-asked-questions",
+   "fetched_url": null,
+   "title": "Frequently Asked Questions (NODD)",
+   "author_org": "NOAA (OCIO NODD)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/nodd_faq.html.txt",
+   "retrieved": "2026-11-22",
+   "limitations": "Does not say whether NOAA treats NODD buckets as a preservation copy of its archive; AWS region of buckets NOT PRESENT; ASOS, noaa-global-hourly-pds, noaa-isd-pds NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "context: NODD program as a whole",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://registry.opendata.aws/noaa-isd/",
+   "fetched_url": null,
+   "title": "NOAA Integrated Surface Database (ISD) - Registry of Open Data on AWS",
+   "author_org": "AWS Registry of Open Data (dataset managed by NOAA)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/aws_registry_noaa_isd.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Registry text, not a bucket listing: 'Daily' may be stale after ISD's Aug 2025 end of life. Only one region listed per bucket; no second-region copy shown. Copied from this run's sa2 download (work/raw/sa2/reg_isd.html).",
+   "found_by": [
+    "sa4",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://registry.opendata.aws/noaa-ghcnh/",
+   "fetched_url": null,
+   "title": "NOAA Global Historical Climatology Network- Hourly (GHCN-H) - Registry of Open Data on AWS",
+   "author_org": "AWS Registry of Open Data (dataset managed by NOAA)",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/aws_registry_noaa_ghcnh.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Registry text only; no second region listed. Copied from this run's sa2 download (work/raw/sa2/reg_ghcnh.html).",
+   "found_by": [
+    "sa4",
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://www.weather.gov/asos/FAQ.html",
+   "fetched_url": null,
+   "title": "ASOS Frequently Asked Questions",
+   "author_org": "NOAA NWS",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/asos_faq.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Data path from ASOS sites to NCEI (NWS Telecommunication Gateway, monthly transfers) NOT PRESENT; whether NWS keeps its own full archive NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/products/land-based-station/automated-surface-weather-observing-systems",
+   "fetched_url": null,
+   "title": "Automated Surface/Weather Observing Systems (ASOS/AWOS) | NCEI",
+   "author_org": "NOAA NCEI",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_asos_product.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Path from ASOS sites to NCEI NOT PRESENT; number or location of copies NOT PRESENT; page still names Global Surface Hourly, not GHCNh.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/pub/data/asos-onemin/td6405.txt",
+   "fetched_url": null,
+   "title": "National Climatic Data Center Data Documentation for Data Set 6405 (DSI-6405)",
+   "author_org": "NOAA NCDC (now NCEI)",
+   "published": "undated (written when NCDC downloaded data by modem)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e12",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/td6405.txt.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated and plainly old ('At this writing'); current one-minute data path NOT PRESENT; copies NOT PRESENT.",
+   "found_by": [
+    "sa4"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s29",
+   "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/?list-type=2&delimiter=/&max-keys=1000",
+   "fetched_url": null,
+   "title": "S3 listing of noaa-global-hourly-pds (root, 2026/ and 2025/ prefixes)",
+   "author_org": "NOAA NODD on AWS",
+   "published": "listing as of 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-gh-pds-list",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/gh_pds_root_listing.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction (sandbox CONNECT 403). Only 5 keys of 2025/ sampled (2025/A0000253928.csv 2025-10-04T13:31:29.000Z etc.), so the single newest LastModified in 2025/ is not established.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true,
+   "checked_in": "work/raw/main/gh_pds_root_browser.txt (browser re-read: KeyCount 126, no 2026 prefix)"
+  },
+  {
+   "id": "s30",
+   "url": "https://noaa-isd-pds.s3.amazonaws.com/?list-type=2&prefix=data/&delimiter=/&max-keys=1000",
+   "fetched_url": null,
+   "title": "S3 listing of noaa-isd-pds data/ prefixes",
+   "author_org": "NOAA NODD on AWS",
+   "published": "listing as of 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-isd-pds-list",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/isd_pds_data_listing.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction; no LastModified read for data/2025/ keys.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://mesonet.agron.iastate.edu/info/datasets/metar.html",
+   "fetched_url": null,
+   "title": "IEM dataset page: ASOS/AWOS Global METAR Archives",
+   "author_org": "Iowa Environmental Mesonet, Iowa State University",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-iem-metar",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/iem_metar_dataset.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Fetched from mirror host mesonet1.agron.iastate.edu (main host gave SSL EOF). The source list (line 9) and FAQ (3 main sources: NOAAPort, MADIS 5-minute, ...) are worded differently on the same page; third source not read (text continues past line 48).",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://mesonet.agron.iastate.edu/request/asos/1min.phtml",
+   "fetched_url": null,
+   "title": "IEM ASOS One Minute Data download",
+   "author_org": "Iowa Environmental Mesonet, Iowa State University",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-iem-1min",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/iem_1min.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Page says NCEI provides data monthly, yet the date shown is yesterday; the page does not explain the faster feed.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://aviationweather.gov/data/api/",
+   "fetched_url": null,
+   "title": "Data API - Aviation Weather Center",
+   "author_org": "NWS Aviation Weather Center",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-awc-api",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/awc_api.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://www.weather.gov/documentation/services-web-api",
+   "fetched_url": null,
+   "title": "API Web Service - National Weather Service",
+   "author_org": "NOAA National Weather Service",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-nws-api",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nws_api_doc.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://www.weather.gov/media/notification/pdf_2023_24/scn24-45_api_observation_data_removal.pdf",
+   "fetched_url": null,
+   "title": "SCN 24-45: Removal of Surface Observations from NWS API Website",
+   "author_org": "NWS / NCEP Central Operations",
+   "published": "2024-04",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-scn24-45",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/scn24-45.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s36",
+   "url": "https://noaa-ghcnh-pds.s3.amazonaws.com/?list-type=2&delimiter=/&max-keys=1000",
+   "fetched_url": null,
+   "title": "S3 listing of noaa-ghcnh-pds (root)",
+   "author_org": "NOAA NODD on AWS",
+   "published": "listing as of 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-ghcnh-pds-list",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/ghcnh_pds_root_listing.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction; hourly/ subfolders and file LastModified not listed (no time), so whether it is updated daily is not checked.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s37",
+   "url": "https://www.weather.gov/media/notification/tins/tin02-16asos_xfer.pdf",
+   "fetched_url": null,
+   "title": "TIN 02-16: ASOS Communications Transfer from NWS to FAA, effective August 12 2002",
+   "author_org": "NWS Headquarters, Observing Systems Branch",
+   "published": "2002-08-13",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-tin02-16",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/tin02-16.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2002 notice for one batch of 33 sites; does not state the current path for all ASOS, or WMSCR/NWSTG steps.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s38",
+   "url": "https://noaa-ghcnh-pds.s3.amazonaws.com/?list-type=2&prefix=hourly/access/by-year/2026/&max-keys=8",
+   "fetched_url": null,
+   "title": "S3 listing of noaa-ghcnh-pds hourly/access/by-year/2026/",
+   "author_org": "NOAA NODD on AWS",
+   "published": "listing as of 2026-11-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-ghcnh-pds-2026",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/ghcnh_pds_2026_listing.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extraction; only 8 of the 2026 keys sampled; archive/ contents not listed.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s39",
+   "url": "https://mesonet.agron.iastate.edu/request/download.phtml",
+   "fetched_url": null,
+   "title": "IEM ASOS-AWOS-METAR Data Download",
+   "author_org": "Iowa Environmental Mesonet, Iowa State University",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-iem-download",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/iem_download.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Fetched from mirror mesonet1.agron.iastate.edu (main host SSL EOF). Page does not call itself official or unofficial.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://www.faa.gov/airports/planning_capacity/non_federal/doc/awos_wmscr_faq.pdf",
+   "fetched_url": null,
+   "title": "Sharing Your Non-Federal AWOS Data With The FAA & Aviation Community: FAQ (v.12.18.24)",
+   "author_org": "FAA Airports, Non-Federal AWOS program",
+   "published": "2024-12-18",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-faa-wmscr",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/faa_awos_wmscr_faq.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Footnote 1 on ASOS not read; nothing on retention or onward path to NWS/NCEI.",
+   "found_by": [
+    "sa2"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s41",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Sites%20by%20Equipment%20As%20Of%203_18_2025.xlsx",
+   "fetched_url": null,
+   "title": "ASOS Sites by Equipment As Of 3/18/2025 (spreadsheet)",
+   "author_org": "NWS ASOS program",
+   "published": "2025-03-18 (T/Td tab updated 13 August 2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/asos_sites_by_equipment_2025-03-18.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Row tallies by EQ_OWNER made by sa3 with work/raw/sa3/count_sheets.py (a count, not a source statement): ACU 849 = FAA 568, NWS 277, DOD 3, NAVY 1; Present WX 857 = FAA 568, NWS 280, DOD 8, NAVY 1; AWPAG 323 = NWS 303, FAA 20 (windscreen 8ft 246, 4ft 77); Freezing Rain 683 = FAA 447, NWS 227, DOD 8, NAVY 1; Tipping Bucket 575 = FAA 552, NWS 14, DOD 8, NAVY 1; Legacy ASOS In Service Dates 881 rows = FAA 568, NWS 304, DOD 8, NAVY 1. AWPAG and tipping-bucket lists together (898) suggest NWS sites mostly have AWPAG and FAA sites tipping buckets, but the coordinator should check overlap by site ID. Snapshot of 18 March 2025; FAA sites moving to AWOS-C 2025-2029.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://www.weather.gov/asos/faq.html",
+   "fetched_url": null,
+   "title": "ASOS Frequently Asked Questions",
+   "author_org": "NWS ASOS program",
+   "published": "FAQ sensor section last update April 28, 2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/asos_faq.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Undated page overall; site count approximate.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://www.weather.gov/media/directives/030_pdfs/pd03021011curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 30-2111, ASOS Maintenance",
+   "author_org": "NWS Office of Observations",
+   "published": "2025-01-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nwsi_30_2111.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Does not name the agreement date or DoD maintenance arrangements.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s44",
+   "url": "https://www.faa.gov/air_traffic/weather/aswon",
+   "fetched_url": null,
+   "title": "Automated Surface Weather Observation Network (ASWON)",
+   "author_org": "FAA",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/faa_aswon.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page text truncated in saved copy for some paragraphs.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s45",
+   "url": "https://www.weather.gov/media/asos/aum-toc.pdf",
+   "fetched_url": null,
+   "title": "Automated Surface Observing System (ASOS) User's Guide",
+   "author_org": "NOAA NWS / DoD / FAA / US Navy",
+   "published": "1998",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/aum.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "1998 guide; some arrangements (NCDC now NCEI, equipment) have changed.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s46",
+   "url": "https://www.weather.gov/asos/",
+   "fetched_url": null,
+   "title": "ASOS (program home page)",
+   "author_org": "NWS",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/asos_home.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No date; no per-agency counts.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject"
+  },
+  {
+   "id": "s47",
+   "url": "https://www.faa.gov/documentLibrary/media/Order/Order_JO_7900.5E.pdf",
+   "fetched_url": null,
+   "title": "FAA Order JO 7900.5E, Surface Weather Observing",
+   "author_org": "FAA Air Traffic Organization (AJT-2)",
+   "published": "2020-01-15",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/faa_jo_7900_5e.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Did not check for a later revision (7900.5F) or read Tables 5-1/6-1 (augmentation and backup requirements) or Appendix F site list; service levels A-D not found by search in this order.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s48",
+   "url": "https://www.weather.gov/media/directives/010_pdfs/pd01013002curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 10-1302, Requirements and Standards for NWS Climate Observations",
+   "author_org": "NWS",
+   "published": "2023-11-09",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/nwsi_10_1302.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not count AWPAG sites or say who takes snow measurements at ASOS sites; no service level definitions found.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s49",
+   "url": "https://www.weather.gov/asos/CurrentEvents.html",
+   "fetched_url": null,
+   "title": "ASOS Current Events",
+   "author_org": "NWS ASOS program",
+   "published": "entries incl. August 2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/asos_current_events.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "Page copy from 2026-11-18; no contract date or unit count; equipment spreadsheet ASOS 2.0 In Service Dates tab was empty as of 2025-03-18.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s50",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Implementation/awpagimplan.pdf",
+   "fetched_url": null,
+   "title": "ASOS Product Improvement Implementation Plan (Addendum IV) for the All Weather Precipitation Accumulation Gauge",
+   "author_org": "NWS ASOS Planned Product Improvement Program",
+   "published": "2003-08-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/awpag_implan.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2003 plan; compare with 2025-03-18 spreadsheet (AWPAG 323 rows: NWS 303, FAA 20 by sa3 tally).",
+   "found_by": [
+    "sa3",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s51",
+   "url": "https://www.faa.gov/airports/planning_capacity/non_federal/faq",
+   "fetched_url": null,
+   "title": "Frequently Asked Questions (FAQs) about the Non-federal Program",
+   "author_org": "FAA",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/faa_nonfed_faq.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not say whether AWOS carry precipitation sensors; AC 150/5220-16E (AWOS for Non-Federal Applications) not read.",
+   "found_by": [
+    "sa3"
+   ],
+   "scope": "context: AWOS difference"
+  },
+  {
+   "id": "s52",
+   "url": "https://www.weather.gov/asos/InformationReporting.html",
+   "title": "ASOS Information Reporting",
+   "author_org": "NOAA National Weather Service",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/nws_asos_inforeporting.txt",
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": "Undated NWS page; text follows the 1998 ASOS User's Guide (SRRS tape step may be dated)."
+  },
+  {
+   "id": "s53",
+   "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html",
+   "title": "Aeronautical Information Manual, Chapter 7 Section 1, Meteorology",
+   "author_org": "Federal Aviation Administration",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/faa_aim_7_1.txt",
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "evidence_id": null,
+   "limitations": null
+  },
+  {
+   "id": "s54",
+   "url": "https://microsoft.github.io/AIforEarthDataSets/data/noaa-isd.html",
+   "title": "NOAA Integrated Surface Data (ISD) | AIforEarthDataSets",
+   "author_org": "Microsoft (AI for Earth / Planetary Computer)",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "coordinator_checked": true,
+   "source_type": "official",
+   "local_file": "work/raw/main/ms_aiforearth_noaa_isd.txt",
+   "retrieved": "2026-11-26",
+   "data_period": null,
+   "evidence_id": "NOAA ISD (NODD)",
+   "limitations": "Read in the built-in browser; whether the Azure container is still updated was not checked (host refused by the sandbox)."
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "Precipitation in the ASOS 1-minute data is on page 2 (NCEI DSI 6406), not page 1 (DSI 6405); both run 1998-06-01 to present for about 900 stations and are updated daily (2026 folders modified 2026-11-26). No NCEI page read calls them DSI 3285. The older /pub/data/asos-onemin/ copy stopped at 2022.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "This dataset includes one-minute observations for precipitation type and amount, station pressure, temperature, dew point temperature, lightning detection elements, and the Frozen Precipitation Sensor Frequency for approximately 900 stations | - NCEI DSI 6406_02 | Time Period | 1998-06-01 to Present | Data Update Frequency | Daily",
+     "location": "abstract; identifiers; Time Period; Data Update Frequency"
+    },
+    {
+     "source_id": "s4",
+     "relationship": "supports",
+     "passage": "This dataset includes one-minute observations for visibility extinction coefficient, 2-minute average and 5-second peak wind speed and direction, and runway visual range for approximately 900 stations … The ASOS 1-minute page 1 and page 2 data were collected and processed by the NOAA National Centers for Environmental Information (NCEI). | - NCEI DSI 6405_02 | Time Period | 1998-06-01 to Present | Data Update Frequency | Daily",
+     "location": "abstract; identifiers; Time Period; Data Update Frequency"
+    },
+    {
+     "source_id": "s5",
+     "relationship": "supports",
+     "passage": "1999/ | 2023-02-01 06:11 | - | 2001/ | 2023-02-01 06:08 | - … 2025/ | 2026-01-10 06:56 | - | 2026/ | 2026-11-26 07:46 | -",
+     "location": "directory listing"
+    },
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "6406-2021/ | 2022-01-13 13:44 | - | 6406-2022/ | 2022-07-05 11:17 | - | Inventory/ | 2026-11-25 16:08 | -",
+     "location": "directory listing; README.TXT (onemin_readme.html.txt): \"The page 1 data are in data set DSI 6405 and page 2 data are in data set DSI 6406.\""
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "The network consists of NWS and FAA ASOS sites, which are expected to number approximately 1200 when fully commissioned.  The number of stations that will ultimately participate in providing one-minute data has not been determined.",
+     "location": "line 60"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI metadata and live directory listings agree.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c2",
+   "text": "The 5-minute data (DSI 6401) run 1996-07-01 to present, updated daily, and carry present weather but no precipitation amount; the /pub/data/asos-fivemin/ copy stopped at 2022.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "This dataset includes five-minute reports with elements for wind speed and direction, visibility, present weather, temperature, dew point temperature, station altimeter, pressure and density altitude, and relative humidity for approximately 900 stations | - NCEI DSI 6401_02 | Time Period | 1996-07-01 to Present | Data Update Frequency | Daily",
+     "location": "abstract; identifiers; Time Period; Data Update Frequency"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "1996/ | 2023-06-13 20:17 | - … 2025/ | 2026-01-10 06:54 | - | 2026/ | 2026-11-26 07:44 | -",
+     "location": "directory listing"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "6401-2022/ | 2022-07-05 11:07 | - | CommaDelimited/ | 2013-09-25 10:13 | - | Inventory/ | 2026-11-25 16:06 | -",
+     "location": "directory listing; readme.txt (fivemin_readme.txt): \"DSI 6401 files: Each data file contains data for one station-month.\""
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI metadata plus listing.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c3",
+   "text": "NCEI's hourly METAR/SPECI archive moved from ISD (Global Hourly) to GHCNh (DSI 2074_01, updated daily): ISD has no update beyond 08/24/2025, NCEI's own ISD FTP/HTTPS service was to retire 31 July 2026, and /data/global-hourly/ now redirects to the AWS bucket.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "The NCEI Data Access Branch will be ending its online FTP/HTTPS service for the Integrated Surface Data (ISD;aka Global Hourly) product through the NCEI website. Users of the ISD, ISD-lite, and ISD CSV formats will still be able to access these products through the NOAA Open Data Dissemination (NODD) portal at the links below. Please note: This product has been superseded, with no update beyond 08/24/2025. … The planned services retirement date is July 31, 2026.",
+     "location": "notice body; NODD CSV link in HTML: https://noaa-global-hourly-pds.s3.amazonaws.com/index.html"
+    },
+    {
+     "source_id": "s10",
+     "relationship": "supports",
+     "passage": "The Global Historical Climatology Network hourly (GHCNh) is a next generation hourly/synoptic dataset that replaces the Integrated Surface Dataset (ISD). … These elements include wind speed and direction, wind gust, temperature, dew point and/or wet bulb temperature, relative humidity, cloud data, sea level and station level pressure, altimeter setting, present weather, visibility, precipitation amounts for various time periods, and snow depth.",
+     "location": "intro; How and why was GHCNh developed?"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The GHCNh data set replaces the legacy “Global Hourly” product, also known as the “Integrated | Surface Dataset (ISD)”. … precipitation = total liquid precipitation (rain or melted snow). Totals are nominally for the hour, | but may include intermediate reports within the hour. … precipitation_3_hour = 3-hour total liquid precipitation (rain or melted snow) accumulation from … precipitation_24_hour = see above",
+     "location": "lines about 21-31, 282-285, 351-361 of text; section X"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "- NCEI DSI 2074_01 | Time Period | 1750-01-01 to Present (time interval: 1-hour) | Data Update Frequency | Daily",
+     "location": "identifiers; Time Period; Data Update Frequency"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "Original URL: https://www.ncei.noaa.gov/data/global-hourly/ | Redirect URL (from the server's Location header — server-supplied, not verified): https://noaa-global-hourly-pds.s3.amazonaws.com/index.html | Status: 301 Moved Permanently",
+     "location": "HTTP response"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NESDIS notice, NCEI product page, documentation and metadata agree.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c4",
+   "text": "Daily and monthly ASOS summaries are the DSM and monthly summary messages (sent long-line only from selected NWS sites, kept 10 days in ASOS memory) and the WFO-posted CF6; NCEI uses the CF6 to resolve discrepancies in the final climate record, and LCDv2 (DSI 2075_02, daily) replaced LCDv1 (ended 29 Aug 2025). No separate NCEI archive of CF6 or DSM messages was found.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "All ASOS locations are capable of generating and transmitting daily and monthly weather summaries, however, only selected NWS ASOS locations transmit these data long-line.",
+     "location": "Daily and Monthly Summaries"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "Daily and monthly summaries are stored in ASOS memory for 10 days after transmission.",
+     "location": "Daily and Monthly Summaries"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "- Daily Total Precipitation Accumulation (Liquid Equivalent) | - Hourly Precipitation Amounts (H+00 to H+59)",
+     "location": "Daily Summary Messages (DSMs)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "LCDv2 replaces LCDv1, providing some additional data elements and coverage from a greater number of weather stations. | LCDv2 data come from U.S. observation systems such as Automated Surface Observing System (ASOS) and Automated Weather Observing System (AWOS) stations … Data are available based on when the station began collecting data until 29 August 2025. This dataset is deprecated, and will no longer receive updates.",
+     "location": "intro; Older Versions: LCDv1 (Deprecated)"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "- NCEI DSI 2075_02 | Time Period | 1750-02-01 to Present (time interval: 1-day) | Data Update Frequency | Daily",
+     "location": "identifiers; Time Period; Data Update Frequency"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Own documents; absence of a separate CF6/DSM archive is a not-found.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  },
+  {
+   "id": "c5",
+   "text": "On AWS (us-east-1), noaa-ghcnh-pds is current (2026 files modified 2026-11-26), while noaa-global-hourly-pds and noaa-isd-pds stop at the 2025 prefix (frozen copies); NOAA calls NODD holdings copies delivered to cloud providers through a data broker, and authoritative.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s38",
+     "relationship": "supports",
+     "passage": "- hourly/access/by-station/ | - hourly/access/by-year/ … 1. **Key:** hourly/access/by-year/2026/parquet/GHCNh_ACW00011647_2026.parquet | **LastModified:** 2026-11-26T06:40:08.000Z",
+     "location": "S3 ListObjectsV2 XML"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "supports",
+     "passage": "- **Name:** noaa-ghcnh-pds | - **CommonPrefixes Prefix values:** hourly/ | - **Contents Key and LastModified:** index.html, 2026-02-19T18:31:46.000Z",
+     "location": "S3 ListObjectsV2 XML"
+    },
+    {
+     "source_id": "s29",
+     "relationship": "supports",
+     "passage": "Last five CommonPrefixes Prefix values (in order):** 2021/, 2022/, 2023/, 2024/, 2025/ | index.html: 2025-11-24T20:33:43.000Z | **Prefix:** 2026/ | **KeyCount:** 0",
+     "location": "S3 ListObjectsV2 XML"
+    },
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "5. data/2025/ | **Prefix:** data/2026/ | **KeyCount:** 0",
+     "location": "S3 ListObjectsV2 XML"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "Update Frequency | Daily | … NOAA data disseminated through NODD are open to the public and can be used as desired. … Managed By | See all datasets managed by NOAA. … ISD in original format | Resource type | S3 Bucket | Amazon Resource Name (ARN) | arn:aws:s3:::noaa-isd-pds | AWS Region | us-east-1 | … ISD in CSV format | Resource type | S3 Bucket | Amazon Resource Name (ARN) | arn:aws:s3:::noaa-global-hourly-pds | AWS Region | us-east-1",
+     "location": "Update Frequency, License, Managed By, Resources on AWS (txt lines 11-13, 17, 25-27, 50-62, 74-86)"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "supports",
+     "passage": "Update Frequency | Daily | … Managed By | See all datasets managed by NOAA. … GHCN-H files | Resource type | S3 Bucket | Amazon Resource Name (ARN) | arn:aws:s3:::noaa-ghcnh-pds | AWS Region | us-east-1",
+     "location": "Update Frequency, Managed By, Resources on AWS (txt lines 15-17, 31-33, 64-76)"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "NOAA delivers copies of data to CSPs for scalable public access in a “one-to-several-to-many'' data access model. … The Data Broker certifies select CSP holdings as authoritative NOAA data, and in many cases, backfills near-real-time cloud holdings with the complete period-of-record for select datasets from NOAA archives. … Yes, the data provided on NODD is authoritative and trusted data from NOAA. The data that is hosted through the program is pulled directly from NOAA’s on-premise systems by a trusted Data Broker and is then hosted on the cloud for easier access.",
+     "location": "NODD architecture / Data Broker / authoritative-data answers (txt lines 47, 49, 61)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Bucket listings (one re-read in the browser) and the AWS registry.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c6",
+   "text": "A NODD copy of ISD is also kept on Microsoft Azure in the West Europe region; whether it is still updated was not checked.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s54",
+     "relationship": "supports",
+     "passage": "This dataset is available on Azure thanks to the NOAA Open Data Dissemination (NODD) Program. | Storage resources | Data are stored in the following blob container in the West Europe Azure region:",
+     "location": "Storage resources"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Microsoft's dataset page only; update status unknown."
+  },
+  {
+   "id": "c7",
+   "text": "IEM keeps its own global METAR archive (1900-present, synced every 10 minutes) built from NOAAPort/Unidata IDD, MADIS one-minute ASOS and NCEI ISD/GHCNh, computes its own daily totals, reprocesses NCEI's 1-minute files, and itself calls NCEI ISD the likely most authoritative source.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "The data is sourced from a number of places including: Unidata IDD, NCEI ISD, MADIS One Minute ASOS, and NCEI GHCHh. … - Temporal Domain: 1900-present … NCEI Integrated Surface Database (ISD) is likely the most authoritative source of this information. … The IEM's archive of ASOS/METAR data comes from 3 main sources and some minor auxillary ones. The main source is the NOAA satellite feed, called NOAAPort.",
+     "location": "Summary; Other Sources of Information; FAQ"
+    },
+    {
+     "source_id": "s31",
+     "relationship": "supports",
+     "passage": "A Python based ingestor using the metar package processes this information into the IEM database. … - A script manually totals up the hourly precipitation reports and computes a true local calendar day total for the station, this total may later be overwritten by either of the below. | - A real-time ingest process gleans the daily totals from the Daily Summary Message (DSM) issued by some ASOS sites. | - A real-time ingest process gleans the daily totals from the Climate Report (CLI) that is issued for some ASOS sites by their respective local NWS Forecast Offfice.",
+     "location": "Processing and Quality Control; FAQ"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "The IEM maintains an ever growing archive of automated airport weather observations from around the world! … Data Sources: The data made available on this page is sourced from a number of places including: Unidata IDD, NCEI ISD, and MADIS One Minute ASOS. … This archive contains processed observations up until 2026-11-26T16:01:24Z. Data is synced from the real-time ingest every 10 minutes.",
+     "location": "lines 3, 5, 16"
+    },
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "Each month, the National Centers for Environmental Information (NCEI) provides an archive of one minute interval data from the ASOS sites in the United States. Unfortunately, the data format of this information is brutal to work with. Fortunately for you, the IEM processes this information and provides it for download here. The archive is available up until: 25 Nov 2026.",
+     "location": "top of page"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "IEM's own pages.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  },
+  {
+   "id": "c8",
+   "text": "NWS and FAA real-time services keep only short windows: api.weather.gov 7 days (mostly CONUS since 24 Apr 2024), aviationweather.gov 30 days, FAA WMSCR current data; NWS names NCEI the official climatological archive of all weather observations.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "Note: since this service is designed for realtime data, only 7 days of observations are retained for weather stations.",
+     "location": "line 240"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "On April 24, 2024, the National Centers for Environmental Prediction | (NCEP) Central Operations (NCO) turned off a subset of surface observation | data on the NWS API Website, https://api.weather.gov. … observational data served from the NWS API observation endpoint will be | limited to primarily contiguous U.S. (CONUS) locations. … For an alternate method to access the removed data sets, please use: | https://madis-data.ncep.noaa.gov",
+     "location": "p.1"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "The weather database currently allows access to up to the previous 30 days of data. … data/cache/metars.cache.xml.gz | All current METARs (XML) | Once a minute | data/cache/metars.cache.csv.gz | All current METARs (CSV) | Once a minute … Most endpoints return a maximum of 400 entries (please consider using cache files for larger requests).",
+     "location": "Data API intro; Cache Files table"
+    },
+    {
+     "source_id": "s40",
+     "relationship": "supports",
+     "passage": "What Is WMSCR? It stands for the “Weather Message Switching Center Replacement” system. The FAA | uses it to disseminate current aviation‐meteorological data products, including METARs, which are | received from various sources. They include Federal AWOS, AWSS, and ASOS1 – as well as certain non‐ | Federal AWOS. (Specifically AWOS III or better.)",
+     "location": "p.1, first FAQ"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "supports",
+     "passage": "Who maintains the historical data that has been recorded by the ASOS sites and what is that data used for? | The National Centers for Environmental Information (NCEI) is the official climatological archive of all weather observations.",
+     "location": "FAQ question on historical data (txt lines 124-126)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Each service's own documentation.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  },
+  {
+   "id": "c9",
+   "text": "NCEI keeps an archive and a backup copy (2020: two tape copies, one in Asheville and a secure copy offsite; 2016 SOP: off-site library about 12.5 miles away), and is moving all data from Asheville and Boulder servers to AWS by lift and shift through Spring 2027; none of these sources names ASOS products specifically.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "The NCEI archive and backup copy contains more than 60 petabytes of data. … NCEI has four national locations, as well as regional centers, field sites, and cooperative institutes throughout the country. | Asheville, North Carolina | Boulder, Colorado",
+     "location": "Data Management section; Locations section (txt lines 23, 108-112)"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "The files are then put into storage. Although there are plans to move NCEI’s archive to the cloud, for now the records are preserved on tape. Two copies are made: one is stored onsite at NCEI in Asheville, North Carolina, while another—known as the secure copy—is stored offsite.",
+     "location": "body (txt line 43)"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Federal government will be copied and the backup copy stored at an authorized off-site | facility. … Backup media, software, and | documentation for NCEI are stored at the off-site library. … 7.7.2. Directions - Head west on Patton to I-240W, continue to I-26E, take exit 37 (Long | Shoals Road, NC-146), turn right, cross Brevard Road (hwy 191) into Vista | Industrial Park, turn right at Trident Drive, Union Transfer is the second driveway | on the left (12.5 miles).",
+     "location": "sections 6-7.7.2 (txt lines 24-28, 162-165)"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "supports",
+     "passage": "The repository's backup strategy is to keep two copies of all data on tape. Copies are then transported to an offsite | climate-controlled facility several kilometers away from the main physical repository. … Every month the repository runs scripts | that compare file sizes between the primary and offsite to detect either mismatches or if one of the copies is missing.",
+     "location": "storage/backup answers (txt lines 832-833, 848-849)"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "In one of the largest undertakings in its history, NESDIS is migrating all of its data, products, and services to the cloud through Spring 2027. Data and applications housed in servers at locations in Asheville, North Carolina and Boulder, Colorado, are being migrated (moved) in waves to the Amazon Web Services (AWS) Cloud. … The cloud migration is using a process known as “lift and shift”. … Immediately upon completion of the “lift and shift,” NESDIS specialists will enter into a “modernization and optimization” phase, integrating seamlessly into the NESDIS Cloud System and Common Cloud Framework.",
+     "location": "body (txt lines 25, 39, 41)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Own statements, partly dated (2016, 2020); not ASOS-specific.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  },
+  {
+   "id": "c10",
+   "text": "NWS says there are about 950 ASOS sites; NCEI says more than 900. In NWS's equipment spreadsheet (as of 18 Mar 2025), ACU rows by owner are FAA 568, NWS 277, DOD 3, Navy 1 (849); legacy in-service rows are FAA 568, NWS 304, DOD 8, Navy 1 (881). The owner splits are this run's row counts, not NWS figures.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s46",
+     "relationship": "supports",
+     "passage": "A collaborative effort of the National Weather Service (NWS), the Federal Aviation Administration (FAA), and the Department of Defense (DOD), these automated stations consist of a suite of sensors and instruments that work 24/7 … There are around 950 Automated Surface Observing System (ASOS) sites across the United States.",
+     "location": "home page intro, lines 93-99"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "There are approximately 950 active ASOS sites. … one or more data collection package units (DCP) that take sensor data and package it for transmission to an acquisition control unit (ACU) where algorithms are applied and the observations are transmitted to end users. … There are two types of data transmissions from ASOS, Local and Long Line. … The long line transmission goes to the National Centers for Environmental Prediction where the observations are then distributed to global networks over the Internet. … There are 35 ASOS sites not co-located with an aerodrome … The National Centers for Environmental Information (NCEI) is the official climatological archive of all weather observations. … The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. … The schedule currently has a start date of 2025 and lasts through 2029.",
+     "location": "FAQ items: How many sites; primary components; who receives; non-airport; historical data; 206/207 transition"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "Please Note: NCEI is currently moving its data and applications to the cloud. This upgrade may result in temporary data access delays. … Current Impact: Many access portals, interactive maps, and data folders are currently unavailable due to the migration. Expect delayed data archival and slower update cycles for many products. … ASOS data are archived in the Global Surface Hourly database.",
+     "location": "page banner and intro (txt lines 3, 5, 9)"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "# Sheet: ACU | REGION | WFO | SID | EQUIP | ACT_DATE | LOCATION | STATE | EQ_OWNER | 849 … # Sheet: Present WX | REGION | WFO | EQSID | EQUIP | ACT_DATE | LOCATION | STATE | EQ_OWNER | 857 … # Sheet: AWPAG | REGION | WFO | EQSID | EQUIP | LOCATION | STATE | EQ_OWNER | WINDSCREEN | 323 … # Sheet: Freezing Rain | REGION | WFO | EQSID | EQUIP | SN | ACT_DATE | LOCATION | STATE | EQ_OWNER | 683 … # Sheet: Tipping Bucket | REGION | WFO | EQSID | EQUIP | SN | ACT_DATE | LOCATION | STATE | EQ_OWNER | 575",
+     "location": "sheets ACU, Present WX, AWPAG, Freezing Rain, Tipping Bucket (header rows)"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "contextualizes",
+     "passage": "The network consists of NWS and FAA ASOS sites, which are expected to number approximately 1200 when fully commissioned.",
+     "location": "TD 6406 documentation (planned figure, 1990s)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Official counts are rounded; owner split is computed from the spreadsheet.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c11",
+   "text": "Precipitation sensors (rows in the 18 Mar 2025 spreadsheet, counted by owner): AWPAG 323 (NWS 303, FAA 20), heated tipping bucket 575 (FAA 552, NWS 14, DOD 8, Navy 1), freezing rain 683, present weather 857. The AWPAG (Ott Hydrometrie) replaced the heated tipping bucket at NWS-sponsored sites (313 planned) and is the NWS climate-standard gauge (resolution 0.01 inch, capacity 40 inches liquid equivalent).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "# Sheet: ACU | REGION | WFO | SID | EQUIP | ACT_DATE | LOCATION | STATE | EQ_OWNER | 849 … # Sheet: Present WX | REGION | WFO | EQSID | EQUIP | ACT_DATE | LOCATION | STATE | EQ_OWNER | 857 … # Sheet: AWPAG | REGION | WFO | EQSID | EQUIP | LOCATION | STATE | EQ_OWNER | WINDSCREEN | 323 … # Sheet: Freezing Rain | REGION | WFO | EQSID | EQUIP | SN | ACT_DATE | LOCATION | STATE | EQ_OWNER | 683 … # Sheet: Tipping Bucket | REGION | WFO | EQSID | EQUIP | SN | ACT_DATE | LOCATION | STATE | EQ_OWNER | 575",
+     "location": "sheets ACU, Present WX, AWPAG, Freezing Rain, Tipping Bucket (header rows)"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "an alternate technology precipitation gauge to replace the HTBRG at National Weather Service (NWS)- | sponsored ASOS sites. The ASOS All Weather Precipitation Accumulation Gauge (AWPAG) is | manufactured by Ott Hydrometrie of Germany … The AWPAG can only be installed at sites equipped with the ASOS PPI processor upgrade. … This plan applies to all 313 NWS sponsored ASOS locations. This includes the 235 NWS sponsored | ASOS locations in the Local Climatic Data (LCD) network. If future funds are provided, an additional | 20 Federal Aviation Administration (FAA) sponsored ASOS LCD locations may be added to this plan. | In total there are 255 ASOS LCD sites.",
+     "location": "sections 1-2, pp. 1-3 (text lines 229-301)"
+    },
+    {
+     "source_id": "s50",
+     "relationship": "supports",
+     "passage": "The AWPAG resolution is 0.01 inches and the gauge capacity is 40 inches of liquid equivalent",
+     "location": "AWPAG plan, gauge description"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "The ASOS Program and the COOP Program use recording rain gauge that measure the weight of | collected precipitation and convert the weight into equivalent hundredths of an inch of liquid | precipitation. The COOP program uses the Fischer-Porter Rebuild (FPR) model and the NWS | ASOS program uses the All-Weather Precipitation Accumulation Gauge (AWPAG) to meet the | NWS requirements for climate observations. … A | snow board is used to measure the depth of the newly fallen snow (i.e., snowfall) and it is cleared | of all snow and frozen precipitation once per day, immediately after the observation is taken.",
+     "location": "sections 4.2 and 4.4, pp. 8-9"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Counts computed from the official spreadsheet; plan dated 2003.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve.",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c12",
+   "text": "Sensor data pass through data collection packages to the Acquisition Control Unit (the station processor), now being replaced under the tri-agency SLEP (ASOS 2.0, Campbell Scientific as OEM).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "There are approximately 950 active ASOS sites. … one or more data collection package units (DCP) that take sensor data and package it for transmission to an acquisition control unit (ACU) where algorithms are applied and the observations are transmitted to end users. … There are two types of data transmissions from ASOS, Local and Long Line. … The long line transmission goes to the National Centers for Environmental Prediction where the observations are then distributed to global networks over the Internet. … There are 35 ASOS sites not co-located with an aerodrome … The National Centers for Environmental Information (NCEI) is the official climatological archive of all weather observations. … The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. … The schedule currently has a start date of 2025 and lasts through 2029.",
+     "location": "FAQ items: How many sites; primary components; who receives; non-airport; historical data; 206/207 transition"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "ASOS, a Tri-Agency Program with the DOC, DOT, and DoD, must coordinate sensor sustainment activities across all three agencies. … - The Service Life Extension Program (SLEP) for ASOS has been established for this purpose. | - This program facilitates the purchase of new ASOS Acquisition Control Units (ACU) and Data Collection Package (DCP) hardware. … - The project is a tri-Agency undertaking between the Department of Transportation, Federal Aviation Administration, the Department of Commerce, NOAA National Weather Service, and the Department of the Defense, US Navy. … - Campbell Scientific, Inc. is the original equipment manufacturer of the upgraded ASOS ACU/DCP/SCA. ASOS sites with this upgrade are dubbed at \"ASOS 2.0\" sites.",
+     "location": "Current Events: T/RH item (line 120), August 2023 ASOS Program Initiative, Campbell Scientific Meteorological Garden"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS FAQ, Current Events and User's Guide agree.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  },
+  {
+   "id": "c13",
+   "text": "Observations leave the site long-line over NWS or FAA networks (FAA ADAS for many sites since 2002) to the NWS Telecommunications Gateway / NCEP, which redistributes them; NWS describes compilation on the daily SRRS tape for NCEI. 1-minute data are stored on station for 12 hours and were collected by NCDC (old documentation: by modem).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "There are approximately 950 active ASOS sites. … one or more data collection package units (DCP) that take sensor data and package it for transmission to an acquisition control unit (ACU) where algorithms are applied and the observations are transmitted to end users. … There are two types of data transmissions from ASOS, Local and Long Line. … The long line transmission goes to the National Centers for Environmental Prediction where the observations are then distributed to global networks over the Internet. … There are 35 ASOS sites not co-located with an aerodrome … The National Centers for Environmental Information (NCEI) is the official climatological archive of all weather observations. … The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. … The schedule currently has a start date of 2025 and lasts through 2029.",
+     "location": "FAQ items: How many sites; primary components; who receives; non-airport; historical data; 206/207 transition"
+    },
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "OVER THE NEXT SEVERAL MONTHS...THE PATH FOR THE LONG-LINE TRANSMISSION OF | THE OBSERVATIONS FROM 33 AUTOMATED SURFACE OBSERVING SYSTEM /ASOS/ | LOCATIONS WILL CHANGE FROM THE NATIONAL WEATHER SERVICE /NWS/ ADVANCED | WEATHER INTERACTIVE PROCESSING SYSTEM /AWIPS/ NETWORK TO THE FEDERAL | AVIATION ADMINISTRATION /FAA/ AWOS-ASOS DATA ACQUISITION SYSTEM /ADAS/ | NETWORK. … WHEN THE NWS | AWIPS NETWORK COMMUNICATION PATH IS DISCONNECTED...THE DATA FROM THESE | ASOS LOCATIONS WILL BE TRANSMITTED LONG-LINE ONLY THROUGH THE FAA ADAS | NETWORK.",
+     "location": "p.1"
+    },
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "These messages are issued in \".E\" SHEF message format, and are initially disseminated through the NWS or the FAA communications networks to the NWS Telecommunications Gateway (NWSTG) and the System Monitoring and Coordination Center (SMCC) where they are made available for redistribution to NWS offices and compilation on the daily Service Records Retention System (SRRS) tape for the National Center for Environment Information (NCEII).",
+     "location": "SHEF 15-Minute Precipitation Criteria Message"
+    },
+    {
+     "source_id": "s28",
+     "relationship": "supports",
+     "passage": "One-minute data are automatically collected and stored on station for 12 hours.  At this writing, the NCDC downloads the one-minute data files via modem. Discussions are underway with NWS to receive these data routinely for as many stations as possible. … The meteorological data is reproduced as received from the station.",
+     "location": "Abstract and Data [A] (txt lines 57, 106)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Pieces from several NWS documents, some dated; no current end-to-end description found."
+  },
+  {
+   "id": "c14",
+   "text": "Humans augment and back up ASOS by service level: D fully automated, C augmentation and backup by a nearby observer (usually a controller), B and A add detail, typically by contract weather observers, NWS or FSS observers; METAR precipitation-amount groups are automated only, and snow depth/snowfall are manual.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "Service Level D defines the minimum acceptable level of service. It is a completely automated service in which the ASOS/AWOS observation will constitute the entire observation, i.e., no additional weather information is added by a human observer.",
+     "location": "7-1-11 (service standards)"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "Service Level C is a service in which the human observer, usually an air traffic controller, augments or adds information to the automated observation.",
+     "location": "7-1-11"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "Services at these airports are typically provided by contract weather observers, NWS observers, and, at some locations, FSS observers.",
+     "location": "7-1-11"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "Table 5-1: Summary of FAA Augmentation Requirements … Weather4                    T           O                F                   O                 T … Legend: | F - Augmentation provided by certified FSS observer or FAA-contract observer | O - Augmentation provided by surface-based observer | T - Augmentation provided by certified tower observer … Chapters 7 through 12 depict elements to be augmented for each service | level.",
+     "location": "Chapter 5, Table 5-1 and para 5.4, pp. 30-31 (text lines 1956-1999)"
+    },
+    {
+     "source_id": "s47",
+     "relationship": "supports",
+     "passage": "9.20.   Reporting Precipitation Amounts (Automated) … 13.46.      Hourly Precipitation Amount (Prrrr) (Automated Only) … 13.48.      3- and 6- Hour Precipitation Amount (6RRRR) (Automated Only) … 13.49.      24-Hour Precipitation Amount (7R24 R24 R24 R24) (Automated Only) … 13.50.      Snow Depth on Ground (4/sss) (Sites listed in Appendix F)",
+     "location": "Table of contents, lines 162-271"
+    },
+    {
+     "source_id": "s48",
+     "relationship": "supports",
+     "passage": "The ASOS Program and the COOP Program use recording rain gauge that measure the weight of | collected precipitation and convert the weight into equivalent hundredths of an inch of liquid | precipitation. The COOP program uses the Fischer-Porter Rebuild (FPR) model and the NWS | ASOS program uses the All-Weather Precipitation Accumulation Gauge (AWPAG) to meet the | NWS requirements for climate observations. … A | snow board is used to measure the depth of the newly fallen snow (i.e., snowfall) and it is cleared | of all snow and frozen precipitation once per day, immediately after the observation is taken.",
+     "location": "sections 4.2 and 4.4, pp. 8-9"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "FAA AIM and FAA Order JO 7900.5E agree.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  },
+  {
+   "id": "c15",
+   "text": "Measured: 1-minute precipitation accumulation (gauge) and precipitation identification (present-weather sensor), freezing rain (sensor). Derived: 15-minute and hourly SHEF totals summed from 1-minute accumulations, METAR hourly/3-/6-/24-hour amounts, DSM daily and hourly totals; GHCNh hourly totals are running totals with the last report in the hour giving the hourly value.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s52",
+     "relationship": "supports",
+     "passage": "The precipitation accumulation for each 15-minute period is derived from the sum of the 1-minute precipitation accumulation calculations within each discrete 15-minute period.",
+     "location": "SHEF 15-Minute Precipitation Criteria Message"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "The network consists of NWS and FAA ASOS sites, which are expected to number approximately 1200 when fully commissioned.  The number of stations that will ultimately participate in providing one-minute data has not been determined.",
+     "location": "line 60"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The GHCNh data set replaces the legacy “Global Hourly” product, also known as the “Integrated | Surface Dataset (ISD)”. … precipitation = total liquid precipitation (rain or melted snow). Totals are nominally for the hour, | but may include intermediate reports within the hour. … precipitation_3_hour = 3-hour total liquid precipitation (rain or melted snow) accumulation from … precipitation_24_hour = see above",
+     "location": "lines about 21-31, 282-285, 351-361 of text; section X"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NWS and NCEI documentation; some pages dated."
+  },
+  {
+   "id": "c16",
+   "text": "ASOS is a tri-agency program (NWS, FAA, DoD/Navy): NWS electronics technicians maintain NWS- and FAA-owned units (Navy and Air Force maintain their own), the tri-agency parties fund the NWS AOMC, FAA says NWS maintains ASOS through an interagency agreement, NCEI archives and processes the data, and contractors make components (Vaisala sensors, Campbell Scientific processor).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s43",
+     "relationship": "supports",
+     "passage": "NWS field personnel support both ASOS sites owned by the NWS and the Federal Aviation | Administration (FAA). The number of sites that the NWS will be maintaining for the FAA is intended to | be flexible over the next five (5) or so years … The ASOS Operations and Monitoring Center (AOMC) is part of the ASOS Program under the | Office of Observations. The Parties in the ASOS Tri-Agency agreement fund the center to provide | 24/7/365 monitoring of the ASOS Fielded Network. … Manager, at the ASOS Management Office located at the Silver Spring Campus … The ASOS Electronics Technician (ET) is a member of a field office maintenance staff. Each Weather | Forecast Office (WFO) will have one or more technicians available for ASOS maintenance. These | technicians have the prime responsibility for the ASOS located within their county warning area",
+     "location": "sections 2, 3.1, 3.4, 3.5 (lines 88-203 of text)"
+    },
+    {
+     "source_id": "s44",
+     "relationship": "supports",
+     "passage": "* The National Oceanic and Atmospheric Administration National Weather Service (NWS) maintains ASOS through an interagency agreement. … AWOS-C and ASOS, which are the primary automated surface observing systems, provide around-the-clock weather observations at airports throughout the NAS.",
+     "location": "ASWON page, system list and overview"
+    },
+    {
+     "source_id": "s49",
+     "relationship": "supports",
+     "passage": "ASOS, a Tri-Agency Program with the DOC, DOT, and DoD, must coordinate sensor sustainment activities across all three agencies. … - The Service Life Extension Program (SLEP) for ASOS has been established for this purpose. | - This program facilitates the purchase of new ASOS Acquisition Control Units (ACU) and Data Collection Package (DCP) hardware. … - The project is a tri-Agency undertaking between the Department of Transportation, Federal Aviation Administration, the Department of Commerce, NOAA National Weather Service, and the Department of the Defense, US Navy. … - Campbell Scientific, Inc. is the original equipment manufacturer of the upgraded ASOS ACU/DCP/SCA. ASOS sites with this upgrade are dubbed at \"ASOS 2.0\" sites.",
+     "location": "Current Events: T/RH item (line 120), August 2023 ASOS Program Initiative, Campbell Scientific Meteorological Garden"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "There are approximately 950 active ASOS sites. … one or more data collection package units (DCP) that take sensor data and package it for transmission to an acquisition control unit (ACU) where algorithms are applied and the observations are transmitted to end users. … There are two types of data transmissions from ASOS, Local and Long Line. … The long line transmission goes to the National Centers for Environmental Prediction where the observations are then distributed to global networks over the Internet. … There are 35 ASOS sites not co-located with an aerodrome … The National Centers for Environmental Information (NCEI) is the official climatological archive of all weather observations. … The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. … The schedule currently has a start date of 2025 and lasts through 2029.",
+     "location": "FAQ items: How many sites; primary components; who receives; non-airport; historical data; 206/207 transition"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Several NWS and FAA documents agree.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  },
+  {
+   "id": "c17",
+   "text": "AWOS differs: it is often non-federal (procured, installed, operated and maintained by a non-federal entity), and only some types sense precipitation (AWOS-3P identification; AWOS-4 occurrence, type, accumulation and freezing rain); AO1 stations lack a precipitation discriminator.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s51",
+     "relationship": "supports",
+     "passage": "What is a non-federal system? A system procured, installed, operated, and maintained by an entity other than any federal government agency. … May I Install & Operate My Non-federally Owned NavAid, AWOS, or Approach Lighting System*? No. FAA approval of your Form 7460-1 (\"Notice of Proposed Construction or Alteration\") and 7460-2 (\"Supplemental Notice\") is not the same as approval to install and operate your non-federal system. … In order to become a \"Non-federal Technician\" you must receive \"verification authority\" from the non-federal Program.",
+     "location": "FAQ, lines 26-62"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "AWOS- 3P provides reports the same as the AWOS 3 system, plus a precipitation identification sensor.",
+     "location": "AWOS types"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "AWOS- 4 reports the same as the AWOS 3 system, plus precipitation occurrence, type and accumulation, freezing rain, thunderstorm, and runway surface sensors.",
+     "location": "AWOS types"
+    },
+    {
+     "source_id": "s53",
+     "relationship": "supports",
+     "passage": "There are two types of automated stations, AO1 for automated weather reporting stations without a precipitation discriminator, and AO2 for automated stations with a precipitation discriminator.",
+     "location": "ASOS/AWOS reports"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "supports",
+     "passage": "There are approximately 950 active ASOS sites. … one or more data collection package units (DCP) that take sensor data and package it for transmission to an acquisition control unit (ACU) where algorithms are applied and the observations are transmitted to end users. … There are two types of data transmissions from ASOS, Local and Long Line. … The long line transmission goes to the National Centers for Environmental Prediction where the observations are then distributed to global networks over the Internet. … There are 35 ASOS sites not co-located with an aerodrome … The National Centers for Environmental Information (NCEI) is the official climatological archive of all weather observations. … The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. … The schedule currently has a start date of 2025 and lasts through 2029.",
+     "location": "FAQ items: How many sites; primary components; who receives; non-airport; historical data; 206/207 transition"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "FAA's own AIM and program FAQ.",
+   "sole_source_reason": "NOAA's and the operators' own pages and data listings are the authority for what they hold and serve."
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Last ISD update date: 'no update beyond 08/24/2025' (NESDIS notice) vs the replacement date of 29 Aug 2025 used by the earlier run (and LCDv1's end date)",
+   "source_ids": [
+    "s13",
+    "s2"
+   ],
+   "status": "resolved",
+   "explanation": "Difference in what is dated: 24 Aug 2025 is the last ISD data update; 29 Aug 2025 is when the legacy products (LCDv1) end and GHCNh/LCDv2 take over. This run relies on the NESDIS notice for ISD's last update."
+  },
+  {
+   "claim": "Number of ASOS sites: about 950 (NWS), more than 900 (NCEI), about 900 stations in the 1-minute data, 881 legacy in-service rows and 849 ACU rows (NWS spreadsheet), and a planned approximately 1200 in old NCDC documentation",
+   "source_ids": [
+    "s46",
+    "s27",
+    "s1",
+    "s41",
+    "s14"
+   ],
+   "status": "resolved",
+   "explanation": "Scope and date: the 1200 was a 1990s plan for NWS and FAA sites when fully commissioned; the rest are rounded program totals vs stations with 1-minute data vs units listed in NWS's maintenance spreadsheet (which may omit most DoD-maintained sites)."
+  }
+ ],
+ "coverage_gaps": [
+  "GHCNh bulk directory newest file date not confirmed: https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/ , /hourly/access/ and /hourly/access/by-year/ return HTTP 404; the documented access paths use index.html#hourly/ (JavaScript browser). (from sa1)",
+  "ISD bulk directories: /pub/data/noaa/ and /data/global-hourly/ refused by sandbox (CONNECT 403); WebFetch showed /data/global-hourly/ now 301-redirects to https://noaa-global-hourly-pds.s3.amazonaws.com/index.html (not saved). Bucket listings (noaa-global-hourly-pds, noaa-isd-pds) not fetched: hosts outside allowlist. (from sa1)",
+  "No NCEI page read calls the 1-minute data DSI 3285 (NCEI names them DSI 6405 page 1 and DSI 6406 page 2). Not found whether NCEI archives CF6 or DSM as a distinct product; LCDv2 period of record and update frequency and LCDv2 documentation not read. (from sa1)",
+  "LCDv2 documentation (field list for hourly and maximum short-duration precipitation) not read; CF6/DSM as separately archived NCEI products not found. (from sa1)",
+  "Because of the short time window, the earlier-run folders (2026-11-18, 2026-11-21, 2026-11-19) were not searched with find_text.py and nothing was reused from them. (from sa1)",
+  "No document found (earlier runs pt7, pt8, pt9, rain-gauge-threats, pt5 searched for 'Telecommunication Gateway', 'sent to NCEI', 'transmitted to NCEI', 'to NCDC') describing the ASOS-specific data path to NCEI. Only COOP forms are said to be 'transmitted to NCEI' (NWSI 10-1307, pt8 sa1). Lead: NCEI ISD/GHCNh documentation sections on data sources, or NWSI 10-1305/ASOS user guide. (from sa4)",
+  "Copies after the 2026 AWS migration: no source states whether NCEI's Asheville tape copy and the offsite secure copy (Union Transfer, 12.5 miles from the Asheville office, per the 2016 SOP) are kept, nor the AWS regions of NCEI's own migrated archive. No Boulder copy of Asheville-held data (ISD/GHCNh/ASOS) documented. None of the copy statements names ASOS, ISD or GHCNh; they speak of 'The NCEI archive' or 'all of its data'. NODD buckets are described as copies NOAA delivers to CSPs and 'authoritative', but no source says NOAA counts them as a preservation copy. Lead: NCEI CoreTrustSeal application doi:10.34894/50BIQ1 (unread in pt9; sandbox refuses dataverse.nl). (from sa4)",
+  "noaa-ghcnh-pds hourly/ not listed: whether GHCNh on AWS is updated daily (newest LastModified) is unchecked. Newest single LastModified in noaa-global-hourly-pds 2025/ and noaa-isd-pds data/2025/ not established (only 5 sampled keys, all 2025-10-04). (from sa2)",
+  "Google Cloud (BigQuery noaa_gsod / ghcn) and Azure Open Datasets copies of ISD not searched. (from sa2)",
+  "NOAAPort / NWS Telecommunication Gateway, FAA WMSCR (FAA awos_wmscr_faq.pdf https://www.faa.gov/airports/planning_capacity/non_federal/doc/awos_wmscr_faq.pdf), NADIN and current ADAS path not read; FAA ASOS pages not searched. (from sa2)",
+  "NWS CF6 climate products on forecast.weather.gov and NOWData/xmACIS (RCC-ACIS) not searched; IEM archive-of-record statements found only as IEM saying NCEI ISD is likely the most authoritative source. No NWS or FAA statement on keeping a full archive of its own was found. (from sa2)",
+  "IEM role beyond ingest/processing (funding, Iowa State staff) not covered; only the METAR dataset page and 1-minute page read. (from sa2)",
+  "Earlier-run raw folders were not searched with find_text.py (subagent started 11 minutes before the deadline). (from sa2)",
+  "Update to first gap: noaa-ghcnh-pds 2026 files were found modified 2026-11-26 (see sa2-ghcnh-pds-2026); still open is the newest LastModified in noaa-global-hourly-pds 2025/ and noaa-isd-pds data/2025/ (only 2025-10-04 sampled). (from sa2)",
+  "IEM download.phtml was later read from mirror mesonet1 (sa2-iem-download); the unreadable entry for the main host stands only for the main host. (from sa2)",
+  "Correction: the FAA AWOS WMSCR FAQ was read after all (sa2-faa-wmscr). Still not read: NOAAPort/NWSTG pages, NADIN, current ADAS path for all ASOS, CF6/NOWData/xmACIS, Google Cloud/Azure copies. An empty folder work/raw/sa2/unused/ was made by mistake (trash refused inside the sandbox); it holds nothing. (from sa2)",
+  "Service levels A-D definitions and per-level site counts not found (not in User's Guide matched text nor JO 7900.5E search). Lead: NWSI 10-1302 / 10-1301 (weather.gov/media/directives/010_pdfs/pd01013002curr.pdf), FAA JO 7900.5E Tables 5-1 and 6-1. (from sa3)",
+  "ASOS processor replacement (ASOS 2.0 ACU/DCP, SLEP) maker: Campbell Scientific case study (s.campbellsci.com/documents/us/case-studies/united-states-asos-weather-network.pdf) says tri-agencies selected Campbell in 2019 for ASOS-SLEP and delivered 1,529 units by 2025 (search snippet only; host refused by sandbox, not read). Original maker AAI/Textron not confirmed. (from sa3)",
+  "GAO-07-650 (1,001 units, NWS/FAA/DoD) and GAO-06-792 (1,002 units) seen as snippets only; gao.gov PDF returned HTTP 403. Commerce OIG not searched. Tri-agency agreement text not found. (from sa3)",
+  "Data path detail (site -> NWSTG/FAA WMSCR -> NCEI) only from 1998 guide and FAQ (long line to NCEP). Not read: ASOS 3.10 and AWPAG 2.7B release notes (weather.gov/media/asos/ASOS%20Implementation/), LIX presentation (about 650 FAA / 350 NWS owned, 2023, snippet). (from sa3)",
+  "AWOS non-federal owners (states/airports) not sourced; only NWS FAQ generic AWOS-vs-ASOS element comparison and FAA ASWON page. (from sa3)",
+  "Not read: ASOS Product Improvement plans for AWPAG (weather.gov/media/asos/ASOS%20Implementation/awpagimplan.pdf) and processor replacement (processor0214.pdf) - likely give AWPAG deployment site counts and 2000s ACU processor details. (from sa3)",
+  "AWOS precipitation sensors (AWOS III P/T etc.) and AWOS station counts not sourced; lead AC 150/5220-16E https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_150_5220-16E.pdf. (from sa3)",
+  "FAA JO 7900.5E Table 5-1 Summary of FAA Augmentation Requirements (saved text work/raw/sa3/faa_jo_7900_5e.txt line 1956, p. 31) and Table 6-1 long-line backup requirements are saved but not parsed: they list which elements (e.g. freezing precipitation, ice pellets, snow depth) LAWRS / towered / observer sites must augment. (from sa3)",
+  "GHCNh NCEI-side bulk directory file dates not read (NCEI object store explorer is built by JavaScript; browser showed only folder names).",
+  "Azure noaaisd.blob.core.windows.net container: update status not checked (host refused by sandbox; not asked: .net host).",
+  "GAO-07-650 and GAO-06-792 (ASOS unit counts by agency) unread: gao.gov returned 403."
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS one minute data documentation NCEI DSI 6405",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NCEI metadata C00386/C00387 and /pub/data/asos-onemin/",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS five minute data DSI 6401 NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found metadata C00418",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Integrated Surface Database retired GHCNh 2025",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NESDIS service location change notice 2026-06-23",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWS F-6 preliminary local climatological data CF6 daily summary message DSM",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NWSI 10-1004",
+   "from": "sa1",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "noaa-global-hourly-pds AWS Region us-east-1",
+   "tool": "WebSearch",
+   "notes": "allowed_domains registry.opendata.aws; result pointed to registry page already saved by sa2 in this run, copied via fetch_page cache",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS data archived NCEI Telecommunication Gateway transmitted",
+   "tool": "WebSearch",
+   "notes": "allowed_domains ncei.noaa.gov, weather.gov; no Gateway mention; read NCEI ASOS product page and reused ASOS FAQ transmission answer",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NOAA Global Hourly registry open data AWS",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found registry noaa-ghcnh and noaa-isd entries",
+   "from": "sa2",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Iowa Environmental Mesonet ASOS archive METAR",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found IEM metar dataset page",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "aviationweather.gov data API METAR",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found AWC Data API page",
+   "from": "sa2",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "api.weather.gov observations retention days",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NWS API docs and SCN 24-45",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "FAA WMSCR ADAS ASOS METAR distribution NADIN",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NWS TIN 02-16, FAA WMSCR FAQ (not read)",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS User's Guide precipitation sensor",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov, noaa.gov. Found aum-toc.pdf (read), AWPAG 2.7B release notes, release 3.10 notes (not read).",
+   "from": "sa3",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "FAA Order 7900.5 surface weather observing",
+   "tool": "WebSearch",
+   "notes": "allowed_domains faa.gov. Found JO 7900.5E PDF (effective 2020-01-15 per snippet; applies to FAA, contract, LAWRS, NF-OBS, USCG personnel). Not downloaded: time.",
+   "from": "sa3",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GAO ASOS automated surface observing system report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains gao.gov, oig.doc.gov. Snippets: GAO-06-792 1,002 units; GAO-07-650 1,001 units, NWS/FAA/DoD; RCED-99-25 597 FAA units; AIMD-95-81. gao-07-650.pdf fetch HTTP 403. Commerce OIG not searched separately.",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ASOS tri-agency NWS FAA DoD agreement",
+   "tool": "WebSearch",
+   "notes": "no domain filter. No agreement text; leads: weather.gov/asos/ home (saved), CurrentEvents, LIX presentation (about 650 FAA / 350 NWS), Campbell Scientific SLEP case study (host refused by sandbox).",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWSI 10-1302 climate observations ASOS AWPAG",
+   "tool": "fetch (direct URL from r6 search results)",
+   "notes": "Followed URL listed in r6 results; fetched and read.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ASOS processor replacement ACU contract Campbell Scientific SLEP",
+   "tool": "WebSearch",
+   "notes": "allowed_domains weather.gov, noaa.gov, faa.gov. Found CurrentEvents (read, reused copy); 2000s processor replacement plan processor0214.pdf (ACU boards for 855 sites + 27 SCA, per snippet; not read); AWPAG implementation plan awpagimplan.pdf (not read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS AWPAG implementation plan sites (direct fetch)",
+   "tool": "fetch (URL from processor/SLEP search results)",
+   "notes": "Followed awpagimplan.pdf from previous search; read.",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "non-Federal AWOS owned airport sponsor state FAA",
+   "tool": "WebSearch",
+   "notes": "allowed_domains faa.gov. Found AC 150/5220-16E (not read), Non-federal Program FAQ (read).",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS observations NCEI ingest NWS Telecommunication Gateway archive",
+   "tool": "WebSearch",
+   "notes": "Found NWS ASOS Information Reporting page (NWSTG, SRRS tape for NCEI); read it."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ISD Global Hourly Google BigQuery Azure Open Datasets NOAA",
+   "tool": "WebSearch",
+   "notes": "Azure (West Europe) ISD copy via NODD; no BigQuery ISD found."
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"3285\" ASOS one-minute data NCEI dataset",
+   "tool": "WebSearch",
+   "notes": "No result mentions 3285; NCEI uses DSI 6405/6406."
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS service level A B C D augmentation backup",
+   "tool": "duckduckgo (browser)",
+   "notes": "Led to FAA AIM 7-1-11 service levels; read it from faa.gov."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=noaa-global-hourly-pds.s3.amazonaws.com list root",
+   "tool": "lookup (S3 listing, browser)",
+   "copy_of": "s29",
+   "notes": "Re-read: KeyCount 126 (index plus 1901-2025); no 2026 prefix."
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "url=ncei.noaa.gov/oa/global-historical-climatology-network/index.html#hourly/access/by-year/2026/",
+   "tool": "lookup (NCEI object store explorer, browser)",
+   "notes": "Shows parquet/ and psv/ folders only; file dates not listed."
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "ASOS one-minute documentation",
+   "query": "ASOS one minute data documentation NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "DSI 6401 documentation",
+   "query": "ASOS five minute data DSI 6401",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "GHCNh documentation, ISD retirement notice",
+   "query": "GHCNh documentation NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "AWS / NOAA NODD",
+   "publisher": "hosts and distributors",
+   "subquestion_id": "q2",
+   "aim": "Registry entries for Global Hourly / ISD",
+   "query": "NOAA Global Hourly registry open data AWS",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "Iowa Environmental Mesonet",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "IEM ASOS archive documentation",
+   "query": "Iowa Environmental Mesonet ASOS archive METAR",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "ASOS User's Guide, program pages",
+   "query": "ASOS User's Guide precipitation sensor",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "FAA",
+   "publisher": "regulators, standards bodies",
+   "subquestion_id": "q3",
+   "aim": "FAA Order JO 7900.5",
+   "query": "FAA Order 7900.5 surface weather observing",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NWS/FAA",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q4",
+   "aim": "GAO and OIG reports on ASOS",
+   "query": "GAO ASOS automated surface observing system report",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "Tri-agency ASOS program",
+   "publisher": "parent, operator or members",
+   "subquestion_id": "q4",
+   "aim": "tri-agency agreement",
+   "query": "ASOS tri-agency NWS FAA DoD agreement",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "CF6 / DSM product description",
+   "query": "NWS F-6 preliminary local climatological data",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "NWS Aviation Weather Center",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "Data API retention",
+   "query": "aviationweather.gov data API METAR",
+   "skip_reason": null
+  }
+ ],
+ "unreadable": [
+  {
+   "subquestion": "q2",
+   "title": "AWS open-data-registry YAML for noaa-global-hourly",
+   "url": "https://raw.githubusercontent.com/awslabs/open-data-registry/main/datasets/noaa-global-hourly.yaml",
+   "expected": "bucket region",
+   "blocked_by": "sandbox refused host (CONNECT 403); registry.opendata.aws page read instead, so not needed",
+   "from": [
+    "sa4"
+   ]
+  },
+  {
+   "subquestion": "q2",
+   "url": "https://mesonet.agron.iastate.edu/request/download.phtml",
+   "title": "IEM ASOS-AWOS-METAR data download",
+   "expected": "IEM download interface, archive start dates, notes on sources",
+   "blocked_by": "curl SSL unexpected EOF on main host; mirror not tried for lack of time",
+   "from": [
+    "sa2"
+   ]
+  },
+  {
+   "subquestion": "q2",
+   "url": "https://registry.opendata.aws/noaa-global-hourly/",
+   "title": "Registry of Open Data: NOAA Global Hourly",
+   "expected": "bucket entry for noaa-global-hourly-pds",
+   "blocked_by": "HTTP 404; buckets are listed on https://registry.opendata.aws/noaa-isd/ instead",
+   "from": [
+    "sa2"
+   ]
+  },
+  {
+   "subquestion": "q4",
+   "url": "https://s.campbellsci.com/documents/us/case-studies/united-states-asos-weather-network.pdf",
+   "title": "United States ASOS Weather Network (Campbell Scientific case study)",
+   "expected": "ASOS-SLEP contract (2019) and units delivered to NWS, FAA, DoD",
+   "blocked_by": "sandbox CONNECT 403; non-.org host so no approval asked",
+   "from": [
+    "sa3"
+   ]
+  },
+  {
+   "subquestion": "q4",
+   "url": "https://www.gao.gov/assets/gao-07-650.pdf",
+   "title": "GAO-07-650",
+   "expected": "ASOS unit count by agency and program description",
+   "blocked_by": "HTTP 403 for automated client",
+   "from": [
+    "sa3"
+   ]
+  }
+ ],
+ "time_budget": {
+  "hook": "not seen",
+  "budget_min": 30,
+  "ceiling": 240000,
+  "research_stop_tokens": 195000,
+  "subagent_stop_tokens": 156000,
+  "subagent_minutes_planned": 31,
+  "follow_ups": 1
+ }
+}

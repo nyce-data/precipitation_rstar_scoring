@@ -39,7 +39,7 @@ Each run is a dated folder (`<date>_<name>`) and keeps its name. The folder abov
 
 | `query_answers/…` | `web-research/…` |
 |---|---|
-| `dataset_answers/about_dataset_queries/<id>/` | `about-datasets/<id>/`, except `uscrn/` → `uscrn-daily/` (use the dataset id from its metadata file) |
+| `dataset_answers/about_dataset_queries/<id>/` | `about-datasets/<id>/`, except `uscrn/` → `uscrn-daily/` (use the dataset id from its metadata file); `asos/` → `asos/` |
 | `archive_answers/noaa-ncei-archive/` | `archives/noaa-ncei/` |
 | `archive_answers/gesdisc-pps/` | `archives/nasa-gesdisc-pps/` |
 | `archive_answers/<other>/` (`cocorahs`, `uci-chrs`) | `archives/<same name>/` |
@@ -208,8 +208,8 @@ Archive and instrument runs don't go through `import_dataset_pages.py`. Archive 
 
 ## State on 2026-11-27 (open questions for the user)
 
-Steps 1 to 6 are done for every run copied so far: all 50 run folders have a reworded `query_questions.txt`. Before
-the next pages can be built:
+Steps 1 to 7 are done for every run copied so far: all 56 run folders have a reworded `query_questions.txt` (ASOS's
+six added 2026-11-27), and all seven datasets' parts are on the dashboard. Notes:
 
 - **Two pt7 folders** each in GPCP and IMERG: `people-production-pt7` (Run 1) and `calibration-copies-pt7` (Run 2) of
   one query file. Their files were renamed `_run1`/`_run2` on 2026-11-27 in both projects. The import script now
@@ -228,7 +228,12 @@ the next pages can be built:
   ("Funding"); the combined run has no page, because its folder doesn't end in `-pt3`. **Keep the combined
   folder:** GHCN-Daily's categorization cites it as evidence (`build_ghcn-daily.py`,
   `ghcn-daily_rstar-categories.json`, the gaps note, `app/data/rstar-data.js`).
-- **USCRN Daily, CoCoRaHS and ASOS** have metadata Markdown only, no metadata JSON, so no card yet.
-- **ASOS** has runs in `Rstar_query_results/web_search_results/` (Parts 1–5 and a Part 4 follow-up) but no
-  `query_answers` copies, so nothing of ASOS is in `web-research/` yet.
+- **USCRN Daily and CoCoRaHS** got metadata JSON, cards and pages in `744041f`. **ASOS** got its metadata JSON,
+  card, overview and Parts 1–5 on 2026-11-27.
+- **ASOS** (copied 2026-11-27): Parts 1–5 are ready for pages. The Part 4 follow-up
+  (`2026-11-26_asos-1min-gap-followup`) has only its answer (a focused run: no query file, no record), so its
+  `query_questions.txt` was written from its run index row. It has no `-ptN` ending, so the import gives it no page
+  (like GHCN-Daily's combined pt3); its findings are already in Part 4's answer, which links to it. Two ASOS run
+  folders don't match the names their query files asked for (`precip-about-pt1` for `about-pt1`,
+  `precip-qc-software-pt2` for `qc-formats-pt2`); both end in `-ptN`, so they import as they are.
 - **Not committed:** the copies and question files made on 2026-11-27 in `web-research/`.

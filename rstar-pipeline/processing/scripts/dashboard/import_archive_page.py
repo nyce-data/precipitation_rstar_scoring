@@ -74,10 +74,13 @@ DROP_ITEM_PREFIXES = (
 )
 
 # Files that exist only in the research project. A sentence that names
-# one of them (in backticks) is dropped.
+# one of them (in backticks) is dropped. A period inside backticks doesn't end
+# the sentence (2026-11-27: "… is in `research-record.json` (no figure table
+# needed a `results.csv`)." was cut after "`research-record.", and
+# "`sites-to-trust.md` lists …" left a "md` lists …" fragment).
 RESEARCH_FILES = ("results.csv", "check-by-hand.md", "sites-to-trust.md", "left-out.md", "method.md")
 _FILE_SENTENCE = re.compile(
-    r"\s*[^.]*`(?:" + "|".join(re.escape(f) for f in RESEARCH_FILES) + r")`(?:[^.(]|\([^)]*\))*\."
+    r"\s*(?:[^.`]|`[^`]*`)*`(?:" + "|".join(re.escape(f) for f in RESEARCH_FILES) + r")`(?:[^.(]|\([^)]*\))*\."
 )
 
 

@@ -1,0 +1,2073 @@
+{
+ "question": "How are ASOS precipitation observations processed, quality-controlled and calibrated, what software produces them, and how open are their formats and access routes (with evidence for or against risks D-4, P-3, DIRS-1, DIRS-4)?",
+ "tier": "standard",
+ "tier_reason": "standard: six dimensions of one network, no set of 15+ members, no yearly figures, no active dispute; user limits 30 min and 240,000 tokens",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "QC by stage (station, AOMC, observers/WFOs, NCEI products)",
+   "status": "answered",
+   "source_ids": [
+    "s33",
+    "s34",
+    "s37",
+    "s15",
+    "s22",
+    "s36",
+    "s39"
+   ],
+   "remaining_gap": "No NCEI QC description found for the 5-minute data; observer edit logs (ASOS_OID) not read"
+  },
+  {
+   "id": "q2",
+   "question": "Measurement issues: HTB undercatch, AWPAG behaviour, 1-minute vs hourly differences",
+   "status": "answered",
+   "source_ids": [
+    "s33",
+    "s41",
+    "m4",
+    "s14",
+    "s38",
+    "s9",
+    "s35",
+    "s42",
+    "s43"
+   ],
+   "remaining_gap": "No WMO-SPICE result naming the AWPAG"
+  },
+  {
+   "id": "q3",
+   "question": "Calibration and field checks of HTB and AWPAG",
+   "status": "uncertain",
+   "source_ids": [
+    "s1",
+    "s11",
+    "s3",
+    "s13",
+    "s9",
+    "m1"
+   ],
+   "remaining_gap": "Engineering Handbook 11 (maintenance procedures) is not public; precipitation calibration steps unknown"
+  },
+  {
+   "id": "q4",
+   "question": "Software and facilities, ownership, code openness",
+   "status": "answered",
+   "source_ids": [
+    "s5",
+    "s12",
+    "s14",
+    "s6",
+    "s2",
+    "s1",
+    "s10",
+    "s7",
+    "s8",
+    "m5"
+   ],
+   "remaining_gap": "GHCNh's cloud processing known only from a snippet; DOT OIG audit not read"
+  },
+  {
+   "id": "q5",
+   "question": "Could a newcomer reproduce the products from the documentation?",
+   "status": "uncertain",
+   "source_ids": [
+    "s22",
+    "s27",
+    "s30"
+   ],
+   "remaining_gap": "Thinly searched; judged from format documents and absence of code"
+  },
+  {
+   "id": "q6",
+   "question": "FAIR rating per product and route; proprietary software; open METAR decoders",
+   "status": "answered",
+   "source_ids": [
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19",
+    "s23",
+    "s24",
+    "s25",
+    "s32",
+    "s20",
+    "m2",
+    "m3"
+   ],
+   "remaining_gap": "5-minute product's catalog record and DOI not checked; GHCN-Daily not re-rated here"
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.weather.gov/media/directives/030_pdfs/pd03021111curr.pdf",
+   "fetched_url": null,
+   "title": "NWSI 30-2111 ASOS maintenance/support",
+   "author_org": "NOAA NWS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/nwsi_30_2111.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "No precipitation-gauge-specific calibration procedure in matched text; URL as recorded in earlier run (check its record).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.faa.gov/air_traffic/weather/asos",
+   "fetched_url": null,
+   "title": "FAA ASWON page",
+   "author_org": "FAA",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/faa_aswon.txt",
+   "retrieved": "2026-11-18",
+   "limitations": "URL as recorded in earlier run; check its record. Telecom provider not named.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://www.weather.gov/soic/",
+   "fetched_url": null,
+   "title": "Sterling Field Support Center",
+   "author_org": "NOAA NWS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/sfsc_home.txt",
+   "retrieved": "2026-11-23",
+   "limitations": "Home page names no precipitation-gauge calibration lab; NIST traceability for precipitation NOT PRESENT in this file.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://www.weather.gov/asos/TippingBucket.html",
+   "fetched_url": null,
+   "title": "Tipping Bucket",
+   "author_org": "NOAA NWS ASOS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e6",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_htb.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No calibration or field-check procedure on the page (NOT PRESENT).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Implementation/revprocessor0203.pdf",
+   "fetched_url": null,
+   "title": "ASOS Product Improvement Implementation Plan Addendum I: ASOS Processor Board Upgrade",
+   "author_org": "NOAA NWS Office of Operational Systems",
+   "published": "2002-02-14 (Rev 1 2003-02-05)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/revprocessor.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2002-2003 era; superseded by SLEP. Software ownership/licence NOT PRESENT in matched lines.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.campbellsci.com/us-asos-weather-network",
+   "fetched_url": null,
+   "title": "US ASOS Weather Network (case study)",
+   "author_org": "Campbell Scientific",
+   "published": "2026-01-12",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa2-e8",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/webfetch_extracts.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Vendor marketing; extraction via WebFetch model, not raw; software/firmware and precip sensor NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://github.com/akrherz/pyIEM/blob/main/LICENSE",
+   "fetched_url": null,
+   "title": "pyIEM LICENSE",
+   "author_org": "Iowa State University (akrherz)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e9",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/webfetch_extracts.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only first lines extracted; MIT label is from ecosyste.ms/snyk search snippets; libraries.io lists Apache-2.0 for pyIEM 1.23.0 (conflict).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://github.com/akrherz/iem/blob/main/LICENSE",
+   "fetched_url": null,
+   "title": "iem LICENSE",
+   "author_org": "Iowa State University (akrherz)",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e10",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa2/webfetch_extracts.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only first lines extracted.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s9",
+   "url": "https://ams.confex.com/ams/pdfpapers/82895.pdf",
+   "fetched_url": null,
+   "title": "8.3 Winter test of production All-Weather Precipitation Accumulation Gauge for ASOS 2003-2004",
+   "author_org": "Greeney (SAIC), Gifford and Salyards (NOAA), Sterling VA",
+   "published": null,
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ams_82895.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Qualification test, not routine field calibration; NIST traceability NOT PRESENT; fetched via WebFetch redirect to studio.m-anage.com (AMS host), PDF converted locally.",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s10",
+   "url": "https://weather.gov/media/asos/ASOS%20Issue%20Report%20-%20Governance%20v6.pdf",
+   "fetched_url": null,
+   "title": "ASOS 2.0 ASOS Issue Report Form Governance",
+   "author_org": "NWS ASOS SLEP 2.0 EGR (OBS34)",
+   "published": "2024 (drafts 08/22/2024-09/26/2024)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e13",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_governance.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Issue-reporting workflow only; software code ownership NOT PRESENT. Contains staff names (people out of scope).",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://www.weather.gov/asos/FAQ.html",
+   "fetched_url": null,
+   "title": "ASOS FAQ",
+   "author_org": "NOAA NWS ASOS",
+   "published": null,
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e14",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos_faq.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Gauge-specific calibration steps NOT PRESENT.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://ams.confex.com/ams/97Annual/webprogram/Manuscript/Paper315698/AMS%20Modernization%20of%20ASOS%20Hardware%20and%20Software%20Paper_FINAL.pdf",
+   "fetched_url": null,
+   "title": "1A.4 Modernization of the Automated Surface Observing System (ASOS) Hardware and Software",
+   "author_org": "Hays and Brewer (CyberData Technologies), Dover and Szynborski (NWS Office of Observations), Wolfe (Syneren Technologies)",
+   "published": "2017 (AMS 97th Annual Meeting)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e15",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ams_asos_modern.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2017 plan; whether software is published or licensed NOT PRESENT; authors include contractor staff (CyberData, Syneren). Fetched via WebFetch after 302 redirect to studio.m-anage.com (supersedes the unreadable entry for this URL).",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://ams.confex.com/ams/97Annual/webprogram/Handout/Paper315704/CHILDS_AMS_POSTER_2017v5.pdf",
+   "fetched_url": null,
+   "title": "1462 Modernization of the National Weather Service Sterling Field Support Center Laboratories (poster)",
+   "author_org": "Childs, Black (CyberData Technologies), Hicks (NWS), Sterling VA",
+   "published": "2017 (AMS 97th Annual Meeting)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa2-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/childs_poster.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2017; current RIC status NOT PRESENT; precipitation calibration lab NOT PRESENT; NIST not matched in poster text. Fetched via WebFetch after redirect to studio.m-anage.com.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Implementation/relnoteawpag.pdf",
+   "fetched_url": null,
+   "title": "ASOS Release Note Software Version 2.7B: All Weather Precipitation Accumulation Gauge (AWPAG) (DRAFT)",
+   "author_org": "NOAA NWS Office of Operational Systems / Office of Science and Technology",
+   "published": "2003-02-26",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/relnoteawpag.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2003 DRAFT; calibration/field check steps not seen in matched lines (only a Maintenance page for AWPAG, section 3.6, not read).",
+   "found_by": [
+    "sa2",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00387/html",
+   "fetched_url": null,
+   "title": "1-Minute Page 2 Surface Weather Observations from the ASOS Network (ISO metadata, C00387)",
+   "author_org": "NOAA NCEI",
+   "published": "metadata record, dataset cited as 2005",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/meta_c00387.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "DOI: NOT PRESENT. Licence statement (CC0 or other): NOT PRESENT. Lineage statement only says data archived and basic QA.",
+   "found_by": [
+    "sa3",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01688/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network-hourly (GHCNh), Version 1 (ISO metadata, C01688)",
+   "author_org": "NOAA NCEI",
+   "published": "dataset cited as 2023",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/meta_c01688.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Named licence (CC0 etc.) in NCEI record: NOT PRESENT; the word 'license' appears without a licence name. Also listed on catalog.data.gov (search result only, not read).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://registry.opendata.aws/noaa-ghcnh/",
+   "fetched_url": null,
+   "title": "NOAA Global Historical Climatology Network- Hourly (GHCN-H) - Registry of Open Data on AWS",
+   "author_org": "NOAA NODD / AWS Registry of Open Data",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/aws_registry_noaa_ghcnh.html.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Does not give the DOI. No separate AWS entry for ASOS 1-min/5-min found in this run.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s18",
+   "url": "https://mesonet.agron.iastate.edu/disclaimer.php",
+   "fetched_url": null,
+   "title": "IEM Disclaimer",
+   "author_org": "Iowa Environmental Mesonet, Iowa State University",
+   "published": "not stated (footer copyright 2001-2026)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/iem_disclaimer.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Named licence (CC0 etc.): NOT PRESENT. DOI for IEM ASOS data: NOT PRESENT on this page.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://mesonet.agron.iastate.edu/cgi-bin/request/asos1min.py?help",
+   "fetched_url": null,
+   "title": "Documentation for /cgi-bin/request/asos1min.py",
+   "author_org": "Iowa Environmental Mesonet",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/iem_asos1min_help.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Units and variable naming of output: NOT PRESENT in extracted lines read. Licence: see IEM disclaimer.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://github.com/python-metar/python-metar",
+   "fetched_url": null,
+   "title": "python-metar/python-metar (GitHub)",
+   "author_org": "python-metar volunteers (orig. Tom Pollard)",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e6",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/python_metar_github_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Licence name not shown in extraction (NOT PRESENT); search snippets disagree (MIT on Anaconda, BSD 2-clause on FreshPorts, custom on AUR); raw LICENSE file blocked by sandbox. 6/7 groups: NOT PRESENT.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://www.ncei.noaa.gov/pub/data/asos-fivemin/",
+   "fetched_url": null,
+   "title": "asos-fivemin readme.txt",
+   "author_org": "NOAA NCEI",
+   "published": "readme 2014-06-24",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/fivemin_readme.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Readme dated 2014; whether ftp still works not tested. Directory itself is served over https.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s22",
+   "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf",
+   "fetched_url": null,
+   "title": "GHCNh documentation",
+   "author_org": "NOAA NCEI",
+   "published": "not stated in excerpt",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e8",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ghcnh_doc.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Whether the doc gives enough (code, algorithm parameters) to reproduce GHCNh from source data not assessed in this pass; CF-standard variable names: NOT PRESENT in the lines read.",
+   "found_by": [
+    "sa3",
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s23",
+   "url": "https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C01688.xml",
+   "fetched_url": null,
+   "title": "GHCNh ISO 19115-2 XML metadata (C01688)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e9",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/c01688_iso.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Raw XML text; read only the matched lines.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s24",
+   "url": "https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C00387.xml",
+   "fetched_url": null,
+   "title": "ASOS 1-Minute Page 2 ISO 19115-2 XML metadata (C00387)",
+   "author_org": "NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/c00387_iso.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Absence finding from text search (patterns CC0|not subject to copyright|doi.org|MD_RestrictionCode): DOI NOT PRESENT; CC0 licence NOT PRESENT in the ISO record. Contrasts with data.gov record (sa3-e11).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s25",
+   "url": "https://catalog.data.gov/dataset/1-minute-page-2-surface-weather-observations-from-the-automated-surface-observing-systems-",
+   "fetched_url": null,
+   "title": "1-Minute Page 2 Surface Weather Observations from the ASOS Network (data.gov catalog record)",
+   "author_org": "data.gov / NOAA NCEI",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/datagov_c00387.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "The CC0 statement appears in data.gov's harvested record but not in the NCEI ISO XML text searched (sa3-e10); where data.gov got it is not stated. A URL ending '-asos-2' returned 404.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s26",
+   "url": "https://data.noaa.gov/docucomp/xmlComponent/show/690539",
+   "fetched_url": null,
+   "title": "Data License (CC0) metadata component",
+   "author_org": "NOAA (data.noaa.gov DocuComp)",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e12",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/noaa_cc0_component.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Generic component; which ASOS records include it not stated here. Line 39 truncated in my read.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s27",
+   "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg2/doc/asos-1min-pg2_documentation.pdf",
+   "fetched_url": null,
+   "title": "Data Documentation for DSI-6406, ASOS 1-minute page 2",
+   "author_org": "NOAA NCEI",
+   "published": "2022-11-08 (directory listing date)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e13",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pg2_doc2022.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Column start/end positions for the data fields: NOT PRESENT in the text read (sample line only). Units are US customary (inches, inHg, deg F), not CF/SI. Files are .dat per station-month over https.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s28",
+   "url": "https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg2/doc/",
+   "fetched_url": null,
+   "title": "Index of /data/automated-surface-observing-system-one-minute-pg2/doc/",
+   "author_org": "NOAA NCEI",
+   "published": "listing",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e14",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/pg2_docdir.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Listing only.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s29",
+   "url": "https://unidata.github.io/MetPy/latest/api/generated/metpy.io.parse_metar_file.html",
+   "fetched_url": null,
+   "title": "metpy.io.parse_metar_file (MetPy documentation)",
+   "author_org": "MetPy Developers / Unidata",
+   "published": "not stated (footer 2008-2025)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e15",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/metpy_parse_metar_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Licence: NOT PRESENT on page (footer copyright only); MetPy's repo LICENSE not read. Column list from fetch extraction, not raw page.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s30",
+   "url": "https://www.ncei.noaa.gov/pub/data/noaa/isd-format-document.pdf",
+   "fetched_url": null,
+   "title": "Federal Climate Complex Data Documentation for Integrated Surface Data (ISD format document)",
+   "author_org": "NOAA NCEI",
+   "published": "not checked (listing 2019-02-12 per search snippet)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/isd_format.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Only the AA precipitation section read; document date not read; ISD is superseded by GHCNh per NCEI.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s31",
+   "url": "https://www.ncei.noaa.gov/sites/default/files/2023-12/NCEI%20PD-10-2-02%20-%20Open%20Data%20Policy%20Signed.pdf",
+   "fetched_url": null,
+   "title": "NCEI PD-10-2-02 Open Data Policy (signed)",
+   "author_org": "NOAA NCEI",
+   "published": "file path 2023-12; signing date not read",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e19",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/ncei_open_data_policy.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Policy-level; does not say which ASOS records already carry CC0 (the C00387 ISO XML did not in this run, sa3-e10).",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s32",
+   "url": "https://mesonet.agron.iastate.edu/request/download.phtml",
+   "fetched_url": null,
+   "title": "IEM :: Download ASOS/AWOS/METAR Data",
+   "author_org": "Iowa Environmental Mesonet",
+   "published": "not stated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e20",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/iem_download.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Variable names are IEM-specific, not CF. DOI for IEM ASOS archive: NOT PRESENT on page.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s33",
+   "url": "https://www.weather.gov/media/asos/aum-toc.pdf",
+   "fetched_url": null,
+   "title": "Automated Surface Observing System (ASOS) User's Guide",
+   "author_org": "NOAA/NWS, FAA, DoD",
+   "published": "1998-03",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/aum.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "1998 manual; text is two-column so quotes join column fragments; does not describe NCDC's archive QC in detail (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s34",
+   "url": "https://www.weather.gov/media/directives/030_pdfs/pd03021011curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 30-2111, ASOS Maintenance (January 1, 2025)",
+   "author_org": "NOAA National Weather Service, Office of Observations (W/OBS32)",
+   "published": "2025-01-01",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nwsi_30_2110.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Local file name says 2110 but the document is NWSI 30-2111 (URL pd03021011curr). Precipitation-specific QC NOT PRESENT in these sections. An earlier copy (2026-11-18 run, sa2/nwsi_30_2111.txt) may be the same or an older version.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s35",
+   "url": "https://mesonet.agron.iastate.edu/ASOS/precipnote.phtml",
+   "fetched_url": null,
+   "title": "IEM :: Note about ASOS Precipitation Data",
+   "author_org": "Iowa Environmental Mesonet, Iowa State University",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/iem_precipnote.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Secondary account pieced together from NWS conversations and the AUM, per the page; undated; does not address snow undercatch or AWPAG (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s36",
+   "url": "https://ncei.noaa.gov/pub/data/noaa/ISH-DVD2012/ish-qc.pdf",
+   "fetched_url": null,
+   "title": "The Quality Control of the Integrated Surface Hourly Database",
+   "author_org": "J. Neal Lott, National Climatic Data Center",
+   "published": "undated (AMS conference paper 7.8, c. 2004)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ish_qc.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Two-column PDF; quote reassembled from left column only. Precipitation-specific thresholds NOT PRESENT in the passage read; date not on page; c. 2004 so may not reflect current GHCNh.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s37",
+   "url": "https://www.ncei.noaa.gov/pub/data/asos-onemin/td6406.txt",
+   "fetched_url": null,
+   "title": "Data Documentation for DSI 6406, ASOS Surface 1-Minute, Page 2 Data",
+   "author_org": "NOAA NCDC/NCEI",
+   "published": "undated",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e7",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/td6406.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Undated documentation; no flags described in this passage (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s38",
+   "url": "https://www.weather.gov/media/asos/ASOS%20Implementation/awpagimplan.pdf",
+   "fetched_url": null,
+   "title": "ASOS All Weather Precipitation Accumulation Gauge (AWPAG) Implementation Plan",
+   "author_org": "NOAA NWS",
+   "published": "undated (c. 2004-2005)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/awpag_implan.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Plan document describes design intent, not measured field performance; undercatch magnitudes NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s39",
+   "url": "https://ncei.noaa.gov/pub/data/ghcn/daily/papers/durre-menne-etal2010.pdf",
+   "fetched_url": null,
+   "title": "Comprehensive Automated Quality Assurance of Daily Surface Observations",
+   "author_org": "Durre, Menne, Gleason, Houston, Vose (NOAA NCDC); J. Appl. Meteor. Climatol.",
+   "published": "2010-08",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e10",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/durre2010.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "False-positive rate text garbled in PDF extraction ('1%22%'); not ASOS-specific; list of individual precipitation checks not read (NOT PRESENT in passage).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s40",
+   "url": "https://repository.library.noaa.gov/view/noaa/29189",
+   "fetched_url": null,
+   "title": "Undercatch Adjustments for Tipping-Bucket Gauge Measurements of Solid Precipitation",
+   "author_org": "Kochendorfer et al. (NOAA ATDD, ECCC, WMO, NCAR et al.); Journal of Hydrometeorology 21(6)",
+   "published": "2020",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e12",
+   "access_level": "abstract",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/webfetch_kochendorfer2020.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Abstract fragments only, via WebFetch; ASOS not named on the page (NOT PRESENT); undercatch magnitudes not read; full PDF not opened.",
+   "found_by": [
+    "sa1"
+   ]
+  },
+  {
+   "id": "s41",
+   "url": "https://www.nationalacademies.org/read/13216/chapter/13",
+   "fetched_url": null,
+   "title": "Appendix E: Automated Surface Observing System Impact on the Climate Record (NWS Modernization and Associated Restructuring: A Retrospective Assessment)",
+   "author_org": "National Research Council, National Academies Press",
+   "published": "2012",
+   "data_period": null,
+   "source_type": "review",
+   "evidence_id": "sa1-e13",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/webfetch_nas_appE.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Read via WebFetch extraction (quotes as returned, joined with …); secondary review citing McKee et al. 1995/1996b; AWPAG NOT PRESENT.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s42",
+   "url": "https://madis.ncep.noaa.gov/omo_precip.shtml",
+   "fetched_url": null,
+   "title": "OMO -- One Minute ASOS Precipitation Inventory",
+   "author_org": "NOAA MADIS",
+   "published": "2022-10-31 (last updated)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e15",
+   "access_level": "full_text",
+   "read_via": "fetch_extract",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa1/webfetch_madis_omo.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Via WebFetch extraction; QC/flags and explicit 1-min vs METAR comparison NOT PRESENT; MADIS-derived product, not NCEI.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s43",
+   "url": "https://www.faa.gov/documentLibrary/media/Order/Order_JO_7900.5E.pdf",
+   "fetched_url": null,
+   "title": "FAA Order JO 7900.5E, Surface Weather Observing",
+   "author_org": "Federal Aviation Administration",
+   "published": "undated in passage (JO 7900.5E)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/faa_jo_7900_5e.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Defines the hourly window as 'since the last METAR' (not clock hour); does not compare with 1-minute data (NOT PRESENT).",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "m1",
+   "url": "https://community.wmo.int/site/knowledge-hub/programmes-and-initiatives/instruments-and-methods-of-observation-programme-imop/regional-instrument-centres",
+   "title": "Regional Instrument Centres",
+   "author_org": "WMO",
+   "published": "2026-10-29",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/wmo_ric.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "Lists designated RICs only; says nothing of US labs"
+  },
+  {
+   "id": "m2",
+   "url": "https://github.com/Unidata/MetPy/blob/main/LICENSE",
+   "title": "MetPy LICENSE",
+   "author_org": "Unidata",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/metpy_license.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "GitHub's licence badge text, read in the browser"
+  },
+  {
+   "id": "m3",
+   "url": "https://github.com/python-metar/python-metar/blob/main/LICENSE",
+   "title": "python-metar LICENSE",
+   "author_org": "python-metar project",
+   "published": null,
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/python_metar_license.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "Only the copyright line and BSD-style clauses were captured; licence name not printed"
+  },
+  {
+   "id": "m4",
+   "url": "https://repository.library.noaa.gov/view/noaa/29189",
+   "fetched_url": "https://repository.library.noaa.gov/view/noaa/29189/noaa_29189_DS1.pdf",
+   "title": "Undercatch Adjustments for Tipping-Bucket Gauge Measurements of Solid Precipitation (Kochendorfer et al. 2020)",
+   "author_org": "NOAA ATDD et al. (J. Hydrometeorology)",
+   "published": "2020",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "study",
+   "local_file": "work/raw/main/kochendorfer2020.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "WMO-SPICE TB gauge models; not the ASOS HTB by name"
+  },
+  {
+   "id": "m5",
+   "url": "https://html.duckduckgo.com/html/?q=GHCNh+github+code+NCEI+hourly",
+   "title": "DuckDuckGo results: GHCNh github code NCEI hourly",
+   "author_org": "DuckDuckGo (search results)",
+   "published": null,
+   "access_level": "snippet",
+   "read_via": null,
+   "source_type": "aggregator",
+   "local_file": "work/raw/main/ddg_ghcnh_github.txt",
+   "retrieved": "2026-11-26",
+   "evidence_id": null,
+   "limitations": "Search snippets; third-party readers only"
+  },
+  {
+   "id": "m6",
+   "url": "https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf",
+   "title": "GHCN for AOPC 2024 (slides)",
+   "author_org": "NOAA NCEI (presented to GCOS AOPC)",
+   "published": "2024-09",
+   "access_level": "snippet",
+   "read_via": null,
+   "source_type": "official",
+   "local_file": null,
+   "retrieved": null,
+   "evidence_id": null,
+   "limitations": "HTTP 404 on gcos.wmo.int and on the Wayback form tried; known only from the search tool's summary"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "text": "ASOS QC runs in three cascading levels: automated on-site checks that drop bad data and append the $ maintenance indicator; WFO review within hours; and national AOMC monitoring, which also flags late or $-flagged reports and can dial in, open trouble reports and disable sensors on request of WFOs or FAA-certified observers.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "There are three cascading levels of quality control for … Level 2 is performed at a Weather Forecast Office … Level 3 is performed centrally on all ASOS METARs",
+     "location": "ASOS User's Guide ch. 1"
+    },
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "does not necessarily mean that the data are erroneous",
+     "location": "ASOS User's Guide ch. 1"
+    },
+    {
+     "source_id": "s34",
+     "relationship": "supports",
+     "passage": "The ASOS Operations and Monitoring Center (AOMC) is part of the ASOS Program under the Office of Observations. The Parties in the ASOS Tri-Agency agreement fund the center to provide 24/7/365 monitoring of the ASOS Fielded Network. … The Acquisition Control Unit (ACU) of an ASOS automatically generates the maintenance flag when a fault is detected or other maintenance is required. The maintenance flag alerts the AOMC that maintenance support is required. The AOMC observation monitoring process identifies ASOS sites whose hourly observations do not reach the OBS monitoring application by a given time (currently H+15 minutes), and observations received with the maintenance flag are appended. … When an ASOS site malfunctions, the AOMC investigates by remote dial access to the site. Under certain conditions, the AOMC remotely clears low priority faults. Otherwise, the AOMC notifies the regionally-designated maintenance point-of-contact of the malfunction. … WFOs and/or FAA Contract Weather Observers (CWOs) may determine that an ASOS sensor is reporting erroneous or questionable data without generating a maintenance flag and are able to disable sensors that are non-representative. When this occurs, the WFO will notify the AOMC and request that a trouble report is opened",
+     "location": "Sections 3.1-3.2, pp. 3-4"
+    }
+   ],
+   "applicability": "Sensor-level QC for all ASOS elements; not precipitation-specific",
+   "confidence": "high",
+   "confidence_reason": "NWS's own manual and its current directive agree",
+   "sole_source_reason": "The NWS's own manual and directive are the authority for its own procedures"
+  },
+  {
+   "id": "c2",
+   "text": "NCEI does no editing of the 1-minute page 2 (precipitation) data: it is reproduced as received, with only basic QA for record formats and station IDs.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s37",
+     "relationship": "supports",
+     "passage": "10.  Quality Statement: This data set receives limited quality control at the station.  A discussion of quality control procedures for sensors may be found in the ASOS USER'S GUIDE.  No attempt to edit data or correct transmission errors has been made at the NCDC.",
+     "location": "Section 10, Quality Statement (td6406.txt line 168)"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "…onal Centers for Environmental Information acquired and processed the station data from the ASOS network within one day of the observations. The data processing steps included data acquisition, basic quality assurance, assimilation into monthly station files, and data archive and access. The basic quality assurance included identifying improper record formats, incorrectly transmitted station IDs, …",
+     "location": "Lineage Statement (meta_c00387.txt line 68)"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "The meteorological data is reproduced as received from the station. In … to maintain the 99 character fixed length format. … No attempt to edit data or correct",
+     "location": "pp. 1-2"
+    }
+   ],
+   "applicability": "DSI 6406 page 2",
+   "confidence": "high",
+   "confidence_reason": "Old and 2022 documentation and the catalog lineage agree",
+   "sole_source_reason": "NCEI's own product documentation"
+  },
+  {
+   "id": "c3",
+   "text": "GHCNh's own QC tests cover temperature, dew point, pressure and wind only; precipitation keeps the QC codes of its legacy sources (ISD's checks).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "A general set of quality control checks is applied to a subset of variables (temperature, | dew_point_temperature, station_level_pressure, sea_level_pressure, wind_direction, and | wind_speed) after all sources are integrated. These checks are described in the Copernicus | land data user guide. | NOTE: For other variables, GHCNh preserves the quality control information of its component | (legacy) sources. … Legacy Codes for Sources 313, 314, 315, 322, 335, 343, 344, 346 include: | 0 = Passed gross limits check | 1 = Passed all quality control checks | 2 = Suspect | 3 = Erroneous … A – Data value flagged as suspect, but accepted as good value. | U – Data value replaced with edited value. | P – Data value not originally flagged as suspect, but replaced by validator.",
+     "location": "Section VI, Table 3: QC (ghcnh_doc.txt lines 512-561)"
+    },
+    {
+     "source_id": "s36",
+     "relationship": "contextualizes",
+     "passage": "precipitation amount, snow depth, etc.",
+     "location": "ISH QC paper p. 2"
+    }
+   ],
+   "applicability": "GHCNh v1",
+   "confidence": "high",
+   "confidence_reason": "Stated in NCEI's GHCNh documentation",
+   "sole_source_reason": "NCEI's own product documentation"
+  },
+  {
+   "id": "c4",
+   "text": "GHCN-Daily applies fully automated QA to daily precipitation among other elements, flagging about 0.24% of values.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "This paper describes a comprehensive set of fully automated quality assurance (QA) procedures for ob- servations of daily surface temperature, precipitation, snowfall, and snow depth. The QA procedures are being applied operationally to the Global Historical Climatology Network (GHCN)-Daily dataset. … the system identifies 3.6 million (0.24%) of the more than 1.5 billion maximum/minimum temperature, precipitation, snowfall, and snow depth values in GHCN-Daily as errors, has a false-positive rate of 1%22%",
+     "location": "Abstract (durre2010.txt lines 17-30)"
+    },
+    {
+     "source_id": "s39",
+     "relationship": "supports",
+     "passage": "the estimated false-positive rate for each element is less than 5% (Table 7).",
+     "location": "p. 12"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's published QA paper",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c5",
+   "text": "The heated tipping bucket under-reports in very heavy rain (corrected above 1.80 in/h, still low above 10 in/h) and in freezing or frozen precipitation; the National Academies found 2-10% undercatch against manual gauges and a decade of undercatch in the record; WMO-SPICE results led to undercatch adjustments for heated TB gauges.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s33",
+     "relationship": "supports",
+     "passage": "fall events (greater than 10 inches per hour), the HTB may | still under-report the total rainfall accumulation.",
+     "location": "ASOS User's Guide, precipitation section"
+    },
+    {
+     "source_id": "s41",
+     "relationship": "supports",
+     "passage": "The ASOS Heated Tipping Bucket (HTB) gauge consistently undermeasured precipitation … compared to the standard universal weighing gauge … , during heavy rain events (McKee et al., 1996b) and snow events (McKee et al., 1995). | The HTB gauge also reported too many days with 0.01 inch resulting from dew condensation, not precipitation. | ASOS precipitation undercatch ranged from two to 10 percent compared to traditional manual observation. | Further, the HTB evaporated or sublimated precipitation falling below 15°F, … recording almost no cold weather precipitation. | The introduction into service, beginning in 1996, of a modified heated tipping bucket gauge for ASOS … resulted in an improved comparison between the ASOS and conventional measurements (McKee and Doesken, 1997). | However, according to the CSD, the nearly 10 years of undercatch reported from the HTB gauge … is still in the extant climate record.",
+     "location": "Appendix E, p. 99"
+    },
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "Heated tipping-bucket (TB) gauges are used broadly in national weather monitoring networks, but their",
+     "location": "Abstract"
+    },
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "The equation shown in the manual is as follows: C = A(1 + 0.60A) where C is the reported accumulation and A is the measured accumulation from the tipping bucket.",
+     "location": "IEM precipitation note"
+    }
+   ],
+   "applicability": "HTB sites; AWPAG sites differ",
+   "confidence": "high",
+   "confidence_reason": "NWS manual, National Academies review and a SPICE study agree",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c6",
+   "text": "The AWPAG is an Ott weighing gauge whose own firmware handles evaporation, wind and spurious changes; in the 2003-04 winter test at Sterling and Johnstown, 81% of 100 event totals met NWS requirements (misses were under-reports), against 60% for HTBs.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "The AWPAG is a weighing precipitation gauge, and does not use a 0.01 inch tipper like the | HTB. The AWPAG will be deployed with a new metal windshield which will replace the vinyl | alter shield used with the HTB. … The AWPAG is also an “intelligent” gauge that uses internal firmware | algorithms to address evaporation, wind turbulence, power outage periods, heating control of the | orifice area, sudden rapid unrealistic amount changes caused by non-precipitation events, e.g., … the precipitation processing algorithms used to generate the ASOS data, | products, and messages, are identical to those used for processing the data from the HTB. … The precipitation data processing algorithms in the ACU software are identical to those | algorithms used by the HTB.",
+     "location": "Release note body (relnote_awpag.txt lines 134-187)"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Fifty-three (53) events were evaluated in Sterling and | forty-seven (47) in Johnstown in the winter 2003-2004 | test, comprising a total of 100 AWPAG comparisons. Of | these 100 comparisons, 81% of the AWPAG event | totals met the NWS AWPAG reporting requirements. | The gauges were non-compliant 19% of the time | because of under-reporting.",
+     "location": "section 4.1, p.1-2 (lines 108-114); requirement spec D113-SP001 accuracy +4% or +0.02 inch lines 20-26"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "During the winter of 2003-2004, AWPAG hourly | totals met the NWS AWPAG reporting requirements | 97% of the time, while during the winter of 2002-2003, | NWS hourly requirements were met 81% of the time. … test, comprising a total of 100 AWPAG comparisons. Of | these 100 comparisons, 81% of the AWPAG event | totals met the NWS AWPAG reporting requirements. | The gauges were non-compliant 19% of the time | because of under-reporting. Overall, the comparison | ASOS HTB gauges met the same requirements for | event totals only 60% of the time during the test. | … *Production AWPAG 706 location within Double Fence Intercomparison Reference (DFIR)",
+     "location": "Results section and Table 1 note (ams_82895.txt lines 98-140)"
+    },
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "Note that this is a 16% improvement over the prior year through firmware adjustments performed.",
+     "location": "AMS 82895, 4.1"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "If the current total precipitation reading is greater than 42 inches (80% | of the capacity of the gauge), display the total precipitation reading",
+     "location": "Release note v2.7B, Appendix"
+    }
+   ],
+   "applicability": "Production AWPAG with DFIR in test",
+   "confidence": "moderate",
+   "confidence_reason": "One NWS-led test paper plus NWS release notes; no SPICE result for the AWPAG found",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c7",
+   "text": "1-minute, hourly METAR and daily totals cover offset windows (1-minute :24-:23 seconds; METAR from the station's reset minute, e.g. :54; daily in local standard time; MADIS's 1-minute hourly sum :45-:44), so they need not agree.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s35",
+     "relationship": "supports",
+     "passage": "For one minute data, the 12:45 UTC observation approximately represents a period between 12:44:24 and 12:45:23 UTC. | For the hourly METAR precipitation, the 12:54 UTC observation represents a period between 11:54:24 and 12:54:23 UTC. | For the daily summary message, the observation represents a period between 11:59:24 PM LST of the previous day to 11:59:23 PM LST of the current day. … The ASOS Users Manual notes in section 3.4.2 that a correction is applied to the measured accumulation on a minute by minute basis. The equation shown in the manual is as follows: | C = A(1 + 0.60A) | where C is the reported accumulation and A is the measured accumulation from the tipping bucket. … The timing and precipitation totals are not exact, but they are conservative over time when summed.",
+     "location": "Sections 'Regarding Exact Timing', 'Heavy Precipitation Rates', 'In Summary'"
+    },
+    {
+     "source_id": "s43",
+     "relationship": "contextualizes",
+     "passage": "13.46. Hourly Precipitation Amount (Prrrr) (Automated Only). At automated stations, the | hourly precipitation amount remark is coded in the format, Prrrr, where P is the group indicator, | and rrrr is the water equivalent of all precipitation that has occurred since the last METAR. The | amount is coded in hundredths of an inch. The group must be omitted if no precipitation | occurred since the last METAR.",
+     "location": "Section 13.46 (faa_jo_7900_5e.txt lines 5193-5197)"
+    },
+    {
+     "source_id": "s42",
+     "relationship": "contextualizes",
+     "passage": "OMO -- One Minute ASOS (listed as HFMETAR) PCP1H is an accum starting ~45 minutes after the hour until 44 minutes after the next hour.",
+     "location": "Page body"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "IEM's note is a secondary account; FAA order and MADIS confirm parts",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c8",
+   "text": "Precipitation-gauge calibration is not documented publicly: NWS electronics technicians do quarterly preventive maintenance, 'ASOS sensors require minimal calibration', and maintenance schedules are in Engineering Handbook 11, which is not public and follows manufacturers' intervals.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The ASOS requires quarterly preventive maintenance (PM). ETs conduct PM during repair visits | whenever appropriate. ASOS sensors require minimal calibration.",
+     "location": "lines 319-320"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "Maintenance schedules for ASOS sites are published in Engineering Handbook #11 and is not available to the general public. The schedule however is based on the equipment maintenance intervals recommended by the manufacturer the most common being a quarterly preventative maintenance followed by semiannual, annual and biennial preventative maintenance regimes.",
+     "location": "FAQ, line 118"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NWS directive and ASOS FAQ",
+   "sole_source_reason": "NWS's own directive and program page"
+  },
+  {
+   "id": "c9",
+   "text": "No external calibration service for ASOS precipitation gauges was found: Sterling's labs are pressure, hygrothermometer, environmental chambers and wind tunnel; NIST traceability for the gauges was not found; WMO's list of Regional Instrument Centres names none in the United States (RA IV: Bridgetown only).",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "• SFSC has four labs: pressure, hygrothermometer, environmental | chambers, and wind tunnel … • SFSC is investigating the potential of becoming a WMO | Regional Instrument Centre (RIC).",
+     "location": "poster Introduction column, lines 24-34 (multi-column layout)"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "RA IV | Bridgetown (Barbados)",
+     "location": "Location of RICs by WMO Regional Association"
+    }
+   ],
+   "applicability": "Absence of evidence; EHB-11 not read",
+   "confidence": "moderate",
+   "confidence_reason": "Absence findings rest on public pages; the non-public handbook may say more",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c10",
+   "text": "Station software and hardware involve parties outside NWS: the FAA develops the next-generation ASOS software (C++ with OpenDDS), Campbell Scientific supplied the ASOS 2.0 ACU/DCP units under SLEP, the AWPAG runs Ott firmware, and reports travel over leased (FAA) telecommunication; the AOMC holds site parameter files and software configuration management.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "The FAA is in the process of developing | the next generation ASOS software to replace the | legacy OS and application, while the NWS is in the | process of implementing modern computing hardware | for the new software to operate on. … The legacy system’s operating system (OS) was | Portable Software on Silicon (PSOS) … The software modernization will update the | ASOS software to the C++ programming language",
+     "location": "p.1 section 1 lines 22-26, 50-51; section 3 lines 184-187"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "By 2025, Campbell Scientific had delivered all 1,529 units.",
+     "location": "case study page; counts 700 ACUs, 799 DCPs, 50 SCAs (sum 1,549, inconsistent)"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Leased telecommunication services send the Meteorological Terminal Aviation Routine Weather Report's weather observation to users through the national weather data network. … - Replacing obsolescent weather sensors, processors and software",
+     "location": "lines 47, 61"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "The AOMC manages ASOS site-specific parameter files. The parameter files consist of 11 data files | required by each ASOS site to function. The AOMC also operates a software configuration management | system capable of recreating a version of a site's master files upon request.",
+     "location": "lines 182-184; also line 118 The Acquisition Control Unit (ACU) of an ASOS automatically generates the maintenance flag"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "contextualizes",
+     "passage": "Units: 1,529 units: 700 ACUs, 799 DCPs, and 50 SCAs, deployable at up to 750 sites (components sum to 1,549;",
+     "location": "Campbell case study (extraction)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "NWS/FAA documents plus a vendor page and an AMS paper; delivery count from the vendor only"
+  },
+  {
+   "id": "c11",
+   "text": "No production code is published for the ASOS station software, NCEI's ASOS products or GHCNh; IEM's code (pyIEM, iem) is on GitHub under an Iowa State University MIT-style licence.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Copyright (c) 2005 Iowa State University | Permission is hereby granted, free of charge, to any person obtaining",
+     "location": "LICENSE lines 1-3"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "Copyright (c) 2005 Iowa State University | Permission is hereby granted, free of charge, to any person obtaining",
+     "location": "LICENSE lines 1-3"
+    },
+    {
+     "source_id": "m5",
+     "relationship": "contextualizes",
+     "passage": "pyghcnh Retrieve weather data from NOAA NCEI's Global Historical Climatology Network hourly (GHCNh) into pandas.",
+     "location": "search results"
+    }
+   ],
+   "applicability": "Absence of a public repository found in this run",
+   "confidence": "moderate",
+   "confidence_reason": "Absence of evidence; searches found only third-party readers"
+  },
+  {
+   "id": "c12",
+   "text": "GHCNh has a DOI (10.25921/jp3d-3v19), a CC0-1.0 statement in its ISO record, PSV and Parquet files with named columns in millimetres, and an anonymous AWS copy under CC0.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "Dataset Identifiers | - doi:10.25921/jp3d-3v19 | - NCEI DSI 2074_01 | - gov.noaa.ncdc:C01688 | - global-historical-climatology-network-hourly … Distribution Formats | PSV Parquet … Use Constraints | license Cite as: Menne, Matthew J.; Noone, Simon; … 2023. Global Historical Climatology Network-Hourly (GHCNh). [indicate subset used]. NOAA National Centers for Environmental Information. https://doi.org/10.25921/jp3d-3v19. … Fees | In most cases, electronic downloads of the data are free.",
+     "location": "lines 17-22, 40, 67, 69"
+    },
+    {
+     "source_id": "s23",
+     "relationship": "supports",
+     "passage": "doi:10.25921/jp3d-3v19 … codeListValue=\"license\">license … These data were produced by NOAA and are not subject to copyright protection in the United States. NOAA waives any potential copyright and related rights in these data worldwide through the Creative Commons Zero 1.0 Universal Public Domain Dedication (CC0-1.0). … SPDX License: Creative Commons Zero v1.0 Universal (CC0-1.0)",
+     "location": "lines 86, 608-614"
+    },
+    {
+     "source_id": "s17",
+     "relationship": "supports",
+     "passage": "NOAA data disseminated through NODD is made available under the Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license, which is well-known and internationally recognized. … aws s3 ls --no-sign-request s3://noaa-ghcnh-pds/",
+     "location": "License; Usage examples"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "precipitation = total liquid precipitation (rain or melted snow). Totals are nominally for the hour, | but may include intermediate reports within the hour. … a “T” | in the measurement code column indicates a trace amount of precipitation (millimeters) … precipitation_5_minute = 5-minute total liquid precipitation accumulation; a “T” in the | measurement code column indicates a trace amount (millimeters)",
+     "location": "Table/variable list, lines 282-285, 363-364"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI ISO record, documentation and AWS registry agree",
+   "sole_source_reason": "The publisher's own catalog records",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c13",
+   "text": "The 1-minute page 2 product has no DOI; its NCEI ISO record states no licence, while the data.gov record harvested from it lists CC0; it is fixed-length 99-character ASCII text in inches.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Dataset Identifiers | - NCEI DSI 6406_02 | - gov.noaa.ncdc:C00387 | - auto-surf-obs-sys-1-min-pg2 … Distribution Formats | ASCII Text … Use Constraints | Cite as: NOAA National Weather Service, U.S. Federal Aviation Administration, U.S. Department of Defense, NOAA National Centers for Environmental Information (2005): 1-Minute Page 2 Surface Weather Observations from the Automated Surface Observing Systems (ASOS) Network. [indicate subset used]. NOAA National Centers for Environmental Information. NCEI DSI 6406_02. [access date].",
+     "location": "lines 15-19, 36, 61"
+    },
+    {
+     "source_id": "s24",
+     "relationship": "supports",
+     "passage": "codeListValue=\"otherRestrictions\">otherRestrictions",
+     "location": "lines 860, 870, 880"
+    },
+    {
+     "source_id": "s25",
+     "relationship": "contradicts",
+     "passage": "identifier | https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C00387.xml … license | https://creativecommons.org/publicdomain/zero/1.0/",
+     "location": "lines 63, 67, 90-92"
+    },
+    {
+     "source_id": "s27",
+     "relationship": "supports",
+     "passage": "The meteorological data is reproduced as received from the station. In … to maintain the 99 character fixed length format. … No attempt to edit data or correct",
+     "location": "pp. 1-2"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "NCEI's own metadata in two forms plus data.gov",
+   "sole_source_reason": "The publisher's own catalog records",
+   "figure_status": "actual"
+  },
+  {
+   "id": "c14",
+   "text": "IEM serves ASOS data over plain HTTP GET with no login, as CSV/TSV with its own variable names in US units; it calls its materials public domain; its 1-minute service re-serves NCEI's data about 24 hours late.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s32",
+     "relationship": "supports",
+     "passage": "Data Format: Comma Delimited Tab Delimited Comma Delimited (With DEBUG headers) Tab Delimited (With DEBUG headers) … The value \"M\" represents either value that was reported as missing or a value that was set to missing after meeting some general quality control check, or a value that was never reported by the sensor. … p01i: | One hour precipitation for the period from the observation time to the time of the previous hourly precipitation reset. This varies slightly by site. Values are in inches. … Unfortunately, we do not know of an authoritative database denoting which station has which sensor.",
+     "location": "lines 44, 70, 100-102"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "While we use care to provide accurate weather/climatic information, errors may occur because of equipment or other failure. We therefore provide this information without any warranty of accuracy. … The materials found on this website are in the public domain and may be used freely by anyone for any lawful purpose. Attributing the Iowa Environmental Mesonet of Iowa State University would be appreciated.",
+     "location": "lines 5, 9"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "This service provides the ASOS 1 minute data provided by NCEI and is not the \"one minute data\" via MADIS. There is an availability delay of about 24 hours due to the way NCEI collects the data from the ASOS sites. … A HTTP GET request is required.",
+     "location": "lines 5, 11, 15"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "IEM's own pages",
+   "sole_source_reason": "IEM's own service documentation"
+  },
+  {
+   "id": "c15",
+   "text": "Open METAR decoders exist: python-metar (BSD-style licence) parses US precipitation remarks; MetPy (BSD 3-Clause) parses METARs but leaves remarks as text.",
+   "importance": "central",
+   "evidence": [
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "Python-metar is a python package for interpreting METAR and SPECI coded weather reports. … The most useful remark groups defined in the US spec are parsed, as well, such as the cumulative precipitation, min/max temperature, peak wind and sea-level pressure groups.",
+     "location": "README"
+    },
+    {
+     "source_id": "m3",
+     "relationship": "supports",
+     "passage": "Copyright (c) 2004-2018, Tom Pollard | Redistributions of source code must retain the above copyright",
+     "location": null
+    },
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "Unidata/MetPy is licensed under the | BSD 3-Clause \"New\" or \"Revised\" License",
+     "location": null
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Repository licence files read in the browser"
+  },
+  {
+   "id": "c16",
+   "text": "Documentation describes formats (ISD byte-level spec, GHCNh PSV layout, DSI-6406 sample record) but not the processing; the 5-minute readme still gives anonymous FTP instructions.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s30",
+     "relationship": "supports",
+     "passage": "Precipitation Data | FLD LEN: 3 | LIQUID-PRECIPITATION occurrence identifier … AA1 - AA4 An indicator of up to 4 repeating fields of the following items: … FLD LEN: 2 | LIQUID-PRECIPITATION period quantity in hours … MIN: 00      MAX: 98       UNITS: Hours … FLD LEN: 4 | LIQUID-PRECIPITATION depth dimension | The depth of LIQUID-PRECIPITATION that is measured at the time of an observation. | MIN: 0000      MAX: 9998     UNITS: millimeters | SCALING FACTOR: 10 … 9999 = Missing.",
+     "location": "Precipitation Data section, lines 633-658"
+    },
+    {
+     "source_id": "s22",
+     "relationship": "supports",
+     "passage": "Each station “psv” file is made up of a unique identifier and time step followed by 53 variable | fields, each with 5 associated metadata/attribute fields … metadata fields are described with explicit names in a header line at the top of each station file. | Pipe-separated (.psv) files can easily be viewed with spreadsheet programs (e.g. Excel) by | specifying the delimiter as a pipe “|”.",
+     "location": "Section III(A), lines 219-226"
+    },
+    {
+     "source_id": "s21",
+     "relationship": "contextualizes",
+     "passage": "Anonymous ftp instructions: | 1. Enter: open ftp.ncdc.noaa.gov | 2. Login is: ftp or anonymous | 3. Password is: your email address",
+     "location": "lines 11-15"
+    }
+   ],
+   "applicability": null,
+   "confidence": "moderate",
+   "confidence_reason": "Format documents read; processing absence is an inference"
+  },
+  {
+   "id": "c17",
+   "text": "NCEI policy treats NOAA data as public domain and commits to applying CC0.",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "s31",
+     "relationship": "contextualizes",
+     "passage": "a. Environmental data and information produced by NOAA or any Federal agency are available fully | and openly to data users unless explicitly exempt from release by Federal law, regulation or policy. | These data are in the public domain in the United States. To serve our international partners and | customers, NCEI will work to ensure a Creative Commons CC0 license is applied. … encourage providers to apply a Creative Commons CC0 (preferred) or CC BY 4.0 license",
+     "location": "section 5a and following, lines 74-83"
+    },
+    {
+     "source_id": "s26",
+     "relationship": "contextualizes",
+     "passage": "Data License (CC0) … These data are not subject to copyright protection in the United States. Any potential copyright and related rights in these data is waived worldwide through the Creative Commons Zero 1.0 Universal Public Domain Dedica … SPDX License: Creative Commons Zero v1.0 Universal (CC0-1.0)",
+     "location": "lines 9, 39, 42"
+    }
+   ],
+   "applicability": null,
+   "confidence": "high",
+   "confidence_reason": "Signed NCEI directive"
+  },
+  {
+   "id": "c18",
+   "text": "GHCNh's processing reportedly moved to cloud-native processing on AWS EC2 (search-tool summary of a 2024 NCEI slide deck that could not be opened).",
+   "importance": "supporting",
+   "evidence": [
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "Parquet conversion of intermediate files and multi-processing on AWS EC2",
+     "location": "search tool summary (not page text)"
+    }
+   ],
+   "applicability": null,
+   "confidence": "low",
+   "confidence_reason": "Snippet-only; the PDF returned 404"
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "Licence of the 1-minute page 2 product",
+   "source_ids": [
+    "s24",
+    "s25"
+   ],
+   "status": "unresolved",
+   "explanation": "NCEI's ISO XML has no CC0 text; data.gov's record harvested from it lists the CC0 URL. NCEI policy (s31) says CC0 should apply."
+  }
+ ],
+ "coverage_gaps": [
+  "No public HTB or AWPAG calibration/field-check procedure found; EHB-11 not public (ASOS FAQ). NIST traceability for ASOS precipitation gauges NOT PRESENT in any source read. WMO Regional Instrument Centre role of Sterling NOT searched (time). WMO SPICE participation not searched. Leads: SFSC FPR-D DFIR study (catalog.data.gov) compared against an ASOS AWPAG; NCEI USCRN tech note TN05002PrecipTesting.pdf; AWPAG release note relnoteawpag.pdf; NWS Pressure Standards Lab pdf (barometers only, as-found/as-left certificates). (from sa2)",
+  "No public repository for ASOS station/ACU software, NCEI product code or GHCNh code found. Not read: AMS 2017 paper Modernization of ASOS Hardware and Software (ams.confex.com redirects to studio.m-anage.com); DOT OIG av2001073 ASOS audit (webarchive.library.unt.edu); OIG-25-012-I (general NWS OT cyber); GCOS AOPC 2024 GHCN slides (gcos.wmo.int) said in snippet to describe parquet intermediates and multi-processing on AWS EC2; release_notes.279_final.pdf (snippet: AWPAG interfaces only from software v2.7B). pyIEM licence conflict: libraries.io lists Apache-2.0 for 1.23.0 vs MIT-style LICENSE file. (from sa2)",
+  "Current WMO RIC designation for Sterling not confirmed (only 2017 investigating statement); WMO community RIC list (community.wmo.int/en/node/186961) not read. (from sa2)",
+  "relnoteawpag.txt (saved) has unread AWPAG sensor maintenance page (section 3.6), SYSLOG messages incl. 1871 Precipitation Accumulation Sensor Data Quality Check Error (line 734) and gauge error MK48_BAD_CALIBRATION (line 796) - may help q1/q3; not read in full for time. (from sa2)",
+  "MetPy METAR parser licence and precipitation-group handling not read (snippet only); python-metar LICENSE file blocked (raw.githubusercontent.com CONNECT 403); package indexes disagree (MIT/BSD-2/custom). (from sa3)",
+  "Registry of Open Data NOAA GHCNh required search r11 query 'Registry of Open Data NOAA GHCNh' not run separately (page reused from pt1). No AWS registry entry for ASOS 1-min/5-min sought. (from sa3)",
+  "q5 barely covered: did not read the 2022 DSI 6406 documentation PDF (https://www.ncei.noaa.gov/data/automated-surface-observing-system-one-minute-pg2/doc/), the ISD format document, or GHCNh doc QC section to judge whether a newcomer could reproduce products; td6406/td6405/ghcnh_doc in pt1 hold the format layouts. (from sa3)",
+  "Units/CF standard names per product not checked (IEM output columns, GHCNh PSV units, DSI 6406 units); NCEI Open Data Policy PD-10-2-02 PDF not read; whether ftp.ncdc.noaa.gov anonymous ftp still works not tested. (from sa3)",
+  "ISD format document (https://www.ncei.noaa.gov/pub/data/noaa/isd-format-document.pdf) not read; open ISD parsers (CRAN isdparser) seen only as snippets. IEM 1-min and METAR output units/columns not read in full (iem_download.txt in pt1 lists columns). (from sa3)",
+  "Observer/WFO augmentation and editing of precipitation specifically (Edit Log, manual corrections to PCPN groups) not read; leads: https://www.weather.gov/media/surface/ASOS_OID_final111612.pdf (ASOS Operator Interface Device guide, Edit Log), FAA JO 7900.5E (earlier run sa3/faa_jo_7900_5e.txt) not searched for precipitation edits. (from sa1)",
+  "NCEI QC on 5-minute (DSI 6405-style) data and GHCNh precipitation-specific checks NOT PRESENT in sources read; GHCNh doc applies its own QC only to temp/dewpoint/pressure/wind and passes legacy codes for others. Lead: Copernicus land data user guide cited by GHCNh doc. (from sa1)",
+  "AOMC lead not read: 'ASOS Issue Report - Governance v6' https://weather.gov/media/asos/ASOS Issue Report - Governance v6.pdf (AOMC Service Account triage). (from sa1)",
+  "r5: no WMO SPICE result evaluating the ASOS AWPAG (Ott Pluvio) found after 2 queries; Kochendorfer et al. 2020 (SPICE TB undercatch) read as abstract only. Lead: Landolt & Politovich AMS abstract on AWPAG wind-induced undercatch transfer function https://ams.confex.com/ams/21Applied17SMOI/webprogram/Paper247544.html (ams.confex.com refused by sandbox; WebFetch redirect to studio.m-anage.com worked for PDFs). (from sa1)",
+  "Why 1-minute and hourly accumulations differ: only IEM's secondary note (processing window offsets, LST daily) read; Nelson 2003 ASOS hourly vs 1-minute starting query not run; MADIS OMO page https://madis.ncep.noaa.gov/omo_precip.shtml (45-44 min window) not read. (from sa1)",
+  "GCOS AOPC 2024 GHCN slides: HTTP 404, Wayback form 404; known from a search summary only",
+  "Engineering Handbook 11: not public"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS heated tipping bucket calibration maintenance",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no ASOS-specific procedure found",
+   "from": "sa2",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "AWPAG calibration field check NWS ASOS technician",
+   "tool": "WebSearch",
+   "notes": "no filter; found AMS 82895 test paper, no field-check procedure",
+   "from": "sa2",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GAO ASOS sensor technology refresh",
+   "tool": "WebSearch",
+   "notes": "only 1995 GAO/AIMD-95-81 and NWS SLEP pages",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "OIG ASOS processor software NOAA",
+   "tool": "WebSearch",
+   "notes": "found NWS processor upgrade plan; OIG-25-012-I general OT cyber, DOT OIG av2001073 not read",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "pyIEM GitHub license akrherz",
+   "tool": "WebSearch",
+   "notes": "LICENSE read via WebFetch for pyIEM and iem",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ASOS Service Life Extension Program processor ACU",
+   "tool": "WebSearch",
+   "notes": "off-topic results; Campbell SLEP page found via r6 query",
+   "from": "sa2",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Sterling Field Support Center precipitation gauge test",
+   "tool": "WebSearch",
+   "notes": "starting query; FPR-D DFIR study and NCEI USCRN tech notes leads",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GHCNh code github NCEI processing software",
+   "tool": "WebSearch",
+   "notes": "starting query; no public GHCNh code repository found",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWS EHB-11 ASOS maintenance precipitation gauge",
+   "tool": "WebSearch",
+   "notes": "found ASOS FAQ: EHB-11 not public",
+   "from": "sa2",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "WMO Regional Instrument Centre Sterling Virginia",
+   "tool": "WebSearch",
+   "notes": "starting query; only the 2017 SFSC poster mentions Sterling",
+   "from": "sa2"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "GHCNh DOI NCEI Global Historical Climatology Network hourly",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found C01688 metadata, data.gov record, DOI 10.25921/jp3d-3v19",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "ASOS 1-minute data DOI NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter; results were NCAR/EOL field-campaign subsets with 10.26023 DOIs (EOL-issued, not NCEI); NCEI C00386 lists no DOI",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "python-metar github",
+   "tool": "WebSearch",
+   "notes": "no domain filter; repo github.com/python-metar/python-metar; licence differs across package indexes",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "MetPy METAR parser parse_metar_file",
+   "tool": "WebSearch",
+   "notes": "no domain filter; MetPy docs: metpy.io.parse_metar_file returns pandas DataFrame (snippet only)",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "metar decoder open source",
+   "tool": "WebSearch",
+   "notes": "no domain filter; mdsplib (C, SourceForge), rweather-decoder (Rust), MetarParser (Java), csharp/php decoders, npm metar-decoder (ISC) - snippets only",
+   "from": "sa3",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "noaa-ghcnh-pds license",
+   "tool": "WebSearch",
+   "notes": "no domain filter; CC0 via NODD registry text; no licence file inside bucket found",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "Iowa Environmental Mesonet ASOS one minute download",
+   "tool": "WebSearch",
+   "notes": "no domain filter; asos1min.py?help fetched; disclaimer.php fetched directly as terms page",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "NOAA data license CC0 NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found data.noaa.gov CC0 component and NCEI PD-10-2-02 Open Data Policy (not read)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "DSI 6406 format documentation ASOS 1-minute page 2",
+   "tool": "WebSearch",
+   "notes": "no domain filter; NCEI doc dir /data/automated-surface-observing-system-one-minute-pg2/doc/ (2022 PDF, not read); EOL copies of pg1/pg2 documentation",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "fetch NCEI pg2 doc directory and DSI-6406 2022 PDF",
+   "tool": "fetch_page",
+   "notes": "direct fetch from link in search result",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "fetch MetPy parse_metar_file docs page",
+   "tool": "WebFetch",
+   "notes": "extraction-only prompt; follow-up fetch for r9 result",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q5",
+   "query": "ISD format document NCEI isd-format-document.pdf",
+   "tool": "WebSearch",
+   "notes": "no domain filter; ISD format doc at https://www.ncei.noaa.gov/pub/data/noaa/isd-format-document.pdf (2019-02-12 listing per snippet), not read; CRAN isdparser package exists (snippet)",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "fetch NCEI PD-10-2-02 Open Data Policy PDF",
+   "tool": "fetch_page",
+   "notes": "follow-up from NOAA data license CC0 NCEI search",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS precipitation 1-minute hourly difference",
+   "tool": "WebSearch",
+   "notes": "starting query; no domain filter; led to IEM precipnote",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "GHCNh quality control flags documentation",
+   "tool": "WebSearch",
+   "notes": "no domain filter; GHCNh doc already saved in pt1",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ISD quality control Lott integrated surface database",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found ish-qc.pdf",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS 1-minute data quality NCEI",
+   "tool": "WebSearch",
+   "notes": "no domain filter; confirmed td6406 quality statement",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Durre 2010 GHCN-Daily quality assurance precipitation",
+   "tool": "WebSearch",
+   "notes": "no domain filter; 4th r3-topic query (GHCN-Daily QC named in brief), found Durre et al. 2010 PDF",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS heated tipping bucket undercatch snow",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NAS App E and Kochendorfer 2020",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS precipitation undercatch snow study",
+   "tool": "WebSearch",
+   "notes": "no domain filter; lead: Landolt & Politovich AMS abstract on AWPAG wind undercatch (not read)",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS Operations and Monitoring Center AOMC",
+   "tool": "WebSearch",
+   "notes": "no domain filter; found NWSI 30-2111 (pd03021011curr.pdf) and ASOS Issue Report Governance v6 (not read)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "WMO SPICE All Weather Precipitation Accumulation Gauge",
+   "tool": "WebSearch",
+   "notes": "no domain filter; no SPICE result naming the AWPAG",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "AWPAG Geonor ASOS performance evaluation",
+   "tool": "WebSearch",
+   "notes": "no domain filter; AWPAG is Ott, not Geonor; found relnoteawpag.pdf; snippet of 81% event totals met requirements (winter 2003-2004, Johnstown and Sterling) from ams.confex.com/ams/pdfpapers/82895.pdf not read",
+   "from": "sa1",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS augmentation precipitation observer edit",
+   "tool": "WebSearch",
+   "notes": "starting query; no domain filter; leads ASOS_OID_final111612.pdf (Edit Log) not read",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "WMO SPICE OTT Pluvio2 ASOS AWPAG results",
+   "tool": "WebSearch",
+   "notes": "SPICE reports listed; no AWPAG result",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GHCNh AWS EC2 processing GCOS AOPC",
+   "tool": "WebSearch",
+   "notes": "GCOS slides found; PDF 404"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "url=https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "404",
+   "copy_of": "https://gcos.wmo.int/sites/default/files/6.4_ghcn-for-aopc-2024.pdf"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Sterling Field Support Center WMO Regional Instrument Centre",
+   "tool": "duckduckgo (browser)",
+   "notes": "Led to WMO RIC list: no US RIC"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "GHCNh github code NCEI hourly",
+   "tool": "duckduckgo (browser)",
+   "notes": "Only third-party readers"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "ASOS AWPAG field check calibration weight technician",
+   "tool": "duckduckgo (browser)",
+   "notes": "Nothing relevant"
+  },
+  {
+   "subquestion_id": "q6",
+   "query": "MetPy and python-metar LICENSE files",
+   "tool": "lookup (GitHub licence files)",
+   "notes": "BSD 3-Clause; BSD-style"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q3",
+   "aim": "NWS maintenance/calibration procedures for the ASOS heated tipping bucket and AWPAG",
+   "query": "ASOS heated tipping bucket calibration",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "AOMC monitoring and QC role",
+   "query": "ASOS Operations and Monitoring Center",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NCEI QC documentation for ISD/GHCNh, 1-minute and GHCN-Daily",
+   "query": "GHCNh quality control flags",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": null,
+   "publisher": "researchers",
+   "subquestion_id": "q2",
+   "aim": "studies of ASOS tipping-bucket undercatch",
+   "query": "ASOS heated tipping bucket undercatch",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "WMO",
+   "publisher": "regulators, standards bodies, certifiers",
+   "subquestion_id": "q2",
+   "aim": "WMO SPICE/intercomparison results for the AWPAG-type gauge",
+   "query": "WMO SPICE All Weather Precipitation Accumulation Gauge",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": "GAO / DOC OIG",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q4",
+   "aim": "oversight reports on ASOS processor and software",
+   "query": "GAO ASOS sensor technology refresh",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "Iowa Environmental Mesonet",
+   "publisher": "the organization itself",
+   "subquestion_id": "q4",
+   "aim": "IEM code repositories and licence",
+   "query": "pyIEM GitHub license",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q6",
+   "aim": "DOIs and catalog records for ASOS products",
+   "query": "ASOS 1-minute data DOI NCEI",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": null,
+   "publisher": "practitioners",
+   "subquestion_id": "q6",
+   "aim": "open-source METAR decoders",
+   "query": "python-metar github",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NWS / FAA",
+   "publisher": "funders, owners, customers",
+   "subquestion_id": "q4",
+   "aim": "processor vendor and contracts",
+   "query": "ASOS processor ACU replacement contract",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "AWS / NOAA NODD",
+   "publisher": "the organization itself",
+   "subquestion_id": "q6",
+   "aim": "Registry of Open Data entry and licence for GHCNh",
+   "query": "Registry of Open Data NOAA GHCNh",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "Iowa Environmental Mesonet",
+   "publisher": "the organization itself",
+   "subquestion_id": "q6",
+   "aim": "IEM ASOS download routes and terms",
+   "query": "Iowa Environmental Mesonet ASOS one minute download",
+   "skip_reason": null
+  }
+ ],
+ "time_budget": {
+  "hook": "not seen",
+  "budget_min": 30,
+  "ceiling": 240000
+ },
+ "reconciliation": {
+  "coverage_candidates": 102,
+  "list_A": 62,
+  "list_B": 20,
+  "list_W": 20,
+  "list_C": 0,
+  "unread": 1,
+  "added": 5,
+  "by": "coordinator (no run clock; standard tier)"
+ }
+}

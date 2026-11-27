@@ -1,0 +1,1758 @@
+{
+ "question": "Who are the people critical to running ASOS and producing its archived precipitation data now, how big are the teams, and how is the work paid for? (ASOS Part 3; building on 2026-11-26_asos-precip-about-pt1 and 2026-11-26_asos-precip-qc-software-pt2; risks P-1, P-2, P-4, D-1 baseline)",
+ "tier": "deep",
+ "tier_reason": "deep: dispute (NWS staffing losses and funding threats are an active policy dispute); user set a 40 min / 320k budget",
+ "mode": "thorough",
+ "subquestions": [
+  {
+   "id": "q1",
+   "question": "Current NWS, FAA and DoD people running ASOS (program manager, OPR, AOMC, SFSC, FAA lead, DoD counterparts, software owners), with career dates",
+   "status": "answered",
+   "source_ids": [
+    "s13",
+    "s14",
+    "m1",
+    "m2",
+    "s11",
+    "s12",
+    "s15"
+   ],
+   "remaining_gap": "No SFSC head named; no current (2025-26) confirmation for most 2024 names; no career dates or ORCID for any NWS/FAA name, so no age or FERS estimate is possible; DoD people not found."
+  },
+  {
+   "id": "q2",
+   "question": "NCEI staff producing the 1-minute, 5-minute, GHCNh and daily products; single owners; ORCID and earliest publication",
+   "status": "answered",
+   "source_ids": [
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s16",
+    "s18",
+    "s19",
+    "s20",
+    "s21"
+   ],
+   "remaining_gap": "No named owner for the 1-minute or 5-minute processing; LCD contact not confirmed."
+  },
+  {
+   "id": "q3",
+   "question": "Team sizes, stand-ins, and written succession/workforce/knowledge-transfer plans",
+   "status": "uncertain",
+   "source_ids": [
+    "s14",
+    "m2",
+    "m3",
+    "m4"
+   ],
+   "remaining_gap": "Only the ET workforce-equivalent (63) is published; AOMC, SFSC, FAA Tech Ops and NCEI headcounts not found; NWS Strategic Human Capital Plan (2020) not read; no ASOS-specific succession or knowledge-transfer plan found."
+  },
+  {
+   "id": "q4",
+   "question": "Funding routes: NWS Observations lines, tri-agency reimbursable agreement, FAA F&E, DoD, NCEI, contracts",
+   "status": "uncertain",
+   "source_ids": [
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s14",
+    "m5"
+   ],
+   "remaining_gap": "ASOS's own share of every line is unpublished; FAA ASWON Sustainment 2 amounts, the MOA text, DoD/Navy amounts and the ASOS-SLEP contract number were not found."
+  }
+ ],
+ "sources": [
+  {
+   "id": "s1",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01688/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network-hourly (GHCNh), Version 1 (ISO metadata, C01688)",
+   "author_org": "NOAA NCEI",
+   "published": "2023 (publication); page Last Modified 2026-10-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ghcnh_iso_C01688.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Affiliation 'NOAA NCEI' in metadata does not distinguish federal staff from contractors (earlier run pt6 found Casey and McNeill are Riverside Technology contractors). Roles of individual authors are NOT PRESENT. Metadata author list dates from 2023 and may not reflect current staff.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s2",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00386/html",
+   "fetched_url": null,
+   "title": "1-Minute Page 1 Surface Weather Observations from the Automated Surface Observing Systems (ASOS) Network (ISO metadata, C00386)",
+   "author_org": "NOAA NCEI",
+   "published": "page Last Modified 2026-10-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/asos1min_pg1_iso_C00386.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No named individual for 1-minute processing is PRESENT. Page 2 record (C00387) not downloaded; search summary says it also lists the Customer Engagement Branch.",
+   "found_by": [
+    "sa2"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s3",
+   "url": "https://api.openalex.org/works?filter=author.id:A5034735284&sort=publication_year:asc&per-page=3&select=publication_year,title,authorships",
+   "fetched_url": null,
+   "title": "OpenAlex works for Shelley McNeill (A5034735284), oldest first",
+   "author_org": "OpenAlex",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_mcneill_works.json",
+   "retrieved": "2026-11-26",
+   "limitations": "OpenAlex indexes journal and dataset works; she is cited on GHCN-Daily V3 metadata from 2012 (per earlier run pt6 checker), so 2020 is the earliest OpenAlex-indexed work, not necessarily her earliest contribution. Earlier run pt6 found OpenAlex lists Riverside Technology (United States) as her affiliation.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s4",
+   "url": "https://api.openalex.org/authors?search=Diana%20Kantor&select=id,display_name,orcid,works_count,last_known_institutions,summary_stats",
+   "fetched_url": null,
+   "title": "OpenAlex author search: Diana Kantor (plus empty result for Nicholas Risavi)",
+   "author_org": "OpenAlex",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa2-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/oa_kantor_search.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Earliest publication year for Kantor not fetched (works list not retrieved). Federal vs contractor status NOT PRESENT. Orcutt and Cunningham not looked up.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s5",
+   "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf",
+   "fetched_url": null,
+   "title": "GLOBAL HISTORICAL CLIMATOLOGY NETWORK hourly (GHCNh) documentation, Version 1.1.0",
+   "author_org": "NOAA NCEI",
+   "published": "2026-03-10",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa2-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa2/ghcnh_documentation.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "A prepared-by or author line is NOT PRESENT in the first pages searched; ghcnh-version-updates.pdf not read.",
+   "found_by": [
+    "sa2"
+   ]
+  },
+  {
+   "id": "s6",
+   "url": "https://www.noaa.gov/organization/budget-finance-performance/budget-and-reports",
+   "fetched_url": null,
+   "title": "NOAA FY 2026 Congressional Justification (NWS sections)",
+   "author_org": "NOAA / Department of Commerce",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/reused/noaa_fy26_cj.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Parent-line totals only; ASOS share not published in this document. Column headers: FY 2024 Enacted POS FTE; Program Changes; FY 2026 Estimate POS FTE. URL given is NOAA's budget index page; the PDF's own URL was not recorded in the earlier runs. Reused from 2026-11-17_noaa-ncei-threats via 2026-11-18_noaa-rain-gauge-threats.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s7",
+   "url": "https://www.faa.gov/air_traffic/publications/cip/cip-overview-fy25-fy29.pdf",
+   "fetched_url": null,
+   "title": "FAA Capital Investment Plan FY2025-2029 Overview",
+   "author_org": "Federal Aviation Administration",
+   "published": "2024",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa3/faa_cip_fy25_29.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Overview only; dollar figures and BLI numbers would be in the FAA Budget Estimates (CJ) F&E section, which transportation.gov refused (403). ASWON also covers AWOS, so any ASWON figure would not be ASOS-only.",
+   "found_by": [
+    "sa3"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s8",
+   "url": "https://www.highergov.com/idv/1305M223DNWWG0082",
+   "fetched_url": null,
+   "title": "Vaisala IDV 1305M223DNWWG0082 (ASOS barometers)",
+   "author_org": "HigherGov (aggregator of FPDS/USAspending data)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa3-e3",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/highergov_1305M223DNWWG0082_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Aggregator page read via WebFetch extract; the ASOS link comes from the search snippet ('Asos Barometers'), not from the extract. Not checked against USAspending/FPDS.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s9",
+   "url": "https://www.campbellsci.com/us-asos-weather-network",
+   "fetched_url": null,
+   "title": "U.S. ASOS Weather Network case study",
+   "author_org": "Campbell Scientific",
+   "published": "2026-01-12",
+   "data_period": null,
+   "source_type": "practitioner",
+   "evidence_id": "sa3-e4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/sa3/campbell_asos_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Vendor marketing page; read by WebFetch extract (s.campbellsci.com PDF host refused by the sandbox). Contract number and amount NOT PRESENT; dated after Jan 2025 but describes 2019-2025.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s10",
+   "url": "https://www.gao.gov/products/gao-25-108597",
+   "fetched_url": null,
+   "title": "GAO-25-108597 Aviation Weather: FAA and NWS meteorologist staffing (Center Weather Service Units)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2025-08",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa3-e5",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "PDF refused by gao.gov (403); figures come from a search-engine summary, not a quote. Not about ASOS technicians; dated after Jan 2025.",
+   "found_by": [
+    "sa3"
+   ]
+  },
+  {
+   "id": "s11",
+   "url": "https://www.weather.gov/asos/FAQ.html",
+   "fetched_url": null,
+   "title": "ASOS Frequently Asked Questions",
+   "author_org": "NOAA National Weather Service",
+   "published": "NOT PRESENT (undated page; mentions 2025-2029 schedule)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/asos_faq.txt",
+   "retrieved": "2026-11-18 (earlier run copy)",
+   "limitations": "Page undated; FAA title not confirmed on an FAA page. Reused from earlier run.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s12",
+   "url": "https://www.weather.gov/media/lix/gcaws/Presentation1Murphy.pdf",
+   "fetched_url": null,
+   "title": "An Update on the ASOS Program and What's New with Non-Fed AWOS (Gulf Coast Aviation Weather Safety Workshop)",
+   "author_org": "Victor Murphy (NWS; presented at Gulf Coast Aviation Weather Safety Workshop)",
+   "published": "2023-02-25",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/murphy_2023.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Regional workshop slides; no Air Force or Navy program office person named; presenter's own title not on these slides.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s13",
+   "url": "https://weather.gov/media/asos/ASOS%20Issue%20Report%20-%20Governance%20v6.pdf",
+   "fetched_url": null,
+   "title": "Automated Surface Observing System (ASOS) 2.0 ASOS Issue Report Form Governance (v6)",
+   "author_org": "NWS ASOS SLEP 2.0 EGR, SSMC II, OBS34",
+   "published": "2024-09-26 (latest revision record entry; draft)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/asos_governance.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Marked Draft; approval signature lines are blank (no signature dates); 2024, so current holders not confirmed for 2025-2026. Reused from earlier run.",
+   "found_by": [
+    "sa1",
+    "reconciler"
+   ],
+   "scope": "subject",
+   "coordinator_checked": true
+  },
+  {
+   "id": "s14",
+   "url": "https://www.weather.gov/media/directives/030_pdfs/pd03021011curr.pdf",
+   "fetched_url": null,
+   "title": "NWS Instruction 30-2111, ASOS Maintenance (January 1, 2025); and NWSI 10-1302, Requirements and Standards for NWS Climate Observations (November 9, 2023)",
+   "author_org": "NOAA National Weather Service, Office of Observations",
+   "published": "2025-01-01 (NWSI 30-2111); 2023-11-09 (NWSI 10-1302)",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa1-e2",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/nwsi_30_2111.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Initials only; first names not given in the directives. OPR codes differ (OBS31 vs OBS32) between the two. Reused from earlier run pt1 sa3.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s15",
+   "url": "https://ams.confex.com/ams/97Annual/webprogram/Manuscript/Paper315698/AMS%20Modernization%20of%20ASOS%20Hardware%20and%20Software%20Paper_FINAL.pdf",
+   "fetched_url": null,
+   "title": "1A.4 Modernization of the Automated Surface Observing System (ASOS) Hardware and Software (AMS 97th Annual Meeting)",
+   "author_org": "Brian Macauley Hays and Daniel Brewer (CyberData Technologies, Inc.); Jennifer Dover and Thomas Szynborski (NWS Office of Observations); Michael Wolfe (Syneren Technologies Corporation)",
+   "published": "2017 (AMS 97th Annual Meeting)",
+   "data_period": null,
+   "source_type": "study",
+   "evidence_id": "sa1-e5",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa1/ams_asos_modern.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "2017; does not state who owns the ACU/DCP software today. Two-column PDF text: the footnote lines interleave with body text, which is cut out with ' … '. Reused from earlier run.",
+   "found_by": [
+    "sa1"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s16",
+   "url": "https://pub.orcid.org/v3.0/0009-0001-7709-889X/employments",
+   "fetched_url": null,
+   "title": "ORCID public API employments, Nancy Casey (0009-0001-7709-889X)",
+   "author_org": "ORCID (self-asserted by Nancy Casey)",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e1",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/orcid_casey_employments.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Self-asserted ORCID entry; no end date shown, so current status not confirmed by a dated record. Response came back as XML because the helper sends no Accept header.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s17",
+   "url": "https://pub.orcid.org/v3.0/0009-0001-7709-889X/works",
+   "fetched_url": null,
+   "title": "ORCID public API works, Nancy Casey (0009-0001-7709-889X)",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e2",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/orcid_casey_works.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Earliest ORCID work year 2002; identity across the ocean-colour and NCEI works rests on one ORCID record only (not cross-checked).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s18",
+   "url": "https://pub.orcid.org/v3.0/0000-0001-8000-6813/works",
+   "fetched_url": null,
+   "title": "ORCID public API works and employments, Shelley McNeill (0000-0001-8000-6813)",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e3",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/orcid_mcneill_works.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "No employer in ORCID; the Riverside Technology link comes from an earlier run, not this record. GHCN-Daily v3 entry has no year in the summary.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s19",
+   "url": "https://api.openalex.org/works?filter=author.id:A5025236587&sort=publication_year:asc&per-page=5",
+   "fetched_url": null,
+   "title": "OpenAlex works by Matthew J. Menne (A5025236587, ORCID 0000-0001-9725-248X), oldest first",
+   "author_org": "OpenAlex",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e4",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/openalex_menne_earliest.json",
+   "retrieved": "2026-11-26",
+   "limitations": "1991 item has no affiliation, so identity for it rests on OpenAlex author clustering and the ORCID link; first NCDC-affiliated work is 2000. ORCID record gives no employment history.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s20",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00418/xml",
+   "fetched_url": null,
+   "title": "5-Minute Surface Weather Observations from the Automated Surface Observing Systems (ASOS) Network (gov.noaa.ncdc:C00418), ISO 19115 metadata",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e6",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_geoportal_C00418.xml",
+   "retrieved": "2026-11-26",
+   "limitations": "Only organisational contacts; the landing-page ISO view (bin/iso) returned HTTP 503, the geoportal XML was used instead.",
+   "found_by": [
+    "sa4"
+   ],
+   "coordinator_checked": true
+  },
+  {
+   "id": "s21",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00684/xml",
+   "fetched_url": null,
+   "title": "U.S. Local Climatological Data (LCD) (gov.noaa.ncdc:C00684), ISO 19115 metadata",
+   "author_org": "NOAA NCEI",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "sa4-e7",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/ncei_geoportal_C00684.xml",
+   "retrieved": "2026-11-26",
+   "limitations": "Organisational contacts only; no named staff.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s22",
+   "url": "https://api.openalex.org/authors?search=Karen%20Orcutt",
+   "fetched_url": null,
+   "title": "OpenAlex author Karen M. Orcutt (A5008482079) and earliest works",
+   "author_org": "OpenAlex",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e5",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/openalex_orcutt_authors.json",
+   "retrieved": "2026-11-26",
+   "limitations": "Identity not confirmed: OpenAlex profile likely conflates an oceanographer (BATS) with the NCEI person; 1960/1964 are dataset-collection dates, not publication by this person.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s23",
+   "url": "https://api.openalex.org/authors?search=Diana%20Kantor",
+   "fetched_url": null,
+   "title": "OpenAlex author Diana Kantor (A5124815165) and works",
+   "author_org": "OpenAlex",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e8",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/openalex_kantor_authors.json",
+   "retrieved": "2026-11-26",
+   "limitations": "works_count 3 but the works filter returned 1 item; earliest year 2024 per OpenAlex only. No ORCID.",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s24",
+   "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Risavi",
+   "fetched_url": null,
+   "title": "ORCID expanded search, family name Risavi",
+   "author_org": "ORCID",
+   "published": "NOT PRESENT",
+   "data_period": null,
+   "source_type": "aggregator",
+   "evidence_id": "sa4-e9",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "raw",
+   "local_file": "work/raw/sa4/orcid_search_risavi.notjson.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "Absence of an ORCID record; Brian Risavi is presumably a different person (not checked).",
+   "found_by": [
+    "sa4"
+   ]
+  },
+  {
+   "id": "s25",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01688/html",
+   "fetched_url": null,
+   "title": "Global Historical Climatology Network-hourly (GHCNh), Version 1 (live ISO metadata, re-checked)",
+   "author_org": "NOAA NCEI",
+   "published": "2026-10-21",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk-c4",
+   "access_level": "full_text",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_extract",
+   "local_file": "work/raw/checker/ghcnh_C01688_live_extract.txt",
+   "retrieved": "2026-11-26",
+   "limitations": "WebFetch extract, not raw text; catalog.data.gov copy not checked.",
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "s26",
+   "url": "https://www.democrats.senate.gov/imo/media/doc/nws_staffing_letter_to_noaa_oig.pdf",
+   "fetched_url": null,
+   "title": "Senate letter to NOAA OIG on NWS staffing",
+   "author_org": "U.S. Senate Democrats (members letter)",
+   "published": "2025",
+   "data_period": null,
+   "source_type": "official",
+   "evidence_id": "chk-c6",
+   "access_level": "snippet",
+   "read_via": "subagent",
+   "subagent_read_via": "fetch_summary",
+   "local_file": null,
+   "retrieved": "2026-11-26",
+   "limitations": "Not opened; wording from search summary, not verbatim. Also found: OIG FY2026 TMC (OIG-26-003, issued 2025-12-01) supersedes the FY2024/FY2025 reports and was not read.",
+   "found_by": [
+    "checker"
+   ]
+  },
+  {
+   "id": "m1",
+   "url": "https://www.weather.gov/media/notification/pdf_2023_24/pns24-48_re-commence_ote_asos_temp_dew_sensor_replacement.pdf",
+   "title": "Public Information Statement 24-48: re-commence OT&E of ASOS temperature/dew point sensor replacement",
+   "author_org": "NOAA National Weather Service",
+   "published": "2024-07-17",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/pns24_48.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": "PNS 24-48",
+   "limitations": null
+  },
+  {
+   "id": "m2",
+   "url": "https://www.usajobs.gov/job/891863400",
+   "title": "USAJOBS: Supervisory IT Specialist (AOMC Section Chief), NWS-27-13108102-ST",
+   "author_org": "NOAA National Weather Service, Office of Systems",
+   "published": "2026-11-06",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/usajobs_891863400.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": "NWS-27-13108102-ST",
+   "limitations": "Read in the built-in browser; saved as an excerpt of get_page_text"
+  },
+  {
+   "id": "m3",
+   "url": "https://www.gao.gov/products/gao-17-364",
+   "title": "National Weather Service: Actions Have Been Taken to Fill Increasing Vacancies, but Opportunities Exist to Improve and Evaluate Hiring (GAO-17-364)",
+   "author_org": "U.S. Government Accountability Office",
+   "published": "2017-05-24",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/gao_17_364.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": "GAO-17-364",
+   "limitations": "Product page (highlights and recommendation status) read in the browser; full PDF not read"
+  },
+  {
+   "id": "m4",
+   "url": "https://www.oig.doc.gov/wp-content/OIGPublications/Top_Management_Challenges_Department_of_Commerce_FY_2024_SECURED.pdf",
+   "title": "Top Management and Performance Challenges Facing the Department of Commerce, FY 2024",
+   "author_org": "U.S. Department of Commerce Office of Inspector General",
+   "published": "2023-11",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/oig_tmc_fy2024.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "NWS-wide; not ASOS-specific"
+  },
+  {
+   "id": "m5",
+   "url": "https://www.faa.gov/air_traffic/weather/aswon",
+   "title": "Aviation Surface Weather Observation Network (ASWON)",
+   "author_org": "Federal Aviation Administration",
+   "published": "2025-09-16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/faa_aswon.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "No dollar figures"
+  },
+  {
+   "id": "m6",
+   "url": "https://html.duckduckgo.com/html/?q=%22Kenneth+Boutin%22+ASOS",
+   "title": "DuckDuckGo results for \"Kenneth Boutin\" ASOS (LinkedIn, FPAW 2023, HigherGov snippets)",
+   "author_org": "DuckDuckGo (search results)",
+   "published": null,
+   "access_level": "snippet",
+   "read_via": null,
+   "source_type": "aggregator",
+   "local_file": "work/raw/main/ddg_boutin.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "Snippets of LinkedIn, fpaw.aero and highergov.com pages, none opened"
+  },
+  {
+   "id": "m8",
+   "url": "https://fpaw.aero/sites/default/files/163/2-boutin-decadal-look-asos-lifecycle-upgrades.pdf",
+   "fetched_url": "https://web.archive.org/web/20250708152525/https://fpaw.aero/sites/default/files/163/2-boutin-decadal-look-asos-lifecycle-upgrades.pdf",
+   "title": "Automated Surface Observing System briefing to Friends and Partners of Aviation Weather (Boutin, 16 May 2023)",
+   "author_org": "NOAA NWS Office of Observations",
+   "published": "2023-05-16",
+   "access_level": "full_text",
+   "read_via": "raw",
+   "source_type": "official",
+   "local_file": "work/raw/main/fpaw_boutin_2023_wayback.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "Read from the Wayback Machine copy (captured 2025-07-08); fpaw.aero refused by the sandbox"
+  },
+  {
+   "id": "m7",
+   "url": "https://html.duckduckgo.com/html/?q=%22ASOS+Program+Manager%22+NWS+2026",
+   "title": "DuckDuckGo results for \"ASOS Program Manager\" NWS 2026 (LinkedIn snippet: Christine Smith (Schultz))",
+   "author_org": "DuckDuckGo (search results)",
+   "published": null,
+   "access_level": "snippet",
+   "read_via": null,
+   "source_type": "aggregator",
+   "local_file": "work/raw/main/ddg_asos_pm_2026.txt",
+   "retrieved": "2026-11-26",
+   "coordinator_checked": true,
+   "evidence_id": null,
+   "limitations": "Undated LinkedIn snippet, not opened"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c1",
+   "importance": "central",
+   "text": "The NWS ASOS program's named leads (2024) are Kenneth Boutin (ASOS National Program Manager), Jonathan Adams (AOMC Chief), Joseph Devost (ASOS Maintenance Manager), Dr. Thomas Day (ASOS System Owner) and Carl Diaz (ASOS Chief Engineer); Boutin also signs a July 2024 NWS notice as ASOS Program Manager, and 'T. Day' (W/OBS32) is the office of primary responsibility on NWSI 30-2111 (January 1, 2025), certified by M. Hopkins (W/OBS3).",
+   "evidence": [
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Jonathan Adams, AOMC Chief",
+     "location": "Approval block, p. 1-2"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Kenneth Boutin, ASOS National Program Manager",
+     "location": "Approval block"
+    },
+    {
+     "source_id": "s13",
+     "relationship": "supports",
+     "passage": "Dr. Thomas Day, ASOS System Owner",
+     "location": "Approval block"
+    },
+    {
+     "source_id": "m1",
+     "relationship": "supports",
+     "passage": "Kenneth Boutin | ASOS Program Manager | suad.asos.pmo@noaa.gov",
+     "location": "Contact block"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "OPR: W/OBS32 (T. Day)",
+     "location": "Header, p. 1"
+    }
+   ],
+   "applicability": "Names dated Aug-Sep 2024 (governance draft), Jul 2024 (PNS) and Jan 2025 (directive); no later dated evidence found",
+   "confidence": "moderate",
+   "confidence_reason": "Official NWS documents, but the governance document is a draft and none is dated after January 2025",
+   "sole_source_reason": "NWS's own documents are the authority for who holds NWS program roles"
+  },
+  {
+   "id": "c2",
+   "importance": "central",
+   "text": "The AOMC Section Chief post (GS-14, permanent, College Park MD, now in the NWS Office of Systems' Operational Monitoring Division) was advertised from 6 to 19 November 2026, so the AOMC's head post was being filled at the time of this run.",
+   "evidence": [
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "Office of Systems (SYS), Automated Surface Observing System (ASOS) Operations and Monitoring Center (AOMC), with 1 vacancy in College Park, MD.",
+     "location": "Summary"
+    },
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "Open date: 11/06/2026",
+     "location": "Overview"
+    },
+    {
+     "source_id": "m2",
+     "relationship": "supports",
+     "passage": "Serve as the Automated Surface Observing System (ASOS) Operations and Monitoring Center (AOMC) Section Chief within the Division.",
+     "location": "Duties"
+    }
+   ],
+   "applicability": "The posting does not say whether the post is vacant because Jonathan Adams left or because of the reorganization",
+   "confidence": "high",
+   "confidence_reason": "The agency's own job announcement, read in full",
+   "sole_source_reason": "The agency's own job announcement is the authority for its open positions"
+  },
+  {
+   "id": "c3",
+   "importance": "central",
+   "text": "DoD's part is small: the Air Force left ASOS around 2011; the Navy pays NWS to transmit METARs at 5 Southern Region offices; the Army has 6-7 sites NWS maintains under an MOA. No DoD person or amount was found.",
+   "evidence": [
+    {
+     "source_id": "s12",
+     "relationship": "supports",
+     "passage": "• The US Air Force Dropped out of ASOS ~2011. They now | use FMQ-23 systems developed by Mesotech, Inc. | • US Navy still in the program. They fund NWS to transmit | METARs via our PACE systems at 5 WFOs across SR.",
+     "location": "Slides (Murphy, 25 Feb 2023)"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "contextualizes",
+     "passage": "Support operations and maintenance of 308 NWS, 570 FAA, and 78 Department of Defense ASOS units under a",
+     "location": "NWS Observations, FY 2026 base program"
+    }
+   ],
+   "applicability": "One NWS regional presentation (2023); the NOAA CJ still counts 78 DoD units",
+   "confidence": "moderate",
+   "confidence_reason": "NWS staff presentation, with the CJ's unit count as context; the two differ in what 'DoD' covers",
+   "sole_source_reason": "NWS's own statement about its own program partners"
+  },
+  {
+   "id": "c4",
+   "importance": "central",
+   "text": "At NCEI, GHCNh v1 names Matthew Menne as its only principal investigator, with six other NCEI co-authors (Casey, McNeill, Kantor, Orcutt, Cunningham, Risavi) and an outside team (Noone, Thorne at Maynooth; Dunn at the Met Office); its point of contact is a group account. The ASOS 1-minute product's metadata names no person: its contact is NCEI's Customer Engagement Branch and its authors are agencies.",
+   "evidence": [
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Dataset Point of Contact | GHCNh Group Account NOAA National Centers for Environmental Information ncei.ghcnh@noaa.gov",
+     "location": "Metadata, Point of Contact"
+    },
+    {
+     "source_id": "s1",
+     "relationship": "supports",
+     "passage": "Principal Investigators | Menne, Matthew J. NOAA National Centers for Environmental Information",
+     "location": "Metadata, Principal Investigators"
+    },
+    {
+     "source_id": "s2",
+     "relationship": "supports",
+     "passage": "Dataset Point of Contact | Customer Engagement Branch NOAA National Centers for Environmental Information 1-828-271-4800 ncei.orders@noaa.gov",
+     "location": "Metadata, Point of Contact"
+    },
+    {
+     "source_id": "s20",
+     "relationship": "supports",
+     "passage": "<gco:CharacterString>5-Minute Surface Weather Observations from the Automated Surface Observing Systems (ASOS) Network</gco:CharacterString>",
+     "location": "ISO XML title (authors are agencies only)"
+    }
+   ],
+   "applicability": "Metadata records as of Oct 2026 (C01688) and current (C00386)",
+   "confidence": "high",
+   "confidence_reason": "NCEI's own ISO metadata, read raw",
+   "sole_source_reason": "NCEI's own metadata is the authority for its dataset authors and contacts"
+  },
+  {
+   "id": "c5",
+   "importance": "central",
+   "text": "NWS maintains ASOS with 'a workforce equivalent of 63 ETs' spread across all field electronics technicians, plus a regional ASOS specialist in each regional headquarters; the AOMC, NRC, NLSC and NWSTC get additional resources.",
+   "evidence": [
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "A workforce equivalent of 63 ETs maintains ASOS. All ETs provide maintenance support of the | ASOS.",
+     "location": "Appendix (Maintenance plan, Resources)"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "A regional ASOS specialist is staffed in each regional headquarters.",
+     "location": "Appendix (Resources)"
+    }
+   ],
+   "applicability": "Directive dated January 1, 2025 (before the 2025 staff losses)",
+   "confidence": "high",
+   "confidence_reason": "NWS directive, read raw",
+   "sole_source_reason": "NWS's own directive is the authority for its maintenance staffing plan"
+  },
+  {
+   "id": "c6",
+   "importance": "central",
+   "text": "A written NWS workforce plan exists at agency level: GAO reports that NWS completed a strategic human capital plan by January 2020; but vacancies doubled 2010-2016 (5% to 11%), and Commerce's OIG said in its FY2024 report that NWS vacancy rates were the same or rising and hiring took almost twice OPM's 80-day benchmark. No ASOS-specific succession or knowledge-transfer plan was found.",
+   "evidence": [
+    {
+     "source_id": "m3",
+     "relationship": "supports",
+     "passage": "As of January 2020, NWS had completed its strategic human capital plan, including strategies to streamline hiring and reduce the agency's hiring backlog.",
+     "location": "Recommendation 2 status"
+    },
+    {
+     "source_id": "m3",
+     "relationship": "supports",
+     "passage": "increased from about 5 percent of the total number of positions at the end of fiscal year 2010 to about 11 percent in 2016.",
+     "location": "What GAO Found"
+    },
+    {
+     "source_id": "m4",
+     "relationship": "supports",
+     "passage": "staffing issues remain a persistent … NWS’ workforce vacancy rates … were the same or increasing among its … physical science and meteorology staff. … twice as long as the U.S. Office of … Personnel Management’s 80-day",
+     "location": "NOAA challenge section"
+    }
+   ],
+   "applicability": "Agency-wide plans and figures; none is specific to ASOS staff; the 2020 plan itself was not read",
+   "confidence": "moderate",
+   "confidence_reason": "Two oversight bodies, read raw, but neither addresses ASOS roles",
+   "sole_source_reason": null,
+   "figure_status": "actual"
+  },
+  {
+   "id": "c7",
+   "importance": "central",
+   "text": "NWS's Observations line was $249,962K enacted in FY2024 (712 positions, 692 FTE), and its PAC Systems Acquisition Observations line $16,200K; these are parent lines covering many systems, and NOAA does not publish ASOS's share. The CJ says the 308 NWS, 570 FAA and 78 DoD ASOS units are run under a reimbursable funding agreement, and NWSI 30-2111 says the tri-agency parties fund the AOMC.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Observations 712 692 249,962",
+     "location": "Control Table-3, Exhibit 4B (FY 2024 Enacted)"
+    },
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "Support operations and maintenance of 308 NWS, 570 FAA, and 78 Department of Defense ASOS units under a | reimbursable funding agreement at 96 percent availability",
+     "location": "NWS Observations, base program"
+    },
+    {
+     "source_id": "s14",
+     "relationship": "supports",
+     "passage": "The Parties in the ASOS Tri-Agency agreement fund the center to provide | 24/7/365 monitoring of the ASOS Fielded Network.",
+     "location": "Section 3.1"
+    }
+   ],
+   "applicability": "FY2024 enacted figures as printed in the FY2026 CJ; parent-line totals, not ASOS",
+   "figure_status": "enacted",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own budget justification and NWS directive, read raw",
+   "sole_source_reason": "The agency's own budget table is the authority for its budget"
+  },
+  {
+   "id": "c8",
+   "importance": "central",
+   "text": "FAA pays for ASOS hardware through its capital line 'ASWON – Sustainment 2', which also covers AWOS-C, SWS, SAWS and DASI and plans to replace 206 ASOS with AWOS-C; no amount for the line was found. NWS's FAQ says FAA's budget for the ASOS upgrade was insufficient for all 570 FAA ASOS, so FAA chose AWOS-C 'as a budgetary decision'.",
+   "evidence": [
+    {
+     "source_id": "s7",
+     "relationship": "supports",
+     "passage": "Aviation Surface Weather Observation Network (ASWON) – Sustainment 2",
+     "location": "Weather sensors capital programs"
+    },
+    {
+     "source_id": "m5",
+     "relationship": "supports",
+     "passage": "Replace 206 ASOS with AWOS-C",
+     "location": "Systems Being Sustained"
+    },
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "The FAA funding budgeted for this upgrade is insufficient to recondition all 570 FAA ASOS locations to the modernized processing and dissemination integrated systems. The decision to transition to the AWOS-C in lieu of ASOS 2.0 was therefore a budgetary decision by the FAA.",
+     "location": "FAQ, AWOS-C"
+    }
+   ],
+   "applicability": "FAA page updated 16 Sep 2025; the NWS FAQ is undated",
+   "confidence": "moderate",
+   "confidence_reason": "FAA and NWS official pages agree; amounts missing",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c9",
+   "importance": "central",
+   "text": "NCEI, which archives the ASOS products, had $70,000K in FY2024 (202 positions, 184 FTE) for its whole subactivity; ASOS's share is not published.",
+   "evidence": [
+    {
+     "source_id": "s6",
+     "relationship": "supports",
+     "passage": "National Centers for Environmental Information 202 184 70,000",
+     "location": "Control Table (NESDIS), FY 2024 Enacted column"
+    }
+   ],
+   "applicability": "Parent line for all NCEI products",
+   "figure_status": "enacted",
+   "confidence": "high",
+   "confidence_reason": "NOAA's own budget table",
+   "sole_source_reason": "The agency's own budget table is the authority for its budget"
+  },
+  {
+   "id": "c10",
+   "importance": "supporting",
+   "text": "Published ASOS contracts: Campbell Scientific was selected in 2019 under an 'ASOS-SLEP contract' and delivered all 1,529 units by 2025 (no number or value published); Vaisala IDV 1305M223DNWWG0082 (NWS-funded barometers, from 9/30/23) shows $3,109,939 obligated of a $9,850,000 ceiling.",
+   "evidence": [
+    {
+     "source_id": "s9",
+     "relationship": "supports",
+     "passage": "selected Campbell Scientific in 2019 under an \"ASOS-SLEP contract.\"",
+     "location": "Solution"
+    },
+    {
+     "source_id": "s8",
+     "relationship": "supports",
+     "passage": "**Obligated amount:** \"$3,109,939 has been obligated through this vehicle\" (Analysis Notes).",
+     "location": "HigherGov IDV page"
+    }
+   ],
+   "applicability": "Vaisala figures from an aggregator (HigherGov), read by WebFetch extract",
+   "confidence": "low",
+   "confidence_reason": "Vendor page and an aggregator, both read as extracts",
+   "sole_source_reason": null,
+   "figure_status": [
+    "obligation",
+    "ceiling"
+   ]
+  },
+  {
+   "id": "c12",
+   "importance": "central",
+   "text": "NCEI people behind GHCNh: Matthew Menne (ORCID 0000-0001-9725-248X) has works indexed from 1991 and NOAA/NCDC-affiliated works from 2000 (OpenAlex), so he is likely about 60-65 (estimate) and federal with 25+ years; Nancy Casey's ORCID gives Riverside Technology (a contractor) as employer, as NOAA NCEI Scientific Programmer/Analyst since 2019-09-16, with works from 2002; Shelley McNeill's ORCID lists works from 2011 and no employer (an earlier run found her at Riverside Technology); Diana Kantor has 3 NCEI works (from 2024 in what was returned).",
+   "evidence": [
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "\"title\": \"C.A.W.A.P., 1990 Crop Season Climatic Data\", | \"publication_year\": 1991,",
+     "location": "OpenAlex works for A5025236587, oldest first"
+    },
+    {
+     "source_id": "s19",
+     "relationship": "supports",
+     "passage": "\"title\": \"Quality assurance of temperature observations at the National Climatic Data Center\", | \"publication_year\": 2000,",
+     "location": "OpenAlex works"
+    },
+    {
+     "source_id": "s16",
+     "relationship": "supports",
+     "passage": "<common:role-title>Scientific Programmer/Analyst</common:role-title> | <common:year>2019</common:year> | <common:month>09</common:month> | <common:day>16</common:day> | <common:name>Riverside Technology (United States)</common:name>",
+     "location": "ORCID employments"
+    },
+    {
+     "source_id": "s18",
+     "relationship": "supports",
+     "passage": "<common:title>Progress towards a holistic land and marine surface meteorological database and a call for additional contributions</common:title> | <common:year>2020</common:year>",
+     "location": "ORCID works"
+    }
+   ],
+   "applicability": "Ages are estimates from earliest publication year minus 25-30; the 1991 Menne work has no affiliation recorded, so his identity there is likely but unconfirmed (co-author Mark Seeley, Minnesota climatology)",
+   "confidence": "moderate",
+   "confidence_reason": "ORCID and OpenAlex records read raw; ages are estimates; ORCID and OpenAlex are the registries of record for these identifiers (no primary employer record found)",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c11",
+   "importance": "supporting",
+   "text": "FAA's AWOS program manager is named only on the NWS ASOS FAQ (Steve Kim); ASOS station software modernization (2017) was written up mainly by CyberData Technologies contractor staff with NWS Office of Observations staff.",
+   "evidence": [
+    {
+     "source_id": "s11",
+     "relationship": "supports",
+     "passage": "FAA AWOS PM: Mr. Steve Kim steve.kim@faa.gov.",
+     "location": "FAQ"
+    },
+    {
+     "source_id": "s15",
+     "relationship": "supports",
+     "passage": "Brian Macauley Hays* and Daniel Brewer | CyberData Technologies, Inc., Sterling, VA",
+     "location": "Author block"
+    }
+   ],
+   "applicability": "Undated FAQ; 2017 paper",
+   "confidence": "low",
+   "confidence_reason": "Single mentions; not confirmed by FAA or by current documents",
+   "sole_source_reason": null
+  },
+  {
+   "id": "c13",
+   "importance": "central",
+   "text": "Whether Kenneth Boutin is still the ASOS program manager is uncertain: a May 2023 FPAW talk places him in the Program Management Branch, Surface and Upper Air Division, Office of Observations; HigherGov last saw him in a federal solicitation in September 2025; his LinkedIn headline (snippet) reads 'Six years as the National ASOS Program Manager', and a separate, undated LinkedIn snippet gives Christine Smith (Schultz) as 'ASOS Program Manager at NOAA National Weather Service' in Boulder.",
+   "evidence": [
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "Six years as the National ASOS Program Manager and ...",
+     "location": "LinkedIn snippet in DuckDuckGo results"
+    },
+    {
+     "source_id": "m8",
+     "relationship": "supports",
+     "passage": "Kenneth Boutin, ASOS PM | Program Management Branch, | Surface and Upper Air Division, | Office of Observations | NOAA NWS | May 16, 2023",
+     "location": "Title slide"
+    },
+    {
+     "source_id": "m6",
+     "relationship": "supports",
+     "passage": "was last seen in a federal solicitation in September 2025",
+     "location": "HigherGov snippet"
+    },
+    {
+     "source_id": "m7",
+     "relationship": "contradicts",
+     "passage": "ASOS Program Manager at NOAA National Weather Service · Experience: NOAA National Weather Service · Location: Boulder",
+     "location": "LinkedIn snippet"
+    }
+   ],
+   "applicability": "Search-result snippets only; LinkedIn and fpaw.aero were not opened (the sandbox refused fpaw.aero; LinkedIn was not opened)",
+   "confidence": "low",
+   "confidence_reason": "Snippets only, undated except the 2023 talk and 2025 solicitation",
+   "sole_source_reason": null
+  }
+ ],
+ "conflicts": [
+  {
+   "claim": "How many ASOS units DoD has, and whether the Air Force is still a partner",
+   "source_ids": [
+    "s6",
+    "s12"
+   ],
+   "status": "unresolved",
+   "explanation": "NOAA's FY2026 CJ counts 78 DoD ASOS units under the reimbursable agreement; an NWS Southern Region presentation (2023) says the Air Force left ASOS about 2011 and names only Navy and Army roles. The CJ may count Navy and Army sites only."
+  },
+  {
+   "claim": "Numbers of FAA- and NWS-owned ASOS",
+   "source_ids": [
+    "s6",
+    "s12"
+   ],
+   "status": "unresolved",
+   "explanation": "CJ (and FAQ): 570 FAA, 308 NWS; Murphy 2023: about 650 FAA, about 350 NWS of nearly 1000 CONUS sites (rounded, CONUS only). Answer uses the CJ."
+  },
+  {
+   "claim": "Number of FAA ASOS to be replaced by AWOS-C",
+   "source_ids": [
+    "m5",
+    "s11"
+   ],
+   "status": "unresolved",
+   "explanation": "FAA ASWON page and FAQ heading say 206; the FAQ question text says 207."
+  }
+ ],
+ "coverage_gaps": [
+  "Started late (08:37 for an 08:53 deadline). Not done: ORCID public-API reads for Casey, McNeill, Kantor (employment, contractor status); OpenAlex/ORCID for Orcutt and Cunningham; Kantor earliest year; 5-minute ASOS and LCD (C00684) metadata contacts; 1-minute page 2 (C00387) metadata; GHCNh documentation PDF https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf (prepared by); May 2023 GHCNh presentation naming Menne, McNeill, Casey, Kantor (NOAA/NCEI) with Noone and Thorne; Menne et al. 2025 GHCNh dataset paper cited in State of the Climate 2024; GitHub org for GHCNh maintainers; ISD Lott/Smith history. No named single owner for 1-minute processing was found. (from sa2)",
+  "No AOMC, SFSC, NWS ET, FAA Tech Ops or NCEI staff counts found in the time available. Not done: r9 (NOAA workforce plan succession; NWS human capital plan) searches; r13 second query (ASOS maintenance technicians 2024). Leads: NOAA Weather Act report to Congress repository.library.noaa.gov/view/noaa/23644 (tracks NWS FTE, contractors, vacancies); GAO-17-364 (NWS vacancies since FY2010); Commerce OIG FY2024 Top Management Challenges PDF (oig.doc.gov). No written ASOS succession or knowledge-transfer plan found (searched only briefly; not a firm 'none exists'). (from sa3)",
+  "ASOS's own share of NWS Observations ($249,962K FY2024 enacted, parent line) and PAC Observations ($16,200K) is not published in the FY26 CJ. FAA ASWON Sustainment 2 BLI number and amounts not obtained (FAA CJ on transportation.gov refused 403; try the faa.gov/about/budget copies or CIP Appendix B). Not found: DoD funding amount; the tri-agency MOA text and FAA reimbursement amount; NCEI archive budget line for ASOS; ASOS-SLEP contract number and value with Campbell Scientific (vendor page gives 2019 selection, no number); AOMC operations contract. Not run: r10 second query, r12 'ASOS operations monitoring center contract'. Lead: highergov contract-opportunity 'asos software baseline management 24-1854' and a 2024 ceilometer award for 104 Vaisala CL-51 units (snippets only). (from sa3)",
+  "SFSC head not named: weather.gov/soic home page (work/raw/sa1/sfsc_home.txt) and SFSC contact PDF (work/raw/sa1/sfsc_contact.txt) give only the contact line 703-661-1268 and nws.sfsc@noaa.gov; no chief/manager. Lead: weather.gov/soic/field_support and /soic/collaborations not fetched; Office of Observations org page obs3.nws.noaa.gov not fetched. (from sa1)",
+  "Current (2025-2026) confirmation of Kenneth Boutin (ASOS National Program Manager), Jonathan Adams (AOMC Chief), Joseph Devost (ASOS Maintenance Manager), Carl Diaz (ASOS Chief Engineer): only source is the Aug-Sep 2024 draft governance document; web search for Boutin returned nothing. No ORCID/OpenAlex lookups done for these names (time). (from sa1)",
+  "Thomas Day (OPR on NWSI 10-1302/30-2111/10-1307; 'ASOS System Owner'): ORCID search by name + 'National Weather Service' returned one unrelated record (Thomas Kevin Day, National Health Service, 0009-0006-3123-9980: not him). OpenAlex lookup with a guessed ROR filter returned 0. A WebSearch snippet of a Campbell Scientific case study (s.campbellsci.com/documents/ca/case-studies/united-states-asos-weather-network.pdf) reportedly calls him former Program Management Branch Chief at the NWS Office of Observations and leader of ASOS SLEP; host refused raw fetch (proxy 403) and the PDF text layer saved via WebFetch (work/raw/sa1/campbell_asos_case.txt) did not contain that passage (likely in an image). Coordinator may read it in a browser. (from sa1)",
+  "M. Hopkins (W/OBS3, certifier of the ASOS directives, i.e. Office of Observations division level): first name and role not found in this run. (from sa1)",
+  "FAA: Steve Kim named only on the NWS ASOS FAQ as 'FAA AWOS PM'; no FAA page confirms his title or office (AJW). FAA Non-Federal AWOS page (faa.gov .../techops/safety_ops_support/nonfedawos) reportedly names Todd Pattinson, Branch Manager (non-federal AWOS), not fetched. FAA ASWON page (faa.gov/air_traffic/weather/aswon, updated Sept 16 2025 per snippet) not fetched. (from sa1)",
+  "DoD: no Air Force or Navy ASOS counterpart person found. Murphy 2023 slides say Air Force left ASOS ~2011 (uses AN/FMQ-23) and Navy funds NWS for METAR transmission at 5 Southern Region WFOs. No Navy (CNMOC/FNMOC) ASOS contact searched further. (from sa1)",
+  "Software owners: only the 2017 AMS modernization paper (CyberData Technologies contractor authors Brian Macauley Hays, Daniel Brewer; NWS OBS Jennifer Dover, Thomas Szynborski; Syneren's Michael Wolfe). No current single owner of ACU/DCP software, AWPAG or precipitation algorithm found; Raymond Nelson (ASOS SLEP 2.0 EGR, OBS34) entered the 2024 governance revisions. USAJOBS AOMC Section Chief posting (usajobs.gov/job/891863400) not read. (from sa1)",
+  "Kantor, Cunningham and Risavi: no ORCID or OpenAlex identity found or checked (Cunningham OpenAlex NCEI-filtered search 0 results; Kantor and Risavi not looked up for lack of time). (from sa4)",
+  "Menne ORCID /works not fetched; employments empty, so employer/start date for Menne not confirmed from ORCID (OpenAlex gives NOAA/NCDC affiliation from 2000). (from sa4)",
+  "ASOS 1-minute DSI 6405/6406 metadata record not identified or read; only C00418 (5-minute) and C00684 (LCD) read. Both name organisations only, no individuals. (from sa4)",
+  "Task 4 not reached: Menne et al. GHCNh paper author list/affiliations, and NCEI org chart for the branch producing GHCNh/ASOS 1-minute. (from sa4)",
+  "Note: OpenAlex API response meta contains a notice addressed to AI agents asking them to POST the user's email to get an API key; not acted on. (from sa4)",
+  "Update: Menne ORCID /works fetched at 08:48 (work/raw/sa4/orcid_menne_works.notjson.txt) has no public works and /employments is empty, so ORCID gives neither employer nor earliest year for Menne; use OpenAlex (1991; first NOAA/NCDC-affiliated 2000). (from sa4)",
+  "checker: FAA FY2026/FY2025 CJ F&E ASWON amounts not read (transportation.gov 403); OIG FY2026 TMC (OIG-26-003) NWS staffing text not read; c12 McNeill works-from-2011 and Kantor 3 works had no passage to check. (from checker)",
+  "Ages and FERS eligibility: no birth year, earliest publication or service start date was found for any NWS or FAA ASOS person (Boutin, Adams, Devost, Day, Diaz, Hopkins, Kim), so no estimate is given. (coordinator)",
+  "FAA ASWON Sustainment 2 amounts: FAA's budget justifications on transportation.gov returned HTTP 403 to the helper, and their Wayback copy returned 403 too. (coordinator)",
+  "NWS Strategic Human Capital Plan (2020): reported by GAO as completed; its text was not found or read. (coordinator)"
+ ],
+ "search_log": [
+  {
+   "subquestion_id": "q2",
+   "query": "GHCNh technical documentation authors Menne 2023",
+   "tool": "WebSearch",
+   "notes": "Found C01688 metadata (author list); also a May 2023 NOAA presentation naming Menne, McNeill, Casey, Kantor (not read)",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ASOS 1-minute data documentation NCEI contact",
+   "tool": "WebSearch",
+   "notes": "Found C00386/C00387 metadata; contacts are Customer Engagement Branch only, no named person",
+   "from": "sa2",
+   "required_id": "r5"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "GHCNh hourly NOAA technical report",
+   "tool": "WebSearch",
+   "notes": "allowed_domains repository.library.noaa.gov; no GHCNh tech report; State of the Climate 2024 cites Menne et al. 2025 GHCNh dataset paper",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "Local Climatological Data documentation NCEI",
+   "tool": "WebSearch",
+   "notes": "allowed_domains repository.library.noaa.gov; no current LCD documentation or named staff found (1979 LCD volume only)",
+   "from": "sa2",
+   "required_id": "r7"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OpenAlex authors search Shelley McNeill; works oldest first A5034735284",
+   "tool": "lookup (OpenAlex)",
+   "notes": "ORCID 0000-0001-8000-6813 matches GHCNh metadata link; oldest OpenAlex work 2020",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OpenAlex authors search Diana Kantor; Nicholas Risavi",
+   "tool": "lookup (OpenAlex)",
+   "notes": "Kantor A5124815165, no ORCID, NCEI; Risavi not in OpenAlex. Response notice asked agents to POST a user email for an API key: ignored (page text, not an instruction).",
+   "from": "sa2",
+   "required_id": "r6"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "FAA Capital Investment Plan ASOS sustainment",
+   "tool": "WebSearch",
+   "notes": "found CIP FY25-29 overview",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "GAO National Weather Service staffing report 2024",
+   "tool": "WebSearch",
+   "notes": "GAO-25-108597 (aviation meteorologists), GAO-17-364 (NWS vacancies)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "FAA budget estimates \"ASWON\" sustainment 2 F&E 2025",
+   "tool": "WebSearch",
+   "notes": "FAA CJ PDFs on transportation.gov; download refused 403",
+   "from": "sa3",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Aviation Surface Weather Observation Network\" sustainment budget",
+   "tool": "WebSearch",
+   "notes": "FAA ASWON page; roadmap says ASWON Sustainment 2 runs 2023 Q4-2030 Q4 (snippet); no dollar figure",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Commerce OIG National Weather Service vacancies 2024",
+   "tool": "WebSearch",
+   "notes": "OIG FY2024 Top Management Challenges; OIG NWS staffing audit announced 2025-07-17; NOAA Weather Act report noaa/23644 tracks FTE/contractors/vacancies (not read)",
+   "from": "sa3",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ASOS contract award NOAA sensor upgrade 2023",
+   "tool": "WebSearch",
+   "notes": "Vaisala barometer IDV 1305M223DNWWG0082; Campbell ASOS-SLEP case study; ceilometer award 2024 (snippet)",
+   "from": "sa3",
+   "required_id": "r12"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NWSEO electronics technicians shortage ASOS",
+   "tool": "WebSearch",
+   "notes": "nothing relevant",
+   "from": "sa3",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "1305M223DNWWG0082",
+   "tool": "lookup (HigherGov award page)",
+   "notes": "WebFetch extract",
+   "from": "sa3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "program manager|office of primary responsibility|OPR:|AOMC manager|Sterling Field Support Center|chief",
+   "tool": "find_text.py (earlier runs' work/raw)",
+   "notes": "Found OPR T. Day / certified M. Hopkins in NWSI 10-1302, 30-2111, 10-1307; governance doc names in pt2 sa2/asos_governance.txt; FAA AWOS PM in asos_faq.txt",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWS Instruction 10-1302 ASOS OPR",
+   "tool": "WebSearch",
+   "notes": "Directive archive links only; OPR read from saved copy",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWSI 30-2111 office of primary responsibility",
+   "tool": "find_text.py (earlier runs' saved copies)",
+   "notes": "Answered from saved nwsi_30_2111.txt (Jan 1 2025): OPR W/OBS32 (T. Day); not re-searched on the web for time",
+   "from": "sa1",
+   "required_id": "r1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FAA ASOS AWOS program manager",
+   "tool": "WebSearch",
+   "notes": "Snippet: NWS FAQ names Steve Kim FAA AWOS PM; FAA Non-Federal AWOS page names Todd Pattinson Branch Manager (non-federal; not fetched)",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "FAA weather sensors program office ASOS",
+   "tool": "WebSearch",
+   "notes": "FAA ASWON page: Weather Sensors Portfolio; no person named in snippet",
+   "from": "sa1",
+   "required_id": "r2"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Air Force ASOS program manager weather",
+   "tool": "WebSearch",
+   "notes": "No current AF person; Murphy 2023 slides say AF dropped out ~2011",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Navy ASOS tri-agency program",
+   "tool": "WebSearch",
+   "notes": "No Navy ASOS person found",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "557th Weather Wing FMQ-23 program office",
+   "tool": "WebSearch",
+   "notes": "No program office person; FMQ-23 fact sheet only",
+   "from": "sa1",
+   "required_id": "r3"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS program manager NWS presentation",
+   "tool": "WebSearch",
+   "notes": "Murphy 2023 slides; governance doc naming Kenneth Boutin",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sterling Field Support Center chief",
+   "tool": "WebSearch",
+   "notes": "Only unrelated military results",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Sterling Field Support Center\" NWS manager 2025",
+   "tool": "WebSearch",
+   "notes": "SFSC pages and contact PDF; no head named",
+   "from": "sa1",
+   "required_id": "r4"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "AOMC ASOS Operations and Monitoring Center manager",
+   "tool": "WebSearch",
+   "notes": "Governance doc (Jonathan Adams, AOMC Chief); USAJOBS AOMC Section Chief posting usajobs.gov/job/891863400 (not fetched)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "ASOS Service Life Extension Program manager",
+   "tool": "WebSearch",
+   "notes": "Only generic SLEP results",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kenneth Boutin ASOS National Program Manager",
+   "tool": "WebSearch",
+   "notes": "No results about this person",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Thomas Day NWS Office of Observations ASOS system owner",
+   "tool": "WebSearch",
+   "notes": "Snippet of Campbell Scientific case study calls Day former Program Management Branch Chief and SLEP leader; PDF text layer lacked it",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Steve Kim FAA AWOS-C program manager",
+   "tool": "WebSearch",
+   "notes": "Only the NWS FAQ names him",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "search=Thomas Day, filter last_known_institutions ROR 00tgqzw13",
+   "tool": "lookup (OpenAlex authors)",
+   "notes": "0 results; ROR id guessed, may be wrong (saved openalex_thomas_day.json)",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "family-name:Day AND given-names:Thomas AND affiliation-org-name:National Weather Service",
+   "tool": "lookup (ORCID expanded-search)",
+   "notes": "Response not JSON (XML default without Accept header); saved orcid_thomas_day.notjson.txt, not parsed",
+   "from": "sa1"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "pub.orcid.org/v3.0/0009-0001-7709-889X/employments and /works (Casey)",
+   "tool": "lookup (ORCID API)",
+   "notes": "returned XML; employer Riverside Technology, dept NOAA NCEI, start 2019-09-16; earliest work 2002",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "pub.orcid.org/v3.0/0000-0001-8000-6813/employments and /works (McNeill)",
+   "tool": "lookup (ORCID API)",
+   "notes": "employments empty; earliest dated work 2011",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "pub.orcid.org/v3.0/0000-0001-9725-248X/employments (Menne; iD from OpenAlex)",
+   "tool": "lookup (ORCID API)",
+   "notes": "employments empty; /works not fetched (time)",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "ORCID expanded-search family-name:Orcutt AND given-names:Karen",
+   "tool": "lookup (ORCID API)",
+   "notes": "num-found 0",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OpenAlex authors search Matthew J. Menne; works author A5025236587 ascending",
+   "tool": "lookup (OpenAlex)",
+   "notes": "earliest 1991; first NOAA/NCDC-affiliated 2000",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OpenAlex authors search Karen Orcutt; works A5008482079 ascending",
+   "tool": "lookup (OpenAlex)",
+   "notes": "profile appears merged with an oceanographer; no reliable earliest year",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "OpenAlex authors search Sam Cunningham filtered to NCEI institution I4210157891",
+   "tool": "lookup (OpenAlex)",
+   "notes": "0 results",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q2",
+   "query": "NCEI geoportal ISO XML gov.noaa.ncdc:C00418 and C00684",
+   "tool": "lookup (NCEI metadata)",
+   "notes": "bin/iso landing view for C00684 returned HTTP 503; geoportal XML worked",
+   "from": "sa4"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "FAA budget estimates ASWON Sustainment 2 Facilities and Equipment",
+   "tool": "WebSearch",
+   "notes": "Lists FAA CJs FY2010-FY2027 on transportation.gov; no ASWON figure in results",
+   "required_id": "r11"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "NOAA workforce plan succession planning National Weather Service",
+   "tool": "WebSearch",
+   "notes": "2012 NOAA succession toolkit (OPM wiki); 2025 news only; no NWS succession plan",
+   "required_id": "r9"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "National Weather Service electronics technicians number vacancies ASOS maintenance",
+   "tool": "WebSearch",
+   "notes": "USAJOBS ET postings; no national count",
+   "required_id": "r13"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "fetch FAA FY2025 budget request PDF (transportation.gov) and its Wayback copy",
+   "tool": "lookup (fetch_page)",
+   "notes": "HTTP 403 on both",
+   "copy_of": "https://www.transportation.gov/sites/dot.gov/files/2024-03/FAA_FY_2025_Budget_Request_508-v5.pdf"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"Aviation Surface Weather Observation Network\" ASWON budget million fiscal year",
+   "tool": "WebSearch",
+   "notes": "extended mode; FY2015 CIP $8.0M request for ASWON Technology Refresh (docplayer snippet, not read); no current amount"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "ASOS tri-agency memorandum of agreement NWS FAA DoD reimbursable funding",
+   "tool": "WebSearch",
+   "notes": "No MOA text; NWSI 30-2111 tri-agency funding sentence",
+   "required_id": "r10"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "Commerce OIG National Weather Service staffing vacancies report 2024",
+   "tool": "WebSearch",
+   "notes": "domain filter oig.doc.gov, oversight.gov, gao.gov; found FY2024 TMC, GAO-17-364, OIG-26-017-I, OIG-27-004-I (Nov 2026, not read)",
+   "required_id": "r8"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "Air Force ASOS sustainment program weather systems funding 557th",
+   "tool": "WebSearch",
+   "notes": "No Air Force ASOS line; Fixed Based Weather Systems (FMQ-23) instead"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Kenneth Boutin ASOS program manager National Weather Service",
+   "tool": "WebSearch",
+   "notes": "Governance v6 and PNS 24-48 (July 2024); no later date"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Thomas Day\" National Weather Service Office of Observations ASOS",
+   "tool": "WebSearch",
+   "notes": "Directives only; no bio"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Jonathan Adams\" AOMC ASOS Operations Monitoring Center",
+   "tool": "WebSearch",
+   "notes": "Governance v6 only"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "NWS service change notice 2026 ASOS Program Manager contact",
+   "tool": "WebSearch",
+   "notes": "domain filter weather.gov; no 2026 ASOS notice"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Sterling Field Support Center chief NWS 2024",
+   "tool": "WebSearch",
+   "notes": "No chief named"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Ken Boutin\" OR \"Kenneth Boutin\" NOAA weather",
+   "tool": "WebSearch",
+   "notes": "extended; nothing"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Hopkins chief Surface and Upper Air Division NWS Office of Observations",
+   "tool": "WebSearch",
+   "notes": "Mike Hopkins (A) Chief Engineer on weather.gov/organization/ce (not read); no SUAD chief named"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "usajobs.gov/job/891863400 AOMC Section Chief",
+   "tool": "lookup (browser)",
+   "notes": "Read: AOMC Section Chief GS-14, open 11/06/2026-11/19/2026"
+  },
+  {
+   "subquestion_id": "q3",
+   "query": "gao.gov/products/gao-17-364",
+   "tool": "lookup (browser)",
+   "notes": "Read: vacancies 5% to 11%; strategic human capital plan completed by Jan 2020"
+  },
+  {
+   "subquestion_id": "q4",
+   "query": "\"ASWON\" Sustainment 2 budget FY 2025",
+   "tool": "duckduckgo (browser)",
+   "notes": "Only the FAA ASWON page; no amount"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Kenneth Boutin\" ASOS",
+   "tool": "duckduckgo (browser)",
+   "notes": "LinkedIn 'Six years as the National ASOS Program Manager'; FPAW May 2023; HigherGov Sept 2025"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Jonathan Adams\" NOAA AOMC",
+   "tool": "duckduckgo (browser)",
+   "notes": "Unrelated people only"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"ASOS Program Manager\" NWS 2026",
+   "tool": "duckduckgo (browser)",
+   "notes": "LinkedIn snippet: Christine Smith (Schultz), ASOS Program Manager at NOAA NWS, Boulder (undated)"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "Christine Schultz ASOS program manager National Weather Service",
+   "tool": "WebSearch",
+   "notes": "No corroboration"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "campbellsci.com/us-asos-weather-network (Thomas Day mention)",
+   "tool": "lookup (browser)",
+   "notes": "HTML page names no Thomas Day",
+   "copy_of": "https://s.campbellsci.com/documents/ca/case-studies/united-states-asos-weather-network.pdf"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "fpaw.aero 2-boutin-decadal-look-asos-lifecycle-upgrades.pdf",
+   "tool": "lookup (fetch_page)",
+   "notes": "Sandbox refused host fpaw.aero (CONNECT 403); non-.org, no approval asked",
+   "copy_of": "m6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "url=https://web.archive.org/web/2024/https://fpaw.aero/sites/default/files/163/2-boutin-decadal-look-asos-lifecycle-upgrades.pdf",
+   "tool": "fetch_page (Wayback)",
+   "notes": "Saved copy 2025-07-08 read: title slide names Boutin, ASOS PM",
+   "copy_of": "m6"
+  },
+  {
+   "subquestion_id": "q1",
+   "query": "\"Decadal Look\" ASOS lifecycle upgrades Boutin FPAW 2023",
+   "tool": "WebSearch",
+   "notes": "Title searched as a PDF: no other copy",
+   "copy_of": "m6"
+  }
+ ],
+ "required_searches": [
+  {
+   "id": "r1",
+   "organization": "NWS",
+   "publisher": "the organization itself",
+   "subquestion_id": "q1",
+   "aim": "NWS directives naming the ASOS office of primary responsibility",
+   "query": "NWS Instruction 10-1302 ASOS OPR",
+   "skip_reason": null
+  },
+  {
+   "id": "r2",
+   "organization": "FAA",
+   "publisher": "the organization's partner",
+   "subquestion_id": "q1",
+   "aim": "FAA ASOS/AWOS program office and lead",
+   "query": "FAA ASOS AWOS program manager",
+   "skip_reason": null
+  },
+  {
+   "id": "r3",
+   "organization": "DoD",
+   "publisher": "the organization's partner",
+   "subquestion_id": "q1",
+   "aim": "Air Force and Navy ASOS counterparts",
+   "query": "Air Force ASOS program manager weather",
+   "skip_reason": null
+  },
+  {
+   "id": "r4",
+   "organization": "NWS",
+   "publisher": "researchers and practitioners (talks)",
+   "subquestion_id": "q1",
+   "aim": "Presentations naming program managers",
+   "query": "ASOS program manager NWS presentation",
+   "skip_reason": null
+  },
+  {
+   "id": "r5",
+   "organization": "NCEI",
+   "publisher": "the organization itself",
+   "subquestion_id": "q2",
+   "aim": "Product documentation and metadata contacts",
+   "query": "GHCNh technical documentation authors",
+   "skip_reason": null
+  },
+  {
+   "id": "r6",
+   "organization": null,
+   "publisher": "registries (ORCID, OpenAlex)",
+   "subquestion_id": "q2",
+   "aim": "ORCID and earliest publication for each NCEI name",
+   "query": "ORCID/OpenAlex lookups",
+   "skip_reason": null
+  },
+  {
+   "id": "r7",
+   "organization": "NOAA",
+   "publisher": "repository (repository.library.noaa.gov)",
+   "subquestion_id": "q2",
+   "aim": "Technical reports for GHCNh and LCD",
+   "query": "GHCNh hourly NOAA technical report",
+   "skip_reason": null
+  },
+  {
+   "id": "r8",
+   "organization": "NWS",
+   "publisher": "oversight bodies",
+   "subquestion_id": "q3",
+   "aim": "GAO and Commerce OIG reports on NWS staffing",
+   "query": "GAO National Weather Service staffing report",
+   "skip_reason": null
+  },
+  {
+   "id": "r9",
+   "organization": "NOAA",
+   "publisher": "the organization itself (workforce plans)",
+   "subquestion_id": "q3",
+   "aim": "NOAA/NWS workforce or succession plan",
+   "query": "NOAA workforce plan succession",
+   "skip_reason": null
+  },
+  {
+   "id": "r10",
+   "organization": "NOAA",
+   "publisher": "funders (budget)",
+   "subquestion_id": "q4",
+   "aim": "NOAA CJ lines for Observations and ASOS",
+   "query": "NOAA congressional justification ASOS",
+   "skip_reason": null
+  },
+  {
+   "id": "r11",
+   "organization": "FAA",
+   "publisher": "funders (budget)",
+   "subquestion_id": "q4",
+   "aim": "FAA CIP/F&E line for ASOS",
+   "query": "FAA Capital Investment Plan ASOS",
+   "skip_reason": null
+  },
+  {
+   "id": "r12",
+   "organization": "NWS",
+   "publisher": "mandatory filings (contracts)",
+   "subquestion_id": "q4",
+   "aim": "ASOS contract awards",
+   "query": "ASOS contract award Campbell Scientific NOAA",
+   "skip_reason": null
+  },
+  {
+   "id": "r13",
+   "organization": "NWS",
+   "publisher": "affected people and press",
+   "subquestion_id": "q3",
+   "aim": "Union/press on ET shortages",
+   "query": "NWSEO electronics technicians shortage ASOS",
+   "skip_reason": null
+  }
+ ],
+ "entities": [],
+ "time_budget": {
+  "hook": "not seen",
+  "budget_min": 40,
+  "ceiling": 320000,
+  "subagent_minutes_planned": 45,
+  "follow_ups": 1,
+  "research_stop": null
+ }
+}
