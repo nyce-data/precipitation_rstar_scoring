@@ -55,8 +55,10 @@ its findings are already in Part 4's answer. The `query_answers` copies are comm
    no other page changed). Pages still carry `../<run>/answer.md` links to other runs (ASOS pt4's follow-up link,
    and older ones in GHCN-Daily and IMERG), which don't resolve on the site.
 
-After that, categorizing the three new datasets (and adding the GES DISC/PPS and UCI CHRS archive runs to GPCP's,
-IMERG's and PERSIANN-CDR's categorizations) is in "Next steps" below.
+**NASA GES DISC + PPS run added to IMERG and GPCP (2026-11-27):** IMERG's third pass (130 → 149 items) changed RRS-1
+0 → NA, RRS-2 NA → 0 and RRS-3 NA → 0 (now 10 of 19 NA); GPCP's second pass (124 → 134) changed no score. The judgment
+calls are in each gaps note. After that: categorizing PERSIANN-CDR Daily (its UCI CHRS run is in) and the three new
+datasets, in "Next steps" below.
 
 ## Next session (start here)
 
@@ -66,8 +68,8 @@ Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitatio
   update is committed on `develop` after it.
 - **Dashboard web research pages are current** for all seven carded datasets: CoCoRaHS and USCRN Daily got cards,
   overviews and Parts 1–5 in `744041f`, and ASOS on 2026-11-27 (see "Status at a glance"). `main` and `origin/main`
-  are at `744041f`. Next for research: add the GES DISC/PPS and UCI CHRS archive runs to the categorizations (see
-  "Next steps").
+  are at `744041f`. The GES DISC/PPS run is in IMERG's and GPCP's categorizations
+  (2026-11-27); next is PERSIANN-CDR Daily with the UCI CHRS run (see "Next steps").
 - **`Rstar_query_results`:** its query templates and examples now name this project and its current paths, and its
   HANDOFF.md says finished runs are copied here (committed there on `develop` as `0c94550`, not pushed).
 - **Next, in order:**
@@ -77,8 +79,8 @@ Open sessions in this folder (`/Users/claude/SIDE_WORK/NYCE_project/precipitatio
   2. ~~The card-list script~~ **done 2026-11-25 (ninth session)**: committed on `develop` as `ebc9a90`; all 140 e2e
      tests pass (Firefox and WebKit). Not yet merged into `main` or pushed (the user runs the command in
      "Publishing"). See "Ninth session" below.
-  3. The research and categorizing work in "Next steps" (IMERG and GPCP's NASA GES DISC + PPS A2 run, then
-     PERSIANN-CDR Daily, then CoCoRaHS).
+  3. The research and categorizing work in "Next steps" (~~IMERG and GPCP's NASA GES DISC + PPS A2 run~~ done
+     2026-11-27; next PERSIANN-CDR Daily, then CoCoRaHS, USCRN Daily and ASOS).
   4. **Three new datasets:** all their runs are done. CoCoRaHS and USCRN Daily are on the dashboard (`744041f`: cards,
      overviews, Parts 1–5). **ASOS's runs (Parts 1–5 and a Part 4 follow-up) are copied in** (2026-11-27,
      `about-datasets/asos/`, question files ready). Its card, overview and Parts 1–5 are on the
@@ -273,8 +275,8 @@ GitHub Pages home page (https://lmerchant.github.io/). Committed on `develop` an
 |---|---|
 | GHCN-Daily categorization | Done (fourth pass, 2026-11-23: 210 items, re-sorted under the decisions doc's rules, with scores): `rstar-pipeline/output/categories/ghcn-daily/ghcn-daily_rstar-categories.json`. 17 subcategories NA, RRS-2 and RRS-3 at 0, R* NA |
 | GHCN-Daily research gaps | `rstar-pipeline/output/gaps-notes/ghcn-daily_categorization-gaps.md`. All four gap runs (pt6–pt9) and the NCEI A2 run are back and copied; the note's "After the gap runs" section says what each filled and what is left (mostly unpublished, so by hand or FOIA) |
-| GPCP Daily categorization | Done (first pass, 2026-11-24, plus pt7 Run 2 the same day): 124 items, 11 of 19 NA, R* NA; Run 2 changed no score. Used its 8 runs, both NCEI runs, both satellite runs and GHCN-Daily pt7/pt9 for NODD facts. No GES DISC repository run yet (its RRS gaps say so) |
-| IMERG Late Run categorization | Done (second pass, 2026-11-24, with both pt7 runs): 130 items, 11 of 19 NA, R* NA. The NASA GES DISC + PPS A2 run is not yet run (RRS-2, RRS-3 empty); what's left for people is mostly not public (gaps note) |
+| GPCP Daily categorization | Done (second pass, 2026-11-27, adding the NASA GES DISC + PPS A2 run; first pass and pt7 Run 2 2026-11-24): 134 items, 11 of 19 NA, R* NA; neither later run changed a score. Used its 8 runs, both NCEI runs, the NASA A2 run, both satellite runs and GHCN-Daily pt7/pt9 for NODD facts |
+| IMERG Late Run categorization | Done (third pass, 2026-11-27, adding the NASA GES DISC + PPS A2 run): 149 items, 10 of 19 NA, R* NA. RRS-1 0 → NA, RRS-2 and RRS-3 NA → 0 (the user kept these calls, 2026-11-27; list in the gaps note). What's left (people, fixity schedules, DR tests) is mostly not public |
 | PERSIANN-CDR Daily | Research exists; not categorized. Coverage notes and supplemental queries written 2026-11-23 (see Research queue) |
 | CoCoRaHS (new dataset, id `cocorahs`) | Parts 1–5 and its data-site A2 (pt6) ran 2026-11-25/26; copied into `web-research/` (`about-datasets/cocorahs/`, `archives/cocorahs/`). Not categorized. Metadata JSON, card, overview and Parts 1–5 on the dashboard (`744041f`); its data-site run has no archive page |
 | ASOS (new dataset, id `asos`) | Parts 1–5 and a Part 4 follow-up ran 2026-11-26; copied into `web-research/about-datasets/asos/` with question files (2026-11-27). Scored as the network as a whole. Not categorized. Metadata JSON, card, overview and Parts 1–5 on the dashboard (2026-11-27) |
@@ -283,7 +285,7 @@ GitHub Pages home page (https://lmerchant.github.io/). Committed on `develop` an
 | Feedback on the first pass | `notes/claude_feedback/first_pass_to_categorize.md`. All answered (see Open questions) |
 | Categorization rules | `rstar-pipeline/input/framework/rstar-categorization-decisions.md`, the master copy the user edits (2026-11-23). All its changes are applied. No Word copies are kept in the repo (they went out of sync); the user makes one with pandoc when needed |
 | Categorization viewer | Done: static site in `app/` (landing page with R* scores and key, 4 category pages with card scores, "Your score" radios and a score panel with raw total and contribution, and the score graph page) |
-| e2e tests | 152 pass (Firefox and WebKit, 2026-11-27, run by Claude in the Terminal panel, after ASOS's card and pages were added: seven cards, and ASOS's overview and five parts are opened). Earlier: 116 pass (58 tests × Firefox and WebKit, 2026-11-24; score choices in `app/e2e/test_scores.py`, saving in `app/e2e/test_save.py`, the score graph in `app/e2e/test_graph.py`), Python Playwright. The empty-subcategory test now empties RRS-2 by intercepting `rstar-data.js`. Avoid `all_text_contents()`: it crashes this page in Playwright's Firefox |
+| e2e tests | 152 pass (Firefox and WebKit, 2026-11-27, run by Claude in the Terminal panel, last after the NASA GES DISC + PPS run was added to IMERG and GPCP; before that after ASOS's card and pages were added: seven cards, and ASOS's overview and five parts are opened). Earlier: 116 pass (58 tests × Firefox and WebKit, 2026-11-24; score choices in `app/e2e/test_scores.py`, saving in `app/e2e/test_save.py`, the score graph in `app/e2e/test_graph.py`), Python Playwright. The empty-subcategory test now empties RRS-2 by intercepting `rstar-data.js`. Avoid `all_text_contents()`: it crashes this page in Playwright's Firefox |
 | Score graph (weighted network graph) | Built 2026-11-24: `app/graph.html` + `app/assets/graph.js` (see "The score graph"), with evidence nodes behind an on/off switch. Knowledge graph not started |
 | Query plans and templates | `rstar-pipeline/processing/research-queries/dataset-query-5-part-plan.md` (five parts per dataset) and `rstar-pipeline/processing/research-queries/archive-query-plan.md` (three kinds of repository, and a register of repositories). Templates in `Rstar_query_results/queries/` (see Research queries) |
 | Guide for sharing | `rstar-pipeline/processing/research-queries/rstar-query-templates-guide.md` (2026-11-23): the query design, files, how to adapt it to other climate data, and starter prompts. Written for a friend of the user who will get the files in a new GitHub repo the user is making |
@@ -329,7 +331,7 @@ page import.
 | GPCP pt7 Run 2 (calibration, alternatives, copies) | `rstar-pipeline/input/web-research/about-datasets/gpcp-daily/2026-11-24_gpcp-daily-calibration-copies-pt7/` | Ran 2026-11-24; copied; added to GPCP's categorization (22 items; judgment calls in the gaps note's "What pt7 Run 2 added") |
 | IMERG pt7 Run 1 (people and production) | `rstar-pipeline/input/web-research/about-datasets/imerg-late-run/2026-11-24_imerg-late-run-people-production-pt7/` | Ran 2026-11-24; copied; added to IMERG's categorization (second pass) |
 | PERSIANN-CDR pt7 (people and production) | `datasets-gap-queries/<id>_gap-queries/`; run sheet `datasets-gap-queries/supplemental-queries-run-sheet.md` | To rewrite and run |
-| NASA GES DISC + PPS A2; UC Irvine CHRS A2 | `rstar-pipeline/input/web-research/archives/nasa-gesdisc-pps/` and `archives/uci-chrs/` | Ran 2026-11-27; copied 2026-11-27. Not yet used in GPCP's, IMERG's or PERSIANN-CDR's categorization |
+| NASA GES DISC + PPS A2; UC Irvine CHRS A2 | `rstar-pipeline/input/web-research/archives/nasa-gesdisc-pps/` and `archives/uci-chrs/` | Ran 2026-11-27; copied 2026-11-27. The NASA run is in IMERG's (third pass) and GPCP's (second pass) categorizations; the UCI CHRS run waits for PERSIANN-CDR's |
 | CoCoRaHS Parts 1–5 and its data-site A2 | `rstar-pipeline/input/web-research/about-datasets/cocorahs/` and `archives/cocorahs/` | Ran 2026-11-25/26; copied. Not categorized |
 | ASOS Parts 1–5 (+ Part 4 follow-up) | `Rstar_query_results/web_search_results/2026-11-26_asos-*` | Ran 2026-11-26; `query_answers` copies committed there (`cc94615`) and copied into `about-datasets/asos/` (2026-11-27). NCEI-hosted: no repository run |
 | USCRN Daily Parts 1–5 | `rstar-pipeline/input/web-research/about-datasets/uscrn-daily/` | Ran 2026-11-26/27 in pt2; merged into `Rstar_query_results` and copied 2026-11-27. Not categorized |
@@ -638,9 +640,9 @@ a long while). **Steps 2–3 done 2026-11-25** (ninth session): `build_datasets.
 metadata JSON's `dashboard` block, so a card is edited in one place. Step 4 done: 140 e2e tests pass; committed as
 `ebc9a90`.
 
-0. **Next:** IMERG's people run is in (second pass, 2026-11-24). Add the NASA GES DISC + PPS A2 run to IMERG (and
-   GPCP's RRS) with Prompt 5: it is back and copied (`archives/nasa-gesdisc-pps/`, 2026-11-27); the gaps note's "For the NASA GES DISC + PPS A2 run" lists what it
-   should search. Then PERSIANN-CDR Daily.
+0. **Next:** categorize PERSIANN-CDR Daily (its UCI CHRS A2 run is in `archives/uci-chrs/`; its pt7 people run is
+   still to rewrite and run). ~~Add the NASA GES DISC + PPS A2 run to IMERG and GPCP~~ **done 2026-11-27** (IMERG third
+   pass, GPCP second pass; see their gaps notes' judgment calls).
    *Done 2026-11-24 (kept for reference): categorize IMERG Late Run (id `imerg-late-run`)* in a new session, once the user has copied in the last of
    its query results. GHCN-Daily and GPCP Daily are done and committed (`aca2bfa`, `2ef9e52`); the user is publishing
    them by merging `develop` into `main` and pushing.
@@ -666,13 +668,13 @@ metadata JSON's `dashboard` block, so a card is edited in one place. Step 4 done
      web research pages from the newer runs too (see "The dashboard").
 1. **Copy finished runs into `rstar-pipeline/input/web-research/`** as they come back, following
    `notes/dashboard/web-research-prep-howto.md` (dataset runs into `about-datasets/<id>/`, repository runs into
-   `archives/<repository>/`, then the question files and the page import). Everything is copied, ASOS last (2026-11-27). The GES DISC/PPS and UCI CHRS archive runs are in, so the
-   categorizations that waited on them can go ahead: GPCP's and IMERG's RRS (GES DISC), and PERSIANN-CDR's (UCI CHRS).
+   `archives/<repository>/`, then the question files and the page import). Everything is copied, ASOS last (2026-11-27). The GES DISC/PPS run is now in GPCP's and IMERG's
+   categorizations (2026-11-27); the UCI CHRS run waits for PERSIANN-CDR's.
 2. **Review GHCN-Daily's fourth-pass stance calls** (listed in the session that made them): 15 items became
    context, including P-2's NCEI-wide retirements (P-2 is now NA), D-1's rejected FY2026 request, five D-5 items with
    no GHCN-Daily tie, and the Data Rescue snapshot. Also P-2's retirement estimates and RRS-1's single-region items.
-3. **Review GPCP Daily's judgment calls** (list in its gaps note) and add the NASA GES DISC + PPS A2 run when it is back
-   (fills GPCP's GES DISC RRS gaps). **Point values settled (user, 2026-11-27):** `how_to_score_rstar.md`'s DIRS-2
+3. **Review GPCP Daily's and IMERG's judgment calls** (lists in their gaps notes; the NASA GES DISC + PPS A2 run was
+   added 2026-11-27, and the user kept IMERG's RRS-1 to RRS-3 calls from it). **Point values settled (user, 2026-11-27):** `how_to_score_rstar.md`'s DIRS-2
    25, P-3 25, DIRS-4 15 are right; the decisions doc's table (which said 20, 20, 20) was corrected to match. The site
    already used these, so no score changed.
    **Categorize PERSIANN-CDR Daily and IMERG Late Run** once their pt7 and repository runs are back, using

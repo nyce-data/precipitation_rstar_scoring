@@ -1,4 +1,4 @@
-"""Build the GPCP Daily R* categorization JSON (first pass 2026-11-24; pt7 Run 2 added the same day).
+"""Build the GPCP Daily R* categorization JSON (second pass, 2026-11-27; first pass and pt7 Run 2 2026-11-24).
 
 Hand-sorted evidence from every answer file in rstar-pipeline/input/web-research/ that bears on GPCP Daily
 (1DD V1.3, the NOAA CDR at NCEI, and V3.x Daily, from NASA MEaSUREs at GES DISC with a V3.3 CDR copy at NCEI):
@@ -7,10 +7,14 @@ Hand-sorted evidence from every answer file in rstar-pipeline/input/web-research
   calibration-copies-pt7, its Run 2 on calibration, alternatives and copies);
 - the two archives/noaa-ncei runs (A1 threats, A2 resilience; the A2 run covers GPCP Daily by name);
 - instruments/nasa-satellites and instruments/noaa-satellites (GPM, Aqua, DMSP, POES, S-NPP, GOES);
+- archives/nasa-gesdisc-pps (A2 resilience run; its GES DISC findings, added in the second pass);
 - for NCEI-wide and NODD facts only, the GHCN-Daily repository runs pt7 and pt9.
 Left out: instruments/noaa-rain-gauges (GPCP's gauges come only through DWD's GPCC analysis; no run ties US
 gauge networks to it) and the other GHCN-Daily runs.
-Not available: no repository run for NASA GES DISC, NCAR GDEX or Copernicus CDS (their RRS gaps say so).
+Not available: no repository run for NCAR GDEX or Copernicus CDS (their RRS gaps say so).
+
+Second pass (2026-11-27): added the NASA GES DISC + PPS A2 run to D-2, D-3 and RRS-1 to RRS-5 for GES DISC, which
+holds V3.x (the run found no PPS copy of GPCP).
 
 Filing rules: rstar-pipeline/input/framework/rstar-categorization-decisions.md. Steps: rstar-pipeline/processing/instructions/categorize-dataset-instructions.md.
 Markdown links [label](url) in the text become <a> tags (rstar_common.py does the writing and scoring).
@@ -39,6 +43,7 @@ NASA_SAT = "2026-11-18_nasa-satellite-precip-threats"
 NOAA_SAT = "2026-11-18_noaa-satellite-precip-threats"
 GH_REPO = "2026-11-22_ghcn-daily-repository-pt7"
 GH_RRS = "2026-11-23_ghcn-daily-repository-resilience-pt9"
+GDP = "2026-11-27_gesdisc-pps-resilience"  # archives/nasa-gesdisc-pps A2 run
 
 # Each evidence item is (confidence, source run, text, stance[, repository for RRS]); stance toward the
 # subcategory's statement: F = for, A = against, C = context (not directly tied, or doesn't show it true or false).
@@ -58,6 +63,24 @@ SRC_TAR = "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Da
 MATRIX = "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Precipitation_GPCP-Daily/MaturityMatrix_01B-35.pdf"
 ATBD33 = "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/GPCP_ATBD_V3.3_Daily.pdf"
 README33 = "https://measures.gesdisc.eosdis.nasa.gov/data/GPCP/GPCPDAY.3.3/doc/README.GPCPV3.3_Daily.pdf"
+# NASA GES DISC + PPS A2 resilience run (2026-11-27)
+GD_FORUM = "https://forum.earthdata.nasa.gov/viewtopic.php?t=8190"
+WGISS61 = "https://ceos.org/document_management/Working_Groups/WGISS/Meetings/WGISS-61/8.7%20WGISS-61%20NASA_s%20evolving%20Archive%20Guidelines%20for%20the%20cloud.pdf"
+OIG_DAAC = "https://oig.nasa.gov/docs/IG-20-011.pdf"
+OIG_OPEN26 = "https://oig.nasa.gov/wp-content/uploads/2026/10/or-10-26.pdf"
+ADURD = "https://www.earthdata.nasa.gov/s3fs-public/imported/423-10-69_ADURD_RevB.pdf"
+CMR_GRANULE = "https://cmr.earthdata.nasa.gov/search/granules.umm_json?short_name=GPM_3IMERGHHL&version=07&page_size=1"
+ORCA_BUCKET = "https://nasa.github.io/cumulus-orca/docs/developer/deployment-guide/deployment-s3-bucket"
+ORCA_RECON = "https://nasa.github.io/cumulus-orca/docs/developer/research/research-reconciliation"
+LZARDS = "https://nasa.github.io/cumulus/docs/workflow_tasks/lzards_backup/"
+CTS_LIST = "https://amt.coretrustseal.org/certificates/"
+WDS_GESDISC = "https://worlddatasystem.org/member-highlight-goddard-earth-sciences-data-and-information-services-center/"
+EDL_STATUS = "https://status.earthdata.nasa.gov/client_applications/21/history"
+EDL_STATUS2 = "https://status.earthdata.nasa.gov/client_applications/21/history?page=2"
+ENX = "https://sam.gov/workspace/contract/opp/155dc55f43934efe8e91537863f990b7/view"
+ENX_FORECAST = "https://www.highergov.com/contract-forecast/earth-science-data-and-information-system-esdis-1121962"
+IA_HISTORY = "https://www.earthdata.nasa.gov/data/alerts-outages/content/data-alert-history/17367"
+GESDISC_ALERTS = "https://disc.gsfc.nasa.gov/information/alerts"
 RELNOTES = "https://docserver.gesdisc.eosdis.nasa.gov/public/project/MEaSUREs/GPCP/Release_Notes.GPCPV3.3.pdf"
 C01726 = "https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C01726.xml"
 C00999 = "https://data.noaa.gov/waf/NOAA/NESDIS/ncei/aim/iso/xml/C00999.xml"
@@ -232,12 +255,12 @@ D2 = [
     (M, NCEI_A2, f"NCEI is moving all its data to AWS through spring 2027 as a \"lift and shift\" ([NCEI]({CLOUD})); OIG found the target platform \"resides in a single region\" ([OIG-24-034-A]({OIG24})). Its single-region recommendation is listed \"Closed\" with no published action, and the production regions are not published.", "F"),
     (H, PT1, f"GPCP Daily is served by several organizations: NCEI (HTTPS, and V3.3 from its open-data bucket), NOAA's NODD copies on AWS and Google, NASA GES DISC (V3.2 and V3.3, Earthdata Cloud), NCAR GDEX ([d728007]({GDEX7}), [d728009]({GDEX9})) and Copernicus CDS ([CDS]({CDS_PAGE})). Each version has at least two.", "A"),
     (L, NCEI_A2, f"GPCP Daily also has a copy in NCEI's own `climatedatarecords` cloud bucket, with year folders 1998–2025 ([NCEI archive S3]({CDR_BUCKET})); its region and number of copies were not seen.", "A"),
-    (M, PT3, "GES DISC serves V3.3 from NASA Earthdata Cloud in AWS us-west-2 (CMR). No source describes its backup or failover.", "C"),
+    (M, GDP, f"GES DISC, the archive of record for V3.x, stores its data in \"the AWS region US West (Oregon), or us-west-2\" ([GES DISC, Earthdata Forum, 2026]({GD_FORUM})). ESDIS counts Availability Zones \"up to 60 miles\" apart within one Region as its off-site copy ([ESDIS, WGISS-61, 2026]({WGISS61})), and NASA's inspector general recorded ESDIS calling one-vendor storage \"a single point of failure\" ([IG-20-011, 2020]({OIG_DAAC})); no later document says a backup outside that vendor was built. The run found no PPS copy of GPCP.", "F"),
     (M, PT7B, f"Outside NOAA, 1DD V1.3's copies are stale: NCAR GDEX holds it to 2024-11-01 ([GDEX d728007]({GDEX7})) and Copernicus CDS to March 2024 ([CDS]({CDS_PAGE})); the GSFC backup folder was unreachable ([GSFC]({GSFC_BACKUP})). V1.3's current data are held only by NCEI and its NODD copies.", "F"),
     (M, PT7B, f"V3.3 Daily is current off NASA's systems: Copernicus CDS (Europe) holds it through 2025-12-31, the same end as GES DISC's record, updated twice a year (catalogue updated 2026-10-06; [CDS catalogue]({CDS_API})), and ESGF obs4MIPs holds a reformatted copy (v20260220) at two US DOE sites, ORNL and NERSC ([ESGF]({ESGF})).", "A"),
 ]
 D2_GAPS = [
-    ("U", "GES DISC's storage and backup design (no NASA repository run yet)."),
+    ("P", "Whether GES DISC holds any copy of V3.x outside us-west-2, or runs Cumulus's ORCA backup (ESDIS holds this; not public)."),
     ("P", "NCEI's production AWS regions, and whether the Asheville tapes are kept after the move."),
 ]
 
@@ -249,9 +272,12 @@ D3 = [
     (M, PT4, f"GDEX's copies are at risk from NSF's planned NCAR break-up; its wind-down plan points users of copied datasets to NCEI ([GDEX]({GDEX_WD})).", "F"),
     (L, PT1, "NCEI's V3.3 landing page returned HTTP 503 during the run and has no Wayback copy; its ISO XML was read instead.", "F"),
     (H, PT2, "GES DISC needs an Earthdata Login and Copernicus CDS a login and licence acceptance; NCEI's HTTPS and S3 routes and GDEX need none.", "C"),
+    (M, GDP, f"ESDIS's support contract EED-3 ends January 31, 2027, and its successor, ESDIS Next (ENX), is still only a sources-sought notice: SAM.gov marks it \"Inactive\" and says \"No solicitation exists\" (last updated 2026-10-23; [SAM.gov]({ENX})), against a forecast award in the third quarter of FY2026 ([HigherGov]({ENX_FORECAST})).", "F"),
+    (M, GDP, f"Earthdata Login, which every GES DISC download goes through, had token generation degraded from December 16 to 21, 2025, and shorter degraded spells on seven days between December 2025 and November 19, 2026 ([Earthdata Status]({EDL_STATUS}); [page 2]({EDL_STATUS2})).", "F"),
 ]
 D3_GAPS = [
-    ("U", "Funding and staffing of GES DISC and Copernicus CDS (no repository run for either)."),
+    ("U", "Funding and staffing of Copernicus CDS (no repository run)."),
+    ("S", "The ENX award for ESDIS, which supports GES DISC (none by November 2026; SAM.gov notice RFI-NASA-GSFC-ENX)."),
     ("P", "NODD contract end dates for AWS and Google."),
 ]
 
@@ -358,6 +384,8 @@ RRS1 = [
     (H, NCEI_A2, f"At NCEI both CDRs are archived in Asheville, whose offsite tape copy is \"several kilometers away\"; NCEI documents dispersed copies only for Boulder's own holdings ([CoreTrustSeal application]({CTS})). The run finds RRS-1 not shown for GPCP Daily.", "A", NCEI_R),
     (M, NCEI_A2, f"OIG found NCEI's cloud target \"resides in a single region\" ([OIG-24-034-A]({OIG24})); the recommendation is \"Closed\" with no published action, and the AWS regions after the move are not published.", "A", NCEI_R),
     (M, NCEI_A2, f"Nothing published says the NODD copies are checked against NCEI's archive; the bucket listing shows only S3 ETags ([AWS listing]({AWS_LIST})).", "A", NODD),
+    (M, GDP, f"GES DISC keeps V3.x in one AWS Region (us-west-2) by design: ESDIS meets its \"1 copy located off-site\" rule with Availability Zones \"up to 60 miles\" apart, uses S3 versioning and object lock instead of extra copies ([ESDIS, WGISS-61, 2026]({WGISS61}); [GES DISC, Earthdata Forum]({GD_FORUM})), and was recorded calling one-vendor storage \"a single point of failure\" ([IG-20-011, 2020]({OIG_DAAC})). The run found no PPS copy of GPCP.", "A", GESDISC),
+    (M, GDP, f"ESDIS's DAAC requirements ask for an off-site backup of products only as \"selected data products, depending on need\" ([ADURD Rev B, 2017]({ADURD})); whether GES DISC runs Cumulus's backup tools (ORCA, LZARDS), and in which Region, is not published ([ORCA]({ORCA_BUCKET}); [LZARDS]({LZARDS})).", "C", GESDISC),
     (M, PT1, "The copies are not all current: GDEX holds V1.3 to 2024-11-01 and V3.2; CDS holds v1.3 only to March 2024; which version the NODD buckets hold is not confirmed.", "A", "NSF NCAR GDEX, Copernicus CDS, AWS and Google Cloud (NODD)"),
     (L, NCEI_A2, f"NCEI's own `climatedatarecords` bucket holds a GPCP Daily copy (1998–2025) separate from NODD ([NCEI archive S3]({CDR_BUCKET})); its region and copies are unknown.", "C", NCEI_R),
     (M, PT7B, f"Copernicus CDS (ECMWF, Europe) holds V3.3 Daily through 2025-12-31, the same end as NASA's own record, updated twice a year (catalogue updated 2026-10-06; [CDS catalogue]({CDS_API})). With GES DISC that gives V3.3 two current copies on two continents.", "F", CDS),
@@ -366,7 +394,7 @@ RRS1 = [
     (M, PT7B, f"The GSFC backup folder ([meso.gsfc.nasa.gov]({GSFC_BACKUP})) was unreachable and has no Wayback captures, and gpcp.umd.edu now points to a UMD page with monthly summaries only ([UMD ESSIC]({UMD_GP})); neither shows a Daily copy.", "C", "NASA GSFC, UMD ESSIC (not repositories)"),
 ]
 RRS1_GAPS = [
-    ("U", "How many copies GES DISC keeps, and where (no NASA repository run)."),
+    ("P", "Whether GES DISC holds any copy of V3.x outside us-west-2, or runs ORCA (ESDIS holds this)."),
     ("P", "NCEI's production AWS regions and copy count after the move."),
     ("S", "Which version the NODD buckets hold and whether it is current (asked in pt7 Run 2, not answered)."),
     ("S", "The GSFC backup folder's contents (unreachable); ESGF V3.3's last file date (its file search failed)."),
@@ -376,9 +404,11 @@ RRS2 = [
     (H, NCEI_A2, f"GPCP Daily v1.3's stewardship maturity report scores \"Data Integrity - 3.5\": checksums are \"generated at ingest\" and \"verified when customer orders data\", with no re-verification schedule, and \"No known external audits of the archive performed at this time\" ([DSMR-00163]({DSMR163})).", "A", NCEI_R),
     (H, NCEI_A2, f"NCEI's CoreTrustSeal application (certified to January 29, 2028) says a file's MD5 is checked \"Any time a file is pulled\" and that scripts compare file sizes between copies \"on a routine basis\", with no frequency ([CoreTrustSeal]({CTS})). The procedure (SOP 60-6-015) is not public.", "A", NCEI_R),
     (M, GH_RRS, f"AWS says S3 \"regularly\" verifies stored data with checksums, with no frequency ([AWS]({AWS_S3})); no NOAA or provider document says the NODD copy is verified against NCEI's.", "C", NODD),
+    (M, GDP, f"ESDIS requires checksums at GES DISC only for transfers: each DAAC system \"shall ensure data integrity through the use of checksums\" at ingest, archive and distribution, with no re-check interval ([ADURD Rev B]({ADURD})). No checksum algorithm or check frequency is published for GES DISC or Earthdata Cloud, and the one NASA granule record checked (IMERG) carries no checksum.", "A", GESDISC),
+    (H, GDP, f"GES DISC is not CoreTrustSeal-certified, though five other NASA data centers are ([CoreTrustSeal]({CTS_LIST})); it has been a World Data System Regular Member since September 2014 ([WDS]({WDS_GESDISC})).", "C", GESDISC),
 ]
 RRS2_GAPS = [
-    ("U", "Checksum practice at GES DISC."),
+    ("P", "Any fixity schedule at GES DISC or Earthdata Cloud (in ESDIS operations documents; GES DISC user services or a FOIA request)."),
     ("S", "Checksum practice at GDEX and CDS: neither copy's page shows checksums (pt7 Run 2)."),
     ("P", "NCEI's SOP 60-6-015."),
 ]
@@ -386,10 +416,12 @@ RRS2_GAPS = [
 RRS3 = [
     (M, GH_RRS, f"OIG found that NCEI's cloud target platform, at its moderate impact level, does not offer \"testing contingency plans at alternate processing sites\" ([OIG-24-034-A]({OIG24})).", "A", NCEI_R),
     (H, NCEI_A2, f"NCEI has an Information System Contingency Plan with an annual Business Impact Analysis, daily and weekly off-site backups and COOP plans, but it \"cannot be shared outside the US Government\", and no test date or result appears anywhere ([CoreTrustSeal]({CTS})).", "C", NCEI_R),
+    (M, GDP, f"Targeted searches found no published disaster recovery or continuity plan, and no record of a recovery test, for ESDIS or GES DISC. ESDIS requires each DAAC system to have \"the capability to restore its archive to avoid permanent loss of archived data\" ([ADURD Rev B]({ADURD})), but no test of it is published; the only documented exercise is Earthdata Login's failover test on February 12, 2026, which covers logins, not data ([Earthdata Status]({EDL_STATUS})).", "A", GESDISC),
 ]
 RRS3_GAPS = [
     ("P", "NCEI's contingency-plan test results."),
-    ("U", "Disaster recovery plans at GES DISC, GDEX and CDS."),
+    ("P", "GES DISC's and ESDIS's disaster recovery plans and test results (held at NASA Goddard; GES DISC user services or a FOIA request)."),
+    ("U", "Disaster recovery plans at GDEX and CDS."),
 ]
 
 RRS4 = [
@@ -399,6 +431,8 @@ RRS4 = [
     (M, PT4, f"GES DISC is funded inside NASA's Earth Science Data Systems, whose FY2027 request is $124.8M (FY2024 op plan 311.5 $M), with the data centers to be consolidated ([NASA FY2027 request]({NASA27}); [NASA ESDS]({ESDS26})). Pending.", "A", GESDISC),
     (M, GH_RRS, f"The NODD copies have no guaranteed term: AWS's sponsorship \"covers the cost of storing and sharing\" with no term stated ([AWS]({AWS_SPONSOR})), and Google states no SLA ([Google]({GOOGLE_PD})).", "A", NODD),
     (M, PT4, f"GDEX faces NSF's planned NCAR break-up (announced December 2025, partly blocked June 2026) and has a wind-down plan ([GDEX]({GDEX_WD})).", "A", GDEX),
+    (M, GDP, f"NASA OIG's 2020 recommendation for an independent analysis of the cloud's long-term financial sustainability was still open on October 15, 2026 ([NASA OIG]({OIG_OPEN26})), and ESDIS says \"Our budgets are not in lock-step with our data growth\" ([ESDIS, WGISS-61]({WGISS61})).", "A", GESDISC),
+    (M, GDP, f"ESDIS's support contract EED-3 ends January 31, 2027, and its successor, ENX, is still a sources-sought notice marked \"Inactive\" with \"No solicitation exists\" (last updated 2026-10-23; [SAM.gov]({ENX})).", "C", GESDISC),
 ]
 RRS4_GAPS = [
     ("U", "Funding of Copernicus CDS."),
@@ -411,11 +445,13 @@ RRS5 = [
     (M, NCEI_A2, "The other 8% of Helene's ingest backlog is not accounted for, and no final loss count was published.", "A", NCEI_R),
     (M, NCEI, f"About 27 NCEI products were retired or cut back from April 2025 ([NESDIS 2025 Notice of Changes]({NESDIS_2025})); their existing data were kept. GPCP is not among them.", "A", NCEI_R),
     (M, NASA_SAT, "GES DISC kept distributing data through Goddard's 2025 workforce losses and the 43-day shutdown (October 1 – November 12, 2025), and released GPM V08 in spring 2026. No data loss was reported.", "F", GESDISC),
+    (M, GDP, f"GES DISC's October 28–30, 2026 ingest pause for the consolidated ingest migration ended (resolved November 2) with search and download up and no loss reported ([Earthdata]({IA_HISTORY})); its alerts from August to November 2026 list service retirements and GPM V08 recalls but no lost granules ([GES DISC alerts]({GESDISC_ALERTS})). No after-action report was published, so \"no loss\" rests on silence.", "F", GESDISC),
     (M, NCEI_A2, f"NCEI's cloud move is a disruption still under way: its alert (November 16–30, 2026) says to \"Expect delayed data archival\" and states no loss ([NCEI Alerts]({ALERTS})).", "C", NCEI_R),
     (M, PT5, "GPCP Daily's own record came through the 2024–2026 input losses (the V3.3 pause and restart; V1.3 kept extended). That is a production track record, not the repository's.", "C", "NOAA NCEI, NASA GES DISC"),
 ]
 RRS5_GAPS = [
-    ("U", "GES DISC's, GDEX's and CDS's holdings before and after a disruption."),
+    ("P", "After-action reports for GES DISC's 2025–2026 disruptions (none published)."),
+    ("U", "GDEX's and CDS's holdings before and after a disruption."),
     ("S", "A final Helene loss count; whether the 2026 migration delays GPCP Daily."),
 ]
 

@@ -68,13 +68,13 @@ The query design:
 
 ## Where each dataset stands (update this table when you finish a pass)
 
-As of 2026-11-24:
+As of 2026-11-27:
 
 | Dataset | State | Script and gaps note | Still to come |
 |---|---|---|---|
 | GHCN-Daily (`ghcn-daily`) | Fourth pass, 2026-11-23: 210 items, 17 of 19 NA, RRS-2 and RRS-3 at 0, R* NA | `build_ghcn-daily.py`, `ghcn-daily_categorization-gaps.md` | All gap runs (pt6–pt9) and the NCEI A2 run are in; what's left is mostly unpublished (by hand or FOIA). The user has yet to review the fourth pass's stance calls (see Precedents) |
-| GPCP Daily (`gpcp-daily`) | First pass plus pt7 Run 2, 2026-11-24: 124 items, 11 of 19 NA, R* NA | `build_gpcp-daily.py`, `gpcp-daily_categorization-gaps.md` | The NASA GES DISC + PPS A2 run (fills its GES DISC RRS gaps). Its judgment calls await the user's review |
-| IMERG Late Run (`imerg-late-run`) | Second pass, 2026-11-24 (both pt7 runs): 130 items, 11 of 19 NA, R* NA | `build_imerg-late-run.py`, `imerg-late-run_categorization-gaps.md` | The NASA GES DISC + PPS A2 run (written, not run; RRS-2 and RRS-3 empty). The gaps note lists what it should search. What's left for people is mostly not public |
+| GPCP Daily (`gpcp-daily`) | Second pass, 2026-11-27 (NASA GES DISC + PPS A2 run): 134 items, 11 of 19 NA, R* NA | `build_gpcp-daily.py`, `gpcp-daily_categorization-gaps.md` | All its runs are in; GDEX and CDS have no repository run (copies). Its judgment calls await the user's review |
+| IMERG Late Run (`imerg-late-run`) | Third pass, 2026-11-27 (NASA GES DISC + PPS A2 run): 149 items, 10 of 19 NA, R* NA | `build_imerg-late-run.py`, `imerg-late-run_categorization-gaps.md` | All its runs are in. What's left (people, fixity, DR tests) is mostly not public. Its third-pass calls (RRS-1, RRS-2, RRS-3) were confirmed by the user on 2026-11-27 |
 | PERSIANN-CDR Daily (`persiann-cdr-daily`) | Research pt1–pt6 in; not categorized. Its folder in `rstar-pipeline/output/categories/` exists but has no JSON, so the site shows "Not categorized yet" | Coverage note `persiann-cdr-daily_coverage-gaps.md`; gap queries in `persiann-cdr-daily_gap-queries/`; run sheet `supplemental-queries-run-sheet.md` | pt7 (people and production) and the UC Irvine CHRS A2 run, both to rewrite and run. Categorize once they are back |
 | CoCoRaHS (`cocorahs`) | Six queries written 2026-11-23 (Parts 1–5 and a data-site A2, in `Rstar_query_results/queries/dataset_queries/about_dataset_queries/cocorahs/` with `cocorahs-run-sheet.md`), none run | — | Needs a `rstar-pipeline/input/dataset-metadata/cocorahs_dataset-metadata.json` first. Part 3's names (Doesken, Reges, Schumacher) came from Claude's knowledge: confirm them from the research |
 
@@ -133,7 +133,9 @@ definitions). The rules doc wins if it says otherwise.
 - The `archives/` runs for each repository that holds the dataset (for NOAA CDRs: both `noaa-ncei` runs, A1 threats
   and A2 resilience). The NCEI A2 run
   (`archives/noaa-ncei/2026-11-23_A2_Rstar_query-noaa_ncei/`) serves GHCN-Daily, GPCP, PERSIANN-CDR and CoCoRaHS's
-  copy at NCEI. There is no NASA GES DISC + PPS run yet and no UC Irvine CHRS run: say so in the gaps note.
+  copy at NCEI. The NASA GES DISC + PPS A2 run (`archives/nasa-gesdisc-pps/2026-11-27_gesdisc-pps-resilience`)
+  serves IMERG (both repositories) and GPCP V3.x (GES DISC); the UC Irvine CHRS A2 run (`archives/uci-chrs/`) serves
+  PERSIANN-CDR.
 - The `instruments/` runs for what the dataset is built from: station data → `noaa-rain-gauges`; satellite products →
   `nasa-satellites` and `noaa-satellites` (GPM, DMSP, POES, S-NPP, AMSR2, GOES). Leave out runs that don't apply, and
   say why in the gaps note and the script's docstring (GHCN-Daily left out both satellite runs; IMERG uses the NCEI
@@ -323,6 +325,12 @@ Follow these for consistency unless the rules doc changes them. The user has not
 - **IMERG Late Run:** ATMOS (a NASA contract the run inferred pays the algorithm staff) filed as a low "against"
   in D-1, since the link is an inference; P-4's "no deputy named" as a moderate
   "for"; PDIR-Now being computed at PPS as a DIRS-4 "against".
+- **NASA GES DISC + PPS A2 run (IMERG third pass, GPCP second pass, 2026-11-27):** a checksum rule for transfers only
+  (ingest, archive, distribution; no re-check interval) is a moderate RRS-2 "against", like NCEI's ingest/order
+  checksums; targeted searches that found no published DR plan or test are a moderate RRS-3 "against" (as a no-plan
+  search is "for" in P-1); two holders at separate sites (PPS at Goddard, GES DISC in AWS Oregon) are an RRS-1 "for"
+  even though neither copy is shown verified, as GPCP's independent copies were. A repository's "no loss reported"
+  with no after-action report stays a moderate RRS-5 "for". The user confirmed the RRS-1 to RRS-3 calls on 2026-11-27.
 
 ## Pitfalls seen
 

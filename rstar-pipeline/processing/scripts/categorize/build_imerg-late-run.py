@@ -1,4 +1,4 @@
-"""Build the IMERG Late Run R* categorization JSON (second pass, 2026-11-24).
+"""Build the IMERG Late Run R* categorization JSON (third pass, 2026-11-27).
 
 Hand-sorted evidence from every answer file in rstar-pipeline/input/web-research/ that bears on the IMERG Late Run
 (V07, V07B processing, in "hybrid" mode with GPROF V08 inputs since March 2026; half-hourly GPM_3IMERGHHL and
@@ -9,15 +9,18 @@ archived at NASA GES DISC:
   second pass, Run 1 people-production-pt7);
 - instruments/nasa-satellites (GPM, the calibrator) and instruments/noaa-satellites (S-NPP, NOAA-20/21, POES,
   DMSP, Metop, AMSR2, GOES);
+- archives/nasa-gesdisc-pps (A2 resilience run for GES DISC and PPS; added in the third pass);
 - for the AWS S3 integrity statement only, the GHCN-Daily repository-resilience run pt9.
 Left out: instruments/noaa-rain-gauges (the Late Run sees no gauges, only a climatology of the Final Run's GPCC
 adjustment) and both archives/noaa-ncei runs (no source puts an IMERG copy at NCEI).
-Not available: the NASA GES DISC + PPS A2 repository run (RRS-2 and RRS-3 are unsearched). Its gaps say so.
 
 Second pass (2026-11-24): added pt7 Run 1 (people, ages, contracts, PPS processing) to P-1 to P-4, D-1, DIRS-4 and
 DIRS-5; corrected Kidd's departure (2020-2023, not 2023-2026) and PDIR-Now's location (computed at PPS). The first
 pass's three items from GPCP Daily's people-production-pt7 (Huffman, Bolvin, Nelkin) were replaced by this run's
 items, which re-checked the same people, so that run is no longer a source.
+
+Third pass (2026-11-27): added the NASA GES DISC + PPS A2 run to D-2, D-3 and RRS-1 to RRS-5; replaced RRS-1's
+low inference about PPS's site with the run's finding (PPS's archive at Goddard, GES DISC in AWS us-west-2).
 
 Filing rules: rstar-pipeline/input/framework/rstar-categorization-decisions.md. Steps: rstar-pipeline/processing/instructions/categorize-dataset-instructions.md.
 Markdown links [label](url) in the text become <a> tags (rstar_common.py does the writing and scoring).
@@ -43,6 +46,7 @@ PT7P = "2026-11-24_imerg-late-run-people-production-pt7"
 NASA_SAT = "2026-11-18_nasa-satellite-precip-threats"
 NOAA_SAT = "2026-11-18_noaa-satellite-precip-threats"
 GH_RRS = "2026-11-23_ghcn-daily-repository-resilience-pt9"
+GDP = "2026-11-27_gesdisc-pps-resilience"  # archives/nasa-gesdisc-pps A2 run
 
 # Each evidence item is (confidence, source run, text, stance[, repository for RRS]); stance toward the
 # subcategory's statement: F = for, A = against, C = context (not directly tied, or doesn't show it true or false).
@@ -117,6 +121,30 @@ GMU_CEOSR = "https://ceosr.science.gmu.edu/microwave-remote-sensing-group/"
 PDIR = "https://pmc.ncbi.nlm.nih.gov/articles/PMC8216223/"
 GDEX_FINAL = "https://gdex.ucar.edu/datasets/d731000/"
 IRI_SUNSET = "https://iri.columbia.edu/resources/data-library/sunset/"
+# NASA GES DISC + PPS A2 resilience run (2026-11-27)
+GD_FORUM = "https://forum.earthdata.nasa.gov/viewtopic.php?t=8190"
+WGISS61 = "https://ceos.org/document_management/Working_Groups/WGISS/Meetings/WGISS-61/8.7%20WGISS-61%20NASA_s%20evolving%20Archive%20Guidelines%20for%20the%20cloud.pdf"
+OIG_DAAC = "https://oig.nasa.gov/docs/IG-20-011.pdf"
+OIG_OPEN26 = "https://oig.nasa.gov/wp-content/uploads/2026/10/or-10-26.pdf"
+ADURD = "https://www.earthdata.nasa.gov/s3fs-public/imported/423-10-69_ADURD_RevB.pdf"
+CMR_GRANULE = "https://cmr.earthdata.nasa.gov/search/granules.umm_json?short_name=GPM_3IMERGHHL&version=07&page_size=1"
+ORCA_BUCKET = "https://nasa.github.io/cumulus-orca/docs/developer/deployment-guide/deployment-s3-bucket"
+ORCA_RECON = "https://nasa.github.io/cumulus-orca/docs/developer/research/research-reconciliation"
+LZARDS = "https://nasa.github.io/cumulus/docs/workflow_tasks/lzards_backup/"
+CTS_LIST = "https://amt.coretrustseal.org/certificates/"
+WDS_GESDISC = "https://worlddatasystem.org/member-highlight-goddard-earth-sciences-data-and-information-services-center/"
+EDL_STATUS = "https://status.earthdata.nasa.gov/client_applications/21/history"
+EDL_STATUS2 = "https://status.earthdata.nasa.gov/client_applications/21/history?page=2"
+ENX = "https://sam.gov/workspace/contract/opp/155dc55f43934efe8e91537863f990b7/view"
+ENX_FORECAST = "https://www.highergov.com/contract-forecast/earth-science-data-and-information-system-esdis-1121962"
+IA_HISTORY = "https://www.earthdata.nasa.gov/data/alerts-outages/content/data-alert-history/17367"
+GESDISC_ALERTS = "https://disc.gsfc.nasa.gov/information/alerts"
+PPS_NRT2WK = "https://gpm.nasa.gov/node/2527"
+PPS_ARTHUR_DOWN = "https://gpm.nasa.gov/data/news/important-ppss-arthurhou-gpm-production-data-archive-temporarily-unavailable"
+PPS_ARTHUR_UP = "https://gpm.nasa.gov/data/news/ppss-arthurhou-gpm-production-data-archive-back-online"
+V06_END = "https://disc.gsfc.nasa.gov/information/alerts?title=End%20of%20support%20for%20IMERG%20Final%20version%2006"
+MERGIR_FIX = "https://disc.gsfc.nasa.gov/information/alerts?title=Reprocessing%20of%20the%20NCEP%2FCPC%20L3%20Half%20Hourly%204km%20Global%20(60S%20-%2060N)%20Merged%20IR%20(GPM_MERGIR)"
+OPENDAP_MOVE = "https://disc.gsfc.nasa.gov/information/alerts?title=GPM_3IMERG%20v07%20variables%20will%20be%20temporarily%20unavailable%20May%2011-13"
 DYNAMICAL = "https://registry.opendata.aws/dynamical-nasa-imerg/"
 EARTH_ENGINE = "https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_V07"
 CMORPH2 = "https://ftp.cpc.ncep.noaa.gov/precip/CMORPH2/CMORPH2NRT/readme_CMORPH2x_NRT.txt"
@@ -251,10 +279,12 @@ D2 = [
     (H, PT1, f"The files \"are hosted on both PPS and GES DISC\" ([Tech Doc]({TECHDOC})), and PPS keeps Early and Late files \"until a new version of the Early and Late IMERG algorithm replaces them\" ([README.GIS]({README_GIS})). So two NASA organizations hold the V07 Late record.", "A"),
     (M, PT5, f"New GES DISC ingest paused October 28–30, 2026 for the \"Consolidated Ingest and Archive (I&A) system migration\"; downloads stayed up ([Earthdata]({IA_MIGRATION})).", "C"),
     (L, PT4, f"PPS's one near-real-time outage found (January 20, 2026, about 14 hours) was a planned storage move ([GPM Data News]({GPM_DATA_NEWS})).", "C"),
+    (M, GDP, f"GES DISC confirmed in September 2026 that its data are stored in \"the AWS region US West (Oregon), or us-west-2\" ([GES DISC, Earthdata Forum]({GD_FORUM})), and an IMERG Late granule record lists one S3 location ([CMR]({CMR_GRANULE})). ESDIS counts Availability Zones \"up to 60 miles\" apart within one Region as its off-site copy ([ESDIS, WGISS-61, 2026]({WGISS61})), and NASA's inspector general recorded ESDIS calling one-vendor storage \"a single point of failure\" ([IG-20-011, 2020]({OIG_DAAC})); no later document says the backup ESDIS was \"investigating\" was built.", "F"),
+    (L, GDP, f"PPS runs one near-real-time system, and no backup site or failover was found. A hardware fault with \"file length discrepancies\" took its production archive (arthurhou) offline from January 31 to February 5, 2025 ([PPS, 2025]({PPS_ARTHUR_DOWN})). The run rates this low.", "F"),
 ]
 D2_GAPS = [
-    ("U", "GES DISC's and ESDIS's storage, backup and failover design (the NASA GES DISC + PPS A2 run is not back)."),
-    ("U", "Where PPS stores its copy and whether it has a second site."),
+    ("P", "Whether GES DISC holds any copy outside us-west-2, or runs Cumulus's ORCA backup (ESDIS holds this; not public)."),
+    ("S", "Where PPS stores its copy, how long its arthurhou archive keeps files, and any PPS backup site (searched; not published)."),
 ]
 
 D3 = [
@@ -265,9 +295,12 @@ D3 = [
     (M, PT4, "No budget line, contract or staff figure was found for PPS's distribution servers; no source names PPS in any cut.", "C"),
     (M, PT5, f"During the 43-day shutdown (Oct 1 – Nov 12, 2025) the GPM website stopped updating, and ESDIS blamed only an OMI-Aura delay on it ([ESDIS metrics]({ESDIS_METRICS})). No PPS or GES DISC outage was found.", "C"),
     (M, PT5, f"New GES DISC ingest paused October 28–30, 2026 for the consolidated ingest migration; downloads stayed up ([Earthdata]({IA_MIGRATION})).", "C"),
+    (M, GDP, f"ESDIS's support contract EED-3 ends January 31, 2027, and its successor, ESDIS Next (ENX), is still only a sources-sought notice: SAM.gov marks it \"Inactive\" and says \"No solicitation exists\" (last updated 2026-10-23; [SAM.gov]({ENX})), against a forecast award in the third quarter of FY2026 ([HigherGov]({ENX_FORECAST})).", "F"),
+    (M, GDP, f"Earthdata Login, which every GES DISC download goes through, had token generation degraded from December 16 to 21, 2025, and shorter degraded spells on seven days between December 2025 and November 19, 2026 ([Earthdata Status]({EDL_STATUS}); [page 2]({EDL_STATUS2})).", "F"),
 ]
 D3_GAPS = [
-    ("U", "GES DISC's and PPS's staffing and funding for distribution (the NASA A2 run is not back)."),
+    ("S", "PPS's own servers, storage hardware age and contractor (searched in the NASA A2 run; not found)."),
+    ("S", "The ENX award (none by November 2026; SAM.gov notice RFI-NASA-GSFC-ENX)."),
     ("S", "The DAAC consolidation schedule and what it does to IMERG distribution (not published)."),
 ]
 
@@ -378,24 +411,38 @@ DIRS5_GAPS = [
 RRS1 = [
     (M, PT7, f"Only PPS and GES DISC, both NASA Goddard, hold current copies of the Late Run, and neither publishes fixity or a check of one copy against the other. NASA's catalog lists only GES DISC ([CMR]({CMR_LATE})); no outside current copy was found (NCAR GDEX holds the Final Run only, [GDEX]({GDEX_FINAL}); IRI's V06 Late copy was to shut by end of October 2026, [IRI]({IRI_SUNSET})). The run rates RRS-1 not supported.", "A", BOTH),
     (M, PT5, f"GES DISC's on-premises services ended in 2026, so its copy is served from one Earthdata Cloud bucket in AWS us-west-2 ([GES DISC migration notice]({GESDISC_MOVE}); [AWS Registry]({AWS_REG})); no source describes a second region.", "A", GESDISC),
-    (L, PT3, "Inference: PPS's copy (location not published; PPS is part of GSFC in Maryland) and GES DISC's cloud copy (AWS us-west-2) may be at separate sites, but no source gives PPS's storage location or says either copy is verified.", "F", BOTH),
+    (M, GDP, f"Two geographically separate sites hold IMERG V07: PPS's own production archive (arthurhou) at Goddard in Maryland and GES DISC's copy in AWS us-west-2 (Oregon). When arthurhou failed in 2025, PPS sent users to GES DISC for V07 ([PPS, 2025]({PPS_ARTHUR_DOWN})), and GES DISC sends IMERG V06 users to PPS ([GES DISC, 2024]({V06_END})). No source says the two copies are checked against each other.", "F", BOTH),
+    (M, GDP, f"Within GES DISC there is one Region by design: ESDIS meets its \"1 copy located off-site\" rule with Availability Zones \"up to 60 miles\" apart in one AWS Region, uses S3 versioning and object lock instead of extra copies, and says \"We have work to do in detecting accidental/malicious deletions\" ([ESDIS, WGISS-61, 2026]({WGISS61})). NASA's inspector general recorded ESDIS calling one-vendor storage \"a single point of failure\" in 2020 ([IG-20-011]({OIG_DAAC})); no later document says a backup outside that vendor was built.", "A", GESDISC),
+    (M, GDP, f"ESDIS's DAAC requirements ask for an off-site backup of products only as \"selected data products, depending on need\", possibly \"in a NASA Cloud archive\" ([ADURD Rev B, 2017]({ADURD})). Cumulus's backup tools (ORCA, LZARDS) keep a copy in another account, the ORCA guide's example in the same Region; whether GES DISC runs either is not published ([ORCA]({ORCA_BUCKET}); [LZARDS]({LZARDS})).", "C", GESDISC),
+    (M, GDP, f"PPS keeps near-real-time files \"for the most recent 2 weeks\" on its 2A DPR NRT page ([PPS]({PPS_NRT2WK})); no figure for IMERG Late files was found there, and README.GIS says Late files stay until a new version replaces them.", "C", PPS),
     (M, PT7, f"PPS keeps Late files only \"until a new version of the Early and Late IMERG algorithm replaces them\" ([README.GIS]({README_GIS})); the Late Run's V08 switch is due no sooner than winter 2026, after which PPS may no longer hold V07.", "C", PPS),
     (M, PT3, f"Third-party copies are not repositories: dynamical.org's Zarr on AWS (no DOI; [AWS Registry]({DYNAMICAL})) and Google Earth Engine, which mixes Late with Final ([Earth Engine]({EARTH_ENGINE})).", "C", NOT_REPO),
 ]
 RRS1_GAPS = [
-    ("U", "How many copies GES DISC keeps and in which regions; where PPS stores its copy (the NASA GES DISC + PPS A2 run is not back)."),
+    ("P", "Whether GES DISC holds any copy outside us-west-2, or runs ORCA (ESDIS holds this)."),
+    ("S", "How long PPS's arthurhou archive keeps files, and whether it is checked against GES DISC's copy (searched; not published)."),
 ]
 
 RRS2 = [
     (M, GH_RRS, f"GES DISC's copy sits in AWS S3, which AWS says \"regularly\" verifies stored data with checksums, with no frequency ([AWS]({AWS_S3})). No NASA source says GES DISC or PPS runs its own fixity checks.", "C", GESDISC),
+    (M, GDP, f"ESDIS requires checksums only for transfers: each DAAC system \"shall ensure data integrity through the use of checksums\" at ingest, archive and distribution, with no re-check interval ([ADURD Rev B]({ADURD})), and an IMERG Late granule record carries no checksum ([CMR]({CMR_GRANULE})). No checksum algorithm or check frequency is published for GES DISC or Earthdata Cloud.", "A", GESDISC),
+    (M, GDP, f"NASA's inspector general found ESDIS rated DAAC data integrity below NIST's \"moderate\" level, partly because it could \"reprocess data internally in the event data integrity was compromised\" ([IG-20-011, 2020]({OIG_DAAC}), p. 20).", "C", GESDISC),
+    (L, GDP, f"Cumulus's backup tool plans a reconciliation of \"Key, LastModified, ETag, and Size\" \"on a regular schedule\" with no interval; the page was read only through a fetch tool's extraction ([ORCA]({ORCA_RECON})).", "C", GESDISC),
+    (H, GDP, f"Empty files in GPM_MERGIR, IMERG's infrared input, for April 22–23, 2024 were found by a user; GES DISC re-acquired them and only then added \"a check for empty files\" ([GES DISC alert, Aug 15, 2025]({MERGIR_FIX})). It is a content fault that fixity checks would not catch, and it shows repair after the fact rather than routine checking.", "C", GESDISC),
+    (H, GDP, f"GES DISC is not CoreTrustSeal-certified, though five other NASA data centers are ([CoreTrustSeal]({CTS_LIST})); it has been a World Data System Regular Member since September 2014 ([WDS]({WDS_GESDISC})). No certification was found for PPS.", "C", BOTH),
 ]
 RRS2_GAPS = [
-    ("U", "Checksum or fixity practice at GES DISC, Earthdata Cloud and PPS (the NASA A2 run is not back)."),
+    ("S", "PPS's checksum or fixity practice (searched in the NASA A2 run; not published)."),
+    ("P", "Any fixity schedule at GES DISC or Earthdata Cloud (in ESDIS operations documents; GES DISC user services or a FOIA request)."),
 ]
 
-RRS3 = []
+RRS3 = [
+    (M, GDP, f"Targeted searches found no published disaster recovery or continuity plan, and no record of a recovery test, for ESDIS, GES DISC or PPS, and no PPS backup site or near-real-time failover. ESDIS requires each DAAC system to have \"the capability to restore its archive to avoid permanent loss of archived data\" ([ADURD Rev B]({ADURD})), but no test of it is published.", "A", BOTH),
+    (M, GDP, f"The only documented exercise is for logins, not data: Earthdata Login ran a \"failover plan … contingency exercise\" on February 12, 2026, with no published results ([Earthdata Status]({EDL_STATUS})).", "C", GESDISC),
+    (M, GDP, "The 2026 oversight reports don't cover data systems: NASA OIG's IG-26-005 reviews Goddard's building closures, and GAO-26-108556 has no mention of EOSDIS, ESDIS, contingency or backup.", "C", BOTH),
+]
 RRS3_GAPS = [
-    ("U", "Disaster recovery plans and tests at ESDIS, GES DISC and PPS (the NASA A2 run is not back)."),
+    ("P", "ESDIS's, GES DISC's and PPS's disaster recovery plans and test results (held at NASA Goddard, e.g. EOSDIS operations documents; GES DISC user services or a FOIA request)."),
 ]
 
 RRS4 = [
@@ -406,6 +453,8 @@ RRS4 = [
     (M, PT4, "PPS has no published budget line, contract or award, and no source names it in any cut.", "C", PPS),
     (M, PT7P, "Three targeted searches in the people run also found no PPS contract, contractor or funding line (GPM project, ESDIS or SMD).", "C", PPS),
     (M, PT4, f"ESDIS's support contract EED-3 (Raytheon) is extended to January 31, 2027; its successor, ESDIS Next ($250M–$500M), was not found awarded ([USAspending]({EED3})).", "C", GESDISC),
+    (M, GDP, f"NASA OIG's 2020 recommendation for an independent analysis of the cloud's long-term financial sustainability was still open on October 15, 2026 ([NASA OIG]({OIG_OPEN26})), and ESDIS says \"Our budgets are not in lock-step with our data growth\" ([ESDIS, WGISS-61]({WGISS61})).", "A", GESDISC),
+    (M, GDP, f"ENX, the successor to EED-3, is still a sources-sought notice marked \"Inactive\" with \"No solicitation exists\" (last updated 2026-10-23; [SAM.gov]({ENX})), about two months before EED-3 ends.", "C", GESDISC),
 ]
 RRS4_GAPS = [
     ("P", "PPS's funding route, NASA's FY2026 operating plan, and the 2026 Senior Review result for GPM."),
@@ -417,9 +466,12 @@ RRS5 = [
     (M, PT5, f"GES DISC came through its 2026 move to Earthdata Cloud (on-premises services ended by September 30) and the ingest migration of October 28–30 with downloads up and no loss reported ([GES DISC migration notice]({GESDISC_MOVE}); [Earthdata]({IA_MIGRATION})); scripts built on the old services stopped working.", "F", GESDISC),
     (L, PT4, f"PPS's planned near-real-time shutdown of about 14 hours on January 20, 2026 (a storage move) is the only PPS outage found; no loss was reported ([GPM Data News]({GPM_DATA_NEWS})).", "F", PPS),
     (M, PT6, "The Late Run's production record through input losses (the October 2024 IR outage, which PPS reran; the 2025–26 sensor losses) is a production track record, not the repository's.", "C", PPS),
+    (L, GDP, f"PPS's production archive (arthurhou) had a hardware fault with \"file length discrepancies\" from January 31 to February 5, 2025; PPS suspended access, then reported services \"restarted, tested and verified\" ([PPS]({PPS_ARTHUR_DOWN}); [PPS]({PPS_ARTHUR_UP})). Neither notice says whether files were lost or regenerated.", "F", PPS),
+    (M, GDP, f"GES DISC's 2026 events ended with no loss reported but no after-action report either: the October 28–30 ingest pause (resolved November 2; [Earthdata]({IA_HISTORY})), the May 11–13 move of seven IMERG V07 OPeNDAP collections ([GES DISC]({OPENDAP_MOVE})), and alerts from August to November 2026 listing service retirements and three GPM V08 recalls but no lost granules ([GES DISC alerts]({GESDISC_ALERTS})). The run rates \"survived without loss\" low to moderate, since it rests on silence.", "C", GESDISC),
 ]
 RRS5_GAPS = [
-    ("U", "GES DISC's and PPS's holdings before and after a disruption, checked against an inventory (the NASA A2 run is not back)."),
+    ("P", "After-action notes for PPS's 2025 archive fault and January 2026 storage move, and counts of files regenerated (PPS holds them)."),
+    ("P", "After-action reports for GES DISC's 2025–2026 disruptions (none published)."),
 ]
 
 SUBCATEGORIES = {

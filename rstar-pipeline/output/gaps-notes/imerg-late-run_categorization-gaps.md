@@ -3,14 +3,15 @@
 - **Dataset:** IMERG Late Run V07 (V07B processing; "hybrid" since March 2026, the V07 algorithm ingesting GPROF V08),
   half-hourly `GPM_3IMERGHHL` (DOI 10.5067/GPM/IMERG/3B-HH-L/07) and daily `GPM_3IMERGDL`
   (DOI 10.5067/GPM/IMERGDL/DAY/07). V08 Late is due no sooner than winter 2026.
-- **Categorized:** 2026-11-24 (first pass); second pass the same day added pt7 Run 1 (people and production).
-  See "Changes from the first pass" at the end.
+- **Categorized:** 2026-11-24 (first pass); second pass the same day added pt7 Run 1 (people and production); third
+  pass 2026-11-27 added the NASA GES DISC + PPS A2 repository run. See "Changes" at the end.
 - **Output:** [imerg-late-run_rstar-categories.json](../data-rstar-categories/datasets/imerg-late-run/imerg-late-run_rstar-categories.json),
-  built by `rstar-pipeline/processing/scripts/categorize/build_imerg-late-run.py` (130 evidence items).
+  built by `rstar-pipeline/processing/scripts/categorize/build_imerg-late-run.py` (149 evidence items).
 - **Research used:**
   - `about-datasets/imerg-late-run/`: about-pt1, processing-qc-pt2, formats-people-pt3, funding-pt4, news-pt5,
     inputs-pt6 and both halves of the pt7 gap query: Run 2 `calibration-copies-pt7` and Run 1
     `people-production-pt7` (added in the second pass);
+  - `archives/nasa-gesdisc-pps/2026-11-27_gesdisc-pps-resilience` (the NASA GES DISC + PPS A2 run; third pass);
   - `instruments/nasa-satellites` (GPM, the calibrator) and `instruments/noaa-satellites` (S-NPP, NOAA-20/21, POES,
     DMSP, Metop, AMSR2, GOES);
   - for the AWS S3 integrity statement only: GHCN-Daily's repository-resilience-pt9.
@@ -18,16 +19,14 @@
   GPCC adjustment) and both `archives/noaa-ncei` runs (no source puts an IMERG copy at NCEI).
 - **No longer used:** GPCP Daily's people-production-pt7. The first pass took Huffman's, Bolvin's and Nelkin's
   estimates from it; IMERG's own people run re-checked the same people, so its items replace those three.
-- **Not available:** **the NASA GES DISC + PPS A2 repository run** (written, not run), so RRS-2 and RRS-3 have no
-  evidence and RRS-1, RRS-4 and RRS-5 are thin.
 - **Replaces** the coverage note `imerg-late-run_coverage-gaps.md` (2026-11-23) as the list of open gaps.
 
 ## Repositories (the JSON's `dataset` key)
 
 | Repository | Role | Holds |
 |---|---|---|
-| NASA GES DISC | parent | Half-hourly and daily V07 Late, 1998 to present; on-premises services ended 2026, now Earthdata Cloud only (`gesdisc-cumulus-prod-protected`, AWS us-west-2) |
-| NASA PPS | producer site | Near-real-time HDF5 (`jsimpsonhttps`) and IMERG GIS GeoTIFF; keeps Late files until the next version replaces them |
+| NASA GES DISC | parent | Half-hourly and daily V07 Late, 1998 to present; on-premises services ended 2026, now Earthdata Cloud only (`gesdisc-cumulus-prod-protected`, AWS us-west-2, one Region by ESDIS's design) |
+| NASA PPS | producer site | Near-real-time HDF5 (`jsimpsonhttps`), IMERG GIS GeoTIFF and its production archive (arthurhou) at Goddard, Maryland; keeps Late files until the next version replaces them; alone holds V06 |
 
 Not repositories: dynamical.org's Zarr on AWS (no DOI), Google Earth Engine (mixes Late with Final), the IRI Data
 Library's V06 copy (sunset October 2026), NCAR GDEX (Final Run only), Giovanni, Worldview and the PMM Publisher API
@@ -43,8 +42,8 @@ Goddard, so `producer_is_repository` is **true** (judgment call below).
 | P-3 Undocumented knowledge | 3 / 2 / 4 | NA | Production code not public or shared on request; some operating details unwritten vs ATBD and published X-CAL tables |
 | P-4 Single point of failure | 2 / 2 / 5 | NA (was 0) | Huffman's four roles with no deputy; Stocker the only named PPS manager vs PPS's Real Time system; work split among organizations |
 | D-1 Program defunding | 4 / 1 / 6 | **30** | GPM line $0 after FY2026 pending the Senior Review; FY2027 Earth Science and ESDS cuts pending; DAACs to be replaced (the "against" is a low inference) |
-| D-2 Storage single point | 2 / 1 / 2 | NA | GES DISC cloud-only in one region and only two NASA copies vs hosted at both PPS and GES DISC |
-| D-3 Access fragile | 3 / 0 / 4 | **20** | GES DISC's on-premises services and subsetters gone; DAAC consolidation; ESDS cut pending |
+| D-2 Storage single point | 4 / 1 / 2 | NA | GES DISC in one AWS Region by design (ESDIS's "single point of failure"), only two NASA copies, PPS one NRT system (low) vs hosted at both PPS and GES DISC |
+| D-3 Access fragile | 5 / 0 / 4 | **20** | GES DISC's on-premises services gone; DAAC consolidation; ESDS cut pending; ENX successor contract unawarded; Earthdata Login degraded spells |
 | D-4 Format obsolescence | 0 / 1 / 3 | **0** | Open HDF5, netCDF and GeoTIFF with a public file spec |
 | D-5 Political sensitivity | 0 / 1 / 2 | **0** | No news names IMERG, PPS, GES DISC or the team; GPM on no termination list read |
 | DIRS-1 Calibration | 5 / 1 / 3 | NA | GMI the single reference, GPM funding, GMI anomalies, MetOp-C error, climatological CORRA vs X-CAL in-house and current |
@@ -52,15 +51,37 @@ Goddard, so `producer_is_repository` is **true** (judgment call below).
 | DIRS-3 Upstream supply chain | 6 / 0 / 4 | **20** | Near-real-time feeds broke; CORRA frozen to climatology; Autosnow change; IR outage |
 | DIRS-4 External processing | 4 / 3 / 2 | NA | GPROF (CSU), GMU job-control software (agreement ends Aug 2027), CPC IR vs common code in PPS's own system, PDIR-Now computed at PPS, PPS's own production system |
 | DIRS-5 No alternative supplier | 3 / 5 / 1 | NA | No backup calibrator, PMM underfunded, no IR substitute vs MWI, overlapping sensors, GEOS FP fallback, other NRT datasets, GPROF-IR to replace PDIR-Now |
-| RRS-1 Geographic redundancy | 1 / 2 / 2 | **0** | Only two NASA copies, none verified; GES DISC in one cloud region (the "for" is a low inference) |
-| RRS-2 Checksum verification | 0 / 0 / 1 | NA | Not searched (NASA A2 not run) |
-| RRS-3 Disaster recovery plan | 0 / 0 / 0 | NA | Not searched (NASA A2 not run) |
-| RRS-4 Stable funding | 1 / 3 / 3 | NA | ESDS cut, DAAC consolidation, GPM line $0 vs Congress holding NASA's funding |
-| RRS-5 Track record | 3 / 0 / 1 | **15** | Through the 2025 shutdown, Goddard staff losses and the 2026 cloud move with no data loss reported |
+| RRS-1 Geographic redundancy | 1 / 3 / 4 | NA (was 0) | PPS (Goddard, Maryland) and GES DISC (AWS Oregon) both hold V07 vs none verified, GES DISC in one Region by design |
+| RRS-2 Checksum verification | 0 / 1 / 5 | **0** (was NA) | ESDIS requires checksums only at ingest, archive and distribution, no re-check interval; granule record carries no checksum |
+| RRS-3 Disaster recovery plan | 0 / 1 / 2 | **0** (was NA) | Targeted searches found no published DR plan or test for ESDIS, GES DISC or PPS; only a login failover exercise |
+| RRS-4 Stable funding | 1 / 4 / 4 | NA | ESDS cut, DAAC consolidation, GPM line $0, OIG cloud-cost recommendation open vs Congress holding NASA's funding |
+| RRS-5 Track record | 4 / 0 / 2 | **15** | Through the 2025 shutdown, Goddard staff losses and the 2026 cloud move with no data loss reported; PPS's 2025 archive fault "restarted, tested and verified" (low) |
 
-Totals: P NA, D NA, DIRS NA, RRS NA, so R* is NA. 11 of 19 subcategories are NA (9 after the first pass).
+Totals: P NA, D NA, DIRS NA, RRS NA, so R* is NA. 10 of 19 subcategories are NA (11 after the second pass, 9 after the
+first).
 
 ## Judgment calls to double-check
+
+**From the third pass (NASA GES DISC + PPS A2 run, 2026-11-27).** The user reviewed the RRS-1, RRS-2 and RRS-3 calls
+below on 2026-11-27 and kept them:
+- **RRS-1 went from 0 to NA.** PPS's arthurhou archive (Goddard, Maryland) and GES DISC's copy (AWS Oregon) are filed
+  as a moderate "for" (two geographically separate holders; the run says "partly supports, for IMERG only"), against
+  "none verified" and GES DISC's single Region. If you read RRS-1's "verified copies" strictly, the "for" item is
+  context and RRS-1 goes back to 0.
+- **RRS-2 = 0** rests on ESDIS's requirement (checksums at ingest, archive and distribution, no re-check interval) as
+  a moderate "against", following the GHCN-Daily/GPCP precedent (checksums only at ingest or order are "against").
+  The ADURD read is Rev B (2017, "Expiration Date: March 2022"); a newer revision may exist.
+- **RRS-3 = 0** rests on targeted searches that found no published DR plan or test (moderate "against"), the same way
+  a search that found no succession plan counts in P-1. The run itself says "not published" is a finding about the
+  public record, not proof no plan exists. If you'd rather leave a not-found as a gap only, RRS-3 goes back to NA.
+- **PPS's 2025 archive fault** is a low "for" in RRS-5 (the run rates it low: "restarted, tested and verified", no
+  loss statement) and a low "for" in D-2; neither sets a score.
+- **The GPM_MERGIR empty-file fault** (2024, found by a user) is context in RRS-2: a content defect that fixity checks
+  would not catch.
+- **OIG's open cloud-cost recommendation and ESDIS's "budgets not in lock-step"** are a moderate "against" in RRS-4.
+- **ENX (the unawarded ESDIS support contract)** is "for" in D-3 (access infrastructure at risk) and context in RRS-4.
+
+**From the first two passes:**
 
 - **P-1 and P-4 went from 0 to NA** with the people run, as predicted. P-1: the targeted search that found no plan
   (moderate "for") now sits against the documentation items, as GPCP's did. P-4: Huffman's four roles with no deputy
@@ -91,7 +112,7 @@ Totals: P NA, D NA, DIRS NA, RRS NA, so R* is NA. 11 of 19 subcategories are NA 
   system", so the $0 after FY2026 is read as bearing on PPS's near-real-time system (RRS-4 "against" for PPS).
 - **D-4 = 0:** login and licence failures are filed as access, not format (as GPCP did), unlike GHCN-Daily's FAIR item.
 - **RRS-5 = 15** rests on no data loss being reported through the 2025 shutdown and the 2026 cloud move (moderate,
-  absence of reports). The NASA A2 run may change it.
+  absence of reports). The NASA A2 run found no after-action reports either way, so it stays.
 - **D-1's HQ slide** ("PMM" science team eliminated) is low because "PMM" may mean the planned mission.
 
 ## What the research never searched, by subcategory
@@ -112,13 +133,20 @@ Totals: P NA, D NA, DIRS NA, RRS NA, so R* is NA. 11 of 19 subcategories are NA 
   pages (the IPWG-12 V08 slides, pages 2–5 of the staff lists); arxiv.org and ipwg12.imgw.pl were refused by the
   sandbox.
 
-**For the NASA GES DISC + PPS A2 run (RRS, D-2, D-3):**
-- **RRS-1 / D-2:** how many copies GES DISC keeps and in which AWS regions; where PPS stores its copy; whether any copy
-  is verified against another.
-- **RRS-2:** fixity or checksum practice at GES DISC, Earthdata Cloud and PPS, and how often.
-- **RRS-3:** disaster recovery or contingency plans at ESDIS, GES DISC and PPS, and when they were last tested.
-- **RRS-4:** PPS's budget line; GES DISC's place in the DAAC consolidation; ESDIS Next's award.
-- **RRS-5:** holdings and latency at GES DISC and PPS before and after the 2025 shutdown and the 2026 migration.
+**Left after the NASA GES DISC + PPS A2 run (RRS, D-2, D-3).** It searched all of these; most answers are held by
+NASA, not published:
+- **RRS-1 / D-2:** whether GES DISC holds any copy outside us-west-2 or runs Cumulus's ORCA backup (ESDIS); how long
+  PPS's arthurhou keeps files and whether it is checked against GES DISC (PPS, GSFC Code 610.2).
+- **RRS-2:** any fixity schedule at GES DISC, Earthdata Cloud or PPS (EOSDIS operations documents; GES DISC user
+  services or a FOIA request); whether ADURD Rev B (2017) has a newer revision.
+- **RRS-3:** DR plans and test results at ESDIS, GES DISC and PPS; a PPS backup site.
+- **RRS-4:** PPS's budget line (still not found); the ENX award (watch SAM.gov RFI-NASA-GSFC-ENX).
+- **RRS-5:** after-action notes for PPS's 2025 archive fault and January 2026 storage move, and for GES DISC's
+  2025–2026 disruptions.
+- **D-3:** PPS's own servers, storage hardware age and contractor.
+- **By hand:** the run's `check-by-hand.md` (in `Rstar_query_results/web_search_results/2026-11-27_gesdisc-pps-resilience/`)
+  lists the LZARDS overview (NASA login), Cumulus's sync-granule README, GES DISC alerts pages 4 and 7–17 and pages
+  3–16 of the Earthdata Login history.
 
 **Other open items (from the runs' own gaps):**
 - **DIRS-2 / DIRS-3:** what PPS's near-real-time stream ingests after SSMIS (30 Sep 2026), AMSR2 (2 Sep 2026) and
@@ -148,13 +176,27 @@ Totals: P NA, D NA, DIRS NA, RRS NA, so R* is NA. 11 of 19 subcategories are NA 
 - **Joyce's employer:** his staff page says STC; an August 2026 paper's metadata still gives SSAI. The run follows the
   staff page.
 - **ATMOS start date:** NASA's release gives 3 November 2025; USAspending gives 2025-12-01 to 2030-12-01.
+- **PPS retention:** README.GIS says Late files stay until a new version replaces them; the NASA A2 run found PPS's 2A
+  DPR NRT page saying "the most recent 2 weeks" (a different product). Both kept in RRS-1 (context).
 
-## Changes from the first pass
+## Changes
 
-Second pass, 2026-11-24: added `2026-11-24_imerg-late-run-people-production-pt7` (pt7 Run 1).
+### Second pass (2026-11-24)
+
+Added `2026-11-24_imerg-late-run-people-production-pt7` (pt7 Run 1).
 - **Added 28 items:** P-1 6, P-2 6, P-3 2, P-4 5, D-1 3, DIRS-4 4, DIRS-5 1, RRS-4 1 (in P-1 to P-4, mostly context).
 - **Dropped 5 items:** the three GPCP-run items (Huffman, Bolvin and Nelkin, now covered by IMERG's own run), the low
   inference on Huffman's roles in P-4 (now a moderate "for"), and pt3's Kidd item (wrong dates).
 - **Rewritten:** the P-1 headcount item (no longer says no run searched for a plan); DIRS-4's GPROF/PDIR item, split
   (PDIR-Now is computed at PPS); DIRS-3's PDIR-Now item (V08 replaces it).
 - **Totals:** 107 → 130 items. **Scores:** P-1 0 → NA and P-4 0 → NA; no other score changed. R* stays NA.
+
+### Third pass (2026-11-27)
+
+Added `2026-11-27_gesdisc-pps-resilience` (archives/nasa-gesdisc-pps, the NASA GES DISC + PPS A2 run).
+- **Added 20 items:** D-2 2, D-3 2, RRS-1 4, RRS-2 5, RRS-3 3, RRS-4 2, RRS-5 2.
+- **Dropped 1 item:** RRS-1's low inference that PPS's and GES DISC's copies "may be at separate sites" (the run
+  settles it: arthurhou at Goddard, GES DISC in AWS Oregon).
+- **Gaps rewritten** in D-2, D-3 and RRS-1 to RRS-5: "not searched" became "searched, none found" or "not public".
+- **Totals:** 130 → 149 items. **Scores:** RRS-1 0 → NA, RRS-2 NA → 0, RRS-3 NA → 0; no other score changed. R* stays
+  NA; 10 of 19 subcategories are NA.

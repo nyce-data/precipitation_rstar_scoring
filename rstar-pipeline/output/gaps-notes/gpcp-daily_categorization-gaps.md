@@ -2,20 +2,21 @@
 
 - **Dataset:** GPCP Daily, two families: the 1° One-Degree Daily (1DD V1.3, NOAA CDR 01B-35 at NCEI, DOI
   10.7289/V5RX998Z) and the 0.5° V3.x Daily (V3.2 and V3.3 at NASA GES DISC; V3.3 also an NCEI CDR, C01726).
-- **Categorized:** 2026-11-24 (first pass); the same day, pt7 Run 2 (calibration-copies-pt7) was added.
+- **Categorized:** 2026-11-24 (first pass); the same day, pt7 Run 2 (calibration-copies-pt7) was added. Second pass
+  2026-11-27: the NASA GES DISC + PPS A2 run (see "What the NASA GES DISC + PPS run added").
 - **Output:** [gpcp-daily_rstar-categories.json](../data-rstar-categories/datasets/gpcp-daily/gpcp-daily_rstar-categories.json),
-  built by `rstar-pipeline/processing/scripts/categorize/build_gpcp-daily.py` (124 evidence items; 102 before Run 2).
+  built by `rstar-pipeline/processing/scripts/categorize/build_gpcp-daily.py` (134 evidence items; 124 before the NASA run, 102 before Run 2).
 - **Research used:**
   - `about-datasets/gpcp-daily/`: about-pt1, qc-formats-pt2, people-pt3, funding-news-pt4, inputs-pt5,
     satellites-pt6 and the two gap runs of the pt7 query: people-production-pt7 (Run 1) and
     calibration-copies-pt7 (Run 2: calibration, alternatives and copies);
   - `archives/noaa-ncei/`: the A1 threats run and the A2 resilience run (which covers GPCP Daily by name);
+  - `archives/nasa-gesdisc-pps/2026-11-27_gesdisc-pps-resilience` (its GES DISC findings; it found no PPS copy of GPCP);
   - `instruments/nasa-satellites` and `instruments/noaa-satellites` (GPM, Aqua, DMSP, POES, Suomi NPP, GOES);
   - for NCEI-wide and NODD facts only: GHCN-Daily's repository-pt7 and repository-resilience-pt9.
 - **Not used:** `instruments/noaa-rain-gauges` (GPCP's gauges come only through DWD's GPCC analysis, and no run ties
   US gauge networks to it) and the other GHCN-Daily runs.
-- **Not available:** no repository run for NASA GES DISC, NCAR GDEX or Copernicus CDS. The NASA GES DISC + PPS A2
-  query is written but not run (see `supplemental-queries-run-sheet.md`).
+- **Not available:** no repository run for NCAR GDEX or Copernicus CDS (copies; they may not need runs of their own).
 - **Replaces** the coverage note `gpcp-daily_coverage-gaps.md` (2026-11-23), which listed what the gap runs should fill.
 
 ## Repositories (the JSON's `dataset` key)
@@ -23,7 +24,7 @@
 | Repository | Role | Holds |
 |---|---|---|
 | NOAA NCEI | parent | 1DD V1.3 (archive of record); V3.3 CDR in its `climatedatarecords` bucket |
-| NASA GES DISC | parent | V3.2, V3.3 (role "ARCHIVER" in CMR) |
+| NASA GES DISC | parent | V3.2, V3.3 (role "ARCHIVER" in CMR); one AWS Region (us-west-2) by ESDIS's design |
 | AWS and Google Cloud (NODD) | child | NCEI's copies; version not confirmed |
 | NSF NCAR GDEX | child | V1.3 to 2024-11, V3.2 |
 | Copernicus CDS | child | v1.3 to 2024-03, V3.2, V3.3 |
@@ -42,8 +43,8 @@ NCEI's V3.3 CDR) and NASA Goddard under MEaSUREs (V3.x), so `producer_is_reposit
 | P-3 Undocumented knowledge | 1 / 3 / 1 | NA | V3.x code not published (for) vs V1.3 code public and V3.3 ATBD (against) |
 | P-4 Single point of failure | 1 / 1 / 3 | NA | Huffman sole ATBD reviser and only federal employee vs three people on Goddard production |
 | D-1 Program defunding | 3 / 2 / 5 | NA | Pending FY2027 cuts to NCEI and NASA ESDS vs MEaSUREs and CISESS awards running to 2028–2029 |
-| D-2 Storage single point | 3 / 3 / 1 | NA | NCEI copies in Asheville only, single cloud region, V1.3's outside copies stale vs several organizations serving it, V3.3 current at CDS |
-| D-3 Access fragile | 6 / 0 / 1 | **20** | NCEI access outage (Nov 2026), pending NCEI cut, NODD with no term, DAAC consolidation, GDEX wind-down |
+| D-2 Storage single point | 4 / 3 / 0 | NA | NCEI copies in Asheville only, single cloud regions at NCEI and GES DISC (ESDIS's "single point of failure"), V1.3's outside copies stale vs several organizations serving it, V3.3 current at CDS |
+| D-3 Access fragile | 8 / 0 / 1 | **20** | NCEI access outage (Nov 2026), pending NCEI cut, NODD with no term, DAAC consolidation, GDEX wind-down, ENX successor contract unawarded, Earthdata Login degraded spells |
 | D-4 Format obsolescence | 0 / 1 / 2 | **0** | Open CF netCDF-4 on every route |
 | D-5 Political sensitivity | 0 / 1 / 2 | **0** | About 40 news searches found nothing naming GPCP |
 | DIRS-1 Calibration | 6 / 0 / 2 | **25** | 1DD calibrated to F17 SSMIS alone, its feed unpublished since the RSS CDR ended (2025-07-31) and disrupted by FNMOC; GridSat's HIRS calibration ended in 2024; no funded reference after GPM |
@@ -51,13 +52,14 @@ NCEI's V3.3 CDR) and NASA Goddard under MEaSUREs (V3.x), so `producer_is_reposit
 | DIRS-3 Upstream supply chain | 6 / 0 / 3 | **20** | IMERG V07 Final ended, V08 late; GridSat pause; SSMIS feed undocumented, F-17 outage March 2026; AIRS |
 | DIRS-4 External processing | 3 / 1 / 2 | NA | CPC makes 1DD's IR histograms, GSFC's Sounder Research Team makes the AIRS/TOVS estimates vs producers compute on their own workstations |
 | DIRS-5 No alternative supplier | 3 / 3 / 3 | NA | 1DD has one sensor of each kind, no F17/AIRS contingency vs IMERG's overlapping constellation, V3.3's stand-in inputs, partial substitute datasets |
-| RRS-1 Geographic redundancy | 2 / 5 / 3 | NA | Copies at independent organizations, V3.3 current at CDS (Europe) vs none verified, NCEI's in Asheville, GDEX and CDS's V1.3 stale |
-| RRS-2 Checksum verification | 0 / 2 / 1 | **0** | Checksums only at ingest and on order (DSMR-00163, CoreTrustSeal) |
-| RRS-3 Disaster recovery plan | 0 / 1 / 1 | **0** | NCCF can't test at alternate sites; NCEI's plan not shareable |
-| RRS-4 Stable funding | 1 / 5 / 0 | NA | FY2026 enacted vs pending FY2027 cuts and no-term cloud copies |
-| RRS-5 Track record | 3 / 2 / 2 | NA | Helene and 2015 merger without reported loss vs 8% backlog unaccounted, 27 products retired |
+| RRS-1 Geographic redundancy | 2 / 6 / 4 | NA | Copies at independent organizations, V3.3 current at CDS (Europe) vs none verified, NCEI's in Asheville, GES DISC in one AWS Region, GDEX and CDS's V1.3 stale |
+| RRS-2 Checksum verification | 0 / 3 / 2 | **0** | Checksums only at ingest and on order (DSMR-00163, CoreTrustSeal); at GES DISC only on transfers (ESDIS ADURD) |
+| RRS-3 Disaster recovery plan | 0 / 2 / 1 | **0** | NCCF can't test at alternate sites; NCEI's plan not shareable; no published DR plan or test for GES DISC |
+| RRS-4 Stable funding | 1 / 6 / 1 | NA | FY2026 enacted vs pending FY2027 cuts, no-term cloud copies, OIG's cloud-cost recommendation open |
+| RRS-5 Track record | 4 / 2 / 2 | NA | Helene, the 2015 merger and GES DISC's 2025–26 disruptions without reported loss vs 8% backlog unaccounted, 27 products retired |
 
-People, data and repository totals are NA, so R* is NA (11 of 19 subcategories NA). Run 2 changed no score.
+People, data and repository totals are NA, so R* is NA (11 of 19 subcategories NA). Neither Run 2 nor the NASA
+GES DISC + PPS run changed a score.
 
 ## Judgment calls to double-check
 
@@ -104,6 +106,29 @@ RRS-2. No score changed.
 - **AIRS/TOVS estimates from GSFC's Sounder Research Team** filed in DIRS-4 (outside processing), not DIRS-1.
 - **V1.3's stale outside copies** filed as "for" in D-2 (V1.3's current data rest on NCEI and its NODD copies).
 
+## What the NASA GES DISC + PPS run added (2026-11-27)
+
+The A2 resilience run for NASA's two IMERG/GPCP repositories (`2026-11-27_gesdisc-pps-resilience`) covers GES DISC,
+GPCP V3.x's archive of record; it found no PPS copy of GPCP. 11 items added and 1 replaced (124 → 134), in D-2, D-3 and
+RRS-1 to RRS-5. **No score changed:** every subcategory it touched was already NA or already had the same side.
+
+- **Filled:** GES DISC's storage (one AWS Region by design; ESDIS counts Availability Zones as off-site; OIG's 2020
+  "single point of failure" note), its checksum rule (ingest, archive and distribution only, no re-check interval),
+  its DR plan (none published; a "capability to restore" is required but no test is published), its funding outlook
+  (OIG's cloud-cost recommendation still open; ENX unawarded) and its 2025–26 disruptions (no loss reported, no
+  after-action reports).
+- **Replaced:** D-2's context item "GES DISC ... No source describes its backup or failover" with the run's
+  single-Region finding ("for").
+- **Still open:** whether GES DISC holds any V3.x copy outside us-west-2 or runs ORCA, any fixity schedule, and its DR
+  test results (all held by ESDIS at NASA Goddard: GES DISC user services or a FOIA request).
+
+**Judgment calls to double-check:**
+- **RRS-2 and RRS-3 "against" items for GES DISC** follow IMERG's third pass: a transfer-only checksum rule and a
+  targeted search that found no DR plan or test are moderate "against". GPCP's RRS-2 and RRS-3 were 0 already (from
+  NCEI), so these don't change the score.
+- **GES DISC's 2026 ingest pause** is a moderate "for" in RRS-5 (no loss reported), though the run notes the claim
+  rests on silence.
+
 ## What the research never searched, by subcategory
 
 ### People risk
@@ -117,8 +142,8 @@ RRS-2. No score changed.
 ### Data risk
 - **D-1:** Behrangi's MEaSUREs award number and end date (USAspending under the University of Arizona; NSPIRES);
   GPCP's share of CISESS; the FY2027 outcome.
-- **D-2:** GES DISC's storage and backup; NCEI's AWS regions after the move.
-- **D-3:** GES DISC and CDS funding and staff; NODD contract end dates.
+- **D-2:** whether GES DISC keeps any V3.x copy outside us-west-2 (not public); NCEI's AWS regions after the move.
+- **D-3:** CDS funding and staff; NODD contract end dates; the ENX award (watch SAM.gov RFI-NASA-GSFC-ENX).
 - **D-4:** which version the NODD buckets hold.
 - **D-5:** any data rescue snapshot of GPCP Daily.
 
@@ -133,12 +158,13 @@ RRS-2. No score changed.
   producer pages not read).
 
 ### Repository resilience
-- **All five, for GES DISC, GDEX and CDS:** not searched. Run the NASA GES DISC + PPS A2 query; GDEX and CDS are
-  copies and may not need a run of their own.
+- **GES DISC:** searched in the NASA GES DISC + PPS A2 run (2026-11-27); what's left is held by ESDIS (see above).
+- **All five, for GDEX and CDS:** not searched; they are copies and may not need a run of their own.
 - **RRS-1:** copy count and regions after NCEI's move; whether NODD copies are verified; which version the NODD
   buckets hold; the GSFC backup folder (unreachable); ESGF V3.3's last file date.
-- **RRS-2:** NCEI's SOP 60-6-015 (not public); GES DISC's checksum practice (GDEX and CDS pages show none).
-- **RRS-3:** NCEI's contingency-plan test results (FOIA).
+- **RRS-2:** NCEI's SOP 60-6-015 (not public); GES DISC's fixity schedule, if any (not public; GDEX and CDS pages
+  show none).
+- **RRS-3:** NCEI's and GES DISC's contingency-plan test results (FOIA).
 - **RRS-4:** NCEI's and NASA's FY2026 spend plans.
 - **RRS-5:** a final Helene loss count; whether the 2026 migration delays GPCP Daily.
 
