@@ -4,15 +4,15 @@ Notes for the next session: what the project is for, where things stand, and wha
 Last updated 2026-11-27. Update this file before compacting a session and at the end of every session
 (see CLAUDE.md).
 
-## Status at a glance (2026-11-27, fifteenth session)
+## Status at a glance (2026-11-27, sixteenth session)
 
-**Repo:** `develop` has PERSIANN-CDR's first pass (`a3f6141`) and its second pass (`7ea5086`, fourteenth session),
-plus CoCoRaHS's first pass (fifteenth session, below; not committed yet). `main` and `origin/main` are still at `ea8bb0a`, so
-the PERSIANN work is **not merged or pushed** (command in "Publishing"). In `Rstar_query_results`, `develop` has the
-merge of pt2's PERSIANN pt8 run (`4ddb0b4`, with the pt7 and pt8 `query_answers` copies), not pushed.
+**Repo:** `develop`, `main` and `origin/main` were all at `52e569d` (CoCoRaHS's first pass) when the sixteenth session
+began, so the PERSIANN and CoCoRaHS work is merged and pushed. USCRN Daily's first pass (sixteenth session, below) is
+**not committed yet**. In `Rstar_query_results`, `develop` has the merge of pt2's PERSIANN pt8 run (`4ddb0b4`, with the
+pt7 and pt8 `query_answers` copies), not pushed.
 
 **On the website now:** the dashboard has cards for seven datasets. Every card has an overview page and its web
-research pages; five datasets are categorized (R* scores).
+research pages; six datasets are categorized (R* scores).
 
 | Dataset | Web research pages | R* categorization |
 |---|---|---|
@@ -21,11 +21,11 @@ research pages; five datasets are categorized (R* scores).
 | IMERG Late Run | 8 parts | Third pass (2026-11-27): 149 items, 10 of 19 NA |
 | PERSIANN-CDR | 8 parts | Second pass (2026-11-27, adding pt7 and pt8): 122 items, 9 of 19 NA |
 | CoCoRaHS | 5 parts | First pass (2026-11-27): 112 items, 8 of 19 NA |
-| USCRN Daily | 5 parts | Not categorized yet |
+| USCRN Daily | 5 parts | First pass (2026-11-27): 106 items, 9 of 19 NA |
 | ASOS | 5 parts | Not categorized yet |
 
-R* is NA for all five categorized datasets (expected: any NA subcategory makes R* NA). All 152 e2e tests pass
-(Firefox and WebKit, 2026-11-27, after CoCoRaHS).
+R* is NA for all six categorized datasets (expected: any NA subcategory makes R* NA). All 152 e2e tests pass
+(Firefox and WebKit, 2026-11-27, after USCRN Daily).
 
 **All research runs are copied into `rstar-pipeline/input/web-research/`:** every dataset's Parts, plus the repository
 runs for NOAA NCEI (A1, A2), NASA GES DISC + PPS (A2), UC Irvine CHRS (A2) and CoCoRaHS's data site (A2). No query
@@ -41,7 +41,8 @@ dataset, Prompt 5 adds new research).
 
 **Next steps, in order:**
 
-0. **Publish the PERSIANN commits if wanted** (`a3f6141`, `7ea5086`): the user merges `develop` into `main` and pushes (see "Publishing").
+0. **Commit USCRN Daily's first pass** on `develop` when the user asks, then the user merges and pushes (see
+   "Publishing"). The PERSIANN and CoCoRaHS commits are already published (`main` = `origin/main` = `52e569d`).
 1. **PERSIANN-CDR Daily's second pass: done 2026-11-27** (fourteenth session; committed on `develop` as `7ea5086`). pt7 and
    pt8 are copied in with question files and pages (parts 7 and 8), and added with Prompt 5: 122 items, P-1 0 → NA,
    P-4 NA → 15. What's left is not public (who runs and pays for the extension, its computers, whether the months
@@ -49,16 +50,16 @@ dataset, Prompt 5 adds new research).
    The gaps note's "Things to check by hand" lists a few file and page checks (a 2010 file's `source` attribute).
    Your pt8 `query_answers` copy of the answer (in `Rstar_query_results`) still links to the old `…_calibration-copies`
    folder on its last line; the pipeline copy and its page don't show that line.
-2. **Categorize the two remaining station datasets** with Prompt 1, copying `build_cocorahs.py` (station data, done
-   2026-11-27; see "Fifteenth session") or `build_ghcn-daily.py`:
-   - **USCRN Daily** (`uscrn-daily`): Parts 1–5; NCEI-hosted, so both `archives/noaa-ncei` runs apply.
+2. **Categorize the last station dataset** with Prompt 1, copying `build_uscrn-daily.py` (NCEI-hosted station network,
+   done 2026-11-27; see "Sixteenth session") or `build_cocorahs.py`:
+   - ~~**USCRN Daily**~~ done 2026-11-27 (first pass).
    - **ASOS** (`asos`): Parts 1–5 and the Part 4 follow-up (`2026-11-26_asos-1min-gap-followup`, answer only: cite it
      as a source; it has no page). Scored as the network as a whole (user's choice). NCEI-hosted (both NCEI runs);
      IEM is an independent outside archive (Part 1): decide its repository role when categorizing (it reprocesses
      the 1-minute data, so it may not count as serving the original format).
-   - Each has an empty `rstar-pipeline/output/categories/<id>/` (`.gitkeep`). After writing its JSON, re-run
+   - It has an empty `rstar-pipeline/output/categories/asos/` (`.gitkeep`). After writing its JSON, re-run
      `build_data.py`; check `app/e2e/test_dashboard.py`, whose new-dataset test expects "Not categorized yet" on
-     the USCRN and ASOS cards (add each one categorized to the `cocorahs` branch there).
+     the ASOS card (add `asos` to the `("cocorahs", "uscrn-daily")` branch there).
    - Station datasets also use `instruments/noaa-rain-gauges` (COOP, ASOS, USCRN and CoCoRaHS are all in it).
 3. **Things for the user to check** (no new searches needed):
    - **Metadata facts flagged in `review_notes`:** CoCoRaHS (Nolan Doesken's death on 15 November 2026, from Part 4;
@@ -67,6 +68,11 @@ dataset, Prompt 5 adds new research).
      Christine Smith (Schultz) as ASOS Program Manager).
    - **Judgment calls in the gaps notes:** GHCN-Daily's fourth-pass stance calls and GPCP's list are still unreviewed.
      IMERG's third-pass RRS-1 to RRS-3 calls were reviewed and kept (2026-11-27).
+   - **USCRN Daily's first-pass calls** (gaps note, "Judgment calls to double-check"): P-1 = 35 with NCEI's partial,
+     2002–2007 documentation library filed as context; P-2 NA though Diamond's 1981 start makes eligibility near
+     certain; P-4 NA (the "or" rule not applied to a Program Manager with no deputy); D-3 and D-5 NA; DIRS-1 = 0 (ATDD
+     calibrates in house, though GHCN-Daily counts the same lab as "for"); DIRS-4 NA (the GOES relay filed there too);
+     the Copernicus CDS copy filed as not a repository.
    - **CoCoRaHS's first-pass calls** (gaps note, "Judgment calls to double-check"): the "or" rule that keeps P-4 =
      15 and D-3 = 20 (no-outage and shared-QC items filed as context); P-2 NA though Hilberg is likely past retirement
      age (estimates are low); D-2 NA from NCEI's partial copy; D-1 NA only because NCEI's FY2027 request counts;
@@ -136,6 +142,15 @@ The weighted network graph of a dataset's R* scores is built (`app/graph.html`, 
 the knowledge graph of dataset relationships is not started. GHCN-Daily, GPCP Daily and IMERG Late Run are categorized;
 PERSIANN-CDR Daily is categorized (second pass, 2026-11-27, with its pt7 and pt8 runs). CoCoRaHS, USCRN Daily and ASOS are new datasets whose research
 runs are done and copied in but which are not categorized; all three have dashboard cards and web research pages (CoCoRaHS and USCRN Daily in `744041f`, ASOS 2026-11-27).
+
+**Sixteenth session (2026-11-27): USCRN Daily categorized (first pass).** New `build_uscrn-daily.py` (106 items from
+pt1–pt5, both NCEI runs, the rain-gauge run and one OIG fact from GHCN-Daily's pt9, as GPCP and PERSIANN did), gaps note
+`rstar-pipeline/output/gaps-notes/uscrn-daily_categorization-gaps.md`, rebuilt `rstar-data.js`. Scores: P-1 35, D-1 30,
+D-2 25, D-4 0, DIRS-1 0, DIRS-2 25, DIRS-3 20, RRS-1 0, RRS-2 0, RRS-3 0; P-2, P-3, P-4, D-3, D-5, DIRS-4, DIRS-5,
+RRS-4, RRS-5 NA (9 of 19), so R* NA. Producer NOAA NCEI, `producer_is_repository` true; NCEI is the only repository
+(Copernicus CDS's reprocessed copy is not one). New precedents are in the instructions; its state table, the README
+table and `test_dashboard.py`'s new-dataset test (USCRN now expects no "Not categorized yet") were updated. Pages checked
+in the built-in browser (no console errors); all 152 e2e tests pass (Firefox and WebKit). Not committed yet.
 
 **Fifteenth session (2026-11-27): CoCoRaHS categorized (first pass).** New `build_cocorahs.py` (112 items from pt1–pt5,
 its data-site A2 run pt6, both NCEI runs and the rain-gauge run; nothing borrowed from GHCN-Daily's runs), gaps note
@@ -328,7 +343,7 @@ GitHub Pages home page (https://lmerchant.github.io/). Committed on `develop` an
 | PERSIANN-CDR Daily categorization | Done (second pass, 2026-11-27, adding pt7 and pt8; first pass the same day): 122 items, 9 of 19 NA, R* NA. P-1 0 → NA, P-4 NA → 15. Used pt1–pt8, both NCEI runs and the UC Irvine CHRS A2 run. Its judgment calls await the user's review |
 | CoCoRaHS (new dataset, id `cocorahs`) | Parts 1–5 and its data-site A2 (pt6) ran 2026-11-25/26; copied into `web-research/` (`about-datasets/cocorahs/`, `archives/cocorahs/`). Categorized 2026-11-27 (first pass, 112 items, 8 of 19 NA, R* NA; `build_cocorahs.py`). Metadata JSON, card, overview and Parts 1–5 on the dashboard (`744041f`); its data-site run has no archive page |
 | ASOS (new dataset, id `asos`) | Parts 1–5 and a Part 4 follow-up ran 2026-11-26; copied into `web-research/about-datasets/asos/` with question files (2026-11-27). Scored as the network as a whole. Not categorized. Metadata JSON, card, overview and Parts 1–5 on the dashboard (2026-11-27) |
-| USCRN Daily (new dataset, id `uscrn-daily`) | Parts 1–5 ran 2026-11-26/27 (in pt2); copied into `web-research/about-datasets/uscrn-daily/`. Not categorized. Metadata JSON, card, overview and Parts 1–5 on the dashboard (`744041f`) |
+| USCRN Daily (new dataset, id `uscrn-daily`) | Parts 1–5 ran 2026-11-26/27 (in pt2); copied into `web-research/about-datasets/uscrn-daily/`. Categorized 2026-11-27 (first pass, 106 items, 9 of 19 NA, R* NA; `build_uscrn-daily.py`). Metadata JSON, card, overview and Parts 1–5 on the dashboard (`744041f`) |
 | Dashboard web research pages | Current (2026-11-27): GHCN-Daily 1–9, GPCP 1–8, IMERG 1–8, PERSIANN-CDR 1–8, CoCoRaHS 1–5, USCRN Daily 1–5, ASOS 1–5 (2026-11-27). Process in `notes/dashboard/web-research-prep-howto.md` |
 | Feedback on the first pass | `notes/claude_feedback/first_pass_to_categorize.md`. All answered (see Open questions) |
 | Categorization rules | `rstar-pipeline/input/framework/rstar-categorization-decisions.md`, the master copy the user edits (2026-11-23). All its changes are applied. No Word copies are kept in the repo (they went out of sync); the user makes one with pandoc when needed |

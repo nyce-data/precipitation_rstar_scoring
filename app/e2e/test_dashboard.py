@@ -139,9 +139,9 @@ def test_new_datasets_have_cards_and_five_web_research_parts(page: Page, console
     page.goto("/")
 
     expect(card(page, dataset_id).get_by_role("link", name="R* scores")).to_be_visible()
-    # CoCoRaHS was categorized on 2026-11-27; the other two are not yet.
+    # CoCoRaHS and USCRN Daily were categorized on 2026-11-27; ASOS is not yet.
     note = card(page, dataset_id).get_by_text("Not categorized yet")
-    if dataset_id == "cocorahs":
+    if dataset_id in ("cocorahs", "uscrn-daily"):
         expect(note).to_have_count(0)
     else:
         expect(note).to_be_visible()

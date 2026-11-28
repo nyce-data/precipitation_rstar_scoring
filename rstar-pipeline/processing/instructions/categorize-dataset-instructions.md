@@ -77,7 +77,8 @@ As of 2026-11-27:
 | IMERG Late Run (`imerg-late-run`) | Third pass, 2026-11-27 (NASA GES DISC + PPS A2 run): 149 items, 10 of 19 NA, R* NA | `build_imerg-late-run.py`, `imerg-late-run_categorization-gaps.md` | All its runs are in. What's left (people, fixity, DR tests) is mostly not public. Its third-pass calls (RRS-1, RRS-2, RRS-3) were confirmed by the user on 2026-11-27 |
 | PERSIANN-CDR Daily (`persiann-cdr-daily`) | Second pass, 2026-11-27 (pt1–pt8, both NCEI runs, the UC Irvine CHRS A2 run): 122 items, 9 of 19 NA, R* NA | `build_persiann-cdr-daily.py`, `persiann-cdr-daily_categorization-gaps.md` | All its runs are in. What's left (who runs and pays for the extension, its computers, whether VGAC-calibrated GridSat is used) is not public: an inquiry to CHRS or NCEI. Its judgment calls (P-1, P-2, P-4, D-3, DIRS-3) await the user's review |
 | CoCoRaHS (`cocorahs`) | First pass, 2026-11-27 (pt1–pt5, its data-site A2, both NCEI runs, the rain-gauge run): 112 items, 8 of 19 NA, R* NA | `build_cocorahs.py`, `cocorahs_categorization-gaps.md` | All its runs are in. What's left (Azure backups, DR, who pays for hosting, the NMP subcontract) is held by CoCoRaHS HQ: an inquiry to info@cocorahs.org. Its judgment calls (the "or" rule in P-4 and D-3, D-2's NCEI copy, P-2) await the user's review |
-| USCRN Daily (`uscrn-daily`), ASOS (`asos`) | Research Parts 1–5 in (ASOS also a Part 4 follow-up); metadata JSON and dashboard cards exist; not categorized | — | Categorize with Prompt 1, copying `build_cocorahs.py` or `build_ghcn-daily.py` (station data) |
+| USCRN Daily (`uscrn-daily`) | First pass, 2026-11-27 (pt1–pt5, both NCEI runs, the rain-gauge run, one OIG fact from GHCN-Daily's pt9): 106 items, 9 of 19 NA, R* NA | `build_uscrn-daily.py`, `uscrn-daily_categorization-gaps.md` | All its runs are in. What's left (outage causes, maintenance visits, the datalogger plan, calibration, where NCEI holds the tapes) is held by ARL/ATDD or NCEI. Its judgment calls (P-1's documentation library, P-4, D-3, D-5, DIRS-1, DIRS-4, the Copernicus copy) await the user's review |
+| ASOS (`asos`) | Research Parts 1–5 and a Part 4 follow-up in; metadata JSON and dashboard card exist; not categorized | — | Categorize with Prompt 1, copying `build_uscrn-daily.py` or `build_cocorahs.py` (station data). Decide IEM's repository role |
 
 The best script to copy: `build_gpcp-daily.py` or `build_imerg-late-run.py` for a satellite product,
 `build_ghcn-daily.py` for station data.
@@ -355,6 +356,15 @@ Follow these for consistency unless the rules doc changes them. The user has not
   "Nothing published" after targeted searches is a moderate "against" in RRS-2 as well as RRS-3. A host funding the
   copy (NCEI's FY2027 request) counts in D-1. Volunteer observers are the observing network (DIRS-2); NWS staff losses
   count there because NWS offices recruit and some NWS staff are state coordinators.
+- **USCRN Daily, first pass (2026-11-27; not yet reviewed):** a public but partial and old documentation library (no
+  code, mostly 2002–2007) is P-1 context, not "against"; only a full handover package is "against". The "or" rule was
+  not applied to P-4, because the one "for" (a Program Manager with no deputy) is not clearly a production, QC or
+  distribution role. A lab that calibrates the instruments it also runs is in-house for that dataset (DIRS-1
+  "against"), though the same lab is an outside calibration team for a compilation that uses it (GHCN-Daily's DIRS-1
+  "for"); its proposed closure goes in DIRS-2 and D-1. The sole data relay (GOES DCS) is DIRS-3 and also DIRS-4 (the
+  outside facility routine updates need). News naming the dataset in coverage of proposed cuts is a D-5 "for". A
+  reprocessed third-party copy (Copernicus CDS, from 2006, yearly) is not a repository, as ESGF obs4MIPs was for
+  GPCP. NCEI's Asheville offsite-tape distance is context when no source says the dataset's tapes are in Asheville.
 
 ## Pitfalls seen
 
